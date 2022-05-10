@@ -81,7 +81,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../structure.html">Project Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../configuration.html">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Testing Frameworks</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../doctest.html">doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doctest.html">Doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../googletest.html">GoogleTest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../unity.html">Unity</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Custom</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Custom Test Runner</a></li>
@@ -153,7 +154,7 @@ in a tree until reaches the <a class="reference internal" href="../../../../proj
 <p>If you plan to use a custom test framework for ALL tests, please
 put the <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> file at the root of
 <a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>. Otherwise, use
-<a class="reference internal" href="../../structure.html#unit-testing-test-hierarchies"><span class="std std-ref">Test Hierarchies</span></a> and put it to the test folder
+<a class="reference internal" href="../../structure.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> and put it to the test folder
 or to the group of tests that depend on it.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> is a Python-based script. It must
 contain the <a class="reference internal" href="api.html#unit-testing-frameworks-custom-api-test-runner"><span class="std std-ref">CustomTestRunner</span></a>

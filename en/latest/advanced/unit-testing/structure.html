@@ -81,7 +81,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Project Structure</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#best-practices">Best Practices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#shared-code">Shared Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#test-hierarchies">Test Hierarchies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-hierarchy">Test Hierarchy</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="configuration.html">Configuration</a></li>
@@ -142,7 +142,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#best-practices" id="id1">Best Practices</a></p></li>
 <li><p><a class="reference internal" href="#shared-code" id="id2">Shared Code</a></p></li>
-<li><p><a class="reference internal" href="#test-hierarchies" id="id3">Test Hierarchies</a></p></li>
+<li><p><a class="reference internal" href="#test-hierarchy" id="id3">Test Hierarchy</a></p></li>
 </ul>
 </div>
 <section id="best-practices">
@@ -152,7 +152,7 @@ source code. As with the regular code, you need to give careful thought to where
 the tests reside, both physically and logically, in relation to the code under test.
 If you put unit tests in the wrong place, the tests you have written may not be run.</p>
 <p>Similarly, if you do not devise ways to reuse parts of your tests and use
-test hierarchies, you will end up with test code that is either unmaintainable
+test hierarchy, you will end up with test code that is either unmaintainable
 or hard to understand. So, what makes a good test?</p>
 <ol class="arabic simple">
 <li><p><strong>Tests should be independent and repeatable.</strong>
@@ -169,7 +169,7 @@ Hence, the <a class="reference internal" href="#unit-testing-shared-code"><span 
 <li><p><strong>Tests should be well organized and reflect the structure of the tested code.</strong>
 PlatformIO lets you organize tests using nested folders. The only folder with
 a name prefixed by <code class="docutils literal notranslate"><span class="pre">test_</span></code> is nominated for unit testing and is an independent
-test/application. See <a class="reference internal" href="#unit-testing-test-hierarchies"><span class="std std-ref">Test Hierarchies</span></a>.</p></li>
+test/application. See <a class="reference internal" href="#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a>.</p></li>
 </ol>
 </section>
 <section id="shared-code">
@@ -207,8 +207,8 @@ guard to hide non-test related source code. For example, own <code class="docuti
 </li>
 </ol>
 </section>
-<section id="test-hierarchies">
-<span id="unit-testing-test-hierarchies"></span><h2><a class="toc-backref" href="#id3">Test Hierarchies</a><a class="headerlink" href="#test-hierarchies" title="Permalink to this headline">¶</a></h2>
+<section id="test-hierarchy">
+<span id="unit-testing-test-hierarchy"></span><h2><a class="toc-backref" href="#id3">Test Hierarchy</a><a class="headerlink" href="#test-hierarchy" title="Permalink to this headline">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 6.0.</span></p>
 </div>

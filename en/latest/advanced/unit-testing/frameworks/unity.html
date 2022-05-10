@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Custom Testing Framework" href="custom/index.html" />
-    <link rel="prev" title="doctest" href="doctest.html" />
+    <link rel="prev" title="GoogleTest" href="googletest.html" />
  
 <link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
 <script src="../../../_static/js/bootstrap.min.js"></script>
@@ -81,7 +81,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure.html">Project Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration.html">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Testing Frameworks</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="doctest.html">doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="doctest.html">Doctest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="googletest.html">GoogleTest</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Unity</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
@@ -150,6 +151,15 @@
 </dd>
 <dt class="field-even">Configuration</dt>
 <dd class="field-even"><p><a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">unity</span></code></p>
+</dd>
+<dt class="field-odd">Native Tests</dt>
+<dd class="field-odd"><p>Yes</p>
+</dd>
+<dt class="field-even">Embedded Tests</dt>
+<dd class="field-even"><p>Yes</p>
+</dd>
+<dt class="field-odd">Mocking Support</dt>
+<dd class="field-odd"><p>No</p>
 </dd>
 </dl>
 <p><strong>Unity</strong> is a unit test framework. The goal has been to keep it small and
@@ -280,7 +290,7 @@ for the available options.</p>
 macro. It looks for a custom <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> in a current test folder. In case
 the <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> is missed, PlatformIO will walk through the test hierarchy
 until to the root (<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>).</p>
-<p>Let’s take a look at the Pizza Project from the <a class="reference internal" href="../structure.html#unit-testing-test-hierarchies"><span class="std std-ref">Test Hierarchies</span></a>
+<p>Let’s take a look at the Pizza Project from the <a class="reference internal" href="../structure.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a>
 example. If you run an “embedded/components/sauce/test_tomatos” test, PlatformIO will
 check folders for the <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> in the following order:</p>
 <ol class="arabic simple">
@@ -325,7 +335,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="doctest.html" class="btn btn-neutral float-left" title="doctest" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="googletest.html" class="btn btn-neutral float-left" title="GoogleTest" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="custom/index.html" class="btn btn-neutral float-right" title="Custom Testing Framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

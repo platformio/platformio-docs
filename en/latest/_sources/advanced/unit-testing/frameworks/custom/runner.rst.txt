@@ -23,7 +23,7 @@ in a tree until reaches the :ref:`projectconf_pio_test_dir`.
 If you plan to use a custom test framework for ALL tests, please
 put the ``test_custom_runner.py`` file at the root of
 :ref:`projectconf_pio_test_dir`. Otherwise, use
-:ref:`unit_testing_test_hierarchies` and put it to the test folder
+:ref:`unit_testing_test_hierarchy` and put it to the test folder
 or to the group of tests that depend on it.
 
 The ``test_custom_runner.py`` is a Python-based script. It must

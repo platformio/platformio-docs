@@ -24,7 +24,7 @@ the tests reside, both physically and logically, in relation to the code under t
 If you put unit tests in the wrong place, the tests you have written may not be run.
 
 Similarly, if you do not devise ways to reuse parts of your tests and use
-test hierarchies, you will end up with test code that is either unmaintainable
+test hierarchy, you will end up with test code that is either unmaintainable
 or hard to understand. So, what makes a good test?
 
 1. **Tests should be independent and repeatable.**
@@ -43,7 +43,7 @@ or hard to understand. So, what makes a good test?
 3. **Tests should be well organized and reflect the structure of the tested code.**
    PlatformIO lets you organize tests using nested folders. The only folder with
    a name prefixed by ``test_`` is nominated for unit testing and is an independent
-   test/application. See :ref:`unit_testing_test_hierarchies`.
+   test/application. See :ref:`unit_testing_test_hierarchy`.
 
 .. _unit_testing_shared_code:
 
@@ -83,10 +83,10 @@ between your "main" and "test" programs, you have 2 options:
        guard to hide non-test related source code. For example, own ``main()``,
        ``setup() / loop()``, or ``app_main()`` functions.
 
-.. _unit_testing_test_hierarchies:
+.. _unit_testing_test_hierarchy:
 
-Test Hierarchies
-~~~~~~~~~~~~~~~~
+Test Hierarchy
+~~~~~~~~~~~~~~
 
 .. versionadded:: 6.0
 

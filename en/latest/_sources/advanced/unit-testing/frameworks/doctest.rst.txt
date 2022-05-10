@@ -11,24 +11,22 @@
 
 .. _unit_testing_frameworks_doctest:
 
-doctest
+Doctest
 -------
 
 :Registry:
   `https://registry.platformio.org/libraries/doctest/doctest <https://registry.platformio.org/libraries/doctest/doctest>`_
 :Configuration:
   :ref:`projectconf_test_framework` = ``doctest``
+:Native Tests:
+  Yes
+:Embedded Tests:
+  No
+:Mocking Support:
+  No
 
-**doctest** is a new C++ testing framework but is by far the fastest both in
+**Doctest** is a new C++ testing framework but is by far the fastest both in
 compile times and runtime compared to other feature-rich alternatives.
-
-.. warning::
-  The **doctest** testing framework **DOES NOT WORK** on the embedded
-  devices with constrained resources. The only "Native"
-  :ref:`unit_testing_runner_test_types` are supported.
-
-  Please check the :ref:`unit_testing_frameworks_unity` testing framework
-  that supports "Embedded" tests.
 
 .. contents:: Contents
   :local:
@@ -36,12 +34,10 @@ compile times and runtime compared to other feature-rich alternatives.
 Getting Started
 ~~~~~~~~~~~~~~~
 
-To get started with **doctest** all you need is to set
+To get started with the Doctest all you need is to set
 the :ref:`projectconf_test_framework` option in your :ref:`projectconf`
 to the ``doctest`` and implement your own ``main()`` function that
-forces doctest to report successful test cases.
-
-When you're done, your configuration will look something like this:
+forces the Doctest to report successful test cases:
 
 ``platformio.ini``
 
@@ -56,7 +52,7 @@ When you're done, your configuration will look something like this:
 
 .. code:: cpp
 
-  #define DOCTEST_CONFIG_IMPLEMENT  // REQUIRED: Enables custom main()
+  #define DOCTEST_CONFIG_IMPLEMENT  // REQUIRED: Enable custom main()
   #include <doctest.h>
 
   // TEST_CASE ...
@@ -67,7 +63,7 @@ When you're done, your configuration will look something like this:
     doctest::Context context;
 
     // BEGIN:: PLATFORMIO REQUIRED OPTIONS
-    context.setOption("success", true);     // Reports successful tests
+    context.setOption("success", true);     // Report successful tests
     context.setOption("no-exitcode", true); // Do not return non-zero code on failed test case
     // END:: PLATFORMIO REQUIRED OPTIONS
 
@@ -78,29 +74,29 @@ When you're done, your configuration will look something like this:
   }
 
 Now, you can run tests using the :ref:`cmd_test` command. If you need a
-full output from **doctest**, please use :option:`pio test --verbose`
+full output from the Doctest, please use :option:`pio test --verbose`
 option.
 
 **Useful links**
 
-* `doctest - Tutorial <https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md>`_
-* `doctest - Assertion macros <https://github.com/doctest/doctest/blob/master/doc/markdown/assertions.md>`_
-* `doctest - Logging macros <https://github.com/doctest/doctest/blob/master/doc/markdown/logging.md>`_
-* `doctest - Test cases, subcases and test fixtures <https://github.com/doctest/doctest/blob/master/doc/markdown/testcases.md>`_
+* `Doctest - Tutorial <https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md>`_
+* `Doctest - Assertion macros <https://github.com/doctest/doctest/blob/master/doc/markdown/assertions.md>`_
+* `Doctest - Logging macros <https://github.com/doctest/doctest/blob/master/doc/markdown/logging.md>`_
+* `Doctest - Test cases, subcases and test fixtures <https://github.com/doctest/doctest/blob/master/doc/markdown/testcases.md>`_
 
 Configuration
 ~~~~~~~~~~~~~
 
-The **doctest** can be configured in two ways: using identifiers
+The Doctest can be configured in two ways: using identifiers
 (macros) or ``doctest::Context``.
 
 Using identifiers
 ^^^^^^^^^^^^^^^^^
 
-The **doctest** is designed to "just work" as much as possible. It also allows
+The Doctest is designed to "just work" as much as possible. It also allows
 configuring how it is built with a set of identifiers.
 
-See `doctest Configuration Guide <https://github.com/doctest/doctest/blob/master/doc/markdown/configuration.md>`_
+See `Doctest Configuration Guide <https://github.com/doctest/doctest/blob/master/doc/markdown/configuration.md>`_
 for the available identifiers.
 
 **Example**
@@ -145,12 +141,12 @@ docs for details.
     return context.run();
   }
 
-doctest CLI
+Doctest CLI
 ~~~~~~~~~~~
 
-The **doctest** works quite nicely without any command-line options at all -
+The Doctest works quite nicely without any command-line options at all -
 but for more control a few of them are available.
-See `doctest CLI guide <https://github.com/doctest/doctest/blob/master/doc/markdown/commandline.md>`_.
+See `Doctest CLI guide <https://github.com/doctest/doctest/blob/master/doc/markdown/commandline.md>`_.
 
 There are two options for how to pass extra arguments to the testing program:
 
@@ -160,8 +156,8 @@ There are two options for how to pass extra arguments to the testing program:
 **Example**
 
 Stop executing test cases after the first error and include  successful
-assertions in the output. We will use ``-aa, --abort-after=<int>`` and
-``-s,--success=<bool>`` doctest's CLI option.
+assertions in the output. We will use the ``-aa, --abort-after=<int>``
+and ``-s,--success=<bool>`` Doctest's CLI option.
 
 1.  Using CLI and :option:`pio test --program-arg` option:
 
@@ -186,6 +182,6 @@ Test Runner
 ~~~~~~~~~~~
 
 If you would like to change the default PlatformIO's Test Runner
-for the **doctest**, please implement your :ref:`unit_testing_frameworks_custom`
+for the Doctest, please implement your :ref:`unit_testing_frameworks_custom`
 runner extending `DoctestTestRunner <https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/doctest.py>`_
-class. See :ref:`unit_testing_frameworks_custom` for the examples.
+class. See :ref:`unit_testing_frameworks_custom` for examples.

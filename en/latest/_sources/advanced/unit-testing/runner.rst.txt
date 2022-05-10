@@ -58,7 +58,7 @@ on the host machine or on the target device connected to the host machine.
 Tests that are written for the target device typically will not work on
 your host machine due to the missing peripheral and other connectivity.
 
-Using the :ref:`unit_testing_test_hierarchies` allows you to organize tests
+Using the :ref:`unit_testing_test_hierarchy` allows you to organize tests
 by types and later skip an incompatible group of tests using
 :ref:`projectconf_test_filter` or :ref:`projectconf_test_ignore` options
 in :ref:`projectconf`.

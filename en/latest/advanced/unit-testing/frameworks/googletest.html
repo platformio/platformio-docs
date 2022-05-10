@@ -4,12 +4,12 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctest &mdash; PlatformIO latest documentation</title>
+  <title>GoogleTest &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/doctest.html" />
+    <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/googletest.html" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -23,8 +23,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="GoogleTest" href="googletest.html" />
-    <link rel="prev" title="Testing Frameworks" href="index.html" />
+    <link rel="next" title="Unity" href="unity.html" />
+    <link rel="prev" title="Doctest" href="doctest.html" />
  
 <link rel="stylesheet" href="../../../_static/css/extra.css" type="text/css" />
 <script src="../../../_static/js/bootstrap.min.js"></script>
@@ -81,14 +81,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure.html">Project Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration.html">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Testing Frameworks</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Doctest</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="doctest.html">Doctest</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">GoogleTest</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#doctest-cli">Doctest CLI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#googletest-cli">GoogleTest CLI</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#test-runner">Test Runner</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="googletest.html">GoogleTest</a></li>
 <li class="toctree-l3"><a class="reference internal" href="unity.html">Unity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom/index.html">Custom</a></li>
 </ul>
@@ -134,9 +134,9 @@
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Unit Testing</a> &raquo;</li>
           <li><a href="index.html">Testing Frameworks</a> &raquo;</li>
-      <li>Doctest</li>
+      <li>GoogleTest</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/doctest.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/googletest.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -144,154 +144,135 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="doctest">
-<span id="unit-testing-frameworks-doctest"></span><h1>Doctest<a class="headerlink" href="#doctest" title="Permalink to this headline">¶</a></h1>
+  <section id="googletest">
+<span id="unit-testing-frameworks-googletest"></span><h1>GoogleTest<a class="headerlink" href="#googletest" title="Permalink to this headline">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/doctest/doctest">https://registry.platformio.org/libraries/doctest/doctest</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/google/googletest">https://registry.platformio.org/libraries/google/googletest</a></p>
 </dd>
 <dt class="field-even">Configuration</dt>
-<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">doctest</span></code></p>
+<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">googletest</span></code></p>
 </dd>
 <dt class="field-odd">Native Tests</dt>
 <dd class="field-odd"><p>Yes</p>
 </dd>
 <dt class="field-even">Embedded Tests</dt>
-<dd class="field-even"><p>No</p>
+<dd class="field-even"><p>Yes* (only for <a class="reference internal" href="../../../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a> and <a class="reference internal" href="../../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a>)</p>
 </dd>
 <dt class="field-odd">Mocking Support</dt>
-<dd class="field-odd"><p>No</p>
+<dd class="field-odd"><p>Yes</p>
 </dd>
 </dl>
-<p><strong>Doctest</strong> is a new C++ testing framework but is by far the fastest both in
-compile times and runtime compared to other feature-rich alternatives.</p>
+<p><strong>GoogleTest</strong> is a testing framework developed by the Testing Technology
+team with Google’s specific requirements and constraints in mind. Whether
+you work on Linux, Windows, or a Mac, if you write C++ code,
+GoogleTest can help you.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#getting-started" id="id1">Getting Started</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p>
-<ul>
-<li><p><a class="reference internal" href="#using-identifiers" id="id3">Using identifiers</a></p></li>
-<li><p><a class="reference internal" href="#using-doctest-context" id="id4">Using <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code></a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#doctest-cli" id="id5">Doctest CLI</a></p></li>
-<li><p><a class="reference internal" href="#test-runner" id="id6">Test Runner</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#googletest-cli" id="id3">GoogleTest CLI</a></p></li>
+<li><p><a class="reference internal" href="#test-runner" id="id4">Test Runner</a></p></li>
 </ul>
 </div>
 <section id="getting-started">
 <h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>To get started with the Doctest all you need is to set
+<p>To get started with the GoogleTest all you need is to set
 the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option in your <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
-to the <code class="docutils literal notranslate"><span class="pre">doctest</span></code> and implement your own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function that
-forces the Doctest to report successful test cases:</p>
+to the <code class="docutils literal notranslate"><span class="pre">googletest</span></code> and implement your own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:native]</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span><span class="w"></span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">googletest</span><span class="w"></span>
+
+<span class="k">[env:native]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span><span class="w"></span>
+
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">googletest</span><span class="w"></span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">test/test_dummy/test_main.cpp</span></code></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#define DOCTEST_CONFIG_IMPLEMENT  </span><span class="c1">// REQUIRED: Enable custom main()</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doctest.h&gt;</span><span class="cp"></span>
+<p><code class="docutils literal notranslate"><span class="pre">test/test_dummy/test_dummy.cpp</span></code></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gtest/gtest.h&gt;</span><span class="cp"></span>
 
-<span class="c1">// TEST_CASE ...</span>
-<span class="c1">// TEST_SUITE ...</span>
+<span class="c1">// TEST(...)</span>
+<span class="c1">// TEST_F(...)</span>
 
+<span class="cp">#if defined(ARDUINO)</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">InitGoogleTest</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
+<span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">());</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// nothing to be done here.</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#else</span>
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Report successful tests</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;no-exitcode&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
-<span class="w">  </span><span class="c1">// END:: PLATFORMIO REQUIRED OPTIONS</span>
-
-<span class="w">  </span><span class="c1">// YOUR CUSTOM DOCTEST OPTIONS</span>
-
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">InitGoogleTest</span><span class="p">(</span><span class="o">&amp;</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
+<span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">RUN_ALL_TESTS</span><span class="p">();</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
 </pre></div>
 </div>
 <p>Now, you can run tests using the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command. If you need a
-full output from the Doctest, please use <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-v"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--verbose</span></code></a>
+full output from the GoogleTest, please use <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-v"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--verbose</span></code></a>
 option.</p>
+<p><strong>Example</strong></p>
+<p>Please check the complete <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/semihosting">GoogleTest example</a>
+using GTest, GMock, and PlatformIO.</p>
 <p><strong>Useful links</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md">Doctest - Tutorial</a></p></li>
-<li><p><a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/assertions.md">Doctest - Assertion macros</a></p></li>
-<li><p><a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/logging.md">Doctest - Logging macros</a></p></li>
-<li><p><a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/testcases.md">Doctest - Test cases, subcases and test fixtures</a></p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/primer.html">GoogleTest Primer</a> - Teaches you how to write simple tests using GoogleTest. Read this first if you are new to GoogleTest</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/advanced.html">GoogleTest Advanced</a> - Read this when you’ve finished the Primer and want to utilize GoogleTest to its full potential</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/samples.html">GoogleTest Samples</a> - Describes some GoogleTest samples</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/faq.html">GoogleTest FAQ</a> - Have a question? Want some tips? Check here first</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/gmock_for_dummies.html">Mocking for Dummies</a> - Teaches you how to create mock objects and use them in tests</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/gmock_cook_book.html">Mocking Cookbook</a> - Includes tips and approaches to common mocking use cases</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/gmock_cheat_sheet.html">Mocking Cheat Sheet</a> - A handy reference for matchers, actions, invariants, and more</p></li>
+<li><p><a class="reference external" href="https://google.github.io/googletest/gmock_faq.html">Mocking FAQ</a> - Contains answers to some mocking-specific questions.</p></li>
 </ul>
 </section>
 <section id="configuration">
 <h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>The Doctest can be configured in two ways: using identifiers
-(macros) or <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code>.</p>
-<section id="using-identifiers">
-<h3><a class="toc-backref" href="#id3">Using identifiers</a><a class="headerlink" href="#using-identifiers" title="Permalink to this headline">¶</a></h3>
-<p>The Doctest is designed to “just work” as much as possible. It also allows
-configuring how it is built with a set of identifiers.</p>
-<p>See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/configuration.md">Doctest Configuration Guide</a>
-for the available identifiers.</p>
-<p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_doctest_identifiers]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_SUPER_FAST_ASSERTS</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_NO_COMPARISON_WARNING_SUPPRESSION</span><span class="w"></span>
-</pre></div>
-</div>
+<p>The GoogleTest can be configured using system environment variables.
+See supported <a class="reference external" href="https://google.github.io/googletest/advanced.html#running-test-programs-advanced-options">GoogleTest environment variables</a>.</p>
 </section>
-<section id="using-doctest-context">
-<h3><a class="toc-backref" href="#id4">Using <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code></a><a class="headerlink" href="#using-doctest-context" title="Permalink to this headline">¶</a></h3>
-<p>If you need more control and want to set options with code to the
-execution context, then the custom implementation of <code class="docutils literal notranslate"><span class="pre">main()</span></code>
-function will give you access to the <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code>.</p>
-<p>See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/main.md">The “main()” entry point</a>
-docs for details.</p>
-<p><strong>Example</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Reports successful tests</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;no-exitcode&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
-<span class="w">  </span><span class="c1">// END:: PLATFORMIO REQUIRED OPTIONS</span>
-
-<span class="w">  </span><span class="c1">// YOUR CUSTOM DOCTEST OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;abort-after&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">    </span><span class="c1">// stop test execution after 5 failed assertions</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;order-by&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;name&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// sort the test cases by their name</span>
-
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-</section>
-</section>
-<section id="doctest-cli">
-<h2><a class="toc-backref" href="#id5">Doctest CLI</a><a class="headerlink" href="#doctest-cli" title="Permalink to this headline">¶</a></h2>
-<p>The Doctest works quite nicely without any command-line options at all -
+<section id="googletest-cli">
+<h2><a class="toc-backref" href="#id3">GoogleTest CLI</a><a class="headerlink" href="#googletest-cli" title="Permalink to this headline">¶</a></h2>
+<p>The GoogleTest works quite nicely without any command-line options at all -
 but for more control a few of them are available.
-See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/commandline.md">Doctest CLI guide</a>.</p>
+See <a class="reference external" href="https://google.github.io/googletest/advanced.html#running-test-programs-advanced-options">GoogleTest CLI guide</a>.</p>
 <p>There are two options for how to pass extra arguments to the testing program:</p>
 <ol class="arabic simple">
 <li><p>Using PlatformIO Core CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option</p></li>
 <li><p>Overriding <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a> with a custom command.</p></li>
 </ol>
 <p><strong>Example</strong></p>
+<p>Let’s run everything in a test suite <code class="docutils literal notranslate"><span class="pre">FooTest</span></code> except <code class="docutils literal notranslate"><span class="pre">FooTest.Bar</span></code>.</p>
 <p>Stop executing test cases after the first error and include  successful
-assertions in the output. We will use the <code class="docutils literal notranslate"><span class="pre">-aa,</span> <span class="pre">--abort-after=&lt;int&gt;</span></code>
-and <code class="docutils literal notranslate"><span class="pre">-s,--success=&lt;bool&gt;</span></code> Doctest’s CLI option.</p>
+assertions in the output. We will use the <code class="docutils literal notranslate"><span class="pre">--gtest_filter</span></code>
+GoogleTest’s CLI option.</p>
 <ol class="arabic">
 <li><p>Using CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt; pio <span class="nb">test</span> --program-arg <span class="s2">&quot;--abort-after=1&quot;</span> --program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt; pio <span class="nb">test</span> --program-arg <span class="s2">&quot;--gtest_filter=FooTest.*-FooTest.Bar&quot;</span>
 <span class="c1"># or short format</span>
-&gt; pio <span class="nb">test</span> -a <span class="s2">&quot;-aa=1&quot;</span> -a <span class="s2">&quot;-s&quot;</span>
+&gt; pio <span class="nb">test</span> -a <span class="s2">&quot;--gtest_filter=FooTest.*-FooTest.Bar&quot;</span>
 </pre></div>
 </div>
 </li>
@@ -300,18 +281,17 @@ and <code class="docutils literal notranslate"><span class="pre">-s,--success=&l
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
 <span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/program</span><span class="w"></span>
-<span class="w">  </span><span class="na">-aa</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="w">  </span><span class="na">-s</span><span class="w"></span>
+<span class="w">  </span><span class="na">--gtest_filter</span><span class="o">=</span><span class="s">FooTest.*-FooTest.Bar</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 </ol>
 </section>
 <section id="test-runner">
-<h2><a class="toc-backref" href="#id6">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h2>
 <p>If you would like to change the default PlatformIO’s Test Runner
-for the Doctest, please implement your <a class="reference internal" href="custom/index.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom Testing Framework</span></a>
-runner extending <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/doctest.py">DoctestTestRunner</a>
+for the GoogleTest, please implement your <a class="reference internal" href="custom/index.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom Testing Framework</span></a>
+runner extending <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/googletest.py">GooglestTestRunner</a>
 class. See <a class="reference internal" href="custom/index.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom Testing Framework</span></a> for examples.</p>
 </section>
 </section>
@@ -320,8 +300,8 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Testing Frameworks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="googletest.html" class="btn btn-neutral float-right" title="GoogleTest" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="doctest.html" class="btn btn-neutral float-left" title="Doctest" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="unity.html" class="btn btn-neutral float-right" title="Unity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -456,8 +436,8 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
     </dl>
     <dl>
       <dt>On Github</dt>
-        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/doctest.rst"> View</a></dd>
-        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/advanced/unit-testing/frameworks/doctest.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/googletest.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/advanced/unit-testing/frameworks/googletest.rst"> Edit</a></dd>
     </dl>
     <dl>
       <dt>Search</dt>
