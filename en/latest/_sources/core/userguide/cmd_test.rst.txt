@@ -180,7 +180,7 @@ please take a look at the :ref:`projectconf_test_testing_command`.
     > pio test -a "-aa=1" -a "-s"
 
 .. option::
-    --output-json
+    --json-output
 
 Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
 format and save it to the specified path. If the only folder path is provided,
@@ -188,9 +188,9 @@ the file name will be generated automatically.
 Please note that the parent folder must exist before.
 
 .. option::
-    --output-junit
+    --junit-output
 
-The same as :option:`pio test --output-json` but generates a report in the
+The same as :option:`pio test --json-output` but generates a report in the
 `JUnit XML <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>`_
 format.
 

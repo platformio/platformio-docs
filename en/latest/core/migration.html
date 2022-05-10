@@ -92,9 +92,16 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Migrating from 5.x to 6.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#migration-steps">Migration Steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-new">What is new</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#unified-package-management">Unified package management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-package-command">Run package command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#virtual-symbolic-links">Virtual symbolic links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#package-management">Package Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#run-package-command">Run package command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#virtual-symbolic-links">Virtual symbolic links</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#unit-testing">Unit Testing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-driven-development">Test-driven development</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hardware-less-development">Hardware-less development</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-changed-or-removed">What is changed or removed</a><ul>
@@ -144,31 +151,40 @@ major changes, what is new, and what has been removed.</p>
 It means, there are no breaking changes or required migration steps.
 Project compatibility between major PlatformIO Core releases is our main task
 and part of PlatformIO’s decentralized architecture.</p>
-<p>We highly recommend to use the latest PlatformIO Core.
+<p>We highly recommend using the latest PlatformIO Core.
 See <a class="reference internal" href="userguide/cmd_upgrade.html#cmd-upgrade"><span class="std std-ref">pio upgrade</span></a> command.</p>
 </div>
 <p>Please read <a class="reference internal" href="history.html#release-notes-6"><span class="std std-ref">PlatformIO 6.0 Release Notes</span></a> before.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#migration-steps" id="id1">Migration Steps</a></p></li>
-<li><p><a class="reference internal" href="#what-is-new" id="id2">What is new</a></p>
+<li><p><a class="reference internal" href="#migration-steps" id="id2">Migration Steps</a></p></li>
+<li><p><a class="reference internal" href="#what-is-new" id="id3">What is new</a></p>
 <ul>
-<li><p><a class="reference internal" href="#unified-package-management" id="id3">Unified package management</a></p></li>
-<li><p><a class="reference internal" href="#run-package-command" id="id4">Run package command</a></p></li>
-<li><p><a class="reference internal" href="#virtual-symbolic-links" id="id5">Virtual symbolic links</a></p></li>
+<li><p><a class="reference internal" href="#package-management" id="id4">Package Management</a></p>
+<ul>
+<li><p><a class="reference internal" href="#run-package-command" id="id5">Run package command</a></p></li>
+<li><p><a class="reference internal" href="#virtual-symbolic-links" id="id6">Virtual symbolic links</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#what-is-changed-or-removed" id="id6">What is changed or removed</a></p>
+<li><p><a class="reference internal" href="#unit-testing" id="id7">Unit Testing</a></p>
 <ul>
-<li><p><a class="reference internal" href="#dropped-automatic-updates" id="id7">Dropped automatic updates</a></p></li>
-<li><p><a class="reference internal" href="#command-line-interface" id="id8">Command Line Interface</a></p></li>
+<li><p><a class="reference internal" href="#test-driven-development" id="id8">Test-driven development</a></p></li>
+<li><p><a class="reference internal" href="#hardware-less-development" id="id9">Hardware-less development</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#what-is-changed-or-removed" id="id10">What is changed or removed</a></p>
+<ul>
+<li><p><a class="reference internal" href="#dropped-automatic-updates" id="id11">Dropped automatic updates</a></p></li>
+<li><p><a class="reference internal" href="#command-line-interface" id="id12">Command Line Interface</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <section id="migration-steps">
-<h2><a class="toc-backref" href="#id1">Migration Steps</a><a class="headerlink" href="#migration-steps" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Migration Steps</a><a class="headerlink" href="#migration-steps" title="Permalink to this headline">¶</a></h2>
 <p><strong>PlatformIO Core 6.0</strong> received a lot of new features and updates to improve the
 lives of everyday engineers. To benefit from its improvements, we recommend
 taking into account the following steps:</p>
@@ -179,7 +195,7 @@ and <a class="reference internal" href="userguide/cmd_update.html#cmd-update"><s
 command. Ensure that the <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-globallib-dir"><span class="std std-ref">globallib_dir</span></a> folder is empty.
 Please use a declarative approach for the safety-critical embedded development
 and declare project dependencies using the <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a> option</p></li>
-<li><p>Ensure that project dependencies declared using the <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a>,
+<li><p>Ensure that project dependencies are declared using the <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a>,
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a>, and <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a> options
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <ol class="loweralpha simple">
@@ -212,12 +228,12 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 <span class="c1">; Depend on the latest compatible version of development platform</span><span class="w"></span>
 <span class="c1">; allowing new functionality (backward-compatible), and bug fixes.</span><span class="w"></span>
 <span class="c1">; No breaking changes</span><span class="w"></span>
-<span class="c1">; FYI: ^3 == ^3.0.0 == (&gt;=3.0.0, &lt;4.0.0)</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32 @ ^3</span><span class="w"></span>
+<span class="c1">; FYI: ^4 == ^4.0.0 == (&gt;=4.0.0, &lt;5.0.0)</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32 @ ^4</span><span class="w"></span>
 
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; Depend on the latest 6.x stable version of ArduinoJson.</span><span class="w"></span>
-<span class="w">  </span><span class="c1">; The minimal required version is 6.19.4.</span><span class="w"></span>
+<span class="w">  </span><span class="c1">; The minimum required version is 6.19.4.</span><span class="w"></span>
 <span class="w">  </span><span class="c1">; New functionality (backward-compatible) and bug-fixed are allowed</span><span class="w"></span>
 <span class="w">  </span><span class="na">bblanchon/ArduinoJson @ ^6.19.4</span><span class="w"></span>
 
@@ -231,15 +247,19 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 </pre></div>
 </div>
 </li>
+<li><p>If you use a custom testing transport via the “test_transport” option
+in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, please align your codebase with
+<a class="reference internal" href="../advanced/unit-testing/frameworks/unity.html#unit-testing-frameworks-unity-custom-config"><span class="std std-ref">Custom unity_config.h</span></a>. The
+“test_transport” option has been removed.</p></li>
 </ol>
 </section>
 <section id="what-is-new">
-<h2><a class="toc-backref" href="#id2">What is new</a><a class="headerlink" href="#what-is-new" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">What is new</a><a class="headerlink" href="#what-is-new" title="Permalink to this headline">¶</a></h2>
 <p>In this section, we are going to highlight the most important changes and
 features introduced in <strong>PlatformIO Core 6.0</strong>. Please visit
 <a class="reference internal" href="history.html#release-notes-6"><span class="std std-ref">PlatformIO 6.0 Release Notes</span></a> for more detailed information.</p>
-<section id="unified-package-management">
-<h3><a class="toc-backref" href="#id3">Unified package management</a><a class="headerlink" href="#unified-package-management" title="Permalink to this headline">¶</a></h3>
+<section id="package-management">
+<h3><a class="toc-backref" href="#id4">Package Management</a><a class="headerlink" href="#package-management" title="Permalink to this headline">¶</a></h3>
 <p><strong>PlatformIO Core 6.0</strong> brings a powerful solution to manage different
 <a class="reference internal" href="userguide/pkg/cmd_install.html#cmd-pkg-install-types"><span class="std std-ref">Package Types</span></a> using the unified <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a>:</p>
 <ul class="simple">
@@ -263,9 +283,8 @@ development platforms and their packages.</p>
 outdated project packages and list version information for all dependencies.
 There are three color legends to help you easily identify which updates are
 backward-incompatible.</p>
-</section>
 <section id="run-package-command">
-<h3><a class="toc-backref" href="#id4">Run package command</a><a class="headerlink" href="#run-package-command" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id5">Run package command</a><a class="headerlink" href="#run-package-command" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> contains a rich set of popular compilers and other useful tools.
 The <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmd-pkg-exec"><span class="std std-ref">pio pkg exec</span></a> command allows you to run a command from the specified
 package. If you specify package requirements using the <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">pkg</span> <span class="pre">exec</span> <span class="pre">--package</span></code></a>
@@ -285,7 +304,7 @@ new <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmd-pkg-exec
 </div>
 </section>
 <section id="virtual-symbolic-links">
-<h3><a class="toc-backref" href="#id5">Virtual symbolic links</a><a class="headerlink" href="#virtual-symbolic-links" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id6">Virtual symbolic links</a><a class="headerlink" href="#virtual-symbolic-links" title="Permalink to this headline">¶</a></h4>
 <p>The most requested feature from the library maintainers was the ability to link
 the existing package with the project without hard copying (duplicating). As a
 workaround, developers used a Unix-native symlink solution and it was not possible
@@ -297,10 +316,85 @@ host machines.</p>
 <p>See <a class="reference internal" href="userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a> for “Local Folder”.</p>
 </section>
 </section>
+<section id="unit-testing">
+<h3><a class="toc-backref" href="#id7">Unit Testing</a><a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h3>
+<p>It’s been <a class="reference external" href="https://github.com/platformio/platformio-core/commit/bb22a1297bc2e4c3131530f15a2b4b3914836560">six years</a>
+since we added support for the unit testing, and Unity was the only testing framework.
+We didn’t expect that the PlatformIO Unit Testing solution will gain broad popularity,
+especially using it on native (host) machines.</p>
+<p>So, time to refresh our view on PlatformIO Unit Testing taking into account
+<a class="reference external" href="https://github.com/platformio/platformio-core/issues?q=is%3Aissue+label%3A%22unit+testing%22+is%3Aclosed+milestone%3A6.0">your feedback and feature requests</a>.</p>
+<section id="test-driven-development">
+<h4><a class="toc-backref" href="#id8">Test-driven development</a><a class="headerlink" href="#test-driven-development" title="Permalink to this headline">¶</a></h4>
+<p>The PlatformIO Core 6.0 introduces absolutely a new workflow for
+<a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">test-driven development</a>
+in the embedded systems industry.
+Thanks to the rich set of supported <a class="reference internal" href="../advanced/unit-testing/frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a> and the ability
+to organize tests in groups using the <a class="reference internal" href="../advanced/unit-testing/structure.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a>, you
+can create a hybrid project and benefit simultaneously from multiple testing
+frameworks depending on the project requirements. See a simple example of
+a hybrid configuration:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:native]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">googletest</span><span class="w"></span>
+<span class="na">test_filter</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">common/*</span><span class="w"></span>
+<span class="w">  </span><span class="na">native/*</span><span class="w"></span>
+
+<span class="k">[env:embedded]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">unity</span><span class="w"></span>
+<span class="na">test_filter</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">common/*</span><span class="w"></span>
+<span class="w">  </span><span class="na">embedded/*</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Use a more advanced C++ testing framework with Mocking support such as
+<a class="reference internal" href="../advanced/unit-testing/frameworks/googletest.html#unit-testing-frameworks-googletest"><span class="std std-ref">GoogleTest</span></a> in pair with the <a class="reference internal" href="../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>
+development platform to run desktop tests on a host machine and a lightweight
+framework, such as <a class="reference internal" href="../advanced/unit-testing/frameworks/unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a>, for running tests on
+the target embedded device with constrained resources.</p>
+</section>
+<section id="hardware-less-development">
+<h4><a class="toc-backref" href="#id9">Hardware-less development</a><a class="headerlink" href="#hardware-less-development" title="Permalink to this headline">¶</a></h4>
+<p>It’s hard to imagine today a next-gen project development workflow that does
+not benefit from <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems. PlatformIO already provides multiple
+solutions to improve code quality including <a class="reference internal" href="../plus/pio-check.html#piocheck"><span class="std std-ref">Static Code Analysis</span></a>. In addition to
+the testing frameworks that allow you to mock objects and simulate the
+behavior of real objects, the PlatformIO Core 6.0 adds support for the
+<a class="reference internal" href="../advanced/unit-testing/simulators/index.html#unit-testing-simulators"><span class="std std-ref">Simulators</span></a>.</p>
+<p>Simulation tools and frameworks allow you to simulate hardware systems
+and run unit tests in virtual environments. Simulators can significantly
+accelerate your project development, especially when used in pair
+with <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a>.</p>
+<p>Integration of any simulator tool to the PlatformIO <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>
+is very simple and does not require any extra software or code writing.
+Please take a look at the example below how is easy to integrate
+the <a class="reference internal" href="../advanced/unit-testing/simulators/renode.html#unit-testing-simulators-renode"><span class="std std-ref">Renode</span></a> simulation framework:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:hifive1-revb]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">zephyr</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
+
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">platformio/tool-renode @ ^1</span><span class="w"></span>
+<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-renode/renode</span><span class="w"></span>
+<span class="w">    </span><span class="na">--disable-xwt</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e include @scripts/single-node/sifive_fe310.resc</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e showAnalyzer uart1</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e sysbus LoadELF @${platformio.build_dir}/${this.__env__}/firmware.elf</span><span class="w"></span>
+<span class="w">    </span><span class="na">-e start</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
 <section id="what-is-changed-or-removed">
-<h2><a class="toc-backref" href="#id6">What is changed or removed</a><a class="headerlink" href="#what-is-changed-or-removed" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">What is changed or removed</a><a class="headerlink" href="#what-is-changed-or-removed" title="Permalink to this headline">¶</a></h2>
 <section id="dropped-automatic-updates">
-<h3><a class="toc-backref" href="#id7">Dropped automatic updates</a><a class="headerlink" href="#dropped-automatic-updates" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Dropped automatic updates</a><a class="headerlink" href="#dropped-automatic-updates" title="Permalink to this headline">¶</a></h3>
 <p>Thanks to your feedback, we finally removed automatic updates of global libraries
 and development platforms. Please use <a class="reference internal" href="userguide/pkg/cmd_outdated.html#cmd-pkg-outdated"><span class="std std-ref">pio pkg outdated</span></a> to check for outdated
 project packages and list version information for all dependencies.</p>
@@ -308,7 +402,7 @@ project packages and list version information for all dependencies.</p>
 custom packages from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>, or external sources.</p>
 </section>
 <section id="command-line-interface">
-<h3><a class="toc-backref" href="#id8">Command Line Interface</a><a class="headerlink" href="#command-line-interface" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Command Line Interface</a><a class="headerlink" href="#command-line-interface" title="Permalink to this headline">¶</a></h3>
 <p>The following commands have been changed in v6.0.</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -328,17 +422,17 @@ custom packages from the <a class="reference external" href="https://registry.pl
 <td><p><strong>NEW</strong> <a class="reference internal" href="userguide/cmd_run.html#cmdoption-pio-run-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--program-arg</span></code></a> option</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a></p></td>
-<td><p><strong>NEW</strong> <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a>, <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-output-json"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--output-json</span></code></a>,
-and <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-output-junit"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--output-junit</span></code></a> options</p></td>
+<td><p><strong>NEW</strong> <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a>, <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-json-output"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--json-output</span></code></a>,
+and <a class="reference internal" href="userguide/cmd_test.html#cmdoption-pio-test-junit-output"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--junit-output</span></code></a> options</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="userguide/lib/index.html#cmd-lib"><span class="std std-ref">pio lib</span></a></p></td>
-<td><p><strong>DEPRECATED</strong> in favor <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
+<td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="userguide/platforms/index.html#cmd-platform"><span class="std std-ref">pio platform</span></a></p></td>
-<td><p><strong>DEPRECATED</strong> in favor <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
+<td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="userguide/cmd_update.html#cmd-update"><span class="std std-ref">pio update</span></a></p></td>
-<td><p><strong>DEPRECATED</strong> in favor <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
+<td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
 </tbody>
 </table>

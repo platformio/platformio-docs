@@ -67,7 +67,10 @@ Also, you can override this option using :option:`pio test --filter` command.
 .. code-block:: ini
 
   [env:myenv]
-  test_filter = footest, bartest_*, test[13]
+  test_filter =
+    footest
+    bartest_*
+    test[13]
 
 .. _projectconf_test_ignore:
 
