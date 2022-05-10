@@ -137,10 +137,10 @@
 <h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
 <section id="platformio-core-6">
 <span id="release-notes-6"></span><h2>PlatformIO Core 6<a class="headerlink" href="#platformio-core-6" title="Permalink to this headline">¶</a></h2>
-<p><strong>A professional collaborative platform for safety-critical and declarative embedded development</strong></p>
+<p><strong>A professional collaborative platform for declarative, safety-critical, and test-driven embedded development.</strong></p>
 <section id="id1">
 <h3>6.0.0 (2022-??-??)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Please check <a class="reference external" href="https://docs.platformio.org/en/latest/core/migration.html">Migration guide from 5.x to 6.0</a>.</p>
+<p>Please check the <a class="reference external" href="https://docs.platformio.org/en/latest/core/migration.html">Migration guide from 5.x to 6.0</a>.</p>
 <ul class="simple">
 <li><p><strong>Package Management</strong></p>
 <ul>
@@ -185,9 +185,10 @@
 <li><p>Added support for a custom <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_test.html#test-testing-command">testing command</a></p></li>
 <li><p>Added support for a <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/custom/examples/custom_unity_library.html">custom Unity library</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3980">issue #3980</a>)</p></li>
 <li><p>Added support for the <code class="docutils literal notranslate"><span class="pre">socket://</span></code> and <code class="docutils literal notranslate"><span class="pre">rfc2217://</span></code> protocols using <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/section_env_test.html#test-port">test_port</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4229">issue #4229</a>)</p></li>
+<li><p>List available project tests with a new <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-list-tests">pio test --list-tests</a> option</p></li>
 <li><p>Pass extra arguments to the testing program with a new <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-a">pio test --program-arg</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3132">issue #3132</a>)</p></li>
 <li><p>Generate reports in JUnit and JSON formats using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html">pio test</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/2891">issue #2891</a>)</p></li>
-<li><p>Provide more information when the native program crashed on a host (errored with a negative return code) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3429">issue #3429</a>)</p></li>
+<li><p>Provide more information when the native program crashed on a host (errored with a non-zero return code) (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3429">issue #3429</a>)</p></li>
 <li><p>Fixed an issue when command line parameters (<code class="docutils literal notranslate"><span class="pre">--ignore</span></code>, <code class="docutils literal notranslate"><span class="pre">--filter</span></code>) do not override values defined in the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3845">issue #3845</a>)</p></li>
 <li><p>Renamed the “test_build_project_src” project configuration option to the <a class="reference external" href="https://docs.platformio.org/en/latest//projectconf/section_env_test.html#test-build-src">test_build_src</a></p></li>
 <li><p>Removed the “test_transport” option in favor of the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/unity.html">Custom “unity_config.h”</a></p></li>
@@ -218,7 +219,7 @@
 <li><p><strong>Integration</strong></p>
 <ul>
 <li><p>Added a new build variable (<code class="docutils literal notranslate"><span class="pre">COMPILATIONDB_INCLUDE_TOOLCHAIN</span></code>) to include toolchain paths in the compilation database (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3735">issue #3735</a>)</p></li>
-<li><p>Changed default path for compilation database <a class="reference external" href="https://docs.platformio.org/en/latest/integration/compile_commands.html">compile_commands.json</a> to the project root</p></li>
+<li><p>Changed a default path for compilation database <a class="reference external" href="https://docs.platformio.org/en/latest/integration/compile_commands.html">compile_commands.json</a> to the project root</p></li>
 </ul>
 </li>
 <li><p><strong>Project Configuration</strong></p>
@@ -391,7 +392,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.0b1 (latest)
+    v6.0.0rc1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
