@@ -186,8 +186,8 @@ Unit Testing
 
 It's been `six years <https://github.com/platformio/platformio-core/commit/bb22a1297bc2e4c3131530f15a2b4b3914836560>`_
 since we added support for the unit testing, and Unity was the only testing framework.
-We didn't expect that the PlatformIO Unit Testing solution will gain broad popularity,
-especially using it on native (host) machines.
+We didn't expect that the PlatformIO :ref:`unit_testing` solution will gain broad
+popularity, especially using it on native (host) machines.
 
 So, time to refresh our view on PlatformIO Unit Testing taking into account
 `your feedback and feature requests <https://github.com/platformio/platformio-core/issues?q=is%3Aissue+label%3A%22unit+testing%22+is%3Aclosed+milestone%3A6.0>`_.
