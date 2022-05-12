@@ -38,7 +38,7 @@ board from :ref:`platform_sifive`:
   board = hifive1
 
   platform_packages =
-      platformio/tool-qemu-riscv @ ^1
+      platformio/tool-qemu-riscv
   test_testing_command =
       ${platformio.packages_dir}/tool-qemu-riscv/bin/qemu-system-riscv32
       -nographic
