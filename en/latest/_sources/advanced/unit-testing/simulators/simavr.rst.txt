@@ -41,7 +41,7 @@ board from :ref:`platform_atmelavr`:
   board = uno
 
   platform_packages =
-      platformio/tool-simavr @ ^1
+      platformio/tool-simavr
   test_speed = 9600
   test_testing_command =
       ${platformio.packages_dir}/tool-simavr/bin/simavr

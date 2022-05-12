@@ -130,28 +130,28 @@ Package Management
 
 There are no more global packages that could lead to potential issues.
 The new package management solution allows you to use a modern declarative approach
-for safety-critical embedded development. Using Semantic :ref:`cmd_pkg_install_requirements`
-guarantees full project reproducibility on any supported host machine for decades.
+for safety-critical embedded development. Using the Semantic :ref:`cmd_pkg_install_requirements`
+guarantees the full project reproducibility on any supported host machine for decades.
 
-The new :ref:`cmd_pkg` operates regarding the active (working) project. The
-:ref:`cmd_pkg_install` command will install all required project dependencies.
-The :ref:`cmd_pkg_list` allows listing not only dependent libraries but also
-development platforms and their packages.
+The new :ref:`cmd_pkg` operates in accordance with the active (working) project.
+The :ref:`cmd_pkg_install` command will install all required project dependencies.
+The :ref:`cmd_pkg_list` commmand allows listing not only dependent libraries
+but also development platforms and their packages.
 
-The big addition is the :ref:`cmd_pkg_outdated` command. It allows you to check for
-outdated project packages and list version information for all dependencies.
-There are three color legends to help you easily identify which updates are
-backward-incompatible.
+The notable addition is the :ref:`cmd_pkg_outdated` command. It allows you to
+check for outdated project packages and list version information for all
+dependencies. There are three color legends to help you easily identify
+which updates are backward-incompatible.
 
 Run package command
 ^^^^^^^^^^^^^^^^^^^
 
-|PIOREGISTRY| contains a rich set of popular compilers and other useful tools.
-The :ref:`cmd_pkg_exec` command allows you to run a command from the specified
+|PIOREGISTRY| contains a rich set of popular toolchains and other useful tools.
+The :ref:`cmd_pkg_exec` command allows you to run an arbitrary command from the specified
 package. If you specify package requirements using the :option:`pio pkg exec --package`
-option, PlatformIO will ensure that package is installed.
+option, PlatformIO will ensure that the package is installed before running any command.
 
-The useful use cases are running debugging servers, upload tools, or
+Practical use cases include running debugging servers, uploaders or
 special tools from a toolchain. A few examples of how to leverage the
 new :ref:`cmd_pkg_exec` command:
 
@@ -171,8 +171,8 @@ Virtual symbolic links
 
 The most requested feature from the library maintainers was the ability to link
 the existing package with the project without hard copying (duplicating). As a
-workaround, developers used a Unix-native symlink solution and it was not possible
-to declare a symlinked dependency in the :ref:`projectconf`.
+workaround, developers used a Unix-native symlink solution and hence it was
+not possible to declare a symlinked dependency in the :ref:`projectconf`.
 
 The :ref:`piocore` 6.0 introduces cross-platform virtual symbolic links without
 any dependencies on the host OS. PlatformIO ``symlink://`` resources do not
@@ -185,24 +185,23 @@ Unit Testing
 ~~~~~~~~~~~~
 
 It's been `six years <https://github.com/platformio/platformio-core/commit/bb22a1297bc2e4c3131530f15a2b4b3914836560>`_
-since we added support for the unit testing, and Unity was the only testing framework.
-We didn't expect that the PlatformIO Unit Testing solution will gain broad popularity,
-especially using it on native (host) machines.
+since we added support for unit testing, and Unity was the only available testing framework.
+We didn't expect that the PlatformIO :ref:`unit_testing` solution will gain broad
+popularity, especially when it comes to using it on native (host) machines.
 
-So, time to refresh our view on PlatformIO Unit Testing taking into account
+So, the time has come to refresh our view on PlatformIO Unit Testing with taking into account
 `your feedback and feature requests <https://github.com/platformio/platformio-core/issues?q=is%3Aissue+label%3A%22unit+testing%22+is%3Aclosed+milestone%3A6.0>`_.
 
 Test-driven development
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The PlatformIO Core 6.0 introduces absolutely a new workflow for
+The PlatformIO Core 6.0 introduces an absolutely a new workflow for
 `test-driven development <https://en.wikipedia.org/wiki/Test-driven_development>`_
 in the embedded systems industry.
 Thanks to the rich set of supported :ref:`unit_testing_frameworks` and the ability
-to organize tests in groups using the :ref:`unit_testing_test_hierarchy`, you
-can create a hybrid project and benefit simultaneously from multiple testing
-frameworks depending on the project requirements. See a simple example of
-a hybrid configuration:
+to organize tests in groups using the :ref:`unit_testing_test_hierarchy`, you can create
+hybrid projects and benefit from multiple testing frameworks depending on the project
+requirements simultaneously. See a simple example of the hybrid configuration:
 
 .. code:: ini
 
@@ -221,9 +220,9 @@ a hybrid configuration:
     common/*
     embedded/*
 
-Use a more advanced C++ testing framework with Mocking support such as
+Use more advanced C++ testing frameworks with Mocking support such as
 :ref:`unit_testing_frameworks_googletest` in pair with the :ref:`platform_native`
-development platform to run desktop tests on a host machine and a lightweight
+development platform to run desktop tests on the host machine and a lightweight
 framework, such as :ref:`unit_testing_frameworks_unity`, for running tests on
 the target embedded device with constrained resources.
 
@@ -237,14 +236,14 @@ the testing frameworks that allow you to mock objects and simulate the
 behavior of real objects, the PlatformIO Core 6.0 adds support for the
 :ref:`unit_testing_simulators`.
 
-Simulation tools and frameworks allow you to simulate hardware systems
-and run unit tests in virtual environments. Simulators can significantly
-accelerate your project development, especially when used in pair
-with :ref:`ci`.
+The combination of simulation tools and testing frameworks allow you to
+simulate hardware systems and run unit tests in virtual environments.
+Simulators can significantly accelerate project development, especially
+when used in pair with :ref:`ci`.
 
 Integration of any simulator tool to the PlatformIO :ref:`unit_testing`
 is very simple and does not require any extra software or code writing.
-Please take a look at the example below how is easy to integrate
+Please take a look at the example below how easy it is to integrate
 the :ref:`unit_testing_simulators_renode` simulation framework:
 
 .. code-block:: ini
@@ -255,7 +254,7 @@ the :ref:`unit_testing_simulators_renode` simulation framework:
   board = hifive1-revb
 
   platform_packages =
-      platformio/tool-renode @ ^1
+      platformio/tool-renode
   test_testing_command =
       ${platformio.packages_dir}/tool-renode/renode
       --disable-xwt

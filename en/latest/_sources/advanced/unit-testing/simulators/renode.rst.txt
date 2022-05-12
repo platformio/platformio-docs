@@ -41,7 +41,7 @@ board from :ref:`platform_sifive`:
   board = hifive1-revb
 
   platform_packages =
-      platformio/tool-renode @ ^1
+      platformio/tool-renode
   test_testing_command =
       ${platformio.packages_dir}/tool-renode/renode
       --disable-xwt
