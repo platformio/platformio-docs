@@ -56,7 +56,7 @@ Useful options that can be used used for adjusting check process:
 .. toctree::
   :maxdepth: 2
 
-  ../../projectconf/section_env_check
+  ../../../projectconf/section_env_check
 
 Supported checks
 ----------------

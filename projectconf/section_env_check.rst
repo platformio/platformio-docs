@@ -15,7 +15,7 @@ Check options
 -------------
 
 .. seealso::
-    Please make sure to read :ref:`piocheck` guide first.
+    Please make sure to read :ref:`check` guide first.
 
 .. contents::
     :local:

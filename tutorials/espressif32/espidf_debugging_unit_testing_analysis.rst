@@ -384,7 +384,7 @@ Project Inspection
 ------------------
 
 For illustrative purposes, let's imagine we need to find a function with the biggest
-memory footprint. Also, let's introduce a bug to our project so :ref:`piocheck` can
+memory footprint. Also, let's introduce a bug to our project so :ref:`check` can
 report it.
 
 #.  Open ``PlatformIO Home`` and navigate to ``Inspect`` section, select the current

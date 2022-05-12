@@ -33,6 +33,10 @@
 /migration.html -> /core/migration.html
 /platforms/espressif.html -> /platforms/espressif8266.html
 /platforms/unit_testing.html -> /advanced/unit-testing/index.html
+/plus/check-tools/clang-tidy.html -> /advanced/static-code-analysis/tools/clang-tidy.html
+/plus/check-tools/cppcheck.html -> /advanced/static-code-analysis/tools/cppcheck.html
+/plus/check-tools/pvs-studio.html -> /advanced/static-code-analysis/tools/pvs-studio.html
+/plus/pio-check.html -> /advanced/static-code-analysis/index.html
 /plus/unit-testing.html -> /advanced/unit-testing/index.html
 /projectconf.html -> projectconf/index.html
 /projectconf/advanced_scripting.html -> /scripting/index.html
