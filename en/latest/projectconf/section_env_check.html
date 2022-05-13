@@ -98,7 +98,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
@@ -149,7 +149,7 @@
 <span id="projectconf-section-env-check"></span><h1>Check options<a class="headerlink" href="#check-options" title="Permalink to this headline">¶</a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>Please make sure to read <a class="reference internal" href="../plus/pio-check.html#piocheck"><span class="std std-ref">Static Code Analysis</span></a> guide first.</p>
+<p>Please make sure to read <a class="reference internal" href="../advanced/static-code-analysis/index.html#check"><span class="std std-ref">Static Code Analysis</span></a> guide first.</p>
 </div>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -165,7 +165,7 @@
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">cppcheck</span></code></p>
 <p>A name of the check tool used for analysis. This option is useful when you
 want to check source code with two or more tools.</p>
-<p>See available tools in <a class="reference internal" href="../plus/pio-check.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
+<p>See available tools in <a class="reference internal" href="../advanced/static-code-analysis/tools/index.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
@@ -216,8 +216,8 @@ section. To set individual flags, define tool name at the beginning of the line.
 <section id="check-severity">
 <span id="projectconf-check-severity"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a><a class="headerlink" href="#check-severity" title="Permalink to this headline">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">low,</span> <span class="pre">medium,</span> <span class="pre">high</span></code></p>
-<p>This option allows specifying the <a class="reference internal" href="../plus/pio-check.html#check-severity"><span class="std std-ref">Defect severity</span></a> types which will
-be reported by the <a class="reference internal" href="../plus/pio-check.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
+<p>This option allows specifying the <a class="reference internal" href="../advanced/static-code-analysis/severity.html#check-severity"><span class="std std-ref">Defect severity</span></a> types which will
+be reported by the <a class="reference internal" href="../advanced/static-code-analysis/tools/index.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
 <p>Another option for filtering source files is <a class="reference internal" href="../core/userguide/cmd_check.html#cmdoption-pio-check-severity"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">check</span> <span class="pre">--severity</span></code></a> command.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:detect_only_medium_or_high_defects]</span><span class="w"></span>

@@ -39,3 +39,4 @@ anywhere in the world or integrate with :ref:`ci` systems.
     frameworks/index
     simulators/index
     semihosting
+    cli

@@ -65,10 +65,10 @@ Contents
     :caption: Advanced
     :maxdepth: 1
 
-    Debugging <plus/debugging>
+    plus/debugging
     advanced/unit-testing/index
-    Static Code Analysis <plus/pio-check>
-    Remote Development <plus/pio-remote>
+    advanced/static-code-analysis/index
+    plus/pio-remote
     plus/pio-account
 
 .. toctree::

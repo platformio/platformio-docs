@@ -91,10 +91,20 @@ first item from pair ``<option> = value``.
     lib_deps =
       ${extra.lib_deps_builtin}
       ${extra.lib_deps_external}
+    platform_packages =
+      platformio/tool-simavr
+    test_speed = 9600
+    test_testing_command =
+      ${platformio.packages_dir}/tool-simavr/bin/simavr
+      -m
+      atmega328p
+      -f
+      16000000L
+      ${platformio.build_dir}/${this.__env__}/firmware.elf
 
-    [env:nodemcuv2]
-    platform = espressif8266
-    board = nodemcuv2
+    [env:esp32dev]
+    platform = espressif32
+    board = esp32dev
     build_flags = ${env.build_flags} -Wall
     lib_deps =
       ${extra.lib_deps_builtin}
@@ -111,15 +121,6 @@ first item from pair ``<option> = value``.
     ; Windows
     ; set WIFI_SSID='"my ssid name"'
     ; set WIFI_PASS='"my password"'
-
-    [env:esp32dev]
-    extends = env:nodemcuv2
-    platform = espressif32
-    board = esp32dev
-    build_flags =
-      ${env.build_flags}
-      -DWIFI_SSID=${sysenv.WIFI_SSID}
-      -DWIFI_PASS=${sysenv.WIFI_PASS}
 
 
 .. warning::

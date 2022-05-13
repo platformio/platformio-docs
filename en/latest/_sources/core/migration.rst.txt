@@ -231,7 +231,7 @@ Hardware-less development
 
 It's hard to imagine today a next-gen project development workflow that does
 not benefit from :ref:`ci` systems. PlatformIO already provides multiple
-solutions to improve code quality including :ref:`piocheck`. In addition to
+solutions to improve code quality including :ref:`check`. In addition to
 the testing frameworks that allow you to mock objects and simulate the
 behavior of real objects, the PlatformIO Core 6.0 adds support for the
 :ref:`unit_testing_simulators`.

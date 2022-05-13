@@ -59,7 +59,7 @@ Useful options that can be used used for adjusting check process:
 .. toctree::
   :maxdepth: 2
 
-  ../../projectconf/section_env_check
+  ../../../projectconf/section_env_check
 
 Extra flags
 -----------
@@ -111,19 +111,19 @@ Obtaining license
 -----------------
 
 Since **PVS-Studio** is a paid B2B solution, `a license <https://www.viva64.com/en/order>`__
-should be purchased. But PVS-Studio can be used for free of charge, for example for 
-checking open source projects. More information about the cases when you can get a free 
-**PVS-Studio** license can be found on `the official webpage <https://www.viva64.com/en/open-source-license/>`__. 
+should be purchased. But PVS-Studio can be used for free of charge, for example for
+checking open source projects. More information about the cases when you can get a free
+**PVS-Studio** license can be found on `the official webpage <https://www.viva64.com/en/open-source-license/>`__.
 
 .. tip::
     If you're experiencing problems with the license file or see the following error message:
     ``License information is incorrect. Please check your registration data or contact
     Customer Support``, try saving the license file in ``UTF-8 + BOM`` format with the
     following contents:
-    
+
     .. code-block:: none
 
         name@domain.com
         AAAA-BBBB-CCCC-DDDD
-    
-    
+
+

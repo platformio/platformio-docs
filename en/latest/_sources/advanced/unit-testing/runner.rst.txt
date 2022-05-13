@@ -109,12 +109,3 @@ Hybrid
 The tests that work on a host machine and on the embedded target are hybrid tests.
 You can run them using :ref:`platform_native` development platform or
 embedded development :ref:`platforms`.
-
-CLI Guide
-~~~~~~~~~
-
-.. toctree::
-  :maxdepth: 3
-
-  pio test <../../core/userguide/cmd_test>
-  pio remote test <../../core/userguide/remote/cmd_test>

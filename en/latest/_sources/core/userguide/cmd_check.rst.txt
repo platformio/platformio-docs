@@ -14,7 +14,7 @@
 pio check
 =========
 
-Helper command for :ref:`piocheck`.
+Helper command for :ref:`check`.
 
 .. contents::
 
@@ -30,7 +30,7 @@ Description
 
 Perform static analysis check on PlatformIO based project. By default :ref:`check_tool_cppcheck` analysis tool is used.
 
-More details about PlatformIO :ref:`piocheck`.
+More details about PlatformIO :ref:`check`.
 
 Options
 -------
@@ -139,4 +139,4 @@ or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 Examples
 --------
 
-For the examples please follow to :ref:`piocheck` page.
+For the examples please follow to :ref:`check` page.

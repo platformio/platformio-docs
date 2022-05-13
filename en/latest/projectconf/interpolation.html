@@ -82,7 +82,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
@@ -212,10 +212,20 @@ allows extending of other sections.</p>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">platformio/tool-simavr</span><span class="w"></span>
+<span class="na">test_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
+<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${platformio.packages_dir}/tool-simavr/bin/simavr</span><span class="w"></span>
+<span class="w">  </span><span class="na">-m</span><span class="w"></span>
+<span class="w">  </span><span class="na">atmega328p</span><span class="w"></span>
+<span class="w">  </span><span class="na">-f</span><span class="w"></span>
+<span class="w">  </span><span class="na">16000000L</span><span class="w"></span>
+<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/firmware.elf</span><span class="w"></span>
 
-<span class="k">[env:nodemcuv2]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span><span class="w"></span>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
@@ -232,15 +242,6 @@ allows extending of other sections.</p>
 <span class="c1">; Windows</span><span class="w"></span>
 <span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span><span class="w"></span>
 <span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span><span class="w"></span>
-
-<span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">env:nodemcuv2</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${env.build_flags}</span><span class="w"></span>
-<span class="w">  </span><span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span><span class="w"></span>
-<span class="w">  </span><span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
