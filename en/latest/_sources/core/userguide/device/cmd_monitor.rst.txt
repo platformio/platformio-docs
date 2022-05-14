@@ -233,8 +233,8 @@ Custom Filters
 
 :ref:`piocore` provides an API to extend device monitor with custom filters.
 Each filter is a Python-based file and its name should have the ``filter_`` prefix.
-In a Python code, you need to extend ``DeviceMonitorFilter`` class to get access to
-the ``rx()`` and ``tx()`` methods/callbacks.
+In a Python code, you need to extend ``DeviceMonitorFilterBase`` class to get access
+to the ``rx()`` and ``tx()`` methods/callbacks.
 
 :ref:`piocore` looks for the custom filters in the next locations:
 
@@ -248,10 +248,10 @@ See the base API below:
 
 .. code-block:: python
 
-  from platformio.commands.device import DeviceMonitorFilter
+  from platformio.device.filters.base import DeviceMonitorFilterBase
 
 
-  class Demo(DeviceMonitorFilter):
+  class Demo(DeviceMonitorFilterBase):
       NAME = "demo"
 
       def __init__(self, *args, **kwargs):
@@ -267,7 +267,7 @@ See the base API below:
 
 **Examples**
 
-- https://github.com/platformio/platformio-core/tree/develop/platformio/commands/device/filters
+- https://github.com/platformio/platformio-core/tree/develop/platformio/device/filters
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor
 
