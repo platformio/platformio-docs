@@ -12,9 +12,6 @@
 Configuration
 -------------
 
-**Static Code Analysis** allows selecting what tool is used for finding
-defects in the project, what source files are checked.
-
 **Static Code Analysis** can be configured from :ref:`projectconf`
 using the next options:
 

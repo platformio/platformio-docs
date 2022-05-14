@@ -289,6 +289,8 @@ The following commands have been changed in v6.0.
       - Description
     * - :ref:`pio pkg <cmd_pkg>`
       - **NEW** Unified package management solution
+    * - :ref:`cmd_project_init`
+      - **NEW** :option:`pio project init --no-install-dependencies` option
     * - :ref:`cmd_run`
       - **NEW** :option:`pio run --program-arg` option
     * - :ref:`cmd_test`

@@ -23,7 +23,6 @@ Usage
 
     pio project init [OPTIONS]
 
-
 Description
 -----------
 
@@ -92,9 +91,14 @@ For example, the default environment name for :ref:`board_teensy_teensy31`
 board will be ``[env:teensy31]``.
 
 .. option::
+    --no-install-dependencies
+
+Do not resolve project dependencies and do not install missed packages.
+
+.. option::
     -s, --silent
 
-Suppress progress reporting
+Suppress progress reporting.
 
 Examples
 --------
