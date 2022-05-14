@@ -54,19 +54,8 @@ Options
 .. option::
     -p, --port
 
-Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
-option.
-
-**URL Handlers**
-
-* `rfc2217://<host>:<port>[?<option>[&<option>...]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217>`__
-* `socket://<host>:<port>[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#socket>`__
-* `loop://[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#loop>`__
-* `hwgrep://<regexp>[&skip_busy][&n=N] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#hwgrep>`__
-* `spy://port[?option[=value][&option[=value]]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#spy>`__
-* `alt://port?class=<classname> <https://pyserial.readthedocs.io/en/latest/url_handlers.html#alt>`__
+The possible values are the same as documented for
+:ref:`projectconf_monitor_port` option.
 
 .. option::
     -b, --baud

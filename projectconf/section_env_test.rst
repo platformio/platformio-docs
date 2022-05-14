@@ -119,24 +119,14 @@ Also, you can override this option using :option:`pio test --ignore` command.
 Type: ``String (Pattern)`` | Multiple: ``No``
 
 This option specifies communication interface between PlatformIO
-:ref:`unit_testing` Test Runner and the target device. For example,
-
-* ``/dev/ttyUSB0`` - Unix-based OS
-* ``COM3`` - Windows OS
-* ``socket://<host>:<port>[?logging={debug|info|warning|error}]`` - connect to TCP/IP server
-* ``rfc2217://<host>:<port>[?<option>[&<option>...]]`` - connect
-  to RFC 2217 compatible server (see `available options <https://pythonhosted.org/pyserial/url_handlers.html>`__).
+:ref:`unit_testing` Test Runner and the target device. The possible
+values are the same as documented for :ref:`projectconf_monitor_port`
+option.
 
 If ``test_port`` isn't specified, the PlatformIO :ref:`unit_testing`
 runner will try to detect it automatically.
 
 To print all available serial ports use the :ref:`cmd_device_list` command.
-
-**Useful scripts/bridges:**
-
-* `TCP/IP - serial bridge <https://pyserial.readthedocs.io/en/latest/examples.html#tcp-ip-serial-bridge>`__
-* `Single-port TCP/IP - serial bridge (RFC 2217) <https://pyserial.readthedocs.io/en/latest/examples.html#single-port-tcp-ip-serial-bridge-rfc-2217>`__
-* `Multi-port TCP/IP - serial bridge (RFC 2217) <https://pyserial.readthedocs.io/en/latest/examples.html#multi-port-tcp-ip-serial-bridge-rfc-2217>`__
 
 .. _projectconf_test_speed:
 
