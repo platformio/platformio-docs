@@ -183,11 +183,11 @@ please take a look at the :ref:`projectconf_test_testing_command`.
     --list-tests
 
 List project tests without processing.
-The :option:`pio test --json-output` or :option:`pio test --junit-output`
+The :option:`pio test --json-output-path` or :option:`pio test --junit-output-path`
 options can be used for dumping available test suites.
 
 .. option::
-    --json-output
+    --json-output-path
 
 Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
 format and save it to the specified path. If the only folder path is provided,
@@ -195,9 +195,9 @@ the file name will be generated automatically.
 Please note that the parent folder must exist before.
 
 .. option::
-    --junit-output
+    --junit-output-path
 
-The same as :option:`pio test --json-output` but generates a report in the
+The same as :option:`pio test --json-output-path` but generates a report in the
 `JUnit XML <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>`_
 format.
 
