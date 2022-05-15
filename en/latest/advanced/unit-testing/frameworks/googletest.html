@@ -206,8 +206,13 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// should be the same value as for the `test_speed` option in &quot;platformio.ini&quot;</span>
+<span class="w">    </span><span class="c1">// default value is test_speed=115200</span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// give the 1-2 seconds to the test runner to connect to the board</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+
 <span class="w">    </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">InitGoogleTest</span><span class="p">();</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
 <span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
@@ -423,7 +428,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.0rc2 (latest)
+    v6.0.0rc3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
