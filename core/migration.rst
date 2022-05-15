@@ -294,8 +294,8 @@ The following commands have been changed in v6.0.
     * - :ref:`cmd_run`
       - **NEW** :option:`pio run --program-arg` option
     * - :ref:`cmd_test`
-      - **NEW** :option:`pio test --program-arg`, :option:`pio test --json-output`,
-        :option:`pio test --junit-output`, and :option:`pio test --list-tests` options
+      - **NEW** :option:`pio test --program-arg`, :option:`pio test --json-output-path`,
+        :option:`pio test --junit-output-path`, and :option:`pio test --list-tests` options
     * - :ref:`cmd_lib`
       - **DEPRECATED** in favor of :ref:`cmd_pkg`
     * - :ref:`cmd_platform`
