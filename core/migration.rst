@@ -296,6 +296,8 @@ The following commands have been changed in v6.0.
     * - :ref:`cmd_test`
       - **NEW** :option:`pio test --program-arg`, :option:`pio test --json-output-path`,
         :option:`pio test --junit-output-path`, and :option:`pio test --list-tests` options
+    * - :ref:`cmd_project_metadata`
+      - **RENAMED** ``pio package data`` to the :ref:`cmd_project_metadata`
     * - :ref:`cmd_lib`
       - **DEPRECATED** in favor of :ref:`cmd_pkg`
     * - :ref:`cmd_platform`

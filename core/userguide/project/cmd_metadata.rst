@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _cmd_project_data:
+.. _cmd_project_metadata:
 
-pio project data
-================
+pio project metadata
+====================
 
 .. contents::
 
@@ -21,13 +21,13 @@ Usage
 
 .. code-block:: bash
 
-    pio project data [OPTIONS]
+    pio project metadata [OPTIONS]
 
 
 Description
 -----------
 
-Dump data intended for IDE extensions/plugins:
+Dump a build metadata intended for IDE extensions/plugins:
 
 - Toolchain type and location
 - Compiler flags
@@ -41,7 +41,7 @@ Dump data intended for IDE extensions/plugins:
 Options
 ~~~~~~~
 
-.. program:: pio project data
+.. program:: pio project metadata
 
 .. option::
     -d, --project-dir
@@ -57,4 +57,12 @@ Dump specified environments. Multiple environments are allowed.
 .. option::
     --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`__ format.
+
+.. option::
+    --json-output-path
+
+Dump metadata in `JSON <https://en.wikipedia.org/wiki/JSON>`__ format
+and save it to the specified path. If the only folder path is provided,
+the file name will be generated automatically.
+Please note that the parent folder must exist before.
