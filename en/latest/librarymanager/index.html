@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Library Management &mdash; PlatformIO latest documentation</title>
+  <title>Library Management &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quick Start" href="quickstart.html" />
-    <link rel="prev" title="Build external sources" href="../scripting/examples/external_sources.html" />
+    <link rel="next" title="Dependency Management" href="dependencies.html" />
+    <link rel="prev" title="Environment variables" href="../envvars.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -55,6 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
@@ -62,14 +63,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Library Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html">Dependency Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ldf.html">Library Dependency Finder (LDF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html">Configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="config.html">library.json</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating.html">Creating Library</a></li>
 </ul>
@@ -81,11 +81,11 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -130,28 +130,20 @@
              
   <section id="library-management">
 <span id="librarymanager"></span><h1>Library Management<a class="headerlink" href="#library-management" title="Permalink to this headline">¶</a></h1>
-<p><em>PlatformIO Library Manager</em> is a tool for managing libraries of
+<p><strong>PlatformIO Library Manager</strong> is a tool for managing libraries of
 <a class="reference external" href="https://registry.platformio.org/">PlatformIO Registry</a> and VCS repositories (Git,
 Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date. PlatformIO Library Manager supports
-<a class="reference external" href="http://semver.org">Semantic Versioning</a> and its rules.</p>
-<hr class="docutils" />
-<p><a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> has built-in <a class="reference internal" href="../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a> with a modern GUI which allows:</p>
-<ul class="simple">
-<li><p>Search for new libraries in PlatformIO Registry</p></li>
-<li><p>“1-click” library installation, per-project libraries, extra storages</p></li>
-<li><p>List installed libraries in multiple storages</p></li>
-<li><p>List built-in libraries (by frameworks)</p></li>
-<li><p>Updates for installed libraries</p></li>
-<li><p>Multiple examples, trending libraries, and more.</p></li>
-</ul>
-<img alt="../_images/pio-home-library-search.png" src="../_images/pio-home-library-search.png" />
+up-to-date.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#project-dependencies">Project dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#platformio-ide">PlatformIO IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#cli-guide">CLI Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependency Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#library-registry">Library Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#library-sources">Library sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#dependency-specifications">Dependency specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#declaring-dependencies">Declaring dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#declaring-practices">Declaring practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#installing-dependencies">Installing dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html#updating-dependencies">Updating dependencies</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ldf.html">Library Dependency Finder (LDF)</a><ul>
@@ -162,13 +154,8 @@ up-to-date. PlatformIO Library Manager supports
 <li class="toctree-l2"><a class="reference internal" href="ldf.html#c-c-preprocessor-conditional-syntax">C/C++ Preprocessor conditional syntax</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/section_env_library.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-deps"><code class="docutils literal notranslate"><span class="pre">lib_deps</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-ignore"><code class="docutils literal notranslate"><span class="pre">lib_ignore</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-extra-dirs"><code class="docutils literal notranslate"><span class="pre">lib_extra_dirs</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-ldf-mode"><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-compat-mode"><code class="docutils literal notranslate"><span class="pre">lib_compat_mode</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-archive"><code class="docutils literal notranslate"><span class="pre">lib_archive</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html">Library options</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="config.html">library.json</a><ul>
@@ -206,8 +193,8 @@ up-to-date. PlatformIO Library Manager supports
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../scripting/examples/external_sources.html" class="btn btn-neutral float-left" title="Build external sources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quick Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../envvars.html" class="btn btn-neutral float-left" title="Environment variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dependencies.html" class="btn btn-neutral float-right" title="Dependency Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -328,7 +315,7 @@ up-to-date. PlatformIO Library Manager supports
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.0rc3 (latest)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

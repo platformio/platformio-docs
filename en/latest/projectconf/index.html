@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>“platformio.ini” (Project Configuration File) &mdash; PlatformIO latest documentation</title>
+  <title>“platformio.ini” (Project Configuration File) &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -55,6 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
@@ -68,7 +69,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -80,11 +80,11 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -138,15 +138,9 @@ are ignored and may be used to provide comments.</p>
 <p>Multiple value options can be specified in two ways:</p>
 <ol class="arabic simple">
 <li><p>Split values with “, ” (comma + space)</p></li>
-<li><p>Multi-line format, where each new line starts with at least two spaces</p></li>
+<li><p>Multi-line format, where each new line starts with at least two spaces.</p></li>
 </ol>
-<p>There are two required sections:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> settings: <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></li>
-<li><p>Environment settings: <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></li>
-</ul>
-<p>The other sections are optional to include. Here are the allowed
-sections and their allowed contents:</p>
+<p>Here are the allowed sections and their allowed contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a><ul>
@@ -156,7 +150,7 @@ sections and their allowed contents:</p>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="section_env.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html#environment-env-name">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_env.html#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env.html#options">Options</a></li>
 </ul>
 </li>
@@ -165,7 +159,7 @@ sections and their allowed contents:</p>
 </ul>
 </div>
 <p><strong>Example</strong></p>
-<p>For more examples, see <a class="reference internal" href="examples.html#projectconf-examples"><span class="std std-ref">Examples</span></a>.</p>
+<p>For more examples, see <a class="reference internal" href="../tutorials/index.html#tutorials"><span class="std std-ref">official project examples and community projects</span></a>.</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
 <span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
 
@@ -364,7 +358,7 @@ sections and their allowed contents:</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.0rc3 (latest)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

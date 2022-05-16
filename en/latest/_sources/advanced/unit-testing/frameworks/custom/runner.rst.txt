@@ -32,7 +32,7 @@ class. See a base example of ``test_custom_runner.py``:
 
 .. code:: python
 
-    from platformio.test.runners.base import TestRunnerBase
+    from platformio.shared import TestRunnerBase
 
     class CustomTestRunner(TestRunnerBase):
         pass
@@ -43,33 +43,31 @@ let's override a "testing" stage for the :ref:`unit_testing_frameworks_unity`:
 
 .. code:: python
 
-    from platformio.test.result import TestCase, TestCaseSource, TestStatus
-    from platformio.test.runners.unity import UnityTestRunner
+    from platformio.shared import TestCase, TestCaseSource, TestStatus, UnityTestRunner
+
 
     class CustomTestRunner(UnityTestRunner):
-
         def stage_testing(self):
             # 1. Gather test results from Serial, HTTP, Socket, or other sources
             # 2. Report test results (add cases)
 
             # Exmaple: Report succeed result with duration (optional)
-            self.test_suite.add_case(TestCase(
-                name="test_connectivity",
-                status=TestStatus.PASSED,
-                duration=1.34
-            ))
+            self.test_suite.add_case(
+                TestCase(name="test_connectivity", status=TestStatus.PASSED, duration=1.34)
+            )
 
             # Example: Report failed result with source file
-            self.test_suite.add_case(TestCase(
-                name="test_calculator_division",
-                status=TestStatus.FAILED,
-                message="Expected 32 Was 33",
-                stdout="test/test_desktop/test_calculator.cpp:43:test_calculator_division:FAIL: Expected 32 Was 33",
-                duration=0.44,
-                source=TestCaseSource(
-                    file="test/test_desktop/test_calculator.cpp",
-                    line=43
+            self.test_suite.add_case(
+                TestCase(
+                    name="test_calculator_division",
+                    status=TestStatus.FAILED,
+                    message="Expected 32 Was 33",
+                    stdout="test/test_desktop/test_calculator.cpp:43:test_calculator_division:FAIL: Expected 32 Was 33",
+                    duration=0.44,
+                    source=TestCaseSource(
+                        file="test/test_desktop/test_calculator.cpp", line=43
+                    ),
                 )
-            ))
+            )
 
 See more custom test runner :ref:`unit_testing_frameworks_custom_examples`.
