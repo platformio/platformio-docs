@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interpolation of Values &mdash; PlatformIO v5.2 documentation</title>
+  <title>Interpolation of Values &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Build Configurations" href="build_configurations.html" />
+    <link rel="next" title="Examples" href="examples.html" />
     <link rel="prev" title="Advanced options" href="section_env_advanced.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -55,6 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
@@ -63,12 +64,11 @@
 <li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interpolation of Values</a></li>
-<li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -78,13 +78,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -96,7 +96,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -137,30 +137,40 @@ to contain format strings which refer to other values from foreign sections.</p>
 first item from pair <code class="docutils literal notranslate"><span class="pre">&lt;option&gt;</span> <span class="pre">=</span> <span class="pre">value</span></code>.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Syntax</p></th>
 <th class="head"><p>Meaning</p></th>
+<th class="head"><p>Example</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.&lt;name&gt;}</span></code></p></td>
-<td><p>Embed system environment variable by a name. For example,
-<code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
+<td><p>Embed system environment variable by a name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${platformio.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a>. For example,
-<code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
+<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${env.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>. For example,
-<code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags.</p></td>
+<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${&lt;section&gt;.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from another section. For example, <code class="docutils literal notranslate"><span class="pre">${extra.lib_deps}</span></code> embeds
-library dependencies declared in the section named <code class="docutils literal notranslate"><span class="pre">extra</span></code>.</p></td>
+<td><p>Embed value from another section.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${extra.lib_deps}</span></code> embeds library dependencies declared in the section named <code class="docutils literal notranslate"><span class="pre">extra</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${this.&lt;option&gt;}</span></code></p></td>
+<td><p>Embed value from the current section without declaring a section name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${this.board}</span></code> refers to the “board” value of the current section</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${this.__env__}</span></code></p></td>
+<td><p>Embed environment name of the current section. The section must start with <code class="docutils literal notranslate"><span class="pre">env:</span></code> prefix</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${this.__name__}</span></code> will embed “foo” value being declared in the “env:foo” section</p></td>
 </tr>
 </tbody>
 </table>
@@ -202,10 +212,20 @@ allows extending of other sections.</p>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">platformio/tool-simavr</span><span class="w"></span>
+<span class="na">test_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
+<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">  </span><span class="na">${platformio.packages_dir}/tool-simavr/bin/simavr</span><span class="w"></span>
+<span class="w">  </span><span class="na">-m</span><span class="w"></span>
+<span class="w">  </span><span class="na">atmega328p</span><span class="w"></span>
+<span class="w">  </span><span class="na">-f</span><span class="w"></span>
+<span class="w">  </span><span class="na">16000000L</span><span class="w"></span>
+<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/firmware.elf</span><span class="w"></span>
 
-<span class="k">[env:nodemcuv2]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="k">[env:esp32dev]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span><span class="w"></span>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
@@ -222,15 +242,6 @@ allows extending of other sections.</p>
 <span class="c1">; Windows</span><span class="w"></span>
 <span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span><span class="w"></span>
 <span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span><span class="w"></span>
-
-<span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">extends</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">env:nodemcuv2</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${env.build_flags}</span><span class="w"></span>
-<span class="w">  </span><span class="na">-DWIFI_SSID</span><span class="o">=</span><span class="s">${sysenv.WIFI_SSID}</span><span class="w"></span>
-<span class="w">  </span><span class="na">-DWIFI_PASS</span><span class="o">=</span><span class="s">${sysenv.WIFI_PASS}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -249,7 +260,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="section_env_advanced.html" class="btn btn-neutral float-left" title="Advanced options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="build_configurations.html" class="btn btn-neutral float-right" title="Build Configurations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -283,34 +294,34 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -370,7 +381,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

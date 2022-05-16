@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qt Creator &mdash; PlatformIO v5.2 documentation</title>
+  <title>Qt Creator &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -55,13 +55,14 @@
 <li class="toctree-l1"><a class="reference internal" href="pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -71,13 +72,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul class="current">
@@ -110,7 +111,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -156,13 +157,6 @@ page for more detailed information.</p>
 <li><p><a class="reference internal" href="#integration" id="id3">Integration</a></p>
 <ul>
 <li><p><a class="reference internal" href="#project-generator" id="id4">Project Generator</a></p></li>
-<li><p><a class="reference internal" href="#manual-integration" id="id5">Manual Integration</a></p>
-<ul>
-<li><p><a class="reference internal" href="#setup-new-project" id="id6">Setup New Project</a></p></li>
-<li><p><a class="reference internal" href="#first-program-in-qt-creator" id="id7">First program in Qt Creator</a></p></li>
-<li><p><a class="reference internal" href="#conclusion" id="id8">Conclusion</a></p></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -180,6 +174,7 @@ page for more detailed information.</p>
 </ol>
 <section id="project-generator">
 <h3><a class="toc-backref" href="#id4">Project Generator</a><a class="headerlink" href="#project-generator" title="Permalink to this headline">¶</a></h3>
+<p>The generator will create a [Qt Creator generic project](<a class="reference external" href="https://doc.qt.io/qtcreator/creator-project-generic.html">https://doc.qt.io/qtcreator/creator-project-generic.html</a>).</p>
 <p>Choose board <code class="docutils literal notranslate"><span class="pre">ID</span></code> using <a class="reference internal" href="../../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> or <a class="reference external" href="https://platformio.org/boards">Embedded Boards Explorer</a>
 command and generate project via <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a> command:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio project init --ide qtcreator --board &lt;ID&gt;
@@ -191,124 +186,17 @@ pio project init --ide qtcreator --board uno
 <p>Then:</p>
 <ol class="arabic simple">
 <li><p>Import project via <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span></code> and select
-<code class="docutils literal notranslate"><span class="pre">platformio.pro</span></code> from the folder where is located <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
-<li><p>Select default desktop kit and click on <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">Project</span></code> (<code class="docutils literal notranslate"><span class="pre">Projects</span></code>
-mode, left panel)</p></li>
-<li><p>Set <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">directory</span></code> to the project directory where
-is located <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
-<li><p>Remove all items from <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Steps</span></code>, click on
-<code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Steps</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">Build</span> <span class="pre">Step</span> <span class="pre">&gt;</span> <span class="pre">Custom</span> <span class="pre">Process</span> <span class="pre">Step</span></code> and set:</p>
-<ul class="simple">
-<li><p><strong>Command</strong>: <code class="docutils literal notranslate"><span class="pre">platformio</span></code></p></li>
-<li><p><strong>Arguments</strong>: <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">-c</span> <span class="pre">qtcreator</span> <span class="pre">run</span></code></p></li>
-<li><p><strong>Working directory</strong>: <code class="docutils literal notranslate"><span class="pre">%{buildDir}</span></code></p></li>
-</ul>
-</li>
-<li><p>Remove all items from <code class="docutils literal notranslate"><span class="pre">Clean</span> <span class="pre">Steps</span></code>, click on
-<code class="docutils literal notranslate"><span class="pre">Clean</span> <span class="pre">Steps</span> <span class="pre">&gt;</span> <span class="pre">Add</span> <span class="pre">Clean</span> <span class="pre">Step</span> <span class="pre">&gt;</span> <span class="pre">Custom</span> <span class="pre">Process</span> <span class="pre">Step</span></code> and set:</p>
-<ul class="simple">
-<li><p><strong>Command</strong>: <code class="docutils literal notranslate"><span class="pre">platformio</span></code></p></li>
-<li><p><strong>Arguments</strong>: <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">-c</span> <span class="pre">qtcreator</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">clean</span></code></p></li>
-<li><p><strong>Working directory</strong>: <code class="docutils literal notranslate"><span class="pre">%{buildDir}</span></code></p></li>
-</ul>
-</li>
-<li><p>Update <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Environment</span> <span class="pre">&gt;</span> <span class="pre">PATH</span> <span class="pre">&gt;</span> <span class="pre">EDIT</span></code> with the result of
-this command (paste in Terminal):</p></li>
-</ol>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Linux, Mac</span>
-<span class="nb">echo</span> <span class="nv">$PATH</span>
-
-<span class="c1"># Windows</span>
-<span class="nb">echo</span> %PATH%
-</pre></div>
-</div>
-<ol class="arabic simple" start="7">
+<code class="docutils literal notranslate"><span class="pre">platformio.creator</span></code> from the folder where is located <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
 <li><p>Switch to <code class="docutils literal notranslate"><span class="pre">Edit</span></code> mode (left panel) and open source file from <code class="docutils literal notranslate"><span class="pre">src</span></code>
 directory (<code class="docutils literal notranslate"><span class="pre">*.c,</span> <span class="pre">*.cpp,</span> <span class="pre">*.ino,</span> <span class="pre">etc.</span></code>)</p></li>
 <li><p>Build project: <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Build</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">All</span></code>.</p></li>
 </ol>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-3.png"><img alt="../../_images/ide-qtcreator-3.png" src="../../_images/ide-qtcreator-3.png" /></a>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The libraries which are added, installed or used in the project
 after generating process won’t be reflected in IDE. To fix it you
 need to reinitialize project using <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (repeat it).</p>
 </div>
-</section>
-<section id="manual-integration">
-<h3><a class="toc-backref" href="#id5">Manual Integration</a><a class="headerlink" href="#manual-integration" title="Permalink to this headline">¶</a></h3>
-<section id="setup-new-project">
-<h4><a class="toc-backref" href="#id6">Setup New Project</a><a class="headerlink" href="#setup-new-project" title="Permalink to this headline">¶</a></h4>
-<p>First of all, let’s create new project from Qt Creator Start Page: <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span></code>, then select project with <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code> type (<code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">Empty</span> <span class="pre">Qt</span> <span class="pre">Project</span></code>), fill <code class="docutils literal notranslate"><span class="pre">Name</span></code>, <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">in</span></code>.</p>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-1.png"><img alt="../../_images/ide-qtcreator-1.png" src="../../_images/ide-qtcreator-1.png" /></a>
-<p>On the next steps select any available kit and click Finish button.</p>
-<img alt="../../_images/ide-qtcreator-2.png" src="../../_images/ide-qtcreator-2.png" />
-<p>Secondly, we need to delete default build and clean steps and configure project with PlatformIO Build System (click on Projects label on left menu or <code class="docutils literal notranslate"><span class="pre">Ctrl+5</span></code> shortcut):</p>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-3.png"><img alt="../../_images/ide-qtcreator-3.png" src="../../_images/ide-qtcreator-3.png" /></a>
-<p>Thirdly, change project file by adding path to directories with header files. Please edit project file to match the following contents:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>win32 {
-    HOMEDIR += $$(USERPROFILE)
-}
-else {
-    HOMEDIR += $$(HOME)
-}
-
-INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/framework-arduinoavr/cores/arduino&quot;
-INCLUDEPATH += &quot;$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/include&quot;
-</pre></div>
-</div>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-4.png"><img alt="../../_images/ide-qtcreator-4.png" src="../../_images/ide-qtcreator-4.png" /></a>
-</section>
-<section id="first-program-in-qt-creator">
-<h4><a class="toc-backref" href="#id7">First program in Qt Creator</a><a class="headerlink" href="#first-program-in-qt-creator" title="Permalink to this headline">¶</a></h4>
-<p>Simple “Blink” project will consist from two files:
-1. In the console, navigate to the root of your project folder and initialize pio project with <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a>
-2. The main “C” source file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> must be located in the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory.
-Let’s create new text file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">New</span> <span class="pre">File</span> <span class="pre">or</span> <span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Text</span> <span class="pre">File</span></code>:</p>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-5.png"><img alt="../../_images/ide-qtcreator-5.png" src="../../_images/ide-qtcreator-5.png" /></a>
-<p>Copy the source code which is described below to file <code class="docutils literal notranslate"><span class="pre">main.c</span></code>.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
-<span class="cp">#define WLED    13  </span><span class="c1">// Most Arduino boards already have an LED attached to pin 13 on the board itself</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">  </span><span class="c1">// set pin as output</span>
-<span class="p">}</span><span class="w"></span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">  </span><span class="c1">// set the LED on</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">               </span><span class="c1">// wait for a second</span>
-<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">WLED</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">   </span><span class="c1">// set the LED off</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">               </span><span class="c1">// wait for a second</span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Locate the project configuration file named <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> at the root of the project directory and open it.</p></li>
-</ol>
-<a class="reference external image-reference" href="../../_images/ide-qtcreator-6.png"><img alt="../../_images/ide-qtcreator-6.png" src="../../_images/ide-qtcreator-6.png" /></a>
-<p>Edit the content to match the code described below.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">;   Build options: build flags, source filter, extra scripting</span><span class="w"></span>
-<span class="c1">;   Upload options: custom port, speed and extra flags</span><span class="w"></span>
-<span class="c1">;   Library options: dependencies, extra library storages</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Please visit documentation for the other options and examples</span><span class="w"></span>
-<span class="c1">; https://docs.platformio.org/page/projectconf.html</span><span class="w"></span>
-
-<span class="k">[env:arduino_uno]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
-</pre></div>
-</div>
-</section>
-<section id="conclusion">
-<h4><a class="toc-backref" href="#id8">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h4>
-<p>Taking everything into account, we can build project with shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+B</span></code> or using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Build</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">All</span></code>.</p>
-</section>
 </section>
 </section>
 </section>
@@ -352,34 +240,34 @@ Let’s create new text file named <code class="docutils literal notranslate"><s
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -439,7 +327,7 @@ Let’s create new text file named <code class="docutils literal notranslate"><s
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

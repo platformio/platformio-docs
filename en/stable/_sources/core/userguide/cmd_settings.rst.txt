@@ -43,55 +43,15 @@ Get/List existing settings
 Settings
 ~~~~~~~~
 
-.. _setting_auto_update_libraries:
-
-``auto_update_libraries``
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-:Default:   No
-:Values:    Yes/No
-
-Automatically update libraries.
-
-.. _setting_auto_update_platforms:
-
-``auto_update_platforms``
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-:Default:   No
-:Values:    Yes/No
-
-Automatically update platforms.
-
-.. _setting_check_libraries_interval:
-
-``check_libraries_interval``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-:Default:   7
-:Values:    Days (Number)
-
-Check for the library updates interval.
-
 .. _setting_check_platformio_interval:
 
 ``check_platformio_interval``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Default:   3
-:Values:    Days (Number)
-
-Check for the new PlatformIO interval.
-
-.. _setting_check_platforms_interval:
-
-``check_platforms_interval``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 :Default:   7
 :Values:    Days (Number)
 
-Check for the platform updates interval.
+An interval for checking for the new version of PlatformIO Core.
 
 .. _setting_check_prune_system_threshold:
 
@@ -116,7 +76,7 @@ Do disable checking for unnecessary data, please set threshold to ``0`` using
 :Default:   Yes
 :Values:    Yes/No
 
-Enable caching for API requests and Library Manager
+Enable caching for Package Manager and for API requests.
 
 .. _setting_enable_telemetry:
 
@@ -186,14 +146,10 @@ Examples
 
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
-    auto_update_libraries           No                Automatically update libraries (Yes/No)
-    auto_update_platforms           No                Automatically update platforms (Yes/No)
-    check_libraries_interval        7                 Check for the library updates interval (days)
-    check_platformio_interval       3                 Check for the new PlatformIO interval (days)
-    check_platforms_interval        7                 Check for the platform updates interval (days)
+    check_platformio_interval       7                 Check for the new PlatformIO Core interval (days)
     check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
-    enable_cache                    Yes               Enable caching for API requests and Library Manager
-    enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
+    enable_cache                    Yes               Enable caching for HTTP API requests
+    enable_telemetry                Yes               Telemetry service <https://bit.ly/pio-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)
 
@@ -202,10 +158,10 @@ Examples
 
 .. code-block:: bash
 
-    > pio settings get auto_update_platforms
+    > pio settings get check_prune_system_threshold
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
-    auto_update_platforms           Yes               Automatically update platforms (Yes/No)
+    check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
 
 .. _cmd_settings_set:
 
@@ -228,7 +184,7 @@ Set new value for the setting
 Examples
 ~~~~~~~~
 
-Change to check for the new PlatformIO each day
+Change to check for the new PlatformIO Core each day
 
 .. code-block:: bash
 
@@ -236,7 +192,7 @@ Change to check for the new PlatformIO each day
     The new value for the setting has been set!
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
-    check_platformio_interval       1 [3]             Check for the new PlatformIO interval (days)
+    check_platformio_interval       1 [7]             Check for the new PlatformIO interval (days)
 
 
 .. _cmd_settings_reset:
@@ -267,13 +223,9 @@ Examples
 
     Name                            Value [Default]   Description
     ------------------------------------------------------------------------------------------
-    auto_update_libraries           No                Automatically update libraries (Yes/No)
-    auto_update_platforms           No                Automatically update platforms (Yes/No)
-    check_libraries_interval        7                 Check for the library updates interval (days)
-    check_platformio_interval       3                 Check for the new PlatformIO interval (days)
-    check_platforms_interval        7                 Check for the platform updates interval (days)
+    check_platformio_interval       7                 Check for the new PlatformIO Core interval (days)
     check_prune_system_threshold    1024              Check for pruning unnecessary data threshold (megabytes)
-    enable_cache                    Yes               Enable caching for API requests and Library Manager
-    enable_telemetry                Yes               Telemetry service?#enable-telemetry> (Yes/No)
+    enable_cache                    Yes               Enable caching for HTTP API requests
+    enable_telemetry                Yes               Telemetry service <https://bit.ly/pio-telemetry> (Yes/No)
     force_verbose                   No                Force verbose output when processing environments
     projects_dir                    ~/Documents/PlatformIO/Projects Default location for PlatformIO projects (PlatformIO Home)

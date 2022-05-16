@@ -45,6 +45,7 @@ ASR Microelectronics ASR650x
     asrmicro650x/cubecell_capsule_solar_sensor
     asrmicro650x/cubecell_node
     asrmicro650x/cubecell_board
+    asrmicro650x/cubecell_board_pro
     asrmicro650x/cubecell_board_plus
     asrmicro650x/cubecell_capsule
     asrmicro650x/cubecell_gps
@@ -416,6 +417,11 @@ Espressif 32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/featheresp32-s2
+    espressif32/adafruit_feather_esp32s2_tft
+    espressif32/adafruit_funhouse_esp32s2
+    espressif32/adafruit_magtag29_esp32s2
+    espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_qtpy_esp32s2
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
@@ -424,6 +430,10 @@ Espressif 32
     espressif32/d-duino-32
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
+    espressif32/deneyapkart
+    espressif32/deneyapmini
+    espressif32/denky_d4
+    espressif32/denky32
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
@@ -432,6 +442,7 @@ Espressif 32
     espressif32/espino32
     espressif32/etboard
     espressif32/esp320
+    espressif32/atmegazero_esp32s2
     espressif32/esp-wrover-kit
     espressif32/esp32dev
     espressif32/esp32-c3-devkitm-1
@@ -439,7 +450,9 @@ Espressif 32
     espressif32/esp32-s2-saola-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
+    espressif32/franzininho_wifi_esp32s2
     espressif32/esp32-s2-franzininho
+    espressif32/franzininho_wifi_msc_esp32s2
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
@@ -471,6 +484,7 @@ Espressif 32
     espressif32/mhetesp32devkit
     espressif32/mhetesp32minikit
     espressif32/magicbit
+    espressif32/kb32-ft
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/node32s
@@ -489,23 +503,33 @@ Espressif 32
     espressif32/pycom_gpy
     espressif32/lopy
     espressif32/lopy4
+    espressif32/wipy3
     espressif32/qchip
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/wesp32
+    espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
     espressif32/esp32thing_plus
+    espressif32/sparkfun_esp32s2_thing_plus
     espressif32/sparkfun_lora_gateway_1-channel
+    espressif32/dpu_esp32
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
     espressif32/ttgo-lora32-v21
     espressif32/ttgo-t-beam
+    espressif32/ttgo-t-oi-plus
     espressif32/ttgo-t-watch
     espressif32/ttgo-t1
     espressif32/ttgo-t7-v13-mini32
     espressif32/ttgo-t7-v14-mini32
+    espressif32/trueverit-iot-driver
+    espressif32/trueverit-iot-driver-mk2
     espressif32/turta_iot_node
+    espressif32/um_feathers2
+    espressif32/um_feathers2_neo
     espressif32/tinypico
+    espressif32/um_tinys2
     espressif32/vintlabs-devkit-v1
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
@@ -514,11 +538,15 @@ Espressif 32
     espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
+    espressif32/wt32-eth01
     espressif32/xinabox_cw02
     espressif32/nscreen-32
+    espressif32/micros2
     espressif32/iotbusio
     espressif32/iotbusproteus
     espressif32/nina_w10
+    espressif32/upesy_wroom
+    espressif32/upesy_wrover
 
 Espressif 8266
 --------------
@@ -634,17 +662,270 @@ Intel MCS-51 (8051)
 .. toctree::
     :maxdepth: 1
         
-    intel_mcs51/n79e8432
-    intel_mcs51/n79e844
-    intel_mcs51/n79e845
-    intel_mcs51/n79e854
-    intel_mcs51/n79e855
-    intel_mcs51/stc15f204ea
-    intel_mcs51/stc15f2k60s2
-    intel_mcs51/stc15w204s
-    intel_mcs51/stc15w404as
-    intel_mcs51/stc15w408as
-    intel_mcs51/stc89c52rc
+    intel_mcs51/CH559
+    intel_mcs51/Generic8051
+    intel_mcs51/Generic8052
+    intel_mcs51/AT89S51
+    intel_mcs51/AT89S52
+    intel_mcs51/IAP12C5A62S2
+    intel_mcs51/IAP15F106
+    intel_mcs51/IAP15F206A
+    intel_mcs51/IAP15F2K61S
+    intel_mcs51/IAP15F2K61S2
+    intel_mcs51/IAP15F413AD
+    intel_mcs51/IAP15W105
+    intel_mcs51/IAP15W1K29S
+    intel_mcs51/IAP15W205S
+    intel_mcs51/IAP15W413AS
+    intel_mcs51/IAP15W413S
+    intel_mcs51/IAP15W4K58S4
+    intel_mcs51/IAP15W4K61S4
+    intel_mcs51/IAP15W4K63S4
+    intel_mcs51/IRC15F107W
+    intel_mcs51/IRC15F2K63S2
+    intel_mcs51/IRC15W107
+    intel_mcs51/IRC15W1K31S
+    intel_mcs51/IRC15W207S
+    intel_mcs51/IRC15W415AS
+    intel_mcs51/IRC15W415S
+    intel_mcs51/ML51BB9AE
+    intel_mcs51/ML51DB9AE
+    intel_mcs51/ML51EB9AE
+    intel_mcs51/ML51EC0AE
+    intel_mcs51/ML51FB9AE
+    intel_mcs51/ML51LD1AE
+    intel_mcs51/ML51OB9AE
+    intel_mcs51/ML51PB9AE
+    intel_mcs51/ML51PC0AE
+    intel_mcs51/ML51SD1AE
+    intel_mcs51/ML51TB9AE
+    intel_mcs51/ML51TC0AE
+    intel_mcs51/ML51TC1AE
+    intel_mcs51/ML51TD1AE
+    intel_mcs51/ML51UB9AE
+    intel_mcs51/ML51UC0AE
+    intel_mcs51/ML51XB9AE
+    intel_mcs51/ML54LD1AE
+    intel_mcs51/ML54MD1AE
+    intel_mcs51/ML54SD1AE
+    intel_mcs51/ML56LD1AE
+    intel_mcs51/ML56MD1AE
+    intel_mcs51/ML56SD1AE
+    intel_mcs51/MS51BA9AE
+    intel_mcs51/MS51DA9AE
+    intel_mcs51/MS51EC0AE
+    intel_mcs51/MS51FB9AE
+    intel_mcs51/MS51FC0AE
+    intel_mcs51/MS51IA9AE
+    intel_mcs51/MS51PC0AE
+    intel_mcs51/MS51TC0AE
+    intel_mcs51/MS51XB9AE
+    intel_mcs51/MS51XB9BE
+    intel_mcs51/MS51XC0BE
+    intel_mcs51/N76E003
+    intel_mcs51/N76E616
+    intel_mcs51/N76E885
+    intel_mcs51/N78E055
+    intel_mcs51/N78E059
+    intel_mcs51/N78E366
+    intel_mcs51/N78E517
+    intel_mcs51/N79E352
+    intel_mcs51/N79E715
+    intel_mcs51/N79E813
+    intel_mcs51/N79E8132
+    intel_mcs51/N79E814
+    intel_mcs51/N79E815
+    intel_mcs51/N79E822
+    intel_mcs51/N79E823
+    intel_mcs51/N79E824
+    intel_mcs51/N79E825
+    intel_mcs51/N79E843
+    intel_mcs51/N79E8432
+    intel_mcs51/N79E844
+    intel_mcs51/N79E845
+    intel_mcs51/N79E854
+    intel_mcs51/N79E855
+    intel_mcs51/N79E875
+    intel_mcs51/STC12C5A08S2
+    intel_mcs51/STC12C5A16S2
+    intel_mcs51/STC12C5A32S2
+    intel_mcs51/STC12C5A40S2
+    intel_mcs51/STC12C5A48S2
+    intel_mcs51/STC12C5A52S2
+    intel_mcs51/STC12C5A56S2
+    intel_mcs51/STC12C5A60S2
+    intel_mcs51/STC15F100
+    intel_mcs51/STC15F100W
+    intel_mcs51/STC15F101
+    intel_mcs51/STC15F101E
+    intel_mcs51/STC15F101W
+    intel_mcs51/STC15F102
+    intel_mcs51/STC15F102E
+    intel_mcs51/STC15F102W
+    intel_mcs51/STC15F103
+    intel_mcs51/STC15F103E
+    intel_mcs51/STC15F103W
+    intel_mcs51/STC15F104
+    intel_mcs51/STC15F104E
+    intel_mcs51/STC15F104W
+    intel_mcs51/STC15F105
+    intel_mcs51/STC15F105E
+    intel_mcs51/STC15F105W
+    intel_mcs51/STC15F201A
+    intel_mcs51/STC15F201EA
+    intel_mcs51/STC15F202A
+    intel_mcs51/STC15F202EA
+    intel_mcs51/STC15F203A
+    intel_mcs51/STC15F203EA
+    intel_mcs51/STC15F204A
+    intel_mcs51/STC15F204EA
+    intel_mcs51/STC15F205A
+    intel_mcs51/STC15F205EA
+    intel_mcs51/STC15F2K08S2
+    intel_mcs51/STC15F2K16S2
+    intel_mcs51/STC15F2K24AS
+    intel_mcs51/STC15F2K24S2
+    intel_mcs51/STC15F2K32S2
+    intel_mcs51/STC15F2K40S2
+    intel_mcs51/STC15F2K48S2
+    intel_mcs51/STC15F2K52S2
+    intel_mcs51/STC15F2K56S2
+    intel_mcs51/STC15F2K60S2
+    intel_mcs51/STC15F408AD
+    intel_mcs51/STC15W100
+    intel_mcs51/STC15W101
+    intel_mcs51/STC15W102
+    intel_mcs51/STC15W103
+    intel_mcs51/STC15W104
+    intel_mcs51/STC15W1K16S
+    intel_mcs51/STC15W1K20S
+    intel_mcs51/STC15W1K24S
+    intel_mcs51/STC15W201S
+    intel_mcs51/STC15W202S
+    intel_mcs51/STC15W203S
+    intel_mcs51/STC15W204S
+    intel_mcs51/STC15W401AS
+    intel_mcs51/STC15W402AS
+    intel_mcs51/STC15W404AS
+    intel_mcs51/STC15W404S
+    intel_mcs51/STC15W408AS
+    intel_mcs51/STC15W408S
+    intel_mcs51/STC15W410S
+    intel_mcs51/STC15W4K16S4
+    intel_mcs51/STC15W4K32S4
+    intel_mcs51/STC15W4K40S4
+    intel_mcs51/STC15W4K48S4
+    intel_mcs51/STC15W4K56S4
+    intel_mcs51/STC89C516RD+
+    intel_mcs51/STC89C51RC
+    intel_mcs51/STC89C52RC
+    intel_mcs51/STC89C53RC
+    intel_mcs51/STC89C54RD+
+    intel_mcs51/STC89C58RD+
+    intel_mcs51/STC8A4K16S2A12
+    intel_mcs51/STC8A4K32S2A12
+    intel_mcs51/STC8A4K60S2A12
+    intel_mcs51/STC8A4K64S2A12
+    intel_mcs51/STC8A8K16D4
+    intel_mcs51/STC8A8K16S4A12
+    intel_mcs51/STC8A8K32D4
+    intel_mcs51/STC8A8K32S4A12
+    intel_mcs51/STC8A8K60D4
+    intel_mcs51/STC8A8K60S4A12
+    intel_mcs51/STC8A8K64D4
+    intel_mcs51/STC8A8K64S4A12
+    intel_mcs51/STC8C1K08
+    intel_mcs51/STC8C1K12
+    intel_mcs51/STC8C2K16S2
+    intel_mcs51/STC8C2K16S4
+    intel_mcs51/STC8C2K32S2
+    intel_mcs51/STC8C2K32S4
+    intel_mcs51/STC8C2K60S2
+    intel_mcs51/STC8C2K60S4
+    intel_mcs51/STC8C2K64S2
+    intel_mcs51/STC8C2K64S4
+    intel_mcs51/STC8F1K08
+    intel_mcs51/STC8F1K08S
+    intel_mcs51/STC8F1K08S2
+    intel_mcs51/STC8F1K08S2A10
+    intel_mcs51/STC8F1K17
+    intel_mcs51/STC8F1K17S2
+    intel_mcs51/STC8F2K08S2
+    intel_mcs51/STC8F2K16S2
+    intel_mcs51/STC8F2K16S4
+    intel_mcs51/STC8F2K32S2
+    intel_mcs51/STC8F2K32S4
+    intel_mcs51/STC8F2K60S2
+    intel_mcs51/STC8F2K60S4
+    intel_mcs51/STC8F2K64S2
+    intel_mcs51/STC8F2K64S4
+    intel_mcs51/STC8G1K08
+    intel_mcs51/STC8G1K08A
+    intel_mcs51/STC8G1K08T
+    intel_mcs51/STC8G1K12
+    intel_mcs51/STC8G1K12A
+    intel_mcs51/STC8G1K17
+    intel_mcs51/STC8G1K17A
+    intel_mcs51/STC8G1K17T
+    intel_mcs51/STC8G2K16S2
+    intel_mcs51/STC8G2K16S4
+    intel_mcs51/STC8G2K32S2
+    intel_mcs51/STC8G2K32S4
+    intel_mcs51/STC8G2K60S2
+    intel_mcs51/STC8G2K60S4
+    intel_mcs51/STC8G2K64S2
+    intel_mcs51/STC8G2K64S4
+    intel_mcs51/STC8H04
+    intel_mcs51/STC8H04A10
+    intel_mcs51/STC8H1K08
+    intel_mcs51/STC8H1K08S2
+    intel_mcs51/STC8H1K08S2A10
+    intel_mcs51/STC8H1K12
+    intel_mcs51/STC8H1K16
+    intel_mcs51/STC8H1K16S2
+    intel_mcs51/STC8H1K16S2A10
+    intel_mcs51/STC8H1K17
+    intel_mcs51/STC8H1K24
+    intel_mcs51/STC8H1K28
+    intel_mcs51/STC8H1K32S2
+    intel_mcs51/STC8H1K32S2A10
+    intel_mcs51/STC8H1K33
+    intel_mcs51/STC8H1K64S2A10
+    intel_mcs51/STC8H2K32T
+    intel_mcs51/STC8H2K48T
+    intel_mcs51/STC8H2K60T
+    intel_mcs51/STC8H2K64T
+    intel_mcs51/STC8H3K32S2
+    intel_mcs51/STC8H3K32S4
+    intel_mcs51/STC8H3K48S2
+    intel_mcs51/STC8H3K48S4
+    intel_mcs51/STC8H3K60S2
+    intel_mcs51/STC8H3K60S4
+    intel_mcs51/STC8H3K64S2
+    intel_mcs51/STC8H3K64S4
+    intel_mcs51/STC8H4K32LCD
+    intel_mcs51/STC8H4K32TLCD
+    intel_mcs51/STC8H4K32TLR
+    intel_mcs51/STC8H4K48LCD
+    intel_mcs51/STC8H4K48TLCD
+    intel_mcs51/STC8H4K48TLR
+    intel_mcs51/STC8H4K60LCD
+    intel_mcs51/STC8H4K60TLCD
+    intel_mcs51/STC8H4K60TLR
+    intel_mcs51/STC8H4K64LCD
+    intel_mcs51/STC8H4K64TLCD
+    intel_mcs51/STC8H4K64TLR
+    intel_mcs51/STC8H8K32U
+    intel_mcs51/STC8H8K48U
+    intel_mcs51/STC8H8K60U
+    intel_mcs51/STC8H8K64U
+    intel_mcs51/W79E2051
+    intel_mcs51/W79E4051
+    intel_mcs51/W79E632
+    intel_mcs51/W79E633
+    intel_mcs51/W79E658
+    intel_mcs51/W79E659
+    intel_mcs51/W79E8213
 
 Kendryte K210
 -------------
@@ -982,8 +1263,12 @@ ST STM32
     ststm32/coreboard_f401rc
     ststm32/cricket_l082cz
     ststm32/demo_f030f4
+    ststm32/devebox_h743vitx
+    ststm32/devebox_h750vbtx
     ststm32/econode_l082cz
     ststm32/electrosmith_daisy
+    ststm32/electrosmith_daisy_patch_sm
+    ststm32/electrosmith_daisy_petal_sm
     ststm32/elektor_f072cb
     ststm32/elektor_f072c8
     ststm32/elmo_f411re
@@ -1200,6 +1485,8 @@ ST STM32
     ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce
     ststm32/blackpill_f401ce
+    ststm32/weact_mini_h743vitx
+    ststm32/weact_mini_h750vbtx
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211

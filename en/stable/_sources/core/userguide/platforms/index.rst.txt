@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _userguide_platform:
+.. _cmd_platform:
 
-Platform Manager CLI
-====================
+pio platform
+============
 
 To print all available commands and options use:
 
@@ -20,8 +20,6 @@ To print all available commands and options use:
 
     pio platform --help
     pio platform COMMAND --help
-
-.. image:: ../../../_static/images/platformio-demo-platforms.gif
 
 .. toctree::
     :maxdepth: 2

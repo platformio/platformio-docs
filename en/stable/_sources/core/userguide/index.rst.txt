@@ -22,9 +22,6 @@ Usage
 .. code-block:: bash
 
     pio [OPTIONS] COMMAND
-    # alias of "pio"
-    platformio [OPTIONS] COMMAND
-
 
 Options
 -------
@@ -72,7 +69,7 @@ Commands
     cmd_home
     pio lib <lib/index>
     org/index
-    package/index
+    pio pkg <pkg/index>
     pio platform <platforms/index>
     pio project <project/index>
     pio remote <remote/index>

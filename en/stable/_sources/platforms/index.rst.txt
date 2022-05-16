@@ -41,6 +41,8 @@ can not be changed.
 If a new board uses an architecture not in this list, a custom
 development platform can be created; see :ref:`platform_creating`.
 
+The full list of supported development platforms is accessible on the
+`PlatformIO Registry <https://registry.platformio.org/search?t=platform>`__.
 
 Embedded
 --------

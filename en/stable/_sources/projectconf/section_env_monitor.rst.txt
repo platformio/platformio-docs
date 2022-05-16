@@ -26,10 +26,11 @@ Custom options for :ref:`cmd_device_monitor` command.
 
 Type: ``String`` | Multiple: ``No``
 
-Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-See :option:`pio device monitor --port`. To print all available serial ports please use :ref:`cmd_device_list` command.
+Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html>`__.
 
-Please note that you can use Unix shell-style wildcards:
+To print all available serial ports please use :ref:`cmd_device_list` command.
+
+Please note that you can use patterns for serial ports:
 
 .. list-table::
     :header-rows:  1

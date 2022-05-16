@@ -20,13 +20,14 @@ The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_at
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
-    - Downloaded and installed :ref:`ide_atom`
-    - Install drivers for :ref:`debugging_tool_stlink` debug tool
-    - :ref:`board_ststm32_nucleo_f401re` development board
+
+- Downloaded and installed :ref:`ide_atom`
+- Install drivers for :ref:`debugging_tool_stlink` debug tool
+- :ref:`board_ststm32_nucleo_f401re` development board
 
 
 .. contents:: Contents
-    :local:
+  :local:
 
 Setting Up the Project
 ----------------------
@@ -50,53 +51,55 @@ Let's add some actual code to the project. Firstly, we create two main files ``m
 
 Add next content to ``main.h``:
 
-.. code-block:: cpp
+.. code:: cpp
 
-    #ifndef MAIN_H
-    #define MAIN_H
+  #ifndef MAIN_H
+  #define MAIN_H
 
-    #include "stm32f4xx_hal.h"
+  #include "stm32f4xx_hal.h"
 
-    #define LED_PIN                                GPIO_PIN_5
-    #define LED_GPIO_PORT                          GPIOA
-    #define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOA_CLK_ENABLE()
+  #define LED_PIN                                GPIO_PIN_5
+  #define LED_GPIO_PORT                          GPIOA
+  #define LED_GPIO_CLK_ENABLE()                  __HAL_RCC_GPIOA_CLK_ENABLE()
 
-    #endif // MAIN_H
+  #endif // MAIN_H
 
 
 Add this code to ``main.c``:
 
-.. code-block:: cpp
+.. code:: cpp
 
-    #include "main.h"
+  #include "main.h"
 
-    void LED_Init();
+  void LED_Init();
 
-    int main(void) {
-      HAL_Init();
-      LED_Init();
+  int main(void)
+  {
+    HAL_Init();
+    LED_Init();
 
-      while (1)
-      {
-        HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
-        HAL_Delay(1000);
-      }
+    while (1)
+    {
+      HAL_GPIO_TogglePin(LED_GPIO_PORT, LED_PIN);
+      HAL_Delay(1000);
     }
+  }
 
-    void LED_Init() {
-      LED_GPIO_CLK_ENABLE();
-      GPIO_InitTypeDef GPIO_InitStruct;
-      GPIO_InitStruct.Pin = LED_PIN;
-      GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-      GPIO_InitStruct.Pull = GPIO_PULLUP;
-      GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
-      HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
-    }
+  void LED_Init()
+  {
+    LED_GPIO_CLK_ENABLE();
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Pin = LED_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+    HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
+  }
 
-    void SysTick_Handler(void) {
-      HAL_IncTick();
-    }
-
+  void SysTick_Handler(void)
+  {
+    HAL_IncTick();
+  }
 
 After this step, we created a basic blink project that is ready for compiling and uploading.
 
@@ -137,133 +140,138 @@ We can walk through the code using control buttons, set breakpoints, see periphe
 Writing Unit Tests
 ------------------
 
-Now let’s write some tests using :ref:`unit_testing` feature that can help us
-test code directly on the target board. :ref:`unit_testing` engine by default
-supports only three frameworks: :ref:`framework_arduino`, :ref:`framework_espidf`,
-:ref:`framework_mbed`. Since we decided to use
-:ref:`framework_stm32cube` we need to implement a custom
-:ref:`projectconf_test_transport` to print testing results and specify that
-condition in :ref:`projectconf`:
+Now let's write some tests using the :ref:`unit_testing` solution that can help us
+test code directly on the target board. We will use the :ref:`unit_testing_frameworks_unity`
+testing framework. Since there is no default configuration for the :ref:`framework_stm32cube`
+framework, we will provide a :ref:`unit_testing_frameworks_unity_custom_config`.
 
-.. code-block:: ini
-
-  [env:nucleo_f401re]
-  platform = ststm32
-  board = nucleo_f401re
-  framework = stm32cube
-  test_transport = custom
-
-Also, we need to create a new folder ``test`` where the tests and custom :ref:`projectconf_test_transport` implementation (described next) will be located:
+Also, we need to create a new folder ``test`` where the tests and custom
+:ref:`unit_testing_frameworks_unity` configuration (described next) will be located:
 
 .. image:: ../../_static/images/tutorials/ststm32/stm32cube-debugging-unit-testing-10.png
 
-We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom :ref:`projectconf_test_transport` we need to create two files ``unittest_transport.h`` and ``unittest_transport.c`` and put them in the :ref:`projectconf_pio_test_dir` in the root folder of our project. In these files we need to implement the next four functions:
+We will use ``USART2`` on ``ST Nucleo-F401RE`` board because it's directly connected
+to the STLink debug interface and in OS it can be visible as a Virtual Com Port,
+so we don't need any additional USB-UART converter. To implement the custom
+:ref:`unit_testing_frameworks_unity` configuration we need to create two
+files ``unity_config.h`` and ``unity_config.c`` and put them in
+the :ref:`projectconf_pio_test_dir` in the root folder of our project.
 
-.. code-block:: cpp
+Implementation of ``unity_config.h``:
 
-    void unittest_uart_begin();
-    void unittest_uart_putchar(char c);
-    void unittest_uart_flush();
-    void unittest_uart_end();
+.. code:: cpp
 
-Implementation of unittest_transport.h:
+  #ifndef UNITY_CONFIG_H
+  #define UNITY_CONFIG_H
 
-.. code-block:: cpp
+  #ifndef NULL
+  #ifndef __cplusplus
+  #define NULL (void*)0
+  #else
+  #define NULL 0
+  #endif
+  #endif
 
-    #ifndef UNITEST_TRANSPORT_H
-    #define UNITEST_TRANSPORT_H
+  #ifdef __cplusplus
+  extern "C"
+  {
+  #endif
 
-    #ifdef __cplusplus
-    extern "C" {
-    #endif
+  void unityOutputStart();
+  void unityOutputChar(char);
+  void unityOutputFlush();
+  void unityOutputComplete();
 
-    void unittest_uart_begin();
-    void unittest_uart_putchar(char c);
-    void unittest_uart_flush();
-    void unittest_uart_end();
+  #define UNITY_OUTPUT_START()    unityOutputStart()
+  #define UNITY_OUTPUT_CHAR(c)    unityOutputChar(c)
+  #define UNITY_OUTPUT_FLUSH()    unityOutputFlush()
+  #define UNITY_OUTPUT_COMPLETE() unityOutputComplete()
 
-    #ifdef __cplusplus
-    }
-    #endif
+  #ifdef __cplusplus
+  }
+  #endif /* extern "C" */
 
-    #endif // UNITEST_TRANSPORT_H
+  #endif /* UNITY_CONFIG_H */
 
-Implementation of unittest_transport.c:
+Implementation of ``unity_config.c``:
 
-.. code-block:: cpp
+.. code:: cpp
 
-    #include "unittest_transport.h"
-    #include "stm32f4xx_hal.h"
+  #include "unity_config.h"
+  #include "stm32f4xx_hal.h"
 
-    #define USARTx                           USART2
-    #define USARTx_CLK_ENABLE()              __HAL_RCC_USART2_CLK_ENABLE()
-    #define USARTx_CLK_DISABLE()             __HAL_RCC_USART2_CLK_DISABLE()
-    #define USARTx_RX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
-    #define USARTx_TX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
-    #define USARTx_RX_GPIO_CLK_DISABLE()     __HAL_RCC_GPIOA_CLK_DISABLE()
-    #define USARTx_TX_GPIO_CLK_DISABLE()     __HAL_RCC_GPIOA_CLK_DISABLE()
+  #define USARTx USART2
+  #define USARTx_CLK_ENABLE() __HAL_RCC_USART2_CLK_ENABLE()
+  #define USARTx_CLK_DISABLE() __HAL_RCC_USART2_CLK_DISABLE()
+  #define USARTx_RX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
+  #define USARTx_TX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
+  #define USARTx_RX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
+  #define USARTx_TX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
 
-    #define USARTx_FORCE_RESET()             __HAL_RCC_USART2_FORCE_RESET()
-    #define USARTx_RELEASE_RESET()           __HAL_RCC_USART2_RELEASE_RESET()
+  #define USARTx_FORCE_RESET() __HAL_RCC_USART2_FORCE_RESET()
+  #define USARTx_RELEASE_RESET() __HAL_RCC_USART2_RELEASE_RESET()
 
-    #define USARTx_TX_PIN                    GPIO_PIN_2
-    #define USARTx_TX_GPIO_PORT              GPIOA
-    #define USARTx_TX_AF                     GPIO_AF7_USART2
-    #define USARTx_RX_PIN                    GPIO_PIN_3
-    #define USARTx_RX_GPIO_PORT              GPIOA
-    #define USARTx_RX_AF                     GPIO_AF7_USART2
+  #define USARTx_TX_PIN GPIO_PIN_2
+  #define USARTx_TX_GPIO_PORT GPIOA
+  #define USARTx_TX_AF GPIO_AF7_USART2
+  #define USARTx_RX_PIN GPIO_PIN_3
+  #define USARTx_RX_GPIO_PORT GPIOA
+  #define USARTx_RX_AF GPIO_AF7_USART2
 
-    static UART_HandleTypeDef UartHandle;
+  static UART_HandleTypeDef UartHandle;
 
-    void unittest_uart_begin()
+  void unityOutputStart()
+  {
+    GPIO_InitTypeDef GPIO_InitStruct;
+
+    USARTx_TX_GPIO_CLK_ENABLE();
+    USARTx_RX_GPIO_CLK_ENABLE();
+
+    USARTx_CLK_ENABLE();
+
+    GPIO_InitStruct.Pin = USARTx_TX_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
+    GPIO_InitStruct.Alternate = USARTx_TX_AF;
+
+    HAL_GPIO_Init(USARTx_TX_GPIO_PORT, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = USARTx_RX_PIN;
+    GPIO_InitStruct.Alternate = USARTx_RX_AF;
+
+    HAL_GPIO_Init(USARTx_RX_GPIO_PORT, &GPIO_InitStruct);
+    UartHandle.Instance = USARTx;
+
+    UartHandle.Init.BaudRate = 115200;
+    UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
+    UartHandle.Init.StopBits = UART_STOPBITS_1;
+    UartHandle.Init.Parity = UART_PARITY_NONE;
+    UartHandle.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    UartHandle.Init.Mode = UART_MODE_TX_RX;
+    UartHandle.Init.OverSampling = UART_OVERSAMPLING_16;
+
+    if (HAL_UART_Init(&UartHandle) != HAL_OK)
     {
-       GPIO_InitTypeDef  GPIO_InitStruct;
-
-      USARTx_TX_GPIO_CLK_ENABLE();
-      USARTx_RX_GPIO_CLK_ENABLE();
-
-      USARTx_CLK_ENABLE();
-
-      GPIO_InitStruct.Pin       = USARTx_TX_PIN;
-      GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-      GPIO_InitStruct.Pull      = GPIO_PULLUP;
-      GPIO_InitStruct.Speed     = GPIO_SPEED_FAST;
-      GPIO_InitStruct.Alternate = USARTx_TX_AF;
-
-      HAL_GPIO_Init(USARTx_TX_GPIO_PORT, &GPIO_InitStruct);
-
-      GPIO_InitStruct.Pin = USARTx_RX_PIN;
-      GPIO_InitStruct.Alternate = USARTx_RX_AF;
-
-      HAL_GPIO_Init(USARTx_RX_GPIO_PORT, &GPIO_InitStruct);
-      UartHandle.Instance          = USARTx;
-
-      UartHandle.Init.BaudRate     = 115200;
-      UartHandle.Init.WordLength   = UART_WORDLENGTH_8B;
-      UartHandle.Init.StopBits     = UART_STOPBITS_1;
-      UartHandle.Init.Parity       = UART_PARITY_NONE;
-      UartHandle.Init.HwFlowCtl    = UART_HWCONTROL_NONE;
-      UartHandle.Init.Mode         = UART_MODE_TX_RX;
-      UartHandle.Init.OverSampling = UART_OVERSAMPLING_16;
-
-      if(HAL_UART_Init(&UartHandle) != HAL_OK) {
-        while(1){}
+      while (1)
+      {
       }
-
     }
+  }
 
-    void unittest_uart_putchar(char c)
-    {
-        HAL_UART_Transmit(&UartHandle, (uint8_t*)(&c), 1, 1000);
-    }
+  void unityOutputChar(char c)
+  {
+    HAL_UART_Transmit(&UartHandle, (uint8_t *)(&c), 1, 1000);
+  }
 
-    void unittest_uart_flush(){}
+  void unityOutputFlush() {}
 
-    void unittest_uart_end() {
-      USARTx_CLK_DISABLE();
-      USARTx_RX_GPIO_CLK_DISABLE();
-      USARTx_TX_GPIO_CLK_DISABLE();
-    }
+  void unityOutputComplete()
+  {
+    USARTx_CLK_DISABLE();
+    USARTx_RX_GPIO_CLK_DISABLE();
+    USARTx_TX_GPIO_CLK_DISABLE();
+  }
 
 Now we need to add some test cases. Tests can be added to a single C file that may include multiple tests. First of all, we need to add three default functions: ``setUp``, ``tearDown`` and ``main``. ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the ``setUp`` function and if you need to clean up variables you use ``tearDown`` function. In our example, we will use these functions to accordingly initialize and deinitialize LED.  ``main`` function acts as a simple program where we describe our test plan.
 
@@ -276,61 +284,71 @@ Let's add a new file ``test_main.c`` to the folder ``test``. Next basic tests fo
 .. note::
   * 2 sec delay is required  since the board doesn't support software resetting  via ``Serial.DTR/RTS``
 
-.. code-block:: cpp
+.. code:: cpp
 
-    #include "../src/main.h"
-    #include <unity.h>
+  #include "../src/main.h"
+  #include <unity.h>
 
-    void setUp(void) {
-        LED_GPIO_CLK_ENABLE();
-        GPIO_InitTypeDef GPIO_InitStruct;
-        GPIO_InitStruct.Pin = LED_PIN;
-        GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-        GPIO_InitStruct.Pull = GPIO_PULLUP;
-        GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
-        HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
+  void setUp(void)
+  {
+    LED_GPIO_CLK_ENABLE();
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Pin = LED_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+    HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
+  }
+
+  void tearDown(void)
+  {
+    HAL_GPIO_DeInit(LED_GPIO_PORT, LED_PIN);
+  }
+
+  void test_led_builtin_pin_number(void)
+  {
+    TEST_ASSERT_EQUAL(GPIO_PIN_5, LED_PIN);
+  }
+
+  void test_led_state_high(void)
+  {
+    HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_SET);
+    TEST_ASSERT_EQUAL(GPIO_PIN_SET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
+  }
+
+  void test_led_state_low(void)
+  {
+    HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_RESET);
+    TEST_ASSERT_EQUAL(GPIO_PIN_RESET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
+  }
+
+  int main()
+  {
+    HAL_Init();      // initialize the HAL library
+    HAL_Delay(2000); // service delay
+
+    UNITY_BEGIN();
+    RUN_TEST(test_led_builtin_pin_number);
+
+    for (unsigned int i = 0; i < 5; i++)
+    {
+      RUN_TEST(test_led_state_high);
+      HAL_Delay(500);
+      RUN_TEST(test_led_state_low);
+      HAL_Delay(500);
     }
 
-    void tearDown(void) {
-        HAL_GPIO_DeInit(LED_GPIO_PORT, LED_PIN);
+    UNITY_END(); // stop unit testing
+
+    while (1)
+    {
     }
+  }
 
-    void test_led_builtin_pin_number(void) {
-        TEST_ASSERT_EQUAL(GPIO_PIN_5, LED_PIN);
-    }
-
-    void test_led_state_high(void) {
-        HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_SET);
-        TEST_ASSERT_EQUAL(GPIO_PIN_SET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
-    }
-
-    void test_led_state_low(void) {
-        HAL_GPIO_WritePin(LED_GPIO_PORT, LED_PIN, GPIO_PIN_RESET);
-        TEST_ASSERT_EQUAL(GPIO_PIN_RESET, HAL_GPIO_ReadPin(LED_GPIO_PORT, LED_PIN));
-    }
-
-    int main() {
-        HAL_Init();         // initialize the HAL library
-        HAL_Delay(2000);    // service delay
-        UNITY_BEGIN();
-        RUN_TEST(test_led_builtin_pin_number);
-
-        for (unsigned int i = 0; i < 5; i++)
-        {
-            RUN_TEST(test_led_state_high);
-            HAL_Delay(500);
-            RUN_TEST(test_led_state_low);
-            HAL_Delay(500);
-        }
-
-        UNITY_END(); // stop unit testing
-
-        while(1){}
-    }
-
-    void SysTick_Handler(void) {
-        HAL_IncTick();
-    }
+  void SysTick_Handler(void)
+  {
+    HAL_IncTick();
+  }
 
 
 Now we are ready to upload tests to the board. To do this we can use ``Test`` option from the Project Tasks menu, ``Tasks: Run Task... > PlatformIO Test`` option from the top menu or Test button on :ref:`ide_vscode_toolbar`:

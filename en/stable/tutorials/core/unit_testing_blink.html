@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unit Testing of a “Blink” Project &mdash; PlatformIO v5.2 documentation</title>
+  <title>Unit Testing of a “Blink” Project &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" href="../espressif32/arduino_debugging_unit_testing.html" />
-    <link rel="prev" title="Tutorials and Examples" href="../index.html" />
+    <link rel="next" title="RISC-V ASM Video Tutorial" href="../riscv/riscv_asm_video_tutorial.html" />
+    <link rel="prev" title="Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis" href="../nordicnrf52/zephyr_debugging_unit_testing_inspect.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
 <script src="../../_static/js/bootstrap.min.js"></script>
@@ -55,34 +55,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tutorials and Examples</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html#id1">Tutorials</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Unit Testing of a “Blink” Project</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#setting-up-the-project">Setting Up the Project</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#project-structure">Project structure</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#source-files">Source files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#test-results">Test results</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#official">Official</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#id1">Tutorials</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../nordicnrf52/arduino_debugging_unit_testing.html">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../nordicnrf52/zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Unit Testing of a “Blink” Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../nordicnrf52/arduino_debugging_unit_testing.html">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../nordicnrf52/zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#project-examples">Project Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#project-examples">Project Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#community-projects">Community Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#community-video-tutorials">Community Video Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#community">Community</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -92,13 +89,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -110,7 +107,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -144,7 +141,7 @@
              
   <section id="unit-testing-of-a-blink-project">
 <span id="tutorial-unit-testing-blink"></span><h1>Unit Testing of a “Blink” Project<a class="headerlink" href="#unit-testing-of-a-blink-project" title="Permalink to this headline">¶</a></h1>
-<p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../plus/unit-testing.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>.</p>
+<p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Level:</strong> Beginner</p></li>
 <li><p><strong>Platforms:</strong> Windows, macOS, Linux</p></li>
@@ -162,7 +159,8 @@
 <h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Please navigate to the <a class="reference internal" href="../../core/quickstart.html#core-quickstart"><span class="std std-ref">Quick Start</span></a> section and create the “Blink Project”.</p></li>
-<li><p>Create a <code class="docutils literal notranslate"><span class="pre">test</span></code> directory in the project (on the same level as <code class="docutils literal notranslate"><span class="pre">src</span></code>)
+<li><p>Create the root <code class="docutils literal notranslate"><span class="pre">test</span></code> directory in the project (on the same level as <code class="docutils literal notranslate"><span class="pre">src</span></code>)</p></li>
+<li><p>Create a test <code class="docutils literal notranslate"><span class="pre">test_blink</span></code> directory (name must be prefixed with <code class="docutils literal notranslate"><span class="pre">test_</span></code>)
 and place a <code class="docutils literal notranslate"><span class="pre">test_main.cpp</span></code> file in it (the source code is located below).</p></li>
 <li><p>Run tests using the <a class="reference internal" href="../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p></li>
 </ol>
@@ -170,94 +168,84 @@ and place a <code class="docutils literal notranslate"><span class="pre">test_ma
 <section id="project-structure">
 <h2><a class="toc-backref" href="#id2">Project structure</a><a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>project_dir
-├── lib
-│   └── README
 ├── platformio.ini
-├── src
-│   └── ...
 └── <span class="nb">test</span>
-    └── test_main.cpp
+    └── test_blink
+        └── test_main.cpp
 </pre></div>
 </div>
 </section>
 <section id="source-files">
 <h2><a class="toc-backref" href="#id3">Source files</a><a class="headerlink" href="#source-files" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">;   Build options: build flags, source filter, extra scripting</span><span class="w"></span>
-<span class="c1">;   Upload options: custom port, speed and extra flags</span><span class="w"></span>
-<span class="c1">;   Library options: dependencies, extra library storages</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Please visit documentation for the other options and examples</span><span class="w"></span>
-<span class="c1">; https://docs.platformio.org/page/projectconf.html</span><span class="w"></span>
-
-
-<span class="k">[env:uno]</span><span class="w"></span>
+<li><p><a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
-
-<span class="k">[env:teensy31]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">test/test_main.cpp</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">test/test_blink/test_main.cpp</span></code></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
 
-<span class="c1">// void setUp(void) {</span>
-<span class="c1">// // set stuff up here</span>
-<span class="c1">// }</span>
-
-<span class="c1">// void tearDown(void) {</span>
-<span class="c1">// // clean stuff up here</span>
-<span class="c1">// }</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_builtin_pin_number</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// set stuff up here</span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_high</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">HIGH</span><span class="p">,</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">));</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// clean stuff up here</span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_low</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">LOW</span><span class="p">,</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">));</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_builtin_pin_number</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// NOTE!!! Wait for &gt;2 secs</span>
-<span class="w">    </span><span class="c1">// if board doesn&#39;t support software reset via Serial.DTR/RTS</span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_high</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">HIGH</span><span class="p">,</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w">    </span><span class="c1">// IMPORTANT LINE!</span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_builtin_pin_number</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_led_state_low</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="n">LOW</span><span class="p">,</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// NOTE!!! Wait for &gt;2 secs</span>
+<span class="w">  </span><span class="c1">// if board doesn&#39;t support software reset via Serial.DTR/RTS</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"> </span><span class="c1">// IMPORTANT LINE!</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_builtin_pin_number</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="kt">uint8_t</span><span class="w"> </span><span class="n">max_blinks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">max_blinks</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_high</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_low</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">max_blinks</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">max_blinks</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_high</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_led_state_low</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">max_blinks</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
@@ -266,142 +254,36 @@ and place a <code class="docutils literal notranslate"><span class="pre">test_ma
 </section>
 <section id="test-results">
 <h2><a class="toc-backref" href="#id4">Test results</a><a class="headerlink" href="#test-results" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test -e uno --verbose
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test
 
 Verbose mode can be enabled via `-v, --verbose` option
-Collected 1 items
+Collected 1 tests
 
-===================== [test/*] Building... (1/3) =======================
-Processing uno (platform: atmelavr; board: uno; framework: arduino)
--------------------------------------------------------------------
-Verbose mode can be enabled via `-v, --verbose` option
-PLATFORM: Atmel AVR &gt; Arduino Uno
-SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-Library Dependency Finder -&gt; https://bit.ly/configure-pio-ldf
-LDF MODES: FINDER(chain) COMPATIBILITY(soft)
-Collected 24 compatible libraries
-Scanning dependencies...
-No dependencies
-Compiling .pio\build\uno\test\output_export.cpp.o
-Compiling .pio\build\uno\test\test_main.cpp.o
-Archiving .pio\build\uno\libFrameworkArduinoVariant.a
-Compiling .pio\build\uno\FrameworkArduino\CDC.cpp.o
-Indexing .pio\build\uno\libFrameworkArduinoVariant.a
-Compiling .pio\build\uno\FrameworkArduino\HardwareSerial.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\HardwareSerial0.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\HardwareSerial1.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\HardwareSerial2.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\HardwareSerial3.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\IPAddress.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\PluggableUSB.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\Print.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\Stream.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\Tone.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\USBCore.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\WInterrupts.c.o
-Compiling .pio\build\uno\FrameworkArduino\WMath.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\WString.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\abi.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\hooks.c.o
-Compiling .pio\build\uno\FrameworkArduino\main.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\new.cpp.o
-Compiling .pio\build\uno\FrameworkArduino\wiring.c.o
-Compiling .pio\build\uno\FrameworkArduino\wiring_analog.c.o
-Compiling .pio\build\uno\FrameworkArduino\wiring_digital.c.o
-Compiling .pio\build\uno\FrameworkArduino\wiring_pulse.S.o
-Compiling .pio\build\uno\FrameworkArduino\wiring_pulse.c.o
-Compiling .pio\build\uno\FrameworkArduino\wiring_shift.c.o
-Compiling .pio\build\uno\UnityTestLib\unity.o
-Archiving .pio\build\uno\libFrameworkArduino.a
-Indexing .pio\build\uno\libFrameworkArduino.a
-Archiving .pio\build\uno\libUnityTestLib.a
-Indexing .pio\build\uno\libUnityTestLib.a
-Linking .pio\build\uno\firmware.elf
-Checking size .pio\build\uno\firmware.elf
-Building .pio\build\uno\firmware.hex
-Memory Usage -&gt; https://bit.ly/pio-memory-usage
-DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
-PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
-
-========================================== [SUMMARY] ==========================================
-Environment uno                 [SUCCESS]
-Environment teensy31            [SKIP]
-================================= [SUCCESS] Took 2.54 seconds =================================
-
-================================= [test/*] Uploading... (2/3) =================================
-Processing uno (platform: atmelavr; board: uno; framework: arduino)
--------------------------------------------------------------------
-Verbose mode can be enabled via `-v, --verbose` option
-PLATFORM: Atmel AVR &gt; Arduino Uno
-SYSTEM: ATMEGA328P 16MHz 2KB RAM (31.50KB Flash)
-Library Dependency Finder -&gt; https://bit.ly/configure-pio-ldf
-LDF MODES: FINDER(chain) COMPATIBILITY(soft)
-Collected 24 compatible libraries
-Scanning dependencies...
-No dependencies
-Checking size .pio\build\uno\firmware.elf
-Memory Usage -&gt; https://bit.ly/pio-memory-usage
-DATA:    [==        ]  20.0% (used 410 bytes from 2048 bytes)
-PROGRAM: [=         ]  12.6% (used 4060 bytes from 32256 bytes)
-Configuring upload protocol...
-AVAILABLE: arduino
-CURRENT: upload_protocol = arduino
-Looking for upload port...
-Auto-detected: COM18
-Uploading .pio\build\uno\firmware.hex
-
-avrdude: AVR device initialized and ready to accept instructions
-
-Reading | ################################################## | 100% 0.00s
-
-avrdude: Device signature = 0x1e950f (probably m328p)
-avrdude: reading input file &quot;.pio\build\uno\firmware.hex&quot;
-avrdude: writing flash (4060 bytes):
-
-Writing | ################################################## | 100% 0.76s
-
-avrdude: 4060 bytes of flash written
-avrdude: verifying flash memory against .pio\build\uno\firmware.hex:
-avrdude: load data flash data from input file .pio\build\uno\firmware.hex:
-avrdude: input file .pio\build\uno\firmware.hex contains 4060 bytes
-avrdude: reading on-chip flash data:
-
-Reading | ################################################## | 100% 0.48s
-
-avrdude: verifying ...
-avrdude: 4060 bytes of flash verified
-
-avrdude: safemode: Fuses OK (E:00, H:00, L:00)
-
-avrdude done.  Thank you.
-
-
-=============================== [SUMMARY] ================================
-Environment uno                 [SUCCESS]
-Environment teensy31            [SKIP]
- ====================== [SUCCESS] Took 4.45 seconds ======================
-
-================================== [test/*] Testing... (3/3) ==================================
+Processing test_blink in uno environment
+----------------------------------------
+Building...
+Uploading...
+Testing...
 If you don&#39;t see any output for the first 10 secs, please reset board (press reset button)
 
-test\test_main.cpp:30:test_led_builtin_pin_number       [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
-test\test_main.cpp:41:test_led_state_high       [PASSED]
-test\test_main.cpp:43:test_led_state_low        [PASSED]
------------------------
-11 Tests 0 Failures 0 Ignored
+test/test_blink/test_main.cpp:34: test_led_builtin_pin_number [PASSED]
+test/test_blink/test_main.cpp:43: test_led_state_high [PASSED]
+test/test_blink/test_main.cpp:45: test_led_state_low  [PASSED]
+test/test_blink/test_main.cpp:43: test_led_state_high [PASSED]
+test/test_blink/test_main.cpp:45: test_led_state_low  [PASSED]
+test/test_blink/test_main.cpp:43: test_led_state_high [PASSED]
+test/test_blink/test_main.cpp:45: test_led_state_low  [PASSED]
+test/test_blink/test_main.cpp:43: test_led_state_high [PASSED]
+test/test_blink/test_main.cpp:45: test_led_state_low  [PASSED]
+test/test_blink/test_main.cpp:43: test_led_state_high [PASSED]
+test/test_blink/test_main.cpp:45: test_led_state_low  [PASSED]
+----------------- uno:test_blink [PASSED] Took 16.51 seconds -----------------
 
-============================ [TEST SUMMARY] ==============================
-test/*/env:uno  [PASSED]
-test/*/env:teensy31     [IGNORED]
-==================== [PASSED] Took 12.99 seconds =========================
+Environment    Test        Status    Duration
+-------------  ----------  --------  ------------
+uno            test_blink  PASSED    00:00:16.514
+
+=================== 11 test cases: 11 succeeded in 00:00:16.514 ===================
 </pre></div>
 </div>
 </section>
@@ -411,8 +293,8 @@ test/*/env:teensy31     [IGNORED]
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Tutorials and Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../espressif32/arduino_debugging_unit_testing.html" class="btn btn-neutral float-right" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../nordicnrf52/zephyr_debugging_unit_testing_inspect.html" class="btn btn-neutral float-left" title="Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../riscv/riscv_asm_video_tutorial.html" class="btn btn-neutral float-right" title="RISC-V ASM Video Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -446,34 +328,34 @@ test/*/env:teensy31     [IGNORED]
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -533,7 +415,7 @@ test/*/env:teensy31     [IGNORED]
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

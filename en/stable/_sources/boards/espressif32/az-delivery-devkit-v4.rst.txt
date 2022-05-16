@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 16MB
+    - 4MB
   * - **RAM**
     - 520KB
   * - **Vendor**
@@ -68,6 +68,7 @@ Uploading
 ---------
 AZ-Delivery ESP-32 Dev Kit C V4 supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,9 +114,12 @@ AZ-Delivery ESP-32 Dev Kit C V4 does not have on-board debug probe and **IS NOT 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_esp-prog`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

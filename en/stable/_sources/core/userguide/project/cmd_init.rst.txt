@@ -23,7 +23,6 @@ Usage
 
     pio project init [OPTIONS]
 
-
 Description
 -----------
 
@@ -75,8 +74,6 @@ Also, please take a look at :ref:`ide` page.
 .. option::
     -e, --environment
 
-.. versionadded:: 5.0
-
 Update project using existing environment.
 
 .. option::
@@ -94,9 +91,14 @@ For example, the default environment name for :ref:`board_teensy_teensy31`
 board will be ``[env:teensy31]``.
 
 .. option::
+    --no-install-dependencies
+
+Do not resolve project dependencies and do not install missed packages.
+
+.. option::
     -s, --silent
 
-Suppress progress reporting
+Suppress progress reporting.
 
 Examples
 --------

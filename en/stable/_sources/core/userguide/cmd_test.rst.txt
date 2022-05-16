@@ -28,11 +28,7 @@ Usage
 Description
 -----------
 
-Run locally tests from PlatformIO based project. More details about PlatformIO
-:ref:`unit_testing`.
-
-This command allows you to apply the tests for the environments specified
-in :ref:`projectconf`.
+Run project tests on host (local) machine using PlatformIO :ref:`unit_testing`.
 
 Options
 -------
@@ -42,7 +38,7 @@ Options
 .. option::
     -e, --environment
 
-Process specified environments. More details :option:`pio run --environment`
+Process specified project environment. Multiple environments are allowed.
 
 .. option::
     -f, --filter
@@ -104,14 +100,14 @@ For example, ``pio test --ignore "mytest*" -i "test[13]"``
     --upload-port
 
 A port that is intended for firmware uploading. To list available ports
-please use :ref:`cmd_device_list` command.
+please use the :ref:`cmd_device_list` command.
 
-If upload port is not specified, PlatformIO will try to detect it automatically.
+If the upload port is not specified, PlatformIO will try to detect it automatically.
 
 .. option::
     --test-port
 
-A Serial/UART port that PlatformIO uses as communication interface between
+A Serial/UART port that PlatformIO uses as a communication interface between
 PlatformIO Unit Test Engine and target device. To list available ports
 please use :ref:`cmd_device_list` command.
 
@@ -120,8 +116,8 @@ If test port is not specified, PlatformIO will try to detect it automatically.
 .. option::
     -d, --project-dir
 
-Specify the path to project directory. By default, ``--project-dir`` is equal
-to current working directory (``CWD``).
+Specify the path to the project directory. By default, ``--project-dir`` is equal
+to a current working directory (``CWD``).
 
 .. option::
     -c, --project-conf
@@ -131,49 +127,84 @@ Process project with a custom :ref:`projectconf`.
 .. option::
     --without-building
 
-Skip building stage.
+Skip the building stage.
 
 .. option::
     --without-uploading
 
-Skip uploading stage.
+Skip the uploading stage.
 
 .. option::
     --without-testing
 
-Skip testing stage.
+Skip the testing stage.
 
 .. option::
     --no-reset
 
 Disable software reset via ``Serial.DTR/RST`` before test running. In this case,
-need to press "reset" button manually after firmware uploading.
+need to press the "reset" button manually after firmware uploading.
 
 .. warning::
-  If board does not support software reset via ``Serial.DTR/RTS`` you
-  should add >2 seconds delay before ``UNITY_BEGIN()`.
-  We need that time to establish a ``Serial`` communication between host
-  machine and target device. See :ref:`unit_testing`.
+  If the board does not support software reset via ``Serial.DTR/RTS`` you
+  should add >2 seconds delay before ``UNITY_BEGIN()``.
+  We need that time to establish a ``Serial`` communication between the host
+  machine and the target device. See :ref:`unit_testing`.
 
 .. option::
     --monitor-rts
 
 Set initial ``RTS`` line state for Serial Monitor (``0`` or ``1``),
-default ``1``. We use it to gather test results via Serial connection.
+default ``1``. We use it to gather test results via a Serial connection.
 
 .. option::
     --monitor-dtr
 
 Set initial ``DTR`` line state for Serial Monitor (``0`` or ``1``),
-default ``1``. We use it to gather test results via Serial connection.
+default ``1``. We use it to gather test results via a Serial connection.
+
+.. option::
+    -a, --program-arg
+
+Pass an extra argument to the testing program. Multiple arguments are allowed.
+
+If you need to pass extra arguments permanently per a testing environment,
+please take a look at the :ref:`projectconf_test_testing_command`.
+
+**Example**
+
+.. code:: shell
+
+    > pio test --program-arg "--abort-after=1" --program-arg="-s"
+    # or short format
+    > pio test -a "-aa=1" -a "-s"
+
+.. option::
+    --list-tests
+
+List project tests without processing.
+The :option:`pio test --json-output-path` or :option:`pio test --junit-output-path`
+options can be used for dumping available test suites.
+
+.. option::
+    --json-output-path
+
+Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
+format and save it to the specified path. If the only folder path is provided,
+the file name will be generated automatically.
+Please note that the parent folder must exist before.
+
+.. option::
+    --junit-output-path
+
+The same as :option:`pio test --json-output-path` but generates a report in the
+`JUnit XML <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>`_
+format.
 
 .. option::
     -v, --verbose
 
 Shows detailed information when processing environments.
-
-This option can also be set globally using :ref:`setting_force_verbose` setting
-or by environment variable :envvar:`PLATFORMIO_SETTING_FORCE_VERBOSE`.
 
 Examples
 --------

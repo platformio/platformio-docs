@@ -74,13 +74,15 @@ is equivalent to duplicating all options as shown below:
     build_flags = -D DEBUG
     lib_deps = DepCustom
 
+.. _projectconf_section_env_named:
 
-Environment ``[env:NAME]``
---------------------------
+Working ``[env:NAME]``
+----------------------
 
 A section with an ``env:`` prefix defines a **working environment** for
 :ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug` and other commands.
-Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed. Every project must define at least one working environment.
+Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed.
+Every project must define at least one working environment.
 
 Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
 letters ``a-z``, numbers ``0-9``,  special char ``_`` (underscore).

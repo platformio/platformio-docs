@@ -114,11 +114,12 @@ Examples
     11512       256    1788   13556    34f4 .pio/build/mzeropro/firmware.elf
     =========================== [SUCCESS] Took 7.82 seconds ===========================
 
-2. Launch GDB instance and load initial configuration per a project
+2. Launch GDB instance and load initial configuration per project.
+   A double hyphen is used to skip the parsing of extra GDB options.
 
 .. code::
 
-    > pio debug --interface=gdb -x .pioinit
+    > pio debug --interface=gdb -- -x .pioinit
 
     ...
     Loading section .text, size 0x2c98 lma 0x4000

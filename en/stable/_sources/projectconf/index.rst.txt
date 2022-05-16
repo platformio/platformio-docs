@@ -25,15 +25,9 @@ are ignored and may be used to provide comments.
 Multiple value options can be specified in two ways:
 
 1. Split values with ", " (comma + space)
-2. Multi-line format, where each new line starts with at least two spaces
+2. Multi-line format, where each new line starts with at least two spaces.
 
-There are two required sections:
-
-* :ref:`piocore` settings: :ref:`projectconf_section_platformio`
-* Environment settings: :ref:`projectconf_section_env`
-
-The other sections are optional to include. Here are the allowed
-sections and their allowed contents:
+Here are the allowed sections and their allowed contents:
 
 .. toctree::
     :maxdepth: 2
@@ -41,12 +35,11 @@ sections and their allowed contents:
     section_platformio
     section_env
     interpolation
-    build_configurations
     examples
 
 **Example**
 
-For more examples, see :ref:`projectconf_examples`.
+For more examples, see :ref:`official project examples and community projects <tutorials>`.
 
 .. code-block:: ini
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Section [env] &mdash; PlatformIO v5.2 documentation</title>
+  <title>Section [env] &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -55,6 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
@@ -63,7 +64,7 @@
 <li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#environment-env-name">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options">Options</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="section_env_platform.html">Platform options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="section_env_build.html">Build options</a></li>
@@ -79,12 +80,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
-<li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -94,13 +94,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -112,7 +112,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -149,7 +149,7 @@
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#common-env" id="id1">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></p></li>
-<li><p><a class="reference internal" href="#environment-env-name" id="id2">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></p></li>
+<li><p><a class="reference internal" href="#working-env-name" id="id2">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></p></li>
 <li><p><a class="reference internal" href="#options" id="id3">Options</a></p></li>
 </ul>
 </div>
@@ -203,11 +203,12 @@ is equivalent to duplicating all options as shown below:</p>
 </pre></div>
 </div>
 </section>
-<section id="environment-env-name">
-<h2><a class="toc-backref" href="#id2">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a><a class="headerlink" href="#environment-env-name" title="Permalink to this headline">¶</a></h2>
+<section id="working-env-name">
+<span id="projectconf-section-env-named"></span><h2><a class="toc-backref" href="#id2">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a><a class="headerlink" href="#working-env-name" title="Permalink to this headline">¶</a></h2>
 <p>A section with an <code class="docutils literal notranslate"><span class="pre">env:</span></code> prefix defines a <strong>working environment</strong> for
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>, <a class="reference internal" href="../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a>, <a class="reference internal" href="../core/userguide/cmd_check.html#cmd-check"><span class="std std-ref">pio check</span></a>, <a class="reference internal" href="../core/userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a> and other commands.
-Multiple <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> environments with different <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are allowed. Every project must define at least one working environment.</p>
+Multiple <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> environments with different <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are allowed.
+Every project must define at least one working environment.</p>
 <p>Each environment must have a unique <code class="docutils literal notranslate"><span class="pre">NAME</span></code>. The valid chars for <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are
 letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>,  special char <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore).
 For example, <code class="docutils literal notranslate"><span class="pre">[env:hello_world]</span></code>.</p>
@@ -233,9 +234,9 @@ The [platformio] <a class="reference internal" href="section_platformio.html#pro
 <li class="toctree-l1"><a class="reference internal" href="section_env_build.html">Build options</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="section_env_build.html#build-type"><code class="docutils literal notranslate"><span class="pre">build_type</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_build.html#build-flags"><code class="docutils literal notranslate"><span class="pre">build_flags</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env_build.html#src-build-flags"><code class="docutils literal notranslate"><span class="pre">src_build_flags</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_env_build.html#build-src-flags"><code class="docutils literal notranslate"><span class="pre">build_src_flags</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_build.html#build-unflags"><code class="docutils literal notranslate"><span class="pre">build_unflags</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env_build.html#src-filter"><code class="docutils literal notranslate"><span class="pre">src_filter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_env_build.html#build-src-filter"><code class="docutils literal notranslate"><span class="pre">build_src_filter</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_build.html#targets"><code class="docutils literal notranslate"><span class="pre">targets</span></code></a></li>
 </ul>
 </li>
@@ -275,12 +276,13 @@ The [platformio] <a class="reference internal" href="section_platformio.html#pro
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="section_env_test.html">Test options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-framework"><code class="docutils literal notranslate"><span class="pre">test_framework</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-filter"><code class="docutils literal notranslate"><span class="pre">test_filter</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-ignore"><code class="docutils literal notranslate"><span class="pre">test_ignore</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-port"><code class="docutils literal notranslate"><span class="pre">test_port</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-speed"><code class="docutils literal notranslate"><span class="pre">test_speed</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-transport"><code class="docutils literal notranslate"><span class="pre">test_transport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-build-project-src"><code class="docutils literal notranslate"><span class="pre">test_build_project_src</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-build-src"><code class="docutils literal notranslate"><span class="pre">test_build_src</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_env_test.html#test-testing-command"><code class="docutils literal notranslate"><span class="pre">test_testing_command</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="section_env_debug.html">Debugging options</a><ul>
@@ -348,34 +350,34 @@ The [platformio] <a class="reference internal" href="section_platformio.html#pro
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -435,7 +437,7 @@ The [platformio] <a class="reference internal" href="section_platformio.html#pro
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

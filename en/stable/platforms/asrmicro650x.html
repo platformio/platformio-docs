@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASR Microelectronics ASR650x &mdash; PlatformIO v5.2 documentation</title>
+  <title>ASR Microelectronics ASR650x &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -55,13 +55,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
@@ -118,13 +119,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -136,7 +137,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -220,9 +221,9 @@
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">region</span></code></p></td>
 <td><p>Region definition</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">AS923</span></code>, <code class="docutils literal notranslate"><span class="pre">AU915</span></code>, <code class="docutils literal notranslate"><span class="pre">CN470</span></code>, <code class="docutils literal notranslate"><span class="pre">CN779</span></code>, <code class="docutils literal notranslate"><span class="pre">EU433</span></code>, <code class="docutils literal notranslate"><span class="pre">EU868</span></code>,
-<code class="docutils literal notranslate"><span class="pre">KR920</span></code>, <code class="docutils literal notranslate"><span class="pre">IN865</span></code>, <code class="docutils literal notranslate"><span class="pre">US915</span></code>, <code class="docutils literal notranslate"><span class="pre">US915_HYBRID</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">AS923</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">AS923_AS1</span></code>, <code class="docutils literal notranslate"><span class="pre">AS923_AS2</span></code>, <code class="docutils literal notranslate"><span class="pre">AU915</span></code>, <code class="docutils literal notranslate"><span class="pre">CN470</span></code>, <code class="docutils literal notranslate"><span class="pre">CN779</span></code>, <code class="docutils literal notranslate"><span class="pre">EU433</span></code>,
+<code class="docutils literal notranslate"><span class="pre">EU868</span></code>, <code class="docutils literal notranslate"><span class="pre">KR920</span></code>, <code class="docutils literal notranslate"><span class="pre">IN865</span></code>, <code class="docutils literal notranslate"><span class="pre">US915</span></code>, <code class="docutils literal notranslate"><span class="pre">US915_HYBRID</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">US915</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">class</span></code></p></td>
 <td><p>Device class</p></td>
@@ -259,7 +260,12 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code>, <code class="docutils literal notranslate"><span class="pre">DEACTIVE</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ACTIVE</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">debug_level</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">preamble_length</span></code></p></td>
+<td><p>Preamble length</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code>, <code class="docutils literal notranslate"><span class="pre">16</span></code> (For M00 and M00L)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">debug_level</span></code></p></td>
 <td><p>Print LoRaWAN relevant messages print to serial port</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">NONE</span></code>, <code class="docutils literal notranslate"><span class="pre">FREQ</span></code> (Sending/receiving frequency), <code class="docutils literal notranslate"><span class="pre">FREQ_AND_DIO</span></code>
 (Sending/receiving frequency and DIO pin interrupt information)</p></td>
@@ -334,8 +340,8 @@ of ASR Microelectronics ASR650x development platform and the latest upstream ver
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro650x">framework-arduinoasrmicro650x</a></p></td>
-<td><p>Arduino Wiring-based Framework for ASR Microelectronics ASR650x (Heltec core)</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/framework-arduinoasrmicro">framework-arduinoasrmicro</a></p></td>
+<td><p>Arduino Wiring-based Framework for ASR Microelectronics (Heltec core)</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellelftool">tool-cubecellelftool</a></p></td>
 <td><p>CubeCell ELF tool</p></td>
@@ -343,7 +349,10 @@ of ASR Microelectronics ASR650x development platform and the latest upstream ver
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash">tool-cubecellflash</a></p></td>
 <td><p>CubeCell Flash tool</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/heltecautomation/tool-cubecellflash6601">tool-cubecellflash6601</a></p></td>
+<td><p>CubeCell Flash tool for ASR6601</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
 <td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
 </tr>
 </tbody>
@@ -417,7 +426,7 @@ horizontally.</p></li>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule_solar_sensor.html#board-asrmicro650x-cubecell-capsule-solar-sensor"><span class="std std-ref">Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)</span></a></p></td>
 <td><p>No</p></td>
-<td><p>ASR6502</p></td>
+<td><p>ASR6051</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
@@ -436,35 +445,42 @@ horizontally.</p></li>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_pro.html#board-asrmicro650x-cubecell-board-pro"><span class="std std-ref">Heltec CubeCell-Board PRO (HTCC-AB03)</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6601</p></td>
+<td><p>48MHz</p></td>
+<td><p>224KB</p></td>
+<td><p>224KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_board_plus.html#board-asrmicro650x-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_capsule.html#board-asrmicro650x-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_gps.html#board-asrmicro650x-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module.html#board-asrmicro650x-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6501</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/asrmicro650x/cubecell_module_plus.html#board-asrmicro650x-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ASR6502</p></td>
 <td><p>48MHz</p></td>
@@ -516,34 +532,34 @@ horizontally.</p></li>
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -603,7 +619,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -187,11 +187,6 @@ Instead of ``--board`` option, please use :option:`pio ci --project-conf`
     script:
         - pio ci --project-conf=/path/to/platoformio.ini
 
-Unit Testing
-------------
-
-See `PlatformIO Remote Unit Testing Example <https://github.com/platformio/platformio-remote-unit-testing-example>`_.
-
 Examples
 --------
 

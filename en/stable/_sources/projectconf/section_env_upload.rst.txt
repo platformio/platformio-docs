@@ -42,7 +42,7 @@ To print all available serial ports please use :ref:`cmd_device_list` command.
 This option can also be set by global environment variable
 :envvar:`PLATFORMIO_UPLOAD_PORT`.
 
-Please note that you can use Unix shell-style wildcards:
+Please note that you can use patterns:
 
 .. list-table::
     :header-rows:  1

@@ -54,19 +54,8 @@ Options
 .. option::
     -p, --port
 
-Port, a number or a device name, or valid `URL Handlers <https://pyserial.readthedocs.io/en/latest/url_handlers.html#urls>`__.
-
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_port`
-option.
-
-**URL Handlers**
-
-* `rfc2217://<host>:<port>[?<option>[&<option>...]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#rfc2217>`__
-* `socket://<host>:<port>[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#socket>`__
-* `loop://[?logging={debug|info|warning|error}] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#loop>`__
-* `hwgrep://<regexp>[&skip_busy][&n=N] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#hwgrep>`__
-* `spy://port[?option[=value][&option[=value]]] <https://pyserial.readthedocs.io/en/latest/url_handlers.html#spy>`__
-* `alt://port?class=<classname> <https://pyserial.readthedocs.io/en/latest/url_handlers.html#alt>`__
+The possible values are the same as documented for
+:ref:`projectconf_monitor_port` option.
 
 .. option::
     -b, --baud
@@ -233,8 +222,8 @@ Custom Filters
 
 :ref:`piocore` provides an API to extend device monitor with custom filters.
 Each filter is a Python-based file and its name should have the ``filter_`` prefix.
-In a Python code, you need to extend ``DeviceMonitorFilter`` class to get access to
-the ``rx()`` and ``tx()`` methods/callbacks.
+In a Python code, you need to extend ``DeviceMonitorFilterBase`` class to get access
+to the ``rx()`` and ``tx()`` methods/callbacks.
 
 :ref:`piocore` looks for the custom filters in the next locations:
 
@@ -248,14 +237,14 @@ See the base API below:
 
 .. code-block:: python
 
-  from platformio.commands.device import DeviceMonitorFilter
+  from platformio.shared import DeviceMonitorFilterBase
 
 
-  class Demo(DeviceMonitorFilter):
+  class Demo(DeviceMonitorFilterBase):
       NAME = "demo"
 
       def __init__(self, *args, **kwargs):
-          super(Demo, self).__init__(*args, **kwargs)
+          super().__init__(*args, **kwargs)
           print("Demo filter is loaded")
 
       def rx(self, text):
@@ -267,7 +256,7 @@ See the base API below:
 
 **Examples**
 
-- https://github.com/platformio/platformio-core/tree/develop/platformio/commands/device/filters
+- https://github.com/platformio/platformio-core/tree/develop/platformio/device/filters
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor
 

@@ -14,34 +14,45 @@
 Tutorials and Examples
 ======================
 
+Official
+--------
+
 Tutorials
----------
+~~~~~~~~~
 
 .. toctree::
     :maxdepth: 1
 
-    core/unit_testing_blink
     espressif32/arduino_debugging_unit_testing
     espressif32/espidf_debugging_unit_testing_analysis
     ststm32/stm32cube_debugging_unit_testing
     nordicnrf52/arduino_debugging_unit_testing
     nordicnrf52/zephyr_debugging_unit_testing_inspect
+    core/unit_testing_blink
     riscv/riscv_asm_video_tutorial
 
 Project Examples
-----------------
+~~~~~~~~~~~~~~~~
 
 Pre-configured projects with source code are located in
 `PlatformIO Examples <https://github.com/platformio/platformio-examples>`_
 repository.
 
-Community Projects
-------------------
+Community
+---------
+
+Books
+~~~~~
+
+* `Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices <https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/>`_ (using the PlatformIO with :ref:`framework_espidf`)
+
+Tutorials
+~~~~~~~~~
 
 * `PlatformIO DIY Projects & Tutorials at Hackster.io <https://www.hackster.io/platformio/projects?utm_source=platformio.org&utm_medium=docs>`_
 
-Community Video Tutorials
--------------------------
+Video Tutorials
+~~~~~~~~~~~~~~~
 
 * `Getting Started with PlatformIO <https://www.youtube.com/watch?v=JmvMvIphMnY>`_ - **HIGHLY RECOMMENDED FOR BEGINNERS**
 * `PlatformIO Video Collection on YouTube <https://www.youtube.com/playlist?list=PLLnAiBnVrkALvk_IJhDBAQQuDozkj6C34>`_
@@ -54,3 +65,14 @@ Community Video Tutorials
 * `Отладка ESP32 в PlatformIO <https://www.youtube.com/watch?v=rreMOwEJcII>`_
 * `A Better Arduino IDE - Getting Started with PlatformIO <https://www.youtube.com/watch?v=EIkGTwLOD7o>`_
 * `PlatformIO - Using External Libraries <https://www.youtube.com/watch?v=EBlHNBNHESQ>`_
+
+Projects
+~~~~~~~~
+
+* `arendst/tasmota <https://github.com/arendst/tasmota/>`_ - an alternative firmware for ESP8266 with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX
+* `MarlinFirmware/Marlin <https://github.com/MarlinFirmware/Marlin>`_ - an optimized firmware for RepRap 3D printers based on the Arduino platform
+* `scottbez1/smartknob <https://github.com/scottbez1/smartknob>`_ - a haptic input knob with software-defined endstops and virtual detents
+* `esphome/esphome <https://github.com/esphome/esphome>`_ - a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems
+* `xoseperez/espurna <https://github.com/xoseperez/espurna>`_ - a home automation firmware for ESP8266-based devices
+* `1technophile/OpenMQTTGateway <https://github.com/1technophile/OpenMQTTGateway>`_ - MQTT gateway for ESP8266, ESP32, Sonoff RF Bridge or Arduino with bidirectional 433mhz/315mhz/868mhz, Infrared communications, BLE, Bluetooth, beacons detection, mi flora, mi jia, LYWSD02, LYWSD03MMC, Mi Scale, TPMS, BBQ thermometer compatibility, SMS & LORA
+* `cyberman54/ESP32-Paxcounter <https://github.com/cyberman54/ESP32-Paxcounter>`_ - Wifi & BLE driven passenger flow metering with cheap ESP32 boards.

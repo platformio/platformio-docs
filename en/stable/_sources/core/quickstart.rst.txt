@@ -237,11 +237,6 @@ are a few useful commands:
 Please follow to :option:`pio run --list-targets` documentation for the other
 targets.
 
-Finally, demo which demonstrates building project and uploading firmware to
-Arduino Uno:
-
-.. image:: ../_static/images/platformio-demo-wiring.gif
-
 Further Reading
 ---------------
 

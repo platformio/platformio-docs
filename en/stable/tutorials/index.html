@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorials and Examples &mdash; PlatformIO v5.2 documentation</title>
+  <title>Tutorials and Examples &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unit Testing of a “Blink” Project" href="core/unit_testing_blink.html" />
-    <link rel="prev" title="PlatformIO Home" href="../home/index.html" />
+    <link rel="next" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" href="espressif32/arduino_debugging_unit_testing.html" />
+    <link rel="prev" title="PlatformIO Account" href="../plus/pio-account.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -55,28 +55,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials and Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Tutorials</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nordicnrf52/arduino_debugging_unit_testing.html">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nordicnrf52/zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#official">Official</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Tutorials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nordicnrf52/arduino_debugging_unit_testing.html">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nordicnrf52/zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#project-examples">Project Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#community-projects">Community Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#community-video-tutorials">Community Video Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-examples">Project Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#community">Community</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#books">Books</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-tutorials">Video Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#projects">Projects</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -86,13 +95,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -104,7 +113,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -137,34 +146,45 @@
              
   <section id="tutorials-and-examples">
 <span id="tutorials"></span><h1>Tutorials and Examples<a class="headerlink" href="#tutorials-and-examples" title="Permalink to this headline">¶</a></h1>
+<section id="official">
+<h2>Official<a class="headerlink" href="#official" title="Permalink to this headline">¶</a></h2>
 <section id="id1">
-<h2>Tutorials<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h3>Tutorials<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressif32/arduino_debugging_unit_testing.html">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressif32/espidf_debugging_unit_testing_analysis.html">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ststm32/stm32cube_debugging_unit_testing.html">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nordicnrf52/arduino_debugging_unit_testing.html">Arduino and Nordic nRF52-DK: debugging and unit testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nordicnrf52/zephyr_debugging_unit_testing_inspect.html">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/unit_testing_blink.html">Unit Testing of a “Blink” Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="riscv/riscv_asm_video_tutorial.html">RISC-V ASM Video Tutorial</a></li>
 </ul>
 </div>
 </section>
 <section id="project-examples">
-<h2>Project Examples<a class="headerlink" href="#project-examples" title="Permalink to this headline">¶</a></h2>
+<h3>Project Examples<a class="headerlink" href="#project-examples" title="Permalink to this headline">¶</a></h3>
 <p>Pre-configured projects with source code are located in
 <a class="reference external" href="https://github.com/platformio/platformio-examples">PlatformIO Examples</a>
 repository.</p>
 </section>
-<section id="community-projects">
-<h2>Community Projects<a class="headerlink" href="#community-projects" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h2>
+<section id="books">
+<h3>Books<a class="headerlink" href="#books" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/">Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices</a> (using the PlatformIO with <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>)</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Tutorials<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.hackster.io/platformio/projects?utm_source=platformio.org&amp;utm_medium=docs">PlatformIO DIY Projects &amp; Tutorials at Hackster.io</a></p></li>
 </ul>
 </section>
-<section id="community-video-tutorials">
-<h2>Community Video Tutorials<a class="headerlink" href="#community-video-tutorials" title="Permalink to this headline">¶</a></h2>
+<section id="video-tutorials">
+<h3>Video Tutorials<a class="headerlink" href="#video-tutorials" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.youtube.com/watch?v=JmvMvIphMnY">Getting Started with PlatformIO</a> - <strong>HIGHLY RECOMMENDED FOR BEGINNERS</strong></p></li>
 <li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLLnAiBnVrkALvk_IJhDBAQQuDozkj6C34">PlatformIO Video Collection on YouTube</a></p></li>
@@ -179,14 +199,27 @@ repository.</p>
 <li><p><a class="reference external" href="https://www.youtube.com/watch?v=EBlHNBNHESQ">PlatformIO - Using External Libraries</a></p></li>
 </ul>
 </section>
+<section id="projects">
+<h3>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/arendst/tasmota/">arendst/tasmota</a> - an alternative firmware for ESP8266 with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX</p></li>
+<li><p><a class="reference external" href="https://github.com/MarlinFirmware/Marlin">MarlinFirmware/Marlin</a> - an optimized firmware for RepRap 3D printers based on the Arduino platform</p></li>
+<li><p><a class="reference external" href="https://github.com/scottbez1/smartknob">scottbez1/smartknob</a> - a haptic input knob with software-defined endstops and virtual detents</p></li>
+<li><p><a class="reference external" href="https://github.com/esphome/esphome">esphome/esphome</a> - a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems</p></li>
+<li><p><a class="reference external" href="https://github.com/xoseperez/espurna">xoseperez/espurna</a> - a home automation firmware for ESP8266-based devices</p></li>
+<li><p><a class="reference external" href="https://github.com/1technophile/OpenMQTTGateway">1technophile/OpenMQTTGateway</a> - MQTT gateway for ESP8266, ESP32, Sonoff RF Bridge or Arduino with bidirectional 433mhz/315mhz/868mhz, Infrared communications, BLE, Bluetooth, beacons detection, mi flora, mi jia, LYWSD02, LYWSD03MMC, Mi Scale, TPMS, BBQ thermometer compatibility, SMS &amp; LORA</p></li>
+<li><p><a class="reference external" href="https://github.com/cyberman54/ESP32-Paxcounter">cyberman54/ESP32-Paxcounter</a> - Wifi &amp; BLE driven passenger flow metering with cheap ESP32 boards.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../home/index.html" class="btn btn-neutral float-left" title="PlatformIO Home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="core/unit_testing_blink.html" class="btn btn-neutral float-right" title="Unit Testing of a “Blink” Project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../plus/pio-account.html" class="btn btn-neutral float-left" title="PlatformIO Account" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressif32/arduino_debugging_unit_testing.html" class="btn btn-neutral float-right" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -220,34 +253,34 @@ repository.</p>
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -307,7 +340,7 @@ repository.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

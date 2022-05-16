@@ -179,7 +179,16 @@ We can walk through the code using control buttons, set breakpoints, and add var
 Writing Unit Tests
 ------------------
 
-Test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``. Functions ``setUp`` and ``tearDown`` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests, but if you need to initialize some variables before you run a test, use the ``setUp`` function. Likewise, if you need to clean up variables, use ``tearDown`` function. In our example we will use these functions to respectively initialize and deinitialize LED states.  The ``setup`` and ``loop`` functions act as a simple Arduino program where we describe our test plan.
+:ref:`unit_testing` test cases can be added to a single file that may include
+multiple tests. First of all, in this file, we need to add four default
+functions: ``setUp``, ``tearDown``, ``setup`` and ``loop``.
+Functions ``setUp`` and ``tearDown`` are used to initialize and finalize
+test conditions. Implementations of these functions are not required for running
+tests, but if you need to initialize some variables before you run a test,
+use the ``setUp`` function. Likewise, if you need to clean up variables,
+use ``tearDown`` function. In our example we will use these functions to
+respectively initialize and deinitialize LED states. The ``setup`` and ``loop``
+functions act as a simple Arduino program where we describe our test plan.
 
 Let's create a ``test`` folder in the root of the project and add a new file, ``test_main.cpp``, to this folder. Next, basic tests for ``String`` class will be implemented in this file:
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; PlatformIO v5.2 documentation</title>
+  <title>Index &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -52,13 +52,14 @@
 <li class="toctree-l1"><a class="reference internal" href="integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projectconf/build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -68,13 +69,13 @@
 <li class="toctree-l1"><a class="reference internal" href="boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -86,7 +87,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -122,8 +123,17 @@
 
 <div class="genindex-jumpbox">
  <a href="#Symbols"><strong>Symbols</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  
 </div>
 <h2 id="Symbols">Symbols</h2>
@@ -175,6 +185,13 @@
 
       <ul>
         <li><a href="core/userguide/system/cmd_prune.html#cmdoption-pio-system-prune-cache">pio-system-prune command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --call
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-c">pio-pkg-exec command line option</a>
 </li>
       </ul></li>
       <li>
@@ -299,9 +316,19 @@
 </li>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-e">pio-lib command line option</a>
 </li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-e">pio-project-data command line option</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-e">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-e">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-e">pio-pkg-outdated command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-e">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-e">pio-pkg-update command line option</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-e">pio-project-init command line option</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-e">pio-project-metadata command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-monitor-e">pio-remote-device-monitor command line option</a>
 </li>
@@ -354,6 +381,8 @@
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-monitor-f">pio-remote-device-monitor command line option</a>
 </li>
+        <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-f">pio-remote-test command line option</a>
+</li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-f">pio-test command line option</a>
 </li>
       </ul></li>
@@ -378,6 +407,8 @@
         <li><a href="core/userguide/lib/cmd_install.html#cmdoption-pio-lib-install-f">pio-lib-install command line option</a>
 </li>
         <li><a href="core/userguide/lib/cmd_uninstall.html#cmdoption-pio-lib-uninstall-f">pio-lib-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-f">pio-pkg-install command line option</a>
 </li>
         <li><a href="core/userguide/platforms/cmd_install.html#cmdoption-pio-platform-install-f">pio-platform-install command line option</a>
 </li>
@@ -405,6 +436,14 @@
 
       <ul>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-g">pio-lib command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-g">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-g">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-g">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-g">pio-pkg-update command line option</a>
 </li>
       </ul></li>
       <li>
@@ -510,13 +549,29 @@
 </li>
         <li><a href="core/userguide/project/cmd_config.html#cmdoption-pio-project-config-json-output">pio-project-config command line option</a>
 </li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-json-output">pio-project-data command line option</a>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-json-output">pio-project-metadata command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-list-json-output">pio-remote-device-list command line option</a>
 </li>
         <li><a href="core/userguide/system/cmd_info.html#cmdoption-pio-system-info-json-output">pio-system-info command line option</a>
 </li>
         <li><a href="core/userguide/team/cmd_list.html#cmdoption-pio-team-list-json-output">pio-team-list command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --json-output-path
+
+      <ul>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-json-output-path">pio-project-metadata command line option</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-json-output-path">pio-test command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --junit-output-path
+
+      <ul>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-junit-output-path">pio-test command line option</a>
 </li>
       </ul></li>
       <li>
@@ -548,10 +603,30 @@
 </li>
       </ul></li>
       <li>
+    --library
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-l">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-l">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-l">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-l">pio-pkg-update command line option</a>
+</li>
+      </ul></li>
+      <li>
     --list-targets
 
       <ul>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-list-targets">pio-run command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --list-tests
+
+      <ul>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-list-tests">pio-test command line option</a>
 </li>
       </ul></li>
       <li>
@@ -617,10 +692,17 @@
 </li>
       </ul></li>
       <li>
+    --no-install-dependencies
+
+      <ul>
+        <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-no-install-dependencies">pio-project-init command line option</a>
+</li>
+      </ul></li>
+      <li>
     --no-notify
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-no-notify">pio-package-publish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-notify">pio-pkg-publish command line option</a>
 </li>
       </ul></li>
       <li>
@@ -638,10 +720,21 @@
 </li>
       </ul></li>
       <li>
+    --no-save
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-no-save">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-no-save">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-no-save">pio-pkg-update command line option</a>
+</li>
+      </ul></li>
+      <li>
     --non-interactive
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-non-interactive">pio-package-publish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-non-interactive">pio-pkg-publish command line option</a>
 </li>
       </ul></li>
       <li>
@@ -658,10 +751,31 @@
 </li>
       </ul></li>
       <li>
+    --only-libraries
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-libraries">pio-pkg-list command line option</a>
+</li>
+      </ul></li>
+      <li>
     --only-packages
 
       <ul>
         <li><a href="core/userguide/platforms/cmd_update.html#cmdoption-pio-platform-update-p">pio-platform-update command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --only-platforms
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-platforms">pio-pkg-list command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --only-tools
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-tools">pio-pkg-list command line option</a>
 </li>
       </ul></li>
       <li>
@@ -675,14 +789,21 @@
     --output
 
       <ul>
-        <li><a href="core/userguide/package/cmd_pack.html#cmdoption-pio-package-pack-o">pio-package-pack command line option</a>
+        <li><a href="core/userguide/pkg/cmd_pack.html#cmdoption-pio-pkg-pack-o">pio-pkg-pack command line option</a>
 </li>
       </ul></li>
       <li>
     --owner
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-owner">pio-package-publish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-owner">pio-pkg-publish command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --package
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p">pio-pkg-exec command line option</a>
 </li>
       </ul></li>
       <li>
@@ -690,6 +811,8 @@
 
       <ul>
         <li><a href="core/userguide/lib/cmd_search.html#cmdoption-pio-lib-search-page">pio-lib-search command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-p">pio-pkg-search command line option</a>
 </li>
       </ul></li>
       <li>
@@ -732,6 +855,14 @@
       <ul>
         <li><a href="core/userguide/lib/cmd_search.html#cmdoption-pio-lib-search-p">pio-lib-search command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-p">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-p">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-p">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-p">pio-pkg-update command line option</a>
+</li>
       </ul></li>
       <li>
     --platform-packages
@@ -755,7 +886,16 @@
     --private
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-private">pio-package-publish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-private">pio-pkg-publish command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --program-arg
+
+      <ul>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-a">pio-run command line option</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-a">pio-test command line option</a>
 </li>
       </ul></li>
       <li>
@@ -783,11 +923,21 @@
 </li>
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-d">pio-device-monitor command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-d">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-d">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-d">pio-pkg-outdated command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-d">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-d">pio-pkg-update command line option</a>
+</li>
         <li><a href="core/userguide/project/cmd_config.html#cmdoption-pio-project-config-d">pio-project-config command line option</a>
 </li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-d">pio-project-data command line option</a>
-</li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-d">pio-project-init command line option</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-d">pio-project-metadata command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-monitor-d">pio-remote-device-monitor command line option</a>
 </li>
@@ -831,7 +981,7 @@
     --released-at
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-released-at">pio-package-publish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-released-at">pio-pkg-publish command line option</a>
 </li>
       </ul></li>
       <li>
@@ -906,6 +1056,12 @@
 </li>
         <li><a href="core/userguide/lib/cmd_uninstall.html#cmdoption-pio-lib-uninstall-s">pio-lib-uninstall command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-s">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-s">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-s">pio-pkg-update command line option</a>
+</li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-s">pio-project-init command line option</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-s">pio-run command line option</a>
@@ -919,10 +1075,28 @@
 </li>
       </ul></li>
       <li>
+    --skip-dependencies
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-skip-dependencies">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-skip-dependencies">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-skip-dependencies">pio-pkg-update command line option</a>
+</li>
+      </ul></li>
+      <li>
     --skip-packages
 
       <ul>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-skip-packages">pio-check command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --sort
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-s">pio-pkg-search command line option</a>
 </li>
       </ul></li>
       <li>
@@ -937,6 +1111,14 @@
 
       <ul>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-d">pio-lib command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-storage-dir">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-storage-dir">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-storage-dir">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-storage-dir">pio-pkg-update command line option</a>
 </li>
       </ul></li>
       <li>
@@ -958,17 +1140,34 @@
 </li>
       </ul></li>
       <li>
+    --tool
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-t">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-t">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-t">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-t">pio-pkg-update command line option</a>
+</li>
+      </ul></li>
+      <li>
     --type
 
       <ul>
-        <li><a href="core/userguide/package/cmd_unpublish.html#cmdoption-pio-package-unpublish-type">pio-package-unpublish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-type">pio-pkg-publish command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_show.html#cmdoption-pio-pkg-show-t">pio-pkg-show command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_unpublish.html#cmdoption-pio-pkg-unpublish-type">pio-pkg-unpublish command line option</a>
 </li>
       </ul></li>
       <li>
     --undo
 
       <ul>
-        <li><a href="core/userguide/package/cmd_unpublish.html#cmdoption-pio-package-unpublish-undo">pio-package-unpublish command line option</a>
+        <li><a href="core/userguide/pkg/cmd_unpublish.html#cmdoption-pio-pkg-unpublish-undo">pio-pkg-unpublish command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1019,6 +1218,8 @@
         <li><a href="core/userguide/cmd_ci.html#cmdoption-pio-ci-v">pio-ci command line option</a>
 </li>
         <li><a href="core/userguide/cmd_debug.html#cmdoption-pio-debug-v">pio-debug command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-v">pio-pkg-list command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_run.html#cmdoption-pio-remote-run-v">pio-remote-run command line option</a>
 </li>
@@ -1104,6 +1305,10 @@
       <ul>
         <li><a href="core/userguide/lib/cmd_search.html#cmdoption-pio-lib-search-a">pio-lib-search command line option</a>
 </li>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-a">pio-run command line option</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-a">pio-test command line option</a>
+</li>
       </ul></li>
       <li>
     -b
@@ -1130,6 +1335,8 @@
 </li>
         <li><a href="core/userguide/lib/cmd_update.html#cmdoption-pio-lib-update-c">pio-lib-update command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-c">pio-pkg-exec command line option</a>
+</li>
         <li><a href="core/userguide/platforms/cmd_update.html#cmdoption-pio-platform-update-c">pio-platform-update command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_update.html#cmdoption-pio-remote-update-c">pio-remote-update command line option</a>
@@ -1153,11 +1360,21 @@
 </li>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-d">pio-lib command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-d">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-d">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-d">pio-pkg-outdated command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-d">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-d">pio-pkg-update command line option</a>
+</li>
         <li><a href="core/userguide/project/cmd_config.html#cmdoption-pio-project-config-d">pio-project-config command line option</a>
 </li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-d">pio-project-data command line option</a>
-</li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-d">pio-project-init command line option</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-d">pio-project-metadata command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_agent.html#cmdoption-pio-remote-agent-start-d">pio-remote-agent-start command line option</a>
 </li>
@@ -1186,9 +1403,19 @@
 </li>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-e">pio-lib command line option</a>
 </li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-e">pio-project-data command line option</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-e">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-e">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-e">pio-pkg-outdated command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-e">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-e">pio-pkg-update command line option</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-e">pio-project-init command line option</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-e">pio-project-metadata command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-monitor-e">pio-remote-device-monitor command line option</a>
 </li>
@@ -1213,9 +1440,13 @@
 </li>
         <li><a href="core/userguide/lib/cmd_uninstall.html#cmdoption-pio-lib-uninstall-f">pio-lib-uninstall command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-f">pio-pkg-install command line option</a>
+</li>
         <li><a href="core/userguide/platforms/cmd_install.html#cmdoption-pio-platform-install-f">pio-platform-install command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_device.html#cmdoption-pio-remote-device-monitor-f">pio-remote-device-monitor command line option</a>
+</li>
+        <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-f">pio-remote-test command line option</a>
 </li>
         <li><a href="core/userguide/system/cmd_prune.html#cmdoption-pio-system-prune-force">pio-system-prune command line option</a>
 </li>
@@ -1227,6 +1458,14 @@
 
       <ul>
         <li><a href="core/userguide/lib/index.html#cmdoption-pio-lib-g">pio-lib command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-g">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-g">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-g">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-g">pio-pkg-update command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1267,6 +1506,14 @@
       <ul>
         <li><a href="core/userguide/cmd_ci.html#cmdoption-pio-ci-l">pio-ci command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-l">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-l">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-l">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-l">pio-pkg-update command line option</a>
+</li>
       </ul></li>
       <li>
     -n
@@ -1290,7 +1537,7 @@
     -o
 
       <ul>
-        <li><a href="core/userguide/package/cmd_pack.html#cmdoption-pio-package-pack-o">pio-package-pack command line option</a>
+        <li><a href="core/userguide/pkg/cmd_pack.html#cmdoption-pio-pkg-pack-o">pio-pkg-pack command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1304,6 +1551,18 @@
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-p">pio-device-monitor command line option</a>
 </li>
         <li><a href="core/userguide/lib/cmd_search.html#cmdoption-pio-lib-search-p">pio-lib-search command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p">pio-pkg-exec command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-p">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-p">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-p">pio-pkg-search command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-p">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-p">pio-pkg-update command line option</a>
 </li>
         <li><a href="core/userguide/platforms/cmd_update.html#cmdoption-pio-platform-update-p">pio-platform-update command line option</a>
 </li>
@@ -1329,6 +1588,14 @@
 </li>
         <li><a href="core/userguide/lib/cmd_uninstall.html#cmdoption-pio-lib-uninstall-s">pio-lib-uninstall command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-s">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-s">pio-pkg-search command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-s">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-s">pio-pkg-update command line option</a>
+</li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-s">pio-project-init command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_agent.html#cmdoption-pio-remote-agent-start-s">pio-remote-agent-start command line option</a>
@@ -1340,6 +1607,16 @@
     -t
 
       <ul>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-t">pio-pkg-install command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-t">pio-pkg-list command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_show.html#cmdoption-pio-pkg-show-t">pio-pkg-show command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-t">pio-pkg-uninstall command line option</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-t">pio-pkg-update command line option</a>
+</li>
         <li><a href="core/userguide/remote/cmd_run.html#cmdoption-pio-remote-run-t">pio-remote-run command line option</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-t">pio-run command line option</a>
@@ -1366,6 +1643,8 @@
 </li>
         <li><a href="core/userguide/cmd_debug.html#cmdoption-pio-debug-v">pio-debug command line option</a>
 </li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-v">pio-pkg-list command line option</a>
+</li>
         <li><a href="core/userguide/remote/cmd_run.html#cmdoption-pio-remote-run-v">pio-remote-run command line option</a>
 </li>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-v">pio-remote-test command line option</a>
@@ -1375,6 +1654,26 @@
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-v">pio-test command line option</a>
 </li>
       </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.configure_build_env">configure_build_env() (CustomTestRunner method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner">CustomTestRunner (built-in class)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.duration">duration (TestCase attribute)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -1396,6 +1695,10 @@
         <li><a href="envvars.html#envvar-PLATFORMIO_BUILD_DIR">PLATFORMIO_BUILD_DIR</a>, <a href="projectconf/section_platformio.html#index-9">[1]</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_BUILD_FLAGS">PLATFORMIO_BUILD_FLAGS</a>, <a href="integration/ci/circleci.html#index-0">[1]</a>, <a href="integration/ci/github-actions.html#index-0">[2]</a>, <a href="integration/ci/travis.html#index-1">[3]</a>, <a href="projectconf/section_env_build.html#index-0">[4]</a>
+</li>
+        <li><a href="envvars.html#envvar-PLATFORMIO_BUILD_SRC_FILTER">PLATFORMIO_BUILD_SRC_FILTER</a>, <a href="projectconf/section_env_build.html#index-2">[1]</a>
+</li>
+        <li><a href="envvars.html#envvar-PLATFORMIO_BUILD_SRC_FLAGS">PLATFORMIO_BUILD_SRC_FLAGS</a>, <a href="projectconf/section_env_build.html#index-1">[1]</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_CACHE_DIR">PLATFORMIO_CACHE_DIR</a>, <a href="projectconf/section_platformio.html#index-6">[1]</a>
 </li>
@@ -1431,15 +1734,7 @@
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_REMOTE_AGENT_DIR">PLATFORMIO_REMOTE_AGENT_DIR</a>
 </li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_AUTO_UPDATE_LIBRARIES">PLATFORMIO_SETTING_AUTO_UPDATE_LIBRARIES</a>
-</li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_AUTO_UPDATE_PLATFORMS">PLATFORMIO_SETTING_AUTO_UPDATE_PLATFORMS</a>
-</li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_CHECK_LIBRARIES_INTERVAL">PLATFORMIO_SETTING_CHECK_LIBRARIES_INTERVAL</a>
-</li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_CHECK_PLATFORMIO_INTERVAL">PLATFORMIO_SETTING_CHECK_PLATFORMIO_INTERVAL</a>
-</li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_CHECK_PLATFORMS_INTERVAL">PLATFORMIO_SETTING_CHECK_PLATFORMS_INTERVAL</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_CHECK_PRUNE_SYSTEM_THRESHOLD">PLATFORMIO_SETTING_CHECK_PRUNE_SYSTEM_THRESHOLD</a>
 </li>
@@ -1447,17 +1742,13 @@
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_ENABLE_TELEMETRY">PLATFORMIO_SETTING_ENABLE_TELEMETRY</a>
 </li>
-        <li><a href="core/userguide/cmd_check.html#index-0">PLATFORMIO_SETTING_FORCE_VERBOSE</a>, <a href="core/userguide/cmd_ci.html#index-0">[1]</a>, <a href="core/userguide/cmd_debug.html#index-0">[2]</a>, <a href="core/userguide/cmd_run.html#index-0">[3]</a>, <a href="core/userguide/cmd_test.html#index-0">[4]</a>, <a href="core/userguide/remote/cmd_run.html#index-0">[5]</a>, <a href="core/userguide/remote/cmd_test.html#index-0">[6]</a>, <a href="envvars.html#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE">[7]</a>
+        <li><a href="core/userguide/cmd_check.html#index-0">PLATFORMIO_SETTING_FORCE_VERBOSE</a>, <a href="core/userguide/cmd_ci.html#index-0">[1]</a>, <a href="core/userguide/cmd_debug.html#index-0">[2]</a>, <a href="core/userguide/cmd_run.html#index-0">[3]</a>, <a href="core/userguide/remote/cmd_run.html#index-0">[4]</a>, <a href="core/userguide/remote/cmd_test.html#index-0">[5]</a>, <a href="envvars.html#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE">[6]</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SETTING_PROJECTS_DIR">PLATFORMIO_SETTING_PROJECTS_DIR</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SHARED_DIR">PLATFORMIO_SHARED_DIR</a>, <a href="projectconf/section_platformio.html#index-18">[1]</a>
 </li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SRC_BUILD_FLAGS">PLATFORMIO_SRC_BUILD_FLAGS</a>, <a href="projectconf/section_env_build.html#index-1">[1]</a>
-</li>
         <li><a href="envvars.html#envvar-PLATFORMIO_SRC_DIR">PLATFORMIO_SRC_DIR</a>, <a href="projectconf/section_platformio.html#index-12">[1]</a>
-</li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_SRC_FILTER">PLATFORMIO_SRC_FILTER</a>, <a href="projectconf/section_env_build.html#index-2">[1]</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_TEST_DIR">PLATFORMIO_TEST_DIR</a>, <a href="projectconf/section_platformio.html#index-15">[1]</a>
 </li>
@@ -1469,11 +1760,67 @@
 </li>
       </ul></li>
   </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestStatus.ERRORED">ERRORED (TestStatus attribute)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.exception">exception (TestCase attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestStatus.FAILED">FAILED (TestStatus attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCaseSource.file">file (TestCaseSource attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCaseSource.line">line (TestCaseSource attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.message">message (TestCase attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.name">name (TestCase attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.on_testing_data_output">on_testing_data_output() (CustomTestRunner method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.on_testing_line_output">on_testing_line_output() (CustomTestRunner method)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestStatus.PASSED">PASSED (TestStatus attribute)</a>
+</li>
       <li>
     pio command line option
 
@@ -1910,36 +2257,250 @@
 </li>
       </ul></li>
       <li>
-    pio-package-pack command line option
+    pio-pkg-exec command line option
 
       <ul>
-        <li><a href="core/userguide/package/cmd_pack.html#cmdoption-pio-package-pack-o">--output</a>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-c">--call</a>
 </li>
-        <li><a href="core/userguide/package/cmd_pack.html#cmdoption-pio-package-pack-o">-o</a>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p">--package</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-c">-c</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p">-p</a>
 </li>
       </ul></li>
       <li>
-    pio-package-publish command line option
+    pio-pkg-install command line option
 
       <ul>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-no-notify">--no-notify</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-e">--environment</a>
 </li>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-non-interactive">--non-interactive</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-f">--force</a>
 </li>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-owner">--owner</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-g">--global</a>
 </li>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-private">--private</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-l">--library</a>
 </li>
-        <li><a href="core/userguide/package/cmd_publish.html#cmdoption-pio-package-publish-released-at">--released-at</a>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-no-save">--no-save</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-p">--platform</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-s">--silent</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-skip-dependencies">--skip-dependencies</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-storage-dir">--storage-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-t">--tool</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-d">-d</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-e">-e</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-f">-f</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-g">-g</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-l">-l</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-p">-p</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-s">-s</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_install.html#cmdoption-pio-pkg-install-t">-t</a>
 </li>
       </ul></li>
       <li>
-    pio-package-unpublish command line option
+    pio-pkg-list command line option
 
       <ul>
-        <li><a href="core/userguide/package/cmd_unpublish.html#cmdoption-pio-package-unpublish-type">--type</a>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-e">--environment</a>
 </li>
-        <li><a href="core/userguide/package/cmd_unpublish.html#cmdoption-pio-package-unpublish-undo">--undo</a>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-g">--global</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-l">--library</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-libraries">--only-libraries</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-platforms">--only-platforms</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-only-tools">--only-tools</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-p">--platform</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-storage-dir">--storage-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-t">--tool</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-v">--verbose</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-d">-d</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-e">-e</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-g">-g</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-l">-l</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-p">-p</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-t">-t</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_list.html#cmdoption-pio-pkg-list-v">-v</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-outdated command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-e">--environment</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-d">-d</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_outdated.html#cmdoption-pio-pkg-outdated-e">-e</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-pack command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_pack.html#cmdoption-pio-pkg-pack-o">--output</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_pack.html#cmdoption-pio-pkg-pack-o">-o</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-publish command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-notify">--no-notify</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-non-interactive">--non-interactive</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-owner">--owner</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-private">--private</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-released-at">--released-at</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-type">--type</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-search command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-p">--page</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-s">--sort</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-p">-p</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-s">-s</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-show command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_show.html#cmdoption-pio-pkg-show-t">--type</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_show.html#cmdoption-pio-pkg-show-t">-t</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-uninstall command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-e">--environment</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-g">--global</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-l">--library</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-no-save">--no-save</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-p">--platform</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-s">--silent</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-skip-dependencies">--skip-dependencies</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-storage-dir">--storage-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-t">--tool</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-d">-d</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-e">-e</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-g">-g</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-l">-l</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-p">-p</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-s">-s</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-t">-t</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    pio-pkg-unpublish command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_unpublish.html#cmdoption-pio-pkg-unpublish-type">--type</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_unpublish.html#cmdoption-pio-pkg-unpublish-undo">--undo</a>
+</li>
+      </ul></li>
+      <li>
+    pio-pkg-update command line option
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-e">--environment</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-g">--global</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-l">--library</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-no-save">--no-save</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-p">--platform</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-s">--silent</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-skip-dependencies">--skip-dependencies</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-storage-dir">--storage-dir</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-t">--tool</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-d">-d</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-e">-e</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-g">-g</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-l">-l</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-p">-p</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-s">-s</a>
+</li>
+        <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-t">-t</a>
 </li>
       </ul></li>
       <li>
@@ -1966,8 +2527,6 @@
         <li><a href="core/userguide/platforms/cmd_install.html#cmdoption-pio-platform-install-f">-f</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     pio-platform-list command line option
 
@@ -2011,21 +2570,6 @@
 </li>
       </ul></li>
       <li>
-    pio-project-data command line option
-
-      <ul>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-e">--environment</a>
-</li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-json-output">--json-output</a>
-</li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-d">--project-dir</a>
-</li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-d">-d</a>
-</li>
-        <li><a href="core/userguide/project/cmd_data.html#cmdoption-pio-project-data-e">-e</a>
-</li>
-      </ul></li>
-      <li>
     pio-project-init command line option
 
       <ul>
@@ -2036,6 +2580,8 @@
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-e">--environment</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide">--ide</a>
+</li>
+        <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-no-install-dependencies">--no-install-dependencies</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-d">--project-dir</a>
 </li>
@@ -2052,6 +2598,23 @@
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-O">-O</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-s">-s</a>
+</li>
+      </ul></li>
+      <li>
+    pio-project-metadata command line option
+
+      <ul>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-e">--environment</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-json-output">--json-output</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-json-output-path">--json-output-path</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-d">--project-dir</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-d">-d</a>
+</li>
+        <li><a href="core/userguide/project/cmd_metadata.html#cmdoption-pio-project-metadata-e">-e</a>
 </li>
       </ul></li>
       <li>
@@ -2162,6 +2725,8 @@
       <ul>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-e">--environment</a>
 </li>
+        <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-f">--filter</a>
+</li>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-r">--force-remote</a>
 </li>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-i">--ignore</a>
@@ -2181,6 +2746,8 @@
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-d">-d</a>
 </li>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-e">-e</a>
+</li>
+        <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-f">-f</a>
 </li>
         <li><a href="core/userguide/remote/cmd_test.html#cmdoption-pio-remote-test-i">-i</a>
 </li>
@@ -2212,6 +2779,8 @@
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-list-targets">--list-targets</a>
 </li>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-a">--program-arg</a>
+</li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-c">--project-conf</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-d">--project-dir</a>
@@ -2223,6 +2792,8 @@
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-upload-port">--upload-port</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-v">--verbose</a>
+</li>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-a">-a</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-c">-c</a>
 </li>
@@ -2310,11 +2881,19 @@
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-i">--ignore</a>
 </li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-json-output-path">--json-output-path</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-junit-output-path">--junit-output-path</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-list-tests">--list-tests</a>
+</li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-monitor-dtr">--monitor-dtr</a>
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-monitor-rts">--monitor-rts</a>
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-no-reset">--no-reset</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-a">--program-arg</a>
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-c">--project-conf</a>
 </li>
@@ -2331,6 +2910,8 @@
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-without-testing">--without-testing</a>
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-without-uploading">--without-uploading</a>
+</li>
+        <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-a">-a</a>
 </li>
         <li><a href="core/userguide/cmd_test.html#cmdoption-pio-test-c">-c</a>
 </li>
@@ -2375,6 +2956,10 @@
 </li>
       <li><a href="integration/ci/circleci.html#index-0">PLATFORMIO_BUILD_FLAGS</a>, <a href="integration/ci/github-actions.html#index-0">[1]</a>, <a href="integration/ci/travis.html#index-1">[2]</a>, <a href="projectconf/section_env_build.html#index-0">[3]</a>
 </li>
+      <li><a href="projectconf/section_env_build.html#index-2">PLATFORMIO_BUILD_SRC_FILTER</a>
+</li>
+      <li><a href="projectconf/section_env_build.html#index-1">PLATFORMIO_BUILD_SRC_FLAGS</a>
+</li>
       <li><a href="projectconf/section_platformio.html#index-6">PLATFORMIO_CACHE_DIR</a>
 </li>
       <li><a href="faq.html#index-0">PLATFORMIO_CORE_DIR</a>, <a href="projectconf/section_platformio.html#index-2">[1]</a>
@@ -2407,15 +2992,11 @@
 </li>
       <li><a href="projectconf/section_platformio.html#index-4">PLATFORMIO_PLATFORMS_DIR</a>
 </li>
-      <li><a href="core/userguide/cmd_check.html#index-0">PLATFORMIO_SETTING_FORCE_VERBOSE</a>, <a href="core/userguide/cmd_ci.html#index-0">[1]</a>, <a href="core/userguide/cmd_debug.html#index-0">[2]</a>, <a href="core/userguide/cmd_run.html#index-0">[3]</a>, <a href="core/userguide/cmd_test.html#index-0">[4]</a>, <a href="core/userguide/remote/cmd_run.html#index-0">[5]</a>, <a href="core/userguide/remote/cmd_test.html#index-0">[6]</a>
+      <li><a href="core/userguide/cmd_check.html#index-0">PLATFORMIO_SETTING_FORCE_VERBOSE</a>, <a href="core/userguide/cmd_ci.html#index-0">[1]</a>, <a href="core/userguide/cmd_debug.html#index-0">[2]</a>, <a href="core/userguide/cmd_run.html#index-0">[3]</a>, <a href="core/userguide/remote/cmd_run.html#index-0">[4]</a>, <a href="core/userguide/remote/cmd_test.html#index-0">[5]</a>
 </li>
       <li><a href="projectconf/section_platformio.html#index-18">PLATFORMIO_SHARED_DIR</a>
 </li>
-      <li><a href="projectconf/section_env_build.html#index-1">PLATFORMIO_SRC_BUILD_FLAGS</a>
-</li>
       <li><a href="projectconf/section_platformio.html#index-12">PLATFORMIO_SRC_DIR</a>
-</li>
-      <li><a href="projectconf/section_env_build.html#index-2">PLATFORMIO_SRC_FILTER</a>
 </li>
       <li><a href="projectconf/section_platformio.html#index-15">PLATFORMIO_TEST_DIR</a>
 </li>
@@ -2424,6 +3005,46 @@
       <li><a href="projectconf/section_env_upload.html#index-0">PLATFORMIO_UPLOAD_PORT</a>
 </li>
       <li><a href="projectconf/section_platformio.html#index-0">PLATFORMIO_WORKSPACE_DIR</a>, <a href="projectconf/section_platformio.html#index-8">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.setup">setup() (CustomTestRunner method)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestStatus.SKIPPED">SKIPPED (TestStatus attribute)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.source">source (TestCase attribute)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.stage_building">stage_building() (CustomTestRunner method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.stage_testing">stage_testing() (CustomTestRunner method)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.stage_uploading">stage_uploading() (CustomTestRunner method)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.status">status (TestCase attribute)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase.stdout">stdout (TestCase attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#CustomTestRunner.teardown">teardown() (CustomTestRunner method)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCase">TestCase (built-in class)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestCaseSource">TestCaseSource (built-in class)</a>
+</li>
+      <li><a href="advanced/unit-testing/frameworks/custom/api.html#TestStatus">TestStatus (built-in class)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -2465,34 +3086,34 @@
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -2552,7 +3173,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

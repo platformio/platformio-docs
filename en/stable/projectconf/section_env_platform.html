@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Platform options &mdash; PlatformIO v5.2 documentation</title>
+  <title>Platform options &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -55,6 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials and Examples</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
@@ -63,7 +64,7 @@
 <li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="section_env.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="section_env.html#environment-env-name">Environment <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="section_env.html#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="section_env.html#options">Options</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Platform options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="section_env_build.html">Build options</a></li>
@@ -79,12 +80,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
-<li class="toctree-l2"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="build_configurations.html">Build Configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Advanced Scripting</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -94,13 +94,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Boards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Professional</span></p>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/unit-testing.html">Unit Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-check.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plus/pio-remote.html">Remote Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../plus/pio-account.html">PlatformIO Account</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration</span></p>
 <ul>
@@ -112,7 +112,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 4.x to 5.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
@@ -161,53 +161,44 @@
 </div>
 <section id="platform">
 <span id="projectconf-env-platform"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">platform</span></code></a><a class="headerlink" href="#platform" title="Permalink to this headline">¶</a></h2>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
-<p><a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> name.</p>
-<p>PlatformIO allows one to use specific version of platform using
-<a class="reference external" href="https://devhints.io/semver">Semantic Versioning</a> (X.Y.Z=MAJOR.MINOR.PATCH) or VCS
-(Git, Mercurial and Subversion).</p>
-<p>Version specifications can take any of the following forms:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>: an exact version number. Use only this exact version</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">^1.2.3</span></code>: any compatible version (exact version for <code class="docutils literal notranslate"><span class="pre">1.x.x</span></code> versions)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">~1.2.3</span></code>: any version with the same major and minor versions, and an
-equal or greater patch version</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;1.2.3</span></code>: any version greater than <code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>. <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>
-are also possible</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;0.1.0,!=0.2.0,&lt;0.3.0</span></code>: any version greater than <code class="docutils literal notranslate"><span class="pre">0.1.0</span></code>, not equal to
-<code class="docutils literal notranslate"><span class="pre">0.2.0</span></code> and less than <code class="docutils literal notranslate"><span class="pre">0.3.0</span></code></p></li>
-</ul>
-<p>Other forms are the same as for the  <a class="reference internal" href="../core/userguide/platforms/cmd_install.html#cmd-platform-install"><span class="std std-ref">pio platform install</span></a> command.</p>
-<p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:the_latest_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>Specify a development platform that provides integration of vendor-specific
+boards (development kits, MCUs), high-level frameworks, and SDKs.
+See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a> for details.</p>
+<p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> allows you to explore supported development platforms, boards, frameworks, and toolchains.</p>
+<p>For the advanced platform configuration, please check the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> documentation.</p>
+<p>Example of using a <a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">Espressif 32 development platform</a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:recommended_specification]</span><span class="w"></span>
+<span class="c1">; allow backwards-compatible new functionality and bug-fixes</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@^3.5.0</span><span class="w"></span>
+
+<span class="k">[env:allow_only_bug_fixes]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@~3.5.0</span><span class="w"></span>
 
 <span class="k">[env:exact_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@1.2.3</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@3.5.0</span><span class="w"></span>
 
-<span class="k">[env:specific_major_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@^1.2.3</span><span class="w"></span>
-
-<span class="k">[env:specific_major_and_minor_version]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@~1.2.3</span><span class="w"></span>
+<span class="k">[env:latest_version]</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
 
 <span class="k">[env:development_verion_by_git]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-ststm32.git</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span><span class="w"></span>
 
 <span class="k">[env:custom_git_branch]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#feature/stage</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git#master</span><span class="w"></span>
 
 <span class="k">[env:specific_git_commit]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git#921855a9c530082efddb5d48b44c3f4be0e2dfa2</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git#f8340a2081a31c2ac8ed2b16907f2a21dc8897d4</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="platform-packages">
 <span id="projectconf-env-platform-packages"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">platform_packages</span></code></a><a class="headerlink" href="#platform-packages" title="Permalink to this headline">¶</a></h2>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Configure custom packages per a build environment. You can also override
-default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name. Packages will be
-installed in <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a>.</p>
+default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name.
+See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#cmd-pkg-install-specifications"><span class="std std-ref">Package Specifications</span></a> for details.</p>
+<p>Check the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> for the available toolchains, frameworks, SDKs, etc.</p>
 <p>Examples:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:override_default_toolchain]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
@@ -349,34 +340,34 @@ and open JSON file to list all available options.</p>
             <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
               <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
             </ul>\
           </li>\
           <li class="dropdown">\
-            <a role="button" data-target="#" href="https://docs.platformio.org/page/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
             </a>\
             <ul class="dropdown-menu" role="menu">\
               <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/unit-testing.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
               <li role="separator" class="divider"></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
               <li role="separator" class="divider"></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
               <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
-              <li role="menuitem"><a href="https://docs.platformio.org/page/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
           <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
@@ -436,7 +427,7 @@ and open JSON file to list all available options.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v5.2.5 (stable)
+    v6.0.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

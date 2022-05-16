@@ -14,9 +14,8 @@
 PlatformIO IDE for Atom
 =======================
 
-.. include:: pioide_features.rst
-
--------------
+.. warning::
+    The PlatformIO IDE for Atom has been deprecated. Please switch to the :ref:`ide_vscode`.
 
 `Atom <https://atom.io>`_ is a text editor that's modern, approachable,
 yet hackable to the core—a tool you can customize to do anything but also use
