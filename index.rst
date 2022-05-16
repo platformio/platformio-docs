@@ -40,6 +40,7 @@ Contents
     integration/ide/pioide
     core/index
     home/index
+    plus/pio-account
     tutorials/index
 
 .. toctree::
@@ -49,7 +50,6 @@ Contents
     platformio.ini <projectconf/index>
     projectconf/build_configurations
     envvars
-    scripting/index
 
 .. toctree::
     :caption: Instruments
@@ -65,11 +65,11 @@ Contents
     :caption: Advanced
     :maxdepth: 1
 
+    Scripting <scripting/index>
     plus/debugging
     advanced/unit-testing/index
     advanced/static-code-analysis/index
     plus/pio-remote
-    plus/pio-account
 
 .. toctree::
     :caption: Integration
