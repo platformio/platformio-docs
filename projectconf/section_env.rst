@@ -74,6 +74,7 @@ is equivalent to duplicating all options as shown below:
     build_flags = -D DEBUG
     lib_deps = DepCustom
 
+.. _projectconf_section_env_named:
 
 Environment ``[env:NAME]``
 --------------------------

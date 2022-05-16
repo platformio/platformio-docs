@@ -17,7 +17,8 @@ Library options
 ---------------
 
 .. seealso::
-    Please make sure to read :ref:`ldf` guide first.
+    Please make sure to read :ref:`librarymanager_dependencies`
+    and :ref:`ldf` guides first.
 
 .. contents::
     :local:
@@ -27,20 +28,20 @@ Library options
 ``lib_deps``
 ^^^^^^^^^^^^
 
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
-
 Type: ``Package Specification`` | Multiple: ``Yes``
 
+.. seealso::
+    Please make sure to read :ref:`librarymanager_dependencies` guide first.
+
 Specify project dependencies using :ref:`cmd_pkg_install_specifications`
-that should be installed automatically to
+that should be installed automatically to the
 :ref:`projectconf_pio_libdeps_dir` before environment processing.
 
 If you have multiple build environments that depend on the same libraries,
 you can use :ref:`projectconf_section_env` or :ref:`projectconf_interpolation`
 to use the common configuration.
 
-Check the |PIOREGISTRY| for the available libraries and the installation instruction.
+Check the |PIOREGISTRY| for the available libraries and the installation instructions.
 
 **Example**
 

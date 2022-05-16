@@ -9,21 +9,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+Configuration
+-------------
 
-Library Management
-==================
-
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+**PlatformIO Library Manager** can be configured from :ref:`projectconf`
+using the next options:
 
 .. toctree::
     :maxdepth: 2
 
-    dependencies
-    ldf
-    configuration
-    config
-    creating
+    ../projectconf/section_env_library

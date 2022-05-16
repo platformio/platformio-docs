@@ -30,6 +30,7 @@
 /ide/visualstudio.html -> /integration/ide/visualstudio.html
 /ide/vscode.html -> /integration/ide/vscode.html
 /installation.html -> /core/installation.html
+/librarymanager/quickstart.html -> /librarymanager/dependencies.html
 /migration.html -> /core/migration.html
 /platforms/espressif.html -> /platforms/espressif8266.html
 /platforms/unit_testing.html -> /advanced/unit-testing/index.html
