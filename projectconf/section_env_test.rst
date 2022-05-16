@@ -20,6 +20,18 @@ Test options
 .. contents::
     :local:
 
+.. _projectconf_test_framework:
+
+``test_framework``
+^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 6.0
+
+Type: ``String`` | Multiple: ``No``
+
+A Unit Testing framework name. Please follow to the :ref:`unit_testing_frameworks`
+for the available frameworks.
+
 .. _projectconf_test_filter:
 
 ``test_filter``
@@ -30,7 +42,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 Process only the :ref:`unit_testing` tests where the name matches specified
 patterns.
 
-Also, you can filter some tests using :option:`pio test --filter` command.
+Also, you can override this option using :option:`pio test --filter` command.
 
 .. list-table::
     :header-rows:  1
@@ -55,7 +67,10 @@ Also, you can filter some tests using :option:`pio test --filter` command.
 .. code-block:: ini
 
   [env:myenv]
-  test_filter = footest, bartest_*, test[13]
+  test_filter =
+    footest
+    bartest_*
+    test[13]
 
 .. _projectconf_test_ignore:
 
@@ -66,7 +81,7 @@ Type: ``String (Pattern)`` | Multiple: ``Yes``
 
 Ignore :ref:`unit_testing` tests where the name matches specified patterns.
 
-Also, you can ignore some tests using :option:`pio test --ignore` command.
+Also, you can override this option using :option:`pio test --ignore` command.
 
 .. list-table::
     :header-rows:  1
@@ -103,16 +118,15 @@ Also, you can ignore some tests using :option:`pio test --ignore` command.
 
 Type: ``String (Pattern)`` | Multiple: ``No``
 
-This option specifies communication interface (Serial/UART) between PlatformIO
-:ref:`unit_testing` Engine and target device. For example,
+This option specifies communication interface between PlatformIO
+:ref:`unit_testing` Test Runner and the target device. The possible
+values are the same as documented for :ref:`projectconf_monitor_port`
+option.
 
-* ``/dev/ttyUSB0`` - Unix-based OS
-* ``COM3`` - Windows OS
+If ``test_port`` isn't specified, the PlatformIO :ref:`unit_testing`
+runner will try to detect it automatically.
 
-If ``test_port`` isn't specified, then *PlatformIO* will try to detect it
-automatically.
-
-To print all available serial ports use :ref:`cmd_device_list` command.
+To print all available serial ports use the :ref:`cmd_device_list` command.
 
 .. _projectconf_test_speed:
 
@@ -124,26 +138,16 @@ Type: ``Number`` | Multiple: ``No`` | Default: ``115200``
 A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 to communicate with a target device.
 
-.. _projectconf_test_transport:
+.. _projectconf_test_build_src:
 
-``test_transport``
+``test_build_src``
 ^^^^^^^^^^^^^^^^^^
-
-Type: ``String`` | Multiple: ``No``
-
-A transport type which will be used to read test results from a target device.
-See more details at :ref:`unit_testing_transport`.
-
-.. _projectconf_test_build_project_src:
-
-``test_build_project_src``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
-Force :ref:`unit_testing` engine to build project source code from
-:ref:`projectconf_pio_src_dir` setting ``test_build_project_src`` to ``yes``.
-More detail about :ref:`unit_testing_shared_code`.
+Setting ``test_build_src`` to ``yes`` will force :ref:`unit_testing` engine
+to build the main source code from :ref:`projectconf_pio_src_dir` in pair
+with a test code. See :ref:`unit_testing_shared_code` for details.
 
 **Example**
 
@@ -151,4 +155,41 @@ More detail about :ref:`unit_testing_shared_code`.
 
   [env:myenv]
   platform = ...
-  test_build_project_src = yes
+  test_build_src = yes
+
+.. _projectconf_test_testing_command:
+
+``test_testing_command``
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiline Arguments: ``Yes``
+
+A custom testing command that executes test cases and returns results
+to the standard output.
+
+Typically, a default value for the :ref:`platform_native` is equal
+to:
+
+.. code:: ini
+
+  [env:myenv]
+  platform = native
+  test_testing_command =
+    ${platformio.build_dir}/${this.__env__}/program
+
+You can override the default command and pass extra program arguments:
+
+.. code:: ini
+
+  [env:myenv]
+  platform = native
+  test_testing_command =
+    ${platformio.build_dir}/${this.__env__}/program
+    arg1
+    --option2
+    option2_value
+
+Please note that you can pass extra arguments to the program
+using CLI and :option:`pio test --program-arg` option.
+
+See :ref:`unit_testing_simulators` examples.

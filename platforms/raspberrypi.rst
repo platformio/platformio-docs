@@ -19,7 +19,7 @@ Raspberry Pi RP2040
 :Configuration:
   :ref:`projectconf_env_platform` = ``raspberrypi``
 
-RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
 For more detailed information please visit `vendor site <https://www.raspberrypi.org/documentation/rp2040/getting-started/?utm_source=platformio.org&utm_medium=docs>`_.
 

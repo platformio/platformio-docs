@@ -29,9 +29,9 @@ Awards
 PlatformIO was nominated for the year's `best Software and Tools in the 2015/16 IoT Awards <http://www.postscapes.com/2015-16/best-iot-software-and-tools/>`_.
 
 A native `PlatformIO IDE extension <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`__
-for Microsoft :ref:`ide_vscode` editor is the most rated/reviewed extension with over 800
+for Microsoft :ref:`ide_vscode` editor is the most rated/reviewed extension with over 2,000
 five-star reviews in the whole Microsoft Marketplace. It also was installed by over
-750,000 unique developers around the world.
+2,000,000 unique developers around the world.
 
 Philosophy
 ----------
@@ -40,7 +40,7 @@ PlatformIO's unique philosophy in the embedded market provides developers with a
 integrated development environment (:ref:`ide`) that works cross-platform,
 supports many different software development kits (SDKs) or :ref:`frameworks`, and
 includes sophisticated debugging (:ref:`piodebug`), unit testing (:ref:`unit_testing`),
-automated code analysis (:ref:`piocheck`), and remote management (:ref:`pioremote`).
+automated code analysis (:ref:`check`), and remote management (:ref:`pioremote`).
 It is architected to maximize flexibility and choice by developers, who can use either
 graphical or command line editors (:ref:`piocore`), or both.
 

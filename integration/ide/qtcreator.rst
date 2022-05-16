@@ -38,6 +38,8 @@ Integration process consists of these steps:
 Project Generator
 ^^^^^^^^^^^^^^^^^
 
+The generator will create a [Qt Creator generic project](https://doc.qt.io/qtcreator/creator-project-generic.html).
+
 Choose board ``ID`` using :ref:`cmd_boards` or `Embedded Boards Explorer <https://platformio.org/boards>`_
 command and generate project via :option:`pio project init --ide` command:
 
@@ -51,140 +53,12 @@ command and generate project via :option:`pio project init --ide` command:
 Then:
 
 1. Import project via ``File > Open File or Project`` and select
-   ``platformio.pro`` from the folder where is located :ref:`projectconf`
-2. Select default desktop kit and click on ``Configure Project`` (``Projects``
-   mode, left panel)
-3. Set ``General > Build directory`` to the project directory where
-   is located :ref:`projectconf`
-4. Remove all items from ``Build Steps``, click on
-   ``Build Steps > Add Build Step > Custom Process Step`` and set:
-
-   * **Command**: ``platformio``
-   * **Arguments**: ``-f -c qtcreator run``
-   * **Working directory**: ``%{buildDir}``
-
-5. Remove all items from ``Clean Steps``, click on
-   ``Clean Steps > Add Clean Step > Custom Process Step`` and set:
-
-   * **Command**: ``platformio``
-   * **Arguments**: ``-f -c qtcreator run --target clean``
-   * **Working directory**: ``%{buildDir}``
-
-6. Update ``PATH`` in ``Build Environment > PATH > EDIT`` with the result of
-   this command (paste in Terminal):
-
-.. code-block:: shell
-
-    # Linux, Mac
-    echo $PATH
-
-    # Windows
-    echo %PATH%
-
-7. Switch to ``Edit`` mode (left panel) and open source file from ``src``
+   ``platformio.creator`` from the folder where is located :ref:`projectconf`
+2. Switch to ``Edit`` mode (left panel) and open source file from ``src``
    directory (``*.c, *.cpp, *.ino, etc.``)
-8. Build project: ``Menu: Build > Build All``.
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-3.png
-    :target: ../../_images/ide-qtcreator-3.png
+3. Build project: ``Menu: Build > Build All``.
 
 .. warning::
     The libraries which are added, installed or used in the project
     after generating process won't be reflected in IDE. To fix it you
     need to reinitialize project using :ref:`cmd_project_init` (repeat it).
-
-Manual Integration
-^^^^^^^^^^^^^^^^^^
-
-Setup New Project
-~~~~~~~~~~~~~~~~~
-
-First of all, let's create new project from Qt Creator Start Page: ``New Project`` or using ``Menu: File > New File or Project``, then select project with ``Empty Qt Project`` type (``Other Project > Empty Qt Project``), fill ``Name``, ``Create in``.
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-1.png
-    :target: ../../_images/ide-qtcreator-1.png
-
-On the next steps select any available kit and click Finish button.
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-2.png
-
-Secondly, we need to delete default build and clean steps and configure project with PlatformIO Build System (click on Projects label on left menu or ``Ctrl+5`` shortcut):
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-3.png
-    :target: ../../_images/ide-qtcreator-3.png
-
-Thirdly, change project file by adding path to directories with header files. Please edit project file to match the following contents:
-
-.. code-block:: none
-
-    win32 {
-        HOMEDIR += $$(USERPROFILE)
-    }
-    else {
-        HOMEDIR += $$(HOME)
-    }
-
-    INCLUDEPATH += "$${HOMEDIR}/.platformio/packages/framework-arduinoavr/cores/arduino"
-    INCLUDEPATH += "$${HOMEDIR}/.platformio/packages/toolchain-atmelavr/avr/include"
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-4.png
-    :target: ../../_images/ide-qtcreator-4.png
-
-First program in Qt Creator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Simple "Blink" project will consist from two files:
-1. In the console, navigate to the root of your project folder and initialize pio project with :ref:`cmd_project_init`
-2. The main "C" source file named ``main.c`` must be located in the ``src`` directory.
-Let's create new text file named ``main.c`` using ``Menu: New File or Project > General > Text File``:
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-5.png
-    :target: ../../_images/ide-qtcreator-5.png
-
-Copy the source code which is described below to file ``main.c``.
-
-.. code-block:: c
-
-    #include "Arduino.h"
-    #define WLED    13  // Most Arduino boards already have an LED attached to pin 13 on the board itself
-
-    void setup()
-    {
-      pinMode(WLED, OUTPUT);  // set pin as output
-    }
-
-    void loop()
-    {
-      digitalWrite(WLED, HIGH);  // set the LED on
-      delay(1000);               // wait for a second
-      digitalWrite(WLED, LOW);   // set the LED off
-      delay(1000);               // wait for a second
-    }
-
-3. Locate the project configuration file named ``platformio.ini`` at the root of the project directory and open it.
-
-.. image:: ../../_static/images/ide/qtcreator/ide-qtcreator-6.png
-    :target: ../../_images/ide-qtcreator-6.png
-
-Edit the content to match the code described below.
-
-.. code-block:: ini
-
-    ; PlatformIO Project Configuration File
-    ;
-    ;   Build options: build flags, source filter, extra scripting
-    ;   Upload options: custom port, speed and extra flags
-    ;   Library options: dependencies, extra library storages
-    ;
-    ; Please visit documentation for the other options and examples
-    ; https://docs.platformio.org/page/projectconf.html
-
-    [env:arduino_uno]
-    platform = atmelavr
-    framework = arduino
-    board = uno
-
-Conclusion
-~~~~~~~~~~
-
-Taking everything into account, we can build project with shortcut ``Ctrl+Shift+B`` or using ``Menu: Build > Build All``.

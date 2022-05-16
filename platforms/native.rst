@@ -27,6 +27,7 @@ For more detailed information please visit `vendor site <http://platformio.org/p
     :local:
     :depth: 1
 
+.. include:: native_extra.rst
 
 Examples
 --------

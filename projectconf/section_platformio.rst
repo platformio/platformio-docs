@@ -245,7 +245,12 @@ Example:
 ``globallib_dir``
 ^^^^^^^^^^^^^^^^^
 
-Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/lib"
+Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`/lib" | **DEPRECATED**
+
+.. warning::
+    This option is **DEPRECATED**. We do not recommend using global libraries for
+    new projects. Please use a declarative approach for the safety-critical embedded
+    development and declare project dependencies using the :ref:`projectconf_lib_deps` option.
 
 Global library storage for PlatfrmIO projects and :ref:`librarymanager` where
 :ref:`ldf` looks for dependencies.

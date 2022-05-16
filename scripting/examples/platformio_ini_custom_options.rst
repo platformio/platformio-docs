@@ -12,8 +12,10 @@
 Custom options in ``platformio.ini``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PlatformIO allows you extending project configuration with own data. You can read
-these values later using `ProjectConfig API <https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py>`__:
+PlatformIO allows you extending project configuration with own data.
+Custom options have to start with ``custom_`` or ``board_`` to not generate a warning that
+the unknown configuration option will be ignored by PlatformIO.
+You can read these values later using `ProjectConfig API <https://github.com/platformio/platformio-core/blob/develop/platformio/project/config.py>`__:
 
 :``ProjectConfig::get(section, option, default=None)``:
     Get an option value for the named section

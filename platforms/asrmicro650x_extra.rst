@@ -32,9 +32,9 @@ LoRaWAN protocol can be configured in :ref:`projectconf` using the following syn
 
     * - ``region``
       - Region definition
-      - ``AS923``, ``AU915``, ``CN470``, ``CN779``, ``EU433``, ``EU868``,
-        ``KR920``, ``IN865``, ``US915``, ``US915_HYBRID``
-      - ``AS923``
+      - ``AS923_AS1``, ``AS923_AS2``, ``AU915``, ``CN470``, ``CN779``, ``EU433``,
+        ``EU868``, ``KR920``, ``IN865``, ``US915``, ``US915_HYBRID``
+      - ``US915``
 
     * - ``class``
       - Device class
@@ -70,6 +70,11 @@ LoRaWAN protocol can be configured in :ref:`projectconf` using the following syn
       - RGB light for LoRaWAN status
       - ``ACTIVE``, ``DEACTIVE``
       - ``ACTIVE``
+
+    * - ``preamble_length``
+      - Preamble length
+      - ``8``, ``16`` (For M00 and M00L)
+      - ``8``
 
     * - ``debug_level``
       - Print LoRaWAN relevant messages print to serial port

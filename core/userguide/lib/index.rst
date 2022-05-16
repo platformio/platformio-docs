@@ -11,8 +11,8 @@
 
 .. _cmd_lib:
 
-Library Manager CLI
-===================
+pio lib
+=======
 
 Usage
 -----
@@ -38,9 +38,8 @@ Multiple options are allowed.
 .. option::
     -g, --global
 
-Manage global PlatformIO's library storage (
-":ref:`projectconf_pio_core_dir`/lib") where :ref:`ldf` will look for
-dependencies by default.
+Manage global PlatformIO's library storage (:ref:`projectconf_pio_globallib_dir`)
+where :ref:`ldf` will look for dependencies by default.
 
 .. option::
     -e, --environment
@@ -48,11 +47,6 @@ dependencies by default.
 Manage libraries for the specific project build environments declared in
 :ref:`projectconf`. Works for ``--storage-dir`` which is valid PlatformIO
 project.
-
-Demo
-----
-
-.. image:: ../../../_static/images/platformio-demo-lib.gif
 
 Commands
 --------

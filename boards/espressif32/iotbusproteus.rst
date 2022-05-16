@@ -68,6 +68,7 @@ Uploading
 ---------
 oddWires IoT-Bus Proteus supports the following uploading protocols:
 
+* ``cmsis-dap``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -113,6 +114,9 @@ oddWires IoT-Bus Proteus does not have on-board debug probe and **IS NOT READY**
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

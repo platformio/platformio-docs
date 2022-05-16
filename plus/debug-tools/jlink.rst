@@ -232,7 +232,7 @@ Platforms
       - The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
     * - :ref:`platform_raspberrypi`
-      - RP2040 is a low-cost, high-performance microcontroller device with with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
+      - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
@@ -292,9 +292,6 @@ Frameworks
 
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
-
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
 
     * - :ref:`framework_spl`
       - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
@@ -432,7 +429,7 @@ Boards
       - External
       - ESP32
       - 240MHz
-      - 16MB
+      - 4MB
       - 520KB
     * - :ref:`board_aceinna_imu_LowCostRTK`
       - :ref:`platform_aceinna_imu`
@@ -539,6 +536,13 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -581,6 +585,13 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_gemma_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -637,6 +648,13 @@ Boards
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_espressif32_adafruit_magtag29_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_matrix_portal_m4`
       - :ref:`platform_atmelsam`
       - External
@@ -644,6 +662,13 @@ Boards
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_espressif32_adafruit_metro_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_metro_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -714,6 +739,13 @@ Boards
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -1253,6 +1285,34 @@ Boards
       - 48MHz
       - 16KB
       - 4KB
+    * - :ref:`board_espressif32_deneyapkart`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_ststm32_devebox_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_devebox_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_atmelsam_digix`
       - :ref:`platform_atmelsam`
       - External
@@ -1372,6 +1432,20 @@ Boards
       - 400MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750IBK6
+      - 400MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_elektor_f072cb`
       - :ref:`platform_ststm32`
       - External
@@ -1400,6 +1474,13 @@ Boards
       - 120MHz
       - 512KB
       - 96KB
+    * - :ref:`board_espressif32_atmegazero_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_ststm32_elmo_f411re`
       - :ref:`platform_ststm32`
       - External
@@ -1477,7 +1558,21 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_franzininho_wifi_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-franzininho`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_franzininho_wifi_msc_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -1778,6 +1873,13 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_espressif32_kb32-ft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_nrf52832_mdk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2304,6 +2406,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lopy4`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 1.25MB
+    * - :ref:`board_espressif32_wipy3`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -3759,6 +3868,13 @@ Boards
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_espressif32_sparkfun_esp32s2_thing_plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_lora_gateway_1-channel`
       - :ref:`platform_espressif32`
       - External
@@ -3857,6 +3973,13 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
+    * - :ref:`board_espressif32_dpu_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-lora32-v1`
       - :ref:`platform_espressif32`
       - External
@@ -3885,6 +4008,13 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_ttgo-t-oi-plus`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_ttgo-t1`
       - :ref:`platform_espressif32`
       - External
@@ -3976,6 +4106,20 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_espressif32_trueverit-iot-driver`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_tuinozero96`
       - :ref:`platform_atmelsam`
       - External
@@ -3983,6 +4127,27 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_um_feathers2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_feathers2_neo`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_vake_v1`
       - :ref:`platform_ststm32`
       - External
@@ -4102,6 +4267,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_weact_mini_h743vitx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H743VIT6
+      - 480MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_weact_mini_h750vbtx`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - External
@@ -4123,6 +4302,13 @@ Boards
       - 108MHz
       - 128KB
       - 32KB
+    * - :ref:`board_espressif32_wt32-eth01`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - External
@@ -4207,6 +4393,13 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_espressif32_micros2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_nordicnrf51_ng_beacon`
       - :ref:`platform_nordicnrf51`
       - External
@@ -4291,6 +4484,20 @@ Boards
       - 168MHz
       - 2MB
       - 256KB
+    * - :ref:`board_espressif32_upesy_wroom`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_upesy_wrover`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc11u35_y5_mbug`
       - :ref:`platform_nxplpc`
       - External

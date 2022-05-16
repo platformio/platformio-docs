@@ -14,8 +14,6 @@
 pio team
 ========
 
-.. versionadded:: 5.0
-
 Manage organization teams and team memberships.
 
 Management of organizations and owners is done with the :ref:`cmd_org` command.

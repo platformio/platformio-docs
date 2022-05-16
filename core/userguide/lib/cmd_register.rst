@@ -16,4 +16,4 @@ pio lib register
 
 **DEPRECATED**.
 
-Please use :ref:`cmd_package_publish`.
+Please use :ref:`cmd_pkg_publish`.

@@ -141,9 +141,6 @@ Frameworks
     * - :ref:`framework_esp8266-rtos-sdk`
       - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
 
-    * - :ref:`framework_simba`
-      - Simba is an RTOS and build framework with aims to make embedded programming easy and portable
-
 Boards
 ------
 

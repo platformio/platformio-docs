@@ -225,7 +225,7 @@ target. Possible options:
 ``debug_server``
 ^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``Yes``
+Type: ``String`` | Multiline Arguments: ``Yes``
 
 Allows one to setup a custom debugging server. By default, boards are pre-configured
 with a debugging server that is compatible with "on-board" debugging tool

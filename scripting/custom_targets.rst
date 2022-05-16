@@ -14,8 +14,6 @@
 Custom Targets
 --------------
 
-.. versionadded:: 5.0
-
 PlatformIO allows you to declare unlimited number of the custom targets. There are a
 lot of use cases for them:
 

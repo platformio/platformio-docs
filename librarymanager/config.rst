@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. |PIOREGISTRY| replace:: `PlatformIO Registry <https://registry.platformio.org>`__
+
 .. _library_json:
 
 library.json
@@ -26,7 +28,7 @@ via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
 (name/value pairs). The order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-You can validate ``library.json`` manifest file using the :ref:`cmd_package_pack` command.
+You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` command.
 
 .. contents:: Fields
     :local:
@@ -40,7 +42,7 @@ You can validate ``library.json`` manifest file using the :ref:`cmd_package_pack
 
 A name of a library.
 
-* Must be unique
+* Must be unique in the |PIOREGISTRY|
 * Should be slug style for simplicity, consistency, and compatibility.
   Example: *HelloWorld*
 * Can contain a-z, digits, and dashes (but not start/end with them)
@@ -56,7 +58,7 @@ A name of a library.
 A version of a current library source code. Can contain a-z, digits, dots or
 dash and should be `Semantic Versioning <http://semver.org>`__ compatible.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -115,7 +117,7 @@ next items:
 * ``branch`` if is not specified, default branch will be used. This field will
   be ignored if tag/release exists with the value of :ref:`libjson_version`.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -139,7 +141,7 @@ An author contact information
 * ``url`` An author's contact page
 * ``maintainer`` Specify "maintainer" status
 
-Examples:
+**Examples**
 
 .. code-block:: javascript
 
@@ -175,13 +177,24 @@ Examples:
 ``license``
 -----------
 
-*Optional* | Type: ``String``
+*Optional* | Type: ``SPDX Expression``
 
-A SPDX license ID of the library. You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
+A SPDX license ID or `SPDX Expression <https://spdx.github.io/spdx-spec/SPDX-license-expressions/>`_.
+You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
+
+**Examples**
+
+A single license
 
 .. code-block:: javascript
 
     "license": "Apache-2.0"
+
+Multiple license using SPDX Expression
+
+.. code-block:: javascript
+
+    "license": "MIT AND (LGPL-2.1-or-later OR BSD-3-Clause)"
 
 .. _libjson_frameworks:
 
@@ -193,7 +206,7 @@ A SPDX license ID of the library. You can check `the full list of SPDX license I
 A list with compatible frameworks. The available framework names are defined in
 the :ref:`frameworks` section.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -216,7 +229,7 @@ you use ``*`` symbol:
 A list with compatible development platforms. The available platform name are defined
 in :ref:`platforms` section.
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -242,7 +255,7 @@ use ``*`` symbol:
 A list of header files that can be included in a project source files using
 ``#include <...>`` directive.
 
-Examples:
+**Examples**
 
 .. code-block:: javascript
 
@@ -290,34 +303,17 @@ A list of example patterns. This field is predefined with default value:
 
 *Optional* | Type: ``Array`` or ``Object``
 
-A list of dependent libraries. They will be installed automatically with
-:ref:`cmd_lib_install` command.
+A list of dependent libraries that will be automatically installed.
 
 Allowed requirements for dependent library:
 
-* ``owner`` | Type: ``String`` – an owner name (username) from the PlatformIO Registry
+* ``owner`` | Type: ``String`` – an owner name (username) from the |PIOREGISTRY|
 * ``name`` | Type: ``String`` – library name
-* ``version`` | Type: ``String`` – version or version range in SemVer format
+* ``version`` | Type: ``String`` – :ref:`cmd_pkg_install_requirements` or :ref:`cmd_pkg_install_specifications`
 * ``frameworks`` | Type: ``String`` or ``Array`` – project compatible :ref:`frameworks`
 * ``platforms`` | Type: ``String`` or ``Array`` – project compatible :ref:`platforms`
 
-The ``version`` supports `Semantic Versioning <https://devhints.io/semver>`__ (
-``<major>.<minor>.<patch>``) and can take any of the following forms:
-
-* ``1.2.3`` - an exact version number. Use only this exact version
-* ``^1.2.3`` - any compatible version (exact version for ``1.x.x`` versions
-* ``~1.2.3`` - any version with the same major and minor versions, and an
-  equal or greater patch version
-* ``>1.2.3`` - any version greater than ``1.2.3``. ``>=``, ``<``, and ``<=``
-  are also possible
-* ``>0.1.0,!=0.2.0,<0.3.0`` - any version greater than ``0.1.0``, not equal to
-  ``0.2.0`` and less than ``0.3.0``
-
-The rest possible values including VCS repository URLs are documented in
-:ref:`cmd_lib_install` command.
-
-
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -367,7 +363,7 @@ This option is useful if you need to exclude extra data (test code, docs, images
 It allows one to reduce the size of the final archive.
 
 To check which files will be included in the final packages, please use
-:ref:`cmd_package_pack` command.
+:ref:`cmd_pkg_pack` command.
 
 Possible options:
 
@@ -397,7 +393,7 @@ Export only files that matched declared patterns.
     * - ``[!seq]``
       - matches any character not in seq
 
-Example:
+**Example**
 
 .. code-block:: javascript
 
@@ -418,6 +414,46 @@ Example:
 
 Exclude the directories and files which match with ``exclude`` patterns.
 
+``scripts``
+-----------
+
+.. versionadded:: 6.0
+
+*Optional* | Type: ``Object``
+
+Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:
+
+.. list-table::
+    :header-rows:  1
+
+    * - Event
+      - Description
+    * - ``postinstall``
+      - runs a script AFTER the package has been installed
+    * - ``preuninstall``
+      - runs a script BEFORE the package is removed.
+
+**Examples**
+
+1.  Run a custom Python script located in the package "scripts" folder AFTER the package is installed.
+    Please note that you don't need to specify a Python interpreter for Python scripts.
+
+    .. code-block:: javascript
+
+        "scripts": {
+            "postinstall": "scripts/after_install.py"
+        }
+
+2.  Run a custom Bash script BEFORE the package is uninstalled.
+    The script is declared as a list of command arguments
+    and is located at the root of a package:
+
+    .. code-block:: javascript
+
+        "scripts": {
+            "preuninstall": ["maintainance.sh", "--action", "uninstall"]
+        }
+
 .. _libjson_build:
 
 ``build``
@@ -436,8 +472,13 @@ options:
 
 *Optional* | Type: ``String`` or ``Array``
 
-Extra flags to control preprocessing, compilation, assembly and linking
+Extra flags to control preprocessing, compilation, assembly, and linking
 processes. More details :ref:`projectconf_build_flags`.
+
+.. note::
+    Keep in mind when operating with the ``-I`` flag (directories to be
+    searched for header files). The path should be relative to the
+    root directory where the ``library.json`` manifest is located.
 
 ``unflags``
 ~~~~~~~~~~~
@@ -452,8 +493,14 @@ details :ref:`projectconf_build_unflags`.
 
 *Optional* | Type: ``String``
 
-Custom location of library header files. A default value is ``include`` and
-means that folder is located in the root of a library.
+Custom directory to be searched for header files.
+A default value is ``include`` and means that folder is located at
+the root of a library.
+
+.. note::
+    The :ref:`ldf` will pick a library automatically only when
+    a project or other dependent libraries include any header file
+    located in ``includeDir`` or ``srcDir``.
 
 ``srcDir``
 ~~~~~~~~~~
@@ -471,7 +518,7 @@ means that folder is located in the root of a library.
 Specify which source files should be included/excluded from build process.
 The path in filter should be relative to the ``srcDir`` option of a library.
 
-See syntax in :ref:`projectconf_src_filter`.
+See syntax for :ref:`projectconf_build_src_filter`.
 
 Please note that you can generate source filter "on-the-fly" using
 ``extraScript`` (see below)
@@ -542,22 +589,21 @@ Project structure
     Import('env')
     from os.path import join, realpath
 
-    # private library flags
+    # private flags (only for the current "SomeLib" source files)
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
             env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
-    # pass flags to a global build environment (for all libraries, etc)
+    # pass flags to the global env (project files, frameworks)
     global_env = DefaultEnvironment()
-    global_env.Append(
-        CPPDEFINES=[
-            ("MQTT_MAX_PACKET_SIZE", 512),
-            "ARDUINOJSON_ENABLE_STD_STRING",
-            ("BUFFER_LENGTH", 32)
-        ]
-    )
+    global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
+
+    # pass flags to the project dependencies (libraries)
+    for lb in env.GetLibBuilders():
+        lb.env.Append(CPPDEFINES=[("TEST_LIBDEPS", 1)])
+
 
 .. _libjson_archive:
 
