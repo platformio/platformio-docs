@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Test Runner &mdash; PlatformIO v6.0 documentation</title>
+  <title>Custom Test Runner &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
@@ -160,7 +160,7 @@ or to the group of tests that depend on it.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> is a Python-based script. It must
 contain the <a class="reference internal" href="api.html#unit-testing-frameworks-custom-api-test-runner"><span class="std std-ref">CustomTestRunner</span></a>
 class. See a base example of <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.shared</span> <span class="kn">import</span> <span class="n">TestRunnerBase</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.public</span> <span class="kn">import</span> <span class="n">TestRunnerBase</span>
 
 <span class="k">class</span> <span class="nc">CustomTestRunner</span><span class="p">(</span><span class="n">TestRunnerBase</span><span class="p">):</span>
     <span class="k">pass</span>
@@ -169,7 +169,7 @@ class. See a base example of <code class="docutils literal notranslate"><span cl
 <p>In case you want to override the functionality of the existing
 testing framework, you have to inherit its class. For example,
 let’s override a “testing” stage for the <a class="reference internal" href="../unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.shared</span> <span class="kn">import</span> <span class="n">TestCase</span><span class="p">,</span> <span class="n">TestCaseSource</span><span class="p">,</span> <span class="n">TestStatus</span><span class="p">,</span> <span class="n">UnityTestRunner</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.public</span> <span class="kn">import</span> <span class="n">TestCase</span><span class="p">,</span> <span class="n">TestCaseSource</span><span class="p">,</span> <span class="n">TestStatus</span><span class="p">,</span> <span class="n">UnityTestRunner</span>
 
 
 <span class="k">class</span> <span class="nc">CustomTestRunner</span><span class="p">(</span><span class="n">UnityTestRunner</span><span class="p">):</span>
@@ -326,7 +326,7 @@ let’s override a “testing” stage for the <a class="reference internal" hre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.0 (stable)
+    v6.0.1a1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
