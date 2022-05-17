@@ -72,7 +72,7 @@ File contents
 
 .. code:: python
 
-    from platformio.shared import UnityTestRunner
+    from platformio.public import UnityTestRunner
 
     class CustomTestRunner(UnityTestRunner):
 

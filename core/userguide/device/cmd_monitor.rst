@@ -237,7 +237,7 @@ See the base API below:
 
 .. code-block:: python
 
-  from platformio.shared import DeviceMonitorFilterBase
+  from platformio.public import DeviceMonitorFilterBase
 
 
   class Demo(DeviceMonitorFilterBase):
