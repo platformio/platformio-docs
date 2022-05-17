@@ -14,6 +14,13 @@
 pio platform
 ============
 
+.. deprecated:: 6.0
+
+    .. warning::
+        This command is deprecated and will be removed in the next releases.
+
+        Please use the unified :ref:`cmd_pkg` instead.
+
 To print all available commands and options use:
 
 .. code-block:: bash

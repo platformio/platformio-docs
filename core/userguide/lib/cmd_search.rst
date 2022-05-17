@@ -12,7 +12,14 @@
 .. _cmd_lib_search:
 
 pio lib search
-=====================
+==============
+
+.. deprecated:: 6.0
+
+    .. warning::
+        This command is deprecated and will be removed in the next releases.
+
+        Please use the :ref:`cmd_pkg_search` command instead.
 
 .. contents::
 

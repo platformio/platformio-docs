@@ -14,6 +14,9 @@
 pio lib register
 ================
 
-**DEPRECATED**.
+.. deprecated:: 6.0
 
-Please use :ref:`cmd_pkg_publish`.
+    .. warning::
+        This command is deprecated and will be removed in the next releases.
+
+        Please use the :ref:`cmd_pkg_publish` command instead.
