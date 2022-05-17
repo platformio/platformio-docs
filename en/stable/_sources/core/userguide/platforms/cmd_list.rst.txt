@@ -14,6 +14,13 @@
 pio platform list
 =================
 
+.. deprecated:: 6.0
+
+    .. warning::
+        This command is deprecated and will be removed in the next releases.
+
+        Please use the :ref:`cmd_pkg_list` command instead.
+
 .. contents::
 
 Usage

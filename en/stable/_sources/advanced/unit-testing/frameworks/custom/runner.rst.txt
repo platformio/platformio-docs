@@ -32,7 +32,7 @@ class. See a base example of ``test_custom_runner.py``:
 
 .. code:: python
 
-    from platformio.shared import TestRunnerBase
+    from platformio.public import TestRunnerBase
 
     class CustomTestRunner(TestRunnerBase):
         pass
@@ -43,7 +43,7 @@ let's override a "testing" stage for the :ref:`unit_testing_frameworks_unity`:
 
 .. code:: python
 
-    from platformio.shared import TestCase, TestCaseSource, TestStatus, UnityTestRunner
+    from platformio.public import TestCase, TestCaseSource, TestStatus, UnityTestRunner
 
 
     class CustomTestRunner(UnityTestRunner):

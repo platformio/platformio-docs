@@ -588,7 +588,7 @@ Packages
       - Fork of Arduino Framework for briki MBC-WB boards
 
     * - `framework-arduinoespressif32 <https://registry.platformio.org/tools/platformio/framework-arduinoespressif32>`__
-      - Arduino Wiring-based Framework for Espressif ESP32 microcontrollers
+      - Arduino Wiring-based Framework for the Espressif ESP32, ESP32-S and ESP32-C series of SoCs
 
     * - `framework-espidf <https://registry.platformio.org/tools/platformio/framework-espidf>`__
       - Espressif IoT Development Framework. Official development framework for ESP32 chip
