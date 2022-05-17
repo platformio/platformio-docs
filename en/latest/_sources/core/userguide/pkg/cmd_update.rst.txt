@@ -111,7 +111,7 @@ Update a package but skip its dependencies declared in the manifest
 .. option::
     -g, --global
 
-Uninstall packages from the global storage:
+Update packages from the global storage:
 
 * :ref:`projectconf_pio_platforms_dir` - development platforms
 * :ref:`projectconf_pio_packages_dir` - tools
