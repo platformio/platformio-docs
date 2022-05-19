@@ -204,7 +204,8 @@ format.
 .. option::
     -v, --verbose
 
-Shows detailed information when processing environments.
+Control verbosity level.
+This command option overrides the level configured in :ref:`projectconf_test_verbosity_level`.
 
 Examples
 --------
