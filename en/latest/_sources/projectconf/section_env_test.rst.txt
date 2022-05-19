@@ -27,7 +27,7 @@ Test options
 
 .. versionadded:: 6.0
 
-Type: ``String`` | Multiple: ``No``
+Type: ``String`` | Multiple: ``No`` | Default: ``unity``
 
 A Unit Testing framework name. Please follow to the :ref:`unit_testing_frameworks`
 for the available frameworks.
@@ -193,3 +193,38 @@ Please note that you can pass extra arguments to the program
 using CLI and :option:`pio test --program-arg` option.
 
 See :ref:`unit_testing_simulators` examples.
+
+.. _projectconf_test_verbosity_level:
+
+``test_verbosity_level``
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 6.0.2
+
+Type: ``Number`` | Default: ``0``
+
+:ref:`unit_testing` supports different verbosity levels, which determine
+the messages displayed in the result output. By default, the PlatformIO displays
+only the most useful messages, but you can control its verbosity.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Level
+    - :ref:`cmd_test` (CLI)
+    - Description
+  * - 0
+    - (none)
+    - Normal verbosity (**default**)
+  * - 1
+    - ``-v``
+    - Show a raw output from a testing framework
+  * - 2
+    - ``-vv``
+    - Base verbosity for buidling and uploading stages
+  * - 3
+    - ``-vvv``
+    - Extra verbosity for buidling and uploading stages
+
+You can override this configuration option with the
+:option:`pio test --verbose` command.

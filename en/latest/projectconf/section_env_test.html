@@ -160,6 +160,7 @@
 <li><p><a class="reference internal" href="#test-speed" id="id5"><code class="docutils literal notranslate"><span class="pre">test_speed</span></code></a></p></li>
 <li><p><a class="reference internal" href="#test-build-src" id="id6"><code class="docutils literal notranslate"><span class="pre">test_build_src</span></code></a></p></li>
 <li><p><a class="reference internal" href="#test-testing-command" id="id7"><code class="docutils literal notranslate"><span class="pre">test_testing_command</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test-verbosity-level" id="id8"><code class="docutils literal notranslate"><span class="pre">test_verbosity_level</span></code></a></p></li>
 </ul>
 </div>
 <section id="test-framework">
@@ -167,7 +168,7 @@
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 6.0.</span></p>
 </div>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">unity</span></code></p>
 <p>A Unit Testing framework name. Please follow to the <a class="reference internal" href="../advanced/unit-testing/frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>
 for the available frameworks.</p>
 </section>
@@ -306,6 +307,49 @@ to:</p>
 <p>Please note that you can pass extra arguments to the program
 using CLI and <a class="reference internal" href="../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option.</p>
 <p>See <a class="reference internal" href="../advanced/unit-testing/simulators/index.html#unit-testing-simulators"><span class="std std-ref">Simulators</span></a> examples.</p>
+</section>
+<section id="test-verbosity-level">
+<span id="projectconf-test-verbosity-level"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">test_verbosity_level</span></code></a><a class="headerlink" href="#test-verbosity-level" title="Permalink to this headline">¶</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 6.0.2.</span></p>
+</div>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p><a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> supports different verbosity levels, which determine
+the messages displayed in the result output. By default, the PlatformIO displays
+only the most useful messages, but you can control its verbosity.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Level</p></th>
+<th class="head"><p><a class="reference internal" href="../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> (CLI)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>(none)</p></td>
+<td><p>Normal verbosity (<strong>default</strong>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-v</span></code></p></td>
+<td><p>Show a raw output from a testing framework</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-vv</span></code></p></td>
+<td><p>Base verbosity for buidling and uploading stages</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-vvv</span></code></p></td>
+<td><p>Extra verbosity for buidling and uploading stages</p></td>
+</tr>
+</tbody>
+</table>
+<p>You can override this configuration option with the
+<a class="reference internal" href="../core/userguide/cmd_test.html#cmdoption-pio-test-v"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--verbose</span></code></a> command.</p>
 </section>
 </section>
 
