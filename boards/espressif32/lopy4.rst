@@ -70,6 +70,7 @@ Pycom LoPy4 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
+* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
@@ -118,6 +119,9 @@ Pycom LoPy4 does not have on-board debug probe and **IS NOT READY** for debuggin
     - 
     - Yes
   * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
+  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`

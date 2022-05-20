@@ -11,8 +11,8 @@
 
 .. _board_espressif32_lionbit:
 
-LionBit
-=======
+Lion:Bit Dev Board
+==================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Lion::Bit <http://lionbit.lk/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Lion:Bit <http://lionbit.lk/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``lionbit`` ID for :ref:`projectconf_env_board` option in :ref:`proje
   platform = espressif32
   board = lionbit
 
-You can override default LionBit settings per build environment using
+You can override default Lion:Bit Dev Board settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `lionbit.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lionbit.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,10 +66,11 @@ board manifest `lionbit.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-LionBit supports the following uploading protocols:
+Lion:Bit Dev Board supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
+* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
@@ -106,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-LionBit does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Lion:Bit Dev Board does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -118,6 +119,9 @@ LionBit does not have on-board debug probe and **IS NOT READY** for debugging. Y
     - 
     - Yes
   * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
+  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`
