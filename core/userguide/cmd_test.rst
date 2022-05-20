@@ -205,7 +205,20 @@ format.
     -v, --verbose
 
 Control verbosity level.
-This command option overrides the level configured in :ref:`projectconf_test_verbosity_level`.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Level
+    - Description
+  * - (none)
+    - Normal verbosity (**default**)
+  * - ``-v``
+    - Show a raw output from a testing framework
+  * - ``-vv``
+    - Base verbosity for buidling and uploading stages
+  * - ``-vvv``
+    - Extra verbosity for buidling and uploading stages
 
 Examples
 --------
