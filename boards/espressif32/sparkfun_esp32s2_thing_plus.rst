@@ -70,7 +70,6 @@ SparkFun ESP32-S2 Thing Plus supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
-* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
@@ -119,9 +118,6 @@ SparkFun ESP32-S2 Thing Plus does not have on-board debug probe and **IS NOT REA
     - 
     - Yes
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
-  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`

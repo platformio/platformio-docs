@@ -70,7 +70,6 @@ Wireless-Tag WT32-ETH01 Ethernet Module supports the following uploading protoco
 
 * ``cmsis-dap``
 * ``esp-prog``
-* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
@@ -119,9 +118,6 @@ Wireless-Tag WT32-ETH01 Ethernet Module does not have on-board debug probe and *
     - 
     - Yes
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
-  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`

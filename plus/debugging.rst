@@ -109,14 +109,15 @@ option.
   debug-tools/digilent-hs1
   debug-tools/digilent-hs2
   debug-tools/esp-prog
+  debug-tools/esp-usb-bridge
   debug-tools/ftdi
   debug-tools/gd-link
   debug-tools/iot-bus-jtag
   debug-tools/jlink
   debug-tools/minimodule
   debug-tools/mspdebug
-  debug-tools/olimex-arm-usb-ocd-h
   debug-tools/olimex-arm-usb-ocd
+  debug-tools/olimex-arm-usb-ocd-h
   debug-tools/olimex-arm-usb-tiny-h
   debug-tools/olimex-jtag-tiny
   debug-tools/ovpsim

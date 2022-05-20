@@ -70,7 +70,6 @@ Adafruit ESP32-S2 Feather Development Board supports the following uploading pro
 
 * ``cmsis-dap``
 * ``esp-prog``
-* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``iot-bus-jtag``
@@ -119,9 +118,6 @@ Adafruit ESP32-S2 Feather Development Board does not have on-board debug probe a
     - 
     - Yes
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
-  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`

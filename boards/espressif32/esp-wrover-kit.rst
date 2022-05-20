@@ -70,7 +70,6 @@ Espressif ESP-WROVER-KIT supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-prog``
-* ``esp_usb_jtag``
 * ``espota``
 * ``esptool``
 * ``ftdi``
@@ -120,9 +119,6 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
-  * - :ref:`debugging_tool_esp_usb_jtag`
     - 
     - 
   * - :ref:`debugging_tool_ftdi`
