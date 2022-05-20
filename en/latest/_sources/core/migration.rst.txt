@@ -21,13 +21,16 @@ Guidance on how to upgrade from :ref:`piocore` v5.x to v6.x with emphasis on
 major changes, what is new, and what has been removed.
 
 .. note::
-  PlatformIO Core 6.0 is **FULLY BACKWARD COMPATIBLE** with PlatformIO 5.0 projects.
+  PlatformIO Core 6.0 is **FULLY BACKWARD COMPATIBLE*** with PlatformIO 5.0 projects.
   It means, there are no breaking changes or required migration steps.
   Project compatibility between major PlatformIO Core releases is our main task
   and part of PlatformIO's decentralized architecture.
 
   We highly recommend using the latest PlatformIO Core.
   See :ref:`cmd_upgrade` command.
+
+  ``*`` see a note regarding :ref:`unit_testing` and the grouped test suites
+  in the migration steps below.
 
 Please read :ref:`PlatformIO 6.0 Release Notes <release_notes_6>` before.
 
@@ -106,6 +109,11 @@ taking into account the following steps:
     in :ref:`projectconf`, please align your codebase with
     :ref:`unit_testing_frameworks_unity_custom_config`. The
     "test_transport" option has been removed.
+
+#.  There is a known bug in PlatformIO Core 5.0 when Unit Testing didn't handle
+    correctly grouped test suites. Please ensure that a test suite folder that
+    contains test source files is prefixed with ``test_``.
+    See :ref:`unit_testing_test_hierarchy` for details.
 
 What is new
 -----------

@@ -147,12 +147,14 @@
 major changes, what is new, and what has been removed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>PlatformIO Core 6.0 is <strong>FULLY BACKWARD COMPATIBLE</strong> with PlatformIO 5.0 projects.
+<p>PlatformIO Core 6.0 is <strong>FULLY BACKWARD COMPATIBLE*</strong> with PlatformIO 5.0 projects.
 It means, there are no breaking changes or required migration steps.
 Project compatibility between major PlatformIO Core releases is our main task
 and part of PlatformIO’s decentralized architecture.</p>
 <p>We highly recommend using the latest PlatformIO Core.
 See <a class="reference internal" href="userguide/cmd_upgrade.html#cmd-upgrade"><span class="std std-ref">pio upgrade</span></a> command.</p>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> see a note regarding <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> and the grouped test suites
+in the migration steps below.</p>
 </div>
 <p>Please read <a class="reference internal" href="history.html#release-notes-6"><span class="std std-ref">PlatformIO 6.0 Release Notes</span></a> before.</p>
 <div class="contents local topic" id="contents">
@@ -251,6 +253,10 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, please align your codebase with
 <a class="reference internal" href="../advanced/unit-testing/frameworks/unity.html#unit-testing-frameworks-unity-custom-config"><span class="std std-ref">Custom unity_config.h</span></a>. The
 “test_transport” option has been removed.</p></li>
+<li><p>There is a known bug in PlatformIO Core 5.0 when Unit Testing didn’t handle
+correctly grouped test suites. Please ensure that a test suite folder that
+contains test source files is prefixed with <code class="docutils literal notranslate"><span class="pre">test_</span></code>.
+See <a class="reference internal" href="../advanced/unit-testing/structure.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> for details.</p></li>
 </ol>
 </section>
 <section id="what-is-new">

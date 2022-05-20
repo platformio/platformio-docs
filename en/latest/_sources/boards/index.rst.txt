@@ -417,11 +417,17 @@ Espressif 32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/featheresp32-s2
+    espressif32/adafruit_feather_esp32_v2
     espressif32/adafruit_feather_esp32s2_tft
+    espressif32/adafruit_feather_esp32s3
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_qtpy_esp32
+    espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
+    espressif32/adafruit_qtpy_esp32s3
+    espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
@@ -431,12 +437,14 @@ Espressif 32
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
+    espressif32/deneyapkart1A
     espressif32/deneyapmini
     espressif32/denky_d4
     espressif32/denky32
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
+    espressif32/esp32s3camlcd
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
     espressif32/espino32
@@ -448,6 +456,8 @@ Espressif 32
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
+    espressif32/esp32s3box
+    espressif32/esp32-s3-devkitc-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
     espressif32/franzininho_wifi_esp32s2
@@ -507,6 +517,7 @@ Espressif 32
     espressif32/qchip
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
+    espressif32/watchy
     espressif32/wesp32
     espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
@@ -525,14 +536,22 @@ Espressif 32
     espressif32/ttgo-t7-v14-mini32
     espressif32/trueverit-iot-driver
     espressif32/trueverit-iot-driver-mk2
+    espressif32/trueverit-iot-driver-mk3
     espressif32/turta_iot_node
     espressif32/um_feathers2
     espressif32/um_feathers2_neo
+    espressif32/um_feathers3
+    espressif32/um_pros3
+    espressif32/um_rmp
     espressif32/tinypico
     espressif32/um_tinys2
+    espressif32/um_tinys3
     espressif32/vintlabs-devkit-v1
+    espressif32/lolin_c3_mini
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
+    espressif32/lolin_s2_mini
+    espressif32/lolin_s2_pico
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemos_d1_mini32
