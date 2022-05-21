@@ -79,7 +79,7 @@ between your "main" and "test" programs, you have 2 options:
    can't split source code.
 
    .. warning::
-       Please note that you will need to use ``#ifdef PIO_UNIT_TESTING`` and ``#endif``
+       Please note that you will need to use ``#ifndef PIO_UNIT_TESTING`` and ``#endif``
        guard to hide non-test related source code. For example, own ``main()``,
        ``setup() / loop()``, or ``app_main()`` functions.
 
