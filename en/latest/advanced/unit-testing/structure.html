@@ -201,7 +201,7 @@ the <a class="reference internal" href="../../projectconf/section_env_test.html#
 can’t split source code.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Please note that you will need to use <code class="docutils literal notranslate"><span class="pre">#ifdef</span> <span class="pre">PIO_UNIT_TESTING</span></code> and <code class="docutils literal notranslate"><span class="pre">#endif</span></code>
+<p>Please note that you will need to use <code class="docutils literal notranslate"><span class="pre">#ifndef</span> <span class="pre">PIO_UNIT_TESTING</span></code> and <code class="docutils literal notranslate"><span class="pre">#endif</span></code>
 guard to hide non-test related source code. For example, own <code class="docutils literal notranslate"><span class="pre">main()</span></code>,
 <code class="docutils literal notranslate"><span class="pre">setup()</span> <span class="pre">/</span> <span class="pre">loop()</span></code>, or <code class="docutils literal notranslate"><span class="pre">app_main()</span></code> functions.</p>
 </div>
