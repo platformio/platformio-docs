@@ -87,6 +87,7 @@
 <li class="toctree-l3"><a class="reference internal" href="custom_upload_tool.html">Custom upload tool</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload_to_cloud.html">Upload to Cloud (OTA)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom_program_name.html">Custom firmware/program name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="asking_for_input.html">Asking for input (prompts)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_package_files.html">Override package files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_board_configuration.html">Override board configuration</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Custom debug flags</a></li>
@@ -163,7 +164,7 @@ custom flags. See example below where we override <code class="docutils literal 
 <p><code class="docutils literal notranslate"><span class="pre">custom_debug_flags.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">env</span><span class="o">.</span><span class="n">GetBuildType</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;debug&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="s2">&quot;debug&quot;</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">GetBuildType</span><span class="p">():</span>
    <span class="k">for</span> <span class="n">scope</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;ASFLAGS&quot;</span><span class="p">,</span> <span class="s2">&quot;CCFLAGS&quot;</span><span class="p">,</span> <span class="s2">&quot;LINKFLAGS&quot;</span><span class="p">):</span>
       <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">flag</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">env</span><span class="p">[</span><span class="n">scope</span><span class="p">]):</span>
          <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="s2">&quot;-Og&quot;</span><span class="p">:</span>
@@ -298,7 +299,7 @@ custom flags. See example below where we override <code class="docutils literal 
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2a2 (latest)
+    v6.0.2b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

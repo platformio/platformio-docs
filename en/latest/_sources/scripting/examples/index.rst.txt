@@ -24,6 +24,7 @@ Please check ``builder`` folder for the main and framework scripts.
     custom_upload_tool
     upload_to_cloud
     custom_program_name
+    asking_for_input
     override_package_files
     override_board_configuration
     custom_debug_flags
