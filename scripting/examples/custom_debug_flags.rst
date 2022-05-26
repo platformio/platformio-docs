@@ -36,7 +36,7 @@ custom flags. See example below where we override ``-Og`` with ``-O0``:
 
     Import("env")
 
-    if env.GetBuildType() == "debug":
+    if "debug" in env.GetBuildType():
        for scope in ("ASFLAGS", "CCFLAGS", "LINKFLAGS"):
           for i, flag in enumerate(env[scope]):
              if flag == "-Og":
