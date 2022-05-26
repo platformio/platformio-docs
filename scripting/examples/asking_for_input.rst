@@ -33,10 +33,11 @@ See the example below on how to read a user name and set it to the ``USER_NAME``
     Import("env")
 
     # Do not run a script when external applications, such as IDEs,
-    # dump integration data. Otherwise, input() will block the process
+    # dump inetgration data. Otherwise, input() will block the process
     # waiting for the user input
     if env.IsIntegrationDump():
-        env.Exit(0)
+        # stop the current script execution
+        Return()
 
     # Ask user name
     print("Enter your name:")
