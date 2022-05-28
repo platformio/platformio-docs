@@ -21,7 +21,6 @@ Please check ``builder`` folder for the main and framework scripts.
     platformio_ini_custom_options
     split_build_flags
     extra_linker_flags
-    custom_upload_tool
     upload_to_cloud
     custom_program_name
     asking_for_input

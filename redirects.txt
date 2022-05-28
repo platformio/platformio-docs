@@ -46,6 +46,7 @@
 /projectconf/section_env_general.html -> /projectconf/section_env_platform.html
 /quickstart.html -> /core/quickstart.html
 /scripting/examples/custom_debug_flags.html -> /projectconf/section_env_debug.html
+/scripting/examples/custom_upload_tool.html -> /projectconf/section_env_upload.html
 /userguide/account/cmd_forgot.html -> /core/userguide/account/cmd_forgot.html
 /userguide/account/cmd_login.html -> /core/userguide/account/cmd_login.html
 /userguide/account/cmd_logout.html -> /core/userguide/account/cmd_logout.html
