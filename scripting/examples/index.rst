@@ -27,6 +27,5 @@ Please check ``builder`` folder for the main and framework scripts.
     asking_for_input
     override_package_files
     override_board_configuration
-    custom_debug_flags
     extra_python_packages
     external_sources
