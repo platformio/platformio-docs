@@ -44,6 +44,16 @@ Command completion in Terminal
 
 Please refer to :ref:`cmd_system_completion`.
 
+99-platformio-udev.rules
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please refer to :ref:`platformio_udev_rules`.
+
+Multiple PlatformIO Cores in a system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please refer to :ref:`multiple_pio_cores_issue`.
+
 .. _faq_install_python:
 
 Install Python Interpreter
@@ -218,120 +228,6 @@ PlatformIO is via the external ``SCONSFLAGS`` environment variable:
 
 Troubleshooting
 ---------------
-
-Installation
-~~~~~~~~~~~~
-
-Multiple PlatformIO Cores in a system
-'''''''''''''''''''''''''''''''''''''
-
-Multiple standalone :ref:`piocore` in a system could lead to the different
-issues. We highly recommend to keep one instance of PlatformIO Core or use built-in
-PlatformIO Core in :ref:`pioide`:
-
-* :ref:`ide_atom` - ``Menu PlatformIO: Settings > PlatformIO IDE > Use built-in PlatformIO Core``
-* :ref:`ide_vscode` - :ref:`ide_vscode_settings` > Set ``platformio-ide.useBuiltinPIOCore`` to ``true``.
-
-Finally, if you have a standalone :ref:`piocore` in a system, please open system
-Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:
-
-.. code-block:: bash
-
-    pip uninstall platformio
-
-    # if you used macOS "brew"
-    brew uninstall platformio
-
-If you need to have :ref:`piocore` globally in a system, please
-:ref:`piocore_install_shell_commands`.
-
-'platformio' is not recognized as an internal or external command
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-If you use :ref:`pioide`, please check in PlatformIO IDE Settings that
-"Use built-in PlatformIO Core" is enabled.
-
-If you modify system environment variable ``PATH`` in your Bash/Fish/ZSH
-profile, please do not override global ``PATH``. This line
-``export PATH="/my/custom/path"`` is incorrect. Use ``export PATH="/my/custom/path":$PATH``
-instead.
-
-.. _faq_udev_rules:
-
-99-platformio-udev.rules
-''''''''''''''''''''''''
-
-Linux users have to install `udev <https://en.wikipedia.org/wiki/Udev>`_ rules
-for PlatformIO supported boards/devices. The
-latest version of rules may be found at https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules
-
-.. note::
-  Please check that your board's PID and VID  are listed in the rules.
-  You can list connected devices and their PID/VID using :ref:`cmd_device_list`
-  command.
-
-This file must be placed at ``/etc/udev/rules.d/99-platformio-udev.rules``
-(preferred location) or ``/lib/udev/rules.d/99-platformio-udev.rules``
-(required on some broken systems).
-
-Please open system Terminal and type
-
-.. code-block:: bash
-
-    # Recommended
-    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
-
-    # OR, manually download and copy this file to destination folder
-    sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
-
-
-Restart "udev" management tool:
-
-.. code-block:: bash
-
-    sudo service udev restart
-
-    # or
-
-    sudo udevadm control --reload-rules
-    sudo udevadm trigger
-
-
-Ubuntu/Debian users may need to add own “username” to the “dialout” group if
-they are not “root”, doing this issuing
-
-.. code-block:: bash
-
-    sudo usermod -a -G dialout $USER
-    sudo usermod -a -G plugdev $USER
-
-Similarly, Arch users may need to add their user to the “uucp” group
-
-.. code-block:: bash
-
-    sudo usermod -a -G uucp $USER
-    sudo usermod -a -G lock $USER
-
-.. note::
-  You will need to log out and log back in again (or reboot) for the user
-  group changes to take effect.
-
-After this file is installed, physically unplug and reconnect your board.
-
-ImportError: cannot import name _remove_dead_weakref
-''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Windows users can experience this issue when multiple Python interpreters are
-installed in a system and conflict each other. The easy way to fix this
-problem is uninstalling all Python interpreters using Windows Programs Manager
-and installing them manually again.
-
-1. "Windows > Start Menu > Settings > System > Apps & Features", select
-   Python interpreters and uninstall them.
-2. Install the latest Python interpreter, see :ref:`faq_install_python` guide
-3. Remove ``C:\Users\YourUserName\.platformio`` and ``C:\.platformio`` folders
-   if exist (do not forget to replace "YourUserName" with the real user name)
-4. Restart :ref:`pioide`.
 
 Package Manager
 ~~~~~~~~~~~~~~~
