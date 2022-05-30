@@ -24,7 +24,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="next" title="Installation" href="installation/index.html" />
     <link rel="prev" title="PlatformIO IDE" href="../integration/ide/pioide.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -55,7 +55,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">PlatformIO Core (CLI)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/index.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="userguide/index.html">CLI Guide</a></li>
 </ul>
@@ -94,7 +94,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -132,7 +132,7 @@
 <p><strong>PlatformIO Core</strong> (CLI tool) is the heart of the entire PlatformIO ecosystem and consists of</p>
 <ul class="simple">
 <li><p>Multi-platform Build System</p></li>
-<li><p>Development platform and package managers</p></li>
+<li><p>Unified Package Manager</p></li>
 <li><p><a class="reference internal" href="../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></p></li>
 <li><p><a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a></p></li>
 <li><p><a class="reference internal" href="userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">Serial Port Monitor</span></a></p></li>
@@ -152,18 +152,19 @@ such as <a class="reference internal" href="../integration/ide/pioide.html#pioid
 <p>Please note that you do not need to install <strong>PlatformIO Core</strong> if you are going
 to use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>. <strong>PlatformIO Core</strong> is built into
 PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.</p>
-<p>If you need <strong>PlatformIO Core</strong> commands outside PlatformIO IDE, please <a class="reference internal" href="installation.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
+<p>If you need <strong>PlatformIO Core</strong> commands outside PlatformIO IDE, please <a class="reference internal" href="installation/shell-commands.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#system-requirements">System requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#installation-methods">Installation Methods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#development-version">Development Version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#install-shell-commands">Install Shell Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#uninstall-platformio-core-and-dependent-packages">Uninstall PlatformIO Core and dependent packages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#integration-with-custom-applications-extensions-plugins">Integration with custom applications (extensions, plugins)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/methods/index.html">Installation Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/development-version.html">Development Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/shell-commands.html">Install Shell Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/udev-rules.html">99-platformio-udev.rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/integration.html">Integration with custom applications (extensions, plugins)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/uninstall.html">Uninstall PlatformIO Core and dependent packages</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a><ul>
@@ -189,7 +190,7 @@ PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.</p
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../integration/ide/pioide.html" class="btn btn-neutral float-left" title="PlatformIO IDE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installation/index.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

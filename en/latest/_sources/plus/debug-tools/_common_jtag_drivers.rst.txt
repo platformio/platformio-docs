@@ -25,5 +25,5 @@ Drivers
   `AN134: FTDI Drivers Installation guide for MAC OS X <http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf>`__
 
 :Linux:
-  Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+  Please install "udev" rules :ref:`platformio_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
