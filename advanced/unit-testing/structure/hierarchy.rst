@@ -9,84 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Project Structure
------------------
-
-.. contents::
-   :local:
-
-Best Practices
-~~~~~~~~~~~~~~
-
-Unit tests are as important to a firmware/program ("application") as the production
-source code. As with the regular code, you need to give careful thought to where
-the tests reside, both physically and logically, in relation to the code under test.
-If you put unit tests in the wrong place, the tests you have written may not be run.
-
-Similarly, if you do not devise ways to reuse parts of your tests and use
-test hierarchy, you will end up with test code that is either unmaintainable
-or hard to understand. So, what makes a good test?
-
-1. **Tests should be independent and repeatable.**
-   It is a pain to debug a test that succeeds or fails as a result of other tests.
-   PlatformIO isolates the tests by running each of them as a separate application.
-   When a test fails, PlatformIO allows you to run it in isolation for quick debugging.
-
-2. **Tests should not depend on the main application source code.**
-   In PlatformIO, each test is an independent application and should contain its
-   own ``main()`` function (``setup() / loop()`` for :ref:`framework_arduino`,
-   ``app_main()`` for :ref:`framework_espidf`).
-   Linking the main application source code from :ref:`projectconf_pio_src_dir`
-   with a test suite code will lead to multiple compilation errors.
-   Hence, the :ref:`unit_testing_shared_code` is disabled by default.
-
-3. **Tests should be well organized and reflect the structure of the tested code.**
-   PlatformIO lets you organize tests using nested folders. The only folder with
-   a name prefixed by ``test_`` is nominated for unit testing and is an independent
-   test/application. See :ref:`unit_testing_test_hierarchy`.
-
-.. _unit_testing_shared_code:
-
-Shared Code
-~~~~~~~~~~~
-
-By default, PlatformIO does not build the main source code from the :ref:`projectconf_pio_src_dir`
-folder in pair with a test source code. If you have a shared/common code
-between your "main" and "test" programs, you have 2 options:
-
-1. We recommend splitting the source code into multiple
-   components and placing them into the :ref:`projectconf_pio_lib_dir` (project's
-   private libraries and components). :ref:`ldf` will find and include these libraries
-   automatically in the build process. You can include any library/component header file
-   in your test or main application source code using ``#include <MyComponent.h>``.
-
-   See `Local & Embedded: Calculator <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator>`__
-   for an example, where we have a "calculator" component in the
-   :ref:`projectconf_pio_lib_dir` folder and include it in the tests and
-   the main application using ``#include <calculator.h>``.
-
-2. **NOT RECOMMENDED**. Manually instruct PlatformIO to build the main source code
-   from the :ref:`projectconf_pio_src_dir` folder in pair with a test source code using
-   the :ref:`projectconf_test_build_src` option in :ref:`projectconf`:
-
-   .. code-block:: ini
-
-      [env:myenv]
-      platform = ...
-      test_build_src = true
-
-   This is very useful if you unit test independent libraries where you
-   can't split source code.
-
-   .. warning::
-       Please note that you will need to use ``#ifndef PIO_UNIT_TESTING`` and ``#endif``
-       guard to hide non-test related source code. For example, own ``main()``,
-       ``setup() / loop()``, or ``app_main()`` functions.
-
 .. _unit_testing_test_hierarchy:
 
 Test Hierarchy
-~~~~~~~~~~~~~~
+--------------
 
 .. versionadded:: 6.0
 
@@ -103,6 +29,37 @@ Also, C/C++ files located in the root of :ref:`projectconf_pio_test_dir` will
 be compiled together with the active test source files. The root
 :ref:`projectconf_pio_test_dir` is useful for placing configuration
 and extra C/C++ files related to the :ref:`unit_testing_frameworks`.
+
+-----
+
+*  If you have a single test application, you can place the source code files
+   directly in the :ref:`projectconf_pio_test_dir` folder
+*  If you want several test applications, you can organize them in subfolders
+   under :ref:`projectconf_pio_test_dir`:
+
+   -  each test application goes into a subfolder with a name **starting**
+      with ``test_``
+   -  additional levels of folders are allowed to properly organize your
+      tests - see the example **Pizza Project** below
+   -  the :ref:`projectconf_test_filter` option in :ref:`projectconf` or
+      the :option:`pio test --filter` option on the CLI will restrict
+      the tests to only those test applications inside a folder with
+      a path and folder name matching the filter
+   -  the :ref:`projectconf_test_ignore` option in :ref:`projectconf`
+      or the :option:`pio test --ignore` option on the CLI will ignore
+      all test applications inside a folder with a path and folder name
+      matching the filter.
+
+Example of using the filter / ignore option in :ref:`projectconf` for
+the **Pizza Project** below:
+
+.. code:: ini
+
+   [env:myenv]
+   test_filter = embedded/stove/*
+
+will only execute the ``embedded/stove/test_humidity`` and
+``embedded/stove/test_temperature`` tests.
 
 **Example of Pizza Project**
 
