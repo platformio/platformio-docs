@@ -59,11 +59,9 @@ Embedded
     espressif32
     espressif8266
     freescalekinetis
-    gd32v
     infineonxmc
     intel_arc32
     intel_mcs51
-    kendryte210
     lattice_ice40
     maxim32
     microchippic32

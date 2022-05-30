@@ -50,17 +50,11 @@ Platforms
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_gd32v`
-      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
-
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
 
     * - :ref:`platform_intel_arc32`
       - ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_microchippic32`
       - Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
@@ -98,10 +92,8 @@ Examples
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -2581,12 +2573,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_gnat_l082cz`
       - :ref:`platform_ststm32`
       - STM32L082CZY6
@@ -3451,48 +3437,6 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
     * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -3865,12 +3809,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_espressif32_wt32-eth01`
       - :ref:`platform_espressif32`
       - ESP32
@@ -8641,6 +8579,27 @@ Microchip
       - 16MHz
       - 16KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1624`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1624
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1626`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1626
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1627`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1627
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_atmelmegaavr_ATtiny202`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8683,6 +8642,27 @@ Microchip
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny3224`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3224
+      - 16MHz
+      - 32KB
+      - 3KB
+    * - :ref:`board_atmelmegaavr_ATtiny3226`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3226
+      - 16MHz
+      - 32KB
+      - 3KB
+    * - :ref:`board_atmelmegaavr_ATtiny3227`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3227
+      - 16MHz
+      - 32KB
+      - 3KB
     * - :ref:`board_atmelmegaavr_ATtiny402`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8732,6 +8712,27 @@ Microchip
       - 16MHz
       - 4KB
       - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny424`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY424
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny426`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY426
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny427`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY427
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelmegaavr_ATtiny804`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8774,6 +8775,27 @@ Microchip
       - 16MHz
       - 8KB
       - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny824`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY824
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny826`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY826
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny827`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY827
+      - 16MHz
+      - 8KB
+      - 1KB
     * - :ref:`board_atmelmegaavr_avr_iot_wg`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8781,6 +8803,188 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
+    * - :ref:`board_atmelmegaavr_AVR128DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA28
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA32
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA64
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB28
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB32
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB64
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR32DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA28
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA32
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA48
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB28
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB32
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB48
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR64DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA32
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA48
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA64
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB32
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB48
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB64
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD14`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD14
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD20`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD20
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD32
+      - 24MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_atmelmegaavr_curiosity_nano_4809`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8788,6 +8992,20 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_da`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_db`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB48
+      - 24MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_atmelmegaavr_xplained_pro_4809`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -10790,13 +11008,6 @@ SeeedStudio
       - 80MHz
       - 4MB
       - 80KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_espressif8266_wio_node`
       - :ref:`platform_espressif8266`
       - No
@@ -10825,76 +11036,6 @@ Silicognition
       - 240MHz
       - 4MB
       - 320KB
-
-Sipeed
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
 
 SparkFun
 ~~~~~~~~
