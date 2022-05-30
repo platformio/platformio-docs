@@ -1,3 +1,4 @@
+/advanced/unit-testing/structure.html -> /advanced/unit-testing/structure/index.html
 /ci/appveyor.html -> /integration/ci/appveyor.html
 /ci/circleci.html -> /integration/ci/circleci.html
 /ci/drone.html -> /integration/ci/drone.html
@@ -32,6 +33,7 @@
 /ide/visualstudio.html -> /integration/ide/visualstudio.html
 /ide/vscode.html -> /integration/ide/vscode.html
 /installation.html -> /core/installation.html
+/librarymanager/config.html -> /manifests/library-json/index.html
 /librarymanager/quickstart.html -> /librarymanager/dependencies.html
 /migration.html -> /core/migration.html
 /platforms/espressif.html -> /platforms/espressif8266.html

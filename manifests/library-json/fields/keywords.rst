@@ -9,21 +9,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``keywords``
+------------
 
-Library Management
-==================
+**Required** | Type: ``String`` or ``Array`` | Max. Length: 255
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+Used for search by keyword. Helps to make your library easier to discover
+without people needing to know its name.
 
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+The keyword should be lowercased, can contain a-z, digits and dash (but not
+start/end with them). A list from the keywords can be specified with
+separator ``,`` or declared as Array.

@@ -9,21 +9,27 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+.. _manifest_library_json_repository:
 
-Library Management
-==================
+``repository``
+--------------
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+*Optional* | Type: ``Object``
 
-.. toctree::
-    :maxdepth: 2
+The repository in which the source code can be found. The field consists of the
+next items:
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+* ``type`` the only "git", "hg" or "svn" are supported
+* ``url``
+* ``branch`` if is not specified, default branch will be used. This field will
+  be ignored if tag/release exists with the value of :ref:`manifest_library_json_version`.
+
+**Example**
+
+.. code-block:: javascript
+
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/foo/bar.git"
+    }

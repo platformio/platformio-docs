@@ -9,21 +9,16 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``includeDir``
+~~~~~~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``String``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+Custom directory to be searched for header files.
+A default value is ``include`` and means that folder is located at
+the root of a library.
 
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+.. note::
+    The :ref:`ldf` will pick a library automatically only when
+    a project or other dependent libraries include any header file
+    located in ``includeDir`` or ``srcDir``.

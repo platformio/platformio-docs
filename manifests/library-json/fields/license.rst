@@ -9,21 +9,24 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``license``
+-----------
 
-Library Management
-==================
+*Optional* | Type: ``SPDX Expression``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+A SPDX license ID or `SPDX Expression <https://spdx.github.io/spdx-spec/SPDX-license-expressions/>`_.
+You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
 
-.. toctree::
-    :maxdepth: 2
+**Examples**
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+A single license
+
+.. code-block:: javascript
+
+    "license": "Apache-2.0"
+
+Multiple license using SPDX Expression
+
+.. code-block:: javascript
+
+    "license": "MIT AND (LGPL-2.1-or-later OR BSD-3-Clause)"

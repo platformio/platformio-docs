@@ -109,7 +109,7 @@ Prevent removing specified packages from :ref:`projectconf`.
     --skip-dependencies
 
 Uninstall a package and keep its dependencies declared in the manifest
-:ref:`libjson_dependencies` field.
+:ref:`manifest_library_json_dependencies` field.
 
 .. option::
     -g, --global

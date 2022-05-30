@@ -9,21 +9,23 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+.. _manifest_library_json_export:
 
-Library Management
-==================
+``export``
+----------
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+*Optional* | Type: ``Object``
+
+This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc).
+It allows one to reduce the size of the final archive.
+
+To check which files will be included in the final packages, please use
+:ref:`cmd_pkg_pack` command.
+
+Possible options:
 
 .. toctree::
     :maxdepth: 2
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+    include
+    exclude

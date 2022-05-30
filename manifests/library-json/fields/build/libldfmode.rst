@@ -9,21 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``libLDFMode``
+~~~~~~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``String``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
-
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+Specify Library Dependency Finder Mode. See :ref:`ldf_mode` for details.

@@ -9,21 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``name``
+--------
 
-Library Management
-==================
+**Required** | Type: ``String`` | Max. Length: 50
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+A name of a library.
 
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+* Must be unique in the `PlatformIO Registry <https://registry.platformio.org>`__
+* Should be slug style for simplicity, consistency, and compatibility.
+  Example: *HelloWorld*
+* Can contain a-z, digits, and dashes (but not start/end with them)
+* Consecutive dashes and [:;/,@<>] chars are not allowed.

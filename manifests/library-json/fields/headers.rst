@@ -9,21 +9,21 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``headers``
+-----------
 
-Library Management
-==================
+*Optional* | Type: ``String`` or ``Array``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+A list of header files that can be included in a project source files using
+``#include <...>`` directive.
 
-.. toctree::
-    :maxdepth: 2
+**Examples**
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+.. code-block:: javascript
+
+    "headers": "MyLibrary.h"
+
+
+.. code-block:: javascript
+
+    "headers": ["FooCore.h", "FooFeature.h"]

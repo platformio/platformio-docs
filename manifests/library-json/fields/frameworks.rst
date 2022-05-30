@@ -9,21 +9,23 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``frameworks``
+--------------
 
-Library Management
-==================
+*Optional* | Type: ``String`` or ``Array``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+A list with compatible frameworks. The available framework names are defined in
+the :ref:`frameworks` section.
 
-.. toctree::
-    :maxdepth: 2
+**Example**
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+.. code-block:: javascript
+
+    "frameworks": ["espidf", "freertos"]
+
+If the library is compatible with the all frameworks, then do not declare this field or
+you use ``*`` symbol:
+
+.. code-block:: javascript
+
+    "frameworks": "*"

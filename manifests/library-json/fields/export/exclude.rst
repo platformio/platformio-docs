@@ -9,21 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``exclude``
+~~~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``Array`` | `Glob Pattern <http://en.wikipedia.org/wiki/Glob_(programming)>`_
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
-
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+Exclude the directories and files which match with ``exclude`` patterns.

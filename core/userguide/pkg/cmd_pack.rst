@@ -62,8 +62,8 @@ All files are included by default, with the following exceptions:
 
 * Certain files that are relevant to package installation and distribution are always
   included. For example, ``library.json``, ``README.md``, ``LICENSE``, etc.
-* If the :ref:`libjson_export` field is not declared in the manifest, the `next default filters <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L35>`__ will be applied
-* If the :ref:`libjson_export` field is not declared in the manifest and there is a
+* If the :ref:`manifest_library_json_export` field is not declared in the manifest, the `next default filters <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L35>`__ will be applied
+* If the :ref:`manifest_library_json_export` field is not declared in the manifest and there is a
   ``.gitignore`` file, then ignored files in that and all child directories will be
   excluded from the package.
 

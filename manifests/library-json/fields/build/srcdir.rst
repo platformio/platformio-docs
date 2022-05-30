@@ -9,21 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``srcDir``
+~~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``String``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
-
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+Custom location of library source code. A default value is ``src`` and
+means that folder is located in the root of a library.

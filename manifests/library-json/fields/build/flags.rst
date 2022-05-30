@@ -9,21 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``flags``
+~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``String`` or ``Array``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+Extra flags to control preprocessing, compilation, assembly, and linking
+processes. More details :ref:`projectconf_build_flags`.
 
-.. toctree::
-    :maxdepth: 2
-
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+.. note::
+    Keep in mind when operating with the ``-I`` flag (directories to be
+    searched for header files). The path should be relative to the
+    root directory where the ``library.json`` manifest is located.

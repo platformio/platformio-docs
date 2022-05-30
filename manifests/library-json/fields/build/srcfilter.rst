@@ -9,21 +9,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _librarymanager:
+``srcFilter``
+~~~~~~~~~~~~~
 
-Library Management
-==================
+*Optional* | Type: ``String`` or ``Array``
 
-**PlatformIO Library Manager** is a tool for managing libraries of
-`PlatformIO Registry <https://registry.platformio.org/>`__ and VCS repositories (Git,
-Hg, SVN). It makes it exceedingly simple to find, install and keep libraries
-up-to-date.
+Specify which source files should be included/excluded from build process.
+The path in filter should be relative to the ``srcDir`` option of a library.
 
-.. toctree::
-    :maxdepth: 2
+See syntax for :ref:`projectconf_build_src_filter`.
 
-    dependencies
-    ldf
-    configuration
-    ../manifests/library-json/index
-    creating
+Please note that you can generate source filter "on-the-fly" using
+``extraScript`` (see below)
