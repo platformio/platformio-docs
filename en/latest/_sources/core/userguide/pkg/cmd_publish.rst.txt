@@ -29,7 +29,7 @@ Description
 
 Publish a package to the `PlatformIO Registry <https://registry.platformio.org/>`__ so that it can be installed by name.
 All files in the package directory are included if ``export`` field is not declared
-in a package manifest (for example, see :ref:`libjson_export`).
+in a package manifest (for example, see :ref:`manifest_library_json_export`).
 The `next items <https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py>`__ are
 automatically excluded.
 

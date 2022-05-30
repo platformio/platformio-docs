@@ -34,7 +34,7 @@ anywhere in the world or integrate with :ref:`ci` systems.
 
     introduction
     runner
-    structure
+    structure/index
     configuration
     frameworks/index
     simulators/index

@@ -25,5 +25,5 @@ up-to-date.
     dependencies
     ldf
     configuration
-    config
+    ../manifests/library-json/index
     creating
