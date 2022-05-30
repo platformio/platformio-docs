@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -144,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="cppcheck">
-<span id="check-tool-cppcheck"></span><h1>Cppcheck<a class="headerlink" href="#cppcheck" title="Permalink to this headline">¶</a></h1>
+<span id="check-tool-cppcheck"></span><h1>Cppcheck<a class="headerlink" href="#cppcheck" title="Permalink to this heading">¶</a></h1>
 <p><strong>Cppcheck</strong> is a static analysis tool for C/C++ code. It provides a unique
 code analysis to detect bugs and focuses on detecting undefined behavior and
 dangerous coding constructs. The goal is to detect only real errors in the
@@ -173,7 +174,7 @@ software carefully than by using Cppcheck.</p>
 </ul>
 </div>
 <section id="features">
-<h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this heading">¶</a></h2>
 <p><strong>Cppcheck</strong> supports a wide variety of static checks that may not be covered
 by the compiler itself. These checks are static analysis checks that can be
 performed at a source code level. The program is directed towards static
@@ -194,7 +195,7 @@ analysis checks that are rigorous, rather than heuristic in nature.</p>
 </dl>
 </section>
 <section id="additional-checks">
-<h2><a class="toc-backref" href="#id2">Additional checks</a><a class="headerlink" href="#additional-checks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Additional checks</a><a class="headerlink" href="#additional-checks" title="Permalink to this heading">¶</a></h2>
 <p>Be default <strong>Cppcheck</strong> is configured to check the next additional defects:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">warning</span></code></p></li>
@@ -207,7 +208,7 @@ analysis checks that are rigorous, rather than heuristic in nature.</p>
 <a class="reference external" href="https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/">the official webpage</a>.</p>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p><strong>Cppcheck</strong> is implicitly used as the default check tool when <a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> is not set. To be explicit, you can specify it
 in the configuration directly:</p>
@@ -233,7 +234,7 @@ in the configuration directly:</p>
 </div>
 </section>
 <section id="extra-flags">
-<h2><a class="toc-backref" href="#id4">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this heading">¶</a></h2>
 <p>Useful flags that can help more precisely configure <strong>Cppcheck</strong> to satisfy
 your project requirements:</p>
 <blockquote>
@@ -286,7 +287,7 @@ your project requirements:</p>
 </div></blockquote>
 </section>
 <section id="suppressing-warnings">
-<h2><a class="toc-backref" href="#id5">Suppressing warnings</a><a class="headerlink" href="#suppressing-warnings" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Suppressing warnings</a><a class="headerlink" href="#suppressing-warnings" title="Permalink to this heading">¶</a></h2>
 <p>It might be useful to explicitly instruct <strong>Cppcheck</strong> to ignore some of the
 known defects in project codebase. Since <code class="docutils literal notranslate"><span class="pre">--inline-suppr</span></code> is enabled by
 default, it’s possible to directly mark pieces of code that will be excluded
@@ -315,13 +316,13 @@ Arduino-based projects:</p>
 </div>
 </section>
 <section id="addons-misra-cert">
-<h2><a class="toc-backref" href="#id6">Addons (MISRA, CERT)</a><a class="headerlink" href="#addons-misra-cert" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Addons (MISRA, CERT)</a><a class="headerlink" href="#addons-misra-cert" title="Permalink to this heading">¶</a></h2>
 <p><strong>Cppcheck</strong> provides several addon scripts that analyze dump files to check
 compatibility with secure coding standards and to locate various issues.
 Most useful addons for verifying compliance with popular guidelines are
 <strong>MISRA</strong> and <strong>CERT</strong>.</p>
 <section id="misra">
-<h3><a class="toc-backref" href="#id7">MISRA</a><a class="headerlink" href="#misra" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">MISRA</a><a class="headerlink" href="#misra" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">MISRA</span></code> is a proprietary set of software development guidelines for the
 C/C++ programming languages developed by MISRA (Motor Industry Software
 Reliability Association).  It aims to facilitate code safety, security,
@@ -370,7 +371,7 @@ you can pass it via a special <code class="docutils literal notranslate"><span c
 <a class="reference external" href="http://cppcheck.sourceforge.net/misra.php">the official webpage</a>.</p>
 </section>
 <section id="cert">
-<h3><a class="toc-backref" href="#id8">CERT</a><a class="headerlink" href="#cert" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">CERT</a><a class="headerlink" href="#cert" title="Permalink to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">SEI</span> <span class="pre">CERT</span></code> coding standard provides rules for secure coding in the C
 programming language. The goal of these rules and recommendations is to
 develop safe, reliable, and secure systems, for example by eliminating

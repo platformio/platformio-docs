@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -140,7 +141,7 @@
            <div itemprop="articleBody">
              
   <section id="library-dependency-finder-ldf">
-<span id="ldf"></span><h1><a class="toc-backref" href="#id2">Library Dependency Finder (LDF)</a><a class="headerlink" href="#library-dependency-finder-ldf" title="Permalink to this headline">¶</a></h1>
+<span id="ldf"></span><h1><a class="toc-backref" href="#id2">Library Dependency Finder (LDF)</a><a class="headerlink" href="#library-dependency-finder-ldf" title="Permalink to this heading">¶</a></h1>
 <p>Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">...</span></code>
 directives to know what header directories to include for the compiler.</p>
@@ -164,7 +165,7 @@ details.</p>
 </ul>
 </div>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>Library Dependency Finder can be configured from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -181,7 +182,7 @@ details.</p>
 </div>
 </section>
 <section id="storage">
-<span id="ldf-storage"></span><h2><a class="toc-backref" href="#id4">Storage</a><a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<span id="ldf-storage"></span><h2><a class="toc-backref" href="#id4">Storage</a><a class="headerlink" href="#storage" title="Permalink to this heading">¶</a></h2>
 <p>There are different storages where Library Dependency Finder looks for
 libraries. These storages (folders) have priority and LDF operates in the next
 order:</p>
@@ -195,7 +196,7 @@ order:</p>
 </ol>
 </section>
 <section id="dependency-finder-mode">
-<span id="ldf-mode"></span><h2><a class="toc-backref" href="#id5">Dependency Finder Mode</a><a class="headerlink" href="#dependency-finder-mode" title="Permalink to this headline">¶</a></h2>
+<span id="ldf-mode"></span><h2><a class="toc-backref" href="#id5">Dependency Finder Mode</a><a class="headerlink" href="#dependency-finder-mode" title="Permalink to this heading">¶</a></h2>
 <p>Library Dependency Finder starts work from analyzing source files of the
 project (<a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>) and can work in the next modes:</p>
 <dl class="field-list simple">
@@ -285,7 +286,7 @@ dependencies will not be parsed.</p>
 </dl>
 </section>
 <section id="compatibility-mode">
-<span id="ldf-compat-mode"></span><h2><a class="toc-backref" href="#id6">Compatibility Mode</a><a class="headerlink" href="#compatibility-mode" title="Permalink to this headline">¶</a></h2>
+<span id="ldf-compat-mode"></span><h2><a class="toc-backref" href="#id6">Compatibility Mode</a><a class="headerlink" href="#compatibility-mode" title="Permalink to this heading">¶</a></h2>
 <p>Compatibility mode allows one to control strictness of Library Dependency Finder.
 If library contains one of manifest file (<a class="reference internal" href="config.html#library-json"><span class="std std-ref">library.json</span></a>,
 <code class="docutils literal notranslate"><span class="pre">library.properties</span></code>, <code class="docutils literal notranslate"><span class="pre">module.json</span></code>), then LDF check compatibility of this
@@ -307,7 +308,7 @@ and <a class="reference internal" href="../projectconf/section_env_platform.html
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">soft</span></code>.</p>
 </section>
 <section id="c-c-preprocessor-conditional-syntax">
-<span id="ldf-c-cond-syntax"></span><h2><a class="toc-backref" href="#id7">C/C++ Preprocessor conditional syntax</a><a class="headerlink" href="#c-c-preprocessor-conditional-syntax" title="Permalink to this headline">¶</a></h2>
+<span id="ldf-c-cond-syntax"></span><h2><a class="toc-backref" href="#id7">C/C++ Preprocessor conditional syntax</a><a class="headerlink" href="#c-c-preprocessor-conditional-syntax" title="Permalink to this heading">¶</a></h2>
 <p>In spite of the fact that Library Dependency Finder is written in pure Python,
 it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/cpp/Conditional-Syntax.html#Conditional-Syntax">C/C++ Preprocessor conditional syntax</a>
 (<code class="docutils literal notranslate"><span class="pre">#ifdef</span></code>, <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">defined</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>, and <code class="docutils literal notranslate"><span class="pre">elif</span></code>) without calling

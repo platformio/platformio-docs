@@ -101,7 +101,6 @@ option.
 .. toctree::
   :maxdepth: 1
 
-  debug-tools/altera-usb-blaster
   debug-tools/atmel-ice
   debug-tools/avr-stub
   debug-tools/blackmagic
@@ -111,7 +110,6 @@ option.
   debug-tools/esp-prog
   debug-tools/esp-usb-bridge
   debug-tools/ftdi
-  debug-tools/gd-link
   debug-tools/iot-bus-jtag
   debug-tools/jlink
   debug-tools/minimodule
@@ -124,13 +122,10 @@ option.
   debug-tools/qemu
   debug-tools/raspberrypi-swd
   debug-tools/renode
-  debug-tools/rv-link
   debug-tools/simavr
-  debug-tools/sipeed-rv-debugger
   debug-tools/stlink
   debug-tools/ti-icdi
   debug-tools/tumpa
-  debug-tools/um232h
   debug-tools/verilator
   debug-tools/whisper
   debug-tools/custom
@@ -180,14 +175,8 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-    * - :ref:`platform_gd32v`
-      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
-
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
@@ -217,7 +206,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -262,15 +251,6 @@ Frameworks
 
     * - :ref:`framework_freertos`
       - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
-
-    * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
@@ -2144,14 +2124,14 @@ Digilent
     * - :ref:`board_openhw_nexys_a7`
       - :ref:`platform_openhw`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -6593,13 +6573,6 @@ SeeedStudio
       - 16MHz
       - 31.50KB
       - 2KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
 
 Semtech
 ~~~~~~~
@@ -6768,83 +6741,6 @@ Silicon Labs
       - 40MHz
       - 1MB
       - 256KB
-
-Sipeed
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-MF1`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
 
 Solder Splash Labs
 ~~~~~~~~~~~~~~~~~~

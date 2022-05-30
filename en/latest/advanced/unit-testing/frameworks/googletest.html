@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="googletest">
-<span id="unit-testing-frameworks-googletest"></span><h1>GoogleTest<a class="headerlink" href="#googletest" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-frameworks-googletest"></span><h1>GoogleTest<a class="headerlink" href="#googletest" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/google/googletest">https://registry.platformio.org/libraries/google/googletest</a></p>
@@ -178,7 +179,7 @@ GoogleTest can help you.</p>
 </ul>
 </div>
 <section id="getting-started">
-<h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
 <p>To get started with the GoogleTest all you need is to set
 the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option in your <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 to the <code class="docutils literal notranslate"><span class="pre">googletest</span></code> and implement your own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function:</p>
@@ -255,12 +256,12 @@ using GTest, GMock, and PlatformIO.</p>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>The GoogleTest can be configured using system environment variables.
 See supported <a class="reference external" href="https://google.github.io/googletest/advanced.html#running-test-programs-advanced-options">GoogleTest environment variables</a>.</p>
 </section>
 <section id="googletest-cli">
-<h2><a class="toc-backref" href="#id3">GoogleTest CLI</a><a class="headerlink" href="#googletest-cli" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">GoogleTest CLI</a><a class="headerlink" href="#googletest-cli" title="Permalink to this heading">¶</a></h2>
 <p>The GoogleTest works quite nicely without any command-line options at all -
 but for more control a few of them are available.
 See <a class="reference external" href="https://google.github.io/googletest/advanced.html#running-test-programs-advanced-options">GoogleTest CLI guide</a>.</p>
@@ -294,7 +295,7 @@ GoogleTest’s CLI option.</p>
 </ol>
 </section>
 <section id="test-runner">
-<h2><a class="toc-backref" href="#id4">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this heading">¶</a></h2>
 <p>If you would like to change the default PlatformIO’s Test Runner
 for the GoogleTest, please implement your <a class="reference internal" href="custom/index.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom Testing Framework</span></a>
 runner extending <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/googletest.py">GooglestTestRunner</a>

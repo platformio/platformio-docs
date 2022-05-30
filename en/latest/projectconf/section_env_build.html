@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="build-options">
-<span id="projectconf-section-env-build"></span><h1>Build options<a class="headerlink" href="#build-options" title="Permalink to this headline">¶</a></h1>
+<span id="projectconf-section-env-build"></span><h1>Build options<a class="headerlink" href="#build-options" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#build-type" id="id1"><code class="docutils literal notranslate"><span class="pre">build_type</span></code></a></p></li>
@@ -163,12 +164,12 @@
 </ul>
 </div>
 <section id="build-type">
-<span id="projectconf-build-type"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">build_type</span></code></a><a class="headerlink" href="#build-type" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-build-type"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">build_type</span></code></a><a class="headerlink" href="#build-type" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">release</span></code></p>
 <p>See extended documentation for <a class="reference internal" href="build_configurations.html#build-configurations"><span class="std std-ref">Build Configurations</span></a>.</p>
 </section>
 <section id="build-flags">
-<span id="projectconf-build-flags"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">build_flags</span></code></a><a class="headerlink" href="#build-flags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-build-flags"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">build_flags</span></code></a><a class="headerlink" href="#build-flags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>These flags/options affect the preprocessing, compilation, assembly
 and linking processes for C and C++ code. All compiler and linker
@@ -294,7 +295,7 @@ commas, it is split into multiple options at the commas.</p></td>
 refer to <a class="reference internal" href="section_env_debug.html#projectconf-debug-build-flags"><span class="std std-ref">debug_build_flags</span></a>.</p>
 </div>
 <section id="built-in-variables">
-<h3><a class="toc-backref" href="#id3">Built-in Variables</a><a class="headerlink" href="#built-in-variables" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Built-in Variables</a><a class="headerlink" href="#built-in-variables" title="Permalink to this heading">¶</a></h3>
 <p>You can inject the built-in variables into your build flags, such as:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">$PYTHONEXE</span></code>, full path to current Python interpreter</p></li>
@@ -312,7 +313,7 @@ refer to <a class="reference internal" href="section_env_debug.html#projectconf-
 command to see ALL variable values for a build environment.</p>
 </section>
 <section id="dynamic-build-flags">
-<span id="projectconf-dynamic-build-flags"></span><h3><a class="toc-backref" href="#id4">Dynamic build flags</a><a class="headerlink" href="#dynamic-build-flags" title="Permalink to this headline">¶</a></h3>
+<span id="projectconf-dynamic-build-flags"></span><h3><a class="toc-backref" href="#id4">Dynamic build flags</a><a class="headerlink" href="#dynamic-build-flags" title="Permalink to this heading">¶</a></h3>
 <p>PlatformIO allows users to run an external command/script which
 outputs build flags into STDOUT by prepending the shell command with a
 <code class="docutils literal notranslate"><span class="pre">!</span></code> character. PlatformIO will automatically replace commands with
@@ -364,7 +365,7 @@ in the same directory as <code class="docutils literal notranslate"><span class=
 </section>
 </section>
 <section id="build-src-flags">
-<span id="projectconf-build-src-flags"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">build_src_flags</span></code></a><a class="headerlink" href="#build-src-flags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-build-src-flags"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">build_src_flags</span></code></a><a class="headerlink" href="#build-src-flags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>An option <code class="docutils literal notranslate"><span class="pre">build_src_flags</span></code> has the same behavior as <code class="docutils literal notranslate"><span class="pre">build_flags</span></code>
 but will be applied only for the project source files in the
@@ -373,7 +374,7 @@ but will be applied only for the project source files in the
 <span class="target" id="index-1"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_BUILD_SRC_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_SRC_FLAGS</span></code></a>.</p>
 </section>
 <section id="build-unflags">
-<span id="projectconf-build-unflags"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">build_unflags</span></code></a><a class="headerlink" href="#build-unflags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-build-unflags"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">build_unflags</span></code></a><a class="headerlink" href="#build-unflags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Selectively remove base/initial flags that were set by the development platform.</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:unflags]</span><span class="w"></span>
@@ -383,7 +384,7 @@ but will be applied only for the project source files in the
 </div>
 </section>
 <section id="build-src-filter">
-<span id="projectconf-build-src-filter"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">build_src_filter</span></code></a><a class="headerlink" href="#build-src-filter" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-build-src-filter"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">build_src_filter</span></code></a><a class="headerlink" href="#build-src-filter" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">(Templates)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>This option allows one to specify which source files should be
 included or excluded from <a class="reference internal" href="section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> for a build process.
@@ -401,7 +402,7 @@ meaning “include ALL files, then exclude the <code class="docutils literal not
 <span class="target" id="index-2"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_BUILD_SRC_FILTER"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_SRC_FILTER</span></code></a>.</p>
 </section>
 <section id="targets">
-<span id="projectconf-targets"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">targets</span></code></a><a class="headerlink" href="#targets" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-targets"></span><h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">targets</span></code></a><a class="headerlink" href="#targets" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>A list of targets which will be processed by the <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command by
 default. You can enter more than one target, if separated by comma+space <strong>“, “</strong>.</p>

@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="doctest">
-<span id="unit-testing-frameworks-doctest"></span><h1>Doctest<a class="headerlink" href="#doctest" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-frameworks-doctest"></span><h1>Doctest<a class="headerlink" href="#doctest" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/doctest/doctest">https://registry.platformio.org/libraries/doctest/doctest</a></p>
@@ -181,7 +182,7 @@ compile times and runtime compared to other feature-rich alternatives.</p>
 </ul>
 </div>
 <section id="getting-started">
-<h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
 <p>To get started with the Doctest all you need is to set
 the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option in your <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 to the <code class="docutils literal notranslate"><span class="pre">doctest</span></code> and implement your own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function that
@@ -227,11 +228,11 @@ option.</p>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>The Doctest can be configured in two ways: using identifiers
 (macros) or <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code>.</p>
 <section id="using-identifiers">
-<h3><a class="toc-backref" href="#id3">Using identifiers</a><a class="headerlink" href="#using-identifiers" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Using identifiers</a><a class="headerlink" href="#using-identifiers" title="Permalink to this heading">¶</a></h3>
 <p>The Doctest is designed to “just work” as much as possible. It also allows
 configuring how it is built with a set of identifiers.</p>
 <p>See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/configuration.md">Doctest Configuration Guide</a>
@@ -247,7 +248,7 @@ for the available identifiers.</p>
 </div>
 </section>
 <section id="using-doctest-context">
-<h3><a class="toc-backref" href="#id4">Using <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code></a><a class="headerlink" href="#using-doctest-context" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Using <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code></a><a class="headerlink" href="#using-doctest-context" title="Permalink to this heading">¶</a></h3>
 <p>If you need more control and want to set options with code to the
 execution context, then the custom implementation of <code class="docutils literal notranslate"><span class="pre">main()</span></code>
 function will give you access to the <code class="docutils literal notranslate"><span class="pre">doctest::Context</span></code>.</p>
@@ -275,7 +276,7 @@ docs for details.</p>
 </section>
 </section>
 <section id="doctest-cli">
-<h2><a class="toc-backref" href="#id5">Doctest CLI</a><a class="headerlink" href="#doctest-cli" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Doctest CLI</a><a class="headerlink" href="#doctest-cli" title="Permalink to this heading">¶</a></h2>
 <p>The Doctest works quite nicely without any command-line options at all -
 but for more control a few of them are available.
 See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/commandline.md">Doctest CLI guide</a>.</p>
@@ -309,7 +310,7 @@ and <code class="docutils literal notranslate"><span class="pre">-s,--success=&l
 </ol>
 </section>
 <section id="test-runner">
-<h2><a class="toc-backref" href="#id6">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Test Runner</a><a class="headerlink" href="#test-runner" title="Permalink to this heading">¶</a></h2>
 <p>If you would like to change the default PlatformIO’s Test Runner
 for the Doctest, please implement your <a class="reference internal" href="custom/index.html#unit-testing-frameworks-custom"><span class="std std-ref">Custom Testing Framework</span></a>
 runner extending <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/doctest.py">DoctestTestRunner</a>

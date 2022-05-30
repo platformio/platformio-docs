@@ -17,13 +17,14 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Custom upload tool" href="custom_upload_tool.html" />
+    <link rel="next" title="Upload to Cloud (OTA)" href="upload_to_cloud.html" />
     <link rel="prev" title="Split C/C++ build flags" href="split_build_flags.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -84,13 +85,11 @@
 <li class="toctree-l3"><a class="reference internal" href="platformio_ini_custom_options.html">Custom options in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_build_flags.html">Split C/C++ build flags</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_upload_tool.html">Custom upload tool</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload_to_cloud.html">Upload to Cloud (OTA)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom_program_name.html">Custom firmware/program name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="asking_for_input.html">Asking for input (prompts)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_package_files.html">Override package files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_board_configuration.html">Override board configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_debug_flags.html">Custom debug flags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extra_python_packages.html">Extra Python packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="external_sources.html">Build external sources</a></li>
 </ul>
@@ -146,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="extra-linker-flags-without-wl-prefix">
-<h1>Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix<a class="headerlink" href="#extra-linker-flags-without-wl-prefix" title="Permalink to this headline">¶</a></h1>
+<h1>Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix<a class="headerlink" href="#extra-linker-flags-without-wl-prefix" title="Permalink to this heading">¶</a></h1>
 <p>Sometimes you need to pass extra flags to GCC linker without <code class="docutils literal notranslate"><span class="pre">Wl,</span></code>. You could
 use <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option but it will not work. PlatformIO
 will not parse these flags to <code class="docutils literal notranslate"><span class="pre">LINKFLAGS</span></code> scope. In this case, simple
@@ -181,7 +180,7 @@ extra script will help:</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="split_build_flags.html" class="btn btn-neutral float-left" title="Split C/C++ build flags" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="custom_upload_tool.html" class="btn btn-neutral float-right" title="Custom upload tool" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="upload_to_cloud.html" class="btn btn-neutral float-right" title="Upload to Cloud (OTA)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

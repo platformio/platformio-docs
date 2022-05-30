@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -24,7 +25,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Maxim 32" href="maxim32.html" />
-    <link rel="prev" title="Kendryte K210" href="kendryte210.html" />
+    <link rel="prev" title="Intel MCS-51 (8051)" href="intel_mcs51.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -78,11 +79,9 @@
 <li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gd32v.html">GigaDevice GD32V</a></li>
 <li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kendryte210.html">Kendryte K210</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Lattice iCE40</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#stable-and-upstream-versions">Stable and upstream versions</a></li>
@@ -168,7 +167,7 @@
            <div itemprop="articleBody">
              
   <section id="lattice-ice40">
-<span id="platform-lattice-ice40"></span><h1>Lattice iCE40<a class="headerlink" href="#lattice-ice40" title="Permalink to this headline">¶</a></h1>
+<span id="platform-lattice-ice40"></span><h1>Lattice iCE40<a class="headerlink" href="#lattice-ice40" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/lattice_ice40">https://registry.platformio.org/platforms/platformio/lattice_ice40</a></p>
@@ -189,7 +188,7 @@
 </ul>
 </div>
 <section id="examples">
-<h2><a class="toc-backref" href="#id1">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Lattice iCE40 development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-lattice_ice40/tree/master/examples/leds?utm_source=platformio.org&amp;utm_medium=docs">leds</a></p></li>
@@ -197,12 +196,12 @@
 </ul>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id2">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-lattice_ice40/releases">stable releases</a>
 of Lattice iCE40 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
 <span class="k">[env:latest_stable]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">lattice_ice40</span><span class="w"></span>
@@ -216,7 +215,7 @@ of Lattice iCE40 development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-lattice_ice40.git</span><span class="w"></span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
@@ -225,7 +224,7 @@ of Lattice iCE40 development platform and the latest upstream version using
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id3">Packages</a><a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -263,7 +262,7 @@ manufacturer</p>
 </div>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id4">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -273,7 +272,7 @@ horizontally.</p></li>
 </ul>
 </div>
 <section id="fpgawars">
-<h3>FPGAwars<a class="headerlink" href="#fpgawars" title="Permalink to this headline">¶</a></h3>
+<h3>FPGAwars<a class="headerlink" href="#fpgawars" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -304,7 +303,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lattice">
-<h3>Lattice<a class="headerlink" href="#lattice" title="Permalink to this headline">¶</a></h3>
+<h3>Lattice<a class="headerlink" href="#lattice" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -341,7 +340,7 @@ horizontally.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="kendryte210.html" class="btn btn-neutral float-left" title="Kendryte K210" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="intel_mcs51.html" class="btn btn-neutral float-left" title="Intel MCS-51 (8051)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="maxim32.html" class="btn btn-neutral float-right" title="Maxim 32" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

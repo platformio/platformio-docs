@@ -207,14 +207,8 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-    * - :ref:`platform_gd32v`
-      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
-
     * - :ref:`platform_infineonxmc`
       - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
@@ -274,15 +268,6 @@ Frameworks
 
     * - :ref:`framework_freertos`
       - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
-
-    * - :ref:`framework_gd32vf103-sdk`
-      - GigaDevice GD32VF103 Firmware Library (SDK) is a firmware function package, including programs, data structures and macro definitions, all the performance features of peripherals of GD32VF103 devices are involved in the package
-
-    * - :ref:`framework_kendryte-freertos-sdk`
-      - Kendryte SDK with FreeRTOS support
-
-    * - :ref:`framework_kendryte-standalone-sdk`
-      - Kendryte Standalone SDK without OS support
 
     * - :ref:`framework_libopencm3`
       - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
@@ -1747,13 +1732,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_gnat_l082cz`
       - :ref:`platform_ststm32`
       - External
@@ -3861,62 +3839,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-MF1`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
     * - :ref:`board_nxplpc_dipcortexm0`
       - :ref:`platform_nxplpc`
       - External
@@ -4428,13 +4350,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_espressif32_wt32-eth01`
       - :ref:`platform_espressif32`
       - External

@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -143,7 +144,7 @@
            <div itemprop="articleBody">
              
   <section id="test-runner">
-<span id="unit-testing-test-runner"></span><h1>Test Runner<a class="headerlink" href="#test-runner" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-test-runner"></span><h1>Test Runner<a class="headerlink" href="#test-runner" title="Permalink to this heading">¶</a></h1>
 <p><strong>PlatformIO Test Runner</strong> is a powerful unit testing tool. It runs
 your unit tests located in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>, navigates
 through tests, and facilitates the processing of test results. Test Runner
@@ -166,13 +167,13 @@ provides a rich report with the status of all test suites and test cases
 </ul>
 </div>
 <section id="local-test-runner">
-<h2><a class="toc-backref" href="#id1">Local Test Runner</a><a class="headerlink" href="#local-test-runner" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Local Test Runner</a><a class="headerlink" href="#local-test-runner" title="Permalink to this heading">¶</a></h2>
 <p><strong>Local Test Runner</strong> allows you to run a test on a local host machine
 or on a local target device (board). In this case, you need to use
 the <a class="reference internal" href="../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command.</p>
 </section>
 <section id="remote-test-runner">
-<span id="unit-testing-runner-remote"></span><h2><a class="toc-backref" href="#id2">Remote Test Runner</a><a class="headerlink" href="#remote-test-runner" title="Permalink to this headline">¶</a></h2>
+<span id="unit-testing-runner-remote"></span><h2><a class="toc-backref" href="#id2">Remote Test Runner</a><a class="headerlink" href="#remote-test-runner" title="Permalink to this heading">¶</a></h2>
 <p><strong>Remote Test Runner</strong> allows you to run test on the remote machine or
 on the remote target device (board) without having to depend on OS software,
 extra software, SSH, VPN or opening network ports. Remote Unit Testing
@@ -182,7 +183,7 @@ special command <a class="reference internal" href="../../core/userguide/remote/
 at each integration stage.</p>
 </section>
 <section id="test-types">
-<span id="unit-testing-runner-test-types"></span><h2><a class="toc-backref" href="#id3">Test Types</a><a class="headerlink" href="#test-types" title="Permalink to this headline">¶</a></h2>
+<span id="unit-testing-runner-test-types"></span><h2><a class="toc-backref" href="#id3">Test Types</a><a class="headerlink" href="#test-types" title="Permalink to this heading">¶</a></h2>
 <p>Before writing a test, you need to decide where it will be executed later:
 on the host machine or on the target device connected to the host machine.
 Tests that are written for the target device typically will not work on
@@ -192,7 +193,7 @@ by types and later skip an incompatible group of tests using
 <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> or <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> options
 in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <section id="native">
-<h3><a class="toc-backref" href="#id4">Native</a><a class="headerlink" href="#native" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Native</a><a class="headerlink" href="#native" title="Permalink to this heading">¶</a></h3>
 <p>Native tests are intended for the project components that are independent
 of physical hardware. You can also use them in pair with Mocking frameworks.</p>
 <p>PlatformIO provides you a <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform to
@@ -208,7 +209,7 @@ development platform.</p>
 </div>
 </section>
 <section id="embedded">
-<h3><a class="toc-backref" href="#id5">Embedded</a><a class="headerlink" href="#embedded" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Embedded</a><a class="headerlink" href="#embedded" title="Permalink to this heading">¶</a></h3>
 <p>Embedded tests are intended for the target devices (boards, hardware). They allow
 you to deeply test all project components that are part of your firmware.</p>
 <p>How does PlatformIO Unit Testing Runner process embedded tests?</p>
@@ -227,7 +228,7 @@ PlatformIO Unit Testing Runner using <a class="reference internal" href="framewo
 implementation.</p>
 </section>
 <section id="hybrid">
-<h3><a class="toc-backref" href="#id6">Hybrid</a><a class="headerlink" href="#hybrid" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Hybrid</a><a class="headerlink" href="#hybrid" title="Permalink to this heading">¶</a></h3>
 <p>The tests that work on a host machine and on the embedded target are hybrid tests.
 You can run them using <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform or
 embedded development <a class="reference internal" href="../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>

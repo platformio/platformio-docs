@@ -17,13 +17,14 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="UM232H" href="um232h.html" />
+    <link rel="next" title="Verilator" href="verilator.html" />
     <link rel="prev" title="TI-ICDI" href="ti-icdi.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -79,7 +80,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#tutorials">Tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#configuration">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="altera-usb-blaster.html">Altera / Intel USB-Blaster</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmel-ice.html">Atmel-ICE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="avr-stub.html">avr-stub</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blackmagic.html">Black Magic Probe</a></li>
@@ -89,7 +89,6 @@
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-usb-bridge.html">ESP USB Bridge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="iot-bus-jtag.html">oddWires IOT-Bus JTAG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jlink.html">J-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimodule.html">Mini-Module FT2232H</a></li>
@@ -102,9 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi-swd.html">Raspberry Pi SWD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="renode.html">Renode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="simavr.html">simavr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sipeed-rv-debugger.html">Sipeed RV Debugger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stlink.html">ST-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ti-icdi.html">TI-ICDI</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">TIAO USB Multi-Protocol Adapter (TUMPA)</a><ul>
@@ -116,7 +113,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#boards">Boards</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="um232h.html">UM232H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verilator.html">Verilator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="whisper.html">Whisper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom.html">Custom</a></li>
@@ -176,7 +172,7 @@
            <div itemprop="articleBody">
              
   <section id="tiao-usb-multi-protocol-adapter-tumpa">
-<span id="debugging-tool-tumpa"></span><h1>TIAO USB Multi-Protocol Adapter (TUMPA)<a class="headerlink" href="#tiao-usb-multi-protocol-adapter-tumpa" title="Permalink to this headline">¶</a></h1>
+<span id="debugging-tool-tumpa"></span><h1>TIAO USB Multi-Protocol Adapter (TUMPA)<a class="headerlink" href="#tiao-usb-multi-protocol-adapter-tumpa" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/tumpa.jpg" src="../../_images/tumpa.jpg" /></a>
 <p>The TIAO USB Multi Protocol Adapter (TUMPA) is a multi-functional USB
 communication adapter for hobbyists or engineers. The adapter is based on
@@ -202,7 +198,7 @@ Official reference can be found <a class="reference external" href="https://www.
 </ul>
 </div>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>You can configure debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
 <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
@@ -227,7 +223,7 @@ upload protocol:</p>
 </ul>
 </section>
 <section id="drivers">
-<h2><a class="toc-backref" href="#id2">Drivers</a><a class="headerlink" href="#drivers" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Drivers</a><a class="headerlink" href="#drivers" title="Permalink to this heading">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">Windows</dt>
 <dd class="field-odd"><ul class="simple">
@@ -250,10 +246,10 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 </dl>
 </section>
 <section id="wiring-connections">
-<h2><a class="toc-backref" href="#id3">Wiring Connections</a><a class="headerlink" href="#wiring-connections" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Wiring Connections</a><a class="headerlink" href="#wiring-connections" title="Permalink to this heading">¶</a></h2>
 <img alt="../../_images/generic_jtag_swd_connector.jpg" src="../../_images/generic_jtag_swd_connector.jpg" />
 <section id="jtag-interface">
-<h3><a class="toc-backref" href="#id4">JTAG Interface</a><a class="headerlink" href="#jtag-interface" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">JTAG Interface</a><a class="headerlink" href="#jtag-interface" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -299,7 +295,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 </table>
 </section>
 <section id="serial-wire-mode-interface-swd">
-<h3><a class="toc-backref" href="#id5">Serial Wire Mode Interface (SWD)</a><a class="headerlink" href="#serial-wire-mode-interface-swd" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Serial Wire Mode Interface (SWD)</a><a class="headerlink" href="#serial-wire-mode-interface-swd" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -338,7 +334,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 </section>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id6">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -353,17 +349,14 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>Kendryte K210 is an AI capable RISCV64 dual core SoC.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id7">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -387,12 +380,6 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/freertos.html#framework-freertos"><span class="std std-ref">FreeRTOS</span></a></p></td>
 <td><p>FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/kendryte-freertos-sdk.html#framework-kendryte-freertos-sdk"><span class="std std-ref">Kendryte FreeRTOS SDK</span></a></p></td>
-<td><p>Kendryte SDK with FreeRTOS support</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/kendryte-standalone-sdk.html#framework-kendryte-standalone-sdk"><span class="std std-ref">Kendryte Standalone SDK</span></a></p></td>
-<td><p>Kendryte Standalone SDK without OS support</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
 </tr>
@@ -400,7 +387,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id8">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll tables below by horizontal.</p>
@@ -970,54 +957,6 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit.html#board-kendryte210-sipeed-maix-bit"><span class="std std-ref">Sipeed MAIX BiT</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-bit-mic.html#board-kendryte210-sipeed-maix-bit-mic"><span class="std std-ref">Sipeed MAIX BiT with Mic</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-go.html#board-kendryte210-sipeed-maix-go"><span class="std std-ref">Sipeed MAIX GO</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maix-one-dock.html#board-kendryte210-sipeed-maix-one-dock"><span class="std std-ref">Sipeed MAIX ONE DOCK</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-maixduino.html#board-kendryte210-sipeed-maixduino"><span class="std std-ref">Sipeed MAIXDUINO</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/kendryte210/sipeed-MF1.html#board-kendryte210-sipeed-mf1"><span class="std std-ref">Sipeed MF1 MF1</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/kendryte210.html#platform-kendryte210"><span class="std std-ref">Kendryte K210</span></a></p></td>
-<td><p>External</p></td>
-<td><p>K210</p></td>
-<td><p>400MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>6MB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32thing.html#board-espressif32-esp32thing"><span class="std std-ref">SparkFun ESP32 Thing</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
@@ -1332,7 +1271,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="ti-icdi.html" class="btn btn-neutral float-left" title="TI-ICDI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="um232h.html" class="btn btn-neutral float-right" title="UM232H" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="verilator.html" class="btn btn-neutral float-right" title="Verilator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

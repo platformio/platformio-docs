@@ -147,7 +147,7 @@ development platforms. The only :ref:`platform_espressif8266` supports it.
 ``upload_command``
 ^^^^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``No``
+Type: ``String`` | Singleline: ``Yes``
 
 Override default :ref:`platforms` upload command with a custom command. You can pass a full
 upload command with arguments and options or mix with :ref:`projectconf_upload_flags`.

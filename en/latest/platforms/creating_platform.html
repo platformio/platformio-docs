@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -135,7 +136,7 @@
            <div itemprop="articleBody">
              
   <section id="custom-development-platforms">
-<span id="platform-creating"></span><h1><a class="toc-backref" href="#id1">Custom Development Platforms</a><a class="headerlink" href="#custom-development-platforms" title="Permalink to this headline">¶</a></h1>
+<span id="platform-creating"></span><h1><a class="toc-backref" href="#id1">Custom Development Platforms</a><a class="headerlink" href="#custom-development-platforms" title="Permalink to this heading">¶</a></h1>
 <p><em>PlatformIO</em> can build the same binary code under
 different host systems via the single command <a class="reference internal" href="../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>
 without any dependent software or requirements.</p>
@@ -167,12 +168,12 @@ new development platforms.</p>
 </ul>
 </div>
 <section id="examples">
-<h2><a class="toc-backref" href="#id2">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Please take a look at the source code of existing
 <a class="reference external" href="https://github.com/topics/platformio-platform">PlatformIO Development Platforms</a>.</p>
 </section>
 <section id="packages">
-<span id="platform-creating-packages"></span><h2><a class="toc-backref" href="#id3">Packages</a><a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<span id="platform-creating-packages"></span><h2><a class="toc-backref" href="#id3">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
 <p>Some tools are the same when compiling for several platforms, for
 example a common compiler. A <em>package</em> is some tool or framework that
 can be used when compiling for one or multiple platforms. Even if
@@ -185,7 +186,7 @@ operating systems and you can use them in your platform
 manifest. Custom packages can be uploaded to the PlatformIO Registry using <a class="reference internal" href="../core/userguide/pkg/cmd_publish.html#cmd-pkg-publish"><span class="std std-ref">pio pkg publish</span></a> command.</p>
 </section>
 <section id="manifest-file-platform-json">
-<span id="platform-creating-manifest-file"></span><h2><a class="toc-backref" href="#id4">Manifest File <code class="docutils literal notranslate"><span class="pre">platform.json</span></code></a><a class="headerlink" href="#manifest-file-platform-json" title="Permalink to this headline">¶</a></h2>
+<span id="platform-creating-manifest-file"></span><h2><a class="toc-backref" href="#id4">Manifest File <code class="docutils literal notranslate"><span class="pre">platform.json</span></code></a><a class="headerlink" href="#manifest-file-platform-json" title="Permalink to this heading">¶</a></h2>
 <p>Each platform definition includes a <em>manifest file</em> with a particular
 format that is parsed by PlatformIO when handling projects using that
 platform.</p>
@@ -239,7 +240,7 @@ platform.</p>
 </div>
 </section>
 <section id="build-script-main-py">
-<span id="platform-creating-build-script"></span><h2><a class="toc-backref" href="#id5">Build Script <code class="docutils literal notranslate"><span class="pre">main.py</span></code></a><a class="headerlink" href="#build-script-main-py" title="Permalink to this headline">¶</a></h2>
+<span id="platform-creating-build-script"></span><h2><a class="toc-backref" href="#id5">Build Script <code class="docutils literal notranslate"><span class="pre">main.py</span></code></a><a class="headerlink" href="#build-script-main-py" title="Permalink to this heading">¶</a></h2>
 <p>Each platform definition must include a <code class="docutils literal notranslate"><span class="pre">main.py</span></code>.</p>
 <p>PlatformIO’s build script is based on a next-generation build tool
 named <a class="reference external" href="http://www.scons.org">SCons</a>. PlatformIO has its own built-in
@@ -321,7 +322,7 @@ see the following template as start for developing your own <code class="docutil
 </div>
 </section>
 <section id="installation">
-<span id="platform-creating-installation"></span><h2><a class="toc-backref" href="#id6">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<span id="platform-creating-installation"></span><h2><a class="toc-backref" href="#id6">Installation</a><a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
 <p>Using the “myplatform” platform example above:</p>
 <ol class="arabic simple">
 <li><p>Create a <code class="docutils literal notranslate"><span class="pre">platforms</span></code> directory in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a> if it
@@ -336,7 +337,7 @@ should see the new <code class="docutils literal notranslate"><span class="pre">
 option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 </section>
 <section id="publishing">
-<h2><a class="toc-backref" href="#id7">Publishing</a><a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Publishing</a><a class="headerlink" href="#publishing" title="Permalink to this heading">¶</a></h2>
 <p>You can publish a development platform to the <strong>PlatformIO Trusted Registry</strong>
 using <a class="reference internal" href="../core/userguide/pkg/cmd_publish.html#cmd-pkg-publish"><span class="std std-ref">pio pkg publish</span></a> command. Other developers will be able to install it.
 Every time when you modify a source code of a development platform you will need to

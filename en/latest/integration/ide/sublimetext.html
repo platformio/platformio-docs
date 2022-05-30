@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="sublime-text">
-<span id="ide-sublimetext"></span><h1>Sublime Text<a class="headerlink" href="#sublime-text" title="Permalink to this headline">¶</a></h1>
+<span id="ide-sublimetext"></span><h1>Sublime Text<a class="headerlink" href="#sublime-text" title="Permalink to this heading">¶</a></h1>
 <p>The <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a> is a cross-platform text and source code editor, with a Python application programming interface (API). Sublime Text is proprietary software. Its functionality is extendable with plugins. Most of the extending packages have free-software licenses and are community-built and maintained. Sublime Text lacks graphical setting dialogues and is entirely configured by editing text files.</p>
 <p>Refer to the <a class="reference external" href="http://docs.sublimetext.info/en/latest">Sublime Text Documentation</a>
 page for more detailed information.</p>
@@ -175,7 +176,7 @@ page for more detailed information.</p>
 </ul>
 </div>
 <section id="deviot-plugin">
-<h2><a class="toc-backref" href="#id2">Deviot Plugin</a><a class="headerlink" href="#deviot-plugin" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Deviot Plugin</a><a class="headerlink" href="#deviot-plugin" title="Permalink to this heading">¶</a></h2>
 <p>We are glad to inform you about an awesome Sublime Text plugin for IoT development
 named <a class="reference external" href="https://github.com/gepd/Deviot">Deviot</a>. It is based on
 <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and will automatically install it for you. Please visit <a class="reference external" href="https://github.com/gepd/Deviot">official
@@ -184,9 +185,9 @@ steps and documentation.</p>
 <a class="reference external image-reference" href="https://github.com/gepd/Deviot"><img alt="../../_images/ide-sublime-text-deviot.gif" src="../../_images/ide-sublime-text-deviot.gif" /></a>
 </section>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
 <section id="project-generator">
-<h3><a class="toc-backref" href="#id4">Project Generator</a><a class="headerlink" href="#project-generator" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Project Generator</a><a class="headerlink" href="#project-generator" title="Permalink to this heading">¶</a></h3>
 <p>Integration process consists of these steps:</p>
 <ol class="arabic simple">
 <li><p>Open system Terminal and install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a></p></li>
@@ -224,7 +225,7 @@ pio project init --ide sublimetext --board uno
 </ul>
 </section>
 <section id="manual-integration">
-<h3><a class="toc-backref" href="#id5">Manual Integration</a><a class="headerlink" href="#manual-integration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Manual Integration</a><a class="headerlink" href="#manual-integration" title="Permalink to this heading">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please verify that folder where is located <code class="docutils literal notranslate"><span class="pre">platformio</span></code> program is added
@@ -232,7 +233,7 @@ to <a class="reference external" href="https://en.wikipedia.org/wiki/PATH_(varia
 variable.</p>
 </div>
 <section id="initial-configuration">
-<h4><a class="toc-backref" href="#id6">Initial configuration</a><a class="headerlink" href="#initial-configuration" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id6">Initial configuration</a><a class="headerlink" href="#initial-configuration" title="Permalink to this heading">¶</a></h4>
 <p>First of all, we need to create “New Build System” with name “PlatformIO”
 from <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">System</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">Build</span> <span class="pre">System</span></code> and fill it like
 described below:</p>
@@ -260,7 +261,7 @@ described below:</p>
 <code class="docutils literal notranslate"><span class="pre">Cmd+Shift+P</span></code> (Mac) shortcut.</p>
 <img alt="../../_images/ide-sublimetext-newproject-2.png" src="../../_images/ide-sublimetext-newproject-2.png" />
 <section id="command-hotkeys">
-<h5><a class="toc-backref" href="#id7">Command Hotkeys</a><a class="headerlink" href="#command-hotkeys" title="Permalink to this headline">¶</a></h5>
+<h5><a class="toc-backref" href="#id7">Command Hotkeys</a><a class="headerlink" href="#command-hotkeys" title="Permalink to this heading">¶</a></h5>
 <p>Sublime Text allows one to bind own hotkey per command. Let’s setup them
 for PlatformIO commands using shortcut <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Key-Bindings</span> <span class="pre">-</span> <span class="pre">User</span></code>:</p>
 <img alt="../../_images/ide-sublimetext-newproject-3.png" src="../../_images/ide-sublimetext-newproject-3.png" />
@@ -279,7 +280,7 @@ for PlatformIO commands using shortcut <code class="docutils literal notranslate
 </section>
 </section>
 <section id="first-program-in-sublime-text">
-<h4><a class="toc-backref" href="#id8">First program in Sublime Text</a><a class="headerlink" href="#first-program-in-sublime-text" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id8">First program in Sublime Text</a><a class="headerlink" href="#first-program-in-sublime-text" title="Permalink to this heading">¶</a></h4>
 <p>Simple “Blink” project will consist from two files:</p>
 <p>1. Main “C” source file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> must be located in the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory.
 Let’s create new file named <code class="docutils literal notranslate"><span class="pre">main.c</span></code> using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span></code> or shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl+N</span></code> (Windows/Linux) <code class="docutils literal notranslate"><span class="pre">Cmd+N</span></code> (Mac) with the next contents:</p>
@@ -319,13 +320,13 @@ Copy the source code which is described below to it.</p>
 </div>
 </section>
 <section id="conclusion">
-<h4><a class="toc-backref" href="#id9">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id9">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h4>
 <p>Taking everything into account, we can open project directory in Sublime Text using <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Folder</span></code> and build it with shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl+B</span></code> (Windows/Linux) or <code class="docutils literal notranslate"><span class="pre">Cmd+B</span></code> (Mac), clean project with shortcut <code class="docutils literal notranslate"><span class="pre">F11</span></code> and upload firmware to target with shortcut <code class="docutils literal notranslate"><span class="pre">F12</span></code>.</p>
 </section>
 </section>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id10">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
 <p>A debugging feature is provided by <a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> and new debug configuration
 named “PlatformIO Debugger” is created. No need to do extra configuration steps!</p>
 <ol class="arabic simple">

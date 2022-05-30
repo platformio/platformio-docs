@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -143,7 +144,7 @@
            <div itemprop="articleBody">
              
   <section id="github-actions">
-<span id="ci-github-actions"></span><h1><a class="toc-backref" href="#id2">GitHub Actions</a><a class="headerlink" href="#github-actions" title="Permalink to this headline">¶</a></h1>
+<span id="ci-github-actions"></span><h1><a class="toc-backref" href="#id2">GitHub Actions</a><a class="headerlink" href="#github-actions" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> enables you to create custom
 software development life cycle (SDLC) workflows directly in your GitHub repository.</p>
 <p>You need to configure GitHub Actions using <a class="reference external" href="http://en.wikipedia.org/wiki/YAML">YAML</a>
@@ -184,7 +185,7 @@ it will try to build the project using <a class="reference internal" href="../..
 </ul>
 </div>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please make sure to read GitHub Actions <a class="reference external" href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/getting-started-with-github-actions">Getting Started</a>
@@ -192,7 +193,7 @@ guide first.</p>
 </div>
 <p>There are two possible ways of running PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
-<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PlatformIO CI</span><span class="w"></span>
 
@@ -229,7 +230,7 @@ guide first.</p>
 </div>
 </section>
 <section id="using-cmd-ci-command">
-<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
@@ -271,12 +272,12 @@ and boards from command line interface:</p>
 </pre></div>
 </div>
 <section id="library-dependencies">
-<h4><a class="toc-backref" href="#id6">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id6">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this heading">¶</a></h4>
 <p>There 2 options to test source code with dependent libraries:</p>
 </section>
 </section>
 <section id="install-dependent-library-using-librarymanager">
-<h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install library dependencies</span><span class="w"></span>
 <span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio lib -g install 1</span><span class="w"></span>
 
@@ -286,7 +287,7 @@ and boards from command line interface:</p>
 </div>
 </section>
 <section id="manually-download-dependent-library-and-include-in-build-process-via-lib-option">
-<h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install library dependencies</span><span class="w"></span>
 <span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
 <span class="w">    </span><span class="no">wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip</span><span class="w"></span>
@@ -297,7 +298,7 @@ and boards from command line interface:</p>
 </pre></div>
 </div>
 <section id="custom-build-flags">
-<h4><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading">¶</a></h4>
 <p>PlatformIO allows one to specify own build flags using <span class="target" id="index-0"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PlatformIO</span><span class="w"></span>
 <span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --lib=&quot;/tmp/OneWire-master&quot; --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span><span class="w"></span>
@@ -311,7 +312,7 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id10">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Integration for USB_Host_Shield_2.0 project. The <code class="docutils literal notranslate"><span class="pre">workflow.yml</span></code> configuration file:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PlatformIO CI</span><span class="w"></span>
 

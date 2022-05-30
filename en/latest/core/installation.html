@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -150,7 +151,7 @@
            <div itemprop="articleBody">
              
   <section id="installation">
-<span id="core-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<span id="core-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please note that you do not need to install <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> if you are going
@@ -211,7 +212,7 @@ computers (<a class="reference external" href="http://www.raspberrypi.org">Raspb
 </ul>
 </div>
 <section id="system-requirements">
-<h2><a class="toc-backref" href="#id6">System requirements</a><a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">System requirements</a><a class="headerlink" href="#system-requirements" title="Permalink to this heading">¶</a></h2>
 <dl class="field-list">
 <dt class="field-odd">Operating System</dt>
 <dd class="field-odd"><p>Windows, macOS, Linux, FreeBSD, Linux ARMv6+</p>
@@ -238,7 +239,7 @@ driver from board manufacturer</p>
 </dl>
 </section>
 <section id="installation-methods">
-<h2><a class="toc-backref" href="#id7">Installation Methods</a><a class="headerlink" href="#installation-methods" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Installation Methods</a><a class="headerlink" href="#installation-methods" title="Permalink to this heading">¶</a></h2>
 <p>Please <em>choose ONE of</em> the following methods:</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
@@ -253,14 +254,14 @@ driver from board manufacturer</p>
 </ul>
 </div>
 <section id="installer-script">
-<span id="installation-installer-script"></span><h3><a class="toc-backref" href="#id28">Installer Script</a><a class="headerlink" href="#installer-script" title="Permalink to this headline">¶</a></h3>
+<span id="installation-installer-script"></span><h3><a class="toc-backref" href="#id28">Installer Script</a><a class="headerlink" href="#installer-script" title="Permalink to this heading">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>PlatformIO <strong>DOES NOT</strong> require administrative/sudo permissions. Please install using
 default user account <strong>WITHOUT EXTRA PERMISSIONS</strong>.</p>
 </div>
 <section id="super-quick-mac-linux">
-<h4><a class="toc-backref" href="#id29">Super-Quick (Mac / Linux)</a><a class="headerlink" href="#super-quick-mac-linux" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id29">Super-Quick (Mac / Linux)</a><a class="headerlink" href="#super-quick-mac-linux" title="Permalink to this heading">¶</a></h4>
 <p>To install or upgrade <strong>PlatformIO Core</strong> paste that at a <em>Terminal</em> prompt:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
 
@@ -277,7 +278,7 @@ python3 get-platformio.py
 </div>
 </section>
 <section id="local-download-mac-linux-windows">
-<h4><a class="toc-backref" href="#id30">Local Download (Mac / Linux / Windows)</a><a class="headerlink" href="#local-download-mac-linux-windows" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id30">Local Download (Mac / Linux / Windows)</a><a class="headerlink" href="#local-download-mac-linux-windows" title="Permalink to this heading">¶</a></h4>
 <p>To install or upgrade <em>PlatformIO Core</em>, download (save as...)
 <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a>
 script. Then run the following:</p>
@@ -304,7 +305,7 @@ other applications or terminal in your OS, please <a class="reference internal" 
 </section>
 </section>
 <section id="python-package-manager">
-<h3><a class="toc-backref" href="#id31">Python Package Manager</a><a class="headerlink" href="#python-package-manager" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id31">Python Package Manager</a><a class="headerlink" href="#python-package-manager" title="Permalink to this heading">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>We recommend using this method <strong>ONLY FOR</strong> <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> use cases or where your have
@@ -320,7 +321,7 @@ Python Package Manager (<a class="reference external" href="https://pip.pypa.io"
 </div>
 </section>
 <section id="macos-homebrew">
-<h3><a class="toc-backref" href="#id32">macOS Homebrew</a><a class="headerlink" href="#macos-homebrew" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id32">macOS Homebrew</a><a class="headerlink" href="#macos-homebrew" title="Permalink to this heading">¶</a></h3>
 <p>The latest stable version of PlatformIO may be installed or upgraded via
 macOS Homebrew Packages Manager (<a class="reference external" href="http://brew.sh/">brew</a>) as follows:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install platformio
@@ -329,7 +330,7 @@ macOS Homebrew Packages Manager (<a class="reference external" href="http://brew
 </section>
 </section>
 <section id="development-version">
-<span id="installation-develop"></span><h2><a class="toc-backref" href="#id13">Development Version</a><a class="headerlink" href="#development-version" title="Permalink to this headline">¶</a></h2>
+<span id="installation-develop"></span><h2><a class="toc-backref" href="#id13">Development Version</a><a class="headerlink" href="#development-version" title="Permalink to this heading">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, please enable development version:</p>
@@ -365,7 +366,7 @@ pip install -U platformio
 </div>
 </section>
 <section id="install-shell-commands">
-<span id="piocore-install-shell-commands"></span><h2><a class="toc-backref" href="#id14">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this headline">¶</a></h2>
+<span id="piocore-install-shell-commands"></span><h2><a class="toc-backref" href="#id14">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> consists of 2 standalone tools in a system:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">platformio</span></code> or <code class="docutils literal notranslate"><span class="pre">pio</span></code> (short alias) - <a class="reference internal" href="userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a></p></li>
@@ -385,10 +386,10 @@ pip install -U platformio
 </ul>
 </div>
 <section id="unix-and-unix-like">
-<h3><a class="toc-backref" href="#id33">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this heading">¶</a></h3>
 <p>In Unix and Unix-like systems, there are multiple ways to achieve this.</p>
 <section id="method-1">
-<h4><a class="toc-backref" href="#id34">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id34">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this heading">¶</a></h4>
 <p>You can export PlatformIO executables’ directory to the PATH environmental
 variable. This method will allow you to execute <code class="docutils literal notranslate"><span class="pre">platformio</span></code> commands from
 any terminal emulator as long as you’re logged in as the user PlatformIO is
@@ -408,7 +409,7 @@ the code above, then edit <code class="docutils literal notranslate"><span class
 <p>If you don’t know the difference between the two, check out <a class="reference external" href="https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc">this page</a>.</p>
 </section>
 <section id="method-2">
-<h4><a class="toc-backref" href="#id35">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id35">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this heading">¶</a></h4>
 <p>You can create system-wide symlinks. This method is not recommended if you have
 multiple users on your computer because the symlinks will be broken for other users
 and they will get errors while executing PlatformIO commands. If that’s not a problem,
@@ -423,7 +424,7 @@ ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
 </section>
 </section>
 <section id="windows">
-<h3><a class="toc-backref" href="#id36">Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id36">Windows</a><a class="headerlink" href="#windows" title="Permalink to this heading">¶</a></h3>
 <p>Please read one of these instructions <a class="reference external" href="https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable">How do I set or change the PATH system variable?</a></p>
 <p>You need to edit system environment variable called <code class="docutils literal notranslate"><span class="pre">Path</span></code> and append
 <code class="docutils literal notranslate"><span class="pre">C:\Users\UserName\.platformio\penv\Scripts;</span></code> path in the beginning of a
@@ -431,7 +432,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
 </section>
 </section>
 <section id="uninstall-platformio-core-and-dependent-packages">
-<span id="piocore-uninstall"></span><h2><a class="toc-backref" href="#id19">Uninstall PlatformIO Core and dependent packages</a><a class="headerlink" href="#uninstall-platformio-core-and-dependent-packages" title="Permalink to this headline">¶</a></h2>
+<span id="piocore-uninstall"></span><h2><a class="toc-backref" href="#id19">Uninstall PlatformIO Core and dependent packages</a><a class="headerlink" href="#uninstall-platformio-core-and-dependent-packages" title="Permalink to this heading">¶</a></h2>
 <ul>
 <li><p>Uninstall PlatformIO Core tool</p>
 <blockquote>
@@ -449,7 +450,7 @@ folder (in user’s HOME directory). Just remove it.</p></li>
 </ul>
 </section>
 <section id="integration-with-custom-applications-extensions-plugins">
-<h2><a class="toc-backref" href="#id20">Integration with custom applications (extensions, plugins)</a><a class="headerlink" href="#integration-with-custom-applications-extensions-plugins" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id20">Integration with custom applications (extensions, plugins)</a><a class="headerlink" href="#integration-with-custom-applications-extensions-plugins" title="Permalink to this heading">¶</a></h2>
 <p>We recommend using PlatformIO Core <strong>Installer Script</strong> when you integrate PlatformIO Core
 into an application, such as extension or plugin for IDE. Examples that use this installer are:</p>
 <ul class="simple">
@@ -458,9 +459,9 @@ is used by <a class="reference external" href="https://marketplace.visualstudio.
 and <a class="reference external" href="https://atom.io/packages/platformio-ide">PlatformIO IDE for Atom</a></p></li>
 </ul>
 <section id="prerequisite">
-<h3><a class="toc-backref" href="#id21">Prerequisite</a><a class="headerlink" href="#prerequisite" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id21">Prerequisite</a><a class="headerlink" href="#prerequisite" title="Permalink to this heading">¶</a></h3>
 <section id="python-interpreter">
-<h4><a class="toc-backref" href="#id22">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id22">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Permalink to this heading">¶</a></h4>
 <p>PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
 and Python 3.5+. <strong>We highly recommend using the latest Python 3</strong>.</p>
 <p>Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
@@ -474,7 +475,7 @@ and unpack it in a cache folder of your application. Later, you can use
 </ol>
 </section>
 <section id="id3">
-<h4><a class="toc-backref" href="#id23">Installer Script</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id23">Installer Script</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
 <p>There are 2 options on how to work with PlatformIO Core Installer Script:</p>
 <ol class="arabic simple">
 <li><p>Bundle <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a> file into your application</p></li>
@@ -489,12 +490,12 @@ You can copy or download it to a cache/temporary folder.</p>
 </section>
 </section>
 <section id="workflow">
-<h3><a class="toc-backref" href="#id24">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id24">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this heading">¶</a></h3>
 <p>We will describe a simple workflow on how to automatically install <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> for
 end-user of your application/extension. We assume that <code class="docutils literal notranslate"><span class="pre">get-platformio.py</span></code> script
 is already copied/downloaded and exists on the end-user machine. See above how to get it.</p>
 <section id="step-1-where-is-platformio-core-installed">
-<h4><a class="toc-backref" href="#id25">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id25">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Permalink to this heading">¶</a></h4>
 <p>You should check the PlatformIO Core installation state <strong>each time</strong> when the user
 starts your application. You need to call the Installer Script with <code class="docutils literal notranslate"><span class="pre">check</span> <span class="pre">core</span></code> arguments:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py check core
@@ -530,7 +531,7 @@ a full path.</p>
 </div>
 </section>
 <section id="step-2-install-platformio-core">
-<h4><a class="toc-backref" href="#id26">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id26">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Permalink to this heading">¶</a></h4>
 <p>To install PlatformIO Core into the virtual environment in an automatic mode, please call
 installer script without any arguments:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py
@@ -550,7 +551,7 @@ error explanation.</p>
 </section>
 </section>
 <section id="troubleshooting">
-<h2><a class="toc-backref" href="#id27">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id27">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Linux OS</strong>: Don’t forget to install “udev” rules file
