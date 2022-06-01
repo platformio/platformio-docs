@@ -33,17 +33,12 @@ Examples
 
 Examples are listed from `Atmel SAM development platform repository <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-logger <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-subsys-logger?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-drivers-lcd-hd44780 <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-lcd-hd44780?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-briki-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
@@ -111,11 +106,6 @@ You do not need to use/buy external debug probe.
       - 32KB
     * - :ref:`board_atmelsam_samd21_xpro`
       - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
@@ -596,12 +586,6 @@ Packages
     * - `framework-cmsis-atmel <https://registry.platformio.org/tools/platformio/framework-cmsis-atmel>`__
       - Atmel Smart ARM devices CMSIS module
 
-    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
-      - Arm Mbed OS is a platform operating system designed for the internet of things
-
-    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
-      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
-
     * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
@@ -638,7 +622,7 @@ Packages
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules :ref:`faq_udev_rules`
+        * Install "udev" rules :ref:`platformio_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -659,9 +643,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
@@ -1039,12 +1020,6 @@ Atmel
     * - :ref:`board_atmelsam_samd21_xpro`
       - On-board
       - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - On-board
-      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB

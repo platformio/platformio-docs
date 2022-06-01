@@ -27,7 +27,7 @@ Test options
 
 .. versionadded:: 6.0
 
-Type: ``String`` | Multiple: ``No``
+Type: ``String`` | Multiple: ``No`` | Default: ``unity``
 
 A Unit Testing framework name. Please follow to the :ref:`unit_testing_frameworks`
 for the available frameworks.

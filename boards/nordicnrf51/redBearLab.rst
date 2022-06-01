@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 16KB
   * - **Vendor**
-    - `RedBearLab <https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio.org&utm_medium=docs>`__
+    - `RedBearLab <https://www.seeedstudio.com/RedBearLab-nRF51822-p-2126.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -71,7 +71,6 @@ RedBearLab nRF51822 supports the following uploading protocols:
 * ``blackmagic``
 * ``cmsis-dap``
 * ``jlink``
-* ``mbed``
 * ``nrfjprog``
 * ``stlink``
 
@@ -131,6 +130,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices

@@ -204,7 +204,21 @@ format.
 .. option::
     -v, --verbose
 
-Shows detailed information when processing environments.
+Control verbosity level.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Level
+    - Description
+  * - (none)
+    - Normal verbosity (**default**)
+  * - ``-v``
+    - Show a raw output from a testing framework
+  * - ``-vv``
+    - Base verbosity for buidling and uploading stages
+  * - ``-vvv``
+    - Extra verbosity for buidling and uploading stages
 
 Examples
 --------

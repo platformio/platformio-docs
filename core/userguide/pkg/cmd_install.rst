@@ -107,7 +107,7 @@ Prevent saving specified packages to :ref:`projectconf`.
     --skip-dependencies
 
 Install a package but skip its dependencies declared in the manifest
-:ref:`libjson_dependencies` field.
+:ref:`manifest_library_json_dependencies` field.
 
 .. option::
     -g, --global
@@ -358,7 +358,7 @@ Local Folder
       - Create a symbolic link pointing the local source folder to the Package Manager.
         Making changes in the source folder **WILL** affect the installed package.
 
-Install a package and its :ref:`libjson_dependencies` from a local folder.
+Install a package and its :ref:`manifest_library_json_dependencies` from a local folder.
 A path should start with ``file://`` or ``symlink://`` prefix and the package folder
 must contain a manifest file (:ref:`library_json`, ``platform.json``, or ``package.json``)
 with name and version properties.
@@ -384,7 +384,7 @@ Local TAR or ZIP archive
 
 **Specification:** ``[<name>=]file://<tar or zip file>``
 
-Install a package and its :ref:`libjson_dependencies` from a local TAR or ZIP archive.
+Install a package and its :ref:`manifest_library_json_dependencies` from a local TAR or ZIP archive.
 
 Archive requirements:
 
@@ -413,7 +413,7 @@ Remote TAR or ZIP archive
 
 **Specification:** ``[<name>=]<archive url>``
 
-Fetch the archive URL, and then install a package and its :ref:`libjson_dependencies`.
+Fetch the archive URL, and then install a package and its :ref:`manifest_library_json_dependencies`.
 The URL must start with ``http://`` or ``https://``.
 
 You can override a package folder name in the Package Manager storage using

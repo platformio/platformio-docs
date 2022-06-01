@@ -37,24 +37,15 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
 
     Import("env", "projenv")
 
+    # Dump build environment (for debug purpose)
+    print(env.Dump())
+
     # access to global build environment
     print(env)
 
-    # access to project build environment (is used source files in "src" folder)
+    # access to the project build environment
+    # (used for source files located in the "src" folder)
     print(projenv)
-
-    #
-    # Dump build environment (for debug purpose)
-    # print(env.Dump())
-    #
-
-    #
-    # (Optional) Do not run extra script when IDE fetches C/C++ project metadata
-    #
-    from SCons.Script import COMMAND_LINE_TARGETS
-
-    if "idedata" in COMMAND_LINE_TARGETS:
-        env.Exit(0)
 
     #
     # Change build flags in runtime

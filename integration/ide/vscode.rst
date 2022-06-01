@@ -148,6 +148,8 @@ Each button contains hint (delay mouse on it).
 7. Project environment switcher (if more than one environment is available).
    See :ref:`projectconf_section_env` of :ref:`projectconf` .
 
+.. _ide_vscode_pio_core_cli:
+
 PlatformIO Core (CLI)
 ---------------------
 

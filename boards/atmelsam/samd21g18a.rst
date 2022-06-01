@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Atmel <https://developer.mbed.org/platforms/SAMW25-XPRO/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Atmel <https://www.microchip.com/en-us/development-tool/atsamw25-xpro?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -129,6 +129,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices

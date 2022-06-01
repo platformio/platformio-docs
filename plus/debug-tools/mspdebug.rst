@@ -65,7 +65,7 @@ Drivers
   Not required.
 
 :Linux:
-  Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+  Please install "udev" rules :ref:`platformio_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_platforms
@@ -130,6 +130,13 @@ Boards
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - On-board
@@ -137,10 +144,10 @@ Boards
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB

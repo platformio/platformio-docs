@@ -83,7 +83,7 @@ Contents
     :caption: Miscellaneous
     :maxdepth: 1
 
-    FAQ <faq>
+    FAQ <faq/index>
     core/history
     core/migration
 

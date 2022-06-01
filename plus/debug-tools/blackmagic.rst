@@ -722,13 +722,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2815,20 +2808,6 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -3193,10 +3172,3 @@ Boards
       - 48MHz
       - 64KB
       - 10KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

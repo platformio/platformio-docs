@@ -21,7 +21,7 @@ Linux ARM
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
-For more detailed information please visit `vendor site <http://platformio.org/platforms/linux_arm?utm_source=platformio.org&utm_medium=docs>`_.
+For more detailed information please visit `vendor site <https://registry.platformio.org/platforms/platformio/linux_arm?utm_source=platformio.org&utm_medium=docs>`_.
 
 .. contents:: Contents
     :local:
