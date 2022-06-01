@@ -33,16 +33,12 @@ Examples
 
 Examples are listed from `Nordic nRF51 development platform repository <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-ble-led?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-ble-eddystone <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-ble-eddystone?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-drivers-entropy <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-drivers-entropy?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-ble-thermometer <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-ble-thermometer?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -91,21 +87,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nordicnrf51_nrf51_beacon`
       - NRF51822
       - 32MHz
@@ -116,11 +97,6 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - NRF51822
       - 32MHz
@@ -136,41 +112,16 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf51_vbluno51`
       - NRF51822
       - 16MHz
       - 128KB
       - 32KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
 
 
 External Debug Tools
@@ -260,9 +211,6 @@ Packages
     * - `framework-arduinonordicnrf5 <https://registry.platformio.org/tools/platformio/framework-arduinonordicnrf5>`__
       - Arduino Wiring-based Framework for Nordic Semiconductor nRF5 based boards
 
-    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
-      - Arm Mbed OS is a platform operating system designed for the internet of things
-
     * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
@@ -317,9 +265,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
@@ -389,50 +334,6 @@ Calliope
       - 256KB
       - 16KB
 
-Delta
-~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
-
-JKSoft
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-
 Nordic
 ~~~~~~
 
@@ -457,12 +358,6 @@ Nordic
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - On-board
       - NRF51822
@@ -526,49 +421,12 @@ SeeedStudio
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - On-board
       - NRF51822
       - 16MHz
       - 256KB
       - 16KB
-
-Switch Science
-~~~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
 
 VNG
 ~~~
@@ -645,22 +503,3 @@ sino:bit
       - 32MHz
       - 256KB
       - 32KB
-
-y5 design
-~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

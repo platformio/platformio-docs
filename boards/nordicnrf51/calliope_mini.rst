@@ -70,7 +70,6 @@ Calliope mini supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``jlink``
-* ``mbed``
 
 Default protocol is ``cmsis-dap``
 
