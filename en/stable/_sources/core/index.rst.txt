@@ -19,7 +19,7 @@ PlatformIO Core (CLI)
 |PIOCORE| (CLI tool) is the heart of the entire PlatformIO ecosystem and consists of
 
 * Multi-platform Build System
-* Development platform and package managers
+* Unified Package Manager
 * :ref:`librarymanager`
 * :ref:`ldf`
 * :ref:`Serial Port Monitor <cmd_device_monitor>`
@@ -48,6 +48,6 @@ such as :ref:`pioide`. In other words, they wrap |PIOCORE| with own GUI.
 .. toctree::
     :maxdepth: 2
 
-    installation
+    installation/index
     quickstart
     userguide/index

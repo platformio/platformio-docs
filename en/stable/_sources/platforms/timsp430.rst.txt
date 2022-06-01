@@ -89,13 +89,18 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - MSP430FR2433
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
-      - MSP430G2476
+    * - :ref:`board_timsp430_lpmsp430fr2476`
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
@@ -192,7 +197,7 @@ Packages
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules :ref:`faq_udev_rules`
+        * Install "udev" rules :ref:`platformio_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -252,15 +257,21 @@ TI
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - On-board
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - On-board
       - MSP430FR2433
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB

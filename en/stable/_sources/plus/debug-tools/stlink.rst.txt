@@ -65,7 +65,7 @@ Drivers
   Not required.
 
 :Linux:
-  Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+  Please install "udev" rules :ref:`platformio_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
 
 Wiring Connections
@@ -2238,20 +2238,6 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -2497,10 +2483,3 @@ Boards
       - 168MHz
       - 2MB
       - 256KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

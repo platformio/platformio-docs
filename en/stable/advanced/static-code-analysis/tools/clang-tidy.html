@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -106,7 +107,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -142,7 +143,7 @@
            <div itemprop="articleBody">
              
   <section id="clang-tidy">
-<span id="check-tool-clangtidy"></span><h1>Clang-Tidy<a class="headerlink" href="#clang-tidy" title="Permalink to this headline">¶</a></h1>
+<span id="check-tool-clangtidy"></span><h1>Clang-Tidy<a class="headerlink" href="#clang-tidy" title="Permalink to this heading">¶</a></h1>
 <p><strong>Clang-Tidy</strong> is a clang-based C++ “linter” tool. Its purpose is to provide an
 extensible framework for diagnosing and fixing typical programming errors,
 like style violations, interface misuse, or bugs that can be deduced via
@@ -158,7 +159,7 @@ Official page can be found <a class="reference external" href="https://clang.llv
 </ul>
 </div>
 <section id="features">
-<h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Features</a><a class="headerlink" href="#features" title="Permalink to this heading">¶</a></h2>
 <p><strong>Clang-Tidy</strong> supports a large variety of static checks that may not be covered
 by the compiler itself. These checks are static analysis checks that can be
 performed at a source code level.</p>
@@ -172,7 +173,7 @@ performed at a source code level.</p>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>To enable <strong>Clang-Tidy</strong> tool simply add it to the <a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
@@ -196,7 +197,7 @@ option in <a class="reference internal" href="../../../projectconf/index.html#pr
 </div>
 </section>
 <section id="supported-checks">
-<h2><a class="toc-backref" href="#id3">Supported checks</a><a class="headerlink" href="#supported-checks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Supported checks</a><a class="headerlink" href="#supported-checks" title="Permalink to this heading">¶</a></h2>
 <p>There are currently the following groups of most used checks (By default all
 checks are enabled):</p>
 <blockquote>
@@ -254,7 +255,7 @@ checks are enabled):</p>
 <a class="reference external" href="https://clang.llvm.org/extra/clang-tidy/checks/list.html">the official webpage</a>.</p>
 </section>
 <section id="extra-flags">
-<h2><a class="toc-backref" href="#id4">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this heading">¶</a></h2>
 <p>Useful flags that can help more precisely configure <strong>Clang-Tidy</strong> to satisfy
 your project requirements:</p>
 <blockquote>
@@ -428,7 +429,7 @@ your project requirements:</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

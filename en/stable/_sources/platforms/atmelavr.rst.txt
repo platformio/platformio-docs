@@ -35,7 +35,7 @@ Examples
 Examples are listed from `Atmel AVR development platform repository <https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
 * `arduino-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `assembly-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/assembly-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `native-blink <https://github.com/platformio/platform-atmelavr/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-own-src_dir <https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-own-src_dir?utm_source=platformio.org&utm_medium=docs>`_
 * `engduino-magnetometer <https://github.com/platformio/platform-atmelavr/tree/master/examples/engduino-magnetometer?utm_source=platformio.org&utm_medium=docs>`_
@@ -990,9 +990,6 @@ Packages
     * - `framework-arduino-avr-prusa_rambo <https://registry.platformio.org/tools/platformio/framework-arduino-avr-prusa_rambo>`__
       - Arduino Wiring-based Framework for Microchip AVR microcontrollers (Prusa Rambo Core)
 
-    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
-      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
-
     * - `tool-avrdude <https://registry.platformio.org/tools/platformio/tool-avrdude>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
 
@@ -1008,7 +1005,7 @@ Packages
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules :ref:`faq_udev_rules`
+        * Install "udev" rules :ref:`platformio_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 

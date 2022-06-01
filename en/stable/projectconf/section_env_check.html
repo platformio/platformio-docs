@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -110,7 +111,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="check-options">
-<span id="projectconf-section-env-check"></span><h1>Check options<a class="headerlink" href="#check-options" title="Permalink to this headline">¶</a></h1>
+<span id="projectconf-section-env-check"></span><h1>Check options<a class="headerlink" href="#check-options" title="Permalink to this heading">¶</a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>Please make sure to read <a class="reference internal" href="../advanced/static-code-analysis/index.html#check"><span class="std std-ref">Static Code Analysis</span></a> guide first.</p>
@@ -161,7 +162,7 @@
 </ul>
 </div>
 <section id="check-tool">
-<span id="projectconf-check-tool"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a><a class="headerlink" href="#check-tool" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-check-tool"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a><a class="headerlink" href="#check-tool" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">cppcheck</span></code></p>
 <p>A name of the check tool used for analysis. This option is useful when you
 want to check source code with two or more tools.</p>
@@ -175,7 +176,7 @@ want to check source code with two or more tools.</p>
 </div>
 </section>
 <section id="check-patterns">
-<span id="projectconf-check-patterns"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a><a class="headerlink" href="#check-patterns" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-check-patterns"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a><a class="headerlink" href="#check-patterns" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">(Pattern)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>This option allows specifying which source files or folders should be
 included/excluded from the check process. <a class="reference external" href="http://en.wikipedia.org/wiki/Glob_(programming)">GLOB Patterns</a> are allowed.
@@ -194,7 +195,7 @@ by default.</p>
 </div>
 </section>
 <section id="check-flags">
-<span id="projectconf-check-flags"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a><a class="headerlink" href="#check-flags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-check-flags"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a><a class="headerlink" href="#check-flags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Additional flags to be passed to the tool command line. This option is useful
 when you want to adjust the check process to fit your project requirements.
@@ -214,7 +215,7 @@ section. To set individual flags, define tool name at the beginning of the line.
 </div>
 </section>
 <section id="check-severity">
-<span id="projectconf-check-severity"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a><a class="headerlink" href="#check-severity" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-check-severity"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a><a class="headerlink" href="#check-severity" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">low,</span> <span class="pre">medium,</span> <span class="pre">high</span></code></p>
 <p>This option allows specifying the <a class="reference internal" href="../advanced/static-code-analysis/severity.html#check-severity"><span class="std std-ref">Defect severity</span></a> types which will
 be reported by the <a class="reference internal" href="../advanced/static-code-analysis/tools/index.html#check-tools"><span class="std std-ref">Check tools</span></a>.</p>
@@ -228,7 +229,7 @@ be reported by the <a class="reference internal" href="../advanced/static-code-a
 </div>
 </section>
 <section id="check-skip-packages">
-<span id="projectconf-check-skip-packages"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a><a class="headerlink" href="#check-skip-packages" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-check-skip-packages"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a><a class="headerlink" href="#check-skip-packages" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>Exclude underlying third-party packages from the checking process. By default, PlatformIO
 passes frameworks and toolchains include paths required by internal analysis tools to
@@ -375,7 +376,7 @@ command.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

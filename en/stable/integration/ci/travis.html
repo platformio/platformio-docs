@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -113,7 +114,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -148,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="travis-ci">
-<span id="ci-travis"></span><h1><a class="toc-backref" href="#id2">Travis CI</a><a class="headerlink" href="#travis-ci" title="Permalink to this headline">¶</a></h1>
+<span id="ci-travis"></span><h1><a class="toc-backref" href="#id2">Travis CI</a><a class="headerlink" href="#travis-ci" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://docs.travis-ci.com/user/integration/platformio/"><img alt="../../_images/ci-travis-logo.png" src="../../_images/ci-travis-logo.png" /></a>
 <p><strong>Travis CI</strong> <a class="reference external" href="https://docs.travis-ci.com/user/integration/platformio/">officially supports</a>
 <strong>PlatformIO for Embedded Builds.</strong></p>
@@ -192,7 +193,7 @@ different <a class="reference internal" href="../../platforms/index.html#platfor
 </ul>
 </div>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
 <p>Please make sure to read Travis CI <a class="reference external" href="http://docs.travis-ci.com/user/getting-started/">Getting Started</a>
 and <a class="reference external" href="http://docs.travis-ci.com/user/customizing-the-build/">general build configuration</a>
 guides first.</p>
@@ -208,7 +209,7 @@ guide.</p>
 <a class="reference external" href="http://docs.travis-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs">Travis CI Python isolated environment</a>. There are two possible ways of running
 PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
-<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
 <span class="nt">python</span><span class="p">:</span><span class="w"></span>
@@ -231,7 +232,7 @@ PlatformIO in CI services:</p>
 </div>
 </section>
 <section id="using-cmd-ci-command">
-<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
@@ -263,10 +264,10 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="library-dependencies">
-<h2><a class="toc-backref" href="#id6">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this heading">¶</a></h2>
 <p>There 2 options to test source code with dependent libraries:</p>
 <section id="install-dependent-library-using-librarymanager">
-<h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">install</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span><span class="w"></span>
 
@@ -279,7 +280,7 @@ and boards from command line interface:</p>
 </div>
 </section>
 <section id="manually-download-dependent-library-and-include-in-build-process-via-lib-option">
-<h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">install</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span><span class="w"></span>
 
@@ -294,7 +295,7 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="custom-build-flags">
-<h2><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO allows one to specify own build flags using <span class="target" id="index-1"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/test/file.c PLATFORMIO_BUILD_FLAGS=&quot;-D SPECIFIC_MACROS_PER_TEST_ENV -I/extra/inc&quot;</span><span class="w"></span>
@@ -310,7 +311,7 @@ and boards from command line interface:</p>
 <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">available build flags/options</span></a>.</p>
 </section>
 <section id="advanced-configuration">
-<h2><a class="toc-backref" href="#id10">Advanced configuration</a><a class="headerlink" href="#advanced-configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Advanced configuration</a><a class="headerlink" href="#advanced-configuration" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO allows one to configure multiple build environments for the single
 source code using <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>Instead of <code class="docutils literal notranslate"><span class="pre">--board</span></code> option, please use <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmdoption-pio-ci-c"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--project-conf</span></code></a></p>
@@ -320,7 +321,7 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
 </div>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Custom build flags</p></li>
 </ol>
@@ -623,7 +624,7 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -213,7 +213,7 @@ files directly (in-line). This could be useful if you need to override ``weak``
 symbols defined in framework or other libraries.
 
 You can disable library archiving per a custom library using
-:ref:`libjson_archive` field in :ref:`library_json` manifest.
+:ref:`manifest_library_json_build_libArchive` field in :ref:`library_json` manifest.
 
 Example:
 

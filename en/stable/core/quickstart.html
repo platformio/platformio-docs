@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -24,7 +25,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CLI Guide" href="userguide/index.html" />
-    <link rel="prev" title="Installation" href="installation.html" />
+    <link rel="prev" title="Uninstall PlatformIO Core and dependent packages" href="installation/uninstall.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -54,7 +55,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">PlatformIO Core (CLI)</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/index.html">Installation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Quick Start</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#setting-up-the-project">Setting Up the Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#board-identifier">Board Identifier</a></li>
@@ -100,7 +101,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -135,13 +136,13 @@
            <div itemprop="articleBody">
              
   <section id="quick-start">
-<span id="core-quickstart"></span><h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<span id="core-quickstart"></span><h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading">¶</a></h1>
 <p>This tutorial introduces you to the basics of <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> Command Line Interface
 (CLI) workflow and shows you a creation process of a simple cross-platform
 “Blink” Project. After finishing you will have a general understanding of how
 to work with the multiple development platforms and embedded boards.</p>
 <section id="setting-up-the-project">
-<h2>Setting Up the Project<a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
+<h2>Setting Up the Project<a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> provides special <a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command for configuring your projects.
 It allows one to initialize new empty project or update existing with the new data.</p>
 <p>What is more, <a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> can be used for <a class="reference internal" href="../integration/ide/index.html#ide"><span class="std std-ref">Cloud &amp; Desktop IDE</span></a>. It means that you will
@@ -178,7 +179,7 @@ platforms using <a class="reference internal" href="../frameworks/arduino.html#f
 </table>
 </section>
 <section id="board-identifier">
-<h2>Board Identifier<a class="headerlink" href="#board-identifier" title="Permalink to this headline">¶</a></h2>
+<h2>Board Identifier<a class="headerlink" href="#board-identifier" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> command requires to specify board identifier ID. It can
 be found using <a class="reference internal" href="../boards/index.html#boards"><span class="std std-ref">Boards</span></a> catalog,
 <a class="reference external" href="https://platformio.org/boards">Boards Explorer</a> or <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command. For example, using <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> let’s try
@@ -201,7 +202,7 @@ teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ <span class
 for <a class="reference internal" href="../boards/espressif8266/nodemcuv2.html#board-espressif8266-nodemcuv2"><span class="std std-ref">NodeMCU 1.0 (ESP-12E Module)</span></a> is <code class="docutils literal notranslate"><span class="pre">nodemcuv2</span></code>.</p>
 </section>
 <section id="initialize-project">
-<h2>Initialize Project<a class="headerlink" href="#initialize-project" title="Permalink to this headline">¶</a></h2>
+<h2>Initialize Project<a class="headerlink" href="#initialize-project" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO ecosystem contains big database with pre-configured settings for the
 most popular embedded boards. It helps you to forget about installing
 toolchains, writing build scripts or configuring uploading process. Just tell
@@ -328,7 +329,7 @@ newly created project. The contents of <code class="docutils literal notranslate
 </div>
 </section>
 <section id="process-project">
-<h2>Process Project<a class="headerlink" href="#process-project" title="Permalink to this headline">¶</a></h2>
+<h2>Process Project<a class="headerlink" href="#process-project" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> provides special <a class="reference internal" href="userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command to process project. If
 you call it without any arguments, PlatformIO Build System will process all
 project environments (which were created per each board specified above). Here
@@ -347,7 +348,7 @@ firmware.</p></li>
 targets.</p>
 </section>
 <section id="further-reading">
-<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h2>
+<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop">Project examples</a></p></li>
 <li><p><a class="reference internal" href="userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a> for <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> commands</p></li>
@@ -359,7 +360,7 @@ targets.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation/uninstall.html" class="btn btn-neutral float-left" title="Uninstall PlatformIO Core and dependent packages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="userguide/index.html" class="btn btn-neutral float-right" title="CLI Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -481,7 +482,7 @@ targets.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

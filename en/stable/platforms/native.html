@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -105,7 +106,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -140,7 +141,7 @@
            <div itemprop="articleBody">
              
   <section id="native">
-<span id="platform-native"></span><h1>Native<a class="headerlink" href="#native" title="Permalink to this headline">¶</a></h1>
+<span id="platform-native"></span><h1>Native<a class="headerlink" href="#native" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/native">https://registry.platformio.org/platforms/platformio/native</a></p>
@@ -161,7 +162,7 @@
 </ul>
 </div>
 <section id="installation">
-<h2><a class="toc-backref" href="#id1">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Installation</a><a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO does not install automatically any toolchains
 for the <strong>native</strong> development platform. It depends
 on the system <code class="docutils literal notranslate"><span class="pre">GCC</span></code> toolchain that must be added to the <code class="docutils literal notranslate"><span class="pre">PATH</span></code>
@@ -185,7 +186,7 @@ sudo apt install build-essential
 </ul>
 </section>
 <section id="running-of-program">
-<h2><a class="toc-backref" href="#id2">Running of Program</a><a class="headerlink" href="#running-of-program" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Running of Program</a><a class="headerlink" href="#running-of-program" title="Permalink to this heading">¶</a></h2>
 <p>To execute a native program, you need to use <code class="docutils literal notranslate"><span class="pre">exec</span></code> target for the
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command. Extra program arguments can be
 passed using the <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--program-arg</span></code></a> option.</p>
@@ -201,19 +202,19 @@ passed using the <a class="reference internal" href="../core/userguide/cmd_run.h
 </div>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id3">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-native/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Native development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-native/tree/master/examples/hello-world?utm_source=platformio.org&amp;utm_medium=docs">hello-world</a></p></li>
 </ul>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id4">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-native/releases">stable releases</a>
 of Native development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this headline">¶</a></h3>
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
 <span class="k">[env:latest_stable]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
@@ -227,7 +228,7 @@ of Native development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this headline">¶</a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-native.git</span><span class="w"></span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
@@ -363,7 +364,7 @@ of Native development platform and the latest upstream version using
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

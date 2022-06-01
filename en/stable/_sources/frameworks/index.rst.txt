@@ -24,17 +24,12 @@ Frameworks
     espidf
     freedom-e-sdk
     freertos
-    gd32vf103-sdk
-    kendryte-freertos-sdk
-    kendryte-standalone-sdk
     libopencm3
     mbed
     pulp-os
     pulp-runtime
     pulp-sdk
-    pumbaa
     shakti-sdk
-    simba
     spl
     stm32cube
     wd-riscv-sdk

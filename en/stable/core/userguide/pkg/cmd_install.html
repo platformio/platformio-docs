@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -54,7 +55,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PlatformIO Core (CLI)</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/index.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart.html">Quick Start</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">CLI Guide</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../index.html#usage">Usage</a></li>
@@ -121,7 +122,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -158,7 +159,7 @@
            <div itemprop="articleBody">
              
   <section id="pio-pkg-install">
-<span id="cmd-pkg-install"></span><h1><a class="toc-backref" href="#id2">pio pkg install</a><a class="headerlink" href="#pio-pkg-install" title="Permalink to this headline">¶</a></h1>
+<span id="cmd-pkg-install"></span><h1><a class="toc-backref" href="#id2">pio pkg install</a><a class="headerlink" href="#pio-pkg-install" title="Permalink to this heading">¶</a></h1>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 6.0.</span></p>
 </div>
@@ -189,13 +190,13 @@
 </ul>
 </div>
 <section id="usage">
-<h2><a class="toc-backref" href="#id3">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio pkg install <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 </section>
 <section id="description">
-<h2><a class="toc-backref" href="#id4">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Description</a><a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
 <p>Install the project dependencies or custom packages from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> or
 external sources.</p>
 <p>If no custom packages (<code class="docutils literal notranslate"><span class="pre">--library</span></code>, <code class="docutils literal notranslate"><span class="pre">--platform</span></code>, or <code class="docutils literal notranslate"><span class="pre">--tool</span></code>) are
@@ -209,7 +210,7 @@ and its dependencies (toolchain, framework, SDKs, debugging server, etc)</p></li
 </ul>
 </section>
 <section id="options">
-<h2><a class="toc-backref" href="#id5">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Options</a><a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-pkg-install-d">
 <span id="cmdoption-pio-pkg-install-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-pkg-install-d" title="Permalink to this definition">¶</a></dt>
@@ -272,7 +273,7 @@ pio pkg install --library https://github.com/Makuna/NeoPixelBus.git
 <dd></dd></dl>
 
 <p>Install a package but skip its dependencies declared in the manifest
-<a class="reference internal" href="../../../librarymanager/config.html#libjson-dependencies"><span class="std std-ref">dependencies</span></a> field.</p>
+<a class="reference internal" href="../../../manifests/library-json/fields/dependencies.html#manifest-library-json-dependencies"><span class="std std-ref">dependencies</span></a> field.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-pkg-install-g">
 <span id="cmdoption-pio-pkg-install-global"></span><span class="sig-name descname"><span class="pre">-g</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--global</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-pkg-install-g" title="Permalink to this definition">¶</a></dt>
@@ -313,7 +314,7 @@ compatible version will be installed.</p>
 <p>Suppress progress reporting.</p>
 </section>
 <section id="package-types">
-<span id="cmd-pkg-install-types"></span><h2><a class="toc-backref" href="#id6">Package Types</a><a class="headerlink" href="#package-types" title="Permalink to this headline">¶</a></h2>
+<span id="cmd-pkg-install-types"></span><h2><a class="toc-backref" href="#id6">Package Types</a><a class="headerlink" href="#package-types" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO supports the next package types:</p>
 <dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">library</span></code></dt>
@@ -330,7 +331,7 @@ that are used to build a project, debug it or upload firmware to the target devi
 <p>Browse over 10,000 packages in the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>.</p>
 </section>
 <section id="package-specifications">
-<span id="cmd-pkg-install-specifications"></span><h2><a class="toc-backref" href="#id7">Package Specifications</a><a class="headerlink" href="#package-specifications" title="Permalink to this headline">¶</a></h2>
+<span id="cmd-pkg-install-specifications"></span><h2><a class="toc-backref" href="#id7">Package Specifications</a><a class="headerlink" href="#package-specifications" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO supports different package sources which you can specify for
 <a class="reference internal" href="#cmd-pkg-install"><span class="std std-ref">pio pkg install</span></a> command or configure project dependencies using
 <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> options:</p>
@@ -341,7 +342,7 @@ that are used to build a project, debug it or upload firmware to the target devi
 </ul>
 <p>A <code class="docutils literal notranslate"><span class="pre">package</span></code> is:</p>
 <ol class="loweralpha simple">
-<li><p>A folder containing manifest file (<a class="reference internal" href="../../../librarymanager/config.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code> or <code class="docutils literal notranslate"><span class="pre">package.json</span></code>)</p></li>
+<li><p>A folder containing manifest file (<a class="reference internal" href="../../../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code> or <code class="docutils literal notranslate"><span class="pre">package.json</span></code>)</p></li>
 <li><p>TAR or ZIP archive containing (a)</p></li>
 <li><p>A URL that resolves to (b)</p></li>
 <li><p>An <code class="docutils literal notranslate"><span class="pre">&lt;owner&gt;/&lt;name&gt;&#64;&lt;version</span> <span class="pre">requirements&gt;</span></code> that is published on the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a></p></li>
@@ -360,7 +361,7 @@ that are used to build a project, debug it or upload firmware to the target devi
 </ul>
 </div>
 <section id="registry-latest-version">
-<h3><a class="toc-backref" href="#id17">Registry: Latest Version</a><a class="headerlink" href="#registry-latest-version" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id17">Registry: Latest Version</a><a class="headerlink" href="#registry-latest-version" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">&lt;owner&gt;/&lt;name&gt;</span></code></p>
 <p>Install the latest package version from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>.</p>
 <div class="admonition tip">
@@ -399,7 +400,7 @@ for debug probes:</p>
 </ol>
 </section>
 <section id="registry-specific-version">
-<h3><a class="toc-backref" href="#id18">Registry: Specific Version</a><a class="headerlink" href="#registry-specific-version" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id18">Registry: Specific Version</a><a class="headerlink" href="#registry-specific-version" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">&lt;owner&gt;/&lt;name&gt;&#64;&lt;version&gt;</span></code></p>
 <p>Install the specified version of a package from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>.
 This will fail if the version has not been published to the registry.</p>
@@ -409,7 +410,7 @@ This will fail if the version has not been published to the registry.</p>
 </div>
 </section>
 <section id="registry-version-requirements">
-<h3><a class="toc-backref" href="#id19">Registry: Version Requirements</a><a class="headerlink" href="#registry-version-requirements" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id19">Registry: Version Requirements</a><a class="headerlink" href="#registry-version-requirements" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">&lt;owner&gt;/&lt;name&gt;&#64;&lt;version</span> <span class="pre">requirements&gt;</span></code></p>
 <p>Install the latest version of a package from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> matching the
 specified version requirements. See <a class="reference internal" href="#cmd-pkg-install-requirements"><span class="std std-ref">Version Requirements</span></a> for details.</p>
@@ -419,7 +420,7 @@ specified version requirements. See <a class="reference internal" href="#cmd-pkg
 </div>
 </section>
 <section id="repository-git-hg-svn">
-<h3><a class="toc-backref" href="#id20">Repository (git, hg, svn)</a><a class="headerlink" href="#repository-git-hg-svn" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id20">Repository (git, hg, svn)</a><a class="headerlink" href="#repository-git-hg-svn" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">[&lt;name&gt;=][&lt;scheme&gt;://][&lt;user&gt;[:&lt;password&gt;]&#64;]&lt;hostname&gt;[:&lt;port&gt;][:][/]&lt;path&gt;[#&lt;commit-ish|branch|tag&gt;]</span></code></p>
 <p>Install the package at the specified URL by attempting to clone it.
 If the repository makes use of submodules, those submodules will be cloned as well.</p>
@@ -495,7 +496,7 @@ hg+ssh://hg.server.org/my-package
 </ol>
 </section>
 <section id="local-folder">
-<h3><a class="toc-backref" href="#id21">Local Folder</a><a class="headerlink" href="#local-folder" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id21">Local Folder</a><a class="headerlink" href="#local-folder" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -517,9 +518,9 @@ Making changes in the source folder <strong>WILL</strong> affect the installed p
 </tr>
 </tbody>
 </table>
-<p>Install a package and its <a class="reference internal" href="../../../librarymanager/config.html#libjson-dependencies"><span class="std std-ref">dependencies</span></a> from a local folder.
+<p>Install a package and its <a class="reference internal" href="../../../manifests/library-json/fields/dependencies.html#manifest-library-json-dependencies"><span class="std std-ref">dependencies</span></a> from a local folder.
 A path should start with <code class="docutils literal notranslate"><span class="pre">file://</span></code> or <code class="docutils literal notranslate"><span class="pre">symlink://</span></code> prefix and the package folder
-must contain a manifest file (<a class="reference internal" href="../../../librarymanager/config.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code>, or <code class="docutils literal notranslate"><span class="pre">package.json</span></code>)
+must contain a manifest file (<a class="reference internal" href="../../../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code>, or <code class="docutils literal notranslate"><span class="pre">package.json</span></code>)
 with name and version properties.</p>
 <p>You can override a package folder name in the Package Manager storage using
 the <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;=</span></code> syntax. See the example below.</p>
@@ -536,13 +537,13 @@ symlink://C:/local/path/to/the/package/dir
 </div>
 </section>
 <section id="local-tar-or-zip-archive">
-<h3><a class="toc-backref" href="#id22">Local TAR or ZIP archive</a><a class="headerlink" href="#local-tar-or-zip-archive" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id22">Local TAR or ZIP archive</a><a class="headerlink" href="#local-tar-or-zip-archive" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">[&lt;name&gt;=]file://&lt;tar</span> <span class="pre">or</span> <span class="pre">zip</span> <span class="pre">file&gt;</span></code></p>
-<p>Install a package and its <a class="reference internal" href="../../../librarymanager/config.html#libjson-dependencies"><span class="std std-ref">dependencies</span></a> from a local TAR or ZIP archive.</p>
+<p>Install a package and its <a class="reference internal" href="../../../manifests/library-json/fields/dependencies.html#manifest-library-json-dependencies"><span class="std std-ref">dependencies</span></a> from a local TAR or ZIP archive.</p>
 <p>Archive requirements:</p>
 <ul class="simple">
 <li><p>the filename must use <code class="docutils literal notranslate"><span class="pre">.tar.gz</span></code>, <code class="docutils literal notranslate"><span class="pre">.tar</span></code>, <code class="docutils literal notranslate"><span class="pre">.tgz</span></code>, or <code class="docutils literal notranslate"><span class="pre">.zip</span></code> as the extension</p></li>
-<li><p>the package must contain a manifest file (<a class="reference internal" href="../../../librarymanager/config.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code>, or
+<li><p>the package must contain a manifest file (<a class="reference internal" href="../../../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">platform.json</span></code>, or
 <code class="docutils literal notranslate"><span class="pre">package.json</span></code>) with <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">version</span></code> properties.</p></li>
 </ul>
 <p>You can override a package folder name in the Package Manager storage using
@@ -560,9 +561,9 @@ file:///local/path/to/the/archive.zip
 </div>
 </section>
 <section id="remote-tar-or-zip-archive">
-<h3><a class="toc-backref" href="#id23">Remote TAR or ZIP archive</a><a class="headerlink" href="#remote-tar-or-zip-archive" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id23">Remote TAR or ZIP archive</a><a class="headerlink" href="#remote-tar-or-zip-archive" title="Permalink to this heading">¶</a></h3>
 <p><strong>Specification:</strong> <code class="docutils literal notranslate"><span class="pre">[&lt;name&gt;=]&lt;archive</span> <span class="pre">url&gt;</span></code></p>
-<p>Fetch the archive URL, and then install a package and its <a class="reference internal" href="../../../librarymanager/config.html#libjson-dependencies"><span class="std std-ref">dependencies</span></a>.
+<p>Fetch the archive URL, and then install a package and its <a class="reference internal" href="../../../manifests/library-json/fields/dependencies.html#manifest-library-json-dependencies"><span class="std std-ref">dependencies</span></a>.
 The URL must start with <code class="docutils literal notranslate"><span class="pre">http://</span></code> or <code class="docutils literal notranslate"><span class="pre">https://</span></code>.</p>
 <p>You can override a package folder name in the Package Manager storage using
 the <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;=</span></code> syntax. See the example below.</p>
@@ -580,7 +581,7 @@ https://github.com/bblanchon/ArduinoJson/archive/refs/heads/6.x.zip
 </section>
 </section>
 <section id="version-requirements">
-<span id="cmd-pkg-install-requirements"></span><h2><a class="toc-backref" href="#id15">Version Requirements</a><a class="headerlink" href="#version-requirements" title="Permalink to this headline">¶</a></h2>
+<span id="cmd-pkg-install-requirements"></span><h2><a class="toc-backref" href="#id15">Version Requirements</a><a class="headerlink" href="#version-requirements" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>PlatformIO uses <a class="reference external" href="https://github.com/rbarrois/python-semanticversion">python-semanticversion</a>
@@ -622,11 +623,11 @@ platformio/espressif32@^3.5.0,!<span class="o">=</span><span class="m">3</span>.
 </div>
 </section>
 <section id="see-also">
-<h2><a class="toc-backref" href="#id16">See Also</a><a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id16">See Also</a><a class="headerlink" href="#see-also" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="cmd_uninstall.html#cmd-pkg-uninstall"><span class="std std-ref">pio pkg uninstall</span></a></p></li>
 <li><p><a class="reference internal" href="cmd_outdated.html#cmd-pkg-outdated"><span class="std std-ref">pio pkg outdated</span></a></p></li>
-<li><p><a class="reference internal" href="../../../librarymanager/config.html#library-json"><span class="std std-ref">library.json</span></a></p></li>
+<li><p><a class="reference internal" href="../../../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a></p></li>
 </ul>
 </section>
 </section>
@@ -757,7 +758,7 @@ platformio/espressif32@^3.5.0,!<span class="o">=</span><span class="m">3</span>.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

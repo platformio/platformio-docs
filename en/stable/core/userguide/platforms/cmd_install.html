@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -54,7 +55,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">PlatformIO Core (CLI)</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/index.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart.html">Quick Start</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">CLI Guide</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../index.html#usage">Usage</a></li>
@@ -121,7 +122,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -158,7 +159,7 @@
            <div itemprop="articleBody">
              
   <section id="pio-platform-install">
-<span id="cmd-platform-install"></span><h1><a class="toc-backref" href="#id1">pio platform install</a><a class="headerlink" href="#pio-platform-install" title="Permalink to this headline">¶</a></h1>
+<span id="cmd-platform-install"></span><h1><a class="toc-backref" href="#id1">pio platform install</a><a class="headerlink" href="#pio-platform-install" title="Permalink to this heading">¶</a></h1>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 6.0: </span></p>
 <div class="admonition warning">
@@ -188,7 +189,7 @@
 </ul>
 </div>
 <section id="usage">
-<h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio platform install <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>PLATFORM...<span class="o">]</span>
 
 <span class="c1"># [PLATFORM...] forms</span>
@@ -207,7 +208,7 @@ pio platform install &lt;repository#tag&gt; <span class="o">(</span><span class=
 </div>
 </section>
 <section id="options">
-<h2><a class="toc-backref" href="#id3">Options</a><a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Options</a><a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-platform-install-with-package">
 <span class="sig-name descname"><span class="pre">--with-package</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-platform-install-with-package" title="Permalink to this definition">¶</a></dt>
@@ -240,7 +241,7 @@ pio platform install &lt;repository#tag&gt; <span class="o">(</span><span class=
 <p>Reinstall/redownload development platform and its packages if they exist</p>
 </section>
 <section id="description">
-<h2><a class="toc-backref" href="#id4">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Description</a><a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
 <p>Install <a class="reference internal" href="../../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and dependent packages.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">version</span></code> supports <a class="reference external" href="https://devhints.io/semver">Semantic Versioning</a> (
 <code class="docutils literal notranslate"><span class="pre">&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</span></code>) and can take any of the following forms:</p>
@@ -264,7 +265,7 @@ contain <code class="docutils literal notranslate"><span class="pre">platform.js
 </ul>
 </section>
 <section id="version-control">
-<h2><a class="toc-backref" href="#id5">Version control</a><a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Version control</a><a class="headerlink" href="#version-control" title="Permalink to this heading">¶</a></h2>
 <p>PlatformIO supports installing from Git, Mercurial and Subversion, and detects
 the type of VCS using url prefixes: “git+”, “hg+”, or “svn+”.</p>
 <div class="admonition note">
@@ -273,7 +274,7 @@ the type of VCS using url prefixes: “git+”, “hg+”, or “svn+”.</p>
 or <code class="docutils literal notranslate"><span class="pre">svn</span></code>.</p>
 </div>
 <section id="git">
-<h3><a class="toc-backref" href="#id6">Git</a><a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Git</a><a class="headerlink" href="#git" title="Permalink to this heading">¶</a></h3>
 <p>The supported schemes are: <code class="docutils literal notranslate"><span class="pre">git</span></code>, <code class="docutils literal notranslate"><span class="pre">git+https</span></code> and <code class="docutils literal notranslate"><span class="pre">git+ssh</span></code>. Here are
 the supported forms:</p>
 <ul class="simple">
@@ -293,7 +294,7 @@ the supported forms:</p>
 </ul>
 </section>
 <section id="mercurial">
-<h3><a class="toc-backref" href="#id7">Mercurial</a><a class="headerlink" href="#mercurial" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Mercurial</a><a class="headerlink" href="#mercurial" title="Permalink to this heading">¶</a></h3>
 <p>The supported schemes are: <code class="docutils literal notranslate"><span class="pre">hg+http</span></code>, <code class="docutils literal notranslate"><span class="pre">hg+https</span></code> and <code class="docutils literal notranslate"><span class="pre">hg+ssh</span></code>. Here are
 the supported forms:</p>
 <ul class="simple">
@@ -309,7 +310,7 @@ the supported forms:</p>
 </ul>
 </section>
 <section id="subversion">
-<h3><a class="toc-backref" href="#id8">Subversion</a><a class="headerlink" href="#subversion" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Subversion</a><a class="headerlink" href="#subversion" title="Permalink to this heading">¶</a></h3>
 <p>The supported schemes are: <code class="docutils literal notranslate"><span class="pre">svn</span></code>, <code class="docutils literal notranslate"><span class="pre">svn+svn</span></code>, <code class="docutils literal notranslate"><span class="pre">svn+http</span></code>, <code class="docutils literal notranslate"><span class="pre">svn+https</span></code>
 and <code class="docutils literal notranslate"><span class="pre">svn+ssh</span></code>. Here are the supported forms:</p>
 <ul class="simple">
@@ -324,7 +325,7 @@ and <code class="docutils literal notranslate"><span class="pre">svn+ssh</span><
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id9">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Install <a class="reference internal" href="../../../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a> with default packages</p></li>
 </ol>
@@ -531,7 +532,7 @@ The rest of packages will be installed automatically depending on your build env
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

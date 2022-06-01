@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -290,11 +291,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#gigadevice-gd32v">GigaDevice GD32V</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#infineon-xmc">Infineon XMC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#kendryte-k210">Kendryte K210</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#linux-arm">Linux ARM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#maxim-32">Maxim 32</a></li>
@@ -335,7 +333,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -370,7 +368,7 @@
            <div itemprop="articleBody">
              
   <section id="arduino-lilypad-usb">
-<span id="board-atmelavr-lilypadusb"></span><h1><a class="toc-backref" href="#id1">Arduino LilyPad USB</a><a class="headerlink" href="#arduino-lilypad-usb" title="Permalink to this headline">¶</a></h1>
+<span id="board-atmelavr-lilypadusb"></span><h1><a class="toc-backref" href="#id1">Arduino LilyPad USB</a><a class="headerlink" href="#arduino-lilypad-usb" title="Permalink to this heading">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
@@ -385,7 +383,7 @@
 </ul>
 </div>
 <section id="hardware">
-<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h2>
 <p>Platform <a class="reference internal" href="../../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a>: Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry’s most code-efficient architecture for C and assembly programming</p>
 <table class="docutils align-default">
 <colgroup>
@@ -412,7 +410,7 @@
 </table>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">LilyPadUSB</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:LilyPadUSB]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
@@ -436,7 +434,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id4">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -468,7 +466,7 @@ instructions and configuration information.</p>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id5">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -614,7 +612,7 @@ instructions and configuration information.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

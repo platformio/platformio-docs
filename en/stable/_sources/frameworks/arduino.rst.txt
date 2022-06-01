@@ -50,17 +50,8 @@ Platforms
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_gd32v`
-      - The GigaDevice GD32V device is a 32-bit general-purpose microcontroller based on the RISC-V core with an impressive balance of processing power, reduced power consumption and peripheral set.
-
-    * - :ref:`platform_infineonxmc`
-      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
     * - :ref:`platform_intel_arc32`
       - ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
-
-    * - :ref:`platform_kendryte210`
-      - Kendryte K210 is an AI capable RISCV64 dual core SoC.
 
     * - :ref:`platform_microchippic32`
       - Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
@@ -98,10 +89,7 @@ Examples
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for GigaDevice GD32V <https://github.com/sipeed/platform-gd32v/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for Kendryte K210 <https://github.com/sipeed/platform-kendryte210/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -1548,15 +1536,21 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - MSP430FR2433
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
@@ -1644,54 +1638,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 127KB
       - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
     * - :ref:`board_nordicnrf52_dwm1001_dev`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -1849,9 +1795,21 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32_v2`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - :ref:`platform_espressif32`
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -2023,9 +1981,27 @@ Please click on board name for the further details.
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - :ref:`platform_espressif32`
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -2083,6 +2059,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_espressif32_airm2m_core_esp32c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_due`
       - :ref:`platform_atmelsam`
       - AT91SAM3X8E
@@ -2353,6 +2335,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1A`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapmini`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -2394,6 +2382,12 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
@@ -2479,6 +2473,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_diymore_f407vgt`
       - :ref:`platform_ststm32`
       - STM32F407VGT6
@@ -2521,12 +2527,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_gnat_l082cz`
       - :ref:`platform_ststm32`
       - STM32L082CZY6
@@ -2893,6 +2893,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_watchy`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_disco_g031j6`
       - :ref:`platform_ststm32`
       - STM32G031J6
@@ -3385,48 +3391,6 @@ Please click on board name for the further details.
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
     * - :ref:`board_atmelsam_sparkfun_samd21_9dof`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -3631,6 +3595,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk3`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_tuinozero96`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -3649,11 +3619,35 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_rmp`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_um_tinys2`
       - :ref:`platform_espressif32`
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_ststm32_vake_v1`
       - :ref:`platform_ststm32`
@@ -3679,6 +3673,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_c3_mini`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3688,6 +3688,18 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_lolin_d32_pro`
       - :ref:`platform_espressif32`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_mini`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_pico`
+      - :ref:`platform_espressif32`
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -3751,12 +3763,6 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_espressif32_wt32-eth01`
       - :ref:`platform_espressif32`
       - ESP32
@@ -4019,10 +4025,24 @@ Adafruit
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32_v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -4292,10 +4312,31 @@ Adafruit
       - 120MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -4411,6 +4452,27 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+AirM2M
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_airm2m_core_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
 
 Airbot
 ~~~~~~
@@ -5615,6 +5677,13 @@ Deneyap
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1A`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapmini`
       - :ref:`platform_espressif32`
       - External
@@ -6301,6 +6370,13 @@ Espressif
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -6333,6 +6409,20 @@ Espressif
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -7380,76 +7470,6 @@ Imbrios
       - 4MB
       - 320KB
 
-Infineon
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
-
 Intel
 ~~~~~
 
@@ -7702,8 +7722,8 @@ Linino
       - 28KB
       - 2.50KB
 
-Lion::Bit
-~~~~~~~~~
+Lion:Bit
+~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -8443,6 +8463,27 @@ Microchip
       - 16MHz
       - 16KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1624`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1624
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1626`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1626
+      - 16MHz
+      - 16KB
+      - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny1627`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY1627
+      - 16MHz
+      - 16KB
+      - 2KB
     * - :ref:`board_atmelmegaavr_ATtiny202`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8485,6 +8526,27 @@ Microchip
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_atmelmegaavr_ATtiny3224`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3224
+      - 16MHz
+      - 32KB
+      - 3KB
+    * - :ref:`board_atmelmegaavr_ATtiny3226`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3226
+      - 16MHz
+      - 32KB
+      - 3KB
+    * - :ref:`board_atmelmegaavr_ATtiny3227`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY3227
+      - 16MHz
+      - 32KB
+      - 3KB
     * - :ref:`board_atmelmegaavr_ATtiny402`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8534,6 +8596,27 @@ Microchip
       - 16MHz
       - 4KB
       - 256B
+    * - :ref:`board_atmelmegaavr_ATtiny424`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY424
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny426`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY426
+      - 16MHz
+      - 4KB
+      - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny427`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY427
+      - 16MHz
+      - 4KB
+      - 512B
     * - :ref:`board_atmelmegaavr_ATtiny804`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8576,6 +8659,27 @@ Microchip
       - 16MHz
       - 8KB
       - 512B
+    * - :ref:`board_atmelmegaavr_ATtiny824`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY824
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny826`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY826
+      - 16MHz
+      - 8KB
+      - 1KB
+    * - :ref:`board_atmelmegaavr_ATtiny827`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - ATTINY827
+      - 16MHz
+      - 8KB
+      - 1KB
     * - :ref:`board_atmelmegaavr_avr_iot_wg`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8583,6 +8687,188 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
+    * - :ref:`board_atmelmegaavr_AVR128DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA28
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA32
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DA64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA64
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB28
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB32
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR128DB64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB64
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_AVR32DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA28
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA32
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DA48
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB28
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB32
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR32DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR32DB48
+      - 24MHz
+      - 32KB
+      - 4KB
+    * - :ref:`board_atmelmegaavr_AVR64DA28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA32
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA48
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DA64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DA64
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB32
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB48`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB48
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DB64`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DB64
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD14`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD14
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD20`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD20
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD28`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD28
+      - 24MHz
+      - 64KB
+      - 8KB
+    * - :ref:`board_atmelmegaavr_AVR64DD32`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR64DD32
+      - 24MHz
+      - 64KB
+      - 8KB
     * - :ref:`board_atmelmegaavr_curiosity_nano_4809`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -8590,6 +8876,20 @@ Microchip
       - 16MHz
       - 48KB
       - 6KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_da`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DA48
+      - 24MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_atmelmegaavr_curiosity_nano_db`
+      - :ref:`platform_atmelmegaavr`
+      - No
+      - AVR128DB48
+      - 24MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_atmelmegaavr_xplained_pro_4809`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -9865,6 +10165,27 @@ SODAQ
       - 127KB
       - 16KB
 
+SQFMI
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_watchy`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 ST
 ~~
 
@@ -10571,13 +10892,6 @@ SeeedStudio
       - 80MHz
       - 4MB
       - 80KB
-    * - :ref:`board_gd32v_wio_lite_risc-v`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_espressif8266_wio_node`
       - :ref:`platform_espressif8266`
       - No
@@ -10606,76 +10920,6 @@ Silicognition
       - 240MHz
       - 4MB
       - 320KB
-
-Sipeed
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_gd32v_gd32vf103v-eval`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103VBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103CBT6
-      - 108MHz
-      - 128KB
-      - 32KB
-    * - :ref:`board_gd32v_sipeed-longan-nano-lite`
-      - :ref:`platform_gd32v`
-      - External
-      - GD32VF103C8T6
-      - 108MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_kendryte210_sipeed-maix-bit`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-bit-mic`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-go`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maix-one-dock`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
-    * - :ref:`board_kendryte210_sipeed-maixduino`
-      - :ref:`platform_kendryte210`
-      - External
-      - K210
-      - 400MHz
-      - 16MB
-      - 6MB
 
 SparkFun
 ~~~~~~~~
@@ -11040,6 +11284,13 @@ TI
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - On-board
@@ -11047,10 +11298,10 @@ TI
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
@@ -11495,6 +11746,13 @@ Trueverit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Turta
 ~~~~~
@@ -11572,6 +11830,27 @@ Unexpected Maker
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_rmp`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_tinypico`
       - :ref:`platform_espressif32`
       - No
@@ -11585,6 +11864,13 @@ Unexpected Maker
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 Unknown
@@ -11698,6 +11984,13 @@ WEMOS
       - 80MHz
       - 4MB
       - 80KB
+    * - :ref:`board_espressif32_lolin_c3_mini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - :ref:`platform_espressif32`
       - External
@@ -11709,6 +12002,20 @@ WEMOS
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_mini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_pico`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB

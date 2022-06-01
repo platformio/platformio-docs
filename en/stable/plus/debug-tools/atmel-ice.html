@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -24,7 +25,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="avr-stub" href="avr-stub.html" />
-    <link rel="prev" title="Altera / Intel USB-Blaster" href="altera-usb-blaster.html" />
+    <link rel="prev" title="Debugging" href="../debugging.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
 <script src="../../_static/js/bootstrap.min.js"></script>
@@ -79,7 +80,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#tutorials">Tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#configuration">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="altera-usb-blaster.html">Altera / Intel USB-Blaster</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Atmel-ICE</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drivers">Drivers</a></li>
@@ -94,27 +94,24 @@
 <li class="toctree-l3"><a class="reference internal" href="digilent-hs1.html">JTAG-HS1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp-usb-bridge.html">ESP USB Bridge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="iot-bus-jtag.html">oddWires IOT-Bus JTAG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jlink.html">J-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimodule.html">Mini-Module FT2232H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mspdebug.html">MSP Debug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi-swd.html">Raspberry Pi SWD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="renode.html">Renode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="simavr.html">simavr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sipeed-rv-debugger.html">Sipeed RV Debugger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stlink.html">ST-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ti-icdi.html">TI-ICDI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tumpa.html">TIAO USB Multi-Protocol Adapter (TUMPA)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="um232h.html">UM232H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verilator.html">Verilator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="whisper.html">Whisper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom.html">Custom</a></li>
@@ -139,7 +136,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -174,7 +171,7 @@
            <div itemprop="articleBody">
              
   <section id="atmel-ice">
-<span id="debugging-tool-atmel-ice"></span><h1>Atmel-ICE<a class="headerlink" href="#atmel-ice" title="Permalink to this headline">¶</a></h1>
+<span id="debugging-tool-atmel-ice"></span><h1>Atmel-ICE<a class="headerlink" href="#atmel-ice" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&amp;utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/atmel-ice.jpg" src="../../_images/atmel-ice.jpg" /></a>
 <p>Atmel-ICE is a powerful development tool for debugging and programming ARM®
 Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability.
@@ -190,7 +187,7 @@ Official reference can be found <a class="reference external" href="https://www.
 </ul>
 </div>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>You can configure debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
 <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
@@ -215,7 +212,7 @@ upload protocol:</p>
 </ul>
 </section>
 <section id="drivers">
-<h2><a class="toc-backref" href="#id2">Drivers</a><a class="headerlink" href="#drivers" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Drivers</a><a class="headerlink" href="#drivers" title="Permalink to this heading">¶</a></h2>
 <dl class="field-list simple">
 <dt class="field-odd">Windows</dt>
 <dd class="field-odd"><p>When installing the Atmel-ICE on a computer running Microsoft Windows,
@@ -225,13 +222,13 @@ the USB driver is loaded when the Atmel-ICE is first plugged in.</p>
 <dd class="field-even"><p>Not required.</p>
 </dd>
 <dt class="field-odd">Linux</dt>
-<dd class="field-odd"><p>Please install “udev” rules <a class="reference internal" href="../../faq.html#faq-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a>. If you already installed
+<dd class="field-odd"><p>Please install “udev” rules <a class="reference internal" href="../../core/installation/udev-rules.html#platformio-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a>. If you already installed
 them before, please check that your rules are up-to-date or repeat steps.</p>
 </dd>
 </dl>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id3">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -250,7 +247,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id4">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -265,17 +262,14 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
-<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id5">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll tables below by horizontal.</p>
@@ -725,15 +719,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/saml21_xpro_b.html#board-atmelsam-saml21-xpro-b"><span class="std std-ref">Atmel SAML21-XPRO-B</span></a></p></td>
-<td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>SAML21J18B</p></td>
-<td><p>48MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/briki_abc_samd21.html#board-atmelsam-briki-abc-samd21"><span class="std std-ref">Briki ABC (MBC-WB) - Samd21</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/briki_abc_samd21.html#board-atmelsam-briki-abc-samd21"><span class="std std-ref">Briki ABC (MBC-WB) - Samd21</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -741,7 +727,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/briki_mbcwb_samd21.html#board-atmelsam-briki-mbcwb-samd21"><span class="std std-ref">Briki MBC-WB - Samd21</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/briki_mbcwb_samd21.html#board-atmelsam-briki-mbcwb-samd21"><span class="std std-ref">Briki MBC-WB - Samd21</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -749,7 +735,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/digix.html#board-atmelsam-digix"><span class="std std-ref">Digistump DigiX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/digix.html#board-atmelsam-digix"><span class="std std-ref">Digistump DigiX</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>AT91SAM3X8E</p></td>
@@ -757,7 +743,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -765,7 +751,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/minitronics20.html#board-atmelsam-minitronics20"><span class="std std-ref">Minitronics v2.0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/minitronics20.html#board-atmelsam-minitronics20"><span class="std std-ref">Minitronics v2.0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21J18A</p></td>
@@ -773,7 +759,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/moteino_zero.html#board-atmelsam-moteino-zero"><span class="std std-ref">Moteino M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/moteino_zero.html#board-atmelsam-moteino-zero"><span class="std std-ref">Moteino M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -781,7 +767,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/nano_33_iot.html#board-atmelsam-nano-33-iot"><span class="std std-ref">NANO 33 IoT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -789,7 +775,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_autonomo.html#board-atmelsam-sodaq-autonomo"><span class="std std-ref">SODAQ Autonomo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_autonomo.html#board-atmelsam-sodaq-autonomo"><span class="std std-ref">SODAQ Autonomo</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21J18A</p></td>
@@ -797,7 +783,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_explorer.html#board-atmelsam-sodaq-explorer"><span class="std std-ref">SODAQ ExpLoRer</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_explorer.html#board-atmelsam-sodaq-explorer"><span class="std std-ref">SODAQ ExpLoRer</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21J18A</p></td>
@@ -805,7 +791,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_one.html#board-atmelsam-sodaq-one"><span class="std std-ref">SODAQ ONE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_one.html#board-atmelsam-sodaq-one"><span class="std std-ref">SODAQ ONE</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -813,7 +799,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_sara.html#board-atmelsam-sodaq-sara"><span class="std std-ref">SODAQ SARA</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_sara.html#board-atmelsam-sodaq-sara"><span class="std std-ref">SODAQ SARA</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21J18A</p></td>
@@ -821,7 +807,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_sff.html#board-atmelsam-sodaq-sff"><span class="std std-ref">SODAQ SFF</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sodaq_sff.html#board-atmelsam-sodaq-sff"><span class="std std-ref">SODAQ SFF</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -829,7 +815,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDue.html#board-atmelsam-sainsmartdue"><span class="std std-ref">SainSmart Due (Programming Port)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDue.html#board-atmelsam-sainsmartdue"><span class="std std-ref">SainSmart Due (Programming Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>AT91SAM3X8E</p></td>
@@ -837,7 +823,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDueUSB.html#board-atmelsam-sainsmartdueusb"><span class="std std-ref">SainSmart Due (USB Native Port)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sainSmartDueUSB.html#board-atmelsam-sainsmartdueusb"><span class="std std-ref">SainSmart Due (USB Native Port)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>AT91SAM3X8E</p></td>
@@ -845,7 +831,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_femto.html#board-atmelsam-seeed-femto"><span class="std std-ref">Seeeduino Femto M0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_femto.html#board-atmelsam-seeed-femto"><span class="std std-ref">Seeeduino Femto M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -853,7 +839,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeeduino_lorawan.html#board-atmelsam-seeeduino-lorawan"><span class="std std-ref">Seeeduino LoRaWAN</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeeduino_lorawan.html#board-atmelsam-seeeduino-lorawan"><span class="std std-ref">Seeeduino LoRaWAN</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -861,7 +847,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_lite_mg126.html#board-atmelsam-seeed-wio-lite-mg126"><span class="std std-ref">Seeeduino Wio Lite MG126</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_lite_mg126.html#board-atmelsam-seeed-wio-lite-mg126"><span class="std std-ref">Seeeduino Wio Lite MG126</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -869,7 +855,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_terminal.html#board-atmelsam-seeed-wio-terminal"><span class="std std-ref">Seeeduino Wio Terminal</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_wio_terminal.html#board-atmelsam-seeed-wio-terminal"><span class="std std-ref">Seeeduino Wio Terminal</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51P19A</p></td>
@@ -877,7 +863,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_xiao.html#board-atmelsam-seeed-xiao"><span class="std std-ref">Seeeduino XIAO</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -885,7 +871,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_zero.html#board-atmelsam-seeed-zero"><span class="std std-ref">Seeeduino Zero</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/seeed_zero.html#board-atmelsam-seeed-zero"><span class="std std-ref">Seeeduino Zero</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -893,7 +879,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_9dof.html#board-atmelsam-sparkfun-samd21-9dof"><span class="std std-ref">SparkFun 9DoF Razor IMU M0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_9dof.html#board-atmelsam-sparkfun-samd21-9dof"><span class="std std-ref">SparkFun 9DoF Razor IMU M0</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -901,7 +887,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -909,7 +895,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -917,7 +903,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -925,7 +911,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -933,7 +919,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -941,7 +927,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_micromod.html#board-atmelsam-sparkfun-samd51-micromod"><span class="std std-ref">SparkFun SAMD51 MicroMod</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_micromod.html#board-atmelsam-sparkfun-samd51-micromod"><span class="std std-ref">SparkFun SAMD51 MicroMod</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -949,7 +935,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -957,7 +943,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/atmelsam/tuinozero96.html#board-atmelsam-tuinozero96"><span class="std std-ref">Tuino 096</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/atmelsam/tuinozero96.html#board-atmelsam-tuinozero96"><span class="std std-ref">Tuino 096</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -974,7 +960,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="altera-usb-blaster.html" class="btn btn-neutral float-left" title="Altera / Intel USB-Blaster" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../debugging.html" class="btn btn-neutral float-left" title="Debugging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="avr-stub.html" class="btn btn-neutral float-right" title="avr-stub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -1096,7 +1082,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

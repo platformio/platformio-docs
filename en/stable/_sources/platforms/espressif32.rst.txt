@@ -141,8 +141,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32_v2`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -161,9 +171,29 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32`
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32c3`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - ESP32S2
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_airm2m_core_esp32c3`
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_briki_abc_esp32`
@@ -196,6 +226,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1A`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapmini`
       - ESP32S2
       - 240MHz
@@ -215,6 +250,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - ESP32
@@ -253,6 +293,16 @@ Please click on board name for the further details.
       - 320KB
     * - :ref:`board_espressif32_esp32-s2-saola-1`
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -386,6 +436,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_watchy`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - ESP32
       - 240MHz
@@ -461,6 +516,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk3`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_um_feathers2`
       - ESP32S2
       - 240MHz
@@ -471,14 +531,39 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_rmp`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_um_tinys2`
       - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_c3_mini`
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin_d32`
@@ -488,6 +573,16 @@ Please click on board name for the further details.
       - 320KB
     * - :ref:`board_espressif32_lolin_d32_pro`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_mini`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_pico`
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -638,10 +733,13 @@ Packages
     * - `toolchain-xtensa-esp32s2 <https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s2>`__
       - GCC Toolchain for Espressif ESP32-S2 Xtensa MCUs
 
+    * - `toolchain-xtensa-esp32s3 <https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s3>`__
+      - GCC Toolchain for Espressif ESP32-S3 Xtensa MCUs
+
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules :ref:`faq_udev_rules`
+        * Install "udev" rules :ref:`platformio_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 
@@ -736,9 +834,21 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32_v2`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -760,10 +870,47 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32c3`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32s2`
       - External
       - ESP32S2
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
+AirM2M
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_airm2m_core_esp32c3`
+      - External
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
 
@@ -919,6 +1066,12 @@ Deneyap
       - Flash
       - RAM
     * - :ref:`board_espressif32_deneyapkart`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapkart1A`
       - External
       - ESP32
       - 240MHz
@@ -1088,6 +1241,12 @@ Espressif
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - On-board
       - ESP32
@@ -1115,6 +1274,18 @@ Espressif
     * - :ref:`board_espressif32_esp32-s2-saola-1`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -1433,8 +1604,8 @@ Labplus
       - 4MB
       - 320KB
 
-Lion::Bit
-~~~~~~~~~
+Lion:Bit
+~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -1883,6 +2054,25 @@ SG-O
       - 4MB
       - 320KB
 
+SQFMI
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_watchy`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Silicognition
 ~~~~~~~~~~~~~
 
@@ -2087,6 +2277,12 @@ Trueverit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_trueverit-iot-driver-mk3`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
 
 Turta
 ~~~~~
@@ -2131,6 +2327,24 @@ Unexpected Maker
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_rmp`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_tinypico`
       - No
       - ESP32
@@ -2142,6 +2356,12 @@ Unexpected Maker
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 Unknown
@@ -2194,6 +2414,12 @@ WEMOS
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_lolin_c3_mini`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_d32`
       - External
       - ESP32
@@ -2203,6 +2429,18 @@ WEMOS
     * - :ref:`board_espressif32_lolin_d32_pro`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_mini`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s2_pico`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB

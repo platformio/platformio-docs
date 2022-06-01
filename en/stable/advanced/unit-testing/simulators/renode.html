@@ -17,6 +17,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
@@ -79,7 +80,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Unit Testing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../runner.html">Test Runner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../structure.html">Project Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure/index.html">Project Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration.html">Configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../frameworks/index.html">Testing Frameworks</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Simulators</a><ul class="current">
@@ -107,7 +108,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -143,14 +144,14 @@
            <div itemprop="articleBody">
              
   <section id="renode">
-<span id="unit-testing-simulators-renode"></span><h1>Renode<a class="headerlink" href="#renode" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-simulators-renode"></span><h1>Renode<a class="headerlink" href="#renode" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../../_images/renode.png" src="../../../_images/renode.png" /></a>
 <p>Renode is a development framework which accelerates IoT and embedded systems
 development by letting you simulate physical hardware systems - including both the CPU,
 peripherals, sensors, environment and wired or wireless medium between nodes.
 For more information, see <a class="reference external" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs">Renode’s official website</a>.</p>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>Integration of the Renode requires adding the
 <a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-renode">platformio/tool-renode</a>
 package to the <a class="reference internal" href="../../../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> option in your
@@ -175,7 +176,7 @@ board from <a class="reference internal" href="../../../platforms/sifive.html#pl
 </div>
 </section>
 <section id="testing">
-<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">¶</a></h2>
 <p>Renode does not require a firmware uploading stage. Please use
 the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-without-uploading"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--without-uploading</span></code></a> command option.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test --without-uploading
@@ -342,7 +343,7 @@ hifive1-revb   test_dummy  PASSED    00:00:09.976
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

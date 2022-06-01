@@ -32,7 +32,7 @@ Platform :ref:`platform_nordicnrf51`: The Nordic nRF51 Series is a family of hig
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `VNG <https://os.mbed.com/platforms/VBLUNO51/?utm_source=platformio.org&utm_medium=docs>`__
+    - `VNG <https://vngiotlab.github.io/vbluno/mydoc_introduction.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -62,26 +62,6 @@ board manifest `vbluno51.json <https://github.com/platformio/platform-nordicnrf5
 
   ; change MCU frequency
   board_build.f_cpu = 16000000L
-
-
-Uploading
----------
-VNG VBLUNO51 supports the following uploading protocols:
-
-* ``cmsis-dap``
-* ``mbed``
-
-Default protocol is ``cmsis-dap``
-
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
-
-.. code-block:: ini
-
-  [env:vbluno51]
-  platform = nordicnrf51
-  board = vbluno51
-
-  upload_protocol = cmsis-dap
 
 Debugging
 ---------
@@ -115,9 +95,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

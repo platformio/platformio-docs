@@ -106,7 +106,7 @@ Prevent saving specified packages to :ref:`projectconf`.
     --skip-dependencies
 
 Update a package but skip its dependencies declared in the manifest
-:ref:`libjson_dependencies` field.
+:ref:`manifest_library_json_dependencies` field.
 
 .. option::
     -g, --global

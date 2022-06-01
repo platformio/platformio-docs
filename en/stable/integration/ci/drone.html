@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -106,7 +107,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -141,7 +142,7 @@
            <div itemprop="articleBody">
              
   <section id="drone">
-<span id="ci-drone"></span><h1><a class="toc-backref" href="#id2">Drone</a><a class="headerlink" href="#drone" title="Permalink to this headline">¶</a></h1>
+<span id="ci-drone"></span><h1><a class="toc-backref" href="#id2">Drone</a><a class="headerlink" href="#drone" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://drone.io">Drone</a>  is a hosted continuous integration service.
 It enables you to conveniently set up projects to automatically build, test,
 and deploy as you make changes to your code to
@@ -173,10 +174,10 @@ configured to build project on a range of different <a class="reference internal
 </ul>
 </div>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
 <p>There are two possible ways of running PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
-<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is default choice for native PlatformIO projects (Please fill all
 fields for your project in the Drone control panel):</p>
 <p><cite>Commands</cite>:</p>
@@ -186,7 +187,7 @@ pio run -e &lt;ID_1&gt; -e &lt;ID_2&gt; -e &lt;ID_N&gt;
 </div>
 </section>
 <section id="using-cmd-ci-command">
-<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading">¶</a></h3>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
@@ -205,7 +206,7 @@ pio ci --board<span class="o">=</span>&lt;ID_1&gt; --board<span class="o">=</spa
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id6">Examples</a><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Integration for <a class="reference external" href="https://github.com/felis/USB_Host_Shield_2.0">USB_Host_Shield_2.0</a>
 project. The <code class="docutils literal notranslate"><span class="pre">circle.yml</span></code> configuration file:</p></li>
@@ -352,7 +353,7 @@ pio ci --lib<span class="o">=</span><span class="s2">&quot;.&quot;</span> --lib<
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -110,7 +111,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="upload-options">
-<span id="projectconf-section-env-upload"></span><h1>Upload options<a class="headerlink" href="#upload-options" title="Permalink to this headline">¶</a></h1>
+<span id="projectconf-section-env-upload"></span><h1>Upload options<a class="headerlink" href="#upload-options" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#upload-port" id="id1"><code class="docutils literal notranslate"><span class="pre">upload_port</span></code></a></p></li>
@@ -158,7 +159,7 @@
 </ul>
 </div>
 <section id="upload-port">
-<span id="projectconf-upload-port"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">upload_port</span></code></a><a class="headerlink" href="#upload-port" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-upload-port"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">upload_port</span></code></a><a class="headerlink" href="#upload-port" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">(Pattern)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>This option is used by “uploader” tool when sending firmware to board via
 <code class="docutils literal notranslate"><span class="pre">upload_port</span></code>. For example,</p>
@@ -214,7 +215,7 @@ automatically.</p>
 </div>
 </section>
 <section id="upload-protocol">
-<span id="projectconf-upload-protocol"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">upload_protocol</span></code></a><a class="headerlink" href="#upload-protocol" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-upload-protocol"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">upload_protocol</span></code></a><a class="headerlink" href="#upload-protocol" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A protocol that “uploader” tool uses to talk to a board. Please check
 <a class="reference internal" href="../boards/index.html#boards"><span class="std std-ref">Boards</span></a> for supported uploading protocols by your board.</p>
@@ -224,13 +225,13 @@ automatically.</p>
 </div>
 </section>
 <section id="upload-speed">
-<span id="projectconf-upload-speed"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">upload_speed</span></code></a><a class="headerlink" href="#upload-speed" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-upload-speed"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">upload_speed</span></code></a><a class="headerlink" href="#upload-speed" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A connection speed (<a class="reference external" href="http://en.wikipedia.org/wiki/Baud">baud rate</a>)
 which “uploader” tool uses when sending firmware to board.</p>
 </section>
 <section id="upload-flags">
-<span id="projectconf-upload-flags"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">upload_flags</span></code></a><a class="headerlink" href="#upload-flags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-upload-flags"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">upload_flags</span></code></a><a class="headerlink" href="#upload-flags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Extra flags for uploader. Will be added to the end of uploader command. If you
 need to override uploader command or base flags please use
@@ -255,14 +256,14 @@ need to override uploader command or base flags please use
 </div>
 </section>
 <section id="upload-resetmethod">
-<span id="projectconf-upload-resetmethod"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">upload_resetmethod</span></code></a><a class="headerlink" href="#upload-resetmethod" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-upload-resetmethod"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">upload_resetmethod</span></code></a><a class="headerlink" href="#upload-resetmethod" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>Specify reset method for “uploader” tool. This option isn’t available for all
 development platforms. The only <a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a> supports it.</p>
 </section>
 <section id="upload-command">
-<span id="projectconf-upload-command"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">upload_command</span></code></a><a class="headerlink" href="#upload-command" title="Permalink to this headline">¶</a></h2>
-<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<span id="projectconf-upload-command"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">upload_command</span></code></a><a class="headerlink" href="#upload-command" title="Permalink to this heading">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Singleline: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Override default <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> upload command with a custom command. You can pass a full
 upload command with arguments and options or mix with <a class="reference internal" href="#projectconf-upload-flags"><span class="std std-ref">upload_flags</span></a>.</p>
 <p>In order to use <code class="docutils literal notranslate"><span class="pre">upload_command</span></code>, <code class="docutils literal notranslate"><span class="pre">upload_protocol</span> <span class="pre">=</span> <span class="pre">custom</span></code> must be specified.</p>
@@ -464,7 +465,7 @@ variable. A classic default upload command for <a class="reference internal" hre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

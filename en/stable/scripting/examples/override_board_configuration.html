@@ -17,13 +17,14 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Custom debug flags" href="custom_debug_flags.html" />
+    <link rel="next" title="Extra Python packages" href="extra_python_packages.html" />
     <link rel="prev" title="Override package files" href="override_package_files.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -84,12 +85,11 @@
 <li class="toctree-l3"><a class="reference internal" href="platformio_ini_custom_options.html">Custom options in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_build_flags.html">Split C/C++ build flags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extra_linker_flags.html">Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_upload_tool.html">Custom upload tool</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload_to_cloud.html">Upload to Cloud (OTA)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom_program_name.html">Custom firmware/program name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="asking_for_input.html">Asking for input (prompts)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_package_files.html">Override package files</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Override board configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_debug_flags.html">Custom debug flags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extra_python_packages.html">Extra Python packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="external_sources.html">Build external sources</a></li>
 </ul>
@@ -109,7 +109,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -145,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="override-board-configuration">
-<h1>Override board configuration<a class="headerlink" href="#override-board-configuration" title="Permalink to this headline">¶</a></h1>
+<h1>Override board configuration<a class="headerlink" href="#override-board-configuration" title="Permalink to this heading">¶</a></h1>
 <p>PlatformIO allows one to override some basic options (integer or string values)
 using <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-board-more-options"><span class="std std-ref">More options</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.
 Sometimes you need to do complex changes to default board manifest and
@@ -182,7 +182,7 @@ hardware VID/PIDs.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="override_package_files.html" class="btn btn-neutral float-left" title="Override package files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="custom_debug_flags.html" class="btn btn-neutral float-right" title="Custom debug flags" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="extra_python_packages.html" class="btn btn-neutral float-right" title="Extra Python packages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -303,7 +303,7 @@ hardware VID/PIDs.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

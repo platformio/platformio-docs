@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -110,7 +111,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="monitor-options">
-<span id="projectconf-section-env-monitor"></span><h1>Monitor options<a class="headerlink" href="#monitor-options" title="Permalink to this headline">¶</a></h1>
+<span id="projectconf-section-env-monitor"></span><h1>Monitor options<a class="headerlink" href="#monitor-options" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#monitor-port" id="id1"><code class="docutils literal notranslate"><span class="pre">monitor_port</span></code></a></p></li>
@@ -159,7 +160,7 @@
 </div>
 <p>Custom options for <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> command.</p>
 <section id="monitor-port">
-<span id="projectconf-monitor-port"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">monitor_port</span></code></a><a class="headerlink" href="#monitor-port" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-port"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">monitor_port</span></code></a><a class="headerlink" href="#monitor-port" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>Port, a number or a device name, or valid <a class="reference external" href="https://pyserial.readthedocs.io/en/latest/url_handlers.html">URL Handlers</a>.</p>
 <p>To print all available serial ports please use <a class="reference internal" href="../core/userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
@@ -204,7 +205,7 @@
 </div>
 </section>
 <section id="monitor-speed">
-<span id="projectconf-monitor-speed"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">monitor_speed</span></code></a><a class="headerlink" href="#monitor-speed" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-speed"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">monitor_speed</span></code></a><a class="headerlink" href="#monitor-speed" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">9600</span></code></p>
 <p>A monitor speed (<a class="reference external" href="http://en.wikipedia.org/wiki/Baud">baud rate</a>).
 See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-b"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--baud</span></code></a>.</p>
@@ -216,7 +217,7 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 </div>
 </section>
 <section id="monitor-filters">
-<span id="projectconf-monitor-filters"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">monitor_filters</span></code></a><a class="headerlink" href="#monitor-filters" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-filters"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">monitor_filters</span></code></a><a class="headerlink" href="#monitor-filters" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Apply filters and text transformation for device output. See available filters at
 <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor-filters"><span class="std std-ref">Filters</span></a>.</p>
@@ -229,17 +230,17 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 </div>
 </section>
 <section id="monitor-rts">
-<span id="projectconf-monitor-rts"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">monitor_rts</span></code></a><a class="headerlink" href="#monitor-rts" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-rts"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">monitor_rts</span></code></a><a class="headerlink" href="#monitor-rts" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">(0</span> <span class="pre">or</span> <span class="pre">1)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A monitor initial <code class="docutils literal notranslate"><span class="pre">RTS</span></code> line state. See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-rts"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--rts</span></code></a>.</p>
 </section>
 <section id="monitor-dtr">
-<span id="projectconf-monitor-dtr"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">monitor_dtr</span></code></a><a class="headerlink" href="#monitor-dtr" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-dtr"></span><h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">monitor_dtr</span></code></a><a class="headerlink" href="#monitor-dtr" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">(0</span> <span class="pre">or</span> <span class="pre">1)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>A monitor initial <code class="docutils literal notranslate"><span class="pre">DTR</span></code> line state. See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-dtr"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--dtr</span></code></a>.</p>
 </section>
 <section id="monitor-flags">
-<span id="projectconf-monitor-flags"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">monitor_flags</span></code></a><a class="headerlink" href="#monitor-flags" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-monitor-flags"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">monitor_flags</span></code></a><a class="headerlink" href="#monitor-flags" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Pass extra flags and options to <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> command. Please note
 that each flag, option or its value should be passed in a new line. See
@@ -386,7 +387,7 @@ example below.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

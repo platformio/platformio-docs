@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -79,7 +80,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#tutorials">Tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../debugging.html#configuration">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="altera-usb-blaster.html">Altera / Intel USB-Blaster</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmel-ice.html">Atmel-ICE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="avr-stub.html">avr-stub</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blackmagic.html">Black Magic Probe</a></li>
@@ -93,27 +93,24 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="digilent-hs2.html">JTAG-HS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp-prog.html">ESP-Prog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp-usb-bridge.html">ESP USB Bridge</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ftdi.html">FTDI Chip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gd-link.html">GD-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="iot-bus-jtag.html">oddWires IOT-Bus JTAG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jlink.html">J-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimodule.html">Mini-Module FT2232H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mspdebug.html">MSP Debug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd.html">Olimex ARM-USB-OCD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-ocd-h.html">Olimex ARM-USB-OCD-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-arm-usb-tiny-h.html">Olimex ARM-USB-TINY-H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="olimex-jtag-tiny.html">Olimex ARM-USB-TINY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ovpsim.html">OVPsim</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qemu.html">QEMU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi-swd.html">Raspberry Pi SWD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="renode.html">Renode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rv-link.html">RV-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="simavr.html">simavr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sipeed-rv-debugger.html">Sipeed RV Debugger</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stlink.html">ST-LINK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ti-icdi.html">TI-ICDI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tumpa.html">TIAO USB Multi-Protocol Adapter (TUMPA)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="um232h.html">UM232H</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verilator.html">Verilator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="whisper.html">Whisper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom.html">Custom</a></li>
@@ -138,7 +135,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -173,7 +170,7 @@
            <div itemprop="articleBody">
              
   <section id="jtag-hs1">
-<span id="debugging-tool-digilent-hs1"></span><h1>JTAG-HS1<a class="headerlink" href="#jtag-hs1" title="Permalink to this headline">¶</a></h1>
+<span id="debugging-tool-digilent-hs1"></span><h1>JTAG-HS1<a class="headerlink" href="#jtag-hs1" title="Permalink to this heading">¶</a></h1>
 <a class="reference external image-reference" href="https://store.digilentinc.com/jtag-hs1-programming-cable-retired/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/digilent-hs1.jpg" src="../../_images/digilent-hs1.jpg" /></a>
 <p>The JTAG-HS1 programming cable is a high-speed programming solution for Xilinx® FPGAs.
 Official reference can be found <a class="reference external" href="https://store.digilentinc.com/jtag-hs1-programming-cable-retired/?utm_source=platformio&amp;utm_medium=docs">here</a>.</p>
@@ -187,7 +184,7 @@ Official reference can be found <a class="reference external" href="https://stor
 </ul>
 </div>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>You can configure debugging tool using <a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in
 <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
@@ -212,7 +209,7 @@ upload protocol:</p>
 </ul>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id2">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -234,7 +231,7 @@ upload protocol:</p>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id3">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -262,7 +259,7 @@ upload protocol:</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id4">Boards</a><a class="headerlink" href="#boards" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll tables below by horizontal.</p>
@@ -435,7 +432,7 @@ upload protocol:</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

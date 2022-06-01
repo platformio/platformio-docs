@@ -37,7 +37,6 @@ Examples are listed from `Espressif 8266 development platform repository <https:
 * `arduino-webserver <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-asyncudp <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `simba-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `esp8266-rtos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `esp8266-nonos-sdk-blink <https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-wifiscan <https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
@@ -92,9 +91,6 @@ Packages
     * - `framework-esp8266-rtos-sdk <https://registry.platformio.org/tools/platformio/framework-esp8266-rtos-sdk>`__
       - Espressif ESP8266 SDK based on FreeRTOS
 
-    * - `framework-simba <https://registry.platformio.org/tools/platformio/framework-simba>`__
-      - Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable
-
     * - `tool-esptool <https://registry.platformio.org/tools/platformio/tool-esptool>`__
       - Espressif ESP8266 build/flash helper tool
 
@@ -113,7 +109,7 @@ Packages
 .. warning::
     **Linux Users**:
 
-        * Install "udev" rules :ref:`faq_udev_rules`
+        * Install "udev" rules :ref:`platformio_udev_rules`
         * Raspberry Pi users, please read this article
           `Enable serial port on Raspberry Pi <https://hallard.me/enable-serial-port-on-raspberry-pi/>`__.
 

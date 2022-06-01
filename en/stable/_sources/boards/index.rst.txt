@@ -282,12 +282,18 @@ Atmel megaAVR
     atmelmegaavr/ATtiny1614
     atmelmegaavr/ATtiny1616
     atmelmegaavr/ATtiny1617
+    atmelmegaavr/ATtiny1624
+    atmelmegaavr/ATtiny1626
+    atmelmegaavr/ATtiny1627
     atmelmegaavr/ATtiny202
     atmelmegaavr/ATtiny204
     atmelmegaavr/ATtiny212
     atmelmegaavr/ATtiny214
     atmelmegaavr/ATtiny3216
     atmelmegaavr/ATtiny3217
+    atmelmegaavr/ATtiny3224
+    atmelmegaavr/ATtiny3226
+    atmelmegaavr/ATtiny3227
     atmelmegaavr/ATtiny402
     atmelmegaavr/ATtiny404
     atmelmegaavr/ATtiny406
@@ -295,16 +301,50 @@ Atmel megaAVR
     atmelmegaavr/ATtiny414
     atmelmegaavr/ATtiny416
     atmelmegaavr/ATtiny417
+    atmelmegaavr/ATtiny424
+    atmelmegaavr/ATtiny426
+    atmelmegaavr/ATtiny427
     atmelmegaavr/ATtiny804
     atmelmegaavr/ATtiny806
     atmelmegaavr/ATtiny807
     atmelmegaavr/ATtiny814
     atmelmegaavr/ATtiny816
     atmelmegaavr/ATtiny817
+    atmelmegaavr/ATtiny824
+    atmelmegaavr/ATtiny826
+    atmelmegaavr/ATtiny827
     atmelmegaavr/avr_iot_wg
+    atmelmegaavr/AVR128DA28
+    atmelmegaavr/AVR128DA32
+    atmelmegaavr/AVR128DA48
+    atmelmegaavr/AVR128DA64
+    atmelmegaavr/AVR128DB28
+    atmelmegaavr/AVR128DB32
+    atmelmegaavr/AVR128DB48
+    atmelmegaavr/AVR128DB64
+    atmelmegaavr/AVR32DA28
+    atmelmegaavr/AVR32DA32
+    atmelmegaavr/AVR32DA48
+    atmelmegaavr/AVR32DB28
+    atmelmegaavr/AVR32DB32
+    atmelmegaavr/AVR32DB48
+    atmelmegaavr/AVR64DA28
+    atmelmegaavr/AVR64DA32
+    atmelmegaavr/AVR64DA48
+    atmelmegaavr/AVR64DA64
+    atmelmegaavr/AVR64DB28
+    atmelmegaavr/AVR64DB32
+    atmelmegaavr/AVR64DB48
+    atmelmegaavr/AVR64DB64
+    atmelmegaavr/AVR64DD14
+    atmelmegaavr/AVR64DD20
+    atmelmegaavr/AVR64DD28
+    atmelmegaavr/AVR64DD32
     atmelmegaavr/nano_every
     atmelmegaavr/uno_wifi_rev2
     atmelmegaavr/curiosity_nano_4809
+    atmelmegaavr/curiosity_nano_da
+    atmelmegaavr/curiosity_nano_db
     atmelmegaavr/xplained_pro_4809
 
 Atmel SAM
@@ -366,7 +406,6 @@ Atmel SAM
     atmelsam/samd21g18a
     atmelsam/samc21_xpro
     atmelsam/samd21_xpro
-    atmelsam/saml21_xpro_b
     atmelsam/briki_abc_samd21
     atmelsam/briki_mbcwb_samd21
     atmelsam/digix
@@ -417,11 +456,17 @@ Espressif 32
     espressif32/az-delivery-devkit-v4
     espressif32/featheresp32
     espressif32/featheresp32-s2
+    espressif32/adafruit_feather_esp32_v2
     espressif32/adafruit_feather_esp32s2_tft
+    espressif32/adafruit_feather_esp32s3
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_qtpy_esp32
+    espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
+    espressif32/adafruit_qtpy_esp32s3
+    espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
@@ -431,12 +476,14 @@ Espressif 32
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
+    espressif32/deneyapkart1A
     espressif32/deneyapmini
     espressif32/denky_d4
     espressif32/denky32
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
+    espressif32/esp32s3camlcd
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
     espressif32/espino32
@@ -448,6 +495,8 @@ Espressif 32
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
+    espressif32/esp32s3box
+    espressif32/esp32-s3-devkitc-1
     espressif32/firebeetle32
     espressif32/piranha_esp32
     espressif32/franzininho_wifi_esp32s2
@@ -507,6 +556,7 @@ Espressif 32
     espressif32/qchip
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
+    espressif32/watchy
     espressif32/wesp32
     espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
@@ -525,14 +575,22 @@ Espressif 32
     espressif32/ttgo-t7-v14-mini32
     espressif32/trueverit-iot-driver
     espressif32/trueverit-iot-driver-mk2
+    espressif32/trueverit-iot-driver-mk3
     espressif32/turta_iot_node
     espressif32/um_feathers2
     espressif32/um_feathers2_neo
+    espressif32/um_feathers3
+    espressif32/um_pros3
+    espressif32/um_rmp
     espressif32/tinypico
     espressif32/um_tinys2
+    espressif32/um_tinys3
     espressif32/vintlabs-devkit-v1
+    espressif32/lolin_c3_mini
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
+    espressif32/lolin_s2_mini
+    espressif32/lolin_s2_pico
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemos_d1_mini32
@@ -621,32 +679,6 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
     freescalekinetis/segger_ip_switch
-
-GigaDevice GD32V
-----------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    gd32v/gd32vf103v-eval
-    gd32v/sipeed-longan-nano
-    gd32v/sipeed-longan-nano-lite
-    gd32v/wio_lite_risc-v
-
-Infineon XMC
-------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    infineonxmc/xmc1100_boot_kit
-    infineonxmc/xmc1100_h_bridge2go
-    infineonxmc/xmc1100_xmc2go
-    infineonxmc/xmc1300_boot_kit
-    infineonxmc/xmc1300_sense2gol
-    infineonxmc/xmc1400_boot_kit
-    infineonxmc/xmc4200_distance2go
-    infineonxmc/xmc4700_relax_kit
 
 Intel ARC32
 -----------
@@ -927,19 +959,6 @@ Intel MCS-51 (8051)
     intel_mcs51/W79E659
     intel_mcs51/W79E8213
 
-Kendryte K210
--------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    kendryte210/sipeed-maix-bit
-    kendryte210/sipeed-maix-bit-mic
-    kendryte210/sipeed-maix-go
-    kendryte210/sipeed-maix-one-dock
-    kendryte210/sipeed-maixduino
-    kendryte210/sipeed-MF1
-
 Lattice iCE40
 -------------
 
@@ -1032,26 +1051,17 @@ Nordic nRF51
     nordicnrf51/bbcmicrobit
     nordicnrf51/bluz_dk
     nordicnrf51/calliope_mini
-    nordicnrf51/dfcm_nnn40
-    nordicnrf51/delta_dfcm_nnn50
-    nordicnrf51/wallbot_ble
     nordicnrf51/nrf51_beacon
     nordicnrf51/nrf51_dongle
-    nordicnrf51/nrf51_mkit
     nordicnrf51/nrf51_dk
     nordicnrf51/oshchip
     nordicnrf51/redBearLabBLENano
     nordicnrf51/redBearLab
-    nordicnrf51/seeedArchBLE
-    nordicnrf51/seeedArchLink
     nordicnrf51/seeedTinyBLE
     nordicnrf51/Sinobit
-    nordicnrf51/hrm1017
-    nordicnrf51/ty51822r3
     nordicnrf51/vbluno51
     nordicnrf51/waveshare_ble400
     nordicnrf51/ng_beacon
-    nordicnrf51/nrf51822_y5_mbug
 
 Nordic nRF52
 ------------
@@ -1536,8 +1546,9 @@ TI MSP430
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr2311
+    timsp430/lpmsp430fr2355
     timsp430/lpmsp430fr2433
-    timsp430/lpmsp430g2476
+    timsp430/lpmsp430fr2476
     timsp430/lpmsp430fr4133
     timsp430/lpmsp430fr5969
     timsp430/lpmsp430fr5994

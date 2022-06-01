@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troubleshooting &mdash; PlatformIO v6.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.platformio.org/core/installation/troubleshooting.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Uninstall PlatformIO Core and dependent packages" href="uninstall.html" />
+    <link rel="prev" title="Integration with custom applications (extensions, plugins)" href="integration.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> PlatformIO
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">PlatformIO Core (CLI)</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="requirements.html">System Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="methods/index.html">Installation Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development-version.html">Development Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shell-commands.html">Install Shell Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="udev-rules.html">99-platformio-udev.rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="integration.html">Integration with custom applications (extensions, plugins)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#multiple-platformio-cores-in-a-system">Multiple PlatformIO Cores in a system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platformio-is-not-recognized-as-an-internal-or-external-command">‘platformio’ is not recognized as an internal or external command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importerror-cannot-import-name-remove-dead-weakref">ImportError: cannot import name _remove_dead_weakref</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uninstall.html">Uninstall PlatformIO Core and dependent packages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../userguide/index.html">CLI Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migration.html">Migrating from 5.x to 6.0</a></li>
+</ul>
+
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
+          <li><a href="index.html">Installation</a> &raquo;</li>
+      <li>Troubleshooting</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation/troubleshooting.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Linux OS</strong>: Don’t forget to install <a class="reference internal" href="udev-rules.html#platformio-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a></p>
+<p><strong>Windows OS</strong>: Please check that you have correctly installed the
+USB driver from the board manufacturer.</p>
+</div>
+<p>If you find any issues with PlatformIO Core Installer Script, please report to
+<a class="reference external" href="https://github.com/platformio/platformio-core-installer/issues">https://github.com/platformio/platformio-core-installer/issues</a></p>
+<section id="multiple-platformio-cores-in-a-system">
+<span id="multiple-pio-cores-issue"></span><h2>Multiple PlatformIO Cores in a system<a class="headerlink" href="#multiple-platformio-cores-in-a-system" title="Permalink to this heading">¶</a></h2>
+<p>Multiple standalone <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in a system could lead to the different
+issues. We highly recommend to keep one instance of PlatformIO Core or use built-in
+PlatformIO Core in <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../integration/ide/atom.html#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a> - <code class="docutils literal notranslate"><span class="pre">Menu</span> <span class="pre">PlatformIO:</span> <span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO</span> <span class="pre">IDE</span> <span class="pre">&gt;</span> <span class="pre">Use</span> <span class="pre">built-in</span> <span class="pre">PlatformIO</span> <span class="pre">Core</span></code></p></li>
+<li><p><a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a> - <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-settings"><span class="std std-ref">Settings</span></a> &gt; Set <code class="docutils literal notranslate"><span class="pre">platformio-ide.useBuiltinPIOCore</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></li>
+</ul>
+<p>Finally, if you have a standalone <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in a system, please open system
+Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip uninstall platformio
+
+<span class="c1"># if you used macOS &quot;brew&quot;</span>
+brew uninstall platformio
+</pre></div>
+</div>
+<p>If you need to have <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> globally in a system, please
+<a class="reference internal" href="shell-commands.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
+</section>
+<section id="platformio-is-not-recognized-as-an-internal-or-external-command">
+<h2>‘platformio’ is not recognized as an internal or external command<a class="headerlink" href="#platformio-is-not-recognized-as-an-internal-or-external-command" title="Permalink to this heading">¶</a></h2>
+<p>If you use <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, please check in PlatformIO IDE Settings that
+“Use built-in PlatformIO Core” is enabled.</p>
+<p>If you modify the system environment variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in your Bash/Fish/ZSH
+profile, please do not override global <code class="docutils literal notranslate"><span class="pre">PATH</span></code>. This line
+<code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=&quot;/my/custom/path&quot;</span></code> is incorrect. Use <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=&quot;/my/custom/path&quot;:$PATH</span></code>
+instead.</p>
+</section>
+<section id="importerror-cannot-import-name-remove-dead-weakref">
+<h2>ImportError: cannot import name _remove_dead_weakref<a class="headerlink" href="#importerror-cannot-import-name-remove-dead-weakref" title="Permalink to this heading">¶</a></h2>
+<p>Windows users can experience this issue when multiple Python interpreters are
+installed in a system and conflict with each other. The easy way to fix this
+problem is uninstalling all Python interpreters using Windows Programs Manager
+and installing them manually again.</p>
+<ol class="arabic simple">
+<li><p>“Windows &gt; Start Menu &gt; Settings &gt; System &gt; Apps &amp; Features”, select
+Python interpreters and uninstall them.</p></li>
+<li><p>Install the latest Python interpreter, see <a class="reference internal" href="../../faq/install-python.html#faq-install-python"><span class="std std-ref">Install Python Interpreter</span></a> guide</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">C:\Users\YourUserName\.platformio</span></code> and <code class="docutils literal notranslate"><span class="pre">C:\.platformio</span></code> folders
+if exist (do not forget to replace “YourUserName” with the real user name)</p></li>
+<li><p>Restart <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="integration.html" class="btn btn-neutral float-left" title="Integration with custom applications (extensions, plugins)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="uninstall.html" class="btn btn-neutral float-right" title="Uninstall PlatformIO Core and dependent packages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+<ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+<script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
+
+
+</footer>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v6.0.2 (stable)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation/troubleshooting.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/core/installation/troubleshooting.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

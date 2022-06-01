@@ -17,6 +17,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
@@ -110,7 +111,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="platform-options">
-<span id="projectconf-section-env-platform"></span><h1>Platform options<a class="headerlink" href="#platform-options" title="Permalink to this headline">¶</a></h1>
+<span id="projectconf-section-env-platform"></span><h1>Platform options<a class="headerlink" href="#platform-options" title="Permalink to this heading">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#platform" id="id1"><code class="docutils literal notranslate"><span class="pre">platform</span></code></a></p></li>
@@ -160,7 +161,7 @@
 </ul>
 </div>
 <section id="platform">
-<span id="projectconf-env-platform"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">platform</span></code></a><a class="headerlink" href="#platform" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-env-platform"></span><h2><a class="toc-backref" href="#id1"><code class="docutils literal notranslate"><span class="pre">platform</span></code></a><a class="headerlink" href="#platform" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>Specify a development platform that provides integration of vendor-specific
 boards (development kits, MCUs), high-level frameworks, and SDKs.
@@ -193,7 +194,7 @@ See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#c
 </div>
 </section>
 <section id="platform-packages">
-<span id="projectconf-env-platform-packages"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">platform_packages</span></code></a><a class="headerlink" href="#platform-packages" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-env-platform-packages"></span><h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">platform_packages</span></code></a><a class="headerlink" href="#platform-packages" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Package</span> <span class="pre">Specification</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>Configure custom packages per a build environment. You can also override
 default packages by <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> using the same name.
@@ -224,12 +225,12 @@ See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#c
 </div>
 </section>
 <section id="framework">
-<span id="projectconf-env-framework"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">framework</span></code></a><a class="headerlink" href="#framework" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-env-framework"></span><h2><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">framework</span></code></a><a class="headerlink" href="#framework" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p><a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> name.</p>
 </section>
 <section id="board">
-<span id="projectconf-env-board"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">board</span></code></a><a class="headerlink" href="#board" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-env-board"></span><h2><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">board</span></code></a><a class="headerlink" href="#board" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">(ID)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p><em>PlatformIO</em> has pre-configured settings for the most popular boards:</p>
 <ul class="simple">
@@ -243,7 +244,7 @@ See <a class="reference internal" href="../core/userguide/pkg/cmd_install.html#c
 <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command.</p>
 </section>
 <section id="board-build-mcu">
-<h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code></a><a class="headerlink" href="#board-build-mcu" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code></a><a class="headerlink" href="#board-build-mcu" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code> is a microcontroller(MCU) type that is used by compiler to
 recognize MCU architecture. The correct type of <code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code> depends on
@@ -253,7 +254,7 @@ is described <a class="reference external" href="http://www.nongnu.org/avr-libc/
 in <em>Boards</em> section of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>. See “Microcontroller” column.</p>
 </section>
 <section id="board-build-f-cpu">
-<span id="projectconf-board-build-f-cpu"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code></a><a class="headerlink" href="#board-build-f-cpu" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-board-build-f-cpu"></span><h2><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code></a><a class="headerlink" href="#board-build-f-cpu" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Number</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>The option <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code> is used to define MCU frequency (Hertz, Clock). A
 format of this option is <code class="docutils literal notranslate"><span class="pre">C-like</span> <span class="pre">long</span> <span class="pre">integer</span></code> value with <code class="docutils literal notranslate"><span class="pre">L</span></code> suffix. The
@@ -268,14 +269,14 @@ so that the underlying software will be configured accordingly to match the chan
 </div>
 </section>
 <section id="board-build-ldscript">
-<span id="projectconf-board-build-ldscript"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">board_build.ldscript</span></code></a><a class="headerlink" href="#board-build-ldscript" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-board-build-ldscript"></span><h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">board_build.ldscript</span></code></a><a class="headerlink" href="#board-build-ldscript" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
 <p>Path to the linker script to be used instead of the one defined by a framework. This
 is useful for specifying a modified linker script, for example, when an application
 requires a special memory section for a bootloader.</p>
 </section>
 <section id="more-options">
-<span id="projectconf-board-more-options"></span><h2><a class="toc-backref" href="#id8">More options</a><a class="headerlink" href="#more-options" title="Permalink to this headline">¶</a></h2>
+<span id="projectconf-board-more-options"></span><h2><a class="toc-backref" href="#id8">More options</a><a class="headerlink" href="#more-options" title="Permalink to this heading">¶</a></h2>
 <p>You can override any board option declared in manifest file using the next
 format <code class="docutils literal notranslate"><span class="pre">board_{OBJECT.PATH}</span></code>, where <code class="docutils literal notranslate"><span class="pre">{OBJECT.PATH}</span></code> is an object path in
 JSON manifest. Please navigate to “boards” folder of <a class="reference external" href="https://github.com/topics/platformio-platform">PlatfomIO development platforms</a>
@@ -427,7 +428,7 @@ and open JSON file to list all available options.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -17,6 +17,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
@@ -84,12 +85,11 @@
 <li class="toctree-l3"><a class="reference internal" href="platformio_ini_custom_options.html">Custom options in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Split C/C++ build flags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extra_linker_flags.html">Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_upload_tool.html">Custom upload tool</a></li>
 <li class="toctree-l3"><a class="reference internal" href="upload_to_cloud.html">Upload to Cloud (OTA)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom_program_name.html">Custom firmware/program name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="asking_for_input.html">Asking for input (prompts)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_package_files.html">Override package files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="override_board_configuration.html">Override board configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="custom_debug_flags.html">Custom debug flags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="extra_python_packages.html">Extra Python packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="external_sources.html">Build external sources</a></li>
 </ul>
@@ -109,7 +109,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -145,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="split-c-c-build-flags">
-<h1>Split C/C++ build flags<a class="headerlink" href="#split-c-c-build-flags" title="Permalink to this headline">¶</a></h1>
+<h1>Split C/C++ build flags<a class="headerlink" href="#split-c-c-build-flags" title="Permalink to this heading">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_env]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
@@ -293,7 +293,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

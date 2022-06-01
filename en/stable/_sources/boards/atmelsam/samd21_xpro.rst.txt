@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM product
   * - **RAM**
     - 32KB
   * - **Vendor**
-    - `Atmel <https://developer.mbed.org/platforms/SAMD21-XPRO/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Atmel <https://www.microchip.com/en-us/development-tool/atsamd21-xpro?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -126,9 +126,6 @@ Frameworks
 
     * - Name
       - Description
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

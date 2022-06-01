@@ -17,6 +17,7 @@
         <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/clipboard.min.js"></script>
         <script src="../../../../_static/copybutton.js"></script>
@@ -79,7 +80,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Unit Testing</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../runner.html">Test Runner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../structure.html">Project Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../structure/index.html">Project Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../configuration.html">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Testing Frameworks</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../doctest.html">Doctest</a></li>
@@ -109,7 +110,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq/index.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../core/history.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
@@ -146,7 +147,7 @@
            <div itemprop="articleBody">
              
   <section id="custom-test-runner">
-<span id="unit-testing-frameworks-custom-runner"></span><h1>Custom Test Runner<a class="headerlink" href="#custom-test-runner" title="Permalink to this headline">¶</a></h1>
+<span id="unit-testing-frameworks-custom-runner"></span><h1>Custom Test Runner<a class="headerlink" href="#custom-test-runner" title="Permalink to this heading">¶</a></h1>
 <p>Setting the <a class="reference internal" href="../../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option to the <code class="docutils literal notranslate"><span class="pre">custom</span></code>
 will instruct PlatformIO to look for a <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code>
 file located in the current (running) test folder. If the file is
@@ -155,7 +156,7 @@ in a tree until reaches the <a class="reference internal" href="../../../../proj
 <p>If you plan to use a custom test framework for ALL tests, please
 put the <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> file at the root of
 <a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>. Otherwise, use
-<a class="reference internal" href="../../structure.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> and put it to the test folder
+<a class="reference internal" href="../../structure/hierarchy.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> and put it to the test folder
 or to the group of tests that depend on it.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> is a Python-based script. It must
 contain the <a class="reference internal" href="api.html#unit-testing-frameworks-custom-api-test-runner"><span class="std std-ref">CustomTestRunner</span></a>
@@ -326,7 +327,7 @@ let’s override a “testing” stage for the <a class="reference internal" hre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.1 (stable)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

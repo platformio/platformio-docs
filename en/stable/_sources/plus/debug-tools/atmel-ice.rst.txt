@@ -64,7 +64,7 @@ Drivers
   Not required.
 
 :Linux:
-  Please install "udev" rules :ref:`faq_udev_rules`. If you already installed
+  Please install "udev" rules :ref:`platformio_udev_rules`. If you already installed
   them before, please check that your rules are up-to-date or repeat steps.
 
 .. begin_platforms
@@ -90,9 +90,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
 
     * - :ref:`framework_zephyr`
       - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
@@ -482,13 +479,6 @@ Boards
       - :ref:`platform_atmelsam`
       - On-board
       - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
