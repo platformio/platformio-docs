@@ -406,7 +406,6 @@ Atmel SAM
     atmelsam/samd21g18a
     atmelsam/samc21_xpro
     atmelsam/samd21_xpro
-    atmelsam/saml21_xpro_b
     atmelsam/briki_abc_samd21
     atmelsam/briki_mbcwb_samd21
     atmelsam/digix
@@ -680,21 +679,6 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
     freescalekinetis/segger_ip_switch
-
-Infineon XMC
-------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    infineonxmc/xmc1100_boot_kit
-    infineonxmc/xmc1100_h_bridge2go
-    infineonxmc/xmc1100_xmc2go
-    infineonxmc/xmc1300_boot_kit
-    infineonxmc/xmc1300_sense2gol
-    infineonxmc/xmc1400_boot_kit
-    infineonxmc/xmc4200_distance2go
-    infineonxmc/xmc4700_relax_kit
 
 Intel ARC32
 -----------
@@ -1067,26 +1051,17 @@ Nordic nRF51
     nordicnrf51/bbcmicrobit
     nordicnrf51/bluz_dk
     nordicnrf51/calliope_mini
-    nordicnrf51/dfcm_nnn40
-    nordicnrf51/delta_dfcm_nnn50
-    nordicnrf51/wallbot_ble
     nordicnrf51/nrf51_beacon
     nordicnrf51/nrf51_dongle
-    nordicnrf51/nrf51_mkit
     nordicnrf51/nrf51_dk
     nordicnrf51/oshchip
     nordicnrf51/redBearLabBLENano
     nordicnrf51/redBearLab
-    nordicnrf51/seeedArchBLE
-    nordicnrf51/seeedArchLink
     nordicnrf51/seeedTinyBLE
     nordicnrf51/Sinobit
-    nordicnrf51/hrm1017
-    nordicnrf51/ty51822r3
     nordicnrf51/vbluno51
     nordicnrf51/waveshare_ble400
     nordicnrf51/ng_beacon
-    nordicnrf51/nrf51822_y5_mbug
 
 Nordic nRF52
 ------------
@@ -1571,8 +1546,9 @@ TI MSP430
     timsp430/lpmsp430fr5739
     timsp430/lpmsp430f5529
     timsp430/lpmsp430fr2311
+    timsp430/lpmsp430fr2355
     timsp430/lpmsp430fr2433
-    timsp430/lpmsp430g2476
+    timsp430/lpmsp430fr2476
     timsp430/lpmsp430fr4133
     timsp430/lpmsp430fr5969
     timsp430/lpmsp430fr5994

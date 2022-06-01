@@ -9,59 +9,59 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_infineonxmc_xmc1100_h_bridge2go:
+.. _board_timsp430_lpmsp430fr2355:
 
-XMC1100 H-Bridge 2Go
-====================
+TI LaunchPad MSP-EXP430FR2355LP
+===============================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
+Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 .. list-table::
 
   * - **Microcontroller**
-    - XMC1100
+    - MSP430FR2355
   * - **Frequency**
-    - 32MHz
+    - 16MHz
   * - **Flash**
-    - 64KB
+    - 32KB
   * - **RAM**
-    - 16KB
+    - 4KB
   * - **Vendor**
-    - `Infineon <https://www.infineon.com?utm_source=platformio.org&utm_medium=docs>`__
+    - `TI <http://www.ti.com/product/MSP430FR2355?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``xmc1100_h_bridge2go`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lpmsp430fr2355`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:xmc1100_h_bridge2go]
-  platform = infineonxmc
-  board = xmc1100_h_bridge2go
+  [env:lpmsp430fr2355]
+  platform = timsp430
+  board = lpmsp430fr2355
 
-You can override default XMC1100 H-Bridge 2Go settings per build environment using
+You can override default TI LaunchPad MSP-EXP430FR2355LP settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `xmc1100_h_bridge2go.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc1100_h_bridge2go.json>`_. For example,
+board manifest `lpmsp430fr2355.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430fr2355.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:xmc1100_h_bridge2go]
-  platform = infineonxmc
-  board = xmc1100_h_bridge2go
+  [env:lpmsp430fr2355]
+  platform = timsp430
+  board = lpmsp430fr2355
 
   ; change microcontroller
-  board_build.mcu = XMC1100
+  board_build.mcu = msp430fr2355
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 16000000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-XMC1100 H-Bridge 2Go has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+TI LaunchPad MSP-EXP430FR2355LP has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,7 +84,7 @@ XMC1100 H-Bridge 2Go has on-board debug probe and **IS READY** for debugging. Yo
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_mspdebug`
     - Yes
     - Yes
 

@@ -32,17 +32,11 @@ Platforms
     * - Name
       - Description
 
-    * - :ref:`platform_atmelsam`
-      - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
-
-    * - :ref:`platform_nordicnrf51`
-      - The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.
 
     * - :ref:`platform_nordicnrf52`
       - The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
@@ -71,10 +65,8 @@ Platforms
 Examples
 --------
 
-* `Mbed for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Freescale Kinetis <https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Maxim 32 <https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Mbed for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for NXP i.MX RT <https://github.com/platformio/platform-nxpimxrt/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for NXP LPC <https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -140,36 +132,6 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 32KB
       - 8KB
-    * - :ref:`board_atmelsam_samr21_xpro`
-      - :ref:`platform_atmelsam`
-      - SAMR21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_samd21g18a`
-      - :ref:`platform_atmelsam`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_samd21_xpro`
-      - :ref:`platform_atmelsam`
-      - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_bbcmicrobit`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
       - LPC4330
@@ -188,18 +150,6 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
       - :ref:`platform_siliconlabsefm32`
       - EFM32GG990F1024
@@ -314,12 +264,6 @@ You do not need to use/buy external debug probe.
       - 250MHz
       - 64MB
       - 8MB
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - STM32L476VGT6
@@ -392,24 +336,6 @@ You do not need to use/buy external debug probe.
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_nrf51_dongle`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -428,24 +354,12 @@ You do not need to use/buy external debug probe.
       - 170MHz
       - 512KB
       - 128KB
-    * - :ref:`board_nordicnrf51_redBearLabBLENano`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - :ref:`platform_nordicnrf52`
       - NRF52832
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_redBearLab`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -818,18 +732,6 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 512KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -842,24 +744,12 @@ You do not need to use/buy external debug probe.
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_seeedTinyBLE`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_wio_3g`
       - :ref:`platform_ststm32`
       - STM32F439VI
       - 180MHz
       - 2MB
       - 256KB
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
       - LPC1114FN28
@@ -872,24 +762,12 @@ You do not need to use/buy external debug probe.
       - 30MHz
       - 32KB
       - 8KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_siliconlabsefm32_tb_sense_12`
       - :ref:`platform_siliconlabsefm32`
       - EFR32MG12P432F1024
       - 40MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nordicnrf51_vbluno51`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_wiznet7500_wizwiki_w7500`
       - :ref:`platform_wiznet7500`
       - WIZNET7500
@@ -938,12 +816,6 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 2MB
       - 256KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
 
 
 External Debug Tools
@@ -1206,48 +1078,6 @@ AppNearMe
       - 48KB
       - 10KB
 
-Atmel
-~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelsam_samr21_xpro`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAMR21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_samd21g18a`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_samd21_xpro`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
-
 Avnet Silica
 ~~~~~~~~~~~~
 
@@ -1268,27 +1098,6 @@ Avnet Silica
       - 80MHz
       - 1MB
       - 128KB
-
-BBC
-~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_bbcmicrobit`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
 
 CQ Publishing
 ~~~~~~~~~~~~~
@@ -1331,20 +1140,6 @@ Delta
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
 
 Elektor Labs
 ~~~~~~~~~~~~
@@ -1611,27 +1406,6 @@ GreenWaves Technologies
       - 250MHz
       - 64MB
       - 8MB
-
-JKSoft
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
 
 Maxim
 ~~~~~
@@ -1933,27 +1707,6 @@ Nordic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_nrf51_dongle`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_nrf51_dk`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf52_nrf52_dk`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2031,13 +1784,6 @@ RedBearLab
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_redBearLabBLENano`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf52_redbear_blenano2`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -2045,13 +1791,6 @@ RedBearLab
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_redBearLab`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
 
 RushUp
 ~~~~~~
@@ -2514,13 +2253,6 @@ SeeedStudio
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nxplpc_seeedArchGPRS`
       - :ref:`platform_nxplpc`
       - No
@@ -2528,13 +2260,6 @@ SeeedStudio
       - 48MHz
       - 128KB
       - 10KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -2549,13 +2274,6 @@ SeeedStudio
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_seeedTinyBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_wio_3g`
       - :ref:`platform_ststm32`
       - On-board
@@ -2759,13 +2477,6 @@ Switch Science
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2780,13 +2491,6 @@ Switch Science
       - 30MHz
       - 32KB
       - 8KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
 
 Teensy
 ~~~~~~
@@ -2808,27 +2512,6 @@ Teensy
       - 72MHz
       - 256KB
       - 64KB
-
-VNG
-~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_vbluno51`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 32KB
 
 WIZNet
 ~~~~~~
@@ -2997,10 +2680,3 @@ y5 design
       - 48MHz
       - 64KB
       - 10KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

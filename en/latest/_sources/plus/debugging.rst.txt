@@ -175,9 +175,6 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-    * - :ref:`platform_infineonxmc`
-      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -1631,13 +1628,6 @@ Atmel
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_atmelavr_attiny2313`
       - :ref:`platform_atmelavr`
       - On-board
@@ -2030,20 +2020,6 @@ Delta
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
 
 Deneyap
 ~~~~~~~
@@ -3501,76 +3477,6 @@ Hornbill
       - 4MB
       - 320KB
 
-Infineon
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
-
 IoTaaP
 ~~~~~~
 
@@ -3591,27 +3497,6 @@ IoTaaP
       - 240MHz
       - 4MB
       - 320KB
-
-JKSoft
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
 
 LOGISENSES
 ~~~~~~~~~~
@@ -4641,13 +4526,6 @@ Nordic
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -6524,20 +6402,6 @@ SeeedStudio
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -7028,13 +6892,6 @@ Switch Science
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
       - On-board
@@ -7049,13 +6906,6 @@ Switch Science
       - 30MHz
       - 32KB
       - 8KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
 
 TAMC
 ~~~~
@@ -7133,6 +6983,13 @@ TI
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - On-board
@@ -7140,10 +6997,10 @@ TI
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
@@ -8491,10 +8348,3 @@ y5 design
       - 48MHz
       - 64KB
       - 10KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

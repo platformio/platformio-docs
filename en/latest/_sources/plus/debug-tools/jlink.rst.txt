@@ -207,9 +207,6 @@ Platforms
     * - :ref:`platform_freescalekinetis`
       - Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-    * - :ref:`platform_infineonxmc`
-      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
     * - :ref:`platform_maxim32`
       - Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 
@@ -232,7 +229,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1050,13 +1047,6 @@ Boards
       - :ref:`platform_atmelsam`
       - On-board
       - SAMD21J18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
       - 48MHz
       - 256KB
       - 32KB
@@ -3741,20 +3731,6 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -4364,62 +4340,6 @@ Boards
       - 48MHz
       - 32KB
       - 7.75KB
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
     * - :ref:`board_espressif32_xinabox_cw02`
       - :ref:`platform_espressif32`
       - External
@@ -4553,10 +4473,3 @@ Boards
       - 48MHz
       - 64KB
       - 10KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

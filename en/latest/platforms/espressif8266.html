@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Espressif 8266 &mdash; PlatformIO latest documentation</title>
+  <title>Espressif 8266 &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -87,7 +87,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
@@ -819,7 +818,6 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&amp;utm_medium=docs">arduino-webserver</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-asyncudp?utm_source=platformio.org&amp;utm_medium=docs">arduino-asyncudp</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/simba-blink?utm_source=platformio.org&amp;utm_medium=docs">simba-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-rtos-sdk-blink?utm_source=platformio.org&amp;utm_medium=docs">esp8266-rtos-sdk-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/esp8266-nonos-sdk-blink?utm_source=platformio.org&amp;utm_medium=docs">esp8266-nonos-sdk-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&amp;utm_medium=docs">arduino-wifiscan</a></p></li>
@@ -875,22 +873,19 @@ of Espressif 8266 development platform and the latest upstream version using
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-esp8266-rtos-sdk">framework-esp8266-rtos-sdk</a></p></td>
 <td><p>Espressif ESP8266 SDK based on FreeRTOS</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-simba">framework-simba</a></p></td>
-<td><p>Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptool">tool-esptool</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptool">tool-esptool</a></p></td>
 <td><p>Espressif ESP8266 build/flash helper tool</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptoolpy">tool-esptoolpy</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptoolpy">tool-esptoolpy</a></p></td>
 <td><p>Espressif ESP8266 and ESP32 serial bootloader utility</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mklittlefs">tool-mklittlefs</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mklittlefs">tool-mklittlefs</a></p></td>
 <td><p>Utility for creating littlefs images for upload on the ESP8266</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mkspiffs">tool-mkspiffs</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-mkspiffs">tool-mkspiffs</a></p></td>
 <td><p>Tool to build and unpack SPIFFS images</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-xtensa">toolchain-xtensa</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-xtensa">toolchain-xtensa</a></p></td>
 <td><p>GCC Toolchain for Xtensa processor</p></td>
 </tr>
 </tbody>
@@ -1936,7 +1931,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2rc2 (latest)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

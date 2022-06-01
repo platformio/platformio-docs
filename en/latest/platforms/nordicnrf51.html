@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nordic nRF51 &mdash; PlatformIO latest documentation</title>
+  <title>Nordic nRF51 &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -79,7 +79,6 @@
 <li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
@@ -195,16 +194,12 @@
 <h2><a class="toc-backref" href="#id2">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Nordic nRF51 development platform repository</a>:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-blink?utm_source=platformio.org&amp;utm_medium=docs">mbed-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-serial?utm_source=platformio.org&amp;utm_medium=docs">mbed-serial</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-blink?utm_source=platformio.org&amp;utm_medium=docs">zephyr-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-events?utm_source=platformio.org&amp;utm_medium=docs">mbed-events</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-ble-led?utm_source=platformio.org&amp;utm_medium=docs">arduino-ble-led</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-ble-eddystone?utm_source=platformio.org&amp;utm_medium=docs">zephyr-ble-eddystone</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-internal-libs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-drivers-entropy?utm_source=platformio.org&amp;utm_medium=docs">zephyr-drivers-entropy</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples/mbed-ble-thermometer?utm_source=platformio.org&amp;utm_medium=docs">mbed-ble-thermometer</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -264,41 +259,17 @@ You do not need to use/buy external debug probe.</p>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/dfcm_nnn40.html#board-nordicnrf51-dfcm-nnn40"><span class="std std-ref">Delta DFCM-NNN40</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_beacon.html#board-nordicnrf51-nrf51-beacon"><span class="std std-ref">Nordic Beacon Kit (PCA20006)</span></a></p></td>
 <td><p>NRF51822</p></td>
 <td><p>32MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/delta_dfcm_nnn50.html#board-nordicnrf51-delta-dfcm-nnn50"><span class="std std-ref">Delta DFCM-NNN50</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/wallbot_ble.html#board-nordicnrf51-wallbot-ble"><span class="std std-ref">JKSoft Wallbot BLE</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_beacon.html#board-nordicnrf51-nrf51-beacon"><span class="std std-ref">Nordic Beacon Kit (PCA20006)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dongle.html#board-nordicnrf51-nrf51-dongle"><span class="std std-ref">Nordic nRF51 Dongle (PCA10031)</span></a></p></td>
 <td><p>NRF51822</p></td>
 <td><p>32MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dongle.html#board-nordicnrf51-nrf51-dongle"><span class="std std-ref">Nordic nRF51 Dongle (PCA10031)</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_mkit.html#board-nordicnrf51-nrf51-mkit"><span class="std std-ref">Nordic nRF51822-mKIT</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dk.html#board-nordicnrf51-nrf51-dk"><span class="std std-ref">Nordic nRF51X22 Development Kit(PCA1000X)</span></a></p></td>
 <td><p>NRF51822</p></td>
@@ -318,47 +289,17 @@ You do not need to use/buy external debug probe.</p>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedArchBLE.html#board-nordicnrf51-seeedarchble"><span class="std std-ref">Seeed Arch BLE</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedArchLink.html#board-nordicnrf51-seeedarchlink"><span class="std std-ref">Seeed Arch Link</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedTinyBLE.html#board-nordicnrf51-seeedtinyble"><span class="std std-ref">Seeed Tiny BLE</span></a></p></td>
 <td><p>NRF51822</p></td>
 <td><p>16MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/hrm1017.html#board-nordicnrf51-hrm1017"><span class="std std-ref">Switch Science mbed HRM1017</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/ty51822r3.html#board-nordicnrf51-ty51822r3"><span class="std std-ref">Switch Science mbed TY51822r3</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/vbluno51.html#board-nordicnrf51-vbluno51"><span class="std std-ref">VNG VBLUNO51</span></a></p></td>
 <td><p>NRF51822</p></td>
 <td><p>16MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51822_y5_mbug.html#board-nordicnrf51-nrf51822-y5-mbug"><span class="std std-ref">y5 nRF51822 mbug</span></a></p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -464,37 +405,34 @@ of Nordic nRF51 development platform and the latest upstream version using
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-arduinonordicnrf5">framework-arduinonordicnrf5</a></p></td>
 <td><p>Arduino Wiring-based Framework for Nordic Semiconductor nRF5 based boards</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-mbed">framework-mbed</a></p></td>
-<td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-zephyr">framework-zephyr</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-zephyr">framework-zephyr</a></p></td>
 <td><p>Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-cmake">tool-cmake</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-cmake">tool-cmake</a></p></td>
 <td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-dtc">tool-dtc</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-dtc">tool-dtc</a></p></td>
 <td><p>Device tree compiler</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-gperf">tool-gperf</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-gperf">tool-gperf</a></p></td>
 <td><p>GNU gperf is a perfect hash function generator</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-jlink">tool-jlink</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-jlink">tool-jlink</a></p></td>
 <td><p>Software and Documentation Pack for SEGGER J-Link debug probes</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-ninja">tool-ninja</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-ninja">tool-ninja</a></p></td>
 <td><p>Ninja is a small build system with a focus on speed</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-nrfjprog">tool-nrfjprog</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-nrfjprog">tool-nrfjprog</a></p></td>
 <td><p>nRFx command line tools</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-openocd">tool-openocd</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-openocd">tool-openocd</a></p></td>
 <td><p>Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-sreccat">tool-sreccat</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-sreccat">tool-sreccat</a></p></td>
 <td><p>Collection of powerful tools for manipulating EPROM load files</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi">toolchain-gccarmnoneeabi</a></p></td>
 <td><p>GNU toolchain for Arm Cortex-M and Cortex-R processors</p></td>
 </tr>
 </tbody>
@@ -532,10 +470,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
-<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
 </tr>
 </tbody>
@@ -644,75 +579,6 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="delta">
-<h3>Delta<a class="headerlink" href="#delta" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/dfcm_nnn40.html#board-nordicnrf51-dfcm-nnn40"><span class="std std-ref">Delta DFCM-NNN40</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/delta_dfcm_nnn50.html#board-nordicnrf51-delta-dfcm-nnn50"><span class="std std-ref">Delta DFCM-NNN50</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="jksoft">
-<h3>JKSoft<a class="headerlink" href="#jksoft" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/wallbot_ble.html#board-nordicnrf51-wallbot-ble"><span class="std std-ref">JKSoft Wallbot BLE</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="nordic">
 <h3>Nordic<a class="headerlink" href="#nordic" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
@@ -748,14 +614,7 @@ horizontally.</p></li>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_mkit.html#board-nordicnrf51-nrf51-mkit"><span class="std std-ref">Nordic nRF51822-mKIT</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dk.html#board-nordicnrf51-nrf51-dk"><span class="std std-ref">Nordic nRF51X22 Development Kit(PCA1000X)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51_dk.html#board-nordicnrf51-nrf51-dk"><span class="std std-ref">Nordic nRF51X22 Development Kit(PCA1000X)</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>
 <td><p>32MHz</p></td>
@@ -855,64 +714,12 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedArchBLE.html#board-nordicnrf51-seeedarchble"><span class="std std-ref">Seeed Arch BLE</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedArchLink.html#board-nordicnrf51-seeedarchlink"><span class="std std-ref">Seeed Arch Link</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/seeedTinyBLE.html#board-nordicnrf51-seeedtinyble"><span class="std std-ref">Seeed Tiny BLE</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF51822</p></td>
 <td><p>16MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>16KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="switch-science">
-<h3>Switch Science<a class="headerlink" href="#switch-science" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/hrm1017.html#board-nordicnrf51-hrm1017"><span class="std std-ref">Switch Science mbed HRM1017</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf51/ty51822r3.html#board-nordicnrf51-ty51822r3"><span class="std std-ref">Switch Science mbed TY51822r3</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>32MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -1037,37 +844,6 @@ horizontally.</p></li>
 <td><p>32MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="y5-design">
-<h3>y5 design<a class="headerlink" href="#y5-design" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf51/nrf51822_y5_mbug.html#board-nordicnrf51-nrf51822-y5-mbug"><span class="std std-ref">y5 nRF51822 mbug</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>NRF51822</p></td>
-<td><p>16MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>16KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -1201,7 +977,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2rc2 (latest)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

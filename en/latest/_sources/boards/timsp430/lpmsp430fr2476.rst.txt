@@ -9,59 +9,59 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_infineonxmc_xmc1300_sense2gol:
+.. _board_timsp430_lpmsp430fr2476:
 
-XMC1300 Sense2GoL
-=================
+TI LaunchPad MSP-EXP430FR2476LP
+===============================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_infineonxmc`: Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
+Platform :ref:`platform_timsp430`: MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.
 
 .. list-table::
 
   * - **Microcontroller**
-    - XMC1300
+    - MSP430FR2476
   * - **Frequency**
-    - 32MHz
+    - 16MHz
   * - **Flash**
-    - 32KB
+    - 64KB
   * - **RAM**
-    - 16KB
+    - 8KB
   * - **Vendor**
-    - `Infineon <https://www.infineon.com?utm_source=platformio.org&utm_medium=docs>`__
+    - `TI <http://www.ti.com/product/MSP430FR2476?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``xmc1300_sense2gol`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lpmsp430fr2476`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:xmc1300_sense2gol]
-  platform = infineonxmc
-  board = xmc1300_sense2gol
+  [env:lpmsp430fr2476]
+  platform = timsp430
+  board = lpmsp430fr2476
 
-You can override default XMC1300 Sense2GoL settings per build environment using
+You can override default TI LaunchPad MSP-EXP430FR2476LP settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `xmc1300_sense2gol.json <https://github.com/Infineon/platformio-infineonxmc/blob/master/boards/xmc1300_sense2gol.json>`_. For example,
+board manifest `lpmsp430fr2476.json <https://github.com/platformio/platform-timsp430/blob/master/boards/lpmsp430fr2476.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:xmc1300_sense2gol]
-  platform = infineonxmc
-  board = xmc1300_sense2gol
+  [env:lpmsp430fr2476]
+  platform = timsp430
+  board = lpmsp430fr2476
 
   ; change microcontroller
-  board_build.mcu = XMC1300
+  board_build.mcu = msp430fr2476
 
   ; change MCU frequency
-  board_build.f_cpu = 32000000L
+  board_build.f_cpu = 16000000L
 
 Debugging
 ---------
@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-XMC1300 Sense2GoL has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+TI LaunchPad MSP-EXP430FR2476LP has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -84,7 +84,7 @@ XMC1300 Sense2GoL has on-board debug probe and **IS READY** for debugging. You d
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_mspdebug`
     - Yes
     - Yes
 

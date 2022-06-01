@@ -50,9 +50,6 @@ Platforms
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
-    * - :ref:`platform_infineonxmc`
-      - Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform
-
     * - :ref:`platform_intel_arc32`
       - ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
@@ -92,7 +89,6 @@ Examples
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Arduino for Infineon XMC <https://github.com/Infineon/platformio-infineonxmc/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -1540,15 +1536,21 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - MSP430FR2433
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB
@@ -1636,54 +1638,6 @@ You do not need to use/buy external debug probe.
       - 16MHz
       - 127KB
       - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
     * - :ref:`board_nordicnrf52_dwm1001_dev`
       - :ref:`platform_nordicnrf52`
       - NRF52832
@@ -7516,76 +7470,6 @@ Imbrios
       - 4MB
       - 320KB
 
-Infineon
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_infineonxmc_xmc1100_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_h_bridge2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1100_xmc2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1100
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 64KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1300_sense2gol`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1300
-      - 32MHz
-      - 32KB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc1400_boot_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC1400
-      - 48MHz
-      - 1.95MB
-      - 16KB
-    * - :ref:`board_infineonxmc_xmc4200_distance2go`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4200
-      - 80MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_infineonxmc_xmc4700_relax_kit`
-      - :ref:`platform_infineonxmc`
-      - On-board
-      - XMC4700
-      - 144MHz
-      - 2.00MB
-      - 1.95MB
-
 Intel
 ~~~~~
 
@@ -11400,6 +11284,13 @@ TI
       - 16MHz
       - 3.75KB
       - 1KB
+    * - :ref:`board_timsp430_lpmsp430fr2355`
+      - :ref:`platform_timsp430`
+      - On-board
+      - MSP430FR2355
+      - 16MHz
+      - 32KB
+      - 4KB
     * - :ref:`board_timsp430_lpmsp430fr2433`
       - :ref:`platform_timsp430`
       - On-board
@@ -11407,10 +11298,10 @@ TI
       - 8MHz
       - 15KB
       - 4KB
-    * - :ref:`board_timsp430_lpmsp430g2476`
+    * - :ref:`board_timsp430_lpmsp430fr2476`
       - :ref:`platform_timsp430`
       - On-board
-      - MSP430G2476
+      - MSP430FR2476
       - 16MHz
       - 64KB
       - 8KB

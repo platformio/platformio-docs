@@ -487,13 +487,6 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_saml21_xpro_b`
-      - :ref:`platform_atmelsam`
-      - On-board
-      - SAML21J18B
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_nordicnrf51_bbcmicrobit`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -697,20 +690,6 @@ Boards
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_nordicnrf51_dfcm_nnn40`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_nordicnrf51_delta_dfcm_nnn50`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_demo_f030f4`
       - :ref:`platform_ststm32`
       - External
@@ -1138,13 +1117,6 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nordicnrf51_wallbot_ble`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - On-board
@@ -1418,13 +1390,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nordicnrf51_nrf51_mkit`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_nordicnrf51_nrf51_dk`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -2461,20 +2426,6 @@ Boards
       - 72MHz
       - 256KB
       - 48KB
-    * - :ref:`board_nordicnrf51_seeedArchBLE`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_nordicnrf51_seeedArchLink`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_ststm32_seeedArchMax`
       - :ref:`platform_ststm32`
       - On-board
@@ -2545,13 +2496,6 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
-    * - :ref:`board_nordicnrf51_hrm1017`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB
     * - :ref:`board_nxplpc_lpc1114fn28`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2566,13 +2510,6 @@ Boards
       - 30MHz
       - 32KB
       - 8KB
-    * - :ref:`board_nordicnrf51_ty51822r3`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 32MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_espressif32_dpu_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -3000,10 +2937,3 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nordicnrf51_nrf51822_y5_mbug`
-      - :ref:`platform_nordicnrf51`
-      - On-board
-      - NRF51822
-      - 16MHz
-      - 256KB
-      - 16KB

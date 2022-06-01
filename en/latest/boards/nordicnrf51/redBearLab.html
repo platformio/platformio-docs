@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RedBearLab nRF51822 &mdash; PlatformIO latest documentation</title>
+  <title>RedBearLab nRF51822 &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Seeed Arch BLE" href="seeedArchBLE.html" />
+    <link rel="next" title="Seeed Tiny BLE" href="seeedTinyBLE.html" />
     <link rel="prev" title="RedBearLab BLE Nano 1.5" href="redBearLabBLENano.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -80,7 +80,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#infineon-xmc">Infineon XMC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
@@ -91,12 +90,8 @@
 <li class="toctree-l3"><a class="reference internal" href="bbcmicrobit.html">BBC micro:bit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bluz_dk.html">BluzDK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="calliope_mini.html">Calliope mini</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dfcm_nnn40.html">Delta DFCM-NNN40</a></li>
-<li class="toctree-l3"><a class="reference internal" href="delta_dfcm_nnn50.html">Delta DFCM-NNN50</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wallbot_ble.html">JKSoft Wallbot BLE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nrf51_beacon.html">Nordic Beacon Kit (PCA20006)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nrf51_dongle.html">Nordic nRF51 Dongle (PCA10031)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nrf51_mkit.html">Nordic nRF51822-mKIT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nrf51_dk.html">Nordic nRF51X22 Development Kit(PCA1000X)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="oshchip.html">OSHChip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="redBearLabBLENano.html">RedBearLab BLE Nano 1.5</a></li>
@@ -108,16 +103,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="seeedArchBLE.html">Seeed Arch BLE</a></li>
-<li class="toctree-l3"><a class="reference internal" href="seeedArchLink.html">Seeed Arch Link</a></li>
 <li class="toctree-l3"><a class="reference internal" href="seeedTinyBLE.html">Seeed Tiny BLE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Sinobit.html">Sino:Bit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="hrm1017.html">Switch Science mbed HRM1017</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ty51822r3.html">Switch Science mbed TY51822r3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vbluno51.html">VNG VBLUNO51</a></li>
 <li class="toctree-l3"><a class="reference internal" href="waveshare_ble400.html">Waveshare BLE400</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ng_beacon.html">ng-beacon</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nrf51822_y5_mbug.html">y5 nRF51822 mbug</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf52">Nordic nRF52</a></li>
@@ -227,7 +217,7 @@
 <td><p>16KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
-<td><p><a class="reference external" href="https://developer.mbed.org/platforms/RedBearLab-nRF51822/?utm_source=platformio.org&amp;utm_medium=docs">RedBearLab</a></p></td>
+<td><p><a class="reference external" href="https://www.seeedstudio.com/RedBearLab-nRF51822-p-2126.html?utm_source=platformio.org&amp;utm_medium=docs">RedBearLab</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -263,7 +253,6 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <li><p><code class="docutils literal notranslate"><span class="pre">blackmagic</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cmsis-dap</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mbed</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">nrfjprog</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">stlink</span></code></p></li>
 </ul>
@@ -337,9 +326,6 @@ instructions and configuration information.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
-<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -350,7 +336,7 @@ instructions and configuration information.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="redBearLabBLENano.html" class="btn btn-neutral float-left" title="RedBearLab BLE Nano 1.5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="seeedArchBLE.html" class="btn btn-neutral float-right" title="Seeed Arch BLE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="seeedTinyBLE.html" class="btn btn-neutral float-right" title="Seeed Tiny BLE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -471,7 +457,7 @@ instructions and configuration information.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2rc2 (latest)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

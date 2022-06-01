@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atmel SAM &mdash; PlatformIO latest documentation</title>
+  <title>Atmel SAM &mdash; PlatformIO v6.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -87,7 +87,6 @@
 <li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="infineonxmc.html">Infineon XMC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
@@ -195,17 +194,12 @@
 <h2><a class="toc-backref" href="#id2">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Atmel SAM development platform repository</a>:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-blink?utm_source=platformio.org&amp;utm_medium=docs">mbed-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-serial?utm_source=platformio.org&amp;utm_medium=docs">mbed-serial</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-blink?utm_source=platformio.org&amp;utm_medium=docs">zephyr-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-subsys-logger?utm_source=platformio.org&amp;utm_medium=docs">zephyr-subsys-logger</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-events?utm_source=platformio.org&amp;utm_medium=docs">mbed-events</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/simba-blink?utm_source=platformio.org&amp;utm_medium=docs">simba-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-internal-libs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-lcd-hd44780?utm_source=platformio.org&amp;utm_medium=docs">zephyr-drivers-lcd-hd44780</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-external-libs</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/mbed-dsp?utm_source=platformio.org&amp;utm_medium=docs">mbed-dsp</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio.org&amp;utm_medium=docs">arduino-web-thing-led</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio.org&amp;utm_medium=docs">arduino-briki-internal-libs</a></p></li>
 </ul>
@@ -287,12 +281,6 @@ You do not need to use/buy external debug probe.</p>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/samd21_xpro.html#board-atmelsam-samd21-xpro"><span class="std std-ref">Atmel SAMD21-XPRO</span></a></p></td>
 <td><p>SAMD21J18A</p></td>
-<td><p>48MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/saml21_xpro_b.html#board-atmelsam-saml21-xpro-b"><span class="std std-ref">Atmel SAML21-XPRO-B</span></a></p></td>
-<td><p>SAML21J18B</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
@@ -860,12 +848,6 @@ of Atmel SAM development platform and the latest upstream version using
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-cmsis-atmel">framework-cmsis-atmel</a></p></td>
 <td><p>Atmel Smart ARM devices CMSIS module</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-mbed">framework-mbed</a></p></td>
-<td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-simba">framework-simba</a></p></td>
-<td><p>Simba is an Embedded Programming Platform. It aims to make embedded programming easy and portable</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-zephyr">framework-zephyr</a></p></td>
 <td><p>Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures</p></td>
 </tr>
@@ -934,10 +916,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
-<td><p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr RTOS</span></a></p></td>
 <td><p>The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind</p></td>
 </tr>
 </tbody>
@@ -1403,13 +1382,6 @@ horizontally.</p></li>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/samd21_xpro.html#board-atmelsam-samd21-xpro"><span class="std std-ref">Atmel SAMD21-XPRO</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>SAMD21J18A</p></td>
-<td><p>48MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/saml21_xpro_b.html#board-atmelsam-saml21-xpro-b"><span class="std std-ref">Atmel SAML21-XPRO-B</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>SAML21J18B</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
@@ -1958,7 +1930,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2rc2 (latest)
+    v6.0.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
