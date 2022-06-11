@@ -143,7 +143,13 @@ default ``20`` (DEC)
 .. option::
     ---quiet
 
-Diagnostics: suppress non-error messages, default ``Off``
+Diagnostics: suppress non-error messages, default ``Off``.
+
+.. option::
+    --reconnect/--no-reconnect
+
+If the established connection fails, silently retry on the same port.
+Automatic reconnection is enabled by default.
 
 .. option::
     -d, --project-dir
