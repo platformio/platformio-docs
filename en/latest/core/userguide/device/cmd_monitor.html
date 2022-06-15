@@ -223,27 +223,29 @@ as port argument when invoking.</p>
 <dd></dd></dl>
 
 <p>Set baud rate, default <code class="docutils literal notranslate"><span class="pre">9600</span></code>.</p>
-<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> using <a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-speed"><span class="std std-ref">monitor_speed</span></a>
-option.</p>
+<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+using <a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-speed"><span class="std std-ref">monitor_speed</span></a> option.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-parity">
 <span class="sig-name descname"><span class="pre">--parity</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-parity" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>Set parity (<em>None, Even, Odd, Space, Mark</em>), one of
-[<code class="docutils literal notranslate"><span class="pre">N</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">S</span></code>, <code class="docutils literal notranslate"><span class="pre">M</span></code>], default <code class="docutils literal notranslate"><span class="pre">N</span></code></p>
+[<code class="docutils literal notranslate"><span class="pre">N</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">S</span></code>, <code class="docutils literal notranslate"><span class="pre">M</span></code>], default is <code class="docutils literal notranslate"><span class="pre">N</span></code>.</p>
+<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> using
+<a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-parity"><span class="std std-ref">monitor_parity</span></a> option.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-rtscts">
 <span class="sig-name descname"><span class="pre">--rtscts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-rtscts" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Enable <code class="docutils literal notranslate"><span class="pre">RTS/CTS</span></code> flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<p>Enable <code class="docutils literal notranslate"><span class="pre">RTS/CTS</span></code> flow control.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-xonxoff">
 <span class="sig-name descname"><span class="pre">--xonxoff</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-xonxoff" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Enable software flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<p>Enable software flow control.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-rts">
 <span class="sig-name descname"><span class="pre">--rts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-rts" title="Permalink to this definition">¶</a></dt>
@@ -265,7 +267,9 @@ option.</p>
 <span class="sig-name descname"><span class="pre">--echo</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-echo" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Enable local echo, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
+<p>Enable local echo.</p>
+<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+using <a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-echo"><span class="std std-ref">monitor_echo</span></a> option.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-encoding">
 <span class="sig-name descname"><span class="pre">--encoding</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-encoding" title="Permalink to this definition">¶</a></dt>
@@ -285,13 +289,16 @@ default <code class="docutils literal notranslate"><span class="pre">UTF-8</span
 <dd></dd></dl>
 
 <p>End of line mode (<code class="docutils literal notranslate"><span class="pre">CR</span></code>, <code class="docutils literal notranslate"><span class="pre">LF</span></code> or <code class="docutils literal notranslate"><span class="pre">CRLF</span></code>), default <code class="docutils literal notranslate"><span class="pre">CRLF</span></code></p>
-<p><strong>NEW</strong>: Available in Miniterm/PySerial 3.0</p>
+<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+using <a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-eol"><span class="std std-ref">monitor_eol</span></a> option.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-raw">
 <span class="sig-name descname"><span class="pre">--raw</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-raw" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Do not apply any encodings/transformations</p>
+<p>Do not apply any encodings/transformations.</p>
+<p>Can be customized in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+using <a class="reference internal" href="../../../projectconf/section_env_monitor.html#projectconf-monitor-raw"><span class="std std-ref">monitor_raw</span></a> option.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-device-monitor-exit-char">
 <span class="sig-name descname"><span class="pre">--exit-char</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-device-monitor-exit-char" title="Permalink to this definition">¶</a></dt>
@@ -665,7 +672,7 @@ Hello PlatformIO!
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.3a3 (latest)
+    v6.0.3a4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

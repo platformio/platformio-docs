@@ -182,6 +182,12 @@ command and generate project via <a class="reference internal" href="../../core/
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio project init --ide vim --board &lt;ID&gt;
 </pre></div>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The libraries which are added, installed or used in the project
+after generating process won’t be reflected in IDE. To fix it you
+need to reinitialize project using <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (repeat it).</p>
+</div>
 <p>Recommended bundles:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/MaskRay/ccls">C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting</a></p></li>
@@ -366,7 +372,7 @@ make firmware and upload it.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.3a3 (latest)
+    v6.0.3a4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

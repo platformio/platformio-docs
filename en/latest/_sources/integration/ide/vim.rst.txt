@@ -42,6 +42,11 @@ command and generate project via :option:`pio project init --ide` command:
 
     pio project init --ide vim --board <ID>
 
+.. warning::
+    The libraries which are added, installed or used in the project
+    after generating process won't be reflected in IDE. To fix it you
+    need to reinitialize project using :ref:`cmd_project_init` (repeat it).
+
 Recommended bundles:
 
 * `C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting <https://github.com/MaskRay/ccls>`_
