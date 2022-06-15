@@ -249,9 +249,13 @@ You can customize Serial Port Monitor using
 
 * :ref:`projectconf_monitor_port`
 * :ref:`projectconf_monitor_speed`
+* :ref:`projectconf_monitor_parity`
+* :ref:`projectconf_monitor_filters`
 * :ref:`projectconf_monitor_rts`
 * :ref:`projectconf_monitor_dtr`
-* :ref:`projectconf_monitor_flags`
+* :ref:`projectconf_monitor_eol`
+* :ref:`projectconf_monitor_raw`
+* :ref:`projectconf_monitor_echo`
 
 Example:
 

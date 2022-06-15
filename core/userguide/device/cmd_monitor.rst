@@ -62,24 +62,27 @@ The possible values are the same as documented for
 
 Set baud rate, default ``9600``.
 
-Can be customized in :ref:`projectconf` using :ref:`projectconf_monitor_speed`
-option.
+Can be customized in :ref:`projectconf`
+using :ref:`projectconf_monitor_speed` option.
 
 .. option::
     --parity
 
 Set parity (*None, Even, Odd, Space, Mark*), one of
-[``N``, ``E``, ``O``, ``S``, ``M``], default ``N``
+[``N``, ``E``, ``O``, ``S``, ``M``], default is ``N``.
+
+Can be customized in :ref:`projectconf` using
+:ref:`projectconf_monitor_parity` option.
 
 .. option::
     --rtscts
 
-Enable ``RTS/CTS`` flow control, default ``Off``
+Enable ``RTS/CTS`` flow control.
 
 .. option::
     --xonxoff
 
-Enable software flow control, default ``Off``
+Enable software flow control.
 
 .. option::
     --rts
@@ -100,7 +103,10 @@ option.
 .. option::
     --echo
 
-Enable local echo, default ``Off``
+Enable local echo.
+
+Can be customized in :ref:`projectconf`
+using :ref:`projectconf_monitor_echo` option.
 
 .. option::
     --encoding
@@ -118,12 +124,16 @@ Add text transformation. See available filters at :ref:`cmd_device_monitor_filte
 
 End of line mode (``CR``, ``LF`` or ``CRLF``), default ``CRLF``
 
-**NEW**: Available in Miniterm/PySerial 3.0
+Can be customized in :ref:`projectconf`
+using :ref:`projectconf_monitor_eol` option.
 
 .. option::
     --raw
 
-Do not apply any encodings/transformations
+Do not apply any encodings/transformations.
+
+Can be customized in :ref:`projectconf`
+using :ref:`projectconf_monitor_raw` option.
 
 .. option::
     --exit-char
