@@ -214,20 +214,29 @@ exclude other source files from a build process.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
 
-<span class="c1"># private flags (only for the current &quot;SomeLib&quot; source files)</span>
+<span class="c1"># Private flags (only for the current &quot;SomeLib&quot; source files)</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">,</span> <span class="p">[]):</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;HAL&quot;</span><span class="p">:</span>
         <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="n">realpath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;hal&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))])</span>
         <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">SRC_FILTER</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;+&lt;*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;-&lt;hal*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;+&lt;hal/</span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
         <span class="k">break</span>
 
-<span class="c1"># pass flags to the global env (project files, frameworks)</span>
+<span class="c1"># Pass flags to the Global environemnt (project `src` files, frameworks)</span>
 <span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
 <span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_GLOBAL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
 
-<span class="c1"># pass flags to the project dependencies (libraries)</span>
+<span class="c1"># Pass flags to the other Library Dependencies</span>
 <span class="k">for</span> <span class="n">lb</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">GetLibBuilders</span><span class="p">():</span>
     <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_LIBDEPS&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">lb</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;OneWire&quot;</span><span class="p">:</span>
+        <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;OW_PIN&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">)])</span>
+
+<span class="c1"># Operate with the project environment (files located in the `src` folder)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
+<span class="c1"># add (prepend) to the beginning of list</span>
+<span class="n">projenv</span><span class="o">.</span><span class="n">Prepend</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;some/path&quot;</span><span class="p">])</span>
+<span class="c1"># remove specified flags</span>
+<span class="n">projenv</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">&quot;-fno-rtti&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
