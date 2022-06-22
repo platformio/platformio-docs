@@ -43,7 +43,7 @@
 /plus/check-tools/pvs-studio.html -> /advanced/static-code-analysis/tools/pvs-studio.html
 /plus/pio-check.html -> /advanced/static-code-analysis/index.html
 /plus/unit-testing.html -> /advanced/unit-testing/index.html
-/projectconf.html -> projectconf/index.html
+/projectconf.html -> /projectconf/index.html
 /projectconf/advanced_scripting.html -> /scripting/index.html
 /projectconf/dynamic_variables.html -> /projectconf/interpolation.html
 /projectconf/section_env_board.html -> /projectconf/section_env_platform.html

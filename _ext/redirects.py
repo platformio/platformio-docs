@@ -81,12 +81,13 @@ def build_redirect_pages(app, exception):
     is_latest = app.config.html_context.get("is_latest")
     redirects = load_redirects(app.srcdir)
     for from_path, to_path in redirects.items():
+        assert to_path.startswith("/")
         out_dir = app.outdir
         if os.path.dirname(from_path) != "/":
             out_dir = os.path.join(out_dir, os.path.dirname(from_path)[1:])
         build_redirect_page(
             os.path.join(out_dir, os.path.basename(from_path)),
-            "%s/en/%s/%s"
+            "%s/en/%s%s"
             % (
                 app.config.html_baseurl,
                 ("latest" if is_latest else "stable"),
