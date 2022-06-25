@@ -156,7 +156,8 @@
 </li>
 <li><p><strong>Unit Testing</strong></p>
 <ul>
-<li><p>Merged the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> “building” stage with “uploading” for the embedded target (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4307">issue #4307</a>)</p></li>
+<li><p>Export <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> flags only to the project build environment (<code class="docutils literal notranslate"><span class="pre">projenv</span></code>, files in “src” folder)</p></li>
+<li><p>Merged the “building” stage with “uploading” for the embedded target (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4307">issue #4307</a>)</p></li>
 <li><p>Do not resolve dependencies from the project “src” folder when the <a class="reference external" href="https://docs.platformio.org/en/latest//projectconf/section_env_test.html#test-build-src">test_build_src</a> option is not enabled</p></li>
 <li><p>Fixed an issue when a custom <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-c">pio test --project-config</a> was not handled properly (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4299">issue #4299</a>)</p></li>
 </ul>
