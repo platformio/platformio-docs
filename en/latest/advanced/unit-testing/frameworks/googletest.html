@@ -222,7 +222,7 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">())</span><span class="w"></span>
 <span class="w">  </span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="c1">// sleep 1 sec</span>
+<span class="w">  </span><span class="c1">// sleep for 1 sec</span>
 <span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
@@ -233,10 +233,7 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 <span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
 <span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
 
-<span class="w">    </span><span class="c1">// Always return zero-code and allow PlatformIO to parse results</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">())</span><span class="w"></span>
-<span class="w">    </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">RUN_ALL_TESTS</span><span class="p">();</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 <span class="cp">#endif</span>
 </pre></div>
