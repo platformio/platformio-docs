@@ -81,7 +81,7 @@ Please check `PlatformIO Registry Plans <https://registry.platformio.org/pricing
 Do not notify by email when a package is processed. The default behavior is to notify.
 
 .. option::
-  --non-interactive
+  --no-interactive
 
 Do not show an interactive prompt.
 
