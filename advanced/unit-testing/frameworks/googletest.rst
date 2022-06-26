@@ -74,19 +74,19 @@ to the ``googletest`` and implement your own ``main()`` function:
       // default value is test_speed=115200
       Serial.begin(115200);
 
-      // give the 1-2 seconds to the test runner to connect to the board
-      delay(1000);
-
       ::testing::InitGoogleTest();
       // if you plan to use GMock, replace the line above with
       // ::testing::InitGoogleMock(&argc, argv);
-      if (RUN_ALL_TESTS());
   }
 
   void loop()
   {
-      // nothing to be done here.
-      delay(100);
+    // Run tests
+    if (RUN_ALL_TESTS())
+    ;
+
+    // sleep 1 sec
+    delay(1000);
   }
 
   #else
@@ -95,7 +95,11 @@ to the ``googletest`` and implement your own ``main()`` function:
       ::testing::InitGoogleTest(&argc, argv);
       // if you plan to use GMock, replace the line above with
       // ::testing::InitGoogleMock(&argc, argv);
-      return RUN_ALL_TESTS();
+
+      // Always return zero-code and allow PlatformIO to parse results
+      if (RUN_ALL_TESTS())
+      ;
+      return 0;
   }
   #endif
 
