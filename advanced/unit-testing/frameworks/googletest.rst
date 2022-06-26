@@ -85,7 +85,7 @@ to the ``googletest`` and implement your own ``main()`` function:
     if (RUN_ALL_TESTS())
     ;
 
-    // sleep 1 sec
+    // sleep for 1 sec
     delay(1000);
   }
 
@@ -96,10 +96,7 @@ to the ``googletest`` and implement your own ``main()`` function:
       // if you plan to use GMock, replace the line above with
       // ::testing::InitGoogleMock(&argc, argv);
 
-      // Always return zero-code and allow PlatformIO to parse results
-      if (RUN_ALL_TESTS())
-      ;
-      return 0;
+      return RUN_ALL_TESTS();
   }
   #endif
 
