@@ -68,9 +68,9 @@ open your system terminal app and paste these commands
 
 .. code-block:: shell
 
-    ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
-    ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
-    ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+    ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
+    ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio
+    ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
 
 After that, you should be able to run PlatformIO from terminal. No restart is required.
 
