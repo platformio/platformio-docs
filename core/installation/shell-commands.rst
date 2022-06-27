@@ -77,7 +77,7 @@ open your system terminal app and paste these commands.
 (**PROBABLY requires** administrator access ``sudo``):
 
 .. code-block:: shell
-
+    mkdir -p /usr/local/bin
     ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
     ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
     ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
