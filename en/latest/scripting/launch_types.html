@@ -78,7 +78,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Scripting</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Launch Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="construction_environments.html">Construction Environments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="actions.html">Before/Pre and After/Post Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Pre &amp; Post Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="middlewares.html">Build Middlewares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom_targets.html">Custom Targets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html">Examples</a></li>
@@ -132,15 +132,30 @@
            <div itemprop="articleBody">
              
   <section id="launch-types">
-<h1>Launch Types<a class="headerlink" href="#launch-types" title="Permalink to this heading">¶</a></h1>
-<p>There are two execution orders for extra scripts:</p>
-<ol class="arabic simple">
-<li><p><strong>PRE</strong> - executes before the main script of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
-<li><p><strong>POST</strong> - executes after the main script of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
-</ol>
-<p>Multiple extra scripts are allowed. Please split them via  “, ”
-(comma + space) in the same line or use multi-line values.</p>
-<p>For example, in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<span id="scripting-launch-types"></span><h1>Launch Types<a class="headerlink" href="#launch-types" title="Permalink to this heading">¶</a></h1>
+<p>There are two execution types for extra scripts:</p>
+<ul>
+<li><p><strong>PRE</strong> - executes before the main script of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>
+<p>Useful to pre-generate extra source files or make dynamic
+changes/patches to the existing, pass flags to the global
+building environment, add <a class="reference internal" href="middlewares.html#scripting-middlewares"><span class="std std-ref">Build Middlewares</span></a>, etc.
+Please note that the <code class="docutils literal notranslate"><span class="pre">projenv</span></code>
+(see <a class="reference internal" href="construction_environments.html#scripting-envs"><span class="std std-ref">Construction Environments</span></a>) is not available at this stage.</p>
+</li>
+<li><p><strong>POST</strong> - executes after the <strong>PRE</strong> and the main script of
+<a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>
+<p>The building environment is fully constructed at this stage with
+all build flags, development platform targets, dependent libraries,
+and <code class="docutils literal notranslate"><span class="pre">projenv</span></code>. Useful to assign <a class="reference internal" href="actions.html#scripting-actions"><span class="std std-ref">Pre &amp; Post Actions</span></a>,
+modify default build flags set by the development platform,
+or extend the building workflow.</p>
+</li>
+</ul>
+<p>The extra scripts can be configured using the <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>
+option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The launch type can be specified as a prefix
+(<code class="docutils literal notranslate"><span class="pre">pre:</span></code> or <code class="docutils literal notranslate"><span class="pre">post:</span></code>) to the script path.
+If there is no prefix specified, the <code class="docutils literal notranslate"><span class="pre">post:</span></code> will be used automatically.</p>
+<p><strong>Example</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_env_1]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 <span class="c1">; Defaults to POST script since no prefix is used</span><span class="w"></span>
@@ -154,7 +169,6 @@
 <span class="w">  </span><span class="na">post_extra_script2.py</span><span class="w"></span>
 </pre></div>
 </div>
-<p>This option can also be set by the global environment variable <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_EXTRA_SCRIPTS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_EXTRA_SCRIPTS</span></code></a>.</p>
 </section>
 
 
@@ -283,7 +297,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.3rc2 (latest)
+    v6.1.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

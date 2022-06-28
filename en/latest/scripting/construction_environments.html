@@ -24,7 +24,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Before/Pre and After/Post Actions" href="actions.html" />
+    <link rel="next" title="Pre &amp; Post Actions" href="actions.html" />
     <link rel="prev" title="Launch Types" href="launch_types.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -78,7 +78,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Scripting</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="launch_types.html">Launch Types</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Construction Environments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="actions.html">Before/Pre and After/Post Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Pre &amp; Post Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="middlewares.html">Build Middlewares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom_targets.html">Custom Targets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html">Examples</a></li>
@@ -132,23 +132,34 @@
            <div itemprop="articleBody">
              
   <section id="construction-environments">
-<h1>Construction Environments<a class="headerlink" href="#construction-environments" title="Permalink to this heading">¶</a></h1>
-<p>The PlatformIO Build System uses two built-in construction environments
-to process each project:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">env</span></code>, <code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> - the global construction environment used
-for the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> build scripts, upload tools,
-<a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a>, and other internal operations</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">projenv</span></code>, <code class="docutils literal notranslate"><span class="pre">Import(&quot;projenv&quot;)</span></code> - the isolated construction environment
-used for processing the project source code in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>.
-Please note that any <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-src-flags"><span class="std std-ref">build_src_flags</span></a> specified in
-<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> will be passed to the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> and not to the <code class="docutils literal notranslate"><span class="pre">env</span></code>.</p></li>
+<span id="scripting-envs"></span><h1>Construction Environments<a class="headerlink" href="#construction-environments" title="Permalink to this heading">¶</a></h1>
+<p>The PlatformIO Build System uses the following construction environments
+to process a project:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code>, <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code> - the global
+construction environment.</p>
+<p>Is used for the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> build scripts,
+upload tools, <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a>, and for other internal operations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> and <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a>,
+the <code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> environment refers to the library’s isolated
+environment from which a script was called (not to the global environemnt).
+Please use <code class="docutils literal notranslate"><span class="pre">env</span> <span class="pre">=</span> <span class="pre">DefaultEnvironment()</span></code> instead to access the global
+environemnt.</p>
+</div>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;projenv&quot;)</span></code> - the isolated construction environment
+used for processing the project source code in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>.</p>
+<p>Please note that any <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-src-flags"><span class="std std-ref">build_src_flags</span></a> specified in
+<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> will be passed to the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> and not to the <code class="docutils literal notranslate"><span class="pre">env</span></code>.</p>
+</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">projenv</span></code> is available only for POST-type scripts</p></li>
-<li><p>Flags passed to <code class="docutils literal notranslate"><span class="pre">env</span></code> using PRE-type script will affect <code class="docutils literal notranslate"><span class="pre">projenv</span></code> too.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">projenv</span></code> is available only for the POST-type scripts (see <a class="reference internal" href="launch_types.html#scripting-launch-types"><span class="std std-ref">Launch Types</span></a>)</p></li>
+<li><p>Flags passed to the <code class="docutils literal notranslate"><span class="pre">env</span></code> using PRE-type script will affect the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> too.</p></li>
 </ol>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">my_pre_extra_script.py</span></code>:</p>
@@ -200,8 +211,6 @@ Please note that any <a class="reference internal" href="../projectconf/section_
 <span class="p">])</span>
 </pre></div>
 </div>
-<p>See examples below how to import construction environments and modify existing
-data or add new.</p>
 </section>
 
 
@@ -209,7 +218,7 @@ data or add new.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="launch_types.html" class="btn btn-neutral float-left" title="Launch Types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="actions.html" class="btn btn-neutral float-right" title="Before/Pre and After/Post Actions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="actions.html" class="btn btn-neutral float-right" title="Pre &amp; Post Actions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -330,7 +339,7 @@ data or add new.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.3rc2 (latest)
+    v6.1.0b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
