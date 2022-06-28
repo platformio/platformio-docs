@@ -9,18 +9,36 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _scripting_launch_types:
+
 Launch Types
 ------------
 
-There are two execution orders for extra scripts:
+There are two execution types for extra scripts:
 
-1. **PRE** - executes before the main script of :ref:`platforms`
-2. **POST** - executes after the main script of :ref:`platforms`
+*  **PRE** - executes before the main script of :ref:`platforms`.
 
-Multiple extra scripts are allowed. Please split them via  ", "
-(comma + space) in the same line or use multi-line values.
+   Useful to pre-generate extra source files or make dynamic
+   changes/patches to the existing, pass flags to the global
+   building environment, add :ref:`scripting_middlewares`, etc.
+   Please note that the ``projenv``
+   (see :ref:`scripting_envs`) is not available at this stage.
 
-For example, in :ref:`projectconf`:
+*  **POST** - executes after the **PRE** and the main script of
+   :ref:`platforms`.
+
+   The building environment is fully constructed at this stage with
+   all build flags, development platform targets, dependent libraries,
+   and ``projenv``. Useful to assign :ref:`scripting_actions`,
+   modify default build flags set by the development platform,
+   or extend the building workflow.
+
+The extra scripts can be configured using the :ref:`projectconf_extra_scripts`
+option in :ref:`projectconf`. The launch type can be specified as a prefix
+(``pre:`` or ``post:``) to the script path.
+If there is no prefix specified, the ``post:`` will be used automatically.
+
+**Example**
 
 .. code-block:: ini
 
@@ -35,5 +53,3 @@ For example, in :ref:`projectconf`:
     pre:pre_extra_script.py
     post:post_extra_script1.py
     post_extra_script2.py
-
-This option can also be set by the global environment variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.

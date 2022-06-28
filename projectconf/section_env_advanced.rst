@@ -91,9 +91,12 @@ Example:
 
 Type: ``FilePath`` | Multiple: ``Yes``
 
-A list of PRE and POST extra scripts.
-
-See details and examples in :ref:`scripting` section.
+A list of PRE and POST extra scripts. Paths are relative to the project
+folder. See details and examples in the :ref:`scripting` and
+:ref:`scripting_launch_types` sections.
 
 If you plan to share these scripts with :ref:`pioremote` machine, please
 put them to :ref:`projectconf_pio_shared_dir`.
+
+This option can also be set by the global environment
+variable :envvar:`PLATFORMIO_EXTRA_SCRIPTS`.
