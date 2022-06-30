@@ -32,8 +32,14 @@ Sometimes is useful to have a different firmware/program name in
 
     Import("env")
 
-    my_flags = env.ParseFlags(env['BUILD_FLAGS'])
-    defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
-    # print(defines)
+    build_flags = env.ParseFlags(env["BUILD_FLAGS"])
+    cppdefines = build_flags.get("CPPDEFINES") or {}
+    if cppdefines:
+        cppdefines = dict(
+            # Support "unvalued" defines, like `-DFOO`.
+            (kv_or_k, None) if isinstance(kv_or_k, str) else kv_or_k
+            for kv_or_k in cppdefines
+        )
+    # print(cppdefines)
 
-    env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+    env.Replace(PROGNAME="firmware_%s" % cppdefines.get("VERSION"))
