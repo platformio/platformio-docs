@@ -72,7 +72,7 @@ The ``extra_script.py`` file is located in the same directory as
     # Custom actions for specific files/objects
     #
 
-    env.AddPreAction("$PROG_PATH", callback...)
+    env.AddPreAction("$PROGPATH", callback...)
     env.AddPreAction("$BUILD_DIR/${PROGNAME}.elf", [callback1, callback2,...])
     env.AddPostAction("$BUILD_DIR/${PROGNAME}.hex", callback...)
 
