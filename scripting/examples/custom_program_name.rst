@@ -13,18 +13,22 @@ Custom firmware/program name
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes is useful to have a different firmware/program name in
-:ref:`projectconf_pio_build_dir`.
+:ref:`projectconf_pio_build_dir`. The following example uses
+:ref:`scripting_example_custom_project_conf_options` and adds
+a project version suffix to the firmware name.
 
 ``platformio.ini``:
 
 .. code-block:: ini
 
     [env:env_custom_prog_name]
-    platform = espressif8266
-    board = nodemcuv2
+    platform = espressif32
     framework = arduino
-    build_flags = -D VERSION=13
+    board = esp32dev
+    build_flags =
+        -DVERSION=${this.custom_prog_version}
     extra_scripts = pre:extra_script.py
+    custom_prog_version = 1.2.3
 
 ``extra_script.py``:
 
@@ -32,8 +36,4 @@ Sometimes is useful to have a different firmware/program name in
 
     Import("env")
 
-    my_flags = env.ParseFlags(env['BUILD_FLAGS'])
-    defines = {k: v for (k, v) in my_flags.get("CPPDEFINES")}
-    # print(defines)
-
-    env.Replace(PROGNAME="firmware_%s" % defines.get("VERSION"))
+    env.Replace(PROGNAME="firmware_%s" % env.GetProjectOption("custom_prog_version"))
