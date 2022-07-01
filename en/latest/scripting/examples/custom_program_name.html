@@ -147,24 +147,24 @@
   <section id="custom-firmware-program-name">
 <h1>Custom firmware/program name<a class="headerlink" href="#custom-firmware-program-name" title="Permalink to this heading">¶</a></h1>
 <p>Sometimes is useful to have a different firmware/program name in
-<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-build-dir"><span class="std std-ref">build_dir</span></a>.</p>
+<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-build-dir"><span class="std std-ref">build_dir</span></a>. The following example uses
+<a class="reference internal" href="platformio_ini_custom_options.html#scripting-example-custom-project-conf-options"><span class="std std-ref">Custom options in platformio.ini</span></a> and adds
+a project version suffix to the firmware name.</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:env_custom_prog_name]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=13</span><span class="w"></span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="na">-DVERSION</span><span class="o">=</span><span class="s">${this.custom_prog_version}</span><span class="w"></span>
 <span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pre:extra_script.py</span><span class="w"></span>
+<span class="na">custom_prog_version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1.2.3</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
-<span class="n">my_flags</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">ParseFlags</span><span class="p">(</span><span class="n">env</span><span class="p">[</span><span class="s1">&#39;BUILD_FLAGS&#39;</span><span class="p">])</span>
-<span class="n">defines</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">my_flags</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">)}</span>
-<span class="c1"># print(defines)</span>
-
-<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">PROGNAME</span><span class="o">=</span><span class="s2">&quot;firmware_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">defines</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;VERSION&quot;</span><span class="p">))</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">PROGNAME</span><span class="o">=</span><span class="s2">&quot;firmware_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_prog_version&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>
