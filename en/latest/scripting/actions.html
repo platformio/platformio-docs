@@ -183,7 +183,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="c1"># Custom actions for specific files/objects</span>
 <span class="c1">#</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$PROG_PATH&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">callback1</span><span class="p">,</span> <span class="n">callback2</span><span class="p">,</span><span class="o">...</span><span class="p">])</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
