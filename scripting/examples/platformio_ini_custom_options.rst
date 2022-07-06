@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _scripting_example_custom_project_conf_options:
+
 Custom options in ``platformio.ini``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

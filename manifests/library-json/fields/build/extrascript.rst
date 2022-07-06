@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _library_json_buid_extra_script:
+
 ``extraScript``
 ~~~~~~~~~~~~~~~
 
@@ -75,17 +77,26 @@ Project structure
     Import('env')
     from os.path import join, realpath
 
-    # private flags (only for the current "SomeLib" source files)
+    # Private flags (only for the current "SomeLib" source files)
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
             env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
-    # pass flags to the global env (project files, frameworks)
+    # Pass flags to the Global environemnt (project `src` files, frameworks)
     global_env = DefaultEnvironment()
     global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
 
-    # pass flags to the project dependencies (libraries)
+    # Pass flags to the other Library Dependencies
     for lb in env.GetLibBuilders():
         lb.env.Append(CPPDEFINES=[("TEST_LIBDEPS", 1)])
+        if lb.name == "OneWire":
+            lb.env.Append(CPPDEFINES=[("OW_PIN", 13)])
+
+    # Operate with the project environment (files located in the `src` folder)
+    Import("projenv")
+    # add (prepend) to the beginning of list
+    projenv.Prepend(CPPPATH=["some/path"])
+    # remove specified flags
+    projenv.ProcessUnFlags("-fno-rtti")
