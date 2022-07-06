@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoogleTest &mdash; PlatformIO v6.0 documentation</title>
+  <title>GoogleTest &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
@@ -211,19 +211,19 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 <span class="w">    </span><span class="c1">// default value is test_speed=115200</span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span><span class="w"></span>
 
-<span class="w">    </span><span class="c1">// give the 1-2 seconds to the test runner to connect to the board</span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
-
 <span class="w">    </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">InitGoogleTest</span><span class="p">();</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
 <span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">());</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// nothing to be done here.</span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Run tests</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">())</span><span class="w"></span>
+<span class="w">  </span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// sleep for 1 sec</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="cp">#else</span>
@@ -232,7 +232,12 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 <span class="w">    </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">InitGoogleTest</span><span class="p">(</span><span class="o">&amp;</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// if you plan to use GMock, replace the line above with</span>
 <span class="w">    </span><span class="c1">// ::testing::InitGoogleMock(&amp;argc, argv);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">RUN_ALL_TESTS</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">RUN_ALL_TESTS</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Always return zero-code and allow PlatformIO to parse results</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 <span class="cp">#endif</span>
 </pre></div>
@@ -429,7 +434,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

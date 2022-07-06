@@ -83,6 +83,16 @@ Example:
     ...
     monitor_speed = 115200
 
+.. _projectconf_monitor_parity:
+
+``monitor_parity``
+^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No`` | Default: ``N``
+
+Enable parity checking. See :option:`pio device monitor --parity`
+for the available values.
+
 .. _projectconf_monitor_filters:
 
 ``monitor_filters``
@@ -100,7 +110,10 @@ Example:
     [env:log_output_to_file_with_timestamp]
     ...
     platform = ...
-    monitor_filters = log2file, time, default
+    monitor_filters =
+      default   ; Remove typical terminal control codes from input
+      time      ; Add timestamp with milliseconds for each new line
+      log2file  ; Log data to a file “platformio-device-monitor-*.log” located in the current working directory
 
 .. _projectconf_monitor_rts:
 
@@ -120,29 +133,30 @@ Type: ``Number (0 or 1)`` | Multiple: ``No``
 
 A monitor initial ``DTR`` line state. See :option:`pio device monitor --dtr`.
 
-.. _projectconf_monitor_flags:
+.. _projectconf_monitor_eol:
 
-``monitor_flags``
-^^^^^^^^^^^^^^^^^
+``monitor_eol``
+^^^^^^^^^^^^^^^
 
-Type: ``String`` | Multiple: ``Yes``
+Type: ``String`` | Multiple: ``No`` | Default: ``CRLF``
 
-Pass extra flags and options to :ref:`cmd_device_monitor` command. Please note
-that each flag, option or its value should be passed in a new line. See
-example below.
+A monitor end of line mode. See :option:`pio device monitor --eol`.
 
-Available flags and options are the same which are documented for
-:ref:`cmd_device_monitor` command.
+.. _projectconf_monitor_raw:
 
-Example:
+``monitor_raw``
+^^^^^^^^^^^^^^^
 
-.. code-block:: ini
+Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
-    [env:extra_monitor_flags]
-    platform = ...
-    board = ...
-    monitor_flags=
-        --parity
-        N
-        --encoding
-        hexlify
+Disable encodings/transformations of device output.
+See :option:`pio device monitor --raw`.
+
+.. _projectconf_monitor_echo:
+
+``monitor_echo``
+^^^^^^^^^^^^^^^^
+
+Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
+
+Enable a monitor local echo. See :option:`pio device monitor --echo`.

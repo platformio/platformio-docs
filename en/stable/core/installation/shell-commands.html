@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Install Shell Commands &mdash; PlatformIO v6.0 documentation</title>
+  <title>Install Shell Commands &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -165,16 +165,17 @@
 </div>
 <section id="unix-and-unix-like">
 <h2><a class="toc-backref" href="#id1">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this heading">¶</a></h2>
-<p>In Unix and Unix-like systems, there are multiple ways to achieve this.</p>
 <section id="method-1">
 <h3><a class="toc-backref" href="#id2">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this heading">¶</a></h3>
-<p>You can export the PlatformIO executables’ directory to the PATH environmental
-variable. This method will allow you to execute <code class="docutils literal notranslate"><span class="pre">platformio</span></code> commands from
-any terminal emulator as long as you’re logged in as the user PlatformIO is
-installed and configured for.</p>
-<p>If you use Bash as your default shell, you can do it by editing either
-<code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the following line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.platformio/penv/bin
+<p>In Unix and Unix-like systems, you can create symbolic links (symlinks)
+in your <code class="docutils literal notranslate"><span class="pre">$HOME/.local/bin/</span></code> directory to the necessary PlatformIO executables.
+This will allow you to execute <code class="docutils literal notranslate"><span class="pre">platformio</span></code> commands from any terminal emulator
+as long as you’re logged in as the user PlatformIO is installed and configured for.</p>
+<p>First, if it’s not already the case, you should export your <code class="docutils literal notranslate"><span class="pre">$HOME/.local/bin/</span></code>
+directory to the PATH environmental variable. If you use Bash as your default shell,
+you can do it by editing either <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the
+following line:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
 </pre></div>
 </div>
 <p>If you use Zsh, you can either edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the code above, or
@@ -183,17 +184,26 @@ the code above, then edit <code class="docutils literal notranslate"><span class
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>emulate sh -c <span class="s1">&#39;. ~/.profile&#39;</span>
 </pre></div>
 </div>
-<p>After everything’s done, just restart your session (log out and log back in) and you’re good to go.</p>
 <p>If you don’t know the difference between the two, check out <a class="reference external" href="https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc">this page</a>.</p>
+<p>Now that is done, or if <code class="docutils literal notranslate"><span class="pre">$HOME/.local/bin/</span></code> was already exported to your PATH environmental
+variable, you can create the symlinks by opening your system terminal app and paste these
+commands.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
+ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio
+ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
+</pre></div>
+</div>
+<p>After everything’s done, just restart your session (log out and log back in) and you’re good to go.</p>
 </section>
 <section id="method-2">
 <h3><a class="toc-backref" href="#id3">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this heading">¶</a></h3>
 <p>You can create system-wide symlinks. This method is not recommended if you have
 multiple users on your computer because the symlinks will be broken for other users
 and they will get errors while executing PlatformIO commands. If that’s not a problem,
-open your system terminal app and paste these commands
-(<strong>MAY require</strong> administrator access <code class="docutils literal notranslate"><span class="pre">sudo</span></code>):</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
+open your system terminal app and paste these commands.
+(<strong>PROBABLY requires</strong> administrator access <code class="docutils literal notranslate"><span class="pre">sudo</span></code>):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir -p /usr/local/bin
+ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
 ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
 ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
 </pre></div>
@@ -336,7 +346,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

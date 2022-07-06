@@ -9,24 +9,36 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _scripting_envs:
+
 Construction Environments
 -------------------------
 
-The PlatformIO Build System uses two built-in construction environments
-to process each project:
+The PlatformIO Build System uses the following construction environments
+to process a project:
 
-* ``env``, ``Import("env")`` - the global construction environment used
-  for the :ref:`platforms` and :ref:`frameworks` build scripts, upload tools,
-  :ref:`ldf`, and other internal operations
-* ``projenv``, ``Import("projenv")`` - the isolated construction environment
-  used for processing the project source code in :ref:`projectconf_pio_src_dir`.
-  Please note that any :ref:`projectconf_build_src_flags` specified in
-  :ref:`projectconf` will be passed to the ``projenv`` and not to the ``env``.
+*  ``Import("env")``, ``DefaultEnvironment()`` - the global
+   construction environment.
 
+   Is used for the :ref:`platforms` and :ref:`frameworks` build scripts,
+   upload tools, :ref:`ldf`, and for other internal operations.
+
+   .. note::
+     If you use :ref:`library_json` and :ref:`library_json_buid_extra_script`,
+     the ``Import("env")`` environment refers to the library's isolated
+     environment from which a script was called (not to the global environemnt).
+     Please use ``env = DefaultEnvironment()`` instead to access the global
+     environemnt.
+
+*  ``Import("projenv")`` - the isolated construction environment
+   used for processing the project source code in :ref:`projectconf_pio_src_dir`.
+
+   Please note that any :ref:`projectconf_build_src_flags` specified in
+   :ref:`projectconf` will be passed to the ``projenv`` and not to the ``env``.
 
 .. warning::
-  1. ``projenv`` is available only for POST-type scripts
-  2. Flags passed to ``env`` using PRE-type script will affect ``projenv`` too.
+  1. ``projenv`` is available only for the POST-type scripts (see :ref:`scripting_launch_types`)
+  2. Flags passed to the ``env`` using PRE-type script will affect the ``projenv`` too.
 
 ``my_pre_extra_script.py``:
 
@@ -81,6 +93,3 @@ to process each project:
       "PROJECT_EXTRA_MACRO_1_NAME",
       ("ROJECT_EXTRA_MACRO_2_NAME", "ROJECT_EXTRA_MACRO_2_VALUE")
     ])
-
-See examples below how to import construction environments and modify existing
-data or add new.

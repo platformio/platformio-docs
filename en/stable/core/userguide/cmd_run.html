@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pio run &mdash; PlatformIO v6.0 documentation</title>
+  <title>pio run &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -234,6 +234,14 @@ build operation. You can configure monitor using
 <p>Custom upload port of embedded board. To print all available ports use
 <a class="reference internal" href="device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
 <p>If upload port is not specified, PlatformIO will try to detect it automatically.</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pio-run-monitor-port">
+<span class="sig-name descname"><span class="pre">--monitor-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-monitor-port" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Custom port that will be passed to the <a class="reference internal" href="device/cmd_monitor.html#cmdoption-pio-device-monitor-p"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--port</span></code></a> command.
+To print all available ports use <a class="reference internal" href="device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
+<p>If monitor port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-run-d">
 <span id="cmdoption-pio-run-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-run-d" title="Permalink to this definition">¶</a></dt>
@@ -702,7 +710,7 @@ avrdude done.  Thank you.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

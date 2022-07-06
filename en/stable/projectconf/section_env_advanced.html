@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced options &mdash; PlatformIO v6.0 documentation</title>
+  <title>Advanced options &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -213,10 +213,13 @@ from the latter one will be used in the final configuration. For example:</p>
 <section id="extra-scripts">
 <span id="projectconf-extra-scripts"></span><h2><code class="docutils literal notranslate"><span class="pre">extra_scripts</span></code><a class="headerlink" href="#extra-scripts" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">FilePath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
-<p>A list of PRE and POST extra scripts.</p>
-<p>See details and examples in <a class="reference internal" href="../scripting/index.html#scripting"><span class="std std-ref">Advanced Scripting</span></a> section.</p>
+<p>A list of PRE and POST extra scripts. Paths are relative to the project
+folder. See details and examples in the <a class="reference internal" href="../scripting/index.html#scripting"><span class="std std-ref">Advanced Scripting</span></a> and
+<a class="reference internal" href="../scripting/launch_types.html#scripting-launch-types"><span class="std std-ref">Launch Types</span></a> sections.</p>
 <p>If you plan to share these scripts with <a class="reference internal" href="../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> machine, please
 put them to <a class="reference internal" href="section_platformio.html#projectconf-pio-shared-dir"><span class="std std-ref">shared_dir</span></a>.</p>
+<p>This option can also be set by the global environment
+variable <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_EXTRA_SCRIPTS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_EXTRA_SCRIPTS</span></code></a>.</p>
 </section>
 </section>
 
@@ -346,7 +349,7 @@ put them to <a class="reference internal" href="section_platformio.html#projectc
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

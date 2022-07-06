@@ -9,8 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Before/Pre and After/Post Actions
----------------------------------
+.. _scripting_actions:
+
+Pre & Post Actions
+------------------
 
 The PlatformIO Build System has a rich API that allows one to attach different pre-/post
 actions (hooks) using ``env.AddPreAction(target, callback)`` or
@@ -22,7 +24,8 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 **Examples**
 
-The ``extra_script.py`` file is located in the same directory as ``platformio.ini``.
+The ``extra_script.py`` file is located in the same directory as
+:ref:`projectconf`.
 
 ``platformio.ini``:
 
@@ -35,23 +38,7 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
 
 .. code-block:: python
 
-    Import("env", "projenv")
-
-    # Dump build environment (for debug purpose)
-    print(env.Dump())
-
-    # access to global build environment
-    print(env)
-
-    # access to the project build environment
-    # (used for source files located in the "src" folder)
-    print(projenv)
-
-    #
-    # Change build flags in runtime
-    #
-    env.ProcessUnFlags("-DVECT_TAB_ADDR")
-    env.Append(CPPDEFINES=("VECT_TAB_ADDR", 0x123456789))
+    Import("env")
 
     #
     # Upload actions
@@ -85,6 +72,7 @@ The ``extra_script.py`` file is located in the same directory as ``platformio.in
     # Custom actions for specific files/objects
     #
 
+    env.AddPreAction("$PROGPATH", callback...)
     env.AddPreAction("$BUILD_DIR/${PROGNAME}.elf", [callback1, callback2,...])
     env.AddPostAction("$BUILD_DIR/${PROGNAME}.hex", callback...)
 

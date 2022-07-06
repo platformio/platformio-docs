@@ -77,6 +77,14 @@ Custom upload port of embedded board. To print all available ports use
 If upload port is not specified, PlatformIO will try to detect it automatically.
 
 .. option::
+    --monitor-port
+
+Custom port that will be passed to the :option:`pio device monitor --port` command.
+To print all available ports use :ref:`cmd_device_list` command.
+
+If monitor port is not specified, PlatformIO will try to detect it automatically.
+
+.. option::
     -d, --project-dir
 
 Specify the path to project directory. By default, ``--project-dir`` is equal

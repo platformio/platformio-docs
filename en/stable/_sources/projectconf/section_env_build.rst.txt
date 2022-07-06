@@ -33,11 +33,23 @@ See extended documentation for :ref:`build_configurations`.
 
 Type: ``String`` | Multiple: ``Yes``
 
-These flags/options affect the preprocessing, compilation, assembly
+These flags/options affect the preprocessing, compilation, assembly,
 and linking processes for C and C++ code. All compiler and linker
-flags can be used. Here is a list of some common options.
+flags can be used. Despite the name, ``CPPDEFINES`` (C PreProcesor)
+rows also apply to the C compiler.
 
-In spite of the name, ``CPPDEFINES`` rows also applies to the C compiler.
+For more detailed information about available compiler flags/options,
+please visit `GCC Command Options <https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html>`__
+official documentation.
+
+This option can also be set by the global environment variable
+:envvar:`PLATFORMIO_BUILD_FLAGS`.
+
+.. contents:: Contents
+    :local:
+
+Scopes (SCons Variables)
+''''''''''''''''''''''''
 
 .. list-table::
     :header-rows:  1
@@ -93,58 +105,6 @@ In spite of the name, ``CPPDEFINES`` rows also applies to the C compiler.
       - Add directory *dir* to the list of directories to be searched for
         ``-l``.
 
-This option can also be set by global environment variable
-:envvar:`PLATFORMIO_BUILD_FLAGS`.
-
-For more detailed information about available flags/options go to:
-
-* `Options to Request or Suppress Warnings
-  <https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html>`_
-* `Options for Debugging Your Program
-  <https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html>`_
-* `Options That Control Optimization
-  <https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html>`_
-* `Options Controlling the Preprocessor
-  <https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html>`_
-* `Passing Options to the Assembler
-  <https://gcc.gnu.org/onlinedocs/gcc/Assembler-Options.html>`_
-* `Options for Linking <https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html>`_
-* `Options for Directory Search
-  <https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html>`_
-
-Examples:
-
-.. code-block:: ini
-
-    [env:specific_defines]
-    build_flags =
-      -DFOO -DBAR=1
-      -D BUILD_ENV_NAME=$PIOENV
-      -D CURRENT_TIME=$UNIX_TIME
-      -DFLOAT_VALUE=1.23457e+07
-
-    [env:string_defines]
-    build_flags =
-      -DHELLO="World!"
-      '-DWIFI_PASS="My password"'
-      ; Password with special chars: My pass'word
-      -DWIFI_PASS=\"My\ pass\'word\"
-
-    [env:specific_inclibs]
-    build_flags =
-      -I/opt/include
-      -L/opt/lib
-      -lfoo
-
-    [env:ignore_incremental_builds]
-    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
-    ; PlatformIO will not cache objects
-    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
-
-.. note::
-  If you need to control build flags that are specific for debug configuration please
-  refer to :ref:`projectconf_debug_build_flags`.
-
 Built-in Variables
 ''''''''''''''''''
 
@@ -164,6 +124,59 @@ See the `full list of PlatformIO variables <https://github.com/platformio/platfo
 
 Please use target ``envdump`` for the :option:`pio run --target`
 command to see ALL variable values for a build environment.
+
+Stringification
+'''''''''''''''
+
+Sometimes you may want to convert a macro argument into a valid C string constant.
+In this case, you need to wrap a value with double quotes (``"``) and escape
+double quotes (``"`` -> ``\\"``) in the constant value.
+
+Here is an example of a macro definition that uses stringification
+and :ref:`projectconf_build_flags`. Please note that we
+enclosed the flag in the single quotes to prevent the shell from
+removing double quotes:
+
+**platformio.ini**
+
+.. code:: ini
+
+  [env:myenv]
+  build_flags =
+      '-DMYSTRING="Text is \\"Quoted\\""'
+
+**src/main.cpp**
+
+.. code:: cpp
+
+  #include <stdio.h>
+
+  int main(void) {
+      printf("MYSTRING=<%s>\n", MYSTRING);
+      return(0);
+  }
+
+If you use :ref:`scripting`, we recommend benefiting from the
+``env.StringifyMacro(value)`` helper function. In this case,
+you don't need to apply any escaping, PlatformIO will do this
+for you:
+
+**platformio.ini**
+
+.. code:: ini
+
+  [env:myenv]
+  extra_scripts = myscript.py
+
+**myscript.py**
+
+.. code:: python
+
+  Import("env")
+
+  env.Append(CPPDEFINES=[
+      ("MYSTRING", env.StringifyMacro('Text is "Quoted"')),
+  ])
 
 .. _projectconf_dynamic_build_flags:
 
@@ -199,7 +212,7 @@ Example:
     build_flags = !cmd_or_path_to_script
 
     ; Unix only, get output from internal command
-    build_flags = !echo "-DSOME_MACRO="$(some_cmd arg1 --option1)
+    build_flags = !echo '-D COMMIT_HASH=\\"'$(git log -1 --format=%%h)'\\"'
 
 
 **Use Case: Create a "PIO_SRC_REV" macro with the latest Git revision**
@@ -218,15 +231,41 @@ in the same directory as ``platformio.ini``.
 
 .. code-block:: py
 
-    import subprocess
+  import subprocess
 
-    revision = (
-        subprocess.check_output(["git", "rev-parse", "HEAD"])
-        .strip()
-        .decode("utf-8")
-    )
-    print("-DGIT_REV='\"%s\"'" % revision)
+  revision = (
+      subprocess.check_output(["git", "rev-parse", "HEAD"])
+      .strip()
+      .decode("utf-8")
+  )
+  print("'-DGIT_REV=\"%s\"'" % revision)
 
+Examples
+''''''''
+
+.. code-block:: ini
+
+    [env:specific_defines]
+    build_flags =
+      -DFOO -DBAR=1
+      -D BUILD_ENV_NAME=$PIOENV
+      -D CURRENT_TIME=$UNIX_TIME
+      -DFLOAT_VALUE=1.23457e+07
+
+    [env:specific_inclibs]
+    build_flags =
+      -I/opt/include
+      -L/opt/lib
+      -lfoo
+
+    [env:ignore_incremental_builds]
+    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
+    ; PlatformIO will not cache objects
+    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
+
+.. note::
+  If you need to control build flags that are specific for debug configuration please
+  refer to :ref:`projectconf_debug_build_flags`.
 
 .. _projectconf_build_src_flags:
 

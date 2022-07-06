@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; PlatformIO v6.0 documentation</title>
+  <title>Index &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -668,6 +668,13 @@
 </li>
       </ul></li>
       <li>
+    --monitor-port
+
+      <ul>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-monitor-port">pio-run command line option</a>
+</li>
+      </ul></li>
+      <li>
     --monitor-rts
 
       <ul>
@@ -700,6 +707,13 @@
 </li>
       </ul></li>
       <li>
+    --no-interactive
+
+      <ul>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-interactive">pio-pkg-publish command line option</a>
+</li>
+      </ul></li>
+      <li>
     --no-notify
 
       <ul>
@@ -711,6 +725,13 @@
 
       <ul>
         <li><a href="core/userguide/cmd_home.html#cmdoption-pio-home-no-open">pio-home command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-reconnect
+
+      <ul>
+        <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-no-reconnect">pio-device-monitor command line option</a>
 </li>
       </ul></li>
       <li>
@@ -729,13 +750,6 @@
         <li><a href="core/userguide/pkg/cmd_uninstall.html#cmdoption-pio-pkg-uninstall-no-save">pio-pkg-uninstall command line option</a>
 </li>
         <li><a href="core/userguide/pkg/cmd_update.html#cmdoption-pio-pkg-update-no-save">pio-pkg-update command line option</a>
-</li>
-      </ul></li>
-      <li>
-    --non-interactive
-
-      <ul>
-        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-non-interactive">pio-pkg-publish command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1711,7 +1725,7 @@
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_DISABLE_PROGRESSBAR">PLATFORMIO_DISABLE_PROGRESSBAR</a>, <a href="envvars.html#index-0">[1]</a>
 </li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_EXTRA_SCRIPTS">PLATFORMIO_EXTRA_SCRIPTS</a>, <a href="scripting/launch_types.html#index-0">[1]</a>
+        <li><a href="envvars.html#envvar-PLATFORMIO_EXTRA_SCRIPTS">PLATFORMIO_EXTRA_SCRIPTS</a>, <a href="projectconf/section_env_advanced.html#index-0">[1]</a>
 </li>
         <li><a href="core/userguide/index.html#index-1">PLATFORMIO_FORCE_ANSI</a>, <a href="envvars.html#envvar-PLATFORMIO_FORCE_ANSI">[1]</a>
 </li>
@@ -2072,6 +2086,8 @@
 </li>
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-menu-char">--menu-char</a>
 </li>
+        <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-no-reconnect">--no-reconnect</a>
+</li>
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-parity">--parity</a>
 </li>
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-p">--port</a>
@@ -2380,9 +2396,9 @@
     pio-pkg-publish command line option
 
       <ul>
-        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-notify">--no-notify</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-interactive">--no-interactive</a>
 </li>
-        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-non-interactive">--non-interactive</a>
+        <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-no-notify">--no-notify</a>
 </li>
         <li><a href="core/userguide/pkg/cmd_publish.html#cmdoption-pio-pkg-publish-owner">--owner</a>
 </li>
@@ -2780,6 +2796,8 @@
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-list-targets">--list-targets</a>
 </li>
+        <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-monitor-port">--monitor-port</a>
+</li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-a">--program-arg</a>
 </li>
         <li><a href="core/userguide/cmd_run.html#cmdoption-pio-run-c">--project-conf</a>
@@ -2971,7 +2989,7 @@
 </li>
       <li><a href="envvars.html#index-0">PLATFORMIO_DISABLE_PROGRESSBAR</a>
 </li>
-      <li><a href="scripting/launch_types.html#index-0">PLATFORMIO_EXTRA_SCRIPTS</a>
+      <li><a href="projectconf/section_env_advanced.html#index-0">PLATFORMIO_EXTRA_SCRIPTS</a>
 </li>
       <li><a href="core/userguide/index.html#index-1">PLATFORMIO_FORCE_ANSI</a>
 </li>
@@ -3174,7 +3192,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

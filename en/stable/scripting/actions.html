@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Before/Pre and After/Post Actions &mdash; PlatformIO v6.0 documentation</title>
+  <title>Pre &amp; Post Actions &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -78,7 +78,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Scripting</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="launch_types.html">Launch Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="construction_environments.html">Construction Environments</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Before/Pre and After/Post Actions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Pre &amp; Post Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="middlewares.html">Build Middlewares</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom_targets.html">Custom Targets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html">Examples</a></li>
@@ -121,7 +121,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Advanced Scripting</a> &raquo;</li>
-      <li>Before/Pre and After/Post Actions</li>
+      <li>Pre &amp; Post Actions</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/scripting/actions.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -131,8 +131,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="before-pre-and-after-post-actions">
-<h1>Before/Pre and After/Post Actions<a class="headerlink" href="#before-pre-and-after-post-actions" title="Permalink to this heading">¶</a></h1>
+  <section id="pre-post-actions">
+<span id="scripting-actions"></span><h1>Pre &amp; Post Actions<a class="headerlink" href="#pre-post-actions" title="Permalink to this heading">¶</a></h1>
 <p>The PlatformIO Build System has a rich API that allows one to attach different pre-/post
 actions (hooks) using <code class="docutils literal notranslate"><span class="pre">env.AddPreAction(target,</span> <span class="pre">callback)</span></code> or
 <code class="docutils literal notranslate"><span class="pre">env.AddPreAction(target,</span> <span class="pre">[callback1,</span> <span class="pre">callback2,</span> <span class="pre">...])</span></code> function. The first
@@ -141,30 +141,15 @@ argument <code class="docutils literal notranslate"><span class="pre">target</sp
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <p><strong>Examples</strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> file is located in the same directory as <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> file is located in the same directory as
+<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:pre_and_post_hooks]</span><span class="w"></span>
 <span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">post:extra_script.py</span><span class="w"></span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">,</span> <span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
-
-<span class="c1"># Dump build environment (for debug purpose)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
-
-<span class="c1"># access to global build environment</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
-
-<span class="c1"># access to the project build environment</span>
-<span class="c1"># (used for source files located in the &quot;src&quot; folder)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">projenv</span><span class="p">)</span>
-
-<span class="c1">#</span>
-<span class="c1"># Change build flags in runtime</span>
-<span class="c1">#</span>
-<span class="n">env</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">&quot;-DVECT_TAB_ADDR&quot;</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;VECT_TAB_ADDR&quot;</span><span class="p">,</span> <span class="mh">0x123456789</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Upload actions</span>
@@ -198,6 +183,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="c1"># Custom actions for specific files/objects</span>
 <span class="c1">#</span>
 
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">callback1</span><span class="p">,</span> <span class="n">callback2</span><span class="p">,</span><span class="o">...</span><span class="p">])</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
@@ -345,7 +331,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.0.2 (stable)
+    v6.1.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
