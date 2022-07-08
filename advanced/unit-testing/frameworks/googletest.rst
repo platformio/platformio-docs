@@ -76,7 +76,7 @@ to the ``googletest`` and implement your own ``main()`` function:
 
       ::testing::InitGoogleTest();
       // if you plan to use GMock, replace the line above with
-      // ::testing::InitGoogleMock(&argc, argv);
+      // ::testing::InitGoogleMock();
   }
 
   void loop()
