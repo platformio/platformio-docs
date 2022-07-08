@@ -11,8 +11,8 @@
 
 .. _ide:
 
-Cloud & Desktop IDE
-===================
+Cloud & Desktop IDEs
+====================
 
 Native Extensions
 -----------------
@@ -26,23 +26,10 @@ next native integrations for:
 
 .. note::
     In our experience, :ref:`ide_vscode` offers better system performance, and users
-    have found it easier to get started
+    have found it easier to get started.
 
-.. _ide_cloud:
-
-Cloud IDE
----------
-
-.. toctree::
-    :maxdepth: 1
-
-    cloud9
-    codeanywhere
-    eclipseche
-
-
-Desktop IDE
------------
+Desktop IDEs
+------------
 
 .. toctree::
     :maxdepth: 1
@@ -58,3 +45,15 @@ Desktop IDE
     vim
     visualstudio
     VSCode <vscode>
+
+.. _ide_cloud:
+
+Cloud IDEs
+----------
+
+.. toctree::
+    :maxdepth: 1
+
+    cloud9
+    codeanywhere
+    eclipseche
