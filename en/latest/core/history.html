@@ -92,10 +92,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#platformio-core-6">PlatformIO Core 6</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">6.1.0 (2022-07-06)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">6.0.2 (2022-06-01)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">6.0.1 (2022-05-17)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">6.0.0 (2022-05-16)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">6.1.1 (2022-??-??)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">6.1.0 (2022-07-06)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">6.0.2 (2022-06-01)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">6.0.1 (2022-05-17)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">6.0.0 (2022-05-16)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#platformio-core-5">PlatformIO Core 5</a></li>
@@ -143,7 +144,13 @@
 <span id="release-notes-6"></span><h2>PlatformIO Core 6<a class="headerlink" href="#platformio-core-6" title="Permalink to this heading">¶</a></h2>
 <p><strong>A professional collaborative platform for declarative, safety-critical, and test-driven embedded development.</strong></p>
 <section id="id1">
-<h3>6.1.0 (2022-07-06)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.1 (2022-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Show “TimeoutError” only in the verbose mode when can not find a serial port</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>6.1.0 (2022-07-06)<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Device Manager</strong></p>
 <ul>
@@ -198,8 +205,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h3>6.0.2 (2022-06-01)<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<section id="id3">
+<h3>6.0.2 (2022-06-01)<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Control <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> verbosity with a new multilevel <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-v">pio test -v</a> command option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4276">issue #4276</a>)</p></li>
 <li><p>Follow symbolic links during searching for the unit test suites (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4288">issue #4288</a>)</p></li>
@@ -209,16 +216,16 @@
 <li><p>Fixed an issue with debugging assembly files without preprocessor (“.s”)</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>6.0.1 (2022-05-17)<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h3>6.0.1 (2022-05-17)<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Improved support for the renamed configuration options (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4270">issue #4270</a>)</p></li>
 <li><p>Fixed an issue when calling the built-in <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html#filters">pio device monitor</a> filters</p></li>
 <li><p>Fixed an issue when using <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/interpolation.html">Interpolation of Values</a> and merging str+int options (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4271">issue #4271</a>)</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>6.0.0 (2022-05-16)<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<section id="id5">
+<h3>6.0.0 (2022-05-16)<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <p>Please check the <a class="reference external" href="https://docs.platformio.org/en/latest/core/migration.html">Migration guide from 5.x to 6.0</a>.</p>
 <ul class="simple">
 <li><p><strong>Package Management</strong></p>
@@ -473,7 +480,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1a1 (latest)
+    v6.1.1a2 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
