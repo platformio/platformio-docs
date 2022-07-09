@@ -11,7 +11,7 @@
 
 .. _board_espressif32_m5stack-coreink:
 
-M5Stick-Core Ink
+M5Stack-Core Ink
 ================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``m5stack-coreink`` ID for :ref:`projectconf_env_board` option in :re
   platform = espressif32
   board = m5stack-coreink
 
-You can override default M5Stick-Core Ink settings per build environment using
+You can override default M5Stack-Core Ink settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `m5stack-coreink.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stack-coreink.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `m5stack-coreink.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-M5Stick-Core Ink supports the following uploading protocols:
+M5Stack-Core Ink supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -85,7 +85,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support M5Stick-Core Ink board.
+:ref:`piodebug` currently does not support M5Stack-Core Ink board.
 
 Frameworks
 ----------
