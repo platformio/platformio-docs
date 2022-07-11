@@ -160,3 +160,12 @@ See :option:`pio device monitor --raw`.
 Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
 Enable a monitor local echo. See :option:`pio device monitor --echo`.
+
+.. _projectconf_monitor_encoding:
+
+``monitor_encoding``
+^^^^^^^^^^^^^^^^^^^^
+
+Type: ``String`` | Multiple: ``No`` | Default: ``UTF-8``
+
+Set the encoding for the serial port. See :option:`pio device monitor --encoding`.
