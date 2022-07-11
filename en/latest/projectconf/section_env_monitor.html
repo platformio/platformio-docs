@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monitor options &mdash; PlatformIO latest documentation</title>
+  <title>Monitor options &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -159,6 +159,7 @@
 <li><p><a class="reference internal" href="#monitor-eol" id="id7"><code class="docutils literal notranslate"><span class="pre">monitor_eol</span></code></a></p></li>
 <li><p><a class="reference internal" href="#monitor-raw" id="id8"><code class="docutils literal notranslate"><span class="pre">monitor_raw</span></code></a></p></li>
 <li><p><a class="reference internal" href="#monitor-echo" id="id9"><code class="docutils literal notranslate"><span class="pre">monitor_echo</span></code></a></p></li>
+<li><p><a class="reference internal" href="#monitor-encoding" id="id10"><code class="docutils literal notranslate"><span class="pre">monitor_encoding</span></code></a></p></li>
 </ul>
 </div>
 <p>Custom options for <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmd-device-monitor"><span class="std std-ref">pio device monitor</span></a> command.</p>
@@ -266,6 +267,11 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 <span id="projectconf-monitor-echo"></span><h2><a class="toc-backref" href="#id9"><code class="docutils literal notranslate"><span class="pre">monitor_echo</span></code></a><a class="headerlink" href="#monitor-echo" title="Permalink to this heading">¶</a></h2>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>Enable a monitor local echo. See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-echo"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--echo</span></code></a>.</p>
+</section>
+<section id="monitor-encoding">
+<span id="projectconf-monitor-encoding"></span><h2><a class="toc-backref" href="#id10"><code class="docutils literal notranslate"><span class="pre">monitor_encoding</span></code></a><a class="headerlink" href="#monitor-encoding" title="Permalink to this heading">¶</a></h2>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code></p>
+<p>Set the encoding for the serial port. See <a class="reference internal" href="../core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-encoding"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--encoding</span></code></a>.</p>
 </section>
 </section>
 
@@ -395,7 +401,7 @@ See <a class="reference internal" href="../core/userguide/device/cmd_monitor.htm
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1rc1 (latest)
+    v6.1.1 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
