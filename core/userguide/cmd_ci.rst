@@ -124,6 +124,12 @@ library ``pio ci --project-option="lib_ignore=SomeLib"``.
     ``pio ci --project-option="build_unflags = -std=gnu++11" --project-option="build_flags = -std=c++14"``
 
 .. option::
+    -e, --environment
+
+Process specified environments declared in :option:`pio ci --project-conf`.
+Multiple environments are allowed.
+
+.. option::
     -v, --verbose
 
 Shows detailed information when processing environments.
