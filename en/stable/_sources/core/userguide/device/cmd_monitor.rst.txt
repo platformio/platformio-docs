@@ -114,6 +114,9 @@ using :ref:`projectconf_monitor_echo` option.
 Set the encoding for the serial port (e.g. ``hexlify``, ``Latin1``, ``UTF-8``),
 default ``UTF-8``.
 
+Can be customized in :ref:`projectconf`
+using :ref:`projectconf_monitor_encoding` option.
+
 .. option::
     -f, --filter
 
@@ -122,7 +125,7 @@ Add text transformation. See available filters at :ref:`cmd_device_monitor_filte
 .. option::
     --eol
 
-End of line mode (``CR``, ``LF`` or ``CRLF``), default ``CRLF``
+End of line mode (``CR``, ``LF`` or ``CRLF``), default ``CRLF``.
 
 Can be customized in :ref:`projectconf`
 using :ref:`projectconf_monitor_eol` option.

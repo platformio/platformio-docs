@@ -14,7 +14,7 @@
 Convert Arduino file to C++ manually
 ------------------------------------
 
-Some :ref:`ide` doesn't support Arduino files (``*.ino`` and ``.pde``) because
+Some :ref:`ide` don't support Arduino files (``*.ino`` and ``.pde``) because
 they are not valid C/C++ based source files:
 
 1. Missing includes such as ``#include <Arduino.h>``
