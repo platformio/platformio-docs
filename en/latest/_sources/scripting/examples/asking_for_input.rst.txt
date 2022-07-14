@@ -24,9 +24,9 @@ See the example below on how to read a user name and set it to the ``USER_NAME``
 
     [env:my_env]
     platform = ...
-    extra_scripts = extra_script.py
+    extra_scripts = prompt-user-data.py
 
-``extra_script.py``:
+``prompt-user-data.py``:
 
 .. code-block:: python
 
@@ -43,5 +43,5 @@ See the example below on how to read a user name and set it to the ``USER_NAME``
     print("Enter your name:")
     user_name = input()
     env.Append(
-        CPPDEFINES=[("USER_NAME", f'\\"{user_name}\\"')],
+        CPPDEFINES=[("USER_NAME",  env.StringifyMacro(user_name))],
     )

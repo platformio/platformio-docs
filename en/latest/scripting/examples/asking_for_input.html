@@ -153,10 +153,10 @@ function for this case.</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_env]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">extra_script.py</span><span class="w"></span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">prompt-user-data.py</span><span class="w"></span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">prompt-user-data.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
 <span class="c1"># Do not run a script when external applications, such as IDEs,</span>
@@ -170,7 +170,7 @@ function for this case.</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enter your name:&quot;</span><span class="p">)</span>
 <span class="n">user_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
-    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;USER_NAME&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&quot;</span><span class="si">{</span><span class="n">user_name</span><span class="si">}</span><span class="se">\\</span><span class="s1">&quot;&#39;</span><span class="p">)],</span>
+    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;USER_NAME&quot;</span><span class="p">,</span>  <span class="n">env</span><span class="o">.</span><span class="n">StringifyMacro</span><span class="p">(</span><span class="n">user_name</span><span class="p">))],</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -302,7 +302,7 @@ function for this case.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.2a2 (latest)
+    v6.1.2a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
