@@ -39,10 +39,11 @@ for the available frameworks.
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
-Process only the :ref:`unit_testing` tests where the name matches specified
-patterns.
+Process only test suites whose path relative to the
+:ref:`projectconf_pio_test_dir` matches the specified pattern.
+See :ref:`unit_testing_test_hierarchy` for more details.
 
-Also, you can override this option using :option:`pio test --filter` command.
+Also, you can override this option using the :option:`pio test --filter` command.
 
 .. list-table::
     :header-rows:  1
@@ -67,10 +68,10 @@ Also, you can override this option using :option:`pio test --filter` command.
 .. code-block:: ini
 
   [env:myenv]
+  platform = native
   test_filter =
-    footest
-    bartest_*
-    test[13]
+    test_common
+    native/*
 
 .. _projectconf_test_ignore:
 
@@ -79,9 +80,11 @@ Also, you can override this option using :option:`pio test --filter` command.
 
 Type: ``String (Pattern)`` | Multiple: ``Yes``
 
-Ignore :ref:`unit_testing` tests where the name matches specified patterns.
+Ignore test suites whose path relative to the
+:ref:`projectconf_pio_test_dir` matches the specified pattern.
+See :ref:`unit_testing_test_hierarchy` for more details.
 
-Also, you can override this option using :option:`pio test --ignore` command.
+Also, you can override this option using the :option:`pio test --ignore` command.
 
 .. list-table::
     :header-rows:  1
@@ -106,10 +109,10 @@ Also, you can override this option using :option:`pio test --ignore` command.
 .. code-block:: ini
 
   [env:myenv]
+  platform = embedded
   test_ignore =
-    footest
-    bartest_*
-    test[13]
+    embedded/*
+    test_suite[13]
 
 .. _projectconf_test_port:
 

@@ -196,71 +196,21 @@
 <span id="cmdoption-pio-test-filter"></span><span class="sig-name descname"><span class="pre">-f</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--filter</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-f" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Process only the tests where the name matches specified patterns. More than one
-pattern is allowed. If you need to filter some tests for a specific
-environment, please take a look at <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> option from
-<a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Pattern</p></th>
-<th class="head"><p>Meaning</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
-<td><p>matches everything</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">?</span></code></p></td>
-<td><p>matches any single character</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[seq]</span></code></p></td>
-<td><p>matches any character in seq</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[!seq]</span></code></p></td>
-<td><p>matches any character not in seq</p></td>
-</tr>
-</tbody>
-</table>
-<p>For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--filter</span> <span class="pre">&quot;mytest*&quot;</span> <span class="pre">-i</span> <span class="pre">&quot;test[13]&quot;</span></code></p>
+<p>Process only test suites whose path relative to the
+<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
+See documentation for the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a>
+project configuration option for more details.</p>
+<p>Example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--filter</span> <span class="pre">&quot;test_common&quot;</span> <span class="pre">-f</span> <span class="pre">&quot;native/*&quot;</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-test-i">
 <span id="cmdoption-pio-test-ignore"></span><span class="sig-name descname"><span class="pre">-i</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--ignore</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-i" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<p>Ignore tests where the name matches specified patterns. More than one
-pattern is allowed. If you need to ignore some tests for a specific
-environment, please take a look at <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> option from
-<a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Pattern</p></th>
-<th class="head"><p>Meaning</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
-<td><p>matches everything</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">?</span></code></p></td>
-<td><p>matches any single character</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[seq]</span></code></p></td>
-<td><p>matches any character in seq</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[!seq]</span></code></p></td>
-<td><p>matches any character not in seq</p></td>
-</tr>
-</tbody>
-</table>
-<p>For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--ignore</span> <span class="pre">&quot;mytest*&quot;</span> <span class="pre">-i</span> <span class="pre">&quot;test[13]&quot;</span></code></p>
+<p>Ignore test suites whose path relative to the
+<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
+See documentation for the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a>
+project configuration option for more details.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--ignore</span> <span class="pre">&quot;embedded/*&quot;</span> <span class="pre">-i</span> <span class="pre">&quot;test_suite[13]&quot;</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-test-upload-port">
 <span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-test-upload-port" title="Permalink to this definition">¶</a></dt>
