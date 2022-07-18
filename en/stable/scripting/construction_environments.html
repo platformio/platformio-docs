@@ -136,37 +136,42 @@
 <p>The PlatformIO Build System uses the following construction environments
 to process a project:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code>, <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code> - the global
-construction environment.</p>
-<p>Is used for the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> build scripts,
-upload tools, <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a>, and for other internal operations.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you use <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> and <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a>,
-the <code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> environment refers to the library’s isolated
-environment from which a script was called (not to the global environemnt).
-Please use <code class="docutils literal notranslate"><span class="pre">env</span> <span class="pre">=</span> <span class="pre">DefaultEnvironment()</span></code> instead to access the global
-environemnt.</p>
-</div>
+<li><p><code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code> - the global construction environment.</p>
+<p>It is used for the <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> build scripts,
+<a class="reference internal" href="actions.html#scripting-actions"><span class="std std-ref">Pre &amp; Post Actions</span></a>, upload tools, <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a>,
+and for other internal operations.</p>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;projenv&quot;)</span></code> - the isolated construction environment
 used for processing the project source code in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>.</p>
 <p>Please note that any <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-src-flags"><span class="std std-ref">build_src_flags</span></a> specified in
-<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> will be passed to the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> and not to the <code class="docutils literal notranslate"><span class="pre">env</span></code>.</p>
-</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> will be passed to the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> and not to the <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">projenv</span></code> is available only for the POST-type scripts (see <a class="reference internal" href="launch_types.html#scripting-launch-types"><span class="std std-ref">Launch Types</span></a>)</p></li>
-<li><p>Flags passed to the <code class="docutils literal notranslate"><span class="pre">env</span></code> using PRE-type script will affect the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> too.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">projenv</span></code> is available only for the POST-type scripts (see <a class="reference internal" href="launch_types.html#scripting-launch-types"><span class="std std-ref">Launch Types</span></a>)
+and <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a> (see <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>).</p></li>
+<li><p>Flags passed to the global construction environment using PRE-type scripts will affect the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> too.</p></li>
 </ol>
 </div>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> - the current working construction environment.</p>
+<p>Imported <code class="docutils literal notranslate"><span class="pre">env</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code> for scripts
+configured using the <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a> option
+in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<p>If you use <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> and <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a>,
+the <code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> refers to the library’s isolated
+environment from which a script was called (not to the global environemnt).
+Please use <code class="docutils literal notranslate"><span class="pre">env</span> <span class="pre">=</span> <span class="pre">DefaultEnvironment()</span></code> instead to access the global
+environemnt.</p>
+</li>
+</ul>
+<hr class="docutils" />
+<p><strong>Examples</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">my_pre_extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
-
-<span class="c1"># access to global construction environment</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the current working construction</span>
+<span class="c1"># environment to the `env` variable.</span>
+<span class="c1"># alias of `env = DefaultEnvironment()`</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
 <span class="c1"># Dump construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
@@ -185,14 +190,10 @@ used for processing the project source code in <a class="reference internal" hre
 <p><code class="docutils literal notranslate"><span class="pre">my_post_extra_script.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">,</span> <span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
 
-<span class="c1"># access to global construction environment</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
-
-<span class="c1"># access to project construction environment</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">projenv</span><span class="p">)</span>
-
-<span class="c1"># Dump construction environments (for debug purpose)</span>
+<span class="c1"># Dump global construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
+
+<span class="c1"># Dump project construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">projenv</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
 
 <span class="c1"># append extra flags to global build environment</span>
@@ -339,7 +340,7 @@ used for processing the project source code in <a class="reference internal" hre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1 (stable)
+    v6.1.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

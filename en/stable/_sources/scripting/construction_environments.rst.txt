@@ -17,37 +17,47 @@ Construction Environments
 The PlatformIO Build System uses the following construction environments
 to process a project:
 
-*  ``Import("env")``, ``DefaultEnvironment()`` - the global
-   construction environment.
+*  ``DefaultEnvironment()`` - the global construction environment.
 
-   Is used for the :ref:`platforms` and :ref:`frameworks` build scripts,
-   upload tools, :ref:`ldf`, and for other internal operations.
-
-   .. note::
-     If you use :ref:`library_json` and :ref:`library_json_buid_extra_script`,
-     the ``Import("env")`` environment refers to the library's isolated
-     environment from which a script was called (not to the global environemnt).
-     Please use ``env = DefaultEnvironment()`` instead to access the global
-     environemnt.
+   It is used for the :ref:`platforms` and :ref:`frameworks` build scripts,
+   :ref:`scripting_actions`, upload tools, :ref:`ldf`,
+   and for other internal operations.
 
 *  ``Import("projenv")`` - the isolated construction environment
    used for processing the project source code in :ref:`projectconf_pio_src_dir`.
 
    Please note that any :ref:`projectconf_build_src_flags` specified in
-   :ref:`projectconf` will be passed to the ``projenv`` and not to the ``env``.
+   :ref:`projectconf` will be passed to the ``projenv`` and not to the ``DefaultEnvironment()``.
 
-.. warning::
-  1. ``projenv`` is available only for the POST-type scripts (see :ref:`scripting_launch_types`)
-  2. Flags passed to the ``env`` using PRE-type script will affect the ``projenv`` too.
+   .. note::
+      1. The ``projenv`` is available only for the POST-type scripts (see :ref:`scripting_launch_types`)
+         and :ref:`library_json_buid_extra_script` (see :ref:`library_json`).
+      2. Flags passed to the global construction environment using PRE-type scripts will affect the ``projenv`` too.
+
+*  ``Import("env")`` - the current working construction environment.
+
+   Imported ``env`` refers to the ``DefaultEnvironment()`` for scripts
+   configured using the :ref:`projectconf_extra_scripts` option
+   in :ref:`projectconf`.
+
+   If you use :ref:`library_json` and :ref:`library_json_buid_extra_script`,
+   the ``Import("env")`` refers to the library's isolated
+   environment from which a script was called (not to the global environemnt).
+   Please use ``env = DefaultEnvironment()`` instead to access the global
+   environemnt.
+
+--------
+
+**Examples**
 
 ``my_pre_extra_script.py``:
 
 .. code-block:: python
 
+    # Import the current working construction
+    # environment to the `env` variable.
+    # alias of `env = DefaultEnvironment()`
     Import("env")
-
-    # access to global construction environment
-    print(env)
 
     # Dump construction environment (for debug purpose)
     print(env.Dump())
@@ -69,14 +79,10 @@ to process a project:
 
     Import("env", "projenv")
 
-    # access to global construction environment
-    print(env)
-
-    # access to project construction environment
-    print(projenv)
-
-    # Dump construction environments (for debug purpose)
+    # Dump global construction environment (for debug purpose)
     print(env.Dump())
+
+    # Dump project construction environment (for debug purpose)
     print(projenv.Dump())
 
     # append extra flags to global build environment

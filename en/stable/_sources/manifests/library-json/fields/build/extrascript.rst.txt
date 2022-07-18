@@ -16,8 +16,15 @@
 
 *Optional* | Type: ``String``
 
-Launch extra script before build process.
-More details :ref:`projectconf_extra_scripts`.
+.. seealso::
+    Please make sure to read :ref:`scripting` and
+    :ref:`scripting_envs` guides first.
+
+Launch extra script before a build process.
+
+.. warning::
+    The :ref:`scripting_actions` can only be applied to the global
+    construction environemnt (see :ref:`scripting_envs`).
 
 **Example** (HAL-based library)
 
@@ -77,22 +84,23 @@ Project structure
     Import('env')
     from os.path import join, realpath
 
+    #
     # Private flags (only for the current "SomeLib" source files)
+    #
     for item in env.get("CPPDEFINES", []):
         if isinstance(item, tuple) and item[0] == "HAL":
             env.Append(CPPPATH=[realpath(join("hal", item[1]))])
             env.Replace(SRC_FILTER=["+<*>", "-<hal*>", "+<hal/%s>" % item[1]])
             break
 
-    # Pass flags to the Global environemnt (project `src` files, frameworks)
-    global_env = DefaultEnvironment()
-    global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
-
-    # Pass flags to the other Library Dependencies
+    #
+    # Pass flags to the other Project Dependencies (libraries)
+    #
     for lb in env.GetLibBuilders():
         lb.env.Append(CPPDEFINES=[("TEST_LIBDEPS", 1)])
         if lb.name == "OneWire":
             lb.env.Append(CPPDEFINES=[("OW_PIN", 13)])
+
 
     # Operate with the project environment (files located in the `src` folder)
     Import("projenv")
@@ -100,3 +108,18 @@ Project structure
     projenv.Prepend(CPPPATH=["some/path"])
     # remove specified flags
     projenv.ProcessUnFlags("-fno-rtti")
+
+    # Pass flags to the Global environemnt (project `src` files, frameworks)
+    global_env = DefaultEnvironment()
+    global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
+
+    # Attach post action to the global environemnt
+
+    def post_program_action(source, target, env):
+        print("Program has been built!")
+        program_path = target[0].get_abspath()
+        print("Program path", program_path)
+        # Use case: sign a firmware, do any manipulations with ELF, etc
+        # env.Execute(f"sign --elf {program_path}")
+
+    global_env.AddPostAction("$PROGPATH", post_program_action)

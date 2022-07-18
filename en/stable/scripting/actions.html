@@ -140,6 +140,11 @@ argument <code class="docutils literal notranslate"><span class="pre">target</sp
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command, the name of a built-in target
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The actions can only be applied to the global construction environemnt
+(see <a class="reference internal" href="construction_environments.html#scripting-envs"><span class="std std-ref">Construction Environments</span></a>).</p>
+</div>
 <p><strong>Examples</strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> file is located in the same directory as
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
@@ -150,6 +155,18 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current CLI targets&quot;</span><span class="p">,</span> <span class="n">COMMAND_LINE_TARGETS</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Build targets&quot;</span><span class="p">,</span> <span class="n">BUILD_TARGETS</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
+    <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
+    <span class="c1"># Use case: sign a firmware, do any manipulations with ELF, etc</span>
+    <span class="c1"># env.Execute(f&quot;sign --elf {program_path}&quot;)</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Upload actions</span>
@@ -166,8 +183,6 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="k">def</span> <span class="nf">after_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;after_upload&quot;</span><span class="p">)</span>
     <span class="c1"># do some actions</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current build targets&quot;</span><span class="p">,</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">BUILD_TARGETS</span><span class="p">))</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;upload&quot;</span><span class="p">,</span> <span class="n">before_upload</span><span class="p">)</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;upload&quot;</span><span class="p">,</span> <span class="n">after_upload</span><span class="p">)</span>
@@ -331,7 +346,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1 (stable)
+    v6.1.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

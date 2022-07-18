@@ -138,9 +138,12 @@
 <li><p><strong>PRE</strong> - executes before the main script of <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>
 <p>Useful to pre-generate extra source files or make dynamic
 changes/patches to the existing, pass flags to the global
-building environment, add <a class="reference internal" href="middlewares.html#scripting-middlewares"><span class="std std-ref">Build Middlewares</span></a>, etc.
-Please note that the <code class="docutils literal notranslate"><span class="pre">projenv</span></code>
+building environment, add <a class="reference internal" href="middlewares.html#scripting-middlewares"><span class="std std-ref">Build Middlewares</span></a>, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that the <code class="docutils literal notranslate"><span class="pre">projenv</span></code>
 (see <a class="reference internal" href="construction_environments.html#scripting-envs"><span class="std std-ref">Construction Environments</span></a>) is not available at this stage.</p>
+</div>
 </li>
 <li><p><strong>POST</strong> - executes after the <strong>PRE</strong> and the main script of
 <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>
@@ -152,7 +155,9 @@ or extend the building workflow.</p>
 </li>
 </ul>
 <p>The extra scripts can be configured using the <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>
-option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The launch type can be specified as a prefix
+option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> or using the <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a>
+in <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> manifest.</p>
+<p>The launch type can be specified as a prefix
 (<code class="docutils literal notranslate"><span class="pre">pre:</span></code> or <code class="docutils literal notranslate"><span class="pre">post:</span></code>) to the script path.
 If there is no prefix specified, the <code class="docutils literal notranslate"><span class="pre">post:</span></code> will be used automatically.</p>
 <p><strong>Example</strong></p>
@@ -297,7 +302,7 @@ If there is no prefix specified, the <code class="docutils literal notranslate">
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1 (stable)
+    v6.1.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -21,8 +21,10 @@ There are two execution types for extra scripts:
    Useful to pre-generate extra source files or make dynamic
    changes/patches to the existing, pass flags to the global
    building environment, add :ref:`scripting_middlewares`, etc.
-   Please note that the ``projenv``
-   (see :ref:`scripting_envs`) is not available at this stage.
+
+   .. note::
+      Please note that the ``projenv``
+      (see :ref:`scripting_envs`) is not available at this stage.
 
 *  **POST** - executes after the **PRE** and the main script of
    :ref:`platforms`.
@@ -34,7 +36,10 @@ There are two execution types for extra scripts:
    or extend the building workflow.
 
 The extra scripts can be configured using the :ref:`projectconf_extra_scripts`
-option in :ref:`projectconf`. The launch type can be specified as a prefix
+option in :ref:`projectconf` or using the :ref:`library_json_buid_extra_script`
+in :ref:`library_json` manifest.
+
+The launch type can be specified as a prefix
 (``pre:`` or ``post:``) to the script path.
 If there is no prefix specified, the ``post:`` will be used automatically.
 

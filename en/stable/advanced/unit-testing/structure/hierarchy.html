@@ -169,23 +169,25 @@ with <code class="docutils literal notranslate"><span class="pre">test_</span></
 tests - see the example <strong>Pizza Project</strong> below</p></li>
 <li><p>the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> or
 the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-f"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--filter</span></code></a> option on the CLI will restrict
-the tests to only those test applications inside a folder with
-a path and folder name matching the filter</p></li>
+the tests to only those test suites whose path is relative to the
+<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter</p></li>
 <li><p>the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 or the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-i"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--ignore</span></code></a> option on the CLI will ignore
-all test applications inside a folder with a path and folder name
-matching the filter.</p></li>
+test suites whose path is relative to the
+<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter.</p></li>
 </ul>
 </li>
 </ul>
 <p>Example of using the filter / ignore option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> for
 the <strong>Pizza Project</strong> below:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">test_filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">embedded/stove/*</span><span class="w"></span>
+<span class="na">test_filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">embedded/*</span><span class="w"></span>
+<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">embedded/components/*</span><span class="w"></span>
 </pre></div>
 </div>
-<p>will only execute the <code class="docutils literal notranslate"><span class="pre">embedded/stove/test_humidity</span></code> and
-<code class="docutils literal notranslate"><span class="pre">embedded/stove/test_temperature</span></code> tests.</p>
+<p>will only execute the <code class="docutils literal notranslate"><span class="pre">embedded/stove/test_humidity</span></code>,
+<code class="docutils literal notranslate"><span class="pre">embedded/stove/test_temperature</span></code> test suites and will
+ignore the <code class="docutils literal notranslate"><span class="pre">embedded/components/sauce/test_tomatos</span></code> test suite.</p>
 <p><strong>Example of Pizza Project</strong></p>
 <p>Let’s demystify how PlatformIO handles unit tests using a virtual “Pizza Project”
 having the following structure:</p>
@@ -389,7 +391,7 @@ provided by PlatformIO. For more details, please check the documentation for the
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1 (stable)
+    v6.1.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

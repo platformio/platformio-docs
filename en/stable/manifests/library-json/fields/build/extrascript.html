@@ -165,8 +165,17 @@
   <section id="extrascript">
 <span id="library-json-buid-extra-script"></span><h1><code class="docutils literal notranslate"><span class="pre">extraScript</span></code><a class="headerlink" href="#extrascript" title="Permalink to this heading">¶</a></h1>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
-<p>Launch extra script before build process.
-More details <a class="reference internal" href="../../../../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Please make sure to read <a class="reference internal" href="../../../../scripting/index.html#scripting"><span class="std std-ref">Advanced Scripting</span></a> and
+<a class="reference internal" href="../../../../scripting/construction_environments.html#scripting-envs"><span class="std std-ref">Construction Environments</span></a> guides first.</p>
+</div>
+<p>Launch extra script before a build process.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <a class="reference internal" href="../../../../scripting/actions.html#scripting-actions"><span class="std std-ref">Pre &amp; Post Actions</span></a> can only be applied to the global
+construction environemnt (see <a class="reference internal" href="../../../../scripting/construction_environments.html#scripting-envs"><span class="std std-ref">Construction Environments</span></a>).</p>
+</div>
 <p><strong>Example</strong> (HAL-based library)</p>
 <p>This example demonstrates how to build HAL-dependent source files and
 exclude other source files from a build process.</p>
@@ -214,22 +223,23 @@ exclude other source files from a build process.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
 
+<span class="c1">#</span>
 <span class="c1"># Private flags (only for the current &quot;SomeLib&quot; source files)</span>
+<span class="c1">#</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">,</span> <span class="p">[]):</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;HAL&quot;</span><span class="p">:</span>
         <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="n">realpath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;hal&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))])</span>
         <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">SRC_FILTER</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;+&lt;*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;-&lt;hal*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;+&lt;hal/</span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
         <span class="k">break</span>
 
-<span class="c1"># Pass flags to the Global environemnt (project `src` files, frameworks)</span>
-<span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
-<span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_GLOBAL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
-
-<span class="c1"># Pass flags to the other Library Dependencies</span>
+<span class="c1">#</span>
+<span class="c1"># Pass flags to the other Project Dependencies (libraries)</span>
+<span class="c1">#</span>
 <span class="k">for</span> <span class="n">lb</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">GetLibBuilders</span><span class="p">():</span>
     <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_LIBDEPS&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
     <span class="k">if</span> <span class="n">lb</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;OneWire&quot;</span><span class="p">:</span>
         <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;OW_PIN&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">)])</span>
+
 
 <span class="c1"># Operate with the project environment (files located in the `src` folder)</span>
 <span class="n">Import</span><span class="p">(</span><span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
@@ -237,6 +247,21 @@ exclude other source files from a build process.</p>
 <span class="n">projenv</span><span class="o">.</span><span class="n">Prepend</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;some/path&quot;</span><span class="p">])</span>
 <span class="c1"># remove specified flags</span>
 <span class="n">projenv</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">&quot;-fno-rtti&quot;</span><span class="p">)</span>
+
+<span class="c1"># Pass flags to the Global environemnt (project `src` files, frameworks)</span>
+<span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
+<span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_GLOBAL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+
+<span class="c1"># Attach post action to the global environemnt</span>
+
+<span class="k">def</span> <span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
+    <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
+    <span class="c1"># Use case: sign a firmware, do any manipulations with ELF, etc</span>
+    <span class="c1"># env.Execute(f&quot;sign --elf {program_path}&quot;)</span>
+
+<span class="n">global_env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -367,7 +392,7 @@ exclude other source files from a build process.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.1 (stable)
+    v6.1.2 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
