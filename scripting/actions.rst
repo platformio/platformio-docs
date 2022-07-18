@@ -22,6 +22,10 @@ argument ``target`` can be the name of a target that is passed using the
 (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
+.. warning::
+    The actions can only be applied to the global construction environemnt
+    (see :ref:`scripting_envs`).
+
 **Examples**
 
 The ``extra_script.py`` file is located in the same directory as
@@ -40,6 +44,18 @@ The ``extra_script.py`` file is located in the same directory as
 
     Import("env")
 
+    print("Current CLI targets", COMMAND_LINE_TARGETS)
+    print("Current Build targets", BUILD_TARGETS)
+
+    def post_program_action(source, target, env):
+        print("Program has been built!")
+        program_path = target[0].get_abspath()
+        print("Program path", program_path)
+        # Use case: sign a firmware, do any manipulations with ELF, etc
+        # env.Execute(f"sign --elf {program_path}")
+
+    env.AddPostAction("$PROGPATH", post_program_action)
+
     #
     # Upload actions
     #
@@ -55,8 +71,6 @@ The ``extra_script.py`` file is located in the same directory as
     def after_upload(source, target, env):
         print("after_upload")
         # do some actions
-
-    print("Current build targets", map(str, BUILD_TARGETS))
 
     env.AddPreAction("upload", before_upload)
     env.AddPostAction("upload", after_upload)

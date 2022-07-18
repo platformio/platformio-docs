@@ -43,58 +43,22 @@ Process specified project environment. Multiple environments are allowed.
 .. option::
     -f, --filter
 
-Process only the tests where the name matches specified patterns. More than one
-pattern is allowed. If you need to filter some tests for a specific
-environment, please take a look at :ref:`projectconf_test_filter` option from
-:ref:`projectconf`.
+Process only test suites whose path relative to the
+:ref:`projectconf_pio_test_dir` matches the specified pattern.
+See documentation for the :ref:`projectconf_test_filter`
+project configuration option for more details.
 
-.. list-table::
-    :header-rows:  1
-
-    * - Pattern
-      - Meaning
-
-    * - ``*``
-      - matches everything
-
-    * - ``?``
-      - matches any single character
-
-    * - ``[seq]``
-      - matches any character in seq
-
-    * - ``[!seq]``
-      - matches any character not in seq
-
-For example, ``pio test --filter "mytest*" -i "test[13]"``
+Example, ``pio test --filter "test_common" -f "native/*"``
 
 .. option::
     -i, --ignore
 
-Ignore tests where the name matches specified patterns. More than one
-pattern is allowed. If you need to ignore some tests for a specific
-environment, please take a look at :ref:`projectconf_test_ignore` option from
-:ref:`projectconf`.
+Ignore test suites whose path relative to the
+:ref:`projectconf_pio_test_dir` matches the specified pattern.
+See documentation for the :ref:`projectconf_test_ignore`
+project configuration option for more details.
 
-.. list-table::
-    :header-rows:  1
-
-    * - Pattern
-      - Meaning
-
-    * - ``*``
-      - matches everything
-
-    * - ``?``
-      - matches any single character
-
-    * - ``[seq]``
-      - matches any character in seq
-
-    * - ``[!seq]``
-      - matches any character not in seq
-
-For example, ``pio test --ignore "mytest*" -i "test[13]"``
+For example, ``pio test --ignore "embedded/*" -i "test_suite[13]"``
 
 .. option::
     --upload-port
