@@ -43,12 +43,12 @@ and extra C/C++ files related to the :ref:`unit_testing_frameworks`.
       tests - see the example **Pizza Project** below
    -  the :ref:`projectconf_test_filter` option in :ref:`projectconf` or
       the :option:`pio test --filter` option on the CLI will restrict
-      the tests to only those test applications inside a folder with
-      a path and folder name matching the filter
+      the tests to only those test suites whose path is relative to the
+      :ref:`projectconf_pio_test_dir` and matches the filter
    -  the :ref:`projectconf_test_ignore` option in :ref:`projectconf`
       or the :option:`pio test --ignore` option on the CLI will ignore
-      all test applications inside a folder with a path and folder name
-      matching the filter.
+      test suites whose path is relative to the
+      :ref:`projectconf_pio_test_dir` and matches the filter.
 
 Example of using the filter / ignore option in :ref:`projectconf` for
 the **Pizza Project** below:
@@ -56,10 +56,12 @@ the **Pizza Project** below:
 .. code:: ini
 
    [env:myenv]
-   test_filter = embedded/stove/*
+   test_filter = embedded/*
+   test_ignore = embedded/components/*
 
-will only execute the ``embedded/stove/test_humidity`` and
-``embedded/stove/test_temperature`` tests.
+will only execute the ``embedded/stove/test_humidity``,
+``embedded/stove/test_temperature`` test suites and will
+ignore the ``embedded/components/sauce/test_tomatos`` test suite.
 
 **Example of Pizza Project**
 
