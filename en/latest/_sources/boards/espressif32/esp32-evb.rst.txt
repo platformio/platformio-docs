@@ -69,6 +69,7 @@ Uploading
 OLIMEX ESP32-EVB supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ OLIMEX ESP32-EVB does not have on-board debug probe and **IS NOT READY** for deb
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

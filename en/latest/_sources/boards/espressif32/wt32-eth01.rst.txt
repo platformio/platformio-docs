@@ -69,6 +69,7 @@ Uploading
 Wireless-Tag WT32-ETH01 Ethernet Module supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ Wireless-Tag WT32-ETH01 Ethernet Module does not have on-board debug probe and *
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

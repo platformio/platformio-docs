@@ -69,6 +69,8 @@ Uploading
 AirM2M CORE ESP32C3 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +119,12 @@ AirM2M CORE ESP32C3 does not have on-board debug probe and **IS NOT READY** for 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

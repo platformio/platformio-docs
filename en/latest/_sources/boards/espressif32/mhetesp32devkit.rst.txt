@@ -69,6 +69,7 @@ Uploading
 MH ET LIVE ESP32DevKIT supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ MH ET LIVE ESP32DevKIT does not have on-board debug probe and **IS NOT READY** f
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

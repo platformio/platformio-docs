@@ -69,6 +69,8 @@ Uploading
 Adafruit QT Py ESP32-C3 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +119,12 @@ Adafruit QT Py ESP32-C3 does not have on-board debug probe and **IS NOT READY** 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 
