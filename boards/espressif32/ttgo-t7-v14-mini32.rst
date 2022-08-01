@@ -69,6 +69,7 @@ Uploading
 TTGO T7 V1.4 Mini32 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ TTGO T7 V1.4 Mini32 does not have on-board debug probe and **IS NOT READY** for 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

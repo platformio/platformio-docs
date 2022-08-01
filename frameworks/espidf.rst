@@ -84,6 +84,12 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 
 External Debug Tools
@@ -139,6 +145,24 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_nopsram`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -175,15 +199,39 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3_nopsram`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_airm2m_core_esp32c3`
       - :ref:`platform_espressif32`
       - ESP32C3
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_connaxio_espoir`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_beetle_esp32c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -235,6 +283,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
       - ESP32
@@ -283,12 +337,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
-      - 4MB
-      - 320KB
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_franzininho_wifi_esp32s2`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -439,6 +499,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -547,6 +613,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_um_rmp`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -559,7 +637,25 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_uno32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -596,12 +692,6 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
-      - :ref:`platform_espressif32`
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -747,6 +837,27 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_nopsram`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_funhouse_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -786,6 +897,13 @@ Adafruit
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3_nopsram`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -895,6 +1013,48 @@ Blinker
       - 4MB
       - 320KB
 
+CNRS
+~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cnrs_aw2eth`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Connaxio
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_connaxio_espoir`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 DFRobot
 ~~~~~~~
 
@@ -908,13 +1068,27 @@ DFRobot
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_dfrobot_beetle_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
       - External
       - ESP32
       - 240MHz
-      - 4MB
-      - 320KB
+      - 16MB
+      - 520KB
 
 DOIT
 ~~~~
@@ -1174,6 +1348,13 @@ Espressif
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3camlcd`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board
@@ -1208,6 +1389,20 @@ Espressif
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3box`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 Fishino
@@ -1615,14 +1810,14 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_espressif32_m5stick-c`
+    * - :ref:`board_espressif32_m5stack-coreink`
       - :ref:`platform_espressif32`
       - No
       - ESP32
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_espressif32_m5stack-coreink`
+    * - :ref:`board_espressif32_m5stick-c`
       - :ref:`platform_espressif32`
       - No
       - ESP32
@@ -2043,6 +2238,27 @@ SQFMI
       - 4MB
       - 320KB
 
+Seeed Studio
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_seeed_xiao_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+
 Silicognition
 ~~~~~~~~~~~~~
 
@@ -2329,6 +2545,20 @@ Unexpected Maker
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_um_feathers3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_pros3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_um_rmp`
       - :ref:`platform_espressif32`
       - External
@@ -2349,6 +2579,13 @@ Unexpected Maker
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_um_tinys3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 Unknown
@@ -2406,6 +2643,20 @@ WEMOS
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_wemos_d1_mini32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_uno32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_c3_mini`
       - :ref:`platform_espressif32`
       - External
@@ -2451,13 +2702,6 @@ WEMOS
     * - :ref:`board_espressif32_lolin32_lite`
       - :ref:`platform_espressif32`
       - No
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_wemos_d1_mini32`
-      - :ref:`platform_espressif32`
-      - External
       - ESP32
       - 240MHz
       - 4MB

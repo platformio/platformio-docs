@@ -69,6 +69,7 @@ Uploading
 WeMos WiFi and Bluetooth Battery supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ WeMos WiFi and Bluetooth Battery does not have on-board debug probe and **IS NOT
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

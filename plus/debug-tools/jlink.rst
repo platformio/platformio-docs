@@ -539,6 +539,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_nopsram`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_feather_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -756,7 +770,7 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3`
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3_nopsram`
       - :ref:`platform_espressif32`
       - External
       - ESP32S3
@@ -1253,6 +1267,13 @@ Boards
       - 30MHz
       - 16KB
       - 4KB
+    * - :ref:`board_espressif32_connaxio_espoir`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_coreboard_f401rc`
       - :ref:`platform_ststm32`
       - External
@@ -1271,6 +1292,20 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_beetle_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -1563,10 +1598,10 @@ Boards
       - 320KB
     * - :ref:`board_espressif32_esp32-s3-devkitc-1`
       - :ref:`platform_espressif32`
-      - External
+      - On-board
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 8MB
       - 320KB
     * - :ref:`board_freescalekinetis_IBMEthernetKit`
       - :ref:`platform_freescalekinetis`
@@ -1601,8 +1636,8 @@ Boards
       - External
       - ESP32
       - 240MHz
-      - 4MB
-      - 320KB
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_franzininho_wifi_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -3738,6 +3773,13 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf51_seeedTinyBLE`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -4200,6 +4242,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_wemos_d1_mini32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_wemos_d1_uno32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin_c3_mini`
       - :ref:`platform_espressif32`
       - External
@@ -4312,13 +4368,6 @@ Boards
       - 480MHz
       - 512KB
       - 128KB
-    * - :ref:`board_espressif32_wemos_d1_mini32`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
     * - :ref:`board_espressif32_wemosbat`
       - :ref:`platform_espressif32`
       - External

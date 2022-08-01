@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_airm2m_core_esp32c3:
+.. _board_espressif32_seeed_xiao_esp32c3:
 
-AirM2M CORE ESP32C3
-===================
+Seeed Studio XIAO ESP32C3
+=========================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `AirM2M <https://wiki.luatos.com/chips/esp32c3/board.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Seeed Studio <https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``airm2m_core_esp32c3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``seeed_xiao_esp32c3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:seeed_xiao_esp32c3]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = seeed_xiao_esp32c3
 
-You can override default AirM2M CORE ESP32C3 settings per build environment using
+You can override default Seeed Studio XIAO ESP32C3 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `airm2m_core_esp32c3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/airm2m_core_esp32c3.json>`_. For example,
+board manifest `seeed_xiao_esp32c3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/seeed_xiao_esp32c3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:seeed_xiao_esp32c3]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = seeed_xiao_esp32c3
 
   ; change microcontroller
   board_build.mcu = esp32c3
@@ -66,7 +66,7 @@ board manifest `airm2m_core_esp32c3.json <https://github.com/platformio/platform
 
 Uploading
 ---------
-AirM2M CORE ESP32C3 supports the following uploading protocols:
+Seeed Studio XIAO ESP32C3 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
@@ -89,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:seeed_xiao_esp32c3]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = seeed_xiao_esp32c3
 
   upload_protocol = esptool
 
@@ -108,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-AirM2M CORE ESP32C3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Seeed Studio XIAO ESP32C3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

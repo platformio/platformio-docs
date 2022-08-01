@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_ttgo-t1:
+.. _board_espressif32_cnrs_aw2eth:
 
-TTGO T1
-=======
+CNRS AW2ETH
+===========
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `TTGO <https://github.com/LilyGO/ESP32-TTGO-T1?utm_source=platformio.org&utm_medium=docs>`__
+    - `CNRS <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``ttgo-t1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``cnrs_aw2eth`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:cnrs_aw2eth]
   platform = espressif32
-  board = ttgo-t1
+  board = cnrs_aw2eth
 
-You can override default TTGO T1 settings per build environment using
+You can override default CNRS AW2ETH settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t1.json>`_. For example,
+board manifest `cnrs_aw2eth.json <https://github.com/platformio/platform-espressif32/blob/master/boards/cnrs_aw2eth.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:cnrs_aw2eth]
   platform = espressif32
-  board = ttgo-t1
+  board = cnrs_aw2eth
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,21 +66,10 @@ board manifest `ttgo-t1.json <https://github.com/platformio/platform-espressif32
 
 Uploading
 ---------
-TTGO T1 supports the following uploading protocols:
+CNRS AW2ETH supports the following uploading protocols:
 
-* ``cmsis-dap``
-* ``esp-bridge``
-* ``esp-prog``
 * ``espota``
 * ``esptool``
-* ``iot-bus-jtag``
-* ``jlink``
-* ``minimodule``
-* ``olimex-arm-usb-ocd``
-* ``olimex-arm-usb-ocd-h``
-* ``olimex-arm-usb-tiny-h``
-* ``olimex-jtag-tiny``
-* ``tumpa``
 
 Default protocol is ``esptool``
 
@@ -88,66 +77,15 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:ttgo-t1]
+  [env:cnrs_aw2eth]
   platform = espressif32
-  board = ttgo-t1
+  board = cnrs_aw2eth
 
   upload_protocol = esptool
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
-
-.. warning::
-    You will need to install debug tool drivers depending on your system.
-    Please click on compatible debug tool below for the further
-    instructions and configuration information.
-
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
-
-TTGO T1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-.. list-table::
-  :header-rows:  1
-
-  * - Compatible Tools
-    - On-board
-    - Default
-  * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - Yes
-  * - ``esp-bridge``
-    - 
-    - 
-  * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
-  * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
-    - 
-  * - :ref:`debugging_tool_jlink`
-    - 
-    - 
-  * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
-  * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
-  * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+:ref:`piodebug` currently does not support CNRS AW2ETH board.
 
 Frameworks
 ----------

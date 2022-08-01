@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_airm2m_core_esp32c3:
+.. _board_espressif32_wemos_d1_uno32:
 
-AirM2M CORE ESP32C3
-===================
+WEMOS D1 R32
+============
 
 .. contents::
 
@@ -24,53 +24,52 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32C3
+    - ESP32
   * - **Frequency**
-    - 160MHz
+    - 240MHz
   * - **Flash**
     - 4MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `AirM2M <https://wiki.luatos.com/chips/esp32c3/board.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `WEMOS <https://www.wemos.cc?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``airm2m_core_esp32c3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``wemos_d1_uno32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:wemos_d1_uno32]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = wemos_d1_uno32
 
-You can override default AirM2M CORE ESP32C3 settings per build environment using
+You can override default WEMOS D1 R32 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `airm2m_core_esp32c3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/airm2m_core_esp32c3.json>`_. For example,
+board manifest `wemos_d1_uno32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/wemos_d1_uno32.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:wemos_d1_uno32]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = wemos_d1_uno32
 
   ; change microcontroller
-  board_build.mcu = esp32c3
+  board_build.mcu = esp32
 
   ; change MCU frequency
-  board_build.f_cpu = 160000000L
+  board_build.f_cpu = 240000000L
 
 
 Uploading
 ---------
-AirM2M CORE ESP32C3 supports the following uploading protocols:
+WEMOS D1 R32 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
-* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -89,9 +88,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:airm2m_core_esp32c3]
+  [env:wemos_d1_uno32]
   platform = espressif32
-  board = airm2m_core_esp32c3
+  board = wemos_d1_uno32
 
   upload_protocol = esptool
 
@@ -108,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-AirM2M CORE ESP32C3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+WEMOS D1 R32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -120,9 +119,6 @@ AirM2M CORE ESP32C3 does not have on-board debug probe and **IS NOT READY** for 
     - 
     - Yes
   * - ``esp-bridge``
-    - 
-    - 
-  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`

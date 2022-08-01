@@ -69,6 +69,7 @@ Uploading
 uPesy ESP32 Wrover DevKit supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ uPesy ESP32 Wrover DevKit does not have on-board debug probe and **IS NOT READY*
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

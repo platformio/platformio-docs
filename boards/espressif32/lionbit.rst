@@ -69,6 +69,7 @@ Uploading
 Lion:Bit Dev Board supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ Lion:Bit Dev Board does not have on-board debug probe and **IS NOT READY** for d
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

@@ -69,6 +69,8 @@ Uploading
 Espressif ESP32-C3-DevKitM-1 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +119,12 @@ Espressif ESP32-C3-DevKitM-1 does not have on-board debug probe and **IS NOT REA
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

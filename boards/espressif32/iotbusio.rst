@@ -69,6 +69,7 @@ Uploading
 oddWires IoT-Bus Io supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -115,6 +116,9 @@ oddWires IoT-Bus Io does not have on-board debug probe and **IS NOT READY** for 
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
+  * - ``esp-bridge``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`
