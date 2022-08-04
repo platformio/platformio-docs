@@ -24,13 +24,13 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
 .. list-table::
 
   * - **Microcontroller**
-    - ESP8266
+    - ESP8266-S1
   * - **Frequency**
-    - 80MHz
+    - 160MHz
   * - **Flash**
-    - 4MB
+    - 2MB
   * - **RAM**
-    - 80KB
+    - 50KB
   * - **Vendor**
     - `Lifely <https://www.lifely.cc/lifely-3-0/?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -61,7 +61,19 @@ board manifest `agruminolemon.json <https://github.com/platformio/platform-espre
   board_build.mcu = esp8266
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 160000000L
+  
+  ; upload protocol
+  upload_protocol = esptool
+  
+  ; upload speed
+  upload_speed = 3000000
+  
+  ; monitor speed
+  monitor_speed = 115200
+  
+  ; build flags
+  build_flags = -w -D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK263
 
 
 Uploading
