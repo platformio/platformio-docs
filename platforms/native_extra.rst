@@ -21,7 +21,15 @@ Please open the system terminal and type ``gcc --version``. If the
 ``gcc`` command is not found, you have to install the GCC toolchain
 manually depending on your operating system:
 
-* **Windows** - see `MinGW <https://www.mingw-w64.org/>`_ project
+* **Windows** - follow the `MSYS2 <https://www.msys2.org/>`_
+  installation guide and add the following paths to the ``PATH``
+  system environment variable:
+
+  .. code::
+
+    C:\msys64\mingw64\bin
+    C:\msys64\usr\bin
+
 * **Linux** - open the system terminal and run the following commands:
 
   .. code:: shell
