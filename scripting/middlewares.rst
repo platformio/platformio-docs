@@ -20,14 +20,14 @@ for the specific file nodes or exclude them from a build process.
 
 There is ``env.AddBuildMiddleware(callback, pattern)`` helper which instructs
 PlatformIO Build System to call ``callback`` for each `SCons File System Node <https://scons.org/doc/latest/HTML/scons-api/SCons.Node.FS.Dir-class.html>`_
-whose path matches with `Unix shell-style "pattern" (wildcards) <https://docs.python.org/3.8/library/fnmatch.html>`_.
+whose path matches with `Unix shell-style "pattern" (wildcards) <https://docs.python.org/3.9/library/fnmatch.html>`_.
 
 If a ``pattern`` is omitted, the ``callback`` will be called for each File System Node
 which is added for the build process.
 
 You can add an unlimited number of build middlewares. They will be called in order of
-registration. Please note, if the first middleware ignores some File Nodes, they will
-not be passed to the next middleware in chain.
+registration. Please note, if a middleware ignores a node (returns ``None``), the next
+middlewares in a chain will be ignored automatically.
 
 **Examples**
 
@@ -46,7 +46,7 @@ not be passed to the next middleware in chain.
 
 
     # --- Add custom macros for the ALL files which name contains "http"
-    def extra_http_configuration(node):
+    def extra_http_configuration(env, node):
         """
         `node.name` - a name of File System Node
         `node.get_path()` - a relative path
@@ -73,7 +73,7 @@ not be passed to the next middleware in chain.
 
     # --- Replace some file from a build process with another
 
-    def replace_node_with_another(node):
+    def replace_node_with_another(env, node):
         return env.File("path/to/patched/RtosTimer.cpp")
 
     env.AddBuildMiddleware(
@@ -84,7 +84,7 @@ not be passed to the next middleware in chain.
 
     # --- Skip assembly *.S files from build process
 
-    def skip_asm_from_build(node):
+    def skip_asm_from_build(env, node):
         # to ignore file from a build process, just return None
         return None
 
