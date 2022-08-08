@@ -138,12 +138,12 @@ Build Node(Object) construction. This is very useful if you need to add custom f
 for the specific file nodes or exclude them from a build process.</p>
 <p>There is <code class="docutils literal notranslate"><span class="pre">env.AddBuildMiddleware(callback,</span> <span class="pre">pattern)</span></code> helper which instructs
 PlatformIO Build System to call <code class="docutils literal notranslate"><span class="pre">callback</span></code> for each <a class="reference external" href="https://scons.org/doc/latest/HTML/scons-api/SCons.Node.FS.Dir-class.html">SCons File System Node</a>
-whose path matches with <a class="reference external" href="https://docs.python.org/3.8/library/fnmatch.html">Unix shell-style “pattern” (wildcards)</a>.</p>
+whose path matches with <a class="reference external" href="https://docs.python.org/3.9/library/fnmatch.html">Unix shell-style “pattern” (wildcards)</a>.</p>
 <p>If a <code class="docutils literal notranslate"><span class="pre">pattern</span></code> is omitted, the <code class="docutils literal notranslate"><span class="pre">callback</span></code> will be called for each File System Node
 which is added for the build process.</p>
 <p>You can add an unlimited number of build middlewares. They will be called in order of
-registration. Please note, if the first middleware ignores some File Nodes, they will
-not be passed to the next middleware in chain.</p>
+registration. Please note, if a middleware ignores a node (returns <code class="docutils literal notranslate"><span class="pre">None</span></code>), the next
+middlewares in a chain will be ignored automatically.</p>
 <p><strong>Examples</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:build_middleware]</span><span class="w"></span>
@@ -155,7 +155,7 @@ not be passed to the next middleware in chain.</p>
 
 
 <span class="c1"># --- Add custom macros for the ALL files which name contains &quot;http&quot;</span>
-<span class="k">def</span> <span class="nf">extra_http_configuration</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">extra_http_configuration</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    `node.name` - a name of File System Node</span>
 <span class="sd">    `node.get_path()` - a relative path</span>
@@ -182,7 +182,7 @@ not be passed to the next middleware in chain.</p>
 
 <span class="c1"># --- Replace some file from a build process with another</span>
 
-<span class="k">def</span> <span class="nf">replace_node_with_another</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">replace_node_with_another</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">env</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;path/to/patched/RtosTimer.cpp&quot;</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span>
@@ -193,7 +193,7 @@ not be passed to the next middleware in chain.</p>
 
 <span class="c1"># --- Skip assembly *.S files from build process</span>
 
-<span class="k">def</span> <span class="nf">skip_asm_from_build</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">skip_asm_from_build</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
     <span class="c1"># to ignore file from a build process, just return None</span>
     <span class="k">return</span> <span class="kc">None</span>
 

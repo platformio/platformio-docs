@@ -171,7 +171,14 @@ system environment variable.</p>
 <code class="docutils literal notranslate"><span class="pre">gcc</span></code> command is not found, you have to install the GCC toolchain
 manually depending on your operating system:</p>
 <ul>
-<li><p><strong>Windows</strong> - see <a class="reference external" href="https://www.mingw-w64.org/">MinGW</a> project</p></li>
+<li><p><strong>Windows</strong> - follow the <a class="reference external" href="https://www.msys2.org/">MSYS2</a>
+installation guide and add the following paths to the <code class="docutils literal notranslate"><span class="pre">PATH</span></code>
+system environment variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">msys64</span>\<span class="n">mingw64</span>\<span class="nb">bin</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">msys64</span>\<span class="n">usr</span>\<span class="nb">bin</span>
+</pre></div>
+</div>
+</li>
 <li><p><strong>Linux</strong> - open the system terminal and run the following commands:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt update
 sudo apt install build-essential
