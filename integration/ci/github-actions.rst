@@ -48,38 +48,30 @@ This variant is default choice for native PlatformIO projects:
 
 .. code-block:: yaml
 
-    name: PlatformIO CI
+  name: PlatformIO CI
 
-    on: [push]
+  on: [push]
 
-    jobs:
-      build:
+  jobs:
+    build:
+      runs-on: ubuntu-latest
 
-        runs-on: ubuntu-latest
-
-        steps:
-        - uses: actions/checkout@v2
-        - name: Cache pip
-          uses: actions/cache@v2
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/cache@v3
           with:
-            path: ~/.cache/pip
-            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-            restore-keys: |
-              ${{ runner.os }}-pip-
-        - name: Cache PlatformIO
-          uses: actions/cache@v2
+            path: |
+              ~/.cache/pip
+              ~/.platformio/.cache
+            key: ${{ runner.os }}-pio
+        - uses: actions/setup-python@v4
           with:
-            path: ~/.platformio
-            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
-        - name: Set up Python
-          uses: actions/setup-python@v2
-        - name: Install PlatformIO
-          run: |
-            python -m pip install --upgrade pip
-            pip install --upgrade platformio
-        - name: Run PlatformIO
-          run: pio run -e <ID_1> -e <ID_2> -e <ID_N>
+            python-version: '3.9'
+        - name: Install PlatformIO Core
+          run: pip install --upgrade platformio
 
+        - name: Build PlatformIO Project
+          run: pio run
 
 Using :ref:`cmd_ci` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,71 +82,35 @@ and boards from command line interface:
 
 .. code-block:: yaml
 
-    name: PlatformIO CI
+  name: PlatformIO CI
 
     on: [push]
 
     jobs:
       build:
-
         runs-on: ubuntu-latest
         strategy:
           matrix:
             example: [path/to/test/file.c, examples/file.ino, path/to/test/directory]
 
         steps:
-        - uses: actions/checkout@v2
-        - name: Cache pip
-          uses: actions/cache@v2
-          with:
-            path: ~/.cache/pip
-            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-            restore-keys: ${{ runner.os }}-pip-
-        - name: Cache PlatformIO
-          uses: actions/cache@v2
-          with:
-            path: ~/.platformio
-            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
-        - name: Set up Python
-          uses: actions/setup-python@v2
-        - name: Install PlatformIO
-          run: |
-            python -m pip install --upgrade pip
-            pip install --upgrade platformio
-        - name: Run PlatformIO
-          run: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
-          env:
-            PLATFORMIO_CI_SRC: ${{ matrix.example }}
+          - uses: actions/checkout@v3
+          - uses: actions/cache@v3
+            with:
+              path: |
+                ~/.cache/pip
+                ~/.platformio/.cache
+              key: ${{ runner.os }}-pio
+          - uses: actions/setup-python@v4
+            with:
+              python-version: '3.9'
+          - name: Install PlatformIO Core
+            run: pip install --upgrade platformio
 
-
-Library dependencies
-~~~~~~~~~~~~~~~~~~~~
-
-There 2 options to test source code with dependent libraries:
-
-Install dependent library using :ref:`librarymanager`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    - name: Install library dependencies
-      run: pio lib -g install 1
-
-    - name: Run PlatformIO
-      run: pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
-
-Manually download dependent library and include in build process via ``--lib`` option
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: yaml
-
-    - name: Install library dependencies
-      run: |
-        wget https://github.com/PaulStoffregen/OneWire/archive/master.zip -O /tmp/onewire_source.zip
-        unzip /tmp/onewire_source.zip -d /tmp/
-
-    - name: Run PlatformIO
-      run: pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+          - name: Build PlatformIO examples
+            run: pio ci --board=<ID_1> --board=<ID_2> --board=<ID_N>
+            env:
+              PLATFORMIO_CI_SRC: ${{ matrix.example }}
 
 Custom Build Flags
 ~~~~~~~~~~~~~~~~~~
@@ -164,9 +120,9 @@ PlatformIO allows one to specify own build flags using :envvar:`PLATFORMIO_BUILD
 .. code-block:: yaml
 
     - name: Run PlatformIO
-      run: pio ci path/to/test/file.c --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
+      run: pio ci path/to/test/file.c --board=<ID_1> --board=<ID_2> --board=<ID_N>
       env:
-        PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACROS -I/extra/inc
+        PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACRO -I/extra/inc
 
 For the more details, please follow to
 :ref:`available build flags/options <projectconf_build_flags>`.
@@ -178,41 +134,35 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
 
 .. code-block:: yaml
 
-    name: PlatformIO CI
+  name: PlatformIO CI
 
-    on: [push]
+  on: [push]
 
-    jobs:
-      build:
+  jobs:
+    build:
 
-        runs-on: ${{ matrix.os }}
-        strategy:
-          matrix:
-            os: [ubuntu-latest, macos-latest, windows-latest]
-            example: [examples/Bluetooth/PS3SPP/PS3SPP.ino, examples/pl2303/pl2303_gps/pl2303_gps.ino]
+      runs-on: ${{ matrix.os }}
+      strategy:
+        matrix:
+          os: [ubuntu-latest, macos-latest, windows-latest]
+          example: [examples/Bluetooth/PS3SPP/PS3SPP.ino, examples/pl2303/pl2303_gps/pl2303_gps.ino]
 
-        steps:
-        - uses: actions/checkout@v2
-        - name: Cache pip
-          uses: actions/cache@v2
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/cache@v3
           with:
-            path: ~/.cache/pip
-            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-            restore-keys: |
-              ${{ runner.os }}-pip-
-        - name: Cache PlatformIO
-          uses: actions/cache@v2
+            path: |
+              ~/.cache/pip
+              ~/.platformio/.cache
+            key: ${{ runner.os }}-pio
+        - uses: actions/setup-python@v4
           with:
-            path: ~/.platformio
-            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+            python-version: '3.9'
+        - name: Install PlatformIO Core
+          run: pip install --upgrade platformio
 
-        - name: Set up Python
-          uses: actions/setup-python@v2
-
-        - name: Install PlatformIO
+        - name: Download external library
           run: |
-            python -m pip install --upgrade pip
-            pip install --upgrade platformio
             wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
             unzip /tmp/spi4teensy3.zip -d /tmp
 
