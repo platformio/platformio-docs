@@ -48,14 +48,10 @@ This variant is default choice for native PlatformIO projects:
 
     image: python:3.9
 
-    variables:
-      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
-      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
-
     cache:
       paths:
-        - .pip-cache/
-        - .platformio-cache/
+        - ~/.cache/pip
+        - ~/.platformio/.cache
 
     stages:
      - test
@@ -79,14 +75,10 @@ and boards from command line interface:
 
     image: python:3.9
 
-    variables:
-      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
-      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
-
     cache:
       paths:
-        - .pip-cache/
-        - .platformio-cache/
+        - ~/.cache/pip
+        - ~/.platformio/.cache
 
     stages:
      - test
@@ -110,14 +102,10 @@ Examples
 
     image: python:3.9
 
-    variables:
-      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
-      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.platformio-cache"
-
     cache:
       paths:
-        - .pip-cache/
-        - .platformio-cache/
+        - ~/.cache/pip
+        - ~/.platformio/.cache
 
     stages:
      - test

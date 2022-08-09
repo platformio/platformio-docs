@@ -183,14 +183,10 @@ PlatformIO in CI services:</p>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
-
 <span class="nt">cache</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span><span class="w"></span>
 
 <span class="nt">stages</span><span class="p">:</span><span class="w"></span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
@@ -211,14 +207,10 @@ examples or testing code) as it has additional options for specifying extra libr
 and boards from command line interface:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
-
 <span class="nt">cache</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span><span class="w"></span>
 
 <span class="nt">stages</span><span class="p">:</span><span class="w"></span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
@@ -242,14 +234,10 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 </ol>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.9</span><span class="w"></span>
 
-<span class="nt">variables</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.pip-cache&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.platformio-cache&quot;</span><span class="w"></span>
-
 <span class="nt">cache</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pip-cache/</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.platformio-cache/</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span><span class="w"></span>
 
 <span class="nt">stages</span><span class="p">:</span><span class="w"></span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span><span class="w"></span>
@@ -429,7 +417,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.4b3 (latest)
+    v6.1.4b4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
