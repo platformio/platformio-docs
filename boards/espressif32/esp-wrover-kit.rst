@@ -69,6 +69,7 @@ Uploading
 Espressif ESP-WROVER-KIT supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -116,6 +117,9 @@ Espressif ESP-WROVER-KIT has on-board debug probe and **IS READY** for debugging
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
+  * - ``esp-bridge``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`

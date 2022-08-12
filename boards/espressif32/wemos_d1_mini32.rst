@@ -11,7 +11,7 @@
 
 .. _board_espressif32_wemos_d1_mini32:
 
-WeMos D1 MINI ESP32
+WEMOS D1 MINI ESP32
 ===================
 
 .. contents::
@@ -46,7 +46,7 @@ Please use ``wemos_d1_mini32`` ID for :ref:`projectconf_env_board` option in :re
   platform = espressif32
   board = wemos_d1_mini32
 
-You can override default WeMos D1 MINI ESP32 settings per build environment using
+You can override default WEMOS D1 MINI ESP32 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `wemos_d1_mini32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/wemos_d1_mini32.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,9 +66,10 @@ board manifest `wemos_d1_mini32.json <https://github.com/platformio/platform-esp
 
 Uploading
 ---------
-WeMos D1 MINI ESP32 supports the following uploading protocols:
+WEMOS D1 MINI ESP32 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -106,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeMos D1 MINI ESP32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+WEMOS D1 MINI ESP32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -117,6 +118,9 @@ WeMos D1 MINI ESP32 does not have on-board debug probe and **IS NOT READY** for 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

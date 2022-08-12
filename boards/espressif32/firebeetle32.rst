@@ -28,11 +28,11 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 16MB
   * - **RAM**
-    - 320KB
+    - 520KB
   * - **Vendor**
-    - `DFRobot <https://dfrobotblog.wordpress.com?utm_source=platformio.org&utm_medium=docs>`__
+    - `DFRobot <https://wiki.dfrobot.com/FireBeetle_ESP32_IOT_Microcontroller(V3.0)__Supports_Wi-Fi_&_Bluetooth__SKU__DFR0478?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -69,6 +69,7 @@ Uploading
 FireBeetle-ESP32 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ FireBeetle-ESP32 does not have on-board debug probe and **IS NOT READY** for deb
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

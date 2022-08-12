@@ -36,22 +36,6 @@ Aceinna IMU
     aceinna_imu/OpenRTK
     aceinna_imu/OpenRTK330L
 
-ASR Microelectronics ASR650x
-----------------------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    asrmicro650x/cubecell_capsule_solar_sensor
-    asrmicro650x/cubecell_node
-    asrmicro650x/cubecell_board
-    asrmicro650x/cubecell_board_pro
-    asrmicro650x/cubecell_board_plus
-    asrmicro650x/cubecell_capsule
-    asrmicro650x/cubecell_gps
-    asrmicro650x/cubecell_module
-    asrmicro650x/cubecell_module_plus
-
 Atmel AVR
 ---------
 
@@ -459,20 +443,26 @@ Espressif 32
     espressif32/adafruit_feather_esp32_v2
     espressif32/adafruit_feather_esp32s2_tft
     espressif32/adafruit_feather_esp32s3
+    espressif32/adafruit_feather_esp32s3_nopsram
+    espressif32/adafruit_feather_esp32s3_tft
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_metro_esp32s2
     espressif32/adafruit_qtpy_esp32
     espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
-    espressif32/adafruit_qtpy_esp32s3
+    espressif32/adafruit_qtpy_esp32s3_nopsram
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
     espressif32/briki_abc_esp32
     espressif32/briki_mbc-wb_esp32
+    espressif32/cnrs_aw2eth
+    espressif32/connaxio_espoir
     espressif32/d-duino-32
+    espressif32/dfrobot_beetle_esp32c3
+    espressif32/dfrobot_firebeetle2_esp32s3
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
@@ -526,8 +516,8 @@ Espressif 32
     espressif32/m5stack-grey
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
-    espressif32/m5stick-c
     espressif32/m5stack-coreink
+    espressif32/m5stick-c
     espressif32/mgbot-iotik32a
     espressif32/mgbot-iotik32b
     espressif32/mhetesp32devkit
@@ -557,6 +547,7 @@ Espressif 32
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/watchy
+    espressif32/seeed_xiao_esp32c3
     espressif32/wesp32
     espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
@@ -586,6 +577,8 @@ Espressif 32
     espressif32/um_tinys2
     espressif32/um_tinys3
     espressif32/vintlabs-devkit-v1
+    espressif32/wemos_d1_mini32
+    espressif32/wemos_d1_uno32
     espressif32/lolin_c3_mini
     espressif32/lolin_d32
     espressif32/lolin_d32_pro
@@ -593,7 +586,6 @@ Espressif 32
     espressif32/lolin_s2_pico
     espressif32/lolin32
     espressif32/lolin32_lite
-    espressif32/wemos_d1_mini32
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/wt32-eth01

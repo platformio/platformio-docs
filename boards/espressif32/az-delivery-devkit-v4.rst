@@ -69,6 +69,7 @@ Uploading
 AZ-Delivery ESP-32 Dev Kit C V4 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ AZ-Delivery ESP-32 Dev Kit C V4 does not have on-board debug probe and **IS NOT 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

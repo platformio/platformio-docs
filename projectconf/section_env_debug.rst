@@ -358,4 +358,4 @@ Examples:
     [env:debug_a_test]
     ...
 
-    debug_test = test_calcualtor
+    debug_test = test_calculator

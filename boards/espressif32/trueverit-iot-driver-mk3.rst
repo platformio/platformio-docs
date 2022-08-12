@@ -69,6 +69,7 @@ Uploading
 Trueverit ESP32 Universal IoT Driver MK III supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ Trueverit ESP32 Universal IoT Driver MK III does not have on-board debug probe a
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

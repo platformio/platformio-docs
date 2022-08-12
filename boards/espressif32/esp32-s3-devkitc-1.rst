@@ -11,8 +11,8 @@
 
 .. _board_espressif32_esp32-s3-devkitc-1:
 
-Espressif ESP32-S3-DevKitC-1
-============================
+Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
+===================================================
 
 .. contents::
 
@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 8MB
   * - **RAM**
     - 320KB
   * - **Vendor**
@@ -46,7 +46,7 @@ Please use ``esp32-s3-devkitc-1`` ID for :ref:`projectconf_env_board` option in 
   platform = espressif32
   board = esp32-s3-devkitc-1
 
-You can override default Espressif ESP32-S3-DevKitC-1 settings per build environment using
+You can override default Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `esp32-s3-devkitc-1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-s3-devkitc-1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,9 +66,11 @@ board manifest `esp32-s3-devkitc-1.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Espressif ESP32-S3-DevKitC-1 supports the following uploading protocols:
+Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM) supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -106,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Espressif ESP32-S3-DevKitC-1 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM) has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -116,6 +118,12 @@ Espressif ESP32-S3-DevKitC-1 does not have on-board debug probe and **IS NOT REA
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
     - 
+    - 
+  * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
+    - Yes
     - Yes
   * - :ref:`debugging_tool_esp-prog`
     - 
@@ -155,3 +163,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_espidf`
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.

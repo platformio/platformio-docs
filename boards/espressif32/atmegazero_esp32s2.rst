@@ -69,6 +69,7 @@ Uploading
 EspinalLab ATMegaZero ESP32-S2 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ EspinalLab ATMegaZero ESP32-S2 does not have on-board debug probe and **IS NOT R
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

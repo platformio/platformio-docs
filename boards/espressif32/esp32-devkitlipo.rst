@@ -69,6 +69,7 @@ Uploading
 OLIMEX ESP32-DevKit-LiPo supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ OLIMEX ESP32-DevKit-LiPo does not have on-board debug probe and **IS NOT READY**
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

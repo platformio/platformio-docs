@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_adafruit_qtpy_esp32s3:
+.. _board_espressif32_dfrobot_beetle_esp32c3:
 
-Adafruit QT Py ESP32-S3 No PSRAM
-================================
+DFRobot Beetle ESP32-C3
+=======================
 
 .. contents::
 
@@ -24,51 +24,53 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S3
+    - ESP32C3
   * - **Frequency**
-    - 240MHz
+    - 160MHz
   * - **Flash**
     - 4MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/5426?utm_source=platformio.org&utm_medium=docs>`__
+    - `DFRobot <https://www.dfrobot.com/product-2566.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_qtpy_esp32s3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``dfrobot_beetle_esp32c3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3]
+  [env:dfrobot_beetle_esp32c3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3
+  board = dfrobot_beetle_esp32c3
 
-You can override default Adafruit QT Py ESP32-S3 No PSRAM settings per build environment using
+You can override default DFRobot Beetle ESP32-C3 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_qtpy_esp32s3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/adafruit_qtpy_esp32s3.json>`_. For example,
+board manifest `dfrobot_beetle_esp32c3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/dfrobot_beetle_esp32c3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3]
+  [env:dfrobot_beetle_esp32c3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3
+  board = dfrobot_beetle_esp32c3
 
   ; change microcontroller
-  board_build.mcu = esp32s3
+  board_build.mcu = esp32c3
 
   ; change MCU frequency
-  board_build.f_cpu = 240000000L
+  board_build.f_cpu = 160000000L
 
 
 Uploading
 ---------
-Adafruit QT Py ESP32-S3 No PSRAM supports the following uploading protocols:
+DFRobot Beetle ESP32-C3 supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -87,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3]
+  [env:dfrobot_beetle_esp32c3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3
+  board = dfrobot_beetle_esp32c3
 
   upload_protocol = esptool
 
@@ -106,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit QT Py ESP32-S3 No PSRAM does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+DFRobot Beetle ESP32-C3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -117,6 +119,12 @@ Adafruit QT Py ESP32-S3 No PSRAM does not have on-board debug probe and **IS NOT
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 
@@ -155,3 +163,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+
+    * - :ref:`framework_espidf`
+      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
