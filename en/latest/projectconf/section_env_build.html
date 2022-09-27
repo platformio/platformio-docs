@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -296,16 +297,18 @@ In this case, you need to wrap a value with double quotes (<code class="docutils
 double quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">\\&quot;</span></code>) in the constant value.</p>
 <p>Here is an example of a macro definition that uses stringification
 and <a class="reference internal" href="#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>. Please note that we
-enclosed the flag in the single quotes to prevent the shell from
-removing double quotes:</p>
+enclosed the flag in the single quotes to prevent the shell evaluation:</p>
 <p><strong>platformio.ini</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">&#39;-DMYSTRING</span><span class="o">=</span><span class="s">&quot;Text is \\&quot;Quoted\\&quot;&quot;&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="na">&#39;-D MYSTRING</span><span class="o">=</span><span class="s">&quot;Text is \\&quot;Quoted\\&quot;&quot;&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="na">&#39;-D MYFONT</span><span class="o">=</span><span class="s">&amp;roboto14&#39;</span><span class="w"></span>
 </pre></div>
 </div>
 <p><strong>src/main.cpp</strong></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#define CONFIG_LV_FONT_DEFAULT MYFONT</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;MYSTRING=&lt;%s&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">MYSTRING</span><span class="p">);</span><span class="w"></span>
@@ -607,7 +610,7 @@ pio run --target envdump
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.5a3 (latest)
+    v6.1.5a4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
