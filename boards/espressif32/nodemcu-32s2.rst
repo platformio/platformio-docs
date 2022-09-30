@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_adafruit_qtpy_esp32s3_nopsram:
+.. _board_espressif32_nodemcu-32s2:
 
-Adafruit QT Py ESP32-S3 No PSRAM
-================================
+Ai-Thinker NodeMCU-32S2 (ESP-12K)
+=================================
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S3
+    - ESP32S2
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 8MB
+    - 4MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/5426?utm_source=platformio.org&utm_medium=docs>`__
+    - `Ai-Thinker <https://docs.ai-thinker.com/en/esp32s2?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_qtpy_esp32s3_nopsram`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nodemcu-32s2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:nodemcu-32s2]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = nodemcu-32s2
 
-You can override default Adafruit QT Py ESP32-S3 No PSRAM settings per build environment using
+You can override default Ai-Thinker NodeMCU-32S2 (ESP-12K) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_qtpy_esp32s3_nopsram.json <https://github.com/platformio/platform-espressif32/blob/master/boards/adafruit_qtpy_esp32s3_nopsram.json>`_. For example,
+board manifest `nodemcu-32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/nodemcu-32s2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:nodemcu-32s2]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = nodemcu-32s2
 
   ; change microcontroller
-  board_build.mcu = esp32s3
+  board_build.mcu = esp32s2
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,11 +66,10 @@ board manifest `adafruit_qtpy_esp32s3_nopsram.json <https://github.com/platformi
 
 Uploading
 ---------
-Adafruit QT Py ESP32-S3 No PSRAM supports the following uploading protocols:
+Ai-Thinker NodeMCU-32S2 (ESP-12K) supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
-* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -89,9 +88,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:nodemcu-32s2]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = nodemcu-32s2
 
   upload_protocol = esptool
 
@@ -108,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit QT Py ESP32-S3 No PSRAM does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Ai-Thinker NodeMCU-32S2 (ESP-12K) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -120,9 +119,6 @@ Adafruit QT Py ESP32-S3 No PSRAM does not have on-board debug probe and **IS NOT
     - 
     - Yes
   * - ``esp-bridge``
-    - 
-    - 
-  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`

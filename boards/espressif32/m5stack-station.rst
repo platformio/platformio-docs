@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_denky_d4:
+.. _board_espressif32_m5stack-station:
 
-Denky D4 (PICO-V3-02)
-=====================
+M5Stack Station
+===============
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 8MB
+    - 16MB
   * - **RAM**
-    - 320KB
+    - 4.31MB
   * - **Vendor**
-    - `Denky <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio.org&utm_medium=docs>`__
+    - `M5Stack <http://www.m5stack.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``denky_d4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``m5stack-station`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:m5stack-station]
   platform = espressif32
-  board = denky_d4
+  board = m5stack-station
 
-You can override default Denky D4 (PICO-V3-02) settings per build environment using
+You can override default M5Stack Station settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `denky_d4.json <https://github.com/platformio/platform-espressif32/blob/master/boards/denky_d4.json>`_. For example,
+board manifest `m5stack-station.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stack-station.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:m5stack-station]
   platform = espressif32
-  board = denky_d4
+  board = m5stack-station
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,7 +66,7 @@ board manifest `denky_d4.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-Denky D4 (PICO-V3-02) supports the following uploading protocols:
+M5Stack Station supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -77,15 +77,15 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:m5stack-station]
   platform = espressif32
-  board = denky_d4
+  board = m5stack-station
 
   upload_protocol = esptool
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Denky D4 (PICO-V3-02) board.
+:ref:`piodebug` currently does not support M5Stack Station board.
 
 Frameworks
 ----------

@@ -697,6 +697,13 @@ Adafruit
       - 16MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_espressif32_adafruit_itsybitsy_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_atmelsam_adafruit_itsybitsy_m0`
       - :ref:`platform_atmelsam`
       - External
@@ -877,7 +884,7 @@ Adafruit
       - External
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 8MB
       - 320KB
     * - :ref:`board_atmelsam_adafruit_qt_py_m0`
       - :ref:`platform_atmelsam`
@@ -991,6 +998,27 @@ AfroFlight
       - 72MHz
       - 128KB
       - 20KB
+
+Ai-Thinker
+~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nodemcu-32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
 
 AirM2M
 ~~~~~~
@@ -1818,6 +1846,34 @@ BitWizard
       - 30KB
       - 2KB
 
+Blinker
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_wifiduino32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_wifiduino32c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+
 BluesWireless
 ~~~~~~~~~~~~~
 
@@ -2097,7 +2153,35 @@ Deneyap
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkartg`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Deparment of Alchemy
+~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_minimain_esp32s2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -6676,6 +6760,48 @@ Silicon Labs
       - 1MB
       - 256KB
 
+Smart Bee
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_bee_motion`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_bee_motion_mini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_bee_motion_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_bee_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+
 Solder Splash Labs
 ~~~~~~~~~~~~~~~~~~
 
@@ -6738,6 +6864,20 @@ SparkFun
       - 8MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_espressif32_sparkfun_esp32_iot_redboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_sparkfun_esp32s2_thing_plus_c`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_sparkfun_esp32s2_thing_plus`
       - :ref:`platform_espressif32`
       - External
@@ -6994,6 +7134,13 @@ TAMC
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_tamc_termod_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 8MB
       - 320KB
@@ -7544,6 +7691,41 @@ Unexpected Maker
       - 8MB
       - 320KB
 
+University of Sheffield
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_unphone7`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_unphone8`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 7.94MB
+      - 2.31MB
+    * - :ref:`board_espressif32_unphone9`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 7.94MB
+      - 8.31MB
+
 Unknown
 ~~~~~~~
 
@@ -7724,6 +7906,13 @@ WEMOS
       - ESP32S2
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
       - :ref:`platform_espressif32`
