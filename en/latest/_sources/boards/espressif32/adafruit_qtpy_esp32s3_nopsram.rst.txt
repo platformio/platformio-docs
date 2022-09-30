@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 8MB
   * - **RAM**
     - 320KB
   * - **Vendor**

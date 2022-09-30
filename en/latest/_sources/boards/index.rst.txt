@@ -446,16 +446,20 @@ Espressif 32
     espressif32/adafruit_feather_esp32s3_nopsram
     espressif32/adafruit_feather_esp32s3_tft
     espressif32/adafruit_funhouse_esp32s2
+    espressif32/adafruit_itsybitsy_esp32
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_metro_esp32s2
     espressif32/adafruit_qtpy_esp32
     espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
     espressif32/adafruit_qtpy_esp32s3_nopsram
+    espressif32/nodemcu-32s2
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/bpi-bit
     espressif32/wifiduino32
+    espressif32/wifiduino32s3
+    espressif32/wifiduino32c3
     espressif32/briki_abc_esp32
     espressif32/briki_mbc-wb_esp32
     espressif32/cnrs_aw2eth
@@ -467,9 +471,11 @@ Espressif 32
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
     espressif32/deneyapkart1A
+    espressif32/deneyapkartg
     espressif32/deneyapmini
     espressif32/denky_d4
     espressif32/denky32
+    espressif32/minimain_esp32s2
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
@@ -514,6 +520,7 @@ Espressif 32
     espressif32/m5stack-core2
     espressif32/m5stack-fire
     espressif32/m5stack-grey
+    espressif32/m5stack-station
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
     espressif32/m5stack-coreink
@@ -549,12 +556,19 @@ Espressif 32
     espressif32/watchy
     espressif32/seeed_xiao_esp32c3
     espressif32/wesp32
+    espressif32/bee_motion
+    espressif32/bee_motion_mini
+    espressif32/bee_motion_s3
+    espressif32/bee_s3
+    espressif32/sparkfun_esp32_iot_redboard
     espressif32/sparkfun_esp32micromod
     espressif32/esp32thing
     espressif32/esp32thing_plus
+    espressif32/sparkfun_esp32s2_thing_plus_c
     espressif32/sparkfun_esp32s2_thing_plus
     espressif32/sparkfun_lora_gateway_1-channel
     espressif32/dpu_esp32
+    espressif32/tamc_termod_s3
     espressif32/ttgo-lora32-v1
     espressif32/ttgo-lora32-v2
     espressif32/ttgo-lora32-v21
@@ -584,6 +598,7 @@ Espressif 32
     espressif32/lolin_d32_pro
     espressif32/lolin_s2_mini
     espressif32/lolin_s2_pico
+    espressif32/lolin_s3
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemosbat
@@ -597,6 +612,9 @@ Espressif 32
     espressif32/nina_w10
     espressif32/upesy_wroom
     espressif32/upesy_wrover
+    espressif32/unphone7
+    espressif32/unphone8
+    espressif32/unphone9
 
 Espressif 8266
 --------------
