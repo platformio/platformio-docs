@@ -488,6 +488,7 @@ Espressif 32
     espressif32/atmegazero_esp32s2
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-c3-devkitc-02
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
