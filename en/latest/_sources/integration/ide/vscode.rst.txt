@@ -160,7 +160,6 @@ There are 2 ways how to access :ref:`piocore`:
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
 
-
 Project Tasks
 -------------
 
@@ -356,11 +355,10 @@ Proxy Server Support
 
 There are two options how to configure a proxy server:
 
-1. Declare the ``HTTP_PROXY`` and ``HTTPS_PROXY`` system environment variables
-   (for example ``HTTP_PROXY=http://user:pass@10.10.1.10:3128/``, etc.)
-2. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
+1. Open `VSCode Settings <https://code.visualstudio.com/docs/getstarted/settings>`__
    and search for "Proxy". Please set "Http: Proxy" and disable
    "Http: Proxy Strict SSL".
+2. Configure PlatformIO Core :ref:`piocore_install_proxy_configuration`.
 
 .. _ide_vscode_keybindings:
 
