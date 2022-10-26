@@ -73,8 +73,8 @@ BluePill F103C8 supports the following uploading protocols:
 * ``dfu``
 * ``jlink``
 * ``mbed``
-* ``stlink``
 * ``serial``
+* ``stlink``
 
 Default protocol is ``stlink``
 
