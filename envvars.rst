@@ -242,3 +242,7 @@ Allows one to override setting :ref:`setting_force_verbose`.
 .. envvar:: PLATFORMIO_SETTING_PROJECTS_DIR
 
 Allows one to override setting :ref:`setting_projects_dir`.
+
+.. envvar:: PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL
+
+Allows one to override setting :ref:`setting_enable_proxy_strict_ssl`.

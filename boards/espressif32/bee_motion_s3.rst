@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_adafruit_qtpy_esp32s3_nopsram:
+.. _board_espressif32_bee_motion_s3:
 
-Adafruit QT Py ESP32-S3 No PSRAM
-================================
+Smart Bee Motion S3
+===================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/5426?utm_source=platformio.org&utm_medium=docs>`__
+    - `Smart Bee <https://github.com/strid3r21/BeeMotionS3/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_qtpy_esp32s3_nopsram`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``bee_motion_s3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:bee_motion_s3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = bee_motion_s3
 
-You can override default Adafruit QT Py ESP32-S3 No PSRAM settings per build environment using
+You can override default Smart Bee Motion S3 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_qtpy_esp32s3_nopsram.json <https://github.com/platformio/platform-espressif32/blob/master/boards/adafruit_qtpy_esp32s3_nopsram.json>`_. For example,
+board manifest `bee_motion_s3.json <https://github.com/platformio/platform-espressif32/blob/master/boards/bee_motion_s3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:bee_motion_s3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = bee_motion_s3
 
   ; change microcontroller
   board_build.mcu = esp32s3
@@ -66,7 +66,7 @@ board manifest `adafruit_qtpy_esp32s3_nopsram.json <https://github.com/platformi
 
 Uploading
 ---------
-Adafruit QT Py ESP32-S3 No PSRAM supports the following uploading protocols:
+Smart Bee Motion S3 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
@@ -89,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_qtpy_esp32s3_nopsram]
+  [env:bee_motion_s3]
   platform = espressif32
-  board = adafruit_qtpy_esp32s3_nopsram
+  board = bee_motion_s3
 
   upload_protocol = esptool
 
@@ -108,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit QT Py ESP32-S3 No PSRAM does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Smart Bee Motion S3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

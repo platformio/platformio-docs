@@ -134,8 +134,7 @@ double quotes (``"`` -> ``\\"``) in the constant value.
 
 Here is an example of a macro definition that uses stringification
 and :ref:`projectconf_build_flags`. Please note that we
-enclosed the flag in the single quotes to prevent the shell from
-removing double quotes:
+enclosed the flag in the single quotes to prevent the shell evaluation:
 
 **platformio.ini**
 
@@ -143,13 +142,16 @@ removing double quotes:
 
   [env:myenv]
   build_flags =
-      '-DMYSTRING="Text is \\"Quoted\\""'
+      '-D MYSTRING="Text is \\"Quoted\\""'
+      '-D MYFONT=&roboto14'
 
 **src/main.cpp**
 
 .. code:: cpp
 
   #include <stdio.h>
+
+  #define CONFIG_LV_FONT_DEFAULT MYFONT
 
   int main(void) {
       printf("MYSTRING=<%s>\n", MYSTRING);

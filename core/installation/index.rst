@@ -34,5 +34,6 @@ Installation
     shell-commands
     udev-rules
     integration
+    proxy-configuration
     troubleshooting
     uninstall

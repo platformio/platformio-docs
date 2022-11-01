@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_denky_d4:
+.. _board_espressif32_unphone7:
 
-Denky D4 (PICO-V3-02)
-=====================
+unPhone 7
+=========
 
 .. contents::
 
@@ -28,34 +28,34 @@ Platform :ref:`platform_espressif32`: Espressif Systems is a privately held fabl
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 8MB
+    - 4MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Denky <https://en.wikipedia.org/wiki/ESP32?utm_source=platformio.org&utm_medium=docs>`__
+    - `University of Sheffield <https://unphone.net/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``denky_d4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``unphone7`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:unphone7]
   platform = espressif32
-  board = denky_d4
+  board = unphone7
 
-You can override default Denky D4 (PICO-V3-02) settings per build environment using
+You can override default unPhone 7 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `denky_d4.json <https://github.com/platformio/platform-espressif32/blob/master/boards/denky_d4.json>`_. For example,
+board manifest `unphone7.json <https://github.com/platformio/platform-espressif32/blob/master/boards/unphone7.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:unphone7]
   platform = espressif32
-  board = denky_d4
+  board = unphone7
 
   ; change microcontroller
   board_build.mcu = esp32
@@ -66,10 +66,21 @@ board manifest `denky_d4.json <https://github.com/platformio/platform-espressif3
 
 Uploading
 ---------
-Denky D4 (PICO-V3-02) supports the following uploading protocols:
+unPhone 7 supports the following uploading protocols:
 
+* ``cmsis-dap``
+* ``esp-bridge``
+* ``esp-prog``
 * ``espota``
 * ``esptool``
+* ``iot-bus-jtag``
+* ``jlink``
+* ``minimodule``
+* ``olimex-arm-usb-ocd``
+* ``olimex-arm-usb-ocd-h``
+* ``olimex-arm-usb-tiny-h``
+* ``olimex-jtag-tiny``
+* ``tumpa``
 
 Default protocol is ``esptool``
 
@@ -77,15 +88,66 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:denky_d4]
+  [env:unphone7]
   platform = espressif32
-  board = denky_d4
+  board = unphone7
 
   upload_protocol = esptool
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Denky D4 (PICO-V3-02) board.
+
+:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
+
+.. warning::
+    You will need to install debug tool drivers depending on your system.
+    Please click on compatible debug tool below for the further
+    instructions and configuration information.
+
+You can switch between debugging :ref:`debugging_tools` using
+:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
+
+unPhone 7 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+
+.. list-table::
+  :header-rows:  1
+
+  * - Compatible Tools
+    - On-board
+    - Default
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - Yes
+  * - ``esp-bridge``
+    - 
+    - 
+  * - :ref:`debugging_tool_esp-prog`
+    - 
+    - 
+  * - :ref:`debugging_tool_iot-bus-jtag`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_minimodule`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
+    - 
+    - 
+  * - :ref:`debugging_tool_olimex-jtag-tiny`
+    - 
+    - 
+  * - :ref:`debugging_tool_tumpa`
+    - 
+    - 
 
 Frameworks
 ----------
