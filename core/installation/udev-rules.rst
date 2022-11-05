@@ -31,14 +31,12 @@ Please open system Terminal and type
 
 .. code-block:: bash
 
-    # Recommended
     curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
 
 Or you can manually download and copy the file to a destination folder
 
 .. code-block:: bash
 
-    # OR, manually download and copy this file to destination folder
     sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
 
 
