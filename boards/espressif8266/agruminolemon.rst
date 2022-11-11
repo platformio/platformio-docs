@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 4MB
+    - 2MB
   * - **RAM**
     - 80KB
   * - **Vendor**
