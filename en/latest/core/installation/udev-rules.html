@@ -145,7 +145,7 @@
 <span id="id1"></span><h1>99-platformio-udev.rules<a class="headerlink" href="#platformio-udev-rules" title="Permalink to this heading">¶</a></h1>
 <p>Linux users have to install <a class="reference external" href="https://en.wikipedia.org/wiki/Udev">udev</a> rules
 for PlatformIO supported boards/devices. The latest version of the rules may be found at
-<a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules">https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules</a></p>
+<a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules">https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please check that your board’s PID and VID  are listed in the rules.
@@ -156,7 +156,7 @@ command.</p>
 (preferred location) or <code class="docutils literal notranslate"><span class="pre">/lib/udev/rules.d/99-platformio-udev.rules</span></code>
 (required on some broken systems).</p>
 <p>Please open system Terminal and type</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules <span class="p">|</span> sudo tee /etc/udev/rules.d/99-platformio-udev.rules
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules <span class="p">|</span> sudo tee /etc/udev/rules.d/99-platformio-udev.rules
 </pre></div>
 </div>
 <p>Or you can manually download and copy the file to a destination folder</p>
@@ -317,7 +317,7 @@ group changes to take effect.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6a2 (latest)
+    v6.1.6a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
