@@ -37,7 +37,7 @@ You can configure debugging tool using :ref:`projectconf_debug_tool` option in
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = esp-usb-bridge
+    debug_tool = esp-bridge
 
 If you would like to use this tool for firmware uploading, please change
 upload protocol:
@@ -47,8 +47,8 @@ upload protocol:
     [env:myenv]
     platform = ...
     board = ...
-    debug_tool = esp-usb-bridge
-    upload_protocol = esp-usb-bridge
+    debug_tool = esp-bridge
+    upload_protocol = esp-bridge
 
 More options:
 
