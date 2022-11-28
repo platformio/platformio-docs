@@ -26,7 +26,8 @@ via `associative array <http://en.wikipedia.org/wiki/Associative_array>`_
 (name/value pairs). The order doesn't matter. The allowable fields
 (names from pairs) are described below.
 
-You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` command.
+You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` command
+or :ref:`manifest_library_json_schema`.
 
 .. toctree::
     :maxdepth: 2
@@ -47,3 +48,4 @@ You can validate ``library.json`` manifest file using the :ref:`cmd_pkg_pack` co
     fields/export/index
     fields/scripts
     fields/build/index
+    fields/schema
