@@ -110,7 +110,7 @@ option.
 
 **Example**
 
-Please check the complete `GoogleTest example <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/semihosting>`_
+Please check the complete `GoogleTest example <https://github.com/platformio/platformio-examples/tree/develop/unit-testing/googletest>`_
 using GTest, GMock, and PlatformIO.
 
 **Useful links**
