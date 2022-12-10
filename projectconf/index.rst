@@ -14,12 +14,17 @@
 "platformio.ini" (Project Configuration File)
 =============================================
 
-Each PlatformIO project has a configuration file named
-``platformio.ini`` in the root directory for the project. This is a
-`INI-style <http://en.wikipedia.org/wiki/INI_file>`_ file.
+``platformio.ini`` is a configuration file that lets you set up your development
+environment, share your code and configurations with others, and leverage a
+declarative approach to development. You can use ``platformio.ini`` to
+configure multiple platforms and architectures without having to worry
+about different toolchains or build systems for each one.
 
+Each PlatformIO project has its own ``platformio.ini`` that
+is located in the root directory of the project. This is an
+`INI-style <http://en.wikipedia.org/wiki/INI_file>`_ file.
 ``platformio.ini`` has sections (each denoted by a ``[header]``) and
-key / value pairs within the sections. Lines beginning with ``;``
+key/value pairs within the sections. Lines beginning with ``;``
 are ignored and may be used to provide comments.
 
 Multiple value options can be specified in two ways:
