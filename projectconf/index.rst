@@ -37,8 +37,8 @@ Here are the allowed sections and their allowed contents:
 .. toctree::
     :maxdepth: 2
 
-    section_platformio
-    section_env
+    sections/platformio/index
+    sections/env/index
     interpolation
     examples
 

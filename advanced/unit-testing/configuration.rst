@@ -18,6 +18,6 @@ See available options below:
 .. toctree::
     :maxdepth: 2
 
-    ../../projectconf/section_env_test
+    ../../projectconf/sections/env/options/test/index
 
 You can also override some options using :ref:`cmd_test` command.
