@@ -18,7 +18,7 @@ using the next options:
 .. toctree::
     :maxdepth: 2
 
-    ../../projectconf/section_env_check
+    ../../projectconf/sections/env/options/check/index
 
 You can also override some options using :ref:`cmd_check` command.
 

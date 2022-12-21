@@ -149,14 +149,14 @@
              
   <section id="custom-test-runner">
 <span id="unit-testing-frameworks-custom-runner"></span><h1>Custom Test Runner<a class="headerlink" href="#custom-test-runner" title="Permalink to this heading">¶</a></h1>
-<p>Setting the <a class="reference internal" href="../../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option to the <code class="docutils literal notranslate"><span class="pre">custom</span></code>
+<p>Setting the <a class="reference internal" href="../../../../projectconf/sections/env/options/test/test_framework.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option to the <code class="docutils literal notranslate"><span class="pre">custom</span></code>
 will instruct PlatformIO to look for a <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code>
 file located in the current (running) test folder. If the file is
 not found, PlatformIO will check the parent folders
-in a tree until reaches the <a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.</p>
+in a tree until reaches the <a class="reference internal" href="../../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.</p>
 <p>If you plan to use a custom test framework for ALL tests, please
 put the <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> file at the root of
-<a class="reference internal" href="../../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>. Otherwise, use
+<a class="reference internal" href="../../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>. Otherwise, use
 <a class="reference internal" href="../../structure/hierarchy.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> and put it to the test folder
 or to the group of tests that depend on it.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">test_custom_runner.py</span></code> is a Python-based script. It must

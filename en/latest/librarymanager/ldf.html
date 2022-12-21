@@ -72,7 +72,7 @@
 <li class="toctree-l2"><a class="reference internal" href="dependencies.html">Dependency Management</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Library Dependency Finder (LDF)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../projectconf/section_env_library.html">Library options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projectconf/sections/env/options/library/index.html">Library options</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#storage">Storage</a></li>
@@ -170,13 +170,13 @@ details.</p>
 <p>Library Dependency Finder can be configured from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../projectconf/section_env_library.html">Library options</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-deps"><code class="docutils literal notranslate"><span class="pre">lib_deps</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-ignore"><code class="docutils literal notranslate"><span class="pre">lib_ignore</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-extra-dirs"><code class="docutils literal notranslate"><span class="pre">lib_extra_dirs</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-ldf-mode"><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-compat-mode"><code class="docutils literal notranslate"><span class="pre">lib_compat_mode</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projectconf/section_env_library.html#lib-archive"><code class="docutils literal notranslate"><span class="pre">lib_archive</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projectconf/sections/env/options/library/index.html">Library options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_deps.html"><code class="docutils literal notranslate"><span class="pre">lib_deps</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_ignore.html"><code class="docutils literal notranslate"><span class="pre">lib_ignore</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_extra_dirs.html"><code class="docutils literal notranslate"><span class="pre">lib_extra_dirs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_ldf_mode.html"><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_compat_mode.html"><code class="docutils literal notranslate"><span class="pre">lib_compat_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projectconf/sections/env/options/library/lib_archive.html"><code class="docutils literal notranslate"><span class="pre">lib_archive</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -188,23 +188,23 @@ details.</p>
 libraries. These storages (folders) have priority and LDF operates in the next
 order:</p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-extra-dirs"><span class="std std-ref">lib_extra_dirs</span></a> - extra storages per build environment</p></li>
-<li><p><a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> - own/private library storage per project</p></li>
-<li><p><a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-libdeps-dir"><span class="std std-ref">libdeps_dir</span></a> - project dependency storage used by
+<li><p><a class="reference internal" href="../projectconf/sections/env/options/library/lib_extra_dirs.html#projectconf-lib-extra-dirs"><span class="std std-ref">lib_extra_dirs</span></a> - extra storages per build environment</p></li>
+<li><p><a class="reference internal" href="../projectconf/sections/platformio/options/directory/lib_dir.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> - own/private library storage per project</p></li>
+<li><p><a class="reference internal" href="../projectconf/sections/platformio/options/directory/libdeps_dir.html#projectconf-pio-libdeps-dir"><span class="std std-ref">libdeps_dir</span></a> - project dependency storage used by
 <a class="reference internal" href="index.html#librarymanager"><span class="std std-ref">Library Management</span></a></p></li>
-<li><p>“<a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/lib” - global storage per all projects.</p></li>
+<li><p>“<a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/lib” - global storage per all projects.</p></li>
 <li><p>Library storages built into frameworks, SDKs.</p></li>
 </ol>
 </section>
 <section id="dependency-finder-mode">
 <span id="ldf-mode"></span><h2><a class="toc-backref" href="#id5">Dependency Finder Mode</a><a class="headerlink" href="#dependency-finder-mode" title="Permalink to this heading">¶</a></h2>
 <p>Library Dependency Finder starts work from analyzing source files of the
-project (<a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>) and can work in the next modes:</p>
+project (<a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>) and can work in the next modes:</p>
 <dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">off</span></code></dt>
 <dd class="field-odd"><p>“Manual mode”, does not process source files of a project and dependencies.
 Builds only the libraries that are specified in manifests
-(<a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">module.json</span></code>) or using <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a>
+(<a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">module.json</span></code>) or using <a class="reference internal" href="../projectconf/sections/env/options/library/lib_deps.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a>
 option.</p>
 </dd>
 <dt class="field-even"><code class="docutils literal notranslate"><span class="pre">chain</span></code></dt>
@@ -225,7 +225,7 @@ files of the each found dependency (recursively).
 <dd class="field-odd"><p>The same behavior as for the <code class="docutils literal notranslate"><span class="pre">deep</span></code> but <strong>evaluates</strong> <a class="reference internal" href="#ldf-c-cond-syntax"><span class="std std-ref">C/C++ Preprocessor conditional syntax</span></a>.</p>
 </dd>
 </dl>
-<p>The mode can be changed using <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-ldf-mode"><span class="std std-ref">lib_ldf_mode</span></a> option in
+<p>The mode can be changed using <a class="reference internal" href="../projectconf/sections/env/options/library/lib_ldf_mode.html#projectconf-lib-ldf-mode"><span class="std std-ref">lib_ldf_mode</span></a> option in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">chain</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -233,7 +233,7 @@ files of the each found dependency (recursively).
 it is because the dependency is only referenced from a library source file,
 and not a library header file (see example below). In this case, it is
 necessary to either explicitly reference the dependency from the project
-source or <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> (<a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a> option), or change
+source or <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> (<a class="reference internal" href="../projectconf/sections/env/options/library/lib_deps.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a> option), or change
 the LDF mode to “deep” (not generally recommended).</p>
 </div>
 <p>A difference between <code class="docutils literal notranslate"><span class="pre">chain/chain+</span></code> and <code class="docutils literal notranslate"><span class="pre">deep/deep+</span></code> modes. For example,
@@ -297,15 +297,15 @@ library with real build environment. Available compatibility modes:</p>
 <dd class="field-odd"><p>Does not check for compatibility (is not recommended)</p>
 </dd>
 <dt class="field-even"><code class="docutils literal notranslate"><span class="pre">soft</span></code></dt>
-<dd class="field-even"><p>[<strong>DEFAULT</strong>] Checks for the compatibility with <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> from
+<dd class="field-even"><p>[<strong>DEFAULT</strong>] Checks for the compatibility with <a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> from
 build environment</p>
 </dd>
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">strict</span></code></dt>
-<dd class="field-odd"><p>Checks for the compatibility with <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>
-and <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> from build environment.</p>
+<dd class="field-odd"><p>Checks for the compatibility with <a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>
+and <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> from build environment.</p>
 </dd>
 </dl>
-<p>This mode can be changed using <a class="reference internal" href="../projectconf/section_env_library.html#projectconf-lib-compat-mode"><span class="std std-ref">lib_compat_mode</span></a> option in
+<p>This mode can be changed using <a class="reference internal" href="../projectconf/sections/env/options/library/lib_compat_mode.html#projectconf-lib-compat-mode"><span class="std std-ref">lib_compat_mode</span></a> option in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">soft</span></code>.</p>
 </section>
 <section id="c-c-preprocessor-conditional-syntax">

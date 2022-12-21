@@ -475,7 +475,7 @@
 </section>
 <section id="configuration">
 <h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p>Please use <code class="docutils literal notranslate"><span class="pre">vccgnd_f407zg_mini</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">vccgnd_f407zg_mini</span></code> ID for <a class="reference internal" href="../../projectconf/sections/env/options/platform/board.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:vccgnd_f407zg_mini]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">vccgnd_f407zg_mini</span><span class="w"></span>
@@ -509,7 +509,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <li><p><code class="docutils literal notranslate"><span class="pre">stlink</span></code></p></li>
 </ul>
 <p>Default protocol is <code class="docutils literal notranslate"><span class="pre">stlink</span></code></p>
-<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
+<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/sections/env/options/upload/upload_protocol.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:vccgnd_f407zg_mini]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">vccgnd_f407zg_mini</span><span class="w"></span>
@@ -528,7 +528,7 @@ Please click on compatible debug tool below for the further
 instructions and configuration information.</p>
 </div>
 <p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>VCCGND F407ZGT6 Mini does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
 <table class="docutils align-default">
 <colgroup>

@@ -142,23 +142,23 @@
              
   <section id="shared-code">
 <span id="unit-testing-shared-code"></span><h1>Shared Code<a class="headerlink" href="#shared-code" title="Permalink to this heading">¶</a></h1>
-<p>By default, PlatformIO does not build the main source code from the <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
+<p>By default, PlatformIO does not build the main source code from the <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
 folder in pair with a test source code. If you have a shared/common code
 between your “main” and “test” programs, you have 2 options:</p>
 <ol class="arabic">
 <li><p>We recommend splitting the source code into multiple
-components and placing them into the <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> (project’s
+components and placing them into the <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/lib_dir.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> (project’s
 private libraries and components). <a class="reference internal" href="../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will find and include these libraries
 automatically in the build process. You can include any library/component header file
 in your test or main application source code using <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;MyComponent.h&gt;</span></code>.</p>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator">Local &amp; Embedded: Calculator</a>
 for an example, where we have a “calculator” component in the
-<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> folder and include it in the tests and
+<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/lib_dir.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> folder and include it in the tests and
 the main application using <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;calculator.h&gt;</span></code>.</p>
 </li>
 <li><p><strong>NOT RECOMMENDED</strong>. Manually instruct PlatformIO to build the main source code
-from the <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder in pair with a test source code using
-the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-build-src"><span class="std std-ref">test_build_src</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+from the <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder in pair with a test source code using
+the <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_build_src.html#projectconf-test-build-src"><span class="std std-ref">test_build_src</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
 <span class="na">test_build_src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span><span class="w"></span>

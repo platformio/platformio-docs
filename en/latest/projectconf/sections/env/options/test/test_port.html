@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>test_port &mdash; PlatformIO latest documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.platformio.org/projectconf/sections/env/options/test/test_port.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="test_speed" href="test_speed.html" />
+    <link rel="prev" title="test_ignore" href="test_ignore.html" />
+ 
+<link rel="stylesheet" href="../../../../../_static/css/extra.css" type="text/css" />
+<script src="../../../../../_static/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html" class="icon icon-home"> PlatformIO
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../plus/pio-account.html">PlatformIO Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../index.html">platformio.ini</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../platformio/index.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../index.html#options">Options</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../platform/index.html">Platform options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../build/index.html">Build options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../library/index.html">Library options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../upload/index.html">Upload options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../monitor/index.html">Monitor options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../check/index.html">Check options</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Testing options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../debug/index.html">Debugging options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../advanced/index.html">Advanced options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../interpolation.html">Interpolation of Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../envvars.html">Environment variables</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../boards/index.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../scripting/index.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../plus/pio-remote.html">Remote Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../integration/ide/index.html">Cloud &amp; Desktop IDEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../faq/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
+</ul>
+
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">PlatformIO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">“platformio.ini” (Project Configuration File)</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Testing options</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">test_port</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/sections/env/options/test/test_port.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="test-port">
+<span id="projectconf-test-port"></span><h1><code class="docutils literal notranslate"><span class="pre">test_port</span></code><a class="headerlink" href="#test-port" title="Permalink to this heading">¶</a></h1>
+<p>Type: <code class="docutils literal notranslate"><span class="pre">String</span> <span class="pre">(Pattern)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code></p>
+<p>This option specifies communication interface between PlatformIO
+<a class="reference internal" href="../../../../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> Test Runner and the target device. The possible
+values are the same as documented for <a class="reference internal" href="../monitor/monitor_port.html#projectconf-monitor-port"><span class="std std-ref">monitor_port</span></a>
+option.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">test_port</span></code> isn’t specified, the PlatformIO <a class="reference internal" href="../../../../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>
+runner will try to detect it automatically.</p>
+<p>To print all available serial ports use the <a class="reference internal" href="../../../../../core/userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a> command.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="test_ignore.html" class="btn btn-neutral float-left" title="test_ignore" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="test_speed.html" class="btn btn-neutral float-right" title="test_speed" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+<ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = $('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      $(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if ($(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += $('.navbar').offset().top;
+    }
+    $('.wy-nav-side').css('top', topOffset + 'px');
+    $(window).scroll(function() {
+      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+<script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
+
+
+</footer>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v6.1.6a4 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/sections/env/options/test/test_port.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/projectconf/sections/env/options/test/test_port.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

@@ -145,37 +145,37 @@
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 6.0.</span></p>
 </div>
-<p>PlatformIO looks for the tests in the project <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.
+<p>PlatformIO looks for the tests in the project <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>.
 The only folder with a name prefixed by <code class="docutils literal notranslate"><span class="pre">test_</span></code> is nominated for unit testing
 and should be an independent test/application with its own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function
 (<code class="docutils literal notranslate"><span class="pre">setup()</span> <span class="pre">/</span> <span class="pre">loop()</span></code> for <a class="reference internal" href="../../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>, <code class="docutils literal notranslate"><span class="pre">app_main()</span></code>
 for <a class="reference internal" href="../../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>). Nested folders are supported and will help you
 to organize your tests.</p>
-<p>The root <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and a folder of the active test are
+<p>The root <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and a folder of the active test are
 automatically added to the <code class="docutils literal notranslate"><span class="pre">CPPPATH</span></code> scope (C Preprocessor Search Path).
-Also, C/C++ files located in the root of <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> will
+Also, C/C++ files located in the root of <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> will
 be compiled together with the active test source files. The root
-<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> is useful for placing configuration
+<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> is useful for placing configuration
 and extra C/C++ files related to the <a class="reference internal" href="../frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>.</p>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>If you have a single test application, you can place the source code files
-directly in the <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> folder</p></li>
+directly in the <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> folder</p></li>
 <li><p>If you want several test applications, you can organize them in subfolders
-under <a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>:</p>
+under <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>:</p>
 <ul>
 <li><p>each test application goes into a subfolder with a name <strong>starting</strong>
 with <code class="docutils literal notranslate"><span class="pre">test_</span></code></p></li>
 <li><p>additional levels of folders are allowed to properly organize your
 tests - see the example <strong>Pizza Project</strong> below</p></li>
-<li><p>the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> or
+<li><p>the <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_filter.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> or
 the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-f"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--filter</span></code></a> option on the CLI will restrict
 the tests to only those test suites whose path is relative to the
-<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter</p></li>
-<li><p>the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter</p></li>
+<li><p>the <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_ignore.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 or the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-i"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--ignore</span></code></a> option on the CLI will ignore
 test suites whose path is relative to the
-<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter.</p></li>
+<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> and matches the filter.</p></li>
 </ul>
 </li>
 </ul>

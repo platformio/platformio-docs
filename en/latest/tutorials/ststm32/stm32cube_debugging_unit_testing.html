@@ -176,7 +176,7 @@
 </section>
 <section id="adding-code-to-the-generated-project">
 <h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
-<p>Let’s add some actual code to the project. Firstly, we create two main files <code class="docutils literal notranslate"><span class="pre">main.c</span></code> and <code class="docutils literal notranslate"><span class="pre">main.h</span></code> in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder. Right click on the <code class="docutils literal notranslate"><span class="pre">src</span></code> in the project window:</p>
+<p>Let’s add some actual code to the project. Firstly, we create two main files <code class="docutils literal notranslate"><span class="pre">main.c</span></code> and <code class="docutils literal notranslate"><span class="pre">main.h</span></code> in the <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder. Right click on the <code class="docutils literal notranslate"><span class="pre">src</span></code> in the project window:</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-3.png" src="../../_images/stm32cube-debugging-unit-testing-3.png" />
 <p>Add next content to <code class="docutils literal notranslate"><span class="pre">main.h</span></code>:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef MAIN_H</span>
@@ -262,7 +262,7 @@ to the STLink debug interface and in OS it can be visible as a Virtual Com Port,
 so we don’t need any additional USB-UART converter. To implement the custom
 <a class="reference internal" href="../../advanced/unit-testing/frameworks/unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a> configuration we need to create two
 files <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> and <code class="docutils literal notranslate"><span class="pre">unity_config.c</span></code> and put them in
-the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> in the root folder of our project.</p>
+the <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> in the root folder of our project.</p>
 <p>Implementation of <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code>:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef UNITY_CONFIG_H</span>
 <span class="cp">#define UNITY_CONFIG_H</span>

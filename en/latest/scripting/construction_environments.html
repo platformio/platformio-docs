@@ -143,8 +143,8 @@ to process a project:</p>
 and for other internal operations.</p>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;projenv&quot;)</span></code> - the isolated construction environment
-used for processing the project source code in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>.</p>
-<p>Please note that any <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-src-flags"><span class="std std-ref">build_src_flags</span></a> specified in
+used for processing the project source code in <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>.</p>
+<p>Please note that any <a class="reference internal" href="../projectconf/sections/env/options/build/build_src_flags.html#projectconf-build-src-flags"><span class="std std-ref">build_src_flags</span></a> specified in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> will be passed to the <code class="docutils literal notranslate"><span class="pre">projenv</span></code> and not to the <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -157,7 +157,7 @@ and <a class="reference internal" href="../manifests/library-json/fields/build/e
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> - the current working construction environment.</p>
 <p>Imported <code class="docutils literal notranslate"><span class="pre">env</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">DefaultEnvironment()</span></code> for scripts
-configured using the <a class="reference internal" href="../projectconf/section_env_advanced.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a> option
+configured using the <a class="reference internal" href="../projectconf/sections/env/options/advanced/extra_scripts.html#projectconf-extra-scripts"><span class="std std-ref">extra_scripts</span></a> option
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>If you use <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> and <a class="reference internal" href="../manifests/library-json/fields/build/extrascript.html#library-json-buid-extra-script"><span class="std std-ref">extraScript</span></a>,
 the <code class="docutils literal notranslate"><span class="pre">Import(&quot;env&quot;)</span></code> refers to the library’s isolated

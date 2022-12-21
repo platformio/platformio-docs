@@ -198,8 +198,8 @@
 <dd></dd></dl>
 
 <p>Process only test suites whose path relative to the
-<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
-See documentation for the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a>
+<a class="reference internal" href="../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
+See documentation for the <a class="reference internal" href="../../projectconf/sections/env/options/test/test_filter.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a>
 project configuration option for more details.</p>
 <p>Example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--filter</span> <span class="pre">&quot;test_common&quot;</span> <span class="pre">-f</span> <span class="pre">&quot;native/*&quot;</span></code></p>
 <dl class="std option">
@@ -208,8 +208,8 @@ project configuration option for more details.</p>
 <dd></dd></dl>
 
 <p>Ignore test suites whose path relative to the
-<a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
-See documentation for the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a>
+<a class="reference internal" href="../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> matches the specified pattern.
+See documentation for the <a class="reference internal" href="../../projectconf/sections/env/options/test/test_ignore.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a>
 project configuration option for more details.</p>
 <p>For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--ignore</span> <span class="pre">&quot;embedded/*&quot;</span> <span class="pre">-i</span> <span class="pre">&quot;test_suite[13]&quot;</span></code></p>
 <dl class="std option">
@@ -295,7 +295,7 @@ default <code class="docutils literal notranslate"><span class="pre">1</span></c
 
 <p>Pass an extra argument to the testing program. Multiple arguments are allowed.</p>
 <p>If you need to pass extra arguments permanently per a testing environment,
-please take a look at the <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a>.</p>
+please take a look at the <a class="reference internal" href="../../projectconf/sections/env/options/test/test_testing_command.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a>.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt; pio <span class="nb">test</span> --program-arg <span class="s2">&quot;--abort-after=1&quot;</span> --program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
 <span class="c1"># or short format</span>

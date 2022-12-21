@@ -26,7 +26,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Examples" href="examples.html" />
-    <link rel="prev" title="Advanced options" href="section_env_advanced.html" />
+    <link rel="prev" title="extra_scripts" href="sections/env/options/advanced/extra_scripts.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -63,8 +63,8 @@
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">platformio.ini</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/platformio/index.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
@@ -155,11 +155,11 @@ first item from pair <code class="docutils literal notranslate"><span class="pre
 <td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${platformio.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
+<td><p>Embed value from <a class="reference internal" href="sections/platformio/index.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="sections/platformio/options/directory/packages_dir.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${env.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
+<td><p>Embed default value from <a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${&lt;section&gt;.&lt;option&gt;}</span></code></p></td>
@@ -180,7 +180,7 @@ first item from pair <code class="docutils literal notranslate"><span class="pre
 <li><p>Interpolation can span multiple levels</p></li>
 <li><p>Interpolation can be applied only for the option’s value</p></li>
 <li><p>Multiple interpolations are allowed</p></li>
-<li><p>The <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a> and <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>
+<li><p>The <a class="reference internal" href="sections/platformio/index.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a> and <a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>
 sections are reserved and could not be used as a custom section. Some good
 section names might be <code class="docutils literal notranslate"><span class="pre">extra</span></code> or <code class="docutils literal notranslate"><span class="pre">custom</span></code>.</p></li>
 </ul>
@@ -188,7 +188,7 @@ section names might be <code class="docutils literal notranslate"><span class="p
 <p class="admonition-title">Note</p>
 <p>If you need to <strong>share common configuration options</strong> between build
 environments, please take a look at <strong>“Global scope”</strong> in
-<a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> or <a class="reference internal" href="section_env_advanced.html#projectconf-env-extends"><span class="std std-ref">extends</span></a> option which
+<a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> or <a class="reference internal" href="sections/env/options/advanced/extends.html#projectconf-env-extends"><span class="std std-ref">extends</span></a> option which
 allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
@@ -261,7 +261,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="section_env_advanced.html" class="btn btn-neutral float-left" title="Advanced options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sections/env/options/advanced/extra_scripts.html" class="btn btn-neutral float-left" title="extra_scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

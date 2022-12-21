@@ -243,7 +243,7 @@
 <span id="framework-espidf"></span><h1>Espressif IoT Development Framework<a class="headerlink" href="#espressif-iot-development-framework" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">espidf</span></code></p>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">espidf</span></code></p>
 </dd>
 </dl>
 <p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p>
@@ -346,7 +346,7 @@ configuration is performed by the native for the ESP-IDF build system called <co
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>It’s also possible to use the default ESP-IDF project structure with <code class="docutils literal notranslate"><span class="pre">main</span></code> folder.
-To specify <code class="docutils literal notranslate"><span class="pre">main</span></code> as the folder with source files use <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
+To specify <code class="docutils literal notranslate"><span class="pre">main</span></code> as the folder with source files use <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
 option, for example:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
 <span class="na">src_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">main</span><span class="w"></span>
@@ -360,7 +360,7 @@ option, for example:</p>
 </div>
 <p>Besides the files related to PlatformIO project, there are several additional
 ESP-IDF-specific files: the main <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>, project-specific <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>
-in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> and optional default configuration file <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code>.
+in <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> and optional default configuration file <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code>.
 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> files enable features supported by the ESP-IDF’s build system, e.g.
 ULP configuration, adding extra components, etc. A typical <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file in
 the root folder has the following content:</p>
@@ -372,7 +372,7 @@ the root folder has the following content:</p>
 <span class="nb">project</span><span class="p">(</span><span class="s">project-name</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The second <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> in <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> is responsible for
+<p>The second <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> in <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> is responsible for
 controlling the build process of the component and its integration into the overall
 project. The minimal component <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file simply registers the component to
 the build system using <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code>:</p>
@@ -436,7 +436,7 @@ represents a list of extra directories to search for components.</p></li>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Since <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> is also passed to CMake as an extra component,
+<p>Since <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> is also passed to CMake as an extra component,
 you should only append to <code class="docutils literal notranslate"><span class="pre">EXTRA_COMPONENT_DIRS</span></code> variable in order not to override
 the default package.</p>
 </div>
@@ -502,7 +502,7 @@ for ULP:</p>
 <li><p>No whitespace characters allowed in project paths. This limitation is imposed by the
 <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html?highlight=spaces#step-2-get-esp-idf">native ESP-IDF build system</a>.
 This affects users that have a whitespace in their username or added a whitespace to
-the project name. As a workaround, it’s recommended to move <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
+the project name. As a workaround, it’s recommended to move <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
 to a folder without spaces. For example:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
 <span class="na">core_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">C:/.platformio</span><span class="w"></span>
@@ -559,7 +559,7 @@ environment.</p>
 <section id="enable-c-exceptions">
 <h4>Enable C++ exceptions<a class="headerlink" href="#enable-c-exceptions" title="Permalink to this heading">¶</a></h4>
 <p>to enable C++ exceptions for <a class="reference internal" href="#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a> add
-<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS</span></code> to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of
+<code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS</span></code> to <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>See <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions">project example</a>
 with enabled exceptions.</p>
@@ -641,7 +641,7 @@ So your project structure should look like this:</p>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You will need to install debug tool drivers depending on your system.

@@ -203,7 +203,7 @@
 <span id="framework-mbed"></span><h1>Mbed<a class="headerlink" href="#mbed" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
 </dd>
 </dl>
 <p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p>
@@ -265,7 +265,7 @@ Some examples of configuration parameters:</p>
 <p>On Windows the maximum length for a path (file name and directory route, also
 known as <code class="docutils literal notranslate"><span class="pre">MAX_PATH</span></code>) — has been defined by 260 characters which can lead to
 compilation error for some targets. It’s possible to shorten these paths is to
-install packages in root of any logical disk by specifying <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>.</p>
+install packages in root of any logical disk by specifying <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>.</p>
 </div>
 <section id="mbed-os-6">
 <h4><a class="toc-backref" href="#id10">Mbed OS 6</a><a class="headerlink" href="#mbed-os-6" title="Permalink to this heading">¶</a></h4>
@@ -288,7 +288,7 @@ Instead of the RTOS’s scheduler, all activities are polled or interrupt-driven
 <p>PlatformIO allows compiling projects with or without Mbed OS 5. By default, project
 is built without the OS feature. Most of the framework functionality requires the OS to
 be enabled. To add the OS feature you can use a special macro definition that needs be
-added to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+added to <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -321,7 +321,7 @@ added to <a class="reference internal" href="../projectconf/section_env_build.ht
 optimized firmware size with full error information and allows MCU to go to sleep mode.
 In the case when default build profile is not suitable for your project there two other
 profiles <code class="docutils literal notranslate"><span class="pre">release</span></code> and <code class="docutils literal notranslate"><span class="pre">debug</span></code> that can be enabled using special macro definitions.
-You can change build profile <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+You can change build profile <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -349,7 +349,7 @@ official page <a class="reference external" href="https://os.mbed.com/docs/mbed-
 <p>In case you don’t need all parts of the framework or you want to reduce the compilation
 time, you can explicitly exclude folders with redundant sources. For example, to remove
 <code class="docutils literal notranslate"><span class="pre">cellular</span></code>, <code class="docutils literal notranslate"><span class="pre">mbedtls</span></code> and <code class="docutils literal notranslate"><span class="pre">nanostack</span></code> features from the build process, navigate
-to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a> and create a new file <code class="docutils literal notranslate"><span class="pre">framework-mbed/features/.mbedignore</span></code>
+to <a class="reference internal" href="../projectconf/sections/platformio/options/directory/packages_dir.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a> and create a new file <code class="docutils literal notranslate"><span class="pre">framework-mbed/features/.mbedignore</span></code>
 with the following contents:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">cellular/*</span><span class="w"></span>
 <span class="na">mbedtls/*</span><span class="w"></span>
@@ -404,7 +404,7 @@ describe your board, for example here is the configuration for <code class="docu
 </div>
 <p>Secondly, you need to add code specific to your target to the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of your project.
 Usually, it’s a good idea to isolate this code in a separate folder and add the path to this folder
-to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+to <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_custom_board]</span><span class="w"></span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nxplpc</span><span class="w"></span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
@@ -518,7 +518,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You will need to install debug tool drivers depending on your system.

@@ -148,7 +148,7 @@
   <section id="extra-linker-flags-without-wl-prefix">
 <h1>Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix<a class="headerlink" href="#extra-linker-flags-without-wl-prefix" title="Permalink to this heading">¶</a></h1>
 <p>Sometimes you need to pass extra flags to GCC linker without <code class="docutils literal notranslate"><span class="pre">Wl,</span></code>. You could
-use <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option but it will not work. PlatformIO
+use <a class="reference internal" href="../../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option but it will not work. PlatformIO
 will not parse these flags to <code class="docutils literal notranslate"><span class="pre">LINKFLAGS</span></code> scope. In this case, simple
 extra script will help:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
