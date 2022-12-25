@@ -9,13 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Generic options
----------------
+``project_name``
+^^^^^^^^^^^^^^^^
 
-.. toctree::
-    :maxdepth: 1
+Type: ``String`` | Multiple: ``No``
 
-    default_envs
-    description
-    project_name
-    extra_configs
+Project name used for generation of IDE configuration. If not defined, default
+value of os.path.basename(project_dir) is used.
