@@ -453,10 +453,12 @@ Espressif 32
     espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
     espressif32/adafruit_qtpy_esp32s3_nopsram
+    espressif32/esp32-c3-m1i-kit
     espressif32/nodemcu-32s2
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/bpi-bit
+    espressif32/bpi_leaf_s3
     espressif32/wifiduino32
     espressif32/wifiduino32s3
     espressif32/wifiduino32c3
@@ -464,6 +466,7 @@ Espressif 32
     espressif32/briki_mbc-wb_esp32
     espressif32/cnrs_aw2eth
     espressif32/connaxio_espoir
+    espressif32/cytron_maker_feather_aiot_s3
     espressif32/d-duino-32
     espressif32/dfrobot_beetle_esp32c3
     espressif32/dfrobot_firebeetle2_esp32s3
@@ -471,8 +474,10 @@ Espressif 32
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
     espressif32/deneyapkart1A
+    espressif32/deneyapkart1Av2
     espressif32/deneyapkartg
     espressif32/deneyapmini
+    espressif32/deneyapminiv2
     espressif32/denky_d4
     espressif32/denky32
     espressif32/minimain_esp32s2
@@ -533,6 +538,7 @@ Espressif 32
     espressif32/kb32-ft
     espressif32/nano32
     espressif32/microduino-core-esp32
+    espressif32/redpill_esp32s3
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum

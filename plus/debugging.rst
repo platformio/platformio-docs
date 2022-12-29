@@ -203,7 +203,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -1012,6 +1012,13 @@ Ai-Thinker
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - :ref:`platform_espressif32`
       - External
@@ -1783,6 +1790,27 @@ BBC
       - 512KB
       - 128KB
 
+BPI Tech
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+
 BQ
 ~~
 
@@ -2021,6 +2049,27 @@ Controllino
       - 31.50KB
       - 2KB
 
+Cytron Technologies
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+
 DFRobot
 ~~~~~~~
 
@@ -2153,6 +2202,13 @@ Deneyap
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - :ref:`platform_espressif32`
       - External
@@ -2161,6 +2217,13 @@ Deneyap
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -2233,14 +2296,14 @@ Digilent
     * - :ref:`board_openhw_nexys_a7`
       - :ref:`platform_openhw`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
@@ -4407,6 +4470,27 @@ MultiTech
       - 32MHz
       - 256KB
       - 32KB
+
+Munich Labs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 NGX Technologies
 ~~~~~~~~~~~~~~~~
