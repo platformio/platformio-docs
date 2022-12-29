@@ -95,7 +95,7 @@ Packages
       - Espressif ESP8266 build/flash helper tool
 
     * - `tool-esptoolpy <https://registry.platformio.org/tools/platformio/tool-esptoolpy>`__
-      - Espressif ESP8266 and ESP32 serial bootloader utility
+      - A Python-based, open-source, platform-independent utility to communicate with the ROM bootloader in Espressif chips
 
     * - `tool-mklittlefs <https://registry.platformio.org/tools/platformio/tool-mklittlefs>`__
       - Utility for creating littlefs images for upload on the ESP8266

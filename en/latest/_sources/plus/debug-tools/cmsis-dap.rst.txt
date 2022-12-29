@@ -403,6 +403,13 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - :ref:`platform_espressif32`
       - External
@@ -550,6 +557,13 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_nxplpc_lpc4330_m4`
       - :ref:`platform_nxplpc`
       - On-board
@@ -711,6 +725,13 @@ Boards
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
       - External
@@ -774,6 +795,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - :ref:`platform_espressif32`
       - External
@@ -782,6 +810,13 @@ Boards
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -1397,6 +1432,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_ststm32_mote_l152rc`
       - :ref:`platform_ststm32`
       - External

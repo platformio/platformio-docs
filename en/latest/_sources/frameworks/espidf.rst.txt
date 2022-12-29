@@ -211,6 +211,12 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -222,6 +228,12 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_wifiduino32s3`
       - :ref:`platform_espressif32`
@@ -240,6 +252,12 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - :ref:`platform_espressif32`
@@ -283,6 +301,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - :ref:`platform_espressif32`
       - ESP32C3
@@ -290,6 +314,12 @@ Please click on board name for the further details.
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - :ref:`platform_espressif32`
       - ESP32S2
       - 240MHz
@@ -474,6 +504,12 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
@@ -1030,6 +1066,13 @@ Ai-Thinker
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - :ref:`platform_espressif32`
       - External
@@ -1121,6 +1164,13 @@ BPI Tech
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 Blinker
 ~~~~~~~
@@ -1197,6 +1247,27 @@ Connaxio
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Cytron Technologies
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 DFRobot
@@ -1310,6 +1381,13 @@ Deneyap
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - :ref:`platform_espressif32`
       - External
@@ -1318,6 +1396,13 @@ Deneyap
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - :ref:`platform_espressif32`
       - External
       - ESP32S2
@@ -2128,6 +2213,27 @@ Microduino
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Munich Labs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 NodeMCU
