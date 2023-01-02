@@ -28,6 +28,7 @@ manually depending on your operating system:
   .. code::
 
     C:\msys64\mingw64\bin
+    C:\msys64\ucrt64\bin
     C:\msys64\usr\bin
 
 * **Linux** - open the system terminal and run the following commands:
