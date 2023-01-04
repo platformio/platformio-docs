@@ -22,9 +22,9 @@ and install it. Please **READ NOTES BELOW**.
 
 :Linux:
   If using the recommended install scripts, your Python environment also needs to have
-  the Python Virtual Environment package, e.g. for Ubuntu 22.04
+  the Python Virtual Environment package, e.g. for Ubuntu
   
-  ``sudo apt install python3.10-venv``
+  ``sudo apt install python3-venv``
 
 :macOS:
   Please read the "Important Information" displayed during installation for information
