@@ -50,13 +50,11 @@ Stable
     ; Latest stable version
     [env:latest_stable]
     platform = linux_x86_64
-    board = ...
-
+    
     ; Custom stable version
     [env:custom_stable]
     platform = linux_x86_64@x.y.z
-    board = ...
-
+    
 Upstream
 ~~~~~~~~
 
@@ -64,8 +62,7 @@ Upstream
 
     [env:upstream_develop]
     platform = https://github.com/platformio/platform-linux_x86_64.git
-    board = ...
-
+    
 
 Packages
 --------

@@ -1,28 +1,48 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
     <link rel="canonical" href="https://docs.platformio.org/tutorials/espressif32/espidf_debugging_unit_testing_analysis.html" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="STM32Cube HAL and Nucleo-F401RE: debugging and unit testing" href="../ststm32/stm32cube_debugging_unit_testing.html" />
@@ -33,13 +53,26 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
           </a>
+
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -47,8 +80,19 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+
+            
+            
+              
+            
+            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -112,35 +156,79 @@
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
+            
+          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">PlatformIO</a>
+        
       </nav>
+
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Tutorials and Examples</a></li>
-      <li class="breadcrumb-item active">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</li>
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorials and Examples</a> &raquo;</li>
+        
+      <li>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
+            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/tutorials/espressif32/espidf_debugging_unit_testing_analysis.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis">
 <span id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></span><h1>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis<a class="headerlink" href="#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis" title="Permalink to this heading">¶</a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a>
@@ -156,7 +244,7 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <li><p><a class="reference internal" href="../../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></li>
 <li><p>An external debug adapter (e.g. <a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd.html#debugging-tool-olimex-arm-usb-ocd"><span class="std std-ref">Olimex ARM-USB-OCD</span></a>)</p></li>
 </ul>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#setting-up-the-project" id="id1">Setting Up the Project</a></p></li>
@@ -170,9 +258,9 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <li><p><a class="reference internal" href="#project-inspection" id="id6">Project Inspection</a></p></li>
 <li><p><a class="reference internal" href="#conclusion" id="id7">Conclusion</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="setting-up-the-project">
-<h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Click on “PlatformIO Home” button on the bottom PlatformIO Toolbar:</p>
 <img alt="../../_images/espidf-debugging-unit-testing-analysis-1.png" src="../../_images/espidf-debugging-unit-testing-analysis-1.png" />
@@ -185,7 +273,7 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 </ol>
 </section>
 <section id="adding-code-to-the-generated-project">
-<h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">main.c</span></code> in <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder and add the
 following code:</p>
@@ -196,88 +284,88 @@ following code:</p>
 <span class="cm">  Unless required by applicable law or agreed to in writing, this</span>
 <span class="cm">  software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR</span>
 <span class="cm">  CONDITIONS OF ANY KIND, either express or implied.</span>
-<span class="cm">*/</span><span class="w"></span>
+<span class="cm">*/</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/FreeRTOS.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/task.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_system.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_wifi.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_event.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_log.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;nvs_flash.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/FreeRTOS.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/task.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_system.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_wifi.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_event.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_log.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;nvs_flash.h&quot;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/err.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/sys.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/err.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/sys.h&quot;</span>
 
 <span class="cp">#define EXAMPLE_ESP_WIFI_SSID &quot;mywifissid&quot;</span>
 <span class="cp">#define EXAMPLE_ESP_WIFI_PASS &quot;mywifipass&quot;</span>
 <span class="cp">#define EXAMPLE_MAX_STA_CONN (3)</span>
 
-<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wifi softAP&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wifi softAP&quot;</span><span class="p">;</span>
 
-<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">arg</span><span class="p">,</span><span class="w"> </span><span class="n">esp_event_base_t</span><span class="w"> </span><span class="n">event_base</span><span class="p">,</span><span class="w"></span>
-<span class="w">                              </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">event_id</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">event_data</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; join, AID=%d&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STADISCONNECTED</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; leave, AID=%d&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">arg</span><span class="p">,</span><span class="w"> </span><span class="n">esp_event_base_t</span><span class="w"> </span><span class="n">event_base</span><span class="p">,</span>
+<span class="w">                              </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">event_id</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">event_data</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; join, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STADISCONNECTED</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; leave, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">wifi_init_softap</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">tcpip_adapter_init</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">wifi_init_softap</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">tcpip_adapter_init</span><span class="p">();</span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span>
 
-<span class="w">  </span><span class="n">wifi_init_config_t</span><span class="w"> </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">wifi_init_config_t</span><span class="w"> </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">));</span>
 
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_register</span><span class="p">(</span><span class="n">WIFI_EVENT</span><span class="p">,</span><span class="w"> </span><span class="n">ESP_EVENT_ANY_ID</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_event_handler</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_register</span><span class="p">(</span><span class="n">WIFI_EVENT</span><span class="p">,</span><span class="w"> </span><span class="n">ESP_EVENT_ANY_ID</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_event_handler</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">));</span>
 
-<span class="w">  </span><span class="n">wifi_config_t</span><span class="w"> </span><span class="n">wifi_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="p">.</span><span class="n">ap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">          </span><span class="p">.</span><span class="n">ssid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="p">.</span><span class="n">ssid_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">),</span><span class="w"></span>
-<span class="w">          </span><span class="p">.</span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="p">.</span><span class="n">max_connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_MAX_STA_CONN</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">},</span><span class="w"></span>
-<span class="w">  </span><span class="p">};</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">wifi_config</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_OPEN</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">wifi_config_t</span><span class="w"> </span><span class="n">wifi_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="p">.</span><span class="n">ap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="p">.</span><span class="n">ssid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span>
+<span class="w">          </span><span class="p">.</span><span class="n">ssid_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">),</span>
+<span class="w">          </span><span class="p">.</span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span>
+<span class="w">          </span><span class="p">.</span><span class="n">max_connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_MAX_STA_CONN</span><span class="p">,</span>
+<span class="w">          </span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">},</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wifi_config</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_OPEN</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">));</span><span class="w"></span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">ESP_IF_WIFI_AP</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span><span class="w"></span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">));</span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">ESP_IF_WIFI_AP</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span>
 
-<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;wifi_init_softap finished. SSID:%s password:%s&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;wifi_init_softap finished. SSID:%s password:%s&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">  </span><span class="c1">// Initialize NVS</span>
-<span class="w">  </span><span class="n">esp_err_t</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span><span class="w"></span>
-<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">esp_err_t</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span>
+<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ESP_WIFI_MODE_AP&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">wifi_init_softap</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ESP_WIFI_MODE_AP&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">wifi_init_softap</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -315,11 +403,11 @@ window:</p>
 </li>
 <li><p>Connect the board to your computer and update the default monitor speed to
 <code class="docutils literal notranslate"><span class="pre">115200</span></code> in <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> file:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
-<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span>
 </pre></div>
 </div>
 </li>
@@ -332,16 +420,12 @@ window:</p>
 </ol>
 </section>
 <section id="debugging-the-firmware">
-<h2><a class="toc-backref" href="#id3">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
 <section id="setting-up-the-hardware">
-<h3><a class="toc-backref" href="#id4">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading">¶</a></h3>
 <p>In order to use <a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>, we need to connect an external JTAG probe and the board
 using the following pins:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>ESP32 pin</p></th>
 <th class="head"><p>JTAG probe pin</p></th>
@@ -374,12 +458,12 @@ using the following pins:</p>
 <ol class="arabic">
 <li><p>Specify <a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. In this tutorial,
 <a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd-h.html#debugging-tool-olimex-arm-usb-ocd-h"><span class="std std-ref">Olimex ARM-USB-OCD-H</span></a> debug probe is used:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
-<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
-<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">olimex-arm-usb-ocd-h</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">olimex-arm-usb-ocd-h</span>
 </pre></div>
 </div>
 </li>
@@ -398,7 +482,7 @@ using the following pins:</p>
 </section>
 </section>
 <section id="writing-unit-tests">
-<h2><a class="toc-backref" href="#id5">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Functions <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test
@@ -418,93 +502,93 @@ add two new files <code class="docutils literal notranslate"><span class="pre">c
 <span class="cp">#define _CALCULATOR_H_</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span>
+<span class="p">{</span>
 <span class="cp">#endif</span>
 
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">subtraction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">multiplication</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">subtraction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">multiplication</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 <span class="cp">#endif</span>
 
 <span class="cp">#endif </span><span class="c1">// _CALCULATOR_H_</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">calculator.c</span></code>:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;calculator.h&quot;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;calculator.h&quot;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">subtraction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">subtraction</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">multiplication</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">multiplication</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">division</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </li>
 <li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">test_calc.c</span></code> to the folder <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>
 and add basic tests for the <code class="docutils literal notranslate"><span class="pre">calculator</span></code> library:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;calculator.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;calculator.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">  </span><span class="c1">// set stuff up here</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="w">  </span><span class="c1">// clean stuff up here</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_addition</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_addition</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_subtraction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">subtraction</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_subtraction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="n">subtraction</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_multiplication</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="n">multiplication</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_multiplication</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="n">multiplication</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_division</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">division</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_calculator_division</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="n">division</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span>
 
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_addition</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_subtraction</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_multiplication</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_division</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_addition</span><span class="p">);</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_subtraction</span><span class="p">);</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_multiplication</span><span class="p">);</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_calculator_division</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">UNITY_END</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </li>
@@ -519,7 +603,7 @@ results should be correct:</p>
 </ol>
 </section>
 <section id="project-inspection">
-<h2><a class="toc-backref" href="#id6">Project Inspection</a><a class="headerlink" href="#project-inspection" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Project Inspection</a><a class="headerlink" href="#project-inspection" title="Permalink to this heading">¶</a></h2>
 <p>For illustrative purposes, let’s imagine we need to find a function with the biggest
 memory footprint. Also, let’s introduce a bug to our project so <a class="reference internal" href="../../advanced/static-code-analysis/index.html#check"><span class="std std-ref">Static Code Analysis</span></a> can
 report it.</p>
@@ -540,7 +624,7 @@ project and press <code class="docutils literal notranslate"><span class="pre">I
 </ol>
 </section>
 <section id="conclusion">
-<h2><a class="toc-backref" href="#id7">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
 <p>Now we have a project template for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board that we can use as
 boilerplate for later projects.</p>
 </section>
@@ -548,22 +632,25 @@ boilerplate for later projects.</p>
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="arduino_debugging_unit_testing.html" class="btn btn-neutral float-left" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="../ststm32/stm32cube_debugging_unit_testing.html" class="btn btn-neutral float-right" title="STM32Cube HAL and Nucleo-F401RE: debugging and unit testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arduino_debugging_unit_testing.html" class="btn btn-neutral float-left" title="Get started with Arduino and ESP32-DevKitC: debugging and unit testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
-
-  
  
 <script>
   var navBarHTML = '\
@@ -665,7 +752,9 @@ boilerplate for later projects.</p>
         </div>
 
       </div>
+
     </section>
+
   </div>
   
 
@@ -701,22 +790,31 @@ boilerplate for later projects.</p>
 </div></dd>
     </dl>
   </div>
-</div><script>
+</div>
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-1768265-7', {
-          'anonymize_ip': false,
-      });
-    </script> 
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
 
 </body>
 </html>

@@ -1,28 +1,48 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Get started with Arduino and ESP32-DevKitC: debugging and unit testing &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
     <link rel="canonical" href="https://docs.platformio.org/tutorials/espressif32/arduino_debugging_unit_testing.html" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis" href="espidf_debugging_unit_testing_analysis.html" />
@@ -33,13 +53,26 @@
 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../../index.html" class="icon icon-home"> PlatformIO
+          
+
+          
           </a>
+
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -47,8 +80,19 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+
+            
+            
+              
+            
+            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -112,35 +156,79 @@
 <li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
+            
+          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">PlatformIO</a>
+        
       </nav>
+
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Tutorials and Examples</a></li>
-      <li class="breadcrumb-item active">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</li>
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorials and Examples</a> &raquo;</li>
+        
+      <li>Get started with Arduino and ESP32-DevKitC: debugging and unit testing</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
+            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/tutorials/espressif32/arduino_debugging_unit_testing.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="get-started-with-arduino-and-esp32-devkitc-debugging-and-unit-testing">
 <span id="tutorial-espressif32-arduino-debugging-unit-testing"></span><h1>Get started with Arduino and ESP32-DevKitC: debugging and unit testing<a class="headerlink" href="#get-started-with-arduino-and-esp32-devkitc-debugging-and-unit-testing" title="Permalink to this heading">¶</a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a> to develop, run and debug a simple project with the <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board.</p>
@@ -156,7 +244,7 @@
 </ul>
 </dd>
 </dl>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#setting-up-the-project" id="id1">Setting Up the Project</a></p></li>
@@ -171,9 +259,9 @@
 <li><p><a class="reference internal" href="#adding-bluetooth-le-features" id="id7">Adding Bluetooth LE features</a></p></li>
 <li><p><a class="reference internal" href="#conclusion" id="id8">Conclusion</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="setting-up-the-project">
-<h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
 <p>First, we need to create a new project using the PlatformIO Home Page (to open this page, just press the Home icon on the toolbar):</p>
 <img alt="../../_images/arduino-debugging-unit-testing-1.png" src="../../_images/arduino-debugging-unit-testing-1.png" />
 <p>Next, we need to select <code class="docutils literal notranslate"><span class="pre">Espressif</span> <span class="pre">ESP32</span> <span class="pre">Dev</span> <span class="pre">Module</span></code> as a development board, <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> as a framework and a path to the project location (or use the default one):</p>
@@ -182,27 +270,27 @@
 After that, we have a fully configured project that is ready for developing code with the <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework.</p>
 </section>
 <section id="adding-code-to-the-generated-project">
-<h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
 <p>Let’s add some actual code to the project. Firstly, we open a default main file named <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> in the <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder and replace its content with following:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <img alt="../../_images/arduino-debugging-unit-testing-3.png" src="../../_images/arduino-debugging-unit-testing-3.png" />
 <p>We have now created a basic project ready for compiling and uploading.</p>
 </section>
 <section id="compiling-and-uploading-the-firmware">
-<h2><a class="toc-backref" href="#id3">Compiling and Uploading the Firmware</a><a class="headerlink" href="#compiling-and-uploading-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Compiling and Uploading the Firmware</a><a class="headerlink" href="#compiling-and-uploading-the-firmware" title="Permalink to this heading">¶</a></h2>
 <p>Now we can build the project. There are several ways to compile firmware:</p>
 <ul class="simple">
 <li><p>Build option in the <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Tasks</span></code> menu,</p></li>
@@ -236,15 +324,11 @@ After that, we have a fully configured project that is ready for developing code
 <img alt="../../_images/arduino-debugging-unit-testing-8.png" src="../../_images/arduino-debugging-unit-testing-8.png" />
 </section>
 <section id="debugging-the-firmware">
-<h2><a class="toc-backref" href="#id4">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
 <section id="setting-up-the-hardware">
-<h3><a class="toc-backref" href="#id5">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading">¶</a></h3>
 <p>In order to use a JTAG probe with an ESP32, we need to connect the following pins:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>ESP32 pin</p></th>
 <th class="head"><p>JTAG probe pin</p></th>
@@ -275,11 +359,11 @@ After that, we have a fully configured project that is ready for developing code
 </tbody>
 </table>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> offers the easiest way to debug the board. Firstly, we need to specify <a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. In this tutorial, an <a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd-h.html#debugging-tool-olimex-arm-usb-ocd-h"><span class="std std-ref">Olimex ARM-USB-OCD-H</span></a> debug probe is used:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">olimex-arm-usb-ocd-h</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">olimex-arm-usb-ocd-h</span>
 </pre></div>
 </div>
 <p>To start the debug session we can use the following methods:</p>
@@ -304,7 +388,7 @@ and are ready to debug when the first line after the main function is highlighte
 </section>
 </section>
 <section id="writing-unit-tests">
-<h2><a class="toc-backref" href="#id6">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> test cases can be added to a single file that may include
 multiple tests. First of all, in this file, we need to add four default
 functions: <code class="docutils literal notranslate"><span class="pre">setUp</span></code>, <code class="docutils literal notranslate"><span class="pre">tearDown</span></code>, <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code>.
@@ -324,67 +408,67 @@ functions act as a simple Arduino program where we describe our test plan.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">test_string_to_upper_case</span></code> tests conversion of the string to upper-case</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">test_string_replace</span></code> tests the correctness of the replacing operation</p></li>
 </ul>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unity.h&gt;</span>
 
-<span class="n">String</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">;</span><span class="w"></span>
+<span class="n">String</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// set stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// clean stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"> </span><span class="c1">// service delay</span>
-<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">UNITY_BEGIN</span><span class="p">();</span>
 
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_concat</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_substring</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_index_of</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_equal_ignore_case</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_to_upper_case</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_replace</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_concat</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_substring</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_index_of</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_equal_ignore_case</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_to_upper_case</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_string_replace</span><span class="p">);</span>
 
 <span class="w">    </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"> </span><span class="c1">// stop unit testing</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Now we are ready to upload tests to the board. To do this we can use the following:</p>
@@ -399,53 +483,53 @@ functions act as a simple Arduino program where we describe our test plan.</p>
 <p>As we can see from the report, all our tests were successful!</p>
 </section>
 <section id="adding-bluetooth-le-features">
-<h2><a class="toc-backref" href="#id7">Adding Bluetooth LE features</a><a class="headerlink" href="#adding-bluetooth-le-features" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Adding Bluetooth LE features</a><a class="headerlink" href="#adding-bluetooth-le-features" title="Permalink to this heading">¶</a></h2>
 <p>Now let’s create a basic application that can interact with other BLE devices (e.g phones).
 For example, the following code declares a BLE characteristic whose value can be printed to the serial port:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEDevice.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEUtils.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEServer.h&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEDevice.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEUtils.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEServer.h&gt;</span>
 
 <span class="cp">#define SERVICE_UUID        &quot;4fafc201-1fb5-459e-8fcc-c5c9c331914b&quot;</span>
 <span class="cp">#define CHARACTERISTIC_UUID &quot;beb5483e-36e1-4688-b7f5-ea07361b26a8&quot;</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">MyCallbacks</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BLECharacteristicCallbacks</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">onWrite</span><span class="p">(</span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">();</span><span class="w"></span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">New value: &quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
-<span class="w">          </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
-<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyCallbacks</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BLECharacteristicCallbacks</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">onWrite</span><span class="p">(</span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">();</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">New value: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">          </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="s">&quot;ESP32 BLE example&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">BLEServer</span><span class="w"> </span><span class="o">*</span><span class="n">pServer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">createServer</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">BLEService</span><span class="w"> </span><span class="o">*</span><span class="n">pService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">createService</span><span class="p">(</span><span class="n">SERVICE_UUID</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">createCharacteristic</span><span class="p">(</span><span class="w"></span>
-<span class="w">                                         </span><span class="n">CHARACTERISTIC_UUID</span><span class="p">,</span><span class="w"></span>
-<span class="w">                                         </span><span class="n">BLECharacteristic</span><span class="o">::</span><span class="n">PROPERTY_READ</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
-<span class="w">                                         </span><span class="n">BLECharacteristic</span><span class="o">::</span><span class="n">PROPERTY_WRITE</span><span class="w"></span>
-<span class="w">                                       </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="s">&quot;ESP32 BLE example&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">BLEServer</span><span class="w"> </span><span class="o">*</span><span class="n">pServer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">createServer</span><span class="p">();</span>
+<span class="w">  </span><span class="n">BLEService</span><span class="w"> </span><span class="o">*</span><span class="n">pService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">createService</span><span class="p">(</span><span class="n">SERVICE_UUID</span><span class="p">);</span>
+<span class="w">  </span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">createCharacteristic</span><span class="p">(</span>
+<span class="w">                                         </span><span class="n">CHARACTERISTIC_UUID</span><span class="p">,</span>
+<span class="w">                                         </span><span class="n">BLECharacteristic</span><span class="o">::</span><span class="n">PROPERTY_READ</span><span class="w"> </span><span class="o">|</span>
+<span class="w">                                         </span><span class="n">BLECharacteristic</span><span class="o">::</span><span class="n">PROPERTY_WRITE</span>
+<span class="w">                                       </span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setCallbacks</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">MyCallbacks</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setCallbacks</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">MyCallbacks</span><span class="p">());</span>
 
-<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span>
 
-<span class="w">  </span><span class="n">BLEAdvertising</span><span class="w"> </span><span class="o">*</span><span class="n">pAdvertising</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">getAdvertising</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">pAdvertising</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">BLEAdvertising</span><span class="w"> </span><span class="o">*</span><span class="n">pAdvertising</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">getAdvertising</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pAdvertising</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Now we can compile and upload this program to the board as described in the previous sections.
@@ -460,29 +544,32 @@ After successful connection to the board, we should see one “Unknown Service�
 <img alt="../../_images/arduino-debugging-unit-testing-16.png" src="../../_images/arduino-debugging-unit-testing-16.png" />
 </section>
 <section id="conclusion">
-<h2><a class="toc-backref" href="#id8">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
 <p>Now we have a project template for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board that we can use as boilerplate for later projects.</p>
 </section>
 </section>
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Tutorials and Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="espidf_debugging_unit_testing_analysis.html" class="btn btn-neutral float-right" title="Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Tutorials and Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+    <p>
+        &#169; Copyright 2014-present, PlatformIO.
+
+    </p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
-
-  
  
 <script>
   var navBarHTML = '\
@@ -584,7 +671,9 @@ After successful connection to the board, we should see one “Unknown Service�
         </div>
 
       </div>
+
     </section>
+
   </div>
   
 
@@ -620,22 +709,31 @@ After successful connection to the board, we should see one “Unknown Service�
 </div></dd>
     </dl>
   </div>
-</div><script>
+</div>
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-1768265-7', {
-          'anonymize_ip': false,
-      });
-    </script> 
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1768265-7', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
 
 </body>
 </html>
