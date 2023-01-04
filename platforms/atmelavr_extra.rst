@@ -99,6 +99,30 @@ Configuration for the programmers:
             usbtiny
         upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
 
+*   DiamexISP
+
+    .. code-block:: ini
+
+        [env:program_via_DiamexISP]
+        platform = atmelavr
+        framework = arduino
+        upload_protocol = avrispv2
+        upload_port = SERIAL_PORT_HERE
+        upload_speed = 19200
+        upload_flags =
+            -C
+            ; use "tool-avrdude-megaavr" for the atmelmegaavr platform
+            ${platformio.packages_dir}/tool-avrdude/avrdude.conf
+            -p
+            $BOARD_MCU
+            -P
+            $UPLOAD_PORT
+            -b
+            $UPLOAD_SPEED
+            -c
+            stk500v2
+        upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
+        
 *   Arduino as ISP
 
     .. code-block:: ini
