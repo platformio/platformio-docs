@@ -51,13 +51,11 @@ Stable
     ; Latest stable version
     [env:latest_stable]
     platform = native
-    board = ...
-
+    
     ; Custom stable version
     [env:custom_stable]
     platform = native@x.y.z
-    board = ...
-
+    
 Upstream
 ~~~~~~~~
 
@@ -65,4 +63,4 @@ Upstream
 
     [env:upstream_develop]
     platform = https://github.com/platformio/platform-native.git
-    board = ...
+    
