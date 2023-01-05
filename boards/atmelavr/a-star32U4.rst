@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Pololu A-Star 32U4 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Pololu A-Star 32U4 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -85,7 +85,7 @@ Pololu A-Star 32U4 has on-board debug probe and **IS READY** for debugging. You 
     - On-board
     - Default
   * - :ref:`debugging_tool_simavr`
-    - Yes
+    - 
     - Yes
 
 Frameworks

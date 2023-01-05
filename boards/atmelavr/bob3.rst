@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-nicai-systems BOB3 coding bot has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+nicai-systems BOB3 coding bot does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -85,7 +85,7 @@ nicai-systems BOB3 coding bot has on-board debug probe and **IS READY** for debu
     - On-board
     - Default
   * - :ref:`debugging_tool_simavr`
-    - Yes
+    - 
     - Yes
 
 Frameworks
