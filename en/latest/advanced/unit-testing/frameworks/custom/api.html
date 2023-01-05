@@ -1,48 +1,28 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Test Runner API &mdash; PlatformIO latest documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/custom/api.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
         <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/sphinx_highlight.js"></script>
         <script src="../../../../_static/clipboard.min.js"></script>
         <script src="../../../../_static/copybutton.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Examples" href="examples/index.html" />
@@ -53,26 +33,13 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../../../../index.html" class="icon icon-home"> PlatformIO
-          
-
-          
           </a>
-
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -80,19 +47,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-
-            
-            
-              
-            
-            
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../what-is-platformio.html">What is PlatformIO?</a></li>
 </ul>
@@ -160,100 +116,54 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../core/migration.html">Migrating from 5.x to 6.0</a></li>
 </ul>
 
-            
-          
 <ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">PlatformIO</a>
-        
       </nav>
-
 
       <div class="wy-nav-content">
 <ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../../index.html">Unit Testing</a> &raquo;</li>
-        
-          <li><a href="../index.html">Testing Frameworks</a> &raquo;</li>
-        
-          <li><a href="index.html">Custom Testing Framework</a> &raquo;</li>
-        
-      <li>Test Runner API</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Unit Testing</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Testing Frameworks</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Custom Testing Framework</a></li>
+      <li class="breadcrumb-item active">Test Runner API</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/custom/api.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="test-runner-api">
 <span id="unit-testing-frameworks-custom-api"></span><h1>Test Runner API<a class="headerlink" href="#test-runner-api" title="Permalink to this heading">¶</a></h1>
-<nav class="contents local" id="contents">
+<div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#teststatus" id="id4">TestStatus</a></p></li>
 <li><p><a class="reference internal" href="#testcase" id="id5">TestCase</a></p></li>
 <li><p><a class="reference internal" href="#testcasesource" id="id6">TestCaseSource</a></p></li>
 <li><p><a class="reference internal" href="#customtestrunner" id="id7">CustomTestRunner</a></p></li>
 </ul>
-</nav>
+</div>
 <section id="teststatus">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">TestStatus</a><a class="headerlink" href="#teststatus" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">TestStatus</a><a class="headerlink" href="#teststatus" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestStatus">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestStatus</span></span><a class="headerlink" href="#TestStatus" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code<span class="colon">:</span></dt>
+<dt class="field-odd">Source Code</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestStatus</a></p>
 </dd>
 </dl>
@@ -287,12 +197,12 @@ while testing the test suite.</p>
 
 </section>
 <section id="testcase">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">TestCase</a><a class="headerlink" href="#testcase" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">TestCase</a><a class="headerlink" href="#testcase" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestCase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCase</span></span><a class="headerlink" href="#TestCase" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code<span class="colon">:</span></dt>
+<dt class="field-odd">Source Code</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestCase</a></p>
 </dd>
 </dl>
@@ -301,7 +211,7 @@ while testing the test suite.</p>
 <span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#TestCase.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Name of a test case.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dt class="field-odd">Example</dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">test_configuration</span></code>, <code class="docutils literal notranslate"><span class="pre">embedded/test_mqtt_connection</span></code>, etc.</p>
 </dd>
 </dl>
@@ -312,7 +222,7 @@ while testing the test suite.</p>
 <span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#TestCase.status" title="Permalink to this definition">¶</a></dt>
 <dd><p>Instance of <code class="docutils literal notranslate"><span class="pre">TestStatus</span></code> class.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dt class="field-odd">Example</dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">TestStatus.PASSED</span></code></p>
 </dd>
 </dl>
@@ -355,12 +265,12 @@ details of the source file and a test case line.</p>
 
 </section>
 <section id="testcasesource">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">TestCaseSource</a><a class="headerlink" href="#testcasesource" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">TestCaseSource</a><a class="headerlink" href="#testcasesource" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestCaseSource">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCaseSource</span></span><a class="headerlink" href="#TestCaseSource" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code<span class="colon">:</span></dt>
+<dt class="field-odd">Source Code</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestCaseSource</a></p>
 </dd>
 </dl>
@@ -381,7 +291,7 @@ The relative path to a project folder is allowed.</p>
 
 </section>
 <section id="customtestrunner">
-<span id="unit-testing-frameworks-custom-api-test-runner"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">CustomTestRunner</a><a class="headerlink" href="#customtestrunner" title="Permalink to this heading">¶</a></h2>
+<span id="unit-testing-frameworks-custom-api-test-runner"></span><h2><a class="toc-backref" href="#id7">CustomTestRunner</a><a class="headerlink" href="#customtestrunner" title="Permalink to this heading">¶</a></h2>
 <p><strong>CustomTestRunner</strong> class must inherit <code class="docutils literal notranslate"><span class="pre">TestRunnerBase</span></code> or
 the already implemented runners for supported <a class="reference internal" href="../index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>.
 See the source code of
@@ -391,7 +301,7 @@ See the source code of
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomTestRunner</span></span><a class="headerlink" href="#CustomTestRunner" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">Source Code<span class="colon">:</span></dt>
+<dt class="field-odd">Source Code</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/base.py">TestRunnerBase</a>,</p>
 </dd>
 </dl>
@@ -446,7 +356,7 @@ parsing them, and recoding via <code class="docutils literal notranslate"><span 
 mode. It is uesfult to provide extra runtime configuration for a
 testing framework (macros, includes, dynamic configs).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example<span class="colon">:</span></dt>
+<dt class="field-odd">Example</dt>
 <dd class="field-odd"><p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py">Unity Test Runner</a>.</p>
 </dd>
 </dl>
@@ -461,7 +371,7 @@ complete test result output, line, or part of a line.
 When data are chunked, <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> will be called
 multiple times until testing is completed.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>data</strong> (<em>str</em>) -- testing output data</p>
 </dd>
 </dl>
@@ -473,7 +383,7 @@ multiple times until testing is completed.</p>
 <dd><p>Method called on each line split from data received
 by <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>line</strong> (<em>str</em>) -- testing output line</p>
 </dd>
 </dl>
@@ -486,25 +396,22 @@ by <code class="docutils literal notranslate"><span class="pre">on_testing_data_
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="examples/index.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="runner.html" class="btn btn-neutral float-left" title="Custom Test Runner" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples/index.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
 
-    <p>
-        &#169; Copyright 2014-present, PlatformIO.
-
-    </p>
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
 <ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
 
   </div>
+
+  
  
 <script>
   var navBarHTML = '\
@@ -606,9 +513,7 @@ by <code class="docutils literal notranslate"><span class="pre">on_testing_data_
         </div>
 
       </div>
-
     </section>
-
   </div>
   
 
@@ -644,31 +549,22 @@ by <code class="docutils literal notranslate"><span class="pre">on_testing_data_
 </div></dd>
     </dl>
   </div>
-</div>
-
-  <script type="text/javascript">
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-1768265-7', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-   
+      gtag('config', 'UA-1768265-7', {
+          'anonymize_ip': false,
+      });
+    </script> 
 
 </body>
 </html>
