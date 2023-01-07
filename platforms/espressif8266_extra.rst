@@ -145,7 +145,8 @@ SDK Version
 
 Available versions (macros):
 
-* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3`` NonOS SDK-pre-3.0 as of Jun 26, 2018
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK305`` NonOS SDK-3.0.5 (available since `Arduino core for ESP8266 3.1.0 <https://github.com/esp8266/Arduino/releases/tag/3.1.0>`_)
+* ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3`` NonOS SDK-pre-3.0 as of Jun 26, 2018 (removed in Arduino core for ESP8266 3.1.0)
 * ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK221`` NonOS SDK v2.2.1 (legacy) as of Jun 8, 2018
 * ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190313`` NonOS SDK v2.2.x branch as of Mar 13, 2019
 * ``-D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_190703`` NonOS SDK v2.2.x branch as of Jul 03, 2019 **(default)**
