@@ -32,6 +32,7 @@ or :ref:`manifest_library_json_schema`.
 .. toctree::
     :maxdepth: 2
 
+    fields/schema
     fields/name
     fields/version
     fields/description
@@ -48,4 +49,3 @@ or :ref:`manifest_library_json_schema`.
     fields/export/index
     fields/scripts
     fields/build/index
-    fields/schema
