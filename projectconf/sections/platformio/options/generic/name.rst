@@ -9,13 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Generic options
----------------
+``name``
+^^^^^^^^
 
-.. toctree::
-    :maxdepth: 1
+Type: ``String`` | Multiple: ``No`` | Default: "<Project Folder Name>"
 
-    name
-    description
-    default_envs
-    extra_configs
+A project name. PlatformIO uses it for :ref:`piohome` in the multiple places.
