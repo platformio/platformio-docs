@@ -153,10 +153,13 @@
 <h3>6.1.6 (2022-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Added support for Python 3.11</p></li>
+<li><p>Added a new <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/platformio/options/generic/description.html">name</a> configuration option to customize a project name (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4498">pull #4498</a>)</p></li>
 <li><p>Made assets (templates, <code class="docutils literal notranslate"><span class="pre">99-platformio-udev.rules</span></code>) part of Python’s module (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4458">issue #4458</a>)</p></li>
 <li><p>Updated <a class="reference external" href="https://docs.platformio.org/en/latest/plus/check-tools/clang-tidy.html">Clang-Tidy</a> check tool to v15.0.5 with new diagnostics and bugfixes</p></li>
 <li><p>Removed dependency on the “zeroconf” package and install it only when a user lists mDNS devices (issue with zeroconf’s LGPL license)</p></li>
-<li><p>Show the real error message instead of “Can not remove temporary directory” when “platform.ini” is broken (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4480">issue #4480</a>)</p></li>
+<li><p>Show the real error message instead of “Can not remove temporary directory” when <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file is broken (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4480">issue #4480</a>)</p></li>
+<li><p>Fixed an issue with an incorrect test summary when a testcase name includes a colon (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4508">issue #4508</a>)</p></li>
+<li><p>Fixed an issue when <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/env/options/advanced/extends.html">extends</a> does not override options in the right order (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4462">issue #4462</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
