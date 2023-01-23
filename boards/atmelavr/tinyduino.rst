@@ -76,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-TinyCircuits TinyDuino Processor Board has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+TinyCircuits TinyDuino Processor Board does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -85,10 +85,10 @@ TinyCircuits TinyDuino Processor Board has on-board debug probe and **IS READY**
     - On-board
     - Default
   * - :ref:`debugging_tool_avr-stub`
-    - Yes
+    - 
     - Yes
   * - :ref:`debugging_tool_simavr`
-    - Yes
+    - 
     - 
 
 Frameworks

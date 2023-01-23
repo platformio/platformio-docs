@@ -65,11 +65,12 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
-On-Board Debug Tools
+External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging!
-You do not need to use/buy external debug probe.
+Boards listed below are compatible with :ref:`piodebug` but **DEPEND ON**
+external debug probe. They **ARE NOT READY** for debugging.
+Please click on board name for the further details.
 
 
 .. list-table::
@@ -1048,91 +1049,91 @@ Adafruit
       - Flash
       - RAM
     * - :ref:`board_atmelavr_bluefruitmicro`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_circuitplay_classic`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_feather328p`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_feather32u4`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_flora8`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_gemma`
-      - On-board
+      - External
       - ATTINY85
       - 8MHz
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_itsybitsy32u4_3V`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_itsybitsy32u4_5V`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_metro`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket3ftdi`
-      - On-board
+      - External
       - ATMEGA328P
       - 12MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket3`
-      - On-board
+      - External
       - ATMEGA328P
       - 12MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket5ftdi`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_protrinket5`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_trinket3`
-      - On-board
+      - External
       - ATTINY85
       - 8MHz
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_trinket5`
-      - On-board
+      - External
       - ATTINY85
       - 16MHz
       - 8KB
@@ -1151,19 +1152,19 @@ Alorium Technology
       - Flash
       - RAM
     * - :ref:`board_atmelavr_alorium_hinj`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_alorium_sno`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_alorium_xlr8`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1182,7 +1183,7 @@ Anarduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_miniwireless`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1201,13 +1202,13 @@ Arduboy
       - Flash
       - RAM
     * - :ref:`board_atmelavr_arduboy`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_arduboy_devkit`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1226,199 +1227,199 @@ Arduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_btatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_btatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_diecimilaatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_diecimilaatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_esplora`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_ethernet`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_fio`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_chiwawa`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_leonardo`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_leonardoeth`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_lilypadatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 8MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_lilypadatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_LilyPadUSB`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_megaADK`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_megaatmega1280`
-      - On-board
+      - External
       - ATMEGA1280
       - 16MHz
       - 124KB
       - 8KB
     * - :ref:`board_atmelavr_megaatmega2560`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_micro`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_miniatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_miniatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 28KB
       - 2KB
     * - :ref:`board_atmelavr_atmegangatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_atmegangatmega8`
-      - On-board
+      - External
       - ATMEGA8
       - 16MHz
       - 7KB
       - 1KB
     * - :ref:`board_atmelavr_nanoatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_nanoatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_nanoatmega328new`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_pro8MHzatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 8MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_pro16MHzatmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 14KB
       - 1KB
     * - :ref:`board_atmelavr_pro8MHzatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_pro16MHzatmega328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_robotControl`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_robotMotor`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_uno`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_yun`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_yunmini`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1449,19 +1450,19 @@ Atmel
       - 16KB
       - 512B
     * - :ref:`board_atmelavr_attiny2313`
-      - On-board
+      - External
       - ATTINY2313
       - 8MHz
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny24`
-      - On-board
+      - External
       - ATTINY24
       - 8MHz
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny25`
-      - On-board
+      - External
       - ATTINY25
       - 8MHz
       - 2KB
@@ -1473,7 +1474,7 @@ Atmel
       - 2KB
       - 128B
     * - :ref:`board_atmelavr_attiny4313`
-      - On-board
+      - External
       - ATTINY4313
       - 8MHz
       - 4KB
@@ -1485,7 +1486,7 @@ Atmel
       - 4KB
       - 256B
     * - :ref:`board_atmelavr_attiny44`
-      - On-board
+      - External
       - ATTINY44
       - 8MHz
       - 4KB
@@ -1497,7 +1498,7 @@ Atmel
       - 4KB
       - 256B
     * - :ref:`board_atmelavr_attiny45`
-      - On-board
+      - External
       - ATTINY45
       - 8MHz
       - 4KB
@@ -1521,7 +1522,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_attiny84`
-      - On-board
+      - External
       - ATTINY84
       - 8MHz
       - 8KB
@@ -1533,7 +1534,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_attiny85`
-      - On-board
+      - External
       - ATTINY85
       - 8MHz
       - 8KB
@@ -1557,7 +1558,7 @@ Atmel
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_usbasp`
-      - On-board
+      - External
       - ATMEGA8
       - 12MHz
       - 8KB
@@ -1576,7 +1577,7 @@ BQ
       - Flash
       - RAM
     * - :ref:`board_atmelavr_zumbt328`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 28KB
@@ -1595,7 +1596,7 @@ BSFrance
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lora32u4II`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1614,7 +1615,7 @@ BitWizard
       - Flash
       - RAM
     * - :ref:`board_atmelavr_raspduino`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
@@ -1633,25 +1634,25 @@ Controllino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_controllino_maxi`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_maxi_automation`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_mega`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_controllino_mini`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -1688,7 +1689,7 @@ Digistump
       - 14.50KB
       - 512B
     * - :ref:`board_atmelavr_digispark-tiny`
-      - On-board
+      - External
       - ATTINY85
       - 16MHz
       - 5.87KB
@@ -1745,7 +1746,7 @@ Engduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_engduinov3`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1764,7 +1765,7 @@ EnviroDIY
       - Flash
       - RAM
     * - :ref:`board_atmelavr_mayfly`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
@@ -1783,7 +1784,7 @@ FYSETC
       - Flash
       - RAM
     * - :ref:`board_atmelavr_fysetc_f6_13`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -1802,7 +1803,7 @@ LightUp
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lightup`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1821,7 +1822,7 @@ Linino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_one`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -1840,25 +1841,25 @@ LowPowerLab
       - Flash
       - RAM
     * - :ref:`board_atmelavr_mightyhat`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31KB
       - 2KB
     * - :ref:`board_atmelavr_moteino`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_moteino8mhz`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_moteinomega`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 127KB
@@ -1877,7 +1878,7 @@ MediaTek Labs
       - Flash
       - RAM
     * - :ref:`board_atmelavr_smart7688`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -1914,37 +1915,37 @@ Microchip
       - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega128`
-      - On-board
+      - External
       - ATMEGA128
       - 16MHz
       - 128KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega1280`
-      - On-board
+      - External
       - ATMEGA1280
       - 16MHz
       - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1281`
-      - On-board
+      - External
       - ATMEGA1281
       - 16MHz
       - 128KB
       - 8KB
     * - :ref:`board_atmelavr_ATmega1284`
-      - On-board
+      - External
       - ATMEGA1284
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega1284P`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 128KB
       - 16KB
     * - :ref:`board_atmelavr_ATmega16`
-      - On-board
+      - External
       - ATMEGA16
       - 16MHz
       - 16KB
@@ -1962,19 +1963,19 @@ Microchip
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega164P`
-      - On-board
+      - External
       - ATMEGA164P
       - 16MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168`
-      - On-board
+      - External
       - ATMEGA168
       - 16MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega168P`
-      - On-board
+      - External
       - ATMEGA168P
       - 16MHz
       - 16KB
@@ -1986,7 +1987,7 @@ Microchip
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega2560`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 256KB
@@ -2004,19 +2005,19 @@ Microchip
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324A`
-      - On-board
+      - External
       - ATMEGA324A
       - 16MHz
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324P`
-      - On-board
+      - External
       - ATMEGA324P
       - 16MHz
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega324PA`
-      - On-board
+      - External
       - ATMEGA324PA
       - 16MHz
       - 32KB
@@ -2028,13 +2029,13 @@ Microchip
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328`
-      - On-board
+      - External
       - ATMEGA328
       - 16MHz
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega328P`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 32KB
@@ -2046,13 +2047,13 @@ Microchip
       - 32KB
       - 2KB
     * - :ref:`board_atmelavr_ATmega48`
-      - On-board
+      - External
       - ATMEGA48
       - 16MHz
       - 4KB
       - 512B
     * - :ref:`board_atmelavr_ATmega48P`
-      - On-board
+      - External
       - ATMEGA48P
       - 16MHz
       - 4KB
@@ -2082,13 +2083,13 @@ Microchip
       - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega644P`
-      - On-board
+      - External
       - ATMEGA644P
       - 16MHz
       - 64KB
       - 4KB
     * - :ref:`board_atmelavr_ATmega8`
-      - On-board
+      - External
       - ATMEGA8
       - 16MHz
       - 8KB
@@ -2106,13 +2107,13 @@ Microchip
       - 8KB
       - 512B
     * - :ref:`board_atmelavr_ATmega88`
-      - On-board
+      - External
       - ATMEGA88
       - 16MHz
       - 8KB
       - 1KB
     * - :ref:`board_atmelavr_ATmega88P`
-      - On-board
+      - External
       - ATMEGA88P
       - 16MHz
       - 8KB
@@ -2124,13 +2125,13 @@ Microchip
       - 8KB
       - 1KB
     * - :ref:`board_atmelavr_attiny13`
-      - On-board
+      - External
       - ATTINY13
       - 9MHz
       - 1KB
       - 64B
     * - :ref:`board_atmelavr_attiny13a`
-      - On-board
+      - External
       - ATTINY13A
       - 9MHz
       - 1KB
@@ -2161,55 +2162,55 @@ Microduino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_168pa16m`
-      - On-board
+      - External
       - ATMEGA168P
       - 16MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_168pa8m`
-      - On-board
+      - External
       - ATMEGA168P
       - 8MHz
       - 15.50KB
       - 1KB
     * - :ref:`board_atmelavr_328p16m`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_328p8m`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_32u416m`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_1284p16m`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_1284p8m`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_644pa16m`
-      - On-board
+      - External
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_644pa8m`
-      - On-board
+      - External
       - ATMEGA644P
       - 8MHz
       - 63KB
@@ -2228,7 +2229,7 @@ OpenEnergyMonitor
       - Flash
       - RAM
     * - :ref:`board_atmelavr_emonpi`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 30KB
@@ -2247,7 +2248,7 @@ PanStamp
       - Flash
       - RAM
     * - :ref:`board_atmelavr_panStampAVR`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
@@ -2285,7 +2286,7 @@ Pololu Corporation
       - Flash
       - RAM
     * - :ref:`board_atmelavr_a-star32U4`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -2304,13 +2305,13 @@ Prusa 3D
       - Flash
       - RAM
     * - :ref:`board_atmelavr_prusa_mm_control`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_prusa_rambo`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -2329,13 +2330,13 @@ Punch Through
       - Flash
       - RAM
     * - :ref:`board_atmelavr_lightblue-bean`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_lightblue-beanplus`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -2354,7 +2355,7 @@ Quirkbot
       - Flash
       - RAM
     * - :ref:`board_atmelavr_quirkbot`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -2373,19 +2374,19 @@ RedBearLab
       - Flash
       - RAM
     * - :ref:`board_atmelavr_blend`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_blendmicro16`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_blendmicro8`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
@@ -2404,7 +2405,7 @@ RepRap
       - Flash
       - RAM
     * - :ref:`board_atmelavr_reprap_rambo`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 252KB
@@ -2423,31 +2424,31 @@ SODAQ
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sodaq_galora`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_mbili`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_moja`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sodaq_ndogo`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sodaq_tatu`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
@@ -2466,37 +2467,37 @@ Sanguino
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sanguino_atmega1284p`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sanguino_atmega1284_8m`
-      - On-board
+      - External
       - ATMEGA1284P
       - 8MHz
       - 127KB
       - 16KB
     * - :ref:`board_atmelavr_sanguino_atmega644`
-      - On-board
+      - External
       - ATMEGA644
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644_8m`
-      - On-board
+      - External
       - ATMEGA644
       - 8MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644p`
-      - On-board
+      - External
       - ATMEGA644P
       - 16MHz
       - 63KB
       - 4KB
     * - :ref:`board_atmelavr_sanguino_atmega644p_8m`
-      - On-board
+      - External
       - ATMEGA644P
       - 8MHz
       - 63KB
@@ -2515,7 +2516,7 @@ SeeedStudio
       - Flash
       - RAM
     * - :ref:`board_atmelavr_seeeduino`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -2534,79 +2535,79 @@ SparkFun
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sparkfun_satmega128rfa1`
-      - On-board
+      - External
       - ATMEGA128RFA1
       - 16MHz
       - 124KB
       - 16KB
     * - :ref:`board_atmelavr_sparkfun_digitalsandbox`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_fiov3`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_makeymakey`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_megapro8MHz`
-      - On-board
+      - External
       - ATMEGA2560
       - 8MHz
       - 252KB
       - 8KB
     * - :ref:`board_atmelavr_sparkfun_megapro16MHz`
-      - On-board
+      - External
       - ATMEGA2560
       - 16MHz
       - 248KB
       - 8KB
     * - :ref:`board_atmelavr_sparkfun_megamini`
-      - On-board
+      - External
       - ATMEGA2560
       - 8MHz
       - 252KB
       - 8KB
     * - :ref:`board_atmelavr_uview`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_promicro8`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_promicro16`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_qduinomini`
-      - On-board
+      - External
       - ATMEGA32U4
       - 8MHz
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_sparkfun_redboard`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
       - 2KB
     * - :ref:`board_atmelavr_sparkfun_serial7seg`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 31.50KB
@@ -2625,7 +2626,7 @@ SpellFoundry
       - Flash
       - RAM
     * - :ref:`board_atmelavr_sleepypi`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
@@ -2644,7 +2645,7 @@ The Things Network
       - Flash
       - RAM
     * - :ref:`board_atmelavr_the_things_uno`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -2663,7 +2664,7 @@ Till Harbaum
       - Flash
       - RAM
     * - :ref:`board_atmelavr_ftduino`
-      - On-board
+      - External
       - ATMEGA32U4
       - 16MHz
       - 28KB
@@ -2682,13 +2683,13 @@ TinyCircuits
       - Flash
       - RAM
     * - :ref:`board_atmelavr_tinyduino`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
       - 2KB
     * - :ref:`board_atmelavr_tinylily`
-      - On-board
+      - External
       - ATMEGA328P
       - 8MHz
       - 30KB
@@ -2707,13 +2708,13 @@ Wicked Device
       - Flash
       - RAM
     * - :ref:`board_atmelavr_wildfirev2`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 120.00KB
       - 16KB
     * - :ref:`board_atmelavr_wildfirev3`
-      - On-board
+      - External
       - ATMEGA1284P
       - 16MHz
       - 127KB
@@ -2732,7 +2733,7 @@ Wisen
       - Flash
       - RAM
     * - :ref:`board_atmelavr_whispernode`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB
@@ -2770,37 +2771,37 @@ nicai-systems
       - Flash
       - RAM
     * - :ref:`board_atmelavr_bob3`
-      - On-board
+      - External
       - ATMEGA88
       - 8MHz
       - 8KB
       - 1KB
     * - :ref:`board_atmelavr_nibo2`
-      - On-board
+      - External
       - ATMEGA128
       - 16MHz
       - 128KB
       - 4KB
     * - :ref:`board_atmelavr_niboburger`
-      - On-board
+      - External
       - ATMEGA16
       - 15MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_niboburger_1284`
-      - On-board
+      - External
       - ATMEGA1284P
       - 20MHz
       - 128KB
       - 16KB
     * - :ref:`board_atmelavr_nibobee`
-      - On-board
+      - External
       - ATMEGA16
       - 15MHz
       - 16KB
       - 1KB
     * - :ref:`board_atmelavr_nibobee_1284`
-      - On-board
+      - External
       - ATMEGA1284P
       - 20MHz
       - 128KB
@@ -2819,7 +2820,7 @@ ubIQio
       - Flash
       - RAM
     * - :ref:`board_atmelavr_ardhat`
-      - On-board
+      - External
       - ATMEGA328P
       - 16MHz
       - 31.50KB

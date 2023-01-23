@@ -211,6 +211,11 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - ESP32S2
       - 240MHz
@@ -220,6 +225,11 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_wifiduino32s3`
       - ESP32S3
@@ -245,6 +255,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_d-duino-32`
       - ESP32
@@ -281,12 +296,22 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - ESP32C3
       - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - ESP32S2
       - 240MHz
       - 4MB
@@ -445,6 +470,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_node32s`
       - ESP32
@@ -812,7 +842,7 @@ Packages
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
     * - `tool-esptoolpy <https://registry.platformio.org/tools/platformio/tool-esptoolpy>`__
-      - Espressif ESP8266 and ESP32 serial bootloader utility
+      - A Python-based, open-source, platform-independent utility to communicate with the ROM bootloader in Espressif chips
 
     * - `tool-idf <https://registry.platformio.org/tools/platformio/tool-idf>`__
       - idf is a top-level config/build command line tool for ESP-IDF
@@ -837,9 +867,6 @@ Packages
 
     * - `tool-openocd-esp32 <https://registry.platformio.org/tools/platformio/tool-openocd-esp32>`__
       - Open On-Chip Debugger for Espressif ESP32
-
-    * - `toolchain-esp32s2ulp <https://registry.platformio.org/tools/platformio/toolchain-esp32s2ulp>`__
-      - Binutils fork with support for the ESP32-S2 ULP co-processor
 
     * - `toolchain-esp32ulp <https://registry.platformio.org/tools/platformio/toolchain-esp32ulp>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
@@ -1045,6 +1072,12 @@ Ai-Thinker
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_esp32-c3-m1i-kit`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_nodemcu-32s2`
       - External
       - ESP32S2
@@ -1127,6 +1160,12 @@ BPI Tech
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_bpi_leaf_s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 Blinker
 ~~~~~~~
@@ -1195,6 +1234,25 @@ Connaxio
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Cytron Technologies
+~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cytron_maker_feather_aiot_s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 DFRobot
@@ -1296,6 +1354,12 @@ Deneyap
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_deneyapkartg`
       - External
       - ESP32C3
@@ -1303,6 +1367,12 @@ Deneyap
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_deneyapmini`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
       - External
       - ESP32S2
       - 240MHz
@@ -2045,6 +2115,25 @@ Microduino
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Munich Labs
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_redpill_esp32s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 NodeMCU
