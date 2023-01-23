@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -132,10 +133,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Unit Testing</a> &raquo;</li>
-          <li><a href="index.html">Testing Frameworks</a> &raquo;</li>
-      <li>Unity</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Unit Testing</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Testing Frameworks</a></li>
+      <li class="breadcrumb-item active">Unity</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/unity.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -152,7 +153,7 @@
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/throwtheswitch/Unity">https://registry.platformio.org/libraries/throwtheswitch/Unity</a></p>
 </dd>
 <dt class="field-even">Configuration</dt>
-<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">unity</span></code></p>
+<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/sections/env/options/test/test_framework.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">unity</span></code></p>
 </dd>
 <dt class="field-odd">Native Tests</dt>
 <dd class="field-odd"><p>Yes</p>
@@ -206,59 +207,59 @@ This is what will actually trigger each of those test functions to run, so it is
 important that each function gets its own <code class="docutils literal notranslate"><span class="pre">RUN_TEST</span></code> call.
 Please remember to add each test to the main function.</p>
 <p>When you’re done, your test file will look something like this:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;file_to_test.h&quot;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;file_to_test.h&quot;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// set stuff up here</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// clean stuff up here</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_should_doBlahAndBlah</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_should_doBlahAndBlah</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// test stuff</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_should_doAlsoDoBlah</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">test_function_should_doAlsoDoBlah</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// more test stuff</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">runUnityTests</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_should_doBlahAndBlah</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_should_doAlsoDoBlah</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">UNITY_END</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">runUnityTests</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">UNITY_BEGIN</span><span class="p">();</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_should_doBlahAndBlah</span><span class="p">);</span>
+<span class="w">  </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_function_should_doAlsoDoBlah</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">UNITY_END</span><span class="p">();</span>
+<span class="p">}</span>
 
 <span class="c1">// WARNING!!! PLEASE REMOVE UNNECESSARY MAIN IMPLEMENTATIONS //</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * For native dev-platform or for some embedded frameworks</span>
-<span class="cm">  */</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">runUnityTests</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="cm">  */</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">runUnityTests</span><span class="p">();</span>
+<span class="p">}</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * For Arduino framework</span>
-<span class="cm">  */</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="cm">  */</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// Wait ~2 seconds before the Unity test runner</span>
 <span class="w">  </span><span class="c1">// establishes connection with a board Serial interface</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">runUnityTests</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="w">  </span><span class="n">runUnityTests</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * For ESP-IDF framework</span>
-<span class="cm">  */</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">runUnityTests</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="cm">  */</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">runUnityTests</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p><strong>Useful links</strong></p>
@@ -272,15 +273,15 @@ Please remember to add each test to the main function.</p>
 <h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>All of Unity’s configuration options are <code class="docutils literal notranslate"><span class="pre">#defines</span></code>. Most of these are simple
 definitions. A couple is macros with arguments. Because these options are specified
-via C defines, you can pass most of these options to the <a class="reference internal" href="../../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
+via C defines, you can pass most of these options to the <a class="reference internal" href="../../../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
 <p>See <a class="reference external" href="https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityConfigurationGuide.md">Unity Configuration Guide</a>
 for the available options.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_unity_options]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D UNITY_INT_WIDTH</span><span class="o">=</span><span class="s">16</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D UNITY_FLOAT_TYPE</span><span class="o">=</span><span class="s">float16_t</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_unity_options]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-D UNITY_INT_WIDTH</span><span class="o">=</span><span class="s">16</span>
+<span class="w">    </span><span class="na">-D UNITY_FLOAT_TYPE</span><span class="o">=</span><span class="s">float16_t</span>
 </pre></div>
 </div>
 <section id="custom-unity-config-h">
@@ -291,7 +292,7 @@ for the available options.</p>
 <p>PlatformIO’s Unity test runner comes with an already defined <code class="docutils literal notranslate"><span class="pre">UNITY_INCLUDE_CONFIG_H</span></code>
 macro. It looks for a custom <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> in a current test folder. In case
 the <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> is missed, PlatformIO will walk through the test hierarchy
-until to the root (<a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>).</p>
+until to the root (<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>).</p>
 <p>Let’s take a look at the Pizza Project from the <a class="reference internal" href="../structure/hierarchy.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a>
 example. If you run an “embedded/components/sauce/test_tomatos” test, PlatformIO will
 check folders for the <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> in the following order:</p>
@@ -300,11 +301,11 @@ check folders for the <code class="docutils literal notranslate"><span class="pr
 <li><p>“embedded/components/sauce”</p></li>
 <li><p>“embedded/components”</p></li>
 <li><p>“embedded”</p></li>
-<li><p><a class="reference internal" href="../../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> (finish).</p></li>
+<li><p><a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a> (finish).</p></li>
 </ol>
 <p>If the <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> is not found, PlatformIO will generate a default
 <code class="docutils literal notranslate"><span class="pre">unity_config.h</span></code> that routes test result output to a framework specified in the
-<a class="reference internal" href="../../../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>. On the <a class="reference internal" href="../../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform,
+<a class="reference internal" href="../../../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>. On the <a class="reference internal" href="../../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> development platform,
 it will be the standard input/output, whereas, on the embedded development platforms,
 the first available Serial interface will be used (see <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py">UNITY_FRAMEWORK_CONFIG</a>
 for the default framework configurations).</p>
@@ -402,7 +403,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -459,7 +460,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -186,9 +187,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Frameworks</a> &raquo;</li>
-      <li>Mbed</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Frameworks</a></li>
+      <li class="breadcrumb-item active">Mbed</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/mbed.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -202,7 +203,7 @@
 <span id="framework-mbed"></span><h1>Mbed<a class="headerlink" href="#mbed" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
 </dd>
 </dl>
 <p>Arm Mbed OS is an open source embedded operating system designed specifically for the ‘things’ in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices</p>
@@ -264,7 +265,7 @@ Some examples of configuration parameters:</p>
 <p>On Windows the maximum length for a path (file name and directory route, also
 known as <code class="docutils literal notranslate"><span class="pre">MAX_PATH</span></code>) — has been defined by 260 characters which can lead to
 compilation error for some targets. It’s possible to shorten these paths is to
-install packages in root of any logical disk by specifying <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>.</p>
+install packages in root of any logical disk by specifying <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>.</p>
 </div>
 <section id="mbed-os-6">
 <h4><a class="toc-backref" href="#id10">Mbed OS 6</a><a class="headerlink" href="#mbed-os-6" title="Permalink to this heading">¶</a></h4>
@@ -287,7 +288,7 @@ Instead of the RTOS’s scheduler, all activities are polled or interrupt-driven
 <p>PlatformIO allows compiling projects with or without Mbed OS 5. By default, project
 is built without the OS feature. Most of the framework functionality requires the OS to
 be enabled. To add the OS feature you can use a special macro definition that needs be
-added to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+added to <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -305,11 +306,11 @@ added to <a class="reference internal" href="../projectconf/section_env_build.ht
 </tbody>
 </table>
 <p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with enabled <code class="docutils literal notranslate"><span class="pre">rtos</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:wizwiki_w7500p]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wiznet7500</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wizwiki_w7500p</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_MBED_RTOS_PRESENT</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:wizwiki_w7500p]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wiznet7500</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wizwiki_w7500p</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D PIO_FRAMEWORK_MBED_RTOS_PRESENT</span>
 </pre></div>
 </div>
 </section>
@@ -320,7 +321,7 @@ added to <a class="reference internal" href="../projectconf/section_env_build.ht
 optimized firmware size with full error information and allows MCU to go to sleep mode.
 In the case when default build profile is not suitable for your project there two other
 profiles <code class="docutils literal notranslate"><span class="pre">release</span></code> and <code class="docutils literal notranslate"><span class="pre">debug</span></code> that can be enabled using special macro definitions.
-You can change build profile <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+You can change build profile <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -348,11 +349,11 @@ official page <a class="reference external" href="https://os.mbed.com/docs/mbed-
 <p>In case you don’t need all parts of the framework or you want to reduce the compilation
 time, you can explicitly exclude folders with redundant sources. For example, to remove
 <code class="docutils literal notranslate"><span class="pre">cellular</span></code>, <code class="docutils literal notranslate"><span class="pre">mbedtls</span></code> and <code class="docutils literal notranslate"><span class="pre">nanostack</span></code> features from the build process, navigate
-to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a> and create a new file <code class="docutils literal notranslate"><span class="pre">framework-mbed/features/.mbedignore</span></code>
+to <a class="reference internal" href="../projectconf/sections/platformio/options/directory/packages_dir.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a> and create a new file <code class="docutils literal notranslate"><span class="pre">framework-mbed/features/.mbedignore</span></code>
 with the following contents:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">cellular/*</span><span class="w"></span>
-<span class="na">mbedtls/*</span><span class="w"></span>
-<span class="na">nanostack/*</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">cellular/*</span>
+<span class="na">mbedtls/*</span>
+<span class="na">nanostack/*</span>
 </pre></div>
 </div>
 <p>If you want to exclude the entire folder, simply create <code class="docutils literal notranslate"><span class="pre">.mbedignore</span></code> file and add
@@ -364,51 +365,51 @@ only one symbol <code class="docutils literal notranslate"><span class="pre">*</
 manually add custom board definitions to your project. First of all, you need to create
 a special file <code class="docutils literal notranslate"><span class="pre">custom_targets.json</span></code> in the root folder of your project where you
 describe your board, for example here is the configuration for <code class="docutils literal notranslate"><span class="pre">NUCLEO-F401RE</span></code> board:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;NUCLEO_F401RE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;inherits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;MCU_STM32&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;supported_form_factors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;ARDUINO&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;MORPHO&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cortex-M4F&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;extra_labels_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;STM32F4&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;macros_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;clock_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;help&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;USE_PLL_HSE_EXTC|USE_PLL_HSI&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;macro_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLOCK_SOURCE&quot;</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;detect_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;0720&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;device_has_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;SERIAL_ASYNCH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;FLASH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;MPU&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;device_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STM32F401RE&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;NUCLEO_F401RE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;inherits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;MCU_STM32&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;supported_form_factors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;ARDUINO&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;MORPHO&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cortex-M4F&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;extra_labels_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;STM32F4&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;macros_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;clock_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;help&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;USE_PLL_HSE_EXTC|USE_PLL_HSI&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;macro_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLOCK_SOURCE&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;detect_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;0720&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;device_has_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;SERIAL_ASYNCH&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;FLASH&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;MPU&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;device_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STM32F401RE&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Secondly, you need to add code specific to your target to the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of your project.
 Usually, it’s a good idea to isolate this code in a separate folder and add the path to this folder
-to <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_custom_board]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nxplpc</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">my_custom_board</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET</span><span class="w"></span>
+to <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:my_custom_board]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nxplpc</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mbed</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">my_custom_board</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-I$PROJECT_SRC_DIR/MY_CUSTOM_BOARD_TARGET</span>
 </pre></div>
 </div>
 <p>Next, you need to inform PlatformIO that there is a new custom board. To do this, you can create
@@ -416,16 +417,16 @@ to <a class="reference internal" href="../projectconf/section_env_build.html#pro
 board name, e.g. <code class="docutils literal notranslate"><span class="pre">my_custom_board.json</span></code> as described here <a class="reference internal" href="../platforms/creating_board.html#board-creating"><span class="std std-ref">Custom Embedded Boards</span></a></p>
 <p>After these steps, your project structure should look like this:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>project_dir
-├── include
-├── boards
-│    └── my_custom_board.json
-├── src
-│    ├── main.cpp
-│    └── MY_CUSTOM_BOARD_TARGET
-│         ├── pinNames.h
-│         └── pinNames.c
-├── custom_targets.json
-└── platformio.ini
+├──<span class="w"> </span>include
+├──<span class="w"> </span>boards
+│<span class="w">    </span>└──<span class="w"> </span>my_custom_board.json
+├──<span class="w"> </span>src
+│<span class="w">    </span>├──<span class="w"> </span>main.cpp
+│<span class="w">    </span>└──<span class="w"> </span>MY_CUSTOM_BOARD_TARGET
+│<span class="w">         </span>├──<span class="w"> </span>pinNames.h
+│<span class="w">         </span>└──<span class="w"> </span>pinNames.c
+├──<span class="w"> </span>custom_targets.json
+└──<span class="w"> </span>platformio.ini
 </pre></div>
 </div>
 <dl class="simple">
@@ -517,7 +518,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You will need to install debug tool drivers depending on your system.
@@ -3952,7 +3953,7 @@ Please click on board name for the further details.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -4009,7 +4010,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

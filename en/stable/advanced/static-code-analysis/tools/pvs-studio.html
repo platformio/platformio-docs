@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -129,10 +130,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Static Code Analysis</a> &raquo;</li>
-          <li><a href="index.html">Check tools</a> &raquo;</li>
-      <li>PVS-Studio</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Static Code Analysis</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Check tools</a></li>
+      <li class="breadcrumb-item active">PVS-Studio</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/static-code-analysis/tools/pvs-studio.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -177,23 +178,23 @@ performed at a source code level. Some of the defects that might be detected inc
 </section>
 <section id="configuration">
 <h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p>To enable <strong>PVS-Studio</strong> tool simply add it to the <a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
+<p>To enable <strong>PVS-Studio</strong> tool simply add it to the <a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pvs-studio</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pvs-studio</span>
 </pre></div>
 </div>
 <p>Useful options that can be used used for adjusting check process:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/section_env_check.html">Check options</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-tool"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-patterns"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-flags"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-severity"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-skip-packages"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/sections/env/options/check/index.html">Check options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_patterns.html"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_flags.html"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_severity.html"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_skip_packages.html"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -240,12 +241,12 @@ your project requirements:</p>
 </table>
 </div></blockquote>
 <p>An example with a special analysis mode, disabled errors and license file:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pvs-studio</span><span class="w"></span>
-<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">pvs-studio: --analysis-mode</span><span class="o">=</span><span class="s">4 --errors-off=V532,V586 --lic-file=/path/to/file.lic</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pvs-studio</span>
+<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">pvs-studio</span><span class="o">:</span><span class="w"> </span><span class="s">--analysis-mode=4 --errors-off=V532,V586 --lic-file=/path/to/file.lic</span>
 </pre></div>
 </div>
 </section>
@@ -338,7 +339,7 @@ AAAA-BBBB-CCCC-DDDD
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -395,7 +396,7 @@ AAAA-BBBB-CCCC-DDDD
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

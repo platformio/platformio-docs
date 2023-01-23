@@ -78,6 +78,41 @@ Do disable checking for unnecessary data, please set threshold to ``0`` using
 
 Enable caching for Package Manager and for API requests.
 
+.. _setting_force_verbose:
+
+``force_verbose``
+^^^^^^^^^^^^^^^^^
+
+:Default:   No
+:Values:    Yes/No
+
+Force verbose output when processing environments. This setting overrides
+
+* :option:`pio run --verbose`
+* :option:`pio ci --verbose`
+* :option:`pio test --verbose`
+
+.. _setting_projects_dir:
+
+``projects_dir``
+^^^^^^^^^^^^^^^^
+
+:Default:   ~/Documents/PlatformIO/Projects
+:Values:    Path to folder
+
+Default location for PlatformIO projects (PlatformIO Home).
+
+.. _setting_enable_proxy_strict_ssl:
+
+``enable_proxy_strict_ssl``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:Default:   Yes
+:Values:    Yes/No
+
+Verify the proxy server certificate against the list of supplied CAs.
+See also PlatformIO Core :ref:`piocore_install_proxy_configuration`.
+
 .. _setting_enable_telemetry:
 
 ``enable_telemetry``
@@ -110,30 +145,6 @@ Which data do we collect and why?
   extensions based on the popularity of IDEs (for example, :ref:`ide_vscode`, :ref:`ide_clion`)
 
 **Thanks a lot that you keep this setting enabled!**
-
-.. _setting_force_verbose:
-
-``force_verbose``
-^^^^^^^^^^^^^^^^^
-
-:Default:   No
-:Values:    Yes/No
-
-Force verbose output when processing environments. This setting overrides
-
-* :option:`pio run --verbose`
-* :option:`pio ci --verbose`
-* :option:`pio test --verbose`
-
-.. _setting_projects_dir:
-
-``projects_dir``
-^^^^^^^^^^^^^^^^
-
-:Default:   ~/Documents/PlatformIO/Projects
-:Values:    Path to folder
-
-Default location for PlatformIO projects (PlatformIO Home)
 
 Examples
 ~~~~~~~~

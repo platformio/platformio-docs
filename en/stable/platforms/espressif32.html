@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -71,7 +72,6 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Platforms</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#embedded">Embedded</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="aceinna_imu.html">Aceinna IMU</a></li>
-<li class="toctree-l3"><a class="reference internal" href="asrmicro650x.html">ASR Microelectronics ASR650x</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmelavr.html">Atmel AVR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmelmegaavr.html">Atmel megaAVR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmelsam.html">Atmel SAM</a></li>
@@ -157,9 +157,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Development Platforms</a> &raquo;</li>
-      <li>Espressif 32</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Development Platforms</a></li>
+      <li class="breadcrumb-item active">Espressif 32</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/platforms/espressif32.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -176,7 +176,7 @@
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">https://registry.platformio.org/platforms/platformio/espressif32</a></p>
 </dd>
 <dt class="field-even">Configuration</dt>
-<dd class="field-even"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif32</span></code></p>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif32</span></code></p>
 </dd>
 </dl>
 <p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p>
@@ -184,18 +184,18 @@
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tutorials" id="id3">Tutorials</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id4">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id5">Examples</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id6">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id7">Stable and upstream versions</a></p></li>
-<li><p><a class="reference internal" href="#packages" id="id8">Packages</a></p></li>
-<li><p><a class="reference internal" href="#frameworks" id="id9">Frameworks</a></p></li>
-<li><p><a class="reference internal" href="#boards" id="id10">Boards</a></p></li>
+<li><p><a class="reference internal" href="#tutorials" id="id4">Tutorials</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id5">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id6">Examples</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id7">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#stable-and-upstream-versions" id="id8">Stable and upstream versions</a></p></li>
+<li><p><a class="reference internal" href="#packages" id="id9">Packages</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id10">Frameworks</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id11">Boards</a></p></li>
 </ul>
 </div>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id3">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/espressif32/arduino_debugging_unit_testing.html#tutorial-espressif32-arduino-debugging-unit-testing"><span class="std std-ref">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</span></a></p></li>
 <li><p><a class="reference internal" href="../tutorials/espressif32/espidf_debugging_unit_testing_analysis.html#tutorial-espressif32-espidf-debugging-unit-testing-analysis"><span class="std std-ref">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</span></a></p></li>
@@ -203,58 +203,58 @@
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id4">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <div class="contents local topic" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#cpu-frequency" id="id11">CPU Frequency</a></p></li>
-<li><p><a class="reference internal" href="#flash-frequency" id="id12">FLASH Frequency</a></p></li>
-<li><p><a class="reference internal" href="#flash-mode" id="id13">FLASH Mode</a></p></li>
-<li><p><a class="reference internal" href="#external-ram-psram" id="id14">External RAM (PSRAM)</a></p></li>
-<li><p><a class="reference internal" href="#debug-level" id="id15">Debug Level</a></p></li>
-<li><p><a class="reference internal" href="#upload-speed" id="id16">Upload Speed</a></p></li>
-<li><p><a class="reference internal" href="#erase-flash" id="id17">Erase Flash</a></p></li>
-<li><p><a class="reference internal" href="#partition-tables" id="id18">Partition Tables</a></p></li>
-<li><p><a class="reference internal" href="#embedding-binary-data" id="id19">Embedding Binary Data</a></p></li>
-<li><p><a class="reference internal" href="#uploading-files-to-file-system" id="id20">Uploading files to file system</a></p></li>
-<li><p><a class="reference internal" href="#over-the-air-ota-update" id="id21">Over-the-Air (OTA) update</a></p>
+<li><p><a class="reference internal" href="#cpu-frequency" id="id12">CPU Frequency</a></p></li>
+<li><p><a class="reference internal" href="#flash-frequency" id="id13">FLASH Frequency</a></p></li>
+<li><p><a class="reference internal" href="#flash-mode" id="id14">FLASH Mode</a></p></li>
+<li><p><a class="reference internal" href="#external-ram-psram" id="id15">External RAM (PSRAM)</a></p></li>
+<li><p><a class="reference internal" href="#debug-level" id="id16">Debug Level</a></p></li>
+<li><p><a class="reference internal" href="#upload-speed" id="id17">Upload Speed</a></p></li>
+<li><p><a class="reference internal" href="#erase-flash" id="id18">Erase Flash</a></p></li>
+<li><p><a class="reference internal" href="#partition-tables" id="id19">Partition Tables</a></p></li>
+<li><p><a class="reference internal" href="#embedding-binary-data" id="id20">Embedding Binary Data</a></p></li>
+<li><p><a class="reference internal" href="#uploading-files-to-file-system" id="id21">Uploading files to file system</a></p></li>
+<li><p><a class="reference internal" href="#over-the-air-ota-update" id="id22">Over-the-Air (OTA) update</a></p>
 <ul>
-<li><p><a class="reference internal" href="#using-jfrog-bintray-free-and-secure-cloud-solution" id="id22">Using JFrog Bintray (free and secure Cloud solution)</a></p></li>
-<li><p><a class="reference internal" href="#using-built-in-local-solution" id="id23">Using built-in Local solution</a></p>
+<li><p><a class="reference internal" href="#using-jfrog-bintray-free-and-secure-cloud-solution" id="id23">Using JFrog Bintray (free and secure Cloud solution)</a></p></li>
+<li><p><a class="reference internal" href="#using-built-in-local-solution" id="id24">Using built-in Local solution</a></p>
 <ul>
-<li><p><a class="reference internal" href="#authentication-and-upload-options" id="id24">Authentication and upload options</a></p></li>
+<li><p><a class="reference internal" href="#authentication-and-upload-options" id="id25">Authentication and upload options</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id25">Using Arduino Framework with Staging version</a></p></li>
-<li><p><a class="reference internal" href="#arduino-core-wiki" id="id26">Arduino Core Wiki</a></p></li>
+<li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id26">Using Arduino Framework with Staging version</a></p></li>
+<li><p><a class="reference internal" href="#arduino-core-wiki" id="id27">Arduino Core Wiki</a></p></li>
 </ul>
 </div>
 <section id="cpu-frequency">
-<h3><a class="toc-backref" href="#id11">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this heading">¶</a></h3>
-<p>See <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="c1">; set frequency to 160MHz</span><span class="w"></span>
-<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160000000L</span><span class="w"></span>
+<h3><a class="toc-backref" href="#id12">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this heading">¶</a></h3>
+<p>See <a class="reference internal" href="../projectconf/sections/env/options/platform/board_build.f_cpu.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="c1">; set frequency to 160MHz</span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">160000000L</span>
 </pre></div>
 </div>
 </section>
 <section id="flash-frequency">
-<h3><a class="toc-backref" href="#id12">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this heading">¶</a></h3>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">board_build.f_flash</span></code> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to change
 a value. Possible values:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">40000000L</span></code> (default)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">80000000L</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="c1">; set frequency to 80MHz</span><span class="w"></span>
-<span class="na">board_build.f_flash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80000000L</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="c1">; set frequency to 80MHz</span>
+<span class="na">board_build.f_flash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80000000L</span>
 </pre></div>
 </div>
 </section>
 <section id="flash-mode">
-<h3><a class="toc-backref" href="#id13">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this heading">¶</a></h3>
 <p>Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
@@ -267,83 +267,83 @@ a value. Possible values:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">dio</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dout</span></code></p></li>
 </ul>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">board_build.flash_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">qio</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">board_build.flash_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">qio</span>
 </pre></div>
 </div>
 </section>
 <section id="external-ram-psram">
-<h3><a class="toc-backref" href="#id14">External RAM (PSRAM)</a><a class="headerlink" href="#external-ram-psram" title="Permalink to this heading">¶</a></h3>
-<p>You can enable external RAM using the next extra <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
+<h3><a class="toc-backref" href="#id15">External RAM (PSRAM)</a><a class="headerlink" href="#external-ram-psram" title="Permalink to this heading">¶</a></h3>
+<p>You can enable external RAM using the next extra <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> depending on a framework type.</p>
 <p>Framework <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-DBOARD_HAS_PSRAM</span><span class="w"></span>
-<span class="w">    </span><span class="na">-mfix-esp32-psram-cache-issue</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-DBOARD_HAS_PSRAM</span>
+<span class="w">    </span><span class="na">-mfix-esp32-psram-cache-issue</span>
 </pre></div>
 </div>
 <p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-DCONFIG_SPIRAM_CACHE_WORKAROUND</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-DCONFIG_SPIRAM_CACHE_WORKAROUND</span>
 </pre></div>
 </div>
 <p>More details are located in the official ESP-IDF documentation -
 <a class="reference external" href="http://esp-idf.readthedocs.io/en/latest/api-guides/external-ram.html">Support for external RAM</a>.</p>
 </section>
 <section id="debug-level">
-<h3><a class="toc-backref" href="#id15">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this heading">¶</a></h3>
-<p>Please use one of the next <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to change debug level.
-A <a class="reference internal" href="../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option could be used only the one time per
+<h3><a class="toc-backref" href="#id16">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this heading">¶</a></h3>
+<p>Please use one of the next <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to change debug level.
+A <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option could be used only the one time per
 build environment. If you need to specify more flags, please separate them
 with a new line or space.</p>
 <p>Actual information is available in <a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80">Arduino for ESP32 Board Manifest</a>.
 Please scroll to <code class="docutils literal notranslate"><span class="pre">esp32.menu.DebugLevel</span></code> section.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
 
-<span class="c1">;;;;; Possible options ;;;;;;</span><span class="w"></span>
+<span class="c1">;;;;; Possible options ;;;;;;</span>
 
-<span class="c1">; None</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=0</span><span class="w"></span>
+<span class="c1">; None</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=0</span>
 
-<span class="c1">; Error</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=1</span><span class="w"></span>
+<span class="c1">; Error</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=1</span>
 
-<span class="c1">; Warn</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=2</span><span class="w"></span>
+<span class="c1">; Warn</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=2</span>
 
-<span class="c1">; Info</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=3</span><span class="w"></span>
+<span class="c1">; Info</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=3</span>
 
-<span class="c1">; Debug</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=4</span><span class="w"></span>
+<span class="c1">; Debug</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=4</span>
 
-<span class="c1">; Verbose</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=5</span><span class="w"></span>
+<span class="c1">; Verbose</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DCORE_DEBUG_LEVEL=5</span>
 </pre></div>
 </div>
 </section>
 <section id="upload-speed">
-<h3><a class="toc-backref" href="#id16">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this heading">¶</a></h3>
-<p>You can set custom upload speed using  <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
+<h3><a class="toc-backref" href="#id17">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this heading">¶</a></h3>
+<p>You can set custom upload speed using  <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_speed.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
 from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span>
 </pre></div>
 </div>
 </section>
 <section id="erase-flash">
-<h3><a class="toc-backref" href="#id17">Erase Flash</a><a class="headerlink" href="#erase-flash" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id18">Erase Flash</a><a class="headerlink" href="#erase-flash" title="Permalink to this heading">¶</a></h3>
 <p>Please <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> the next command to erase the entire
 flash chip (all data replaced with 0xFF bytes):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">run</span> <span class="o">--</span><span class="n">target</span> <span class="n">erase</span>
@@ -355,10 +355,10 @@ flash chip (all data replaced with 0xFF bytes):</p>
 </div>
 </section>
 <section id="partition-tables">
-<h3><a class="toc-backref" href="#id18">Partition Tables</a><a class="headerlink" href="#partition-tables" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id19">Partition Tables</a><a class="headerlink" href="#partition-tables" title="Permalink to this heading">¶</a></h3>
 <p>You can create a custom partitions table (CSV) following <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html">ESP32 Partition Tables</a>
 documentation. PlatformIO uses <strong>default partition tables</strong> depending on a
-<a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> type:</p>
+<a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> type:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
 (<a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/tools/partitions">show pre-configured partition tables</a>)</p></li>
@@ -373,33 +373,33 @@ documentation. PlatformIO uses <strong>default partition tables</strong> dependi
 as “spiffs”. For example, <code class="docutils literal notranslate"><span class="pre">spiffs,</span> <span class="pre">data,</span> <span class="pre">spiffs,</span> <span class="pre">0x291000,</span> <span class="pre">1M,</span></code></p>
 </div>
 <p>Examples:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; 1) A &quot;partitions_custom.csv&quot; in the root of project directory</span><span class="w"></span>
-<span class="k">[env:custom_table]</span><span class="w"></span>
-<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">partitions_custom.csv</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; 1) A &quot;partitions_custom.csv&quot; in the root of project directory</span>
+<span class="k">[env:custom_table]</span>
+<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">partitions_custom.csv</span>
 
-<span class="c1">; 2) Switch between built-in tables</span><span class="w"></span>
-<span class="c1">; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions</span><span class="w"></span>
-<span class="c1">; https://github.com/espressif/esp-idf/tree/master/components/partition_table</span><span class="w"></span>
-<span class="k">[env:custom_builtin_table]</span><span class="w"></span>
-<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no_ota.csv</span><span class="w"></span>
+<span class="c1">; 2) Switch between built-in tables</span>
+<span class="c1">; https://github.com/espressif/arduino-esp32/tree/master/tools/partitions</span>
+<span class="c1">; https://github.com/espressif/esp-idf/tree/master/components/partition_table</span>
+<span class="k">[env:custom_builtin_table]</span>
+<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">no_ota.csv</span>
 </pre></div>
 </div>
 </section>
 <section id="embedding-binary-data">
-<h3><a class="toc-backref" href="#id19">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id20">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Permalink to this heading">¶</a></h3>
 <p>Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.</p>
 <p>There are two options <code class="docutils literal notranslate"><span class="pre">board_build.embed_txtfiles</span></code> and <code class="docutils literal notranslate"><span class="pre">board_build.embed_files</span></code>
 which can be used for embedding data. The only difference is that files specified
 in <code class="docutils literal notranslate"><span class="pre">board_build.embed_txtfiles</span></code> option are null-terminated in the final binary.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board_build.embed_txtfiles</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">src/private.pem.key</span><span class="w"></span>
-<span class="w">  </span><span class="na">src/certificate.pem.crt</span><span class="w"></span>
-<span class="w">  </span><span class="na">src/aws-root-ca.pem</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board_build.embed_txtfiles</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">src/private.pem.key</span>
+<span class="w">  </span><span class="na">src/certificate.pem.crt</span>
+<span class="w">  </span><span class="na">src/aws-root-ca.pem</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -409,12 +409,12 @@ using the <code class="docutils literal notranslate"><span class="pre">target_ad
 </div>
 <p>The file contents will be added to the <code class="docutils literal notranslate"><span class="pre">.rodata</span></code> section in flash, and
 are available via symbol names as follows:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_start&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_end&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_start&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_end&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_start&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_end&quot;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_start&quot;</span><span class="p">);</span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aws_root_ca_pem_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_aws_root_ca_pem_end&quot;</span><span class="p">);</span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_start&quot;</span><span class="p">);</span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">certificate_pem_crt_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_certificate_pem_crt_end&quot;</span><span class="p">);</span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_start</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_start&quot;</span><span class="p">);</span>
+<span class="k">extern</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">private_pem_key_end</span><span class="p">[]</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">&quot;_binary_src_private_pem_key_end&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The names are generated from the full name of the file. Characters <code class="docutils literal notranslate"><span class="pre">/,</span> <span class="pre">.</span></code>,
@@ -431,13 +431,13 @@ in the symbol name is added by “objcopy” and is the same for both text and b
 </ul>
 </section>
 <section id="uploading-files-to-file-system">
-<h3><a class="toc-backref" href="#id20">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id21">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Permalink to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Create new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
 <li><p>Create <code class="docutils literal notranslate"><span class="pre">data</span></code> folder (it should be on the same level as <code class="docutils literal notranslate"><span class="pre">src</span></code> folder)
 and put files here. Also, you can specify own location for
-<a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-data-dir"><span class="std std-ref">data_dir</span></a></p></li>
+<a class="reference internal" href="../projectconf/sections/platformio/options/directory/data_dir.html#projectconf-pio-data-dir"><span class="std std-ref">data_dir</span></a></p></li>
 <li><p>Run “Upload File System image” task in <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or use <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>
 and <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command with <code class="docutils literal notranslate"><span class="pre">uploadfs</span></code> target.</p></li>
 </ol>
@@ -445,11 +445,11 @@ and <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption
 compatible. To choose <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code> or <code class="docutils literal notranslate"><span class="pre">FFat</span></code> as the file system, it should be
 explicitly specified using <code class="docutils literal notranslate"><span class="pre">board_build.filesystem</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>,
 for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board_build.filesystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">littlefs</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board_build.filesystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">littlefs</span>
 </pre></div>
 </div>
 <p>Possible  values for <code class="docutils literal notranslate"><span class="pre">board_build.filesystem</span></code> are <code class="docutils literal notranslate"><span class="pre">spiffs</span></code> (default), <code class="docutils literal notranslate"><span class="pre">littlefs</span></code> and <code class="docutils literal notranslate"><span class="pre">fatfs</span></code>.</p>
@@ -464,7 +464,7 @@ for example:</p>
 </ul>
 </section>
 <section id="over-the-air-ota-update">
-<h3><a class="toc-backref" href="#id21">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id22">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this heading">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read the theory behind the OTA updates in the
@@ -472,26 +472,26 @@ for example:</p>
 article.</p>
 </div>
 <section id="using-jfrog-bintray-free-and-secure-cloud-solution">
-<h4><a class="toc-backref" href="#id22">Using JFrog Bintray (free and secure Cloud solution)</a><a class="headerlink" href="#using-jfrog-bintray-free-and-secure-cloud-solution" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id23">Using JFrog Bintray (free and secure Cloud solution)</a><a class="headerlink" href="#using-jfrog-bintray-free-and-secure-cloud-solution" title="Permalink to this heading">¶</a></h4>
 <ul class="simple">
 <li><p>Video and presentation - <a class="reference external" href="https://www.slideshare.net/ivankravets/swampup-overtheair-ota-firmware-upgrades-for-internet-of-things-devices-with-platformio-and-jfrog-bintray">swampUP: Over-The-Air (OTA) firmware upgrades for Internet of Things devices with PlatformIO and JFrog Bintray</a></p></li>
 <li><p>Demo source code: <a class="reference external" href="https://github.com/platformio/bintray-secure-ota">https://github.com/platformio/bintray-secure-ota</a></p></li>
 </ul>
 </section>
 <section id="using-built-in-local-solution">
-<h4><a class="toc-backref" href="#id23">Using built-in Local solution</a><a class="headerlink" href="#using-built-in-local-solution" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id24">Using built-in Local solution</a><a class="headerlink" href="#using-built-in-local-solution" title="Permalink to this heading">¶</a></h4>
 <ol class="arabic simple">
 <li><p>Create a new project using <a class="reference internal" href="../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a> or initialize a project via
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
 <li><p>Copy the <a class="reference external" href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA">basicOTA</a>
-example for Arduino or <a class="reference external" href="https://github.com/espressif/esp-idf/tree/master/examples/system/ota/simple_ota_example">Simple OTA</a> example for ESP-IDF to <a class="reference internal" href="../projectconf/section_platformio.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
+example for Arduino or <a class="reference external" href="https://github.com/espressif/esp-idf/tree/master/examples/system/ota/simple_ota_example">Simple OTA</a> example for ESP-IDF to <a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>
 and configure your WiFi credentials
 (SSID and password).</p></li>
 <li><p>Compile the project to ensure there are no syntax errors in the code.</p></li>
 </ol>
 <p>To upload the binary you can either specify the upload address directly in the CLI
 command using the <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-upload-port"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--upload-port</span></code></a> option:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio run --target upload --upload-port IP_ADDRESS_HERE or mDNS_NAME.local
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="w"> </span>upload<span class="w"> </span>--upload-port<span class="w"> </span>IP_ADDRESS_HERE<span class="w"> </span>or<span class="w"> </span>mDNS_NAME.local
 </pre></div>
 </div>
 <p>For example:</p>
@@ -500,30 +500,30 @@ pio run -t upload --upload-port myesp32.local
 </pre></div>
 </div>
 <p>Or use the <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Please note that you also
-need to set <a class="reference internal" href="../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
-<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span><span class="w"></span>
+need to set <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_protocol.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> to <code class="docutils literal notranslate"><span class="pre">espota</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">IP_ADDRESS_HERE or mDNS_NAME.local</span>
 </pre></div>
 </div>
 <p>For example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
-<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">192.168.0.255</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span>
+<span class="na">upload_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">192.168.0.255</span>
 </pre></div>
 </div>
 <section id="authentication-and-upload-options">
-<h5><a class="toc-backref" href="#id24">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this heading">¶</a></h5>
+<h5><a class="toc-backref" href="#id25">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this heading">¶</a></h5>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span><span class="w"></span>
-<span class="c1">; each flag in a new line</span><span class="w"></span>
-<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">--port</span><span class="o">=</span><span class="s">3232</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espota</span>
+<span class="c1">; each flag in a new line</span>
+<span class="na">upload_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">--port</span><span class="o">=</span><span class="s">3232</span>
 </pre></div>
 </div>
 <p>Available flags</p>
@@ -534,40 +534,40 @@ need to set <a class="reference internal" href="../projectconf/section_env_uploa
 the module</p></li>
 </ul>
 <p>For the full list with available options please run</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~/.platformio/packages/framework-arduinoespressif32/tools/espota.py --help
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~/.platformio/packages/framework-arduinoespressif32/tools/espota.py<span class="w"> </span>--help
 
-Usage: espota.py <span class="o">[</span>options<span class="o">]</span>
+Usage:<span class="w"> </span>espota.py<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
 
-Transmit image over the air to the esp32 module with OTA support.
+Transmit<span class="w"> </span>image<span class="w"> </span>over<span class="w"> </span>the<span class="w"> </span>air<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>esp32<span class="w"> </span>module<span class="w"> </span>with<span class="w"> </span>OTA<span class="w"> </span>support.
 
 Options:
-  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+<span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">            </span>show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
 
-  Destination:
-    -i ESP_IP, --ip<span class="o">=</span>ESP_IP
-                        ESP32 IP Address.
-    -I HOST_IP, --host_ip<span class="o">=</span>HOST_IP
-                        Host IP Address.
-    -p ESP_PORT, --port<span class="o">=</span>ESP_PORT
-                        ESP32 ota Port. Default <span class="m">3232</span>
-    -P HOST_PORT, --host_port<span class="o">=</span>HOST_PORT
-                        Host server ota Port. Default random <span class="m">10000</span>-60000
+<span class="w">  </span>Destination:
+<span class="w">    </span>-i<span class="w"> </span>ESP_IP,<span class="w"> </span>--ip<span class="o">=</span>ESP_IP
+<span class="w">                        </span>ESP32<span class="w"> </span>IP<span class="w"> </span>Address.
+<span class="w">    </span>-I<span class="w"> </span>HOST_IP,<span class="w"> </span>--host_ip<span class="o">=</span>HOST_IP
+<span class="w">                        </span>Host<span class="w"> </span>IP<span class="w"> </span>Address.
+<span class="w">    </span>-p<span class="w"> </span>ESP_PORT,<span class="w"> </span>--port<span class="o">=</span>ESP_PORT
+<span class="w">                        </span>ESP32<span class="w"> </span>ota<span class="w"> </span>Port.<span class="w"> </span>Default<span class="w"> </span><span class="m">3232</span>
+<span class="w">    </span>-P<span class="w"> </span>HOST_PORT,<span class="w"> </span>--host_port<span class="o">=</span>HOST_PORT
+<span class="w">                        </span>Host<span class="w"> </span>server<span class="w"> </span>ota<span class="w"> </span>Port.<span class="w"> </span>Default<span class="w"> </span>random<span class="w"> </span><span class="m">10000</span>-60000
 
-  Authentication:
-    -a AUTH, --auth<span class="o">=</span>AUTH
-                        Set authentication password.
+<span class="w">  </span>Authentication:
+<span class="w">    </span>-a<span class="w"> </span>AUTH,<span class="w"> </span>--auth<span class="o">=</span>AUTH
+<span class="w">                        </span>Set<span class="w"> </span>authentication<span class="w"> </span>password.
 
-  Image:
-    -f FILE, --file<span class="o">=</span>FILE
-                        Image file.
-    -s, --spiffs        Use this option to transmit a SPIFFS image and <span class="k">do</span> not
-                        flash the module.
+<span class="w">  </span>Image:
+<span class="w">    </span>-f<span class="w"> </span>FILE,<span class="w"> </span>--file<span class="o">=</span>FILE
+<span class="w">                        </span>Image<span class="w"> </span>file.
+<span class="w">    </span>-s,<span class="w"> </span>--spiffs<span class="w">        </span>Use<span class="w"> </span>this<span class="w"> </span>option<span class="w"> </span>to<span class="w"> </span>transmit<span class="w"> </span>a<span class="w"> </span>SPIFFS<span class="w"> </span>image<span class="w"> </span>and<span class="w"> </span><span class="k">do</span><span class="w"> </span>not
+<span class="w">                        </span>flash<span class="w"> </span>the<span class="w"> </span>module.
 
-  Output:
-    -d, --debug         Show debug output. And override loglevel with debug.
-    -r, --progress      Show progress output. Does not work <span class="k">for</span> ArduinoIDE
-    -t TIMEOUT, --timeout<span class="o">=</span>TIMEOUT
-                        Timeout to <span class="nb">wait</span> <span class="k">for</span> the ESP32 to accept invitation
+<span class="w">  </span>Output:
+<span class="w">    </span>-d,<span class="w"> </span>--debug<span class="w">         </span>Show<span class="w"> </span>debug<span class="w"> </span>output.<span class="w"> </span>And<span class="w"> </span>override<span class="w"> </span>loglevel<span class="w"> </span>with<span class="w"> </span>debug.
+<span class="w">    </span>-r,<span class="w"> </span>--progress<span class="w">      </span>Show<span class="w"> </span>progress<span class="w"> </span>output.<span class="w"> </span>Does<span class="w"> </span>not<span class="w"> </span>work<span class="w"> </span><span class="k">for</span><span class="w"> </span>ArduinoIDE
+<span class="w">    </span>-t<span class="w"> </span>TIMEOUT,<span class="w"> </span>--timeout<span class="o">=</span>TIMEOUT
+<span class="w">                        </span>Timeout<span class="w"> </span>to<span class="w"> </span><span class="nb">wait</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>ESP32<span class="w"> </span>to<span class="w"> </span>accept<span class="w"> </span>invitation
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -579,7 +579,7 @@ be sure it’s on private mode``</p>
 </section>
 </section>
 <section id="using-arduino-framework-with-staging-version">
-<h3><a class="toc-backref" href="#id25">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id26">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this heading">¶</a></h3>
 <p>PlatformIO will install the latest Arduino Core for ESP32 from
 <a class="reference external" href="https://github.com/espressif/arduino-esp32">https://github.com/espressif/arduino-esp32</a>. The <a class="reference external" href="https://git-scm.com">Git</a>
 should be installed in a system. To update Arduino Core to the latest revision,
@@ -587,14 +587,14 @@ please open <a class="reference internal" href="../integration/ide/pioide.html#p
 <ol class="arabic">
 <li><p>Please install <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a></p></li>
 <li><p>Initialize a new project, open <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> and specify the link to the
-framework repository in <a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> section.
+framework repository in <a class="reference internal" href="../projectconf/sections/env/options/platform/platform_packages.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> section.
 For example,</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">platformio/framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">platformio/framework-arduinoespressif32 @ https</span><span class="o">:</span><span class="s">//github.com/espressif/arduino-esp32.git</span>
 </pre></div>
 </div>
 </li>
@@ -615,12 +615,12 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ol>
 </section>
 <section id="arduino-core-wiki">
-<h3><a class="toc-backref" href="#id26">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id27">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Permalink to this heading">¶</a></h3>
 <p>Tips, tricks and common problems: <a class="reference external" href="http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/">http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/</a></p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif 32 development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio.org&amp;utm_medium=docs">espidf-storage-sdcard</a></p></li>
@@ -646,21 +646,21 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id6">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#pinout-diagram" id="id27">Pinout Diagram</a></p></li>
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id28">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#pinout-diagram" id="id28">Pinout Diagram</a></p></li>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id29">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#on-board-debug-tools" id="id29">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id30">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id30">On-Board Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id31">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <section id="pinout-diagram">
-<h3><a class="toc-backref" href="#id27">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id28">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Permalink to this heading">¶</a></h3>
 <p><strong>JTAG Wiring Connections</strong></p>
 <table class="docutils align-default">
 <colgroup>
@@ -696,18 +696,18 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 <img alt="../_images/espressif32_debug_pinout.jpg" src="../_images/espressif32_debug_pinout.jpg" />
 </section>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id28">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id29">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You will need to install debug tool drivers depending on your system.
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id29">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id30">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
@@ -733,11 +733,17 @@ You do not need to use/buy external debug probe.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id30">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id31">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -800,7 +806,19 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_tft.html#board-espressif32-adafruit-feather-esp32s3-tft"><span class="std std-ref">Adafruit Feather ESP32-S3 TFT</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
@@ -812,43 +830,79 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32.html#board-espressif32-adafruit-qtpy-esp32"><span class="std std-ref">Adafruit QT Py ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_itsybitsy_esp32.html#board-espressif32-adafruit-itsybitsy-esp32"><span class="std std-ref">Adafruit ItsyBitsy ESP32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32c3.html#board-espressif32-adafruit-qtpy-esp32c3"><span class="std std-ref">Adafruit QT Py ESP32-C3</span></a></p></td>
-<td><p>ESP32C3</p></td>
-<td><p>160MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s2.html#board-espressif32-adafruit-qtpy-esp32s2"><span class="std std-ref">Adafruit QT Py ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3.html#board-espressif32-adafruit-qtpy-esp32s3"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
-<td><p>ESP32S3</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
+<td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/airm2m_core_esp32c3.html#board-espressif32-airm2m-core-esp32c3"><span class="std std-ref">AirM2M CORE ESP32C3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32.html#board-espressif32-adafruit-qtpy-esp32"><span class="std std-ref">Adafruit QT Py ESP32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32c3.html#board-espressif32-adafruit-qtpy-esp32c3"><span class="std std-ref">Adafruit QT Py ESP32-C3</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s2.html#board-espressif32-adafruit-qtpy-esp32s2"><span class="std std-ref">Adafruit QT Py ESP32-S2</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3_nopsram.html#board-espressif32-adafruit-qtpy-esp32s3-nopsram"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-m1i-kit.html#board-espressif32-esp32-c3-m1i-kit"><span class="std std-ref">Ai-Thinker ESP-C3-M1-I-Kit</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/nodemcu-32s2.html#board-espressif32-nodemcu-32s2"><span class="std std-ref">Ai-Thinker NodeMCU-32S2 (ESP-12K)</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/airm2m_core_esp32c3.html#board-espressif32-airm2m-core-esp32c3"><span class="std std-ref">AirM2M CORE ESP32C3</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bpi_leaf_s3.html#board-espressif32-bpi-leaf-s3"><span class="std std-ref">BPI-Leaf-S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wifiduino32s3.html#board-espressif32-wifiduino32s3"><span class="std std-ref">Blinker WiFiduino32S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wifiduino32c3.html#board-espressif32-wifiduino32c3"><span class="std std-ref">Blinker WiFiduinoV2 (ESP32-C3)</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
@@ -866,8 +920,32 @@ Please click on board name for the further details.</p>
 <td><p>3.25MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/connaxio_espoir.html#board-espressif32-connaxio-espoir"><span class="std std-ref">Connaxio’s Espoir</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/cytron_maker_feather_aiot_s3.html#board-espressif32-cytron-maker-feather-aiot-s3"><span class="std std-ref">Cytron Maker Feather AIoT S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/d-duino-32.html#board-espressif32-d-duino-32"><span class="std std-ref">D-duino-32</span></a></p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_beetle_esp32c3.html#board-espressif32-dfrobot-beetle-esp32c3"><span class="std std-ref">DFRobot Beetle ESP32-C3</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
@@ -896,7 +974,31 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Deparment of Alchemy MiniMain ESP32-S2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
@@ -980,112 +1082,112 @@ Please click on board name for the further details.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>520KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_esp32s2.html#board-espressif32-franzininho-wifi-esp32s2"><span class="std std-ref">Franzininho WiFi</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-franzininho.html#board-espressif32-esp32-s2-franzininho"><span class="std std-ref">Franzininho WiFi Board</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_msc_esp32s2.html#board-espressif32-franzininho-wifi-msc-esp32s2"><span class="std std-ref">Franzininho WiFi MSC</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_esp32s2.html#board-espressif32-franzininho-wifi-esp32s2"><span class="std std-ref">Franzininho WiFi</span></a></p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-franzininho.html#board-espressif32-esp32-s2-franzininho"><span class="std std-ref">Franzininho WiFi Board</span></a></p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_msc_esp32s2.html#board-espressif32-franzininho-wifi-msc-esp32s2"><span class="std std-ref">Franzininho WiFi MSC</span></a></p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
 <td><p>8MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>8MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/node32s.html#board-espressif32-node32s"><span class="std std-ref">Node32s</span></a></p></td>
@@ -1148,7 +1250,43 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32_iot_redboard.html#board-espressif32-sparkfun-esp32-iot-redboard"><span class="std std-ref">SparkFun ESP32 IoT RedBoard</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
@@ -1166,20 +1304,32 @@ Please click on board name for the further details.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus.html#board-espressif32-sparkfun-esp32s2-thing-plus"><span class="std std-ref">SparkFun ESP32-S2 Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus_c.html#board-espressif32-sparkfun-esp32s2-thing-plus-c"><span class="std std-ref">SparkFun ESP32 Thing Plus C</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus.html#board-espressif32-sparkfun-esp32s2-thing-plus"><span class="std std-ref">SparkFun ESP32-S2 Thing Plus</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/tamc_termod_s3.html#board-espressif32-tamc-termod-s3"><span class="std std-ref">TAMC Termod S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
@@ -1292,6 +1442,18 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WEMOS D1 MINI ESP32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_uno32.html#board-espressif32-wemos-d1-uno32"><span class="std std-ref">WEMOS D1 R32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_c3_mini.html#board-espressif32-lolin-c3-mini"><span class="std std-ref">WEMOS LOLIN C3 Mini</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
@@ -1322,13 +1484,13 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
-<td><p>ESP32</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3.html#board-espressif32-lolin-s3"><span class="std std-ref">WEMOS LOLIN S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
-<td><p>4MB</p></td>
+<td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WeMos D1 MINI ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
@@ -1382,41 +1544,59 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>7.94MB</p></td>
+<td><p>2.31MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>7.94MB</p></td>
+<td><p>8.31MB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 </section>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id7">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-espressif32/releases">stable releases</a>
 of Espressif 32 development platform and the latest upstream version using
-<a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
 <h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span><span class="w"></span>
-<span class="k">[env:latest_stable]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
+<span class="k">[env:latest_stable]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 
-<span class="c1">; Custom stable version</span><span class="w"></span>
-<span class="k">[env:custom_stable]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@x.y.z</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="c1">; Custom stable version</span>
+<span class="k">[env:custom_stable]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@x.y.z</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 </pre></div>
 </div>
 </section>
 <section id="upstream">
 <h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id8">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -1441,7 +1621,7 @@ of Espressif 32 development platform and the latest upstream version using
 <td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-esptoolpy">tool-esptoolpy</a></p></td>
-<td><p>Espressif ESP8266 and ESP32 serial bootloader utility</p></td>
+<td><p>A Python-based, open-source, platform-independent utility to communicate with the ROM bootloader in Espressif chips</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-idf">tool-idf</a></p></td>
 <td><p>idf is a top-level config/build command line tool for ESP-IDF</p></td>
@@ -1467,22 +1647,19 @@ of Espressif 32 development platform and the latest upstream version using
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-openocd-esp32">tool-openocd-esp32</a></p></td>
 <td><p>Open On-Chip Debugger for Espressif ESP32</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-esp32s2ulp">toolchain-esp32s2ulp</a></p></td>
-<td><p>Binutils fork with support for the ESP32-S2 ULP co-processor</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-esp32ulp">toolchain-esp32ulp</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/toolchain-esp32ulp">toolchain-esp32ulp</a></p></td>
 <td><p>Binutils fork with support for the Espressif ESP32 ULP co-processor</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-riscv32-esp">toolchain-riscv32-esp</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-riscv32-esp">toolchain-riscv32-esp</a></p></td>
 <td><p>GCC Toolchain for Espressif 32-bit RISC-V based MCUs</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32">toolchain-xtensa-esp32</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32">toolchain-xtensa-esp32</a></p></td>
 <td><p>GCC Toolchain for Espressif ESP32 Xtensa MCUs</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s2">toolchain-xtensa-esp32s2</a></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s2">toolchain-xtensa-esp32s2</a></p></td>
 <td><p>GCC Toolchain for Espressif ESP32-S2 Xtensa MCUs</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s3">toolchain-xtensa-esp32s3</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32s3">toolchain-xtensa-esp32s3</a></p></td>
 <td><p>GCC Toolchain for Espressif ESP32-S3 Xtensa MCUs</p></td>
 </tr>
 </tbody>
@@ -1505,7 +1682,7 @@ manufacturer</p>
 </div>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id9">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -1527,7 +1704,7 @@ manufacturer</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id10">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -1647,7 +1824,21 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_tft.html#board-espressif32-adafruit-feather-esp32s3-tft"><span class="std std-ref">Adafruit Feather ESP32-S3 TFT</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
@@ -1661,44 +1852,89 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32.html#board-espressif32-adafruit-qtpy-esp32"><span class="std std-ref">Adafruit QT Py ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_itsybitsy_esp32.html#board-espressif32-adafruit-itsybitsy-esp32"><span class="std std-ref">Adafruit ItsyBitsy ESP32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32c3.html#board-espressif32-adafruit-qtpy-esp32c3"><span class="std std-ref">Adafruit QT Py ESP32-C3</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32C3</p></td>
-<td><p>160MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s2.html#board-espressif32-adafruit-qtpy-esp32s2"><span class="std std-ref">Adafruit QT Py ESP32-S2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_magtag29_esp32s2.html#board-espressif32-adafruit-magtag29-esp32s2"><span class="std std-ref">Adafruit MagTag 2.9</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3.html#board-espressif32-adafruit-qtpy-esp32s3"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32.html#board-espressif32-adafruit-qtpy-esp32"><span class="std std-ref">Adafruit QT Py ESP32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32c3.html#board-espressif32-adafruit-qtpy-esp32c3"><span class="std std-ref">Adafruit QT Py ESP32-C3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s2.html#board-espressif32-adafruit-qtpy-esp32s2"><span class="std std-ref">Adafruit QT Py ESP32-S2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3_nopsram.html#board-espressif32-adafruit-qtpy-esp32s3-nopsram"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h3>Ai-Thinker<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-m1i-kit.html#board-espressif32-esp32-c3-m1i-kit"><span class="std std-ref">Ai-Thinker ESP-C3-M1-I-Kit</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/nodemcu-32s2.html#board-espressif32-nodemcu-32s2"><span class="std std-ref">Ai-Thinker NodeMCU-32S2 (ESP-12K)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
@@ -1827,6 +2063,13 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bpi_leaf_s3.html#board-espressif32-bpi-leaf-s3"><span class="std std-ref">BPI-Leaf-S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -1858,6 +2101,113 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wifiduino32s3.html#board-espressif32-wifiduino32s3"><span class="std std-ref">Blinker WiFiduino32S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wifiduino32c3.html#board-espressif32-wifiduino32c3"><span class="std std-ref">Blinker WiFiduinoV2 (ESP32-C3)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cnrs">
+<h3>CNRS<a class="headerlink" href="#cnrs" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/cnrs_aw2eth.html#board-espressif32-cnrs-aw2eth"><span class="std std-ref">CNRS AW2ETH</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="connaxio">
+<h3>Connaxio<a class="headerlink" href="#connaxio" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/connaxio_espoir.html#board-espressif32-connaxio-espoir"><span class="std std-ref">Connaxio’s Espoir</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cytron-technologies">
+<h3>Cytron Technologies<a class="headerlink" href="#cytron-technologies" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/cytron_maker_feather_aiot_s3.html#board-espressif32-cytron-maker-feather-aiot-s3"><span class="std std-ref">Cytron Maker Feather AIoT S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -1882,12 +2232,26 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_beetle_esp32c3.html#board-espressif32-dfrobot-beetle-esp32c3"><span class="std std-ref">DFRobot Beetle ESP32-C3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
+<td><p>16MB</p></td>
+<td><p>520KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -1996,7 +2360,28 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
@@ -2031,12 +2416,43 @@ horizontally.</p></li>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
-<td><p>4MB</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/denky32.html#board-espressif32-denky32"><span class="std std-ref">Denky32 (WROOM32)</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="deparment-of-alchemy">
+<h3>Deparment of Alchemy<a class="headerlink" href="#deparment-of-alchemy" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Deparment of Alchemy MiniMain ESP32-S2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
@@ -2307,11 +2723,11 @@ horizontally.</p></li>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1</span></a></p></td>
-<td><p>External</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
+<td><p>On-board</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
-<td><p>4MB</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 </tbody>
@@ -2887,14 +3303,28 @@ horizontally.</p></li>
 <td><p>16MB</p></td>
 <td><p>520KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-timer-cam.html#board-espressif32-m5stack-timer-cam"><span class="std std-ref">M5Stack Timer CAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-station.html#board-espressif32-m5stack-station"><span class="std std-ref">M5Stack Station</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>4.31MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-timer-cam.html#board-espressif32-m5stack-timer-cam"><span class="std std-ref">M5Stack Timer CAM</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atom.html#board-espressif32-m5stack-atom"><span class="std std-ref">M5Stack-ATOM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atom.html#board-espressif32-m5stack-atom"><span class="std std-ref">M5Stack-ATOM</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-coreink.html#board-espressif32-m5stack-coreink"><span class="std std-ref">M5Stack-Core Ink</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
@@ -2902,13 +3332,6 @@ horizontally.</p></li>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stick-c.html#board-espressif32-m5stick-c"><span class="std std-ref">M5Stick-C</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-coreink.html#board-espressif32-m5stack-coreink"><span class="std std-ref">M5Stick-Core Ink</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
@@ -3089,6 +3512,37 @@ horizontally.</p></li>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="munich-labs">
+<h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 </tbody>
@@ -3522,6 +3976,37 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
+<section id="seeed-studio">
+<h3>Seeed Studio<a class="headerlink" href="#seeed-studio" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="silicognition">
 <h3>Silicognition<a class="headerlink" href="#silicognition" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
@@ -3553,6 +4038,58 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
+<section id="smart-bee">
+<h3>Smart Bee<a class="headerlink" href="#smart-bee" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="sparkfun">
 <h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
@@ -3574,11 +4111,25 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32micromod.html#board-espressif32-sparkfun-esp32micromod"><span class="std std-ref">SparkFun ESP32 MicroMod</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32_iot_redboard.html#board-espressif32-sparkfun-esp32-iot-redboard"><span class="std std-ref">SparkFun ESP32 IoT RedBoard</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32micromod.html#board-espressif32-sparkfun-esp32micromod"><span class="std std-ref">SparkFun ESP32 MicroMod</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus_c.html#board-espressif32-sparkfun-esp32s2-thing-plus-c"><span class="std std-ref">SparkFun ESP32 Thing Plus C</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus.html#board-espressif32-sparkfun-esp32s2-thing-plus"><span class="std std-ref">SparkFun ESP32-S2 Thing Plus</span></a></p></td>
@@ -3660,6 +4211,13 @@ horizontally.</p></li>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/tamc_termod_s3.html#board-espressif32-tamc-termod-s3"><span class="std std-ref">TAMC Termod S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
@@ -3941,6 +4499,51 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
+<section id="university-of-sheffield">
+<h3>University of Sheffield<a class="headerlink" href="#university-of-sheffield" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>7.94MB</p></td>
+<td><p>2.31MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>7.94MB</p></td>
+<td><p>8.31MB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="unknown">
 <h3>Unknown<a class="headerlink" href="#unknown" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
@@ -4024,6 +4627,20 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WEMOS D1 MINI ESP32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_uno32.html#board-espressif32-wemos-d1-uno32"><span class="std std-ref">WEMOS D1 R32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_c3_mini.html#board-espressif32-lolin-c3-mini"><span class="std std-ref">WEMOS LOLIN C3 Mini</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32C3</p></td>
@@ -4059,22 +4676,22 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3.html#board-espressif32-lolin-s3"><span class="std std-ref">WEMOS LOLIN S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin32_lite.html#board-espressif32-lolin32-lite"><span class="std std-ref">WEMOS LOLIN32 Lite</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32_lite.html#board-espressif32-lolin32-lite"><span class="std std-ref">WEMOS LOLIN32 Lite</span></a></p></td>
 <td><p>No</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WeMos D1 MINI ESP32</span></a></p></td>
-<td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
@@ -4462,7 +5079,7 @@ horizontally.</p></li>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -4519,7 +5136,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

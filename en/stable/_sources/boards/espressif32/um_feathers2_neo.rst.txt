@@ -69,6 +69,7 @@ Uploading
 Unexpected Maker FeatherS2 Neo supports the following uploading protocols:
 
 * ``cmsis-dap``
+* ``esp-bridge``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -117,6 +118,9 @@ Unexpected Maker FeatherS2 Neo does not have on-board debug probe and **IS NOT R
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
+  * - ``esp-bridge``
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 

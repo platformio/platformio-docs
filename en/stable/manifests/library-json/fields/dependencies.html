@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -72,6 +73,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../librarymanager/ldf.html">Library Dependency Finder (LDF)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../librarymanager/configuration.html">Configuration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">library.json</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="schema.html"><code class="docutils literal notranslate"><span class="pre">$schema</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="name.html"><code class="docutils literal notranslate"><span class="pre">name</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="version.html"><code class="docutils literal notranslate"><span class="pre">version</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="description.html"><code class="docutils literal notranslate"><span class="pre">description</span></code></a></li>
@@ -136,10 +138,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../librarymanager/index.html">Library Management</a> &raquo;</li>
-          <li><a href="../index.html">library.json</a> &raquo;</li>
-      <li><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../librarymanager/index.html">Library Management</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">library.json</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">dependencies</span></code></li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/manifests/library-json/fields/dependencies.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -162,38 +164,38 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">platforms</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> – project compatible <a class="reference internal" href="../../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
 </ul>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;external-repo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;external-zip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;external-repo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;external-zip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>More advanced usage:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"></span>
-<span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-repo&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-zip&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-repo&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-zip&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -267,7 +269,7 @@
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -324,7 +326,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

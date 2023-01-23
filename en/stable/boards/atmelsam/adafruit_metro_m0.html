@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -72,7 +73,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Boards</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../index.html#aceinna-imu">Aceinna IMU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#asr-microelectronics-asr650x">ASR Microelectronics ASR650x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-avr">Atmel AVR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-megaavr">Atmel megaAVR</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html#atmel-sam">Atmel SAM</a><ul class="current">
@@ -236,9 +236,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Boards</a> &raquo;</li>
-      <li>Adafruit Metro M0 Expresss</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
+      <li class="breadcrumb-item active">Adafruit Metro M0 Expresss</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/boards/atmelsam/adafruit_metro_m0.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -293,25 +293,25 @@
 </section>
 <section id="configuration">
 <h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p>Please use <code class="docutils literal notranslate"><span class="pre">adafruit_metro_m0</span></code> ID for <a class="reference internal" href="../../projectconf/section_env_platform.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span><span class="w"></span>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">adafruit_metro_m0</span></code> ID for <a class="reference internal" href="../../projectconf/sections/env/options/platform/board.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span>
 </pre></div>
 </div>
 <p>You can override default Adafruit Metro M0 Expresss settings per build environment using
 <code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
 board manifest <a class="reference external" href="https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_metro_m0.json">adafruit_metro_m0.json</a>. For example,
 <code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span>
 
-<span class="c1">; change microcontroller</span><span class="w"></span>
-<span class="na">board_build.mcu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">samd21g18a</span><span class="w"></span>
+<span class="c1">; change microcontroller</span>
+<span class="na">board_build.mcu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">samd21g18a</span>
 
-<span class="c1">; change MCU frequency</span><span class="w"></span>
-<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">48000000L</span><span class="w"></span>
+<span class="c1">; change MCU frequency</span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">48000000L</span>
 </pre></div>
 </div>
 </section>
@@ -325,12 +325,12 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <li><p><code class="docutils literal notranslate"><span class="pre">sam-ba</span></code></p></li>
 </ul>
 <p>Default protocol is <code class="docutils literal notranslate"><span class="pre">sam-ba</span></code></p>
-<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/section_env_upload.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span><span class="w"></span>
+<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/sections/env/options/upload/upload_protocol.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:adafruit_metro_m0]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelsam</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">adafruit_metro_m0</span>
 
-<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sam-ba</span><span class="w"></span>
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sam-ba</span>
 </pre></div>
 </div>
 </section>
@@ -344,7 +344,7 @@ Please click on compatible debug tool below for the further
 instructions and configuration information.</p>
 </div>
 <p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>Adafruit Metro M0 Expresss does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
 <table class="docutils align-default">
 <colgroup>
@@ -464,7 +464,7 @@ instructions and configuration information.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -521,7 +521,7 @@ instructions and configuration information.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

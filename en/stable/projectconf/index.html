@@ -19,12 +19,13 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Section [platformio]" href="section_platformio.html" />
+    <link rel="next" title="Section [platformio]" href="sections/platformio/index.html" />
     <link rel="prev" title="RISC-V ASM Video Tutorial" href="../tutorials/riscv/riscv_asm_video_tutorial.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -62,8 +63,8 @@
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">platformio.ini</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/platformio/index.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
@@ -117,8 +118,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>“platformio.ini” (Project Configuration File)</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">“platformio.ini” (Project Configuration File)</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/index.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -130,11 +131,16 @@
              
   <section id="platformio-ini-project-configuration-file">
 <span id="projectconf"></span><h1>“platformio.ini” (Project Configuration File)<a class="headerlink" href="#platformio-ini-project-configuration-file" title="Permalink to this heading">¶</a></h1>
-<p>Each PlatformIO project has a configuration file named
-<code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> in the root directory for the project. This is a
-<a class="reference external" href="http://en.wikipedia.org/wiki/INI_file">INI-style</a> file.</p>
-<p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> has sections (each denoted by a <code class="docutils literal notranslate"><span class="pre">[header]</span></code>) and
-key / value pairs within the sections. Lines beginning with <code class="docutils literal notranslate"><span class="pre">;</span></code>
+<p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> is a configuration file that lets you set up your development
+environment, share your code and configurations with others, and leverage a
+declarative approach to development. You can use <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> to
+configure multiple platforms and architectures without having to worry
+about different toolchains or build systems for each one.</p>
+<p>Each PlatformIO project has its own <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> that
+is located in the root directory of the project. This is an
+<a class="reference external" href="http://en.wikipedia.org/wiki/INI_file">INI-style</a> file.
+<code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> has sections (each denoted by a <code class="docutils literal notranslate"><span class="pre">[header]</span></code>) and
+key/value pairs within the sections. Lines beginning with <code class="docutils literal notranslate"><span class="pre">;</span></code>
 are ignored and may be used to provide comments.</p>
 <p>Multiple value options can be specified in two ways:</p>
 <ol class="arabic simple">
@@ -144,15 +150,15 @@ are ignored and may be used to provide comments.</p>
 <p>Here are the allowed sections and their allowed contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="section_platformio.html#generic-options">Generic options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_platformio.html#directory-options">Directory options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sections/platformio/index.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sections/platformio/options/generic/index.html">Generic options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/platformio/options/directory/index.html">Directory options</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html#options">Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sections/env/index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html#common-env">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html#working-env-name">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html#options">Options</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="interpolation.html">Interpolation of Values</a></li>
@@ -161,74 +167,74 @@ are ignored and may be used to provide comments.</p>
 </div>
 <p><strong>Example</strong></p>
 <p>For more examples, see <a class="reference internal" href="../tutorials/index.html#tutorials"><span class="std std-ref">official project examples and community projects</span></a>.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span><span class="w"></span>
-<span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
+<span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span>
 
-<span class="c1">; Set/override default options for each &quot;[env:***]&quot;</span><span class="w"></span>
-<span class="k">[env]</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D VERSION</span><span class="o">=</span><span class="s">1.2.3</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D DEBUG</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">SPI</span><span class="w"></span>
-<span class="w">    </span><span class="na">Wire</span><span class="w"></span>
-<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span><span class="w"></span>
-<span class="w">    </span><span class="na">https://github.com/gioblu/PJON.git#v2.0</span><span class="w"></span>
-<span class="w">    </span><span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span><span class="w"></span>
+<span class="c1">; Set/override default options for each &quot;[env:***]&quot;</span>
+<span class="k">[env]</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-D VERSION</span><span class="o">=</span><span class="s">1.2.3</span>
+<span class="w">    </span><span class="na">-D DEBUG</span><span class="o">=</span><span class="s">1</span>
+<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">SPI</span>
+<span class="w">    </span><span class="na">Wire</span>
+<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">bblanchon/ArduinoJson @ ~5.6,!</span><span class="o">=</span><span class="s">5.4</span>
+<span class="w">    </span><span class="na">https</span><span class="o">:</span><span class="s">//github.com/gioblu/PJON.git</span><span class="c1">#v2.0</span>
+<span class="w">    </span><span class="na">IRremoteESP8266</span><span class="o">=</span><span class="s">https://github.com/markszabo/IRremoteESP8266/archive/master.zip</span>
 
-<span class="k">[env:nodemcuv2]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="k">[env:nodemcuv2]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span>
 
-<span class="c1">; Build options</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">${env.build_flags}</span><span class="w"></span>
-<span class="w">    </span><span class="na">-DSSID_NAME</span><span class="o">=</span><span class="s">HELLO</span><span class="w"></span>
-<span class="w">    </span><span class="na">-DSSID_PASWORD</span><span class="o">=</span><span class="s">WORLD</span><span class="w"></span>
+<span class="c1">; Build options</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">${env.build_flags}</span>
+<span class="w">    </span><span class="na">-DSSID_NAME</span><span class="o">=</span><span class="s">HELLO</span>
+<span class="w">    </span><span class="na">-DSSID_PASWORD</span><span class="o">=</span><span class="s">WORLD</span>
 
-<span class="c1">; Library options</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">${env.lib_deps_builtin}</span><span class="w"></span>
-<span class="w">    </span><span class="na">${env.lib_deps_external}</span><span class="w"></span>
-<span class="w">    </span><span class="na">https://github.com/me-no-dev/ESPAsyncTCP.git</span><span class="w"></span>
-<span class="w">    </span><span class="na">knolleary/PubSubClient@^2.8</span><span class="w"></span>
-<span class="w">    </span><span class="na">paulstoffregen/OneWire</span><span class="w"></span>
+<span class="c1">; Library options</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">${env.lib_deps_builtin}</span>
+<span class="w">    </span><span class="na">${env.lib_deps_external}</span>
+<span class="w">    </span><span class="na">https</span><span class="o">:</span><span class="s">//github.com/me-no-dev/ESPAsyncTCP.git</span>
+<span class="w">    </span><span class="na">knolleary/PubSubClient@^2.8</span>
+<span class="w">    </span><span class="na">paulstoffregen/OneWire</span>
 
-<span class="c1">; Serial Monitor options</span><span class="w"></span>
-<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
-<span class="na">monitor_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">--encoding</span><span class="w"></span>
-<span class="w">    </span><span class="na">hexlify</span><span class="w"></span>
+<span class="c1">; Serial Monitor options</span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span>
+<span class="na">monitor_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">--encoding</span>
+<span class="w">    </span><span class="na">hexlify</span>
 
-<span class="c1">; Unit Testing options</span><span class="w"></span>
-<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span><span class="w"></span>
+<span class="c1">; Unit Testing options</span>
+<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span>
 
-<span class="k">[env:bluepill_f103c8]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c8</span><span class="w"></span>
+<span class="k">[env:bluepill_f103c8]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c8</span>
 
-<span class="c1">; Library options</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.lib_deps_external}</span><span class="w"></span>
+<span class="c1">; Library options</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.lib_deps_external}</span>
 
-<span class="c1">; Debug options</span><span class="w"></span>
-<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span><span class="w"></span>
-<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-jlink/JLinkGDBServer</span><span class="w"></span>
-<span class="w">    </span><span class="na">-singlerun</span><span class="w"></span>
-<span class="w">    </span><span class="na">-if</span><span class="w"></span>
-<span class="w">    </span><span class="na">SWD</span><span class="w"></span>
-<span class="w">    </span><span class="na">-select</span><span class="w"></span>
-<span class="w">    </span><span class="na">USB</span><span class="w"></span>
-<span class="w">    </span><span class="na">-port</span><span class="w"></span>
-<span class="w">    </span><span class="na">2331</span><span class="w"></span>
-<span class="w">    </span><span class="na">-device</span><span class="w"></span>
-<span class="w">    </span><span class="na">STM32F103C8</span><span class="w"></span>
+<span class="c1">; Debug options</span>
+<span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span>
+<span class="na">debug_server</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">${platformio.packages_dir}/tool-jlink/JLinkGDBServer</span>
+<span class="w">    </span><span class="na">-singlerun</span>
+<span class="w">    </span><span class="na">-if</span>
+<span class="w">    </span><span class="na">SWD</span>
+<span class="w">    </span><span class="na">-select</span>
+<span class="w">    </span><span class="na">USB</span>
+<span class="w">    </span><span class="na">-port</span>
+<span class="w">    </span><span class="na">2331</span>
+<span class="w">    </span><span class="na">-device</span>
+<span class="w">    </span><span class="na">STM32F103C8</span>
 
-<span class="c1">; Unit Testing options</span><span class="w"></span>
-<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span><span class="w"></span>
+<span class="c1">; Unit Testing options</span>
+<span class="na">test_ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">test_desktop</span>
 </pre></div>
 </div>
 </section>
@@ -238,7 +244,7 @@ are ignored and may be used to provide comments.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../tutorials/riscv/riscv_asm_video_tutorial.html" class="btn btn-neutral float-left" title="RISC-V ASM Video Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="section_platformio.html" class="btn btn-neutral float-right" title="Section [platformio]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sections/platformio/index.html" class="btn btn-neutral float-right" title="Section [platformio]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -302,7 +308,7 @@ are ignored and may be used to provide comments.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -359,7 +365,7 @@ are ignored and may be used to provide comments.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

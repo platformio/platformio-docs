@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -123,9 +124,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">PlatformIO Core (CLI)</a> &raquo;</li>
-      <li>Quick Start</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">PlatformIO Core (CLI)</a></li>
+      <li class="breadcrumb-item active">Quick Start</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/quickstart.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -184,17 +185,17 @@ platforms using <a class="reference internal" href="../frameworks/arduino.html#f
 be found using <a class="reference internal" href="../boards/index.html#boards"><span class="std std-ref">Boards</span></a> catalog,
 <a class="reference external" href="https://platformio.org/boards">Boards Explorer</a> or <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command. For example, using <a class="reference internal" href="userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> let’s try
 to find Teensy boards:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pio boards teensy
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>boards<span class="w"> </span>teensy
 
-Platform: teensy
+Platform:<span class="w"> </span>teensy
 ---------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
+ID<span class="w">                    </span>MCU<span class="w">            </span>Frequency<span class="w">  </span>Flash<span class="w">   </span>RAM<span class="w">    </span>Name
 ---------------------------------------------------------------------------
-teensy20              atmega32u4     16MHz     31K    <span class="m">2</span>.5K  Teensy <span class="m">2</span>.0
-teensy30              mk20dx128      48MHz     128K   16K   Teensy <span class="m">3</span>.0
-teensy31              mk20dx256      72MHz     256K   64K   Teensy <span class="m">3</span>.1 / <span class="m">3</span>.2
-teensylc              mkl26z64       48MHz     62K    8K    Teensy LC
-teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ <span class="m">2</span>.0
+teensy20<span class="w">              </span>atmega32u4<span class="w">     </span>16MHz<span class="w">     </span>31K<span class="w">    </span><span class="m">2</span>.5K<span class="w">  </span>Teensy<span class="w"> </span><span class="m">2</span>.0
+teensy30<span class="w">              </span>mk20dx128<span class="w">      </span>48MHz<span class="w">     </span>128K<span class="w">   </span>16K<span class="w">   </span>Teensy<span class="w"> </span><span class="m">3</span>.0
+teensy31<span class="w">              </span>mk20dx256<span class="w">      </span>72MHz<span class="w">     </span>256K<span class="w">   </span>64K<span class="w">   </span>Teensy<span class="w"> </span><span class="m">3</span>.1<span class="w"> </span>/<span class="w"> </span><span class="m">3</span>.2
+teensylc<span class="w">              </span>mkl26z64<span class="w">       </span>48MHz<span class="w">     </span>62K<span class="w">    </span>8K<span class="w">    </span>Teensy<span class="w"> </span>LC
+teensy20pp<span class="w">            </span>at90usb1286<span class="w">    </span>16MHz<span class="w">     </span>127K<span class="w">   </span>8K<span class="w">    </span>Teensy++<span class="w"> </span><span class="m">2</span>.0
 </pre></div>
 </div>
 <p>According to the table above the ID for <a class="reference internal" href="../boards/teensy/teensy31.html#board-teensy-teensy31"><span class="std std-ref">Teensy 3.1 / 3.2</span></a> is
@@ -212,31 +213,31 @@ pre-installed instruments for the professional development.</p>
 <li><p>Create empty folder where you are going to initialize new PlatformIO
 project. Then open system Terminal and change directory to it:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create new directory</span>
-&gt; mkdir path_to_the_new_directory
+&gt;<span class="w"> </span>mkdir<span class="w"> </span>path_to_the_new_directory
 
 <span class="c1"># go to it</span>
-&gt; <span class="nb">cd</span> path_to_the_new_directory
+&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>path_to_the_new_directory
 </pre></div>
 </div>
 </li>
 <li><p>Initialize project for the boards mentioned above (you can specify more
 than one board at time):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; pio project init --board uno --board nodemcuv2 --board teensy31
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--board<span class="w"> </span>uno<span class="w"> </span>--board<span class="w"> </span>nodemcuv2<span class="w"> </span>--board<span class="w"> </span>teensy31
 
-The current working directory *** will be used <span class="k">for</span> the new project.
-You can specify another project directory via
-<span class="sb">`</span>pio project init -d %PATH_TO_THE_PROJECT_DIR%<span class="sb">`</span> command.
+The<span class="w"> </span>current<span class="w"> </span>working<span class="w"> </span>directory<span class="w"> </span>***<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>used<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>project.
+You<span class="w"> </span>can<span class="w"> </span>specify<span class="w"> </span>another<span class="w"> </span>project<span class="w"> </span>directory<span class="w"> </span>via
+<span class="sb">`</span>pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>-d<span class="w"> </span>%PATH_TO_THE_PROJECT_DIR%<span class="sb">`</span><span class="w"> </span>command.
 
-The next files/directories will be created <span class="k">in</span> ***
-platformio.ini - Project Configuration File. <span class="p">|</span>-&gt; PLEASE EDIT ME &lt;-<span class="p">|</span>
-src - Put your <span class="nb">source</span> files here
-lib - Put here project specific <span class="o">(</span>private<span class="o">)</span> libraries
-Do you want to <span class="k">continue</span>? <span class="o">[</span>y/N<span class="o">]</span>: y
-Project has been successfully initialized!
-Useful commands:
-<span class="sb">`</span>pio run<span class="sb">`</span> - process/build project from the current directory
-<span class="sb">`</span>pio run --target upload<span class="sb">`</span> or <span class="sb">`</span>pio run -t upload<span class="sb">`</span> - upload firmware to embedded board
-<span class="sb">`</span>pio run --target clean<span class="sb">`</span> - clean project <span class="o">(</span>remove compiled files<span class="o">)</span>
+The<span class="w"> </span>next<span class="w"> </span>files/directories<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>created<span class="w"> </span><span class="k">in</span><span class="w"> </span>***
+platformio.ini<span class="w"> </span>-<span class="w"> </span>Project<span class="w"> </span>Configuration<span class="w"> </span>File.<span class="w"> </span><span class="p">|</span>-&gt;<span class="w"> </span>PLEASE<span class="w"> </span>EDIT<span class="w"> </span>ME<span class="w"> </span>&lt;-<span class="p">|</span>
+src<span class="w"> </span>-<span class="w"> </span>Put<span class="w"> </span>your<span class="w"> </span><span class="nb">source</span><span class="w"> </span>files<span class="w"> </span>here
+lib<span class="w"> </span>-<span class="w"> </span>Put<span class="w"> </span>here<span class="w"> </span>project<span class="w"> </span>specific<span class="w"> </span><span class="o">(</span>private<span class="o">)</span><span class="w"> </span>libraries
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span>?<span class="w"> </span><span class="o">[</span>y/N<span class="o">]</span>:<span class="w"> </span>y
+Project<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>successfully<span class="w"> </span>initialized!
+Useful<span class="w"> </span>commands:
+<span class="sb">`</span>pio<span class="w"> </span>run<span class="sb">`</span><span class="w"> </span>-<span class="w"> </span>process/build<span class="w"> </span>project<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>directory
+<span class="sb">`</span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="w"> </span>upload<span class="sb">`</span><span class="w"> </span>or<span class="w"> </span><span class="sb">`</span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>upload<span class="sb">`</span><span class="w"> </span>-<span class="w"> </span>upload<span class="w"> </span>firmware<span class="w"> </span>to<span class="w"> </span>embedded<span class="w"> </span>board
+<span class="sb">`</span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="w"> </span>clean<span class="sb">`</span><span class="w"> </span>-<span class="w"> </span>clean<span class="w"> </span>project<span class="w"> </span><span class="o">(</span>remove<span class="w"> </span>compiled<span class="w"> </span>files<span class="o">)</span>
 </pre></div>
 </div>
 </li>
@@ -257,29 +258,29 @@ More details are located in <code class="docutils literal notranslate"><span cla
 <a class="reference internal" href="userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> again.</p>
 </div>
 <p>The result of just generated <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">;   Build options: build flags, source filter, extra scripting</span><span class="w"></span>
-<span class="c1">;   Upload options: custom port, speed and extra flags</span><span class="w"></span>
-<span class="c1">;   Library options: dependencies, extra library storages</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Please visit documentation for the other options and examples</span><span class="w"></span>
-<span class="c1">; https://docs.platformio.org/page/projectconf.html</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; PlatformIO Project Configuration File</span>
+<span class="c1">;</span>
+<span class="c1">;   Build options: build flags, source filter, extra scripting</span>
+<span class="c1">;   Upload options: custom port, speed and extra flags</span>
+<span class="c1">;   Library options: dependencies, extra library storages</span>
+<span class="c1">;</span>
+<span class="c1">; Please visit documentation for the other options and examples</span>
+<span class="c1">; https://docs.platformio.org/en/latest/projectconf/index.html</span>
 
-<span class="k">[env:uno]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
+<span class="k">[env:uno]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span>
 
-<span class="k">[env:nodemcuv2]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span><span class="w"></span>
+<span class="k">[env:nodemcuv2]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span>
 
-<span class="k">[env:teensy31]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span><span class="w"></span>
+<span class="k">[env:teensy31]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">teensy31</span>
 </pre></div>
 </div>
 <p>Now, we need to create <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> file and place it to <code class="docutils literal notranslate"><span class="pre">src</span></code> folder of our
@@ -289,42 +290,42 @@ newly created project. The contents of <code class="docutils literal notranslate
 <span class="cm"> *</span>
 <span class="cm"> * Turns on an LED on for one second,</span>
 <span class="cm"> * then off for one second, repeatedly.</span>
-<span class="cm"> */</span><span class="w"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span><span class="cp"></span>
+<span class="cm"> */</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span>
 
 <span class="cp">#ifndef LED_BUILTIN</span>
 <span class="cp">#define LED_BUILTIN 13</span>
 <span class="cp">#endif</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">  </span><span class="c1">// initialize LED digital pin as an output.</span>
-<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">  </span><span class="c1">// turn the LED on (HIGH is the voltage level)</span>
-<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// wait for a second</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// turn the LED off by making the voltage LOW</span>
-<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
 
 <span class="w">   </span><span class="c1">// wait for a second</span>
-<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>The final Project structure:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>project_dir
-├── lib
-│   └── README
-├── platformio.ini
-└── src
-    └── main.cpp
+├──<span class="w"> </span>lib
+│<span class="w">   </span>└──<span class="w"> </span>README
+├──<span class="w"> </span>platformio.ini
+└──<span class="w"> </span>src
+<span class="w">    </span>└──<span class="w"> </span>main.cpp
 </pre></div>
 </div>
 </section>
@@ -425,7 +426,7 @@ targets.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -482,7 +483,7 @@ targets.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

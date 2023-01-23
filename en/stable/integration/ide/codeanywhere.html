@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -131,9 +132,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Cloud &amp; Desktop IDEs</a> &raquo;</li>
-      <li>Codeanywhere</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Cloud &amp; Desktop IDEs</a></li>
+      <li class="breadcrumb-item active">Codeanywhere</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/codeanywhere.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -204,7 +205,7 @@ Ubuntu OS.</p></li>
 <code class="docutils literal notranslate"><span class="pre">Container</span> <span class="pre">(PlatformIO)</span> <span class="pre">&gt;</span> <span class="pre">SSH</span> <span class="pre">Terminal</span></code>) and install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> using
 a next command</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo python -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 <img alt="../../_images/ide-codeanywhere-install-pio-cli.png" src="../../_images/ide-codeanywhere-install-pio-cli.png" />
@@ -218,10 +219,10 @@ a next command</p></li>
 <ol class="arabic">
 <li><p>Initialize new PlatformIO-based Project. Run a next command in a
 Cloud IDE SSH Terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio project init --board &lt;ID&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--board<span class="w"> </span>&lt;ID&gt;
 
 <span class="c1"># initialize project for Arduino Uno</span>
-pio project init --board uno
+pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--board<span class="w"> </span>uno
 </pre></div>
 </div>
 <p>To get board <code class="docutils literal notranslate"><span class="pre">ID</span></code> please use <a class="reference internal" href="../../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> command or
@@ -232,25 +233,25 @@ right-click on <code class="docutils literal notranslate"><span class="pre">Cont
 <li><p>Create new source file named <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> in <code class="docutils literal notranslate"><span class="pre">src</span></code> folder using
 Project Tree (left side). Please make right click on <code class="docutils literal notranslate"><span class="pre">src</span></code> folder,
 then “Create File” and insert a next content:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span><span class="cp"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Codeanywhere!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Codeanywhere!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/*  serial echo */</span><span class="w"></span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">());</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/*  serial echo */</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </li>
@@ -279,9 +280,9 @@ command. Let’s add “PlatformIO Build Project” command:</p>
 <li><p>Open “Project Config” via right click on <code class="docutils literal notranslate"><span class="pre">Container</span> <span class="pre">Name</span> <span class="pre">(PlatformIO)</span> <span class="pre">&gt;</span> <span class="pre">Config</span></code></p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">commands</span></code> field to</p>
 <blockquote>
-<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;pio run&quot;</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;pio run&quot;</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -301,7 +302,7 @@ You can list remote devices that are connected to host machine where
 <li><p>Open Cloud IDE SSH Terminal</p></li>
 <li><p>Paste this command</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote device list
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>device<span class="w"> </span>list
 </pre></div>
 </div>
 </div></blockquote>
@@ -317,7 +318,7 @@ You can deploy firmware to any devices which are visible for <a class="reference
 <li><p>Open Cloud IDE SSH Terminal</p></li>
 <li><p>Paste this command</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote run -t upload
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>upload
 </pre></div>
 </div>
 </div></blockquote>
@@ -335,7 +336,7 @@ To list active agents please use this command <a class="reference internal" href
 <li><p>Open Cloud IDE SSH Terminal</p></li>
 <li><p>Paste this command</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio remote device monitor
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>device<span class="w"> </span>monitor
 </pre></div>
 </div>
 </div></blockquote>
@@ -450,7 +451,7 @@ or <a class="reference internal" href="../../core/userguide/remote/cmd_run.html#
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -507,7 +508,7 @@ or <a class="reference internal" href="../../core/userguide/remote/cmd_run.html#
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

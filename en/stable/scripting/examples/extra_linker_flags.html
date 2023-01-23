@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -131,10 +132,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Advanced Scripting</a> &raquo;</li>
-          <li><a href="index.html">Scripting Examples</a> &raquo;</li>
-      <li>Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Advanced Scripting</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Scripting Examples</a></li>
+      <li class="breadcrumb-item active">Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/scripting/examples/extra_linker_flags.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -147,13 +148,13 @@
   <section id="extra-linker-flags-without-wl-prefix">
 <h1>Extra linker flags without <code class="docutils literal notranslate"><span class="pre">-Wl,</span></code> prefix<a class="headerlink" href="#extra-linker-flags-without-wl-prefix" title="Permalink to this heading">¶</a></h1>
 <p>Sometimes you need to pass extra flags to GCC linker without <code class="docutils literal notranslate"><span class="pre">Wl,</span></code>. You could
-use <a class="reference internal" href="../../projectconf/section_env_build.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option but it will not work. PlatformIO
+use <a class="reference internal" href="../../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option but it will not work. PlatformIO
 will not parse these flags to <code class="docutils literal notranslate"><span class="pre">LINKFLAGS</span></code> scope. In this case, simple
 extra script will help:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:env_extra_link_flags]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">windows_x86</span><span class="w"></span>
-<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">extra_script.py</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:env_extra_link_flags]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">windows_x86</span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">extra_script.py</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> (place it near <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>):</p>
@@ -244,7 +245,7 @@ extra script will help:</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -301,7 +302,7 @@ extra script will help:</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

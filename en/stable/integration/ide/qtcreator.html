@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -132,9 +133,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Cloud &amp; Desktop IDEs</a> &raquo;</li>
-      <li>Qt Creator</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Cloud &amp; Desktop IDEs</a></li>
+      <li class="breadcrumb-item active">Qt Creator</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/qtcreator.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -178,10 +179,10 @@ page for more detailed information.</p>
 <p>The generator will create a [Qt Creator generic project](<a class="reference external" href="https://doc.qt.io/qtcreator/creator-project-generic.html">https://doc.qt.io/qtcreator/creator-project-generic.html</a>).</p>
 <p>Choose board <code class="docutils literal notranslate"><span class="pre">ID</span></code> using <a class="reference internal" href="../../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a> or <a class="reference external" href="https://platformio.org/boards">Embedded Boards Explorer</a>
 command and generate project via <a class="reference internal" href="../../core/userguide/project/cmd_init.html#cmdoption-pio-project-init-ide"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">init</span> <span class="pre">--ide</span></code></a> command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio project init --ide qtcreator --board &lt;ID&gt;
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--ide<span class="w"> </span>qtcreator<span class="w"> </span>--board<span class="w"> </span>&lt;ID&gt;
 
 <span class="c1"># For example, generate project for Arduino UNO</span>
-pio project init --ide qtcreator --board uno
+pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--ide<span class="w"> </span>qtcreator<span class="w"> </span>--board<span class="w"> </span>uno
 </pre></div>
 </div>
 <p>Then:</p>
@@ -271,7 +272,7 @@ need to reinitialize project using <a class="reference internal" href="../../cor
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -328,7 +329,7 @@ need to reinitialize project using <a class="reference internal" href="../../cor
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

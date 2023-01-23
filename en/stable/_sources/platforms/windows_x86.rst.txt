@@ -50,13 +50,11 @@ Stable
     ; Latest stable version
     [env:latest_stable]
     platform = windows_x86
-    board = ...
-
+    
     ; Custom stable version
     [env:custom_stable]
     platform = windows_x86@x.y.z
-    board = ...
-
+    
 Upstream
 ~~~~~~~~
 
@@ -64,8 +62,7 @@ Upstream
 
     [env:upstream_develop]
     platform = https://github.com/platformio/platform-windows_x86.git
-    board = ...
-
+    
 
 Packages
 --------

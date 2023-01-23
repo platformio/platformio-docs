@@ -16,7 +16,7 @@
 
 Linux users have to install `udev <https://en.wikipedia.org/wiki/Udev>`_ rules
 for PlatformIO supported boards/devices. The latest version of the rules may be found at
-https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules
+https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules
 
 .. note::
   Please check that your board's PID and VID  are listed in the rules.
@@ -31,10 +31,12 @@ Please open system Terminal and type
 
 .. code-block:: bash
 
-    # Recommended
-    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
+    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules
 
-    # OR, manually download and copy this file to destination folder
+Or you can manually download and copy the file to a destination folder
+
+.. code-block:: bash
+
     sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
 
 

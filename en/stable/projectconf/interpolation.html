@@ -19,13 +19,14 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Examples" href="examples.html" />
-    <link rel="prev" title="Advanced options" href="section_env_advanced.html" />
+    <link rel="prev" title="extra_scripts" href="sections/env/options/advanced/extra_scripts.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -62,8 +63,8 @@
 <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">platformio.ini</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="section_platformio.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="section_env.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/platformio/index.html">Section <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="sections/env/index.html">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interpolation of Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
@@ -117,9 +118,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">“platformio.ini” (Project Configuration File)</a> &raquo;</li>
-      <li>Interpolation of Values</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">“platformio.ini” (Project Configuration File)</a></li>
+      <li class="breadcrumb-item active">Interpolation of Values</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/interpolation.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -154,11 +155,11 @@ first item from pair <code class="docutils literal notranslate"><span class="pre
 <td><p><code class="docutils literal notranslate"><span class="pre">${sysenv.HOME}</span></code> refers to user home directory on Unix machine</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${platformio.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed value from <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="section_platformio.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
+<td><p>Embed value from <a class="reference internal" href="sections/platformio/index.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">${platformio.packages_dir}</span></code> refers to a path of <a class="reference internal" href="sections/platformio/options/directory/packages_dir.html#projectconf-pio-packages-dir"><span class="std std-ref">packages_dir</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">${env.&lt;option&gt;}</span></code></p></td>
-<td><p>Embed default value from <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
+<td><p>Embed default value from <a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">${env.debug_build_flags}</span></code> refers to the default debugging flags</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">${&lt;section&gt;.&lt;option&gt;}</span></code></p></td>
@@ -179,7 +180,7 @@ first item from pair <code class="docutils literal notranslate"><span class="pre
 <li><p>Interpolation can span multiple levels</p></li>
 <li><p>Interpolation can be applied only for the option’s value</p></li>
 <li><p>Multiple interpolations are allowed</p></li>
-<li><p>The <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a> and <a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>
+<li><p>The <a class="reference internal" href="sections/platformio/index.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a> and <a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a>
 sections are reserved and could not be used as a custom section. Some good
 section names might be <code class="docutils literal notranslate"><span class="pre">extra</span></code> or <code class="docutils literal notranslate"><span class="pre">custom</span></code>.</p></li>
 </ul>
@@ -187,62 +188,62 @@ section names might be <code class="docutils literal notranslate"><span class="p
 <p class="admonition-title">Note</p>
 <p>If you need to <strong>share common configuration options</strong> between build
 environments, please take a look at <strong>“Global scope”</strong> in
-<a class="reference internal" href="section_env.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> or <a class="reference internal" href="section_env_advanced.html#projectconf-env-extends"><span class="std std-ref">extends</span></a> option which
+<a class="reference internal" href="sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> or <a class="reference internal" href="sections/env/options/advanced/extends.html#projectconf-env-extends"><span class="std std-ref">extends</span></a> option which
 allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span><span class="w"></span>
-<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span><span class="w"></span>
-<span class="k">[env]</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
+<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
+<span class="k">[env]</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span>
 
-<span class="c1">; CUSTOM options</span><span class="w"></span>
-<span class="c1">; You need manually inject these options into a section</span><span class="w"></span>
-<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span><span class="w"></span>
-<span class="k">[extra]</span><span class="w"></span>
-<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">SPI</span><span class="w"></span>
-<span class="w">  </span><span class="na">Wire</span><span class="w"></span>
-<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span><span class="w"></span>
+<span class="c1">; CUSTOM options</span>
+<span class="c1">; You need manually inject these options into a section</span>
+<span class="c1">; using ${extra.&lt;name_of_option&gt;} (see below)</span>
+<span class="k">[extra]</span>
+<span class="na">lib_deps_builtin</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">SPI</span>
+<span class="w">  </span><span class="na">Wire</span>
+<span class="na">lib_deps_external</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">bblanchon/ArduinoJson@&gt;5.6.0</span>
 
-<span class="k">[env:uno]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
-<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
-<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">platformio/tool-simavr</span><span class="w"></span>
-<span class="na">test_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span><span class="w"></span>
-<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${platformio.packages_dir}/tool-simavr/bin/simavr</span><span class="w"></span>
-<span class="w">  </span><span class="na">-m</span><span class="w"></span>
-<span class="w">  </span><span class="na">atmega328p</span><span class="w"></span>
-<span class="w">  </span><span class="na">-f</span><span class="w"></span>
-<span class="w">  </span><span class="na">16000000L</span><span class="w"></span>
-<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/firmware.elf</span><span class="w"></span>
+<span class="k">[env:uno]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span>
+<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">platformio/tool-simavr</span>
+<span class="na">test_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">9600</span>
+<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">${platformio.packages_dir}/tool-simavr/bin/simavr</span>
+<span class="w">  </span><span class="na">-m</span>
+<span class="w">  </span><span class="na">atmega328p</span>
+<span class="w">  </span><span class="na">-f</span>
+<span class="w">  </span><span class="na">16000000L</span>
+<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/firmware.elf</span>
 
-<span class="k">[env:esp32dev]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span><span class="w"></span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span><span class="w"></span>
-<span class="w">  </span><span class="na">${extra.lib_deps_external}</span><span class="w"></span>
-<span class="w">  </span><span class="na">knolleary/PubSubClient @ ~2.6</span><span class="w"></span>
-<span class="w">  </span><span class="na">paulstoffregen/OneWire @ ^2.3.5</span><span class="w"></span>
+<span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.build_flags} -Wall</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">${extra.lib_deps_builtin}</span>
+<span class="w">  </span><span class="na">${extra.lib_deps_external}</span>
+<span class="w">  </span><span class="na">knolleary/PubSubClient @ ~2.6</span>
+<span class="w">  </span><span class="na">paulstoffregen/OneWire @ ^2.3.5</span>
 
-<span class="c1">; Keep sensitive data in environment variables</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Unix</span><span class="w"></span>
-<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span><span class="w"></span>
-<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span><span class="w"></span>
-<span class="c1">;</span><span class="w"></span>
-<span class="c1">; Windows</span><span class="w"></span>
-<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span><span class="w"></span>
-<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span><span class="w"></span>
+<span class="c1">; Keep sensitive data in environment variables</span>
+<span class="c1">;</span>
+<span class="c1">; Unix</span>
+<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span>
+<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span>
+<span class="c1">;</span>
+<span class="c1">; Windows</span>
+<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span>
+<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -250,7 +251,7 @@ allows extending of other sections.</p>
 <p>Be careful with special characters in system environment variables on Unix systems,
 especially when they are used as the value for preprocessor directives.
 Symbols like <code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">~</span></code>, etc must be explicitly escaped, for example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">&#39;\&quot;my\~p\&amp;a\\\$\$\$\$word\&quot;&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">&#39;\&quot;my\~p\&amp;a\\\$\$\$\$word\&quot;&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -260,7 +261,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="section_env_advanced.html" class="btn btn-neutral float-left" title="Advanced options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sections/env/options/advanced/extra_scripts.html" class="btn btn-neutral float-left" title="extra_scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -325,7 +326,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -382,7 +383,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

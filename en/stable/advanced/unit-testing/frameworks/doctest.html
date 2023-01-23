@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -133,10 +134,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Unit Testing</a> &raquo;</li>
-          <li><a href="index.html">Testing Frameworks</a> &raquo;</li>
-      <li>Doctest</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Unit Testing</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Testing Frameworks</a></li>
+      <li class="breadcrumb-item active">Doctest</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/frameworks/doctest.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -153,7 +154,7 @@
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/libraries/doctest/doctest">https://registry.platformio.org/libraries/doctest/doctest</a></p>
 </dd>
 <dt class="field-even">Configuration</dt>
-<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">doctest</span></code></p>
+<dd class="field-even"><p><a class="reference internal" href="../../../projectconf/sections/env/options/test/test_framework.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> = <code class="docutils literal notranslate"><span class="pre">doctest</span></code></p>
 </dd>
 <dt class="field-odd">Native Tests</dt>
 <dd class="field-odd"><p>Yes</p>
@@ -184,25 +185,25 @@ compile times and runtime compared to other feature-rich alternatives.</p>
 <section id="getting-started">
 <h2><a class="toc-backref" href="#id1">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
 <p>To get started with the Doctest all you need is to set
-the <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option in your <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
+the <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_framework.html#projectconf-test-framework"><span class="std std-ref">test_framework</span></a> option in your <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 to the <code class="docutils literal notranslate"><span class="pre">doctest</span></code> and implement your own <code class="docutils literal notranslate"><span class="pre">main()</span></code> function that
 forces the Doctest to report successful test cases:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:native]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:native]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">test/test_dummy/test_main.cpp</span></code></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#define DOCTEST_CONFIG_IMPLEMENT  </span><span class="c1">// REQUIRED: Enable custom main()</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doctest.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;doctest.h&gt;</span>
 
 <span class="c1">// TEST_CASE ...</span>
 <span class="c1">// TEST_SUITE ...</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span>
 
 <span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
 <span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Report successful tests</span>
@@ -211,9 +212,9 @@ forces the Doctest to report successful test cases:</p>
 
 <span class="w">  </span><span class="c1">// YOUR CUSTOM DOCTEST OPTIONS</span>
 
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Now, you can run tests using the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command. If you need a
@@ -238,12 +239,12 @@ configuring how it is built with a set of identifiers.</p>
 <p>See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/configuration.md">Doctest Configuration Guide</a>
 for the available identifiers.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_doctest_identifiers]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span><span class="w"></span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_SUPER_FAST_ASSERTS</span><span class="w"></span>
-<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_NO_COMPARISON_WARNING_SUPPRESSION</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:extra_doctest_identifiers]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span>
+<span class="na">test_framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">doctest</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_SUPER_FAST_ASSERTS</span>
+<span class="w">    </span><span class="na">-D DOCTEST_CONFIG_NO_COMPARISON_WARNING_SUPPRESSION</span>
 </pre></div>
 </div>
 </section>
@@ -255,9 +256,9 @@ function will give you access to the <code class="docutils literal notranslate">
 <p>See <a class="reference external" href="https://github.com/doctest/doctest/blob/master/doc/markdown/main.md">The “main()” entry point</a>
 docs for details.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span><span class="w"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span>
 
 <span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
 <span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Reports successful tests</span>
@@ -268,9 +269,9 @@ docs for details.</p>
 <span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;abort-after&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">    </span><span class="c1">// stop test execution after 5 failed assertions</span>
 <span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;order-by&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;name&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// sort the test cases by their name</span>
 
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -283,7 +284,7 @@ See <a class="reference external" href="https://github.com/doctest/doctest/blob/
 <p>There are two options for how to pass extra arguments to the testing program:</p>
 <ol class="arabic simple">
 <li><p>Using PlatformIO Core CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option</p></li>
-<li><p>Overriding <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a> with a custom command.</p></li>
+<li><p>Overriding <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_testing_command.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a> with a custom command.</p></li>
 </ol>
 <p><strong>Example</strong></p>
 <p>Stop executing test cases after the first error and include  successful
@@ -291,19 +292,19 @@ assertions in the output. We will use the <code class="docutils literal notransl
 and <code class="docutils literal notranslate"><span class="pre">-s,--success=&lt;bool&gt;</span></code> Doctest’s CLI option.</p>
 <ol class="arabic">
 <li><p>Using CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt; pio <span class="nb">test</span> --program-arg <span class="s2">&quot;--abort-after=1&quot;</span> --program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">&quot;--abort-after=1&quot;</span><span class="w"> </span>--program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
 <span class="c1"># or short format</span>
-&gt; pio <span class="nb">test</span> -a <span class="s2">&quot;-aa=1&quot;</span> -a <span class="s2">&quot;-s&quot;</span>
+&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;-aa=1&quot;</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;-s&quot;</span>
 </pre></div>
 </div>
 </li>
-<li><p>Overriding <a class="reference internal" href="../../../projectconf/section_env_test.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a> with custom command.</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span><span class="w"></span>
-<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/program</span><span class="w"></span>
-<span class="w">  </span><span class="na">-aa</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="w">  </span><span class="na">-s</span><span class="w"></span>
+<li><p>Overriding <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_testing_command.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a> with custom command.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">native</span>
+<span class="na">test_testing_command</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">${platformio.build_dir}/${this.__env__}/program</span>
+<span class="w">  </span><span class="na">-aa</span><span class="o">=</span><span class="s">1</span>
+<span class="w">  </span><span class="na">-s</span>
 </pre></div>
 </div>
 </li>
@@ -387,7 +388,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -444,7 +445,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

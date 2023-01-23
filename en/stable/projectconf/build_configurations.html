@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -80,7 +81,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#tutorials">Tutorials</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../plus/debugging.html#configuration">Configuration</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Build Configurations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="section_env_debug.html">Debugging options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sections/env/options/debug/index.html">Debugging options</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../plus/debugging.html#tools-debug-probes">Tools &amp; Debug Probes</a></li>
@@ -125,8 +126,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Build Configurations</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Build Configurations</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/build_configurations.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -138,7 +139,7 @@
              
   <section id="build-configurations">
 <span id="id1"></span><h1>Build Configurations<a class="headerlink" href="#build-configurations" title="Permalink to this heading">¶</a></h1>
-<p>There are 3 types (<a class="reference internal" href="section_env_build.html#projectconf-build-type"><span class="std std-ref">build_type</span></a>) of build configuration in
+<p>There are 3 types (<a class="reference internal" href="sections/env/options/build/build_type.html#projectconf-build-type"><span class="std std-ref">build_type</span></a>) of build configuration in
 PlatformIO:</p>
 <dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">release</span></code></dt>
@@ -160,12 +161,12 @@ instructions is more complex.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you need to control build flags that are specific for debug configuration please
-refer to <a class="reference internal" href="section_env_debug.html#projectconf-debug-build-flags"><span class="std std-ref">debug_build_flags</span></a>.</p>
+refer to <a class="reference internal" href="sections/env/options/debug/debug_build_flags.html#projectconf-debug-build-flags"><span class="std std-ref">debug_build_flags</span></a>.</p>
 </div>
 <p>If you need to build a project in <code class="docutils literal notranslate"><span class="pre">debug</span></code> configuration, please use one of
 these options:</p>
 <ul class="simple">
-<li><p>Add <a class="reference internal" href="section_env_build.html#projectconf-build-type"><span class="std std-ref">build_type</span></a> with <code class="docutils literal notranslate"><span class="pre">debug</span></code> value to <a class="reference internal" href="index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
+<li><p>Add <a class="reference internal" href="sections/env/options/build/build_type.html#projectconf-build-type"><span class="std std-ref">build_type</span></a> with <code class="docutils literal notranslate"><span class="pre">debug</span></code> value to <a class="reference internal" href="index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p></li>
 <li><p>Use target <code class="docutils literal notranslate"><span class="pre">debug</span></code> for the <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.</p></li>
 </ul>
 <div class="admonition note">
@@ -176,23 +177,23 @@ project debugging from <a class="reference internal" href="../integration/ide/pi
 separate build environment that defines <code class="docutils literal notranslate"><span class="pre">build_type</span> <span class="pre">=</span> <span class="pre">debug</span></code>. See
 the example below where the <code class="docutils literal notranslate"><span class="pre">mydebug</span></code> build environment will be used
 automatically by <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">... other common configuration</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">... other common configuration</span>
 
-<span class="k">[env:myrelease]</span><span class="w"></span>
-<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="k">[env:myrelease]</span>
+<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 
-<span class="k">[env:mydebug]</span><span class="w"></span>
-<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span><span class="w"></span>
-<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<span class="k">[env:mydebug]</span>
+<span class="na">build_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">debug</span>
+<span class="na">some_extra_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 </pre></div>
 </div>
 </div>
 <p>Please note that you can set a default build environment per a project using the
-<a class="reference internal" href="section_platformio.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option in <a class="reference internal" href="section_platformio.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a>.</p>
+<a class="reference internal" href="sections/platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option in <a class="reference internal" href="sections/platformio/index.html#projectconf-section-platformio"><span class="std std-ref">Section [platformio]</span></a>.</p>
 </section>
 
 
@@ -264,7 +265,7 @@ automatically by <a class="reference internal" href="../plus/debugging.html#piod
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -321,7 +322,7 @@ automatically by <a class="reference internal" href="../plus/debugging.html#piod
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

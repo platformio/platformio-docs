@@ -285,7 +285,7 @@ You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
 
 .. code-block:: bash
 
-    > pio device monitor -f log2file -f default
+    > pio device monitor -f default -f log2file
 
 
 or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
@@ -295,7 +295,7 @@ or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
     [env:log_output_to_file]
     ...
     platform = ...
-    monitor_filters = log2file, default
+    monitor_filters = default, log2file
 
 Examples
 --------

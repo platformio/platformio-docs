@@ -12,7 +12,7 @@
 Custom firmware/program name
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes is useful to have a different firmware/program name in
+Sometimes it is useful to have a different firmware/program name in
 :ref:`projectconf_pio_build_dir`. The following example uses
 :ref:`scripting_example_custom_project_conf_options` and adds
 a project version suffix to the firmware name.

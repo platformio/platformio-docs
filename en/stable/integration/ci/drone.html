@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -129,9 +130,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Continuous Integration</a> &raquo;</li>
-      <li>Drone</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Continuous Integration</a></li>
+      <li class="breadcrumb-item active">Drone</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ci/drone.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -181,8 +182,8 @@ configured to build project on a range of different <a class="reference internal
 <p>This variant is default choice for native PlatformIO projects (Please fill all
 fields for your project in the Drone control panel):</p>
 <p><cite>Commands</cite>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U platformio
-pio run -e &lt;ID_1&gt; -e &lt;ID_2&gt; -e &lt;ID_N&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>platformio
+pio<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span>&lt;ID_1&gt;<span class="w"> </span>-e<span class="w"> </span>&lt;ID_2&gt;<span class="w"> </span>-e<span class="w"> </span>&lt;ID_N&gt;
 </pre></div>
 </div>
 </section>
@@ -198,8 +199,8 @@ and boards from command line interface:</p>
 </pre></div>
 </div>
 <p><cite>Commands</cite>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U platformio
-pio ci --board<span class="o">=</span>&lt;ID_1&gt; --board<span class="o">=</span>&lt;ID_2&gt; --board<span class="o">=</span>&lt;ID_N&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>platformio
+pio<span class="w"> </span>ci<span class="w"> </span>--board<span class="o">=</span>&lt;ID_1&gt;<span class="w"> </span>--board<span class="o">=</span>&lt;ID_2&gt;<span class="w"> </span>--board<span class="o">=</span>&lt;ID_N&gt;
 </pre></div>
 </div>
 <img alt="../../_images/droneci-platformio-integration-1.png" src="../../_images/droneci-platformio-integration-1.png" />
@@ -217,10 +218,10 @@ project. The <code class="docutils literal notranslate"><span class="pre">circle
 </pre></div>
 </div>
 <p><cite>Commands</cite>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U platformio
-wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
-unzip /tmp/spi4teensy3.zip -d /tmp
-pio ci --lib<span class="o">=</span><span class="s2">&quot;.&quot;</span> --lib<span class="o">=</span><span class="s2">&quot;/tmp/spi4teensy3-master&quot;</span> --board<span class="o">=</span>uno --board<span class="o">=</span>teensy31 --board<span class="o">=</span>due
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>platformio
+wget<span class="w"> </span>https://github.com/xxxajk/spi4teensy3/archive/master.zip<span class="w"> </span>-O<span class="w"> </span>/tmp/spi4teensy3.zip
+unzip<span class="w"> </span>/tmp/spi4teensy3.zip<span class="w"> </span>-d<span class="w"> </span>/tmp
+pio<span class="w"> </span>ci<span class="w"> </span>--lib<span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="w"> </span>--lib<span class="o">=</span><span class="s2">&quot;/tmp/spi4teensy3-master&quot;</span><span class="w"> </span>--board<span class="o">=</span>uno<span class="w"> </span>--board<span class="o">=</span>teensy31<span class="w"> </span>--board<span class="o">=</span>due
 </pre></div>
 </div>
 <img alt="../../_images/droneci-platformio-integration-2.png" src="../../_images/droneci-platformio-integration-2.png" />
@@ -296,7 +297,7 @@ pio ci --lib<span class="o">=</span><span class="s2">&quot;.&quot;</span> --lib<
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -353,7 +354,7 @@ pio ci --lib<span class="o">=</span><span class="s2">&quot;.&quot;</span> --lib<
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

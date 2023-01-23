@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -144,11 +145,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
-          <li><a href="../index.html">CLI Guide</a> &raquo;</li>
-          <li><a href="index.html">pio lib</a> &raquo;</li>
-      <li>pio lib update</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">PlatformIO Core (CLI)</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">CLI Guide</a></li>
+          <li class="breadcrumb-item"><a href="index.html">pio lib</a></li>
+      <li class="breadcrumb-item active">pio lib update</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/userguide/lib/cmd_update.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -184,30 +185,30 @@
 </div>
 <section id="usage">
 <h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 <span class="c1"># update all project libraries</span>
 <span class="c1"># (run it from a project root where is located &quot;platformio.ini&quot;)</span>
-pio lib update <span class="o">[</span>OPTIONS<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 <span class="c1"># update project dependent library</span>
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>LIBRARY...<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>LIBRARY...<span class="o">]</span>
 
 <span class="c1"># update library in global storage</span>
-pio lib --global update <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>LIBRARY...<span class="o">]</span>
-pio lib -g update <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>LIBRARY...<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span>--global<span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>LIBRARY...<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span>-g<span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>LIBRARY...<span class="o">]</span>
 
 <span class="c1"># update library in custom storage</span>
-pio lib --storage-dir /path/to/dir update <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>LIBRARY...<span class="o">]</span>
-pio lib -d /path/to/dir update <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>LIBRARY...<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span>--storage-dir<span class="w"> </span>/path/to/dir<span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>LIBRARY...<span class="o">]</span>
+pio<span class="w"> </span>lib<span class="w"> </span>-d<span class="w"> </span>/path/to/dir<span class="w"> </span>update<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>LIBRARY...<span class="o">]</span>
 
 <span class="c1"># [LIBRARY...] forms</span>
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;id&gt;
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;id&gt;@&lt;version&gt;
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;id&gt;@&lt;version range&gt;
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;name&gt;
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;name&gt;@&lt;version&gt;
-pio lib <span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span> update &lt;name&gt;@&lt;version range&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;id&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;id&gt;@&lt;version&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;id&gt;@&lt;version<span class="w"> </span>range&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;name&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;name&gt;@&lt;version&gt;
+pio<span class="w"> </span>lib<span class="w"> </span><span class="o">[</span>STORAGE_OPTIONS<span class="o">]</span><span class="w"> </span>update<span class="w"> </span>&lt;name&gt;@&lt;version<span class="w"> </span>range&gt;
 </pre></div>
 </div>
 </section>
@@ -365,7 +366,7 @@ no changes found
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -422,7 +423,7 @@ no changes found
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

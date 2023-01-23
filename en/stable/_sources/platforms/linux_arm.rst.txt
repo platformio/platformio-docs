@@ -51,13 +51,11 @@ Stable
     ; Latest stable version
     [env:latest_stable]
     platform = linux_arm
-    board = ...
-
+    
     ; Custom stable version
     [env:custom_stable]
     platform = linux_arm@x.y.z
-    board = ...
-
+    
 Upstream
 ~~~~~~~~
 
@@ -65,8 +63,7 @@ Upstream
 
     [env:upstream_develop]
     platform = https://github.com/platformio/platform-linux_arm.git
-    board = ...
-
+    
 
 Packages
 --------

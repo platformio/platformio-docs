@@ -148,7 +148,7 @@ The result of just generated ``platformio.ini``:
     ;   Library options: dependencies, extra library storages
     ;
     ; Please visit documentation for the other options and examples
-    ; https://docs.platformio.org/page/projectconf.html
+    ; https://docs.platformio.org/en/latest/projectconf/index.html
 
     [env:uno]
     platform = atmelavr

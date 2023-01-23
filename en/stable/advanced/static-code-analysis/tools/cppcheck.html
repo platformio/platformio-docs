@@ -19,6 +19,7 @@
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -131,10 +132,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Static Code Analysis</a> &raquo;</li>
-          <li><a href="index.html">Check tools</a> &raquo;</li>
-      <li>Cppcheck</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Static Code Analysis</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Check tools</a></li>
+      <li class="breadcrumb-item active">Cppcheck</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/static-code-analysis/tools/cppcheck.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -209,25 +210,25 @@ analysis checks that are rigorous, rather than heuristic in nature.</p>
 </section>
 <section id="configuration">
 <h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p><strong>Cppcheck</strong> is implicitly used as the default check tool when <a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
+<p><strong>Cppcheck</strong> is implicitly used as the default check tool when <a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> is not set. To be explicit, you can specify it
 in the configuration directly:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span><span class="w"></span>
-<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">--enable=all</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span>
+<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">--enable=all</span>
 </pre></div>
 </div>
 <p>Useful options that can be used used for adjusting check process:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/section_env_check.html">Check options</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-tool"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-patterns"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-flags"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-severity"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/section_env_check.html#check-skip-packages"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projectconf/sections/env/options/check/index.html">Check options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_patterns.html"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_flags.html"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_severity.html"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../projectconf/sections/env/options/check/check_skip_packages.html"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -302,16 +303,16 @@ why some functions from in your project might be reported as unused. For example
 you can ignore warnings about <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">loop</span></code> functions from
 Arduino-based projects:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// cppcheck-suppress unusedFunction</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="p">...</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
 
 <span class="c1">// cppcheck-suppress unusedFunction</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="p">...</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -338,33 +339,33 @@ calling the script with <code class="docutils literal notranslate"><span class="
 </div>
 <p>In order to use <code class="docutils literal notranslate"><span class="pre">MISRA</span></code> addon you will need to provide a special file with
 the description of <code class="docutils literal notranslate"><span class="pre">MISRA</span></code> rules. Usually, it has the next contents:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">Appendix A Summary of guidelines</span><span class="w"></span>
-<span class="na">Rule 3.1 Required</span><span class="w"></span>
-<span class="na">R3.1 Rule description</span><span class="w"></span>
-<span class="na">Rule 4.1 Required</span><span class="w"></span>
-<span class="na">...</span><span class="w"></span>
-<span class="na">Rule 21.3 Required</span><span class="w"></span>
-<span class="na">R21.3 Rule description</span><span class="w"></span>
-<span class="na">Rule 21.4</span><span class="w"></span>
-<span class="na">R21.4 Rule description</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">Appendix A Summary of guidelines</span>
+<span class="na">Rule 3.1 Required</span>
+<span class="na">R3.1 Rule description</span>
+<span class="na">Rule 4.1 Required</span>
+<span class="na">...</span>
+<span class="na">Rule 21.3 Required</span>
+<span class="na">R21.3 Rule description</span>
+<span class="na">Rule 21.4</span>
+<span class="na">R21.4 Rule description</span>
 </pre></div>
 </div>
 <p>Next, you need to instruct <strong>Cppcheck</strong> that you want to run an additional
 addon script. Since this script requires an additional file with rules,
 you can pass it via a special <code class="docutils literal notranslate"><span class="pre">json</span></code> file:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;script&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;addons/misra.py&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;--rule-texts=misra-rules.txt&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;script&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;addons/misra.py&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;--rule-texts=misra-rules.txt&quot;</span><span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-<p>Finally, add new flag to <a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-flags"><span class="std std-ref">check_flags</span></a>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span><span class="w"></span>
-<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">cppcheck: --addon</span><span class="o">=</span><span class="s">misra.json</span><span class="w"></span>
+<p>Finally, add new flag to <a class="reference internal" href="../../../projectconf/sections/env/options/check/check_flags.html#projectconf-check-flags"><span class="std std-ref">check_flags</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span>
+<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">cppcheck</span><span class="o">:</span><span class="w"> </span><span class="s">--addon=misra.json</span>
 </pre></div>
 </div>
 <p>The full list of implemented <code class="docutils literal notranslate"><span class="pre">MISRA</span></code> checks can be found on
@@ -378,13 +379,13 @@ develop safe, reliable, and secure systems, for example by eliminating
 undefined behaviors that can lead to undefined program behaviors and
 exploitable vulnerabilities.</p>
 <p>In order to use the <code class="docutils literal notranslate"><span class="pre">CERT</span></code> addon, simply specify it as an additional flag in
-<a class="reference internal" href="../../../projectconf/section_env_check.html#projectconf-check-flags"><span class="std std-ref">check_flags</span></a> section:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
-<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span><span class="w"></span>
-<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">  </span><span class="na">cppcheck: --addon</span><span class="o">=</span><span class="s">cert.py</span><span class="w"></span>
+<a class="reference internal" href="../../../projectconf/sections/env/options/check/check_flags.html#projectconf-check-flags"><span class="std std-ref">check_flags</span></a> section:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
+<span class="na">check_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cppcheck</span>
+<span class="na">check_flags</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">cppcheck</span><span class="o">:</span><span class="w"> </span><span class="s">--addon=cert.py</span>
 </pre></div>
 </div>
 </section>
@@ -460,7 +461,7 @@ exploitable vulnerabilities.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -517,7 +518,7 @@ exploitable vulnerabilities.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

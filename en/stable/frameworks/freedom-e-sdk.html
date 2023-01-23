@@ -19,6 +19,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -149,9 +150,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Frameworks</a> &raquo;</li>
-      <li>Freedom E SDK</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Frameworks</a></li>
+      <li class="breadcrumb-item active">Freedom E SDK</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/freedom-e-sdk.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -165,7 +166,7 @@
 <span id="framework-freedom-e-sdk"></span><h1>Freedom E SDK<a class="headerlink" href="#freedom-e-sdk" title="Permalink to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration</dt>
-<dd class="field-odd"><p><a class="reference internal" href="../projectconf/section_env_platform.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">freedom-e-sdk</span></code></p>
+<dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">freedom-e-sdk</span></code></p>
 </dd>
 </dl>
 <p>Open Source Software for Developing on the SiFive Freedom E Platform</p>
@@ -185,10 +186,10 @@
 <h3>Using with FreeRTOS<a class="headerlink" href="#using-with-freertos" title="Permalink to this heading">¶</a></h3>
 <p>In order to add FreeRTOS to your project, it must be explicitly specified as an
 additional framework in the <code class="docutils literal notranslate"><span class="pre">framework</span></code> field of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, for example:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:freertos]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:freertos]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -276,16 +277,16 @@ reveals the true runtime behavior of an application.</p>
 a context switch.</p>
 <p>An example of <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> with modified heap settings and enabled SystemView
 feature:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:sifive-hifive1-revb]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span><span class="w"></span>
-<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span><span class="w"></span>
-<span class="c1">; Configure stack size</span><span class="w"></span>
-<span class="na">board_build.freedom-e-sdk.heap_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x400</span><span class="w"></span>
-<span class="c1">; Configure heap model and enable SystemView</span><span class="w"></span>
-<span class="na">board_build.freertos.heap_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">heap_1</span><span class="w"></span>
-<span class="na">board_build.freertos.systemview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">enable</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:sifive-hifive1-revb]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sifive</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">freedom-e-sdk, freertos</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">hifive1-revb</span>
+<span class="na">monitor_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">115200</span>
+<span class="c1">; Configure stack size</span>
+<span class="na">board_build.freedom-e-sdk.heap_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0x400</span>
+<span class="c1">; Configure heap model and enable SystemView</span>
+<span class="na">board_build.freertos.heap_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">heap_1</span>
+<span class="na">board_build.freertos.systemview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">enable</span>
 </pre></div>
 </div>
 <p>More information about FreeRTOS package for <a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a> development platform
@@ -335,7 +336,7 @@ can be found in <a class="reference external" href="https://github.com/sifive/Fr
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
-<a class="reference internal" href="../projectconf/section_env_debug.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You will need to install debug tool drivers depending on your system.
@@ -618,7 +619,7 @@ You do not need to use/buy external debug probe.</p>
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -675,7 +676,7 @@ You do not need to use/buy external debug probe.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

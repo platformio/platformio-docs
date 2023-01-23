@@ -19,12 +19,13 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Troubleshooting" href="troubleshooting.html" />
+    <link rel="next" title="Proxy Configuration" href="proxy-configuration.html" />
     <link rel="prev" title="99-platformio-udev.rules" href="udev-rules.html" />
  
 <link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
@@ -67,6 +68,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="proxy-configuration.html">Proxy Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="uninstall.html">Uninstall PlatformIO Core and dependent packages</a></li>
 </ul>
@@ -131,10 +133,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
-          <li><a href="index.html">Installation</a> &raquo;</li>
-      <li>Integration with custom applications (extensions, plugins)</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">PlatformIO Core (CLI)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation</a></li>
+      <li class="breadcrumb-item active">Integration with custom applications (extensions, plugins)</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation/integration.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -191,7 +193,7 @@ and unpack it in a cache folder of your application. Later, you can use
 <p>In both cases, you will need to have <code class="docutils literal notranslate"><span class="pre">get-platformio.py</span></code> script on the end-user machine.
 You can copy or download it to a cache/temporary folder.</p>
 <p>A list of arguments and options for the installer script is available via</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py --help
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>get-platformio.py<span class="w"> </span>--help
 </pre></div>
 </div>
 </section>
@@ -206,7 +208,7 @@ See above for how to get it.</p>
 <h3><a class="toc-backref" href="#id6">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Permalink to this heading">¶</a></h3>
 <p>You should check the PlatformIO Core installation state <strong>each time</strong> when the user
 starts your application. You need to call the Installer Script with <code class="docutils literal notranslate"><span class="pre">check</span> <span class="pre">core</span></code> arguments:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py check core
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>get-platformio.py<span class="w"> </span>check<span class="w"> </span>core
 </pre></div>
 </div>
 <p>This command returns <code class="docutils literal notranslate"><span class="pre">0</span></code> “exit code” when PlatformIO Core is already installed
@@ -215,7 +217,7 @@ returned and you need to install PlatformIO Core (see <strong>Step #2</strong> b
 <p>If you need to have full information about the PlatformIO Core installation state,
 please run with <code class="docutils literal notranslate"><span class="pre">--dump-state</span></code> option and specify a folder or a full path where
 to save data in JSON format:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>get-platformio.py check core --dump-state tmpdir/pioinstaller-state.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>get-platformio.py<span class="w"> </span>check<span class="w"> </span>core<span class="w"> </span>--dump-state<span class="w"> </span>tmpdir/pioinstaller-state.json
 </pre></div>
 </div>
 <p>Now, read JSON file and use <code class="docutils literal notranslate"><span class="pre">platformio_exe</span></code> binary to call PlatforIO Core using CLI
@@ -223,18 +225,18 @@ to save data in JSON format:</p>
 environment <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable and the <code class="docutils literal notranslate"><span class="pre">platformio</span></code> command will be available without
 a full path.</p>
 <p>Example of <code class="docutils literal notranslate"><span class="pre">pioinstaller-state.json</span></code> run on macOS:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;core_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;core_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;installer_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;python_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;darwin_x86_64&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;core_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;core_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;installer_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;python_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;darwin_x86_64&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -242,7 +244,7 @@ a full path.</p>
 <h3><a class="toc-backref" href="#id7">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Permalink to this heading">¶</a></h3>
 <p>To install PlatformIO Core into the virtual environment in an automatic mode, please call
 the installer script without any arguments:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python get-platformio.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>get-platformio.py
 </pre></div>
 </div>
 <p>Available options:</p>
@@ -273,7 +275,7 @@ and <a class="reference external" href="https://atom.io/packages/platformio-ide"
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="udev-rules.html" class="btn btn-neutral float-left" title="99-platformio-udev.rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="proxy-configuration.html" class="btn btn-neutral float-right" title="Proxy Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -337,7 +339,7 @@ and <a class="reference external" href="https://atom.io/packages/platformio-ide"
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -394,7 +396,7 @@ and <a class="reference external" href="https://atom.io/packages/platformio-ide"
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

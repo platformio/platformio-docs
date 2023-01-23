@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -66,6 +67,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="udev-rules.html">99-platformio-udev.rules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="integration.html">Integration with custom applications (extensions, plugins)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="proxy-configuration.html">Proxy Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="uninstall.html">Uninstall PlatformIO Core and dependent packages</a></li>
 </ul>
@@ -130,10 +132,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">PlatformIO Core (CLI)</a> &raquo;</li>
-          <li><a href="index.html">Installation</a> &raquo;</li>
-      <li>Install Shell Commands</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">PlatformIO Core (CLI)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation</a></li>
+      <li class="breadcrumb-item active">Install Shell Commands</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/installation/shell-commands.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -175,22 +177,22 @@ as long as you’re logged in as the user PlatformIO is installed and configured
 directory to the PATH environmental variable. If you use Bash as your default shell,
 you can do it by editing either <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and adding the
 following line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
 </pre></div>
 </div>
 <p>If you use Zsh, you can either edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the code above, or
 for supporting both, Bash and Zsh, you can first edit <code class="docutils literal notranslate"><span class="pre">~/.profile</span></code> and add
 the code above, then edit <code class="docutils literal notranslate"><span class="pre">~/.zprofile</span></code> and add the following line:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>emulate sh -c <span class="s1">&#39;. ~/.profile&#39;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>emulate<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;. ~/.profile&#39;</span>
 </pre></div>
 </div>
 <p>If you don’t know the difference between the two, check out <a class="reference external" href="https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc">this page</a>.</p>
 <p>Now that is done, or if <code class="docutils literal notranslate"><span class="pre">$HOME/.local/bin/</span></code> was already exported to your PATH environmental
 variable, you can create the symlinks by opening your system terminal app and paste these
 commands.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
-ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio
-ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/platformio<span class="w"> </span>~/.local/bin/platformio
+ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/pio<span class="w"> </span>~/.local/bin/pio
+ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/piodebuggdb<span class="w"> </span>~/.local/bin/piodebuggdb
 </pre></div>
 </div>
 <p>After everything’s done, just restart your session (log out and log back in) and you’re good to go.</p>
@@ -202,10 +204,10 @@ multiple users on your computer because the symlinks will be broken for other us
 and they will get errors while executing PlatformIO commands. If that’s not a problem,
 open your system terminal app and paste these commands.
 (<strong>PROBABLY requires</strong> administrator access <code class="docutils literal notranslate"><span class="pre">sudo</span></code>):</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir -p /usr/local/bin
-ln -s ~/.platformio/penv/bin/platformio /usr/local/bin/platformio
-ln -s ~/.platformio/penv/bin/pio /usr/local/bin/pio
-ln -s ~/.platformio/penv/bin/piodebuggdb /usr/local/bin/piodebuggdb
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>/usr/local/bin
+ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/platformio<span class="w"> </span>/usr/local/bin/platformio
+ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/pio<span class="w"> </span>/usr/local/bin/pio
+ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/piodebuggdb<span class="w"> </span>/usr/local/bin/piodebuggdb
 </pre></div>
 </div>
 <p>After that, you should be able to run PlatformIO from terminal. No restart is required.</p>
@@ -289,7 +291,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -346,7 +348,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

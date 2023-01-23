@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -131,9 +132,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Unit Testing</a> &raquo;</li>
-      <li>Test Runner</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Unit Testing</a></li>
+      <li class="breadcrumb-item active">Test Runner</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/advanced/unit-testing/runner.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -146,7 +147,7 @@
   <section id="test-runner">
 <span id="unit-testing-test-runner"></span><h1>Test Runner<a class="headerlink" href="#test-runner" title="Permalink to this heading">¶</a></h1>
 <p><strong>PlatformIO Test Runner</strong> is a powerful unit testing tool. It runs
-your unit tests located in the <a class="reference internal" href="../../projectconf/section_platformio.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>, navigates
+your unit tests located in the <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/test_dir.html#projectconf-pio-test-dir"><span class="std std-ref">test_dir</span></a>, navigates
 through tests, and facilitates the processing of test results. Test Runner
 supports the most popular <a class="reference internal" href="frameworks/index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>.</p>
 <p>Test Runner allows you to run specific project environments or filter
@@ -190,7 +191,7 @@ Tests that are written for the target device typically will not work on
 your host machine due to the missing peripheral and other connectivity.</p>
 <p>Using the <a class="reference internal" href="structure/hierarchy.html#unit-testing-test-hierarchy"><span class="std std-ref">Test Hierarchy</span></a> allows you to organize tests
 by types and later skip an incompatible group of tests using
-<a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> or <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> options
+<a class="reference internal" href="../../projectconf/sections/env/options/test/test_filter.html#projectconf-test-filter"><span class="std std-ref">test_filter</span></a> or <a class="reference internal" href="../../projectconf/sections/env/options/test/test_ignore.html#projectconf-test-ignore"><span class="std std-ref">test_ignore</span></a> options
 in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <section id="native">
 <h3><a class="toc-backref" href="#id4">Native</a><a class="headerlink" href="#native" title="Permalink to this heading">¶</a></h3>
@@ -217,7 +218,7 @@ you to deeply test all project components that are part of your firmware.</p>
 <li><p>It builds a special firmware intended for your target using a compatible
 embedded development platform</p></li>
 <li><p>Uploads a firmware to the end target (flashes device)</p></li>
-<li><p>Connects to the target using a Serial interface and <a class="reference internal" href="../../projectconf/section_env_test.html#projectconf-test-port"><span class="std std-ref">test_port</span></a></p></li>
+<li><p>Connects to the target using a Serial interface and <a class="reference internal" href="../../projectconf/sections/env/options/test/test_port.html#projectconf-test-port"><span class="std std-ref">test_port</span></a></p></li>
 <li><p>Gathers Serial output from the target and parses test result on the
 host machine</p></li>
 <li><p>Provides test results.</p></li>
@@ -305,7 +306,7 @@ embedded development <a class="reference internal" href="../../platforms/index.h
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -362,7 +363,7 @@ embedded development <a class="reference internal" href="../../platforms/index.h
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

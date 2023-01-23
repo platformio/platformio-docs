@@ -19,6 +19,7 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -131,10 +132,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Advanced Scripting</a> &raquo;</li>
-          <li><a href="index.html">Scripting Examples</a> &raquo;</li>
-      <li>Override package files</li>
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Advanced Scripting</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Scripting Examples</a></li>
+      <li class="breadcrumb-item active">Override package files</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/scripting/examples/override_package_files.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -162,7 +163,7 @@ scripts, or some patching to installed library dependency.</p>
 <a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework and add extra macro <code class="docutils literal notranslate"><span class="pre">#define</span> <span class="pre">PIN_A8</span>&#160;&#160; <span class="pre">(99)</span></code>.
 Let’s duplicate <code class="docutils literal notranslate"><span class="pre">standard/pins_arduino.h</span></code> and apply changes. Generate a
 patch file and place it into <code class="docutils literal notranslate"><span class="pre">patches</span></code> folder located in the root of a project:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>diff ~/.platformio/packages/framework-arduinoavr/variants/standard/pins_arduino.h /tmp/pins_arduino_modified.h &gt; /path/to/platformio/project/patches/1-framework-arduinoavr-add-pin-a8.patch
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>diff<span class="w"> </span>~/.platformio/packages/framework-arduinoavr/variants/standard/pins_arduino.h<span class="w"> </span>/tmp/pins_arduino_modified.h<span class="w"> </span>&gt;<span class="w"> </span>/path/to/platformio/project/patches/1-framework-arduinoavr-add-pin-a8.patch
 </pre></div>
 </div>
 <p>The result of <code class="docutils literal notranslate"><span class="pre">1-framework-arduinoavr-add-pin-a8.patch</span></code>:</p>
@@ -170,18 +171,18 @@ patch file and place it into <code class="docutils literal notranslate"><span cl
 <span class="w">&gt; #define PIN_A8   (99)</span>
 <span class="w">112c113</span>
 <span class="w">&lt; // 14-21 PA0-PA7 works</span>
-<span class="gd">---</span><span class="w"></span>
+<span class="gd">---</span>
 <span class="w">&gt; // 14-21 PA0-PA7 works</span>
 </pre></div>
 </div>
 <p>Using extra scripting we can apply patching before a build process. The final
 result of <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> and “PRE” extra script named <code class="docutils literal notranslate"><span class="pre">apply_patches.py</span></code>:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span><span class="w"></span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span><span class="w"></span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span><span class="w"></span>
-<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span><span class="w"></span>
-<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pre:apply_patches.py</span><span class="w"></span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pre:apply_patches.py</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">apply_patches.py</span></code>:</p>
@@ -288,7 +289,7 @@ please replace the <code class="docutils literal notranslate"><span class="pre">
               <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
             </ul>\
           </li>\
-          <li><a href="https://registry.platformio.org/">Registry<sup class="badge"><small>NEW</small></sup></a></li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
         </ul>\
         <ul class="nav navbar-nav navbar-right">\
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
@@ -345,7 +346,7 @@ please replace the <code class="docutils literal notranslate"><span class="pre">
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.3 (stable)
+    v6.1.6 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
