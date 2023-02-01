@@ -375,8 +375,8 @@ Invent One
       - 4MB
       - 80KB
 
-Lifely
-~~~~~~
+Lifely.cc
+~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -393,7 +393,7 @@ Lifely
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
 
 NodeMCU
@@ -604,6 +604,27 @@ WEMOS
       - ESP8266
       - 80MHz
       - 16MB
+      - 80KB
+
+WeMos
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_d1_wroom_02`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 2MB
       - 80KB
 
 WifiDuino

@@ -169,7 +169,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#logisenses">LOGISENSES</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#labplus">Labplus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#leaflabs">LeafLabs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#lifely">Lifely</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lifely-cc">Lifely.cc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#lightup">LightUp</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#linino">Linino</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#lion-bit">Lion:Bit</a></li>
@@ -266,6 +266,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#wemos">WEMOS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#waveshare">Waveshare</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#weact-studio">WeAct Studio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">WeMos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#wicked-device">Wicked Device</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#widora">Widora</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#wifiduino">WifiDuino</a></li>
@@ -273,7 +274,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#wisen">Wisen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#xinabox">XinaBox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#yeacreate">YeaCreate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">chipKIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">chipKIT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#decawave">decaWave</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#element14">element14</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#makerlab-mx">makerlab.mx</a></li>
@@ -374,23 +375,23 @@
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tutorials" id="id9">Tutorials</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id10">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id11">Platforms</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id12">Examples</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id13">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#boards" id="id14">Boards</a></p></li>
+<li><p><a class="reference internal" href="#tutorials" id="id10">Tutorials</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id11">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id12">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id13">Examples</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id14">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id15">Boards</a></p></li>
 </ul>
 </div>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id9">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/espressif32/arduino_debugging_unit_testing.html#tutorial-espressif32-arduino-debugging-unit-testing"><span class="std std-ref">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</span></a></p></li>
 <li><p><a class="reference internal" href="../tutorials/nordicnrf52/arduino_debugging_unit_testing.html#tutorial-nordicnrf52-arduino-debugging-unit-testing"><span class="std std-ref">Arduino and Nordic nRF52-DK: debugging and unit testing</span></a></p></li>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id10">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <section id="minicore-mightycore-megacore-majorcore-and-microcore">
 <h3>MiniCore, MightyCore, MegaCore, MajorCore and MicroCore<a class="headerlink" href="#minicore-mightycore-megacore-majorcore-and-microcore" title="Permalink to this heading">¶</a></h3>
 <p>Please read official documentation how to configure MCUdude’s Cores:</p>
@@ -404,7 +405,7 @@
 </section>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id11">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -431,47 +432,51 @@
 <tr class="row-even"><td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
 <td><p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/intel_arc32.html#platform-intel-arc32"><span class="std std-ref">Intel ARC32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>Heltec CubeCell is an easy-to-use LoRa Node series brand based on a highly integrated and ultra low power SoC and the LoRa SX1262 transceiver.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/intel_arc32.html#platform-intel-arc32"><span class="std std-ref">Intel ARC32</span></a></p></td>
 <td><p>ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/microchippic32.html#platform-microchippic32"><span class="std std-ref">Microchip PIC32</span></a></p></td>
 <td><p>Microchip’s 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nordicnrf51.html#platform-nordicnrf51"><span class="std std-ref">Nordic nRF51</span></a></p></td>
 <td><p>The Nordic nRF51 Series is a family of highly flexible, multi-protocol, system-on-chip (SoC) devices for ultra-low power wireless applications. nRF51 Series devices support a range of protocol stacks including Bluetooth Smart (previously called Bluetooth low energy), ANT and proprietary 2.4GHz protocols such as Gazell.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
 <td><p>RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/ststm8.html#platform-ststm8"><span class="std std-ref">ST STM8</span></a></p></td>
 <td><p>The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../platforms/timsp430.html#platform-timsp430"><span class="std std-ref">TI MSP430</span></a></p></td>
 <td><p>MSP430 microcontrollers (MCUs) from Texas Instruments (TI) are 16-bit, RISC-based, mixed-signal processors designed for ultra-low power. These MCUs offer the lowest power consumption and the perfect mix of integrated peripherals for thousands of applications.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../platforms/titiva.html#platform-titiva"><span class="std std-ref">TI TIVA</span></a></p></td>
 <td><p>Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id12">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel AVR</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel megaAVR</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Atmel SAM</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 32</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Espressif 8266</a></p></li>
+<li><p><a class="reference external" href="https://github.com/HelTecAutomation/platform-heltec-cubecell/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Heltec CubeCell</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Intel ARC32</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Microchip PIC32</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Arduino for Nordic nRF51</a></p></li>
@@ -485,20 +490,20 @@
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id13">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id15">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id16">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#on-board-debug-tools" id="id16">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id17">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id17">On-Board Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id18">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id15">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -509,7 +514,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id16">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id17">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
@@ -1207,7 +1212,7 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id17">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id18">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -5065,7 +5070,7 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id14">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -9862,7 +9867,95 @@ Please click on board name for the further details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/heltec_wifi_kit_8.html#board-espressif8266-heltec-wifi-kit-8"><span class="std std-ref">Heltec Wifi kit 8</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_capsule_solar_sensor.html#board-heltec-cubecell-cubecell-capsule-solar-sensor"><span class="std std-ref">Heltec CubeCell Capsule Solar Sensor (HTCC-AC02)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6051</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_node.html#board-heltec-cubecell-cubecell-node"><span class="std std-ref">Heltec CubeCell-1/2AA Node (HTCC-AB02A)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_board.html#board-heltec-cubecell-cubecell-board"><span class="std std-ref">Heltec CubeCell-Board (HTCC-AB01)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_board_pro.html#board-heltec-cubecell-cubecell-board-pro"><span class="std std-ref">Heltec CubeCell-Board PRO (HTCC-AB03)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6601</p></td>
+<td><p>48MHz</p></td>
+<td><p>224KB</p></td>
+<td><p>224KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_board_plus.html#board-heltec-cubecell-cubecell-board-plus"><span class="std std-ref">Heltec CubeCell-Board Plus (HTCC-AB02)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_board_v2.html#board-heltec-cubecell-cubecell-board-v2"><span class="std std-ref">Heltec CubeCell-Board-V2 (HTCC-AB01-V2)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_capsule.html#board-heltec-cubecell-cubecell-capsule"><span class="std std-ref">Heltec CubeCell-Capsule (HTCC-AC01)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_gps.html#board-heltec-cubecell-cubecell-gps"><span class="std std-ref">Heltec CubeCell-GPS (HTCC-AB02S)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_module.html#board-heltec-cubecell-cubecell-module"><span class="std std-ref">Heltec CubeCell-Module (HTCC-AM01)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_module_plus.html#board-heltec-cubecell-cubecell-module-plus"><span class="std std-ref">Heltec CubeCell-Module Plus (HTCC-AM02)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6502</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/heltec-cubecell/cubecell_module_v2.html#board-heltec-cubecell-cubecell-module-v2"><span class="std std-ref">Heltec CubeCell-Module-V2 (HTCC-AM01-V2)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/heltec-cubecell.html#platform-heltec-cubecell"><span class="std std-ref">Heltec CubeCell</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ASR6501</p></td>
+<td><p>48MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>16KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif8266/heltec_wifi_kit_8.html#board-espressif8266-heltec-wifi-kit-8"><span class="std std-ref">Heltec Wifi kit 8</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP8266</p></td>
@@ -10411,8 +10504,8 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
-<section id="lifely">
-<h3>Lifely<a class="headerlink" href="#lifely" title="Permalink to this heading">¶</a></h3>
+<section id="lifely-cc">
+<h3>Lifely.cc<a class="headerlink" href="#lifely-cc" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -10439,7 +10532,7 @@ Please click on board name for the further details.</p>
 <td><p>No</p></td>
 <td><p>ESP8266</p></td>
 <td><p>80MHz</p></td>
-<td><p>4MB</p></td>
+<td><p>2MB</p></td>
 <td><p>80KB</p></td>
 </tr>
 </tbody>
@@ -16693,6 +16786,40 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
+<section id="id8">
+<h3>WeMos<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif8266/d1_wroom_02.html#board-espressif8266-d1-wroom-02"><span class="std std-ref">WeMos D1 ESP-WROOM-02</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP8266</p></td>
+<td><p>80MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>80KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="wicked-device">
 <h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
@@ -16947,8 +17074,8 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
-<section id="id8">
-<h3>chipKIT<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="id9">
+<h3>chipKIT<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 14%" />
@@ -17648,7 +17775,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7a1 (latest)
+    v6.1.7a2 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

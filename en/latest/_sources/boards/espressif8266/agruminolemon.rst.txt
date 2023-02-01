@@ -28,11 +28,11 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 4MB
+    - 2MB
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Lifely <https://www.lifely.cc/lifely-3-0/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Lifely.cc <https://www.lifely.cc/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
