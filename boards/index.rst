@@ -663,6 +663,7 @@ Espressif 8266
     espressif8266/esp210
     espressif8266/espinotee
     espressif8266/d1
+    espressif8266/d1_wroom_02
     espressif8266/d1_mini
     espressif8266/d1_mini_lite
     espressif8266/d1_mini_pro
@@ -695,6 +696,24 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
     freescalekinetis/segger_ip_switch
+
+Heltec CubeCell
+---------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    heltec-cubecell/cubecell_capsule_solar_sensor
+    heltec-cubecell/cubecell_node
+    heltec-cubecell/cubecell_board
+    heltec-cubecell/cubecell_board_pro
+    heltec-cubecell/cubecell_board_plus
+    heltec-cubecell/cubecell_board_v2
+    heltec-cubecell/cubecell_capsule
+    heltec-cubecell/cubecell_gps
+    heltec-cubecell/cubecell_module
+    heltec-cubecell/cubecell_module_plus
+    heltec-cubecell/cubecell_module_v2
 
 Intel ARC32
 -----------

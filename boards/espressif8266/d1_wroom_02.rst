@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif8266_agruminolemon:
+.. _board_espressif8266_d1_wroom_02:
 
-Lifely Agrumino Lemon v4
-========================
+WeMos D1 ESP-WROOM-02
+=====================
 
 .. contents::
 
@@ -32,30 +32,30 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Lifely.cc <https://www.lifely.cc/?utm_source=platformio.org&utm_medium=docs>`__
+    - `WeMos <https://artofcircuits.com/product/esp-wroom-02-wifi-18650-battery-charger-board?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``agruminolemon`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``d1_wroom_02`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:agruminolemon]
+  [env:d1_wroom_02]
   platform = espressif8266
-  board = agruminolemon
+  board = d1_wroom_02
 
-You can override default Lifely Agrumino Lemon v4 settings per build environment using
+You can override default WeMos D1 ESP-WROOM-02 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `agruminolemon.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/agruminolemon.json>`_. For example,
+board manifest `d1_wroom_02.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/d1_wroom_02.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:agruminolemon]
+  [env:d1_wroom_02]
   platform = espressif8266
-  board = agruminolemon
+  board = d1_wroom_02
 
   ; change microcontroller
   board_build.mcu = esp8266
@@ -66,7 +66,7 @@ board manifest `agruminolemon.json <https://github.com/platformio/platform-espre
 
 Uploading
 ---------
-Lifely Agrumino Lemon v4 supports the following uploading protocols:
+WeMos D1 ESP-WROOM-02 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -77,15 +77,15 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:agruminolemon]
+  [env:d1_wroom_02]
   platform = espressif8266
-  board = agruminolemon
+  board = d1_wroom_02
 
   upload_protocol = esptool
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Lifely Agrumino Lemon v4 board.
+:ref:`piodebug` currently does not support WeMos D1 ESP-WROOM-02 board.
 
 Frameworks
 ----------

@@ -47,6 +47,9 @@ Platforms
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
 
+    * - :ref:`platform_heltec-cubecell`
+      - Heltec CubeCell is an easy-to-use LoRa Node series brand based on a highly integrated and ultra low power SoC and the LoRa SX1262 transceiver.
+
     * - :ref:`platform_intel_arc32`
       - ARC embedded processors are a family of 32-bit CPUs that are widely used in SoC devices for storage, home, mobile, automotive, and Internet of Things applications.
 
@@ -85,6 +88,7 @@ Examples
 * `Arduino for Atmel SAM <https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Espressif 8266 <https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Heltec CubeCell <https://github.com/HelTecAutomation/platform-heltec-cubecell/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Intel ARC32 <https://github.com/platformio/platform-intel_arc32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Microchip PIC32 <https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -7582,6 +7586,83 @@ Heltec
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_heltec-cubecell_cubecell_capsule_solar_sensor`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6051
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_node`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6502
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_board`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6501
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_board_pro`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6601
+      - 48MHz
+      - 224KB
+      - 224KB
+    * - :ref:`board_heltec-cubecell_cubecell_board_plus`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6502
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_board_v2`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6501
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_capsule`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6501
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_gps`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6502
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_module`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6501
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_module_plus`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6502
+      - 48MHz
+      - 128KB
+      - 16KB
+    * - :ref:`board_heltec-cubecell_cubecell_module_v2`
+      - :ref:`platform_heltec-cubecell`
+      - No
+      - ASR6501
+      - 48MHz
+      - 128KB
+      - 16KB
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
       - :ref:`platform_espressif8266`
       - No
@@ -7947,8 +8028,8 @@ LeafLabs
       - 108KB
       - 20KB
 
-Lifely
-~~~~~~
+Lifely.cc
+~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -7965,7 +8046,7 @@ Lifely
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
 
 LightUp
@@ -12594,6 +12675,27 @@ WeAct Studio
       - 480MHz
       - 512KB
       - 128KB
+
+WeMos
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_d1_wroom_02`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 2MB
+      - 80KB
 
 Wicked Device
 ~~~~~~~~~~~~~
