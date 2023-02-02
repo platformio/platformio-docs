@@ -297,6 +297,8 @@ Each button contains hint (delay mouse on it).</p>
 <li><p>Project environment switcher (if more than one environment is available).
 See <a class="reference internal" href="../../projectconf/sections/env/index.html#projectconf-section-env"><span class="std std-ref">Section [env]</span></a> of <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> .</p></li>
 </ol>
+<p>You can override default buttons and create your own toolbar.
+See <code class="docutils literal notranslate"><span class="pre">platformio-ide.toolbar</span></code> in <a class="reference internal" href="#ide-vscode-settings"><span class="std std-ref">Settings</span></a>.</p>
 </section>
 <section id="platformio-core-cli">
 <span id="ide-vscode-pio-core-cli"></span><h2><a class="toc-backref" href="#id4">PlatformIO Core (CLI)</a><a class="headerlink" href="#platformio-core-cli" title="Permalink to this heading">¶</a></h2>
@@ -500,12 +502,6 @@ documentation <a class="reference external" href="https://code.visualstudio.com/
 <section id="settings">
 <span id="ide-vscode-settings"></span><h2><a class="toc-backref" href="#id12">Settings</a><a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h2>
 <p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/settings">How to configure VSCode settings?</a></p>
-<section id="platformio-ide-activateonlyonplatformioproject">
-<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.activateOnlyOnPlatformIOProject</span></code><a class="headerlink" href="#platformio-ide-activateonlyonplatformioproject" title="Permalink to this heading">¶</a></h3>
-<p>If true, activate the <code class="docutils literal notranslate"><span class="pre">platformio</span> <span class="pre">ide</span></code> extension only when a
-PlatformIO-based project (that has a <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>) is open in the
-workspace. The default value is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
-</section>
 <section id="platformio-ide-activateprojectontexteditorchange">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.activateProjectOnTextEditorChange</span></code><a class="headerlink" href="#platformio-ide-activateprojectontexteditorchange" title="Permalink to this heading">¶</a></h3>
 <p>Automatically activate project depending on an active opened text editor.
@@ -526,11 +522,10 @@ The default value is <code class="docutils literal notranslate"><span class="pre
 <p>If true, automatically rebuild the C/C++ Project Index when <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 is changed or when new libraries are installed. The default value is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
 </section>
-<section id="platformio-ide-buildtask">
-<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.buildTask</span></code><a class="headerlink" href="#platformio-ide-buildtask" title="Permalink to this heading">¶</a></h3>
-<p>The build task (label) that is launched by the “Build” button in the
-<a class="reference internal" href="#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a> and <a class="reference internal" href="#ide-vscode-keybindings"><span class="std std-ref">Key Bindings</span></a>. The default is <code class="docutils literal notranslate"><span class="pre">PlatformIO:</span> <span class="pre">Build</span></code>.</p>
-<p>You can create custom <a class="reference internal" href="#ide-vscode-custom-task"><span class="std std-ref">Custom Tasks</span></a> and assign one of them to <code class="docutils literal notranslate"><span class="pre">platformio-ide.buildTask</span></code>.</p>
+<section id="platformio-ide-showeditortitleshortcuts">
+<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.showEditorTitleShortcuts</span></code><a class="headerlink" href="#platformio-ide-showeditortitleshortcuts" title="Permalink to this heading">¶</a></h3>
+<p>Show Build, Upload, Clean, and other buttons in the editor title bar.
+The default value is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
 </section>
 <section id="platformio-ide-autopreloadenvtasks">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.autoPreloadEnvTasks</span></code><a class="headerlink" href="#platformio-ide-autopreloadenvtasks" title="Permalink to this heading">¶</a></h3>
@@ -541,15 +536,6 @@ is changed or when new libraries are installed. The default value is <code class
 <p>Custom PATH for the <code class="docutils literal notranslate"><span class="pre">platformio</span></code> command. Paste here the result of <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code>
 (Unix) / <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">%PATH%</span></code> (Windows) command by typing into your system terminal
 if you prefer to use a custom version of <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a>. The default value is <code class="docutils literal notranslate"><span class="pre">null</span></code>, meaning PlatformIO looks for the <code class="docutils literal notranslate"><span class="pre">platformio</span></code> command in the system path.</p>
-</section>
-<section id="platformio-ide-disabletoolbar">
-<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.disableToolbar</span></code><a class="headerlink" href="#platformio-ide-disabletoolbar" title="Permalink to this heading">¶</a></h3>
-<p>Disable the PlatformIO toolbar. The default value is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
-</section>
-<section id="platformio-ide-forceuploadandmonitor">
-<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.forceUploadAndMonitor</span></code><a class="headerlink" href="#platformio-ide-forceuploadandmonitor" title="Permalink to this heading">¶</a></h3>
-<p>If true, the Upload (<code class="docutils literal notranslate"><span class="pre">platformio-ide.upload</span></code>) command is changed to
-use the “Upload and Monitor” task. The default value is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </section>
 <section id="platformio-ide-reopenserialmonitordelay">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.reopenSerialMonitorDelay</span></code><a class="headerlink" href="#platformio-ide-reopenserialmonitordelay" title="Permalink to this heading">¶</a></h3>
@@ -580,11 +566,65 @@ value is <code class="docutils literal notranslate"><span class="pre">false</spa
 <section id="platformio-ide-piohomeserverhttpport">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.pioHomeServerHttpPort</span></code><a class="headerlink" href="#platformio-ide-piohomeserverhttpport" title="Permalink to this heading">¶</a></h3>
 <p>PlatformIO Home server HTTP port. The default value <code class="docutils literal notranslate"><span class="pre">0</span></code> automatically assigns a free port in
-the range [8010..8100]).</p>
+the range [45000..45999]).</p>
 </section>
 <section id="platformio-ide-custompypiindexurl">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.customPyPiIndexUrl</span></code><a class="headerlink" href="#platformio-ide-custompypiindexurl" title="Permalink to this heading">¶</a></h3>
 <p>Custom base URL of the Python Package Index (default <code class="docutils literal notranslate"><span class="pre">https://pypi.org/simple</span></code>).</p>
+</section>
+<section id="platformio-ide-toolbar">
+<h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.toolbar</span></code><a class="headerlink" href="#platformio-ide-toolbar" title="Permalink to this heading">¶</a></h3>
+<p>Configure your own <a class="reference internal" href="#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a> with your own buttons and attach commands to them.
+There is no limitation to command scope. You can use <a class="reference external" href="https://code.visualstudio.com/api/references/commands">Built-in VSCode Commands</a>
+or commands from your 3rd party favorite extensions.</p>
+<p>The button can be text, an icon, or a mix of them. The list of supported icons is documented in <a class="reference external" href="https://code.visualstudio.com/api/references/icons-in-labels#icon-listing">VSCode Icon Listing</a>.
+You can have different toolbars per workspace thanks to the <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/settings">User and Workspace Settings</a>.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;platformio-ide.toolbar&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Clean All&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.action.tasks.runTask&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PlatformIO: Clean All&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(list-selection)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;List devices&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.runPIOCoreCommand&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pio device list&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(plug)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.runPIOCoreCommand&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pio device monitor --filter time&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(terminal)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.action.terminal.sendSequence&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;echo 1\n&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="known-issues">
@@ -731,7 +771,7 @@ Afterwards, go back to using the VSCode Terminal.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7a2 (latest)
+    v6.1.7a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
