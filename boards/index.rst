@@ -434,6 +434,7 @@ Espressif 32
 
 .. toctree::
     :maxdepth: 1
+
     espressif32/lilygo-t-dysplay-esp32-s3
     espressif32/esp32cam
     espressif32/alksesp32
