@@ -19,7 +19,7 @@ Espressif 32
 :Configuration:
   :ref:`projectconf_env_platform` = ``espressif32``
 
-Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
 
 For more detailed information please visit `vendor site <https://espressif.com/?utm_source=platformio.org&utm_medium=docs>`_.
 
@@ -36,7 +36,6 @@ Examples are listed from `Espressif 32 development platform repository <https://
 
 * `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-usb-keyboard <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-usb-keyboard?utm_source=platformio.org&utm_medium=docs>`_
-* `espidf-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-storage-spiffs <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-spiffs?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio.org&utm_medium=docs>`_
