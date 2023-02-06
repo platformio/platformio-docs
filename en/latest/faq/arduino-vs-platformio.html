@@ -4,12 +4,12 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troubleshooting &mdash; PlatformIO latest documentation</title>
+  <title>Aduino IDE vs PlatformIO IDE &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="https://docs.platformio.org/faq/troubleshooting.html" />
+    <link rel="canonical" href="https://docs.platformio.org/faq/arduino-vs-platformio.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -25,8 +25,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Release Notes" href="../core/history.html" />
-    <link rel="prev" title="Custom SCons command-line options" href="custom-scons-cli-options.html" />
+    <link rel="next" title="Install Python Interpreter" href="install-python.html" />
+    <link rel="prev" title="General" href="general.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -92,27 +92,13 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FAQ</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="general.html">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="arduino-vs-platformio.html">Aduino IDE vs PlatformIO IDE</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Aduino IDE vs PlatformIO IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install-python.html">Install Python Interpreter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced-serial-monitor.html">Advanced Serial Monitor with UI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="program-memory-usage.html">Program Memory Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ino-to-cpp.html">Convert Arduino file to C++ manually</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom-scons-cli-options.html">Custom SCons command-line options</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#package-manager">Package Manager</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#error-5-access-is-denied">[Error 5] Access is denied</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#building">Building</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#unicodewarning-unicode-equal-comparison-failed">UnicodeWarning: Unicode equal comparison failed</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#unicodedecodeerror-non-ascii-characters-found-in-build-environment">UnicodeDecodeError: Non-ASCII characters found in build environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arm-toolchain-cc1plus-error-while-loading-shared-libraries">ARM toolchain: cc1plus: error while loading shared libraries</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#archlinux-libncurses-so-5-cannot-open-shared-object-file">Archlinux: libncurses.so.5: cannot open shared object file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#monitoring-a-serial-port-breaks-upload">Monitoring a serial port breaks upload</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../core/history.html">Release Notes</a></li>
@@ -138,9 +124,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Frequently Asked Questions</a></li>
-      <li class="breadcrumb-item active">Troubleshooting</li>
+      <li class="breadcrumb-item active">Aduino IDE vs PlatformIO IDE</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/platformio/platformio-docs/blob/develop/faq/troubleshooting.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/faq/arduino-vs-platformio.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -148,122 +134,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="troubleshooting">
-<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h1>
-<section id="package-manager">
-<h2>Package Manager<a class="headerlink" href="#package-manager" title="Permalink to this heading">¶</a></h2>
-<section id="error-5-access-is-denied">
-<span id="faq-package-manager-error-5"></span><h3>[Error 5] Access is denied<a class="headerlink" href="#error-5-access-is-denied" title="Permalink to this heading">¶</a></h3>
-<p>PlatformIO installs all packages to “<a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/packages”
-directory. You <strong>MUST HAVE</strong> write access to this folder.
-Please note that <strong>PlatformIO does not require</strong> “sudo”/administrative privileges.</p>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#solution-1-remove-folder" id="id1">Solution 1: Remove folder</a></p></li>
-<li><p><a class="reference internal" href="#solution-2-antivirus" id="id2">Solution 2: Antivirus</a></p></li>
-<li><p><a class="reference internal" href="#solution-3-run-from-terminal" id="id3">Solution 3: Run from Terminal</a></p></li>
-</ul>
-</div>
-<section id="solution-1-remove-folder">
-<h4><a class="toc-backref" href="#id1">Solution 1: Remove folder</a><a class="headerlink" href="#solution-1-remove-folder" title="Permalink to this heading">¶</a></h4>
-<p>A quick solution is to remove “<a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/packages” folder
-and repeat installation/building/uploading again.</p>
-</section>
-<section id="solution-2-antivirus">
-<h4><a class="toc-backref" href="#id2">Solution 2: Antivirus</a><a class="headerlink" href="#solution-2-antivirus" title="Permalink to this heading">¶</a></h4>
-<p>Some antivirus tools forbid programs to create files in the background.
-PlatformIO Package Manager does all work in the background: downloads package,
-unpacks archive in temporary folder and moves final files to
-“<a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/packages” folder.</p>
-<p>Antivirus tool can block PlatformIO, that is why you see “[Error 5] Access is denied”.
-Try to <strong>disable it for a while</strong> or add <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
-directory to exclusion/whitelist.</p>
-</section>
-<section id="solution-3-run-from-terminal">
-<h4><a class="toc-backref" href="#id3">Solution 3: Run from Terminal</a><a class="headerlink" href="#solution-3-run-from-terminal" title="Permalink to this heading">¶</a></h4>
-<p>As we mentioned in “Solution 2”, antivirus tools can block background file
-system operations. Another solution is to run <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> from a system terminal.</p>
-<ol class="arabic">
-<li><p>Open <strong>System Terminal</strong>, on Windows <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> (not <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> Terminal)</p></li>
-<li><p>Build a project and upload firmware using <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> which will download
-and install all dependent packages:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change directory to PlatformIO Project where is located &quot;platformio.ini&quot;</span>
-<span class="nb">cd</span><span class="w"> </span>path/to/platformio/project
-
-<span class="c1"># Force PlatformIO to install PlatformIO Home dependencies</span>
-pio<span class="w"> </span>home
-
-<span class="c1"># Force PlatformIO to install toolchains</span>
-pio<span class="w"> </span>run<span class="w"> </span>--target<span class="w"> </span>upload
-</pre></div>
-</div>
-</li>
-</ol>
-<p>If “pio” command is not globally available in your environment and you
-use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, please use built-in <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> which is located in:</p>
-<ul class="simple">
-<li><p>Windows: <code class="docutils literal notranslate"><span class="pre">C:\Users\{username}\.platformio\penv\Scripts\platformio</span></code>
-Please replace <code class="docutils literal notranslate"><span class="pre">{username}</span></code> with a real user name</p></li>
-<li><p>Unix: <code class="docutils literal notranslate"><span class="pre">~/.platformio/penv/bin/platformio</span></code></p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can add <code class="docutils literal notranslate"><span class="pre">platformio</span></code> and <code class="docutils literal notranslate"><span class="pre">pio</span></code> commands to your system environment.
-See <a class="reference internal" href="../core/installation/shell-commands.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
-</div>
-</section>
-</section>
-</section>
-<section id="building">
-<h2>Building<a class="headerlink" href="#building" title="Permalink to this heading">¶</a></h2>
-<section id="unicodewarning-unicode-equal-comparison-failed">
-<h3>UnicodeWarning: Unicode equal comparison failed<a class="headerlink" href="#unicodewarning-unicode-equal-comparison-failed" title="Permalink to this heading">¶</a></h3>
-<p>Full warning message is “UnicodeWarning: Unicode equal comparison failed to
-convert both arguments to Unicode - interpreting them as being unequal”.</p>
-<p><strong>KNOWN ISSUE</strong>. Please move your project to a folder which full path does not
-contain non-ASCII chars.</p>
-</section>
-<section id="unicodedecodeerror-non-ascii-characters-found-in-build-environment">
-<h3>UnicodeDecodeError: Non-ASCII characters found in build environment<a class="headerlink" href="#unicodedecodeerror-non-ascii-characters-found-in-build-environment" title="Permalink to this heading">¶</a></h3>
-<p><strong>KNOWN ISSUE</strong>. <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> currently does not support projects which
-contain non-ASCII characters (codes) in a full path or depend on the
-libraries which use non-ASCII characters in their names.</p>
-<p><strong>TEMPORARY SOLUTION</strong></p>
-<ol class="arabic simple">
-<li><p>Use <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, it will automatically install <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in a root
-of system disk (<code class="docutils literal notranslate"><span class="pre">%DISK%/.platformio</span></code>) and avoid an issue when system
-User contains non-ASCII characters</p></li>
-<li><p>Do not use non-ASCII characters in project folder name or its parent folders.</p></li>
-</ol>
-<p>Also, if you want to place <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in own location, see:</p>
-<ul class="simple">
-<li><p>Set <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_CORE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_CORE_DIR</span></code></a> environment variable with own path</p></li>
-<li><p>Configure custom location per project using <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
-option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p></li>
-</ul>
-</section>
-<section id="arm-toolchain-cc1plus-error-while-loading-shared-libraries">
-<h3>ARM toolchain: cc1plus: error while loading shared libraries<a class="headerlink" href="#arm-toolchain-cc1plus-error-while-loading-shared-libraries" title="Permalink to this heading">¶</a></h3>
-<p>See related answers for
-<a class="reference external" href="https://github.com/platformio/platformio-core/issues?utf8=✓&amp;q=error+while+loading+shared+libraries">error while loading shared libraries</a>.</p>
-</section>
-<section id="archlinux-libncurses-so-5-cannot-open-shared-object-file">
-<h3>Archlinux: libncurses.so.5: cannot open shared object file<a class="headerlink" href="#archlinux-libncurses-so-5-cannot-open-shared-object-file" title="Permalink to this heading">¶</a></h3>
-<p>Answered in <a class="reference external" href="https://github.com/platformio/platformio-core/issues/291">issue #291</a>.</p>
-</section>
-<section id="monitoring-a-serial-port-breaks-upload">
-<h3>Monitoring a serial port breaks upload<a class="headerlink" href="#monitoring-a-serial-port-breaks-upload" title="Permalink to this heading">¶</a></h3>
-<p>Answered in <a class="reference external" href="https://github.com/platformio/platformio-core/issues/384">issue #384</a>.</p>
-</section>
-</section>
+  <section id="aduino-ide-vs-platformio-ide">
+<h1>Aduino IDE vs PlatformIO IDE<a class="headerlink" href="#aduino-ide-vs-platformio-ide" title="Permalink to this heading">¶</a></h1>
+<p>The choice between Arduino IDE and PlatformIO IDE depends on the specific
+needs and requirements of the project and the user.</p>
+<p>Arduino IDE is a simple and easy-to-use development environment that is
+specifically designed for the Arduino platform. It provides a straightforward
+and intuitive interface for writing and uploading code to the board.
+The Arduino IDE is well-suited for simple projects and for users who are
+new to the world of microcontrollers.</p>
+<p><a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, on the other hand, is a more powerful and feature-rich
+development environment. It supports a wider range of microcontroller platforms
+and development boards, and provides a comprehensive set of tools for
+<a class="reference internal" href="../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a>, <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a>, <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a>, and <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>.
+PlatformIO IDE is well-suited for more complex projects and for experienced
+users who need more advanced features.</p>
+<p>In conclusion, it depends on the project requirements and user experience.
+If you need a simple and easy-to-use environment for a small project,
+Arduino IDE may be the better choice. If you need a more powerful and
+feature-rich development environment for a larger project that uses the
+<a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a> framework, PlatformIO IDE may be the better choice.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="custom-scons-cli-options.html" class="btn btn-neutral float-left" title="Custom SCons command-line options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../core/history.html" class="btn btn-neutral float-right" title="Release Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="general.html" class="btn btn-neutral float-left" title="General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install-python.html" class="btn btn-neutral float-right" title="Install Python Interpreter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -398,8 +296,8 @@ option in <a class="reference internal" href="../projectconf/index.html#projectc
     </dl>
     <dl>
       <dt>On Github</dt>
-        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/faq/troubleshooting.rst"> View</a></dd>
-        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/faq/troubleshooting.rst"> Edit</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/faq/arduino-vs-platformio.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/faq/arduino-vs-platformio.rst"> Edit</a></dd>
     </dl>
     <dl>
       <dt>Search</dt>
