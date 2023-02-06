@@ -54,9 +54,13 @@ Atmel AVR
     atmelavr/ATmega162
     atmelavr/ATmega164A
     atmelavr/ATmega164P
+    atmelavr/ATmega165
+    atmelavr/ATmega165P
     atmelavr/ATmega168
     atmelavr/ATmega168P
     atmelavr/ATmega168PB
+    atmelavr/ATmega169P
+    atmelavr/ATmega169A
     atmelavr/ATmega2560
     atmelavr/ATmega2561
     atmelavr/ATmega32
@@ -64,9 +68,17 @@ Atmel AVR
     atmelavr/ATmega324P
     atmelavr/ATmega324PA
     atmelavr/ATmega324PB
+    atmelavr/ATmega325
+    atmelavr/ATmega3250
+    atmelavr/ATmega3250P
+    atmelavr/ATmega325P
     atmelavr/ATmega328
     atmelavr/ATmega328P
     atmelavr/ATmega328PB
+    atmelavr/ATmega329
+    atmelavr/ATmega3290
+    atmelavr/ATmega3290P
+    atmelavr/ATmega329P
     atmelavr/ATmega48
     atmelavr/ATmega48P
     atmelavr/ATmega48PB
@@ -74,6 +86,14 @@ Atmel AVR
     atmelavr/ATmega640
     atmelavr/ATmega644A
     atmelavr/ATmega644P
+    atmelavr/ATmega645
+    atmelavr/ATmega6450
+    atmelavr/ATmega6450P
+    atmelavr/ATmega645P
+    atmelavr/ATmega649
+    atmelavr/ATmega6490
+    atmelavr/ATmega6490P
+    atmelavr/ATmega649P
     atmelavr/ATmega8
     atmelavr/ATmega8515
     atmelavr/ATmega8535

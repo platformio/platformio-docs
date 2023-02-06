@@ -42,7 +42,7 @@ Platforms
       - Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
 
     * - :ref:`platform_espressif32`
-      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+      - ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
 
     * - :ref:`platform_espressif8266`
       - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
@@ -8559,6 +8559,20 @@ Microchip
       - 16MHz
       - 16KB
       - 1KB
+    * - :ref:`board_atmelavr_ATmega165`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA165A
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega165P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA165P
+      - 16MHz
+      - 16KB
+      - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - :ref:`platform_atmelavr`
       - External
@@ -8577,6 +8591,20 @@ Microchip
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA168PB
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega169P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA169P
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega169A`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA169A
       - 16MHz
       - 16KB
       - 1KB
@@ -8643,6 +8671,34 @@ Microchip
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_atmelavr_ATmega325`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA325
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3250`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA3250
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3250P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA3250P
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega325P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA325P
+      - 16MHz
+      - 32KB
+      - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - :ref:`platform_atmelavr`
       - External
@@ -8661,6 +8717,34 @@ Microchip
       - :ref:`platform_atmelavr`
       - No
       - ATMEGA328PB
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega329`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA329
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3290`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA3290
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3290P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA3290P
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega329P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA329P
       - 16MHz
       - 32KB
       - 2KB
@@ -8724,6 +8808,62 @@ Microchip
       - :ref:`platform_atmelavr`
       - External
       - ATMEGA644P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega645`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA645
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6450`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA6450
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6450P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA6450P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega645P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA645P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega649`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA649
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6490`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA6490
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6490P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA6490P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega649P`
+      - :ref:`platform_atmelavr`
+      - No
+      - ATMEGA649P
       - 16MHz
       - 64KB
       - 4KB
