@@ -14,5 +14,29 @@
 
 *Optional* | Type: ``String``
 
-Custom location of library source code. A default value is ``src`` and
-means that folder is located in the root of a library.
+The base path where PlatformIO should look for library source code.
+The default value is ``src`` and indicates that folder is located in
+the root of the library.
+
+Setting ``srcDir`` to ``.`` will instruct PlatformIO
+to recursively build all source files located in the root of
+the library and its subfolders.
+
+If you need to exclude some files from the build process,
+refer to the :ref:`library_json_buid_src_filter`.
+
+**Example**
+
+Build ALL files starting from the root of a library and exclude
+``examples`` and ``test`` subfolders:
+
+.. code:: javascript
+
+  {
+    "name": "SomeLib",
+    "version": "0.0.0",
+    "build": {
+      "srcDir": ".",
+      "srcFilter": "+<*> -<examples> -<test>"
+    }
+  }

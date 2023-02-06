@@ -9,6 +9,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _library_json_buid_flags:
+
 ``flags``
 ~~~~~~~~~
 
