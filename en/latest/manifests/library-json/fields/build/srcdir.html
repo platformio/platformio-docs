@@ -167,8 +167,27 @@
   <section id="srcdir">
 <h1><code class="docutils literal notranslate"><span class="pre">srcDir</span></code><a class="headerlink" href="#srcdir" title="Permalink to this heading">¶</a></h1>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
-<p>Custom location of library source code. A default value is <code class="docutils literal notranslate"><span class="pre">src</span></code> and
-means that folder is located in the root of a library.</p>
+<p>The base path where PlatformIO should look for library source code.
+The default value is <code class="docutils literal notranslate"><span class="pre">src</span></code> and indicates that folder is located in
+the root of the library.</p>
+<p>Setting <code class="docutils literal notranslate"><span class="pre">srcDir</span></code> to <code class="docutils literal notranslate"><span class="pre">.</span></code> will instruct PlatformIO
+to recursively build all source files located in the root of
+the library and its subfolders.</p>
+<p>If you need to exclude some files from the build process,
+refer to the <a class="reference internal" href="srcfilter.html#library-json-buid-src-filter"><span class="std std-ref">srcFilter</span></a>.</p>
+<p><strong>Example</strong></p>
+<p>Build ALL files starting from the root of a library and exclude
+<code class="docutils literal notranslate"><span class="pre">examples</span></code> and <code class="docutils literal notranslate"><span class="pre">test</span></code> subfolders:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SomeLib&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;srcDir&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;srcFilter&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;+&lt;*&gt; -&lt;examples&gt; -&lt;test&gt;&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 
 

@@ -167,14 +167,34 @@
   <section id="includedir">
 <h1><code class="docutils literal notranslate"><span class="pre">includeDir</span></code><a class="headerlink" href="#includedir" title="Permalink to this heading">¶</a></h1>
 <p><em>Optional</em> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code></p>
-<p>Custom directory to be searched for header files.
-A default value is <code class="docutils literal notranslate"><span class="pre">include</span></code> and means that folder is located at
-the root of a library.</p>
+<p>The base path to be searched for header files.
+The default value is <code class="docutils literal notranslate"><span class="pre">include</span></code> and indicates that the folder
+is located at the root of the library. Setting <code class="docutils literal notranslate"><span class="pre">includeDir</span></code>
+to <code class="docutils literal notranslate"><span class="pre">.</span></code> will change the base path to the root of the library.</p>
+<p>If you need to export additional relative paths, refer to
+<a class="reference internal" href="flags.html#library-json-buid-flags"><span class="std std-ref">flags</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <a class="reference internal" href="../../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will pick a library automatically only when
 a project or other dependent libraries include any header file
 located in <code class="docutils literal notranslate"><span class="pre">includeDir</span></code> or <code class="docutils literal notranslate"><span class="pre">srcDir</span></code>.</p>
+</div>
+<p><strong>Example</strong></p>
+<p>Override the base include path to the library root directory and
+provide the custom include paths:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SomeLib&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;includeDir&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;-I include&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;-I extra&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;-I drivers&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </section>
 
