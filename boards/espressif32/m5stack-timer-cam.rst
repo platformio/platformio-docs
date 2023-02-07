@@ -43,7 +43,7 @@ Please use ``m5stack-timer-cam`` ID for :ref:`projectconf_env_board` option in :
 .. code-block:: ini
 
   [env:m5stack-timer-cam]
-  platform = espressif32
+  platform = esp32
   board = m5stack-timer-cam
 
 You can override default M5Stack Timer CAM settings per build environment using
@@ -54,7 +54,7 @@ board manifest `m5stack-timer-cam.json <https://github.com/platformio/platform-e
 .. code-block:: ini
 
   [env:m5stack-timer-cam]
-  platform = espressif32
+  platform = esp32
   board = m5stack-timer-cam
 
   ; change microcontroller
@@ -78,7 +78,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 .. code-block:: ini
 
   [env:m5stack-timer-cam]
-  platform = espressif32
+  platform = esp32
   board = m5stack-timer-cam
 
   upload_protocol = esptool
