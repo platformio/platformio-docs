@@ -40,6 +40,9 @@ Example of using a `Espressif 32 development platform <https://registry.platform
     platform = espressif32@3.5.0
 
     [env:latest_version]
+    ; not recommended as it does not ensure that 
+    ; - builds are repeatable
+    ; - all developers who checkout the project wil build against the same platform version
     platform = espressif32
 
     [env:development_verion_by_git]
@@ -50,3 +53,8 @@ Example of using a `Espressif 32 development platform <https://registry.platform
 
     [env:specific_git_commit]
     platform = https://github.com/platformio/platform-espressif32.git#f8340a2081a31c2ac8ed2b16907f2a21dc8897d4
+
+
+.. note::
+    We highly recommend pinning the platform to a verison.
+    See :ref:`cmd_pkg_install_requirements` for details.    
