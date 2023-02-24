@@ -241,6 +241,12 @@ multi-root workspaces. This can be very helpful when you are working on
 several related projects at the same time. Read more in the documentation
 `Multi-root Workspaces <https://code.visualstudio.com/docs/editor/multi-root-workspaces>`_.
 
+Serial & UDP Plotter
+--------------------
+
+See `Teleplot - Ridiculously-simple telemetry viewer <https://marketplace.visualstudio.com/items?itemName=alexnesnes.teleplot>`_
+community extension.
+
 .. _ide_vscode_serial_port_monitor:
 
 Serial Port Monitor

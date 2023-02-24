@@ -106,6 +106,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#platformio-core-cli">PlatformIO Core (CLI)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#project-tasks">Project Tasks</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#multi-project-workspaces">Multi-project Workspaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-udp-plotter">Serial &amp; UDP Plotter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#serial-port-monitor">Serial Port Monitor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install-shell-commands">Install Shell Commands</a></li>
@@ -177,14 +178,15 @@ languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unit
 <li><p><a class="reference internal" href="#platformio-core-cli" id="id4">PlatformIO Core (CLI)</a></p></li>
 <li><p><a class="reference internal" href="#project-tasks" id="id5">Project Tasks</a></p></li>
 <li><p><a class="reference internal" href="#multi-project-workspaces" id="id6">Multi-project Workspaces</a></p></li>
-<li><p><a class="reference internal" href="#serial-port-monitor" id="id7">Serial Port Monitor</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id8">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#install-shell-commands" id="id9">Install Shell Commands</a></p></li>
-<li><p><a class="reference internal" href="#proxy-server-support" id="id10">Proxy Server Support</a></p></li>
-<li><p><a class="reference internal" href="#key-bindings" id="id11">Key Bindings</a></p></li>
-<li><p><a class="reference internal" href="#settings" id="id12">Settings</a></p></li>
-<li><p><a class="reference internal" href="#known-issues" id="id13">Known issues</a></p></li>
-<li><p><a class="reference internal" href="#changelog" id="id14">Changelog</a></p></li>
+<li><p><a class="reference internal" href="#serial-udp-plotter" id="id7">Serial &amp; UDP Plotter</a></p></li>
+<li><p><a class="reference internal" href="#serial-port-monitor" id="id8">Serial Port Monitor</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id9">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#install-shell-commands" id="id10">Install Shell Commands</a></p></li>
+<li><p><a class="reference internal" href="#proxy-server-support" id="id11">Proxy Server Support</a></p></li>
+<li><p><a class="reference internal" href="#key-bindings" id="id12">Key Bindings</a></p></li>
+<li><p><a class="reference internal" href="#settings" id="id13">Settings</a></p></li>
+<li><p><a class="reference internal" href="#known-issues" id="id14">Known issues</a></p></li>
+<li><p><a class="reference internal" href="#changelog" id="id15">Changelog</a></p></li>
 </ul>
 </nav>
 <section id="installation">
@@ -379,8 +381,13 @@ multi-root workspaces. This can be very helpful when you are working on
 several related projects at the same time. Read more in the documentation
 <a class="reference external" href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">Multi-root Workspaces</a>.</p>
 </section>
+<section id="serial-udp-plotter">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Serial &amp; UDP Plotter</a><a class="headerlink" href="#serial-udp-plotter" title="Permalink to this heading"></a></h2>
+<p>See <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=alexnesnes.teleplot">Teleplot - Ridiculously-simple telemetry viewer</a>
+community extension.</p>
+</section>
 <section id="serial-port-monitor">
-<span id="ide-vscode-serial-port-monitor"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Serial Port Monitor</a><a class="headerlink" href="#serial-port-monitor" title="Permalink to this heading"></a></h2>
+<span id="ide-vscode-serial-port-monitor"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Serial Port Monitor</a><a class="headerlink" href="#serial-port-monitor" title="Permalink to this heading"></a></h2>
 <p>You can customize Serial Port Monitor using
 <a class="reference internal" href="../../projectconf/sections/env/options/monitor/index.html#projectconf-section-env-monitor"><span class="std std-ref">Monitor options</span></a> in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <ul class="simple">
@@ -409,7 +416,7 @@ several related projects at the same time. Read more in the documentation
 </div>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p>Debugging in VSCode works in combination with <a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>. You should
 have <a class="reference internal" href="../../plus/pio-account.html#pioaccount"><span class="std std-ref">PlatformIO Account</span></a> to work with it.</p>
 <p>VSCode has a separate activity view named “Debug” (accessed by the bug icon on the left toolbar).
@@ -477,11 +484,11 @@ You can manually cast watchpoint expressions to display the value as specific po
 </section>
 </section>
 <section id="install-shell-commands">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Install Shell Commands</a><a class="headerlink" href="#install-shell-commands" title="Permalink to this heading"></a></h2>
 <p>Please refer to PlatformIO Core <a class="reference internal" href="../../core/installation/shell-commands.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
 </section>
 <section id="proxy-server-support">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Proxy Server Support</a><a class="headerlink" href="#proxy-server-support" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Proxy Server Support</a><a class="headerlink" href="#proxy-server-support" title="Permalink to this heading"></a></h2>
 <p>There are two options how to configure a proxy server:</p>
 <ol class="arabic simple">
 <li><p>Open <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/settings">VSCode Settings</a>
@@ -491,7 +498,7 @@ and search for “Proxy”. Please set “Http: Proxy” and disable
 </ol>
 </section>
 <section id="key-bindings">
-<span id="ide-vscode-keybindings"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Key Bindings</a><a class="headerlink" href="#key-bindings" title="Permalink to this heading"></a></h2>
+<span id="ide-vscode-keybindings"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Key Bindings</a><a class="headerlink" href="#key-bindings" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ctrl+alt+b</span></code> / <code class="docutils literal notranslate"><span class="pre">cmd-shift-b</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-shift-b</span></code> Build Project</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cmd-shift-d</span></code> / <code class="docutils literal notranslate"><span class="pre">ctrl-shift-d</span></code> Debug project</p></li>
@@ -502,7 +509,7 @@ and search for “Proxy”. Please set “Http: Proxy” and disable
 documentation <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/keybindings">Key Bindings for Visual Studio Code</a>.</p>
 </section>
 <section id="settings">
-<span id="ide-vscode-settings"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Settings</a><a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
+<span id="ide-vscode-settings"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">Settings</a><a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/settings">How to configure VSCode settings?</a></p>
 <section id="platformio-ide-activateprojectontexteditorchange">
 <h3><code class="docutils literal notranslate"><span class="pre">platformio-ide.activateProjectOnTextEditorChange</span></code><a class="headerlink" href="#platformio-ide-activateprojectontexteditorchange" title="Permalink to this heading"></a></h3>
@@ -630,7 +637,7 @@ You can have different toolbars per workspace thanks to the <a class="reference 
 </section>
 </section>
 <section id="known-issues">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Known issues</a><a class="headerlink" href="#known-issues" title="Permalink to this heading"></a></h2>
 <section id="packagemanager-is-unable-to-install-tool">
 <h3>PackageManager is unable to install tool<a class="headerlink" href="#packagemanager-is-unable-to-install-tool" title="Permalink to this heading"></a></h3>
 <p>This is a known bug in VSCode Terminal
@@ -642,7 +649,7 @@ Afterwards, go back to using the VSCode Terminal.</p>
 </section>
 </section>
 <section id="changelog">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Changelog</a><a class="headerlink" href="#changelog" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Changelog</a><a class="headerlink" href="#changelog" title="Permalink to this heading"></a></h2>
 <p>Please visit the <a class="reference external" href="https://github.com/platformio/platformio-vscode-ide/releases">releases page</a>.</p>
 </section>
 </section>
