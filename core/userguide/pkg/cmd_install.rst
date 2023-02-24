@@ -194,7 +194,7 @@ Registry: Latest Version
 Install the latest package version from the |PIOREGISTRY|.
 
 .. tip::
-    We highly recommend pinning a package to a :ref:`_cmd_pkg_install_specific_version`
+    We highly recommend pinning a package to a :ref:`cmd_pkg_install_specific_version`
     and to prefix the version with the ``^`` (caret) symbol.
     This will instruct PlatformIO to install the latest compatible version
     avoiding breaking changes in the future.

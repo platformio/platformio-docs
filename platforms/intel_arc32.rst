@@ -49,12 +49,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = intel_arc32
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = intel_arc32@x.y.z
     board = ...
