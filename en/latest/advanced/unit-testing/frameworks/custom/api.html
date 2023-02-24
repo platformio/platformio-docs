@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Test Runner API &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/sphinx_highlight.js"></script>
         <script src="../../../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -133,7 +135,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Unit Testing</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Testing Frameworks</a></li>
           <li class="breadcrumb-item"><a href="index.html">Custom Testing Framework</a></li>
@@ -148,46 +150,46 @@
            <div itemprop="articleBody">
              
   <section id="test-runner-api">
-<span id="unit-testing-frameworks-custom-api"></span><h1>Test Runner API<a class="headerlink" href="#test-runner-api" title="Permalink to this heading">¶</a></h1>
-<div class="contents local topic" id="contents">
+<span id="unit-testing-frameworks-custom-api"></span><h1>Test Runner API<a class="headerlink" href="#test-runner-api" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#teststatus" id="id4">TestStatus</a></p></li>
 <li><p><a class="reference internal" href="#testcase" id="id5">TestCase</a></p></li>
 <li><p><a class="reference internal" href="#testcasesource" id="id6">TestCaseSource</a></p></li>
 <li><p><a class="reference internal" href="#customtestrunner" id="id7">CustomTestRunner</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="teststatus">
-<h2><a class="toc-backref" href="#id4">TestStatus</a><a class="headerlink" href="#teststatus" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">TestStatus</a><a class="headerlink" href="#teststatus" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestStatus">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestStatus</span></span><a class="headerlink" href="#TestStatus" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestStatus</span></span><a class="headerlink" href="#TestStatus" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code</dt>
+<dt class="field-odd">Source Code<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestStatus</a></p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestStatus.PASSED">
-<span class="sig-name descname"><span class="pre">PASSED</span></span><a class="headerlink" href="#TestStatus.PASSED" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">PASSED</span></span><a class="headerlink" href="#TestStatus.PASSED" title="Permalink to this definition"></a></dt>
 <dd><p>Attribute to mark test or test suite as passed.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestStatus.FAILED">
-<span class="sig-name descname"><span class="pre">FAILED</span></span><a class="headerlink" href="#TestStatus.FAILED" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">FAILED</span></span><a class="headerlink" href="#TestStatus.FAILED" title="Permalink to this definition"></a></dt>
 <dd><p>Attribute to mark test or test suite as failed.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestStatus.SKIPPED">
-<span class="sig-name descname"><span class="pre">SKIPPED</span></span><a class="headerlink" href="#TestStatus.SKIPPED" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">SKIPPED</span></span><a class="headerlink" href="#TestStatus.SKIPPED" title="Permalink to this definition"></a></dt>
 <dd><p>Attribute to mark test or test suite as skipped.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestStatus.ERRORED">
-<span class="sig-name descname"><span class="pre">ERRORED</span></span><a class="headerlink" href="#TestStatus.ERRORED" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ERRORED</span></span><a class="headerlink" href="#TestStatus.ERRORED" title="Permalink to this definition"></a></dt>
 <dd><p>Attribute to mark test or test suite as errored.
 It indicates that an unexpected error has happened
 while testing the test suite.</p>
@@ -197,21 +199,21 @@ while testing the test suite.</p>
 
 </section>
 <section id="testcase">
-<h2><a class="toc-backref" href="#id5">TestCase</a><a class="headerlink" href="#testcase" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">TestCase</a><a class="headerlink" href="#testcase" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestCase">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCase</span></span><a class="headerlink" href="#TestCase" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCase</span></span><a class="headerlink" href="#TestCase" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code</dt>
+<dt class="field-odd">Source Code<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestCase</a></p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.name">
-<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#TestCase.name" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#TestCase.name" title="Permalink to this definition"></a></dt>
 <dd><p>Name of a test case.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example</dt>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">test_configuration</span></code>, <code class="docutils literal notranslate"><span class="pre">embedded/test_mqtt_connection</span></code>, etc.</p>
 </dd>
 </dl>
@@ -219,10 +221,10 @@ while testing the test suite.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.status">
-<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#TestCase.status" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#TestCase.status" title="Permalink to this definition"></a></dt>
 <dd><p>Instance of <code class="docutils literal notranslate"><span class="pre">TestStatus</span></code> class.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example</dt>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">TestStatus.PASSED</span></code></p>
 </dd>
 </dl>
@@ -230,33 +232,33 @@ while testing the test suite.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.message">
-<span class="sig-name descname"><span class="pre">message</span></span><a class="headerlink" href="#TestCase.message" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">message</span></span><a class="headerlink" href="#TestCase.message" title="Permalink to this definition"></a></dt>
 <dd><p>Message that explains the reason why a test failed.
 Available only when <code class="docutils literal notranslate"><span class="pre">TestCase.status</span> <span class="pre">==</span> <span class="pre">TestStatus.FAILED</span></code>.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.stdout">
-<span class="sig-name descname"><span class="pre">stdout</span></span><a class="headerlink" href="#TestCase.stdout" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stdout</span></span><a class="headerlink" href="#TestCase.stdout" title="Permalink to this definition"></a></dt>
 <dd><p>Extra output when running a test case.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.duration">
-<span class="sig-name descname"><span class="pre">duration</span></span><a class="headerlink" href="#TestCase.duration" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">duration</span></span><a class="headerlink" href="#TestCase.duration" title="Permalink to this definition"></a></dt>
 <dd><p>Test case duration in seconds.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.exception">
-<span class="sig-name descname"><span class="pre">exception</span></span><a class="headerlink" href="#TestCase.exception" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">exception</span></span><a class="headerlink" href="#TestCase.exception" title="Permalink to this definition"></a></dt>
 <dd><p>Unexpected happened when running a test case.
 Should be an instance of the Python <code class="docutils literal notranslate"><span class="pre">Exception</span></code> class.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCase.source">
-<span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#TestCase.source" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#TestCase.source" title="Permalink to this definition"></a></dt>
 <dd><p>Instance of <code class="docutils literal notranslate"><span class="pre">TestCaseSource</span></code> (see below) that contains
 details of the source file and a test case line.</p>
 </dd></dl>
@@ -265,25 +267,25 @@ details of the source file and a test case line.</p>
 
 </section>
 <section id="testcasesource">
-<h2><a class="toc-backref" href="#id6">TestCaseSource</a><a class="headerlink" href="#testcasesource" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">TestCaseSource</a><a class="headerlink" href="#testcasesource" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="TestCaseSource">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCaseSource</span></span><a class="headerlink" href="#TestCaseSource" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestCaseSource</span></span><a class="headerlink" href="#TestCaseSource" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Source Code</dt>
+<dt class="field-odd">Source Code<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/result.py">TestCaseSource</a></p>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCaseSource.file">
-<span class="sig-name descname"><span class="pre">file</span></span><a class="headerlink" href="#TestCaseSource.file" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">file</span></span><a class="headerlink" href="#TestCaseSource.file" title="Permalink to this definition"></a></dt>
 <dd><p>Path of the source file where a test case is implemented.
 The relative path to a project folder is allowed.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="TestCaseSource.line">
-<span class="sig-name descname"><span class="pre">line</span></span><a class="headerlink" href="#TestCaseSource.line" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">line</span></span><a class="headerlink" href="#TestCaseSource.line" title="Permalink to this definition"></a></dt>
 <dd><p>Number of the line for a test case.</p>
 </dd></dl>
 
@@ -291,24 +293,24 @@ The relative path to a project folder is allowed.</p>
 
 </section>
 <section id="customtestrunner">
-<span id="unit-testing-frameworks-custom-api-test-runner"></span><h2><a class="toc-backref" href="#id7">CustomTestRunner</a><a class="headerlink" href="#customtestrunner" title="Permalink to this heading">¶</a></h2>
+<span id="unit-testing-frameworks-custom-api-test-runner"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">CustomTestRunner</a><a class="headerlink" href="#customtestrunner" title="Permalink to this heading"></a></h2>
 <p><strong>CustomTestRunner</strong> class must inherit <code class="docutils literal notranslate"><span class="pre">TestRunnerBase</span></code> or
 the already implemented runners for supported <a class="reference internal" href="../index.html#unit-testing-frameworks"><span class="std std-ref">Testing Frameworks</span></a>.
 See the source code of
 <a class="reference external" href="https://github.com/platformio/platformio-core/tree/develop/platformio/test/runners">already implemented runners</a>.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="CustomTestRunner">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomTestRunner</span></span><a class="headerlink" href="#CustomTestRunner" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomTestRunner</span></span><a class="headerlink" href="#CustomTestRunner" title="Permalink to this definition"></a></dt>
 <dd><blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">Source Code</dt>
+<dt class="field-odd">Source Code<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/base.py">TestRunnerBase</a>,</p>
 </dd>
 </dl>
 </div></blockquote>
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.setup">
-<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.setup" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.setup" title="Permalink to this definition"></a></dt>
 <dd><p>Method called to prepare the test runner. This is called
 immediately before calling <code class="docutils literal notranslate"><span class="pre">self.stage_building()</span></code>.
 The default implementation does nothing.</p>
@@ -316,7 +318,7 @@ The default implementation does nothing.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.teardown">
-<span class="sig-name descname"><span class="pre">teardown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.teardown" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">teardown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.teardown" title="Permalink to this definition"></a></dt>
 <dd><p>Method called immediately after the <code class="docutils literal notranslate"><span class="pre">self.stage_testing()</span></code>
 method has been called and the result recorded. This is called
 even if the test method raised an exception, so the implementation
@@ -326,13 +328,13 @@ the internal state. The default implementation does nothing.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.stage_building">
-<span class="sig-name descname"><span class="pre">stage_building</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_building" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stage_building</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_building" title="Permalink to this definition"></a></dt>
 <dd><p>Method called to build source code of a particular test.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.stage_uploading">
-<span class="sig-name descname"><span class="pre">stage_uploading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_uploading" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stage_uploading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_uploading" title="Permalink to this definition"></a></dt>
 <dd><p>Method called to upload a testing firmware to the target embedded
 device. This method is ignored on the <a class="reference internal" href="../../../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a>
 development platform.</p>
@@ -340,7 +342,7 @@ development platform.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.stage_testing">
-<span class="sig-name descname"><span class="pre">stage_testing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_testing" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">stage_testing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.stage_testing" title="Permalink to this definition"></a></dt>
 <dd><p>Method called to run test cases and record test results via
 calling <code class="docutils literal notranslate"><span class="pre">self.test_suite.add_case(TestCase(...))</span></code>.</p>
 <p>You can implement your own testing method depending on the
@@ -351,12 +353,12 @@ parsing them, and recoding via <code class="docutils literal notranslate"><span 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.configure_build_env">
-<span class="sig-name descname"><span class="pre">configure_build_env</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.configure_build_env" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">configure_build_env</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.configure_build_env" title="Permalink to this definition"></a></dt>
 <dd><p>Method called to configure a SCons build environment in the testing
 mode. It is uesfult to provide extra runtime configuration for a
 testing framework (macros, includes, dynamic configs).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Example</dt>
+<dt class="field-odd">Example<span class="colon">:</span></dt>
 <dd class="field-odd"><p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py">Unity Test Runner</a>.</p>
 </dd>
 </dl>
@@ -364,14 +366,14 @@ testing framework (macros, includes, dynamic configs).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.on_testing_data_output">
-<span class="sig-name descname"><span class="pre">on_testing_data_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_data_output" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">on_testing_data_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_data_output" title="Permalink to this definition"></a></dt>
 <dd><p>Method called on receiving data when running tests
 at the <code class="docutils literal notranslate"><span class="pre">stage_testing</span></code>. <code class="docutils literal notranslate"><span class="pre">data</span></code> can be the
 complete test result output, line, or part of a line.
 When data are chunked, <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> will be called
 multiple times until testing is completed.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>data</strong> (<em>str</em>) -- testing output data</p>
 </dd>
 </dl>
@@ -379,11 +381,11 @@ multiple times until testing is completed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="CustomTestRunner.on_testing_line_output">
-<span class="sig-name descname"><span class="pre">on_testing_line_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_line_output" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">on_testing_line_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#CustomTestRunner.on_testing_line_output" title="Permalink to this definition"></a></dt>
 <dd><p>Method called on each line split from data received
 by <code class="docutils literal notranslate"><span class="pre">on_testing_data_output</span></code> method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>line</strong> (<em>str</em>) -- testing output line</p>
 </dd>
 </dl>
@@ -481,27 +483,27 @@ by <code class="docutils literal notranslate"><span class="pre">on_testing_data_
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -542,7 +544,7 @@ by <code class="docutils literal notranslate"><span class="pre">on_testing_data_
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

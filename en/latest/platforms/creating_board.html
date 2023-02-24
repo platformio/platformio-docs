@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Embedded Boards &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,7 +123,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
       <li class="breadcrumb-item active">Custom Embedded Boards</li>
       <li class="wy-breadcrumbs-aside">
@@ -134,14 +136,14 @@
            <div itemprop="articleBody">
              
   <section id="custom-embedded-boards">
-<span id="board-creating"></span><h1><a class="toc-backref" href="#id1">Custom Embedded Boards</a><a class="headerlink" href="#custom-embedded-boards" title="Permalink to this heading">¶</a></h1>
+<span id="board-creating"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">Custom Embedded Boards</a><a class="headerlink" href="#custom-embedded-boards" title="Permalink to this heading"></a></h1>
 <p><em>PlatformIO</em> has pre-built settings for many popular embedded
 boards. The list of these boards is available as a web page at
 <a class="reference external" href="https://platformio.org/boards">PlatformIO Boards Explorer</a> or
 through the CLI command <a class="reference internal" href="../core/userguide/cmd_boards.html#cmd-boards"><span class="std std-ref">pio boards</span></a>.</p>
 <p>Custom boards can also be defined from scratch or by overriding settings
 of existing boards. All data is declared using the <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON syntax</a> via <a class="reference external" href="http://en.wikipedia.org/wiki/Associative_array">associative array</a> name/value pairs.</p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#custom-embedded-boards" id="id1">Custom Embedded Boards</a></p>
@@ -152,9 +154,9 @@ of existing boards. All data is declared using the <a class="reference external"
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="json-structure">
-<h2><a class="toc-backref" href="#id2">JSON Structure</a><a class="headerlink" href="#json-structure" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">JSON Structure</a><a class="headerlink" href="#json-structure" title="Permalink to this heading"></a></h2>
 <p>The key fields are:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">build</span></code> data is handed over to the <a class="reference internal" href="index.html#platforms"><span class="std std-ref">Development Platforms</span></a> and <a class="reference internal" href="../frameworks/index.html#frameworks"><span class="std std-ref">Frameworks</span></a> builders</p></li>
@@ -193,7 +195,7 @@ of existing boards. All data is declared using the <a class="reference external"
 </div>
 </section>
 <section id="installation">
-<h2><a class="toc-backref" href="#id3">Installation</a><a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Installation</a><a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Create <code class="docutils literal notranslate"><span class="pre">boards</span></code> directory in <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a> if it
 doesn’t exist.</p></li>
@@ -210,7 +212,7 @@ board’s JSON files to <a class="reference internal" href="../projectconf/secti
 </div>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Please take a look at the source code of
 <a class="reference external" href="https://github.com/platformio?query=platform-">PlatformIO Development Platforms</a>
 and navigate to <code class="docutils literal notranslate"><span class="pre">boards</span></code> folder of the repository.</p>
@@ -304,27 +306,27 @@ and navigate to <code class="docutils literal notranslate"><span class="pre">boa
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -365,7 +367,7 @@ and navigate to <code class="docutils literal notranslate"><span class="pre">boa
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

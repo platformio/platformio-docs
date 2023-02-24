@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PlatformIO IDE &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -116,7 +118,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">PlatformIO IDE</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/ide/pioide.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -128,7 +130,7 @@
            <div itemprop="articleBody">
              
   <section id="platformio-ide">
-<span id="pioide"></span><h1>PlatformIO IDE<a class="headerlink" href="#platformio-ide" title="Permalink to this heading">¶</a></h1>
+<span id="pioide"></span><h1>PlatformIO IDE<a class="headerlink" href="#platformio-ide" title="Permalink to this heading"></a></h1>
 <p><strong>PlatformIO IDE is the next-generation integrated development environment for IoT.</strong></p>
 <ul>
 <li><p>Cross-platform build system without external dependencies to the OS software:</p>
@@ -161,7 +163,7 @@ and text editors.</p>
 have found it easier to get started</p>
 </div>
 <section id="platformio-for-vscode">
-<h2>PlatformIO for VSCode<a class="headerlink" href="#platformio-for-vscode" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO for VSCode<a class="headerlink" href="#platformio-for-vscode" title="Permalink to this heading"></a></h2>
 <p><strong>Visual Studio Code</strong> is a lightweight but powerful source code editor which
 runs on your desktop and is available for Windows, macOS and Linux. It comes
 with built-in support for JavaScript, TypeScript and Node.js and has a rich
@@ -171,7 +173,7 @@ Go) and runtimes (such as .NET and Unity).</p>
 <a class="reference external image-reference" href="vscode.html"><img alt="../../_images/platformio-ide-vscode.png" src="../../_images/platformio-ide-vscode.png" /></a>
 </section>
 <section id="platformio-for-clion-experimental">
-<h2>PlatformIO for CLion (experimental)<a class="headerlink" href="#platformio-for-clion-experimental" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO for CLion (experimental)<a class="headerlink" href="#platformio-for-clion-experimental" title="Permalink to this heading"></a></h2>
 <p>The <strong>CLion</strong> is a cross-platform C/C++ IDE for
 Linux, OS X, and Windows. CLion includes such features as a smart editor, code
 generation, code quality assurance, automated refactorings, on-the-fly code analysis,
@@ -268,27 +270,27 @@ project manager, integrated version control systems and debugger.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -329,7 +331,7 @@ project manager, integrated version control systems and debugger.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

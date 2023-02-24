@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Targets &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -129,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Advanced Scripting</a></li>
       <li class="breadcrumb-item active">Custom Targets</li>
       <li class="wy-breadcrumbs-aside">
@@ -142,7 +144,7 @@
            <div itemprop="articleBody">
              
   <section id="custom-targets">
-<span id="scripting-custom-targets"></span><h1>Custom Targets<a class="headerlink" href="#custom-targets" title="Permalink to this heading">¶</a></h1>
+<span id="scripting-custom-targets"></span><h1>Custom Targets<a class="headerlink" href="#custom-targets" title="Permalink to this heading"></a></h1>
 <p>PlatformIO allows you to declare unlimited number of the custom targets. There are a
 lot of use cases for them:</p>
 <ul class="simple">
@@ -154,7 +156,7 @@ lot of use cases for them:</p>
 <p>A custom target can be processed using <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> option and
 you can list them via <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-list-targets"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--list-targets</span></code></a> command.</p>
 <section id="build-system-api">
-<h2>Build System API<a class="headerlink" href="#build-system-api" title="Permalink to this heading">¶</a></h2>
+<h2>Build System API<a class="headerlink" href="#build-system-api" title="Permalink to this heading"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span>
@@ -169,28 +171,28 @@ you can list them via <a class="reference internal" href="../core/userguide/cmd_
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">AddCustomTarget</span></code> arguments:</p>
 <dl class="field-list simple">
-<dt class="field-odd">name</dt>
+<dt class="field-odd">name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A name of target. ASCII chars (a-z, 0-9, _, -) are recommended. Good names are
 “gen_headers”, “program_bitstream”, etc.</p>
 </dd>
-<dt class="field-even">dependencies</dt>
+<dt class="field-even">dependencies<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of dependencies that should be built BEFORE target will be launched. It is
 possible pass multiple dependencies as a Python list <code class="docutils literal notranslate"><span class="pre">[&quot;dep1&quot;,</span> <span class="pre">dep_target_2]</span></code>.
 If a target does not have dependencies, <code class="docutils literal notranslate"><span class="pre">None</span></code> should be passed.</p>
 </dd>
-<dt class="field-odd">actions</dt>
+<dt class="field-odd">actions<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A list of actions to call on a target. It is possible to pass multiple actions as
 a Python list <code class="docutils literal notranslate"><span class="pre">[&quot;python</span> <span class="pre">--version&quot;,</span> <span class="pre">my_calback]</span></code>.</p>
 </dd>
-<dt class="field-even">title</dt>
+<dt class="field-even">title<span class="colon">:</span></dt>
 <dd class="field-even"><p>A title of a target. It will be printed when using <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> or <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>.
 We recommend to keep a title very short, 1-2 words.</p>
 </dd>
-<dt class="field-odd">description</dt>
+<dt class="field-odd">description<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The same as a <code class="docutils literal notranslate"><span class="pre">title</span></code> argument but allows you to provide detailed explanation
 what target does.</p>
 </dd>
-<dt class="field-even">always_build</dt>
+<dt class="field-even">always_build<span class="colon">:</span></dt>
 <dd class="field-even"><p>If there are declared <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> and they are already built, this target
 will not be called if <code class="docutils literal notranslate"><span class="pre">always_build=False</span></code>. A default value is
 <code class="docutils literal notranslate"><span class="pre">always_build=True</span></code> and means always building/calling target.</p>
@@ -198,9 +200,9 @@ will not be called if <code class="docutils literal notranslate"><span class="pr
 </dl>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <section id="command-shortcut">
-<h3>Command shortcut<a class="headerlink" href="#command-shortcut" title="Permalink to this heading">¶</a></h3>
+<h3>Command shortcut<a class="headerlink" href="#command-shortcut" title="Permalink to this heading"></a></h3>
 <p>Create a custom <code class="docutils literal notranslate"><span class="pre">node</span></code> target (alias) which will print a NodeJS version</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -231,7 +233,7 @@ will not be called if <code class="docutils literal notranslate"><span class="pr
 <p>Now, run <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">sysenv</span></code> or <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">pioenv</span></code> (short version).</p>
 </section>
 <section id="dependent-target">
-<h3>Dependent target<a class="headerlink" href="#dependent-target" title="Permalink to this heading">¶</a></h3>
+<h3>Dependent target<a class="headerlink" href="#dependent-target" title="Permalink to this heading"></a></h3>
 <p>Sometimes you need to run a command which depends on another target (file,
 firmware, etc). Let’s create an <code class="docutils literal notranslate"><span class="pre">ota</span></code> target and declare command which will
 depend on a project firmware. If a build process successes, declared command
@@ -256,7 +258,7 @@ will be run.</p>
 <p>Now, run <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">ota</span></code>.</p>
 </section>
 <section id="target-with-options">
-<h3>Target with options<a class="headerlink" href="#target-with-options" title="Permalink to this heading">¶</a></h3>
+<h3>Target with options<a class="headerlink" href="#target-with-options" title="Permalink to this heading"></a></h3>
 <p>Let’s create a simple <code class="docutils literal notranslate"><span class="pre">ping</span></code> target and process it with
 <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span> <span class="pre">ping</span></code> command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
@@ -371,27 +373,27 @@ will be run.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -432,7 +434,7 @@ will be run.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

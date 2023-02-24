@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STM32Cube &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -202,7 +204,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Frameworks</a></li>
       <li class="breadcrumb-item active">STM32Cube</li>
       <li class="wy-breadcrumbs-aside">
@@ -215,14 +217,14 @@
            <div itemprop="articleBody">
              
   <section id="stm32cube">
-<span id="framework-stm32cube"></span><h1>STM32Cube<a class="headerlink" href="#stm32cube" title="Permalink to this heading">¶</a></h1>
+<span id="framework-stm32cube"></span><h1>STM32Cube<a class="headerlink" href="#stm32cube" title="Permalink to this heading"></a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Configuration</dt>
+<dt class="field-odd">Configuration<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">stm32cube</span></code></p>
 </dd>
 </dl>
 <p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#tutorials" id="id3">Tutorials</a></p></li>
@@ -233,17 +235,17 @@
 <li><p><a class="reference internal" href="#debugging" id="id8">Debugging</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id9">Boards</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id3">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/ststm32/stm32cube_debugging_unit_testing.html#tutorial-stm32cube-debugging-unit-testing"><span class="std std-ref">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</span></a></p></li>
 </ul>
 </section>
 <section id="configuration-options">
-<h2><a class="toc-backref" href="#id4">Configuration Options</a><a class="headerlink" href="#configuration-options" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Configuration Options</a><a class="headerlink" href="#configuration-options" title="Permalink to this heading"></a></h2>
 <section id="custom-configuration-header">
-<h3>Custom Configuration Header<a class="headerlink" href="#custom-configuration-header" title="Permalink to this heading">¶</a></h3>
+<h3>Custom Configuration Header<a class="headerlink" href="#custom-configuration-header" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>STM32Cube-based projects require a special configuration header file that contains
 several essential macros (oscillator adaptations, caching settings, etc.) and controls
@@ -263,7 +265,7 @@ option <code class="docutils literal notranslate"><span class="pre">custom_confi
 long as the path to this file is visible to the build system.</p>
 </section>
 <section id="custom-system-setup-implementation">
-<h3>Custom System Setup Implementation<a class="headerlink" href="#custom-system-setup-implementation" title="Permalink to this heading">¶</a></h3>
+<h3>Custom System Setup Implementation<a class="headerlink" href="#custom-system-setup-implementation" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>Besides project source files, STM32Cube requires additional code to properly startup
 the MCU and prepare a runtime environment. By default, PlatformIO is capable of compiling
@@ -280,7 +282,7 @@ option, for example:</p>
 </div>
 </section>
 <section id="selecting-system-file">
-<h3>Selecting System File<a class="headerlink" href="#selecting-system-file" title="Permalink to this heading">¶</a></h3>
+<h3>Selecting System File<a class="headerlink" href="#selecting-system-file" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">Dynamically</span> <span class="pre">selected</span></code></p>
 <p>This file (e.g. <code class="docutils literal notranslate"><span class="pre">system_stm32f0xx.c</span></code>) is responsible for basic system initialization
 that is called after the reset routine and before jumping to the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.
@@ -298,7 +300,7 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 </div>
 </section>
 <section id="custom-startup-file">
-<h3>Custom Startup File<a class="headerlink" href="#custom-startup-file" title="Permalink to this heading">¶</a></h3>
+<h3>Custom Startup File<a class="headerlink" href="#custom-startup-file" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">Dynamically</span> <span class="pre">selected</span></code></p>
 <p>The Startup File (e.g. <code class="docutils literal notranslate"><span class="pre">startup_stm32f205xx.s</span></code>) is responsible for preparing a proper
 runtime environment before calling the <code class="docutils literal notranslate"><span class="pre">main</span></code> function. It contains a minimal
@@ -316,7 +318,7 @@ startup file, for example:</p>
 </div>
 </section>
 <section id="disabling-bundled-components">
-<h3>Disabling Bundled Components<a class="headerlink" href="#disabling-bundled-components" title="Permalink to this heading">¶</a></h3>
+<h3>Disabling Bundled Components<a class="headerlink" href="#disabling-bundled-components" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>By default, PlatformIO adds dynamic library manifests to STM32Cube components (BSPs,
 middleware, etc.), so <a class="reference internal" href="../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> can be used to resolve project dependencies and
@@ -332,7 +334,7 @@ If your project doesn’t require this feature, it can be disabled via the
 </div>
 </section>
 <section id="custom-build-variant">
-<h3>Custom Build Variant<a class="headerlink" href="#custom-build-variant" title="Permalink to this heading">¶</a></h3>
+<h3>Custom Build Variant<a class="headerlink" href="#custom-build-variant" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
 <p>The STM32Cube framework for each MCU family may contain Board Support Packages (BSPs)
 for various development kits. These BSPs mostly contain drivers for on-board hardware
@@ -347,7 +349,7 @@ target-specific macros should be used when compiling BSP components, for example
 </div>
 </section>
 <section id="custom-dsp-library">
-<h3>Custom DSP Library<a class="headerlink" href="#custom-dsp-library" title="Permalink to this heading">¶</a></h3>
+<h3>Custom DSP Library<a class="headerlink" href="#custom-dsp-library" title="Permalink to this heading"></a></h3>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">(yes</span> <span class="pre">or</span> <span class="pre">no)</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: <code class="docutils literal notranslate"><span class="pre">no</span></code></p>
 <p>The STM32Cube contains header files and precompiled static archives for commonly used
 DSP functions. By default, PlatformIO adds paths to these headers and archives to each
@@ -364,7 +366,7 @@ framework, the <code class="docutils literal notranslate"><span class="pre">cust
 </section>
 </section>
 <section id="using-with-stm32cubemx">
-<h2><a class="toc-backref" href="#id5">Using with STM32CubeMX</a><a class="headerlink" href="#using-with-stm32cubemx" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Using with STM32CubeMX</a><a class="headerlink" href="#using-with-stm32cubemx" title="Permalink to this heading"></a></h2>
 <p>At the moment there is no seamless integration with projects generated by <em>STM32CubeMX</em>
 tool. Instead, a small cross-platform Python application called <code class="docutils literal notranslate"><span class="pre">stm32pio</span></code>
 can be used to create and update PlatformIO projects from <em>STM32CubeMX</em> <code class="docutils literal notranslate"><span class="pre">.ioc</span></code> files.
@@ -373,12 +375,8 @@ PlatformIO project with compatible parameters to stick them both together.</p>
 <p>More details about <code class="docutils literal notranslate"><span class="pre">stm32pio</span></code> tool can be found in <a class="reference external" href="https://github.com/ussserrr/stm32pio">the official repository</a>.</p>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id6">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -392,15 +390,15 @@ PlatformIO project with compatible parameters to stick them both together.</p>
 </table>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">STM32Cube for ST STM32</a></p></li>
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id8">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
-<div class="contents local topic" id="id1">
+<nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#tools-debug-probes" id="id10">Tools &amp; Debug Probes</a></p>
 <ul>
@@ -409,9 +407,9 @@ PlatformIO project with compatible parameters to stick them both together.</p>
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id10">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -422,18 +420,10 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id11">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id11" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading"></a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -1148,19 +1138,11 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id12">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id12" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2283,7 +2265,7 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id9">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -2292,17 +2274,8 @@ Please click on board name for the further details.</p>
 </ul>
 </div>
 <section id="bitsquared">
-<h3>1BitSquared<a class="headerlink" href="#bitsquared" title="Permalink to this heading">¶</a></h3>
+<h3>1BitSquared<a class="headerlink" href="#bitsquared" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2326,17 +2299,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="id2">
-<h3>96Boards<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<h3>96Boards<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2384,17 +2348,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading">¶</a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2418,17 +2373,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="afroflight">
-<h3>AfroFlight<a class="headerlink" href="#afroflight" title="Permalink to this heading">¶</a></h3>
+<h3>AfroFlight<a class="headerlink" href="#afroflight" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2452,17 +2398,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="airbot">
-<h3>Airbot<a class="headerlink" href="#airbot" title="Permalink to this heading">¶</a></h3>
+<h3>Airbot<a class="headerlink" href="#airbot" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2486,17 +2423,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="armed">
-<h3>Armed<a class="headerlink" href="#armed" title="Permalink to this heading">¶</a></h3>
+<h3>Armed<a class="headerlink" href="#armed" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2520,17 +2448,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="armstrap">
-<h3>Armstrap<a class="headerlink" href="#armstrap" title="Permalink to this heading">¶</a></h3>
+<h3>Armstrap<a class="headerlink" href="#armstrap" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2570,17 +2489,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="avnet-silica">
-<h3>Avnet Silica<a class="headerlink" href="#avnet-silica" title="Permalink to this heading">¶</a></h3>
+<h3>Avnet Silica<a class="headerlink" href="#avnet-silica" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2604,17 +2514,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="blueswireless">
-<h3>BluesWireless<a class="headerlink" href="#blueswireless" title="Permalink to this heading">¶</a></h3>
+<h3>BluesWireless<a class="headerlink" href="#blueswireless" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2638,17 +2539,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="devebox">
-<h3>DevEBox<a class="headerlink" href="#devebox" title="Permalink to this heading">¶</a></h3>
+<h3>DevEBox<a class="headerlink" href="#devebox" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2680,17 +2572,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="diymore">
-<h3>Diymore<a class="headerlink" href="#diymore" title="Permalink to this heading">¶</a></h3>
+<h3>Diymore<a class="headerlink" href="#diymore" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2714,17 +2597,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="econode">
-<h3>Econode<a class="headerlink" href="#econode" title="Permalink to this heading">¶</a></h3>
+<h3>Econode<a class="headerlink" href="#econode" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2748,17 +2622,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="electrosmith">
-<h3>Electrosmith<a class="headerlink" href="#electrosmith" title="Permalink to this heading">¶</a></h3>
+<h3>Electrosmith<a class="headerlink" href="#electrosmith" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2798,17 +2663,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="elektor">
-<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading">¶</a></h3>
+<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2840,17 +2696,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="espotel">
-<h3>Espotel<a class="headerlink" href="#espotel" title="Permalink to this heading">¶</a></h3>
+<h3>Espotel<a class="headerlink" href="#espotel" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2874,17 +2721,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="fysetc">
-<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading">¶</a></h3>
+<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -2908,17 +2746,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="generic">
-<h3>Generic<a class="headerlink" href="#generic" title="Permalink to this heading">¶</a></h3>
+<h3>Generic<a class="headerlink" href="#generic" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3526,17 +3355,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="hy">
-<h3>HY<a class="headerlink" href="#hy" title="Permalink to this heading">¶</a></h3>
+<h3>HY<a class="headerlink" href="#hy" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3560,17 +3380,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="leaflabs">
-<h3>LeafLabs<a class="headerlink" href="#leaflabs" title="Permalink to this heading">¶</a></h3>
+<h3>LeafLabs<a class="headerlink" href="#leaflabs" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3618,17 +3429,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="mxchip">
-<h3>MXChip<a class="headerlink" href="#mxchip" title="Permalink to this heading">¶</a></h3>
+<h3>MXChip<a class="headerlink" href="#mxchip" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3652,17 +3454,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="malyan">
-<h3>Malyan<a class="headerlink" href="#malyan" title="Permalink to this heading">¶</a></h3>
+<h3>Malyan<a class="headerlink" href="#malyan" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3702,17 +3495,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="microduino">
-<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading">¶</a></h3>
+<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3736,17 +3520,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="multitech">
-<h3>MultiTech<a class="headerlink" href="#multitech" title="Permalink to this heading">¶</a></h3>
+<h3>MultiTech<a class="headerlink" href="#multitech" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3794,17 +3569,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="netduino">
-<h3>Netduino<a class="headerlink" href="#netduino" title="Permalink to this heading">¶</a></h3>
+<h3>Netduino<a class="headerlink" href="#netduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3828,17 +3594,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="olimex">
-<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this heading">¶</a></h3>
+<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3902,17 +3659,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="pybstick">
-<h3>PYBStick<a class="headerlink" href="#pybstick" title="Permalink to this heading">¶</a></h3>
+<h3>PYBStick<a class="headerlink" href="#pybstick" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3960,17 +3708,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="piconomix">
-<h3>Piconomix<a class="headerlink" href="#piconomix" title="Permalink to this heading">¶</a></h3>
+<h3>Piconomix<a class="headerlink" href="#piconomix" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -3994,17 +3733,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="prntrboard">
-<h3>PrntrBoard<a class="headerlink" href="#prntrboard" title="Permalink to this heading">¶</a></h3>
+<h3>PrntrBoard<a class="headerlink" href="#prntrboard" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4028,17 +3758,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rak">
-<h3>RAK<a class="headerlink" href="#rak" title="Permalink to this heading">¶</a></h3>
+<h3>RAK<a class="headerlink" href="#rak" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4070,17 +3791,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rumba">
-<h3>RUMBA<a class="headerlink" href="#rumba" title="Permalink to this heading">¶</a></h3>
+<h3>RUMBA<a class="headerlink" href="#rumba" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4104,17 +3816,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="remram">
-<h3>RemRam<a class="headerlink" href="#remram" title="Permalink to this heading">¶</a></h3>
+<h3>RemRam<a class="headerlink" href="#remram" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4138,17 +3841,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="robotdyn">
-<h3>RobotDyn<a class="headerlink" href="#robotdyn" title="Permalink to this heading">¶</a></h3>
+<h3>RobotDyn<a class="headerlink" href="#robotdyn" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4172,17 +3866,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rushup">
-<h3>RushUp<a class="headerlink" href="#rushup" title="Permalink to this heading">¶</a></h3>
+<h3>RushUp<a class="headerlink" href="#rushup" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -4214,17 +3899,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="st">
-<h3>ST<a class="headerlink" href="#st" title="Permalink to this heading">¶</a></h3>
+<h3>ST<a class="headerlink" href="#st" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5016,17 +4692,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="storm32">
-<h3>STorM32<a class="headerlink" href="#storm32" title="Permalink to this heading">¶</a></h3>
+<h3>STorM32<a class="headerlink" href="#storm32" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5050,17 +4717,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading">¶</a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5092,17 +4750,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="semtech">
-<h3>Semtech<a class="headerlink" href="#semtech" title="Permalink to this heading">¶</a></h3>
+<h3>Semtech<a class="headerlink" href="#semtech" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5126,17 +4775,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="taulabs">
-<h3>TauLabs<a class="headerlink" href="#taulabs" title="Permalink to this heading">¶</a></h3>
+<h3>TauLabs<a class="headerlink" href="#taulabs" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5160,17 +4800,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="thunderpack">
-<h3>ThunderPack<a class="headerlink" href="#thunderpack" title="Permalink to this heading">¶</a></h3>
+<h3>ThunderPack<a class="headerlink" href="#thunderpack" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5202,17 +4833,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="tlera-corporation">
-<h3>Tlera Corporation<a class="headerlink" href="#tlera-corporation" title="Permalink to this heading">¶</a></h3>
+<h3>Tlera Corporation<a class="headerlink" href="#tlera-corporation" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5260,17 +4882,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="vae">
-<h3>VAE<a class="headerlink" href="#vae" title="Permalink to this heading">¶</a></h3>
+<h3>VAE<a class="headerlink" href="#vae" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5294,17 +4907,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="vccgnd">
-<h3>VCCGND<a class="headerlink" href="#vccgnd" title="Permalink to this heading">¶</a></h3>
+<h3>VCCGND<a class="headerlink" href="#vccgnd" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5336,17 +4940,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="waveshare">
-<h3>Waveshare<a class="headerlink" href="#waveshare" title="Permalink to this heading">¶</a></h3>
+<h3>Waveshare<a class="headerlink" href="#waveshare" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5370,17 +4965,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="weact-studio">
-<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this heading">¶</a></h3>
+<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5436,17 +5022,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rhomb-io">
-<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Permalink to this heading">¶</a></h3>
+<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5470,17 +5047,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="sakura-io">
-<h3>sakura.io<a class="headerlink" href="#sakura-io" title="Permalink to this heading">¶</a></h3>
+<h3>sakura.io<a class="headerlink" href="#sakura-io" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5504,17 +5072,8 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="u-blox">
-<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading">¶</a></h3>
+<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Platform</p></th>
@@ -5667,27 +5226,27 @@ Please click on board name for the further details.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -5728,7 +5287,7 @@ Please click on board name for the further details.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

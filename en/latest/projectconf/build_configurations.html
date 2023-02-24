@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Build Configurations &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -126,7 +128,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Build Configurations</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/projectconf/build_configurations.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -138,20 +140,20 @@
            <div itemprop="articleBody">
              
   <section id="build-configurations">
-<span id="id1"></span><h1>Build Configurations<a class="headerlink" href="#build-configurations" title="Permalink to this heading">¶</a></h1>
+<span id="id1"></span><h1>Build Configurations<a class="headerlink" href="#build-configurations" title="Permalink to this heading"></a></h1>
 <p>There are 3 types (<a class="reference internal" href="sections/env/options/build/build_type.html#projectconf-build-type"><span class="std std-ref">build_type</span></a>) of build configuration in
 PlatformIO:</p>
 <dl class="field-list simple">
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">release</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">release</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>Default configuration</strong>. A “release” configuration of your firmware/program
 does not contain symbolic debug information and is optimized for the firmware
 size or speed (depending on <a class="reference internal" href="../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>)</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">test</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">test</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>A “test” configuration extends a build environment with <code class="docutils literal notranslate"><span class="pre">PIO_UNIT_TESTING</span></code>
 macro and with extra flags provided by the <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> framework</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">debug</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">debug</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>A “debug” configuration of your firmware/program is compiled with full
 symbolic debug information and no optimization. Optimization complicates
 debugging because the relationship between source code and generated
@@ -283,27 +285,27 @@ automatically by <a class="reference internal" href="../plus/debugging.html#piod
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -344,7 +346,7 @@ automatically by <a class="reference internal" href="../plus/debugging.html#piod
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

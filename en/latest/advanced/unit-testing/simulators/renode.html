@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Renode &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -131,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Unit Testing</a></li>
           <li class="breadcrumb-item"><a href="index.html">Simulators</a></li>
       <li class="breadcrumb-item active">Renode</li>
@@ -145,14 +147,14 @@
            <div itemprop="articleBody">
              
   <section id="renode">
-<span id="unit-testing-simulators-renode"></span><h1>Renode<a class="headerlink" href="#renode" title="Permalink to this heading">¶</a></h1>
+<span id="unit-testing-simulators-renode"></span><h1>Renode<a class="headerlink" href="#renode" title="Permalink to this heading"></a></h1>
 <a class="reference external image-reference" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../../_images/renode.png" src="../../../_images/renode.png" /></a>
 <p>Renode is a development framework which accelerates IoT and embedded systems
 development by letting you simulate physical hardware systems - including both the CPU,
 peripherals, sensors, environment and wired or wireless medium between nodes.
 For more information, see <a class="reference external" href="https://renode.io/?utm_source=platformio&amp;utm_medium=docs">Renode’s official website</a>.</p>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Integration of the Renode requires adding the
 <a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-renode">platformio/tool-renode</a>
 package to the <a class="reference internal" href="../../../projectconf/sections/env/options/platform/platform_packages.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> option in your
@@ -177,7 +179,7 @@ board from <a class="reference internal" href="../../../platforms/sifive.html#pl
 </div>
 </section>
 <section id="testing">
-<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">¶</a></h2>
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h2>
 <p>Renode does not require a firmware uploading stage. Please use
 the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-without-uploading"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--without-uploading</span></code></a> command option.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test --without-uploading
@@ -305,27 +307,27 @@ hifive1-revb   test_dummy  PASSED    00:00:09.976
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -366,7 +368,7 @@ hifive1-revb   test_dummy  PASSED    00:00:09.976
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

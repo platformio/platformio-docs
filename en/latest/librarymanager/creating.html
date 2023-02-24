@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creating Library &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -125,7 +127,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Library Management</a></li>
       <li class="breadcrumb-item active">Creating Library</li>
       <li class="wy-breadcrumbs-aside">
@@ -138,7 +140,7 @@
            <div itemprop="articleBody">
              
   <section id="creating-library">
-<span id="library-creating"></span><h1>Creating Library<a class="headerlink" href="#creating-library" title="Permalink to this heading">¶</a></h1>
+<span id="library-creating"></span><h1>Creating Library<a class="headerlink" href="#creating-library" title="Permalink to this heading"></a></h1>
 <p>Managing components between the projects is a historical issue. A common code
 is duplicated between different projects that lead to project complexity.
 A good practice is to organize interdependent components as the separate libraries
@@ -150,7 +152,7 @@ The only requirement is a library manifest file -
 <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <a class="reference external" href="https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata">library.properties</a>, or <a class="reference external" href="http://docs.yottabuild.org/reference/module.html">module.json</a>.
 It must be located in the root of a library.</p>
 <p>We highly recommend using <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> for better compatibility and avoiding any issues.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#structure" id="id1">Structure</a></p></li>
@@ -158,9 +160,9 @@ It must be located in the root of a library.</p>
 <li><p><a class="reference internal" href="#publishing" id="id3">Publishing</a></p></li>
 <li><p><a class="reference internal" href="#examples" id="id4">Examples</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="structure">
-<h2><a class="toc-backref" href="#id1">Structure</a><a class="headerlink" href="#structure" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Structure</a><a class="headerlink" href="#structure" title="Permalink to this heading"></a></h2>
 <p>We recommend to use <code class="docutils literal notranslate"><span class="pre">src</span></code> folder for your C/C++ source files and <code class="docutils literal notranslate"><span class="pre">include</span></code> folder
 for your headers. You can also have nested sub-folders in <code class="docutils literal notranslate"><span class="pre">src</span></code> or <code class="docutils literal notranslate"><span class="pre">include</span></code>.</p>
 <p><strong>Example</strong></p>
@@ -175,7 +177,7 @@ for your headers. You can also have nested sub-folders in <code class="docutils 
 </div>
 </section>
 <section id="manifest">
-<h2><a class="toc-backref" href="#id2">Manifest</a><a class="headerlink" href="#manifest" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Manifest</a><a class="headerlink" href="#manifest" title="Permalink to this heading"></a></h2>
 <p>A library package must contain a manifest. We recommend using <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -214,7 +216,7 @@ for your headers. You can also have nested sub-folders in <code class="docutils 
 </div>
 </section>
 <section id="publishing">
-<h2><a class="toc-backref" href="#id3">Publishing</a><a class="headerlink" href="#publishing" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Publishing</a><a class="headerlink" href="#publishing" title="Permalink to this heading"></a></h2>
 <p>You can publish a library to the <a class="reference external" href="https://platformio.org/lib">PlatformIO Registry</a>
 using <a class="reference internal" href="../core/userguide/pkg/cmd_publish.html#cmd-pkg-publish"><span class="std std-ref">pio pkg publish</span></a> command. Every time when you modify a source code of
 a library you will need to increment the “version” field in <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a> manifest
@@ -223,7 +225,7 @@ and re-publish again.</p>
 Registry, please use <a class="reference internal" href="../core/userguide/pkg/cmd_unpublish.html#cmd-pkg-unpublish"><span class="std std-ref">pio pkg unpublish</span></a> command.</p>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id4">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>See the published libraries in <a class="reference external" href="https://platformio.org/lib">PlatformIO Registry</a>.</p>
 </section>
 </section>
@@ -315,27 +317,27 @@ Registry, please use <a class="reference internal" href="../core/userguide/pkg/c
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -376,7 +378,7 @@ Registry, please use <a class="reference internal" href="../core/userguide/pkg/c
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

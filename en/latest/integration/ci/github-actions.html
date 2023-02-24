@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GitHub Actions &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Continuous Integration</a></li>
       <li class="breadcrumb-item active">GitHub Actions</li>
       <li class="wy-breadcrumbs-aside">
@@ -143,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="github-actions">
-<span id="ci-github-actions"></span><h1><a class="toc-backref" href="#id2">GitHub Actions</a><a class="headerlink" href="#github-actions" title="Permalink to this heading">¶</a></h1>
+<span id="ci-github-actions"></span><h1><a class="toc-backref" href="#id2" role="doc-backlink">GitHub Actions</a><a class="headerlink" href="#github-actions" title="Permalink to this heading"></a></h1>
 <p><a class="reference external" href="https://github.com/features/actions">GitHub Actions</a> enables you to create custom
 software development life cycle (SDLC) workflows directly in your GitHub repository.</p>
 <p>You need to configure GitHub Actions using <a class="reference external" href="http://en.wikipedia.org/wiki/YAML">YAML</a>
@@ -157,7 +159,7 @@ build project on a range of different <a class="reference internal" href="../../
 <p>GitHub Actions help you automate your software development workflows in the same place
 you store code and collaborate on pull requests and issues and each time this happens,
 it will try to build the project using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command.</p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#github-actions" id="id2">GitHub Actions</a></p>
@@ -176,9 +178,9 @@ it will try to build the project using <a class="reference internal" href="../..
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please make sure to read GitHub Actions <a class="reference external" href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/getting-started-with-github-actions">Getting Started</a>
@@ -186,7 +188,7 @@ guide first.</p>
 </div>
 <p>There are two possible ways of running PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
-<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading"></a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PlatformIO CI</span>
 
@@ -216,7 +218,7 @@ guide first.</p>
 </div>
 </section>
 <section id="using-cmd-ci-command">
-<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading"></a></h3>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
@@ -252,7 +254,7 @@ and boards from command line interface:</p>
 </pre></div>
 </div>
 <section id="custom-build-flags">
-<h4><a class="toc-backref" href="#id6">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id6" role="doc-backlink">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading"></a></h4>
 <p>PlatformIO allows one to specify own build flags using <span class="target" id="index-0"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PlatformIO</span>
 <span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci path/to/test/file.c --board=&lt;ID_1&gt; --board=&lt;ID_2&gt; --board=&lt;ID_N&gt;</span>
@@ -266,7 +268,7 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id7">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Integration for USB_Host_Shield_2.0 project. The <code class="docutils literal notranslate"><span class="pre">workflow.yml</span></code> configuration file:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PlatformIO CI</span>
 
@@ -396,27 +398,27 @@ and boards from command line interface:</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -457,7 +459,7 @@ and boards from command line interface:</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

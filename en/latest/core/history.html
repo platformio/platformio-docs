@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Release Notes &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -134,7 +136,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Release Notes</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/core/history.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -146,12 +148,12 @@
            <div itemprop="articleBody">
              
   <section id="release-notes">
-<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this heading">¶</a></h1>
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this heading"></a></h1>
 <section id="platformio-core-6">
-<span id="release-notes-6"></span><h2>PlatformIO Core 6<a class="headerlink" href="#platformio-core-6" title="Permalink to this heading">¶</a></h2>
+<span id="release-notes-6"></span><h2>PlatformIO Core 6<a class="headerlink" href="#platformio-core-6" title="Permalink to this heading"></a></h2>
 <p><strong>A professional collaborative platform for declarative, safety-critical, and test-driven embedded development.</strong></p>
 <section id="id1">
-<h3>6.1.7 (2023-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.7 (2023-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Show detailed library dependency tree only in the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html#cmdoption-pio-run-v">verbose mode</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4517">issue #4517</a>)</p></li>
 <li><p>Prevented shell injection when converting INO file to CPP (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4532">issue #4532</a>)</p></li>
@@ -159,7 +161,7 @@
 </ul>
 </section>
 <section id="id2">
-<h3>6.1.6 (2023-01-23)<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.6 (2023-01-23)<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added support for Python 3.11</p></li>
 <li><p>Added a new <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/platformio/options/generic/description.html">name</a> configuration option to customize a project name (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4498">pull #4498</a>)</p></li>
@@ -173,7 +175,7 @@
 </ul>
 </section>
 <section id="id3">
-<h3>6.1.5 (2022-11-01)<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.5 (2022-11-01)<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added a new <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_settings.html">enable_proxy_strict_ssl</a> setting to disable the proxy server certificate verification (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4432">issue #4432</a>)</p></li>
 <li><p>Documented <a class="reference external" href="https://docs.platformio.org/en/latest/core/installation/proxy-configuration.html">PlatformIO Core Proxy Configuration</a></p></li>
@@ -183,7 +185,7 @@
 </ul>
 </section>
 <section id="id4">
-<h3>6.1.4 (2022-08-12)<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.4 (2022-08-12)<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added support for accepting the original FileNode environment in a “callback” function when using <a class="reference external" href="https://docs.platformio.org/en/latest/scripting/middlewares.html">Build Middlewares</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4380">pull #4380</a>)</p></li>
 <li><p>Improved device port finder when using dual channel UART converter (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4367">issue #4367</a>)</p></li>
@@ -197,13 +199,13 @@
 </ul>
 </section>
 <section id="id5">
-<h3>6.1.3 (2022-07-18)<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.3 (2022-07-18)<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Fixed a regression bug when opening device monitor without any filters (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4363">issue #4363</a>)</p></li>
 </ul>
 </section>
 <section id="id6">
-<h3>6.1.2 (2022-07-18)<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.2 (2022-07-18)<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Export a <code class="docutils literal notranslate"><span class="pre">PIO_UNIT_TESTING</span></code> macro to the project source files and dependent libraries in the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> mode</p></li>
 <li><p>Improved detection of Windows architecture (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4353">issue #4353</a>)</p></li>
@@ -213,7 +215,7 @@
 </ul>
 </section>
 <section id="id7">
-<h3>6.1.1 (2022-07-11)<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.1 (2022-07-11)<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added new <code class="docutils literal notranslate"><span class="pre">monitor_encoding</span></code> project configuration option to configure <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html">Device Monitor</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4350">issue #4350</a>)</p></li>
 <li><p>Allowed specifying project environments for <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_ci.html">pio ci</a> command (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4347">issue #4347</a>)</p></li>
@@ -224,7 +226,7 @@
 </ul>
 </section>
 <section id="id8">
-<h3>6.1.0 (2022-07-06)<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<h3>6.1.0 (2022-07-06)<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Device Manager</strong></p>
 <ul>
@@ -280,7 +282,7 @@
 </ul>
 </section>
 <section id="id9">
-<h3>6.0.2 (2022-06-01)<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<h3>6.0.2 (2022-06-01)<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Control <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> verbosity with a new multilevel <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html#cmdoption-pio-test-v">pio test -v</a> command option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4276">issue #4276</a>)</p></li>
 <li><p>Follow symbolic links during searching for the unit test suites (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4288">issue #4288</a>)</p></li>
@@ -291,7 +293,7 @@
 </ul>
 </section>
 <section id="id10">
-<h3>6.0.1 (2022-05-17)<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<h3>6.0.1 (2022-05-17)<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Improved support for the renamed configuration options (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4270">issue #4270</a>)</p></li>
 <li><p>Fixed an issue when calling the built-in <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html#filters">pio device monitor</a> filters</p></li>
@@ -299,7 +301,7 @@
 </ul>
 </section>
 <section id="id11">
-<h3>6.0.0 (2022-05-16)<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<h3>6.0.0 (2022-05-16)<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
 <p>Please check the <a class="reference external" href="https://docs.platformio.org/en/latest/core/migration.html">Migration guide from 5.x to 6.0</a>.</p>
 <ul class="simple">
 <li><p><strong>Package Management</strong></p>
@@ -403,27 +405,27 @@
 </section>
 </section>
 <section id="platformio-core-5">
-<span id="release-notes-5"></span><h2>PlatformIO Core 5<a class="headerlink" href="#platformio-core-5" title="Permalink to this heading">¶</a></h2>
+<span id="release-notes-5"></span><h2>PlatformIO Core 5<a class="headerlink" href="#platformio-core-5" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v5.2.5/HISTORY.rst">PlatformIO Core 5.0 history</a>.</p>
 </section>
 <section id="platformio-core-4">
-<span id="release-notes-4"></span><h2>PlatformIO Core 4<a class="headerlink" href="#platformio-core-4" title="Permalink to this heading">¶</a></h2>
+<span id="release-notes-4"></span><h2>PlatformIO Core 4<a class="headerlink" href="#platformio-core-4" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v4.3.4/HISTORY.rst">PlatformIO Core 4.0 history</a>.</p>
 </section>
 <section id="platformio-core-3">
-<h2>PlatformIO Core 3<a class="headerlink" href="#platformio-core-3" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO Core 3<a class="headerlink" href="#platformio-core-3" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v3.6.7/HISTORY.rst">PlatformIO Core 3.0 history</a>.</p>
 </section>
 <section id="platformio-core-2">
-<h2>PlatformIO Core 2<a class="headerlink" href="#platformio-core-2" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO Core 2<a class="headerlink" href="#platformio-core-2" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v2.11.2/HISTORY.rst">PlatformIO Core 2.0 history</a>.</p>
 </section>
 <section id="platformio-core-1">
-<h2>PlatformIO Core 1<a class="headerlink" href="#platformio-core-1" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO Core 1<a class="headerlink" href="#platformio-core-1" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v1.5.0/HISTORY.rst">PlatformIO Core 1.0 history</a>.</p>
 </section>
 <section id="platformio-core-preview">
-<h2>PlatformIO Core Preview<a class="headerlink" href="#platformio-core-preview" title="Permalink to this heading">¶</a></h2>
+<h2>PlatformIO Core Preview<a class="headerlink" href="#platformio-core-preview" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="https://github.com/platformio/platformio-core/blob/v0.10.2/HISTORY.rst">PlatformIO Core Preview history</a>.</p>
 </section>
 </section>
@@ -515,27 +517,27 @@
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -576,7 +578,7 @@
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

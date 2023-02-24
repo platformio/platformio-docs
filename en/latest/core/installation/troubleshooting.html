@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Troubleshooting &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -133,7 +135,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">PlatformIO Core (CLI)</a></li>
           <li class="breadcrumb-item"><a href="index.html">Installation</a></li>
       <li class="breadcrumb-item active">Troubleshooting</li>
@@ -147,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="troubleshooting">
-<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h1>
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Linux OS</strong>: Don’t forget to install <a class="reference internal" href="udev-rules.html#platformio-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a></p>
@@ -157,7 +159,7 @@ USB driver from the board manufacturer.</p>
 <p>If you find any issues with PlatformIO Core Installer Script, please report to
 <a class="reference external" href="https://github.com/platformio/platformio-core-installer/issues">https://github.com/platformio/platformio-core-installer/issues</a></p>
 <section id="multiple-platformio-cores-in-a-system">
-<span id="multiple-pio-cores-issue"></span><h2>Multiple PlatformIO Cores in a system<a class="headerlink" href="#multiple-platformio-cores-in-a-system" title="Permalink to this heading">¶</a></h2>
+<span id="multiple-pio-cores-issue"></span><h2>Multiple PlatformIO Cores in a system<a class="headerlink" href="#multiple-platformio-cores-in-a-system" title="Permalink to this heading"></a></h2>
 <p>Multiple standalone <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in a system could lead to the different
 issues. We highly recommend to keep one instance of PlatformIO Core or use built-in
 PlatformIO Core in <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>:</p>
@@ -177,7 +179,7 @@ brew<span class="w"> </span>uninstall<span class="w"> </span>platformio
 <a class="reference internal" href="shell-commands.html#piocore-install-shell-commands"><span class="std std-ref">Install Shell Commands</span></a>.</p>
 </section>
 <section id="platformio-is-not-recognized-as-an-internal-or-external-command">
-<h2>‘platformio’ is not recognized as an internal or external command<a class="headerlink" href="#platformio-is-not-recognized-as-an-internal-or-external-command" title="Permalink to this heading">¶</a></h2>
+<h2>‘platformio’ is not recognized as an internal or external command<a class="headerlink" href="#platformio-is-not-recognized-as-an-internal-or-external-command" title="Permalink to this heading"></a></h2>
 <p>If you use <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a>, please check in PlatformIO IDE Settings that
 “Use built-in PlatformIO Core” is enabled.</p>
 <p>If you modify the system environment variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in your Bash/Fish/ZSH
@@ -186,7 +188,7 @@ profile, please do not override global <code class="docutils literal notranslate
 instead.</p>
 </section>
 <section id="importerror-cannot-import-name-remove-dead-weakref">
-<h2>ImportError: cannot import name _remove_dead_weakref<a class="headerlink" href="#importerror-cannot-import-name-remove-dead-weakref" title="Permalink to this heading">¶</a></h2>
+<h2>ImportError: cannot import name _remove_dead_weakref<a class="headerlink" href="#importerror-cannot-import-name-remove-dead-weakref" title="Permalink to this heading"></a></h2>
 <p>Windows users can experience this issue when multiple Python interpreters are
 installed in a system and conflict with each other. The easy way to fix this
 problem is uninstalling all Python interpreters using Windows Programs Manager
@@ -289,27 +291,27 @@ if exist (do not forget to replace “YourUserName” with the real user name)</
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -350,7 +352,7 @@ if exist (do not forget to replace “YourUserName” with the real user name)</
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

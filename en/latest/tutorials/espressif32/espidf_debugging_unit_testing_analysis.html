@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -129,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Tutorials and Examples</a></li>
       <li class="breadcrumb-item active">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</li>
       <li class="wy-breadcrumbs-aside">
@@ -142,7 +144,7 @@
            <div itemprop="articleBody">
              
   <section id="get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis">
-<span id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></span><h1>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis<a class="headerlink" href="#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis" title="Permalink to this heading">¶</a></h1>
+<span id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></span><h1>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis<a class="headerlink" href="#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis" title="Permalink to this heading"></a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a>
 to develop, run and debug a simple Wi-Fi project with the <a class="reference internal" href="../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>
 framework for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board.</p>
@@ -156,7 +158,7 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <li><p><a class="reference internal" href="../../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></li>
 <li><p>An external debug adapter (e.g. <a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd.html#debugging-tool-olimex-arm-usb-ocd"><span class="std std-ref">Olimex ARM-USB-OCD</span></a>)</p></li>
 </ul>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#setting-up-the-project" id="id1">Setting Up the Project</a></p></li>
@@ -170,9 +172,9 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <li><p><a class="reference internal" href="#project-inspection" id="id6">Project Inspection</a></p></li>
 <li><p><a class="reference internal" href="#conclusion" id="id7">Conclusion</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="setting-up-the-project">
-<h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Click on “PlatformIO Home” button on the bottom PlatformIO Toolbar:</p>
 <img alt="../../_images/espidf-debugging-unit-testing-analysis-1.png" src="../../_images/espidf-debugging-unit-testing-analysis-1.png" />
@@ -185,7 +187,7 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 </ol>
 </section>
 <section id="adding-code-to-the-generated-project">
-<h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">main.c</span></code> in <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder and add the
 following code:</p>
@@ -332,16 +334,12 @@ window:</p>
 </ol>
 </section>
 <section id="debugging-the-firmware">
-<h2><a class="toc-backref" href="#id3">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading"></a></h2>
 <section id="setting-up-the-hardware">
-<h3><a class="toc-backref" href="#id4">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Setting Up the Hardware</a><a class="headerlink" href="#setting-up-the-hardware" title="Permalink to this heading"></a></h3>
 <p>In order to use <a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a>, we need to connect an external JTAG probe and the board
 using the following pins:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>ESP32 pin</p></th>
 <th class="head"><p>JTAG probe pin</p></th>
@@ -398,7 +396,7 @@ using the following pins:</p>
 </section>
 </section>
 <section id="writing-unit-tests">
-<h2><a class="toc-backref" href="#id5">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Functions <code class="docutils literal notranslate"><span class="pre">setUp</span></code> and <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> are used to initialize and finalize test
@@ -519,7 +517,7 @@ results should be correct:</p>
 </ol>
 </section>
 <section id="project-inspection">
-<h2><a class="toc-backref" href="#id6">Project Inspection</a><a class="headerlink" href="#project-inspection" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Project Inspection</a><a class="headerlink" href="#project-inspection" title="Permalink to this heading"></a></h2>
 <p>For illustrative purposes, let’s imagine we need to find a function with the biggest
 memory footprint. Also, let’s introduce a bug to our project so <a class="reference internal" href="../../advanced/static-code-analysis/index.html#check"><span class="std std-ref">Static Code Analysis</span></a> can
 report it.</p>
@@ -540,7 +538,7 @@ project and press <code class="docutils literal notranslate"><span class="pre">I
 </ol>
 </section>
 <section id="conclusion">
-<h2><a class="toc-backref" href="#id7">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading"></a></h2>
 <p>Now we have a project template for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board that we can use as
 boilerplate for later projects.</p>
 </section>
@@ -633,27 +631,27 @@ boilerplate for later projects.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -694,7 +692,7 @@ boilerplate for later projects.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

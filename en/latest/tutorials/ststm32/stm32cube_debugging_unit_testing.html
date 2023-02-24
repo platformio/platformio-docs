@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STM32Cube HAL and Nucleo-F401RE: debugging and unit testing &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -129,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Tutorials and Examples</a></li>
       <li class="breadcrumb-item active">STM32Cube HAL and Nucleo-F401RE: debugging and unit testing</li>
       <li class="wy-breadcrumbs-aside">
@@ -142,7 +144,7 @@
            <div itemprop="articleBody">
              
   <section id="stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing">
-<span id="tutorial-stm32cube-debugging-unit-testing"></span><h1>STM32Cube HAL and Nucleo-F401RE: debugging and unit testing<a class="headerlink" href="#stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing" title="Permalink to this heading">¶</a></h1>
+<span id="tutorial-stm32cube-debugging-unit-testing"></span><h1>STM32Cube HAL and Nucleo-F401RE: debugging and unit testing<a class="headerlink" href="#stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing" title="Permalink to this heading"></a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/atom.html#ide-atom"><span class="std std-ref">PlatformIO IDE for Atom</span></a> to develop, run and debug a basic blink project with <a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> framework for <code class="docutils literal notranslate"><span class="pre">STM32</span> <span class="pre">Nucleo-F401RE</span></code> board.</p>
 <ul class="simple">
 <li><p><strong>Level:</strong> Intermediate</p></li>
@@ -154,7 +156,7 @@
 <li><p>Install drivers for <a class="reference internal" href="../../plus/debug-tools/stlink.html#debugging-tool-stlink"><span class="std std-ref">ST-LINK</span></a> debug tool</p></li>
 <li><p><a class="reference internal" href="../../boards/ststm32/nucleo_f401re.html#board-ststm32-nucleo-f401re"><span class="std std-ref">ST Nucleo F401RE</span></a> development board</p></li>
 </ul>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#setting-up-the-project" id="id1">Setting Up the Project</a></p></li>
@@ -165,9 +167,9 @@
 <li><p><a class="reference internal" href="#conclusion" id="id6">Conclusion</a></p></li>
 <li><p><a class="reference internal" href="#project-source-code" id="id7">Project Source Code</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="setting-up-the-project">
-<h2><a class="toc-backref" href="#id1">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Setting Up the Project</a><a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading"></a></h2>
 <p>At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-1.png" src="../../_images/stm32cube-debugging-unit-testing-1.png" />
 <p>On the next step, we need to select <code class="docutils literal notranslate"><span class="pre">ST</span> <span class="pre">Nucleo-F401RE</span></code> as a development board, <a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> as a framework and a path to the project location (or use the default one):</p>
@@ -175,7 +177,7 @@
 <p>Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with <a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a> framework.</p>
 </section>
 <section id="adding-code-to-the-generated-project">
-<h2><a class="toc-backref" href="#id2">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Adding Code to the Generated Project</a><a class="headerlink" href="#adding-code-to-the-generated-project" title="Permalink to this heading"></a></h2>
 <p>Let’s add some actual code to the project. Firstly, we create two main files <code class="docutils literal notranslate"><span class="pre">main.c</span></code> and <code class="docutils literal notranslate"><span class="pre">main.h</span></code> in the <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder. Right click on the <code class="docutils literal notranslate"><span class="pre">src</span></code> in the project window:</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-3.png" src="../../_images/stm32cube-debugging-unit-testing-3.png" />
 <p>Add next content to <code class="docutils literal notranslate"><span class="pre">main.h</span></code>:</p>
@@ -228,7 +230,7 @@
 <p>After this step, we created a basic blink project that is ready for compiling and uploading.</p>
 </section>
 <section id="compiling-and-uploading-the-firmware">
-<h2><a class="toc-backref" href="#id3">Compiling and Uploading the Firmware</a><a class="headerlink" href="#compiling-and-uploading-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Compiling and Uploading the Firmware</a><a class="headerlink" href="#compiling-and-uploading-the-firmware" title="Permalink to this heading"></a></h2>
 <p>Now we can build the project. To compile firmware we can use next options:
 Build option on the <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Tasks</span></code> menu, Build button on <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode-toolbar"><span class="std std-ref">PlatformIO Toolbar</span></a>, using Command Palette <code class="docutils literal notranslate"><span class="pre">View:</span> <span class="pre">Command</span> <span class="pre">Palette</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Build</span></code>, using Task Menu <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Run</span> <span class="pre">Task...</span> <span class="pre">&gt;</span> <span class="pre">PlatformIO:</span> <span class="pre">Build</span></code> or via hotkeys <code class="docutils literal notranslate"><span class="pre">cmd-alt-b</span> <span class="pre">/</span> <span class="pre">ctrl-alt-b</span></code>:</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-4.png" src="../../_images/stm32cube-debugging-unit-testing-4.png" />
@@ -240,7 +242,7 @@ Upload option on the <code class="docutils literal notranslate"><span class="pre
 <p>After successful uploading, the green LED2 should start blinking.</p>
 </section>
 <section id="debugging-the-firmware">
-<h2><a class="toc-backref" href="#id4">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Debugging the Firmware</a><a class="headerlink" href="#debugging-the-firmware" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> offers the easiest way to debug your board. To start debugging session you can use <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">debugging</span></code> option in <code class="docutils literal notranslate"><span class="pre">PlatformIO</span> <span class="pre">Quick</span> <span class="pre">Access</span></code> menu, <code class="docutils literal notranslate"><span class="pre">Debug:</span> <span class="pre">Start</span> <span class="pre">debugging</span></code> from the top menu or hotkey button <code class="docutils literal notranslate"><span class="pre">F5</span></code>:</p>
 <img alt="../../_images/stm32cube-debugging-unit-testing-7.png" src="../../_images/stm32cube-debugging-unit-testing-7.png" />
 <p>We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:</p>
@@ -249,7 +251,7 @@ Upload option on the <code class="docutils literal notranslate"><span class="pre
 <img alt="../../_images/stm32cube-debugging-unit-testing-9.png" src="../../_images/stm32cube-debugging-unit-testing-9.png" />
 </section>
 <section id="writing-unit-tests">
-<h2><a class="toc-backref" href="#id5">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Writing Unit Tests</a><a class="headerlink" href="#writing-unit-tests" title="Permalink to this heading"></a></h2>
 <p>Now let’s write some tests using the <a class="reference internal" href="../../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> solution that can help us
 test code directly on the target board. We will use the <a class="reference internal" href="../../advanced/unit-testing/frameworks/unity.html#unit-testing-frameworks-unity"><span class="std std-ref">Unity</span></a>
 testing framework. Since there is no default configuration for the <a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a>
@@ -460,11 +462,11 @@ the <a class="reference internal" href="../../projectconf/sections/platformio/op
 <p>Congratulations! As we can see from the report, all our tests went successfully!</p>
 </section>
 <section id="conclusion">
-<h2><a class="toc-backref" href="#id6">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this heading"></a></h2>
 <p>Now we have a decent template that we can improve for our next more complex projects.</p>
 </section>
 <section id="project-source-code">
-<h2><a class="toc-backref" href="#id7">Project Source Code</a><a class="headerlink" href="#project-source-code" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Project Source Code</a><a class="headerlink" href="#project-source-code" title="Permalink to this heading"></a></h2>
 <p>The source code of this tutorial is available at <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube">https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube</a></p>
 </section>
 </section>
@@ -556,27 +558,27 @@ the <a class="reference internal" href="../../projectconf/sections/platformio/op
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -617,7 +619,7 @@ the <a class="reference internal" href="../../projectconf/sections/platformio/op
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compilation database compile_commands.json &mdash; PlatformIO latest documentation</title>
@@ -14,10 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +36,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -112,7 +114,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/integration/compile_commands.rst" class="fa fa-github"> Edit on GitHub</a>
@@ -124,7 +126,7 @@
            <div itemprop="articleBody">
              
   <section id="compilation-database-compile-commands-json">
-<span id="compilation-db"></span><h1>Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code><a class="headerlink" href="#compilation-database-compile-commands-json" title="Permalink to this heading">¶</a></h1>
+<span id="compilation-db"></span><h1>Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code><a class="headerlink" href="#compilation-database-compile-commands-json" title="Permalink to this heading"></a></h1>
 <p>A <a class="reference external" href="https://clang.llvm.org/docs/JSONCompilationDatabase.html">compilation database</a> is
 a <a class="reference external" href="https://www.json.org/">JSON-formatted</a> file named <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code> that
 contains structured data about every compilation unit in your project.</p>
@@ -132,7 +134,7 @@ contains structured data about every compilation unit in your project.</p>
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command and <code class="docutils literal notranslate"><span class="pre">compiledb</span></code> target.
 A default location for <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code> is a project directory.</p>
 <p>The following build variables can be used for customization using <a class="reference internal" href="../scripting/index.html#scripting"><span class="std std-ref">Advanced Scripting</span></a>:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 75%" />
@@ -267,27 +269,27 @@ and save database to the “<a class="reference internal" href="../projectconf/s
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -328,7 +330,7 @@ and save database to the “<a class="reference internal" href="../projectconf/s
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
