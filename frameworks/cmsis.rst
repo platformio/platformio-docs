@@ -137,6 +137,12 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - STM32G071RBT6
@@ -412,7 +418,7 @@ You do not need to use/buy external debug probe.
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -436,7 +442,7 @@ You do not need to use/buy external debug probe.
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
@@ -696,6 +702,12 @@ Please click on board name for the further details.
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_adafruit_feather_f405`
       - :ref:`platform_ststm32`
       - STM32F405RGT6
@@ -1452,6 +1464,12 @@ Please click on board name for the further details.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_sparky_v1`
       - :ref:`platform_ststm32`
       - STM32F303CCT6
@@ -1607,6 +1625,27 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+
+ACSIP
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
 
 Adafruit
 ~~~~~~~~
@@ -2951,6 +2990,13 @@ ST
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -3265,7 +3311,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -3293,7 +3339,7 @@ ST
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -3616,6 +3662,27 @@ Semtech
       - 32MHz
       - 256KB
       - 32KB
+
+Sigma IC
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
 
 TauLabs
 ~~~~~~~

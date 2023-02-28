@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_h723zg:
+.. _board_ststm32_acsip_s76s:
 
-ST Nucleo H723ZG
-================
+ACSIP S76S
+==========
 
 .. contents::
 
@@ -24,49 +24,49 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32H723ZGT6
+    - STM32L073RZ
   * - **Frequency**
-    - 550MHz
+    - 32MHz
   * - **Flash**
-    - 1MB
+    - 192KB
   * - **RAM**
-    - 320KB
+    - 20KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-h723zg.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ACSIP <https://www.acsip.com.tw/index.php?action=products-detail&fid1=19&fid2=&fid3=&id=79&utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_h723zg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``acsip_s76s`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:acsip_s76s]
   platform = ststm32
-  board = nucleo_h723zg
+  board = acsip_s76s
 
-You can override default ST Nucleo H723ZG settings per build environment using
+You can override default ACSIP S76S settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_h723zg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_h723zg.json>`_. For example,
+board manifest `acsip_s76s.json <https://github.com/platformio/platform-ststm32/blob/master/boards/acsip_s76s.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:acsip_s76s]
   platform = ststm32
-  board = nucleo_h723zg
+  board = acsip_s76s
 
   ; change microcontroller
-  board_build.mcu = stm32h723zgt6
+  board_build.mcu = stm32l073rz
 
   ; change MCU frequency
-  board_build.f_cpu = 550000000L
+  board_build.f_cpu = 32000000L
 
 
 Uploading
 ---------
-ST Nucleo H723ZG supports the following uploading protocols:
+ACSIP S76S supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
@@ -80,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:acsip_s76s]
   platform = ststm32
-  board = nucleo_h723zg
+  board = acsip_s76s
 
   upload_protocol = stlink
 
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo H723ZG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ACSIP S76S does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -109,7 +109,7 @@ ST Nucleo H723ZG has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -117,8 +117,8 @@ ST Nucleo H723ZG has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -134,8 +134,8 @@ Frameworks
     * - :ref:`framework_cmsis`
       - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
 
+    * - :ref:`framework_libopencm3`
+      - The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others
+
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind

@@ -355,6 +355,27 @@ Boards
       - 512KB
       - 64KB
 
+ACSIP
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
+
 AI Thinker
 ~~~~~~~~~~
 
@@ -1467,6 +1488,13 @@ Arduino
       - 64MHz
       - 515.25KB
       - 62.78KB
+    * - :ref:`board_ststm32_opta`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -1852,6 +1880,27 @@ BSFrance
       - 8MHz
       - 28KB
       - 2.50KB
+
+Big Tree Tech
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
 
 BitWizard
 ~~~~~~~~~
@@ -5744,6 +5793,13 @@ ST
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -6072,7 +6128,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -6107,7 +6163,7 @@ ST
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -6752,6 +6808,27 @@ Sigma Delta Technologies
       - 64MHz
       - 512KB
       - 64KB
+
+Sigma IC
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
 
 Silicognition
 ~~~~~~~~~~~~~

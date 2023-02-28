@@ -186,6 +186,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - :ref:`platform_ststm32`
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
     * - :ref:`board_nordicnrf51_calliope_mini`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -252,6 +258,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - STM32G071RBT6
@@ -438,6 +450,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -462,6 +480,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 256KB
       - 144KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
@@ -745,6 +769,12 @@ Please click on board name for the further details.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_espressif32_esp32cam`
       - :ref:`platform_espressif32`
       - ESP32
@@ -1603,6 +1633,12 @@ Please click on board name for the further details.
       - 133MHz
       - 2MB
       - 264KB
+    * - :ref:`board_ststm32_opta`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -3313,6 +3349,12 @@ Please click on board name for the further details.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -4051,6 +4093,27 @@ Boards
       - 80MHz
       - 512KB
       - 80KB
+
+ACSIP
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
 
 AI Thinker
 ~~~~~~~~~~
@@ -5157,6 +5220,13 @@ Arduino
       - 64MHz
       - 515.25KB
       - 62.78KB
+    * - :ref:`board_ststm32_opta`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -5619,6 +5689,27 @@ BSFrance
       - 8MHz
       - 28KB
       - 2.50KB
+
+Big Tree Tech
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
 
 BitWizard
 ~~~~~~~~~
@@ -10785,6 +10876,13 @@ ST
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -10981,6 +11079,13 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f722ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F722ZET6
+      - 216MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -11009,6 +11114,13 @@ ST
       - 64MHz
       - 256KB
       - 144KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -11457,6 +11569,27 @@ SeeedStudio
       - 80MHz
       - 4MB
       - 80KB
+
+Sigma IC
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
 
 Silicognition
 ~~~~~~~~~~~~~

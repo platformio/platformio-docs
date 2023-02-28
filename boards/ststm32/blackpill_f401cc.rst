@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 64KB
   * - **Vendor**
-    - `WeAct Studio <https://github.com/WeActTC/MiniSTM32F4x1?utm_source=platformio.org&utm_medium=docs>`__
+    - `WeAct Studio <https://www.weact-tc.cn/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

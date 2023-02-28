@@ -150,6 +150,11 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - STM32L476VGT6
       - 80MHz
@@ -165,6 +170,11 @@ You do not need to use/buy external debug probe.
       - 100MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - STM32G071RBT6
       - 64MHz
@@ -404,7 +414,7 @@ You do not need to use/buy external debug probe.
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - STM32F746ZGT6
       - 216MHz
@@ -429,7 +439,7 @@ You do not need to use/buy external debug probe.
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - STM32H743ZIT6
       - 400MHz
@@ -678,6 +688,11 @@ Please click on board name for the further details.
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_acsip_s76s`
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_ststm32_adafruit_feather_f405`
       - STM32F405RGT6
       - 168MHz
@@ -688,6 +703,11 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_opta`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - STM32H747XIH6
       - 480MHz
@@ -1368,6 +1388,11 @@ Please click on board name for the further details.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_agafia_sg0`
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_sparky_v1`
       - STM32F303CCT6
       - 72MHz
@@ -1742,6 +1767,25 @@ Boards
       - 512KB
       - 128KB
 
+ACSIP
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_acsip_s76s`
+      - External
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
+
 Adafruit
 ~~~~~~~~
 
@@ -1811,6 +1855,12 @@ Arduino
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_opta`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - External
       - STM32H747XIH6
@@ -1892,6 +1942,25 @@ Avnet Silica
       - 80MHz
       - 1MB
       - 128KB
+
+Big Tree Tech
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
 
 BluesWireless
 ~~~~~~~~~~~~~
@@ -3023,6 +3092,12 @@ ST
       - 84MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - On-board
       - STM32G071RBT6
@@ -3304,7 +3379,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - On-board
       - STM32F746ZGT6
@@ -3334,7 +3409,7 @@ ST
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - On-board
       - STM32H743ZIT6
@@ -3638,6 +3713,25 @@ Semtech
       - 32MHz
       - 256KB
       - 32KB
+
+Sigma IC
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_agafia_sg0`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
 
 TauLabs
 ~~~~~~~

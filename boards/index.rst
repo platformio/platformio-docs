@@ -1305,13 +1305,16 @@ ST STM32
     ststm32/b96b_f446ve
     ststm32/b96b_aerocore2
     ststm32/b96b_neonkey
+    ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
+    ststm32/opta
     ststm32/portenta_h7_m4
     ststm32/portenta_h7_m7
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
+    ststm32/btt_ebb42_v1_1
     ststm32/black_f407ve
     ststm32/black_f407vg
     ststm32/black_f407ze
@@ -1360,6 +1363,7 @@ ST STM32
     ststm32/xdot_l151cc
     ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/nucleo_g070rb
     ststm32/nucleo_g071rb
     ststm32/nucleo_g431kb
     ststm32/nucleo_g431rb
@@ -1539,6 +1543,7 @@ ST STM32
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/steval_mksboxv1
+    ststm32/agafia_sg0
     ststm32/sparky_v1
     ststm32/thunder_pack
     ststm32/thunder_pack_f411

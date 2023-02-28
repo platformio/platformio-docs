@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_h723zg:
+.. _board_ststm32_btt_ebb42_v1_1:
 
-ST Nucleo H723ZG
-================
+Big Tree Tech EBB42 V1.1
+========================
 
 .. contents::
 
@@ -24,54 +24,56 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32H723ZGT6
+    - STM32G0B1RET6
   * - **Frequency**
-    - 550MHz
+    - 64MHz
   * - **Flash**
-    - 1MB
+    - 128KB
   * - **RAM**
-    - 320KB
+    - 144KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-h723zg.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Big Tree Tech <https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.1%20(STM32G0B1)/EBB42%20CAN%20V1.1?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_h723zg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``btt_ebb42_v1_1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:btt_ebb42_v1_1]
   platform = ststm32
-  board = nucleo_h723zg
+  board = btt_ebb42_v1_1
 
-You can override default ST Nucleo H723ZG settings per build environment using
+You can override default Big Tree Tech EBB42 V1.1 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_h723zg.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_h723zg.json>`_. For example,
+board manifest `btt_ebb42_v1_1.json <https://github.com/platformio/platform-ststm32/blob/master/boards/btt_ebb42_v1_1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:btt_ebb42_v1_1]
   platform = ststm32
-  board = nucleo_h723zg
+  board = btt_ebb42_v1_1
 
   ; change microcontroller
-  board_build.mcu = stm32h723zgt6
+  board_build.mcu = stm32g0b1ret6
 
   ; change MCU frequency
-  board_build.f_cpu = 550000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading
 ---------
-ST Nucleo H723ZG supports the following uploading protocols:
+Big Tree Tech EBB42 V1.1 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
 * ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +82,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_h723zg]
+  [env:btt_ebb42_v1_1]
   platform = ststm32
-  board = nucleo_h723zg
+  board = btt_ebb42_v1_1
 
   upload_protocol = stlink
 
@@ -99,7 +101,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo H723ZG has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Big Tree Tech EBB42 V1.1 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -131,11 +133,5 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
 
-    * - :ref:`framework_cmsis`
-      - The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices
-
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
