@@ -50,7 +50,7 @@ and save database to the ":ref:`projectconf_pio_build_dir`/envname" folder:
     [env:myenv]
     platform = ...
     board = ...
-    extra_scripts = post:extra_script.py
+    extra_scripts = pre:extra_script.py
 
 ``extra_script.py``:
 
