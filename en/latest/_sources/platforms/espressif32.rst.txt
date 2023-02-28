@@ -836,7 +836,7 @@ Packages
       - Arduino Wiring-based Framework for the Espressif ESP32, ESP32-S and ESP32-C series of SoCs
 
     * - `framework-espidf <https://registry.platformio.org/tools/platformio/framework-espidf>`__
-      - ESP-IDF is Espressif's official IoT Development Framework for the ESP32, ESP32-S, ESP32-C and ESP32-H series of SoCs. It provides a self-sufficient SDK for any generic application development on these platforms, using programming languages such as C and C++.
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
     * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.

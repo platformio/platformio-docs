@@ -228,6 +228,13 @@ Boards
       - 100MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_acsip_s76s`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L073RZ
+      - 32MHz
+      - 192KB
+      - 20KB
     * - :ref:`board_espressif32_esp32cam`
       - :ref:`platform_espressif32`
       - External
@@ -452,6 +459,13 @@ Boards
       - 64MHz
       - 515.25KB
       - 62.78KB
+    * - :ref:`board_ststm32_opta`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -571,6 +585,13 @@ Boards
       - 204MHz
       - 8MB
       - 264KB
+    * - :ref:`board_ststm32_btt_ebb42_v1_1`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G0B1RET6
+      - 64MHz
+      - 128KB
+      - 144KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - External
@@ -1544,6 +1565,13 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -2089,7 +2117,7 @@ Boards
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2124,7 +2152,7 @@ Boards
       - STM32H723ZGT6
       - 550MHz
       - 1MB
-      - 432KB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2580,6 +2608,13 @@ Boards
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_agafia_sg0`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G071RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_espressif32_wesp32`
       - :ref:`platform_espressif32`
       - External
