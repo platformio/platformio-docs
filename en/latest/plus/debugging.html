@@ -193,6 +193,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#greenwaves-technologies">GreenWaves Technologies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#honeylemon">HONEYLemon</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hy">HY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heltec">Heltec</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#heltec-automation">Heltec Automation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#holyiot">Holyiot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hornbill">Hornbill</a></li>
@@ -201,9 +202,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#laird-connectivity">Laird Connectivity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#leaflabs">LeafLabs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lightup">LightUp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lilygo">LilyGo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#linino">Linino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lion-bit">Lion:Bit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lowpowerlab">LowPowerLab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#m5stack">M5Stack</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mh-et-live">MH-ET Live</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mxchip">MXChip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#makerasia">MakerAsia</a></li>
@@ -293,6 +296,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#vae">VAE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vccgnd">VCCGND</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vng">VNG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#valetron-systems">Valetron Systems</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vintlabs">VintLabs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wemos">WEMOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wiznet">WIZNet</a></li>
@@ -1012,7 +1016,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_reversetft.html#board-espressif32-adafruit-feather-esp32s2-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S2 Reverse TFT</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1020,7 +1024,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1028,12 +1040,20 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_reversetft.html#board-espressif32-adafruit-feather-esp32s3-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S3 Reverse TFT</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_tft.html#board-espressif32-adafruit-feather-esp32s3-tft"><span class="std std-ref">Adafruit Feather ESP32-S3 TFT</span></a></p></td>
@@ -2816,7 +2836,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32e.html#board-espressif32-dfrobot-firebeetle2-esp32e"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-E</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -2824,7 +2852,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -4564,6 +4592,39 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="heltec">
+<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="heltec-automation">
 <h3>Heltec Automation<a class="headerlink" href="#heltec-automation" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
@@ -4836,6 +4897,31 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="lilygo">
+<h3>LilyGo<a class="headerlink" href="#lilygo" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="linino">
 <h3>Linino<a class="headerlink" href="#linino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
@@ -4939,6 +5025,31 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="m5stack">
+<h3>M5Stack<a class="headerlink" href="#m5stack" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -8101,7 +8212,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/edgebox-esp-100.html#board-espressif32-edgebox-esp-100"><span class="std std-ref">Seeed Studio Edgebox-ESP-100</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32C3</p></td>
@@ -9628,6 +9747,39 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>64MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="valetron-systems">
+<h3>Valetron Systems<a class="headerlink" href="#valetron-systems" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_mfw_esp32_c3.html#board-espressif32-valtrack-v4-mfw-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4MVF</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_vts_esp32_c3.html#board-espressif32-valtrack-v4-vts-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4VTS</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>

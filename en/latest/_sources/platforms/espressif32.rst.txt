@@ -150,6 +150,11 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - ESP32S2
       - 240MHz
@@ -164,6 +169,11 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_reversetft`
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
       - ESP32S3
@@ -268,6 +278,11 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_dfrobot_beetle_esp32c3`
       - ESP32C3
       - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32e`
+      - ESP32
+      - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
@@ -415,6 +430,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_kit_32_V3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - ESP32
       - 240MHz
@@ -422,6 +442,11 @@ Please click on board name for the further details.
       - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
       - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V3`
+      - ESP32S3
       - 240MHz
       - 8MB
       - 320KB
@@ -450,10 +475,20 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lilygo-t-display-s3`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lionbit`
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-atoms3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - ESP32
@@ -522,6 +557,11 @@ Please click on board name for the further details.
       - 320KB
     * - :ref:`board_espressif32_watchy`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_edgebox-esp-100`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -679,6 +719,16 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_valtrack_v4_mfw_esp32_c3`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_valtrack_v4_vts_esp32_c3`
+      - ESP32C3
+      - 160MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - ESP32
@@ -987,6 +1037,12 @@ Adafruit
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - External
       - ESP32S2
@@ -1004,6 +1060,12 @@ Adafruit
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_reversetft`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
       - External
@@ -1271,6 +1333,12 @@ DFRobot
       - External
       - ESP32C3
       - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32e`
+      - External
+      - ESP32
+      - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
@@ -1711,6 +1779,31 @@ Hardkernel
       - 16MB
       - 320KB
 
+Heltec
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_heltec_wifi_kit_32_V3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+
 Heltec Automation
 ~~~~~~~~~~~~~~~~~
 
@@ -1918,6 +2011,25 @@ Labplus
       - 4MB
       - 320KB
 
+LilyGo
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lilygo-t-display-s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+
 Lion:Bit
 ~~~~~~~~
 
@@ -1949,6 +2061,12 @@ M5Stack
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_m5stack-atoms3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-core-esp32`
       - No
       - ESP32
@@ -2336,6 +2454,25 @@ Qmobot LLP
       - 4MB
       - 320KB
 
+RoboHeart
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_roboheart_hercules`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 RoboticsBrno
 ~~~~~~~~~~~~
 
@@ -2424,6 +2561,12 @@ Seeed Studio
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_edgebox-esp-100`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - External
       - ESP32C3
@@ -2824,6 +2967,31 @@ Unknown
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+
+Valetron Systems
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_valtrack_v4_mfw_esp32_c3`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_valtrack_v4_vts_esp32_c3`
+      - External
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
 
