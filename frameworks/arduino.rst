@@ -1009,6 +1009,12 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -1026,6 +1032,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_reversetft`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
       - :ref:`platform_espressif32`
@@ -1927,6 +1939,12 @@ Please click on board name for the further details.
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32e`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -2257,6 +2275,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_kit_32_V3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_heltec_wifi_lora_32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2266,6 +2290,12 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_heltec_wifi_lora_32_V2`
       - :ref:`platform_espressif32`
       - ESP32
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
       - 240MHz
       - 8MB
       - 320KB
@@ -2323,6 +2353,12 @@ Please click on board name for the further details.
       - 8MHz
       - 28KB
       - 2.50KB
+    * - :ref:`board_espressif32_lilygo-t-display-s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_atmelavr_one`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -2383,6 +2419,12 @@ Please click on board name for the further details.
       - 48MHz
       - 120KB
       - 14.81KB
+    * - :ref:`board_espressif32_m5stack-atoms3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - :ref:`platform_espressif32`
       - ESP32
@@ -3295,6 +3337,12 @@ Please click on board name for the further details.
       - 8MHz
       - 63KB
       - 4KB
+    * - :ref:`board_espressif32_edgebox-esp-100`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - :ref:`platform_espressif32`
       - ESP32C3
@@ -3799,6 +3847,18 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_espressif32_valtrack_v4_mfw_esp32_c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_valtrack_v4_vts_esp32_c3`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_vintlabs-devkit-v1`
       - :ref:`platform_espressif32`
       - ESP32
@@ -4261,6 +4321,13 @@ Adafruit
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_tft`
       - :ref:`platform_espressif32`
       - External
@@ -4281,6 +4348,13 @@ Adafruit
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s3_reversetft`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s3_tft`
       - :ref:`platform_espressif32`
@@ -5974,6 +6048,13 @@ DFRobot
       - External
       - ESP32C3
       - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32e`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_dfrobot_firebeetle2_esp32s3`
@@ -7754,6 +7835,20 @@ Heltec
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_espressif32_heltec_wifi_kit_32_V3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_heltec_wifi_lora_32_V3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif8266_heltec_wifi_kit_8`
       - :ref:`platform_espressif8266`
       - No
@@ -8161,6 +8256,27 @@ LightUp
       - 28KB
       - 2.50KB
 
+LilyGo
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lilygo-t-display-s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+
 Linino
 ~~~~~~
 
@@ -8272,6 +8388,13 @@ M5Stack
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_m5stack-atoms3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-core-esp32`
       - :ref:`platform_espressif32`
       - No
@@ -10625,6 +10748,27 @@ ReprapWorld
       - 256KB
       - 32KB
 
+RoboHeart
+~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_roboheart_hercules`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 RobotDyn
 ~~~~~~~~
 
@@ -11513,6 +11657,13 @@ Seeed Studio
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_edgebox-esp-100`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - :ref:`platform_espressif32`
       - External
@@ -12731,6 +12882,34 @@ VCCGND
       - 168MHz
       - 1MB
       - 128KB
+
+Valetron Systems
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_valtrack_v4_mfw_esp32_c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_valtrack_v4_vts_esp32_c3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
 
 VintLabs
 ~~~~~~~~

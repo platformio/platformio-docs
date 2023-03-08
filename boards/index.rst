@@ -461,9 +461,11 @@ Espressif 32
     espressif32/featheresp32
     espressif32/featheresp32-s2
     espressif32/adafruit_feather_esp32_v2
+    espressif32/adafruit_feather_esp32s2_reversetft
     espressif32/adafruit_feather_esp32s2_tft
     espressif32/adafruit_feather_esp32s3
     espressif32/adafruit_feather_esp32s3_nopsram
+    espressif32/adafruit_feather_esp32s3_reversetft
     espressif32/adafruit_feather_esp32s3_tft
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_itsybitsy_esp32
@@ -489,6 +491,7 @@ Espressif 32
     espressif32/cytron_maker_feather_aiot_s3
     espressif32/d-duino-32
     espressif32/dfrobot_beetle_esp32c3
+    espressif32/dfrobot_firebeetle2_esp32e
     espressif32/dfrobot_firebeetle2_esp32s3
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
@@ -527,8 +530,10 @@ Espressif 32
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
     espressif32/heltec_wifi_kit_32_v2
+    espressif32/heltec_wifi_kit_32_V3
     espressif32/heltec_wifi_lora_32
     espressif32/heltec_wifi_lora_32_V2
+    espressif32/heltec_wifi_lora_32_V3
     espressif32/heltec_wireless_stick
     espressif32/heltec_wireless_stick_lite
     espressif32/hornbill32dev
@@ -540,7 +545,9 @@ Espressif 32
     espressif32/kits-edu
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lilygo-t-display-s3
     espressif32/lionbit
+    espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
     espressif32/m5stack-fire
@@ -577,9 +584,11 @@ Espressif 32
     espressif32/lopy4
     espressif32/wipy3
     espressif32/qchip
+    espressif32/roboheart_hercules
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/watchy
+    espressif32/edgebox-esp-100
     espressif32/seeed_xiao_esp32c3
     espressif32/wesp32
     espressif32/bee_motion
@@ -616,6 +625,8 @@ Espressif 32
     espressif32/tinypico
     espressif32/um_tinys2
     espressif32/um_tinys3
+    espressif32/valtrack_v4_mfw_esp32_c3
+    espressif32/valtrack_v4_vts_esp32_c3
     espressif32/vintlabs-devkit-v1
     espressif32/wemos_d1_mini32
     espressif32/wemos_d1_uno32
