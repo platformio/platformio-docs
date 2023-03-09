@@ -194,14 +194,14 @@ Built-in Filters
 
     * - Name
       - Description
+    * - ``direct``
+      - Do-nothing: forward all data unchanged. Useful if data already contains ANSI escape codes (colors)
     * - ``default``
       - Remove typical terminal control codes from input
     * - ``colorize``
       - Apply different colors for received and echo
     * - ``debug``
       - Print what is sent and received
-    * - ``direct``
-      - Do-nothing: forward all data unchanged
     * - ``hexlify``
       - Show a hexadecimal representation of the data (code point of each character)
     * - ``log2file``
