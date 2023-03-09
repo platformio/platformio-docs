@@ -16,5 +16,5 @@
 
 Type: ``Bool (yes or no)`` | Multiple: ``No`` | Default: ``no``
 
-Disable encodings/transformations of device output.
+Disable encodings/transformations/filters of device output.
 See :option:`pio device monitor --raw`.
