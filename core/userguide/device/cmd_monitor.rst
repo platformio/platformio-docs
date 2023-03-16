@@ -198,8 +198,6 @@ Built-in Filters
       - Do-nothing: forward all data unchanged. Useful if data already contains ANSI escape codes (colors)
     * - ``default``
       - Remove typical terminal control codes from input
-    * - ``colorize``
-      - Apply different colors for received and echo
     * - ``debug``
       - Print what is sent and received
     * - ``hexlify``
