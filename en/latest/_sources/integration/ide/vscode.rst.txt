@@ -476,11 +476,17 @@ You can have different toolbars per workspace thanks to the `User and Workspace 
   {
     "platformio-ide.toolbar": [
       {
-        "text": "Clean All",
+        "text": "$(arrow-right)",
+        "tooltip": "Upload and Monitor the active environment",
+        "commands": "platformio-ide.uploadAndMonitor"
+      },
+      {
+        "text": "Outdated",
+        "tooltip": "List outdated packages for the activate environment",
         "commands": [
           {
             "id": "workbench.action.tasks.runTask",
-            "args": "PlatformIO: Clean All"
+            "args": "PlatformIO: Outdated (${command:platformio-ide.activeEnvironment})"
           }
         ]
       },
