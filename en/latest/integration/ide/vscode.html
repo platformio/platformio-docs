@@ -593,11 +593,17 @@ You can have different toolbars per workspace thanks to the <a class="reference 
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="s2">&quot;platformio-ide.toolbar&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Clean All&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(arrow-right)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Upload and Monitor the active environment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.uploadAndMonitor&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Outdated&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;List outdated packages for the activate environment&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.action.tasks.runTask&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PlatformIO: Clean All&quot;</span>
+<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PlatformIO: Outdated (${command:platformio-ide.activeEnvironment})&quot;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">},</span>
