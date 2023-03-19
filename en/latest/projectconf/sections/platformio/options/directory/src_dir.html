@@ -161,16 +161,20 @@
   <section id="src-dir">
 <span id="projectconf-pio-src-dir"></span><h1><code class="docutils literal notranslate"><span class="pre">src_dir</span></code><a class="headerlink" href="#src-dir" title="Permalink to this heading"></a></h1>
 <p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">No</span></code> | Default: “&lt;Project&gt;/<code class="docutils literal notranslate"><span class="pre">src</span></code>”</p>
-<p>The path to the project’s directory with source code. PlatformIO uses
-it for the <a class="reference internal" href="../../../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command. The default value is <code class="docutils literal notranslate"><span class="pre">src</span></code>
-meaning a <code class="docutils literal notranslate"><span class="pre">src</span></code> directory located in the root directory of the project.</p>
-<p>This option can also be configured by the global environment variable
-<span class="target" id="index-0"></span><a class="reference internal" href="../../../../../envvars.html#envvar-PLATFORMIO_SRC_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SRC_DIR</span></code></a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This option is useful for people who migrate from Arduino IDE where
-the source directory should have the same name as the main source file.
-See <a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/develop/examples/arduino-own-src_dir">example</a> project with own source directory.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">src_dir</span></code> is the path to the directory where the source code of
+the project is located. It is used by the <a class="reference internal" href="../../../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command to compile
+and upload the code to the device. By default, the <code class="docutils literal notranslate"><span class="pre">src_dir</span></code> is set to <code class="docutils literal notranslate"><span class="pre">src</span></code>,
+which means the source code is located in a directory named <code class="docutils literal notranslate"><span class="pre">src</span></code>
+in the root directory of the project.</p>
+<p>You can customize the base directory by setting the <span class="target" id="index-0"></span><a class="reference internal" href="../../../../../envvars.html#envvar-PLATFORMIO_SRC_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SRC_DIR</span></code></a>
+environment variable. This variable should contain the absolute path to the
+directory where the source code is located.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>To include or exclude specific source files from the build process, use the
+<a class="reference internal" href="../../../env/options/build/build_src_filter.html#projectconf-build-src-filter"><span class="std std-ref">build_src_filter</span></a> option in the <a class="reference internal" href="../../../../index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.
+The <a class="reference internal" href="../../../env/options/build/build_src_filter.html#projectconf-build-src-filter"><span class="std std-ref">build_src_filter</span></a> option can take a list of file patterns
+in glob syntax. Only the source files that match the specified patterns will be included in the build process.</p>
 </div>
 </section>
 

@@ -168,6 +168,17 @@ be applied in their order of definition.
 meaning “include ALL files, then exclude the <code class="docutils literal notranslate"><span class="pre">.git</span></code> and <code class="docutils literal notranslate"><span class="pre">svn</span></code> repository folders.</p>
 <p>This option can also be set by the global environment variable
 <span class="target" id="index-0"></span><a class="reference internal" href="../../../../../envvars.html#envvar-PLATFORMIO_BUILD_SRC_FILTER"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_SRC_FILTER</span></code></a>.</p>
+<p><strong>Example</strong></p>
+<p>Include all <code class="docutils literal notranslate"><span class="pre">.c</span></code> and <code class="docutils literal notranslate"><span class="pre">.cpp</span></code> files recursively (<code class="docutils literal notranslate"><span class="pre">**</span></code> means ANY path)
+to the build process but exclude assembly files <code class="docutils literal notranslate"><span class="pre">.S</span></code> and <code class="docutils literal notranslate"><span class="pre">.asm</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">build_src_filter</span><span class="w"> </span><span class="o">=</span>
+<span class="w">  </span><span class="na">+&lt;**/*.c&gt;</span>
+<span class="w">  </span><span class="na">+&lt;**/*.cpp&gt;</span>
+<span class="w">  </span><span class="na">-&lt;**/*.S&gt;</span>
+<span class="w">  </span><span class="na">-&lt;**/*.asm&gt;</span>
+</pre></div>
+</div>
 </section>
 
 

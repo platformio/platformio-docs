@@ -156,10 +156,11 @@
 <section id="id1">
 <h3>6.1.7 (2023-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Show detailed library dependency tree only in the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html#cmdoption-pio-run-v">verbose mode</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4517">issue #4517</a>)</p></li>
-<li><p>Prevented shell injection when converting INO file to CPP (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4532">issue #4532</a>)</p></li>
-<li><p>Restored project generator for <a class="reference external" href="https://docs.platformio.org/en/latest/integration/ide/netbeans.html">NetBeans IDE</a></p></li>
-<li><p>Improved source file filtering functionality for <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/static-code-analysis/index.html">Static Code Analysis</a> feature</p></li>
+<li><p>Improved source file filtering functionality for the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/static-code-analysis/index.html">Static Code Analysis</a> feature, making it easier to analyze only the code you need to</p></li>
+<li><p>Added the ability to show a detailed library dependency tree only in <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html#cmdoption-pio-run-v">verbose mode</a>, which can help you understand the relationship between libraries and troubleshoot issues more effectively (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4517">issue #4517</a>)</p></li>
+<li><p>Added the ability to run only the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html">device monitor</a> when using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html">pio run -t monitor</a> command, saving you time and resources by skipping the build process</p></li>
+<li><p>Implemented a fix for shell injection vulnerabilities when converting INO files to CPP, ensuring your code is safe and secure (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4532">issue #4532</a>)</p></li>
+<li><p>Restored the project generator for the <a class="reference external" href="https://docs.platformio.org/en/latest/integration/ide/netbeans.html">NetBeans IDE</a>, providing you with more flexibility and options for your development workflow</p></li>
 </ul>
 </section>
 <section id="id2">

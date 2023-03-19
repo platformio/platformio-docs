@@ -32,3 +32,17 @@ meaning "include ALL files, then exclude the ``.git`` and ``svn`` repository fol
 
 This option can also be set by the global environment variable
 :envvar:`PLATFORMIO_BUILD_SRC_FILTER`.
+
+**Example**
+
+Include all ``.c`` and ``.cpp`` files recursively (``**`` means ANY path)
+to the build process but exclude assembly files ``.S`` and ``.asm``:
+
+.. code:: ini
+
+  [env:myenv]
+  build_src_filter =
+    +<**/*.c>
+    +<**/*.cpp>
+    -<**/*.S>
+    -<**/*.asm>

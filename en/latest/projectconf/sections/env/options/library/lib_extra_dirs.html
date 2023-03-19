@@ -153,10 +153,19 @@
              
   <section id="lib-extra-dirs">
 <span id="projectconf-lib-extra-dirs"></span><h1><code class="docutils literal notranslate"><span class="pre">lib_extra_dirs</span></code><a class="headerlink" href="#lib-extra-dirs" title="Permalink to this heading"></a></h1>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Please make sure to read <a class="reference internal" href="../../../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> guide first.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 6.0: </span>The <code class="docutils literal notranslate"><span class="pre">lib_extra_dirs</span></code> option has been deprecated and will be removed
+in the next major release.</p>
+<p>If you need to use an external local library that is not part of
+the project, please utilize the <a class="reference internal" href="../../../../../core/userguide/pkg/cmd_install.html#cmd-pkg-install-local-folder"><span class="std std-ref">Local Folder</span></a>
+and “Symbolic Link” features.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">FooLib</span><span class="o">=</span><span class="s">symlink://../../shared-libraries/FooLib</span>
+</pre></div>
 </div>
+</div>
+<hr class="docutils" />
 <p>Type: <code class="docutils literal notranslate"><span class="pre">DirPath</span></code> | Multiple: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p>
 <p>A list with extra directories/storages where <a class="reference internal" href="../../../../../librarymanager/ldf.html#ldf"><span class="std std-ref">Library Dependency Finder (LDF)</span></a> will
 look for dependencies.</p>
