@@ -345,6 +345,8 @@ the ``<name>=`` syntax. See the example below.
         hg+https://hg.server.org/my-package
         hg+ssh://hg.server.org/my-package
 
+.. _cmd_pkg_install_local_folder:
+
 Local Folder
 ~~~~~~~~~~~~
 
