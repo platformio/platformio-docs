@@ -59,6 +59,7 @@
 /projectconf/section_env_upload.html -> /projectconf/sections/env/options/upload/index.html
 /projectconf/section_env.html -> /projectconf/sections/env/index.html
 /projectconf/section_platformio.html -> /projectconf/sections/platformio/index.html
+/projectconf/sections/env/options/check/check_patterns.html -> /projectconf/sections/env/options/check/check_src_filters.html
 /quickstart.html -> /core/quickstart.html
 /scripting/examples/custom_debug_flags.html -> /projectconf/sections/env/options/debug/debug_build_flags.html
 /scripting/examples/custom_upload_tool.html -> /projectconf/sections/env/options/upload/upload_command.html
