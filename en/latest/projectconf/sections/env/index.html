@@ -189,8 +189,8 @@ environments <code class="docutils literal notranslate"><span class="pre">[env:N
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">DepCustom</span>
 </pre></div>
 </div>
-<p>In this example we have two configuration environments <code class="docutils literal notranslate"><span class="pre">release</span></code> and <code class="docutils literal notranslate"><span class="pre">debug</span></code>. This
-is equivalent to duplicating all options as shown below:</p>
+<p>In this example we have two configuration environments <code class="docutils literal notranslate"><span class="pre">release</span></code>
+and <code class="docutils literal notranslate"><span class="pre">debug</span></code>. This is equivalent to duplicating all options as shown below:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:release]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span>
@@ -210,16 +210,24 @@ is equivalent to duplicating all options as shown below:</p>
 </section>
 <section id="working-env-name">
 <span id="projectconf-section-env-named"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a><a class="headerlink" href="#working-env-name" title="Permalink to this heading"></a></h2>
-<p>A section with an <code class="docutils literal notranslate"><span class="pre">env:</span></code> prefix defines a <strong>working environment</strong> for
-<a class="reference internal" href="../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_check.html#cmd-check"><span class="std std-ref">pio check</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a> and other commands.
-Multiple <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> environments with different <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are allowed.
+<p>A working environment in PlatformIO is defined using the <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> syntax.
+This environment is used by various PlatformIO commands such as <a class="reference internal" href="../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>,
+<a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_check.html#cmd-check"><span class="std std-ref">pio check</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a>, and others.
 Every project must define at least one working environment.</p>
-<p>Each environment must have a unique <code class="docutils literal notranslate"><span class="pre">NAME</span></code>. The valid chars for <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are
-letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>,  special char <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore).
-For example, <code class="docutils literal notranslate"><span class="pre">[env:hello_world]</span></code>.</p>
-<p>If you have multiple working environments and you need to process only a few
-of them, the commands mentioned above accept the <code class="docutils literal notranslate"><span class="pre">-e,</span> <span class="pre">--environment</span></code> option to select a subset of the working environments to process.
-The [platformio] <a class="reference internal" href="../platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option can be used to define a default set of working environments for the commands to process.</p>
+<p>You can define multiple working environments in your project by using different
+names for the <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> section. It’s important to note that each
+environment must have a unique name. The name should only include lowercase
+letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>, and special characters <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore) and
+<code class="docutils literal notranslate"><span class="pre">-</span></code> (hyphen). For example, <code class="docutils literal notranslate"><span class="pre">[env:hello_world]</span></code> is a valid name.</p>
+<p>If you have defined multiple working environments and you only want to process
+a subset of them, you can use the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">--environment</span></code> option with the
+PlatformIO commands mentioned above. You can specify the name of the environment
+you want to process using this option.</p>
+<p>In addition to using the <code class="docutils literal notranslate"><span class="pre">-e</span></code> option, you can define a default set of working
+environments for the PlatformIO commands to process by using the <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code>
+<a class="reference internal" href="../platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option. This can be useful if you frequently
+work with a specific set of environments and don’t want to specify them
+every time you run a command.</p>
 </section>
 <section id="options">
 <h2><a class="toc-backref" href="#id3" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Permalink to this heading"></a></h2>
@@ -278,10 +286,10 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
 </li>
 <li class="toctree-l1"><a class="reference internal" href="options/check/index.html">Check options</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_tool.html"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="options/check/check_patterns.html"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_flags.html"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_severity.html"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_skip_packages.html"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/check/check_src_filters.html"><code class="docutils literal notranslate"><span class="pre">check_src_filters</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="options/test/index.html">Testing options</a><ul>
@@ -446,7 +454,7 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7a3 (latest)
+    v6.1.7a4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
