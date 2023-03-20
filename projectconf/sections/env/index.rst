@@ -54,8 +54,8 @@ For example:
     build_flags = -D DEBUG
     lib_deps = DepCustom
 
-In this example we have two configuration environments ``release`` and ``debug``. This
-is equivalent to duplicating all options as shown below:
+In this example we have two configuration environments ``release``
+and ``debug``. This is equivalent to duplicating all options as shown below:
 
 .. code-block:: ini
 
@@ -80,17 +80,19 @@ Working ``[env:NAME]``
 ----------------------
 
 A section with an ``env:`` prefix defines a **working environment** for
-:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug` and other commands.
-Multiple ``[env:NAME]`` environments with different ``NAME`` are allowed.
-Every project must define at least one working environment.
+:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug`, and
+other commands. Multiple ``[env:NAME]`` environments with different ``NAME``
+are allowed. Every project must define at least one working environment.
 
 Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
-letters ``a-z``, numbers ``0-9``,  special char ``_`` (underscore).
-For example, ``[env:hello_world]``.
+letters ``a-z``, numbers ``0-9``,  special chars ``_`` (underscore),
+and ``-`` (hyphen). For example, ``[env:hello_world]``.
 
 If you have multiple working environments and you need to process only a few
-of them, the commands mentioned above accept the ``-e, --environment`` option to select a subset of the working environments to process.
-The [platformio] :ref:`projectconf_pio_default_envs` option can be used to define a default set of working environments for the commands to process.
+of them, the commands mentioned above accept the ``-e, --environment`` option
+to select a subset of the working environments to process.
+The [platformio] :ref:`projectconf_pio_default_envs` option can be used to
+define a default set of working environments for the commands to process.
 
 Options
 -------
