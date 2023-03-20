@@ -79,20 +79,27 @@ and ``debug``. This is equivalent to duplicating all options as shown below:
 Working ``[env:NAME]``
 ----------------------
 
-A section with an ``env:`` prefix defines a **working environment** for
-:ref:`cmd_run`, :ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug`, and
-other commands. Multiple ``[env:NAME]`` environments with different ``NAME``
-are allowed. Every project must define at least one working environment.
+A working environment in PlatformIO is defined using the ``[env:NAME]`` syntax.
+This environment is used by various PlatformIO commands such as :ref:`cmd_run`,
+:ref:`cmd_test`, :ref:`cmd_check`, :ref:`cmd_debug`, and others.
+Every project must define at least one working environment.
 
-Each environment must have a unique ``NAME``. The valid chars for ``NAME`` are
-letters ``a-z``, numbers ``0-9``,  special chars ``_`` (underscore),
-and ``-`` (hyphen). For example, ``[env:hello_world]``.
+You can define multiple working environments in your project by using different
+names for the ``[env:NAME]`` section. It's important to note that each
+environment must have a unique name. The name should only include lowercase
+letters ``a-z``, numbers ``0-9``, and special characters ``_`` (underscore) and
+``-`` (hyphen). For example, ``[env:hello_world]`` is a valid name.
 
-If you have multiple working environments and you need to process only a few
-of them, the commands mentioned above accept the ``-e, --environment`` option
-to select a subset of the working environments to process.
-The [platformio] :ref:`projectconf_pio_default_envs` option can be used to
-define a default set of working environments for the commands to process.
+If you have defined multiple working environments and you only want to process
+a subset of them, you can use the ``-e`` or ``--environment`` option with the
+PlatformIO commands mentioned above. You can specify the name of the environment
+you want to process using this option.
+
+In addition to using the ``-e`` option, you can define a default set of working
+environments for the PlatformIO commands to process by using the ``[platformio]``
+:ref:`projectconf_pio_default_envs` option. This can be useful if you frequently
+work with a specific set of environments and don't want to specify them
+every time you run a command.
 
 Options
 -------
