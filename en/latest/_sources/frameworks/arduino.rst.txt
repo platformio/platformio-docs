@@ -45,7 +45,7 @@ Platforms
       - ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
 
     * - :ref:`platform_espressif8266`
-      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+      - ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.
 
     * - :ref:`platform_heltec-cubecell`
       - Heltec CubeCell is an easy-to-use LoRa Node series brand based on a highly integrated and ultra low power SoC and the LoRa SX1262 transceiver.
@@ -1645,12 +1645,30 @@ Please click on board name for the further details.
       - 133MHz
       - 2MB
       - 264KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_nicla_vision`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_opta`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_opta_m4`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -5294,6 +5312,20 @@ Arduino
       - 64MHz
       - 515.25KB
       - 62.78KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_nicla_vision`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_opta`
       - :ref:`platform_ststm32`
       - External
@@ -5301,6 +5333,13 @@ Arduino
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_opta_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -6883,13 +6922,6 @@ Espressif
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_espressif8266_esp_wroom_02`
-      - :ref:`platform_espressif8266`
-      - No
-      - ESP8266
-      - 80MHz
-      - 2MB
-      - 80KB
     * - :ref:`board_espressif32_pico32`
       - :ref:`platform_espressif32`
       - External
@@ -6904,6 +6936,13 @@ Espressif
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_espressif8266_esp_wroom_02`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 2MB
+      - 80KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
       - On-board

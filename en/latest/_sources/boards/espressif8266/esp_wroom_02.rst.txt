@@ -11,15 +11,15 @@
 
 .. _board_espressif8266_esp_wroom_02:
 
-ESP-WROOM-02
-============
+Espressif ESP-WROOM-02
+======================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+Platform :ref:`platform_espressif8266`: ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.
 
 .. list-table::
 
@@ -46,7 +46,7 @@ Please use ``esp_wroom_02`` ID for :ref:`projectconf_env_board` option in :ref:`
   platform = espressif8266
   board = esp_wroom_02
 
-You can override default ESP-WROOM-02 settings per build environment using
+You can override default Espressif ESP-WROOM-02 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `esp_wroom_02.json <https://github.com/platformio/platform-espressif8266/blob/master/boards/esp_wroom_02.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `esp_wroom_02.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-ESP-WROOM-02 supports the following uploading protocols:
+Espressif ESP-WROOM-02 supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -85,7 +85,7 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support ESP-WROOM-02 board.
+:ref:`piodebug` currently does not support Espressif ESP-WROOM-02 board.
 
 Frameworks
 ----------

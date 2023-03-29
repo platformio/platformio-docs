@@ -93,6 +93,9 @@ Packages
     * - `framework-arduino-megaavr-megatinycore <https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megatinycore>`__
       - Arduino Wiring-based Framework for Microchip tinyAVR 0-series and 1-series chips (megaTinyCore)
 
+    * - `tool-avrdude <https://registry.platformio.org/tools/platformio/tool-avrdude>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
+
     * - `tool-avrdude-megaavr <https://registry.platformio.org/tools/platformio/tool-avrdude-megaavr>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers
 

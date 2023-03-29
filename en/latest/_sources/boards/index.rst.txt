@@ -663,12 +663,12 @@ Espressif 8266
     espressif8266/huzzah
     espressif8266/oak
     espressif8266/espmxdevkit
-    espressif8266/esp_wroom_02
     espressif8266/espduino
     espressif8266/espectro
     espressif8266/espino
     espressif8266/espresso_lite_v1
     espressif8266/espresso_lite_v2
+    espressif8266/esp_wroom_02
     espressif8266/esp12e
     espressif8266/esp01_1m
     espressif8266/esp01
@@ -1319,7 +1319,10 @@ ST STM32
     ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
+    ststm32/nicla_vision_m4
+    ststm32/nicla_vision
     ststm32/opta
+    ststm32/opta_m4
     ststm32/portenta_h7_m4
     ststm32/portenta_h7_m7
     ststm32/armstrap_eagle1024

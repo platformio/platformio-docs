@@ -703,11 +703,26 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_nicla_vision`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_opta`
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_opta_m4`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - STM32H747XIH6
       - 480MHz
@@ -1855,12 +1870,30 @@ Arduino
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_nicla_vision`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_opta`
       - External
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_opta_m4`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - External
       - STM32H747XIH6
