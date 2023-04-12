@@ -38,9 +38,7 @@ Options
 .. option::
     -d, --storage-dir
 
-Manage custom library storage. It can be used later for the
-:ref:`projectconf_lib_extra_dirs` option from :ref:`projectconf`.
-Multiple options are allowed.
+Manage custom library storage. Multiple options are allowed.
 
 .. option::
     -g, --global
