@@ -170,12 +170,12 @@ patch file and place it into <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 <p>The result of <code class="docutils literal notranslate"><span class="pre">1-framework-arduinoavr-add-pin-a8.patch</span></code>:</p>
-<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="w">63a64</span>
-<span class="w">&gt; #define PIN_A8   (99)</span>
-<span class="w">112c113</span>
-<span class="w">&lt; // 14-21 PA0-PA7 works</span>
-<span class="gd">---</span>
-<span class="w">&gt; // 14-21 PA0-PA7 works</span>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span>63a64
+<span class="gi">&gt; #define PIN_A8   (99)</span>
+112c113
+<span class="gd">&lt; // 14-21 PA0-PA7 works</span>
+<span class="gs">---</span>
+<span class="gi">&gt; // 14-21 PA0-PA7 works</span>
 </pre></div>
 </div>
 <p>Using extra scripting we can apply patching before a build process. The final
