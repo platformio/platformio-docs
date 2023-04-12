@@ -36,9 +36,6 @@ Type: ``DirPath`` | Multiple: ``Yes``
 A list with extra directories/storages where :ref:`ldf` will
 look for dependencies.
 
-This option can also be set by global environment variable
-:envvar:`PLATFORMIO_LIB_EXTRA_DIRS`.
-
 .. warning::
   This is a not direct path to a library with source code. It should be a path
   to storage that contains libraries grouped by folders. For example,
