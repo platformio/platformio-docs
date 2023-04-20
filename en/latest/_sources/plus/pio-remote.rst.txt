@@ -34,7 +34,7 @@ Using |PIORemote| you can share your devices with colleagues across your
 organization or friends. In combination with :ref:`ide_cloud`, you can create
 awesome things at any time when inspiration comes to you.
 
-You should have :ref:`pioaccount` to use |PIORemote|.
+You must have an :ref:`pioaccount` to use |PIORemote|.
 A registration is **FREE**.
 
 
