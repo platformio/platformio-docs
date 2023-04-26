@@ -14,8 +14,6 @@
 Simulators
 ----------
 
-.. versionadded:: 6.0
-
 Simulation tools and frameworks allow you to simulate hardware systems
 and run unit tests in virtual environments. Simulators can significantly
 accelerate your project development, especially when used in pair

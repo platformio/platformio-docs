@@ -16,8 +16,6 @@
 pio pkg install
 ===============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage

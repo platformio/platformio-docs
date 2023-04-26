@@ -14,8 +14,6 @@
 pio pkg show
 ============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage
