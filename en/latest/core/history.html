@@ -156,22 +156,23 @@
 <section id="id1">
 <h3>6.1.7 (2023-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Implemented a new feature to store device monitor logs in the project’s “logs” folder, making it easier to access and review device monitor logs for your projects (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4596">issue #4596</a>)</p></li>
-<li><p>Improved support for projects located on Windows network drives, including Network Shared Folder, Dropbox, OneDrive, Google Drive, and other similar services (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3417">issue #3417</a>)</p></li>
-<li><p>Improved source file filtering functionality for the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/static-code-analysis/index.html">Static Code Analysis</a> feature, making it easier to analyze only the code you need to</p></li>
+<li><p>Implemented a new feature to store device monitor logs in the project’s <code class="docutils literal notranslate"><span class="pre">logs</span></code> folder, making it easier to access and review device monitor logs for your projects (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4596">issue #4596</a>)</p></li>
 <li><p>Added the ability to show a detailed library dependency tree only in <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html#cmdoption-pio-run-v">verbose mode</a>, which can help you understand the relationship between libraries and troubleshoot issues more effectively (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4517">issue #4517</a>)</p></li>
 <li><p>Added the ability to run only the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html">device monitor</a> when using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html">pio run -t monitor</a> command, saving you time and resources by skipping the build process</p></li>
 <li><p>Added validation for <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/env/index.html#working-env-name">project working environment names</a> to ensure that they only contain lowercase letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>, and special characters <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore) and <code class="docutils literal notranslate"><span class="pre">-</span></code> (hyphen)</p></li>
+<li><p>Improved support for projects located on Windows network drives, including Network Shared Folder, Dropbox, OneDrive, Google Drive, and other similar services (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/3417">issue #3417</a>)</p></li>
+<li><p>Improved source file filtering functionality for the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/static-code-analysis/index.html">Static Code Analysis</a> feature, making it easier to analyze only the code you need to</p></li>
 <li><p>Upgraded the build engine to the latest version of SCons (4.5.2) to improve build performance, reliability, and compatibility with other tools and systems (<a class="reference external" href="https://github.com/SCons/scons/releases/tag/4.5.2">release notes</a>)</p></li>
 <li><p>Implemented a fix for shell injection vulnerabilities when converting INO files to CPP, ensuring your code is safe and secure (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4532">issue #4532</a>)</p></li>
 <li><p>Restored the project generator for the <a class="reference external" href="https://docs.platformio.org/en/latest/integration/ide/netbeans.html">NetBeans IDE</a>, providing you with more flexibility and options for your development workflow</p></li>
+<li><p>Resolved installation issues with PIO Remote on Raspberry Pi and other small form-factor PCs (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4425">issue #4425</a>, <a class="reference external" href="https://github.com/platformio/platformio-core/issues/4493">issue #4493</a>, <a class="reference external" href="https://github.com/platformio/platformio-core/issues/4607">issue #4607</a>)</p></li>
 <li><p>Resolved an issue where the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/platformio/options/directory/build_cache_dir.html">build_cache_dir</a> setting was not being recognized consistently across multiple environments (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4574">issue #4574</a>)</p></li>
 <li><p>Resolved an issue where organization details could not be updated using the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/org/cmd_update.html">pio org update</a> command</p></li>
 <li><p>Resolved an issue where the incorrect debugging environment was generated for VSCode in “Auto” mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4597">issue #4597</a>)</p></li>
 <li><p>Resolved an issue where native tests would fail if a custom program name was specified (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4546">issue #4546</a>)</p></li>
 <li><p>Resolved an issue where the PlatformIO <a class="reference external" href="https://docs.platformio.org/en/latest/plus/debugging.html">Debugging</a> solution was not escaping the tool installation process into MI2 correctly (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4565">issue #4565</a>)</p></li>
 <li><p>Resolved an issue where multiple targets were not executed sequentially (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4604">issue #4604</a>)</p></li>
-<li><p>Resolved installation issues with PIO Remote on Raspberry Pi and other small form-factor PCs (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4425">issue #4425</a>, <a class="reference external" href="https://github.com/platformio/platformio-core/issues/4493">issue #4493</a>, <a class="reference external" href="https://github.com/platformio/platformio-core/issues/4607">issue #4607</a>)</p></li>
+<li><p>Resolved an issue where upgrading PlatformIO Core fails on Windows with Python 3.11 (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4540">issue #4540</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -570,7 +571,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7b2 (latest)
+    v6.1.7rc1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
