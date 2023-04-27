@@ -31,13 +31,13 @@ Example of using a `Espressif 32 development platform <https://registry.platform
 
     [env:recommended_specification]
     ; allow backwards-compatible new functionality and bug-fixes
-    platform = espressif32@^3.5.0
+    platform = espressif32@^6.1.0
 
     [env:allow_only_bug_fixes]
-    platform = espressif32@~3.5.0
+    platform = espressif32@~6.1.0
 
     [env:exact_version]
-    platform = espressif32@3.5.0
+    platform = espressif32@6.1.0
 
     [env:latest_version]
     ; not recommended as it does not ensure that 

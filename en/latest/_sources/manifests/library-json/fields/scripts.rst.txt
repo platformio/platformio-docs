@@ -12,8 +12,6 @@
 ``scripts``
 -----------
 
-.. versionadded:: 6.0
-
 *Optional* | Type: ``Object``
 
 Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:

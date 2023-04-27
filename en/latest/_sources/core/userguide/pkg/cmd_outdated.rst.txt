@@ -14,8 +14,6 @@
 pio pkg outdated
 ================
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage
