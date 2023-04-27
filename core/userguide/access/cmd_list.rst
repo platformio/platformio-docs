@@ -84,12 +84,6 @@ Examples
     Owner:            platformio
     Access level(s):  Admin
 
-    contrib-pysite
-    --------------
-    URN:              prn:reg:pkg:8038:tool
-    Owner:            platformio
-    Access level(s):  Admin
-
     ...
 
 2. List all accessible resources by specific owner:
