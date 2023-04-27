@@ -62,6 +62,12 @@ board manifest `adafruit_feather_esp32s3_nopsram.json <https://github.com/platfo
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
+  
+  ; make serial port use correct speed
+  monitor_speed = 115200
+  
+  : use the correct USB peripheral, so programming will work
+  build_flags = -DARDUINO_USB_MODE=1
 
 
 Uploading
