@@ -170,10 +170,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - :ref:`framework_pulp-os`
-      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
+      - SDK for Greenwaves Technologies' GAP8 IoT Application Processor
 
 Boards
 ------

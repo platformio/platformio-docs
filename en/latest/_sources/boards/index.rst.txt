@@ -516,6 +516,7 @@ Espressif 32
     espressif32/atmegazero_esp32s2
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-c3-devkitc-02
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
@@ -552,6 +553,7 @@ Espressif 32
     espressif32/m5stack-core2
     espressif32/m5stack-fire
     espressif32/m5stack-grey
+    espressif32/m5stack-stamps3
     espressif32/m5stack-station
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
@@ -590,6 +592,7 @@ Espressif 32
     espressif32/watchy
     espressif32/edgebox-esp-100
     espressif32/seeed_xiao_esp32c3
+    espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
     espressif32/bee_motion
     espressif32/bee_motion_mini
@@ -636,6 +639,7 @@ Espressif 32
     espressif32/lolin_s2_mini
     espressif32/lolin_s2_pico
     espressif32/lolin_s3
+    espressif32/lolin_s3_mini
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemosbat

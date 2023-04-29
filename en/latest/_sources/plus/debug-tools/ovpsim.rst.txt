@@ -47,10 +47,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_pulp-runtime`
-      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Runtime Environment for Parallel Ultra Low Power platform
 
     * - :ref:`framework_pulp-sdk`
-      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Software Development Kit for Parallel Ultra Low Power platform
 
 Boards
 ------

@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Deneyap <https://deneyapkart.org/magaza/urun-deneyap-kart.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `T3 Foundation <https://magaza.deneyapkart.org/tr/product/detail/deneyap-kart?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -158,7 +158,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_espidf`
-      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip

@@ -17,7 +17,7 @@ PULP SDK
 :Configuration:
   :ref:`projectconf_env_framework` = ``pulp-sdk``
 
-Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
+Software Development Kit for Parallel Ultra Low Power platform
 
 .. contents:: Contents
     :local:
