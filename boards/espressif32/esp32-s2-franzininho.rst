@@ -158,4 +158,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_espidf`
-      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip

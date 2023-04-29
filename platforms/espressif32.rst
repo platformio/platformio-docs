@@ -380,6 +380,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitc-02`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-c3-devkitm-1`
       - ESP32C3
       - 160MHz
@@ -490,6 +495,11 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_m5stack-stamps3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_mhetesp32devkit`
       - ESP32
       - 240MHz
@@ -569,6 +579,11 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32s3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_wesp32`
       - ESP32
@@ -775,6 +790,11 @@ Please click on board name for the further details.
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_mini`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
       - ESP32
       - 240MHz
@@ -956,10 +976,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_espidf`
-      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
 Boards
 ------
@@ -1398,55 +1418,6 @@ DSTIKE
       - 4MB
       - 320KB
 
-Deneyap
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_deneyapkart`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_deneyapkart1A`
-      - External
-      - ESP32
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_deneyapkart1Av2`
-      - External
-      - ESP32S3
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_deneyapkartg`
-      - External
-      - ESP32C3
-      - 160MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_deneyapmini`
-      - External
-      - ESP32S2
-      - 240MHz
-      - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_deneyapminiv2`
-      - External
-      - ESP32S2
-      - 240MHz
-      - 4MB
-      - 320KB
-
 Denky
 ~~~~~
 
@@ -1639,6 +1610,12 @@ Espressif
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-c3-devkitc-02`
+      - External
+      - ESP32C3
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_esp32-c3-devkitm-1`
@@ -2091,6 +2068,12 @@ M5Stack
       - 240MHz
       - 16MB
       - 520KB
+    * - :ref:`board_espressif32_m5stack-stamps3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-station`
       - No
       - ESP32
@@ -2573,6 +2556,12 @@ Seeed Studio
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 Silicognition
 ~~~~~~~~~~~~~
@@ -2696,6 +2685,55 @@ SparkFun Electronics
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+T3 Foundation
+~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_deneyapkart`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapkart1A`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapkart1Av2`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapkartg`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapmini`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_deneyapminiv2`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
       - 320KB
 
 TAMC
@@ -3073,6 +3111,12 @@ WEMOS
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin_s3_mini`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32`
       - External

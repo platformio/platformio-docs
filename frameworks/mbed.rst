@@ -17,7 +17,7 @@ Mbed
 :Configuration:
   :ref:`projectconf_env_framework` = ``mbed``
 
-Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+Arm Mbed OS is a platform operating system designed for the internet of things
 
 .. contents:: Contents
     :local:

@@ -17,7 +17,7 @@ Standard Peripheral Library
 :Configuration:
   :ref:`projectconf_env_framework` = ``spl``
 
-The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
+Standard Peripheral Library for ST STM32 microcontrollers
 
 .. contents:: Contents
     :local:
