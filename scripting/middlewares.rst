@@ -29,6 +29,8 @@ You can add an unlimited number of build middlewares. They will be called in ord
 registration. Please note, if a middleware ignores a node (returns ``None``), the next
 middlewares in a chain will be ignored automatically.
 
+A middleware can be only added to a ``PRE`` kind of :ref:`scripting_launch_types`.
+
 **Examples**
 
 ``platformio.ini``:
