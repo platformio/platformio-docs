@@ -148,6 +148,7 @@ which is added for the build process.</p>
 <p>You can add an unlimited number of build middlewares. They will be called in order of
 registration. Please note, if a middleware ignores a node (returns <code class="docutils literal notranslate"><span class="pre">None</span></code>), the next
 middlewares in a chain will be ignored automatically.</p>
+<p>A middleware can be only added to a <code class="docutils literal notranslate"><span class="pre">PRE</span></code> kind of <a class="reference internal" href="launch_types.html#scripting-launch-types"><span class="std std-ref">Launch Types</span></a>.</p>
 <p><strong>Examples</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:build_middleware]</span>
