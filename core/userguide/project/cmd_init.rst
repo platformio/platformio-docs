@@ -96,6 +96,14 @@ board will be ``[env:teensy31]``.
 Do not resolve project dependencies and do not install missed packages.
 
 .. option::
+    --sample-code
+
+.. versionadded:: 6.1.7
+
+Include sample code in the newly created project. The availability of
+sample code depends on the :ref:`platforms` being used.
+
+.. option::
     -s, --silent
 
 Suppress progress reporting.
