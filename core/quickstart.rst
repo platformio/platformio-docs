@@ -109,7 +109,7 @@ pre-installed instruments for the professional development.
         You can specify another project directory via
         `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
-        The next files/directories will be created in ***
+        The following files/directories will be created in ***
         platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
         src - Put your source files here
         lib - Put here project specific (private) libraries
