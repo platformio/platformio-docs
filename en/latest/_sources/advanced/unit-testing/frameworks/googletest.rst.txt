@@ -61,6 +61,8 @@ to the ``googletest`` and implement your own ``main()`` function:
 .. code:: cpp
 
   #include <gtest/gtest.h>
+  // uncomment line below if you plan to use GMock
+  // #include <gmock/gmock.h>
 
   // TEST(...)
   // TEST_F(...)
