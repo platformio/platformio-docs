@@ -14,16 +14,27 @@
 ``lib_extra_dirs``
 ------------------
 
-.. seealso::
-    Please make sure to read :ref:`ldf` guide first.
+.. deprecated:: 6.0
+
+    The ``lib_extra_dirs`` option has been deprecated and will be removed
+    in the next major release.
+
+    If you need to use an external local library that is not part of
+    the project, please utilize the :ref:`cmd_pkg_install_local_folder`
+    and "Symbolic Link" features.
+
+    .. code-block:: ini
+
+        [env:myenv]
+        lib_deps =
+            FooLib=symlink://../../shared-libraries/FooLib
+
+---------
 
 Type: ``DirPath`` | Multiple: ``Yes``
 
 A list with extra directories/storages where :ref:`ldf` will
 look for dependencies.
-
-This option can also be set by global environment variable
-:envvar:`PLATFORMIO_LIB_EXTRA_DIRS`.
 
 .. warning::
   This is a not direct path to a library with source code. It should be a path

@@ -95,12 +95,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = openhw
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = openhw@x.y.z
     board = ...
@@ -165,10 +166,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_pulp-runtime`
-      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Runtime Environment for Parallel Ultra Low Power platform
 
     * - :ref:`framework_pulp-sdk`
-      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Software Development Kit for Parallel Ultra Low Power platform
 
 Boards
 ------

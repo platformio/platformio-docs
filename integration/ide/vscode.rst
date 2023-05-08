@@ -148,6 +148,9 @@ Each button contains hint (delay mouse on it).
 7. Project environment switcher (if more than one environment is available).
    See :ref:`projectconf_section_env` of :ref:`projectconf` .
 
+You can override default buttons and create your own toolbar.
+See ``platformio-ide.toolbar`` in :ref:`ide_vscode_settings`.
+
 .. _ide_vscode_pio_core_cli:
 
 PlatformIO Core (CLI)
@@ -237,6 +240,12 @@ You can work with multiple project folders in Visual Studio Code with
 multi-root workspaces. This can be very helpful when you are working on
 several related projects at the same time. Read more in the documentation
 `Multi-root Workspaces <https://code.visualstudio.com/docs/editor/multi-root-workspaces>`_.
+
+Serial & UDP Plotter
+--------------------
+
+See `Teleplot - Ridiculously-simple telemetry viewer <https://marketplace.visualstudio.com/items?itemName=alexnesnes.teleplot>`_
+community extension.
 
 .. _ide_vscode_serial_port_monitor:
 
@@ -380,12 +389,6 @@ Settings
 
 `How to configure VSCode settings? <https://code.visualstudio.com/docs/getstarted/settings>`__
 
-``platformio-ide.activateOnlyOnPlatformIOProject``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If true, activate the ``platformio ide`` extension only when a
-PlatformIO-based project (that has a :ref:`projectconf`) is open in the
-workspace. The default value is ``false``.
-
 ``platformio-ide.activateProjectOnTextEditorChange``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Automatically activate project depending on an active opened text editor.
@@ -406,12 +409,10 @@ The default value is ``true``.
 If true, automatically rebuild the C/C++ Project Index when :ref:`projectconf`
 is changed or when new libraries are installed. The default value is ``true``.
 
-``platformio-ide.buildTask``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The build task (label) that is launched by the "Build" button in the
-:ref:`ide_vscode_toolbar` and :ref:`ide_vscode_keybindings`. The default is ``PlatformIO: Build``.
-
-You can create custom :ref:`ide_vscode_custom_task` and assign one of them to ``platformio-ide.buildTask``.
+``platformio-ide.showEditorTitleShortcuts``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Show Build, Upload, Clean, and other buttons in the editor title bar.
+The default value is ``true``.
 
 ``platformio-ide.autoPreloadEnvTasks``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,15 +423,6 @@ Automatically preload ALL project environment tasks. The default value is ``fals
 Custom PATH for the ``platformio`` command. Paste here the result of ``echo $PATH``
 (Unix) / ``echo %PATH%`` (Windows) command by typing into your system terminal
 if you prefer to use a custom version of :ref:`piocore`. The default value is ``null``, meaning PlatformIO looks for the ``platformio`` command in the system path.
-
-``platformio-ide.disableToolbar``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Disable the PlatformIO toolbar. The default value is ``false``.
-
-``platformio-ide.forceUploadAndMonitor``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-If true, the Upload (``platformio-ide.upload``) command is changed to
-use the "Upload and Monitor" task. The default value is ``false``.
 
 ``platformio-ide.reopenSerialMonitorDelay``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -461,11 +453,75 @@ PlatformIO Home server HTTP host.The default is ``127.0.0.1``, but in case of do
 ``platformio-ide.pioHomeServerHttpPort``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PlatformIO Home server HTTP port. The default value ``0`` automatically assigns a free port in
-the range [8010..8100]).
+the range [45000..45999]).
 
 ``platformio-ide.customPyPiIndexUrl``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Custom base URL of the Python Package Index (default ``https://pypi.org/simple``).
+
+``platformio-ide.toolbar``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Configure your own :ref:`ide_vscode_toolbar` with your own buttons and attach commands to them.
+There is no limitation to command scope. You can use `Built-in VSCode Commands <https://code.visualstudio.com/api/references/commands>`__
+or commands from your 3rd party favorite extensions.
+
+The button can be text, an icon, or a mix of them. The list of supported icons is documented in `VSCode Icon Listing <https://code.visualstudio.com/api/references/icons-in-labels#icon-listing>`__.
+You can have different toolbars per workspace thanks to the `User and Workspace Settings <https://code.visualstudio.com/docs/getstarted/settings>`__.
+
+**Example**
+
+.. code:: javascript
+
+  {
+    "platformio-ide.toolbar": [
+      {
+        "text": "$(arrow-right)",
+        "tooltip": "Upload and Monitor the active environment",
+        "commands": "platformio-ide.uploadAndMonitor"
+      },
+      {
+        "text": "Outdated",
+        "tooltip": "List outdated packages for the activate environment",
+        "commands": [
+          {
+            "id": "workbench.action.tasks.runTask",
+            "args": "PlatformIO: Outdated (${command:platformio-ide.activeEnvironment})"
+          }
+        ]
+      },
+      {
+        "text": "$(list-selection)",
+        "tooltip": "List devices",
+        "commands": [
+          {
+            "id": "platformio-ide.runPIOCoreCommand",
+            "args": "pio device list"
+          }
+        ]
+      },
+      {
+        "text": "$(plug)",
+        "commands": [
+          {
+            "id": "platformio-ide.runPIOCoreCommand",
+            "args": "pio device monitor --filter time"
+          }
+        ]
+      },
+      {
+        "text": "$(terminal)",
+        "commands": [
+          {
+            "id": "workbench.action.terminal.sendSequence",
+            "args": {
+              "text": "echo 1\n"
+            }
+          }
+        ]
+      }
+    ]
+  }
 
 Known issues
 ------------

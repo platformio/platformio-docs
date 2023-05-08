@@ -54,9 +54,13 @@ Atmel AVR
     atmelavr/ATmega162
     atmelavr/ATmega164A
     atmelavr/ATmega164P
+    atmelavr/ATmega165
+    atmelavr/ATmega165P
     atmelavr/ATmega168
     atmelavr/ATmega168P
     atmelavr/ATmega168PB
+    atmelavr/ATmega169P
+    atmelavr/ATmega169A
     atmelavr/ATmega2560
     atmelavr/ATmega2561
     atmelavr/ATmega32
@@ -64,9 +68,17 @@ Atmel AVR
     atmelavr/ATmega324P
     atmelavr/ATmega324PA
     atmelavr/ATmega324PB
+    atmelavr/ATmega325
+    atmelavr/ATmega3250
+    atmelavr/ATmega3250P
+    atmelavr/ATmega325P
     atmelavr/ATmega328
     atmelavr/ATmega328P
     atmelavr/ATmega328PB
+    atmelavr/ATmega329
+    atmelavr/ATmega3290
+    atmelavr/ATmega3290P
+    atmelavr/ATmega329P
     atmelavr/ATmega48
     atmelavr/ATmega48P
     atmelavr/ATmega48PB
@@ -74,6 +86,14 @@ Atmel AVR
     atmelavr/ATmega640
     atmelavr/ATmega644A
     atmelavr/ATmega644P
+    atmelavr/ATmega645
+    atmelavr/ATmega6450
+    atmelavr/ATmega6450P
+    atmelavr/ATmega645P
+    atmelavr/ATmega649
+    atmelavr/ATmega6490
+    atmelavr/ATmega6490P
+    atmelavr/ATmega649P
     atmelavr/ATmega8
     atmelavr/ATmega8515
     atmelavr/ATmega8535
@@ -441,9 +461,11 @@ Espressif 32
     espressif32/featheresp32
     espressif32/featheresp32-s2
     espressif32/adafruit_feather_esp32_v2
+    espressif32/adafruit_feather_esp32s2_reversetft
     espressif32/adafruit_feather_esp32s2_tft
     espressif32/adafruit_feather_esp32s3
     espressif32/adafruit_feather_esp32s3_nopsram
+    espressif32/adafruit_feather_esp32s3_reversetft
     espressif32/adafruit_feather_esp32s3_tft
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_itsybitsy_esp32
@@ -469,6 +491,7 @@ Espressif 32
     espressif32/cytron_maker_feather_aiot_s3
     espressif32/d-duino-32
     espressif32/dfrobot_beetle_esp32c3
+    espressif32/dfrobot_firebeetle2_esp32e
     espressif32/dfrobot_firebeetle2_esp32s3
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
@@ -493,6 +516,7 @@ Espressif 32
     espressif32/atmegazero_esp32s2
     espressif32/esp-wrover-kit
     espressif32/esp32dev
+    espressif32/esp32-c3-devkitc-02
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
@@ -507,8 +531,10 @@ Espressif 32
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
     espressif32/heltec_wifi_kit_32_v2
+    espressif32/heltec_wifi_kit_32_V3
     espressif32/heltec_wifi_lora_32
     espressif32/heltec_wifi_lora_32_V2
+    espressif32/heltec_wifi_lora_32_V3
     espressif32/heltec_wireless_stick
     espressif32/heltec_wireless_stick_lite
     espressif32/hornbill32dev
@@ -520,11 +546,14 @@ Espressif 32
     espressif32/kits-edu
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lilygo-t-display-s3
     espressif32/lionbit
+    espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
     espressif32/m5stack-fire
     espressif32/m5stack-grey
+    espressif32/m5stack-stamps3
     espressif32/m5stack-station
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
@@ -557,10 +586,13 @@ Espressif 32
     espressif32/lopy4
     espressif32/wipy3
     espressif32/qchip
+    espressif32/roboheart_hercules
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
     espressif32/watchy
+    espressif32/edgebox-esp-100
     espressif32/seeed_xiao_esp32c3
+    espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
     espressif32/bee_motion
     espressif32/bee_motion_mini
@@ -596,6 +628,8 @@ Espressif 32
     espressif32/tinypico
     espressif32/um_tinys2
     espressif32/um_tinys3
+    espressif32/valtrack_v4_mfw_esp32_c3
+    espressif32/valtrack_v4_vts_esp32_c3
     espressif32/vintlabs-devkit-v1
     espressif32/wemos_d1_mini32
     espressif32/wemos_d1_uno32
@@ -605,6 +639,7 @@ Espressif 32
     espressif32/lolin_s2_mini
     espressif32/lolin_s2_pico
     espressif32/lolin_s3
+    espressif32/lolin_s3_mini
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemosbat
@@ -632,12 +667,12 @@ Espressif 8266
     espressif8266/huzzah
     espressif8266/oak
     espressif8266/espmxdevkit
-    espressif8266/esp_wroom_02
     espressif8266/espduino
     espressif8266/espectro
     espressif8266/espino
     espressif8266/espresso_lite_v1
     espressif8266/espresso_lite_v2
+    espressif8266/esp_wroom_02
     espressif8266/esp12e
     espressif8266/esp01_1m
     espressif8266/esp01
@@ -663,6 +698,7 @@ Espressif 8266
     espressif8266/esp210
     espressif8266/espinotee
     espressif8266/d1
+    espressif8266/d1_wroom_02
     espressif8266/d1_mini
     espressif8266/d1_mini_lite
     espressif8266/d1_mini_pro
@@ -695,6 +731,24 @@ Freescale Kinetis
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
     freescalekinetis/segger_ip_switch
+
+Heltec CubeCell
+---------------
+
+.. toctree::
+    :maxdepth: 1
+        
+    heltec-cubecell/cubecell_capsule_solar_sensor
+    heltec-cubecell/cubecell_node
+    heltec-cubecell/cubecell_board
+    heltec-cubecell/cubecell_board_pro
+    heltec-cubecell/cubecell_board_plus
+    heltec-cubecell/cubecell_board_v2
+    heltec-cubecell/cubecell_capsule
+    heltec-cubecell/cubecell_gps
+    heltec-cubecell/cubecell_module
+    heltec-cubecell/cubecell_module_plus
+    heltec-cubecell/cubecell_module_v2
 
 Intel ARC32
 -----------
@@ -1266,13 +1320,19 @@ ST STM32
     ststm32/b96b_f446ve
     ststm32/b96b_aerocore2
     ststm32/b96b_neonkey
+    ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
+    ststm32/nicla_vision_m4
+    ststm32/nicla_vision
+    ststm32/opta
+    ststm32/opta_m4
     ststm32/portenta_h7_m4
     ststm32/portenta_h7_m7
     ststm32/armstrap_eagle1024
     ststm32/armstrap_eagle2048
     ststm32/armstrap_eagle512
+    ststm32/btt_ebb42_v1_1
     ststm32/black_f407ve
     ststm32/black_f407vg
     ststm32/black_f407ze
@@ -1321,6 +1381,7 @@ ST STM32
     ststm32/xdot_l151cc
     ststm32/netduino2plus
     ststm32/mote_l152rc
+    ststm32/nucleo_g070rb
     ststm32/nucleo_g071rb
     ststm32/nucleo_g431kb
     ststm32/nucleo_g431rb
@@ -1500,6 +1561,7 @@ ST STM32
     ststm32/seeedArchMax
     ststm32/wio_3g
     ststm32/steval_mksboxv1
+    ststm32/agafia_sg0
     ststm32/sparky_v1
     ststm32/thunder_pack
     ststm32/thunder_pack_f411

@@ -15,31 +15,11 @@ Tutorials
 * :ref:`tutorial_espressif32_espidf_debugging_unit_testing_analysis`
 * Book: `Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices <https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/>`_ (using the PlatformIO with ESP-IDF)
 
+.. note::
+  Each release of the :ref:`platform_espressif32` platform uses a specific version of ESP-IDF. The latest version of the platform only supports the latest stable version of the framework.
+
 Configuration
 -------------
-
-.. note::
-
-    Starting with ESP-IDF v4.0, a CMake-based build system is used. Different
-    configuration steps are required for ESP-IDF v3.x due to a legacy build system
-    based on GNU Make.
-
-.. contents::
-    :local:
-    :depth: 1
-
-
-Each release of :ref:`platform_espressif32` platform uses a specific version of ESP-IDF.
-The latest version of the platform only supports the latest stable version of the
-framework.
-
-.. warning::
-
-    ESP-IDF v4.0 projects are not backwards-compatible with ESP-IDF v3.x projects in
-    terms of project configuration process.
-
-Configuration for 4.0
-~~~~~~~~~~~~~~~~~~~~~
 
 .. contents::
     :local:
@@ -78,7 +58,7 @@ of the project. This configuration file can be modified via a special target cal
   ``-`` and ``+`` keys on the numeric keypad.
 
 Project Structure
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 The ESP-IDF framework requires an unusual project structure because most of the framework
 configuration is performed by the native for the ESP-IDF build system called ``CMake``.
@@ -166,7 +146,7 @@ for ``C++``) in order to force CMake generate build configuration for this langu
 
 
 ESP-IDF components
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 ESP-IDF modules as modular pieces of standalone code might be useful for structuring
 reusable code or including third party components that aren’t part of ESP-IDF.
@@ -207,7 +187,7 @@ characters (see ``CMAKE_OBJECT_PATH_MAX``) it might be a good idea to keep modul
 to the project files.
 
 ULP coprocessor programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to take measurements using ADC, internal temperature sensor or external
 I2C sensors, while the main processors are in deep sleep mode you need to use ULP
@@ -264,7 +244,7 @@ More details are located in the official ESP-IDF documentation -
 `ULP coprocessor programming <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable>`_.
 
 Limitations
-^^^^^^^^^^^
+-----------
 
 At the moment several limitations are present:
 
@@ -287,90 +267,3 @@ At the moment several limitations are present:
 * The ``src_filter`` option cannot be used. It's done to preserve compatibility with
   existing ESP-IDF projects. List of source files is specified in the project
   ``CMakeLists.txt`` file.
-
-Configuration for 3.0, 3.1, 3.2, 3.3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Support for ESP-IDF v3.x is considered obsolete and is not available in the latest
-platform releases. Please check the `platform release notes <https://github.com/platformio/platform-espressif32/releases>`_
-to figure out what version of the platform should be installed to use required ESP-IDF
-version, for example:
-
-    .. code-block:: ini
-
-        [env:esp32dev]
-        ; v1.10.0 is the last version that supports ESP-IDF v3.3
-        platform = espressif32@1.10.0
-        framework = espidf
-        board = esp32dev
-
-Project Structure
-^^^^^^^^^^^^^^^^^
-
-Due to limited support of GNU Make build system used in ESP-IDF v3.x, the project
-configuration depends on a pregenerated file ``sdkconfig.h`` which contains a list of
-macro definitions ``CONFIG_*``. These definitions describe project settings that will be
-used for preparing a proper build environment. You can use the default ``sdkconfig.h``
-shipped with the platform or generate a custom one using native ESP-IDF build
-environment.
-
-A typical PlatformIO project for ESP-IDF v3.x must have the following structure:
-
-.. code-block:: none
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── sdkconfig.h
-    │    └── main.c
-    └── platformio.ini
-
-Enable C++ exceptions
-^^^^^^^^^^^^^^^^^^^^^
-
-to enable C++ exceptions for :ref:`framework_espidf` add
-``-D PIO_FRAMEWORK_ESP_IDF_ENABLE_EXCEPTIONS`` to :ref:`projectconf_build_flags` of
-:ref:`projectconf`.
-
-See `project example <https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-exceptions>`_
-with enabled exceptions.
-
-ULP coprocessor programming
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To use ULP in your project you need to make sure that it's enabled in the ``sdkconfig.h``
-configuration file. The following two lines must be added:
-
-.. code-block:: cpp
-
-    #define CONFIG_ULP_COPROC_ENABLED 1
-    #define CONFIG_ULP_COPROC_RESERVE_MEM 1024
-
-Usually ``CONFIG_ULP_COPROC_RESERVE_MEM`` is already defined in the default
-``sdkconfig.h`` with value ``0``. You can modify this value to meet your requirements.
-
-All ULP code, usually written in assembly in files with ``.S`` extension, must be placed
-into a separate directory with the name ``ulp`` in the root folder of your project.
-So your project structure should look like this:
-
-.. code-block:: bash
-
-    project_dir
-    ├── include
-    ├── lib
-    │   └── README
-    ├── test
-    ├── src
-    │    ├── main.c
-    │    └── sdkconfig.h
-    ├── ulp
-    │    └── ulp_code.S
-    └── platformio.ini
-
-See full examples with ULP coprocessor programming for ESP-IDF v3.x:
-
-- https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-ulp-adc
-- https://github.com/platformio/platform-espressif32/tree/v1.10.0/examples/espidf-ulp-pulse

@@ -17,7 +17,7 @@ ESP8266 RTOS SDK
 :Configuration:
   :ref:`projectconf_env_framework` = ``esp8266-rtos-sdk``
 
-ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
+Espressif ESP8266 SDK based on FreeRTOS
 
 .. contents:: Contents
     :local:
@@ -32,7 +32,7 @@ Platforms
       - Description
 
     * - :ref:`platform_espressif8266`
-      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+      - ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.
 
 Examples
 --------
@@ -375,8 +375,8 @@ Invent One
       - 4MB
       - 80KB
 
-Lifely
-~~~~~~
+Lifely.cc
+~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -393,7 +393,7 @@ Lifely
       - No
       - ESP8266
       - 80MHz
-      - 4MB
+      - 2MB
       - 80KB
 
 NodeMCU
@@ -604,6 +604,27 @@ WEMOS
       - ESP8266
       - 80MHz
       - 16MB
+      - 80KB
+
+WeMos
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif8266_d1_wroom_02`
+      - :ref:`platform_espressif8266`
+      - No
+      - ESP8266
+      - 80MHz
+      - 2MB
       - 80KB
 
 WifiDuino

@@ -14,8 +14,6 @@
 Semihosting
 -----------
 
-.. versionadded:: 6.0
-
 Semihosting is a mechanism that enables code running on the target device
 to communicate and use the Input/Output of the host computer.
 

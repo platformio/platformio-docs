@@ -156,10 +156,6 @@ Allows one to override :ref:`projectconf` option :ref:`projectconf_pio_shared_di
 
 Allows one to override :option:`pio remote agent start --working-dir`.
 
-.. envvar:: PLATFORMIO_LIB_EXTRA_DIRS
-
-Allows one to set :ref:`projectconf` option :ref:`projectconf_lib_extra_dirs`.
-
 Building
 --------
 

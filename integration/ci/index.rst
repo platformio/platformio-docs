@@ -33,6 +33,5 @@ easily.
     drone
     github-actions
     gitlab
-    jenkins
     shippable
     travis

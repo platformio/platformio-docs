@@ -14,8 +14,6 @@
 pio pkg exec
 ============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage

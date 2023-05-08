@@ -48,11 +48,12 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = linux_arm
     
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = linux_arm@x.y.z
     
@@ -89,7 +90,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_wiringpi`
-      - WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino 'wiring' system
+      - WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM2836 and BCM2837 SoC devices used in all Raspberry Pi
 
 Boards
 ------

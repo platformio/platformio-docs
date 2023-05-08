@@ -17,7 +17,7 @@ WD-Firmware
 :Configuration:
   :ref:`projectconf_env_framework` = ``wd-riscv-sdk``
 
-The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
+The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features.
 
 .. contents:: Contents
     :local:

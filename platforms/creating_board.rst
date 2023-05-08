@@ -57,7 +57,7 @@ For details, see existing boards as examples, available under ``.platformio/plat
         "mcu": "%MCU_TYPE_HERE%"
       },
       "frameworks": ["%LIST_WITH_SUPPORTED_FRAMEWORKS%"],
-      "platforms": ["%LIST_WITH_COMPATIBLE_PLATFORMS%"]
+      "platforms": ["%LIST_WITH_COMPATIBLE_PLATFORMS%"],
       "name": "My Test Board",
       "upload": {
         "maximum_ram_size": 2048,

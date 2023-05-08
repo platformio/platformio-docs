@@ -16,8 +16,6 @@
 pio pkg install
 ===============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage
@@ -194,8 +192,9 @@ Registry: Latest Version
 Install the latest package version from the |PIOREGISTRY|.
 
 .. tip::
-    We highly recommend prefixing a version with ``^`` (caret) symbol
-    which will instruct PlatformIO to install the latest compatible version
+    We highly recommend pinning a package to a :ref:`cmd_pkg_install_specific_version`
+    and to prefix the version with the ``^`` (caret) symbol.
+    This will instruct PlatformIO to install the latest compatible version
     avoiding breaking changes in the future.
     See :ref:`cmd_pkg_install_requirements` for details.
 
@@ -227,6 +226,8 @@ Install the latest package version from the |PIOREGISTRY|.
     .. code:: shell
 
         pio pkg install --tool "platformio/tool-jlink"
+
+.. _cmd_pkg_install_specific_version:
 
 Registry: Specific Version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,6 +342,8 @@ the ``<name>=`` syntax. See the example below.
         hg+hg://hg.server.org/my-package
         hg+https://hg.server.org/my-package
         hg+ssh://hg.server.org/my-package
+
+.. _cmd_pkg_install_local_folder:
 
 Local Folder
 ~~~~~~~~~~~~

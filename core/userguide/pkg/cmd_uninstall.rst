@@ -16,8 +16,6 @@
 pio pkg uninstall
 =================
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage

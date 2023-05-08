@@ -14,8 +14,6 @@
 Custom Testing Framework
 ------------------------
 
-.. versionadded:: 6.0
-
 :Configuration:
     :ref:`projectconf_test_framework` = ``custom``
 

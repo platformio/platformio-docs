@@ -117,4 +117,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_spl`
-      - The ST Standard Peripheral Library provides a set of functions for handling the peripherals on the STM32 family of microcontrollers.
+      - Standard Peripheral Library for ST STM32 microcontrollers

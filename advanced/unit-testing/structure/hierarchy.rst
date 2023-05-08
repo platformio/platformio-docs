@@ -14,8 +14,6 @@
 Test Hierarchy
 --------------
 
-.. versionadded:: 6.0
-
 PlatformIO looks for the tests in the project :ref:`projectconf_pio_test_dir`.
 The only folder with a name prefixed by ``test_`` is nominated for unit testing
 and should be an independent test/application with its own ``main()`` function

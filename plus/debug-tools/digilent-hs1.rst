@@ -77,16 +77,16 @@ Frameworks
       - Description
 
     * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms.
 
     * - :ref:`framework_pulp-runtime`
-      - Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Runtime Environment for Parallel Ultra Low Power platform
 
     * - :ref:`framework_pulp-sdk`
-      - Software Development Kit for Parallel Ultra Low Power platform targeting high energy efficiencies
+      - Software Development Kit for Parallel Ultra Low Power platform
 
     * - :ref:`framework_wd-riscv-sdk`
-      - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
+      - The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features.
 
 Boards
 ------
