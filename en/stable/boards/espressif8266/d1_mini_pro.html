@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WeMos D1 mini Pro &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -83,12 +86,12 @@
 <li class="toctree-l3"><a class="reference internal" href="huzzah.html">Adafruit HUZZAH ESP8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="oak.html">DigiStump Oak</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espmxdevkit.html">ESP-Mx DevKit (ESP8285)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="esp_wroom_02.html">ESP-WROOM-02</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espduino.html">ESPDuino (ESP-13 Module)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espectro.html">ESPectro Core</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espino.html">ESPino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espresso_lite_v1.html">ESPresso Lite 1.0</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espresso_lite_v2.html">ESPresso Lite 2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esp_wroom_02.html">Espressif ESP-WROOM-02</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp12e.html">Espressif ESP8266 ESP-12E</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp01_1m.html">Espressif Generic ESP8266 ESP-01 1M</a></li>
 <li class="toctree-l3"><a class="reference internal" href="esp01.html">Espressif Generic ESP8266 ESP-01 512k</a></li>
@@ -114,6 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="esp210.html">SweetPea ESP-210</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espinotee.html">ThaiEasyElec ESPino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="d1.html">WEMOS D1 R1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="d1_wroom_02.html">WeMos D1 ESP-WROOM-02</a></li>
 <li class="toctree-l3"><a class="reference internal" href="d1_mini.html">WeMos D1 R2 and mini</a></li>
 <li class="toctree-l3"><a class="reference internal" href="d1_mini_lite.html">WeMos D1 mini Lite</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">WeMos D1 mini Pro</a><ul>
@@ -133,6 +137,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#heltec-cubecell">Heltec CubeCell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
@@ -197,7 +202,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
       <li class="breadcrumb-item active">WeMos D1 mini Pro</li>
       <li class="wy-breadcrumbs-aside">
@@ -210,8 +215,8 @@
            <div itemprop="articleBody">
              
   <section id="wemos-d1-mini-pro">
-<span id="board-espressif8266-d1-mini-pro"></span><h1><a class="toc-backref" href="#id1">WeMos D1 mini Pro</a><a class="headerlink" href="#wemos-d1-mini-pro" title="Permalink to this heading">¶</a></h1>
-<div class="contents topic" id="contents">
+<span id="board-espressif8266-d1-mini-pro"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">WeMos D1 mini Pro</a><a class="headerlink" href="#wemos-d1-mini-pro" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#wemos-d1-mini-pro" id="id1">WeMos D1 mini Pro</a></p>
@@ -224,15 +229,11 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="hardware">
-<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h2>
-<p>Platform <a class="reference internal" href="../../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a>: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h2>
+<p>Platform <a class="reference internal" href="../../platforms/espressif8266.html#platform-espressif8266"><span class="std std-ref">Espressif 8266</span></a>: ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
 <td><p>ESP8266</p></td>
@@ -253,7 +254,7 @@
 </table>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">d1_mini_pro</span></code> ID for <a class="reference internal" href="../../projectconf/sections/env/options/platform/board.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:d1_mini_pro]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif8266</span>
@@ -277,7 +278,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 </section>
 <section id="uploading">
-<h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this heading"></a></h2>
 <p>WeMos D1 mini Pro supports the following uploading protocols:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">espota</span></code></p></li>
@@ -294,16 +295,12 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id5">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> currently does not support WeMos D1 mini Pro board.</p>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id6">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -311,13 +308,13 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
-<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/esp8266-nonos-sdk.html#framework-esp8266-nonos-sdk"><span class="std std-ref">ESP8266 Non-OS SDK</span></a></p></td>
-<td><p>The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions</p></td>
+<td><p>Espressif ESP8266 Non-OS SDK</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/esp8266-rtos-sdk.html#framework-esp8266-rtos-sdk"><span class="std std-ref">ESP8266 RTOS SDK</span></a></p></td>
-<td><p>ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers</p></td>
+<td><p>Espressif ESP8266 SDK based on FreeRTOS</p></td>
 </tr>
 </tbody>
 </table>
@@ -411,27 +408,27 @@ board manifest <a class="reference external" href="https://github.com/platformio
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -450,7 +447,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -472,7 +469,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

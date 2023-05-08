@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STM32F412RE (256k RAM. 512k Flash) &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -80,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#heltec-cubecell">Heltec CubeCell</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
@@ -108,13 +112,19 @@
 <li class="toctree-l3"><a class="reference internal" href="b96b_f446ve.html">96Boards B96B-F446VE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="b96b_aerocore2.html">96Boards Neonkey</a></li>
 <li class="toctree-l3"><a class="reference internal" href="b96b_neonkey.html">96Boards Neonkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="acsip_s76s.html">ACSIP S76S</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_f405.html">Adafruit Feather STM32F405</a></li>
 <li class="toctree-l3"><a class="reference internal" href="afroflight_f103cb.html">AfroFlight Rev5 (8MHz)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nicla_vision_m4.html">Arduino Nicla Vision (M4 core)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nicla_vision.html">Arduino Opta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opta.html">Arduino Opta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="opta_m4.html">Arduino Opta (M4 core)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="portenta_h7_m4.html">Arduino Portenta H7 (M4 core)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="portenta_h7_m7.html">Arduino Portenta H7 (M7 core)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle1024.html">Armstrap Eagle 1024</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle2048.html">Armstrap Eagle 2048</a></li>
 <li class="toctree-l3"><a class="reference internal" href="armstrap_eagle512.html">Armstrap Eagle 512</a></li>
+<li class="toctree-l3"><a class="reference internal" href="btt_ebb42_v1_1.html">Big Tree Tech EBB42 V1.1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="black_f407ve.html">Black STM32F407VE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="black_f407vg.html">Black STM32F407VG</a></li>
 <li class="toctree-l3"><a class="reference internal" href="black_f407ze.html">Black STM32F407ZE</a></li>
@@ -163,6 +173,7 @@
 <li class="toctree-l3"><a class="reference internal" href="xdot_l151cc.html">MultiTech xDot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="netduino2plus.html">N2+</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mote_l152rc.html">NAMote72</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nucleo_g070rb.html">Nucleo G070RB</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_g071rb.html">Nucleo G071RB</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_g431kb.html">Nucleo G431KB</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nucleo_g431rb.html">Nucleo G431RB</a></li>
@@ -349,6 +360,7 @@
 <li class="toctree-l3"><a class="reference internal" href="seeedArchMax.html">Seeed Arch Max</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wio_3g.html">Seeed Wio 3G</a></li>
 <li class="toctree-l3"><a class="reference internal" href="steval_mksboxv1.html">SensorTile.box</a></li>
+<li class="toctree-l3"><a class="reference internal" href="agafia_sg0.html">Sigma IC AGAFIA SG0</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sparky_v1.html">Sparky V1 F303</a></li>
 <li class="toctree-l3"><a class="reference internal" href="thunder_pack.html">ThunderPack v1.0</a></li>
 <li class="toctree-l3"><a class="reference internal" href="thunder_pack_f411.html">ThunderPack v1.1+</a></li>
@@ -418,7 +430,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
       <li class="breadcrumb-item active">STM32F412RE (256k RAM. 512k Flash)</li>
       <li class="wy-breadcrumbs-aside">
@@ -431,8 +443,8 @@
            <div itemprop="articleBody">
              
   <section id="stm32f412re-256k-ram-512k-flash">
-<span id="board-ststm32-genericstm32f412re"></span><h1><a class="toc-backref" href="#id1">STM32F412RE (256k RAM. 512k Flash)</a><a class="headerlink" href="#stm32f412re-256k-ram-512k-flash" title="Permalink to this heading">¶</a></h1>
-<div class="contents topic" id="contents">
+<span id="board-ststm32-genericstm32f412re"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">STM32F412RE (256k RAM. 512k Flash)</a><a class="headerlink" href="#stm32f412re-256k-ram-512k-flash" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#stm32f412re-256k-ram-512k-flash" id="id1">STM32F412RE (256k RAM. 512k Flash)</a></p>
@@ -445,15 +457,11 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="hardware">
-<h2><a class="toc-backref" href="#id2">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h2>
 <p>Platform <a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a>: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
 <td><p>STM32F412RET6</p></td>
@@ -474,7 +482,7 @@
 </table>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">genericSTM32F412RE</span></code> ID for <a class="reference internal" href="../../projectconf/sections/env/options/platform/board.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:genericSTM32F412RE]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span>
@@ -498,7 +506,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 </section>
 <section id="uploading">
-<h2><a class="toc-backref" href="#id4">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this heading"></a></h2>
 <p>STM32F412RE (256k RAM. 512k Flash) supports the following uploading protocols:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">blackmagic</span></code></p></li>
@@ -518,7 +526,7 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </div>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id5">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -530,11 +538,6 @@ instructions and configuration information.</p>
 <a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>STM32F412RE (256k RAM. 512k Flash) does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Compatible Tools</p></th>
 <th class="head"><p>On-board</p></th>
@@ -558,12 +561,8 @@ instructions and configuration information.</p>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id6">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -571,13 +570,13 @@ instructions and configuration information.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
-<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/cmsis.html#framework-cmsis"><span class="std std-ref">CMSIS</span></a></p></td>
-<td><p>The ARM Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for the Cortex-M processor series and specifies debugger interfaces. The CMSIS enables consistent and simple software interfaces to the processor for interface peripherals, real-time operating systems, and middleware. It simplifies software re-use, reducing the learning curve for new microcontroller developers and cutting the time-to-market for devices</p></td>
+<td><p>Vendor-independent hardware abstraction layer for the Cortex-M processor series</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
-<td><p>The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others</p></td>
+<td><p>Open source ARM Cortex-M microcontroller library</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/stm32cube.html#framework-stm32cube"><span class="std std-ref">STM32Cube</span></a></p></td>
 <td><p>STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency</p></td>
@@ -674,27 +673,27 @@ instructions and configuration information.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -713,7 +712,7 @@ instructions and configuration information.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -735,7 +734,7 @@ instructions and configuration information.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

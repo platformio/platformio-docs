@@ -548,7 +548,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   max-width: 1000px !important;
 }
 
-.wy-side-scroll .wy-side-nav-search .icon {
+.wy-side-scroll .wy-side-nav-search > a {
   display: none;
   visibility: none;
 }

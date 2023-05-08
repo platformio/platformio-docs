@@ -194,14 +194,12 @@ Built-in Filters
 
     * - Name
       - Description
+    * - ``direct``
+      - Do-nothing: forward all data unchanged. Useful if data already contains ANSI escape codes (colors)
     * - ``default``
       - Remove typical terminal control codes from input
-    * - ``colorize``
-      - Apply different colors for received and echo
     * - ``debug``
       - Print what is sent and received
-    * - ``direct``
-      - Do-nothing: forward all data unchanged
     * - ``hexlify``
       - Show a hexadecimal representation of the data (code point of each character)
     * - ``log2file``
@@ -281,14 +279,16 @@ See the base API below:
 Capture output to a file
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to use a ``log2file`` filter from :ref:`cmd_device_monitor_filters`:
+To capture the output of the device monitor in a file, you can use the
+``log2file`` filter from :ref:`cmd_device_monitor_filters`.
+By default, the log file will be saved in the ``logs`` folder located in the project root directory.
 
 .. code-block:: bash
 
     > pio device monitor -f default -f log2file
 
 
-or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
+Or using :ref:`projectconf` and :ref:`projectconf_monitor_filters`
 
 .. code-block:: ini
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travis CI &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -91,7 +94,6 @@
 <li class="toctree-l2"><a class="reference internal" href="drone.html">Drone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="github-actions.html">GitHub Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gitlab.html">GitLab</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jenkins.html">Jenkins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shippable.html">Shippable</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Travis CI</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#integration">Integration</a><ul>
@@ -137,7 +139,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Continuous Integration</a></li>
       <li class="breadcrumb-item active">Travis CI</li>
       <li class="wy-breadcrumbs-aside">
@@ -150,7 +152,7 @@
            <div itemprop="articleBody">
              
   <section id="travis-ci">
-<span id="ci-travis"></span><h1><a class="toc-backref" href="#id2">Travis CI</a><a class="headerlink" href="#travis-ci" title="Permalink to this heading">¶</a></h1>
+<span id="ci-travis"></span><h1><a class="toc-backref" href="#id2" role="doc-backlink">Travis CI</a><a class="headerlink" href="#travis-ci" title="Permalink to this heading"></a></h1>
 <a class="reference external image-reference" href="https://docs.travis-ci.com/user/integration/platformio/"><img alt="../../_images/ci-travis-logo.png" src="../../_images/ci-travis-logo.png" /></a>
 <p><strong>Travis CI</strong> <a class="reference external" href="https://docs.travis-ci.com/user/integration/platformio/">officially supports</a>
 <strong>PlatformIO for Embedded Builds.</strong></p>
@@ -169,7 +171,7 @@ the way it has been configured to do so — for example, by sending an email
 containing the build results (showing success or failure), or by posting a
 message on an IRC channel. It can be configured to build project on a range of
 different <a class="reference internal" href="../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a>.</p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#travis-ci" id="id2">Travis CI</a></p>
@@ -192,9 +194,9 @@ different <a class="reference internal" href="../../platforms/index.html#platfor
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="integration">
-<h2><a class="toc-backref" href="#id3">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading"></a></h2>
 <p>Please make sure to read Travis CI <a class="reference external" href="http://docs.travis-ci.com/user/getting-started/">Getting Started</a>
 and <a class="reference external" href="http://docs.travis-ci.com/user/customizing-the-build/">general build configuration</a>
 guides first.</p>
@@ -210,7 +212,7 @@ guide.</p>
 <a class="reference external" href="http://docs.travis-ci.com/user/languages/python/#Travis-CI-Uses-Isolated-virtualenvs">Travis CI Python isolated environment</a>. There are two possible ways of running
 PlatformIO in CI services:</p>
 <section id="using-cmd-run-command">
-<h3><a class="toc-backref" href="#id4">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Using <a class="reference internal" href="../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a> command</a><a class="headerlink" href="#using-cmd-run-command" title="Permalink to this heading"></a></h3>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
 <span class="nt">python</span><span class="p">:</span>
@@ -233,7 +235,7 @@ PlatformIO in CI services:</p>
 </div>
 </section>
 <section id="using-cmd-ci-command">
-<h3><a class="toc-backref" href="#id5">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Using <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmd-ci"><span class="std std-ref">pio ci</span></a> command</a><a class="headerlink" href="#using-cmd-ci-command" title="Permalink to this heading"></a></h3>
 <p>This variant is more convenient when project is written as a library (when there are
 examples or testing code) as it has additional options for specifying extra libraries
 and boards from command line interface:</p>
@@ -265,10 +267,10 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="library-dependencies">
-<h2><a class="toc-backref" href="#id6">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Library dependencies</a><a class="headerlink" href="#library-dependencies" title="Permalink to this heading"></a></h2>
 <p>There 2 options to test source code with dependent libraries:</p>
 <section id="install-dependent-library-using-librarymanager">
-<h3><a class="toc-backref" href="#id7">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Install dependent library using <a class="reference internal" href="../../librarymanager/index.html#librarymanager"><span class="std std-ref">Library Management</span></a></a><a class="headerlink" href="#install-dependent-library-using-librarymanager" title="Permalink to this heading"></a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">install</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
 
@@ -281,7 +283,7 @@ and boards from command line interface:</p>
 </div>
 </section>
 <section id="manually-download-dependent-library-and-include-in-build-process-via-lib-option">
-<h3><a class="toc-backref" href="#id8">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Manually download dependent library and include in build process via <code class="docutils literal notranslate"><span class="pre">--lib</span></code> option</a><a class="headerlink" href="#manually-download-dependent-library-and-include-in-build-process-via-lib-option" title="Permalink to this heading"></a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">install</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -U platformio</span>
 
@@ -296,7 +298,7 @@ and boards from command line interface:</p>
 </section>
 </section>
 <section id="custom-build-flags">
-<h2><a class="toc-backref" href="#id9">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Custom Build Flags</a><a class="headerlink" href="#custom-build-flags" title="Permalink to this heading"></a></h2>
 <p>PlatformIO allows one to specify own build flags using <span class="target" id="index-1"></span><a class="reference internal" href="../../envvars.html#envvar-PLATFORMIO_BUILD_FLAGS"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_BUILD_FLAGS</span></code></a> environment</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">env</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PLATFORMIO_CI_SRC=path/to/test/file.c PLATFORMIO_BUILD_FLAGS=&quot;-D SPECIFIC_MACROS_PER_TEST_ENV -I/extra/inc&quot;</span>
@@ -312,7 +314,7 @@ and boards from command line interface:</p>
 <a class="reference internal" href="../../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">available build flags/options</span></a>.</p>
 </section>
 <section id="advanced-configuration">
-<h2><a class="toc-backref" href="#id10">Advanced configuration</a><a class="headerlink" href="#advanced-configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Advanced configuration</a><a class="headerlink" href="#advanced-configuration" title="Permalink to this heading"></a></h2>
 <p>PlatformIO allows one to configure multiple build environments for the single
 source code using <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>Instead of <code class="docutils literal notranslate"><span class="pre">--board</span></code> option, please use <a class="reference internal" href="../../core/userguide/cmd_ci.html#cmdoption-pio-ci-c"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">ci</span> <span class="pre">--project-conf</span></code></a></p>
@@ -322,7 +324,7 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
 </div>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id11">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Custom build flags</p></li>
 </ol>
@@ -586,27 +588,27 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -625,7 +627,7 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -647,7 +649,7 @@ source code using <a class="reference internal" href="../../projectconf/index.ht
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

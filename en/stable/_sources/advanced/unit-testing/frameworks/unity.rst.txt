@@ -151,8 +151,6 @@ for the available options.
 Custom ``unity_config.h``
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. versionadded:: 6.0
-
 PlatformIO's Unity test runner comes with an already defined ``UNITY_INCLUDE_CONFIG_H``
 macro. It looks for a custom ``unity_config.h`` in a current test folder. In case
 the ``unity_config.h`` is missed, PlatformIO will walk through the test hierarchy

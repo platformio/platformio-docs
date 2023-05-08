@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QEMU &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -131,7 +134,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Unit Testing</a></li>
           <li class="breadcrumb-item"><a href="index.html">Simulators</a></li>
       <li class="breadcrumb-item active">QEMU</li>
@@ -145,12 +148,12 @@
            <div itemprop="articleBody">
              
   <section id="qemu">
-<span id="unit-testing-simulators-qemu"></span><h1>QEMU<a class="headerlink" href="#qemu" title="Permalink to this heading">¶</a></h1>
+<span id="unit-testing-simulators-qemu"></span><h1>QEMU<a class="headerlink" href="#qemu" title="Permalink to this heading"></a></h1>
 <a class="reference external image-reference" href="https://www.qemu.org/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../../_images/qemu.png" src="../../../_images/qemu.png" /></a>
 <p>QEMU is a free and open-source emulator that performs hardware virtualization.
 Official reference can be found <a class="reference external" href="https://www.qemu.org/?utm_source=platformio&amp;utm_medium=docs">here</a>.</p>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Integration of the QEMU requires adding the platform compatible
 package to the <a class="reference internal" href="../../../projectconf/sections/env/options/platform/platform_packages.html#projectconf-env-platform-packages"><span class="std std-ref">platform_packages</span></a> option in your
 <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>, and overriding the <a class="reference internal" href="../../../projectconf/sections/env/options/test/test_testing_command.html#projectconf-test-testing-command"><span class="std std-ref">test_testing_command</span></a>.</p>
@@ -174,7 +177,7 @@ board from <a class="reference internal" href="../../../platforms/sifive.html#pl
 </div>
 </section>
 <section id="testing">
-<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">¶</a></h2>
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h2>
 <p>QEMU does not require a firmware uploading stage. Please use
 the <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-without-uploading"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--without-uploading</span></code></a> command option.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test --without-uploading
@@ -286,27 +289,27 @@ hifive1        test_dummy  PASSED    00:00:02.055
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -325,7 +328,7 @@ hifive1        test_dummy  PASSED    00:00:02.055
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -347,7 +350,7 @@ hifive1        test_dummy  PASSED    00:00:02.055
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

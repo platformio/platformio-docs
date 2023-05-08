@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pio remote run &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -130,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">PlatformIO Core (CLI)</a></li>
           <li class="breadcrumb-item"><a href="../index.html">CLI Guide</a></li>
           <li class="breadcrumb-item"><a href="index.html">PlatformIO Remote CLI</a></li>
@@ -145,9 +148,9 @@
            <div itemprop="articleBody">
              
   <section id="pio-remote-run">
-<span id="cmd-remote-run"></span><h1><a class="toc-backref" href="#id1">pio remote run</a><a class="headerlink" href="#pio-remote-run" title="Permalink to this heading">¶</a></h1>
+<span id="cmd-remote-run"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">pio remote run</a><a class="headerlink" href="#pio-remote-run" title="Permalink to this heading"></a></h1>
 <p><strong>Remote Firmware Updates</strong></p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#pio-remote-run" id="id1">pio remote run</a></p>
@@ -159,9 +162,9 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="usage">
-<h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>run<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 <span class="c1"># process environments using specified PlatformIO Remote Agent</span>
@@ -170,7 +173,7 @@ pio<span class="w"> </span>remote<span class="w"> </span>--agent<span class="w">
 </div>
 </section>
 <section id="description">
-<h2><a class="toc-backref" href="#id3">Description</a><a class="headerlink" href="#description" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Description</a><a class="headerlink" href="#description" title="Permalink to this heading"></a></h2>
 <p>Process environments which are defined in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> file remotely.
 By default, <a class="reference internal" href="../../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> builds project on a host machine and deploy
 final firmware (program) to a remote device (embedded board).</p>
@@ -180,10 +183,10 @@ final firmware (program) to a remote device (embedded board).</p>
 install required toolchains, frameworks, SDKs, etc., and process project.</p>
 </section>
 <section id="options">
-<h2><a class="toc-backref" href="#id4">Options</a><a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Permalink to this heading"></a></h2>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-e">
-<span id="cmdoption-pio-remote-run-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-e" title="Permalink to this definition">¶</a></dt>
+<span id="cmdoption-pio-remote-run-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-e" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments.</p>
@@ -191,14 +194,14 @@ install required toolchains, frameworks, SDKs, etc., and process project.</p>
 <a class="reference internal" href="../../../projectconf/sections/platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option from <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-t">
-<span id="cmdoption-pio-remote-run-target"></span><span class="sig-name descname"><span class="pre">-t</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--target</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-t" title="Permalink to this definition">¶</a></dt>
+<span id="cmdoption-pio-remote-run-target"></span><span class="sig-name descname"><span class="pre">-t</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--target</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-t" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Process specified targets. See <a class="reference internal" href="../cmd_run.html#cmdoption-pio-run-list-targets"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--list-targets</span></code></a> documentation
 for available targets.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-upload-port">
-<span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-upload-port" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">--upload-port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-upload-port" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Custom upload port of embedded board. To print all available ports use
@@ -206,14 +209,14 @@ for available targets.</p>
 <p>If upload port is not specified, PlatformIO will try to detect it automatically.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-d">
-<span id="cmdoption-pio-remote-run-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-d" title="Permalink to this definition">¶</a></dt>
+<span id="cmdoption-pio-remote-run-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-d" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-v">
-<span id="cmdoption-pio-remote-run-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-v" title="Permalink to this definition">¶</a></dt>
+<span id="cmdoption-pio-remote-run-verbose"></span><span class="sig-name descname"><span class="pre">-v</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-v" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Shows detailed information when processing environments.</p>
@@ -221,14 +224,14 @@ to current working directory (<code class="docutils literal notranslate"><span c
 or by environment variable <span class="target" id="index-0"></span><a class="reference internal" href="../../../envvars.html#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_SETTING_FORCE_VERBOSE</span></code></a>.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-disable-auto-clean">
-<span class="sig-name descname"><span class="pre">--disable-auto-clean</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-disable-auto-clean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">--disable-auto-clean</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-disable-auto-clean" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Disable auto-clean of <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/build_dir.html#projectconf-pio-build-dir"><span class="std std-ref">build_dir</span></a> when <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>
 or <a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> (project structure) have been modified.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-run-r">
-<span id="cmdoption-pio-remote-run-force-remote"></span><span class="sig-name descname"><span class="pre">-r</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--force-remote</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-r" title="Permalink to this definition">¶</a></dt>
+<span id="cmdoption-pio-remote-run-force-remote"></span><span class="sig-name descname"><span class="pre">-r</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--force-remote</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-run-r" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>By default, <a class="reference internal" href="../../../plus/pio-remote.html#pioremote"><span class="std std-ref">Remote Development</span></a> builds project on a host machine and deploy
@@ -239,7 +242,7 @@ final firmware (program) to remote device (embedded board).</p>
 install required toolchains, frameworks, SDKs, etc., and process project.</p>
 </section>
 <section id="example">
-<h2><a class="toc-backref" href="#id5">Example</a><a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Example</a><a class="headerlink" href="#example" title="Permalink to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio remote run --environment uno --target upload
 
 Building project locally
@@ -412,27 +415,27 @@ Environment uno         [SUCCESS]
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -451,7 +454,7 @@ Environment uno         [SUCCESS]
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -473,7 +476,7 @@ Environment uno         [SUCCESS]
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

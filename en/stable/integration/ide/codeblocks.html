@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeBlocks &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -133,7 +136,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Cloud &amp; Desktop IDEs</a></li>
       <li class="breadcrumb-item active">CodeBlocks</li>
       <li class="wy-breadcrumbs-aside">
@@ -146,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="codeblocks">
-<span id="ide-codeblocks"></span><h1><a class="toc-backref" href="#id1">CodeBlocks</a><a class="headerlink" href="#codeblocks" title="Permalink to this heading">¶</a></h1>
+<span id="ide-codeblocks"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">CodeBlocks</a><a class="headerlink" href="#codeblocks" title="Permalink to this heading"></a></h1>
 <p>Code::Blocks is a free, open-source cross-platform IDE that supports multiple
 compilers including GCC, Clang and Visual C++. It is developed in C++ using
 wxWidgets as the GUI toolkit. Using a plugin architecture, its capabilities
@@ -154,7 +157,7 @@ and features are defined by the provided plugins. Currently, Code::Blocks is
 oriented towards C, C++, and Fortran.</p>
 <p>CodeBlocks IDE can be downloaded from <a class="reference external" href="http://www.codeblocks.org/downloads">here</a>.</p>
 <a class="reference external image-reference" href="../../_images/ide-platformio-codeblocks.png"><img alt="../../_images/ide-platformio-codeblocks.png" src="../../_images/ide-platformio-codeblocks.png" /></a>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#codeblocks" id="id1">CodeBlocks</a></p>
@@ -163,9 +166,9 @@ oriented towards C, C++, and Fortran.</p>
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="integration">
-<h2><a class="toc-backref" href="#id2">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Integration</a><a class="headerlink" href="#integration" title="Permalink to this heading"></a></h2>
 <p>Integration process consists of these steps:</p>
 <ol class="arabic simple">
 <li><p>Open system Terminal and install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a></p></li>
@@ -286,27 +289,27 @@ need to reinitialize project using <a class="reference internal" href="../../cor
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -325,7 +328,7 @@ need to reinitialize project using <a class="reference internal" href="../../cor
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -347,7 +350,7 @@ need to reinitialize project using <a class="reference internal" href="../../cor
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

@@ -96,6 +96,14 @@ board will be ``[env:teensy31]``.
 Do not resolve project dependencies and do not install missed packages.
 
 .. option::
+    --sample-code
+
+.. versionadded:: 6.1.7
+
+Include sample code in the newly created project. The availability of
+sample code depends on the :ref:`platforms` being used.
+
+.. option::
     -s, --silent
 
 Suppress progress reporting.
@@ -113,7 +121,7 @@ Examples
     You can specify another project directory via
     `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
 
-    The next files/directories will be created in ***
+    The following files/directories will be created in ***
     platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
     src - Put your source files here
     lib - Put here project specific (private) libraries
@@ -130,7 +138,7 @@ Examples
 
     > pio project init -d %PATH_TO_DIR%
 
-    The next files/directories will be created in ***
+    The following files/directories will be created in ***
      platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
     ...
 

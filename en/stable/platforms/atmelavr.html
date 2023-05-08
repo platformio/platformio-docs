@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atmel AVR &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -88,6 +91,7 @@
 <li class="toctree-l3"><a class="reference internal" href="espressif32.html">Espressif 32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heltec-cubecell.html">Heltec CubeCell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
@@ -156,7 +160,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Development Platforms</a></li>
       <li class="breadcrumb-item active">Atmel AVR</li>
       <li class="wy-breadcrumbs-aside">
@@ -169,18 +173,18 @@
            <div itemprop="articleBody">
              
   <section id="atmel-avr">
-<span id="platform-atmelavr"></span><h1>Atmel AVR<a class="headerlink" href="#atmel-avr" title="Permalink to this heading">¶</a></h1>
+<span id="platform-atmelavr"></span><h1>Atmel AVR<a class="headerlink" href="#atmel-avr" title="Permalink to this heading"></a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Registry</dt>
+<dt class="field-odd">Registry<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/atmelavr">https://registry.platformio.org/platforms/platformio/atmelavr</a></p>
 </dd>
-<dt class="field-even">Configuration</dt>
+<dt class="field-even">Configuration<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">atmelavr</span></code></p>
 </dd>
 </dl>
 <p>Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry’s most code-efficient architecture for C and assembly programming</p>
 <p>For more detailed information please visit <a class="reference external" href="http://www.atmel.com/products/microcontrollers/avr/default.aspx?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#configuration" id="id4">Configuration</a></p></li>
@@ -191,10 +195,10 @@
 <li><p><a class="reference internal" href="#frameworks" id="id9">Frameworks</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id10">Boards</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id4">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id1">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#upload-using-programmer" id="id11">Upload using Programmer</a></p></li>
 <li><p><a class="reference internal" href="#upload-eeprom-data" id="id12">Upload EEPROM data</a></p></li>
@@ -213,9 +217,9 @@
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="upload-using-programmer">
-<span id="atmelavr-upload-via-programmer"></span><h3><a class="toc-backref" href="#id11">Upload using Programmer</a><a class="headerlink" href="#upload-using-programmer" title="Permalink to this heading">¶</a></h3>
+<span id="atmelavr-upload-via-programmer"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">Upload using Programmer</a><a class="headerlink" href="#upload-using-programmer" title="Permalink to this heading"></a></h3>
 <p>In the case of external programmers, it’s easy to brick a board simply by specifying
 incorrect upload flags. It’s highly recommended to use the
 <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_command.html#projectconf-upload-command"><span class="std std-ref">upload_command</span></a> option that gives the full control over flags used
@@ -402,13 +406,13 @@ the <code class="docutils literal notranslate"><span class="pre">avrdude</span> 
 </ul>
 </section>
 <section id="upload-eeprom-data">
-<h3><a class="toc-backref" href="#id12">Upload EEPROM data</a><a class="headerlink" href="#upload-eeprom-data" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Upload EEPROM data</a><a class="headerlink" href="#upload-eeprom-data" title="Permalink to this heading"></a></h3>
 <p>To upload EEPROM data (from EEMEM directive) you need to use <code class="docutils literal notranslate"><span class="pre">uploadeep</span></code>
 target instead <code class="docutils literal notranslate"><span class="pre">upload</span></code> for <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.
 For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">uploadeep</span></code>.</p>
 </section>
 <section id="erase-chip-before-programming">
-<h3><a class="toc-backref" href="#id13">Erase chip before programming</a><a class="headerlink" href="#erase-chip-before-programming" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Erase chip before programming</a><a class="headerlink" href="#erase-chip-before-programming" title="Permalink to this heading"></a></h3>
 <p>In some cases erasing chip memory is a mandatory procedure before uploading bootloader
 or setting fuses. AVRDUDE provides a special flag <code class="docutils literal notranslate"><span class="pre">-e</span></code> that causes a chip erase to be
 executed. This will reset the contents of the flash ROM and EEPROM to the value <code class="docutils literal notranslate"><span class="pre">0xff</span></code>,
@@ -424,13 +428,13 @@ and clear all lock bits. The easiest way to use it is to add this flag via the
 </div>
 </section>
 <section id="fuses-programming">
-<h3><a class="toc-backref" href="#id14">Fuses programming</a><a class="headerlink" href="#fuses-programming" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Fuses programming</a><a class="headerlink" href="#fuses-programming" title="Permalink to this heading"></a></h3>
 <p>PlatformIO has a built-in target called <code class="docutils literal notranslate"><span class="pre">fuses</span></code> for setting fuse bits. The default fuse
 bits are predefined in the board manifest file in the <code class="docutils literal notranslate"><span class="pre">fuses</span></code> section. For example,
 <a class="reference external" href="https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json">fuses section for Arduino Uno board</a>.
 To set fuse bits you need to use target <code class="docutils literal notranslate"><span class="pre">fuses</span></code> with <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.</p>
 <section id="custom-fuses">
-<h4><a class="toc-backref" href="#id15">Custom fuses</a><a class="headerlink" href="#custom-fuses" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id15" role="doc-backlink">Custom fuses</a><a class="headerlink" href="#custom-fuses" title="Permalink to this heading"></a></h4>
 <p>Custom fuse values and upload flags (based on upload protocol) should be specified in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The <code class="docutils literal notranslate"><span class="pre">lfuse</span></code> and <code class="docutils literal notranslate"><span class="pre">hfuse</span></code> bits are mandatory, <code class="docutils literal notranslate"><span class="pre">efuse</span></code> is optional
 and not supported by all targets. An example of setting custom fuses for <code class="docutils literal notranslate"><span class="pre">uno</span></code> board:</p>
@@ -451,16 +455,11 @@ and not supported by all targets. An example of setting custom fuses for <code c
 </div>
 </section>
 <section id="minicore-megacore-mightycore-majorcore-and-microcore">
-<h4><a class="toc-backref" href="#id16">MiniCore, MegaCore, MightyCore, MajorCore and MicroCore</a><a class="headerlink" href="#minicore-megacore-mightycore-majorcore-and-microcore" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id16" role="doc-backlink">MiniCore, MegaCore, MightyCore, MajorCore and MicroCore</a><a class="headerlink" href="#minicore-megacore-mightycore-majorcore-and-microcore" title="Permalink to this heading"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">MiniCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MegaCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MightyCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MajorCore</span></code> and <code class="docutils literal notranslate"><span class="pre">MicroCore</span></code> support
 dynamic fuses generation. Generated values are based on the following parameters:</p>
 <blockquote>
 <div><table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
 <th class="head"><p>Description</p></th>
@@ -514,11 +513,6 @@ ATmega324PB and ATmega328PB. Use <code class="docutils literal notranslate"><spa
 <p>Valid BOD values:</p>
 <blockquote>
 <div><table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>ATmega8, ATmega8515, ATmega8535/16/32, ATmega64/128</p></th>
 <th class="head"><p>AT90CAN32/64/128</p></th>
@@ -580,15 +574,10 @@ ATmega324PB and ATmega328PB. Use <code class="docutils literal notranslate"><spa
 </div>
 </section>
 <section id="overriding-default-fuses-command">
-<span id="atmelavr-overriding-fuses-command"></span><h4><a class="toc-backref" href="#id17">Overriding default fuses command</a><a class="headerlink" href="#overriding-default-fuses-command" title="Permalink to this heading">¶</a></h4>
+<span id="atmelavr-overriding-fuses-command"></span><h4><a class="toc-backref" href="#id17" role="doc-backlink">Overriding default fuses command</a><a class="headerlink" href="#overriding-default-fuses-command" title="Permalink to this heading"></a></h4>
 <p>PlatformIO splits the command for programming fuses in the following overridable parts:</p>
 <blockquote>
 <div><table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>Description</p></th>
@@ -660,14 +649,14 @@ for example, you can override only fuses values:</p>
 </section>
 </section>
 <section id="bootloader-programming">
-<h3><a class="toc-backref" href="#id18">Bootloader programming</a><a class="headerlink" href="#bootloader-programming" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Bootloader programming</a><a class="headerlink" href="#bootloader-programming" title="Permalink to this heading"></a></h3>
 <p>PlatformIO has a built-in target called <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> for flashing bootloaders. The
 default bootloader image and corresponding fuse bits are predefined in the board manifest
 file in the <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> section, for example, <a class="reference external" href="https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json">Arduino Uno</a>.
 To upload a bootloader image you need to use target <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> with
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.</p>
 <section id="custom-bootloader">
-<h4><a class="toc-backref" href="#id19">Custom bootloader</a><a class="headerlink" href="#custom-bootloader" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">Custom bootloader</a><a class="headerlink" href="#custom-bootloader" title="Permalink to this heading"></a></h4>
 <p>Custom bootloader and accompanying fuses should be specified in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.
 If <code class="docutils literal notranslate"><span class="pre">lock_bits</span></code> and <code class="docutils literal notranslate"><span class="pre">unlock_bits</span></code> are not set then the default values <code class="docutils literal notranslate"><span class="pre">0x0F</span></code> and
 <code class="docutils literal notranslate"><span class="pre">0x3F</span></code> are used accordingly. An example of setting custom bootloader for <code class="docutils literal notranslate"><span class="pre">uno</span></code>
@@ -692,11 +681,6 @@ complete table with all available baud rates, see the <a class="reference extern
 Here is a table with recommended baud rates for different clock frequencies:</p>
 <blockquote>
 <div><table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Frequency</p></th>
 <th class="head"><p>Oscillator type</p></th>
@@ -761,16 +745,11 @@ Here is a table with recommended baud rates for different clock frequencies:</p>
 </div></blockquote>
 </section>
 <section id="overriding-default-bootloader-command">
-<span id="atmelavr-overriding-bootloader-command"></span><h4><a class="toc-backref" href="#id20">Overriding default bootloader command</a><a class="headerlink" href="#overriding-default-bootloader-command" title="Permalink to this heading">¶</a></h4>
+<span id="atmelavr-overriding-bootloader-command"></span><h4><a class="toc-backref" href="#id20" role="doc-backlink">Overriding default bootloader command</a><a class="headerlink" href="#overriding-default-bootloader-command" title="Permalink to this heading"></a></h4>
 <p>PlatformIO splits the command for programming bootloader in the following overridable
 parts:</p>
 <blockquote>
 <div><table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Variable</p></th>
 <th class="head"><p>Description</p></th>
@@ -841,7 +820,7 @@ for example, you can override only fuses values:</p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id5">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Atmel AVR development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
@@ -855,9 +834,9 @@ for example, you can override only fuses values:</p>
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id6">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
-<div class="contents local topic" id="id3">
+<nav class="contents local" id="id3">
 <ul class="simple">
 <li><p><a class="reference internal" href="#tools-debug-probes" id="id21">Tools &amp; Debug Probes</a></p>
 <ul>
@@ -865,9 +844,9 @@ for example, you can override only fuses values:</p>
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id21">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -878,18 +857,11 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id22">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id22" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>MCU</p></th>
@@ -1895,18 +1867,19 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id7">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading"></a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-atmelavr/releases">stable releases</a>
 of Atmel AVR development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading"></a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version, NOT recommended</span>
+<span class="c1">; Pin the version as shown below</span>
 <span class="k">[env:latest_stable]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 
-<span class="c1">; Custom stable version</span>
+<span class="c1">; Specific version</span>
 <span class="k">[env:custom_stable]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">atmelavr@x.y.z</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -1914,7 +1887,7 @@ of Atmel AVR development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading">¶</a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-atmelavr.git</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -1923,12 +1896,8 @@ of Atmel AVR development platform and the latest upstream version using
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id8">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -2009,12 +1978,8 @@ manufacturer</p>
 </div>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id9">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -2022,13 +1987,13 @@ manufacturer</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
-<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id10">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -2038,16 +2003,8 @@ horizontally.</p></li>
 </ul>
 </div>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading">¶</a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2167,16 +2124,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="alorium-technology">
-<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Permalink to this heading">¶</a></h3>
+<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2212,16 +2161,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="anarduino">
-<h3>Anarduino<a class="headerlink" href="#anarduino" title="Permalink to this heading">¶</a></h3>
+<h3>Anarduino<a class="headerlink" href="#anarduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2243,16 +2184,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="arduboy">
-<h3>Arduboy<a class="headerlink" href="#arduboy" title="Permalink to this heading">¶</a></h3>
+<h3>Arduboy<a class="headerlink" href="#arduboy" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2281,16 +2214,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="arduino">
-<h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this heading">¶</a></h3>
+<h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2536,16 +2461,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="atmel">
-<h3>Atmel<a class="headerlink" href="#atmel" title="Permalink to this heading">¶</a></h3>
+<h3>Atmel<a class="headerlink" href="#atmel" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2707,16 +2624,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bq">
-<h3>BQ<a class="headerlink" href="#bq" title="Permalink to this heading">¶</a></h3>
+<h3>BQ<a class="headerlink" href="#bq" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2738,16 +2647,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bsfrance">
-<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Permalink to this heading">¶</a></h3>
+<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2769,16 +2670,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bitwizard">
-<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Permalink to this heading">¶</a></h3>
+<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2800,16 +2693,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="controllino">
-<h3>Controllino<a class="headerlink" href="#controllino" title="Permalink to this heading">¶</a></h3>
+<h3>Controllino<a class="headerlink" href="#controllino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2852,16 +2737,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="digistump">
-<h3>Digistump<a class="headerlink" href="#digistump" title="Permalink to this heading">¶</a></h3>
+<h3>Digistump<a class="headerlink" href="#digistump" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2904,16 +2781,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dwengo">
-<h3>Dwengo<a class="headerlink" href="#dwengo" title="Permalink to this heading">¶</a></h3>
+<h3>Dwengo<a class="headerlink" href="#dwengo" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2935,16 +2804,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="elektor">
-<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading">¶</a></h3>
+<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2966,16 +2827,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="engduino">
-<h3>Engduino<a class="headerlink" href="#engduino" title="Permalink to this heading">¶</a></h3>
+<h3>Engduino<a class="headerlink" href="#engduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2997,16 +2850,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="envirodiy">
-<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Permalink to this heading">¶</a></h3>
+<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3028,16 +2873,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="fysetc">
-<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading">¶</a></h3>
+<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3059,16 +2896,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lightup">
-<h3>LightUp<a class="headerlink" href="#lightup" title="Permalink to this heading">¶</a></h3>
+<h3>LightUp<a class="headerlink" href="#lightup" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3090,16 +2919,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="linino">
-<h3>Linino<a class="headerlink" href="#linino" title="Permalink to this heading">¶</a></h3>
+<h3>Linino<a class="headerlink" href="#linino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3121,16 +2942,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lowpowerlab">
-<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Permalink to this heading">¶</a></h3>
+<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3173,16 +2986,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="mediatek-labs">
-<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Permalink to this heading">¶</a></h3>
+<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3204,16 +3009,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="microchip">
-<h3>Microchip<a class="headerlink" href="#microchip" title="Permalink to this heading">¶</a></h3>
+<h3>Microchip<a class="headerlink" href="#microchip" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3308,6 +3105,20 @@ horizontally.</p></li>
 <td><p>16KB</p></td>
 <td><p>1KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega165.html#board-atmelavr-atmega165"><span class="std std-ref">ATmega165/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA165A</p></td>
+<td><p>16MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>1KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega165P.html#board-atmelavr-atmega165p"><span class="std std-ref">ATmega165P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA165P</p></td>
+<td><p>16MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>1KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega168.html#board-atmelavr-atmega168"><span class="std std-ref">ATmega168/A</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA168</p></td>
@@ -3325,6 +3136,20 @@ horizontally.</p></li>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega168PB.html#board-atmelavr-atmega168pb"><span class="std std-ref">ATmega168PB</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATMEGA168PB</p></td>
+<td><p>16MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>1KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega169P.html#board-atmelavr-atmega169p"><span class="std std-ref">ATmega169/P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA169P</p></td>
+<td><p>16MHz</p></td>
+<td><p>16KB</p></td>
+<td><p>1KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega169A.html#board-atmelavr-atmega169a"><span class="std std-ref">ATmega169A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA169A</p></td>
 <td><p>16MHz</p></td>
 <td><p>16KB</p></td>
 <td><p>1KB</p></td>
@@ -3378,6 +3203,34 @@ horizontally.</p></li>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega325.html#board-atmelavr-atmega325"><span class="std std-ref">ATmega325/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA325</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega3250.html#board-atmelavr-atmega3250"><span class="std std-ref">ATmega3250/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA3250</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega3250P.html#board-atmelavr-atmega3250p"><span class="std std-ref">ATmega3250P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA3250P</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega325P.html#board-atmelavr-atmega325p"><span class="std std-ref">ATmega325P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA325P</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega328.html#board-atmelavr-atmega328"><span class="std std-ref">ATmega328</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328</p></td>
@@ -3395,6 +3248,34 @@ horizontally.</p></li>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega328PB.html#board-atmelavr-atmega328pb"><span class="std std-ref">ATmega328PB</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ATMEGA328PB</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega329.html#board-atmelavr-atmega329"><span class="std std-ref">ATmega329/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA329</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega3290.html#board-atmelavr-atmega3290"><span class="std std-ref">ATmega3290/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA3290</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega3290P.html#board-atmelavr-atmega3290p"><span class="std std-ref">ATmega3290P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA3290P</p></td>
+<td><p>16MHz</p></td>
+<td><p>32KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega329P.html#board-atmelavr-atmega329p"><span class="std std-ref">ATmega329P/PA</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA329P</p></td>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
@@ -3444,6 +3325,62 @@ horizontally.</p></li>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega644P.html#board-atmelavr-atmega644p"><span class="std std-ref">ATmega644P/PA</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA644P</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega645.html#board-atmelavr-atmega645"><span class="std std-ref">ATmega645/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA645</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega6450.html#board-atmelavr-atmega6450"><span class="std std-ref">ATmega6450/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA6450</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega6450P.html#board-atmelavr-atmega6450p"><span class="std std-ref">ATmega6450P</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA6450P</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega645P.html#board-atmelavr-atmega645p"><span class="std std-ref">ATmega645P</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA645P</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega649.html#board-atmelavr-atmega649"><span class="std std-ref">ATmega649/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA649</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega6490.html#board-atmelavr-atmega6490"><span class="std std-ref">ATmega6490/A</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA6490</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega6490P.html#board-atmelavr-atmega6490p"><span class="std std-ref">ATmega6490P</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA6490P</p></td>
+<td><p>16MHz</p></td>
+<td><p>64KB</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ATmega649P.html#board-atmelavr-atmega649p"><span class="std std-ref">ATmega649P</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ATMEGA649P</p></td>
 <td><p>16MHz</p></td>
 <td><p>64KB</p></td>
 <td><p>4KB</p></td>
@@ -3522,16 +3459,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="microduino">
-<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading">¶</a></h3>
+<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3609,16 +3538,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="openenergymonitor">
-<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Permalink to this heading">¶</a></h3>
+<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3640,16 +3561,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="panstamp">
-<h3>PanStamp<a class="headerlink" href="#panstamp" title="Permalink to this heading">¶</a></h3>
+<h3>PanStamp<a class="headerlink" href="#panstamp" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3671,16 +3584,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="pinoccio">
-<h3>Pinoccio<a class="headerlink" href="#pinoccio" title="Permalink to this heading">¶</a></h3>
+<h3>Pinoccio<a class="headerlink" href="#pinoccio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3702,16 +3607,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="pololu-corporation">
-<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Permalink to this heading">¶</a></h3>
+<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3733,16 +3630,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="prusa-3d">
-<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Permalink to this heading">¶</a></h3>
+<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3771,16 +3660,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="punch-through">
-<h3>Punch Through<a class="headerlink" href="#punch-through" title="Permalink to this heading">¶</a></h3>
+<h3>Punch Through<a class="headerlink" href="#punch-through" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3809,16 +3690,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="quirkbot">
-<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Permalink to this heading">¶</a></h3>
+<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3840,16 +3713,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="redbearlab">
-<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Permalink to this heading">¶</a></h3>
+<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3885,16 +3750,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="reprap">
-<h3>RepRap<a class="headerlink" href="#reprap" title="Permalink to this heading">¶</a></h3>
+<h3>RepRap<a class="headerlink" href="#reprap" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3916,16 +3773,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sodaq">
-<h3>SODAQ<a class="headerlink" href="#sodaq" title="Permalink to this heading">¶</a></h3>
+<h3>SODAQ<a class="headerlink" href="#sodaq" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3975,16 +3824,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sanguino">
-<h3>Sanguino<a class="headerlink" href="#sanguino" title="Permalink to this heading">¶</a></h3>
+<h3>Sanguino<a class="headerlink" href="#sanguino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4041,16 +3882,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading">¶</a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4072,16 +3905,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sparkfun">
-<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading">¶</a></h3>
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4187,16 +4012,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="spellfoundry">
-<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Permalink to this heading">¶</a></h3>
+<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4218,16 +4035,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="the-things-network">
-<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Permalink to this heading">¶</a></h3>
+<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4249,16 +4058,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="till-harbaum">
-<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Permalink to this heading">¶</a></h3>
+<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4280,16 +4081,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="tinycircuits">
-<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Permalink to this heading">¶</a></h3>
+<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4318,16 +4111,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wicked-device">
-<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Permalink to this heading">¶</a></h3>
+<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4356,16 +4141,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wisen">
-<h3>Wisen<a class="headerlink" href="#wisen" title="Permalink to this heading">¶</a></h3>
+<h3>Wisen<a class="headerlink" href="#wisen" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4387,16 +4164,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="makerlab-mx">
-<h3>makerlab.mx<a class="headerlink" href="#makerlab-mx" title="Permalink to this heading">¶</a></h3>
+<h3>makerlab.mx<a class="headerlink" href="#makerlab-mx" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4418,16 +4187,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="nicai-systems">
-<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Permalink to this heading">¶</a></h3>
+<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4484,16 +4245,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="ubiqio">
-<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Permalink to this heading">¶</a></h3>
+<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4604,27 +4357,27 @@ horizontally.</p></li>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -4643,7 +4396,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -4665,7 +4418,7 @@ horizontally.</p></li>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

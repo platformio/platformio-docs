@@ -58,6 +58,7 @@ Embedded
     espressif32
     espressif8266
     freescalekinetis
+    heltec-cubecell
     intel_arc32
     intel_mcs51
     lattice_ice40

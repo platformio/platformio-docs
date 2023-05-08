@@ -132,12 +132,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = siliconlabsefm32
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = siliconlabsefm32@x.y.z
     board = ...
@@ -208,10 +209,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
 Boards
 ------

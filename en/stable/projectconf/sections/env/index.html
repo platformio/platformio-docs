@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Section [env] &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -134,7 +137,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">“platformio.ini” (Project Configuration File)</a></li>
       <li class="breadcrumb-item active">Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code></li>
       <li class="wy-breadcrumbs-aside">
@@ -147,14 +150,14 @@
            <div itemprop="articleBody">
              
   <section id="section-env">
-<span id="projectconf-section-env"></span><h1>Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code><a class="headerlink" href="#section-env" title="Permalink to this heading">¶</a></h1>
-<div class="contents local topic" id="contents">
+<span id="projectconf-section-env"></span><h1>Section <code class="docutils literal notranslate"><span class="pre">[env]</span></code><a class="headerlink" href="#section-env" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#common-env" id="id1">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a></p></li>
 <li><p><a class="reference internal" href="#working-env-name" id="id2">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a></p></li>
 <li><p><a class="reference internal" href="#options" id="id3">Options</a></p></li>
 </ul>
-</div>
+</nav>
 <p>Each project may have multiple <em>configuration environments</em> defining
 the available project tasks for building, programming, debugging, unit
 testing, device monitoring, library dependencies, etc. The
@@ -162,7 +165,7 @@ configuration environments are declared using <code class="docutils literal notr
 <a class="reference internal" href="../../index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>The allowed options are listed under <a class="reference internal" href="#options">Options</a>.</p>
 <section id="common-env">
-<h2><a class="toc-backref" href="#id1">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><a class="headerlink" href="#common-env" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Common <code class="docutils literal notranslate"><span class="pre">[env]</span></code></a><a class="headerlink" href="#common-env" title="Permalink to this heading"></a></h2>
 <p>An optional configuration environment with common options that will be
 shared between all <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> environments in the platformio.ini
 file. It is very useful if the configuration file has a lot of
@@ -186,8 +189,8 @@ environments <code class="docutils literal notranslate"><span class="pre">[env:N
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">DepCustom</span>
 </pre></div>
 </div>
-<p>In this example we have two configuration environments <code class="docutils literal notranslate"><span class="pre">release</span></code> and <code class="docutils literal notranslate"><span class="pre">debug</span></code>. This
-is equivalent to duplicating all options as shown below:</p>
+<p>In this example we have two configuration environments <code class="docutils literal notranslate"><span class="pre">release</span></code>
+and <code class="docutils literal notranslate"><span class="pre">debug</span></code>. This is equivalent to duplicating all options as shown below:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:release]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ststm32</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">stm32cube</span>
@@ -206,20 +209,28 @@ is equivalent to duplicating all options as shown below:</p>
 </div>
 </section>
 <section id="working-env-name">
-<span id="projectconf-section-env-named"></span><h2><a class="toc-backref" href="#id2">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a><a class="headerlink" href="#working-env-name" title="Permalink to this heading">¶</a></h2>
-<p>A section with an <code class="docutils literal notranslate"><span class="pre">env:</span></code> prefix defines a <strong>working environment</strong> for
-<a class="reference internal" href="../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_check.html#cmd-check"><span class="std std-ref">pio check</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a> and other commands.
-Multiple <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> environments with different <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are allowed.
+<span id="projectconf-section-env-named"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Working <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code></a><a class="headerlink" href="#working-env-name" title="Permalink to this heading"></a></h2>
+<p>A working environment in PlatformIO is defined using the <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> syntax.
+This environment is used by various PlatformIO commands such as <a class="reference internal" href="../../../core/userguide/cmd_run.html#cmd-run"><span class="std std-ref">pio run</span></a>,
+<a class="reference internal" href="../../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_check.html#cmd-check"><span class="std std-ref">pio check</span></a>, <a class="reference internal" href="../../../core/userguide/cmd_debug.html#cmd-debug"><span class="std std-ref">pio debug</span></a>, and others.
 Every project must define at least one working environment.</p>
-<p>Each environment must have a unique <code class="docutils literal notranslate"><span class="pre">NAME</span></code>. The valid chars for <code class="docutils literal notranslate"><span class="pre">NAME</span></code> are
-letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>,  special char <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore).
-For example, <code class="docutils literal notranslate"><span class="pre">[env:hello_world]</span></code>.</p>
-<p>If you have multiple working environments and you need to process only a few
-of them, the commands mentioned above accept the <code class="docutils literal notranslate"><span class="pre">-e,</span> <span class="pre">--environment</span></code> option to select a subset of the working environments to process.
-The [platformio] <a class="reference internal" href="../platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option can be used to define a default set of working environments for the commands to process.</p>
+<p>You can define multiple working environments in your project by using different
+names for the <code class="docutils literal notranslate"><span class="pre">[env:NAME]</span></code> section. It’s important to note that each
+environment must have a unique name. The name should only include lowercase
+letters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, numbers <code class="docutils literal notranslate"><span class="pre">0-9</span></code>, and special characters <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore) and
+<code class="docutils literal notranslate"><span class="pre">-</span></code> (hyphen). For example, <code class="docutils literal notranslate"><span class="pre">[env:hello_world]</span></code> is a valid name.</p>
+<p>If you have defined multiple working environments and you only want to process
+a subset of them, you can use the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">--environment</span></code> option with the
+PlatformIO commands mentioned above. You can specify the name of the environment
+you want to process using this option.</p>
+<p>In addition to using the <code class="docutils literal notranslate"><span class="pre">-e</span></code> option, you can define a default set of working
+environments for the PlatformIO commands to process by using the <code class="docutils literal notranslate"><span class="pre">[platformio]</span></code>
+<a class="reference internal" href="../platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option. This can be useful if you frequently
+work with a specific set of environments and don’t want to specify them
+every time you run a command.</p>
 </section>
 <section id="options">
-<h2><a class="toc-backref" href="#id3">Options</a><a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="options/platform/index.html">Platform options</a><ul>
@@ -275,10 +286,10 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
 </li>
 <li class="toctree-l1"><a class="reference internal" href="options/check/index.html">Check options</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_tool.html"><code class="docutils literal notranslate"><span class="pre">check_tool</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="options/check/check_patterns.html"><code class="docutils literal notranslate"><span class="pre">check_patterns</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_flags.html"><code class="docutils literal notranslate"><span class="pre">check_flags</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_severity.html"><code class="docutils literal notranslate"><span class="pre">check_severity</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="options/check/check_skip_packages.html"><code class="docutils literal notranslate"><span class="pre">check_skip_packages</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/check/check_src_filters.html"><code class="docutils literal notranslate"><span class="pre">check_src_filters</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="options/test/index.html">Testing options</a><ul>
@@ -404,27 +415,27 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -443,7 +454,7 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -465,7 +476,7 @@ The [platformio] <a class="reference internal" href="../platformio/options/gener
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

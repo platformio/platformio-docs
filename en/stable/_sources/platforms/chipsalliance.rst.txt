@@ -94,12 +94,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = chipsalliance
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = chipsalliance@x.y.z
     board = ...
@@ -161,10 +162,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms.
 
     * - :ref:`framework_wd-riscv-sdk`
-      - The WD Firmware package contains firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features
+      - The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features.
 
 Boards
 ------

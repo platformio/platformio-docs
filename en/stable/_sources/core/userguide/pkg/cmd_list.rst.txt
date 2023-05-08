@@ -14,8 +14,6 @@
 pio pkg list
 ============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage

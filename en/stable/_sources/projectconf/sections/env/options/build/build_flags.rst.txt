@@ -88,6 +88,36 @@ Scopes (SCons Variables)
       - Add directory *dir* to the list of directories to be searched for
         ``-l``.
 
+Examples
+''''''''
+
+.. code-block:: ini
+
+    [env:specific_defines]
+    build_flags =
+      -DFOO -DBAR=1
+      -D BUILD_ENV_NAME=$PIOENV
+      -D CURRENT_TIME=$UNIX_TIME
+      -DFLOAT_VALUE=1.23457e+07
+
+    [env:specific_inclibs]
+    build_flags =
+      -I/opt/include
+      -I"relative/path with space"
+      -I"C:\windows\dir"
+      -I"${platformio.packages_dir}/framework-foo/include"
+      -L/opt/lib
+      -lfoo
+
+    [env:ignore_incremental_builds]
+    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
+    ; PlatformIO will not cache objects
+    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
+
+.. note::
+  If you need to control build flags that are specific for debug configuration please
+  refer to :ref:`projectconf_debug_build_flags`.
+
 Built-in Variables
 ~~~~~~~~~~~~~~~~~~
 
@@ -224,30 +254,3 @@ in the same directory as ``platformio.ini``.
       .decode("utf-8")
   )
   print("'-DGIT_REV=\"%s\"'" % revision)
-
-Examples
-''''''''
-
-.. code-block:: ini
-
-    [env:specific_defines]
-    build_flags =
-      -DFOO -DBAR=1
-      -D BUILD_ENV_NAME=$PIOENV
-      -D CURRENT_TIME=$UNIX_TIME
-      -DFLOAT_VALUE=1.23457e+07
-
-    [env:specific_inclibs]
-    build_flags =
-      -I/opt/include
-      -L/opt/lib
-      -lfoo
-
-    [env:ignore_incremental_builds]
-    ; We dynamically change the value of "LAST_BUILD_TIME" macro,
-    ; PlatformIO will not cache objects
-    build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
-
-.. note::
-  If you need to control build flags that are specific for debug configuration please
-  refer to :ref:`projectconf_debug_build_flags`.

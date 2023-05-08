@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Semihosting &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -128,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Unit Testing</a></li>
       <li class="breadcrumb-item active">Semihosting</li>
       <li class="wy-breadcrumbs-aside">
@@ -141,22 +144,19 @@
            <div itemprop="articleBody">
              
   <section id="semihosting">
-<span id="unit-testing-semihosting"></span><h1>Semihosting<a class="headerlink" href="#semihosting" title="Permalink to this heading">¶</a></h1>
-<div class="versionadded">
-<p><span class="versionmodified added">New in version 6.0.</span></p>
-</div>
+<span id="unit-testing-semihosting"></span><h1>Semihosting<a class="headerlink" href="#semihosting" title="Permalink to this heading"></a></h1>
 <p>Semihosting is a mechanism that enables code running on the target device
 to communicate and use the Input/Output of the host computer.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#introduction" id="id1">Introduction</a></p></li>
 <li><p><a class="reference internal" href="#configuration" id="id2">Configuration</a></p></li>
 <li><p><a class="reference internal" href="#example" id="id3">Example</a></p></li>
 <li><p><a class="reference internal" href="#testing" id="id4">Testing</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="introduction">
-<h2><a class="toc-backref" href="#id1">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://interrupt.memfault.com/blog/arm-semihosting">Introduction to ARM Semihosting</a></p></li>
 <li><p><a class="reference external" href="https://www.keil.com/support/man/docs/armcc/armcc_pge1358787046598.htm">Official ARM documentation</a></p></li>
@@ -164,7 +164,7 @@ to communicate and use the Input/Output of the host computer.</p>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id2">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Firstly, to enable semihosting, you need to remove stubs (<code class="docutils literal notranslate"><span class="pre">-lnosys</span></code> and
 <code class="docutils literal notranslate"><span class="pre">-specs=nosys.specs</span></code> flags) from a development platform,
 and use the semihosted version of the syscalls (adding
@@ -173,7 +173,7 @@ and use the semihosted version of the syscalls (adding
 and configure a tool that will redirect test results to the I/O.</p>
 </section>
 <section id="example">
-<h2><a class="toc-backref" href="#id3">Example</a><a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Example</a><a class="headerlink" href="#example" title="Permalink to this heading"></a></h2>
 <p>In this example, we run a simple <code class="docutils literal notranslate"><span class="pre">test_dummy</span></code> test on the
 <a class="reference internal" href="../../boards/ststm32/nucleo_l152re.html#board-ststm32-nucleo-l152re"><span class="std std-ref">ST Nucleo L152RE</span></a> board from the
 <a class="reference internal" href="../../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a> development platform.</p>
@@ -183,7 +183,7 @@ testing framework and the <a class="reference internal" href="frameworks/unity.h
 <p>See the <a class="reference external" href="https://github.com/platformio/platformio-examples/tree/develop/unit-testing/semihosting">source code and complete PlatformIO project</a>.</p>
 </section>
 <section id="testing">
-<h2><a class="toc-backref" href="#id4">Testing</a><a class="headerlink" href="#testing" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Testing</a><a class="headerlink" href="#testing" title="Permalink to this heading"></a></h2>
 <p>We use the <a class="reference internal" href="../../core/userguide/cmd_test.html#cmd-test"><span class="std std-ref">pio test</span></a> command to run the tests.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; pio test
 
@@ -307,27 +307,27 @@ nucleo_l1521re  test_dummy  PASSED    00:00:05.433
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -346,7 +346,7 @@ nucleo_l1521re  test_dummy  PASSED    00:00:05.433
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -368,7 +368,7 @@ nucleo_l1521re  test_dummy  PASSED    00:00:05.433
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

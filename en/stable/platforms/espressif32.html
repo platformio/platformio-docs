@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Espressif 32 &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -89,6 +92,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="espressif8266.html">Espressif 8266</a></li>
 <li class="toctree-l3"><a class="reference internal" href="freescalekinetis.html">Freescale Kinetis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heltec-cubecell.html">Heltec CubeCell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_arc32.html">Intel ARC32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="intel_mcs51.html">Intel MCS-51 (8051)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lattice_ice40.html">Lattice iCE40</a></li>
@@ -157,7 +161,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Development Platforms</a></li>
       <li class="breadcrumb-item active">Espressif 32</li>
       <li class="wy-breadcrumbs-aside">
@@ -170,18 +174,18 @@
            <div itemprop="articleBody">
              
   <section id="espressif-32">
-<span id="platform-espressif32"></span><h1>Espressif 32<a class="headerlink" href="#espressif-32" title="Permalink to this heading">¶</a></h1>
+<span id="platform-espressif32"></span><h1>Espressif 32<a class="headerlink" href="#espressif-32" title="Permalink to this heading"></a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Registry</dt>
+<dt class="field-odd">Registry<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">https://registry.platformio.org/platforms/platformio/espressif32</a></p>
 </dd>
-<dt class="field-even">Configuration</dt>
+<dt class="field-even">Configuration<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">espressif32</span></code></p>
 </dd>
 </dl>
-<p>Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.</p>
+<p>ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.</p>
 <p>For more detailed information please visit <a class="reference external" href="https://espressif.com/?utm_source=platformio.org&amp;utm_medium=docs">vendor site</a>.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#tutorials" id="id4">Tutorials</a></p></li>
@@ -193,9 +197,9 @@
 <li><p><a class="reference internal" href="#frameworks" id="id10">Frameworks</a></p></li>
 <li><p><a class="reference internal" href="#boards" id="id11">Boards</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id4">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/espressif32/arduino_debugging_unit_testing.html#tutorial-espressif32-arduino-debugging-unit-testing"><span class="std std-ref">Get started with Arduino and ESP32-DevKitC: debugging and unit testing</span></a></p></li>
 <li><p><a class="reference internal" href="../tutorials/espressif32/espidf_debugging_unit_testing_analysis.html#tutorial-espressif32-espidf-debugging-unit-testing-analysis"><span class="std std-ref">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</span></a></p></li>
@@ -203,8 +207,8 @@
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id5">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<div class="contents local topic" id="id1">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#cpu-frequency" id="id12">CPU Frequency</a></p></li>
 <li><p><a class="reference internal" href="#flash-frequency" id="id13">FLASH Frequency</a></p></li>
@@ -229,9 +233,9 @@
 <li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id26">Using Arduino Framework with Staging version</a></p></li>
 <li><p><a class="reference internal" href="#arduino-core-wiki" id="id27">Arduino Core Wiki</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="cpu-frequency">
-<h3><a class="toc-backref" href="#id12">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this heading"></a></h3>
 <p>See <a class="reference internal" href="../projectconf/sections/env/options/platform/board_build.f_cpu.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="c1">; set frequency to 160MHz</span>
@@ -240,7 +244,7 @@
 </div>
 </section>
 <section id="flash-frequency">
-<h3><a class="toc-backref" href="#id13">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this heading"></a></h3>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">board_build.f_flash</span></code> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to change
 a value. Possible values:</p>
 <ul class="simple">
@@ -254,7 +258,7 @@ a value. Possible values:</p>
 </div>
 </section>
 <section id="flash-mode">
-<h3><a class="toc-backref" href="#id14">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this heading"></a></h3>
 <p>Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
@@ -273,7 +277,7 @@ a value. Possible values:</p>
 </div>
 </section>
 <section id="external-ram-psram">
-<h3><a class="toc-backref" href="#id15">External RAM (PSRAM)</a><a class="headerlink" href="#external-ram-psram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">External RAM (PSRAM)</a><a class="headerlink" href="#external-ram-psram" title="Permalink to this heading"></a></h3>
 <p>You can enable external RAM using the next extra <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
 in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> depending on a framework type.</p>
 <p>Framework <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>:</p>
@@ -299,7 +303,7 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 <a class="reference external" href="http://esp-idf.readthedocs.io/en/latest/api-guides/external-ram.html">Support for external RAM</a>.</p>
 </section>
 <section id="debug-level">
-<h3><a class="toc-backref" href="#id16">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this heading"></a></h3>
 <p>Please use one of the next <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to change debug level.
 A <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option could be used only the one time per
 build environment. If you need to specify more flags, please separate them
@@ -334,7 +338,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">es
 </div>
 </section>
 <section id="upload-speed">
-<h3><a class="toc-backref" href="#id17">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this heading"></a></h3>
 <p>You can set custom upload speed using  <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_speed.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
 from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -343,7 +347,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="erase-flash">
-<h3><a class="toc-backref" href="#id18">Erase Flash</a><a class="headerlink" href="#erase-flash" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Erase Flash</a><a class="headerlink" href="#erase-flash" title="Permalink to this heading"></a></h3>
 <p>Please <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> the next command to erase the entire
 flash chip (all data replaced with 0xFF bytes):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">run</span> <span class="o">--</span><span class="n">target</span> <span class="n">erase</span>
@@ -355,7 +359,7 @@ flash chip (all data replaced with 0xFF bytes):</p>
 </div>
 </section>
 <section id="partition-tables">
-<h3><a class="toc-backref" href="#id19">Partition Tables</a><a class="headerlink" href="#partition-tables" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Partition Tables</a><a class="headerlink" href="#partition-tables" title="Permalink to this heading"></a></h3>
 <p>You can create a custom partitions table (CSV) following <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html">ESP32 Partition Tables</a>
 documentation. PlatformIO uses <strong>default partition tables</strong> depending on a
 <a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> type:</p>
@@ -386,7 +390,7 @@ as “spiffs”. For example, <code class="docutils literal notranslate"><span c
 </div>
 </section>
 <section id="embedding-binary-data">
-<h3><a class="toc-backref" href="#id20">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Permalink to this heading"></a></h3>
 <p>Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.</p>
@@ -431,7 +435,7 @@ in the symbol name is added by “objcopy” and is the same for both text and b
 </ul>
 </section>
 <section id="uploading-files-to-file-system">
-<h3><a class="toc-backref" href="#id21">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Permalink to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Create new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
@@ -464,7 +468,7 @@ for example:</p>
 </ul>
 </section>
 <section id="over-the-air-ota-update">
-<h3><a class="toc-backref" href="#id22">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read the theory behind the OTA updates in the
@@ -472,14 +476,14 @@ for example:</p>
 article.</p>
 </div>
 <section id="using-jfrog-bintray-free-and-secure-cloud-solution">
-<h4><a class="toc-backref" href="#id23">Using JFrog Bintray (free and secure Cloud solution)</a><a class="headerlink" href="#using-jfrog-bintray-free-and-secure-cloud-solution" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id23" role="doc-backlink">Using JFrog Bintray (free and secure Cloud solution)</a><a class="headerlink" href="#using-jfrog-bintray-free-and-secure-cloud-solution" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><p>Video and presentation - <a class="reference external" href="https://www.slideshare.net/ivankravets/swampup-overtheair-ota-firmware-upgrades-for-internet-of-things-devices-with-platformio-and-jfrog-bintray">swampUP: Over-The-Air (OTA) firmware upgrades for Internet of Things devices with PlatformIO and JFrog Bintray</a></p></li>
 <li><p>Demo source code: <a class="reference external" href="https://github.com/platformio/bintray-secure-ota">https://github.com/platformio/bintray-secure-ota</a></p></li>
 </ul>
 </section>
 <section id="using-built-in-local-solution">
-<h4><a class="toc-backref" href="#id24">Using built-in Local solution</a><a class="headerlink" href="#using-built-in-local-solution" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">Using built-in Local solution</a><a class="headerlink" href="#using-built-in-local-solution" title="Permalink to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p>Create a new project using <a class="reference internal" href="../home/index.html#piohome"><span class="std std-ref">PlatformIO Home</span></a> or initialize a project via
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
@@ -516,7 +520,7 @@ need to set <a class="reference internal" href="../projectconf/sections/env/opti
 </pre></div>
 </div>
 <section id="authentication-and-upload-options">
-<h5><a class="toc-backref" href="#id25">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this heading">¶</a></h5>
+<h5><a class="toc-backref" href="#id25" role="doc-backlink">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this heading"></a></h5>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -579,7 +583,7 @@ be sure it’s on private mode``</p>
 </section>
 </section>
 <section id="using-arduino-framework-with-staging-version">
-<h3><a class="toc-backref" href="#id26">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this heading"></a></h3>
 <p>PlatformIO will install the latest Arduino Core for ESP32 from
 <a class="reference external" href="https://github.com/espressif/arduino-esp32">https://github.com/espressif/arduino-esp32</a>. The <a class="reference external" href="https://git-scm.com">Git</a>
 should be installed in a system. To update Arduino Core to the latest revision,
@@ -615,17 +619,16 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ol>
 </section>
 <section id="arduino-core-wiki">
-<h3><a class="toc-backref" href="#id27">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Permalink to this heading"></a></h3>
 <p>Tips, tricks and common problems: <a class="reference external" href="http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/">http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/</a></p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id6">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif 32 development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio.org&amp;utm_medium=docs">espidf-storage-sdcard</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-usb-keyboard?utm_source=platformio.org&amp;utm_medium=docs">arduino-usb-keyboard</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-blink?utm_source=platformio.org&amp;utm_medium=docs">espidf-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio.org&amp;utm_medium=docs">espidf-coap-server</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-spiffs?utm_source=platformio.org&amp;utm_medium=docs">espidf-storage-spiffs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio.org&amp;utm_medium=docs">espidf-exceptions</a></p></li>
@@ -646,9 +649,9 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id7">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
-<div class="contents local topic" id="id2">
+<nav class="contents local" id="id2">
 <ul class="simple">
 <li><p><a class="reference internal" href="#pinout-diagram" id="id28">Pinout Diagram</a></p></li>
 <li><p><a class="reference internal" href="#tools-debug-probes" id="id29">Tools &amp; Debug Probes</a></p>
@@ -658,15 +661,11 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="pinout-diagram">
-<h3><a class="toc-backref" href="#id28">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Permalink to this heading"></a></h3>
 <p><strong>JTAG Wiring Connections</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Board Pin</p></th>
 <th class="head"><p>JTAG Tool Pin</p></th>
@@ -696,7 +695,7 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 <img alt="../_images/espressif32_debug_pinout.jpg" src="../_images/espressif32_debug_pinout.jpg" />
 </section>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id29">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -707,17 +706,10 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id30">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id30" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading"></a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>MCU</p></th>
@@ -743,18 +735,11 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id31">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading">¶</a></h4>
+<h4><a class="toc-backref" href="#id31" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>MCU</p></th>
@@ -800,22 +785,34 @@ Please click on board name for the further details.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_reversetft.html#board-espressif32-adafruit-feather-esp32s2-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S2 Reverse TFT</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_reversetft.html#board-espressif32-adafruit-feather-esp32s3-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S3 Reverse TFT</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_tft.html#board-espressif32-adafruit-feather-esp32s3-tft"><span class="std std-ref">Adafruit Feather ESP32-S3 TFT</span></a></p></td>
@@ -944,117 +941,129 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32e.html#board-espressif32-dfrobot-firebeetle2-esp32e"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-E</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32doit-devkit-v1.html#board-espressif32-esp32doit-devkit-v1"><span class="std std-ref">DOIT ESP32 DEVKIT V1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32doit-devkit-v1.html#board-espressif32-esp32doit-devkit-v1"><span class="std std-ref">DOIT ESP32 DEVKIT V1</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32doit-espduino.html#board-espressif32-esp32doit-espduino"><span class="std std-ref">DOIT ESPduino32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32doit-espduino.html#board-espressif32-esp32doit-espduino"><span class="std std-ref">DOIT ESPduino32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart.html#board-espressif32-deneyapkart"><span class="std std-ref">Deneyap Kart</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart.html#board-espressif32-deneyapkart"><span class="std std-ref">Deneyap Kart</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1A.html#board-espressif32-deneyapkart1a"><span class="std std-ref">Deneyap Kart 1A</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1A.html#board-espressif32-deneyapkart1a"><span class="std std-ref">Deneyap Kart 1A</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Deparment of Alchemy MiniMain ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Deparment of Alchemy MiniMain ESP32-S2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/pocket_32.html#board-espressif32-pocket-32"><span class="std std-ref">Dongsen Tech Pocket 32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/pocket_32.html#board-espressif32-pocket-32"><span class="std std-ref">Dongsen Tech Pocket 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/fm-devkit.html#board-espressif32-fm-devkit"><span class="std std-ref">ESP32 FM DevKit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/fm-devkit.html#board-espressif32-fm-devkit"><span class="std std-ref">ESP32 FM DevKit</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/pico32.html#board-espressif32-pico32"><span class="std std-ref">ESP32 Pico Kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/pico32.html#board-espressif32-pico32"><span class="std std-ref">ESP32 Pico Kit</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3camlcd.html#board-espressif32-esp32s3camlcd"><span class="std std-ref">ESP32S3 CAM LCD</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3camlcd.html#board-espressif32-esp32s3camlcd"><span class="std std-ref">ESP32S3 CAM LCD</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32vn-iot-uno.html#board-espressif32-esp32vn-iot-uno"><span class="std std-ref">ESP32vn IoT Uno</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32vn-iot-uno.html#board-espressif32-esp32vn-iot-uno"><span class="std std-ref">ESP32vn IoT Uno</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/espectro32.html#board-espressif32-espectro32"><span class="std std-ref">ESPectro32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/espectro32.html#board-espressif32-espectro32"><span class="std std-ref">ESPectro32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/espino32.html#board-espressif32-espino32"><span class="std std-ref">ESPino32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/espino32.html#board-espressif32-espino32"><span class="std std-ref">ESPino32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/atmegazero_esp32s2.html#board-espressif32-atmegazero-esp32s2"><span class="std std-ref">EspinalLab ATMegaZero ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/atmegazero_esp32s2.html#board-espressif32-atmegazero-esp32s2"><span class="std std-ref">EspinalLab ATMegaZero ESP32-S2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitc-02.html#board-espressif32-esp32-c3-devkitc-02"><span class="std std-ref">Espressif ESP32-C3-DevKitC-02</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
@@ -1118,14 +1127,26 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
@@ -1160,92 +1181,116 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/node32s.html#board-espressif32-node32s"><span class="std std-ref">Node32s</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/nodemcu-32s.html#board-espressif32-nodemcu-32s"><span class="std std-ref">NodeMCU-32S</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-devkitlipo.html#board-espressif32-esp32-devkitlipo"><span class="std std-ref">OLIMEX ESP32-DevKit-LiPo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-evb.html#board-espressif32-esp32-evb"><span class="std std-ref">OLIMEX ESP32-EVB</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/node32s.html#board-espressif32-node32s"><span class="std std-ref">Node32s</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-gateway.html#board-espressif32-esp32-gateway"><span class="std std-ref">OLIMEX ESP32-GATEWAY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/nodemcu-32s.html#board-espressif32-nodemcu-32s"><span class="std std-ref">NodeMCU-32S</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lopy.html#board-espressif32-lopy"><span class="std std-ref">Pycom LoPy</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-devkitlipo.html#board-espressif32-esp32-devkitlipo"><span class="std std-ref">OLIMEX ESP32-DevKit-LiPo</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lopy4.html#board-espressif32-lopy4"><span class="std std-ref">Pycom LoPy4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-evb.html#board-espressif32-esp32-evb"><span class="std std-ref">OLIMEX ESP32-EVB</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-gateway.html#board-espressif32-esp32-gateway"><span class="std std-ref">OLIMEX ESP32-GATEWAY</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lopy.html#board-espressif32-lopy"><span class="std std-ref">Pycom LoPy</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lopy4.html#board-espressif32-lopy4"><span class="std std-ref">Pycom LoPy4</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wipy3.html#board-espressif32-wipy3"><span class="std std-ref">Pycom WiPy3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wipy3.html#board-espressif32-wipy3"><span class="std std-ref">Pycom WiPy3</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sg-o_airMon.html#board-espressif32-sg-o-airmon"><span class="std std-ref">SG-O AirMon</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sg-o_airMon.html#board-espressif32-sg-o-airmon"><span class="std std-ref">SG-O AirMon</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/watchy.html#board-espressif32-watchy"><span class="std std-ref">SQFMI Watchy v2.0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/watchy.html#board-espressif32-watchy"><span class="std std-ref">SQFMI Watchy v2.0</span></a></p></td>
 <td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/edgebox-esp-100.html#board-espressif32-edgebox-esp-100"><span class="std std-ref">Seeed Studio Edgebox-ESP-100</span></a></p></td>
+<td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
@@ -1256,238 +1301,262 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32s3.html#board-espressif32-seeed-xiao-esp32s3"><span class="std std-ref">Seeed Studio XIAO ESP32S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wesp32.html#board-espressif32-wesp32"><span class="std std-ref">Silicognition wESP32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32_iot_redboard.html#board-espressif32-sparkfun-esp32-iot-redboard"><span class="std std-ref">SparkFun ESP32 IoT RedBoard</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32_iot_redboard.html#board-espressif32-sparkfun-esp32-iot-redboard"><span class="std std-ref">SparkFun ESP32 IoT RedBoard</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32thing.html#board-espressif32-esp32thing"><span class="std std-ref">SparkFun ESP32 Thing</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32thing.html#board-espressif32-esp32thing"><span class="std std-ref">SparkFun ESP32 Thing</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32thing_plus.html#board-espressif32-esp32thing-plus"><span class="std std-ref">SparkFun ESP32 Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32thing_plus.html#board-espressif32-esp32thing-plus"><span class="std std-ref">SparkFun ESP32 Thing Plus</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus_c.html#board-espressif32-sparkfun-esp32s2-thing-plus-c"><span class="std std-ref">SparkFun ESP32 Thing Plus C</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus_c.html#board-espressif32-sparkfun-esp32s2-thing-plus-c"><span class="std std-ref">SparkFun ESP32 Thing Plus C</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus.html#board-espressif32-sparkfun-esp32s2-thing-plus"><span class="std std-ref">SparkFun ESP32-S2 Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_esp32s2_thing_plus.html#board-espressif32-sparkfun-esp32s2-thing-plus"><span class="std std-ref">SparkFun ESP32-S2 Thing Plus</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sparkfun_lora_gateway_1-channel.html#board-espressif32-sparkfun-lora-gateway-1-channel"><span class="std std-ref">SparkFun LoRa Gateway 1-Channel</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dpu_esp32.html#board-espressif32-dpu-esp32"><span class="std std-ref">TAMC DPU ESP32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/tamc_termod_s3.html#board-espressif32-tamc-termod-s3"><span class="std std-ref">TAMC Termod S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/tamc_termod_s3.html#board-espressif32-tamc-termod-s3"><span class="std std-ref">TAMC Termod S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v1.html#board-espressif32-ttgo-lora32-v1"><span class="std std-ref">TTGO LoRa32-OLED V1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v1.html#board-espressif32-ttgo-lora32-v1"><span class="std std-ref">TTGO LoRa32-OLED V1</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v2.html#board-espressif32-ttgo-lora32-v2"><span class="std std-ref">TTGO LoRa32-OLED V2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v2.html#board-espressif32-ttgo-lora32-v2"><span class="std std-ref">TTGO LoRa32-OLED V2</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v21.html#board-espressif32-ttgo-lora32-v21"><span class="std std-ref">TTGO LoRa32-OLED v2.1.6</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-lora32-v21.html#board-espressif32-ttgo-lora32-v21"><span class="std std-ref">TTGO LoRa32-OLED v2.1.6</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t-beam.html#board-espressif32-ttgo-t-beam"><span class="std std-ref">TTGO T-Beam</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t-beam.html#board-espressif32-ttgo-t-beam"><span class="std std-ref">TTGO T-Beam</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t-oi-plus.html#board-espressif32-ttgo-t-oi-plus"><span class="std std-ref">TTGO T-OI PLUS RISC-V ESP32-C3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t-oi-plus.html#board-espressif32-ttgo-t-oi-plus"><span class="std std-ref">TTGO T-OI PLUS RISC-V ESP32-C3</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t1.html#board-espressif32-ttgo-t1"><span class="std std-ref">TTGO T1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t1.html#board-espressif32-ttgo-t1"><span class="std std-ref">TTGO T1</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t7-v14-mini32.html#board-espressif32-ttgo-t7-v14-mini32"><span class="std std-ref">TTGO T7 V1.4 Mini32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ttgo-t7-v14-mini32.html#board-espressif32-ttgo-t7-v14-mini32"><span class="std std-ref">TTGO T7 V1.4 Mini32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver.html#board-espressif32-trueverit-iot-driver"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver.html#board-espressif32-trueverit-iot-driver"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver-mk2.html#board-espressif32-trueverit-iot-driver-mk2"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver MK II</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver-mk2.html#board-espressif32-trueverit-iot-driver-mk2"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver MK II</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver-mk3.html#board-espressif32-trueverit-iot-driver-mk3"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver MK III</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/trueverit-iot-driver-mk3.html#board-espressif32-trueverit-iot-driver-mk3"><span class="std std-ref">Trueverit ESP32 Universal IoT Driver MK III</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers2.html#board-espressif32-um-feathers2"><span class="std std-ref">Unexpected Maker FeatherS2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers2.html#board-espressif32-um-feathers2"><span class="std std-ref">Unexpected Maker FeatherS2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers2_neo.html#board-espressif32-um-feathers2-neo"><span class="std std-ref">Unexpected Maker FeatherS2 Neo</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers2_neo.html#board-espressif32-um-feathers2-neo"><span class="std std-ref">Unexpected Maker FeatherS2 Neo</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers3.html#board-espressif32-um-feathers3"><span class="std std-ref">Unexpected Maker FeatherS3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_feathers3.html#board-espressif32-um-feathers3"><span class="std std-ref">Unexpected Maker FeatherS3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_pros3.html#board-espressif32-um-pros3"><span class="std std-ref">Unexpected Maker PROS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_pros3.html#board-espressif32-um-pros3"><span class="std std-ref">Unexpected Maker PROS3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_rmp.html#board-espressif32-um-rmp"><span class="std std-ref">Unexpected Maker RMP</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_rmp.html#board-espressif32-um-rmp"><span class="std std-ref">Unexpected Maker RMP</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys2.html#board-espressif32-um-tinys2"><span class="std std-ref">Unexpected Maker TinyS2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys2.html#board-espressif32-um-tinys2"><span class="std std-ref">Unexpected Maker TinyS2</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys3.html#board-espressif32-um-tinys3"><span class="std std-ref">Unexpected Maker TinyS3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys3.html#board-espressif32-um-tinys3"><span class="std std-ref">Unexpected Maker TinyS3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/vintlabs-devkit-v1.html#board-espressif32-vintlabs-devkit-v1"><span class="std std-ref">VintLabs ESP32 Devkit</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WEMOS D1 MINI ESP32</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_uno32.html#board-espressif32-wemos-d1-uno32"><span class="std std-ref">WEMOS D1 R32</span></a></p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_c3_mini.html#board-espressif32-lolin-c3-mini"><span class="std std-ref">WEMOS LOLIN C3 Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_mfw_esp32_c3.html#board-espressif32-valtrack-v4-mfw-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4MVF</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_d32.html#board-espressif32-lolin-d32"><span class="std std-ref">WEMOS LOLIN D32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_vts_esp32_c3.html#board-espressif32-valtrack-v4-vts-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4VTS</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/vintlabs-devkit-v1.html#board-espressif32-vintlabs-devkit-v1"><span class="std std-ref">VintLabs ESP32 Devkit</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_d32_pro.html#board-espressif32-lolin-d32-pro"><span class="std std-ref">WEMOS LOLIN D32 PRO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_mini32.html#board-espressif32-wemos-d1-mini32"><span class="std std-ref">WEMOS D1 MINI ESP32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s2_mini.html#board-espressif32-lolin-s2-mini"><span class="std std-ref">WEMOS LOLIN S2 Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemos_d1_uno32.html#board-espressif32-wemos-d1-uno32"><span class="std std-ref">WEMOS D1 R32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_c3_mini.html#board-espressif32-lolin-c3-mini"><span class="std std-ref">WEMOS LOLIN C3 Mini</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_d32.html#board-espressif32-lolin-d32"><span class="std std-ref">WEMOS LOLIN D32</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_d32_pro.html#board-espressif32-lolin-d32-pro"><span class="std std-ref">WEMOS LOLIN D32 PRO</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s2_mini.html#board-espressif32-lolin-s2-mini"><span class="std std-ref">WEMOS LOLIN S2 Mini</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s2_pico.html#board-espressif32-lolin-s2-pico"><span class="std std-ref">WEMOS LOLIN S2 PICO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s2_pico.html#board-espressif32-lolin-s2-pico"><span class="std std-ref">WEMOS LOLIN S2 PICO</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3.html#board-espressif32-lolin-s3"><span class="std std-ref">WEMOS LOLIN S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3.html#board-espressif32-lolin-s3"><span class="std std-ref">WEMOS LOLIN S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3_mini.html#board-espressif32-lolin-s3-mini"><span class="std std-ref">WEMOS LOLIN S3 Mini</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
@@ -1568,18 +1637,19 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id8">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading"></a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-espressif32/releases">stable releases</a>
 of Espressif 32 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">¶</a></h3>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version</span>
+<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading"></a></h3>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version, NOT recommended</span>
+<span class="c1">; Pin the version as shown below</span>
 <span class="k">[env:latest_stable]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
 
-<span class="c1">; Custom stable version</span>
+<span class="c1">; Specific version</span>
 <span class="k">[env:custom_stable]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@x.y.z</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -1587,7 +1657,7 @@ of Espressif 32 development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading">¶</a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -1596,12 +1666,8 @@ of Espressif 32 development platform and the latest upstream version using
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id9">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -1682,12 +1748,8 @@ manufacturer</p>
 </div>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id10">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -1695,16 +1757,16 @@ manufacturer</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
-<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences</p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a></p></td>
-<td><p>ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.</p></td>
+<td><p>Espressif IoT Development Framework. Official development framework for ESP32 chip</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id11">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -1714,16 +1776,8 @@ horizontally.</p></li>
 </ul>
 </div>
 <section id="ai-thinker">
-<h3>AI Thinker<a class="headerlink" href="#ai-thinker" title="Permalink to this heading">¶</a></h3>
+<h3>AI Thinker<a class="headerlink" href="#ai-thinker" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -1745,16 +1799,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="az-delivery">
-<h3>AZ-Delivery<a class="headerlink" href="#az-delivery" title="Permalink to this heading">¶</a></h3>
+<h3>AZ-Delivery<a class="headerlink" href="#az-delivery" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -1776,16 +1822,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading">¶</a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -1817,25 +1855,39 @@ horizontally.</p></li>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_reversetft.html#board-espressif32-adafruit-feather-esp32s2-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S2 Reverse TFT</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s2_tft.html#board-espressif32-adafruit-feather-esp32s2-tft"><span class="std std-ref">Adafruit Feather ESP32-S2 TFT</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3.html#board-espressif32-adafruit-feather-esp32s3"><span class="std std-ref">Adafruit Feather ESP32-S3 2MB PSRAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_nopsram.html#board-espressif32-adafruit-feather-esp32s3-nopsram"><span class="std std-ref">Adafruit Feather ESP32-S3 No PSRAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_reversetft.html#board-espressif32-adafruit-feather-esp32s3-reversetft"><span class="std std-ref">Adafruit Feather ESP32-S3 Reverse TFT</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_feather_esp32s3_tft.html#board-espressif32-adafruit-feather-esp32s3-tft"><span class="std std-ref">Adafruit Feather ESP32-S3 TFT</span></a></p></td>
@@ -1905,16 +1957,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="id3">
-<h3>Ai-Thinker<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h3>Ai-Thinker<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -1943,16 +1987,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="airm2m">
-<h3>AirM2M<a class="headerlink" href="#airm2m" title="Permalink to this heading">¶</a></h3>
+<h3>AirM2M<a class="headerlink" href="#airm2m" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -1974,16 +2010,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="aiyarafun">
-<h3>Aiyarafun<a class="headerlink" href="#aiyarafun" title="Permalink to this heading">¶</a></h3>
+<h3>Aiyarafun<a class="headerlink" href="#aiyarafun" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2005,16 +2033,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="april-brother">
-<h3>April Brother<a class="headerlink" href="#april-brother" title="Permalink to this heading">¶</a></h3>
+<h3>April Brother<a class="headerlink" href="#april-brother" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2036,16 +2056,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bpi-tech">
-<h3>BPI Tech<a class="headerlink" href="#bpi-tech" title="Permalink to this heading">¶</a></h3>
+<h3>BPI Tech<a class="headerlink" href="#bpi-tech" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2074,16 +2086,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="blinker">
-<h3>Blinker<a class="headerlink" href="#blinker" title="Permalink to this heading">¶</a></h3>
+<h3>Blinker<a class="headerlink" href="#blinker" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2119,16 +2123,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="cnrs">
-<h3>CNRS<a class="headerlink" href="#cnrs" title="Permalink to this heading">¶</a></h3>
+<h3>CNRS<a class="headerlink" href="#cnrs" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2150,16 +2146,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="connaxio">
-<h3>Connaxio<a class="headerlink" href="#connaxio" title="Permalink to this heading">¶</a></h3>
+<h3>Connaxio<a class="headerlink" href="#connaxio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2181,16 +2169,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="cytron-technologies">
-<h3>Cytron Technologies<a class="headerlink" href="#cytron-technologies" title="Permalink to this heading">¶</a></h3>
+<h3>Cytron Technologies<a class="headerlink" href="#cytron-technologies" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2212,16 +2192,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dfrobot">
-<h3>DFRobot<a class="headerlink" href="#dfrobot" title="Permalink to this heading">¶</a></h3>
+<h3>DFRobot<a class="headerlink" href="#dfrobot" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2239,14 +2211,21 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32e.html#board-espressif32-dfrobot-firebeetle2-esp32e"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-E</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_firebeetle2_esp32s3.html#board-espressif32-dfrobot-firebeetle2-esp32s3"><span class="std std-ref">DFRobot Firebeetle 2 ESP32-S3</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
@@ -2257,16 +2236,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="doit">
-<h3>DOIT<a class="headerlink" href="#doit" title="Permalink to this heading">¶</a></h3>
+<h3>DOIT<a class="headerlink" href="#doit" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2295,16 +2266,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dstike">
-<h3>DSTIKE<a class="headerlink" href="#dstike" title="Permalink to this heading">¶</a></h3>
+<h3>DSTIKE<a class="headerlink" href="#dstike" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2325,83 +2288,9 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="deneyap">
-<h3>Deneyap<a class="headerlink" href="#deneyap" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart.html#board-espressif32-deneyapkart"><span class="std std-ref">Deneyap Kart</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1A.html#board-espressif32-deneyapkart1a"><span class="std std-ref">Deneyap Kart 1A</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S3</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32C3</p></td>
-<td><p>160MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="denky">
-<h3>Denky<a class="headerlink" href="#denky" title="Permalink to this heading">¶</a></h3>
+<h3>Denky<a class="headerlink" href="#denky" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2430,16 +2319,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="deparment-of-alchemy">
-<h3>Deparment of Alchemy<a class="headerlink" href="#deparment-of-alchemy" title="Permalink to this heading">¶</a></h3>
+<h3>Deparment of Alchemy<a class="headerlink" href="#deparment-of-alchemy" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2461,16 +2342,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dongsen-technology">
-<h3>Dongsen Technology<a class="headerlink" href="#dongsen-technology" title="Permalink to this heading">¶</a></h3>
+<h3>Dongsen Technology<a class="headerlink" href="#dongsen-technology" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2492,16 +2365,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dycodex">
-<h3>DycodeX<a class="headerlink" href="#dycodex" title="Permalink to this heading">¶</a></h3>
+<h3>DycodeX<a class="headerlink" href="#dycodex" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2523,16 +2388,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="esp32vn">
-<h3>ESP32vn<a class="headerlink" href="#esp32vn" title="Permalink to this heading">¶</a></h3>
+<h3>ESP32vn<a class="headerlink" href="#esp32vn" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2554,16 +2411,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="etboard">
-<h3>ETBoard<a class="headerlink" href="#etboard" title="Permalink to this heading">¶</a></h3>
+<h3>ETBoard<a class="headerlink" href="#etboard" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2585,16 +2434,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="electronic-sweetpeas">
-<h3>Electronic SweetPeas<a class="headerlink" href="#electronic-sweetpeas" title="Permalink to this heading">¶</a></h3>
+<h3>Electronic SweetPeas<a class="headerlink" href="#electronic-sweetpeas" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2616,16 +2457,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="espinallab">
-<h3>EspinalLab<a class="headerlink" href="#espinallab" title="Permalink to this heading">¶</a></h3>
+<h3>EspinalLab<a class="headerlink" href="#espinallab" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2647,16 +2480,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="espressif">
-<h3>Espressif<a class="headerlink" href="#espressif" title="Permalink to this heading">¶</a></h3>
+<h3>Espressif<a class="headerlink" href="#espressif" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2695,35 +2520,42 @@ horizontally.</p></li>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitm-1.html#board-espressif32-esp32-c3-devkitm-1"><span class="std std-ref">Espressif ESP32-C3-DevKitM-1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitc-02.html#board-espressif32-esp32-c3-devkitc-02"><span class="std std-ref">Espressif ESP32-C3-DevKitC-02</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-kaluga-1.html#board-espressif32-esp32-s2-kaluga-1"><span class="std std-ref">Espressif ESP32-S2-Kaluga-1 Kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitm-1.html#board-espressif32-esp32-c3-devkitm-1"><span class="std std-ref">Espressif ESP32-C3-DevKitM-1</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-kaluga-1.html#board-espressif32-esp32-s2-kaluga-1"><span class="std std-ref">Espressif ESP32-S2-Kaluga-1 Kit</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
@@ -2734,16 +2566,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="fishino">
-<h3>Fishino<a class="headerlink" href="#fishino" title="Permalink to this heading">¶</a></h3>
+<h3>Fishino<a class="headerlink" href="#fishino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2765,16 +2589,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="franzininho">
-<h3>Franzininho<a class="headerlink" href="#franzininho" title="Permalink to this heading">¶</a></h3>
+<h3>Franzininho<a class="headerlink" href="#franzininho" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2810,16 +2626,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="fred">
-<h3>Fred<a class="headerlink" href="#fred" title="Permalink to this heading">¶</a></h3>
+<h3>Fred<a class="headerlink" href="#fred" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2841,16 +2649,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="honeylemon">
-<h3>HONEYLemon<a class="headerlink" href="#honeylemon" title="Permalink to this heading">¶</a></h3>
+<h3>HONEYLemon<a class="headerlink" href="#honeylemon" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2872,16 +2672,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="hardkernel">
-<h3>Hardkernel<a class="headerlink" href="#hardkernel" title="Permalink to this heading">¶</a></h3>
+<h3>Hardkernel<a class="headerlink" href="#hardkernel" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2902,17 +2694,39 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="heltec-automation">
-<h3>Heltec Automation<a class="headerlink" href="#heltec-automation" title="Permalink to this heading">¶</a></h3>
+<section id="heltec">
+<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="heltec-automation">
+<h3>Heltec Automation<a class="headerlink" href="#heltec-automation" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -2969,16 +2783,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="hornbill">
-<h3>Hornbill<a class="headerlink" href="#hornbill" title="Permalink to this heading">¶</a></h3>
+<h3>Hornbill<a class="headerlink" href="#hornbill" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3007,16 +2813,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="inex">
-<h3>INEX<a class="headerlink" href="#inex" title="Permalink to this heading">¶</a></h3>
+<h3>INEX<a class="headerlink" href="#inex" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3038,16 +2836,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="imbrios">
-<h3>Imbrios<a class="headerlink" href="#imbrios" title="Permalink to this heading">¶</a></h3>
+<h3>Imbrios<a class="headerlink" href="#imbrios" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3069,16 +2859,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="intorobot">
-<h3>IntoRobot<a class="headerlink" href="#intorobot" title="Permalink to this heading">¶</a></h3>
+<h3>IntoRobot<a class="headerlink" href="#intorobot" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3100,16 +2882,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="iotaap">
-<h3>IoTaaP<a class="headerlink" href="#iotaap" title="Permalink to this heading">¶</a></h3>
+<h3>IoTaaP<a class="headerlink" href="#iotaap" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3131,16 +2905,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="kits">
-<h3>KITS<a class="headerlink" href="#kits" title="Permalink to this heading">¶</a></h3>
+<h3>KITS<a class="headerlink" href="#kits" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3162,16 +2928,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="logisenses">
-<h3>LOGISENSES<a class="headerlink" href="#logisenses" title="Permalink to this heading">¶</a></h3>
+<h3>LOGISENSES<a class="headerlink" href="#logisenses" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3193,16 +2951,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="labplus">
-<h3>Labplus<a class="headerlink" href="#labplus" title="Permalink to this heading">¶</a></h3>
+<h3>Labplus<a class="headerlink" href="#labplus" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3223,17 +2973,32 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="lion-bit">
-<h3>Lion:Bit<a class="headerlink" href="#lion-bit" title="Permalink to this heading">¶</a></h3>
+<section id="lilygo">
+<h3>LilyGo<a class="headerlink" href="#lilygo" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lion-bit">
+<h3>Lion:Bit<a class="headerlink" href="#lion-bit" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3255,16 +3020,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="m5stack">
-<h3>M5Stack<a class="headerlink" href="#m5stack" title="Permalink to this heading">¶</a></h3>
+<h3>M5Stack<a class="headerlink" href="#m5stack" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3275,33 +3032,47 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core-esp32.html#board-espressif32-m5stack-core-esp32"><span class="std std-ref">M5Stack Core ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core-esp32.html#board-espressif32-m5stack-core-esp32"><span class="std std-ref">M5Stack Core ESP32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core2.html#board-espressif32-m5stack-core2"><span class="std std-ref">M5Stack Core2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core2.html#board-espressif32-m5stack-core2"><span class="std std-ref">M5Stack Core2</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>4.31MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-fire.html#board-espressif32-m5stack-fire"><span class="std std-ref">M5Stack FIRE</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-fire.html#board-espressif32-m5stack-fire"><span class="std std-ref">M5Stack FIRE</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>4.31MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-grey.html#board-espressif32-m5stack-grey"><span class="std std-ref">M5Stack GREY ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-grey.html#board-espressif32-m5stack-grey"><span class="std std-ref">M5Stack GREY ESP32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>520KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-station.html#board-espressif32-m5stack-station"><span class="std std-ref">M5Stack Station</span></a></p></td>
 <td><p>No</p></td>
@@ -3342,16 +3113,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="mgbot">
-<h3>MGBOT<a class="headerlink" href="#mgbot" title="Permalink to this heading">¶</a></h3>
+<h3>MGBOT<a class="headerlink" href="#mgbot" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3380,16 +3143,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="mh-et-live">
-<h3>MH-ET Live<a class="headerlink" href="#mh-et-live" title="Permalink to this heading">¶</a></h3>
+<h3>MH-ET Live<a class="headerlink" href="#mh-et-live" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3418,16 +3173,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="magicblocks-io">
-<h3>Magicblocks.io<a class="headerlink" href="#magicblocks-io" title="Permalink to this heading">¶</a></h3>
+<h3>Magicblocks.io<a class="headerlink" href="#magicblocks-io" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3449,16 +3196,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="makerasia">
-<h3>MakerAsia<a class="headerlink" href="#makerasia" title="Permalink to this heading">¶</a></h3>
+<h3>MakerAsia<a class="headerlink" href="#makerasia" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3487,16 +3226,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="microduino">
-<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading">¶</a></h3>
+<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3518,16 +3249,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="munich-labs">
-<h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Permalink to this heading">¶</a></h3>
+<h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3549,16 +3272,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="nodemcu">
-<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Permalink to this heading">¶</a></h3>
+<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3580,16 +3295,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="noduino">
-<h3>Noduino<a class="headerlink" href="#noduino" title="Permalink to this heading">¶</a></h3>
+<h3>Noduino<a class="headerlink" href="#noduino" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3611,16 +3318,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="olimex">
-<h3>OLIMEX<a class="headerlink" href="#olimex" title="Permalink to this heading">¶</a></h3>
+<h3>OLIMEX<a class="headerlink" href="#olimex" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3677,16 +3376,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="oroca">
-<h3>OROCA<a class="headerlink" href="#oroca" title="Permalink to this heading">¶</a></h3>
+<h3>OROCA<a class="headerlink" href="#oroca" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3708,16 +3399,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="onehorse">
-<h3>Onehorse<a class="headerlink" href="#onehorse" title="Permalink to this heading">¶</a></h3>
+<h3>Onehorse<a class="headerlink" href="#onehorse" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3739,16 +3422,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="protocentral">
-<h3>ProtoCentral<a class="headerlink" href="#protocentral" title="Permalink to this heading">¶</a></h3>
+<h3>ProtoCentral<a class="headerlink" href="#protocentral" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3770,16 +3445,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="pycom-ltd">
-<h3>Pycom Ltd.<a class="headerlink" href="#pycom-ltd" title="Permalink to this heading">¶</a></h3>
+<h3>Pycom Ltd.<a class="headerlink" href="#pycom-ltd" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3822,16 +3489,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="qmobot-llp">
-<h3>Qmobot LLP<a class="headerlink" href="#qmobot-llp" title="Permalink to this heading">¶</a></h3>
+<h3>Qmobot LLP<a class="headerlink" href="#qmobot-llp" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3852,17 +3511,32 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="roboticsbrno">
-<h3>RoboticsBrno<a class="headerlink" href="#roboticsbrno" title="Permalink to this heading">¶</a></h3>
+<section id="roboheart">
+<h3>RoboHeart<a class="headerlink" href="#roboheart" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/roboheart_hercules.html#board-espressif32-roboheart-hercules"><span class="std std-ref">RoboHeart Hercules</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="roboticsbrno">
+<h3>RoboticsBrno<a class="headerlink" href="#roboticsbrno" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3884,16 +3558,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="s-odi">
-<h3>S.ODI<a class="headerlink" href="#s-odi" title="Permalink to this heading">¶</a></h3>
+<h3>S.ODI<a class="headerlink" href="#s-odi" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3915,16 +3581,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sg-o">
-<h3>SG-O<a class="headerlink" href="#sg-o" title="Permalink to this heading">¶</a></h3>
+<h3>SG-O<a class="headerlink" href="#sg-o" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3946,16 +3604,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sqfmi">
-<h3>SQFMI<a class="headerlink" href="#sqfmi" title="Permalink to this heading">¶</a></h3>
+<h3>SQFMI<a class="headerlink" href="#sqfmi" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3977,16 +3627,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="seeed-studio">
-<h3>Seeed Studio<a class="headerlink" href="#seeed-studio" title="Permalink to this heading">¶</a></h3>
+<h3>Seeed Studio<a class="headerlink" href="#seeed-studio" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -3997,27 +3639,33 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/edgebox-esp-100.html#board-espressif32-edgebox-esp-100"><span class="std std-ref">Seeed Studio Edgebox-ESP-100</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32c3.html#board-espressif32-seeed-xiao-esp32c3"><span class="std std-ref">Seeed Studio XIAO ESP32C3</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/seeed_xiao_esp32s3.html#board-espressif32-seeed-xiao-esp32s3"><span class="std std-ref">Seeed Studio XIAO ESP32S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="silicognition">
-<h3>Silicognition<a class="headerlink" href="#silicognition" title="Permalink to this heading">¶</a></h3>
+<h3>Silicognition<a class="headerlink" href="#silicognition" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4039,16 +3687,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="smart-bee">
-<h3>Smart Bee<a class="headerlink" href="#smart-bee" title="Permalink to this heading">¶</a></h3>
+<h3>Smart Bee<a class="headerlink" href="#smart-bee" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4091,16 +3731,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sparkfun">
-<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading">¶</a></h3>
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4150,16 +3782,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sparkfun-electronics">
-<h3>SparkFun Electronics<a class="headerlink" href="#sparkfun-electronics" title="Permalink to this heading">¶</a></h3>
+<h3>SparkFun Electronics<a class="headerlink" href="#sparkfun-electronics" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4187,17 +3811,67 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="tamc">
-<h3>TAMC<a class="headerlink" href="#tamc" title="Permalink to this heading">¶</a></h3>
+<section id="t3-foundation">
+<h3>T3 Foundation<a class="headerlink" href="#t3-foundation" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart.html#board-espressif32-deneyapkart"><span class="std std-ref">Deneyap Kart</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1A.html#board-espressif32-deneyapkart1a"><span class="std std-ref">Deneyap Kart 1A</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkart1Av2.html#board-espressif32-deneyapkart1av2"><span class="std std-ref">Deneyap Kart 1A v2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapkartg.html#board-espressif32-deneyapkartg"><span class="std std-ref">Deneyap Kart G</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/deneyapmini.html#board-espressif32-deneyapmini"><span class="std std-ref">Deneyap Mini</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/deneyapminiv2.html#board-espressif32-deneyapminiv2"><span class="std std-ref">Deneyap Mini v2</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tamc">
+<h3>TAMC<a class="headerlink" href="#tamc" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4226,16 +3900,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="ttgo">
-<h3>TTGO<a class="headerlink" href="#ttgo" title="Permalink to this heading">¶</a></h3>
+<h3>TTGO<a class="headerlink" href="#ttgo" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4313,16 +3979,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="thaieasyelec">
-<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Permalink to this heading">¶</a></h3>
+<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4344,16 +4002,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="trueverit">
-<h3>Trueverit<a class="headerlink" href="#trueverit" title="Permalink to this heading">¶</a></h3>
+<h3>Trueverit<a class="headerlink" href="#trueverit" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4389,16 +4039,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="turta">
-<h3>Turta<a class="headerlink" href="#turta" title="Permalink to this heading">¶</a></h3>
+<h3>Turta<a class="headerlink" href="#turta" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4420,16 +4062,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="unexpected-maker">
-<h3>Unexpected Maker<a class="headerlink" href="#unexpected-maker" title="Permalink to this heading">¶</a></h3>
+<h3>Unexpected Maker<a class="headerlink" href="#unexpected-maker" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4500,16 +4134,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="university-of-sheffield">
-<h3>University of Sheffield<a class="headerlink" href="#university-of-sheffield" title="Permalink to this heading">¶</a></h3>
+<h3>University of Sheffield<a class="headerlink" href="#university-of-sheffield" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4545,16 +4171,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="unknown">
-<h3>Unknown<a class="headerlink" href="#unknown" title="Permalink to this heading">¶</a></h3>
+<h3>Unknown<a class="headerlink" href="#unknown" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4575,17 +4193,39 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
-<section id="vintlabs">
-<h3>VintLabs<a class="headerlink" href="#vintlabs" title="Permalink to this heading">¶</a></h3>
+<section id="valetron-systems">
+<h3>Valetron Systems<a class="headerlink" href="#valetron-systems" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_mfw_esp32_c3.html#board-espressif32-valtrack-v4-mfw-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4MVF</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/valtrack_v4_vts_esp32_c3.html#board-espressif32-valtrack-v4-vts-esp32-c3"><span class="std std-ref">Valetron Systems VALTRACK-V4VTS</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vintlabs">
+<h3>VintLabs<a class="headerlink" href="#vintlabs" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4607,16 +4247,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wemos">
-<h3>WEMOS<a class="headerlink" href="#wemos" title="Permalink to this heading">¶</a></h3>
+<h3>WEMOS<a class="headerlink" href="#wemos" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4683,21 +4315,28 @@ horizontally.</p></li>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin_s3_mini.html#board-espressif32-lolin-s3-mini"><span class="std std-ref">WEMOS LOLIN S3 Mini</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32.html#board-espressif32-lolin32"><span class="std std-ref">WEMOS LOLIN32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lolin32_lite.html#board-espressif32-lolin32-lite"><span class="std std-ref">WEMOS LOLIN32 Lite</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lolin32_lite.html#board-espressif32-lolin32-lite"><span class="std std-ref">WEMOS LOLIN32 Lite</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
@@ -4708,16 +4347,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="widora">
-<h3>Widora<a class="headerlink" href="#widora" title="Permalink to this heading">¶</a></h3>
+<h3>Widora<a class="headerlink" href="#widora" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4739,16 +4370,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wireless-tag">
-<h3>Wireless-Tag<a class="headerlink" href="#wireless-tag" title="Permalink to this heading">¶</a></h3>
+<h3>Wireless-Tag<a class="headerlink" href="#wireless-tag" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4770,16 +4393,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="xinabox">
-<h3>XinaBox<a class="headerlink" href="#xinabox" title="Permalink to this heading">¶</a></h3>
+<h3>XinaBox<a class="headerlink" href="#xinabox" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4801,16 +4416,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="yeacreate">
-<h3>YeaCreate<a class="headerlink" href="#yeacreate" title="Permalink to this heading">¶</a></h3>
+<h3>YeaCreate<a class="headerlink" href="#yeacreate" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4832,16 +4439,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="meteca">
-<h3>meteca<a class="headerlink" href="#meteca" title="Permalink to this heading">¶</a></h3>
+<h3>meteca<a class="headerlink" href="#meteca" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4870,16 +4469,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="micros2">
-<h3>microS2<a class="headerlink" href="#micros2" title="Permalink to this heading">¶</a></h3>
+<h3>microS2<a class="headerlink" href="#micros2" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4901,16 +4492,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="oddwires">
-<h3>oddWires<a class="headerlink" href="#oddwires" title="Permalink to this heading">¶</a></h3>
+<h3>oddWires<a class="headerlink" href="#oddwires" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4939,16 +4522,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="u-blox">
-<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading">¶</a></h3>
+<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -4970,16 +4545,8 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="upesy">
-<h3>uPesy<a class="headerlink" href="#upesy" title="Permalink to this heading">¶</a></h3>
+<h3>uPesy<a class="headerlink" href="#upesy" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Debug</p></th>
@@ -5097,27 +4664,27 @@ horizontally.</p></li>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -5136,7 +4703,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -5158,7 +4725,7 @@ horizontally.</p></li>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

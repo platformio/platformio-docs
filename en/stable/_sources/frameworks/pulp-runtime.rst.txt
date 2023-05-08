@@ -17,7 +17,7 @@ PULP Runtime Environment
 :Configuration:
   :ref:`projectconf_env_framework` = ``pulp-runtime``
 
-Runtime Environment for Parallel Ultra Low Power platform targeting high energy efficiencies
+Runtime Environment for Parallel Ultra Low Power platform
 
 .. contents:: Contents
     :local:

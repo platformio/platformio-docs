@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Install Python Interpreter &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -26,7 +25,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Advanced Serial Monitor with UI" href="advanced-serial-monitor.html" />
-    <link rel="prev" title="General" href="general.html" />
+    <link rel="prev" title="Aduino IDE vs PlatformIO IDE" href="arduino-vs-platformio.html" />
  
 <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
 <script src="../_static/js/bootstrap.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,6 +95,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FAQ</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="general.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arduino-vs-platformio.html">Aduino IDE vs PlatformIO IDE</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Install Python Interpreter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced-serial-monitor.html">Advanced Serial Monitor with UI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="program-memory-usage.html">Program Memory Usage</a></li>
@@ -121,7 +125,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Frequently Asked Questions</a></li>
       <li class="breadcrumb-item active">Install Python Interpreter</li>
       <li class="wy-breadcrumbs-aside">
@@ -134,19 +138,19 @@
            <div itemprop="articleBody">
              
   <section id="install-python-interpreter">
-<span id="faq-install-python"></span><h1>Install Python Interpreter<a class="headerlink" href="#install-python-interpreter" title="Permalink to this heading">¶</a></h1>
+<span id="faq-install-python"></span><h1>Install Python Interpreter<a class="headerlink" href="#install-python-interpreter" title="Permalink to this heading"></a></h1>
 <p><a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> is written in <a class="reference external" href="https://www.python.org/downloads/">Python</a> that
 is installed by default on the all popular OS except Windows.</p>
 <p>Please navigate to official website and <a class="reference external" href="https://www.python.org/downloads/">Download the latest Python</a>
 and install it. Please <strong>READ NOTES BELOW</strong>.</p>
 <dl class="field-list">
-<dt class="field-odd">macOS</dt>
+<dt class="field-odd">macOS<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Please read the “Important Information” displayed during installation for information
 about SSL/TLS certificate validation and the running the <strong>“Install Certificates.command”</strong>.</p>
 <p>If you do not install SSL/TLS certificates, PlatformIO will not be able to download
 dependent packages, libraries, and toolchains.</p>
 </dd>
-<dt class="field-even">Windows</dt>
+<dt class="field-even">Windows<span class="colon">:</span></dt>
 <dd class="field-even"><p>Please select <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Python</span> <span class="pre">to</span> <span class="pre">Path</span></code> (see below), otherwise, <code class="docutils literal notranslate"><span class="pre">python</span></code> command will
 not be available.</p>
 <img alt="../_images/python-installer-add-path.png" src="../_images/python-installer-add-path.png" />
@@ -158,7 +162,7 @@ not be available.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="general.html" class="btn btn-neutral float-left" title="General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arduino-vs-platformio.html" class="btn btn-neutral float-left" title="Aduino IDE vs PlatformIO IDE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="advanced-serial-monitor.html" class="btn btn-neutral float-right" title="Advanced Serial Monitor with UI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -241,27 +245,27 @@ not be available.</p>
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -280,7 +284,7 @@ not be available.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -302,7 +306,7 @@ not be available.</p>
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

@@ -67,7 +67,7 @@ Platforms
       - Description
 
     * - :ref:`platform_espressif32`
-      - Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+      - ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
 
     * - :ref:`platform_riscv_gap`
       - GreenWaves GAP8 IoT application processor enables the cost-effective development, deployment and autonomous operation of intelligent sensing devices that capture, analyze, classify and act on the fusion of rich data sources such as images, sounds or vibrations.
@@ -87,28 +87,28 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_espidf`
-      - ESP-IDF is the official development framework for the ESP32 and ESP32-S Series SoCs.
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
     * - :ref:`framework_freedom-e-sdk`
       - Open Source Software for Developing on the SiFive Freedom E Platform
 
     * - :ref:`framework_freertos`
-      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+      - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms.
 
     * - :ref:`framework_mbed`
-      - Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices
+      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - :ref:`framework_pulp-os`
-      - PULP is a silicon-proven Parallel Ultra Low Power platform targeting high energy efficiencies. The platform is organized in clusters of RISC-V cores that share a tightly-coupled data memory
+      - SDK for Greenwaves Technologies' GAP8 IoT Application Processor
 
     * - :ref:`framework_shakti-sdk`
       - A software development kit for developing applications on Shakti class of processors
 
     * - :ref:`framework_zephyr`
-      - The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
 Boards
 ------

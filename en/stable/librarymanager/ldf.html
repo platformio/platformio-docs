@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Library Dependency Finder (LDF) &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -129,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Library Management</a></li>
       <li class="breadcrumb-item active">Library Dependency Finder (LDF)</li>
       <li class="wy-breadcrumbs-aside">
@@ -142,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="library-dependency-finder-ldf">
-<span id="ldf"></span><h1><a class="toc-backref" href="#id2">Library Dependency Finder (LDF)</a><a class="headerlink" href="#library-dependency-finder-ldf" title="Permalink to this heading">¶</a></h1>
+<span id="ldf"></span><h1><a class="toc-backref" href="#id2" role="doc-backlink">Library Dependency Finder (LDF)</a><a class="headerlink" href="#library-dependency-finder-ldf" title="Permalink to this heading"></a></h1>
 <p>Library Dependency Finder is a core part of PlatformIO Build System that
 operates with the C/C++ source files and looks for <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">...</span></code>
 directives to know what header directories to include for the compiler.</p>
@@ -151,7 +154,7 @@ it evaluates <a class="reference internal" href="#ldf-c-cond-syntax"><span class
 <code class="docutils literal notranslate"><span class="pre">else</span></code>, and <code class="docutils literal notranslate"><span class="pre">elif</span></code>) without calling <code class="docutils literal notranslate"><span class="pre">gcc</span> <span class="pre">-E</span></code>. This approach allows
 to significantly reduce the total compilation time. See <a class="reference internal" href="#ldf-mode"><span class="std std-ref">Dependency Finder Mode</span></a> for more
 details.</p>
-<div class="contents topic" id="contents">
+<nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#library-dependency-finder-ldf" id="id2">Library Dependency Finder (LDF)</a></p>
@@ -164,9 +167,9 @@ details.</p>
 </ul>
 </li>
 </ul>
-</div>
+</nav>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
 <p>Library Dependency Finder can be configured from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -183,12 +186,11 @@ details.</p>
 </div>
 </section>
 <section id="storage">
-<span id="ldf-storage"></span><h2><a class="toc-backref" href="#id4">Storage</a><a class="headerlink" href="#storage" title="Permalink to this heading">¶</a></h2>
+<span id="ldf-storage"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Storage</a><a class="headerlink" href="#storage" title="Permalink to this heading"></a></h2>
 <p>There are different storages where Library Dependency Finder looks for
 libraries. These storages (folders) have priority and LDF operates in the next
 order:</p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="../projectconf/sections/env/options/library/lib_extra_dirs.html#projectconf-lib-extra-dirs"><span class="std std-ref">lib_extra_dirs</span></a> - extra storages per build environment</p></li>
 <li><p><a class="reference internal" href="../projectconf/sections/platformio/options/directory/lib_dir.html#projectconf-pio-lib-dir"><span class="std std-ref">lib_dir</span></a> - own/private library storage per project</p></li>
 <li><p><a class="reference internal" href="../projectconf/sections/platformio/options/directory/libdeps_dir.html#projectconf-pio-libdeps-dir"><span class="std std-ref">libdeps_dir</span></a> - project dependency storage used by
 <a class="reference internal" href="index.html#librarymanager"><span class="std std-ref">Library Management</span></a></p></li>
@@ -197,31 +199,31 @@ order:</p>
 </ol>
 </section>
 <section id="dependency-finder-mode">
-<span id="ldf-mode"></span><h2><a class="toc-backref" href="#id5">Dependency Finder Mode</a><a class="headerlink" href="#dependency-finder-mode" title="Permalink to this heading">¶</a></h2>
+<span id="ldf-mode"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Dependency Finder Mode</a><a class="headerlink" href="#dependency-finder-mode" title="Permalink to this heading"></a></h2>
 <p>Library Dependency Finder starts work from analyzing source files of the
 project (<a class="reference internal" href="../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a>) and can work in the next modes:</p>
 <dl class="field-list simple">
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">off</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">off</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>“Manual mode”, does not process source files of a project and dependencies.
 Builds only the libraries that are specified in manifests
 (<a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>, <code class="docutils literal notranslate"><span class="pre">module.json</span></code>) or using <a class="reference internal" href="../projectconf/sections/env/options/library/lib_deps.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a>
 option.</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">chain</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">chain</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>[<strong>DEFAULT</strong>] Parses ALL C/C++ source files of the project and follows
 only by nested includes (<code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">...</span></code>, chain...) from the libraries.
 It also parses C, CC, CPP files from libraries which have the same name as
 included header file. <strong>Does not evaluate</strong> <a class="reference internal" href="#ldf-c-cond-syntax"><span class="std std-ref">C/C++ Preprocessor conditional syntax</span></a>.</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">deep</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">deep</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>Parses ALL C/C++ source files of the project and parses ALL C/C++ source
 files of the each found dependency (recursively).
 <strong>Does not evaluate</strong> <a class="reference internal" href="#ldf-c-cond-syntax"><span class="std std-ref">C/C++ Preprocessor conditional syntax</span></a>.</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">chain+</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">chain+</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>The same behavior as for the <code class="docutils literal notranslate"><span class="pre">chain</span></code> but <strong>evaluates</strong> <a class="reference internal" href="#ldf-c-cond-syntax"><span class="std std-ref">C/C++ Preprocessor conditional syntax</span></a>.</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">deep+</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">deep+</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>The same behavior as for the <code class="docutils literal notranslate"><span class="pre">deep</span></code> but <strong>evaluates</strong> <a class="reference internal" href="#ldf-c-cond-syntax"><span class="std std-ref">C/C++ Preprocessor conditional syntax</span></a>.</p>
 </dd>
 </dl>
@@ -254,7 +256,7 @@ there are 2 libraries:</p>
 </li>
 </ul>
 <dl class="field-list">
-<dt class="field-odd">Case 1</dt>
+<dt class="field-odd">Case 1<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span> <span class="pre">=</span> <span class="pre">chain</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Foo/foo.h</span></code> depends on the <code class="docutils literal notranslate"><span class="pre">Bar</span></code> library (contains <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;bar.h&gt;</span></code>)</p></li>
@@ -263,7 +265,7 @@ there are 2 libraries:</p>
 <p>Here the nested includes (<code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">file</span> <span class="pre">&gt;</span> <span class="pre">foo.h</span> <span class="pre">&gt;</span> <span class="pre">bar.h</span></code>) and LDF
 will find both libraries <code class="docutils literal notranslate"><span class="pre">Foo</span></code> and <code class="docutils literal notranslate"><span class="pre">Bar</span></code>.</p>
 </dd>
-<dt class="field-even">Case 2</dt>
+<dt class="field-even">Case 2<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span> <span class="pre">=</span> <span class="pre">chain</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Foo/extra.cpp</span></code> depends on the <code class="docutils literal notranslate"><span class="pre">Bar</span></code> library (contains <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;bar.h&gt;</span></code>)</p></li>
@@ -272,7 +274,7 @@ will find both libraries <code class="docutils literal notranslate"><span class=
 <p>In this case, LDF will not find the <code class="docutils literal notranslate"><span class="pre">Bar</span></code> library because it doesn’t know
 about the CPP file (<code class="docutils literal notranslate"><span class="pre">Foo/extra.cpp</span></code>).</p>
 </dd>
-<dt class="field-odd">Case 3</dt>
+<dt class="field-odd">Case 3<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">lib_ldf_mode</span> <span class="pre">=</span> <span class="pre">deep</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Foo/extra.cpp</span></code> depends on <code class="docutils literal notranslate"><span class="pre">Bar</span></code> library (contains <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;bar.h&gt;</span></code>)</p></li>
@@ -287,20 +289,20 @@ dependencies will not be parsed.</p>
 </dl>
 </section>
 <section id="compatibility-mode">
-<span id="ldf-compat-mode"></span><h2><a class="toc-backref" href="#id6">Compatibility Mode</a><a class="headerlink" href="#compatibility-mode" title="Permalink to this heading">¶</a></h2>
+<span id="ldf-compat-mode"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Compatibility Mode</a><a class="headerlink" href="#compatibility-mode" title="Permalink to this heading"></a></h2>
 <p>Compatibility mode allows one to control strictness of Library Dependency Finder.
 If library contains one of manifest file (<a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>,
 <code class="docutils literal notranslate"><span class="pre">library.properties</span></code>, <code class="docutils literal notranslate"><span class="pre">module.json</span></code>), then LDF check compatibility of this
 library with real build environment. Available compatibility modes:</p>
 <dl class="field-list simple">
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">off</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">off</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>Does not check for compatibility (is not recommended)</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">soft</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">soft</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>[<strong>DEFAULT</strong>] Checks for the compatibility with <a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> from
 build environment</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">strict</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">strict</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>Checks for the compatibility with <a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a>
 and <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> from build environment.</p>
 </dd>
@@ -309,7 +311,7 @@ and <a class="reference internal" href="../projectconf/sections/env/options/plat
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">soft</span></code>.</p>
 </section>
 <section id="c-c-preprocessor-conditional-syntax">
-<span id="ldf-c-cond-syntax"></span><h2><a class="toc-backref" href="#id7">C/C++ Preprocessor conditional syntax</a><a class="headerlink" href="#c-c-preprocessor-conditional-syntax" title="Permalink to this heading">¶</a></h2>
+<span id="ldf-c-cond-syntax"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">C/C++ Preprocessor conditional syntax</a><a class="headerlink" href="#c-c-preprocessor-conditional-syntax" title="Permalink to this heading"></a></h2>
 <p>In spite of the fact that Library Dependency Finder is written in pure Python,
 it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/cpp/Conditional-Syntax.html#Conditional-Syntax">C/C++ Preprocessor conditional syntax</a>
 (<code class="docutils literal notranslate"><span class="pre">#ifdef</span></code>, <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">defined</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>, and <code class="docutils literal notranslate"><span class="pre">elif</span></code>) without calling
@@ -422,27 +424,27 @@ it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -461,7 +463,7 @@ it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -483,7 +485,7 @@ it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

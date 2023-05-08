@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Installer Script (Recommended) &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -133,7 +136,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">PlatformIO Core (CLI)</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Installation</a></li>
           <li class="breadcrumb-item"><a href="index.html">Installation Methods</a></li>
@@ -148,7 +151,7 @@
            <div itemprop="articleBody">
              
   <section id="installer-script-recommended">
-<span id="installation-installer-script"></span><h1>Installer Script (Recommended)<a class="headerlink" href="#installer-script-recommended" title="Permalink to this heading">¶</a></h1>
+<span id="installation-installer-script"></span><h1>Installer Script (Recommended)<a class="headerlink" href="#installer-script-recommended" title="Permalink to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>PlatformIO <strong>DOES NOT</strong> require administrative/sudo permissions. Please install using
@@ -159,14 +162,14 @@ the default user account <strong>WITHOUT EXTRA PERMISSIONS</strong>.</p>
 <p>A default location of Python virtual environment is “<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/penv”.
 If you have any issues with PlatformIO Core, just remove this folder and re-run
 installer script.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#super-quick-macos-linux" id="id1">Super-Quick (macOS / Linux)</a></p></li>
 <li><p><a class="reference internal" href="#local-download-macos-linux-windows" id="id2">Local Download (macOS / Linux / Windows)</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="super-quick-macos-linux">
-<h2><a class="toc-backref" href="#id1">Super-Quick (macOS / Linux)</a><a class="headerlink" href="#super-quick-macos-linux" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Super-Quick (macOS / Linux)</a><a class="headerlink" href="#super-quick-macos-linux" title="Permalink to this heading"></a></h2>
 <p>To install or upgrade PlatformIO Core paste that at a <em>Terminal</em> prompt:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
@@ -183,7 +186,7 @@ python3<span class="w"> </span>get-platformio.py
 </div>
 </section>
 <section id="local-download-macos-linux-windows">
-<h2><a class="toc-backref" href="#id2">Local Download (macOS / Linux / Windows)</a><a class="headerlink" href="#local-download-macos-linux-windows" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Local Download (macOS / Linux / Windows)</a><a class="headerlink" href="#local-download-macos-linux-windows" title="Permalink to this heading"></a></h2>
 <p>To install or upgrade PlatformIO Core, download (save as...)
 <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a>
 script. Then run the following:</p>
@@ -297,27 +300,27 @@ other applications or terminals in your OS, please <a class="reference internal"
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -336,7 +339,7 @@ other applications or terminals in your OS, please <a class="reference internal"
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -358,7 +361,7 @@ other applications or terminals in your OS, please <a class="reference internal"
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

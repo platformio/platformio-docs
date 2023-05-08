@@ -51,12 +51,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = atmelmegaavr
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = atmelmegaavr@x.y.z
     board = ...
@@ -92,6 +93,9 @@ Packages
     * - `framework-arduino-megaavr-megatinycore <https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megatinycore>`__
       - Arduino Wiring-based Framework for Microchip tinyAVR 0-series and 1-series chips (megaTinyCore)
 
+    * - `tool-avrdude <https://registry.platformio.org/tools/platformio/tool-avrdude>`__
+      - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers
+
     * - `tool-avrdude-megaavr <https://registry.platformio.org/tools/platformio/tool-avrdude-megaavr>`__
       - AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers
 
@@ -121,7 +125,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
 Boards
 ------

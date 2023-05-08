@@ -13,10 +13,9 @@
     <script src="/en/latest/_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="#" id="documentation_options" src="/en/latest/_static/documentation_options.js"></script>
         <script src="/en/latest/_static/jquery.js"></script>
-        <script src="/en/latest/_static/underscore.js"></script>
         <script src="/en/latest/_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="#" id="documentation_options" src="/en/latest/_static/documentation_options.js"></script>
         <script src="/en/latest/_static/doctools.js"></script>
         <script src="/en/latest/_static/sphinx_highlight.js"></script>
         <script src="/en/latest/_static/clipboard.min.js"></script>
@@ -35,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="/en/latest/index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="/en/latest/index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="/en/latest/search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -109,7 +112,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="/en/latest/index.html" class="icon icon-home"></a></li>
+      <li><a href="/en/latest/index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Page not found</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -206,27 +209,27 @@ Unfortunately we couldn't find the content you were looking for.
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -245,7 +248,7 @@ Unfortunately we couldn't find the content you were looking for.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -267,7 +270,7 @@ Unfortunately we couldn't find the content you were looking for.
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="/en/latest/search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

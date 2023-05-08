@@ -16,8 +16,6 @@
 pio pkg search
 ==============
 
-.. versionadded:: 6.0
-
 .. contents::
 
 Usage

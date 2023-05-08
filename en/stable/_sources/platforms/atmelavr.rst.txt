@@ -920,12 +920,13 @@ Stable
 
 .. code-block:: ini
 
-    ; Latest stable version
+    ; Latest stable version, NOT recommended
+    ; Pin the version as shown below
     [env:latest_stable]
     platform = atmelavr
     board = ...
 
-    ; Custom stable version
+    ; Specific version
     [env:custom_stable]
     platform = atmelavr@x.y.z
     board = ...
@@ -1026,7 +1027,7 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
 Boards
 ------
@@ -1968,6 +1969,18 @@ Microchip
       - 16MHz
       - 16KB
       - 1KB
+    * - :ref:`board_atmelavr_ATmega165`
+      - No
+      - ATMEGA165A
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega165P`
+      - No
+      - ATMEGA165P
+      - 16MHz
+      - 16KB
+      - 1KB
     * - :ref:`board_atmelavr_ATmega168`
       - External
       - ATMEGA168
@@ -1983,6 +1996,18 @@ Microchip
     * - :ref:`board_atmelavr_ATmega168PB`
       - No
       - ATMEGA168PB
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega169P`
+      - No
+      - ATMEGA169P
+      - 16MHz
+      - 16KB
+      - 1KB
+    * - :ref:`board_atmelavr_ATmega169A`
+      - No
+      - ATMEGA169A
       - 16MHz
       - 16KB
       - 1KB
@@ -2028,6 +2053,30 @@ Microchip
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_atmelavr_ATmega325`
+      - No
+      - ATMEGA325
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3250`
+      - No
+      - ATMEGA3250
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3250P`
+      - No
+      - ATMEGA3250P
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega325P`
+      - No
+      - ATMEGA325P
+      - 16MHz
+      - 32KB
+      - 2KB
     * - :ref:`board_atmelavr_ATmega328`
       - External
       - ATMEGA328
@@ -2043,6 +2092,30 @@ Microchip
     * - :ref:`board_atmelavr_ATmega328PB`
       - No
       - ATMEGA328PB
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega329`
+      - No
+      - ATMEGA329
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3290`
+      - No
+      - ATMEGA3290
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega3290P`
+      - No
+      - ATMEGA3290P
+      - 16MHz
+      - 32KB
+      - 2KB
+    * - :ref:`board_atmelavr_ATmega329P`
+      - No
+      - ATMEGA329P
       - 16MHz
       - 32KB
       - 2KB
@@ -2085,6 +2158,54 @@ Microchip
     * - :ref:`board_atmelavr_ATmega644P`
       - External
       - ATMEGA644P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega645`
+      - No
+      - ATMEGA645
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6450`
+      - No
+      - ATMEGA6450
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6450P`
+      - No
+      - ATMEGA6450P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega645P`
+      - No
+      - ATMEGA645P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega649`
+      - No
+      - ATMEGA649
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6490`
+      - No
+      - ATMEGA6490
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega6490P`
+      - No
+      - ATMEGA6490P
+      - 16MHz
+      - 64KB
+      - 4KB
+    * - :ref:`board_atmelavr_ATmega649P`
+      - No
+      - ATMEGA649P
       - 16MHz
       - 64KB
       - 4KB

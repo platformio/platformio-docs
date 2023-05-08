@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Install Shell Commands &mdash; PlatformIO v6.1 documentation</title>
@@ -14,10 +14,9 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
@@ -38,11 +37,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="../../index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -132,7 +135,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">PlatformIO Core (CLI)</a></li>
           <li class="breadcrumb-item"><a href="index.html">Installation</a></li>
       <li class="breadcrumb-item active">Install Shell Commands</li>
@@ -146,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="install-shell-commands">
-<span id="piocore-install-shell-commands"></span><h1>Install Shell Commands<a class="headerlink" href="#install-shell-commands" title="Permalink to this heading">¶</a></h1>
+<span id="piocore-install-shell-commands"></span><h1>Install Shell Commands<a class="headerlink" href="#install-shell-commands" title="Permalink to this heading"></a></h1>
 <p><a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> consists of 2 standalone tools in a system:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">platformio</span></code> or <code class="docutils literal notranslate"><span class="pre">pio</span></code> (short alias) - <a class="reference internal" href="../userguide/index.html#piocore-userguide"><span class="std std-ref">CLI Guide</span></a></p></li>
@@ -154,7 +157,7 @@
 </ul>
 <p>If you have <a class="reference internal" href="../../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> already installed, you do not need to install
 <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> separately. Just link these tools with your shell:</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#unix-and-unix-like" id="id1">Unix and Unix-like</a></p>
 <ul>
@@ -164,11 +167,11 @@
 </li>
 <li><p><a class="reference internal" href="#windows" id="id4">Windows</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="unix-and-unix-like">
-<h2><a class="toc-backref" href="#id1">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Unix and Unix-like</a><a class="headerlink" href="#unix-and-unix-like" title="Permalink to this heading"></a></h2>
 <section id="method-1">
-<h3><a class="toc-backref" href="#id2">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id2" role="doc-backlink">Method 1</a><a class="headerlink" href="#method-1" title="Permalink to this heading"></a></h3>
 <p>In Unix and Unix-like systems, you can create symbolic links (symlinks)
 in your <code class="docutils literal notranslate"><span class="pre">$HOME/.local/bin/</span></code> directory to the necessary PlatformIO executables.
 This will allow you to execute <code class="docutils literal notranslate"><span class="pre">platformio</span></code> commands from any terminal emulator
@@ -198,7 +201,7 @@ ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/piode
 <p>After everything’s done, just restart your session (log out and log back in) and you’re good to go.</p>
 </section>
 <section id="method-2">
-<h3><a class="toc-backref" href="#id3">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this heading">¶</a></h3>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Method 2</a><a class="headerlink" href="#method-2" title="Permalink to this heading"></a></h3>
 <p>You can create system-wide symlinks. This method is not recommended if you have
 multiple users on your computer because the symlinks will be broken for other users
 and they will get errors while executing PlatformIO commands. If that’s not a problem,
@@ -214,7 +217,7 @@ ln<span class="w"> </span>-s<span class="w"> </span>~/.platformio/penv/bin/piode
 </section>
 </section>
 <section id="windows">
-<h2><a class="toc-backref" href="#id4">Windows</a><a class="headerlink" href="#windows" title="Permalink to this heading">¶</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Windows</a><a class="headerlink" href="#windows" title="Permalink to this heading"></a></h2>
 <p>Please read one of these instructions <a class="reference external" href="https://www.google.com.ua/search?q=how+do+i+set+or+change+the+path+system+variable">How do I set or change the PATH system variable?</a></p>
 <p>You need to edit the system environment variable called <code class="docutils literal notranslate"><span class="pre">Path</span></code> and append
 <code class="docutils literal notranslate"><span class="pre">C:\Users\UserName\.platformio\penv\Scripts;</span></code> path in the beginning of a
@@ -309,27 +312,27 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -348,7 +351,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -370,7 +373,7 @@ list (please replace <code class="docutils literal notranslate"><span class="pre
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

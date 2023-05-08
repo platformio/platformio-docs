@@ -22,6 +22,7 @@ Frequently Asked Questions
     :maxdepth: 2
 
     general
+    arduino-vs-platformio
     install-python
     advanced-serial-monitor
     program-memory-usage

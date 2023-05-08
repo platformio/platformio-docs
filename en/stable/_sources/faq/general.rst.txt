@@ -22,11 +22,6 @@ What is ``.pio`` directory
 
 Please refer to :ref:`projectconf_pio_workspace_dir`.
 
-What is ``.pioenvs`` directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please refer to :ref:`projectconf_pio_build_dir`.
-
 Command completion in Terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

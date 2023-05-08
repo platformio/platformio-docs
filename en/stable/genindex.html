@@ -13,10 +13,9 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/clipboard.min.js"></script>
@@ -35,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> PlatformIO
+
+          
+          
+          <a href="index.html">
+            
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -109,7 +112,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Index</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/genindex" class="fa fa-github"> Edit on GitHub</a>
@@ -861,13 +864,6 @@
 </li>
       </ul></li>
       <li>
-    --pattern
-
-      <ul>
-        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-pattern">pio-check command line option</a>
-</li>
-      </ul></li>
-      <li>
     --platform
 
       <ul>
@@ -1021,6 +1017,13 @@
 </li>
       </ul></li>
       <li>
+    --sample-code
+
+      <ul>
+        <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-sample-code">pio-project-init command line option</a>
+</li>
+      </ul></li>
+      <li>
     --save
 
       <ul>
@@ -1115,6 +1118,13 @@
 
       <ul>
         <li><a href="core/userguide/pkg/cmd_search.html#cmdoption-pio-pkg-search-s">pio-pkg-search command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --src-filters
+
+      <ul>
+        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-f">pio-check command line option</a>
 </li>
       </ul></li>
       <li>
@@ -1452,6 +1462,8 @@
     -f
 
       <ul>
+        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-f">pio-check command line option</a>
+</li>
         <li><a href="core/userguide/device/cmd_monitor.html#cmdoption-pio-device-monitor-f">pio-device-monitor command line option</a>
 </li>
         <li><a href="core/userguide/lib/cmd_install.html#cmdoption-pio-lib-install-f">pio-lib-install command line option</a>
@@ -1740,8 +1752,6 @@
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_LIB_DIR">PLATFORMIO_LIB_DIR</a>, <a href="projectconf/sections/platformio/options/directory/lib_dir.html#index-0">[1]</a>
 </li>
-        <li><a href="envvars.html#envvar-PLATFORMIO_LIB_EXTRA_DIRS">PLATFORMIO_LIB_EXTRA_DIRS</a>, <a href="projectconf/sections/env/options/library/lib_extra_dirs.html#index-0">[1]</a>
-</li>
         <li><a href="envvars.html#envvar-PLATFORMIO_LIBDEPS_DIR">PLATFORMIO_LIBDEPS_DIR</a>, <a href="projectconf/sections/platformio/options/directory/libdeps_dir.html#index-0">[1]</a>
 </li>
         <li><a href="envvars.html#envvar-PLATFORMIO_MONITOR_DIR">PLATFORMIO_MONITOR_DIR</a>, <a href="projectconf/sections/platformio/options/directory/monitor_dir.html#index-0">[1]</a>
@@ -1975,8 +1985,6 @@
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-json-output">--json-output</a>
 </li>
-        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-pattern">--pattern</a>
-</li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-c">--project-conf</a>
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-d">--project-dir</a>
@@ -1987,6 +1995,8 @@
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-skip-packages">--skip-packages</a>
 </li>
+        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-f">--src-filters</a>
+</li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-v">--verbose</a>
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-c">-c</a>
@@ -1994,6 +2004,8 @@
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-d">-d</a>
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-e">-e</a>
+</li>
+        <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-f">-f</a>
 </li>
         <li><a href="core/userguide/cmd_check.html#cmdoption-pio-check-s">-s</a>
 </li>
@@ -2615,6 +2627,8 @@
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-O">--project-option</a>
 </li>
+        <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-sample-code">--sample-code</a>
+</li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-s">--silent</a>
 </li>
         <li><a href="core/userguide/project/cmd_init.html#cmdoption-pio-project-init-b">-b</a>
@@ -3010,8 +3024,6 @@
 </li>
       <li><a href="projectconf/sections/platformio/options/directory/lib_dir.html#index-0">PLATFORMIO_LIB_DIR</a>
 </li>
-      <li><a href="projectconf/sections/env/options/library/lib_extra_dirs.html#index-0">PLATFORMIO_LIB_EXTRA_DIRS</a>
-</li>
       <li><a href="projectconf/sections/platformio/options/directory/libdeps_dir.html#index-0">PLATFORMIO_LIBDEPS_DIR</a>
 </li>
       <li><a href="projectconf/sections/platformio/options/directory/monitor_dir.html#index-0">PLATFORMIO_MONITOR_DIR</a>
@@ -3164,27 +3176,27 @@
       location.href = 'https:' + window.location.href.substring(5);
     }
 
-    var topBanner = $('.top-banner');
+    var topBanner = jQuery('.top-banner');
     var navBar = document.createElement('header');
     navBar.className = 'navbar navbar-inverse';
     navBar.innerHTML = navBarHTML;
     if (topBanner.length) {
-      $(navBar).insertAfter(topBanner)
+      jQuery(navBar).insertAfter(topBanner)
     } else {
       document.body.insertBefore(navBar, document.body.firstChild);
     }
 
-    if ($(window).width() <= 768) {
+    if (jQuery(window).width() <= 768) {
       return;
     }
 
     var topOffset = 50;
     if (topBanner.length) {
-      topOffset += $('.navbar').offset().top;
+      topOffset += jQuery('.navbar').offset().top;
     }
-    $('.wy-nav-side').css('top', topOffset + 'px');
-    $(window).scroll(function() {
-      $('.wy-nav-side').css('top', $(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
     });
   })();
 </script>
@@ -3203,7 +3215,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.6 (stable)
+    v6.1.7 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -3225,7 +3237,7 @@
         <dd>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>

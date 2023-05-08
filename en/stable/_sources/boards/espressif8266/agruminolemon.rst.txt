@@ -19,7 +19,7 @@ Lifely Agrumino Lemon v4
 Hardware
 --------
 
-Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fabless semiconductor company. They provide wireless communications and Wi-Fi chips which are widely used in mobile devices and the Internet of Things applications.
+Platform :ref:`platform_espressif8266`: ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.
 
 .. list-table::
 
@@ -28,11 +28,11 @@ Platform :ref:`platform_espressif8266`: Espressif Systems is a privately held fa
   * - **Frequency**
     - 80MHz
   * - **Flash**
-    - 4MB
+    - 2MB
   * - **RAM**
     - 80KB
   * - **Vendor**
-    - `Lifely <https://www.lifely.cc/lifely-3-0/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Lifely.cc <https://www.lifely.cc/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -96,10 +96,10 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_esp8266-nonos-sdk`
-      - The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions
+      - Espressif ESP8266 Non-OS SDK
 
     * - :ref:`framework_esp8266-rtos-sdk`
-      - ESP8266 SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers
+      - Espressif ESP8266 SDK based on FreeRTOS

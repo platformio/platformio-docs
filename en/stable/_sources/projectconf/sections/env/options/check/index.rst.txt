@@ -21,7 +21,7 @@ Check options
     :maxdepth: 1
 
     check_tool
-    check_patterns
     check_flags
     check_severity
     check_skip_packages
+    check_src_filters

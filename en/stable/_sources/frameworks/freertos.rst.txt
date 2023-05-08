@@ -17,7 +17,7 @@ FreeRTOS
 :Configuration:
   :ref:`projectconf_env_framework` = ``freertos``
 
-FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms
+FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms.
 
 .. contents:: Contents
     :local:
