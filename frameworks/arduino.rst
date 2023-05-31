@@ -2075,7 +2075,7 @@ Please click on board name for the further details.
       - :ref:`platform_espressif32`
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
@@ -6902,7 +6902,7 @@ Espressif
       - External
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif8266_esp_wroom_02`
       - :ref:`platform_espressif8266`

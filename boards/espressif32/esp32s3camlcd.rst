@@ -28,7 +28,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 16MB
+    - 8MB
   * - **RAM**
     - 320KB
   * - **Vendor**

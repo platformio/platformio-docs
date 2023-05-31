@@ -2760,7 +2760,7 @@ Espressif
       - External
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`
