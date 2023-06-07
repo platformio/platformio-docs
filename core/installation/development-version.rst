@@ -24,7 +24,7 @@ Install the latest PlatformIO from the ``develop`` branch:
 
 .. code-block:: bash
 
-    pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+    python -m pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
 
 If you want to be up-to-date with the latest ``develop`` version of PlatformIO,
 then you need to re-install PlatformIO each time you see a new commit in
@@ -32,7 +32,7 @@ then you need to re-install PlatformIO each time you see a new commit in
 
 .. code-block:: bash
 
-    pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+    python -m pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
 
 Or:
 
@@ -44,5 +44,5 @@ To revert to the latest stable version:
 
 .. code-block:: bash
 
-    pip uninstall platformio
-    pip install -U platformio
+    python -m pip uninstall platformio
+    python -m pip install -U platformio

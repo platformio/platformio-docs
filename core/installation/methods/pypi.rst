@@ -25,4 +25,4 @@ Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
 
 .. code-block:: bash
 
-    pip install -U platformio
+    python -m pip install -U platformio

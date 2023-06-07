@@ -40,6 +40,7 @@ Terminal (not PlatformIO IDE Terminal) and uninstall obsolete PlatformIO Core:
 .. code-block:: bash
 
     pip uninstall platformio
+    python -m pip uninstall platformio
 
     # if you used macOS "brew"
     brew uninstall platformio
