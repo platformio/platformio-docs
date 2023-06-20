@@ -107,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Espressif ESP32-S2-Kaluga-1 Kit does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Espressif ESP32-S2-Kaluga-1 Kit has an ESP-PROG debugger included on the board. Make sure that you enable this by putting the JTAG switches on the back to ON. The USB port contains 2 ports one for JTAG debugging and one for upload / serial monitoring. The port marked with PWR is only for power. Depending on your operating system you might need to install the correct drivers for debugging to work. Just follow the instructions for the JTAG debugging board. 
 
 .. list-table::
   :header-rows:  1
@@ -122,7 +122,7 @@ Espressif ESP32-S2-Kaluga-1 Kit does not have on-board debug probe and **IS NOT 
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`
-    - 
+    - Yes
     - 
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
