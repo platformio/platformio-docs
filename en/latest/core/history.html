@@ -157,10 +157,13 @@
 <section id="id1">
 <h3>6.1.8 (2023-??-??)<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <ul class="simple">
+<li><p>Added a new <code class="docutils literal notranslate"><span class="pre">--lint</span></code> option to the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/project/cmd_config.html">pio project config</a> command, enabling users to efficiently perform linting on the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file</p></li>
 <li><p>Enhanced the parsing of the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file to provide comprehensive diagnostic information</p></li>
 <li><p>Optimized project integration templates to address the issue of long paths on Windows (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4652">issue #4652</a>)</p></li>
 <li><p>Refactored <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> engine to resolve compiler warnings with “-Wpedantic” option (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4671">pull #4671</a>)</p></li>
 <li><p>Eliminated erroneous warning regarding the use of obsolete PlatformIO Core when downgrading to the stable version (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4664">issue #4664</a>)</p></li>
+<li><p>Updated the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/project/cmd_metadata.html">pio project metadata</a> command to return C/C++ flags as parsed Unix shell arguments when dumping project build metadata</p></li>
+<li><p>Removed PlatformIO IDE for Atom from the documentation as <a class="reference external" href="https://github.blog/2022-06-08-sunsetting-atom/">Atom has been deprecated</a></p></li>
 </ul>
 </section>
 <section id="id2">
