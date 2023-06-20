@@ -17,7 +17,7 @@
 /faq.html -> /faq/index.html
 /history.html -> /core/history.html
 /ide.html -> /integration/ide/index.html
-/ide/atom.html -> /integration/ide/atom.html
+/ide/atom.html -> /integration/ide/vscode.html
 /ide/clion.html -> /integration/ide/clion.html
 /ide/cloud9.html -> /integration/ide/cloud9.html
 /ide/codeanywhere.html -> /integration/ide/codeanywhere.html
@@ -33,6 +33,7 @@
 /ide/visualstudio.html -> /integration/ide/visualstudio.html
 /ide/vscode.html -> /integration/ide/vscode.html
 /installation.html -> /core/installation.html
+/integration/ide/atom.html -> /integration/ide/vscode.html
 /librarymanager/config.html -> /manifests/library-json/index.html
 /librarymanager/quickstart.html -> /librarymanager/dependencies.html
 /migration.html -> /core/migration.html

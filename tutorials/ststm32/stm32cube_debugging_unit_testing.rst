@@ -14,14 +14,14 @@
 STM32Cube HAL and Nucleo-F401RE: debugging and unit testing
 ===========================================================
 
-The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_atom` to develop, run and debug a basic blink project with :ref:`framework_stm32cube` framework for ``STM32 Nucleo-F401RE`` board.
+The goal of this tutorial is to demonstrate how simple it is to use :ref:`ide_vscode` to develop, run and debug a basic blink project with :ref:`framework_stm32cube` framework for ``STM32 Nucleo-F401RE`` board.
 
 * **Level:** Intermediate
 * **Platforms:** Windows, Mac OS X, Linux
 
 **Requirements:**
 
-- Downloaded and installed :ref:`ide_atom`
+- Downloaded and installed :ref:`ide_vscode`
 - Install drivers for :ref:`debugging_tool_stlink` debug tool
 - :ref:`board_ststm32_nucleo_f401re` development board
 
