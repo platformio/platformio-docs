@@ -159,9 +159,11 @@
 <p><strong>Required</strong> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> | Max. Length: 255</p>
 <p>Used for search by keyword. Helps to make your library easier to discover
 without people needing to know its name.</p>
-<p>The keyword should be lowercased, can contain a-z, digits and dash (but not
-start/end with them). A list from the keywords can be specified with
-separator <code class="docutils literal notranslate"><span class="pre">,</span></code> or declared as Array.</p>
+<p>The keyword should be in lowercase and can consist of lowercase letters (a-z),
+digits, periods, underscores, plus symbols, and dashes. However,
+it should not start or end with a dot, underscore, plus symbol, or dash.
+You can provide a list of keywords by separating them with commas (<code class="docutils literal notranslate"><span class="pre">,</span></code>)
+or by declaring them as an array.</p>
 </section>
 
 

@@ -17,6 +17,8 @@
 Used for search by keyword. Helps to make your library easier to discover
 without people needing to know its name.
 
-The keyword should be lowercased, can contain a-z, digits and dash (but not
-start/end with them). A list from the keywords can be specified with
-separator ``,`` or declared as Array.
+The keyword should be in lowercase and can consist of lowercase letters (a-z),
+digits, periods, underscores, plus symbols, and dashes. However,
+it should not start or end with a dot, underscore, plus symbol, or dash.
+You can provide a list of keywords by separating them with commas (``,``)
+or by declaring them as an array.
