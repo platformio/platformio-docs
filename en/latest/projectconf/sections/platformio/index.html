@@ -152,7 +152,7 @@ default configuration options for <a class="reference internal" href="../../../c
 path. It will by replaced by a SHA1[0:10] hash of the full project path.
 This is very useful to declare a global storage for project workspaces.
 For example, <code class="docutils literal notranslate"><span class="pre">/tmp/pio-workspaces/$PROJECT_HASH</span></code> (Unix) or
-<code class="docutils literal notranslate"><span class="pre">$[sysenv.TEMP}/pio-workspaces/$PROJECT_HASH</span></code> (Windows).
+<code class="docutils literal notranslate"><span class="pre">${sysenv.TEMP}/pio-workspaces/$PROJECT_HASH</span></code> (Windows).
 You can set a global workspace directory using the system environment
 variable <span class="target" id="index-0"></span><a class="reference internal" href="../../../envvars.html#envvar-PLATFORMIO_WORKSPACE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_WORKSPACE_DIR</span></code></a>.</p>
 <p>See the available directory <code class="docutils literal notranslate"><span class="pre">***_dir</span></code> options below.</p>

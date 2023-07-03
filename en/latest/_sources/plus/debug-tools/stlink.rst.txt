@@ -640,22 +640,22 @@ Boards
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_elektor_f072cb`
       - :ref:`platform_ststm32`
       - External
@@ -1186,7 +1186,7 @@ Boards
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -1200,7 +1200,7 @@ Boards
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -1214,7 +1214,7 @@ Boards
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - :ref:`platform_ststm32`
@@ -1410,8 +1410,8 @@ Boards
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -1446,7 +1446,7 @@ Boards
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board

@@ -79,7 +79,6 @@ Embedded
     teensy
     timsp430
     titiva
-    wiznet7500
 
 Desktop
 -------

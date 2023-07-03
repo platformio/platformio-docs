@@ -106,9 +106,6 @@ Platforms
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
-    * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
-
 Frameworks
 ----------
 .. list-table::
@@ -975,22 +972,22 @@ Boards
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_elektor_f072cb`
       - :ref:`platform_ststm32`
       - External
@@ -1948,7 +1945,7 @@ Boards
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -1962,7 +1959,7 @@ Boards
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -1976,7 +1973,7 @@ Boards
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - :ref:`platform_ststm32`
@@ -2165,8 +2162,8 @@ Boards
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2201,7 +2198,7 @@ Boards
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2510,6 +2507,13 @@ Boards
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_genericSTM32F103C6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103C6T6
+      - 72MHz
+      - 32KB
+      - 10KB
     * - :ref:`board_ststm32_genericSTM32F103C8`
       - :ref:`platform_ststm32`
       - External
@@ -3091,27 +3095,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500ECO
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500p`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500P
-      - 48MHz
-      - 128KB
-      - 48KB
     * - :ref:`board_ststm32_waveshare_open103z`
       - :ref:`platform_ststm32`
       - External

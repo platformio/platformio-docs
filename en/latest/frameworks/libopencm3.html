@@ -79,7 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="energia.html">Energia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esp8266-nonos-sdk.html">ESP8266 Non-OS SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esp8266-rtos-sdk.html">ESP8266 RTOS SDK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espidf.html">Espressif IoT Development Framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espidf.html">Espidf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">libopencm3</a><ul>
@@ -429,7 +429,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F413ZHT6</p></td>
 <td><p>100MHz</p></td>
-<td><p>512KB</p></td>
+<td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f429zi.html#board-ststm32-disco-f429zi"><span class="std std-ref">ST 32F429IDISCOVERY</span></a></p></td>
@@ -443,7 +443,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F469NIH6</p></td>
 <td><p>180MHz</p></td>
-<td><p>1MB</p></td>
+<td><p>2MB</p></td>
 <td><p>384KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_f746ng.html#board-ststm32-disco-f746ng"><span class="std std-ref">ST 32F746GDISCOVERY</span></a></p></td>
@@ -457,7 +457,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F769NIH6</p></td>
 <td><p>216MHz</p></td>
-<td><p>1MB</p></td>
+<td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l053c8.html#board-ststm32-disco-l053c8"><span class="std std-ref">ST 32L0538DISCOVERY</span></a></p></td>
@@ -632,8 +632,8 @@ You do not need to use/buy external debug probe.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F413ZHT6</p></td>
 <td><p>100MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>128KB</p></td>
+<td><p>1.50MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f429zi.html#board-ststm32-nucleo-f429zi"><span class="std std-ref">ST Nucleo F429ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -668,7 +668,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32F722ZET6</p></td>
 <td><p>216MHz</p></td>
 <td><p>512KB</p></td>
-<td><p>192KB</p></td>
+<td><p>256KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3601,7 +3601,7 @@ Please click on board name for the further details.</p>
 <td><p>On-board</p></td>
 <td><p>STM32F413ZHT6</p></td>
 <td><p>100MHz</p></td>
-<td><p>512KB</p></td>
+<td><p>1.50MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f429zi.html#board-ststm32-disco-f429zi"><span class="std std-ref">ST 32F429IDISCOVERY</span></a></p></td>
@@ -3617,7 +3617,7 @@ Please click on board name for the further details.</p>
 <td><p>On-board</p></td>
 <td><p>STM32F469NIH6</p></td>
 <td><p>180MHz</p></td>
-<td><p>1MB</p></td>
+<td><p>2MB</p></td>
 <td><p>384KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_f746ng.html#board-ststm32-disco-f746ng"><span class="std std-ref">ST 32F746GDISCOVERY</span></a></p></td>
@@ -3633,7 +3633,7 @@ Please click on board name for the further details.</p>
 <td><p>On-board</p></td>
 <td><p>STM32F769NIH6</p></td>
 <td><p>216MHz</p></td>
-<td><p>1MB</p></td>
+<td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_l053c8.html#board-ststm32-disco-l053c8"><span class="std std-ref">ST 32L0538DISCOVERY</span></a></p></td>
@@ -3833,8 +3833,8 @@ Please click on board name for the further details.</p>
 <td><p>On-board</p></td>
 <td><p>STM32F413ZHT6</p></td>
 <td><p>100MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>128KB</p></td>
+<td><p>1.50MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f429zi.html#board-ststm32-nucleo-f429zi"><span class="std std-ref">ST Nucleo F429ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3874,7 +3874,7 @@ Please click on board name for the further details.</p>
 <td><p>STM32F722ZET6</p></td>
 <td><p>216MHz</p></td>
 <td><p>512KB</p></td>
-<td><p>192KB</p></td>
+<td><p>256KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
