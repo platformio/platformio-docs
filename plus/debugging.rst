@@ -203,7 +203,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -222,9 +222,6 @@ Platforms
 
     * - :ref:`platform_titiva`
       - Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
-
-    * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
 
 Frameworks
 ----------
@@ -2331,14 +2328,14 @@ Digilent
     * - :ref:`board_openhw_nexys_a7`
       - :ref:`platform_openhw`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
@@ -2550,22 +2547,22 @@ Electrosmith
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - :ref:`platform_ststm32`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
 
 Elektor
 ~~~~~~~
@@ -5938,7 +5935,7 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -5952,7 +5949,7 @@ ST
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -5966,7 +5963,7 @@ ST
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - :ref:`platform_ststm32`
@@ -6162,8 +6159,8 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -6198,7 +6195,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -8264,41 +8261,6 @@ WEMOS
       - 240MHz
       - 4MB
       - 320KB
-
-WIZNet
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_wiznet7500_wizwiki_w7500`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500ECO
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500p`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500P
-      - 48MHz
-      - 128KB
-      - 48KB
 
 Waveshare
 ~~~~~~~~~

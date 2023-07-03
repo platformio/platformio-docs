@@ -28,9 +28,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 400MHz
   * - **Flash**
-    - 512KB
-  * - **RAM**
     - 128KB
+  * - **RAM**
+    - 512KB
   * - **Vendor**
     - `Electrosmith <https://www.electro-smith.com/daisy?utm_source=platformio.org&utm_medium=docs>`__
 

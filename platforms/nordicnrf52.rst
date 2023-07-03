@@ -42,7 +42,6 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-nvs <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-subsys-nvs?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-nfc <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-nfc?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-legacy-examples <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-serial-plotter <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-serial-plotter?utm_source=platformio.org&utm_medium=docs>`_

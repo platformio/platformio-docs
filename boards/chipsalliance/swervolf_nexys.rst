@@ -100,10 +100,10 @@ RVfpga: Digilent Nexys A7 has on-board debug probe and **IS READY** for debuggin
     - 
     - 
   * - :ref:`debugging_tool_verilator`
-    - Yes
+    - 
     - 
   * - :ref:`debugging_tool_whisper`
-    - Yes
+    - 
     - 
 
 Frameworks

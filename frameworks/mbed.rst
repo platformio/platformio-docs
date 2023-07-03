@@ -59,9 +59,6 @@ Platforms
     * - :ref:`platform_teensy`
       - Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
 
-    * - :ref:`platform_wiznet7500`
-      - The IOP (Internet Offload Processor) W7500 is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially requiring Internet of things
-
 Examples
 --------
 
@@ -74,7 +71,6 @@ Examples
 * `Mbed for Silicon Labs EFM32 <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Mbed for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Mbed for WIZNet W7500 <https://github.com/platformio/platform-wiznet7500/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -114,18 +110,6 @@ You do not need to use/buy external debug probe.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_disco_f412zg`
-      - :ref:`platform_ststm32`
-      - STM32F412ZGT6
-      - 100MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_ststm32_b96b_f446ve`
-      - :ref:`platform_ststm32`
-      - STM32F446VET6
-      - 168MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_nxplpc_lpc11u24_301`
       - :ref:`platform_nxplpc`
       - LPC11U24
@@ -144,12 +128,6 @@ You do not need to use/buy external debug probe.
       - 30MHz
       - 16KB
       - 4KB
-    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
-      - :ref:`platform_nordicnrf52`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
     * - :ref:`board_siliconlabsefm32_efm32gg_stk3700`
       - :ref:`platform_siliconlabsefm32`
       - EFM32GG990F1024
@@ -288,12 +266,6 @@ You do not need to use/buy external debug probe.
       - 24MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm32_mbed_connect_odin`
-      - :ref:`platform_ststm32`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
     * - :ref:`board_nxplpc_lpc812`
       - :ref:`platform_nxplpc`
       - LPC812
@@ -354,12 +326,6 @@ You do not need to use/buy external debug probe.
       - 170MHz
       - 512KB
       - 128KB
-    * - :ref:`board_nordicnrf52_redbear_blenano2`
-      - :ref:`platform_nordicnrf52`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -390,23 +356,11 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 2MB
       - 512KB
-    * - :ref:`board_ststm32_disco_f334c8`
-      - :ref:`platform_ststm32`
-      - STM32F334C8T6
-      - 72MHz
-      - 64KB
-      - 12KB
-    * - :ref:`board_ststm32_disco_f401vc`
-      - :ref:`platform_ststm32`
-      - STM32F401VCT6
-      - 84MHz
-      - 256KB
-      - 64KB
     * - :ref:`board_ststm32_disco_f413zh`
       - :ref:`platform_ststm32`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -418,7 +372,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -430,14 +384,8 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
-    * - :ref:`board_ststm32_disco_l053c8`
-      - :ref:`platform_ststm32`
-      - STM32L053C8T6
-      - 32MHz
-      - 64KB
-      - 8KB
     * - :ref:`board_ststm32_disco_l476vg`
       - :ref:`platform_ststm32`
       - STM32L476VGT6
@@ -462,30 +410,6 @@ You do not need to use/buy external debug probe.
       - 32MHz
       - 192KB
       - 20KB
-    * - :ref:`board_ststm32_disco_f072rb`
-      - :ref:`platform_ststm32`
-      - STM32F072RBT6
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_ststm32_nucleo_f030r8`
-      - :ref:`platform_ststm32`
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_nucleo_f031k6`
-      - :ref:`platform_ststm32`
-      - STM32F031K6T6
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_ststm32_nucleo_f042k6`
-      - :ref:`platform_ststm32`
-      - STM32F042K6T6
-      - 48MHz
-      - 32KB
-      - 6KB
     * - :ref:`board_ststm32_nucleo_f070rb`
       - :ref:`platform_ststm32`
       - STM32F070RBT6
@@ -516,12 +440,6 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_f302r8`
-      - :ref:`platform_ststm32`
-      - STM32F302R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
     * - :ref:`board_ststm32_nucleo_f303k8`
       - :ref:`platform_ststm32`
       - STM32F303K8T6
@@ -540,24 +458,12 @@ You do not need to use/buy external debug probe.
       - 72MHz
       - 512KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_f334r8`
-      - :ref:`platform_ststm32`
-      - STM32F334R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
       - STM32F401RET6
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_ststm32_nucleo_f410rb`
-      - :ref:`platform_ststm32`
-      - STM32F410RBT6
-      - 100MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - STM32F411RET6
@@ -574,8 +480,8 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - STM32F429ZIT6
@@ -624,18 +530,6 @@ You do not need to use/buy external debug probe.
       - 400MHz
       - 2MB
       - 512KB
-    * - :ref:`board_ststm32_nucleo_l031k6`
-      - :ref:`platform_ststm32`
-      - STM32L031K6T6
-      - 32MHz
-      - 32KB
-      - 8KB
-    * - :ref:`board_ststm32_nucleo_l053r8`
-      - :ref:`platform_ststm32`
-      - STM32L053R8T6
-      - 32MHz
-      - 64KB
-      - 8KB
     * - :ref:`board_ststm32_nucleo_l073rz`
       - :ref:`platform_ststm32`
       - STM32L073RZ
@@ -690,42 +584,6 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 2MB
       - 640KB
-    * - :ref:`board_ststm32_disco_f030r8`
-      - :ref:`platform_ststm32`
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_f051r8`
-      - :ref:`platform_ststm32`
-      - STM32F051R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_f303vc`
-      - :ref:`platform_ststm32`
-      - STM32F303VCT6
-      - 72MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_ststm32_disco_f407vg`
-      - :ref:`platform_ststm32`
-      - STM32F407VGT6
-      - 168MHz
-      - 1MB
-      - 128KB
-    * - :ref:`board_ststm32_disco_f100rb`
-      - :ref:`platform_ststm32`
-      - STM32F100RBT6
-      - 24MHz
-      - 128KB
-      - 8KB
-    * - :ref:`board_ststm32_silica_sensor_node`
-      - :ref:`platform_ststm32`
-      - STM32L476JG
-      - 80MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -768,54 +626,12 @@ You do not need to use/buy external debug probe.
       - 40MHz
       - 1MB
       - 256KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500`
-      - :ref:`platform_wiznet7500`
-      - WIZNET7500
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
-      - :ref:`platform_wiznet7500`
-      - WIZNET7500ECO
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500p`
-      - :ref:`platform_wiznet7500`
-      - WIZNET7500P
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_ststm32_sakuraio_evb_01`
-      - :ref:`platform_ststm32`
-      - STM32F411RET6
-      - 100MHz
-      - 1MB
-      - 128KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - LPC1768
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_ststm32_ublox_c030_r410m`
-      - :ref:`platform_ststm32`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
-      - :ref:`platform_nordicnrf52`
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
-      - :ref:`platform_ststm32`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
 
 
 External Debug Tools
@@ -835,12 +651,6 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_bluepill_f103c8`
-      - :ref:`platform_ststm32`
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
     * - :ref:`board_nxplpc_lpc11u35_501`
       - :ref:`platform_nxplpc`
       - LPC11U35
@@ -859,12 +669,6 @@ Please click on board name for the further details.
       - 48MHz
       - 64KB
       - 10KB
-    * - :ref:`board_ststm32_elmo_f411re`
-      - :ref:`platform_ststm32`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_freescalekinetis_frdm_kl82z`
       - :ref:`platform_freescalekinetis`
       - MKL82Z128VLK7
@@ -907,18 +711,6 @@ Please click on board name for the further details.
       - 24MHz
       - 256KB
       - 32KB
-    * - :ref:`board_ststm32_mts_mdot_f405rg`
-      - :ref:`platform_ststm32`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - :ref:`board_ststm32_mts_mdot_f411re`
-      - :ref:`platform_ststm32`
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
     * - :ref:`board_ststm32_xdot_l151cc`
       - :ref:`platform_ststm32`
       - STM32L151CCU6
@@ -961,12 +753,6 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 36KB
-    * - :ref:`board_ststm32_olimexino`
-      - :ref:`platform_ststm32`
-      - STM32F103RBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - :ref:`board_ststm32_olimex_f103`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -979,12 +765,6 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
-    * - :ref:`board_ststm32_genericSTM32F103C8`
-      - :ref:`platform_ststm32`
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RB`
       - :ref:`platform_ststm32`
       - STM32F103RBT6
@@ -1003,24 +783,6 @@ Please click on board name for the further details.
       - 72MHz
       - 256KB
       - 64KB
-    * - :ref:`board_ststm32_ublox_c030_n211`
-      - :ref:`platform_ststm32`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_ststm32_ublox_c030_u201`
-      - :ref:`platform_ststm32`
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_ststm32_ublox_evk_odin_w2`
-      - :ref:`platform_ststm32`
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
     * - :ref:`board_nxplpc_lpc11u35_y5_mbug`
       - :ref:`platform_nxplpc`
       - LPC11U35
@@ -1035,27 +797,6 @@ Boards
 .. note::
     * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by horizontally.
-
-96Boards
-~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_b96b_f446ve`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F446VET6
-      - 168MHz
-      - 512KB
-      - 128KB
 
 AppNearMe
 ~~~~~~~~~
@@ -1078,27 +819,6 @@ AppNearMe
       - 48KB
       - 10KB
 
-Avnet Silica
-~~~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_silica_sensor_node`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L476JG
-      - 80MHz
-      - 1MB
-      - 128KB
-
 CQ Publishing
 ~~~~~~~~~~~~~
 
@@ -1119,27 +839,6 @@ CQ Publishing
       - 48MHz
       - 64KB
       - 10KB
-
-Delta
-~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf52_delta_dfbm_nq620`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
 
 Elektor Labs
 ~~~~~~~~~~~~
@@ -1196,27 +895,6 @@ Embedded Artists
       - 120MHz
       - 512KB
       - 96KB
-
-Espotel
-~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_elmo_f411re`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
 
 Freescale
 ~~~~~~~~~
@@ -1364,20 +1042,6 @@ Generic
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_bluepill_f103c8`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
-    * - :ref:`board_ststm32_genericSTM32F103C8`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F103C8T6
-      - 72MHz
-      - 64KB
-      - 20KB
     * - :ref:`board_ststm32_genericSTM32F103RB`
       - :ref:`platform_ststm32`
       - External
@@ -1533,20 +1197,6 @@ MultiTech
       - Flash
       - RAM
     * - :ref:`board_ststm32_mts_dragonfly_f411re`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - :ref:`board_ststm32_mts_mdot_f405rg`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F411RET6
-      - 100MHz
-      - 512KB
-      - 128KB
-    * - :ref:`board_ststm32_mts_mdot_f411re`
       - :ref:`platform_ststm32`
       - External
       - STM32F411RET6
@@ -1735,13 +1385,6 @@ Olimex
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_olimexino`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F103RBT6
-      - 72MHz
-      - 128KB
-      - 20KB
     * - :ref:`board_ststm32_olimex_f103`
       - :ref:`platform_ststm32`
       - External
@@ -1770,27 +1413,6 @@ Outrageous Circuits
       - 48MHz
       - 32KB
       - 8KB
-
-RedBearLab
-~~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_nordicnrf52_redbear_blenano2`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
 
 RushUp
 ~~~~~~
@@ -1833,13 +1455,6 @@ ST
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_disco_f412zg`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F412ZGT6
-      - 100MHz
-      - 1MB
-      - 256KB
     * - :ref:`board_ststm32_nucleo_g474re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1847,26 +1462,12 @@ ST
       - 170MHz
       - 512KB
       - 128KB
-    * - :ref:`board_ststm32_disco_f334c8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F334C8T6
-      - 72MHz
-      - 64KB
-      - 12KB
-    * - :ref:`board_ststm32_disco_f401vc`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F401VCT6
-      - 84MHz
-      - 256KB
-      - 64KB
     * - :ref:`board_ststm32_disco_f413zh`
       - :ref:`platform_ststm32`
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -1880,7 +1481,7 @@ ST
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -1894,15 +1495,8 @@ ST
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
-    * - :ref:`board_ststm32_disco_l053c8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L053C8T6
-      - 32MHz
-      - 64KB
-      - 8KB
     * - :ref:`board_ststm32_disco_l476vg`
       - :ref:`platform_ststm32`
       - On-board
@@ -1931,34 +1525,6 @@ ST
       - 32MHz
       - 192KB
       - 20KB
-    * - :ref:`board_ststm32_disco_f072rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F072RBT6
-      - 48MHz
-      - 128KB
-      - 16KB
-    * - :ref:`board_ststm32_nucleo_f030r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_nucleo_f031k6`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F031K6T6
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_ststm32_nucleo_f042k6`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F042K6T6
-      - 48MHz
-      - 32KB
-      - 6KB
     * - :ref:`board_ststm32_nucleo_f070rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -1994,13 +1560,6 @@ ST
       - 120MHz
       - 1MB
       - 128KB
-    * - :ref:`board_ststm32_nucleo_f302r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F302R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
     * - :ref:`board_ststm32_nucleo_f303k8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2022,13 +1581,6 @@ ST
       - 72MHz
       - 512KB
       - 64KB
-    * - :ref:`board_ststm32_nucleo_f334r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F334R8T6
-      - 72MHz
-      - 64KB
-      - 16KB
     * - :ref:`board_ststm32_nucleo_f401re`
       - :ref:`platform_ststm32`
       - On-board
@@ -2036,13 +1588,6 @@ ST
       - 84MHz
       - 512KB
       - 96KB
-    * - :ref:`board_ststm32_nucleo_f410rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F410RBT6
-      - 100MHz
-      - 128KB
-      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - On-board
@@ -2062,8 +1607,8 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2120,20 +1665,6 @@ ST
       - 400MHz
       - 2MB
       - 512KB
-    * - :ref:`board_ststm32_nucleo_l031k6`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L031K6T6
-      - 32MHz
-      - 32KB
-      - 8KB
-    * - :ref:`board_ststm32_nucleo_l053r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32L053R8T6
-      - 32MHz
-      - 64KB
-      - 8KB
     * - :ref:`board_ststm32_nucleo_l073rz`
       - :ref:`platform_ststm32`
       - On-board
@@ -2197,41 +1728,6 @@ ST
       - 120MHz
       - 2MB
       - 640KB
-    * - :ref:`board_ststm32_disco_f030r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F030R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_f051r8`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F051R8T6
-      - 48MHz
-      - 64KB
-      - 8KB
-    * - :ref:`board_ststm32_disco_f303vc`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F303VCT6
-      - 72MHz
-      - 256KB
-      - 40KB
-    * - :ref:`board_ststm32_disco_f407vg`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F407VGT6
-      - 168MHz
-      - 1MB
-      - 128KB
-    * - :ref:`board_ststm32_disco_f100rb`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F100RBT6
-      - 24MHz
-      - 128KB
-      - 8KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board
@@ -2513,41 +2009,6 @@ Teensy
       - 256KB
       - 64KB
 
-WIZNet
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_wiznet7500_wizwiki_w7500`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500eco`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500ECO
-      - 48MHz
-      - 128KB
-      - 48KB
-    * - :ref:`board_wiznet7500_wizwiki_w7500p`
-      - :ref:`platform_wiznet7500`
-      - On-board
-      - WIZNET7500P
-      - 48MHz
-      - 128KB
-      - 48KB
-
 rhomb.io
 ~~~~~~~~
 
@@ -2569,27 +2030,6 @@ rhomb.io
       - 1MB
       - 128KB
 
-sakura.io
-~~~~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_ststm32_sakuraio_evb_01`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F411RET6
-      - 100MHz
-      - 1MB
-      - 128KB
-
 u-blox
 ~~~~~~
 
@@ -2603,13 +2043,6 @@ u-blox
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_mbed_connect_odin`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
     * - :ref:`board_nxplpc_ubloxc027`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2617,48 +2050,6 @@ u-blox
       - 96MHz
       - 512KB
       - 64KB
-    * - :ref:`board_ststm32_ublox_c030_n211`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_ststm32_ublox_c030_r410m`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_ststm32_ublox_c030_u201`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F437VG
-      - 180MHz
-      - 1MB
-      - 256KB
-    * - :ref:`board_nordicnrf52_ublox_evk_nina_b1`
-      - :ref:`platform_nordicnrf52`
-      - On-board
-      - NRF52832
-      - 64MHz
-      - 512KB
-      - 64KB
-    * - :ref:`board_ststm32_ublox_evk_odin_w2`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
-    * - :ref:`board_ststm32_mtb_ublox_odin_w2`
-      - :ref:`platform_ststm32`
-      - On-board
-      - STM32F439ZIY6
-      - 168MHz
-      - 2MB
-      - 256KB
 
 y5 design
 ~~~~~~~~~

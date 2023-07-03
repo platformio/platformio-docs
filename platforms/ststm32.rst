@@ -66,7 +66,6 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `arduino-external-libs <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-mxchip-wifiscan <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-mxchip-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-events <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-events?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-legacy-examples <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-1bitsy <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-1bitsy?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-subsys-usb-hid-mouse <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-subsys-usb-hid-mouse?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-serial <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-serial?utm_source=platformio.org&utm_medium=docs>`_
@@ -228,7 +227,7 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_disco_f413zh`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - STM32F429ZIT6
@@ -238,7 +237,7 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_disco_f469ni`
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - STM32F746NGH6
@@ -248,7 +247,7 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_disco_f769ni`
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - STM32L053C8T6
@@ -388,8 +387,8 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_f413zh`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - STM32F429ZIT6
       - 180MHz
@@ -414,7 +413,7 @@ You do not need to use/buy external debug probe.
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - STM32F746ZGT6
       - 216MHz
@@ -831,18 +830,18 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_electrosmith_daisy`
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_elektor_f072cb`
       - STM32F072C8T6
       - 48MHz
@@ -2093,20 +2092,20 @@ Electrosmith
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_patch_sm`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
     * - :ref:`board_ststm32_electrosmith_daisy_petal_sm`
       - External
       - STM32H750IBK6
       - 400MHz
-      - 512KB
       - 128KB
+      - 512KB
 
 Elektor
 ~~~~~~~
@@ -3189,7 +3188,7 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - On-board
@@ -3201,7 +3200,7 @@ ST
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - On-board
@@ -3213,7 +3212,7 @@ ST
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - On-board
@@ -3381,8 +3380,8 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - On-board
       - STM32F429ZIT6
@@ -3412,7 +3411,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - On-board
       - STM32F746ZGT6

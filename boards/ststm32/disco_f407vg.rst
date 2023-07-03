@@ -137,9 +137,6 @@ Frameworks
     * - :ref:`framework_libopencm3`
       - Open source ARM Cortex-M microcontroller library
 
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is a platform operating system designed for the internet of things
-
     * - :ref:`framework_spl`
       - Standard Peripheral Library for ST STM32 microcontrollers
 
