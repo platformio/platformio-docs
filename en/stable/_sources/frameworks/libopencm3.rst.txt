@@ -205,7 +205,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -217,7 +217,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -229,7 +229,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - :ref:`platform_ststm32`
@@ -379,8 +379,8 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - STM32F429ZIT6
@@ -410,7 +410,7 @@ You do not need to use/buy external debug probe.
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - STM32F746ZGT6
@@ -2928,7 +2928,7 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
+      - 1.50MB
       - 320KB
     * - :ref:`board_ststm32_disco_f429zi`
       - :ref:`platform_ststm32`
@@ -2942,7 +2942,7 @@ ST
       - On-board
       - STM32F469NIH6
       - 180MHz
-      - 1MB
+      - 2MB
       - 384KB
     * - :ref:`board_ststm32_disco_f746ng`
       - :ref:`platform_ststm32`
@@ -2956,7 +2956,7 @@ ST
       - On-board
       - STM32F769NIH6
       - 216MHz
-      - 1MB
+      - 2MB
       - 512KB
     * - :ref:`board_ststm32_disco_l053c8`
       - :ref:`platform_ststm32`
@@ -3131,8 +3131,8 @@ ST
       - On-board
       - STM32F413ZHT6
       - 100MHz
-      - 512KB
-      - 128KB
+      - 1.50MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -3167,7 +3167,7 @@ ST
       - STM32F722ZET6
       - 216MHz
       - 512KB
-      - 192KB
+      - 256KB
     * - :ref:`board_ststm32_nucleo_f746zg`
       - :ref:`platform_ststm32`
       - On-board

@@ -135,4 +135,3 @@ Examples that use this installer are:
 
 - `platformio-node-helpers <https://github.com/platformio/platformio-node-helpers>`_,
   is used by `PlatformIO IDE for VSCode <https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide>`_
-  and `PlatformIO IDE for Atom <https://atom.io/packages/platformio-ide>`_

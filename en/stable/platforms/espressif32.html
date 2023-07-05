@@ -113,7 +113,6 @@
 <li class="toctree-l3"><a class="reference internal" href="teensy.html">Teensy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="timsp430.html">TI MSP430</a></li>
 <li class="toctree-l3"><a class="reference internal" href="titiva.html">TI TIVA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wiznet7500.html">WIZNet W7500</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#desktop">Desktop</a></li>
@@ -290,7 +289,7 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 <span class="w">    </span><span class="na">-mfix-esp32-psram-cache-issue</span>
 </pre></div>
 </div>
-<p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>:</p>
+<p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
@@ -366,7 +365,7 @@ documentation. PlatformIO uses <strong>default partition tables</strong> dependi
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
 (<a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/tools/partitions">show pre-configured partition tables</a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>
+<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a>
 (<a class="reference external" href="https://github.com/espressif/esp-idf/blob/master/components/partition_table">show pre-configured partition tables</a>)</p></li>
 </ul>
 <p>To override default table please use <code class="docutils literal notranslate"><span class="pre">board_build.partitions</span></code> option in
@@ -1028,7 +1027,7 @@ Please click on board name for the further details.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3camlcd.html#board-espressif32-esp32s3camlcd"><span class="std std-ref">ESP32S3 CAM LCD</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
-<td><p>16MB</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32vn-iot-uno.html#board-espressif32-esp32vn-iot-uno"><span class="std std-ref">ESP32vn IoT Uno</span></a></p></td>
@@ -1759,7 +1758,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a></p></td>
 <td><p>Espressif IoT Development Framework. Official development framework for ESP32 chip</p></td>
 </tr>
 </tbody>
@@ -2503,7 +2502,7 @@ horizontally.</p></li>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
-<td><p>16MB</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp-wrover-kit.html#board-espressif32-esp-wrover-kit"><span class="std std-ref">Espressif ESP-WROVER-KIT</span></a></p></td>
@@ -4652,7 +4651,7 @@ horizontally.</p></li>
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
           <li><a href="https://community.platformio.org/">Community</a></li>\
           <li><a href="https://platformio.org/support">Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> TECHNOLOGY</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -4703,7 +4702,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7 (stable)
+    v6.1.8 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -4738,13 +4737,13 @@ horizontally.</p></li>
       });
   </script>
     <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-1768265-7', {
+      gtag('config', 'G-LQZCKGZE94', {
           'anonymize_ip': false,
       });
     </script> 

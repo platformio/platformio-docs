@@ -50,7 +50,7 @@ first item from pair ``<option> = value``.
 
     * - ``${this.__env__}``
       - Embed environment name of the current section. The section must start with ``env:`` prefix
-      - ``${this.__name__}`` will embed "foo" value being declared in the "env:foo" section
+      - ``${this.__env__}`` will embed "foo" value being declared in the "env:foo" section
 
 * Interpolation can span multiple levels
 * Interpolation can be applied only for the option's value

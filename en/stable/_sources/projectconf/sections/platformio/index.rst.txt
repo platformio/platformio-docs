@@ -30,7 +30,7 @@ default configuration options for :ref:`piocore`.
     path. It will by replaced by a SHA1[0:10] hash of the full project path.
     This is very useful to declare a global storage for project workspaces.
     For example, ``/tmp/pio-workspaces/$PROJECT_HASH`` (Unix) or
-    ``$[sysenv.TEMP}/pio-workspaces/$PROJECT_HASH`` (Windows).
+    ``${sysenv.TEMP}/pio-workspaces/$PROJECT_HASH`` (Windows).
     You can set a global workspace directory using the system environment
     variable :envvar:`PLATFORMIO_WORKSPACE_DIR`.
 

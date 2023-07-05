@@ -45,6 +45,11 @@ Specify the path to project directory. By default, ``--project-dir`` is equal
 to current working directory (``CWD``).
 
 .. option::
+    --lint
+
+Perform linting on :ref:`projectconf`.
+
+.. option::
     --json-output
 
 Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.

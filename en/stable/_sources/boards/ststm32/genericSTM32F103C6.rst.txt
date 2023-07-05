@@ -69,6 +69,7 @@ Uploading
 STM32F103C6 (10k RAM. 32k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
+* ``cmsis-dap``
 * ``dfu``
 * ``jlink``
 * ``serial``
@@ -110,6 +111,9 @@ STM32F103C6 (10k RAM. 32k Flash) does not have on-board debug probe and **IS NOT
   * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 

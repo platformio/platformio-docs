@@ -159,9 +159,11 @@
 <p><strong>Required</strong> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> | Max. Length: 255</p>
 <p>Used for search by keyword. Helps to make your library easier to discover
 without people needing to know its name.</p>
-<p>The keyword should be lowercased, can contain a-z, digits and dash (but not
-start/end with them). A list from the keywords can be specified with
-separator <code class="docutils literal notranslate"><span class="pre">,</span></code> or declared as Array.</p>
+<p>The keyword should be in lowercase and can consist of lowercase letters (a-z),
+digits, periods, underscores, plus symbols, and dashes. However,
+it should not start or end with a dot, underscore, plus symbol, or dash.
+You can provide a list of keywords by separating them with commas (<code class="docutils literal notranslate"><span class="pre">,</span></code>)
+or by declaring them as an array.</p>
 </section>
 
 
@@ -239,7 +241,7 @@ separator <code class="docutils literal notranslate"><span class="pre">,</span><
           <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
           <li><a href="https://community.platformio.org/">Community</a></li>\
           <li><a href="https://platformio.org/support">Support</a></li>\
-          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> FOR BUSINESS</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> TECHNOLOGY</a></li>\
         </ul>\
       </div>\
     </nav>\
@@ -290,7 +292,7 @@ separator <code class="docutils literal notranslate"><span class="pre">,</span><
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.7 (stable)
+    v6.1.8 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -325,13 +327,13 @@ separator <code class="docutils literal notranslate"><span class="pre">,</span><
       });
   </script>
     <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1768265-7"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-1768265-7', {
+      gtag('config', 'G-LQZCKGZE94', {
           'anonymize_ip': false,
       });
     </script> 
