@@ -353,7 +353,7 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_esp32s3camlcd`
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - ESP32
@@ -1598,7 +1598,7 @@ Espressif
       - External
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - On-board

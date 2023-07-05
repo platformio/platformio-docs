@@ -35,7 +35,7 @@ directly in the PlatformIO virtual environment using the following command:
 
 .. code-block:: bash
 
-    pip install pymcuprog
+    python -m pip install pymcuprog
 
 
 Once ``pymcuprog`` is installed it can be used as the uploader via a custom
@@ -77,7 +77,7 @@ virtual environment using the following command:
 
 .. code-block:: bash
 
-    pip install https://github.com/mraardvark/pyupdi/archive/master.zip
+    python -m pip install https://github.com/mraardvark/pyupdi/archive/master.zip
 
 
 Once ``pyupdi`` is installed it can be used as the uploader via a custom

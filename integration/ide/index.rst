@@ -34,7 +34,6 @@ Desktop IDEs
 .. toctree::
     :maxdepth: 1
 
-    Atom <atom>
     clion
     codeblocks
     eclipse

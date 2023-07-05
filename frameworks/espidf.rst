@@ -11,8 +11,8 @@
 
 .. _framework_espidf:
 
-Espressif IoT Development Framework
-===================================
+Espidf
+======
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``espidf``
@@ -38,7 +38,7 @@ Platforms
 Examples
 --------
 
-* `Espressif IoT Development Framework for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Espidf for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -371,7 +371,7 @@ Please click on board name for the further details.
       - :ref:`platform_espressif32`
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp32vn-iot-uno`
       - :ref:`platform_espressif32`
@@ -1659,7 +1659,7 @@ Espressif
       - External
       - ESP32S3
       - 240MHz
-      - 16MB
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp-wrover-kit`
       - :ref:`platform_espressif32`

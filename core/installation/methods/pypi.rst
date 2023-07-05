@@ -13,7 +13,7 @@ Python Package Manager
 ----------------------
 
 .. warning::
-    We recommend using this method **ONLY FOR** :ref:`ci` systems or where your have
+    We recommend using this method **ONLY FOR** :ref:`ci` systems or where you have
     full permissions to install PlatformIO Core into the global scope of your OS.
 
     For personal using, and avoiding maintenance and upgrade issues, we
@@ -25,4 +25,4 @@ Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
 
 .. code-block:: bash
 
-    pip install -U platformio
+    python -m pip install -U platformio

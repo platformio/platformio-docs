@@ -116,7 +116,7 @@ html_theme = "sphinx_rtd_theme"
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "analytics_id": "UA-1768265-7",
+    "analytics_id": "G-LQZCKGZE94",
     "logo_only": True,
     "display_version": False,
 }

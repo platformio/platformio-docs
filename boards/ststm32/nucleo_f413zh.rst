@@ -28,9 +28,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 100MHz
   * - **Flash**
-    - 512KB
+    - 1.50MB
   * - **RAM**
-    - 128KB
+    - 320KB
   * - **Vendor**
     - `ST <https://os.mbed.com/platforms/ST-Nucleo-F413ZH/?utm_source=platformio.org&utm_medium=docs>`__
 

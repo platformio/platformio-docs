@@ -1644,13 +1644,3 @@ TI TIVA
     titiva/lplm4f120h5qr
     titiva/lptm4c123gh6pm
     titiva/lptm4c1294ncpdt
-
-WIZNet W7500
-------------
-
-.. toctree::
-    :maxdepth: 1
-        
-    wiznet7500/wizwiki_w7500
-    wiznet7500/wizwiki_w7500eco
-    wiznet7500/wizwiki_w7500p

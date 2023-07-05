@@ -23,6 +23,7 @@ Uninstall PlatformIO Core and dependent packages
 
         # uninstall standalone PlatformIO Core installed via `pip`
         pip uninstall platformio
+        python -m pip uninstall platformio
 
         # uninstall Homebrew's PlatformIO Core (only macOS users if you installed it via Homebrew before)
         brew uninstall platformio
