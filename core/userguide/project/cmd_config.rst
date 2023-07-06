@@ -47,6 +47,8 @@ to current working directory (``CWD``).
 .. option::
     --lint
 
+.. versionadded:: 6.1.8
+
 Perform linting on :ref:`projectconf`.
 
 .. option::
