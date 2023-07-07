@@ -101,6 +101,92 @@ An example of :ref:`projectconf` with enabled ``rtos``
     build_flags = -D PIO_FRAMEWORK_MBED_RTOS_PRESENT
 
 
+Custom version of Mbed
+^^^^^^^^^^^^^^^^^^^^^^
+
+PlatformIO only has certain versions of mbed-os in the official package package
+registry, as queryable through `the API
+<https://api.registry.platformio.org/v3/packages/platformio/tool/framework-mbed>`_.
+
+If you want to use another release of the Mbed framework, you can use the
+`plateform_packages` config option as described below.
+
+.. warning::
+
+   Using a custom version of mbed-os is not officially supported by platformio. There is
+   no guarantee a given version of mbed-os will work with platformio. This is
+   recommended for Advanced Users only and may require knowledge of the Python ecosystem
+   to install missing dependencies etc.
+
+
+The `platformio.ini` file should have a `plateform_packages` config entry which
+references a directory containing `mbed-os <https://github.com/ARMmbed/mbed-os>`_
+itself, plus the platformio `mbed builder code
+<https://github.com/platformio/builder-framework-mbed>`_ and a `package.json` file like:
+
+.. code-block:: json
+
+   {
+     "name": "framework-mbed",
+     "version": "6.61500.211003",
+     "description": "Arm Mbed OS is a platform operating system designed for the internet of things",
+     "keywords": [
+       "framework",
+       "os",
+       "arm",
+       "hal"
+     ],
+     "homepage": "http://mbed.org",
+     "repository": {
+       "type": "git",
+       "url": "https://github.com/ARMmbed/mbed-os"
+     }
+   }
+
+For example, to use the version 6.15 of mbed-os, you may:
+
+.. code-block:: bash
+
+   ~$ git clone https://github.com/ARMmbed/mbed-os framework-mbed
+   ~$ cd framework-mbed
+   ~/framework-mbed$ git checkout mbed-os-6.15.0
+   ~/framework-mbed$ git clone https://github.com/platformio/builder-framework-mbed# platformio
+   ~/framework-mbed$ cat >package.json <<EOF
+   {
+     "name": "framework-mbed",
+     "version": "6.61500.211003",
+     "description": "Arm Mbed OS is a platform operating system designed for the internet of things",
+     "keywords": [
+       "framework",
+       "os",
+       "arm",
+       "hal"
+     ],
+     "homepage": "http://mbed.org",
+     "repository": {
+       "type": "git",
+       "url": "https://github.com/ARMmbed/mbed-os"
+     }
+   }
+   EOF
+
+Then add the `platform_packages
+<https://docs.platformio.org/en/latest/projectconf/section_env_platform.html#platform-packages>`_
+config optin in the `platformio.ini` file like:
+
+.. code-block:: ini
+
+   [env:mproject]
+   platform = ststm32
+   framework = mbed
+   platform_packages =
+     framework-mbed @ file://framework-mbed
+   board = nucleo_f303ze
+
+to build the project for a NUCLEO-F303ZE board using mbed-os 6.15.0 (and make the
+USBDevice work).
+
+
 Build profiles
 ~~~~~~~~~~~~~~
 
