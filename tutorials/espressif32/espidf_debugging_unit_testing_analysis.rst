@@ -71,6 +71,8 @@ Adding Code to the Generated Project
 
       #include "lwip/err.h"
       #include "lwip/sys.h"
+      #define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
+      #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
 
       #define EXAMPLE_ESP_WIFI_SSID "mywifissid"
       #define EXAMPLE_ESP_WIFI_PASS "mywifipass"
@@ -97,7 +99,7 @@ Adding Code to the Generated Project
 
       void wifi_init_softap()
       {
-        tcpip_adapter_init();
+        esp_netif_init();
         ESP_ERROR_CHECK(esp_event_loop_create_default());
 
         wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
