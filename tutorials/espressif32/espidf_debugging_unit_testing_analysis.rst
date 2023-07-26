@@ -78,7 +78,7 @@ Adding Code to the Generated Project
         */
         #define EXAMPLE_ESP_WIFI_SSID      "mywifissid"
         #define EXAMPLE_ESP_WIFI_PASS      "mywifipass"
-        #define EXAMPLE_ESP_WIFI_CHANNEL   CONFIG_ESP_WIFI_CHANNEL
+        #define EXAMPLE_ESP_WIFI_CHANNEL   1
         #define EXAMPLE_MAX_STA_CONN       4
 
         static const char *TAG = "wifi softAP";
