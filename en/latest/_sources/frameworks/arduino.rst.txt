@@ -65,6 +65,9 @@ Platforms
     * - :ref:`platform_raspberrypi`
       - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
+    * - :ref:`platform_renesas-ra`
+      - Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
+
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -94,6 +97,7 @@ Examples
 * `Arduino for Nordic nRF51 <https://github.com/platformio/platform-nordicnrf51/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Nordic nRF52 <https://github.com/platformio/platform-nordicnrf52/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Raspberry Pi RP2040 <https://github.com/platformio/platform-raspberrypi/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Arduino for Renesas RA <https://github.com/platformio/platform-renesas-ra/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for ST STM8 <https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `Arduino for Teensy <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
@@ -1669,6 +1673,12 @@ Please click on board name for the further details.
       - 480MHz
       - 1MB
       - 287.35KB
+    * - :ref:`board_renesas-ra_portenta_c33`
+      - :ref:`platform_renesas-ra`
+      - R7FA6M5BH2CBG
+      - 200MHz
+      - 2MB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -1729,6 +1739,18 @@ Please click on board name for the further details.
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelavr_yun`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -5364,6 +5386,13 @@ Arduino
       - 480MHz
       - 1MB
       - 287.35KB
+    * - :ref:`board_renesas-ra_portenta_c33`
+      - :ref:`platform_renesas-ra`
+      - External
+      - R7FA6M5BH2CBG
+      - 200MHz
+      - 2MB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -5434,6 +5463,20 @@ Arduino
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelmegaavr_uno_wifi_rev2`
       - :ref:`platform_atmelmegaavr`
       - No

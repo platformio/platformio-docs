@@ -147,7 +147,7 @@
   <section id="get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis">
 <span id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></span><h1>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis<a class="headerlink" href="#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis" title="Permalink to this heading"></a></h1>
 <p>The goal of this tutorial is to demonstrate how simple it is to use <a class="reference internal" href="../../integration/ide/vscode.html#ide-vscode"><span class="std std-ref">PlatformIO IDE for VSCode</span></a>
-to develop, run and debug a simple Wi-Fi project with the <a class="reference internal" href="../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a>
+to develop, run and debug a simple Wi-Fi project with the <a class="reference internal" href="../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>
 framework for the <code class="docutils literal notranslate"><span class="pre">ESP32-DevKitC</span></code> board.</p>
 <ul class="simple">
 <li><p><strong>Level:</strong> Intermediate</p></li>
@@ -181,7 +181,7 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <img alt="../../_images/espidf-debugging-unit-testing-analysis-1.png" src="../../_images/espidf-debugging-unit-testing-analysis-1.png" />
 </li>
 <li><p>Click on “New Project”, select <code class="docutils literal notranslate"><span class="pre">Espressif</span> <span class="pre">ESP32</span> <span class="pre">Dev</span> <span class="pre">Module</span></code> as the development board,
-<a class="reference internal" href="../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a> as the framework and a path to the project location
+<a class="reference internal" href="../../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a> as the framework and a path to the project location
 (or use the default one):</p>
 <img alt="../../_images/espidf-debugging-unit-testing-analysis-2.png" src="../../_images/espidf-debugging-unit-testing-analysis-2.png" />
 </li>
@@ -192,19 +192,18 @@ framework for the <code class="docutils literal notranslate"><span class="pre">E
 <ol class="arabic">
 <li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">main.c</span></code> in <a class="reference internal" href="../../projectconf/sections/platformio/options/directory/src_dir.html#projectconf-pio-src-dir"><span class="std std-ref">src_dir</span></a> folder and add the
 following code:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* WiFi softAP Example</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*  WiFi softAP Example</span>
 
-<span class="cm">  This example code is in the Public Domain (or CC0 licensed, at your option.)</span>
+<span class="cm">   This example code is in the Public Domain (or CC0 licensed, at your option.)</span>
 
-<span class="cm">  Unless required by applicable law or agreed to in writing, this</span>
-<span class="cm">  software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR</span>
-<span class="cm">  CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="cm">   Unless required by applicable law or agreed to in writing, this</span>
+<span class="cm">   software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR</span>
+<span class="cm">   CONDITIONS OF ANY KIND, either express or implied.</span>
 <span class="cm">*/</span>
-
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string.h&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/FreeRTOS.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/task.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_system.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_mac.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_wifi.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_event.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_log.h&quot;</span>
@@ -213,73 +212,84 @@ following code:</p>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/err.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/sys.h&quot;</span>
 
-<span class="cp">#define EXAMPLE_ESP_WIFI_SSID &quot;mywifissid&quot;</span>
-<span class="cp">#define EXAMPLE_ESP_WIFI_PASS &quot;mywifipass&quot;</span>
-<span class="cp">#define EXAMPLE_MAX_STA_CONN (3)</span>
+<span class="cm">/* The examples use WiFi configuration that you can set via project configuration menu.</span>
+
+<span class="cm">   If you&#39;d rather not, just change the below entries to strings with</span>
+<span class="cm">   the config you want - ie #define EXAMPLE_WIFI_SSID &quot;mywifissid&quot;</span>
+<span class="cm">*/</span>
+<span class="cp">#define EXAMPLE_ESP_WIFI_SSID      &quot;mywifissid&quot;</span>
+<span class="cp">#define EXAMPLE_ESP_WIFI_PASS      &quot;mywifipass&quot;</span>
+<span class="cp">#define EXAMPLE_ESP_WIFI_CHANNEL   1</span>
+<span class="cp">#define EXAMPLE_MAX_STA_CONN       4</span>
 
 <span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wifi softAP&quot;</span><span class="p">;</span>
 
-<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">arg</span><span class="p">,</span><span class="w"> </span><span class="n">esp_event_base_t</span><span class="w"> </span><span class="n">event_base</span><span class="p">,</span>
-<span class="w">                              </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">event_id</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">event_data</span><span class="p">)</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">arg</span><span class="p">,</span><span class="w"> </span><span class="n">esp_event_base_t</span><span class="w"> </span><span class="n">event_base</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">event_id</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">event_data</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_staconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; join, AID=%d&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STADISCONNECTED</span><span class="p">)</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="w"> </span><span class="n">MACSTR</span><span class="w"> </span><span class="s">&quot; leave, AID=%d&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">wifi_event_ap_staconnected_t</span><span class="o">*</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_staconnected_t</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">event_data</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="n">MACSTR</span><span class="s">&quot; join, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STADISCONNECTED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="o">*</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">event_data</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="n">MACSTR</span><span class="s">&quot; leave, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">wifi_init_softap</span><span class="p">()</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">wifi_init_softap</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">tcpip_adapter_init</span><span class="p">();</span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_netif_init</span><span class="p">());</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span>
+<span class="w">    </span><span class="n">esp_netif_create_default_wifi_ap</span><span class="p">();</span>
 
-<span class="w">  </span><span class="n">wifi_init_config_t</span><span class="w"> </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">));</span>
+<span class="w">    </span><span class="n">wifi_init_config_t</span><span class="w"> </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">));</span>
 
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_register</span><span class="p">(</span><span class="n">WIFI_EVENT</span><span class="p">,</span><span class="w"> </span><span class="n">ESP_EVENT_ANY_ID</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_event_handler</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">));</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_instance_register</span><span class="p">(</span><span class="n">WIFI_EVENT</span><span class="p">,</span>
+<span class="w">                                                        </span><span class="n">ESP_EVENT_ANY_ID</span><span class="p">,</span>
+<span class="w">                                                        </span><span class="o">&amp;</span><span class="n">wifi_event_handler</span><span class="p">,</span>
+<span class="w">                                                        </span><span class="nb">NULL</span><span class="p">,</span>
+<span class="w">                                                        </span><span class="nb">NULL</span><span class="p">));</span>
 
-<span class="w">  </span><span class="n">wifi_config_t</span><span class="w"> </span><span class="n">wifi_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="p">.</span><span class="n">ap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="p">.</span><span class="n">ssid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span>
-<span class="w">          </span><span class="p">.</span><span class="n">ssid_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">),</span>
-<span class="w">          </span><span class="p">.</span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span>
-<span class="w">          </span><span class="p">.</span><span class="n">max_connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_MAX_STA_CONN</span><span class="p">,</span>
-<span class="w">          </span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">},</span>
-<span class="w">  </span><span class="p">};</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">wifi_config</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_OPEN</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="w">    </span><span class="n">wifi_config_t</span><span class="w"> </span><span class="n">wifi_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">.</span><span class="n">ap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">ssid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">ssid_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">channel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_CHANNEL</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">max_connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXAMPLE_MAX_STA_CONN</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">pmf_cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">required</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strlen</span><span class="p">(</span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">wifi_config</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WIFI_AUTH_OPEN</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">));</span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">ESP_IF_WIFI_AP</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">));</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_AP</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span>
 
-<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;wifi_init_softap finished. SSID:%s password:%s&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;wifi_init_softap finished. SSID:%s password:%s channel:%d&quot;</span><span class="p">,</span>
+<span class="w">             </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_CHANNEL</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">()</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">app_main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="c1">// Initialize NVS</span>
-<span class="w">  </span><span class="n">esp_err_t</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span>
-<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//Initialize NVS</span>
+<span class="w">    </span><span class="n">esp_err_t</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span>
+<span class="w">      </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nvs_flash_init</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ESP_WIFI_MODE_AP&quot;</span><span class="p">);</span>
-<span class="w">  </span><span class="n">wifi_init_softap</span><span class="p">();</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ESP_WIFI_MODE_AP&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">wifi_init_softap</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
 </div>

@@ -1255,6 +1255,16 @@ Raspberry Pi RP2040
     raspberrypi/nanorp2040connect
     raspberrypi/pico
 
+Renesas RA
+----------
+
+.. toctree::
+    :maxdepth: 1
+        
+    renesas-ra/portenta_c33
+    renesas-ra/uno_r4_minima
+    renesas-ra/uno_r4_wifi
+
 RISC-V GAP
 ----------
 

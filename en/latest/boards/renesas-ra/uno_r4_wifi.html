@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arduino Uno R4 WiFi &mdash; PlatformIO latest documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="canonical" href="https://docs.platformio.org/boards/renesas-ra/uno_r4_wifi.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="GAPuino GAP8" href="../riscv_gap/gapuino.html" />
+    <link rel="prev" title="Arduino Uno R4 Minima" href="uno_r4_minima.html" />
+ 
+<link rel="stylesheet" href="../../_static/css/extra.css" type="text/css" />
+<script src="../../_static/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../what-is-platformio.html">What is PlatformIO?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/pioide.html">PlatformIO IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/index.html">PlatformIO Core (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../home/index.html">PlatformIO Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-account.html">PlatformIO Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials and Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/index.html">platformio.ini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../projectconf/build_configurations.html">Build Configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment variables</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../librarymanager/index.html">Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/index.html">Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Boards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#aceinna-imu">Aceinna IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-avr">Atmel AVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-megaavr">Atmel megaAVR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#atmel-sam">Atmel SAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#chips-alliance">CHIPS Alliance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-32">Espressif 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#espressif-8266">Espressif 8266</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#freescale-kinetis">Freescale Kinetis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#heltec-cubecell">Heltec CubeCell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#intel-arc32">Intel ARC32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#intel-mcs-51-8051">Intel MCS-51 (8051)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#lattice-ice40">Lattice iCE40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#linux-arm">Linux ARM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#maxim-32">Maxim 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#microchip-pic32">Microchip PIC32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf51">Nordic nRF51</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nordic-nrf52">Nordic nRF52</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-i-mx-rt">NXP i.MX RT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#nxp-lpc">NXP LPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#openhw-group">OpenHW Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#raspberry-pi-rp2040">Raspberry Pi RP2040</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#renesas-ra">Renesas RA</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="portenta_c33.html">Arduino Portenta C33</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uno_r4_minima.html">Arduino Uno R4 Minima</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Arduino Uno R4 WiFi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploading">Uploading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#frameworks">Frameworks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#risc-v-gap">RISC-V GAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#shakti">Shakti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#sifive">SiFive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#silicon-labs-efm32">Silicon Labs EFM32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#st-stm32">ST STM32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#st-stm8">ST STM8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#teensy">Teensy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-msp430">TI MSP430</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#ti-tiva">TI TIVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../platforms/custom_platform_and_board.html">Custom Platform &amp; Board</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/unit-testing/index.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/static-code-analysis/index.html">Static Code Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plus/pio-remote.html">Remote Development</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ide/index.html">Cloud &amp; Desktop IDEs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/ci/index.html">Continuous Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration/compile_commands.html">Compilation database <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/history.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/migration.html">Migrating from 5.x to 6.0</a></li>
+</ul>
+
+<ins data-rvad-zoneid="7" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PlatformIO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+<ins data-rvad-zoneid="1" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
+      <li class="breadcrumb-item active">Arduino Uno R4 WiFi</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/platformio/platformio-docs/blob/develop/boards/renesas-ra/uno_r4_wifi.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arduino-uno-r4-wifi">
+<span id="board-renesas-ra-uno-r4-wifi"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">Arduino Uno R4 WiFi</a><a class="headerlink" href="#arduino-uno-r4-wifi" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#arduino-uno-r4-wifi" id="id1">Arduino Uno R4 WiFi</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hardware" id="id2">Hardware</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id3">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#uploading" id="id4">Uploading</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id5">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#frameworks" id="id6">Frameworks</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="hardware">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Hardware</a><a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h2>
+<p>Platform <a class="reference internal" href="../../platforms/renesas-ra.html#platform-renesas-ra"><span class="std std-ref">Renesas RA</span></a>: Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Microcontroller</strong></p></td>
+<td><p>RA4M1</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Frequency</strong></p></td>
+<td><p>48MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Flash</strong></p></td>
+<td><p>256KB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>RAM</strong></p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vendor</strong></p></td>
+<td><p><a class="reference external" href="https://docs.arduino.cc/hardware/uno-r4-wifi?utm_source=platformio.org&amp;utm_medium=docs">Arduino</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="configuration">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<p>Please use <code class="docutils literal notranslate"><span class="pre">uno_r4_wifi</span></code> ID for <a class="reference internal" href="../../projectconf/sections/env/options/platform/board.html#projectconf-env-board"><span class="std std-ref">board</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno_r4_wifi]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renesas-ra</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno_r4_wifi</span>
+</pre></div>
+</div>
+<p>You can override default Arduino Uno R4 WiFi settings per build environment using
+<code class="docutils literal notranslate"><span class="pre">board_***</span></code> option, where <code class="docutils literal notranslate"><span class="pre">***</span></code> is a JSON object path from
+board manifest <a class="reference external" href="https://github.com/platformio/platform-renesas-ra/blob/master/boards/uno_r4_wifi.json">uno_r4_wifi.json</a>. For example,
+<code class="docutils literal notranslate"><span class="pre">board_build.mcu</span></code>, <code class="docutils literal notranslate"><span class="pre">board_build.f_cpu</span></code>, etc.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno_r4_wifi]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renesas-ra</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno_r4_wifi</span>
+
+<span class="c1">; change microcontroller</span>
+<span class="na">board_build.mcu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ra4m1</span>
+
+<span class="c1">; change MCU frequency</span>
+<span class="na">board_build.f_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">48000000L</span>
+</pre></div>
+</div>
+</section>
+<section id="uploading">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Uploading</a><a class="headerlink" href="#uploading" title="Permalink to this heading"></a></h2>
+<p>Arduino Uno R4 WiFi supports the following uploading protocols:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cmsis-dap</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sam-ba</span></code></p></li>
+</ul>
+<p>Default protocol is <code class="docutils literal notranslate"><span class="pre">sam-ba</span></code></p>
+<p>You can change upload protocol using <a class="reference internal" href="../../projectconf/sections/env/options/upload/upload_protocol.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:uno_r4_wifi]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renesas-ra</span>
+<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">uno_r4_wifi</span>
+
+<span class="na">upload_protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sam-ba</span>
+</pre></div>
+</div>
+</section>
+<section id="debugging">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will need to install debug tool drivers depending on your system.
+Please click on compatible debug tool below for the further
+instructions and configuration information.</p>
+</div>
+<p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
+<a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<p>Arduino Uno R4 WiFi does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Compatible Tools</p></th>
+<th class="head"><p>On-board</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/cmsis-dap.html#debugging-tool-cmsis-dap"><span class="std std-ref">CMSIS-DAP</span></a></p></td>
+<td></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/jlink.html#debugging-tool-jlink"><span class="std std-ref">J-LINK</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="frameworks">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
+<td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../frameworks/cmsis.html#framework-cmsis"><span class="std std-ref">CMSIS</span></a></p></td>
+<td><p>Vendor-independent hardware abstraction layer for the Cortex-M processor series</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../frameworks/fsp.html#framework-fsp"><span class="std std-ref">Renesas Flexible Software Package</span></a></p></td>
+<td><p>The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="uno_r4_minima.html" class="btn btn-neutral float-left" title="Arduino Uno R4 Minima" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../riscv_gap/gapuino.html" class="btn btn-neutral float-right" title="GAPuino GAP8" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+
+    <p>&#169; Copyright 2014-present, PlatformIO.</p>
+<ins data-rvad-zoneid="8" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+
+  </div>
+
+  
+ 
+<script>
+  var navBarHTML = '\
+<div>\
+  <div class="container container-fluid">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarCollapse" aria-expanded="false">\
+        <span class="sr-only">Toggle navigation</span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+      <a class="navbar-brand" href="https://platformio.org" title="PlatformIO"></a>\
+    </div>\
+    <nav role="navigation" class="collapse navbar-collapse" id="navBarCollapse">\
+      <div>\
+        <ul class="nav navbar-nav">\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://platformio.org/platformio-ide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/what-is-platformio.html"><i class="fa fa-heart"></i>What is PlatformIO?</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/tutorials/index.html" target="_blank"><i class="fa fa-graduation-cap"></i>Tutorials</a></li>\
+              <li role="menuitem"><a href="https://github.com/platformio/platformio-examples" target="_blank"><i class="fa fa-graduation-cap"></i>Project Examples</a></li>\
+            </ul>\
+          </li>\
+          <li class="dropdown">\
+            <a role="button" data-target="#" href="https://docs.platformio.org/en/latest/plus/pio-remote.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span>\
+            </a>\
+            <ul class="dropdown-menu" role="menu">\
+              <li role="menuitem"><a href="https://platformio.org/platformio-ide"><i class="fa fa-cube"></i>PlatformIO IDE</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/cli"><i class="fa fa-cogs"></i>PlatformIO Core (CLI)</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/debugging.html"><i class="fa fa-bug"></i>Debugging</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html"><i class="fa fa-puzzle-piece"></i>Unit Testing</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-check.html"><i class="fa fa-check-circle-o"></i>Static Code Analysis</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/plus/pio-remote.html"><i class="fa fa-globe"></i>Remote Development</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/librarymanager/index.html"><i class="fa fa-code"></i>Library Management</a></li>\
+              <li role="separator" class="divider"></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cube"></i>Desktop IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://platformio.org/install/integration"><i class="fa fa-cloud"></i>Cloud IDEs Integration</a></li>\
+              <li role="menuitem"><a href="https://docs.platformio.org/en/latest/ci/index.html"><i class="fa fa-refresh"></i>Continuous Integration</a></li>\
+            </ul>\
+          </li>\
+          <li><a href="https://registry.platformio.org/">Registry</a></li>\
+        </ul>\
+        <ul class="nav navbar-nav navbar-right">\
+          <li class="active"><a href="https://docs.platformio.org">Docs</a></li>\
+          <li><a href="https://community.platformio.org/">Community</a></li>\
+          <li><a href="https://platformio.org/support">Support</a></li>\
+          <li class="nav-pio-tech"><a href="https://piolabs.com/"><i class="fa fa-rocket fa-lg"></i> TECHNOLOGY</a></li>\
+        </ul>\
+      </div>\
+    </nav>\
+  </div>\
+</div>';
+
+  (function() {
+    if (window.location.href.indexOf('http://') === 0) {
+      location.href = 'https:' + window.location.href.substring(5);
+    }
+
+    var topBanner = jQuery('.top-banner');
+    var navBar = document.createElement('header');
+    navBar.className = 'navbar navbar-inverse';
+    navBar.innerHTML = navBarHTML;
+    if (topBanner.length) {
+      jQuery(navBar).insertAfter(topBanner)
+    } else {
+      document.body.insertBefore(navBar, document.body.firstChild);
+    }
+
+    if (jQuery(window).width() <= 768) {
+      return;
+    }
+
+    var topOffset = 50;
+    if (topBanner.length) {
+      topOffset += jQuery('.navbar').offset().top;
+    }
+    jQuery('.wy-nav-side').css('top', topOffset + 'px');
+    jQuery(window).scroll(function() {
+      jQuery('.wy-nav-side').css('top', jQuery(window).scrollTop() > topOffset ? 0 : topOffset + 'px');
+    });
+  })();
+</script>
+<ins data-rvad-zoneid="11" data-rvad-id="f837d8c96893e793fdbb230cffb628fc"></ins>
+<script async src="https://ad.platformio.org/delivery/revasyncjs.dll"></script>
+
+
+</footer>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Documentation</span>
+    v6.1.10a3 (latest)
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+      
+        <dd><a href="/en/">latest</a></dd>
+      
+        <dd><a href="/en/stable/">stable</a></dd>
+      
+    </dl>
+    <dl>
+      <dt>On Github</dt>
+        <dd><a href="https://github.com/platformio/platformio-docs/blob/develop/boards/renesas-ra/uno_r4_wifi.rst"> View</a></dd>
+        <dd><a href="https://github.com/platformio/platformio-docs/edit/develop/boards/renesas-ra/uno_r4_wifi.rst"> Edit</a></dd>
+    </dl>
+    <dl>
+      <dt>Search</dt>
+        <dd>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div></dd>
+    </dl>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LQZCKGZE94', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
