@@ -225,6 +225,9 @@ Platforms
     * - :ref:`platform_raspberrypi`
       - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
+    * - :ref:`platform_renesas-ra`
+      - Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
+
     * - :ref:`platform_shakti`
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
@@ -262,6 +265,9 @@ Frameworks
 
     * - :ref:`framework_freertos`
       - FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 40 microcontroller platforms.
+
+    * - :ref:`framework_fsp`
+      - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.
 
     * - :ref:`framework_libopencm3`
       - Open source ARM Cortex-M microcontroller library
@@ -1026,6 +1032,13 @@ Boards
       - 480MHz
       - 1MB
       - 287.35KB
+    * - :ref:`board_renesas-ra_portenta_c33`
+      - :ref:`platform_renesas-ra`
+      - External
+      - R7FA6M5BH2CBG
+      - 200MHz
+      - 2MB
+      - 511.35KB
     * - :ref:`board_ststm32_portenta_h7_m4`
       - :ref:`platform_ststm32`
       - External
@@ -1044,6 +1057,20 @@ Boards
       - :ref:`platform_atmelsam`
       - External
       - SAMD21G18A
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
       - 48MHz
       - 256KB
       - 32KB

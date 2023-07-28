@@ -70,6 +70,7 @@ Embedded
     nxplpc
     openhw
     raspberrypi
+    renesas-ra
     riscv_gap
     shakti
     sifive
