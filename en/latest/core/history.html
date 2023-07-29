@@ -163,6 +163,7 @@
 <li><p>Resolved an issue encountered while utilizing the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/pkg/cmd_exec.html">pio pkg exec</a> command on the Windows platform to execute Python scripts from a package</p></li>
 <li><p>Implemented a crucial improvement to the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html">pio run</a> command, guaranteeing that the <code class="docutils literal notranslate"><span class="pre">monitor</span></code> target is not executed if any of the preceding targets, such as <code class="docutils literal notranslate"><span class="pre">upload</span></code>, encounter failures</p></li>
 <li><p><a class="reference external" href="https://docs.platformio.org/en/latest/plus/check-tools/cppcheck.html">Cppcheck</a> v2.11 with new checks, CLI commands and various analysis improvements</p></li>
+<li><p>Resolved a critical issue that arose on macOS ARM platforms due to the Python “requests” module, leading to a “ModuleNotFoundError: No module named ‘chardet’” (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4702">issue #4702</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -605,7 +606,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.10a3 (latest)
+    v6.1.10a4 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
