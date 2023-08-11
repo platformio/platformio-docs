@@ -9,10 +9,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-Professional collaborative platform for embedded development
-============================================================
+Your Gateway to Embedded Software Development Excellence
+========================================================
 
-**A place where Developers and Teams have true Freedom! No more vendor lock-in!**
+Unlock the true potential of embedded software development with
+PlatformIO's collaborative ecosystem, embracing declarative principles,
+test-driven methodologies, and modern toolchains for unrivaled success.
 
 * Open source, maximum permissive Apache 2.0 license
 * Cross-platform IDE and Unified Debugger
