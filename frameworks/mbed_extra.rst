@@ -24,11 +24,8 @@ Configuration system
     In Mbed OS 6 the list of supported boards was heavily reduced, only officially
     supported and well maintained targets left. More information in
     `the official explanation <https://os.mbed.com/blog/entry/Increase-the-quality-of-platform-support/>`_.
-    In order to keep legacy projects built on top of Mbed OS 5 compilable, each
-    development platform contains a list of deprecated boards that is used to dynamically
-    select the proper version of Mbed OS (OS5 or OS6).
 
-PlatformIO allows you to customize mbed OS compile time configuration
+PlatformIO allows you to customize Mbed OS compile time configuration
 parameters using ``mbed_app.json`` manifest. It should be placed into the root
 of your project and located on the same level as :ref:`projectconf`.
 
@@ -40,9 +37,9 @@ Some examples of configuration parameters:
 * The receive buffer size of a serial communication library.
 * The flash and RAM memory size of a target board.
 
-See more details in the official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v5.11/reference/configuration.html>`_.
+See more details in the official `ARM Mbed OS Configuration System <https://os.mbed.com/docs/mbed-os/v6.16/program-setup/advanced-configuration.html>`_.
 
-A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``:
+A few PlatformIO-ready projects based on ARM Mbed OS which use ``mbed_app.json``:
 
 * `Freescale Kinetis: mbed-rtos-kvstore <https://github.com/platformio/platform-freescalekinetis/tree/develop/examples/mbed-rtos-kvstore>`_
 * `ST STM32: mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/develop/examples/mbed-rtos-mesh-minimal>`_
@@ -54,12 +51,8 @@ A few PlatformIO-ready projects based on ARM mbed OS which use ``mbed_app.json``
     compilation error for some targets. It's possible to shorten these paths is to
     install packages in root of any logical disk by specifying :ref:`projectconf_pio_core_dir`.
 
-
-Mbed OS 6
-^^^^^^^^^
-
 Using Bare Metal profile
-""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The bare metal profile implements a subset of Mbed OS's RTOS APIs that are useful in
 non-threaded applications, such as semaphores (calling the release API from interrupts)
@@ -72,37 +65,8 @@ Useful links:
 * `Detailed description of bare metal profile <https://os.mbed.com/docs/mbed-os/v6.2/bare-metal/index.html>`_
 * `Porting a target from Mbed OS 2 to Mbed OS 6 bare metal <https://os.mbed.com/docs/mbed-os/v6.2/bare-metal/porting-a-target-from-mbed-os-2-to-mbed-os-6-bare-metal.html>`_
 
-
-Mbed OS 5 and Mbed 2
-^^^^^^^^^^^^^^^^^^^^
-
-PlatformIO allows compiling projects with or without Mbed OS 5. By default, project
-is built without the OS feature. Most of the framework functionality requires the OS to
-be enabled. To add the OS feature you can use a special macro definition that needs be
-added to :ref:`projectconf_build_flags` of :ref:`projectconf`:
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Description
-
-    * - ``PIO_FRAMEWORK_MBED_RTOS_PRESENT``
-      - Build the project with enabled ``rtos``
-
-An example of :ref:`projectconf` with enabled ``rtos``
-
-.. code-block:: ini
-
-    [env:wizwiki_w7500p]
-    platform = wiznet7500
-    framework = mbed
-    board = wizwiki_w7500p
-    build_flags = -D PIO_FRAMEWORK_MBED_RTOS_PRESENT
-
-
 Build profiles
-~~~~~~~~~~~~~~
+""""""""""""""
 
 By default, PlatformIO builds your project using ``develop profile`` which provides
 optimized firmware size with full error information and allows MCU to go to sleep mode.
@@ -123,28 +87,25 @@ You can change build profile :ref:`projectconf_build_flags` of :ref:`projectconf
       - Debug profile (largest firmware, disabled sleep mode)
 
 More information about differences between build profiles can be found on the
-official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v5.11/tools/build-profiles.html>`_.
+official page `ARM Mbed OS Build Profiles <https://os.mbed.com/docs/mbed-os/v6.16/program-setup/build-profiles-and-rules.html>`_.
 
 Ignoring particular components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In case you don't need all parts of the framework or you want to reduce the compilation
 time, you can explicitly exclude folders with redundant sources. For example, to remove
-``cellular``, ``mbedtls`` and ``nanostack`` features from the build process, navigate
-to :ref:`projectconf_pio_packages_dir` and create a new file ``framework-mbed/features/.mbedignore``
-with the following contents:
+``cellular``, ``kvstore`` and ``nanostack`` features from the build process, navigate
+to the root of your project and create a new file ``.mbedignore`` with the following
+contents:
 
 .. code-block:: ini
 
-    cellular/*
-    mbedtls/*
-    nanostack/*
-
-If you want to exclude the entire folder, simply create ``.mbedignore`` file and add
-only one symbol ``*`` to this file.
+    mbed-os/connectivity/cellular/*
+    mbed-os/connectivity/nanostack/*
+    mbed-os/storage/kvstore/*
 
 Custom Targets
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 In case when your board is not officially supported by :ref:`framework_mbed` you can
 manually add custom board definitions to your project. First of all, you need to create

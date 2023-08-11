@@ -31,12 +31,16 @@ Platforms
     * - Name
       - Description
 
+    * - :ref:`platform_renesas-ra`
+      - Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
+
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 Examples
 --------
 
+* `CMSIS for Renesas RA <https://github.com/platformio/platform-renesas-ra/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 * `CMSIS for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
@@ -720,6 +724,24 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_renesas-ra_portenta_c33`
+      - :ref:`platform_renesas-ra`
+      - R7FA6M5BH2CBG
+      - 200MHz
+      - 2MB
+      - 511.35KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1709,6 +1731,41 @@ Airbot
       - 48MHz
       - 32KB
       - 7.75KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_renesas-ra_portenta_c33`
+      - :ref:`platform_renesas-ra`
+      - External
+      - R7FA6M5BH2CBG
+      - 200MHz
+      - 2MB
+      - 511.35KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
 
 Armed
 ~~~~~
