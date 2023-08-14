@@ -154,11 +154,20 @@
 <span id="installation-installer-script"></span><h1>Installer Script (Recommended)<a class="headerlink" href="#installer-script-recommended" title="Permalink to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>PlatformIO <strong>DOES NOT</strong> require administrative/sudo permissions. Please install using
-the default user account <strong>WITHOUT EXTRA PERMISSIONS</strong>.</p>
+<p>PlatformIO operates <strong>without the need for administrative or sudo permissions</strong>.
+It is strongly advised to perform the installation using the default user
+account and without any additional permissions. This approach ensures a smooth
+installation process and helps maintain a secure and controlled environment.</p>
 </div>
-<p>Install PlatformIO Core into the virtual Python environment using an
-<a class="reference external" href="https://github.com/platformio/platformio-core-installer">installer script</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To facilitate the integration of PlatformIO Core with <a class="reference internal" href="../../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems and
+containers, we highly recommend installing PlatformIO Core directly from
+the <a class="reference internal" href="pypi.html#installation-pypi"><span class="std std-ref">Python Package Manager</span></a>. This method is not only the fastest but
+also the most straightforward way to ensure a seamless setup.</p>
+</div>
+<p>Install PlatformIO Core into the Virtual Python Environment using the
+<a class="reference external" href="https://github.com/platformio/platformio-core-installer">Installer Script</a>.</p>
 <p>A default location of Python virtual environment is “<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/penv”.
 If you have any issues with PlatformIO Core, just remove this folder and re-run
 installer script.</p>

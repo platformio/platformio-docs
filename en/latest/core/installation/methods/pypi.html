@@ -151,18 +151,21 @@
            <div itemprop="articleBody">
              
   <section id="python-package-manager">
-<h1>Python Package Manager<a class="headerlink" href="#python-package-manager" title="Permalink to this heading"></a></h1>
+<span id="installation-pypi"></span><h1>Python Package Manager<a class="headerlink" href="#python-package-manager" title="Permalink to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>We recommend using this method <strong>ONLY FOR</strong> <a class="reference internal" href="../../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems or where you have
-full permissions to install PlatformIO Core into the global scope of your OS.</p>
-<p>For personal using, and avoiding maintenance and upgrade issues, we
-<strong>HIGHLY RECOMMEND</strong> using <a class="reference internal" href="installer-script.html#installation-installer-script"><span class="std std-ref">Installer Script (Recommended)</span></a> which installs
-PlatformIO Core into an isolated virtual environment and does not affect your OS.</p>
+<p>It’s best to stick with this method <strong>ONLY IF</strong> you’re dealing with <a class="reference internal" href="../../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a>
+systems/containers or if you have complete permissions to set up
+PlatformIO Core across your entire operating system.</p>
+<p>For your own personal use, and to steer clear of troubles when it comes to
+maintenance and updates, we <strong>STRONGLY SUGGEST</strong> going for the
+<a class="reference internal" href="installer-script.html#installation-installer-script"><span class="std std-ref">Installer Script (Recommended)</span></a>. This script installs PlatformIO Core
+in a separate virtual environment, keeping it isolated from your operating
+system and avoiding any impact on it.</p>
 </div>
 <p>The latest stable version of PlatformIO Core may be installed or upgraded via
 Python Package Manager (<a class="reference external" href="https://pip.pypa.io">pip</a>) as follows:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>platformio
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>platformio
 </pre></div>
 </div>
 </section>
