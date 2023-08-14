@@ -33,22 +33,18 @@ Super-Quick (macOS / Linux)
 
 To install or upgrade PlatformIO Core paste that at a *Terminal* prompt:
 
-.. code-block:: bash
-
-    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py)"
-
-or using ``curl``
+Using ``curl``
 
 .. code-block:: bash
 
-    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -o get-platformio.py
+    curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.p
     python3 get-platformio.py
 
 or using ``wget``
 
 .. code-block:: bash
 
-    wget https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -O get-platformio.py
+    wget -O get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
     python3 get-platformio.py
 
 
