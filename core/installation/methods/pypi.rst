@@ -9,20 +9,25 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. _installation_pypi:
+
 Python Package Manager
 ----------------------
 
 .. warning::
-    We recommend using this method **ONLY FOR** :ref:`ci` systems or where you have
-    full permissions to install PlatformIO Core into the global scope of your OS.
+    It's best to stick with this method **ONLY IF** you're dealing with :ref:`ci`
+    systems/containers or if you have complete permissions to set up
+    PlatformIO Core across your entire operating system.
 
-    For personal using, and avoiding maintenance and upgrade issues, we
-    **HIGHLY RECOMMEND** using :ref:`installation_installer_script` which installs
-    PlatformIO Core into an isolated virtual environment and does not affect your OS.
+    For your own personal use, and to steer clear of troubles when it comes to
+    maintenance and updates, we **STRONGLY SUGGEST** going for the
+    :ref:`installation_installer_script`. This script installs PlatformIO Core
+    in a separate virtual environment, keeping it isolated from your operating
+    system and avoiding any impact on it.
 
 The latest stable version of PlatformIO Core may be installed or upgraded via
 Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
 
 .. code-block:: bash
 
-    python -m pip install -U platformio
+    python3 -m pip install -U platformio
