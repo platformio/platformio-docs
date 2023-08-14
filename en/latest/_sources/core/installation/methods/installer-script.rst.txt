@@ -35,7 +35,7 @@ To install or upgrade PlatformIO Core paste that at a *Terminal* prompt:
 
 .. code-block:: bash
 
-    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py)"
 
 or using ``curl``
 
