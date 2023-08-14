@@ -141,7 +141,7 @@
 Build Node(Object) construction. This is very useful if you need to add custom flags
 for the specific file nodes or exclude them from a build process.</p>
 <p>There is <code class="docutils literal notranslate"><span class="pre">env.AddBuildMiddleware(callback,</span> <span class="pre">pattern)</span></code> helper which instructs
-PlatformIO Build System to call <code class="docutils literal notranslate"><span class="pre">callback</span></code> for each <a class="reference external" href="https://scons.org/doc/latest/HTML/scons-api/SCons.Node.FS.Dir-class.html">SCons File System Node</a>
+PlatformIO Build System to call <code class="docutils literal notranslate"><span class="pre">callback</span></code> for each <a class="reference external" href="https://scons.org/doc/latest/HTML/scons-api/SCons.Node/#SCons.Node.FS.Dir">SCons File System Node</a>
 whose path matches with <a class="reference external" href="https://docs.python.org/3.9/library/fnmatch.html">Unix shell-style “pattern” (wildcards)</a>.</p>
 <p>If a <code class="docutils literal notranslate"><span class="pre">pattern</span></code> is omitted, the <code class="docutils literal notranslate"><span class="pre">callback</span></code> will be called for each File System Node
 which is added for the build process.</p>
