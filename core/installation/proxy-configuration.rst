@@ -18,7 +18,7 @@ PlatformIO Core uses Python's underlying ``requests`` library for HTTP requests.
 You will need to define a standard environment variable (``HTTP_PROXY``,
 ``HTTPS_PROXY``, or ``ALL_PROXY``) depending on your proxy server, and
 disable the proxy server certificate verification setting
-:ref:`setting_enable_proxy_strict_ssl` to ``false``.
+:ref:`enable_proxy_strict_ssl` to ``false``.
 
 See other proxy and SSL configuration environment variables in the
 official `Requests Proxies <https://requests.readthedocs.io/en/latest/user/advanced/#proxies>`__
@@ -29,7 +29,7 @@ documentation.
 .. code:: bash
 
   # Disable proxy server certificate verification
-  $ pio settings set setting_enable_proxy_strict_ssl false
+  $ pio settings set enable_proxy_strict_ssl false
 
   # or using global environment variable
   $ export PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL="false"
