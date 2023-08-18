@@ -203,7 +203,6 @@
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-blink-baremetal</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-thread-statistics?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-thread-statistics</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-custom-board?utm_source=platformio.org&amp;utm_medium=docs">zephyr-custom-board</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&amp;utm_medium=docs">mbed-legacy-examples</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&amp;utm_medium=docs">zephyr-synchronization</a></p></li>
 </ul>
 </section>
@@ -215,7 +214,6 @@
 <li><p><a class="reference internal" href="#tools-debug-probes" id="id8">Tools &amp; Debug Probes</a></p>
 <ul>
 <li><p><a class="reference internal" href="#on-board-debug-tools" id="id9">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id10">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
@@ -245,191 +243,41 @@ You do not need to use/buy external debug probe.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u24_301.html#board-nxplpc-lpc11u24-301"><span class="std std-ref">ARM mbed LPC11U24 (+CAN)</span></a></p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4330_m4.html#board-nxplpc-lpc4330-m4"><span class="std std-ref">Bambino-210E</span></a></p></td>
-<td><p>LPC4330</p></td>
-<td><p>204MHz</p></td>
-<td><p>8MB</p></td>
-<td><p>264KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/elektor_cocorico.html#board-nxplpc-elektor-cocorico"><span class="std std-ref">CoCo-ri-Co!</span></a></p></td>
-<td><p>LPC812</p></td>
-<td><p>30MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4088_dm.html#board-nxplpc-lpc4088-dm"><span class="std std-ref">Embedded Artists LPC4088 Display Module</span></a></p></td>
-<td><p>LPC4088</p></td>
-<td><p>120MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4088.html#board-nxplpc-lpc4088"><span class="std std-ref">Embedded Artists LPC4088 QuickStart Board</span></a></p></td>
-<td><p>LPC4088</p></td>
-<td><p>120MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
 <td><p>LPC11U68</p></td>
 <td><p>50MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>36KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc824.html#board-nxplpc-lpc824"><span class="std std-ref">LPCXpresso824-MAX</span></a></p></td>
-<td><p>LPC824</p></td>
-<td><p>30MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc812.html#board-nxplpc-lpc812"><span class="std std-ref">NXP LPC800-MAX</span></a></p></td>
-<td><p>LPC812</p></td>
-<td><p>30MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
 <td><p>LPC54114J256BD64</p></td>
 <td><p>100MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc546xx.html#board-nxplpc-lpc546xx"><span class="std std-ref">NXP LPCXpresso54608</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc546xx.html#board-nxplpc-lpc546xx"><span class="std std-ref">NXP LPCXpresso54608</span></a></p></td>
 <td><p>LPC54608ET512</p></td>
 <td><p>180MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>200KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
 <td><p>LPC55S16</p></td>
 <td><p>150MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s69.html#board-nxplpc-lpcxpresso55s69"><span class="std std-ref">NXP LPCXpresso55S69</span></a></p></td>
-<td><p>LPC55S69</p></td>
-<td><p>150MHz</p></td>
-<td><p>640KB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u24.html#board-nxplpc-lpc11u24"><span class="std std-ref">NXP mbed LPC11U24</span></a></p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1768.html#board-nxplpc-lpc1768"><span class="std std-ref">NXP mbed LPC1768</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1768.html#board-nxplpc-lpc1768"><span class="std std-ref">NXP mbed LPC1768</span></a></p></td>
 <td><p>LPC1768</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
 <td><p>LPC1768</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1114fn28.html#board-nxplpc-lpc1114fn28"><span class="std std-ref">Switch Science mbed LPC1114FN28</span></a></p></td>
-<td><p>LPC1114FN28</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/ssci824.html#board-nxplpc-ssci824"><span class="std std-ref">Switch Science mbed LPC824</span></a></p></td>
-<td><p>LPC824</p></td>
-<td><p>30MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/ubloxc027.html#board-nxplpc-ubloxc027"><span class="std std-ref">u-blox C027</span></a></p></td>
-<td><p>LPC1768</p></td>
-<td><p>96MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id10" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
-<p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
-external debug probe. They <strong>ARE NOT READY</strong> for debugging.
-Please click on board name for the further details.</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35_501.html#board-nxplpc-lpc11u35-501"><span class="std std-ref">CQ Publishing TG-LPC11U35-501</span></a></p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1347.html#board-nxplpc-lpc1347"><span class="std std-ref">DipCortex M3</span></a></p></td>
-<td><p>LPC1347</p></td>
-<td><p>72MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>12KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35.html#board-nxplpc-lpc11u35"><span class="std std-ref">EA LPC11U35 QuickStart Board</span></a></p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/blueboard_lpc11u24.html#board-nxplpc-blueboard-lpc11u24"><span class="std std-ref">NGX Technologies BlueBoard-LPC11U24</span></a></p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11c24.html#board-nxplpc-lpc11c24"><span class="std std-ref">NXP LPC11C24</span></a></p></td>
-<td><p>LPC11C24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u34_421.html#board-nxplpc-lpc11u34-421"><span class="std std-ref">NXP LPC11U34</span></a></p></td>
-<td><p>LPC11U34</p></td>
-<td><p>48MHz</p></td>
-<td><p>40KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u37_501.html#board-nxplpc-lpc11u37-501"><span class="std std-ref">NXP LPC11U37</span></a></p></td>
-<td><p>LPC11U37</p></td>
-<td><p>48MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1549.html#board-nxplpc-lpc1549"><span class="std std-ref">NXP LPCXpresso1549</span></a></p></td>
-<td><p>LPC1549</p></td>
-<td><p>72MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>36KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/dipcortexm0.html#board-nxplpc-dipcortexm0"><span class="std std-ref">Solder Splash Labs DipCortex M0</span></a></p></td>
-<td><p>LPC11U24</p></td>
-<td><p>50MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35_y5_mbug.html#board-nxplpc-lpc11u35-y5-mbug"><span class="std std-ref">y5 LPC11U35 mbug</span></a></p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -551,181 +399,6 @@ manufacturer</p>
 horizontally.</p></li>
 </ul>
 </div>
-<section id="appnearme">
-<h3>AppNearMe<a class="headerlink" href="#appnearme" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/micronfcboard.html#board-nxplpc-micronfcboard"><span class="std std-ref">MicroNFCBoard</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC11U34</p></td>
-<td><p>48MHz</p></td>
-<td><p>48KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="cq-publishing">
-<h3>CQ Publishing<a class="headerlink" href="#cq-publishing" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35_501.html#board-nxplpc-lpc11u35-501"><span class="std std-ref">CQ Publishing TG-LPC11U35-501</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="elektor-labs">
-<h3>Elektor Labs<a class="headerlink" href="#elektor-labs" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/elektor_cocorico.html#board-nxplpc-elektor-cocorico"><span class="std std-ref">CoCo-ri-Co!</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC812</p></td>
-<td><p>30MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="embedded-artists">
-<h3>Embedded Artists<a class="headerlink" href="#embedded-artists" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35.html#board-nxplpc-lpc11u35"><span class="std std-ref">EA LPC11U35 QuickStart Board</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4088_dm.html#board-nxplpc-lpc4088-dm"><span class="std std-ref">Embedded Artists LPC4088 Display Module</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC4088</p></td>
-<td><p>120MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4088.html#board-nxplpc-lpc4088"><span class="std std-ref">Embedded Artists LPC4088 QuickStart Board</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC4088</p></td>
-<td><p>120MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>96KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ghi-electronics">
-<h3>GHI Electronics<a class="headerlink" href="#ghi-electronics" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/oc_mbuino.html#board-nxplpc-oc-mbuino"><span class="std std-ref">mBuino</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>50MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="micromint">
-<h3>Micromint<a class="headerlink" href="#micromint" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc4330_m4.html#board-nxplpc-lpc4330-m4"><span class="std std-ref">Bambino-210E</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC4330</p></td>
-<td><p>204MHz</p></td>
-<td><p>8MB</p></td>
-<td><p>264KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ngx-technologies">
-<h3>NGX Technologies<a class="headerlink" href="#ngx-technologies" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/blueboard_lpc11u24.html#board-nxplpc-blueboard-lpc11u24"><span class="std std-ref">NGX Technologies BlueBoard-LPC11U24</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="nxp">
 <h3>NXP<a class="headerlink" href="#nxp" title="Permalink to this heading"></a></h3>
 <table class="docutils align-default">
@@ -739,126 +412,40 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u24_301.html#board-nxplpc-lpc11u24-301"><span class="std std-ref">ARM mbed LPC11U24 (+CAN)</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u68.html#board-nxplpc-lpc11u68"><span class="std std-ref">LPCXpresso11U68</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC11U68</p></td>
 <td><p>50MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>36KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc824.html#board-nxplpc-lpc824"><span class="std std-ref">LPCXpresso824-MAX</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC824</p></td>
-<td><p>30MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11c24.html#board-nxplpc-lpc11c24"><span class="std std-ref">NXP LPC11C24</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11C24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u34_421.html#board-nxplpc-lpc11u34-421"><span class="std std-ref">NXP LPC11U34</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U34</p></td>
-<td><p>48MHz</p></td>
-<td><p>40KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u37_501.html#board-nxplpc-lpc11u37-501"><span class="std std-ref">NXP LPC11U37</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U37</p></td>
-<td><p>48MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc812.html#board-nxplpc-lpc812"><span class="std std-ref">NXP LPC800-MAX</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC812</p></td>
-<td><p>30MHz</p></td>
-<td><p>16KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1549.html#board-nxplpc-lpc1549"><span class="std std-ref">NXP LPCXpresso1549</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC1549</p></td>
-<td><p>72MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>36KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc54114.html#board-nxplpc-lpc54114"><span class="std std-ref">NXP LPCXpresso54114</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC54114J256BD64</p></td>
 <td><p>100MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc546xx.html#board-nxplpc-lpc546xx"><span class="std std-ref">NXP LPCXpresso54608</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc546xx.html#board-nxplpc-lpc546xx"><span class="std std-ref">NXP LPCXpresso54608</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC54608ET512</p></td>
 <td><p>180MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>200KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s16.html#board-nxplpc-lpcxpresso55s16"><span class="std std-ref">NXP LPCXpresso55S16</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC55S16</p></td>
 <td><p>150MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpcxpresso55s69.html#board-nxplpc-lpcxpresso55s69"><span class="std std-ref">NXP LPCXpresso55S69</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC55S69</p></td>
-<td><p>150MHz</p></td>
-<td><p>640KB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u24.html#board-nxplpc-lpc11u24"><span class="std std-ref">NXP mbed LPC11U24</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1768.html#board-nxplpc-lpc1768"><span class="std std-ref">NXP mbed LPC1768</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1768.html#board-nxplpc-lpc1768"><span class="std std-ref">NXP mbed LPC1768</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC1768</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="outrageous-circuits">
-<h3>Outrageous Circuits<a class="headerlink" href="#outrageous-circuits" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/mbuino.html#board-nxplpc-mbuino"><span class="std std-ref">Outrageous Circuits mBuino</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -876,155 +463,12 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchGPRS.html#board-nxplpc-seeedarchgprs"><span class="std std-ref">Seeed Arch GPRS V2</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC11U37</p></td>
-<td><p>48MHz</p></td>
-<td><p>128KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>LPC1768</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/xadow_m0.html#board-nxplpc-xadow-m0"><span class="std std-ref">Seeed Xadow M0</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="smeshlink">
-<h3>Smeshlink<a class="headerlink" href="#smeshlink" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/xbed_lpc1768.html#board-nxplpc-xbed-lpc1768"><span class="std std-ref">Smeshlink xbed LPC1768</span></a></p></td>
-<td><p>No</p></td>
-<td><p>LPC1768</p></td>
-<td><p>96MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="solder-splash-labs">
-<h3>Solder Splash Labs<a class="headerlink" href="#solder-splash-labs" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1347.html#board-nxplpc-lpc1347"><span class="std std-ref">DipCortex M3</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC1347</p></td>
-<td><p>72MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>12KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/dipcortexm0.html#board-nxplpc-dipcortexm0"><span class="std std-ref">Solder Splash Labs DipCortex M0</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U24</p></td>
-<td><p>50MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="switch-science">
-<h3>Switch Science<a class="headerlink" href="#switch-science" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc1114fn28.html#board-nxplpc-lpc1114fn28"><span class="std std-ref">Switch Science mbed LPC1114FN28</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC1114FN28</p></td>
-<td><p>48MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/ssci824.html#board-nxplpc-ssci824"><span class="std std-ref">Switch Science mbed LPC824</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC824</p></td>
-<td><p>30MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="u-blox">
-<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/ubloxc027.html#board-nxplpc-ubloxc027"><span class="std std-ref">u-blox C027</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>LPC1768</p></td>
-<td><p>96MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>64KB</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="y5-design">
-<h3>y5 design<a class="headerlink" href="#y5-design" title="Permalink to this heading"></a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Debug</p></th>
-<th class="head"><p>MCU</p></th>
-<th class="head"><p>Frequency</p></th>
-<th class="head"><p>Flash</p></th>
-<th class="head"><p>RAM</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/lpc11u35_y5_mbug.html#board-nxplpc-lpc11u35-y5-mbug"><span class="std std-ref">y5 LPC11U35 mbug</span></a></p></td>
-<td><p>External</p></td>
-<td><p>LPC11U35</p></td>
-<td><p>48MHz</p></td>
-<td><p>64KB</p></td>
-<td><p>10KB</p></td>
 </tr>
 </tbody>
 </table>
