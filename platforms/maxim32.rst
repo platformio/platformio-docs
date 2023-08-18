@@ -36,7 +36,6 @@ Examples are listed from `Maxim 32 development platform repository <https://gith
 * `mbed-rtos-mutex <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-mutex?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-sysinfo <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-sysinfo?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-legacy-examples <https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -221,12 +220,6 @@ Maxim
       - 2MB
       - 256KB
     * - :ref:`board_maxim32_max32625mbed`
-      - No
-      - MAX32625
-      - 96MHz
-      - 512KB
-      - 160KB
-    * - :ref:`board_maxim32_max32625nexpaq`
       - No
       - MAX32625
       - 96MHz

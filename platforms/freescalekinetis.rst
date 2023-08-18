@@ -39,7 +39,6 @@ Examples are listed from `Freescale Kinetis development platform repository <htt
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-psa <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-psa?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-legacy-examples <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-kvstore <https://github.com/platformio/platform-freescalekinetis/tree/master/examples/mbed-rtos-kvstore?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
@@ -84,11 +83,6 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 1MB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_k20d50m`
-      - MK20DX128VLH5
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
       - MK22FN512VLH12
       - 120MHz
@@ -109,20 +103,10 @@ You do not need to use/buy external debug probe.
       - 150MHz
       - 256KB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_kl05z`
-      - MKL05Z32VFM4
-      - 48MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl27z`
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
       - MKL43Z256VLH4
@@ -157,11 +141,6 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_freescalekinetis_frdm_kl82z`
-      - MKL82Z128VLK7
-      - 96MHz
-      - 128KB
-      - 96KB
     * - :ref:`board_freescalekinetis_frdm_kw24d`
       - MKW24D512
       - 50MHz
@@ -302,12 +281,6 @@ Freescale
       - 120MHz
       - 1MB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_k20d50m`
-      - On-board
-      - MK20DX128VLH5
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
       - On-board
       - MK22FN512VLH12
@@ -332,23 +305,11 @@ Freescale
       - 150MHz
       - 256KB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_kl05z`
-      - On-board
-      - MKL05Z32VFM4
-      - 48MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - On-board
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl27z`
-      - On-board
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
       - On-board
@@ -362,12 +323,6 @@ Freescale
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_freescalekinetis_frdm_kl82z`
-      - External
-      - MKL82Z128VLK7
-      - 96MHz
-      - 128KB
-      - 96KB
     * - :ref:`board_freescalekinetis_frdm_kw24d`
       - External
       - MKW24D512

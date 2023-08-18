@@ -252,13 +252,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nxplpc_lpc11u24_301`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_espressif32_az-delivery-devkit-v4`
       - :ref:`platform_espressif32`
       - External
@@ -630,13 +623,6 @@ Boards
       - 240MHz
       - 8MB
       - 320KB
-    * - :ref:`board_nxplpc_lpc4330_m4`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4330
-      - 204MHz
-      - 8MB
-      - 264KB
     * - :ref:`board_ststm32_btt_ebb42_v1_1`
       - :ref:`platform_ststm32`
       - On-board
@@ -777,13 +763,6 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nxplpc_elektor_cocorico`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
     * - :ref:`board_espressif32_connaxio_espoir`
       - :ref:`platform_espressif32`
       - External
@@ -1022,20 +1001,6 @@ Boards
       - 48MHz
       - 64KB
       - 16KB
-    * - :ref:`board_nxplpc_lpc4088_dm`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
-    * - :ref:`board_nxplpc_lpc4088`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_espressif32_atmegazero_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -1162,13 +1127,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_freescalekinetis_frdm_k20d50m`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MK20DX128VLH5
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -1197,26 +1155,12 @@ Boards
       - 150MHz
       - 256KB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_kl05z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL05Z32VFM4
-      - 48MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`
       - On-board
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl27z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
       - :ref:`platform_freescalekinetis`
@@ -1351,13 +1295,6 @@ Boards
       - 50MHz
       - 256KB
       - 36KB
-    * - :ref:`board_nxplpc_lpc824`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1568,13 +1505,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nxplpc_lpc812`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
     * - :ref:`board_nxplpc_lpc54114`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1582,13 +1512,6 @@ Boards
       - 100MHz
       - 256KB
       - 192KB
-    * - :ref:`board_nxplpc_lpc11u24`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_nxplpc_lpc1768`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2821,20 +2744,6 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
-    * - :ref:`board_nxplpc_lpc1114fn28`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC1114FN28
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_nxplpc_ssci824`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_espressif32_dpu_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -3227,13 +3136,6 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nxplpc_ubloxc027`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
       - External
