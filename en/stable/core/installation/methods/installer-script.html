@@ -154,11 +154,20 @@
 <span id="installation-installer-script"></span><h1>Installer Script (Recommended)<a class="headerlink" href="#installer-script-recommended" title="Permalink to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>PlatformIO <strong>DOES NOT</strong> require administrative/sudo permissions. Please install using
-the default user account <strong>WITHOUT EXTRA PERMISSIONS</strong>.</p>
+<p>PlatformIO operates <strong>without the need for administrative or sudo permissions</strong>.
+It is strongly advised to perform the installation using the default user
+account and without any additional permissions. This approach ensures a smooth
+installation process and helps maintain a secure and controlled environment.</p>
 </div>
-<p>Install PlatformIO Core into the virtual Python environment using an
-<a class="reference external" href="https://github.com/platformio/platformio-core-installer">installer script</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To facilitate the integration of PlatformIO Core with <a class="reference internal" href="../../../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems and
+containers, we highly recommend installing PlatformIO Core directly from
+the <a class="reference internal" href="pypi.html#installation-pypi"><span class="std std-ref">Python Package Manager</span></a>. This method is not only the fastest but
+also the most straightforward way to ensure a seamless setup.</p>
+</div>
+<p>Install PlatformIO Core into the Virtual Python Environment using the
+<a class="reference external" href="https://github.com/platformio/platformio-core-installer">Installer Script</a>.</p>
 <p>A default location of Python virtual environment is “<a class="reference internal" href="../../../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/penv”.
 If you have any issues with PlatformIO Core, just remove this folder and re-run
 installer script.</p>
@@ -171,16 +180,13 @@ installer script.</p>
 <section id="super-quick-macos-linux">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink">Super-Quick (macOS / Linux)</a><a class="headerlink" href="#super-quick-macos-linux" title="Permalink to this heading"></a></h2>
 <p>To install or upgrade PlatformIO Core paste that at a <em>Terminal</em> prompt:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
-</pre></div>
-</div>
-<p>or using <code class="docutils literal notranslate"><span class="pre">curl</span></code></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py<span class="w"> </span>-o<span class="w"> </span>get-platformio.py
+<p>Using <code class="docutils literal notranslate"><span class="pre">curl</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>-o<span class="w"> </span>get-platformio.py<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 python3<span class="w"> </span>get-platformio.py
 </pre></div>
 </div>
 <p>or using <code class="docutils literal notranslate"><span class="pre">wget</span></code></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py<span class="w"> </span>-O<span class="w"> </span>get-platformio.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span>get-platformio.py<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 python3<span class="w"> </span>get-platformio.py
 </pre></div>
 </div>
@@ -339,7 +345,7 @@ other applications or terminals in your OS, please <a class="reference internal"
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.9 (stable)
+    v6.1.11 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

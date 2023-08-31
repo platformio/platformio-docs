@@ -29,7 +29,7 @@ documentation.
 .. code:: bash
 
   # Disable proxy server certificate verification
-  $ pio settings set setting_enable_proxy_strict_ssl false
+  $ pio settings set enable_proxy_strict_ssl false
 
   # or using global environment variable
   $ export PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL="false"

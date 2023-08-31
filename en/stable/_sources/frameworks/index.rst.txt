@@ -25,6 +25,7 @@ Frameworks
     espidf
     freedom-e-sdk
     freertos
+    fsp
     libopencm3
     mbed
     pulp-os

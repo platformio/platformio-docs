@@ -103,6 +103,9 @@ Platforms
     * - :ref:`platform_raspberrypi`
       - RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 
+    * - :ref:`platform_renesas-ra`
+      - Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
+
     * - :ref:`platform_ststm32`
       - The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -122,6 +125,9 @@ Frameworks
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32 chip
+
+    * - :ref:`framework_fsp`
+      - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.
 
     * - :ref:`framework_libopencm3`
       - Open source ARM Cortex-M microcontroller library
@@ -246,13 +252,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_nxplpc_lpc11u24_301`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_espressif32_az-delivery-devkit-v4`
       - :ref:`platform_espressif32`
       - External
@@ -512,6 +511,20 @@ Boards
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_renesas-ra_uno_r4_minima`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
       - On-board
@@ -610,13 +623,6 @@ Boards
       - 240MHz
       - 8MB
       - 320KB
-    * - :ref:`board_nxplpc_lpc4330_m4`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4330
-      - 204MHz
-      - 8MB
-      - 264KB
     * - :ref:`board_ststm32_btt_ebb42_v1_1`
       - :ref:`platform_ststm32`
       - On-board
@@ -757,13 +763,6 @@ Boards
       - 64MHz
       - 796KB
       - 243KB
-    * - :ref:`board_nxplpc_elektor_cocorico`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
     * - :ref:`board_espressif32_connaxio_espoir`
       - :ref:`platform_espressif32`
       - External
@@ -1002,20 +1001,6 @@ Boards
       - 48MHz
       - 64KB
       - 16KB
-    * - :ref:`board_nxplpc_lpc4088_dm`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
-    * - :ref:`board_nxplpc_lpc4088`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC4088
-      - 120MHz
-      - 512KB
-      - 96KB
     * - :ref:`board_espressif32_atmegazero_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -1142,13 +1127,6 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
-    * - :ref:`board_freescalekinetis_frdm_k20d50m`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MK20DX128VLH5
-      - 48MHz
-      - 128KB
-      - 16KB
     * - :ref:`board_freescalekinetis_frdm_k22f`
       - :ref:`platform_freescalekinetis`
       - On-board
@@ -1177,26 +1155,12 @@ Boards
       - 150MHz
       - 256KB
       - 256KB
-    * - :ref:`board_freescalekinetis_frdm_kl05z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL05Z32VFM4
-      - 48MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_freescalekinetis_frdm_kl25z`
       - :ref:`platform_freescalekinetis`
       - On-board
       - MKL25Z128VLK4
       - 48MHz
       - 128KB
-      - 16KB
-    * - :ref:`board_freescalekinetis_frdm_kl27z`
-      - :ref:`platform_freescalekinetis`
-      - On-board
-      - MKL27Z64VLH4
-      - 48MHz
-      - 64KB
       - 16KB
     * - :ref:`board_freescalekinetis_frdm_kl43z`
       - :ref:`platform_freescalekinetis`
@@ -1331,13 +1295,6 @@ Boards
       - 50MHz
       - 256KB
       - 36KB
-    * - :ref:`board_nxplpc_lpc824`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_nordicnrf52_laird_pinnacle_100_dvk`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1548,13 +1505,6 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_nxplpc_lpc812`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC812
-      - 30MHz
-      - 16KB
-      - 4KB
     * - :ref:`board_nxplpc_lpc54114`
       - :ref:`platform_nxplpc`
       - On-board
@@ -1562,13 +1512,6 @@ Boards
       - 100MHz
       - 256KB
       - 192KB
-    * - :ref:`board_nxplpc_lpc11u24`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC11U24
-      - 48MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_nxplpc_lpc1768`
       - :ref:`platform_nxplpc`
       - On-board
@@ -2801,20 +2744,6 @@ Boards
       - 72MHz
       - 256KB
       - 40KB
-    * - :ref:`board_nxplpc_lpc1114fn28`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC1114FN28
-      - 48MHz
-      - 32KB
-      - 4KB
-    * - :ref:`board_nxplpc_ssci824`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC824
-      - 30MHz
-      - 32KB
-      - 8KB
     * - :ref:`board_espressif32_dpu_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -3207,13 +3136,6 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
-    * - :ref:`board_nxplpc_ubloxc027`
-      - :ref:`platform_nxplpc`
-      - On-board
-      - LPC1768
-      - 96MHz
-      - 512KB
-      - 64KB
     * - :ref:`board_ststm32_ublox_c030_n211`
       - :ref:`platform_ststm32`
       - External

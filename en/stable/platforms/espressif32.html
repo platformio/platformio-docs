@@ -104,6 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi.html">Raspberry Pi RP2040</a></li>
+<li class="toctree-l3"><a class="reference internal" href="renesas-ra.html">Renesas RA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
@@ -289,7 +290,7 @@ in <a class="reference internal" href="../projectconf/index.html#projectconf"><s
 <span class="w">    </span><span class="na">-mfix-esp32-psram-cache-issue</span>
 </pre></div>
 </div>
-<p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a>:</p>
+<p>Framework <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
@@ -365,7 +366,7 @@ documentation. PlatformIO uses <strong>default partition tables</strong> dependi
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default.csv</span></code> for <a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a>
 (<a class="reference external" href="https://github.com/espressif/arduino-esp32/blob/master/tools/partitions">show pre-configured partition tables</a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a>
+<li><p><code class="docutils literal notranslate"><span class="pre">partitions_singleapp.csv</span></code> for <a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>
 (<a class="reference external" href="https://github.com/espressif/esp-idf/blob/master/components/partition_table">show pre-configured partition tables</a>)</p></li>
 </ul>
 <p>To override default table please use <code class="docutils literal notranslate"><span class="pre">board_build.partitions</span></code> option in
@@ -1758,7 +1759,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/arduino.html#framework-arduino"><span class="std std-ref">Arduino</span></a></p></td>
 <td><p>Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espidf</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/espidf.html#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a></p></td>
 <td><p>Espressif IoT Development Framework. Official development framework for ESP32 chip</p></td>
 </tr>
 </tbody>
@@ -4702,7 +4703,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.9 (stable)
+    v6.1.11 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

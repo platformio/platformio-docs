@@ -94,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi.html">Raspberry Pi RP2040</a></li>
+<li class="toctree-l3"><a class="reference internal" href="renesas-ra.html">Renesas RA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
@@ -203,7 +204,6 @@
 <li><p><a class="reference external" href="https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-usb-cdc?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-usb-cdc</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-semaphore</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-custom-module?utm_source=platformio.org&amp;utm_medium=docs">zephyr-custom-module</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&amp;utm_medium=docs">mbed-legacy-examples</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -249,23 +249,11 @@ You do not need to use/buy external debug probe.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32lg_stk3600.html#board-siliconlabsefm32-efm32lg-stk3600"><span class="std std-ref">EFM32LG-STK3600 Leopard Gecko</span></a></p></td>
-<td><p>EFM32LG990F256</p></td>
-<td><p>48MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
 <td><p>EFM32WG990F256</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32zg_stk3200.html#board-siliconlabsefm32-efm32zg-stk3200"><span class="std std-ref">EFM32ZG-STK3200 Zero Gecko</span></a></p></td>
-<td><p>EFM32ZG222F32</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32hg_stk3400.html#board-siliconlabsefm32-efm32hg-stk3400"><span class="std std-ref">SLSTK3400A USB-enabled Happy Gecko</span></a></p></td>
 <td><p>EFM32HG322F64</p></td>
@@ -273,19 +261,13 @@ You do not need to use/buy external debug probe.</p>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32pg_stk3401.html#board-siliconlabsefm32-efm32pg-stk3401"><span class="std std-ref">SLSTK3401A Pearl Gecko PG1</span></a></p></td>
-<td><p>EFM32PG1B200F256GM48</p></td>
-<td><p>40MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32gg11_stk3701.html#board-siliconlabsefm32-efm32gg11-stk3701"><span class="std std-ref">SLSTK3701A Giant Gecko S1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32gg11_stk3701.html#board-siliconlabsefm32-efm32gg11-stk3701"><span class="std std-ref">SLSTK3701A Giant Gecko S1</span></a></p></td>
 <td><p>EFM32GG11B820F2048GL192</p></td>
 <td><p>48MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
 <td><p>EFR32MG12P432F1024</p></td>
 <td><p>40MHz</p></td>
 <td><p>1MB</p></td>
@@ -386,7 +368,7 @@ manufacturer</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed OS</span></a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/zephyr.html#framework-zephyr"><span class="std std-ref">Zephyr</span></a></p></td>
@@ -425,26 +407,12 @@ horizontally.</p></li>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32lg_stk3600.html#board-siliconlabsefm32-efm32lg-stk3600"><span class="std std-ref">EFM32LG-STK3600 Leopard Gecko</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>EFM32LG990F256</p></td>
-<td><p>48MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32wg_stk3800.html#board-siliconlabsefm32-efm32wg-stk3800"><span class="std std-ref">EFM32WG-STK3800 Wonder Gecko</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>EFM32WG990F256</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32zg_stk3200.html#board-siliconlabsefm32-efm32zg-stk3200"><span class="std std-ref">EFM32ZG-STK3200 Zero Gecko</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>EFM32ZG222F32</p></td>
-<td><p>24MHz</p></td>
-<td><p>32KB</p></td>
-<td><p>4KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32hg_stk3400.html#board-siliconlabsefm32-efm32hg-stk3400"><span class="std std-ref">SLSTK3400A USB-enabled Happy Gecko</span></a></p></td>
 <td><p>On-board</p></td>
@@ -453,21 +421,14 @@ horizontally.</p></li>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32pg_stk3401.html#board-siliconlabsefm32-efm32pg-stk3401"><span class="std std-ref">SLSTK3401A Pearl Gecko PG1</span></a></p></td>
-<td><p>On-board</p></td>
-<td><p>EFM32PG1B200F256GM48</p></td>
-<td><p>40MHz</p></td>
-<td><p>256KB</p></td>
-<td><p>32KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32gg11_stk3701.html#board-siliconlabsefm32-efm32gg11-stk3701"><span class="std std-ref">SLSTK3701A Giant Gecko S1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/efm32gg11_stk3701.html#board-siliconlabsefm32-efm32gg11-stk3701"><span class="std std-ref">SLSTK3701A Giant Gecko S1</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>EFM32GG11B820F2048GL192</p></td>
 <td><p>48MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>EFR32MG12P432F1024</p></td>
 <td><p>40MHz</p></td>
@@ -606,7 +567,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.9 (stable)
+    v6.1.11 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -34,7 +34,6 @@ Examples
 
 Examples are listed from `ST STM32 development platform repository <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-rtos-wifi <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-wifi?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-ll-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `libopencm3-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&utm_medium=docs>`_
@@ -54,6 +53,7 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `zephyr-net-https-client <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-https-client?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-filesystem <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-filesystem?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-sockets <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-sockets?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-wifi-client <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-wifi-client?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-usb-keyboard <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-usb-keyboard?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-ethernet-tls <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&utm_medium=docs>`_

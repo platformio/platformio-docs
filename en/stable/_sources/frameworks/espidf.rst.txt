@@ -11,8 +11,8 @@
 
 .. _framework_espidf:
 
-Espidf
-======
+Espressif IoT Development Framework
+===================================
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``espidf``
@@ -38,7 +38,7 @@ Platforms
 Examples
 --------
 
-* `Espidf for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Espressif IoT Development Framework for Espressif 32 <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

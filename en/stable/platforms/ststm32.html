@@ -94,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi.html">Raspberry Pi RP2040</a></li>
+<li class="toctree-l3"><a class="reference internal" href="renesas-ra.html">Renesas RA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
@@ -395,7 +396,6 @@ configuration flags in <a class="reference internal" href="../projectconf/sectio
 <h2><a class="toc-backref" href="#id12" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">ST STM32 development platform repository</a>:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-wifi?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-wifi</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-blink?utm_source=platformio.org&amp;utm_medium=docs">zephyr-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-ll-blink?utm_source=platformio.org&amp;utm_medium=docs">stm32cube-ll-blink</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/libopencm3-blink?utm_source=platformio.org&amp;utm_medium=docs">libopencm3-blink</a></p></li>
@@ -415,6 +415,7 @@ configuration flags in <a class="reference internal" href="../projectconf/sectio
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-https-client?utm_source=platformio.org&amp;utm_medium=docs">zephyr-net-https-client</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-blink-baremetal</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-filesystem?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-filesystem</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-sockets?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-sockets</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-wifi-client?utm_source=platformio.org&amp;utm_medium=docs">stm32cube-hal-wifi-client</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-usb-keyboard?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-usb-keyboard</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-ethernet-tls?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-ethernet-tls</a></p></li>
@@ -2346,7 +2347,7 @@ manufacturer</p>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
 <td><p>Open source ARM Cortex-M microcontroller library</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed OS</span></a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../frameworks/spl.html#framework-spl"><span class="std std-ref">Standard Peripheral Library</span></a></p></td>
@@ -5243,7 +5244,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.9 (stable)
+    v6.1.11 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

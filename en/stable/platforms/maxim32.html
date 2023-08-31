@@ -102,6 +102,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nxplpc.html">NXP LPC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="openhw.html">OpenHW Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raspberrypi.html">Raspberry Pi RP2040</a></li>
+<li class="toctree-l3"><a class="reference internal" href="renesas-ra.html">Renesas RA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="riscv_gap.html">RISC-V GAP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shakti.html">Shakti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sifive.html">SiFive</a></li>
@@ -200,7 +201,6 @@
 <li><p><a class="reference external" href="https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-mutex?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-mutex</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-blink-baremetal</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-rtos-sysinfo?utm_source=platformio.org&amp;utm_medium=docs">mbed-rtos-sysinfo</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-maxim32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&amp;utm_medium=docs">mbed-legacy-examples</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -366,7 +366,7 @@ manufacturer</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed OS</span></a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
 </tr>
 </tbody>
@@ -409,42 +409,35 @@ horizontally.</p></li>
 <td><p>512KB</p></td>
 <td><p>160KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/max32625nexpaq.html#board-maxim32-max32625nexpaq"><span class="std std-ref">MAX32625NEXPAQ</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/max32625pico.html#board-maxim32-max32625pico"><span class="std std-ref">MAX32625PICO</span></a></p></td>
 <td><p>No</p></td>
 <td><p>MAX32625</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>160KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/maxim32/max32625pico.html#board-maxim32-max32625pico"><span class="std std-ref">MAX32625PICO</span></a></p></td>
-<td><p>No</p></td>
-<td><p>MAX32625</p></td>
-<td><p>96MHz</p></td>
-<td><p>512KB</p></td>
-<td><p>160KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/max32600mbed.html#board-maxim32-max32600mbed"><span class="std std-ref">Maxim ARM mbed Enabled Development Platform for MAX32600</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/maxim32/max32600mbed.html#board-maxim32-max32600mbed"><span class="std std-ref">Maxim ARM mbed Enabled Development Platform for MAX32600</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>MAX32600</p></td>
 <td><p>24MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/maxim32/max32620hsp.html#board-maxim32-max32620hsp"><span class="std std-ref">Maxim Health Sensor Platform</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/max32620hsp.html#board-maxim32-max32620hsp"><span class="std std-ref">Maxim Health Sensor Platform</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MAX32620</p></td>
 <td><p>96MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/max32630fthr.html#board-maxim32-max32630fthr"><span class="std std-ref">Maxim MAX32630FTHR Application Platform</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/maxim32/max32630fthr.html#board-maxim32-max32630fthr"><span class="std std-ref">Maxim MAX32630FTHR Application Platform</span></a></p></td>
 <td><p>No</p></td>
 <td><p>MAX32630</p></td>
 <td><p>96MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/maxim32/maxwsnenv.html#board-maxim32-maxwsnenv"><span class="std std-ref">Maxim Wireless Sensor Node Demonstrator</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/maxim32/maxwsnenv.html#board-maxim32-maxwsnenv"><span class="std std-ref">Maxim Wireless Sensor Node Demonstrator</span></a></p></td>
 <td><p>External</p></td>
 <td><p>MAX32610</p></td>
 <td><p>24MHz</p></td>
@@ -613,7 +606,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.9 (stable)
+    v6.1.11 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
