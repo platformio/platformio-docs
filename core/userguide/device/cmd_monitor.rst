@@ -255,7 +255,6 @@ See the base API below:
 
   from platformio.public import DeviceMonitorFilterBase
 
-
   class Demo(DeviceMonitorFilterBase):
       NAME = "demo"
 
@@ -270,11 +269,45 @@ See the base API below:
           print(f"Sent: {text}\n")
           return text
 
+
+
 **Examples**
 
-- https://github.com/platformio/platformio-core/tree/develop/platformio/device/filters
+- https://github.com/platformio/platformio-core/tree/develop/platformio/device/monitor/filters
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor
+
+**Working with binary monitor data**
+
+When working with binary monitor data in a custom filter, you will need to ensure that the `monitor_encoding` option is set and matches the encoding of the terminal. Otherwise, the data present in `text` may be mangled. If you are seeing mangled data, try using `latin1`.
+
+To parse byte-by-byte:
+
+.. code-block:: python
+
+  from platformio.public import DeviceMonitorFilterBase
+
+  class BinaryDemo(DeviceMonitorFilterBase):
+      NAME = "binary_demo"
+
+      def __init__(self, *args, **kwargs):
+          super().__init__(*args, **kwargs)
+          print("Binary Demo filter is loaded")
+
+      def rx(self, text):
+          result = []
+          for b in serial.iterbytes(text):
+              asciicode = ord(b)
+              result.append(asciicode)
+          return f"Received: {result}\n"
+
+      def tx(self, text):
+          result = []
+          for b in serial.iterbytes(text):
+              asciicode = ord(b)
+              result.append(asciicode)
+          return f"Sent: {result}\n"
+
 
 Capture output to a file
 ~~~~~~~~~~~~~~~~~~~~~~~~
