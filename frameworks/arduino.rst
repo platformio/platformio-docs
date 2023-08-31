@@ -1181,6 +1181,12 @@ Please click on board name for the further details.
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -1643,6 +1649,12 @@ Please click on board name for the further details.
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_raspberrypi_nanorp2040connect`
       - :ref:`platform_raspberrypi`
       - RP2040
@@ -1990,6 +2002,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - :ref:`platform_espressif32`
@@ -2375,6 +2393,12 @@ Please click on board name for the further details.
       - 64MHz
       - 796KB
       - 243KB
+    * - :ref:`board_espressif32_nebulas3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2470,6 +2494,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-stamps3`
       - :ref:`platform_espressif32`
@@ -4588,6 +4618,13 @@ Adafruit
       - 120MHz
       - 496KB
       - 192KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_atmelavr_metro`
       - :ref:`platform_atmelavr`
       - External
@@ -5337,6 +5374,13 @@ Arduino
       - 16MHz
       - 30KB
       - 2KB
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_atmelmegaavr_nano_every`
       - :ref:`platform_atmelmegaavr`
       - No
@@ -6169,6 +6213,13 @@ DFRobot
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
@@ -8187,6 +8238,27 @@ KITS
       - 4MB
       - 320KB
 
+Kinetic Dynamics
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nebulas3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 LOGISENSES
 ~~~~~~~~~~
 
@@ -8466,6 +8538,13 @@ M5Stack
       - 240MHz
       - 16MB
       - 4.31MB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-fire`
       - :ref:`platform_espressif32`
       - No
@@ -8509,6 +8588,13 @@ M5Stack
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-coreink`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stamp-pico`
       - :ref:`platform_espressif32`
       - No
       - ESP32

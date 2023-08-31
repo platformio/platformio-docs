@@ -193,6 +193,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -240,6 +246,12 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_bpi_leaf_s3`
       - :ref:`platform_espressif32`
@@ -294,6 +306,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - :ref:`platform_espressif32`
@@ -415,6 +433,12 @@ Please click on board name for the further details.
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c6-devkitm-1`
+      - :ref:`platform_espressif32`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -511,6 +535,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_nebulas3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
       - :ref:`platform_espressif32`
       - ESP32
@@ -534,6 +564,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-stamps3`
       - :ref:`platform_espressif32`
@@ -1115,6 +1151,13 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -1240,6 +1283,27 @@ April Brother
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
 
 BPI Tech
@@ -1401,6 +1465,13 @@ DFRobot
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_firebeetle32`
       - :ref:`platform_espressif32`
@@ -1686,6 +1757,20 @@ Espressif
       - :ref:`platform_espressif32`
       - External
       - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-c6-devkitc-1`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32C6
+      - 160MHz
+      - 8MB
+      - 512KB
+    * - :ref:`board_espressif32_esp32-c6-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
       - 160MHz
       - 4MB
       - 320KB
@@ -2033,6 +2118,27 @@ KITS
       - 4MB
       - 320KB
 
+Kinetic Dynamics
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nebulas3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 LOGISENSES
 ~~~~~~~~~~
 
@@ -2151,6 +2257,13 @@ M5Stack
       - 240MHz
       - 16MB
       - 4.31MB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-fire`
       - :ref:`platform_espressif32`
       - No
@@ -2194,6 +2307,13 @@ M5Stack
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-coreink`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stamp-pico`
       - :ref:`platform_espressif32`
       - No
       - ESP32

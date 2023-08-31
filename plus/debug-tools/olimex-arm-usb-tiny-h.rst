@@ -263,6 +263,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - :ref:`platform_espressif32`
       - External
@@ -318,6 +325,13 @@ Boards
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_sifive_e310-arty`
       - :ref:`platform_sifive`
@@ -402,6 +416,13 @@ Boards
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - :ref:`platform_espressif32`
@@ -557,6 +578,13 @@ Boards
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c6-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - :ref:`platform_espressif32`
       - External
@@ -683,6 +711,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_nebulas3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
       - :ref:`platform_espressif32`
       - External
@@ -710,6 +745,13 @@ Boards
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-stamps3`
       - :ref:`platform_espressif32`
