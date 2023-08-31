@@ -255,6 +255,7 @@ See the base API below:
 
   from platformio.public import DeviceMonitorFilterBase
 
+
   class Demo(DeviceMonitorFilterBase):
       NAME = "demo"
 
@@ -269,8 +270,6 @@ See the base API below:
           print(f"Sent: {text}\n")
           return text
 
-
-
 **Examples**
 
 - https://github.com/platformio/platformio-core/tree/develop/platformio/device/monitor/filters
@@ -279,12 +278,13 @@ See the base API below:
 
 **Working with binary monitor data**
 
-When working with binary monitor data in a custom filter, you will need to ensure that the `monitor_encoding` option is set and matches the encoding of the terminal. Otherwise, the data present in `text` may be mangled. If you are seeing mangled data, try using `latin1`.
+When working with binary monitor data in a custom filter, you will need to ensure that the `monitor_encoding` option is set and matches the encoding of the terminal. Otherwise, the data present in `text` may be mangled. If you are seeing mangled data, try using a single-byte encoding like `latin1`.
 
 To parse byte-by-byte:
 
 .. code-block:: python
 
+  import serial
   from platformio.public import DeviceMonitorFilterBase
 
   class BinaryDemo(DeviceMonitorFilterBase):
