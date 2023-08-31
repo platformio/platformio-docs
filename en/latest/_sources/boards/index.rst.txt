@@ -470,6 +470,7 @@ Espressif 32
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_itsybitsy_esp32
     espressif32/adafruit_magtag29_esp32s2
+    espressif32/adafruit_matrixportal_esp32s3
     espressif32/adafruit_metro_esp32s2
     espressif32/adafruit_qtpy_esp32
     espressif32/adafruit_qtpy_esp32c3
@@ -479,6 +480,7 @@ Espressif 32
     espressif32/nodemcu-32s2
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
+    espressif32/arduino_nano_esp32
     espressif32/bpi-bit
     espressif32/bpi_leaf_s3
     espressif32/wifiduino32
@@ -493,6 +495,7 @@ Espressif 32
     espressif32/dfrobot_beetle_esp32c3
     espressif32/dfrobot_firebeetle2_esp32e
     espressif32/dfrobot_firebeetle2_esp32s3
+    espressif32/dfrobot_romeo_esp32s3
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
@@ -518,6 +521,8 @@ Espressif 32
     espressif32/esp32dev
     espressif32/esp32-c3-devkitc-02
     espressif32/esp32-c3-devkitm-1
+    espressif32/esp32-c6-devkitc-1
+    espressif32/esp32-c6-devkitm-1
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
     espressif32/esp32s3box
@@ -544,6 +549,7 @@ Espressif 32
     espressif32/intorobot
     espressif32/iotaap_magnolia
     espressif32/kits-edu
+    espressif32/nebulas3
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
     espressif32/lilygo-t-display-s3
@@ -551,6 +557,7 @@ Espressif 32
     espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
+    espressif32/m5stack-cores3
     espressif32/m5stack-fire
     espressif32/m5stack-grey
     espressif32/m5stack-stamps3
@@ -558,6 +565,7 @@ Espressif 32
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
     espressif32/m5stack-coreink
+    espressif32/m5stamp-pico
     espressif32/m5stick-c
     espressif32/mgbot-iotik32a
     espressif32/mgbot-iotik32b

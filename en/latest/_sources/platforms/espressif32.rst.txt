@@ -195,6 +195,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - ESP32S2
       - 240MHz
@@ -234,6 +239,11 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_bpi_leaf_s3`
       - ESP32S3
@@ -289,6 +299,11 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32doit-devkit-v1`
       - ESP32
@@ -390,6 +405,11 @@ Please click on board name for the further details.
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-c6-devkitm-1`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - ESP32S2
       - 240MHz
@@ -475,6 +495,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_nebulas3`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sensesiot_weizen`
       - ESP32
       - 240MHz
@@ -494,6 +519,11 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-stamps3`
       - ESP32S3
@@ -911,6 +941,9 @@ Packages
     * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
       - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
 
+    * - `tool-dfuutil-arduino <https://registry.platformio.org/tools/platformio/tool-dfuutil-arduino>`__
+      - Device Firmware Upgrade Utilities
+
     * - `tool-esptoolpy <https://registry.platformio.org/tools/platformio/tool-esptoolpy>`__
       - A Python-based, open-source, platform-independent utility to communicate with the ROM bootloader in Espressif chips
 
@@ -937,6 +970,12 @@ Packages
 
     * - `tool-openocd-esp32 <https://registry.platformio.org/tools/platformio/tool-openocd-esp32>`__
       - Open On-Chip Debugger for Espressif ESP32
+
+    * - `tool-riscv32-esp-elf-gdb <https://registry.platformio.org/tools/espressif/tool-riscv32-esp-elf-gdb>`__
+      - GNU GDB for Espressif ESP32 Xtensa MCUs (RISC-V Core)
+
+    * - `tool-xtensa-esp-elf-gdb <https://registry.platformio.org/tools/espressif/tool-xtensa-esp-elf-gdb>`__
+      - GNU GDB for Espressif ESP32 Xtensa MCUs (RISC-V Core)
 
     * - `toolchain-esp32ulp <https://registry.platformio.org/tools/platformio/toolchain-esp32ulp>`__
       - Binutils fork with support for the Espressif ESP32 ULP co-processor
@@ -1111,6 +1150,12 @@ Adafruit
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_matrixportal_esp32s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_metro_esp32s2`
       - External
       - ESP32S2
@@ -1222,6 +1267,25 @@ April Brother
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Arduino
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_arduino_nano_esp32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
 
 BPI Tech
@@ -1366,6 +1430,12 @@ DFRobot
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_dfrobot_romeo_esp32s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_firebeetle32`
       - External
@@ -1621,6 +1691,18 @@ Espressif
     * - :ref:`board_espressif32_esp32-c3-devkitm-1`
       - External
       - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-c6-devkitc-1`
+      - No
+      - ESP32C6
+      - 160MHz
+      - 8MB
+      - 512KB
+    * - :ref:`board_espressif32_esp32-c6-devkitm-1`
+      - External
+      - ESP32C6
       - 160MHz
       - 4MB
       - 320KB
@@ -1950,6 +2032,25 @@ KITS
       - 4MB
       - 320KB
 
+Kinetic Dynamics
+~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_nebulas3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 LOGISENSES
 ~~~~~~~~~~
 
@@ -2056,6 +2157,12 @@ M5Stack
       - 240MHz
       - 16MB
       - 4.31MB
+    * - :ref:`board_espressif32_m5stack-cores3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_m5stack-fire`
       - No
       - ESP32
@@ -2093,6 +2200,12 @@ M5Stack
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_m5stack-coreink`
+      - No
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_m5stamp-pico`
       - No
       - ESP32
       - 240MHz
