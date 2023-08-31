@@ -716,17 +716,13 @@ Freescale Kinetis
     :maxdepth: 1
         
     freescalekinetis/IBMEthernetKit
-    freescalekinetis/frdm_k20d50m
     freescalekinetis/frdm_k22f
     freescalekinetis/frdm_k64f
     freescalekinetis/frdm_k66f
     freescalekinetis/frdm_k82f
-    freescalekinetis/frdm_kl05z
     freescalekinetis/frdm_kl25z
-    freescalekinetis/frdm_kl27z
     freescalekinetis/frdm_kl43z
     freescalekinetis/frdm_kl46z
-    freescalekinetis/frdm_kl82z
     freescalekinetis/frdm_kw24d
     freescalekinetis/frdm_kw41z
     freescalekinetis/hexiwear
@@ -1057,7 +1053,6 @@ Maxim 32
         
     maxim32/max32620fthr
     maxim32/max32625mbed
-    maxim32/max32625nexpaq
     maxim32/max32625pico
     maxim32/max32600mbed
     maxim32/max32620hsp
@@ -1203,40 +1198,12 @@ NXP LPC
 .. toctree::
     :maxdepth: 1
         
-    nxplpc/lpc11u24_301
-    nxplpc/lpc4330_m4
-    nxplpc/lpc11u35_501
-    nxplpc/elektor_cocorico
-    nxplpc/lpc1347
-    nxplpc/lpc11u35
-    nxplpc/lpc4088_dm
-    nxplpc/lpc4088
     nxplpc/lpc11u68
-    nxplpc/lpc824
-    nxplpc/micronfcboard
-    nxplpc/blueboard_lpc11u24
-    nxplpc/lpc11c24
-    nxplpc/lpc11u34_421
-    nxplpc/lpc11u37_501
-    nxplpc/lpc812
-    nxplpc/lpc1549
     nxplpc/lpc54114
     nxplpc/lpc546xx
     nxplpc/lpcxpresso55s16
-    nxplpc/lpcxpresso55s69
-    nxplpc/lpc11u24
     nxplpc/lpc1768
-    nxplpc/mbuino
-    nxplpc/seeedArchGPRS
     nxplpc/seeedArchPro
-    nxplpc/xadow_m0
-    nxplpc/xbed_lpc1768
-    nxplpc/dipcortexm0
-    nxplpc/lpc1114fn28
-    nxplpc/ssci824
-    nxplpc/oc_mbuino
-    nxplpc/ubloxc027
-    nxplpc/lpc11u35_y5_mbug
 
 OpenHW Group
 ------------
@@ -1305,11 +1272,8 @@ Silicon Labs EFM32
     :maxdepth: 1
         
     siliconlabsefm32/efm32gg_stk3700
-    siliconlabsefm32/efm32lg_stk3600
     siliconlabsefm32/efm32wg_stk3800
-    siliconlabsefm32/efm32zg_stk3200
     siliconlabsefm32/efm32hg_stk3400
-    siliconlabsefm32/efm32pg_stk3401
     siliconlabsefm32/efm32gg11_stk3701
     siliconlabsefm32/tb_sense_12
 

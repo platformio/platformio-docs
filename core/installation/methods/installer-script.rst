@@ -15,11 +15,19 @@ Installer Script (Recommended)
 ------------------------------
 
 .. warning::
-    PlatformIO **DOES NOT** require administrative/sudo permissions. Please install using
-    the default user account **WITHOUT EXTRA PERMISSIONS**.
+    PlatformIO operates **without the need for administrative or sudo permissions**.
+    It is strongly advised to perform the installation using the default user
+    account and without any additional permissions. This approach ensures a smooth
+    installation process and helps maintain a secure and controlled environment.
 
-Install PlatformIO Core into the virtual Python environment using an
-`installer script <https://github.com/platformio/platformio-core-installer>`_.
+.. note::
+    To facilitate the integration of PlatformIO Core with :ref:`ci` systems and
+    containers, we highly recommend installing PlatformIO Core directly from
+    the :ref:`installation_pypi`. This method is not only the fastest but
+    also the most straightforward way to ensure a seamless setup.
+
+Install PlatformIO Core into the Virtual Python Environment using the
+`Installer Script <https://github.com/platformio/platformio-core-installer>`_.
 
 A default location of Python virtual environment is ":ref:`projectconf_pio_core_dir`/penv".
 If you have any issues with PlatformIO Core, just remove this folder and re-run
@@ -33,22 +41,18 @@ Super-Quick (macOS / Linux)
 
 To install or upgrade PlatformIO Core paste that at a *Terminal* prompt:
 
-.. code-block:: bash
-
-    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
-
-or using ``curl``
+Using ``curl``
 
 .. code-block:: bash
 
-    curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -o get-platformio.py
+    curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
     python3 get-platformio.py
 
 or using ``wget``
 
 .. code-block:: bash
 
-    wget https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -O get-platformio.py
+    wget -O get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
     python3 get-platformio.py
 
 

@@ -39,7 +39,6 @@ Examples are listed from `Silicon Labs EFM32 development platform repository <ht
 * `mbed-rtos-usb-cdc <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-usb-cdc?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-semaphore <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-custom-module <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-custom-module?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-legacy-examples <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-legacy-examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -83,31 +82,16 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 1MB
       - 128KB
-    * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
-      - EFM32LG990F256
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
-      - EFM32ZG222F32
-      - 24MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - EFM32HG322F64
       - 25MHz
       - 64KB
       - 8KB
-    * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
-      - EFM32PG1B200F256GM48
-      - 40MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
       - EFM32GG11B820F2048GL192
       - 48MHz
@@ -240,36 +224,18 @@ Silicon Labs
       - 48MHz
       - 1MB
       - 128KB
-    * - :ref:`board_siliconlabsefm32_efm32lg_stk3600`
-      - On-board
-      - EFM32LG990F256
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_siliconlabsefm32_efm32wg_stk3800`
       - On-board
       - EFM32WG990F256
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_siliconlabsefm32_efm32zg_stk3200`
-      - On-board
-      - EFM32ZG222F32
-      - 24MHz
-      - 32KB
-      - 4KB
     * - :ref:`board_siliconlabsefm32_efm32hg_stk3400`
       - On-board
       - EFM32HG322F64
       - 25MHz
       - 64KB
       - 8KB
-    * - :ref:`board_siliconlabsefm32_efm32pg_stk3401`
-      - On-board
-      - EFM32PG1B200F256GM48
-      - 40MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_siliconlabsefm32_efm32gg11_stk3701`
       - On-board
       - EFM32GG11B820F2048GL192

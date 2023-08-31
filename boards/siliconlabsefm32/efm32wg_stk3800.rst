@@ -120,8 +120,5 @@ Frameworks
     * - Name
       - Description
 
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is a platform operating system designed for the internet of things
-
     * - :ref:`framework_zephyr`
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

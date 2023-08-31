@@ -37,6 +37,7 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `zephyr-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-net-echo-client <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-net-echo-client?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `mbed-rtos-ble-battery <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-ble-battery?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-ble-led?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-ble-beacon <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/zephyr-ble-beacon?utm_source=platformio.org&utm_medium=docs>`_
@@ -45,7 +46,6 @@ Examples are listed from `Nordic nRF52 development platform repository <https://
 * `arduino-nina-b1-generic-example <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-nina-b1-generic-example?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-bluefruit-bleuart <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-bluefruit-bleuart?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-serial-plotter <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/arduino-serial-plotter?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-rtos-ble-thermometer <https://github.com/platformio/platform-nordicnrf52/tree/master/examples/mbed-rtos-ble-thermometer?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

@@ -19,7 +19,7 @@ Build Node(Object) construction. This is very useful if you need to add custom f
 for the specific file nodes or exclude them from a build process.
 
 There is ``env.AddBuildMiddleware(callback, pattern)`` helper which instructs
-PlatformIO Build System to call ``callback`` for each `SCons File System Node <https://scons.org/doc/latest/HTML/scons-api/SCons.Node.FS.Dir-class.html>`_
+PlatformIO Build System to call ``callback`` for each `SCons File System Node <https://scons.org/doc/latest/HTML/scons-api/SCons.Node/#SCons.Node.FS.Dir>`_
 whose path matches with `Unix shell-style "pattern" (wildcards) <https://docs.python.org/3.9/library/fnmatch.html>`_.
 
 If a ``pattern`` is omitted, the ``callback`` will be called for each File System Node
