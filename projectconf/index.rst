@@ -51,8 +51,8 @@ For more examples, see :ref:`official project examples and community projects <t
     [platformio]
     default_envs = nodemcuv2
 
-    ; Set/override default options for each "[env:***]"
-    [env]
+    ; custom common options
+    [common]
     build_flags =
         -D VERSION=1.2.3
         -D DEBUG=1
@@ -71,14 +71,14 @@ For more examples, see :ref:`official project examples and community projects <t
 
     ; Build options
     build_flags =
-        ${env.build_flags}
+        ${common.build_flags}
         -DSSID_NAME=HELLO
         -DSSID_PASWORD=WORLD
 
     ; Library options
     lib_deps =
-        ${env.lib_deps_builtin}
-        ${env.lib_deps_external}
+        ${common.lib_deps_builtin}
+        ${common.lib_deps_external}
         https://github.com/me-no-dev/ESPAsyncTCP.git
         knolleary/PubSubClient@^2.8
         paulstoffregen/OneWire
@@ -98,7 +98,7 @@ For more examples, see :ref:`official project examples and community projects <t
     board = bluepill_f103c8
 
     ; Library options
-    lib_deps = ${env.lib_deps_external}
+    lib_deps = ${common.lib_deps_external}
 
     ; Debug options
     debug_tool = custom
