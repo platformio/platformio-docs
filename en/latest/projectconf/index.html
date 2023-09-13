@@ -173,8 +173,8 @@ are ignored and may be used to provide comments.</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[platformio]</span>
 <span class="na">default_envs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nodemcuv2</span>
 
-<span class="c1">; Set/override default options for each &quot;[env:***]&quot;</span>
-<span class="k">[env]</span>
+<span class="c1">; custom common options</span>
+<span class="k">[common]</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
 <span class="w">    </span><span class="na">-D VERSION</span><span class="o">=</span><span class="s">1.2.3</span>
 <span class="w">    </span><span class="na">-D DEBUG</span><span class="o">=</span><span class="s">1</span>
@@ -193,14 +193,14 @@ are ignored and may be used to provide comments.</p>
 
 <span class="c1">; Build options</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="na">${env.build_flags}</span>
+<span class="w">    </span><span class="na">${common.build_flags}</span>
 <span class="w">    </span><span class="na">-DSSID_NAME</span><span class="o">=</span><span class="s">HELLO</span>
 <span class="w">    </span><span class="na">-DSSID_PASWORD</span><span class="o">=</span><span class="s">WORLD</span>
 
 <span class="c1">; Library options</span>
 <span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="na">${env.lib_deps_builtin}</span>
-<span class="w">    </span><span class="na">${env.lib_deps_external}</span>
+<span class="w">    </span><span class="na">${common.lib_deps_builtin}</span>
+<span class="w">    </span><span class="na">${common.lib_deps_external}</span>
 <span class="w">    </span><span class="na">https</span><span class="o">:</span><span class="s">//github.com/me-no-dev/ESPAsyncTCP.git</span>
 <span class="w">    </span><span class="na">knolleary/PubSubClient@^2.8</span>
 <span class="w">    </span><span class="na">paulstoffregen/OneWire</span>
@@ -220,7 +220,7 @@ are ignored and may be used to provide comments.</p>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">bluepill_f103c8</span>
 
 <span class="c1">; Library options</span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${env.lib_deps_external}</span>
+<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.lib_deps_external}</span>
 
 <span class="c1">; Debug options</span>
 <span class="na">debug_tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">custom</span>
