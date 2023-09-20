@@ -56,5 +56,5 @@ Example of using a `Espressif 32 development platform <https://registry.platform
 
 
 .. note::
-    We highly recommend pinning the platform to a verison.
+    We highly recommend pinning the platform to a version.
     See :ref:`cmd_pkg_install_requirements` for details.    
