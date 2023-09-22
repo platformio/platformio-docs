@@ -120,7 +120,7 @@ Arduino Nano ESP32 does not have on-board debug probe and **IS NOT READY** for d
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
-  * - :ref:`debugging_tool_dfu`
+  * - ``dfu``
     - 
     - 
   * - ``esp-bridge``
