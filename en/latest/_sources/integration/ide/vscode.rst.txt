@@ -159,9 +159,12 @@ PlatformIO Core (CLI)
 There are 2 ways how to access :ref:`piocore`:
 
 1. "Terminal" icon on the :ref:`ide_vscode_toolbar`
+
+   .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-toolbar-terminal.png
+
 2. Left Activity Bar > PlatformIO (ant icon) > Quick Access > Miscellaneous > PlatformIO Core CLI
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
+   .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
 
 Project Tasks
 -------------

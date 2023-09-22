@@ -614,8 +614,8 @@ That macro will add the <code class="docutils literal notranslate"><span class="
 <h4><a class="toc-backref" href="#id26" role="doc-backlink">Selecting appropriate Filesystem</a><a class="headerlink" href="#selecting-appropriate-filesystem" title="Permalink to this heading"></a></h4>
 <p>There are two file systems for utilizing the on-board flash on the ESP8266: <code class="docutils literal notranslate"><span class="pre">SPIFFS</span></code>
 and <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code>. They provide a compatible API but have incompatible on-flash
-implementations, so it is important to choose one or the per project as attempting to
-mount a SPIFFS volume under LittleFS may result in a format operation and definitely
+implementations, so it is important to choose one or the other per project as attempting
+to mount a SPIFFS volume under LittleFS may result in a format operation and definitely
 will not preserve any files, and vice-versa.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>

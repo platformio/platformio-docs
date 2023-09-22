@@ -23,7 +23,7 @@ argument ``target`` can be the name of a target that is passed using the
 to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
 .. warning::
-    The actions can only be applied to the global construction environemnt
+    The actions can only be applied to the global construction environment
     (see :ref:`scripting_envs`).
 
 **Examples**
