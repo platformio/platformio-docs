@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_g0b1re:
+.. _board_ststm32_lora_e5_mini:
 
-ST Nucleo G0B1RE
-================
+SeeedStudio LoRa-E5 mini
+========================
 
 .. contents::
 
@@ -24,69 +24,44 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32G0B1RET6
+    - STM32WLE5JC
   * - **Frequency**
-    - 64MHz
+    - 48MHz
   * - **Flash**
-    - 512KB
+    - 256KB
   * - **RAM**
-    - 144KB
+    - 64KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g0b1re.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `SeeedStudio <https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_g0b1re`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lora_e5_mini`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_g0b1re]
+  [env:lora_e5_mini]
   platform = ststm32
-  board = nucleo_g0b1re
+  board = lora_e5_mini
 
-You can override default ST Nucleo G0B1RE settings per build environment using
+You can override default SeeedStudio LoRa-E5 mini settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_g0b1re.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g0b1re.json>`_. For example,
+board manifest `lora_e5_mini.json <https://github.com/platformio/platform-ststm32/blob/master/boards/lora_e5_mini.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_g0b1re]
+  [env:lora_e5_mini]
   platform = ststm32
-  board = nucleo_g0b1re
+  board = lora_e5_mini
 
   ; change microcontroller
-  board_build.mcu = stm32g0b1ret6
+  board_build.mcu = stm32wle5jc
 
   ; change MCU frequency
-  board_build.f_cpu = 64000000L
-
-
-Uploading
----------
-ST Nucleo G0B1RE supports the following uploading protocols:
-
-* ``blackmagic``
-* ``cmsis-dap``
-* ``dfu``
-* ``jlink``
-* ``mbed``
-* ``serial``
-* ``stlink``
-
-Default protocol is ``stlink``
-
-You can change upload protocol using :ref:`projectconf_upload_protocol` option:
-
-.. code-block:: ini
-
-  [env:nucleo_g0b1re]
-  platform = ststm32
-  board = nucleo_g0b1re
-
-  upload_protocol = stlink
+  board_build.f_cpu = 48000000L
 
 Debugging
 ---------
@@ -101,7 +76,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo G0B1RE has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+SeeedStudio LoRa-E5 mini does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -109,17 +84,8 @@ ST Nucleo G0B1RE has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
-  * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
-  * - :ref:`debugging_tool_jlink`
-    - 
-    - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
+    - 
     - Yes
 
 Frameworks
@@ -132,6 +98,3 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency

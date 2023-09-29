@@ -1011,13 +1011,6 @@ Boards
       - 64MHz
       - 515.25KB
       - 62.78KB
-    * - :ref:`board_ststm32_nicla_vision_m4`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - :ref:`platform_ststm32`
       - External
@@ -1025,6 +1018,13 @@ Boards
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_opta`
       - :ref:`platform_ststm32`
       - External
@@ -1998,6 +1998,13 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
     * - :ref:`board_espressif32_lilygo-t-display-s3`
       - :ref:`platform_espressif32`
       - External
@@ -3067,7 +3074,7 @@ Boards
       - On-board
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -3825,6 +3832,13 @@ Boards
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
@@ -3839,6 +3853,13 @@ Boards
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - External
@@ -3902,6 +3923,13 @@ Boards
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_atmelsam_seeed_femto`
       - :ref:`platform_atmelsam`
       - External
@@ -4049,6 +4077,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_teensy_teensymm`
       - :ref:`platform_teensy`
       - External

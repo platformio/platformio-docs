@@ -220,6 +220,12 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_mxchip_az3166`
       - :ref:`platform_ststm32`
       - STM32F412ZGT6
@@ -482,7 +488,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -1661,18 +1667,18 @@ Please click on board name for the further details.
       - 133MHz
       - 2MB
       - 264KB
-    * - :ref:`board_ststm32_nicla_vision_m4`
-      - :ref:`platform_ststm32`
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_opta`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -3365,6 +3371,18 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - STM32F103RCT6
@@ -3437,6 +3455,18 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - :ref:`platform_ststm32`
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_lora_e5_mini`
+      - :ref:`platform_ststm32`
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_atmelavr_seeeduino`
       - :ref:`platform_atmelavr`
       - ATMEGA328P
@@ -3611,6 +3641,12 @@ Please click on board name for the further details.
       - 8MHz
       - 252KB
       - 8KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_teensy_teensymm`
       - :ref:`platform_teensy`
       - IMXRT1062
@@ -5402,13 +5438,6 @@ Arduino
       - 64MHz
       - 515.25KB
       - 62.78KB
-    * - :ref:`board_ststm32_nicla_vision_m4`
-      - :ref:`platform_ststm32`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - :ref:`platform_ststm32`
       - External
@@ -5416,6 +5445,13 @@ Arduino
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_opta`
       - :ref:`platform_ststm32`
       - External
@@ -7768,6 +7804,13 @@ Generic
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
 
 Gimasi
 ~~~~~~
@@ -8342,6 +8385,27 @@ LeafLabs
       - 72MHz
       - 108KB
       - 20KB
+
+Leafony Systems
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
 
 Lifely.cc
 ~~~~~~~~~
@@ -11406,7 +11470,7 @@ ST
       - On-board
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -11604,6 +11668,13 @@ ST
       - 16MHz
       - 16KB
       - 2KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - :ref:`platform_ststm32`
       - External
@@ -11856,6 +11927,20 @@ SeeedStudio
       - 80MHz
       - 508KB
       - 128KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_lora_e5_mini`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_atmelavr_seeeduino`
       - :ref:`platform_atmelavr`
       - External
@@ -12094,6 +12179,13 @@ SparkFun
       - 8MHz
       - 252KB
       - 8KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_teensy_teensymm`
       - :ref:`platform_teensy`
       - External

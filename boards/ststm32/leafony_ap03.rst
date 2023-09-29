@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_blackpill_f411ce:
+.. _board_ststm32_leafony_ap03:
 
-WeAct Studio BlackPill V2.0 (STM32F411CE)
-=========================================
+Leafony Systems AP03
+====================
 
 .. contents::
 
@@ -24,68 +24,68 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32F411CEU6
+    - STM32L452RET6
   * - **Frequency**
-    - 100MHz
+    - 80MHz
   * - **Flash**
     - 512KB
   * - **RAM**
-    - 128KB
+    - 160KB
   * - **Vendor**
-    - `WeAct Studio <https://github.com/WeActStudio/WeActStudio.MiniSTM32F4x1?utm_source=platformio.org&utm_medium=docs>`__
+    - `Leafony Systems <https://shop.leafony.com/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``blackpill_f411ce`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``leafony_ap03`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:leafony_ap03]
   platform = ststm32
-  board = blackpill_f411ce
+  board = leafony_ap03
 
-You can override default WeAct Studio BlackPill V2.0 (STM32F411CE) settings per build environment using
+You can override default Leafony Systems AP03 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `blackpill_f411ce.json <https://github.com/platformio/platform-ststm32/blob/master/boards/blackpill_f411ce.json>`_. For example,
+board manifest `leafony_ap03.json <https://github.com/platformio/platform-ststm32/blob/master/boards/leafony_ap03.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:leafony_ap03]
   platform = ststm32
-  board = blackpill_f411ce
+  board = leafony_ap03
 
   ; change microcontroller
-  board_build.mcu = stm32f411ceu6
+  board_build.mcu = stm32l452ret6
 
   ; change MCU frequency
-  board_build.f_cpu = 100000000L
+  board_build.f_cpu = 80000000L
 
 
 Uploading
 ---------
-WeAct Studio BlackPill V2.0 (STM32F411CE) supports the following uploading protocols:
+Leafony Systems AP03 supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
-* ``dfu``
 * ``jlink``
+* ``mbed``
 * ``serial``
 * ``stlink``
 
-Default protocol is ``stlink``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:blackpill_f411ce]
+  [env:leafony_ap03]
   platform = ststm32
-  board = blackpill_f411ce
+  board = leafony_ap03
 
-  upload_protocol = stlink
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -100,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WeAct Studio BlackPill V2.0 (STM32F411CE) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Leafony Systems AP03 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -110,7 +110,7 @@ WeAct Studio BlackPill V2.0 (STM32F411CE) does not have on-board debug probe and
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - Yes
+    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -118,8 +118,8 @@ WeAct Studio BlackPill V2.0 (STM32F411CE) does not have on-board debug probe and
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - 
-    - 
+    - Yes
+    - Yes
 
 Frameworks
 ----------
@@ -140,6 +140,3 @@ Frameworks
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

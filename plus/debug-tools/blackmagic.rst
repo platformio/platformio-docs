@@ -1086,6 +1086,13 @@ Boards
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - External
@@ -1945,7 +1952,7 @@ Boards
       - On-board
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -2675,6 +2682,13 @@ Boards
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
@@ -2689,6 +2703,13 @@ Boards
       - 400MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - External
@@ -2801,6 +2822,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_atmelsam_sparkfun_qwiic_micro_samd21e`
       - :ref:`platform_atmelsam`
       - External
