@@ -973,12 +973,24 @@ Please click on board name for the further details.
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - :ref:`platform_ststm32`
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_atmelsam_seeed_xiao`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_teensy_teensy40`
       - :ref:`platform_teensy`
       - IMXRT1062
@@ -2243,6 +2255,27 @@ Seeed
       - 256KB
       - 32KB
 
+SeeedStudio
+~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
+
 SiFive
 ~~~~~~
 
@@ -2319,6 +2352,13 @@ SparkFun
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_sifive_sparkfun_redboard_v`
       - :ref:`platform_sifive`
       - On-board

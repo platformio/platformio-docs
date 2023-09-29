@@ -1305,8 +1305,8 @@ ST STM32
     ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
-    ststm32/nicla_vision_m4
     ststm32/nicla_vision
+    ststm32/nicla_vision_m4
     ststm32/opta
     ststm32/opta_m4
     ststm32/portenta_h7_m4
@@ -1346,6 +1346,7 @@ ST STM32
     ststm32/gnat_l082cz
     ststm32/grasshopper_l082cz
     ststm32/rhombio_l476dmw1k
+    ststm32/leafony_ap03
     ststm32/malyanm200_f070cb
     ststm32/malyanm300_f070cb
     ststm32/mkr_sharky
@@ -1537,13 +1538,18 @@ ST STM32
     ststm32/genericSTM32F446RE
     ststm32/stm32f4stamp
     ststm32/disco_f750n8
+    ststm32/genericSTM32G431CB
     ststm32/disco_h735ig
     ststm32/disco_h747xi
+    ststm32/genericSTM32H750VB
     ststm32/storm32_v1_31_rc
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/lora_e5_dev_board
+    ststm32/lora_e5_mini
     ststm32/steval_mksboxv1
     ststm32/agafia_sg0
+    ststm32/sparkfun_micromod_f405
     ststm32/sparky_v1
     ststm32/thunder_pack
     ststm32/thunder_pack_f411

@@ -28,7 +28,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Frequency**
     - 64MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
     - 144KB
   * - **Vendor**
