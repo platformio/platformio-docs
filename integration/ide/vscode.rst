@@ -47,6 +47,8 @@ Installation
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-pkg-installer.png
 
+Note: python_venv / python3_venv needs to be installed to be able to finish extension installation.
+
 Quick Start
 -----------
 
