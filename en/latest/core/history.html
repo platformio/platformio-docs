@@ -165,10 +165,11 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <ul class="simple">
 <li><p>Introduced a warning during the verification of MCU maximum RAM usage, signaling when the allocated RAM surpasses 100% (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4791">issue #4791</a>)</p></li>
 <li><p>Drastically enhanced the speed of project building when operating in verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4783">issue #4783</a>)</p></li>
+<li><p>Upgraded the build engine to the latest version of SCons (4.6.0) to improve build performance, reliability, and compatibility with other tools and systems (<a class="reference external" href="https://github.com/SCons/scons/releases/tag/4.6.0">release notes</a>)</p></li>
 <li><p>Resolved an issue where the <code class="docutils literal notranslate"><span class="pre">COMPILATIONDB_INCLUDE_TOOLCHAIN</span></code> setting was not correctly applying to private libraries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4762">issue #4762</a>)</p></li>
 <li><p>Resolved an issue where <code class="docutils literal notranslate"><span class="pre">get_systype()</span></code> inaccurately returned the architecture when executed within a Docker container on a 64-bit kernel with a 32-bit userspace (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4777">issue #4777</a>)</p></li>
 <li><p>Resolved an issue with incorrect handling of the <code class="docutils literal notranslate"><span class="pre">check_src_filters</span></code> option when used in multiple environments (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4788">issue #4788</a>)</p></li>
-<li><p>Resolved an issue where running <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/project/cmd_metadata.html">pio project metadata</a> resulted in duplicated include entries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4723">issue #4723</a>)</p></li>
+<li><p>Resolved an issue where running <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/project/cmd_metadata.html">pio project metadata</a> resulted in duplicated “include” entries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4723">issue #4723</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -628,7 +629,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.12a2 (latest)
+    v6.1.12a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
