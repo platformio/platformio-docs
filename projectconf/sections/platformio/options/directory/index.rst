@@ -12,6 +12,15 @@
 Directory options
 -----------------
 
+.. note::
+    You can specify relative paths for the directory option:
+
+    * The ``~`` (tilde) symbol will automatically expand to the user's home directory
+    * Using ``../`` or ``..\`` allows you to navigate up one folder level.
+
+    Additionally, you have the option to employ :ref:`projectconf_interpolation`
+    for paths.
+
 .. toctree::
     :maxdepth: 1
 

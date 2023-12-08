@@ -14,12 +14,17 @@
 Interpolation of Values
 -----------------------
 
-On top of the core functionality, PlatformIO supports interpolation. It enables values
-to contain format strings which refer to other values from foreign sections.
+In addition to its core functionality, PlatformIO introduces support for
+interpolation, allowing values to incorporate format strings that
+reference other values from different sections.
 
-Interpolation has the next syntax – ``${<section>.<option>}``, where
-``<section>`` is a value from ``[<section>]`` group, and ``<option>`` is a
-first item from pair ``<option> = value``.
+The interpolation feature adheres to the following syntax:
+
+* ``${<variable>}``, where ``<variale>`` represents the name of a supported
+  built-in variable (refer to the table below for details).
+* ``${<section>.<option>}``, with ``<section>`` denoting a value from the
+  ``[<section>]`` group, and ``<option>`` representing the first item in
+  the pair ``<option> = value``.
 
 .. list-table::
     :header-rows:  1
@@ -28,13 +33,24 @@ first item from pair ``<option> = value``.
       - Meaning
       - Example
 
+    * - ``${<variable>}``
+      - Incorporate built-in variables using their designated names.
+        The following variables are supported:
+
+        * ``PROJECT_DIR`` - represents the current project directory
+        * ``PROJECT_HASH`` - corresponds to the hash of the project path
+        * ``UNIX_TIME`` - indicates the current  `Unix time <https://en.wikipedia.org/wiki/Unix_time>`__,
+          represented by 10 digits
+
+      - ``/tmp/pio-workspaces/${PROJECT_HASH}`` refers to the new directory ``/tmp/pio-workspaces/project_name-8f66e9463d/``
+
     * - ``${sysenv.<name>}``
-      - Embed system environment variable by a name
-      - ``${sysenv.HOME}`` refers to user home directory on Unix machine
+      - Embed operating system environment variable by a name
+      - ``${sysenv.HOME}`` refers to the user home directory on Unix machine
 
     * - ``${platformio.<option>}``
       - Embed value from :ref:`projectconf_section_platformio`
-      - ``${platformio.packages_dir}`` refers to a path of :ref:`projectconf_pio_packages_dir`
+      - ``${platformio.packages_dir}`` refers to the path of :ref:`projectconf_pio_packages_dir`
 
     * - ``${env.<option>}``
       - Embed default value from :ref:`projectconf_section_env`

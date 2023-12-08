@@ -10,7 +10,7 @@
     limitations under the License.
 
 Arduino IDE vs PlatformIO IDE
-----------------------------
+-----------------------------
 
 The choice between Arduino IDE and PlatformIO IDE depends on the specific
 needs and requirements of the project and the user.
