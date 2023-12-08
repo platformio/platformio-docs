@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Espressif 8266 &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/platforms/espressif8266.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=147f64ea"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -172,7 +174,7 @@
            <div itemprop="articleBody">
              
   <section id="espressif-8266">
-<span id="platform-espressif8266"></span><h1>Espressif 8266<a class="headerlink" href="#espressif-8266" title="Permalink to this heading"></a></h1>
+<span id="platform-espressif8266"></span><h1>Espressif 8266<a class="headerlink" href="#espressif-8266" title="Link to this heading"></a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif8266">https://registry.platformio.org/platforms/platformio/espressif8266</a></p>
@@ -195,7 +197,7 @@
 </ul>
 </nav>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#cpu-frequency" id="id11">CPU Frequency</a></p></li>
@@ -228,7 +230,7 @@
 </ul>
 </nav>
 <section id="cpu-frequency">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">CPU Frequency</a><a class="headerlink" href="#cpu-frequency" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="../projectconf/sections/env/options/platform/board_build.f_cpu.html#projectconf-board-build-f-cpu"><span class="std std-ref">board_build.f_cpu</span></a> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="c1">; set frequency to 160MHz</span>
@@ -237,7 +239,7 @@
 </div>
 </section>
 <section id="flash-frequency">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">FLASH Frequency</a><a class="headerlink" href="#flash-frequency" title="Link to this heading"></a></h3>
 <p>Please use <code class="docutils literal notranslate"><span class="pre">board_build.f_flash</span></code> option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> to change
 a value. Possible values:</p>
 <ul class="simple">
@@ -253,7 +255,7 @@ a value. Possible values:</p>
 </div>
 </section>
 <section id="flash-mode">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">FLASH Mode</a><a class="headerlink" href="#flash-mode" title="Link to this heading"></a></h3>
 <p>Flash chip interface mode. This parameter is stored in the binary image
 header, along with the flash size and flash frequency. The ROM bootloader
 in the ESP chip uses the value of these parameters in order to know how to
@@ -272,7 +274,7 @@ a value. Possible values:</p>
 </div>
 </section>
 <section id="reset-method">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Reset Method</a><a class="headerlink" href="#reset-method" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Reset Method</a><a class="headerlink" href="#reset-method" title="Link to this heading"></a></h3>
 <p>You can set custom reset method using <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_resetmethod.html#projectconf-upload-resetmethod"><span class="std std-ref">upload_resetmethod</span></a>
 option from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <p>The <a class="reference external" href="https://github.com/igrr/esptool-ck#supported-boards">possible values</a> are:</p>
@@ -288,7 +290,7 @@ option from <a class="reference internal" href="../projectconf/index.html#projec
 </div>
 </section>
 <section id="flash-size">
-<span id="platform-espressif-customflash"></span><h3><a class="toc-backref" href="#id15" role="doc-backlink">Flash Size</a><a class="headerlink" href="#flash-size" title="Permalink to this heading"></a></h3>
+<span id="platform-espressif-customflash"></span><h3><a class="toc-backref" href="#id15" role="doc-backlink">Flash Size</a><a class="headerlink" href="#flash-size" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout">ESP8266 Flash layout</a>
@@ -305,7 +307,7 @@ option from <a class="reference internal" href="../projectconf/index.html#projec
 </div>
 </section>
 <section id="upload-speed">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Upload Speed</a><a class="headerlink" href="#upload-speed" title="Link to this heading"></a></h3>
 <p>You can set custom upload speed using <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_speed.html#projectconf-upload-speed"><span class="std std-ref">upload_speed</span></a> option
 from <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -314,7 +316,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="lwip-variant">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">lwIP Variant</a><a class="headerlink" href="#lwip-variant" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">lwIP Variant</a><a class="headerlink" href="#lwip-variant" title="Link to this heading"></a></h3>
 <p>Available variants (macros):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY</span></code> v2 Lower Memory <strong>(default)</strong></p></li>
@@ -335,7 +337,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="sdk-version">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">SDK Version</a><a class="headerlink" href="#sdk-version" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">SDK Version</a><a class="headerlink" href="#sdk-version" title="Link to this heading"></a></h3>
 <p>Available versions (macros):</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">-D</span> <span class="pre">PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK305</span></code> NonOS SDK-3.0.5 (available since <a class="reference external" href="https://github.com/esp8266/Arduino/releases/tag/3.1.0">Arduino core for ESP8266 3.1.0</a>)</p></li>
@@ -357,7 +359,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="ssl-support">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">SSL Support</a><a class="headerlink" href="#ssl-support" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">SSL Support</a><a class="headerlink" href="#ssl-support" title="Link to this heading"></a></h3>
 <p>By default, all SSL ciphers (most compatible) are supported.</p>
 <p>You can control SSL support passing a custom macro using project
 <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.</p>
@@ -369,7 +371,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="serial-debug">
-<span id="platform-espressif8266-serial-debug"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Serial Debug</a><a class="headerlink" href="#serial-debug" title="Permalink to this heading"></a></h3>
+<span id="platform-espressif8266-serial-debug"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Serial Debug</a><a class="headerlink" href="#serial-debug" title="Link to this heading"></a></h3>
 <p>Please use the next <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to enable Serial debug:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">...</span>
@@ -381,7 +383,7 @@ from <a class="reference internal" href="../projectconf/index.html#projectconf">
 </div>
 </section>
 <section id="debug-level">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Debug Level</a><a class="headerlink" href="#debug-level" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Debug Level</a><a class="headerlink" href="#debug-level" title="Link to this heading"></a></h3>
 <p>Please use one of the next <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> to change debug level.
 A <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a> option could be used only the one time per
 build environment. If you need to specify more flags, please separate them
@@ -519,7 +521,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">ge
 </div>
 </section>
 <section id="vtables">
-<h3><a class="toc-backref" href="#id22" role="doc-backlink">VTables</a><a class="headerlink" href="#vtables" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">VTables</a><a class="headerlink" href="#vtables" title="Link to this heading"></a></h3>
 <p>Please use one of the next <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">...</span>
@@ -536,12 +538,12 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">ge
 </div>
 </section>
 <section id="mmu-adjusting-icache-to-iram-ratio">
-<h3><a class="toc-backref" href="#id23" role="doc-backlink">MMU - Adjusting ICACHE to IRAM ratio</a><a class="headerlink" href="#mmu-adjusting-icache-to-iram-ratio" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">MMU - Adjusting ICACHE to IRAM ratio</a><a class="headerlink" href="#mmu-adjusting-icache-to-iram-ratio" title="Link to this heading"></a></h3>
 <p>By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used.
 Alternative configurations can be enabled using the <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>
 option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <table class="docutils align-default" id="id4">
-<caption><span class="caption-text">MMU Configuration Options</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">MMU Configuration Options</span><a class="headerlink" href="#id4" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -597,7 +599,7 @@ option in <a class="reference internal" href="../projectconf/index.html#projectc
 <p>More detailed information on this matter can be found in the <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/mmu.html">official documentation</a>.</p>
 </section>
 <section id="exceptions">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink">Exceptions</a><a class="headerlink" href="#exceptions" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Exceptions</a><a class="headerlink" href="#exceptions" title="Link to this heading"></a></h3>
 <p>Exceptions are disabled by default. To enable exceptions, use the <code class="docutils literal notranslate"><span class="pre">PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS</span></code> macro in <a class="reference internal" href="../projectconf/sections/env/options/build/build_flags.html#projectconf-build-flags"><span class="std std-ref">build_flags</span></a>.
 That macro will add the <code class="docutils literal notranslate"><span class="pre">-fexceptions</span></code> flag and will link the final firmware against the <code class="docutils literal notranslate"><span class="pre">stdc++-exc</span></code> library with enabled exceptions. For example:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -609,9 +611,9 @@ That macro will add the <code class="docutils literal notranslate"><span class="
 </div>
 </section>
 <section id="using-filesystem">
-<span id="platform-espressif-uploadfs"></span><h3><a class="toc-backref" href="#id25" role="doc-backlink">Using Filesystem</a><a class="headerlink" href="#using-filesystem" title="Permalink to this heading"></a></h3>
+<span id="platform-espressif-uploadfs"></span><h3><a class="toc-backref" href="#id25" role="doc-backlink">Using Filesystem</a><a class="headerlink" href="#using-filesystem" title="Link to this heading"></a></h3>
 <section id="selecting-appropriate-filesystem">
-<h4><a class="toc-backref" href="#id26" role="doc-backlink">Selecting appropriate Filesystem</a><a class="headerlink" href="#selecting-appropriate-filesystem" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id26" role="doc-backlink">Selecting appropriate Filesystem</a><a class="headerlink" href="#selecting-appropriate-filesystem" title="Link to this heading"></a></h4>
 <p>There are two file systems for utilizing the on-board flash on the ESP8266: <code class="docutils literal notranslate"><span class="pre">SPIFFS</span></code>
 and <code class="docutils literal notranslate"><span class="pre">LittleFS</span></code>. They provide a compatible API but have incompatible on-flash
 implementations, so it is important to choose one or the other per project as attempting
@@ -635,7 +637,7 @@ using <code class="docutils literal notranslate"><span class="pre">board_build.f
 <p>More information about pros and cons of each file system can be found in <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#filesystem">the official documentation</a>.</p>
 </section>
 <section id="uploading-files-to-filesystem">
-<h4><a class="toc-backref" href="#id27" role="doc-backlink">Uploading files to Filesystem</a><a class="headerlink" href="#uploading-files-to-filesystem" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id27" role="doc-backlink">Uploading files to Filesystem</a><a class="headerlink" href="#uploading-files-to-filesystem" title="Link to this heading"></a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read <a class="reference external" href="https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout">ESP8266 Flash layout</a>
@@ -659,7 +661,7 @@ file system offsets (start, end, page, block). You can override it using
 <p>Active discussion is located in <a class="reference external" href="https://github.com/platformio/platformio-core/issues/382">issue #382</a>.</p>
 </section>
 <section id="overriding-filesystem-image-name">
-<h4><a class="toc-backref" href="#id28" role="doc-backlink">Overriding Filesystem image name</a><a class="headerlink" href="#overriding-filesystem-image-name" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id28" role="doc-backlink">Overriding Filesystem image name</a><a class="headerlink" href="#overriding-filesystem-image-name" title="Link to this heading"></a></h4>
 <p>By default, the image file name is set according to the used file system: <code class="docutils literal notranslate"><span class="pre">spiffs.bin</span></code>
 or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</span></code>. You can change the file name using <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#before-pre-and-after-post-actions">a PRE extra script</a>, for example:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:d1]</span>
@@ -679,7 +681,7 @@ or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</sp
 </section>
 </section>
 <section id="over-the-air-ota-update">
-<span id="platform-espressif-ota"></span><h3><a class="toc-backref" href="#id29" role="doc-backlink">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Permalink to this heading"></a></h3>
+<span id="platform-espressif-ota"></span><h3><a class="toc-backref" href="#id29" role="doc-backlink">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read the theory behind the OTA updates in the
@@ -721,7 +723,7 @@ need to set <a class="reference internal" href="../projectconf/sections/env/opti
 </pre></div>
 </div>
 <section id="authentication-and-upload-options">
-<h4><a class="toc-backref" href="#id30" role="doc-backlink">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id30" role="doc-backlink">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Link to this heading"></a></h4>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -776,7 +778,7 @@ Options:
 </section>
 </section>
 <section id="using-arduino-framework-with-staging-version">
-<h3><a class="toc-backref" href="#id31" role="doc-backlink">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Link to this heading"></a></h3>
 <p>PlatformIO will install the latest Arduino Core for ESP8266 from
 <a class="reference external" href="https://github.com/esp8266/Arduino">https://github.com/esp8266/Arduino</a>. The <a class="reference external" href="https://git-scm.com">Git</a>
 should be installed in a system. To update Arduino Core to the latest revision,
@@ -813,7 +815,7 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif 8266 development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif8266/tree/master/examples/arduino-webserver?utm_source=platformio.org&amp;utm_medium=docs">arduino-webserver</a></p></li>
@@ -825,12 +827,12 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ul>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Link to this heading"></a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-espressif8266/releases">stable releases</a>
 of Espressif 8266 development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading"></a></h3>
+<h3>Stable<a class="headerlink" href="#stable" title="Link to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version, NOT recommended</span>
 <span class="c1">; Pin the version as shown below</span>
 <span class="k">[env:latest_stable]</span>
@@ -845,7 +847,7 @@ of Espressif 8266 development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading"></a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Link to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif8266.git</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -854,7 +856,7 @@ of Espressif 8266 development platform and the latest upstream version using
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -906,7 +908,7 @@ manufacturer</p>
 </div>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -927,7 +929,7 @@ manufacturer</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -937,7 +939,7 @@ horizontally.</p></li>
 </ul>
 </div>
 <section id="d-systems">
-<h3>4D Systems<a class="headerlink" href="#d-systems" title="Permalink to this heading"></a></h3>
+<h3>4D Systems<a class="headerlink" href="#d-systems" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -960,7 +962,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -983,7 +985,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="amperka">
-<h3>Amperka<a class="headerlink" href="#amperka" title="Permalink to this heading"></a></h3>
+<h3>Amperka<a class="headerlink" href="#amperka" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1006,7 +1008,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="digistump">
-<h3>DigiStump<a class="headerlink" href="#digistump" title="Permalink to this heading"></a></h3>
+<h3>DigiStump<a class="headerlink" href="#digistump" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1029,7 +1031,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="doit">
-<h3>Doit<a class="headerlink" href="#doit" title="Permalink to this heading"></a></h3>
+<h3>Doit<a class="headerlink" href="#doit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1059,7 +1061,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dycodex">
-<h3>DycodeX<a class="headerlink" href="#dycodex" title="Permalink to this heading"></a></h3>
+<h3>DycodeX<a class="headerlink" href="#dycodex" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1082,7 +1084,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="espert">
-<h3>ESPert<a class="headerlink" href="#espert" title="Permalink to this heading"></a></h3>
+<h3>ESPert<a class="headerlink" href="#espert" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1112,7 +1114,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="espino">
-<h3>ESPino<a class="headerlink" href="#espino" title="Permalink to this heading"></a></h3>
+<h3>ESPino<a class="headerlink" href="#espino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1135,7 +1137,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="espressif">
-<h3>Espressif<a class="headerlink" href="#espressif" title="Permalink to this heading"></a></h3>
+<h3>Espressif<a class="headerlink" href="#espressif" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1221,7 +1223,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="heltec">
-<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this heading"></a></h3>
+<h3>Heltec<a class="headerlink" href="#heltec" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1244,7 +1246,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="itead">
-<h3>ITEAD<a class="headerlink" href="#itead" title="Permalink to this heading"></a></h3>
+<h3>ITEAD<a class="headerlink" href="#itead" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1288,7 +1290,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="invent-one">
-<h3>Invent One<a class="headerlink" href="#invent-one" title="Permalink to this heading"></a></h3>
+<h3>Invent One<a class="headerlink" href="#invent-one" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1311,7 +1313,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lifely-cc">
-<h3>Lifely.cc<a class="headerlink" href="#lifely-cc" title="Permalink to this heading"></a></h3>
+<h3>Lifely.cc<a class="headerlink" href="#lifely-cc" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1334,7 +1336,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="nodemcu">
-<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Permalink to this heading"></a></h3>
+<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1364,7 +1366,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="olimex">
-<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this heading"></a></h3>
+<h3>Olimex<a class="headerlink" href="#olimex" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1387,7 +1389,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="schirmilabs">
-<h3>Schirmilabs<a class="headerlink" href="#schirmilabs" title="Permalink to this heading"></a></h3>
+<h3>Schirmilabs<a class="headerlink" href="#schirmilabs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1410,7 +1412,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1440,7 +1442,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sparkfun">
-<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading"></a></h3>
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1477,7 +1479,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sweetpea">
-<h3>SweetPea<a class="headerlink" href="#sweetpea" title="Permalink to this heading"></a></h3>
+<h3>SweetPea<a class="headerlink" href="#sweetpea" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1500,7 +1502,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="thaieasyelec">
-<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Permalink to this heading"></a></h3>
+<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1523,7 +1525,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wemos">
-<h3>WEMOS<a class="headerlink" href="#wemos" title="Permalink to this heading"></a></h3>
+<h3>WEMOS<a class="headerlink" href="#wemos" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1567,7 +1569,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="id3">
-<h3>WeMos<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<h3>WeMos<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1590,7 +1592,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wifiduino">
-<h3>WifiDuino<a class="headerlink" href="#wifiduino" title="Permalink to this heading"></a></h3>
+<h3>WifiDuino<a class="headerlink" href="#wifiduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1613,7 +1615,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="xinabox">
-<h3>XinaBox<a class="headerlink" href="#xinabox" title="Permalink to this heading"></a></h3>
+<h3>XinaBox<a class="headerlink" href="#xinabox" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>

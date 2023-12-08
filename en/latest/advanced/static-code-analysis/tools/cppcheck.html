@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cppcheck &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/advanced/static-code-analysis/tools/cppcheck.html" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=147f64ea"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -149,7 +151,7 @@
            <div itemprop="articleBody">
              
   <section id="cppcheck">
-<span id="check-tool-cppcheck"></span><h1>Cppcheck<a class="headerlink" href="#cppcheck" title="Permalink to this heading"></a></h1>
+<span id="check-tool-cppcheck"></span><h1>Cppcheck<a class="headerlink" href="#cppcheck" title="Link to this heading"></a></h1>
 <p><strong>Cppcheck</strong> is a static analysis tool for C/C++ code. It provides a unique
 code analysis to detect bugs and focuses on detecting undefined behavior and
 dangerous coding constructs. The goal is to detect only real errors in the
@@ -178,7 +180,7 @@ software carefully than by using Cppcheck.</p>
 </ul>
 </nav>
 <section id="features">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Link to this heading"></a></h2>
 <p><strong>Cppcheck</strong> supports a wide variety of static checks that may not be covered
 by the compiler itself. These checks are static analysis checks that can be
 performed at a source code level. The program is directed towards static
@@ -199,7 +201,7 @@ analysis checks that are rigorous, rather than heuristic in nature.</p>
 </dl>
 </section>
 <section id="additional-checks">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Additional checks</a><a class="headerlink" href="#additional-checks" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Additional checks</a><a class="headerlink" href="#additional-checks" title="Link to this heading"></a></h2>
 <p>Be default <strong>Cppcheck</strong> is configured to check the next additional defects:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">warning</span></code></p></li>
@@ -212,7 +214,7 @@ analysis checks that are rigorous, rather than heuristic in nature.</p>
 <a class="reference external" href="https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/">the official webpage</a>.</p>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <p><strong>Cppcheck</strong> is implicitly used as the default check tool when <a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> is not set. To be explicit, you can specify it
 in the configuration directly:</p>
@@ -238,7 +240,7 @@ in the configuration directly:</p>
 </div>
 </section>
 <section id="extra-flags">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Extra flags</a><a class="headerlink" href="#extra-flags" title="Link to this heading"></a></h2>
 <p>Useful flags that can help more precisely configure <strong>Cppcheck</strong> to satisfy
 your project requirements:</p>
 <blockquote>
@@ -287,7 +289,7 @@ your project requirements:</p>
 </div></blockquote>
 </section>
 <section id="suppressing-warnings">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Suppressing warnings</a><a class="headerlink" href="#suppressing-warnings" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Suppressing warnings</a><a class="headerlink" href="#suppressing-warnings" title="Link to this heading"></a></h2>
 <p>It might be useful to explicitly instruct <strong>Cppcheck</strong> to ignore some of the
 known defects in project codebase. Since <code class="docutils literal notranslate"><span class="pre">--inline-suppr</span></code> is enabled by
 default, it’s possible to directly mark pieces of code that will be excluded
@@ -316,13 +318,13 @@ Arduino-based projects:</p>
 </div>
 </section>
 <section id="addons-misra-cert">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Addons (MISRA, CERT)</a><a class="headerlink" href="#addons-misra-cert" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Addons (MISRA, CERT)</a><a class="headerlink" href="#addons-misra-cert" title="Link to this heading"></a></h2>
 <p><strong>Cppcheck</strong> provides several addon scripts that analyze dump files to check
 compatibility with secure coding standards and to locate various issues.
 Most useful addons for verifying compliance with popular guidelines are
 <strong>MISRA</strong> and <strong>CERT</strong>.</p>
 <section id="misra">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">MISRA</a><a class="headerlink" href="#misra" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">MISRA</a><a class="headerlink" href="#misra" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">MISRA</span></code> is a proprietary set of software development guidelines for the
 C/C++ programming languages developed by MISRA (Motor Industry Software
 Reliability Association).  It aims to facilitate code safety, security,
@@ -371,7 +373,7 @@ you can pass it via a special <code class="docutils literal notranslate"><span c
 <a class="reference external" href="http://cppcheck.sourceforge.net/misra.php">the official webpage</a>.</p>
 </section>
 <section id="cert">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">CERT</a><a class="headerlink" href="#cert" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">CERT</a><a class="headerlink" href="#cert" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">SEI</span> <span class="pre">CERT</span></code> coding standard provides rules for secure coding in the C
 programming language. The goal of these rules and recommendations is to
 develop safe, reliable, and secure systems, for example by eliminating

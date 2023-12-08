@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Migrating from 5.x to 6.0 &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/core/migration.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=147f64ea"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -147,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="migrating-from-5-x-to-6-0">
-<span id="core-migration"></span><h1>Migrating from 5.x to 6.0<a class="headerlink" href="#migrating-from-5-x-to-6-0" title="Permalink to this heading"></a></h1>
+<span id="core-migration"></span><h1>Migrating from 5.x to 6.0<a class="headerlink" href="#migrating-from-5-x-to-6-0" title="Link to this heading"></a></h1>
 <p>Guidance on how to upgrade from <a class="reference internal" href="index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> v5.x to v6.x with emphasis on
 major changes, what is new, and what has been removed.</p>
 <div class="admonition note">
@@ -191,7 +193,7 @@ in the migration steps below.</p>
 </ul>
 </nav>
 <section id="migration-steps">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Migration Steps</a><a class="headerlink" href="#migration-steps" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Migration Steps</a><a class="headerlink" href="#migration-steps" title="Link to this heading"></a></h2>
 <p><strong>PlatformIO Core 6.0</strong> received a lot of new features and updates to improve the
 lives of everyday engineers. To benefit from its improvements, we recommend
 taking into account the following steps:</p>
@@ -265,12 +267,12 @@ See <a class="reference internal" href="../advanced/unit-testing/structure/hiera
 </ol>
 </section>
 <section id="what-is-new">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">What is new</a><a class="headerlink" href="#what-is-new" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">What is new</a><a class="headerlink" href="#what-is-new" title="Link to this heading"></a></h2>
 <p>In this section, we are going to highlight the most important changes and
 features introduced in <strong>PlatformIO Core 6.0</strong>. Please visit
 <a class="reference internal" href="history.html#release-notes-6"><span class="std std-ref">PlatformIO 6.0 Release Notes</span></a> for more detailed information.</p>
 <section id="package-management">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Package Management</a><a class="headerlink" href="#package-management" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Package Management</a><a class="headerlink" href="#package-management" title="Link to this heading"></a></h3>
 <p><strong>PlatformIO Core 6.0</strong> brings a powerful solution to manage different
 <a class="reference internal" href="userguide/pkg/cmd_install.html#cmd-pkg-install-types"><span class="std std-ref">Package Types</span></a> using the unified <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a>:</p>
 <ul class="simple">
@@ -295,7 +297,7 @@ check for outdated project packages and list version information for all
 dependencies. There are three color legends to help you easily identify
 which updates are backward-incompatible.</p>
 <section id="run-package-command">
-<h4><a class="toc-backref" href="#id5" role="doc-backlink">Run package command</a><a class="headerlink" href="#run-package-command" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id5" role="doc-backlink">Run package command</a><a class="headerlink" href="#run-package-command" title="Link to this heading"></a></h4>
 <p><a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a> contains a rich set of popular toolchains and other useful tools.
 The <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmd-pkg-exec"><span class="std std-ref">pio pkg exec</span></a> command allows you to run an arbitrary command from the specified
 package. If you specify package requirements using the <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmdoption-pio-pkg-exec-p"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">pkg</span> <span class="pre">exec</span> <span class="pre">--package</span></code></a>
@@ -315,7 +317,7 @@ new <a class="reference internal" href="userguide/pkg/cmd_exec.html#cmd-pkg-exec
 </div>
 </section>
 <section id="virtual-symbolic-links">
-<h4><a class="toc-backref" href="#id6" role="doc-backlink">Virtual symbolic links</a><a class="headerlink" href="#virtual-symbolic-links" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id6" role="doc-backlink">Virtual symbolic links</a><a class="headerlink" href="#virtual-symbolic-links" title="Link to this heading"></a></h4>
 <p>The most requested feature from the library maintainers was the ability to link
 the existing package with the project without hard copying (duplicating). As a
 workaround, developers used a Unix-native symlink solution and hence it was
@@ -328,7 +330,7 @@ host machines.</p>
 </section>
 </section>
 <section id="unit-testing">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Unit Testing</a><a class="headerlink" href="#unit-testing" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Unit Testing</a><a class="headerlink" href="#unit-testing" title="Link to this heading"></a></h3>
 <p>It’s been <a class="reference external" href="https://github.com/platformio/platformio-core/commit/bb22a1297bc2e4c3131530f15a2b4b3914836560">six years</a>
 since we added support for unit testing, and Unity was the only available testing framework.
 We didn’t expect that the PlatformIO <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> solution will gain broad
@@ -336,7 +338,7 @@ popularity, especially when it comes to using it on native (host) machines.</p>
 <p>So, the time has come to refresh our view on PlatformIO Unit Testing with taking into account
 <a class="reference external" href="https://github.com/platformio/platformio-core/issues?q=is%3Aissue+label%3A%22unit+testing%22+is%3Aclosed+milestone%3A6.0">your feedback and feature requests</a>.</p>
 <section id="test-driven-development">
-<h4><a class="toc-backref" href="#id8" role="doc-backlink">Test-driven development</a><a class="headerlink" href="#test-driven-development" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">Test-driven development</a><a class="headerlink" href="#test-driven-development" title="Link to this heading"></a></h4>
 <p>The PlatformIO Core 6.0 introduces an absolutely a new workflow for
 <a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">test-driven development</a>
 in the embedded systems industry.
@@ -367,7 +369,7 @@ framework, such as <a class="reference internal" href="../advanced/unit-testing/
 the target embedded device with constrained resources.</p>
 </section>
 <section id="hardware-less-development">
-<h4><a class="toc-backref" href="#id9" role="doc-backlink">Hardware-less development</a><a class="headerlink" href="#hardware-less-development" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">Hardware-less development</a><a class="headerlink" href="#hardware-less-development" title="Link to this heading"></a></h4>
 <p>It’s hard to imagine today a next-gen project development workflow that does
 not benefit from <a class="reference internal" href="../integration/ci/index.html#ci"><span class="std std-ref">Continuous Integration</span></a> systems. PlatformIO already provides multiple
 solutions to improve code quality including <a class="reference internal" href="../advanced/static-code-analysis/index.html#check"><span class="std std-ref">Static Code Analysis</span></a>. In addition to
@@ -402,9 +404,9 @@ the <a class="reference internal" href="../advanced/unit-testing/simulators/reno
 </section>
 </section>
 <section id="what-is-changed-or-removed">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">What is changed or removed</a><a class="headerlink" href="#what-is-changed-or-removed" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">What is changed or removed</a><a class="headerlink" href="#what-is-changed-or-removed" title="Link to this heading"></a></h2>
 <section id="dropped-automatic-updates">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Dropped automatic updates</a><a class="headerlink" href="#dropped-automatic-updates" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Dropped automatic updates</a><a class="headerlink" href="#dropped-automatic-updates" title="Link to this heading"></a></h3>
 <p>Thanks to your feedback, we finally removed automatic updates of global libraries
 and development platforms. Please use <a class="reference internal" href="userguide/pkg/cmd_outdated.html#cmd-pkg-outdated"><span class="std std-ref">pio pkg outdated</span></a> to check for outdated
 project packages and list version information for all dependencies.</p>
@@ -412,12 +414,12 @@ project packages and list version information for all dependencies.</p>
 custom packages from the <a class="reference external" href="https://registry.platformio.org">PlatformIO Registry</a>, or external sources.</p>
 </section>
 <section id="command-line-interface">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Command Line Interface</a><a class="headerlink" href="#command-line-interface" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Command Line Interface</a><a class="headerlink" href="#command-line-interface" title="Link to this heading"></a></h3>
 <p>The following commands have been changed in v6.0.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>

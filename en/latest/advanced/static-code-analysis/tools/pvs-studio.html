@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PVS-Studio &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/advanced/static-code-analysis/tools/pvs-studio.html" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=147f64ea"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -147,7 +149,7 @@
            <div itemprop="articleBody">
              
   <section id="pvs-studio">
-<span id="check-tool-pvsstudio"></span><h1>PVS-Studio<a class="headerlink" href="#pvs-studio" title="Permalink to this heading"></a></h1>
+<span id="check-tool-pvsstudio"></span><h1>PVS-Studio<a class="headerlink" href="#pvs-studio" title="Link to this heading"></a></h1>
 <p><strong>PVS-Studio</strong> is a static code analysis tool for detecting bugs and security weaknesses
 in the source code of programs, written in C, C++, C# and Java. It analyze source code
 intended for 32-bit, 64-bit and embedded ARM platforms.
@@ -162,7 +164,7 @@ Official page can be found <a class="reference external" href="https://www.viva6
 </ul>
 </nav>
 <section id="features">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Link to this heading"></a></h2>
 <p><strong>PVS-Studio</strong> performs a wide range of code checks, and it is also useful in finding
 misprints and Copy-Paste errors. These checks are static analysis checks that can be
 performed at a source code level. Some of the defects that might be detected include:</p>
@@ -180,7 +182,7 @@ performed at a source code level. Some of the defects that might be detected inc
 <a class="reference external" href="https://www.viva64.com/en/w/">the official webpage</a>.</p>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <p>To enable <strong>PVS-Studio</strong> tool simply add it to the <a class="reference internal" href="../../../projectconf/sections/env/options/check/check_tool.html#projectconf-check-tool"><span class="std std-ref">check_tool</span></a>
 option in <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -204,7 +206,7 @@ option in <a class="reference internal" href="../../../projectconf/index.html#pr
 </div>
 </section>
 <section id="extra-flags">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Extra flags</a><a class="headerlink" href="#extra-flags" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Extra flags</a><a class="headerlink" href="#extra-flags" title="Link to this heading"></a></h2>
 <p>Useful flags that can help more precisely configure <strong>PVS-Studio</strong> to satisfy
 your project requirements:</p>
 <blockquote>
@@ -250,7 +252,7 @@ your project requirements:</p>
 </div>
 </section>
 <section id="obtaining-license">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Obtaining license</a><a class="headerlink" href="#obtaining-license" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Obtaining license</a><a class="headerlink" href="#obtaining-license" title="Link to this heading"></a></h2>
 <p>Since <strong>PVS-Studio</strong> is a paid B2B solution, <a class="reference external" href="https://www.viva64.com/en/order">a license</a>
 should be purchased. But PVS-Studio can be used for free of charge, for example for
 checking open source projects. More information about the cases when you can get a free
