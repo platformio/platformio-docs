@@ -603,6 +603,13 @@ Boards
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelavr_uno_mini`
+      - :ref:`platform_atmelavr`
+      - External
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_yun`
       - :ref:`platform_atmelavr`
       - External

@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_esp32-s2-kaluga-1:
+.. _board_espressif32_namino_rosso:
 
-Espressif ESP32-S2-Kaluga-1 Kit
-===============================
+Namino Rosso
+============
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S2
+    - ESP32S3
   * - **Frequency**
     - 240MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Espressif <https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-esp32-s2-kaluga-1-kit.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `MECT SRL <https://namino.cc/boards/namino-rosso?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``esp32-s2-kaluga-1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``namino_rosso`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:esp32-s2-kaluga-1]
+  [env:namino_rosso]
   platform = espressif32
-  board = esp32-s2-kaluga-1
+  board = namino_rosso
 
-You can override default Espressif ESP32-S2-Kaluga-1 Kit settings per build environment using
+You can override default Namino Rosso settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `esp32-s2-kaluga-1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-s2-kaluga-1.json>`_. For example,
+board manifest `namino_rosso.json <https://github.com/platformio/platform-espressif32/blob/master/boards/namino_rosso.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:esp32-s2-kaluga-1]
+  [env:namino_rosso]
   platform = espressif32
-  board = esp32-s2-kaluga-1
+  board = namino_rosso
 
   ; change microcontroller
-  board_build.mcu = esp32s2
+  board_build.mcu = esp32s3
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,14 +66,14 @@ board manifest `esp32-s2-kaluga-1.json <https://github.com/platformio/platform-e
 
 Uploading
 ---------
-Espressif ESP32-S2-Kaluga-1 Kit supports the following uploading protocols:
+Namino Rosso supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
-* ``ftdi``
 * ``iot-bus-jtag``
 * ``jlink``
 * ``minimodule``
@@ -89,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:esp32-s2-kaluga-1]
+  [env:namino_rosso]
   platform = espressif32
-  board = esp32-s2-kaluga-1
+  board = namino_rosso
 
   upload_protocol = esptool
 
@@ -108,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Espressif ESP32-S2-Kaluga-1 Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Namino Rosso does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -118,16 +118,16 @@ Espressif ESP32-S2-Kaluga-1 Kit has on-board debug probe and **IS READY** for de
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
     - 
-    - 
+    - Yes
   * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`
     - 
     - 
-  * - :ref:`debugging_tool_ftdi`
-    - Yes
-    - Yes
   * - :ref:`debugging_tool_iot-bus-jtag`
     - 
     - 

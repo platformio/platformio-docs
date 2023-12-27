@@ -39,6 +39,7 @@ Examples are listed from `Renesas RA development platform repository <https://gi
 * `arduino-blink <https://github.com/platformio/platform-renesas-ra/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-renesas-ra/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `fsp-blink <https://github.com/platformio/platform-renesas-ra/tree/master/examples/fsp-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `arduino-iot-cloud-basic <https://github.com/platformio/platform-renesas-ra/tree/master/examples/arduino-iot-cloud-basic?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-wifiscan <https://github.com/platformio/platform-renesas-ra/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
