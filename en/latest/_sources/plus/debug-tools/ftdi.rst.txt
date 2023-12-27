@@ -155,6 +155,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32-s2-kaluga-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_riscv_gap_gapuino`
       - :ref:`platform_riscv_gap`
       - On-board

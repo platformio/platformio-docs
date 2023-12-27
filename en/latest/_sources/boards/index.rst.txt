@@ -155,6 +155,7 @@ Atmel AVR
     atmelavr/robotControl
     atmelavr/robotMotor
     atmelavr/uno
+    atmelavr/uno_mini
     atmelavr/yun
     atmelavr/yunmini
     atmelavr/at90pwm216
@@ -455,6 +456,7 @@ Espressif 32
 .. toctree::
     :maxdepth: 1
         
+    espressif32/4d_systems_esp32s3_gen4_r8n16
     espressif32/esp32cam
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
@@ -472,15 +474,23 @@ Espressif 32
     espressif32/adafruit_magtag29_esp32s2
     espressif32/adafruit_matrixportal_esp32s3
     espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_metro_esp32s3
     espressif32/adafruit_qtpy_esp32
     espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
+    espressif32/adafruit_qtpy_esp32s3_n4r2
     espressif32/adafruit_qtpy_esp32s3_nopsram
+    espressif32/adafruit_qualia_s3_rgb666
+    espressif32/adafruit_camera_esp32s3
     espressif32/esp32-c3-m1i-kit
     espressif32/nodemcu-32s2
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
     espressif32/arduino_nano_esp32
+    espressif32/atd147_s3
+    espressif32/ioxesp32
+    espressif32/ioxesp32ps
+    espressif32/aventen_s3_sync
     espressif32/bpi-bit
     espressif32/bpi_leaf_s3
     espressif32/wifiduino32
@@ -523,10 +533,13 @@ Espressif 32
     espressif32/esp32-c3-devkitm-1
     espressif32/esp32-c6-devkitc-1
     espressif32/esp32-c6-devkitm-1
+    espressif32/esp32-pico-devkitm-2
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
     espressif32/esp32s3box
     espressif32/esp32-s3-devkitc-1
+    espressif32/esp32-s3-devkitm-1
+    espressif32/esp32s3usbotg
     espressif32/firebeetle32
     espressif32/piranha_esp32
     espressif32/franzininho_wifi_esp32s2
@@ -552,8 +565,10 @@ Espressif 32
     espressif32/nebulas3
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lilygo-t-display
     espressif32/lilygo-t-display-s3
     espressif32/lionbit
+    espressif32/lionbits3
     espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
@@ -576,6 +591,8 @@ Espressif 32
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/redpill_esp32s3
+    espressif32/namino_arancio
+    espressif32/namino_rosso
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum
@@ -602,6 +619,7 @@ Espressif 32
     espressif32/seeed_xiao_esp32c3
     espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
+    espressif32/bee_data_logger
     espressif32/bee_motion
     espressif32/bee_motion_mini
     espressif32/bee_motion_s3
@@ -631,6 +649,7 @@ Espressif 32
     espressif32/um_feathers2
     espressif32/um_feathers2_neo
     espressif32/um_feathers3
+    espressif32/um_nanos3
     espressif32/um_pros3
     espressif32/um_rmp
     espressif32/tinypico

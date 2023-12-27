@@ -20,7 +20,7 @@ reference other values from different sections.
 
 The interpolation feature adheres to the following syntax:
 
-* ``${<variable>}``, where ``<variale>`` represents the name of a supported
+* ``${<variable>}``, where ``<variable>`` represents the name of a supported
   built-in variable (refer to the table below for details).
 * ``${<section>.<option>}``, with ``<section>`` denoting a value from the
   ``[<section>]`` group, and ``<option>`` representing the first item in

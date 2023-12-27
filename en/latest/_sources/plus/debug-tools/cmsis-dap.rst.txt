@@ -210,6 +210,13 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_espressif32_4d_systems_esp32s3_gen4_r8n16`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_ststm32_b96b_argonkey`
       - :ref:`platform_ststm32`
       - External
@@ -392,6 +399,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_metro_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32`
       - :ref:`platform_espressif32`
       - External
@@ -413,12 +427,33 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_qtpy_esp32s3_n4r2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_qtpy_esp32s3_nopsram`
       - :ref:`platform_espressif32`
       - External
       - ESP32S3
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_qualia_s3_rgb666`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_camera_esp32s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_ststm32_afroflight_f103cb`
       - :ref:`platform_ststm32`
@@ -567,6 +602,27 @@ Boards
       - 168MHz
       - 512KB
       - 192KB
+    * - :ref:`board_espressif32_atd147_s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_ioxesp32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_ioxesp32ps`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -595,6 +651,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_aventen_s3_sync`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_nordicnrf51_bbcmicrobit`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -1073,7 +1136,7 @@ Boards
       - 320KB
     * - :ref:`board_espressif32_esp32-s2-kaluga-1`
       - :ref:`platform_espressif32`
-      - External
+      - On-board
       - ESP32S2
       - 240MHz
       - 4MB
@@ -1093,6 +1156,20 @@ Boards
       - 16MB
       - 320KB
     * - :ref:`board_espressif32_esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32-s3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_esp32s3usbotg`
       - :ref:`platform_espressif32`
       - On-board
       - ESP32S3
@@ -1358,6 +1435,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lionbits3`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - External
@@ -1568,6 +1652,20 @@ Boards
       - 96MHz
       - 512KB
       - 64KB
+    * - :ref:`board_espressif32_namino_arancio`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_namino_rosso`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_node32s`
       - :ref:`platform_espressif32`
       - External
@@ -2723,6 +2821,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_bee_data_logger`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_bee_motion`
       - :ref:`platform_espressif32`
       - External
@@ -2925,6 +3030,13 @@ Boards
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_um_nanos3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
     * - :ref:`board_espressif32_um_pros3`
       - :ref:`platform_espressif32`
