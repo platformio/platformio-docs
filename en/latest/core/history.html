@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=4c76fa54"></script>
+        <script src="../_static/documentation_options.js?v=2aaf1a55"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#platformio-core-6">PlatformIO Core 6</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">6.1.12 (2023-??-??)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">6.1.12 (2024-??-??)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">6.1.11 (2023-08-31)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">6.1.10 (2023-08-11)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">6.1.9 (2023-07-06)</a></li>
@@ -163,7 +163,7 @@
 PlatformIO’s collaborative ecosystem, embracing declarative principles,
 test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <section id="id1">
-<h3>6.1.12 (2023-??-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<h3>6.1.12 (2024-??-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added support for Python 3.12</p></li>
 <li><p>Introduced a warning during the verification of MCU maximum RAM usage, signaling when the allocated RAM surpasses 100% (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4791">issue #4791</a>)</p></li>
@@ -177,6 +177,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <li><p>Resolved an issue with incorrect handling of the <code class="docutils literal notranslate"><span class="pre">check_src_filters</span></code> option when used in multiple environments (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4788">issue #4788</a>)</p></li>
 <li><p>Resolved an issue where running <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/project/cmd_metadata.html">pio project metadata</a> resulted in duplicated “include” entries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4723">issue #4723</a>)</p></li>
 <li><p>Resolved an issue where native debugging failed on the host machine (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4745">issue #4745</a>)</p></li>
+<li><p>Resolved an issue where custom debug configurations were being inadvertently overwritten in VSCode’s <code class="docutils literal notranslate"><span class="pre">launch.json</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4810">issue #4810</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -636,7 +637,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.12a6 (latest)
+    v6.1.12b1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
