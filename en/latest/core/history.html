@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=2aaf1a55"></script>
+        <script src="../_static/documentation_options.js?v=1d57903f"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -170,6 +170,8 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <li><p>Drastically enhanced the speed of project building when operating in verbose mode (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4783">issue #4783</a>)</p></li>
 <li><p>Upgraded the build engine to the latest version of SCons (4.6.0) to improve build performance, reliability, and compatibility with other tools and systems (<a class="reference external" href="https://github.com/SCons/scons/releases/tag/4.6.0">release notes</a>)</p></li>
 <li><p>Enhanced the handling of built-in variables in <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf.html">“platformio.ini”</a> configuration file during <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/interpolation.html">Interpolation of Values</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4695">issue #4695</a>)</p></li>
+<li><p>Enhanced PIP dependency declarations for improved reliability and extended support to include Python 3.6 (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4819">issue #4819</a>)</p></li>
+<li><p>Implemented automatic installation of missing dependencies when utilizing a SOCKS proxy (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4822">issue #4822</a>)</p></li>
 <li><p>Implemented a fail-safe mechanism to terminate a debugging session if an unknown CLI option is passed (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4699">issue #4699</a>)</p></li>
 <li><p>Rectified an issue where <code class="docutils literal notranslate"><span class="pre">${platformio.name}</span></code> erroneously represented <code class="docutils literal notranslate"><span class="pre">None</span></code> as the default <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/platformio/options/generic/name.html">project name</a> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4717">issue #4717</a>)</p></li>
 <li><p>Resolved an issue where the <code class="docutils literal notranslate"><span class="pre">COMPILATIONDB_INCLUDE_TOOLCHAIN</span></code> setting was not correctly applying to private libraries (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4762">issue #4762</a>)</p></li>
@@ -637,7 +639,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.12b1 (latest)
+    v6.1.12b2 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
