@@ -35,10 +35,13 @@ Installation
     you are going to use :ref:`ide_vscode`. :ref:`piocore` is built into
     PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
-    If you are going to use Git for installing upstream development platforms, cloning
+    **Git:** If you are going to use Git for installing upstream development platforms, cloning
     external projects, installing library dependencies from a repository, please ensure
     that ``git --version`` command works from a system terminal. Otherwise, please
     install a `Git client <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_.
+
+    **Linux Users:** To ensure a smooth experience with PlatformIO, it is essential to have the
+    `python3-venv <https://github.com/platformio/platformio-core-installer/issues/85>`__ package installed on your system.
 
 0. `Download <https://code.visualstudio.com>`_ and install official Microsoft Visual Studio Code. PlatformIO IDE is built on top of it
 1. **Open** VSCode Package Manager
@@ -159,9 +162,12 @@ PlatformIO Core (CLI)
 There are 2 ways how to access :ref:`piocore`:
 
 1. "Terminal" icon on the :ref:`ide_vscode_toolbar`
+
+   .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-toolbar-terminal.png
+
 2. Left Activity Bar > PlatformIO (ant icon) > Quick Access > Miscellaneous > PlatformIO Core CLI
 
-.. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
+   .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-cli-access.png
 
 Project Tasks
 -------------

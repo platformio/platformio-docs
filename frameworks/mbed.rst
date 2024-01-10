@@ -416,6 +416,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
@@ -1166,6 +1172,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board

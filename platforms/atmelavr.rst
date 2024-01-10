@@ -456,6 +456,11 @@ Please click on board name for the further details.
       - 16MHz
       - 31.50KB
       - 2KB
+    * - :ref:`board_atmelavr_uno_mini`
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
     * - :ref:`board_atmelavr_yun`
       - ATMEGA32U4
       - 16MHz
@@ -1408,6 +1413,12 @@ Arduino
       - 28KB
       - 2.50KB
     * - :ref:`board_atmelavr_uno`
+      - External
+      - ATMEGA328P
+      - 16MHz
+      - 31.50KB
+      - 2KB
+    * - :ref:`board_atmelavr_uno_mini`
       - External
       - ATMEGA328P
       - 16MHz

@@ -15,9 +15,9 @@ PVS-Studio
 ==========
 
 **PVS-Studio** is a static code analysis tool for detecting bugs and security weaknesses
-in the source code of programs, written in C, C++, C# and Java. It analyze source code
+in the source code of programs, written in C, C++, C# and Java. It analyzes source code
 intended for 32-bit, 64-bit and embedded ARM platforms.
-Official page can be found `here  <https://www.viva64.com/en/pvs-studio/>`__.
+The official page can be found `here  <https://www.viva64.com/en/pvs-studio/>`__.
 
 .. contents:: Contents
     :local:

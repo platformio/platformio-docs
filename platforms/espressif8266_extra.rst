@@ -450,8 +450,8 @@ Selecting appropriate Filesystem
 
 There are two file systems for utilizing the on-board flash on the ESP8266: ``SPIFFS``
 and ``LittleFS``. They provide a compatible API but have incompatible on-flash
-implementations, so it is important to choose one or the per project as attempting to
-mount a SPIFFS volume under LittleFS may result in a format operation and definitely
+implementations, so it is important to choose one or the other per project as attempting
+to mount a SPIFFS volume under LittleFS may result in a format operation and definitely
 will not preserve any files, and vice-versa.
 
 .. warning::

@@ -155,6 +155,7 @@ Atmel AVR
     atmelavr/robotControl
     atmelavr/robotMotor
     atmelavr/uno
+    atmelavr/uno_mini
     atmelavr/yun
     atmelavr/yunmini
     atmelavr/at90pwm216
@@ -455,6 +456,7 @@ Espressif 32
 .. toctree::
     :maxdepth: 1
         
+    espressif32/4d_systems_esp32s3_gen4_r8n16
     espressif32/esp32cam
     espressif32/alksesp32
     espressif32/az-delivery-devkit-v4
@@ -470,15 +472,25 @@ Espressif 32
     espressif32/adafruit_funhouse_esp32s2
     espressif32/adafruit_itsybitsy_esp32
     espressif32/adafruit_magtag29_esp32s2
+    espressif32/adafruit_matrixportal_esp32s3
     espressif32/adafruit_metro_esp32s2
+    espressif32/adafruit_metro_esp32s3
     espressif32/adafruit_qtpy_esp32
     espressif32/adafruit_qtpy_esp32c3
     espressif32/adafruit_qtpy_esp32s2
+    espressif32/adafruit_qtpy_esp32s3_n4r2
     espressif32/adafruit_qtpy_esp32s3_nopsram
+    espressif32/adafruit_qualia_s3_rgb666
+    espressif32/adafruit_camera_esp32s3
     espressif32/esp32-c3-m1i-kit
     espressif32/nodemcu-32s2
     espressif32/airm2m_core_esp32c3
     espressif32/espea32
+    espressif32/arduino_nano_esp32
+    espressif32/atd147_s3
+    espressif32/ioxesp32
+    espressif32/ioxesp32ps
+    espressif32/aventen_s3_sync
     espressif32/bpi-bit
     espressif32/bpi_leaf_s3
     espressif32/wifiduino32
@@ -493,6 +505,7 @@ Espressif 32
     espressif32/dfrobot_beetle_esp32c3
     espressif32/dfrobot_firebeetle2_esp32e
     espressif32/dfrobot_firebeetle2_esp32s3
+    espressif32/dfrobot_romeo_esp32s3
     espressif32/esp32doit-devkit-v1
     espressif32/esp32doit-espduino
     espressif32/deneyapkart
@@ -518,10 +531,15 @@ Espressif 32
     espressif32/esp32dev
     espressif32/esp32-c3-devkitc-02
     espressif32/esp32-c3-devkitm-1
+    espressif32/esp32-c6-devkitc-1
+    espressif32/esp32-c6-devkitm-1
+    espressif32/esp32-pico-devkitm-2
     espressif32/esp32-s2-kaluga-1
     espressif32/esp32-s2-saola-1
     espressif32/esp32s3box
     espressif32/esp32-s3-devkitc-1
+    espressif32/esp32-s3-devkitm-1
+    espressif32/esp32s3usbotg
     espressif32/firebeetle32
     espressif32/piranha_esp32
     espressif32/franzininho_wifi_esp32s2
@@ -544,13 +562,17 @@ Espressif 32
     espressif32/intorobot
     espressif32/iotaap_magnolia
     espressif32/kits-edu
+    espressif32/nebulas3
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lilygo-t-display
     espressif32/lilygo-t-display-s3
     espressif32/lionbit
+    espressif32/lionbits3
     espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
     espressif32/m5stack-core2
+    espressif32/m5stack-cores3
     espressif32/m5stack-fire
     espressif32/m5stack-grey
     espressif32/m5stack-stamps3
@@ -558,6 +580,7 @@ Espressif 32
     espressif32/m5stack-timer-cam
     espressif32/m5stack-atom
     espressif32/m5stack-coreink
+    espressif32/m5stamp-pico
     espressif32/m5stick-c
     espressif32/mgbot-iotik32a
     espressif32/mgbot-iotik32b
@@ -568,6 +591,8 @@ Espressif 32
     espressif32/nano32
     espressif32/microduino-core-esp32
     espressif32/redpill_esp32s3
+    espressif32/namino_arancio
+    espressif32/namino_rosso
     espressif32/node32s
     espressif32/nodemcu-32s
     espressif32/quantum
@@ -594,6 +619,7 @@ Espressif 32
     espressif32/seeed_xiao_esp32c3
     espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
+    espressif32/bee_data_logger
     espressif32/bee_motion
     espressif32/bee_motion_mini
     espressif32/bee_motion_s3
@@ -623,6 +649,7 @@ Espressif 32
     espressif32/um_feathers2
     espressif32/um_feathers2_neo
     espressif32/um_feathers3
+    espressif32/um_nanos3
     espressif32/um_pros3
     espressif32/um_rmp
     espressif32/tinypico
@@ -1297,8 +1324,8 @@ ST STM32
     ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
-    ststm32/nicla_vision_m4
     ststm32/nicla_vision
+    ststm32/nicla_vision_m4
     ststm32/opta
     ststm32/opta_m4
     ststm32/portenta_h7_m4
@@ -1338,6 +1365,7 @@ ST STM32
     ststm32/gnat_l082cz
     ststm32/grasshopper_l082cz
     ststm32/rhombio_l476dmw1k
+    ststm32/leafony_ap03
     ststm32/malyanm200_f070cb
     ststm32/malyanm300_f070cb
     ststm32/mkr_sharky
@@ -1529,13 +1557,18 @@ ST STM32
     ststm32/genericSTM32F446RE
     ststm32/stm32f4stamp
     ststm32/disco_f750n8
+    ststm32/genericSTM32G431CB
     ststm32/disco_h735ig
     ststm32/disco_h747xi
+    ststm32/genericSTM32H750VB
     ststm32/storm32_v1_31_rc
     ststm32/seeedArchMax
     ststm32/wio_3g
+    ststm32/lora_e5_dev_board
+    ststm32/lora_e5_mini
     ststm32/steval_mksboxv1
     ststm32/agafia_sg0
+    ststm32/sparkfun_micromod_f405
     ststm32/sparky_v1
     ststm32/thunder_pack
     ststm32/thunder_pack_f411

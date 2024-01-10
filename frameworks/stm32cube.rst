@@ -138,6 +138,12 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - :ref:`platform_ststm32`
       - STM32F439ZIY6
@@ -454,7 +460,7 @@ You do not need to use/buy external debug probe.
       - :ref:`platform_ststm32`
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -1549,6 +1555,18 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - STM32F103RCT6
@@ -1567,6 +1585,12 @@ Please click on board name for the further details.
       - 64MHz
       - 128KB
       - 36KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_sparky_v1`
       - :ref:`platform_ststm32`
       - STM32F303CCT6
@@ -2650,6 +2674,13 @@ Generic
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
 
 HY
 ~~
@@ -2713,6 +2744,27 @@ LeafLabs
       - 72MHz
       - 108KB
       - 20KB
+
+Leafony Systems
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_leafony_ap03`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
 
 MXChip
 ~~~~~~
@@ -3537,7 +3589,7 @@ ST
       - On-board
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
@@ -3791,6 +3843,13 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_disco_h735ig`
       - :ref:`platform_ststm32`
       - On-board
@@ -3903,6 +3962,27 @@ Sigma IC
       - 64MHz
       - 128KB
       - 36KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
 
 TauLabs
 ~~~~~~~
