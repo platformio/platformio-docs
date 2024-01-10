@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Debugging &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/plus/debugging.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=dc17a79d"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -127,6 +129,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#frameworks">Frameworks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#boards">Boards</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bitsquared">1BitSquared</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-systems">4D Systems</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id1">96Boards</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#acsip">ACSIP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ai-thinker">AI Thinker</a></li>
@@ -144,7 +147,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#arduino">Arduino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#armed">Armed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#armstrap">Armstrap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#artronshop">ArtronShop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#atmel">Atmel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aventen">Aventen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#avnet-silica">Avnet Silica</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bbc">BBC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bpi-tech">BPI Tech</a></li>
@@ -195,15 +200,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#holyiot">Holyiot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hornbill">Hornbill</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#iotaap">IoTaaP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kinetic-dynamics">Kinetic Dynamics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#logisenses">LOGISENSES</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#laird-connectivity">Laird Connectivity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#leaflabs">LeafLabs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#leafony-systems">Leafony Systems</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lightup">LightUp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lilygo">LilyGo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#linino">Linino</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lion-bit">Lion:Bit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lowpowerlab">LowPowerLab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#m5stack">M5Stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mect-srl">MECT SRL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mh-et-live">MH-ET Live</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mxchip">MXChip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#makerasia">MakerAsia</a></li>
@@ -363,7 +371,7 @@
            <div itemprop="articleBody">
              
   <section id="debugging">
-<span id="piodebug"></span><h1>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h1>
+<span id="piodebug"></span><h1>Debugging<a class="headerlink" href="#debugging" title="Link to this heading"></a></h1>
 <p><strong>It Simply Works. Easier than ever before!</strong></p>
 <nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
@@ -418,7 +426,7 @@ Key debugging features of <a class="reference internal" href="../integration/ide
 </div>
 <a class="reference external image-reference" href="../ide/vscode.html"><img alt="../_images/platformio-ide-vscode.png" src="../_images/platformio-ide-vscode.png" /></a>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://medium.com/&#64;manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc">Arduino In-circuit Debugging with PlatformIO</a></p></li>
 <li><p><a class="reference external" href="https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6">Use the PlatformIO Debugger on the ESP32 Using an ESP-prog</a></p></li>
@@ -430,7 +438,7 @@ Key debugging features of <a class="reference internal" href="../integration/ide
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <p><strong>PlatformIO Debugging Solution</strong> can be configured using <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -455,7 +463,7 @@ Key debugging features of <a class="reference internal" href="../integration/ide
 </div>
 </section>
 <section id="tools-debug-probes">
-<span id="debugging-tools"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h2>
+<span id="debugging-tools"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h2>
 <p>You can switch between debugging tools using <a class="reference internal" href="../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a>
 option.</p>
 <div class="admonition warning">
@@ -497,13 +505,13 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </div>
 </section>
 <section id="debug-unit-tests">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Debug Unit Tests</a><a class="headerlink" href="#debug-unit-tests" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Debug Unit Tests</a><a class="headerlink" href="#debug-unit-tests" title="Link to this heading"></a></h2>
 <p><strong>PlatformIO Debugging Solution</strong> supports debugging of unit tests created with PlatformIO’s
 <a class="reference internal" href="../advanced/unit-testing/index.html#unit-testing"><span class="std std-ref">Unit Testing</span></a> framework.</p>
 <p>Please use <a class="reference internal" href="../projectconf/sections/env/options/debug/debug_test.html#projectconf-debug-test"><span class="std std-ref">debug_test</span></a> option to set a name of a test to be debugged.</p>
 </section>
 <section id="cli-guide">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">CLI Guide</a><a class="headerlink" href="#cli-guide" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">CLI Guide</a><a class="headerlink" href="#cli-guide" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../core/userguide/cmd_debug.html">pio debug</a><ul>
@@ -517,7 +525,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </div>
 </section>
 <section id="platforms">
-<span id="debugging-platforms"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading"></a></h2>
+<span id="debugging-platforms"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -598,7 +606,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -658,13 +666,13 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll tables below by horizontal.</p>
 </div>
 <section id="bitsquared">
-<h3>1BitSquared<a class="headerlink" href="#bitsquared" title="Permalink to this heading"></a></h3>
+<h3>1BitSquared<a class="headerlink" href="#bitsquared" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -688,8 +696,33 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="d-systems">
+<h3>4D Systems<a class="headerlink" href="#d-systems" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/4d_systems_esp32s3_gen4_r8n16.html#board-espressif32-4d-systems-esp32s3-gen4-r8n16"><span class="std std-ref">4D Systems GEN4-ESP32 16MB (ESP32S3-R8N16)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="id1">
-<h3>96Boards<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3>96Boards<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -746,7 +779,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="acsip">
-<h3>ACSIP<a class="headerlink" href="#acsip" title="Permalink to this heading"></a></h3>
+<h3>ACSIP<a class="headerlink" href="#acsip" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -771,7 +804,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ai-thinker">
-<h3>AI Thinker<a class="headerlink" href="#ai-thinker" title="Permalink to this heading"></a></h3>
+<h3>AI Thinker<a class="headerlink" href="#ai-thinker" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -796,7 +829,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="az-delivery">
-<h3>AZ-Delivery<a class="headerlink" href="#az-delivery" title="Permalink to this heading"></a></h3>
+<h3>AZ-Delivery<a class="headerlink" href="#az-delivery" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -821,7 +854,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="aceinna">
-<h3>Aceinna<a class="headerlink" href="#aceinna" title="Permalink to this heading"></a></h3>
+<h3>Aceinna<a class="headerlink" href="#aceinna" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -894,7 +927,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1235,7 +1268,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/metro.html#board-atmelavr-metro"><span class="std std-ref">Adafruit Metro</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_matrixportal_esp32s3.html#board-espressif32-adafruit-matrixportal-esp32s3"><span class="std std-ref">Adafruit MatrixPortal ESP32-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/metro.html#board-atmelavr-metro"><span class="std std-ref">Adafruit Metro</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -1243,12 +1284,20 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s2.html#board-espressif32-adafruit-metro-esp32s2"><span class="std std-ref">Adafruit Metro ESP32-S2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_metro_esp32s3.html#board-espressif32-adafruit-metro-esp32s3"><span class="std std-ref">Adafruit Metro ESP32-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_metro_m0.html#board-atmelsam-adafruit-metro-m0"><span class="std std-ref">Adafruit Metro M0 Expresss</span></a></p></td>
@@ -1387,7 +1436,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3_nopsram.html#board-espressif32-adafruit-qtpy-esp32s3-nopsram"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3_n4r2.html#board-espressif32-adafruit-qtpy-esp32s3-n4r2"><span class="std std-ref">Adafruit QT Py ESP32-S3 (4M Flash 2M PSRAM)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qtpy_esp32s3_nopsram.html#board-espressif32-adafruit-qtpy-esp32s3-nopsram"><span class="std std-ref">Adafruit QT Py ESP32-S3 No PSRAM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1395,13 +1452,21 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_qt_py_m0.html#board-atmelsam-adafruit-qt-py-m0"><span class="std std-ref">Adafruit QT Py M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_qt_py_m0.html#board-atmelsam-adafruit-qt-py-m0"><span class="std std-ref">Adafruit QT Py M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_qualia_s3_rgb666.html#board-espressif32-adafruit-qualia-s3-rgb666"><span class="std std-ref">Adafruit Qualia ESP32-S3 RGB666</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/adafruit_rotarytrinkey_m0.html#board-atmelsam-adafruit-rotarytrinkey-m0"><span class="std std-ref">Adafruit Rotary Trinkey</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
@@ -1475,7 +1540,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_cplaynrf52840.html#board-nordicnrf52-adafruit-cplaynrf52840"><span class="std std-ref">Circuit Playground Bluefruit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/adafruit_camera_esp32s3.html#board-espressif32-adafruit-camera-esp32s3"><span class="std std-ref">Adafruit pyCamera S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_cplaynrf52840.html#board-nordicnrf52-adafruit-cplaynrf52840"><span class="std std-ref">Circuit Playground Bluefruit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52840</p></td>
@@ -1483,7 +1556,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_itsybitsy_nrf52840.html#board-nordicnrf52-adafruit-itsybitsy-nrf52840"><span class="std std-ref">ItsyBitsy nRF52840 Express</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_itsybitsy_nrf52840.html#board-nordicnrf52-adafruit-itsybitsy-nrf52840"><span class="std std-ref">ItsyBitsy nRF52840 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52840</p></td>
@@ -1491,7 +1564,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_metro_nrf52840.html#board-nordicnrf52-adafruit-metro-nrf52840"><span class="std std-ref">Metro nRF52840 Express</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_metro_nrf52840.html#board-nordicnrf52-adafruit-metro-nrf52840"><span class="std std-ref">Metro nRF52840 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>External</p></td>
 <td><p>NRF52840</p></td>
@@ -1503,7 +1576,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="afroflight">
-<h3>AfroFlight<a class="headerlink" href="#afroflight" title="Permalink to this heading"></a></h3>
+<h3>AfroFlight<a class="headerlink" href="#afroflight" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1528,7 +1601,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="id2">
-<h3>Ai-Thinker<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<h3>Ai-Thinker<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1561,7 +1634,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="airm2m">
-<h3>AirM2M<a class="headerlink" href="#airm2m" title="Permalink to this heading"></a></h3>
+<h3>AirM2M<a class="headerlink" href="#airm2m" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1586,7 +1659,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="airbot">
-<h3>Airbot<a class="headerlink" href="#airbot" title="Permalink to this heading"></a></h3>
+<h3>Airbot<a class="headerlink" href="#airbot" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1611,7 +1684,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="aiyarafun">
-<h3>Aiyarafun<a class="headerlink" href="#aiyarafun" title="Permalink to this heading"></a></h3>
+<h3>Aiyarafun<a class="headerlink" href="#aiyarafun" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1636,7 +1709,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="alorium-technology">
-<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Permalink to this heading"></a></h3>
+<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1677,7 +1750,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="anarduino">
-<h3>Anarduino<a class="headerlink" href="#anarduino" title="Permalink to this heading"></a></h3>
+<h3>Anarduino<a class="headerlink" href="#anarduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1702,7 +1775,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="arduboy">
-<h3>Arduboy<a class="headerlink" href="#arduboy" title="Permalink to this heading"></a></h3>
+<h3>Arduboy<a class="headerlink" href="#arduboy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1735,7 +1808,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="arduino">
-<h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this heading"></a></h3>
+<h3>Arduino<a class="headerlink" href="#arduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2052,7 +2125,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/raspberrypi/nanorp2040connect.html#board-raspberrypi-nanorp2040connect"><span class="std std-ref">Arduino Nano RP2040 Connect</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/arduino_nano_esp32.html#board-espressif32-arduino-nano-esp32"><span class="std std-ref">Arduino Nano ESP32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/raspberrypi/nanorp2040connect.html#board-raspberrypi-nanorp2040connect"><span class="std std-ref">Arduino Nano RP2040 Connect</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/raspberrypi.html#platform-raspberrypi"><span class="std std-ref">Raspberry Pi RP2040</span></a></p></td>
 <td><p>External</p></td>
 <td><p>RP2040</p></td>
@@ -2060,13 +2141,21 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>264KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/nicla_sense_me.html#board-nordicnrf52-nicla-sense-me"><span class="std std-ref">Arduino Nicla Sense ME</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/nicla_sense_me.html#board-nordicnrf52-nicla-sense-me"><span class="std std-ref">Arduino Nicla Sense ME</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>NRF52832</p></td>
 <td><p>64MHz</p></td>
 <td><p>515.25KB</p></td>
 <td><p>62.78KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nicla_vision.html#board-ststm32-nicla-vision"><span class="std std-ref">Arduino Nicla Vision</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>768KB</p></td>
+<td><p>511.35KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nicla_vision_m4.html#board-ststm32-nicla-vision-m4"><span class="std std-ref">Arduino Nicla Vision (M4 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -2076,7 +2165,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>287.35KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nicla_vision.html#board-ststm32-nicla-vision"><span class="std std-ref">Arduino Opta</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/opta.html#board-ststm32-opta"><span class="std std-ref">Arduino Opta</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2084,15 +2173,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>768KB</p></td>
 <td><p>511.35KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/opta.html#board-ststm32-opta"><span class="std std-ref">Arduino Opta</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>STM32H747XIH6</p></td>
-<td><p>480MHz</p></td>
-<td><p>768KB</p></td>
-<td><p>511.35KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/opta_m4.html#board-ststm32-opta-m4"><span class="std std-ref">Arduino Opta (M4 core)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/opta_m4.html#board-ststm32-opta-m4"><span class="std std-ref">Arduino Opta (M4 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2100,7 +2181,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>287.35KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/renesas-ra/portenta_c33.html#board-renesas-ra-portenta-c33"><span class="std std-ref">Arduino Portenta C33</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/renesas-ra/portenta_c33.html#board-renesas-ra-portenta-c33"><span class="std std-ref">Arduino Portenta C33</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/renesas-ra.html#platform-renesas-ra"><span class="std std-ref">Renesas RA</span></a></p></td>
 <td><p>External</p></td>
 <td><p>R7FA6M5BH2CBG</p></td>
@@ -2108,7 +2189,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>511.35KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m4.html#board-ststm32-portenta-h7-m4"><span class="std std-ref">Arduino Portenta H7 (M4 core)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m4.html#board-ststm32-portenta-h7-m4"><span class="std std-ref">Arduino Portenta H7 (M4 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2116,7 +2197,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>287.35KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m7.html#board-ststm32-portenta-h7-m7"><span class="std std-ref">Arduino Portenta H7 (M7 core)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/portenta_h7_m7.html#board-ststm32-portenta-h7-m7"><span class="std std-ref">Arduino Portenta H7 (M7 core)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -2124,7 +2205,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>768KB</p></td>
 <td><p>511.35KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega168.html#board-atmelavr-pro8mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega168.html#board-atmelavr-pro8mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA168</p></td>
@@ -2132,7 +2213,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>14KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega168.html#board-atmelavr-pro16mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega168.html#board-atmelavr-pro16mhzatmega168"><span class="std std-ref">Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA168</p></td>
@@ -2140,7 +2221,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>14KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega328.html#board-atmelavr-pro8mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro8MHzatmega328.html#board-atmelavr-pro8mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (3.3V, 8 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2148,7 +2229,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega328.html#board-atmelavr-pro16mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/pro16MHzatmega328.html#board-atmelavr-pro16mhzatmega328"><span class="std std-ref">Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2156,7 +2237,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/robotControl.html#board-atmelavr-robotcontrol"><span class="std std-ref">Arduino Robot Control</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/robotControl.html#board-atmelavr-robotcontrol"><span class="std std-ref">Arduino Robot Control</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2164,7 +2245,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/robotMotor.html#board-atmelavr-robotmotor"><span class="std std-ref">Arduino Robot Motor</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/robotMotor.html#board-atmelavr-robotmotor"><span class="std std-ref">Arduino Robot Motor</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2172,7 +2253,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/tian.html#board-atmelsam-tian"><span class="std std-ref">Arduino Tian</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/tian.html#board-atmelsam-tian"><span class="std std-ref">Arduino Tian</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -2180,7 +2261,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uno.html#board-atmelavr-uno"><span class="std std-ref">Arduino Uno</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ATMEGA328P</p></td>
+<td><p>16MHz</p></td>
+<td><p>31.50KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/uno_mini.html#board-atmelavr-uno-mini"><span class="std std-ref">Arduino Uno Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -2256,7 +2345,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="armed">
-<h3>Armed<a class="headerlink" href="#armed" title="Permalink to this heading"></a></h3>
+<h3>Armed<a class="headerlink" href="#armed" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2281,7 +2370,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="armstrap">
-<h3>Armstrap<a class="headerlink" href="#armstrap" title="Permalink to this heading"></a></h3>
+<h3>Armstrap<a class="headerlink" href="#armstrap" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2321,8 +2410,49 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="artronshop">
+<h3>ArtronShop<a class="headerlink" href="#artronshop" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/atd147_s3.html#board-espressif32-atd147-s3"><span class="std std-ref">ArtronShop ATD1.47-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/ioxesp32.html#board-espressif32-ioxesp32"><span class="std std-ref">ArtronShop IOXESP32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/ioxesp32ps.html#board-espressif32-ioxesp32ps"><span class="std std-ref">ArtronShop IOXESP32PS</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="atmel">
-<h3>Atmel<a class="headerlink" href="#atmel" title="Permalink to this heading"></a></h3>
+<h3>Atmel<a class="headerlink" href="#atmel" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2442,8 +2572,33 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="aventen">
+<h3>Aventen<a class="headerlink" href="#aventen" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/aventen_s3_sync.html#board-espressif32-aventen-s3-sync"><span class="std std-ref">Aventen S3 Sync</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="avnet-silica">
-<h3>Avnet Silica<a class="headerlink" href="#avnet-silica" title="Permalink to this heading"></a></h3>
+<h3>Avnet Silica<a class="headerlink" href="#avnet-silica" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2468,7 +2623,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bbc">
-<h3>BBC<a class="headerlink" href="#bbc" title="Permalink to this heading"></a></h3>
+<h3>BBC<a class="headerlink" href="#bbc" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2501,7 +2656,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bpi-tech">
-<h3>BPI Tech<a class="headerlink" href="#bpi-tech" title="Permalink to this heading"></a></h3>
+<h3>BPI Tech<a class="headerlink" href="#bpi-tech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2526,7 +2681,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bq">
-<h3>BQ<a class="headerlink" href="#bq" title="Permalink to this heading"></a></h3>
+<h3>BQ<a class="headerlink" href="#bq" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2551,7 +2706,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bsfrance">
-<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Permalink to this heading"></a></h3>
+<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2576,7 +2731,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="big-tree-tech">
-<h3>Big Tree Tech<a class="headerlink" href="#big-tree-tech" title="Permalink to this heading"></a></h3>
+<h3>Big Tree Tech<a class="headerlink" href="#big-tree-tech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2601,7 +2756,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bitwizard">
-<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Permalink to this heading"></a></h3>
+<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2626,7 +2781,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="blinker">
-<h3>Blinker<a class="headerlink" href="#blinker" title="Permalink to this heading"></a></h3>
+<h3>Blinker<a class="headerlink" href="#blinker" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2659,7 +2814,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="blueswireless">
-<h3>BluesWireless<a class="headerlink" href="#blueswireless" title="Permalink to this heading"></a></h3>
+<h3>BluesWireless<a class="headerlink" href="#blueswireless" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2684,7 +2839,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="bluzdk">
-<h3>BluzDK<a class="headerlink" href="#bluzdk" title="Permalink to this heading"></a></h3>
+<h3>BluzDK<a class="headerlink" href="#bluzdk" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2709,7 +2864,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="calliope">
-<h3>Calliope<a class="headerlink" href="#calliope" title="Permalink to this heading"></a></h3>
+<h3>Calliope<a class="headerlink" href="#calliope" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2734,7 +2889,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="connaxio">
-<h3>Connaxio<a class="headerlink" href="#connaxio" title="Permalink to this heading"></a></h3>
+<h3>Connaxio<a class="headerlink" href="#connaxio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2759,7 +2914,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="controllino">
-<h3>Controllino<a class="headerlink" href="#controllino" title="Permalink to this heading"></a></h3>
+<h3>Controllino<a class="headerlink" href="#controllino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2808,7 +2963,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="cytron-technologies">
-<h3>Cytron Technologies<a class="headerlink" href="#cytron-technologies" title="Permalink to this heading"></a></h3>
+<h3>Cytron Technologies<a class="headerlink" href="#cytron-technologies" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2833,7 +2988,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="dfrobot">
-<h3>DFRobot<a class="headerlink" href="#dfrobot" title="Permalink to this heading"></a></h3>
+<h3>DFRobot<a class="headerlink" href="#dfrobot" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2870,7 +3025,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/dfrobot_romeo_esp32s3.html#board-espressif32-dfrobot-romeo-esp32s3"><span class="std std-ref">DFRobot Romeo ESP32-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -2882,7 +3045,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="doit">
-<h3>DOIT<a class="headerlink" href="#doit" title="Permalink to this heading"></a></h3>
+<h3>DOIT<a class="headerlink" href="#doit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2915,7 +3078,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="dstike">
-<h3>DSTIKE<a class="headerlink" href="#dstike" title="Permalink to this heading"></a></h3>
+<h3>DSTIKE<a class="headerlink" href="#dstike" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2940,7 +3103,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="delta">
-<h3>Delta<a class="headerlink" href="#delta" title="Permalink to this heading"></a></h3>
+<h3>Delta<a class="headerlink" href="#delta" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2965,7 +3128,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="deparment-of-alchemy">
-<h3>Deparment of Alchemy<a class="headerlink" href="#deparment-of-alchemy" title="Permalink to this heading"></a></h3>
+<h3>Deparment of Alchemy<a class="headerlink" href="#deparment-of-alchemy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2990,7 +3153,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="devebox">
-<h3>DevEBox<a class="headerlink" href="#devebox" title="Permalink to this heading"></a></h3>
+<h3>DevEBox<a class="headerlink" href="#devebox" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3023,7 +3186,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="digilent">
-<h3>Digilent<a class="headerlink" href="#digilent" title="Permalink to this heading"></a></h3>
+<h3>Digilent<a class="headerlink" href="#digilent" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3056,7 +3219,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="digistump">
-<h3>Digistump<a class="headerlink" href="#digistump" title="Permalink to this heading"></a></h3>
+<h3>Digistump<a class="headerlink" href="#digistump" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3089,7 +3252,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="diymore">
-<h3>Diymore<a class="headerlink" href="#diymore" title="Permalink to this heading"></a></h3>
+<h3>Diymore<a class="headerlink" href="#diymore" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3114,7 +3277,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="dongsen-technology">
-<h3>Dongsen Technology<a class="headerlink" href="#dongsen-technology" title="Permalink to this heading"></a></h3>
+<h3>Dongsen Technology<a class="headerlink" href="#dongsen-technology" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3139,7 +3302,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="dycodex">
-<h3>DycodeX<a class="headerlink" href="#dycodex" title="Permalink to this heading"></a></h3>
+<h3>DycodeX<a class="headerlink" href="#dycodex" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3164,7 +3327,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="esp32vn">
-<h3>ESP32vn<a class="headerlink" href="#esp32vn" title="Permalink to this heading"></a></h3>
+<h3>ESP32vn<a class="headerlink" href="#esp32vn" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3189,7 +3352,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="econode">
-<h3>Econode<a class="headerlink" href="#econode" title="Permalink to this heading"></a></h3>
+<h3>Econode<a class="headerlink" href="#econode" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3214,7 +3377,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="electronut-labs">
-<h3>Electronut Labs<a class="headerlink" href="#electronut-labs" title="Permalink to this heading"></a></h3>
+<h3>Electronut Labs<a class="headerlink" href="#electronut-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3247,7 +3410,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="electronutlabs">
-<h3>ElectronutLabs<a class="headerlink" href="#electronutlabs" title="Permalink to this heading"></a></h3>
+<h3>ElectronutLabs<a class="headerlink" href="#electronutlabs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3280,7 +3443,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="electrosmith">
-<h3>Electrosmith<a class="headerlink" href="#electrosmith" title="Permalink to this heading"></a></h3>
+<h3>Electrosmith<a class="headerlink" href="#electrosmith" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3321,7 +3484,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="elektor">
-<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading"></a></h3>
+<h3>Elektor<a class="headerlink" href="#elektor" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3354,7 +3517,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="engduino">
-<h3>Engduino<a class="headerlink" href="#engduino" title="Permalink to this heading"></a></h3>
+<h3>Engduino<a class="headerlink" href="#engduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3379,7 +3542,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="envirodiy">
-<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Permalink to this heading"></a></h3>
+<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3404,7 +3567,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="espinallab">
-<h3>EspinalLab<a class="headerlink" href="#espinallab" title="Permalink to this heading"></a></h3>
+<h3>EspinalLab<a class="headerlink" href="#espinallab" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3429,7 +3592,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="espotel">
-<h3>Espotel<a class="headerlink" href="#espotel" title="Permalink to this heading"></a></h3>
+<h3>Espotel<a class="headerlink" href="#espotel" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3454,7 +3617,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="espressif">
-<h3>Espressif<a class="headerlink" href="#espressif" title="Permalink to this heading"></a></h3>
+<h3>Espressif<a class="headerlink" href="#espressif" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3515,7 +3678,23 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-kaluga-1.html#board-espressif32-esp32-s2-kaluga-1"><span class="std std-ref">Espressif ESP32-S2-Kaluga-1 Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c6-devkitm-1.html#board-espressif32-esp32-c6-devkitm-1"><span class="std std-ref">Espressif ESP32-C6-DevKitM-1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C6</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-kaluga-1.html#board-espressif32-esp32-s2-kaluga-1"><span class="std std-ref">Espressif ESP32-S2-Kaluga-1 Kit</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -3523,15 +3702,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -3539,7 +3710,23 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitc-1.html#board-espressif32-esp32-s3-devkitc-1"><span class="std std-ref">Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s3-devkitm-1.html#board-espressif32-esp32-s3-devkitm-1"><span class="std std-ref">Espressif ESP32-S3-DevKitM-1</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3usbotg.html#board-espressif32-esp32s3usbotg"><span class="std std-ref">Espressif ESP32-S3-USB-OTG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ESP32S3</p></td>
@@ -3551,7 +3738,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="fysetc">
-<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading"></a></h3>
+<h3>FYSETC<a class="headerlink" href="#fysetc" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3584,7 +3771,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="franzininho">
-<h3>Franzininho<a class="headerlink" href="#franzininho" title="Permalink to this heading"></a></h3>
+<h3>Franzininho<a class="headerlink" href="#franzininho" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3625,7 +3812,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="fred">
-<h3>Fred<a class="headerlink" href="#fred" title="Permalink to this heading"></a></h3>
+<h3>Fred<a class="headerlink" href="#fred" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3650,7 +3837,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="freescale">
-<h3>Freescale<a class="headerlink" href="#freescale" title="Permalink to this heading"></a></h3>
+<h3>Freescale<a class="headerlink" href="#freescale" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3747,7 +3934,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="generic">
-<h3>Generic<a class="headerlink" href="#generic" title="Permalink to this heading"></a></h3>
+<h3>Generic<a class="headerlink" href="#generic" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4352,11 +4539,19 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32H750VB.html#board-ststm32-genericstm32h750vb"><span class="std std-ref">STM32H750VBT6 (1024k RAM. 128k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H750VBT6</p></td>
+<td><p>480MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>1MB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="gimasi">
-<h3>Gimasi<a class="headerlink" href="#gimasi" title="Permalink to this heading"></a></h3>
+<h3>Gimasi<a class="headerlink" href="#gimasi" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4381,7 +4576,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="greenwaves-technologies">
-<h3>GreenWaves Technologies<a class="headerlink" href="#greenwaves-technologies" title="Permalink to this heading"></a></h3>
+<h3>GreenWaves Technologies<a class="headerlink" href="#greenwaves-technologies" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4406,7 +4601,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="honeylemon">
-<h3>HONEYLemon<a class="headerlink" href="#honeylemon" title="Permalink to this heading"></a></h3>
+<h3>HONEYLemon<a class="headerlink" href="#honeylemon" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4431,7 +4626,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="hy">
-<h3>HY<a class="headerlink" href="#hy" title="Permalink to this heading"></a></h3>
+<h3>HY<a class="headerlink" href="#hy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4456,7 +4651,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="heltec">
-<h3>Heltec<a class="headerlink" href="#heltec" title="Permalink to this heading"></a></h3>
+<h3>Heltec<a class="headerlink" href="#heltec" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4489,7 +4684,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="heltec-automation">
-<h3>Heltec Automation<a class="headerlink" href="#heltec-automation" title="Permalink to this heading"></a></h3>
+<h3>Heltec Automation<a class="headerlink" href="#heltec-automation" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4530,7 +4725,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="holyiot">
-<h3>Holyiot<a class="headerlink" href="#holyiot" title="Permalink to this heading"></a></h3>
+<h3>Holyiot<a class="headerlink" href="#holyiot" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4555,7 +4750,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="hornbill">
-<h3>Hornbill<a class="headerlink" href="#hornbill" title="Permalink to this heading"></a></h3>
+<h3>Hornbill<a class="headerlink" href="#hornbill" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4588,7 +4783,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="iotaap">
-<h3>IoTaaP<a class="headerlink" href="#iotaap" title="Permalink to this heading"></a></h3>
+<h3>IoTaaP<a class="headerlink" href="#iotaap" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4612,8 +4807,33 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="kinetic-dynamics">
+<h3>Kinetic Dynamics<a class="headerlink" href="#kinetic-dynamics" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/nebulas3.html#board-espressif32-nebulas3"><span class="std std-ref">Kinetic Dynamics Nebula S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="logisenses">
-<h3>LOGISENSES<a class="headerlink" href="#logisenses" title="Permalink to this heading"></a></h3>
+<h3>LOGISENSES<a class="headerlink" href="#logisenses" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4638,7 +4858,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="laird-connectivity">
-<h3>Laird Connectivity<a class="headerlink" href="#laird-connectivity" title="Permalink to this heading"></a></h3>
+<h3>Laird Connectivity<a class="headerlink" href="#laird-connectivity" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4687,7 +4907,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="leaflabs">
-<h3>LeafLabs<a class="headerlink" href="#leaflabs" title="Permalink to this heading"></a></h3>
+<h3>LeafLabs<a class="headerlink" href="#leaflabs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4735,8 +4955,33 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="leafony-systems">
+<h3>Leafony Systems<a class="headerlink" href="#leafony-systems" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/leafony_ap03.html#board-ststm32-leafony-ap03"><span class="std std-ref">Leafony Systems AP03</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32L452RET6</p></td>
+<td><p>80MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>160KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="lightup">
-<h3>LightUp<a class="headerlink" href="#lightup" title="Permalink to this heading"></a></h3>
+<h3>LightUp<a class="headerlink" href="#lightup" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4761,7 +5006,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="lilygo">
-<h3>LilyGo<a class="headerlink" href="#lilygo" title="Permalink to this heading"></a></h3>
+<h3>LilyGo<a class="headerlink" href="#lilygo" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4786,7 +5031,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="linino">
-<h3>Linino<a class="headerlink" href="#linino" title="Permalink to this heading"></a></h3>
+<h3>Linino<a class="headerlink" href="#linino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4811,7 +5056,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="lion-bit">
-<h3>Lion:Bit<a class="headerlink" href="#lion-bit" title="Permalink to this heading"></a></h3>
+<h3>Lion:Bit<a class="headerlink" href="#lion-bit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4832,11 +5077,19 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbits3.html#board-espressif32-lionbits3"><span class="std std-ref">Lion:Bit S3 STEM Dev Board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="lowpowerlab">
-<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Permalink to this heading"></a></h3>
+<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4893,7 +5146,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="m5stack">
-<h3>M5Stack<a class="headerlink" href="#m5stack" title="Permalink to this heading"></a></h3>
+<h3>M5Stack<a class="headerlink" href="#m5stack" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4914,7 +5167,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -4925,8 +5186,41 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="mect-srl">
+<h3>MECT SRL<a class="headerlink" href="#mect-srl" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/namino_arancio.html#board-espressif32-namino-arancio"><span class="std std-ref">Namino Arancio</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/namino_rosso.html#board-espressif32-namino-rosso"><span class="std std-ref">Namino Rosso</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="mh-et-live">
-<h3>MH-ET Live<a class="headerlink" href="#mh-et-live" title="Permalink to this heading"></a></h3>
+<h3>MH-ET Live<a class="headerlink" href="#mh-et-live" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4959,7 +5253,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="mxchip">
-<h3>MXChip<a class="headerlink" href="#mxchip" title="Permalink to this heading"></a></h3>
+<h3>MXChip<a class="headerlink" href="#mxchip" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4984,7 +5278,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="makerasia">
-<h3>MakerAsia<a class="headerlink" href="#makerasia" title="Permalink to this heading"></a></h3>
+<h3>MakerAsia<a class="headerlink" href="#makerasia" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5009,7 +5303,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="makerdiary">
-<h3>Makerdiary<a class="headerlink" href="#makerdiary" title="Permalink to this heading"></a></h3>
+<h3>Makerdiary<a class="headerlink" href="#makerdiary" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5042,7 +5336,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="malyan">
-<h3>Malyan<a class="headerlink" href="#malyan" title="Permalink to this heading"></a></h3>
+<h3>Malyan<a class="headerlink" href="#malyan" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5083,7 +5377,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="maxim">
-<h3>Maxim<a class="headerlink" href="#maxim" title="Permalink to this heading"></a></h3>
+<h3>Maxim<a class="headerlink" href="#maxim" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5132,7 +5426,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="mediatek-labs">
-<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Permalink to this heading"></a></h3>
+<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5157,7 +5451,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="microchip">
-<h3>Microchip<a class="headerlink" href="#microchip" title="Permalink to this heading"></a></h3>
+<h3>Microchip<a class="headerlink" href="#microchip" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5358,7 +5652,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="microduino">
-<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading"></a></h3>
+<h3>Microduino<a class="headerlink" href="#microduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5455,7 +5749,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="midatronics">
-<h3>Midatronics<a class="headerlink" href="#midatronics" title="Permalink to this heading"></a></h3>
+<h3>Midatronics<a class="headerlink" href="#midatronics" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5480,7 +5774,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="mikroelektronika">
-<h3>MikroElektronika<a class="headerlink" href="#mikroelektronika" title="Permalink to this heading"></a></h3>
+<h3>MikroElektronika<a class="headerlink" href="#mikroelektronika" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5505,7 +5799,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="multitech">
-<h3>MultiTech<a class="headerlink" href="#multitech" title="Permalink to this heading"></a></h3>
+<h3>MultiTech<a class="headerlink" href="#multitech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5554,7 +5848,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="munich-labs">
-<h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Permalink to this heading"></a></h3>
+<h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5579,7 +5873,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="nxp">
-<h3>NXP<a class="headerlink" href="#nxp" title="Permalink to this heading"></a></h3>
+<h3>NXP<a class="headerlink" href="#nxp" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5684,7 +5978,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="netduino">
-<h3>Netduino<a class="headerlink" href="#netduino" title="Permalink to this heading"></a></h3>
+<h3>Netduino<a class="headerlink" href="#netduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5709,7 +6003,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="nodemcu">
-<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Permalink to this heading"></a></h3>
+<h3>NodeMCU<a class="headerlink" href="#nodemcu" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5734,7 +6028,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="nordic">
-<h3>Nordic<a class="headerlink" href="#nordic" title="Permalink to this heading"></a></h3>
+<h3>Nordic<a class="headerlink" href="#nordic" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5815,7 +6109,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="olimex">
-<h3>OLIMEX<a class="headerlink" href="#olimex" title="Permalink to this heading"></a></h3>
+<h3>OLIMEX<a class="headerlink" href="#olimex" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5856,7 +6150,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="oshchip">
-<h3>OSHChip<a class="headerlink" href="#oshchip" title="Permalink to this heading"></a></h3>
+<h3>OSHChip<a class="headerlink" href="#oshchip" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5881,7 +6175,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="id3">
-<h3>Olimex<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<h3>Olimex<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5946,7 +6240,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="openenergymonitor">
-<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Permalink to this heading"></a></h3>
+<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -5971,7 +6265,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="phytec">
-<h3>PHYTEC<a class="headerlink" href="#phytec" title="Permalink to this heading"></a></h3>
+<h3>PHYTEC<a class="headerlink" href="#phytec" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6004,7 +6298,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="pybstick">
-<h3>PYBStick<a class="headerlink" href="#pybstick" title="Permalink to this heading"></a></h3>
+<h3>PYBStick<a class="headerlink" href="#pybstick" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6053,7 +6347,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="panstamp">
-<h3>PanStamp<a class="headerlink" href="#panstamp" title="Permalink to this heading"></a></h3>
+<h3>PanStamp<a class="headerlink" href="#panstamp" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6078,7 +6372,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="particle">
-<h3>Particle<a class="headerlink" href="#particle" title="Permalink to this heading"></a></h3>
+<h3>Particle<a class="headerlink" href="#particle" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6119,7 +6413,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="piconomix">
-<h3>Piconomix<a class="headerlink" href="#piconomix" title="Permalink to this heading"></a></h3>
+<h3>Piconomix<a class="headerlink" href="#piconomix" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6144,7 +6438,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="pololu-corporation">
-<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Permalink to this heading"></a></h3>
+<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6169,7 +6463,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="prntrboard">
-<h3>PrntrBoard<a class="headerlink" href="#prntrboard" title="Permalink to this heading"></a></h3>
+<h3>PrntrBoard<a class="headerlink" href="#prntrboard" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6194,7 +6488,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="prusa-3d">
-<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Permalink to this heading"></a></h3>
+<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6227,7 +6521,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="punch-through">
-<h3>Punch Through<a class="headerlink" href="#punch-through" title="Permalink to this heading"></a></h3>
+<h3>Punch Through<a class="headerlink" href="#punch-through" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6260,7 +6554,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="pycom-ltd">
-<h3>Pycom Ltd.<a class="headerlink" href="#pycom-ltd" title="Permalink to this heading"></a></h3>
+<h3>Pycom Ltd.<a class="headerlink" href="#pycom-ltd" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6301,7 +6595,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="quirkbot">
-<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Permalink to this heading"></a></h3>
+<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6326,7 +6620,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="rak">
-<h3>RAK<a class="headerlink" href="#rak" title="Permalink to this heading"></a></h3>
+<h3>RAK<a class="headerlink" href="#rak" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6359,7 +6653,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="rumba">
-<h3>RUMBA<a class="headerlink" href="#rumba" title="Permalink to this heading"></a></h3>
+<h3>RUMBA<a class="headerlink" href="#rumba" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6384,7 +6678,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="raspberry-pi">
-<h3>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this heading"></a></h3>
+<h3>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6409,7 +6703,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="raytac">
-<h3>Raytac<a class="headerlink" href="#raytac" title="Permalink to this heading"></a></h3>
+<h3>Raytac<a class="headerlink" href="#raytac" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6434,7 +6728,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="redbearlab">
-<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Permalink to this heading"></a></h3>
+<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6507,7 +6801,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="remram">
-<h3>RemRam<a class="headerlink" href="#remram" title="Permalink to this heading"></a></h3>
+<h3>RemRam<a class="headerlink" href="#remram" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6532,7 +6826,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="reprap">
-<h3>RepRap<a class="headerlink" href="#reprap" title="Permalink to this heading"></a></h3>
+<h3>RepRap<a class="headerlink" href="#reprap" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6557,7 +6851,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="reprapworld">
-<h3>ReprapWorld<a class="headerlink" href="#reprapworld" title="Permalink to this heading"></a></h3>
+<h3>ReprapWorld<a class="headerlink" href="#reprapworld" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6582,7 +6876,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="robotdyn">
-<h3>RobotDyn<a class="headerlink" href="#robotdyn" title="Permalink to this heading"></a></h3>
+<h3>RobotDyn<a class="headerlink" href="#robotdyn" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6607,7 +6901,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="roboticsbrno">
-<h3>RoboticsBrno<a class="headerlink" href="#roboticsbrno" title="Permalink to this heading"></a></h3>
+<h3>RoboticsBrno<a class="headerlink" href="#roboticsbrno" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6632,7 +6926,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="rushup">
-<h3>RushUp<a class="headerlink" href="#rushup" title="Permalink to this heading"></a></h3>
+<h3>RushUp<a class="headerlink" href="#rushup" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6665,7 +6959,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ruuvi">
-<h3>Ruuvi<a class="headerlink" href="#ruuvi" title="Permalink to this heading"></a></h3>
+<h3>Ruuvi<a class="headerlink" href="#ruuvi" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6690,7 +6984,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="segger">
-<h3>SEGGER<a class="headerlink" href="#segger" title="Permalink to this heading"></a></h3>
+<h3>SEGGER<a class="headerlink" href="#segger" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6715,7 +7009,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sg-o">
-<h3>SG-O<a class="headerlink" href="#sg-o" title="Permalink to this heading"></a></h3>
+<h3>SG-O<a class="headerlink" href="#sg-o" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6740,7 +7034,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sodaq">
-<h3>SODAQ<a class="headerlink" href="#sodaq" title="Permalink to this heading"></a></h3>
+<h3>SODAQ<a class="headerlink" href="#sodaq" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6837,7 +7131,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sqfmi">
-<h3>SQFMI<a class="headerlink" href="#sqfmi" title="Permalink to this heading"></a></h3>
+<h3>SQFMI<a class="headerlink" href="#sqfmi" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -6862,7 +7156,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="st">
-<h3>ST<a class="headerlink" href="#st" title="Permalink to this heading"></a></h3>
+<h3>ST<a class="headerlink" href="#st" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7360,7 +7654,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>On-board</p></td>
 <td><p>STM32G0B1RET6</p></td>
 <td><p>64MHz</p></td>
-<td><p>256KB</p></td>
+<td><p>512KB</p></td>
 <td><p>144KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
@@ -7699,7 +7993,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>64KB</p></td>
 <td><p>340KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h735ig.html#board-ststm32-disco-h735ig"><span class="std std-ref">STM32H735G-DK Discovery kit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/genericSTM32G431CB.html#board-ststm32-genericstm32g431cb"><span class="std std-ref">STM32G431CB (32k RAM. 128k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32G431CBU6</p></td>
+<td><p>170MHz</p></td>
+<td><p>128KB</p></td>
+<td><p>32KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h735ig.html#board-ststm32-disco-h735ig"><span class="std std-ref">STM32H735G-DK Discovery kit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H735IGK6</p></td>
@@ -7707,7 +8009,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>1MB</p></td>
 <td><p>432KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -7715,7 +8017,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/steval_mksboxv1.html#board-ststm32-steval-mksboxv1"><span class="std std-ref">SensorTile.box</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32L4R9ZI</p></td>
@@ -7727,7 +8029,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="stmicroelectronics">
-<h3>STMicroelectronics<a class="headerlink" href="#stmicroelectronics" title="Permalink to this heading"></a></h3>
+<h3>STMicroelectronics<a class="headerlink" href="#stmicroelectronics" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7760,7 +8062,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="storm32">
-<h3>STorM32<a class="headerlink" href="#storm32" title="Permalink to this heading"></a></h3>
+<h3>STorM32<a class="headerlink" href="#storm32" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7785,7 +8087,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sainsmart">
-<h3>SainSmart<a class="headerlink" href="#sainsmart" title="Permalink to this heading"></a></h3>
+<h3>SainSmart<a class="headerlink" href="#sainsmart" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7818,7 +8120,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sanguino">
-<h3>Sanguino<a class="headerlink" href="#sanguino" title="Permalink to this heading"></a></h3>
+<h3>Sanguino<a class="headerlink" href="#sanguino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7883,7 +8185,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="seeed">
-<h3>Seeed<a class="headerlink" href="#seeed" title="Permalink to this heading"></a></h3>
+<h3>Seeed<a class="headerlink" href="#seeed" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7948,7 +8250,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="seeed-studio">
-<h3>Seeed Studio<a class="headerlink" href="#seeed-studio" title="Permalink to this heading"></a></h3>
+<h3>Seeed Studio<a class="headerlink" href="#seeed-studio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -7989,7 +8291,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8034,6 +8336,22 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/lora_e5_dev_board.html#board-ststm32-lora-e5-dev-board"><span class="std std-ref">SeeedStudio LoRa E5 Dev Board</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32WLE5JC</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/lora_e5_mini.html#board-ststm32-lora-e5-mini"><span class="std std-ref">SeeedStudio LoRa-E5 mini</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32WLE5JC</p></td>
+<td><p>48MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/seeeduino.html#board-atmelavr-seeeduino"><span class="std std-ref">Seeeduino</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
@@ -8046,7 +8364,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="semtech">
-<h3>Semtech<a class="headerlink" href="#semtech" title="Permalink to this heading"></a></h3>
+<h3>Semtech<a class="headerlink" href="#semtech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8071,7 +8389,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sifive">
-<h3>SiFive<a class="headerlink" href="#sifive" title="Permalink to this heading"></a></h3>
+<h3>SiFive<a class="headerlink" href="#sifive" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8112,7 +8430,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sigma-delta-technologies">
-<h3>Sigma Delta Technologies<a class="headerlink" href="#sigma-delta-technologies" title="Permalink to this heading"></a></h3>
+<h3>Sigma Delta Technologies<a class="headerlink" href="#sigma-delta-technologies" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8137,7 +8455,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sigma-ic">
-<h3>Sigma IC<a class="headerlink" href="#sigma-ic" title="Permalink to this heading"></a></h3>
+<h3>Sigma IC<a class="headerlink" href="#sigma-ic" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8162,7 +8480,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="silicognition">
-<h3>Silicognition<a class="headerlink" href="#silicognition" title="Permalink to this heading"></a></h3>
+<h3>Silicognition<a class="headerlink" href="#silicognition" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8187,7 +8505,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="silicon-labs">
-<h3>Silicon Labs<a class="headerlink" href="#silicon-labs" title="Permalink to this heading"></a></h3>
+<h3>Silicon Labs<a class="headerlink" href="#silicon-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8244,7 +8562,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="smart-bee">
-<h3>Smart Bee<a class="headerlink" href="#smart-bee" title="Permalink to this heading"></a></h3>
+<h3>Smart Bee<a class="headerlink" href="#smart-bee" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8257,23 +8575,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S2</p></td>
-<td><p>240MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32C3</p></td>
-<td><p>160MHz</p></td>
-<td><p>4MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_data_logger.html#board-espressif32-bee-data-logger"><span class="std std-ref">Smart Bee Data Logger</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -8281,7 +8583,31 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion.html#board-espressif32-bee-motion"><span class="std std-ref">Smart Bee Motion</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_mini.html#board-espressif32-bee-motion-mini"><span class="std std-ref">Smart Bee Motion Mini</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/bee_motion_s3.html#board-espressif32-bee-motion-s3"><span class="std std-ref">Smart Bee Motion S3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/bee_s3.html#board-espressif32-bee-s3"><span class="std std-ref">Smart Bee S3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -8293,7 +8619,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sparkfun">
-<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading"></a></h3>
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8402,7 +8728,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/teensy/teensymm.html#board-teensy-teensymm"><span class="std std-ref">SparkFun MicroMod Teensy</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/sparkfun_micromod_f405.html#board-ststm32-sparkfun-micromod-f405"><span class="std std-ref">SparkFun MicroMod STM32F405</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F405RGT6</p></td>
+<td><p>168MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/teensy/teensymm.html#board-teensy-teensymm"><span class="std std-ref">SparkFun MicroMod Teensy</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/teensy.html#platform-teensy"><span class="std std-ref">Teensy</span></a></p></td>
 <td><p>External</p></td>
 <td><p>IMXRT1062</p></td>
@@ -8410,7 +8744,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>7.75MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uview.html#board-atmelavr-uview"><span class="std std-ref">SparkFun MicroView</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/uview.html#board-atmelavr-uview"><span class="std std-ref">SparkFun MicroView</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -8418,7 +8752,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro8.html#board-atmelavr-sparkfun-promicro8"><span class="std std-ref">SparkFun Pro Micro 3.3V/8MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro8.html#board-atmelavr-sparkfun-promicro8"><span class="std std-ref">SparkFun Pro Micro 3.3V/8MHz</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -8426,7 +8760,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro16.html#board-atmelavr-sparkfun-promicro16"><span class="std std-ref">SparkFun Pro Micro 5V/16MHz</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro16.html#board-atmelavr-sparkfun-promicro16"><span class="std std-ref">SparkFun Pro Micro 5V/16MHz</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -8434,7 +8768,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_qduinomini.html#board-atmelavr-sparkfun-qduinomini"><span class="std std-ref">SparkFun Qduino Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_qduinomini.html#board-atmelavr-sparkfun-qduinomini"><span class="std std-ref">SparkFun Qduino Mini</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -8442,7 +8776,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_qwiic_micro_samd21e.html#board-atmelsam-sparkfun-qwiic-micro-samd21e"><span class="std std-ref">SparkFun Qwiic Micro</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21E18A</p></td>
@@ -8450,7 +8784,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_redboard_v.html#board-sifive-sparkfun-redboard-v"><span class="std std-ref">SparkFun RED-V RedBoard</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -8458,7 +8792,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/sifive/sparkfun_thing_plus_v.html#board-sifive-sparkfun-thing-plus-v"><span class="std std-ref">SparkFun RED-V Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/sifive.html#platform-sifive"><span class="std std-ref">SiFive</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>FE310</p></td>
@@ -8466,7 +8800,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_redboard.html#board-atmelavr-sparkfun-redboard"><span class="std std-ref">SparkFun RedBoard</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_redboard.html#board-atmelavr-sparkfun-redboard"><span class="std std-ref">SparkFun RedBoard</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -8474,7 +8808,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_redboard_turbo.html#board-atmelsam-sparkfun-redboard-turbo"><span class="std std-ref">SparkFun RedBoard Turbo</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -8482,7 +8816,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_dev_usb.html#board-atmelsam-sparkfun-samd21-dev-usb"><span class="std std-ref">SparkFun SAMD21 Dev Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -8490,7 +8824,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_mini_usb.html#board-atmelsam-sparkfun-samd21-mini-usb"><span class="std std-ref">SparkFun SAMD21 Mini Breakout</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -8498,7 +8832,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd21_proRF.html#board-atmelsam-sparkfun-samd21-prorf"><span class="std std-ref">SparkFun SAMD21 Pro RF</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD21G18A</p></td>
@@ -8506,7 +8840,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd51_micromod.html#board-atmelsam-sparkfun-samd51-micromod"><span class="std std-ref">SparkFun SAMD51 MicroMod</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd51_micromod.html#board-atmelsam-sparkfun-samd51-micromod"><span class="std std-ref">SparkFun SAMD51 MicroMod</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -8514,7 +8848,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/sparkfun_samd51_thing_plus.html#board-atmelsam-sparkfun-samd51-thing-plus"><span class="std std-ref">SparkFun SAMD51 Thing Plus</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>External</p></td>
 <td><p>SAMD51J20A</p></td>
@@ -8522,7 +8856,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>496KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_serial7seg.html#board-atmelavr-sparkfun-serial7seg"><span class="std std-ref">SparkFun Serial 7-Segment Display</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_serial7seg.html#board-atmelavr-sparkfun-serial7seg"><span class="std std-ref">SparkFun Serial 7-Segment Display</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA328P</p></td>
@@ -8534,7 +8868,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sparkfun-electronics">
-<h3>SparkFun Electronics<a class="headerlink" href="#sparkfun-electronics" title="Permalink to this heading"></a></h3>
+<h3>SparkFun Electronics<a class="headerlink" href="#sparkfun-electronics" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8567,7 +8901,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="spellfoundry">
-<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Permalink to this heading"></a></h3>
+<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8592,7 +8926,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="t3-foundation">
-<h3>T3 Foundation<a class="headerlink" href="#t3-foundation" title="Permalink to this heading"></a></h3>
+<h3>T3 Foundation<a class="headerlink" href="#t3-foundation" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8657,7 +8991,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="tamc">
-<h3>TAMC<a class="headerlink" href="#tamc" title="Permalink to this heading"></a></h3>
+<h3>TAMC<a class="headerlink" href="#tamc" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8690,7 +9024,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ti">
-<h3>TI<a class="headerlink" href="#ti" title="Permalink to this heading"></a></h3>
+<h3>TI<a class="headerlink" href="#ti" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8835,7 +9169,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ttgo">
-<h3>TTGO<a class="headerlink" href="#ttgo" title="Permalink to this heading"></a></h3>
+<h3>TTGO<a class="headerlink" href="#ttgo" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8908,7 +9242,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="taida-century">
-<h3>Taida Century<a class="headerlink" href="#taida-century" title="Permalink to this heading"></a></h3>
+<h3>Taida Century<a class="headerlink" href="#taida-century" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8933,7 +9267,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="taulabs">
-<h3>TauLabs<a class="headerlink" href="#taulabs" title="Permalink to this heading"></a></h3>
+<h3>TauLabs<a class="headerlink" href="#taulabs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -8958,7 +9292,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="teensy">
-<h3>Teensy<a class="headerlink" href="#teensy" title="Permalink to this heading"></a></h3>
+<h3>Teensy<a class="headerlink" href="#teensy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9023,7 +9357,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="thaieasyelec">
-<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Permalink to this heading"></a></h3>
+<h3>ThaiEasyElec<a class="headerlink" href="#thaieasyelec" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9048,7 +9382,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="the-things-network">
-<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Permalink to this heading"></a></h3>
+<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9073,7 +9407,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="thunderpack">
-<h3>ThunderPack<a class="headerlink" href="#thunderpack" title="Permalink to this heading"></a></h3>
+<h3>ThunderPack<a class="headerlink" href="#thunderpack" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9106,7 +9440,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="till-harbaum">
-<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Permalink to this heading"></a></h3>
+<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9131,7 +9465,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="tinycircuits">
-<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Permalink to this heading"></a></h3>
+<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9164,7 +9498,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="tlera-corporation">
-<h3>Tlera Corporation<a class="headerlink" href="#tlera-corporation" title="Permalink to this heading"></a></h3>
+<h3>Tlera Corporation<a class="headerlink" href="#tlera-corporation" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9213,7 +9547,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="trueverit">
-<h3>Trueverit<a class="headerlink" href="#trueverit" title="Permalink to this heading"></a></h3>
+<h3>Trueverit<a class="headerlink" href="#trueverit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9254,7 +9588,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="unexpected-maker">
-<h3>Unexpected Maker<a class="headerlink" href="#unexpected-maker" title="Permalink to this heading"></a></h3>
+<h3>Unexpected Maker<a class="headerlink" href="#unexpected-maker" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9291,7 +9625,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_pros3.html#board-espressif32-um-pros3"><span class="std std-ref">Unexpected Maker PROS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_nanos3.html#board-espressif32-um-nanos3"><span class="std std-ref">Unexpected Maker NanoS3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_pros3.html#board-espressif32-um-pros3"><span class="std std-ref">Unexpected Maker PROS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -9299,7 +9641,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_rmp.html#board-espressif32-um-rmp"><span class="std std-ref">Unexpected Maker RMP</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_rmp.html#board-espressif32-um-rmp"><span class="std std-ref">Unexpected Maker RMP</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -9307,7 +9649,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys2.html#board-espressif32-um-tinys2"><span class="std std-ref">Unexpected Maker TinyS2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys2.html#board-espressif32-um-tinys2"><span class="std std-ref">Unexpected Maker TinyS2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -9315,7 +9657,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys3.html#board-espressif32-um-tinys3"><span class="std std-ref">Unexpected Maker TinyS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/um_tinys3.html#board-espressif32-um-tinys3"><span class="std std-ref">Unexpected Maker TinyS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -9327,7 +9669,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="university-of-sheffield">
-<h3>University of Sheffield<a class="headerlink" href="#university-of-sheffield" title="Permalink to this heading"></a></h3>
+<h3>University of Sheffield<a class="headerlink" href="#university-of-sheffield" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9368,7 +9710,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="unknown">
-<h3>Unknown<a class="headerlink" href="#unknown" title="Permalink to this heading"></a></h3>
+<h3>Unknown<a class="headerlink" href="#unknown" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9393,7 +9735,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="vae">
-<h3>VAE<a class="headerlink" href="#vae" title="Permalink to this heading"></a></h3>
+<h3>VAE<a class="headerlink" href="#vae" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9418,7 +9760,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="vccgnd">
-<h3>VCCGND<a class="headerlink" href="#vccgnd" title="Permalink to this heading"></a></h3>
+<h3>VCCGND<a class="headerlink" href="#vccgnd" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9451,7 +9793,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="vng">
-<h3>VNG<a class="headerlink" href="#vng" title="Permalink to this heading"></a></h3>
+<h3>VNG<a class="headerlink" href="#vng" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9484,7 +9826,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="valetron-systems">
-<h3>Valetron Systems<a class="headerlink" href="#valetron-systems" title="Permalink to this heading"></a></h3>
+<h3>Valetron Systems<a class="headerlink" href="#valetron-systems" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9517,7 +9859,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="vintlabs">
-<h3>VintLabs<a class="headerlink" href="#vintlabs" title="Permalink to this heading"></a></h3>
+<h3>VintLabs<a class="headerlink" href="#vintlabs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9542,7 +9884,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="wemos">
-<h3>WEMOS<a class="headerlink" href="#wemos" title="Permalink to this heading"></a></h3>
+<h3>WEMOS<a class="headerlink" href="#wemos" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9647,7 +9989,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="waveshare">
-<h3>Waveshare<a class="headerlink" href="#waveshare" title="Permalink to this heading"></a></h3>
+<h3>Waveshare<a class="headerlink" href="#waveshare" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9680,7 +10022,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="weact-studio">
-<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Permalink to this heading"></a></h3>
+<h3>WeAct Studio<a class="headerlink" href="#weact-studio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9737,7 +10079,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="wicked-device">
-<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Permalink to this heading"></a></h3>
+<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9770,7 +10112,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="wireless-tag">
-<h3>Wireless-Tag<a class="headerlink" href="#wireless-tag" title="Permalink to this heading"></a></h3>
+<h3>Wireless-Tag<a class="headerlink" href="#wireless-tag" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9795,7 +10137,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="wisen">
-<h3>Wisen<a class="headerlink" href="#wisen" title="Permalink to this heading"></a></h3>
+<h3>Wisen<a class="headerlink" href="#wisen" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9820,7 +10162,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="xilinx">
-<h3>Xilinx<a class="headerlink" href="#xilinx" title="Permalink to this heading"></a></h3>
+<h3>Xilinx<a class="headerlink" href="#xilinx" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9885,7 +10227,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="xinabox">
-<h3>XinaBox<a class="headerlink" href="#xinabox" title="Permalink to this heading"></a></h3>
+<h3>XinaBox<a class="headerlink" href="#xinabox" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9910,7 +10252,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="decawave">
-<h3>decaWave<a class="headerlink" href="#decawave" title="Permalink to this heading"></a></h3>
+<h3>decaWave<a class="headerlink" href="#decawave" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9935,7 +10277,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="meteca">
-<h3>meteca<a class="headerlink" href="#meteca" title="Permalink to this heading"></a></h3>
+<h3>meteca<a class="headerlink" href="#meteca" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -9984,7 +10326,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="micros2">
-<h3>microS2<a class="headerlink" href="#micros2" title="Permalink to this heading"></a></h3>
+<h3>microS2<a class="headerlink" href="#micros2" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10009,7 +10351,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ng-beacon">
-<h3>ng-beacon<a class="headerlink" href="#ng-beacon" title="Permalink to this heading"></a></h3>
+<h3>ng-beacon<a class="headerlink" href="#ng-beacon" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10034,7 +10376,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="nicai-systems">
-<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Permalink to this heading"></a></h3>
+<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10099,7 +10441,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="oddwires">
-<h3>oddWires<a class="headerlink" href="#oddwires" title="Permalink to this heading"></a></h3>
+<h3>oddWires<a class="headerlink" href="#oddwires" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10132,7 +10474,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="rhomb-io">
-<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Permalink to this heading"></a></h3>
+<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10157,7 +10499,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sakura-io">
-<h3>sakura.io<a class="headerlink" href="#sakura-io" title="Permalink to this heading"></a></h3>
+<h3>sakura.io<a class="headerlink" href="#sakura-io" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10182,7 +10524,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sduino">
-<h3>sduino<a class="headerlink" href="#sduino" title="Permalink to this heading"></a></h3>
+<h3>sduino<a class="headerlink" href="#sduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10215,7 +10557,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="sino-bit">
-<h3>sino:bit<a class="headerlink" href="#sino-bit" title="Permalink to this heading"></a></h3>
+<h3>sino:bit<a class="headerlink" href="#sino-bit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10240,7 +10582,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="u-blox">
-<h3>u-blox<a class="headerlink" href="#u-blox" title="Permalink to this heading"></a></h3>
+<h3>u-blox<a class="headerlink" href="#u-blox" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10321,7 +10663,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="upesy">
-<h3>uPesy<a class="headerlink" href="#upesy" title="Permalink to this heading"></a></h3>
+<h3>uPesy<a class="headerlink" href="#upesy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10354,7 +10696,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </table>
 </section>
 <section id="ubiqio">
-<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Permalink to this heading"></a></h3>
+<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -10507,7 +10849,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.11 (stable)
+    v6.1.12 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

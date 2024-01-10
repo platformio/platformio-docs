@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mbed OS &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/frameworks/mbed.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=dc17a79d"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -182,7 +184,7 @@
            <div itemprop="articleBody">
              
   <section id="mbed-os">
-<span id="framework-mbed"></span><h1>Mbed OS<a class="headerlink" href="#mbed-os" title="Permalink to this heading"></a></h1>
+<span id="framework-mbed"></span><h1>Mbed OS<a class="headerlink" href="#mbed-os" title="Link to this heading"></a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">mbed</span></code></p>
@@ -200,7 +202,7 @@
 </ul>
 </nav>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#configuration-system" id="id8">Configuration system</a></p>
@@ -213,7 +215,7 @@
 </ul>
 </nav>
 <section id="configuration-system">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Configuration system</a><a class="headerlink" href="#configuration-system" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Configuration system</a><a class="headerlink" href="#configuration-system" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>In Mbed OS 6 the list of supported boards was heavily reduced, only officially
@@ -245,7 +247,7 @@ compilation error for some targets. It’s possible to shorten these paths is to
 install packages in root of any logical disk by specifying <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>.</p>
 </div>
 <section id="using-bare-metal-profile">
-<h4><a class="toc-backref" href="#id9" role="doc-backlink">Using Bare Metal profile</a><a class="headerlink" href="#using-bare-metal-profile" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">Using Bare Metal profile</a><a class="headerlink" href="#using-bare-metal-profile" title="Link to this heading"></a></h4>
 <p>The bare metal profile implements a subset of Mbed OS’s RTOS APIs that are useful in
 non-threaded applications, such as semaphores (calling the release API from interrupts)
 and tickers (to set up a recurring interrupt). It does not include an RTX, and is
@@ -257,7 +259,7 @@ Instead of the RTOS’s scheduler, all activities are polled or interrupt-driven
 <li><p><a class="reference external" href="https://os.mbed.com/docs/mbed-os/v6.2/bare-metal/porting-a-target-from-mbed-os-2-to-mbed-os-6-bare-metal.html">Porting a target from Mbed OS 2 to Mbed OS 6 bare metal</a></p></li>
 </ul>
 <section id="build-profiles">
-<h5>Build profiles<a class="headerlink" href="#build-profiles" title="Permalink to this heading"></a></h5>
+<h5>Build profiles<a class="headerlink" href="#build-profiles" title="Link to this heading"></a></h5>
 <p>By default, PlatformIO builds your project using <code class="docutils literal notranslate"><span class="pre">develop</span> <span class="pre">profile</span></code> which provides
 optimized firmware size with full error information and allows MCU to go to sleep mode.
 In the case when default build profile is not suitable for your project there two other
@@ -283,7 +285,7 @@ official page <a class="reference external" href="https://os.mbed.com/docs/mbed-
 </section>
 </section>
 <section id="ignoring-particular-components">
-<h4><a class="toc-backref" href="#id10" role="doc-backlink">Ignoring particular components</a><a class="headerlink" href="#ignoring-particular-components" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id10" role="doc-backlink">Ignoring particular components</a><a class="headerlink" href="#ignoring-particular-components" title="Link to this heading"></a></h4>
 <p>In case you don’t need all parts of the framework or you want to reduce the compilation
 time, you can explicitly exclude folders with redundant sources. For example, to remove
 <code class="docutils literal notranslate"><span class="pre">cellular</span></code>, <code class="docutils literal notranslate"><span class="pre">kvstore</span></code> and <code class="docutils literal notranslate"><span class="pre">nanostack</span></code> features from the build process, navigate
@@ -296,7 +298,7 @@ contents:</p>
 </div>
 </section>
 <section id="custom-targets">
-<h4><a class="toc-backref" href="#id11" role="doc-backlink">Custom Targets</a><a class="headerlink" href="#custom-targets" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id11" role="doc-backlink">Custom Targets</a><a class="headerlink" href="#custom-targets" title="Link to this heading"></a></h4>
 <p>In case when your board is not officially supported by <a class="reference internal" href="#framework-mbed"><span class="std std-ref">Mbed OS</span></a> you can
 manually add custom board definitions to your project. First of all, you need to create
 a special file <code class="docutils literal notranslate"><span class="pre">custom_targets.json</span></code> in the root folder of your project where you
@@ -377,7 +379,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 </section>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -416,7 +418,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 </table>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Mbed OS for Freescale Kinetis</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-maxim32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Mbed OS for Maxim 32</a></p></li>
@@ -430,7 +432,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <nav class="contents local" id="id2">
 <ul class="simple">
@@ -443,7 +445,7 @@ board name, e.g. <code class="docutils literal notranslate"><span class="pre">my
 </ul>
 </nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -454,7 +456,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id13" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id13" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
@@ -825,105 +827,112 @@ You do not need to use/buy external debug probe.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H723ZGT6</p></td>
+<td><p>550MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H743ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L073RZ</p></td>
 <td><p>32MHz</p></td>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l152re.html#board-ststm32-nucleo-l152re"><span class="std std-ref">ST Nucleo L152RE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l152re.html#board-ststm32-nucleo-l152re"><span class="std std-ref">ST Nucleo L152RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L152RET6</p></td>
 <td><p>32MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>80KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L432KCU6</p></td>
 <td><p>80MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L433RC</p></td>
 <td><p>80MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L476RGT6</p></td>
 <td><p>80MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L486RGT6</p></td>
 <td><p>80MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L496ZGT6</p></td>
 <td><p>80MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L496ZGT6P</p></td>
 <td><p>80MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L4R5ZIT6</p></td>
 <td><p>120MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>640KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H747XIH6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/seeedArchMax.html#board-ststm32-seeedarchmax"><span class="std std-ref">Seeed Arch Max</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/seeedArchMax.html#board-ststm32-seeedarchmax"><span class="std std-ref">Seeed Arch Max</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F407VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nxplpc/seeedArchPro.html#board-nxplpc-seeedarchpro"><span class="std std-ref">Seeed Arch Pro</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nxplpc.html#platform-nxplpc"><span class="std std-ref">NXP LPC</span></a></p></td>
 <td><p>LPC1768</p></td>
 <td><p>96MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/wio_3g.html#board-ststm32-wio-3g"><span class="std std-ref">Seeed Wio 3G</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/wio_3g.html#board-ststm32-wio-3g"><span class="std std-ref">Seeed Wio 3G</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F439VI</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/siliconlabsefm32/tb_sense_12.html#board-siliconlabsefm32-tb-sense-12"><span class="std std-ref">Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/siliconlabsefm32.html#platform-siliconlabsefm32"><span class="std std-ref">Silicon Labs EFM32</span></a></p></td>
 <td><p>EFR32MG12P432F1024</p></td>
 <td><p>40MHz</p></td>
@@ -934,7 +943,7 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id14" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -1032,7 +1041,7 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -1041,7 +1050,7 @@ Please click on board name for the further details.</p>
 </ul>
 </div>
 <section id="freescale">
-<h3>Freescale<a class="headerlink" href="#freescale" title="Permalink to this heading"></a></h3>
+<h3>Freescale<a class="headerlink" href="#freescale" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1130,7 +1139,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="generic">
-<h3>Generic<a class="headerlink" href="#generic" title="Permalink to this heading"></a></h3>
+<h3>Generic<a class="headerlink" href="#generic" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1155,7 +1164,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="greenwaves-technologies">
-<h3>GreenWaves Technologies<a class="headerlink" href="#greenwaves-technologies" title="Permalink to this heading"></a></h3>
+<h3>GreenWaves Technologies<a class="headerlink" href="#greenwaves-technologies" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1180,7 +1189,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="maxim">
-<h3>Maxim<a class="headerlink" href="#maxim" title="Permalink to this heading"></a></h3>
+<h3>Maxim<a class="headerlink" href="#maxim" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1253,7 +1262,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="mikroelektronika">
-<h3>MikroElektronika<a class="headerlink" href="#mikroelektronika" title="Permalink to this heading"></a></h3>
+<h3>MikroElektronika<a class="headerlink" href="#mikroelektronika" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1278,7 +1287,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="multitech">
-<h3>MultiTech<a class="headerlink" href="#multitech" title="Permalink to this heading"></a></h3>
+<h3>MultiTech<a class="headerlink" href="#multitech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1311,7 +1320,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="nxp">
-<h3>NXP<a class="headerlink" href="#nxp" title="Permalink to this heading"></a></h3>
+<h3>NXP<a class="headerlink" href="#nxp" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1360,7 +1369,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="nordic">
-<h3>Nordic<a class="headerlink" href="#nordic" title="Permalink to this heading"></a></h3>
+<h3>Nordic<a class="headerlink" href="#nordic" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1393,7 +1402,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="olimex">
-<h3>Olimex<a class="headerlink" href="#olimex" title="Permalink to this heading"></a></h3>
+<h3>Olimex<a class="headerlink" href="#olimex" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1418,7 +1427,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rushup">
-<h3>RushUp<a class="headerlink" href="#rushup" title="Permalink to this heading"></a></h3>
+<h3>RushUp<a class="headerlink" href="#rushup" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1451,7 +1460,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="st">
-<h3>ST<a class="headerlink" href="#st" title="Permalink to this heading"></a></h3>
+<h3>ST<a class="headerlink" href="#st" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1696,7 +1705,15 @@ Please click on board name for the further details.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H723ZGT6</p></td>
+<td><p>550MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H743ZIT6</p></td>
@@ -1704,7 +1721,7 @@ Please click on board name for the further details.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l073rz.html#board-ststm32-nucleo-l073rz"><span class="std std-ref">ST Nucleo L073RZ</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L073RZ</p></td>
@@ -1712,7 +1729,7 @@ Please click on board name for the further details.</p>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l152re.html#board-ststm32-nucleo-l152re"><span class="std std-ref">ST Nucleo L152RE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l152re.html#board-ststm32-nucleo-l152re"><span class="std std-ref">ST Nucleo L152RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L152RET6</p></td>
@@ -1720,7 +1737,7 @@ Please click on board name for the further details.</p>
 <td><p>512KB</p></td>
 <td><p>80KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l432kc.html#board-ststm32-nucleo-l432kc"><span class="std std-ref">ST Nucleo L432KC</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L432KCU6</p></td>
@@ -1728,7 +1745,7 @@ Please click on board name for the further details.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l433rc_p.html#board-ststm32-nucleo-l433rc-p"><span class="std std-ref">ST Nucleo L433RC-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L433RC</p></td>
@@ -1736,7 +1753,7 @@ Please click on board name for the further details.</p>
 <td><p>256KB</p></td>
 <td><p>64KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l476rg.html#board-ststm32-nucleo-l476rg"><span class="std std-ref">ST Nucleo L476RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L476RGT6</p></td>
@@ -1744,7 +1761,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l486rg.html#board-ststm32-nucleo-l486rg"><span class="std std-ref">ST Nucleo L486RG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L486RGT6</p></td>
@@ -1752,7 +1769,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg.html#board-ststm32-nucleo-l496zg"><span class="std std-ref">ST Nucleo L496ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6</p></td>
@@ -1760,7 +1777,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l496zg_p.html#board-ststm32-nucleo-l496zg-p"><span class="std std-ref">ST Nucleo L496ZG-P</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L496ZGT6P</p></td>
@@ -1768,7 +1785,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l4r5zi.html#board-ststm32-nucleo-l4r5zi"><span class="std std-ref">ST Nucleo L4R5ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32L4R5ZIT6</p></td>
@@ -1776,7 +1793,7 @@ Please click on board name for the further details.</p>
 <td><p>2MB</p></td>
 <td><p>640KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -1788,7 +1805,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1829,7 +1846,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="semtech">
-<h3>Semtech<a class="headerlink" href="#semtech" title="Permalink to this heading"></a></h3>
+<h3>Semtech<a class="headerlink" href="#semtech" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1854,7 +1871,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="sigma-delta-technologies">
-<h3>Sigma Delta Technologies<a class="headerlink" href="#sigma-delta-technologies" title="Permalink to this heading"></a></h3>
+<h3>Sigma Delta Technologies<a class="headerlink" href="#sigma-delta-technologies" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1895,7 +1912,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="silicon-labs">
-<h3>Silicon Labs<a class="headerlink" href="#silicon-labs" title="Permalink to this heading"></a></h3>
+<h3>Silicon Labs<a class="headerlink" href="#silicon-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1936,7 +1953,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="teensy">
-<h3>Teensy<a class="headerlink" href="#teensy" title="Permalink to this heading"></a></h3>
+<h3>Teensy<a class="headerlink" href="#teensy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1961,7 +1978,7 @@ Please click on board name for the further details.</p>
 </table>
 </section>
 <section id="rhomb-io">
-<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Permalink to this heading"></a></h3>
+<h3>rhomb.io<a class="headerlink" href="#rhomb-io" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2114,7 +2131,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.11 (stable)
+    v6.1.12 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

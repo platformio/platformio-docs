@@ -11,8 +11,8 @@
 
 .. _board_ststm32_nicla_vision:
 
-Arduino Opta
-============
+Arduino Nicla Vision
+====================
 
 .. contents::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **RAM**
     - 511.35KB
   * - **Vendor**
-    - `Arduino <https://www.arduino.cc/pro/hardware-arduino-opta?utm_source=platformio.org&utm_medium=docs>`__
+    - `Arduino <https://store.arduino.cc/products/nicla-vision?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``nicla_vision`` ID for :ref:`projectconf_env_board` option in :ref:`
   platform = ststm32
   board = nicla_vision
 
-You can override default Arduino Opta settings per build environment using
+You can override default Arduino Nicla Vision settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `nicla_vision.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nicla_vision.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `nicla_vision.json <https://github.com/platformio/platform-ststm3
 
 Uploading
 ---------
-Arduino Opta supports the following uploading protocols:
+Arduino Nicla Vision supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``dfu``
@@ -99,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Arduino Opta does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Arduino Nicla Vision does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

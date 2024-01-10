@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pio remote device &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/core/userguide/remote/cmd_device.html" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=dc17a79d"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -148,7 +150,7 @@
            <div itemprop="articleBody">
              
   <section id="pio-remote-device">
-<span id="cmd-remote-device"></span><h1><a class="toc-backref" href="#id4" role="doc-backlink">pio remote device</a><a class="headerlink" href="#pio-remote-device" title="Permalink to this heading"></a></h1>
+<span id="cmd-remote-device"></span><h1><a class="toc-backref" href="#id4" role="doc-backlink">pio remote device</a><a class="headerlink" href="#pio-remote-device" title="Link to this heading"></a></h1>
 <p><strong>Remote Device: monitor remote device or list existing.</strong></p>
 <nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
@@ -176,9 +178,9 @@
 </ul>
 </nav>
 <section id="pio-remote-device-list">
-<span id="cmd-remote-device-list"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">pio remote device list</a><a class="headerlink" href="#pio-remote-device-list" title="Permalink to this heading"></a></h2>
+<span id="cmd-remote-device-list"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">pio remote device list</a><a class="headerlink" href="#pio-remote-device-list" title="Link to this heading"></a></h2>
 <section id="usage">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>device<span class="w"> </span>list<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 <span class="c1"># List devices from the specified agents. Multiple agents are allowed.</span>
@@ -187,7 +189,7 @@ pio<span class="w"> </span>remote<span class="w"> </span>--agent<span class="w">
 </div>
 </section>
 <section id="description">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Description</a><a class="headerlink" href="#description" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Description</a><a class="headerlink" href="#description" title="Link to this heading"></a></h3>
 <p>List <a class="reference external" href="http://en.wikipedia.org/wiki/Serial_port">Serial Ports</a> on remote
 machines where <a class="reference internal" href="cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> is started.</p>
 <p>You can list devices from the specified remote machines using <code class="docutils literal notranslate"><span class="pre">--agent</span> <span class="pre">NAME</span></code>
@@ -204,16 +206,16 @@ options:</p>
 <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">--agent</span> <span class="pre">lab1</span> <span class="pre">--agent</span> <span class="pre">lab3</span> <span class="pre">device</span> <span class="pre">...</span></code>).</p>
 </section>
 <section id="options">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Link to this heading"></a></h3>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-list-json-output">
-<span class="sig-name descname"><span class="pre">--json-output</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-list-json-output" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--json-output</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-list-json-output" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Return the output in <a class="reference external" href="http://en.wikipedia.org/wiki/JSON">JSON</a> format</p>
 </section>
 <section id="example">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Example</a><a class="headerlink" href="#example" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Example</a><a class="headerlink" href="#example" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pio</span> <span class="n">remote</span> <span class="n">device</span> <span class="nb">list</span>
 
 <span class="n">Agent</span> <span class="n">innomac</span><span class="o">.</span><span class="n">local</span>
@@ -247,10 +249,10 @@ options:</p>
 </section>
 </section>
 <section id="pio-remote-device-monitor">
-<span id="cmd-remote-device-monitor"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">pio remote device monitor</a><a class="headerlink" href="#pio-remote-device-monitor" title="Permalink to this heading"></a></h2>
+<span id="cmd-remote-device-monitor"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">pio remote device monitor</a><a class="headerlink" href="#pio-remote-device-monitor" title="Link to this heading"></a></h2>
 <p><strong>Remote Serial Port Monitor</strong></p>
 <section id="id1">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Usage</a><a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Usage</a><a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>remote<span class="w"> </span>device<span class="w"> </span>monitor<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 
 <span class="c1"># Connect to a specified agent</span>
@@ -260,7 +262,7 @@ pio<span class="w"> </span>remote<span class="w"> </span>-a<span class="w"> </sp
 </div>
 </section>
 <section id="id2">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Description</a><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Description</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>Connect to Serial Port of remote device and receive or send data in real time.
 <a class="reference internal" href="cmd_agent.html#cmd-remote-agent"><span class="std std-ref">PlatformIO Remote Agent</span></a> should be started before on a remote machine.</p>
 <p>To control <em>monitor</em> please use these “hot keys”:</p>
@@ -271,66 +273,66 @@ pio<span class="w"> </span>remote<span class="w"> </span>-a<span class="w"> </sp
 </ul>
 </section>
 <section id="id3">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Options</a><a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Options</a><a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-p">
-<span id="cmdoption-pio-remote-device-monitor-port"></span><span class="sig-name descname"><span class="pre">-p</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-p" title="Permalink to this definition"></a></dt>
+<span id="cmdoption-pio-remote-device-monitor-port"></span><span class="sig-name descname"><span class="pre">-p</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--port</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-p" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Port, a number or a device name</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-b">
-<span id="cmdoption-pio-remote-device-monitor-baud"></span><span class="sig-name descname"><span class="pre">-b</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--baud</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-b" title="Permalink to this definition"></a></dt>
+<span id="cmdoption-pio-remote-device-monitor-baud"></span><span class="sig-name descname"><span class="pre">-b</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--baud</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-b" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Set baud rate, default <code class="docutils literal notranslate"><span class="pre">9600</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-parity">
-<span class="sig-name descname"><span class="pre">--parity</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-parity" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--parity</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-parity" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Set parity (<em>None, Even, Odd, Space, Mark</em>), one of
 [<code class="docutils literal notranslate"><span class="pre">N</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">S</span></code>, <code class="docutils literal notranslate"><span class="pre">M</span></code>], default <code class="docutils literal notranslate"><span class="pre">N</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-rtscts">
-<span class="sig-name descname"><span class="pre">--rtscts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rtscts" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--rtscts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rtscts" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Enable <code class="docutils literal notranslate"><span class="pre">RTS/CTS</span></code> flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-xonxoff">
-<span class="sig-name descname"><span class="pre">--xonxoff</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-xonxoff" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--xonxoff</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-xonxoff" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Enable software flow control, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-rts">
-<span class="sig-name descname"><span class="pre">--rts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rts" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--rts</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-rts" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Set initial <code class="docutils literal notranslate"><span class="pre">RTS</span></code> line state, default <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-dtr">
-<span class="sig-name descname"><span class="pre">--dtr</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-dtr" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--dtr</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-dtr" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Set initial <code class="docutils literal notranslate"><span class="pre">DTR</span></code> line state, default <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-echo">
-<span class="sig-name descname"><span class="pre">--echo</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-echo" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--echo</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-echo" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Enable local echo, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-encoding">
-<span class="sig-name descname"><span class="pre">--encoding</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-encoding" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--encoding</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-encoding" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Set the encoding for the serial port (e.g. <code class="docutils literal notranslate"><span class="pre">hexlify</span></code>, <code class="docutils literal notranslate"><span class="pre">Latin1</span></code>, <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>),
 default <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-f">
-<span id="cmdoption-pio-remote-device-monitor-filter"></span><span class="sig-name descname"><span class="pre">-f</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--filter</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-f" title="Permalink to this definition"></a></dt>
+<span id="cmdoption-pio-remote-device-monitor-filter"></span><span class="sig-name descname"><span class="pre">-f</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--filter</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-f" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Add text transformation. Available filters:</p>
@@ -345,19 +347,19 @@ most control codes</p></li>
 </ul>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-eol">
-<span class="sig-name descname"><span class="pre">--eol</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-eol" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--eol</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-eol" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>End of line mode (<code class="docutils literal notranslate"><span class="pre">CR</span></code>, <code class="docutils literal notranslate"><span class="pre">LF</span></code> or <code class="docutils literal notranslate"><span class="pre">CRLF</span></code>), default <code class="docutils literal notranslate"><span class="pre">CRLF</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-raw">
-<span class="sig-name descname"><span class="pre">--raw</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-raw" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--raw</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-raw" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Do not apply any encodings/transformations</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-exit-char">
-<span class="sig-name descname"><span class="pre">--exit-char</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-exit-char" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--exit-char</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-exit-char" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>ASCII code of special character that is used to exit the application,
@@ -366,27 +368,27 @@ default <code class="docutils literal notranslate"><span class="pre">3</span></c
 <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">remote</span> <span class="pre">device</span> <span class="pre">monitor</span> <span class="pre">--exit-char</span> <span class="pre">29</span></code>.</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-menu-char">
-<span class="sig-name descname"><span class="pre">--menu-char</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-menu-char" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">--menu-char</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-menu-char" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>ASCII code of special character that is used to control miniterm (menu),
 default <code class="docutils literal notranslate"><span class="pre">20</span></code> (DEC)</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-quiet">
-<span class="sig-name descname"><span class="pre">---quiet</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-quiet" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">---quiet</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-quiet" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Diagnostics: suppress non-error messages, default <code class="docutils literal notranslate"><span class="pre">Off</span></code></p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-d">
-<span id="cmdoption-pio-remote-device-monitor-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-d" title="Permalink to this definition"></a></dt>
+<span id="cmdoption-pio-remote-device-monitor-project-dir"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--project-dir</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-d" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Specify the path to project directory. By default, <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> is equal
 to current working directory (<code class="docutils literal notranslate"><span class="pre">CWD</span></code>).</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-pio-remote-device-monitor-e">
-<span id="cmdoption-pio-remote-device-monitor-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-e" title="Permalink to this definition"></a></dt>
+<span id="cmdoption-pio-remote-device-monitor-environment"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--environment</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-pio-remote-device-monitor-e" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>Process specified environments.</p>
@@ -394,7 +396,7 @@ to current working directory (<code class="docutils literal notranslate"><span c
 <a class="reference internal" href="../../../projectconf/sections/platformio/options/generic/default_envs.html#projectconf-pio-default-envs"><span class="std std-ref">default_envs</span></a> option from <a class="reference internal" href="../../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 </section>
 <section id="examples">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Show available options for <em>monitor</em></p></li>
 </ol>
@@ -592,7 +594,7 @@ Hello PlatformIO!
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.11 (stable)
+    v6.1.12 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

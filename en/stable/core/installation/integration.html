@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Integration with custom applications (extensions, plugins) &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/core/installation/integration.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
-        <script src="../../_static/clipboard.min.js"></script>
-        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=dc17a79d"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -150,7 +152,7 @@
            <div itemprop="articleBody">
              
   <section id="integration-with-custom-applications-extensions-plugins">
-<h1>Integration with custom applications (extensions, plugins)<a class="headerlink" href="#integration-with-custom-applications-extensions-plugins" title="Permalink to this heading"></a></h1>
+<h1>Integration with custom applications (extensions, plugins)<a class="headerlink" href="#integration-with-custom-applications-extensions-plugins" title="Link to this heading"></a></h1>
 <p>We recommend using PlatformIO Core <strong>Installer Script</strong> when you integrate PlatformIO Core
 into an application, such as an extension or plugin for IDE.</p>
 <nav class="contents local" id="contents">
@@ -171,9 +173,9 @@ into an application, such as an extension or plugin for IDE.</p>
 </ul>
 </nav>
 <section id="prerequisite">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Prerequisite</a><a class="headerlink" href="#prerequisite" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Prerequisite</a><a class="headerlink" href="#prerequisite" title="Link to this heading"></a></h2>
 <section id="python-interpreter">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Link to this heading"></a></h3>
 <p>PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
 and Python 3.5+. <strong>We highly recommend using the latest Python 3</strong>.</p>
 <p>Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
@@ -187,7 +189,7 @@ and unpack it in a cache folder of your application. Later, you can use
 </ol>
 </section>
 <section id="installer-script">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Installer Script</a><a class="headerlink" href="#installer-script" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Installer Script</a><a class="headerlink" href="#installer-script" title="Link to this heading"></a></h3>
 <p>There are 2 options on how to work with PlatformIO Core Installer Script:</p>
 <ol class="arabic simple">
 <li><p>Bundle <a class="reference external" href="https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py">get-platformio.py</a> file into your application</p></li>
@@ -202,13 +204,13 @@ You can copy or download it to a cache/temporary folder.</p>
 </section>
 </section>
 <section id="workflow">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Workflow</a><a class="headerlink" href="#workflow" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Workflow</a><a class="headerlink" href="#workflow" title="Link to this heading"></a></h2>
 <p>We will describe a simple workflow on how to automatically install <a class="reference internal" href="../index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> for
 end-user of your application/extension. We assume that <code class="docutils literal notranslate"><span class="pre">get-platformio.py</span></code> script
 is already copied/downloaded and exists on the end-user machine.
 See above for how to get it.</p>
 <section id="step-1-where-is-platformio-core-installed">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Step 1. Where is PlatformIO Core installed?</a><a class="headerlink" href="#step-1-where-is-platformio-core-installed" title="Link to this heading"></a></h3>
 <p>You should check the PlatformIO Core installation state <strong>each time</strong> when the user
 starts your application. You need to call the Installer Script with <code class="docutils literal notranslate"><span class="pre">check</span> <span class="pre">core</span></code> arguments:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>get-platformio.py<span class="w"> </span>check<span class="w"> </span>core
@@ -244,7 +246,7 @@ a full path.</p>
 </div>
 </section>
 <section id="step-2-install-platformio-core">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Step 2. Install PlatformIO Core</a><a class="headerlink" href="#step-2-install-platformio-core" title="Link to this heading"></a></h3>
 <p>To install PlatformIO Core into the virtual environment in an automatic mode, please call
 the installer script without any arguments:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>get-platformio.py
@@ -263,7 +265,7 @@ error explanation.</p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <p>Examples that use this installer are:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platformio-node-helpers">platformio-node-helpers</a>,
@@ -398,7 +400,7 @@ is used by <a class="reference external" href="https://marketplace.visualstudio.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.11 (stable)
+    v6.1.12 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

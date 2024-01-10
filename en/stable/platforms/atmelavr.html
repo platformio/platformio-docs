@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atmel AVR &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/platforms/atmelavr.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=dc17a79d"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -173,7 +175,7 @@
            <div itemprop="articleBody">
              
   <section id="atmel-avr">
-<span id="platform-atmelavr"></span><h1>Atmel AVR<a class="headerlink" href="#atmel-avr" title="Permalink to this heading"></a></h1>
+<span id="platform-atmelavr"></span><h1>Atmel AVR<a class="headerlink" href="#atmel-avr" title="Link to this heading"></a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Registry<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/atmelavr">https://registry.platformio.org/platforms/platformio/atmelavr</a></p>
@@ -197,7 +199,7 @@
 </ul>
 </nav>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#upload-using-programmer" id="id11">Upload using Programmer</a></p></li>
@@ -219,7 +221,7 @@
 </ul>
 </nav>
 <section id="upload-using-programmer">
-<span id="atmelavr-upload-via-programmer"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">Upload using Programmer</a><a class="headerlink" href="#upload-using-programmer" title="Permalink to this heading"></a></h3>
+<span id="atmelavr-upload-via-programmer"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">Upload using Programmer</a><a class="headerlink" href="#upload-using-programmer" title="Link to this heading"></a></h3>
 <p>In the case of external programmers, it’s easy to brick a board simply by specifying
 incorrect upload flags. It’s highly recommended to use the
 <a class="reference internal" href="../projectconf/sections/env/options/upload/upload_command.html#projectconf-upload-command"><span class="std std-ref">upload_command</span></a> option that gives the full control over flags used
@@ -406,13 +408,13 @@ the <code class="docutils literal notranslate"><span class="pre">avrdude</span> 
 </ul>
 </section>
 <section id="upload-eeprom-data">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Upload EEPROM data</a><a class="headerlink" href="#upload-eeprom-data" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Upload EEPROM data</a><a class="headerlink" href="#upload-eeprom-data" title="Link to this heading"></a></h3>
 <p>To upload EEPROM data (from EEMEM directive) you need to use <code class="docutils literal notranslate"><span class="pre">uploadeep</span></code>
 target instead <code class="docutils literal notranslate"><span class="pre">upload</span></code> for <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.
 For example, <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">uploadeep</span></code>.</p>
 </section>
 <section id="erase-chip-before-programming">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Erase chip before programming</a><a class="headerlink" href="#erase-chip-before-programming" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Erase chip before programming</a><a class="headerlink" href="#erase-chip-before-programming" title="Link to this heading"></a></h3>
 <p>In some cases erasing chip memory is a mandatory procedure before uploading bootloader
 or setting fuses. AVRDUDE provides a special flag <code class="docutils literal notranslate"><span class="pre">-e</span></code> that causes a chip erase to be
 executed. This will reset the contents of the flash ROM and EEPROM to the value <code class="docutils literal notranslate"><span class="pre">0xff</span></code>,
@@ -428,13 +430,13 @@ and clear all lock bits. The easiest way to use it is to add this flag via the
 </div>
 </section>
 <section id="fuses-programming">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Fuses programming</a><a class="headerlink" href="#fuses-programming" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Fuses programming</a><a class="headerlink" href="#fuses-programming" title="Link to this heading"></a></h3>
 <p>PlatformIO has a built-in target called <code class="docutils literal notranslate"><span class="pre">fuses</span></code> for setting fuse bits. The default fuse
 bits are predefined in the board manifest file in the <code class="docutils literal notranslate"><span class="pre">fuses</span></code> section. For example,
 <a class="reference external" href="https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json">fuses section for Arduino Uno board</a>.
 To set fuse bits you need to use target <code class="docutils literal notranslate"><span class="pre">fuses</span></code> with <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.</p>
 <section id="custom-fuses">
-<h4><a class="toc-backref" href="#id15" role="doc-backlink">Custom fuses</a><a class="headerlink" href="#custom-fuses" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id15" role="doc-backlink">Custom fuses</a><a class="headerlink" href="#custom-fuses" title="Link to this heading"></a></h4>
 <p>Custom fuse values and upload flags (based on upload protocol) should be specified in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. The <code class="docutils literal notranslate"><span class="pre">lfuse</span></code> and <code class="docutils literal notranslate"><span class="pre">hfuse</span></code> bits are mandatory, <code class="docutils literal notranslate"><span class="pre">efuse</span></code> is optional
 and not supported by all targets. An example of setting custom fuses for <code class="docutils literal notranslate"><span class="pre">uno</span></code> board:</p>
@@ -455,7 +457,7 @@ and not supported by all targets. An example of setting custom fuses for <code c
 </div>
 </section>
 <section id="minicore-megacore-mightycore-majorcore-and-microcore">
-<h4><a class="toc-backref" href="#id16" role="doc-backlink">MiniCore, MegaCore, MightyCore, MajorCore and MicroCore</a><a class="headerlink" href="#minicore-megacore-mightycore-majorcore-and-microcore" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id16" role="doc-backlink">MiniCore, MegaCore, MightyCore, MajorCore and MicroCore</a><a class="headerlink" href="#minicore-megacore-mightycore-majorcore-and-microcore" title="Link to this heading"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">MiniCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MegaCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MightyCore</span></code>, <code class="docutils literal notranslate"><span class="pre">MajorCore</span></code> and <code class="docutils literal notranslate"><span class="pre">MicroCore</span></code> support
 dynamic fuses generation. Generated values are based on the following parameters:</p>
 <blockquote>
@@ -574,7 +576,7 @@ ATmega324PB and ATmega328PB. Use <code class="docutils literal notranslate"><spa
 </div>
 </section>
 <section id="overriding-default-fuses-command">
-<span id="atmelavr-overriding-fuses-command"></span><h4><a class="toc-backref" href="#id17" role="doc-backlink">Overriding default fuses command</a><a class="headerlink" href="#overriding-default-fuses-command" title="Permalink to this heading"></a></h4>
+<span id="atmelavr-overriding-fuses-command"></span><h4><a class="toc-backref" href="#id17" role="doc-backlink">Overriding default fuses command</a><a class="headerlink" href="#overriding-default-fuses-command" title="Link to this heading"></a></h4>
 <p>PlatformIO splits the command for programming fuses in the following overridable parts:</p>
 <blockquote>
 <div><table class="docutils align-default">
@@ -649,14 +651,14 @@ for example, you can override only fuses values:</p>
 </section>
 </section>
 <section id="bootloader-programming">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">Bootloader programming</a><a class="headerlink" href="#bootloader-programming" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Bootloader programming</a><a class="headerlink" href="#bootloader-programming" title="Link to this heading"></a></h3>
 <p>PlatformIO has a built-in target called <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> for flashing bootloaders. The
 default bootloader image and corresponding fuse bits are predefined in the board manifest
 file in the <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> section, for example, <a class="reference external" href="https://github.com/platformio/platform-atmelavr/blob/develop/boards/uno.json">Arduino Uno</a>.
 To upload a bootloader image you need to use target <code class="docutils literal notranslate"><span class="pre">bootloader</span></code> with
 <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-t"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--target</span></code></a> command.</p>
 <section id="custom-bootloader">
-<h4><a class="toc-backref" href="#id19" role="doc-backlink">Custom bootloader</a><a class="headerlink" href="#custom-bootloader" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">Custom bootloader</a><a class="headerlink" href="#custom-bootloader" title="Link to this heading"></a></h4>
 <p>Custom bootloader and accompanying fuses should be specified in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.
 If <code class="docutils literal notranslate"><span class="pre">lock_bits</span></code> and <code class="docutils literal notranslate"><span class="pre">unlock_bits</span></code> are not set then the default values <code class="docutils literal notranslate"><span class="pre">0x0F</span></code> and
 <code class="docutils literal notranslate"><span class="pre">0x3F</span></code> are used accordingly. An example of setting custom bootloader for <code class="docutils literal notranslate"><span class="pre">uno</span></code>
@@ -745,7 +747,7 @@ Here is a table with recommended baud rates for different clock frequencies:</p>
 </div></blockquote>
 </section>
 <section id="overriding-default-bootloader-command">
-<span id="atmelavr-overriding-bootloader-command"></span><h4><a class="toc-backref" href="#id20" role="doc-backlink">Overriding default bootloader command</a><a class="headerlink" href="#overriding-default-bootloader-command" title="Permalink to this heading"></a></h4>
+<span id="atmelavr-overriding-bootloader-command"></span><h4><a class="toc-backref" href="#id20" role="doc-backlink">Overriding default bootloader command</a><a class="headerlink" href="#overriding-default-bootloader-command" title="Link to this heading"></a></h4>
 <p>PlatformIO splits the command for programming bootloader in the following overridable
 parts:</p>
 <blockquote>
@@ -820,7 +822,7 @@ for example, you can override only fuses values:</p>
 </section>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <p>Examples are listed from <a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Atmel AVR development platform repository</a>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelavr/tree/master/examples/arduino-blink?utm_source=platformio.org&amp;utm_medium=docs">arduino-blink</a></p></li>
@@ -834,7 +836,7 @@ for example, you can override only fuses values:</p>
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <nav class="contents local" id="id3">
 <ul class="simple">
@@ -846,7 +848,7 @@ for example, you can override only fuses values:</p>
 </ul>
 </nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -857,7 +859,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id22" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id22" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -1321,541 +1323,547 @@ Please click on board name for the further details.</p>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
-<td><p>ATMEGA32U4</p></td>
-<td><p>16MHz</p></td>
-<td><p>28KB</p></td>
-<td><p>2.50KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
-<td><p>ATMEGA32U4</p></td>
-<td><p>16MHz</p></td>
-<td><p>28KB</p></td>
-<td><p>2.50KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/zumbt328.html#board-atmelavr-zumbt328"><span class="std std-ref">BQ ZUM BT-328</span></a></p></td>
-<td><p>ATMEGA328P</p></td>
-<td><p>16MHz</p></td>
-<td><p>28KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/raspduino.html#board-atmelavr-raspduino"><span class="std std-ref">BitWizard Raspduino</span></a></p></td>
-<td><p>ATMEGA328P</p></td>
-<td><p>16MHz</p></td>
-<td><p>30KB</p></td>
-<td><p>2KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_maxi.html#board-atmelavr-controllino-maxi"><span class="std std-ref">Controllino Maxi</span></a></p></td>
-<td><p>ATMEGA2560</p></td>
-<td><p>16MHz</p></td>
-<td><p>248KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_maxi_automation.html#board-atmelavr-controllino-maxi-automation"><span class="std std-ref">Controllino Maxi Automation</span></a></p></td>
-<td><p>ATMEGA2560</p></td>
-<td><p>16MHz</p></td>
-<td><p>248KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_mega.html#board-atmelavr-controllino-mega"><span class="std std-ref">Controllino Mega</span></a></p></td>
-<td><p>ATMEGA2560</p></td>
-<td><p>16MHz</p></td>
-<td><p>248KB</p></td>
-<td><p>8KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_mini.html#board-atmelavr-controllino-mini"><span class="std std-ref">Controllino Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uno_mini.html#board-atmelavr-uno-mini"><span class="std std-ref">Arduino Uno Mini</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/digispark-tiny.html#board-atmelavr-digispark-tiny"><span class="std std-ref">Digispark USB</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
+<td><p>ATMEGA32U4</p></td>
+<td><p>16MHz</p></td>
+<td><p>28KB</p></td>
+<td><p>2.50KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
+<td><p>ATMEGA32U4</p></td>
+<td><p>16MHz</p></td>
+<td><p>28KB</p></td>
+<td><p>2.50KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/zumbt328.html#board-atmelavr-zumbt328"><span class="std std-ref">BQ ZUM BT-328</span></a></p></td>
+<td><p>ATMEGA328P</p></td>
+<td><p>16MHz</p></td>
+<td><p>28KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/raspduino.html#board-atmelavr-raspduino"><span class="std std-ref">BitWizard Raspduino</span></a></p></td>
+<td><p>ATMEGA328P</p></td>
+<td><p>16MHz</p></td>
+<td><p>30KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_maxi.html#board-atmelavr-controllino-maxi"><span class="std std-ref">Controllino Maxi</span></a></p></td>
+<td><p>ATMEGA2560</p></td>
+<td><p>16MHz</p></td>
+<td><p>248KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_maxi_automation.html#board-atmelavr-controllino-maxi-automation"><span class="std std-ref">Controllino Maxi Automation</span></a></p></td>
+<td><p>ATMEGA2560</p></td>
+<td><p>16MHz</p></td>
+<td><p>248KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_mega.html#board-atmelavr-controllino-mega"><span class="std std-ref">Controllino Mega</span></a></p></td>
+<td><p>ATMEGA2560</p></td>
+<td><p>16MHz</p></td>
+<td><p>248KB</p></td>
+<td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/controllino_mini.html#board-atmelavr-controllino-mini"><span class="std std-ref">Controllino Mini</span></a></p></td>
+<td><p>ATMEGA328P</p></td>
+<td><p>16MHz</p></td>
+<td><p>31.50KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/digispark-tiny.html#board-atmelavr-digispark-tiny"><span class="std std-ref">Digispark USB</span></a></p></td>
 <td><p>ATTINY85</p></td>
 <td><p>16MHz</p></td>
 <td><p>5.87KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/engduinov3.html#board-atmelavr-engduinov3"><span class="std std-ref">Engduino 3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/engduinov3.html#board-atmelavr-engduinov3"><span class="std std-ref">Engduino 3</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/mayfly.html#board-atmelavr-mayfly"><span class="std std-ref">EnviroDIY Mayfly</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/mayfly.html#board-atmelavr-mayfly"><span class="std std-ref">EnviroDIY Mayfly</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/fysetc_f6_13.html#board-atmelavr-fysetc-f6-13"><span class="std std-ref">FYSETC F6 V1.3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/fysetc_f6_13.html#board-atmelavr-fysetc-f6-13"><span class="std std-ref">FYSETC F6 V1.3</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>16MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny2313.html#board-atmelavr-attiny2313"><span class="std std-ref">Generic ATtiny2313</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny2313.html#board-atmelavr-attiny2313"><span class="std std-ref">Generic ATtiny2313</span></a></p></td>
 <td><p>ATTINY2313</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny24.html#board-atmelavr-attiny24"><span class="std std-ref">Generic ATtiny24</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny24.html#board-atmelavr-attiny24"><span class="std std-ref">Generic ATtiny24</span></a></p></td>
 <td><p>ATTINY24</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny25.html#board-atmelavr-attiny25"><span class="std std-ref">Generic ATtiny25</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny25.html#board-atmelavr-attiny25"><span class="std std-ref">Generic ATtiny25</span></a></p></td>
 <td><p>ATTINY25</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny4313.html#board-atmelavr-attiny4313"><span class="std std-ref">Generic ATtiny4313</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny4313.html#board-atmelavr-attiny4313"><span class="std std-ref">Generic ATtiny4313</span></a></p></td>
 <td><p>ATTINY4313</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny44.html#board-atmelavr-attiny44"><span class="std std-ref">Generic ATtiny44</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny44.html#board-atmelavr-attiny44"><span class="std std-ref">Generic ATtiny44</span></a></p></td>
 <td><p>ATTINY44</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny45.html#board-atmelavr-attiny45"><span class="std std-ref">Generic ATtiny45</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny45.html#board-atmelavr-attiny45"><span class="std std-ref">Generic ATtiny45</span></a></p></td>
 <td><p>ATTINY45</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny84.html#board-atmelavr-attiny84"><span class="std std-ref">Generic ATtiny84</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny84.html#board-atmelavr-attiny84"><span class="std std-ref">Generic ATtiny84</span></a></p></td>
 <td><p>ATTINY84</p></td>
 <td><p>8MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny85.html#board-atmelavr-attiny85"><span class="std std-ref">Generic ATtiny85</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny85.html#board-atmelavr-attiny85"><span class="std std-ref">Generic ATtiny85</span></a></p></td>
 <td><p>ATTINY85</p></td>
 <td><p>8MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-bean.html#board-atmelavr-lightblue-bean"><span class="std std-ref">LightBlue Bean</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-bean.html#board-atmelavr-lightblue-bean"><span class="std std-ref">LightBlue Bean</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-beanplus.html#board-atmelavr-lightblue-beanplus"><span class="std std-ref">LightBlue Bean+</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-beanplus.html#board-atmelavr-lightblue-beanplus"><span class="std std-ref">LightBlue Bean+</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightup.html#board-atmelavr-lightup"><span class="std std-ref">LightUp</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightup.html#board-atmelavr-lightup"><span class="std std-ref">LightUp</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/one.html#board-atmelavr-one"><span class="std std-ref">Linino One</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/one.html#board-atmelavr-one"><span class="std std-ref">Linino One</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/smart7688.html#board-atmelavr-smart7688"><span class="std std-ref">LinkIt Smart 7688 Duo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/smart7688.html#board-atmelavr-smart7688"><span class="std std-ref">LinkIt Smart 7688 Duo</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lora32u4II.html#board-atmelavr-lora32u4ii"><span class="std std-ref">LoRa32u4II (868-915MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lora32u4II.html#board-atmelavr-lora32u4ii"><span class="std std-ref">LoRa32u4II (868-915MHz)</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/mightyhat.html#board-atmelavr-mightyhat"><span class="std std-ref">LowPowerLab MightyHat</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/mightyhat.html#board-atmelavr-mightyhat"><span class="std std-ref">LowPowerLab MightyHat</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteino.html#board-atmelavr-moteino"><span class="std std-ref">LowPowerLab Moteino</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteino.html#board-atmelavr-moteino"><span class="std std-ref">LowPowerLab Moteino</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteino8mhz.html#board-atmelavr-moteino8mhz"><span class="std std-ref">LowPowerLab Moteino (8Mhz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteino8mhz.html#board-atmelavr-moteino8mhz"><span class="std std-ref">LowPowerLab Moteino (8Mhz)</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteinomega.html#board-atmelavr-moteinomega"><span class="std std-ref">LowPowerLab MoteinoMEGA</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteinomega.html#board-atmelavr-moteinomega"><span class="std std-ref">LowPowerLab MoteinoMEGA</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/168pa16m.html#board-atmelavr-168pa16m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;16M,5V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/168pa16m.html#board-atmelavr-168pa16m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;16M,5V)</span></a></p></td>
 <td><p>ATMEGA168P</p></td>
 <td><p>16MHz</p></td>
 <td><p>15.50KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/168pa8m.html#board-atmelavr-168pa8m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/168pa8m.html#board-atmelavr-168pa8m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;8M,3.3V)</span></a></p></td>
 <td><p>ATMEGA168P</p></td>
 <td><p>8MHz</p></td>
 <td><p>15.50KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/328p16m.html#board-atmelavr-328p16m"><span class="std std-ref">Microduino Core (Atmega328P&#64;16M,5V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/328p16m.html#board-atmelavr-328p16m"><span class="std std-ref">Microduino Core (Atmega328P&#64;16M,5V)</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/328p8m.html#board-atmelavr-328p8m"><span class="std std-ref">Microduino Core (Atmega328P&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/328p8m.html#board-atmelavr-328p8m"><span class="std std-ref">Microduino Core (Atmega328P&#64;8M,3.3V)</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/32u416m.html#board-atmelavr-32u416m"><span class="std std-ref">Microduino Core USB (ATmega32U4&#64;16M,5V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/32u416m.html#board-atmelavr-32u416m"><span class="std std-ref">Microduino Core USB (ATmega32U4&#64;16M,5V)</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/1284p16m.html#board-atmelavr-1284p16m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/1284p16m.html#board-atmelavr-1284p16m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;16M,5V)</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/1284p8m.html#board-atmelavr-1284p8m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/1284p8m.html#board-atmelavr-1284p8m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;8M,3.3V)</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/644pa16m.html#board-atmelavr-644pa16m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/644pa16m.html#board-atmelavr-644pa16m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;16M,5V)</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>16MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/644pa8m.html#board-atmelavr-644pa8m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/644pa8m.html#board-atmelavr-644pa8m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;8M,3.3V)</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>8MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/emonpi.html#board-atmelavr-emonpi"><span class="std std-ref">OpenEnergyMonitor emonPi</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/emonpi.html#board-atmelavr-emonpi"><span class="std std-ref">OpenEnergyMonitor emonPi</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/prusa_mm_control.html#board-atmelavr-prusa-mm-control"><span class="std std-ref">Original Prusa i3 MK3 Multi Material 2.0 Upgrade</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/prusa_mm_control.html#board-atmelavr-prusa-mm-control"><span class="std std-ref">Original Prusa i3 MK3 Multi Material 2.0 Upgrade</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/panStampAVR.html#board-atmelavr-panstampavr"><span class="std std-ref">PanStamp AVR</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/panStampAVR.html#board-atmelavr-panstampavr"><span class="std std-ref">PanStamp AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/a-star32U4.html#board-atmelavr-a-star32u4"><span class="std std-ref">Pololu A-Star 32U4</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/a-star32U4.html#board-atmelavr-a-star32u4"><span class="std std-ref">Pololu A-Star 32U4</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/prusa_rambo.html#board-atmelavr-prusa-rambo"><span class="std std-ref">Prusa RAMBo</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/prusa_rambo.html#board-atmelavr-prusa-rambo"><span class="std std-ref">Prusa RAMBo</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>16MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/quirkbot.html#board-atmelavr-quirkbot"><span class="std std-ref">Quirkbot</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/quirkbot.html#board-atmelavr-quirkbot"><span class="std std-ref">Quirkbot</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/blend.html#board-atmelavr-blend"><span class="std std-ref">RedBearLab Blend</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/blend.html#board-atmelavr-blend"><span class="std std-ref">RedBearLab Blend</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/blendmicro16.html#board-atmelavr-blendmicro16"><span class="std std-ref">RedBearLab Blend Micro 3.3V/16MHz (overclock)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/blendmicro16.html#board-atmelavr-blendmicro16"><span class="std std-ref">RedBearLab Blend Micro 3.3V/16MHz (overclock)</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/blendmicro8.html#board-atmelavr-blendmicro8"><span class="std std-ref">RedBearLab Blend Micro 3.3V/8MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/blendmicro8.html#board-atmelavr-blendmicro8"><span class="std std-ref">RedBearLab Blend Micro 3.3V/8MHz</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/reprap_rambo.html#board-atmelavr-reprap-rambo"><span class="std std-ref">RepRap RAMBo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/reprap_rambo.html#board-atmelavr-reprap-rambo"><span class="std std-ref">RepRap RAMBo</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>16MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_galora.html#board-atmelavr-sodaq-galora"><span class="std std-ref">SODAQ GaLoRa</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_galora.html#board-atmelavr-sodaq-galora"><span class="std std-ref">SODAQ GaLoRa</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_mbili.html#board-atmelavr-sodaq-mbili"><span class="std std-ref">SODAQ Mbili</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_mbili.html#board-atmelavr-sodaq-mbili"><span class="std std-ref">SODAQ Mbili</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_moja.html#board-atmelavr-sodaq-moja"><span class="std std-ref">SODAQ Moja</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_moja.html#board-atmelavr-sodaq-moja"><span class="std std-ref">SODAQ Moja</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_ndogo.html#board-atmelavr-sodaq-ndogo"><span class="std std-ref">SODAQ Ndogo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_ndogo.html#board-atmelavr-sodaq-ndogo"><span class="std std-ref">SODAQ Ndogo</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_tatu.html#board-atmelavr-sodaq-tatu"><span class="std std-ref">SODAQ Tatu</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sodaq_tatu.html#board-atmelavr-sodaq-tatu"><span class="std std-ref">SODAQ Tatu</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega1284p.html#board-atmelavr-sanguino-atmega1284p"><span class="std std-ref">Sanguino ATmega1284p (16MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega1284p.html#board-atmelavr-sanguino-atmega1284p"><span class="std std-ref">Sanguino ATmega1284p (16MHz)</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega1284_8m.html#board-atmelavr-sanguino-atmega1284-8m"><span class="std std-ref">Sanguino ATmega1284p (8MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega1284_8m.html#board-atmelavr-sanguino-atmega1284-8m"><span class="std std-ref">Sanguino ATmega1284p (8MHz)</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644.html#board-atmelavr-sanguino-atmega644"><span class="std std-ref">Sanguino ATmega644 or ATmega644A (16 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644.html#board-atmelavr-sanguino-atmega644"><span class="std std-ref">Sanguino ATmega644 or ATmega644A (16 MHz)</span></a></p></td>
 <td><p>ATMEGA644</p></td>
 <td><p>16MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644_8m.html#board-atmelavr-sanguino-atmega644-8m"><span class="std std-ref">Sanguino ATmega644 or ATmega644A (8 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644_8m.html#board-atmelavr-sanguino-atmega644-8m"><span class="std std-ref">Sanguino ATmega644 or ATmega644A (8 MHz)</span></a></p></td>
 <td><p>ATMEGA644</p></td>
 <td><p>8MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644p.html#board-atmelavr-sanguino-atmega644p"><span class="std std-ref">Sanguino ATmega644P or ATmega644PA (16 MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644p.html#board-atmelavr-sanguino-atmega644p"><span class="std std-ref">Sanguino ATmega644P or ATmega644PA (16 MHz)</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>16MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644p_8m.html#board-atmelavr-sanguino-atmega644p-8m"><span class="std std-ref">Sanguino ATmega644P or ATmega644PA (8 MHz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sanguino_atmega644p_8m.html#board-atmelavr-sanguino-atmega644p-8m"><span class="std std-ref">Sanguino ATmega644P or ATmega644PA (8 MHz)</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>8MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/seeeduino.html#board-atmelavr-seeeduino"><span class="std std-ref">Seeeduino</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/seeeduino.html#board-atmelavr-seeeduino"><span class="std std-ref">Seeeduino</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_satmega128rfa1.html#board-atmelavr-sparkfun-satmega128rfa1"><span class="std std-ref">SparkFun ATmega128RFA1 Dev Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_satmega128rfa1.html#board-atmelavr-sparkfun-satmega128rfa1"><span class="std std-ref">SparkFun ATmega128RFA1 Dev Board</span></a></p></td>
 <td><p>ATMEGA128RFA1</p></td>
 <td><p>16MHz</p></td>
 <td><p>124KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_digitalsandbox.html#board-atmelavr-sparkfun-digitalsandbox"><span class="std std-ref">SparkFun Digital Sandbox</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_digitalsandbox.html#board-atmelavr-sparkfun-digitalsandbox"><span class="std std-ref">SparkFun Digital Sandbox</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_fiov3.html#board-atmelavr-sparkfun-fiov3"><span class="std std-ref">SparkFun Fio V3 3.3V/8MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_fiov3.html#board-atmelavr-sparkfun-fiov3"><span class="std std-ref">SparkFun Fio V3 3.3V/8MHz</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_makeymakey.html#board-atmelavr-sparkfun-makeymakey"><span class="std std-ref">SparkFun Makey Makey</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_makeymakey.html#board-atmelavr-sparkfun-makeymakey"><span class="std std-ref">SparkFun Makey Makey</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megapro8MHz.html#board-atmelavr-sparkfun-megapro8mhz"><span class="std std-ref">SparkFun Mega Pro 3.3V/8MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megapro8MHz.html#board-atmelavr-sparkfun-megapro8mhz"><span class="std std-ref">SparkFun Mega Pro 3.3V/8MHz</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>8MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megapro16MHz.html#board-atmelavr-sparkfun-megapro16mhz"><span class="std std-ref">SparkFun Mega Pro 5V/16MHz</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megapro16MHz.html#board-atmelavr-sparkfun-megapro16mhz"><span class="std std-ref">SparkFun Mega Pro 5V/16MHz</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>16MHz</p></td>
 <td><p>248KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megamini.html#board-atmelavr-sparkfun-megamini"><span class="std std-ref">SparkFun Mega Pro Mini 3.3V</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_megamini.html#board-atmelavr-sparkfun-megamini"><span class="std std-ref">SparkFun Mega Pro Mini 3.3V</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>8MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uview.html#board-atmelavr-uview"><span class="std std-ref">SparkFun MicroView</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/uview.html#board-atmelavr-uview"><span class="std std-ref">SparkFun MicroView</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro8.html#board-atmelavr-sparkfun-promicro8"><span class="std std-ref">SparkFun Pro Micro 3.3V/8MHz</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro8.html#board-atmelavr-sparkfun-promicro8"><span class="std std-ref">SparkFun Pro Micro 3.3V/8MHz</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro16.html#board-atmelavr-sparkfun-promicro16"><span class="std std-ref">SparkFun Pro Micro 5V/16MHz</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_promicro16.html#board-atmelavr-sparkfun-promicro16"><span class="std std-ref">SparkFun Pro Micro 5V/16MHz</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_qduinomini.html#board-atmelavr-sparkfun-qduinomini"><span class="std std-ref">SparkFun Qduino Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_qduinomini.html#board-atmelavr-sparkfun-qduinomini"><span class="std std-ref">SparkFun Qduino Mini</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_redboard.html#board-atmelavr-sparkfun-redboard"><span class="std std-ref">SparkFun RedBoard</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_redboard.html#board-atmelavr-sparkfun-redboard"><span class="std std-ref">SparkFun RedBoard</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_serial7seg.html#board-atmelavr-sparkfun-serial7seg"><span class="std std-ref">SparkFun Serial 7-Segment Display</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sparkfun_serial7seg.html#board-atmelavr-sparkfun-serial7seg"><span class="std std-ref">SparkFun Serial 7-Segment Display</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/sleepypi.html#board-atmelavr-sleepypi"><span class="std std-ref">SpellFoundry Sleepy Pi 2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/sleepypi.html#board-atmelavr-sleepypi"><span class="std std-ref">SpellFoundry Sleepy Pi 2</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/whispernode.html#board-atmelavr-whispernode"><span class="std std-ref">Talk2 Whisper Node</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/whispernode.html#board-atmelavr-whispernode"><span class="std std-ref">Talk2 Whisper Node</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/the_things_uno.html#board-atmelavr-the-things-uno"><span class="std std-ref">The Things Uno</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/the_things_uno.html#board-atmelavr-the-things-uno"><span class="std std-ref">The Things Uno</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/tinyduino.html#board-atmelavr-tinyduino"><span class="std std-ref">TinyCircuits TinyDuino Processor Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/tinyduino.html#board-atmelavr-tinyduino"><span class="std std-ref">TinyCircuits TinyDuino Processor Board</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/tinylily.html#board-atmelavr-tinylily"><span class="std std-ref">TinyCircuits TinyLily Mini Processor</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/tinylily.html#board-atmelavr-tinylily"><span class="std std-ref">TinyCircuits TinyLily Mini Processor</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/usbasp.html#board-atmelavr-usbasp"><span class="std std-ref">USBasp stick</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/usbasp.html#board-atmelavr-usbasp"><span class="std std-ref">USBasp stick</span></a></p></td>
 <td><p>ATMEGA8</p></td>
 <td><p>12MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/wildfirev2.html#board-atmelavr-wildfirev2"><span class="std std-ref">Wicked Device WildFire V2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/wildfirev2.html#board-atmelavr-wildfirev2"><span class="std std-ref">Wicked Device WildFire V2</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>120.00KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/wildfirev3.html#board-atmelavr-wildfirev3"><span class="std std-ref">Wicked Device WildFire V3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/wildfirev3.html#board-atmelavr-wildfirev3"><span class="std std-ref">Wicked Device WildFire V3</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ftduino.html#board-atmelavr-ftduino"><span class="std std-ref">ftDuino</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ftduino.html#board-atmelavr-ftduino"><span class="std std-ref">ftDuino</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/bob3.html#board-atmelavr-bob3"><span class="std std-ref">nicai-systems BOB3 coding bot</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/bob3.html#board-atmelavr-bob3"><span class="std std-ref">nicai-systems BOB3 coding bot</span></a></p></td>
 <td><p>ATMEGA88</p></td>
 <td><p>8MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/nibo2.html#board-atmelavr-nibo2"><span class="std std-ref">nicai-systems NIBO 2 robot</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/nibo2.html#board-atmelavr-nibo2"><span class="std std-ref">nicai-systems NIBO 2 robot</span></a></p></td>
 <td><p>ATMEGA128</p></td>
 <td><p>16MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/niboburger.html#board-atmelavr-niboburger"><span class="std std-ref">nicai-systems NIBO burger robot</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/niboburger.html#board-atmelavr-niboburger"><span class="std std-ref">nicai-systems NIBO burger robot</span></a></p></td>
 <td><p>ATMEGA16</p></td>
 <td><p>15MHz</p></td>
 <td><p>16KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/niboburger_1284.html#board-atmelavr-niboburger-1284"><span class="std std-ref">nicai-systems NIBO burger robot with Tuning Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/niboburger_1284.html#board-atmelavr-niboburger-1284"><span class="std std-ref">nicai-systems NIBO burger robot with Tuning Kit</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>20MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/nibobee.html#board-atmelavr-nibobee"><span class="std std-ref">nicai-systems NIBObee robot</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/nibobee.html#board-atmelavr-nibobee"><span class="std std-ref">nicai-systems NIBObee robot</span></a></p></td>
 <td><p>ATMEGA16</p></td>
 <td><p>15MHz</p></td>
 <td><p>16KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/nibobee_1284.html#board-atmelavr-nibobee-1284"><span class="std std-ref">nicai-systems NIBObee robot with Tuning Kit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/nibobee_1284.html#board-atmelavr-nibobee-1284"><span class="std std-ref">nicai-systems NIBObee robot with Tuning Kit</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>20MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ardhat.html#board-atmelavr-ardhat"><span class="std std-ref">ubIQio Ardhat</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ardhat.html#board-atmelavr-ardhat"><span class="std std-ref">ubIQio Ardhat</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
@@ -1867,12 +1875,12 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="stable-and-upstream-versions">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Stable and upstream versions</a><a class="headerlink" href="#stable-and-upstream-versions" title="Link to this heading"></a></h2>
 <p>You can switch between <a class="reference external" href="https://github.com/platformio/platform-atmelavr/releases">stable releases</a>
 of Atmel AVR development platform and the latest upstream version using
 <a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a> as described below.</p>
 <section id="stable">
-<h3>Stable<a class="headerlink" href="#stable" title="Permalink to this heading"></a></h3>
+<h3>Stable<a class="headerlink" href="#stable" title="Link to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; Latest stable version, NOT recommended</span>
 <span class="c1">; Pin the version as shown below</span>
 <span class="k">[env:latest_stable]</span>
@@ -1887,7 +1895,7 @@ of Atmel AVR development platform and the latest upstream version using
 </div>
 </section>
 <section id="upstream">
-<h3>Upstream<a class="headerlink" href="#upstream" title="Permalink to this heading"></a></h3>
+<h3>Upstream<a class="headerlink" href="#upstream" title="Link to this heading"></a></h3>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:upstream_develop]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-atmelavr.git</span>
 <span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">...</span>
@@ -1896,7 +1904,7 @@ of Atmel AVR development platform and the latest upstream version using
 </section>
 </section>
 <section id="packages">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Packages</a><a class="headerlink" href="#packages" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1978,7 +1986,7 @@ manufacturer</p>
 </div>
 </section>
 <section id="frameworks">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1993,7 +2001,7 @@ manufacturer</p>
 </table>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -2003,7 +2011,7 @@ horizontally.</p></li>
 </ul>
 </div>
 <section id="adafruit">
-<h3>Adafruit<a class="headerlink" href="#adafruit" title="Permalink to this heading"></a></h3>
+<h3>Adafruit<a class="headerlink" href="#adafruit" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2124,7 +2132,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="alorium-technology">
-<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Permalink to this heading"></a></h3>
+<h3>Alorium Technology<a class="headerlink" href="#alorium-technology" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2161,7 +2169,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="anarduino">
-<h3>Anarduino<a class="headerlink" href="#anarduino" title="Permalink to this heading"></a></h3>
+<h3>Anarduino<a class="headerlink" href="#anarduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2184,7 +2192,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="arduboy">
-<h3>Arduboy<a class="headerlink" href="#arduboy" title="Permalink to this heading"></a></h3>
+<h3>Arduboy<a class="headerlink" href="#arduboy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2214,7 +2222,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="arduino">
-<h3>Arduino<a class="headerlink" href="#arduino" title="Permalink to this heading"></a></h3>
+<h3>Arduino<a class="headerlink" href="#arduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2443,14 +2451,21 @@ horizontally.</p></li>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/uno_mini.html#board-atmelavr-uno-mini"><span class="std std-ref">Arduino Uno Mini</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ATMEGA328P</p></td>
+<td><p>16MHz</p></td>
+<td><p>31.50KB</p></td>
+<td><p>2KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yun.html#board-atmelavr-yun"><span class="std std-ref">Arduino Yun</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/yunmini.html#board-atmelavr-yunmini"><span class="std std-ref">Arduino Yun Mini</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
@@ -2461,7 +2476,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="atmel">
-<h3>Atmel<a class="headerlink" href="#atmel" title="Permalink to this heading"></a></h3>
+<h3>Atmel<a class="headerlink" href="#atmel" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2624,7 +2639,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bq">
-<h3>BQ<a class="headerlink" href="#bq" title="Permalink to this heading"></a></h3>
+<h3>BQ<a class="headerlink" href="#bq" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2647,7 +2662,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bsfrance">
-<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Permalink to this heading"></a></h3>
+<h3>BSFrance<a class="headerlink" href="#bsfrance" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2670,7 +2685,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="bitwizard">
-<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Permalink to this heading"></a></h3>
+<h3>BitWizard<a class="headerlink" href="#bitwizard" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2693,7 +2708,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="controllino">
-<h3>Controllino<a class="headerlink" href="#controllino" title="Permalink to this heading"></a></h3>
+<h3>Controllino<a class="headerlink" href="#controllino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2737,7 +2752,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="digistump">
-<h3>Digistump<a class="headerlink" href="#digistump" title="Permalink to this heading"></a></h3>
+<h3>Digistump<a class="headerlink" href="#digistump" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2781,7 +2796,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="dwengo">
-<h3>Dwengo<a class="headerlink" href="#dwengo" title="Permalink to this heading"></a></h3>
+<h3>Dwengo<a class="headerlink" href="#dwengo" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2804,7 +2819,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="elektor">
-<h3>Elektor<a class="headerlink" href="#elektor" title="Permalink to this heading"></a></h3>
+<h3>Elektor<a class="headerlink" href="#elektor" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2827,7 +2842,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="engduino">
-<h3>Engduino<a class="headerlink" href="#engduino" title="Permalink to this heading"></a></h3>
+<h3>Engduino<a class="headerlink" href="#engduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2850,7 +2865,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="envirodiy">
-<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Permalink to this heading"></a></h3>
+<h3>EnviroDIY<a class="headerlink" href="#envirodiy" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2873,7 +2888,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="fysetc">
-<h3>FYSETC<a class="headerlink" href="#fysetc" title="Permalink to this heading"></a></h3>
+<h3>FYSETC<a class="headerlink" href="#fysetc" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2896,7 +2911,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lightup">
-<h3>LightUp<a class="headerlink" href="#lightup" title="Permalink to this heading"></a></h3>
+<h3>LightUp<a class="headerlink" href="#lightup" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2919,7 +2934,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="linino">
-<h3>Linino<a class="headerlink" href="#linino" title="Permalink to this heading"></a></h3>
+<h3>Linino<a class="headerlink" href="#linino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2942,7 +2957,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="lowpowerlab">
-<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Permalink to this heading"></a></h3>
+<h3>LowPowerLab<a class="headerlink" href="#lowpowerlab" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2986,7 +3001,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="mediatek-labs">
-<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Permalink to this heading"></a></h3>
+<h3>MediaTek Labs<a class="headerlink" href="#mediatek-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3009,7 +3024,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="microchip">
-<h3>Microchip<a class="headerlink" href="#microchip" title="Permalink to this heading"></a></h3>
+<h3>Microchip<a class="headerlink" href="#microchip" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3459,7 +3474,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="microduino">
-<h3>Microduino<a class="headerlink" href="#microduino" title="Permalink to this heading"></a></h3>
+<h3>Microduino<a class="headerlink" href="#microduino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3538,7 +3553,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="openenergymonitor">
-<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Permalink to this heading"></a></h3>
+<h3>OpenEnergyMonitor<a class="headerlink" href="#openenergymonitor" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3561,7 +3576,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="panstamp">
-<h3>PanStamp<a class="headerlink" href="#panstamp" title="Permalink to this heading"></a></h3>
+<h3>PanStamp<a class="headerlink" href="#panstamp" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3584,7 +3599,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="pinoccio">
-<h3>Pinoccio<a class="headerlink" href="#pinoccio" title="Permalink to this heading"></a></h3>
+<h3>Pinoccio<a class="headerlink" href="#pinoccio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3607,7 +3622,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="pololu-corporation">
-<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Permalink to this heading"></a></h3>
+<h3>Pololu Corporation<a class="headerlink" href="#pololu-corporation" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3630,7 +3645,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="prusa-3d">
-<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Permalink to this heading"></a></h3>
+<h3>Prusa 3D<a class="headerlink" href="#prusa-3d" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3660,7 +3675,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="punch-through">
-<h3>Punch Through<a class="headerlink" href="#punch-through" title="Permalink to this heading"></a></h3>
+<h3>Punch Through<a class="headerlink" href="#punch-through" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3690,7 +3705,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="quirkbot">
-<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Permalink to this heading"></a></h3>
+<h3>Quirkbot<a class="headerlink" href="#quirkbot" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3713,7 +3728,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="redbearlab">
-<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Permalink to this heading"></a></h3>
+<h3>RedBearLab<a class="headerlink" href="#redbearlab" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3750,7 +3765,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="reprap">
-<h3>RepRap<a class="headerlink" href="#reprap" title="Permalink to this heading"></a></h3>
+<h3>RepRap<a class="headerlink" href="#reprap" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3773,7 +3788,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sodaq">
-<h3>SODAQ<a class="headerlink" href="#sodaq" title="Permalink to this heading"></a></h3>
+<h3>SODAQ<a class="headerlink" href="#sodaq" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3824,7 +3839,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sanguino">
-<h3>Sanguino<a class="headerlink" href="#sanguino" title="Permalink to this heading"></a></h3>
+<h3>Sanguino<a class="headerlink" href="#sanguino" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3882,7 +3897,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="seeedstudio">
-<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Permalink to this heading"></a></h3>
+<h3>SeeedStudio<a class="headerlink" href="#seeedstudio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -3905,7 +3920,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="sparkfun">
-<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Permalink to this heading"></a></h3>
+<h3>SparkFun<a class="headerlink" href="#sparkfun" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4012,7 +4027,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="spellfoundry">
-<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Permalink to this heading"></a></h3>
+<h3>SpellFoundry<a class="headerlink" href="#spellfoundry" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4035,7 +4050,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="the-things-network">
-<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Permalink to this heading"></a></h3>
+<h3>The Things Network<a class="headerlink" href="#the-things-network" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4058,7 +4073,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="till-harbaum">
-<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Permalink to this heading"></a></h3>
+<h3>Till Harbaum<a class="headerlink" href="#till-harbaum" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4081,7 +4096,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="tinycircuits">
-<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Permalink to this heading"></a></h3>
+<h3>TinyCircuits<a class="headerlink" href="#tinycircuits" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4111,7 +4126,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wicked-device">
-<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Permalink to this heading"></a></h3>
+<h3>Wicked Device<a class="headerlink" href="#wicked-device" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4141,7 +4156,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="wisen">
-<h3>Wisen<a class="headerlink" href="#wisen" title="Permalink to this heading"></a></h3>
+<h3>Wisen<a class="headerlink" href="#wisen" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4164,7 +4179,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="makerlab-mx">
-<h3>makerlab.mx<a class="headerlink" href="#makerlab-mx" title="Permalink to this heading"></a></h3>
+<h3>makerlab.mx<a class="headerlink" href="#makerlab-mx" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4187,7 +4202,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="nicai-systems">
-<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Permalink to this heading"></a></h3>
+<h3>nicai-systems<a class="headerlink" href="#nicai-systems" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4245,7 +4260,7 @@ horizontally.</p></li>
 </table>
 </section>
 <section id="ubiqio">
-<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Permalink to this heading"></a></h3>
+<h3>ubIQio<a class="headerlink" href="#ubiqio" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -4396,7 +4411,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.11 (stable)
+    v6.1.12 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

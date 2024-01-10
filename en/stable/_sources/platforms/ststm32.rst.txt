@@ -44,7 +44,6 @@ Examples are listed from `ST STM32 development platform repository <https://gith
 * `stm32cube-hal-iap <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-iap?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-extmem-boot <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-extmem-boot?utm_source=platformio.org&utm_medium=docs>`_
-* `zephyr-net-civetweb <https://github.com/platformio/platform-ststm32/tree/master/examples/zephyr-net-civetweb?utm_source=platformio.org&utm_medium=docs>`_
 * `spl-blink <https://github.com/platformio/platform-ststm32/tree/master/examples/spl-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `stm32cube-hal-lcd <https://github.com/platformio/platform-ststm32/tree/master/examples/stm32cube-hal-lcd?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-mesh-minimal <https://github.com/platformio/platform-ststm32/tree/master/examples/mbed-rtos-mesh-minimal?utm_source=platformio.org&utm_medium=docs>`_
@@ -159,6 +158,11 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_leafony_ap03`
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
     * - :ref:`board_ststm32_mbed_connect_odin`
       - STM32F439ZIY6
       - 168MHz
@@ -432,7 +436,7 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_g0b1re`
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - STM32H723ZGT6
@@ -702,16 +706,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
-    * - :ref:`board_ststm32_nicla_vision_m4`
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_opta`
       - STM32H747XIH6
       - 480MHz
@@ -1392,11 +1396,31 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - STM32F103RCT6
       - 72MHz
       - 256KB
       - 48KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_lora_e5_mini`
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_steval_mksboxv1`
       - STM32L4R9ZI
       - 120MHz
@@ -1407,6 +1431,11 @@ Please click on board name for the further details.
       - 64MHz
       - 128KB
       - 36KB
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_sparky_v1`
       - STM32F303CCT6
       - 72MHz
@@ -1650,6 +1679,9 @@ Packages
     * - `tool-dfuutil <https://registry.platformio.org/tools/platformio/tool-dfuutil>`__
       - Device Firmware Upgrade Utilities
 
+    * - `tool-dfuutil-arduino <https://registry.platformio.org/tools/platformio/tool-dfuutil-arduino>`__
+      - Device Firmware Upgrade Utilities
+
     * - `tool-dtc <https://registry.platformio.org/tools/platformio/tool-dtc>`__
       - Device tree compiler
 
@@ -1869,18 +1901,18 @@ Arduino
       - Frequency
       - Flash
       - RAM
-    * - :ref:`board_ststm32_nicla_vision_m4`
-      - External
-      - STM32H747XIH6
-      - 480MHz
-      - 1MB
-      - 287.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - External
       - STM32H747XIH6
       - 480MHz
       - 768KB
       - 511.35KB
+    * - :ref:`board_ststm32_nicla_vision_m4`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
     * - :ref:`board_ststm32_opta`
       - External
       - STM32H747XIH6
@@ -2626,6 +2658,12 @@ Generic
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32H750VB`
+      - External
+      - STM32H750VBT6
+      - 480MHz
+      - 128KB
+      - 1MB
 
 HY
 ~~
@@ -2682,6 +2720,25 @@ LeafLabs
       - 72MHz
       - 108KB
       - 20KB
+
+Leafony Systems
+~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_leafony_ap03`
+      - On-board
+      - STM32L452RET6
+      - 80MHz
+      - 512KB
+      - 160KB
 
 MXChip
 ~~~~~~
@@ -3434,7 +3491,7 @@ ST
       - On-board
       - STM32G0B1RET6
       - 64MHz
-      - 256KB
+      - 512KB
       - 144KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - On-board
@@ -3664,6 +3721,12 @@ ST
       - 216MHz
       - 64KB
       - 340KB
+    * - :ref:`board_ststm32_genericSTM32G431CB`
+      - External
+      - STM32G431CBU6
+      - 170MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_disco_h735ig`
       - On-board
       - STM32H735IGK6
@@ -3726,6 +3789,18 @@ SeeedStudio
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_lora_e5_dev_board`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_lora_e5_mini`
+      - External
+      - STM32WLE5JC
+      - 48MHz
+      - 256KB
+      - 64KB
 
 Semtech
 ~~~~~~~
@@ -3764,6 +3839,25 @@ Sigma IC
       - 64MHz
       - 128KB
       - 36KB
+
+SparkFun
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_sparkfun_micromod_f405`
+      - External
+      - STM32F405RGT6
+      - 168MHz
+      - 1MB
+      - 128KB
 
 TauLabs
 ~~~~~~~
