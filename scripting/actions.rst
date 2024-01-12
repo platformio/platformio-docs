@@ -104,3 +104,21 @@ The ``extra_script.py`` file is located in the same directory as
             "$BUILD_DIR/${PROGNAME}.elf", "$BUILD_DIR/${PROGNAME}.hex"
         ]), "Building $BUILD_DIR/${PROGNAME}.hex")
     )
+
+Debugging extra_scripts:
+------------------
+
+#. create your extra script with `print(sys.argv)` as content
+#. then add a launch json like
+
+``launch.json``:
+.. code-block:: javascript
+    {
+      "name": "Python Debugger: Upload",
+      "type": "debugpy",
+      "request": "launch",
+      "program": ".....\\scons.py",// put first argument of argv here
+      "args": [   ], // and put the rest into this args array
+      "console": "integratedTerminal",
+    }
+
