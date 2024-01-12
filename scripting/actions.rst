@@ -106,14 +106,18 @@ The ``extra_script.py`` file is located in the same directory as
     )
 
 Debugging extra_scripts:
-------------------
+------------------------
+
+
+
 
 #. create your extra script with `print(sys.argv)` as content
 #. then add a launch json like
 
-``launch.json``:
+
 .. code-block:: javascript
-    {
+
+   {
       "name": "Python Debugger: Upload",
       "type": "debugpy",
       "request": "launch",
@@ -121,4 +125,6 @@ Debugging extra_scripts:
       "args": [   ], // and put the rest into this args array
       "console": "integratedTerminal",
     }
+
+
 
