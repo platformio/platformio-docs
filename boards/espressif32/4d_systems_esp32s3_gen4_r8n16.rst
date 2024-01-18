@@ -63,6 +63,17 @@ board manifest `4d_systems_esp32s3_gen4_r8n16.json <https://github.com/platformi
   ; change MCU frequency
   board_build.f_cpu = 240000000L
 
+Enabling full potential of RAM, please use ``4d_systems_esp32s3_gen4_r8n16``:
+
+.. code-block:: ini
+
+  [env:4d_systems_esp32s3_gen4_r8n16]
+  ; enable full RAM
+  board_upload.maximum_ram_size = 8192000
+  uild_flags =
+    -D<some_other_flags>
+    -DBOARD_HAS_PSRAM
+    -mfix-esp32-psram-cache-issue
 
 Uploading
 ---------
@@ -94,6 +105,41 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
   board = 4d_systems_esp32s3_gen4_r8n16
 
   upload_protocol = esptool
+
+Testing
+-------
+
+If you thinking for how to testing your new platform with PlatformiO, under VScode with plugin installed (Linux)
+and how gather some essential information:
+
+.. code-block:: cmd
+
+  /home/${USER}/.espressif/python_env/idf5.3_py3.10_env/bin/esptool.py --chip auto --baud 115200 --port /dev/ttyACM0 flash_id
+
+Where most interested _essential_ output below, is like for security reason
+
+1. WiFi Mac to add it to your network secure mac-access list
+2. Chip and it's revision
+3. Crystal base frequency
+4. Flash size and onboard features with available PSRAM and Flash size
+5. And other minor or major informations
+
+.. code-block:: output
+
+  esptool.py vv4.8.dev1
+  Serial port /dev/ttyACM0
+  Detecting chip type... ESP32-S3
+  Chip is ESP32-S3 (QFN56) (revision v0.2)
+  Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+  Crystal is 40MHz
+  MAC: XX:XX:XX:XX:XX:XX
+  Manufacturer: 5e
+  Device: 4018
+  Detected flash size: 16MB
+  Flash type set in eFuse: quad (4 data lines)
+  Hard resetting via RTS pin...
+
+
 
 Debugging
 ---------
