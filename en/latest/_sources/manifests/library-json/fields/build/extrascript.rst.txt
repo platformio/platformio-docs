@@ -24,7 +24,7 @@ Launch extra script before a build process.
 
 .. warning::
     The :ref:`scripting_actions` can only be applied to the global
-    construction environemnt (see :ref:`scripting_envs`).
+    construction environment (see :ref:`scripting_envs`).
 
 **Example** (HAL-based library)
 
