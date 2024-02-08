@@ -46,7 +46,7 @@ This variant is default choice for native PlatformIO projects:
 
 .. code-block:: yaml
 
-    image: python:3.9
+    image: python:3.11
 
     cache:
       paths:
@@ -73,7 +73,7 @@ and boards from command line interface:
 
 .. code-block:: yaml
 
-    image: python:3.9
+    image: python:3.11
 
     cache:
       paths:
@@ -100,7 +100,7 @@ Examples
 
 .. code-block:: yaml
 
-    image: python:3.9
+    image: python:3.11
 
     cache:
       paths:
