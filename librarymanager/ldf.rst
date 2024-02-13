@@ -85,6 +85,11 @@ project (:ref:`projectconf_pio_src_dir`) and can work in the next modes:
 The mode can be changed using :ref:`projectconf_lib_ldf_mode` option in
 :ref:`projectconf`. Default value is set to ``chain``.
 
+
+.. note::
+   Once a library is picked by the LDF for the build process, all source files 
+   according to its manifest file will be built.
+
 .. note::
   Usually, when the LDF appears to fail to identify a dependency of a library,
   it is because the dependency is only referenced from a library source file,
