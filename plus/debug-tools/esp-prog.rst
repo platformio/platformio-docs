@@ -77,16 +77,16 @@ Wiring Connections
     - GND
     - Digital ground
   * - 2
-    - ESP_TMS
+    - ESP_TMS (GPIO14)
     - Test Mode State
   * - 4
-    - ESP_TCK
+    - ESP_TCK (GPIO13)
     - JTAG Return Test Clock
   * - 6
-    - ESP_TDO
+    - ESP_TDO (GPIO15)
     - Test Data Out
   * - 8
-    - ESP_TDI
+    - ESP_TDI (GPIO12)
     - Test Data In
 
 Tutorials
