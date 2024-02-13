@@ -97,13 +97,14 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Arduino Uno R4 WiFi does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+The ESP32 coprocessor is used to provide a CMSIS-DAP interface to the RA4M1 microcontroller. No additional hardware is necessary for debugging, can just connect through USB.
 
 .. list-table::
   :header-rows:  1
 
   * - Compatible Tools
     - On-board
+    - Yes (through ESP32 coprocessor)
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
     - 
