@@ -233,6 +233,11 @@ files of the each found dependency (recursively).
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">chain</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>Once a library is picked by the LDF for the build process, all source files
+according to its manifest file will be built.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Usually, when the LDF appears to fail to identify a dependency of a library,
 it is because the dependency is only referenced from a library source file,
 and not a library header file (see example below). In this case, it is
