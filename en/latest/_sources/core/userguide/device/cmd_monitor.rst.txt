@@ -272,7 +272,7 @@ See the base API below:
 
 **Examples**
 
-- https://github.com/platformio/platformio-core/tree/develop/platformio/device/filters
+- https://github.com/platformio/platformio-core/tree/develop/platformio/device/monitor/filters
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor
 
