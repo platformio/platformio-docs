@@ -24,7 +24,6 @@ test-driven methodologies, and modern toolchains for unrivaled success.
 
 **Social:** `LinkedIn <https://www.linkedin.com/company/platformio/>`_ |
 `Twitter <https://twitter.com/PlatformIO_Org>`_ |
-`Facebook <https://www.facebook.com/platformio>`_ |
 `Community Forums <https://community.platformio.org>`_
 
 Contents
