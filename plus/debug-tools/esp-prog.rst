@@ -68,25 +68,53 @@ Wiring Connections
   :header-rows:  1
 
   * - ESP-Prog JTAG 10-Pin Connector
-    - Board JTAG Pin
+    - JTAG Signal
+    - ESP32 Pin
+    - ESP32-S2 and ESP32-S3 Pin
+    - ESP32-C2, ESP32-C3, ESP32-C6, and ESP32-P4 Pin
+    - ESP32-H2 Pin
     - Description
   * - 1
+    - VDD
+    - VDD
+    - VDD
+    - VDD
     - VDD
     - Positive Supply Voltage — Power supply for JTAG interface drivers
   * - 3
     - GND
+    - GND
+    - GND
+    - GND
+    - GND
     - Digital ground
   * - 2
-    - ESP_TMS
+    - TMS
+    - GPIO14
+    - GPIO42
+    - GPIO4
+    - GPIO2
     - Test Mode State
   * - 4
-    - ESP_TCK
+    - TCK
+    - GPIO13
+    - GPIO39
+    - GPIO6
+    - GPIO4
     - JTAG Return Test Clock
   * - 6
-    - ESP_TDO
+    - TDO
+    - GPIO15
+    - GPIO40
+    - GPIO7
+    - GPIO3
     - Test Data Out
   * - 8
-    - ESP_TDI
+    - TDI
+    - GPIO12
+    - GPIO41
+    - GPIO5
+    - GPIO5
     - Test Data In
 
 Tutorials
