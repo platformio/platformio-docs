@@ -68,7 +68,7 @@ Setting Up the Project
 
 .. image:: ../../_static/images/ide/vscode/platformio-ide-vscode-new-project.png
 
-3. Open ``main.cpp`` file form ``src`` folder and replace its contents with
+3. Open ``main.cpp`` file from ``src`` folder and replace its contents with
    the next:
 
 .. warning::
