@@ -66,7 +66,7 @@ This variant is default choice for native PlatformIO projects:
             key: ${{ runner.os }}-pio
         - uses: actions/setup-python@v4
           with:
-            python-version: '3.9'
+            python-version: '3.11'
         - name: Install PlatformIO Core
           run: pip install --upgrade platformio
 
@@ -103,7 +103,7 @@ and boards from command line interface:
               key: ${{ runner.os }}-pio
           - uses: actions/setup-python@v4
             with:
-              python-version: '3.9'
+              python-version: '3.11'
           - name: Install PlatformIO Core
             run: pip install --upgrade platformio
 
@@ -157,7 +157,7 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
             key: ${{ runner.os }}-pio
         - uses: actions/setup-python@v4
           with:
-            python-version: '3.9'
+            python-version: '3.11'
         - name: Install PlatformIO Core
           run: pip install --upgrade platformio
 

@@ -151,6 +151,11 @@ The :option:`pio test --json-output-path` or :option:`pio test --junit-output-pa
 options can be used for dumping available test suites.
 
 .. option::
+    --json-output
+
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
+
+.. option::
     --json-output-path
 
 Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
