@@ -111,8 +111,8 @@ using :ref:`projectconf_monitor_echo` option.
 .. option::
     --encoding
 
-Set the encoding for the serial port (e.g. ``hexlify``, ``Latin1``, ``UTF-8``),
-default ``UTF-8``.
+Set the encoding for the serial port (e.g. ``hexlify``, ``Latin-1``, ``UTF-8``),
+default ``UTF-8``. See the full list of `supported encodings <https://docs.python.org/3/library/codecs.html#standard-encodings>`_.
 
 Can be customized in :ref:`projectconf`
 using :ref:`projectconf_monitor_encoding` option.
@@ -272,7 +272,7 @@ See the base API below:
 
 **Examples**
 
-- https://github.com/platformio/platformio-core/tree/develop/platformio/device/filters
+- https://github.com/platformio/platformio-core/tree/develop/platformio/device/monitor/filters
 - https://github.com/platformio/platform-espressif32/tree/develop/monitor
 - https://github.com/platformio/platform-espressif8266/tree/develop/monitor
 

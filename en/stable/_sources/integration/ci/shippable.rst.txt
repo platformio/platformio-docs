@@ -53,7 +53,7 @@ This variant is default choice for native PlatformIO projects:
 
     language: python
     python:
-        - "3.9"
+        - "3.11"
 
     install:
         - pip install -U platformio
@@ -73,7 +73,7 @@ and boards from command line interface:
 
     language: python
     python:
-        - "3.9"
+        - "3.11"
 
     env:
         - PLATFORMIO_CI_SRC=path/to/source/file.c
@@ -97,7 +97,7 @@ Examples
 
     language: python
     python:
-        - "3.9"
+        - "3.11"
 
     env:
         - PLATFORMIO_CI_SRC=examples/Bluetooth/PS3SPP/PS3SPP.ino

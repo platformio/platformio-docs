@@ -18,7 +18,7 @@
   
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=786f2384"></script>
+        <script src="../../_static/documentation_options.js?v=b3e6b349"></script>
         <script src="../../_static/doctools.js?v=888ff710"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -254,33 +254,61 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>ESP-Prog JTAG 10-Pin Connector</p></th>
-<th class="head"><p>Board JTAG Pin</p></th>
+<th class="head"><p>JTAG Signal</p></th>
+<th class="head"><p>ESP32 Pin</p></th>
+<th class="head"><p>ESP32-S2 and ESP32-S3 Pin</p></th>
+<th class="head"><p>ESP32-C2, ESP32-C3, ESP32-C6, and ESP32-P4 Pin</p></th>
+<th class="head"><p>ESP32-H2 Pin</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>VDD</p></td>
+<td><p>VDD</p></td>
+<td><p>VDD</p></td>
+<td><p>VDD</p></td>
+<td><p>VDD</p></td>
 <td><p>Positive Supply Voltage — Power supply for JTAG interface drivers</p></td>
 </tr>
 <tr class="row-odd"><td><p>3</p></td>
 <td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
 <td><p>Digital ground</p></td>
 </tr>
 <tr class="row-even"><td><p>2</p></td>
-<td><p>ESP_TMS</p></td>
+<td><p>TMS</p></td>
+<td><p>GPIO14</p></td>
+<td><p>GPIO42</p></td>
+<td><p>GPIO4</p></td>
+<td><p>GPIO2</p></td>
 <td><p>Test Mode State</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p>ESP_TCK</p></td>
+<td><p>TCK</p></td>
+<td><p>GPIO13</p></td>
+<td><p>GPIO39</p></td>
+<td><p>GPIO6</p></td>
+<td><p>GPIO4</p></td>
 <td><p>JTAG Return Test Clock</p></td>
 </tr>
 <tr class="row-even"><td><p>6</p></td>
-<td><p>ESP_TDO</p></td>
+<td><p>TDO</p></td>
+<td><p>GPIO15</p></td>
+<td><p>GPIO40</p></td>
+<td><p>GPIO7</p></td>
+<td><p>GPIO3</p></td>
 <td><p>Test Data Out</p></td>
 </tr>
 <tr class="row-odd"><td><p>8</p></td>
-<td><p>ESP_TDI</p></td>
+<td><p>TDI</p></td>
+<td><p>GPIO12</p></td>
+<td><p>GPIO41</p></td>
+<td><p>GPIO5</p></td>
+<td><p>GPIO5</p></td>
 <td><p>Test Data In</p></td>
 </tr>
 </tbody>
@@ -1842,7 +1870,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.13 (stable)
+    v6.1.14 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

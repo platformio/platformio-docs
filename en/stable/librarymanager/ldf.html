@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=786f2384"></script>
+        <script src="../_static/documentation_options.js?v=b3e6b349"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -231,6 +231,11 @@ files of the each found dependency (recursively).
 </dl>
 <p>The mode can be changed using <a class="reference internal" href="../projectconf/sections/env/options/library/lib_ldf_mode.html#projectconf-lib-ldf-mode"><span class="std std-ref">lib_ldf_mode</span></a> option in
 <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>. Default value is set to <code class="docutils literal notranslate"><span class="pre">chain</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once a library is picked by the LDF for the build process, all source files
+according to its manifest file will be built.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Usually, when the LDF appears to fail to identify a dependency of a library,
@@ -465,7 +470,7 @@ it evaluates <a class="reference external" href="https://gcc.gnu.org/onlinedocs/
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.13 (stable)
+    v6.1.14 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
