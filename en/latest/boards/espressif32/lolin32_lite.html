@@ -90,6 +90,7 @@
 <li class="toctree-l3"><a class="reference internal" href="featheresp32.html">Adafruit ESP32 Feather</a></li>
 <li class="toctree-l3"><a class="reference internal" href="featheresp32-s2.html">Adafruit ESP32-S2 Feather Development Board</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_esp32_v2.html">Adafruit Feather ESP32 V2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="adafruit_feather_esp32s2.html">Adafruit Feather ESP32-S2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_esp32s2_reversetft.html">Adafruit Feather ESP32-S2 Reverse TFT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_esp32s2_tft.html">Adafruit Feather ESP32-S2 TFT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="adafruit_feather_esp32s3.html">Adafruit Feather ESP32-S3 2MB PSRAM</a></li>
@@ -123,8 +124,6 @@
 <li class="toctree-l3"><a class="reference internal" href="wifiduino32.html">Blinker WiFiduino32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wifiduino32s3.html">Blinker WiFiduino32S3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wifiduino32c3.html">Blinker WiFiduinoV2 (ESP32-C3)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="briki_abc_esp32.html">Briki ABC (MBC-WB) - ESP32</a></li>
-<li class="toctree-l3"><a class="reference internal" href="briki_mbc-wb_esp32.html">Briki MBC-WB - ESP32</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cnrs_aw2eth.html">CNRS AW2ETH</a></li>
 <li class="toctree-l3"><a class="reference internal" href="connaxio_espoir.html">Connaxio’s Espoir</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cytron_maker_feather_aiot_s3.html">Cytron Maker Feather AIoT S3</a></li>
@@ -192,6 +191,7 @@
 <li class="toctree-l3"><a class="reference internal" href="nebulas3.html">Kinetic Dynamics Nebula S3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sensesiot_weizen.html">LOGISENSES Senses Weizen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="labplus_mpython.html">Labplus mPython</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lilka_v2.html">Lilka v2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lilygo-t-display.html">LilyGo T-Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lilygo-t-display-s3.html">LilyGo T-Display-S3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lionbit.html">Lion:Bit Dev Board</a></li>
@@ -294,6 +294,7 @@
 <li class="toctree-l3"><a class="reference internal" href="lolin_s2_pico.html">WEMOS LOLIN S2 PICO</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lolin_s3.html">WEMOS LOLIN S3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lolin_s3_mini.html">WEMOS LOLIN S3 Mini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lolin_s3_pro.html">WEMOS LOLIN S3 PRO</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lolin32.html">WEMOS LOLIN32</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">WEMOS LOLIN32 Lite</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#hardware">Hardware</a></li>
@@ -465,8 +466,19 @@ board manifest <a class="reference external" href="https://github.com/platformio
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Uploading</a><a class="headerlink" href="#uploading" title="Link to this heading"></a></h2>
 <p>WEMOS LOLIN32 Lite supports the following uploading protocols:</p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cmsis-dap</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">esp-bridge</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">esp-prog</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">espota</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">esptool</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iot-bus-jtag</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jlink</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">minimodule</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">olimex-arm-usb-ocd</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">olimex-arm-usb-ocd-h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">olimex-arm-usb-tiny-h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">olimex-jtag-tiny</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tumpa</span></code></p></li>
 </ul>
 <p>Default protocol is <code class="docutils literal notranslate"><span class="pre">esptool</span></code></p>
 <p>You can change upload protocol using <a class="reference internal" href="../../projectconf/sections/env/options/upload/upload_protocol.html#projectconf-upload-protocol"><span class="std std-ref">upload_protocol</span></a> option:</p>
@@ -480,7 +492,70 @@ board manifest <a class="reference external" href="https://github.com/platformio
 </section>
 <section id="debugging">
 <h2><a class="toc-backref" href="#id5" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
-<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> currently does not support WEMOS LOLIN32 Lite board.</p>
+<p><a class="reference internal" href="../../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You will need to install debug tool drivers depending on your system.
+Please click on compatible debug tool below for the further
+instructions and configuration information.</p>
+</div>
+<p>You can switch between debugging <a class="reference internal" href="../../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
+<a class="reference internal" href="../../projectconf/sections/env/options/debug/debug_tool.html#projectconf-debug-tool"><span class="std std-ref">debug_tool</span></a> option in <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
+<p>WEMOS LOLIN32 Lite does not have on-board debug probe and <strong>IS NOT READY</strong> for debugging. You will need to use/buy one of external probe listed below.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Compatible Tools</p></th>
+<th class="head"><p>On-board</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/cmsis-dap.html#debugging-tool-cmsis-dap"><span class="std std-ref">CMSIS-DAP</span></a></p></td>
+<td></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">esp-bridge</span></code></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/esp-prog.html#debugging-tool-esp-prog"><span class="std std-ref">ESP-Prog</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/iot-bus-jtag.html#debugging-tool-iot-bus-jtag"><span class="std std-ref">oddWires IOT-Bus JTAG</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/jlink.html#debugging-tool-jlink"><span class="std std-ref">J-LINK</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/minimodule.html#debugging-tool-minimodule"><span class="std std-ref">Mini-Module FT2232H</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd.html#debugging-tool-olimex-arm-usb-ocd"><span class="std std-ref">Olimex ARM-USB-OCD</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-ocd-h.html#debugging-tool-olimex-arm-usb-ocd-h"><span class="std std-ref">Olimex ARM-USB-OCD-H</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/olimex-arm-usb-tiny-h.html#debugging-tool-olimex-arm-usb-tiny-h"><span class="std std-ref">Olimex ARM-USB-TINY-H</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../plus/debug-tools/olimex-jtag-tiny.html#debugging-tool-olimex-jtag-tiny"><span class="std std-ref">Olimex ARM-USB-TINY</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../plus/debug-tools/tumpa.html#debugging-tool-tumpa"><span class="std std-ref">TIAO USB Multi-Protocol Adapter (TUMPA)</span></a></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="frameworks">
 <h2><a class="toc-backref" href="#id6" role="doc-backlink">Frameworks</a><a class="headerlink" href="#frameworks" title="Link to this heading"></a></h2>

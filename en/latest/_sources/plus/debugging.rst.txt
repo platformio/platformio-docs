@@ -609,6 +609,13 @@ Adafruit
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - :ref:`platform_espressif32`
       - External
@@ -1239,6 +1246,27 @@ Anarduino
       - 16MHz
       - 31.50KB
       - 2KB
+
+Anderson & friends
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lilka_v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
 
 Arduboy
 ~~~~~~~
@@ -2191,6 +2219,13 @@ Calliope
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_nordicnrf52_calliopemini_v3`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf51_calliope_mini`
       - :ref:`platform_nordicnrf51`
       - On-board
@@ -8274,7 +8309,21 @@ WEMOS
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32_lite`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -8533,48 +8582,6 @@ decaWave
       - 64MHz
       - 512KB
       - 64KB
-
-meteca
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Platform
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_briki_abc_esp32`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
-      - 320KB
-    * - :ref:`board_atmelsam_briki_abc_samd21`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
-      - 320KB
-    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
 
 microS2
 ~~~~~~~

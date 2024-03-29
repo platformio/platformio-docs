@@ -34,14 +34,10 @@ Examples
 
 Examples are listed from `Teensy development platform repository <https://github.com/platformio/platform-teensy/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
-* `mbed-blink <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-serial <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-serial?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-blink <https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-events <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-events?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-hid-usb-mouse <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-hid-usb-mouse?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-teensy/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
-* `mbed-dsp <https://github.com/platformio/platform-teensy/tree/master/examples/mbed-dsp?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-synchronization <https://github.com/platformio/platform-teensy/tree/master/examples/zephyr-synchronization?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
@@ -164,9 +160,6 @@ Packages
     * - `framework-arduinoteensy <https://registry.platformio.org/tools/platformio/framework-arduinoteensy>`__
       - Arduino Wiring-based Framework for Teensy boards
 
-    * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
-      - Arm Mbed OS is a platform operating system designed for the internet of things
-
     * - `framework-zephyr <https://registry.platformio.org/tools/platformio/framework-zephyr>`__
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
@@ -225,9 +218,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is a platform operating system designed for the internet of things
 
     * - :ref:`framework_zephyr`
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

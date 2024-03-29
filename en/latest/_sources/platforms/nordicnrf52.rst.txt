@@ -252,6 +252,11 @@ Please click on board name for the further details.
       - 64MHz
       - 512KB
       - 64KB
+    * - :ref:`board_nordicnrf52_calliopemini_v3`
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_nordicnrf52_adafruit_cplaynrf52840`
       - NRF52840
       - 64MHz
@@ -575,6 +580,25 @@ BBC
       - RAM
     * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
       - On-board
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
+
+Calliope
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_nordicnrf52_calliopemini_v3`
+      - External
       - NRF52833
       - 64MHz
       - 512KB

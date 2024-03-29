@@ -40,7 +40,6 @@ Examples are listed from `Atmel SAM development platform repository <https://git
 * `zephyr-drivers-lcd-hd44780 <https://github.com/platformio/platform-atmelsam/tree/master/examples/zephyr-drivers-lcd-hd44780?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-external-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-web-thing-led <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-web-thing-led?utm_source=platformio.org&utm_medium=docs>`_
-* `arduino-briki-internal-libs <https://github.com/platformio/platform-atmelsam/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -362,16 +361,6 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_briki_abc_samd21`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_atmelsam_digix`
       - AT91SAM3X8E
       - 84MHz
@@ -551,9 +540,6 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-mbcwb <https://registry.platformio.org/tools/meteca/framework-arduino-mbcwb>`__
-      - Fork of Arduino Framework for briki MBC-WB boards
-
     * - `framework-arduino-sam <https://registry.platformio.org/tools/platformio/framework-arduino-sam>`__
       - The official Arduino Wiring-based Framework for ATSAM3 microcontrollers
 
@@ -607,9 +593,6 @@ Packages
 
     * - `tool-jlink <https://registry.platformio.org/tools/platformio/tool-jlink>`__
       - Software and Documentation Pack for SEGGER J-Link debug probes
-
-    * - `tool-mbctool <https://registry.platformio.org/tools/meteca/tool-mbctool>`__
-      - MBC-WB Uploader Application
 
     * - `tool-ninja <https://registry.platformio.org/tools/platformio/tool-ninja>`__
       - Ninja is a small build system with a focus on speed
@@ -1284,28 +1267,3 @@ SparkFun
       - 120MHz
       - 496KB
       - 192KB
-
-meteca
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_atmelsam_briki_abc_samd21`
-      - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
-      - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
