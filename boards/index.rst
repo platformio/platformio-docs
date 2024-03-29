@@ -411,8 +411,6 @@ Atmel SAM
     atmelsam/samd21g18a
     atmelsam/samc21_xpro
     atmelsam/samd21_xpro
-    atmelsam/briki_abc_samd21
-    atmelsam/briki_mbcwb_samd21
     atmelsam/digix
     atmelsam/current_ranger
     atmelsam/mkrvidor4000
@@ -463,6 +461,7 @@ Espressif 32
     espressif32/featheresp32
     espressif32/featheresp32-s2
     espressif32/adafruit_feather_esp32_v2
+    espressif32/adafruit_feather_esp32s2
     espressif32/adafruit_feather_esp32s2_reversetft
     espressif32/adafruit_feather_esp32s2_tft
     espressif32/adafruit_feather_esp32s3
@@ -496,8 +495,6 @@ Espressif 32
     espressif32/wifiduino32
     espressif32/wifiduino32s3
     espressif32/wifiduino32c3
-    espressif32/briki_abc_esp32
-    espressif32/briki_mbc-wb_esp32
     espressif32/cnrs_aw2eth
     espressif32/connaxio_espoir
     espressif32/cytron_maker_feather_aiot_s3
@@ -565,6 +562,7 @@ Espressif 32
     espressif32/nebulas3
     espressif32/sensesiot_weizen
     espressif32/labplus_mpython
+    espressif32/lilka_v2
     espressif32/lilygo-t-display
     espressif32/lilygo-t-display-s3
     espressif32/lionbit
@@ -667,6 +665,7 @@ Espressif 32
     espressif32/lolin_s2_pico
     espressif32/lolin_s3
     espressif32/lolin_s3_mini
+    espressif32/lolin_s3_pro
     espressif32/lolin32
     espressif32/lolin32_lite
     espressif32/wemosbat
@@ -1174,6 +1173,7 @@ Nordic nRF52
     nordicnrf52/laird_bl653_dvk
     nordicnrf52/laird_bl654_dvk
     nordicnrf52/bluey
+    nordicnrf52/calliopemini_v3
     nordicnrf52/adafruit_cplaynrf52840
     nordicnrf52/delta_dfbm_nq620
     nordicnrf52/electronut_blip

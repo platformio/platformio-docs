@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin32_lite:
+.. _board_espressif32_adafruit_feather_esp32s2:
 
-WEMOS LOLIN32 Lite
-==================
+Adafruit Feather ESP32-S2
+=========================
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32
+    - ESP32S2
   * - **Frequency**
     - 240MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://diyprojects.io/wemos-lolin32-lite-compact-revision-lolin32-4-90/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Adafruit <https://www.adafruit.com/product/5000?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin32_lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``adafruit_feather_esp32s2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:adafruit_feather_esp32s2]
   platform = espressif32
-  board = lolin32_lite
+  board = adafruit_feather_esp32s2
 
-You can override default WEMOS LOLIN32 Lite settings per build environment using
+You can override default Adafruit Feather ESP32-S2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin32_lite.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin32_lite.json>`_. For example,
+board manifest `adafruit_feather_esp32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/adafruit_feather_esp32s2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:adafruit_feather_esp32s2]
   platform = espressif32
-  board = lolin32_lite
+  board = adafruit_feather_esp32s2
 
   ; change microcontroller
-  board_build.mcu = esp32
+  board_build.mcu = esp32s2
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,7 +66,7 @@ board manifest `lolin32_lite.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-WEMOS LOLIN32 Lite supports the following uploading protocols:
+Adafruit Feather ESP32-S2 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
@@ -88,9 +88,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:adafruit_feather_esp32s2]
   platform = espressif32
-  board = lolin32_lite
+  board = adafruit_feather_esp32s2
 
   upload_protocol = esptool
 
@@ -107,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN32 Lite does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit Feather ESP32-S2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

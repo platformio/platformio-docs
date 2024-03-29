@@ -35,7 +35,6 @@ Examples are listed from `Aceinna IMU development platform repository <https://g
 
 * `OpenIMU300RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300RI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenIMU330BI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU330BI?utm_source=platformio.org&utm_medium=docs>`_
-* `OpenIMU335RI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU335RI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenRTK330LI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenRTK330LI?utm_source=platformio.org&utm_medium=docs>`_
 * `OpenIMU300ZI <https://github.com/aceinna/platform-aceinna_imu/tree/master/examples/OpenIMU300ZI?utm_source=platformio.org&utm_medium=docs>`_
 

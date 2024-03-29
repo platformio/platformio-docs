@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_teensy_teensy31:
+.. _board_nordicnrf52_calliopemini_v3:
 
-Teensy 3.1 / 3.2
+Calliope Mini v3
 ================
 
 .. contents::
@@ -19,70 +19,71 @@ Teensy 3.1 / 3.2
 Hardware
 --------
 
-Platform :ref:`platform_teensy`: Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port. No special programmer is needed, only a standard USB cable and a PC or Macintosh with a USB port.
+Platform :ref:`platform_nordicnrf52`: The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 
 .. list-table::
 
   * - **Microcontroller**
-    - MK20DX256
+    - NRF52833
   * - **Frequency**
-    - 72MHz
+    - 64MHz
   * - **Flash**
-    - 256KB
+    - 512KB
   * - **RAM**
-    - 64KB
+    - 128KB
   * - **Vendor**
-    - `Teensy <https://www.pjrc.com/store/teensy31.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Calliope <https://calliope.cc?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``teensy31`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``calliopemini_v3`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:teensy31]
-  platform = teensy
-  board = teensy31
+  [env:calliopemini_v3]
+  platform = nordicnrf52
+  board = calliopemini_v3
 
-You can override default Teensy 3.1 / 3.2 settings per build environment using
+You can override default Calliope Mini v3 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `teensy31.json <https://github.com/platformio/platform-teensy/blob/master/boards/teensy31.json>`_. For example,
+board manifest `calliopemini_v3.json <https://github.com/platformio/platform-nordicnrf52/blob/master/boards/calliopemini_v3.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:teensy31]
-  platform = teensy
-  board = teensy31
+  [env:calliopemini_v3]
+  platform = nordicnrf52
+  board = calliopemini_v3
 
   ; change microcontroller
-  board_build.mcu = mk20dx256
+  board_build.mcu = nrf52833
 
   ; change MCU frequency
-  board_build.f_cpu = 72000000L
+  board_build.f_cpu = 64000000L
 
 
 Uploading
 ---------
-Teensy 3.1 / 3.2 supports the following uploading protocols:
+Calliope Mini v3 supports the following uploading protocols:
 
+* ``blackmagic``
+* ``cmsis-dap``
 * ``jlink``
-* ``teensy-cli``
-* ``teensy-gui``
+* ``stlink``
 
-Default protocol is ``teensy-gui``
+Default protocol is ``cmsis-dap``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:teensy31]
-  platform = teensy
-  board = teensy31
+  [env:calliopemini_v3]
+  platform = nordicnrf52
+  board = calliopemini_v3
 
-  upload_protocol = teensy-gui
+  upload_protocol = cmsis-dap
 
 Debugging
 ---------
@@ -97,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Teensy 3.1 / 3.2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Calliope Mini v3 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -105,9 +106,18 @@ Teensy 3.1 / 3.2 does not have on-board debug probe and **IS NOT READY** for deb
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_blackmagic`
     - 
     - Yes
+  * - :ref:`debugging_tool_cmsis-dap`
+    - 
+    - 
+  * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - 
 
 Frameworks
 ----------

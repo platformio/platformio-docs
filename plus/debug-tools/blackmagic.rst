@@ -855,20 +855,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
-    * - :ref:`board_atmelsam_briki_abc_samd21`
-      - :ref:`platform_atmelsam`
+    * - :ref:`board_nordicnrf52_calliopemini_v3`
+      - :ref:`platform_nordicnrf52`
       - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_atmelsam_briki_mbcwb_samd21`
-      - :ref:`platform_atmelsam`
-      - External
-      - SAMD21G18A
-      - 48MHz
-      - 256KB
-      - 32KB
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_cicada_l082cz`
       - :ref:`platform_ststm32`
       - External

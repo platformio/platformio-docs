@@ -225,6 +225,13 @@ Boards
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - :ref:`platform_espressif32`
       - External
@@ -441,20 +448,6 @@ Boards
       - ESP32C3
       - 160MHz
       - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_briki_abc_esp32`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
-      - 320KB
-    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
-      - :ref:`platform_espressif32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
       - 320KB
     * - :ref:`board_espressif32_connaxio_espoir`
       - :ref:`platform_espressif32`
@@ -812,6 +805,13 @@ Boards
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lilka_v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_lilygo-t-display-s3`
       - :ref:`platform_espressif32`
@@ -1296,7 +1296,21 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32_lite`
       - :ref:`platform_espressif32`
       - External
       - ESP32

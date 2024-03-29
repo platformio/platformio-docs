@@ -50,7 +50,6 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble5-advertising <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-ble5-advertising?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-usb <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-usb?utm_source=platformio.org&utm_medium=docs>`_
-* `arduino-briki-internal-libs <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-briki-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
@@ -174,6 +173,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - ESP32S2
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - ESP32S2
@@ -324,16 +328,6 @@ Please click on board name for the further details.
       - ESP32C3
       - 160MHz
       - 4MB
-      - 320KB
-    * - :ref:`board_espressif32_briki_abc_esp32`
-      - ESP32
-      - 240MHz
-      - 3.25MB
-      - 320KB
-    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
-      - ESP32
-      - 240MHz
-      - 3.25MB
       - 320KB
     * - :ref:`board_espressif32_connaxio_espoir`
       - ESP32
@@ -564,6 +558,11 @@ Please click on board name for the further details.
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lilka_v2`
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_lilygo-t-display-s3`
       - ESP32S3
@@ -905,7 +904,17 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32_lite`
       - ESP32
       - 240MHz
       - 4MB
@@ -1009,9 +1018,6 @@ Packages
     * - Name
       - Description
 
-    * - `framework-arduino-mbcwb <https://registry.platformio.org/tools/meteca/framework-arduino-mbcwb>`__
-      - Fork of Arduino Framework for briki MBC-WB boards
-
     * - `framework-arduinoespressif32 <https://registry.platformio.org/tools/platformio/framework-arduinoespressif32>`__
       - Arduino Wiring-based Framework for the Espressif ESP32, ESP32-S and ESP32-C series of SoCs
 
@@ -1029,9 +1035,6 @@ Packages
 
     * - `tool-idf <https://registry.platformio.org/tools/platformio/tool-idf>`__
       - idf is a top-level config/build command line tool for ESP-IDF
-
-    * - `tool-mbctool <https://registry.platformio.org/tools/meteca/tool-mbctool>`__
-      - MBC-WB Uploader Application
 
     * - `tool-mconf <https://registry.platformio.org/tools/platformio/tool-mconf>`__
       - Fork of kconfig-frontends project with some modifications for use with ESP-IDF
@@ -1194,6 +1197,12 @@ Adafruit
       - ESP32
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - External
@@ -1371,6 +1380,25 @@ Aiyarafun
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Anderson & friends
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lilka_v2`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
 
 April Brother
@@ -3484,6 +3512,12 @@ WEMOS
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
       - External
       - ESP32
@@ -3491,7 +3525,7 @@ WEMOS
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_lolin32_lite`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB
@@ -3577,31 +3611,6 @@ YeaCreate
       - ESP32
       - 240MHz
       - 16MB
-      - 320KB
-
-meteca
-~~~~~~
-
-.. list-table::
-    :header-rows:  1
-
-    * - Name
-      - Debug
-      - MCU
-      - Frequency
-      - Flash
-      - RAM
-    * - :ref:`board_espressif32_briki_abc_esp32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
-      - 320KB
-    * - :ref:`board_espressif32_briki_mbc-wb_esp32`
-      - External
-      - ESP32
-      - 240MHz
-      - 3.25MB
       - 320KB
 
 microS2
