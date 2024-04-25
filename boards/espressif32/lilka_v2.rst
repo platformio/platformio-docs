@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin32_lite:
+.. _board_espressif32_lilka_v2:
 
-WEMOS LOLIN32 Lite
-==================
+Lilka v2
+========
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32
+    - ESP32S3
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 16MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://diyprojects.io/wemos-lolin32-lite-compact-revision-lolin32-4-90/?utm_source=platformio.org&utm_medium=docs>`__
+    - `Anderson & friends <https://github.com/and3rson/lilka?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin32_lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lilka_v2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lilka_v2]
   platform = espressif32
-  board = lolin32_lite
+  board = lilka_v2
 
-You can override default WEMOS LOLIN32 Lite settings per build environment using
+You can override default Lilka v2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin32_lite.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin32_lite.json>`_. For example,
+board manifest `lilka_v2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lilka_v2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lilka_v2]
   platform = espressif32
-  board = lolin32_lite
+  board = lilka_v2
 
   ; change microcontroller
-  board_build.mcu = esp32
+  board_build.mcu = esp32s3
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,10 +66,11 @@ board manifest `lolin32_lite.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-WEMOS LOLIN32 Lite supports the following uploading protocols:
+Lilka v2 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -88,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lilka_v2]
   platform = espressif32
-  board = lolin32_lite
+  board = lilka_v2
 
   upload_protocol = esptool
 
@@ -107,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN32 Lite does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Lilka v2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -119,6 +120,9 @@ WEMOS LOLIN32 Lite does not have on-board debug probe and **IS NOT READY** for d
     - 
     - Yes
   * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`

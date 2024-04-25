@@ -551,6 +551,13 @@ Boards
       - 32MHz
       - 256KB
       - 32KB
+    * - :ref:`board_nordicnrf52_calliopemini_v3`
+      - :ref:`platform_nordicnrf52`
+      - External
+      - NRF52833
+      - 64MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_cicada_l082cz`
       - :ref:`platform_ststm32`
       - External

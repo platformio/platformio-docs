@@ -9,9 +9,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_lolin32_lite:
+.. _board_espressif32_lolin_s3_pro:
 
-WEMOS LOLIN32 Lite
+WEMOS LOLIN S3 PRO
 ==================
 
 .. contents::
@@ -24,41 +24,41 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32
+    - ESP32S3
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 4MB
+    - 16MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `WEMOS <https://diyprojects.io/wemos-lolin32-lite-compact-revision-lolin32-4-90/?utm_source=platformio.org&utm_medium=docs>`__
+    - `WEMOS <https://www.wemos.cc/en/latest/s3/s3_pro.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``lolin32_lite`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lolin_s3_pro`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lolin_s3_pro]
   platform = espressif32
-  board = lolin32_lite
+  board = lolin_s3_pro
 
-You can override default WEMOS LOLIN32 Lite settings per build environment using
+You can override default WEMOS LOLIN S3 PRO settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `lolin32_lite.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin32_lite.json>`_. For example,
+board manifest `lolin_s3_pro.json <https://github.com/platformio/platform-espressif32/blob/master/boards/lolin_s3_pro.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lolin_s3_pro]
   platform = espressif32
-  board = lolin32_lite
+  board = lolin_s3_pro
 
   ; change microcontroller
-  board_build.mcu = esp32
+  board_build.mcu = esp32s3
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,10 +66,11 @@ board manifest `lolin32_lite.json <https://github.com/platformio/platform-espres
 
 Uploading
 ---------
-WEMOS LOLIN32 Lite supports the following uploading protocols:
+WEMOS LOLIN S3 PRO supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
 * ``espota``
 * ``esptool``
@@ -88,9 +89,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:lolin32_lite]
+  [env:lolin_s3_pro]
   platform = espressif32
-  board = lolin32_lite
+  board = lolin_s3_pro
 
   upload_protocol = esptool
 
@@ -107,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-WEMOS LOLIN32 Lite does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+WEMOS LOLIN S3 PRO does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -119,6 +120,9 @@ WEMOS LOLIN32 Lite does not have on-board debug probe and **IS NOT READY** for d
     - 
     - Yes
   * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`

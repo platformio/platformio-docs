@@ -292,15 +292,6 @@ Over-the-Air (OTA) update
     `Over The Air Updates (OTA) <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html>`_
     article.
 
-Using JFrog Bintray (free and secure Cloud solution)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Video and presentation - `swampUP: Over-The-Air (OTA) firmware upgrades for Internet of Things devices with PlatformIO and JFrog Bintray <https://www.slideshare.net/ivankravets/swampup-overtheair-ota-firmware-upgrades-for-internet-of-things-devices-with-platformio-and-jfrog-bintray>`_
-* Demo source code: https://github.com/platformio/bintray-secure-ota
-
-Using built-in Local solution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 1. Create a new project using :ref:`piohome` or initialize a project via
    :ref:`piocore` and :ref:`cmd_project_init` (if you have not initialized it yet)
 2. Copy the `basicOTA <https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA/examples/BasicOTA>`_
