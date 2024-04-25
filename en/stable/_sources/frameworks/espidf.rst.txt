@@ -169,6 +169,12 @@ Please click on board name for the further details.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - :ref:`platform_espressif32`
       - ESP32S2
@@ -619,6 +625,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lilka_v2`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lilygo-t-display-s3`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -1027,7 +1039,19 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_lolin32_lite`
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
@@ -1204,6 +1228,13 @@ Adafruit
       - ESP32
       - 240MHz
       - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_adafruit_feather_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_adafruit_feather_esp32s2_reversetft`
       - :ref:`platform_espressif32`
@@ -1407,6 +1438,27 @@ Aiyarafun
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+Anderson & friends
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_lilka_v2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
       - 320KB
 
 April Brother
@@ -3739,6 +3791,13 @@ WEMOS
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_lolin_s3_pro`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 16MB
+      - 320KB
     * - :ref:`board_espressif32_lolin32`
       - :ref:`platform_espressif32`
       - External
@@ -3748,7 +3807,7 @@ WEMOS
       - 320KB
     * - :ref:`board_espressif32_lolin32_lite`
       - :ref:`platform_espressif32`
-      - No
+      - External
       - ESP32
       - 240MHz
       - 4MB
