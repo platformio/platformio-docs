@@ -20,7 +20,7 @@ A connection speed (`baud rate <http://en.wikipedia.org/wiki/Baud>`_)
 which "uploader" tool uses when sending firmware to board.
 
 Common baud rates:
-================================
+----------------
 Below are common baud rates for reference:
 
 .. list-table::
