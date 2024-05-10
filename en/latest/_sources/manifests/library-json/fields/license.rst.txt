@@ -14,7 +14,7 @@
 
 *Optional* | Type: ``SPDX Expression``
 
-A SPDX license ID or `SPDX Expression <https://spdx.github.io/spdx-spec/SPDX-license-expressions/>`_.
+A SPDX license ID or `SPDX Expression <https://spdx.github.io/spdx-spec/v3.0/annexes/SPDX-license-expressions/>`_.
 You can check `the full list of SPDX license IDs <https://spdx.org/licenses/>`_ (see "Identifier" column).
 
 **Examples**
