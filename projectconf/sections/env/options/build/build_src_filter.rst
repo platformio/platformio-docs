@@ -28,7 +28,7 @@ be applied in their order of definition.
 `GLOB Patterns <http://en.wikipedia.org/wiki/Glob_(programming)>`_ are allowed.
 
 By default, ``build_src_filter`` is predefined to ``+<*> -<.git/> -<.svn/>``,
-meaning "include ALL files, then exclude the ``.git`` and ``svn`` repository folders.
+meaning "include ALL files, then exclude the ``.git`` and ``.svn`` repository folders.
 
 This option can also be set by the global environment variable
 :envvar:`PLATFORMIO_BUILD_SRC_FILTER`.
