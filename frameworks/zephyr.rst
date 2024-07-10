@@ -17,7 +17,8 @@ Zephyr
 :Configuration:
   :ref:`projectconf_env_framework` = ``zephyr``
 
-Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
+`Zephyr <https://www.zephyrproject.org>`_ is an open source real-time operating system (RTOS) supporting multiple hardware architectures.
+It has been a hosted collaborative project of the Linux Foundation since 2016 (see `Zephyr project history <https://en.wikipedia.org/wiki/Zephyr_(operating_system)#History>`__).
 
 .. contents:: Contents
     :local:
