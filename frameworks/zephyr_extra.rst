@@ -27,7 +27,7 @@ Project Structure
 .. warning::
     Zephyr framework currently requires Python 3.4 or later.
 
-Zephyr framework requires an unusual project structure because most of the framework
+`Zephyr <https://www.zephyrproject.org>`_ is framework requires an unusual project structure because most of the framework
 configuration is performed by the native for Zephyr build system called ``CMake``.
 
 .. note::
