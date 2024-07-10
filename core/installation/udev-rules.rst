@@ -27,7 +27,7 @@ This file must be placed at ``/etc/udev/rules.d/99-platformio-udev.rules``
 (preferred location) or ``/lib/udev/rules.d/99-platformio-udev.rules``
 (required on some broken systems).
 
-Please open system Terminal and type
+Please open the system Terminal and type
 
 .. code-block:: bash
 
@@ -40,7 +40,7 @@ Or you can manually download and copy the file to a destination folder
     sudo cp 99-platformio-udev.rules /etc/udev/rules.d/99-platformio-udev.rules
 
 
-Restart "udev" management tool:
+Restart the "udev" management tool:
 
 .. code-block:: bash
 
@@ -54,7 +54,6 @@ Restart "udev" management tool:
 
 After this file is installed, physically unplug and reconnect your board.
 
-
 Alternative using group membership
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -62,7 +61,7 @@ Instead of using a udev rules file, Linux users can get write access to the boar
 using system `groups <https://wiki.archlinux.org/title/Users_and_groups>`__.
 
 First, you need to identify which group owns the file corresponding to the serial port communication to the board (the serial port name can be found with :ref:`cmd_device_list`
-  command). For example, the file permissions for the serial port ``/dev/ttyACM0`` can be queried by:
+command). For example, the file permissions for the serial port ``/dev/ttyACM0`` can be queried by:
 
 .. code-block:: bash
 
@@ -80,5 +79,5 @@ The alternative permanent solution is to add its own “username” to the “di
     sudo usermod -a -G dialout $USERNAME
 
 .. note::
-  You will need to log out and log back in again (or reboot) for the user
-  group changes to take effect. The effectiveness of the change can be checked with the ``$ id`` shell command.
+    You will need to log out and log back in again (or reboot) for the user
+    group changes to take effect. The effectiveness of the change can be checked with the ``$ id`` shell command.
