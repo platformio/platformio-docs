@@ -66,7 +66,10 @@
 <li class="toctree-l3"><a class="reference internal" href="methods/index.html">Installation Methods</a></li>
 <li class="toctree-l3"><a class="reference internal" href="development-version.html">Development Version</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shell-commands.html">Install Shell Commands</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">99-platformio-udev.rules</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">99-platformio-udev.rules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#alternative-using-group-membership">Alternative using group membership</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="integration.html">Integration with custom applications (extensions, plugins)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="proxy-configuration.html">Proxy Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
@@ -160,7 +163,7 @@ command.</p>
 <p>This file must be placed at <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d/99-platformio-udev.rules</span></code>
 (preferred location) or <code class="docutils literal notranslate"><span class="pre">/lib/udev/rules.d/99-platformio-udev.rules</span></code>
 (required on some broken systems).</p>
-<p>Please open system Terminal and type</p>
+<p>Please open the system Terminal and type</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/udev/rules.d/99-platformio-udev.rules
 </pre></div>
 </div>
@@ -168,7 +171,7 @@ command.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cp<span class="w"> </span><span class="m">99</span>-platformio-udev.rules<span class="w"> </span>/etc/udev/rules.d/99-platformio-udev.rules
 </pre></div>
 </div>
-<p>Restart “udev” management tool:</p>
+<p>Restart the “udev” management tool:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>service<span class="w"> </span>udev<span class="w"> </span>restart
 
 <span class="c1"># or</span>
@@ -177,23 +180,30 @@ sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w
 sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
 </pre></div>
 </div>
-<p>Ubuntu/Debian users may need to add own “username” to the “dialout” group if
-they are not “root”, doing this issuing</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>dialout<span class="w"> </span><span class="nv">$USER</span>
-sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>plugdev<span class="w"> </span><span class="nv">$USER</span>
+<p>After this file is installed, physically unplug and reconnect your board.</p>
+<section id="alternative-using-group-membership">
+<h2>Alternative using group membership<a class="headerlink" href="#alternative-using-group-membership" title="Link to this heading"></a></h2>
+<p>Instead of using a udev rules file, Linux users can get write access to the boards
+using system <a class="reference external" href="https://wiki.archlinux.org/title/Users_and_groups">groups</a>.</p>
+<p>First, you need to identify which group owns the file corresponding to the serial port communication to the board (the serial port name can be found with <a class="reference internal" href="../userguide/device/cmd_list.html#cmd-device-list"><span class="std std-ref">pio device list</span></a>
+command). For example, the file permissions for the serial port <code class="docutils literal notranslate"><span class="pre">/dev/ttyACM0</span></code> can be queried by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>-l<span class="w"> </span>/dev/ttyACM0
+
+<span class="c1"># prints something like:</span>
+<span class="c1"># crw-rw---- 1 root dialout 166, 0 juil. 10 13:43 /dev/ttyACM0</span>
 </pre></div>
 </div>
-<p>Similarly, Arch users may need to add their user to the “uucp” group</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>uucp<span class="w"> </span><span class="nv">$USER</span>
-sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>lock<span class="w"> </span><span class="nv">$USER</span>
+<p>In that case, the read/write permission (<cite>rw</cite>) is granted to both the “root” user and members of the “dialout” group. Now, it is possible to grant read/write access to all users (<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">chmod</span> <span class="pre">a+rw</span> <span class="pre">/dev/ttyACM0</span></code>), but this would only last as long as the card remains connected (only the udev rules file mentioned above can make such change permanent).</p>
+<p>The alternative permanent solution is to add its own “username” to the “dialout” group, or whichever group name was identified at the preceding step. Typical names are “dialout”, “plugdev” (Debian/Ubuntu, Fedora), or “uucp” (Arch Linux). Adding a user to a group is done by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>dialout<span class="w"> </span><span class="nv">$USERNAME</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You will need to log out and log back in again (or reboot) for the user
-group changes to take effect.</p>
+group changes to take effect. The effectiveness of the change can be checked with the <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">id</span></code> shell command.</p>
 </div>
-<p>After this file is installed, physically unplug and reconnect your board.</p>
+</section>
 </section>
 
 
