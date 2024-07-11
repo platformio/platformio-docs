@@ -70,7 +70,7 @@ command). For example, the file permissions for the serial port ``/dev/ttyACM0``
     # prints something like:
     # crw-rw---- 1 root dialout 166, 0 juil. 10 13:43 /dev/ttyACM0
 
-In that case, the read/write permission (`rw`) is granted to both the “root” user and members of the “dialout” group. Now, it is possible to grant read/write access to all users (``$ sudo chmod a+rw /dev/ttyACM0``), but this would only last as long as the card remains connected (only the udev rules file mentioned above can make such change permanent).
+In that case, the read/write permission (``rw``) is granted to both the “root” user and members of the “dialout” group. Now, it is possible to grant read/write access to all users (``$ sudo chmod a+rw /dev/ttyACM0``), but this would only last as long as the card remains connected (only the udev rules file mentioned above can make such change permanent).
 
 The alternative permanent solution is to add its own “username” to the “dialout” group, or whichever group name was identified at the preceding step. Typical names are “dialout”, “plugdev” (Debian/Ubuntu, Fedora), or “uucp” (Arch Linux). Adding a user to a group is done by:
 
