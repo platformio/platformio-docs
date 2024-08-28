@@ -17,7 +17,7 @@ Atmel AVR
 :Registry:
   `https://registry.platformio.org/platforms/platformio/atmelavr <https://registry.platformio.org/platforms/platformio/atmelavr>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``atmelavr``
+  :ref:`projectconf_env_platform` = ``platformio/atmelavr``
 
 Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
 

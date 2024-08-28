@@ -17,7 +17,7 @@ Heltec CubeCell
 :Registry:
   `https://registry.platformio.org/platforms/heltecautomation/heltec-cubecell <https://registry.platformio.org/platforms/heltecautomation/heltec-cubecell>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``heltec-cubecell``
+  :ref:`projectconf_env_platform` = ``heltecautomation/heltec-cubecell``
 
 Heltec CubeCell is an easy-to-use LoRa Node series brand based on a highly integrated and ultra low power SoC and the LoRa SX1262 transceiver.
 

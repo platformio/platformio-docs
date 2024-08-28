@@ -17,7 +17,7 @@ Native
 :Registry:
   `https://registry.platformio.org/platforms/platformio/native <https://registry.platformio.org/platforms/platformio/native>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``native``
+  :ref:`projectconf_env_platform` = ``platformio/native``
 
 Native development platform is intended to be used for desktop OS. This platform uses built-in toolchains (preferable based on GCC), frameworks, libs from particular OS where it will be run.
 

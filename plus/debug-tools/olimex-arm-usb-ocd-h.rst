@@ -572,6 +572,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_esp32s3camlcd`
       - :ref:`platform_espressif32`
       - External
@@ -863,6 +870,13 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -1353,6 +1367,13 @@ Boards
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB

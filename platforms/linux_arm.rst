@@ -17,7 +17,7 @@ Linux ARM
 :Registry:
   `https://registry.platformio.org/platforms/platformio/linux_arm <https://registry.platformio.org/platforms/platformio/linux_arm>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``linux_arm``
+  :ref:`projectconf_env_platform` = ``platformio/linux_arm``
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 

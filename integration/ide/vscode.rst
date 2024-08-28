@@ -276,7 +276,7 @@ Example:
 .. code-block:: ini
 
     [env:esp32dev]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = arduino
     board = esp32dev
 

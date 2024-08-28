@@ -17,7 +17,7 @@ Nordic nRF52
 :Registry:
   `https://registry.platformio.org/platforms/platformio/nordicnrf52 <https://registry.platformio.org/platforms/platformio/nordicnrf52>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``nordicnrf52``
+  :ref:`projectconf_env_platform` = ``platformio/nordicnrf52``
 
 The nRF52 Series are built for speed to carry out increasingly complex tasks in the shortest possible time and return to sleep, conserving precious battery power. They have a Cortex-M4F processor which makes them quite capable Bluetooth Smart SoCs.
 

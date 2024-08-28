@@ -208,7 +208,7 @@ Frameworks
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
@@ -1974,7 +1974,7 @@ Boards
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l010rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -2134,7 +2134,7 @@ Boards
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_g071rb`
       - :ref:`platform_ststm32`

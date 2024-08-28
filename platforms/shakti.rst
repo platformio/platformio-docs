@@ -17,7 +17,7 @@ Shakti
 :Registry:
   `https://registry.platformio.org/platforms/platformio/shakti <https://registry.platformio.org/platforms/platformio/shakti>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``shakti``
+  :ref:`projectconf_env_platform` = ``platformio/shakti``
 
 Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 

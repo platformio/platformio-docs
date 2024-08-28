@@ -136,7 +136,7 @@ Frameworks
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things

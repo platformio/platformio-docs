@@ -65,7 +65,7 @@ taking into account the following steps:
       [env:myenv]
       ; Depend on ANY/Latest version of the development platform
       ; allowing breaking changes
-      platform = espressif32
+      platform = platformio/espressif32
 
       lib_deps =
         ; Omit library package owner (<owner>/<name>) and depend on the library by name.
@@ -89,7 +89,7 @@ taking into account the following steps:
       ; allowing new functionality (backward-compatible), and bug fixes.
       ; No breaking changes
       ; FYI: ^4 == ^4.0.0 == (>=4.0.0, <5.0.0)
-      platform = espressif32 @ ^4
+      platform = platformio/espressif32 @ ^4
 
       lib_deps =
         ; Depend on the latest 6.x stable version of ArduinoJson.

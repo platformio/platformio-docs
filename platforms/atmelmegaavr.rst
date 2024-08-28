@@ -17,7 +17,7 @@ Atmel megaAVR
 :Registry:
   `https://registry.platformio.org/platforms/platformio/atmelmegaavr <https://registry.platformio.org/platforms/platformio/atmelmegaavr>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``atmelmegaavr``
+  :ref:`projectconf_env_platform` = ``platformio/atmelmegaavr``
 
 8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
 

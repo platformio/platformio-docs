@@ -17,7 +17,7 @@ OpenHW Group
 :Registry:
   `https://registry.platformio.org/platforms/platformio/openhw <https://registry.platformio.org/platforms/platformio/openhw>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``openhw``
+  :ref:`projectconf_env_platform` = ``platformio/openhw``
 
 OpenHW Group is a not-for-profit, global organization that provides an infrastructure for hosting high quality open-source HW developments in line with industry best practices. The OpenHW CV32E40P RISC-V core is the first open-source core for high-volume chips verified with the state-of-the-art process required for high-integrity, commercial SoCs.
 

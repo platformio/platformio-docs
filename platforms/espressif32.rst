@@ -17,7 +17,7 @@ Espressif 32
 :Registry:
   `https://registry.platformio.org/platforms/platformio/espressif32 <https://registry.platformio.org/platforms/platformio/espressif32>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``espressif32``
+  :ref:`projectconf_env_platform` = ``platformio/espressif32``
 
 ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
 
@@ -47,7 +47,6 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio.org&utm_medium=docs>`_
-* `espidf-aws-iot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-aws-iot?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble5-advertising <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-ble5-advertising?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-usb <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-usb?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio.org&utm_medium=docs>`_
@@ -424,6 +423,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_esp32s3camlcd`
       - ESP32S3
       - 240MHz
@@ -601,6 +605,11 @@ Please click on board name for the further details.
       - 320KB
     * - :ref:`board_espressif32_kb32-ft`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -949,6 +958,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_upesy_wroom`
       - ESP32
       - 240MHz
@@ -1065,6 +1079,9 @@ Packages
 
     * - `toolchain-riscv32-esp <https://registry.platformio.org/tools/espressif/toolchain-riscv32-esp>`__
       - GCC Toolchain for Espressif 32-bit RISC-V based MCUs
+
+    * - `toolchain-xtensa-esp-elf <https://registry.platformio.org/tools/platformio/toolchain-xtensa-esp-elf>`__
+      - GCC Toolchain for Espressif ESP32 Xtensa MCUs
 
     * - `toolchain-xtensa-esp32 <https://registry.platformio.org/tools/espressif/toolchain-xtensa-esp32>`__
       - GCC Toolchain for Espressif ESP32 Xtensa MCUs
@@ -1900,7 +1917,7 @@ Espressif
       - ESP32C6
       - 160MHz
       - 8MB
-      - 512KB
+      - 320KB
     * - :ref:`board_espressif32_esp32-c6-devkitm-1`
       - External
       - ESP32C6
@@ -2395,6 +2412,12 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_m5stack-core-esp32-16M`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stack-core2`
       - No
       - ESP32
@@ -2600,6 +2623,25 @@ Microduino
       - 4MB
       - 320KB
 
+MotorGo
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Munich Labs
 ~~~~~~~~~~~
 
@@ -2742,6 +2784,25 @@ Onehorse
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+PowerFeather
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 ProtoCentral
@@ -3653,6 +3714,25 @@ oddWires
     * - :ref:`board_espressif32_iotbusproteus`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+senseBox
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB

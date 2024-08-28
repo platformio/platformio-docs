@@ -17,7 +17,7 @@ Renesas RA
 :Registry:
   `https://registry.platformio.org/platforms/platformio/renesas-ra <https://registry.platformio.org/platforms/platformio/renesas-ra>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``renesas-ra``
+  :ref:`projectconf_env_platform` = ``platformio/renesas-ra``
 
 Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
 

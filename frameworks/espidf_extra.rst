@@ -86,7 +86,7 @@ A typical PlatformIO project for the ESP-IDF framework must have the following s
         src_dir = main
 
         [env:esp32dev]
-        platform = espressif32
+        platform = platformio/espressif32
         framework = espidf
         board = esp32dev
 
@@ -260,7 +260,7 @@ At the moment several limitations are present:
         core_dir = C:/.platformio
 
         [env:esp32dev]
-        platform = espressif32
+        platform = platformio/espressif32
         framework = espidf
         board = esp32dev
 
