@@ -182,7 +182,7 @@
 <dd class="field-odd"><p><a class="reference external" href="https://registry.platformio.org/platforms/platformio/ststm32">https://registry.platformio.org/platforms/platformio/ststm32</a></p>
 </dd>
 <dt class="field-even">Configuration<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">ststm32</span></code></p>
+<dd class="field-even"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/platform.html#projectconf-env-platform"><span class="std std-ref">platform</span></a> = <code class="docutils literal notranslate"><span class="pre">platformio/ststm32</span></code></p>
 </dd>
 </dl>
 <p>The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.</p>
@@ -892,7 +892,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>864KB</p></td>
+<td><p>512KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l010rb.html#board-ststm32-nucleo-l010rb"><span class="std std-ref">ST Nucleo L010RB</span></a></p></td>
 <td><p>STM32L010RBT6</p></td>
@@ -1187,6 +1187,18 @@ Please click on board name for the further details.</p>
 <td><p>72MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m4.html#board-ststm32-giga-r1-m4"><span class="std std-ref">Arduino Giga R1 (M4 core)</span></a></p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>287.35KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m7.html#board-ststm32-giga-r1-m7"><span class="std std-ref">Arduino Giga R1 (M7 core)</span></a></p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>768KB</p></td>
+<td><p>511.35KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nicla_vision.html#board-ststm32-nicla-vision"><span class="std std-ref">Arduino Nicla Vision</span></a></p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -1575,7 +1587,7 @@ Please click on board name for the further details.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
 <td><p>STM32G031J6</p></td>
 <td><p>64MHz</p></td>
-<td><p>128KB</p></td>
+<td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/steval_fcu001v1.html#board-ststm32-steval-fcu001v1"><span class="std std-ref">STEVAL-FCU001V1 Flight controller unit evaluation board</span></a></p></td>
@@ -2267,7 +2279,7 @@ of ST STM32 development platform and the latest upstream version using
 <td><p>CMSIS component for the STMicroelectronics STM32L5 series</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-libopencm3">framework-libopencm3</a></p></td>
-<td><p>Open source ARM Cortex-M microcontroller library</p></td>
+<td><p>The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/framework-mbed">framework-mbed</a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
@@ -2384,8 +2396,8 @@ manufacturer</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/cmsis.html#framework-cmsis"><span class="std std-ref">CMSIS</span></a></p></td>
 <td><p>Vendor-independent hardware abstraction layer for the Cortex-M processor series</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">libopencm3</span></a></p></td>
-<td><p>Open source ARM Cortex-M microcontroller library</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">Open-source ARM Cortex-M microcontroller library</span></a></p></td>
+<td><p>The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
 <td><p>Arm Mbed OS is a platform operating system designed for the internet of things</p></td>
@@ -2584,6 +2596,20 @@ horizontally.</p></li>
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m4.html#board-ststm32-giga-r1-m4"><span class="std std-ref">Arduino Giga R1 (M4 core)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>287.35KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m7.html#board-ststm32-giga-r1-m7"><span class="std std-ref">Arduino Giga R1 (M7 core)</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>768KB</p></td>
+<td><p>511.35KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nicla_vision.html#board-ststm32-nicla-vision"><span class="std std-ref">Arduino Nicla Vision</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H747XIH6</p></td>
@@ -4494,7 +4520,7 @@ horizontally.</p></li>
 <td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>864KB</p></td>
+<td><p>512KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l010rb.html#board-ststm32-nucleo-l010rb"><span class="std std-ref">ST Nucleo L010RB</span></a></p></td>
 <td><p>On-board</p></td>
@@ -4661,7 +4687,7 @@ horizontally.</p></li>
 <td><p>External</p></td>
 <td><p>STM32G031J6</p></td>
 <td><p>64MHz</p></td>
-<td><p>128KB</p></td>
+<td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_g071rb.html#board-ststm32-disco-g071rb"><span class="std std-ref">ST STM32G071B Discovery</span></a></p></td>

@@ -17,7 +17,7 @@ TI TIVA
 :Registry:
   `https://registry.platformio.org/platforms/platformio/titiva <https://registry.platformio.org/platforms/platformio/titiva>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``titiva``
+  :ref:`projectconf_env_platform` = ``platformio/titiva``
 
 Texas Instruments TM4C12x MCUs offer the industrys most popular ARM Cortex-M4 core with scalable memory and package options, unparalleled connectivity peripherals, advanced application functions, industry-leading analog integration, and extensive software solutions.
 
@@ -139,7 +139,7 @@ Packages
       - Energia Wiring-based Framework for Texas Instruments TIVA C Series
 
     * - `framework-libopencm3 <https://registry.platformio.org/tools/platformio/framework-libopencm3>`__
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - `tool-openocd <https://registry.platformio.org/tools/platformio/tool-openocd>`__
       - Open On-Chip Debugger. Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing
@@ -176,7 +176,7 @@ Frameworks
       - Energia Wiring-based Framework for Texas Instruments MSP430 microcontrollers
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
 Boards
 ------

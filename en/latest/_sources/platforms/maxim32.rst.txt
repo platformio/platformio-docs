@@ -17,7 +17,7 @@ Maxim 32
 :Registry:
   `https://registry.platformio.org/platforms/platformio/maxim32 <https://registry.platformio.org/platforms/platformio/maxim32>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``maxim32``
+  :ref:`projectconf_env_platform` = ``platformio/maxim32``
 
 Maxim's microcontrollers provide low-power, efficient, and secure solutions for challenging embedded applications. Maxim's processors embed cutting-edge technologies to secure data and intellectual property, proven analog circuitry for real-world applications, and battery-conserving low power operation.
 

@@ -17,7 +17,7 @@ Silicon Labs EFM32
 :Registry:
   `https://registry.platformio.org/platforms/platformio/siliconlabsefm32 <https://registry.platformio.org/platforms/platformio/siliconlabsefm32>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``siliconlabsefm32``
+  :ref:`projectconf_env_platform` = ``platformio/siliconlabsefm32``
 
 Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
 

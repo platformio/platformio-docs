@@ -30,7 +30,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **Flash**
     - 8MB
   * - **RAM**
-    - 512KB
+    - 320KB
   * - **Vendor**
     - `Espressif <https://docs.espressif.com/projects/espressif-esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/index.html?utm_source=platformio.org&utm_medium=docs>`__
 

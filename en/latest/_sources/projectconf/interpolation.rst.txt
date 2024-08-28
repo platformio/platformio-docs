@@ -119,7 +119,7 @@ The interpolation feature adheres to the following syntax:
       ${platformio.build_dir}/${this.__env__}/firmware.elf
 
     [env:esp32dev]
-    platform = espressif32
+    platform = platformio/espressif32
     board = esp32dev
     build_flags = ${env.build_flags} -Wall
     lib_deps =

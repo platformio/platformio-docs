@@ -31,19 +31,19 @@ Example of using a `Espressif 32 development platform <https://registry.platform
 
     [env:recommended_specification]
     ; allow backwards-compatible new functionality and bug-fixes
-    platform = espressif32@^6.1.0
+    platform = platformio/espressif32@^6.1.0
 
     [env:allow_only_bug_fixes]
-    platform = espressif32@~6.1.0
+    platform = platformio/espressif32@~6.1.0
 
     [env:exact_version]
-    platform = espressif32@6.1.0
+    platform = platformio/espressif32@6.1.0
 
     [env:latest_version]
-    ; not recommended as it does not ensure that 
+    ; not recommended as it does not ensure that
     ; - builds are repeatable
     ; - all developers who checkout the project wil build against the same platform version
-    platform = espressif32
+    platform = platformio/espressif32
 
     [env:development_verion_by_git]
     platform = https://github.com/platformio/platform-espressif32.git
@@ -57,4 +57,4 @@ Example of using a `Espressif 32 development platform <https://registry.platform
 
 .. note::
     We highly recommend pinning the platform to a version.
-    See :ref:`cmd_pkg_install_requirements` for details.    
+    See :ref:`cmd_pkg_install_requirements` for details.

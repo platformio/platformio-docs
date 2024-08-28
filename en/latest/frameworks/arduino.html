@@ -201,6 +201,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#microduino">Microduino</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#midatronics">Midatronics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mikroelektronika">MikroElektronika</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#motorgo">MotorGo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#munich-labs">Munich Labs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#netduino">Netduino</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#nodemcu">NodeMCU</a></li>
@@ -221,6 +222,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#pinoccio">Pinoccio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pololu-corporation">Pololu Corporation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id7">Pontech</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#powerfeather">PowerFeather</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#prntrboard">PrntrBoard</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#protocentral">ProtoCentral</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#prusa-3d">Prusa 3D</a></li>
@@ -301,6 +303,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#nicai-systems">nicai-systems</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#oddwires">oddWires</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sduino">sduino</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sensebox">senseBox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sino-bit">sino:bit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#u-blox">u-blox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#upesy">uPesy</a></li>
@@ -317,7 +320,7 @@
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fsp.html">Renesas Flexible Software Package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">Open-source ARM Cortex-M microcontroller library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
@@ -946,51 +949,65 @@ You do not need to use/buy external debug probe.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f722ze.html#board-ststm32-nucleo-f722ze"><span class="std std-ref">ST Nucleo F722ZE</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446ze.html#board-ststm32-nucleo-f446ze"><span class="std std-ref">ST Nucleo F446ZE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F446ZET6</p></td>
+<td><p>180MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f722ze.html#board-ststm32-nucleo-f722ze"><span class="std std-ref">ST Nucleo F722ZE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F722ZET6</p></td>
 <td><p>216MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F746ZGT6</p></td>
 <td><p>216MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F756ZG</p></td>
 <td><p>216MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F767ZIT6</p></td>
 <td><p>216MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g0b1re.html#board-ststm32-nucleo-g0b1re"><span class="std std-ref">ST Nucleo G0B1RE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g0b1re.html#board-ststm32-nucleo-g0b1re"><span class="std std-ref">ST Nucleo G0B1RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32G0B1RET6</p></td>
 <td><p>64MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>144KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H723ZGT6</p></td>
 <td><p>550MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H743ZIT6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h753zi.html#board-ststm32-nucleo-h753zi"><span class="std std-ref">ST Nucleo H753ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
@@ -2183,6 +2200,20 @@ Please click on board name for the further details.</p>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m4.html#board-ststm32-giga-r1-m4"><span class="std std-ref">Arduino Giga R1 (M4 core)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>287.35KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m7.html#board-ststm32-giga-r1-m7"><span class="std std-ref">Arduino Giga R1 (M7 core)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>768KB</p></td>
+<td><p>511.35KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/chiwawa.html#board-atmelavr-chiwawa"><span class="std std-ref">Arduino Industrial 101</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
@@ -2932,628 +2963,642 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3camlcd.html#board-espressif32-esp32s3camlcd"><span class="std std-ref">ESP32S3 CAM LCD</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3_powerfeather.html#board-espressif32-esp32s3-powerfeather"><span class="std std-ref">ESP32-S3 PowerFeather</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32vn-iot-uno.html#board-espressif32-esp32vn-iot-uno"><span class="std std-ref">ESP32vn IoT Uno</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3camlcd.html#board-espressif32-esp32s3camlcd"><span class="std std-ref">ESP32S3 CAM LCD</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32vn-iot-uno.html#board-espressif32-esp32vn-iot-uno"><span class="std std-ref">ESP32vn IoT Uno</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/espectro32.html#board-espressif32-espectro32"><span class="std std-ref">ESPectro32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/espectro32.html#board-espressif32-espectro32"><span class="std std-ref">ESPectro32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/espino32.html#board-espressif32-espino32"><span class="std std-ref">ESPino32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/espino32.html#board-espressif32-espino32"><span class="std std-ref">ESPino32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/econode_l082cz.html#board-ststm32-econode-l082cz"><span class="std std-ref">Econode-L082CZ</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/econode_l082cz.html#board-ststm32-econode-l082cz"><span class="std std-ref">Econode-L082CZ</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L082CZY6</p></td>
 <td><p>32MHz</p></td>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy.html#board-ststm32-electrosmith-daisy"><span class="std std-ref">Electrosmith Daisy</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy.html#board-ststm32-electrosmith-daisy"><span class="std std-ref">Electrosmith Daisy</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H750IBK6</p></td>
 <td><p>400MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy_patch_sm.html#board-ststm32-electrosmith-daisy-patch-sm"><span class="std std-ref">Electrosmith Daisy Patch SM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy_patch_sm.html#board-ststm32-electrosmith-daisy-patch-sm"><span class="std std-ref">Electrosmith Daisy Patch SM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H750IBK6</p></td>
 <td><p>400MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy_petal_sm.html#board-ststm32-electrosmith-daisy-petal-sm"><span class="std std-ref">Electrosmith Daisy Petal SM</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/electrosmith_daisy_petal_sm.html#board-ststm32-electrosmith-daisy-petal-sm"><span class="std std-ref">Electrosmith Daisy Petal SM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32H750IBK6</p></td>
 <td><p>400MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/elektor_f072cb.html#board-ststm32-elektor-f072cb"><span class="std std-ref">Elektor LoRa Node Core F072C8 (128 kB)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/elektor_f072cb.html#board-ststm32-elektor-f072cb"><span class="std std-ref">Elektor LoRa Node Core F072C8 (128 kB)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F072C8T6</p></td>
 <td><p>48MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/elektor_f072c8.html#board-ststm32-elektor-f072c8"><span class="std std-ref">Elektor LoRa Node Core F072C8 (64 kB)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/elektor_f072c8.html#board-ststm32-elektor-f072c8"><span class="std std-ref">Elektor LoRa Node Core F072C8 (64 kB)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F072C8T6</p></td>
 <td><p>48MHz</p></td>
 <td><p>64KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/engduinov3.html#board-atmelavr-engduinov3"><span class="std std-ref">Engduino 3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/engduinov3.html#board-atmelavr-engduinov3"><span class="std std-ref">Engduino 3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/mayfly.html#board-atmelavr-mayfly"><span class="std std-ref">EnviroDIY Mayfly</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/mayfly.html#board-atmelavr-mayfly"><span class="std std-ref">EnviroDIY Mayfly</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/atmegazero_esp32s2.html#board-espressif32-atmegazero-esp32s2"><span class="std std-ref">EspinalLab ATMegaZero ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/atmegazero_esp32s2.html#board-espressif32-atmegazero-esp32s2"><span class="std std-ref">EspinalLab ATMegaZero ESP32-S2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32dev.html#board-espressif32-esp32dev"><span class="std std-ref">Espressif ESP32 Dev Module</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitc-02.html#board-espressif32-esp32-c3-devkitc-02"><span class="std std-ref">Espressif ESP32-C3-DevKitC-02</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitc-02.html#board-espressif32-esp32-c3-devkitc-02"><span class="std std-ref">Espressif ESP32-C3-DevKitC-02</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitm-1.html#board-espressif32-esp32-c3-devkitm-1"><span class="std std-ref">Espressif ESP32-C3-DevKitM-1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-c3-devkitm-1.html#board-espressif32-esp32-c3-devkitm-1"><span class="std std-ref">Espressif ESP32-C3-DevKitM-1</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32C3</p></td>
 <td><p>160MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32-s2-saola-1.html#board-espressif32-esp32-s2-saola-1"><span class="std std-ref">Espressif ESP32-S2-Saola-1</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3box.html#board-espressif32-esp32s3box"><span class="std std-ref">Espressif ESP32-S3-Box</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/diymore_f407vgt.html#board-ststm32-diymore-f407vgt"><span class="std std-ref">F407VG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/diymore_f407vgt.html#board-ststm32-diymore-f407vgt"><span class="std std-ref">F407VG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F407VGT6</p></td>
 <td><p>168MHz</p></td>
 <td><p>1MB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/fk407m1.html#board-ststm32-fk407m1"><span class="std std-ref">FK407M1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/fk407m1.html#board-ststm32-fk407m1"><span class="std std-ref">FK407M1</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F407VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/fysetc_f6_13.html#board-atmelavr-fysetc-f6-13"><span class="std std-ref">FYSETC F6 V1.3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/fysetc_f6_13.html#board-atmelavr-fysetc-f6-13"><span class="std std-ref">FYSETC F6 V1.3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA2560</p></td>
 <td><p>16MHz</p></td>
 <td><p>252KB</p></td>
 <td><p>8KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/fysetc_s6.html#board-ststm32-fysetc-s6"><span class="std std-ref">FYSETC S6</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/fysetc_s6.html#board-ststm32-fysetc-s6"><span class="std std-ref">FYSETC S6</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F446VET6</p></td>
 <td><p>168MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/firebeetle32.html#board-espressif32-firebeetle32"><span class="std std-ref">FireBeetle-ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>520KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_esp32s2.html#board-espressif32-franzininho-wifi-esp32s2"><span class="std std-ref">Franzininho WiFi</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_esp32s2.html#board-espressif32-franzininho-wifi-esp32s2"><span class="std std-ref">Franzininho WiFi</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_msc_esp32s2.html#board-espressif32-franzininho-wifi-msc-esp32s2"><span class="std std-ref">Franzininho WiFi MSC</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/franzininho_wifi_msc_esp32s2.html#board-espressif32-franzininho-wifi-msc-esp32s2"><span class="std std-ref">Franzininho WiFi MSC</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S2</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny2313.html#board-atmelavr-attiny2313"><span class="std std-ref">Generic ATtiny2313</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny2313.html#board-atmelavr-attiny2313"><span class="std std-ref">Generic ATtiny2313</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY2313</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny24.html#board-atmelavr-attiny24"><span class="std std-ref">Generic ATtiny24</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny24.html#board-atmelavr-attiny24"><span class="std std-ref">Generic ATtiny24</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY24</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny25.html#board-atmelavr-attiny25"><span class="std std-ref">Generic ATtiny25</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny25.html#board-atmelavr-attiny25"><span class="std std-ref">Generic ATtiny25</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY25</p></td>
 <td><p>8MHz</p></td>
 <td><p>2KB</p></td>
 <td><p>128B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny4313.html#board-atmelavr-attiny4313"><span class="std std-ref">Generic ATtiny4313</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny4313.html#board-atmelavr-attiny4313"><span class="std std-ref">Generic ATtiny4313</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY4313</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny44.html#board-atmelavr-attiny44"><span class="std std-ref">Generic ATtiny44</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny44.html#board-atmelavr-attiny44"><span class="std std-ref">Generic ATtiny44</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY44</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny45.html#board-atmelavr-attiny45"><span class="std std-ref">Generic ATtiny45</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny45.html#board-atmelavr-attiny45"><span class="std std-ref">Generic ATtiny45</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY45</p></td>
 <td><p>8MHz</p></td>
 <td><p>4KB</p></td>
 <td><p>256B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny84.html#board-atmelavr-attiny84"><span class="std std-ref">Generic ATtiny84</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny84.html#board-atmelavr-attiny84"><span class="std std-ref">Generic ATtiny84</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY84</p></td>
 <td><p>8MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/attiny85.html#board-atmelavr-attiny85"><span class="std std-ref">Generic ATtiny85</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/attiny85.html#board-atmelavr-attiny85"><span class="std std-ref">Generic ATtiny85</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATTINY85</p></td>
 <td><p>8MHz</p></td>
 <td><p>8KB</p></td>
 <td><p>512B</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/gnat_l082cz.html#board-ststm32-gnat-l082cz"><span class="std std-ref">Gnat-L082CZ</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/gnat_l082cz.html#board-ststm32-gnat-l082cz"><span class="std std-ref">Gnat-L082CZ</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L082CZY6</p></td>
 <td><p>32MHz</p></td>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/grasshopper_l082cz.html#board-ststm32-grasshopper-l082cz"><span class="std std-ref">Grasshopper-L082CZ</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/grasshopper_l082cz.html#board-ststm32-grasshopper-l082cz"><span class="std std-ref">Grasshopper-L082CZ</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L082CZY6</p></td>
 <td><p>32MHz</p></td>
 <td><p>192KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_itsybitsy_nrf52840.html#board-nordicnrf52-adafruit-itsybitsy-nrf52840"><span class="std std-ref">ItsyBitsy nRF52840 Express</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_itsybitsy_nrf52840.html#board-nordicnrf52-adafruit-itsybitsy-nrf52840"><span class="std std-ref">ItsyBitsy nRF52840 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>NRF52840</p></td>
 <td><p>64MHz</p></td>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/nebulas3.html#board-espressif32-nebulas3"><span class="std std-ref">Kinetic Dynamics Nebula S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/nebulas3.html#board-espressif32-nebulas3"><span class="std std-ref">Kinetic Dynamics Nebula S3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-bean.html#board-atmelavr-lightblue-bean"><span class="std std-ref">LightBlue Bean</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-bean.html#board-atmelavr-lightblue-bean"><span class="std std-ref">LightBlue Bean</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-beanplus.html#board-atmelavr-lightblue-beanplus"><span class="std std-ref">LightBlue Bean+</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightblue-beanplus.html#board-atmelavr-lightblue-beanplus"><span class="std std-ref">LightBlue Bean+</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lightup.html#board-atmelavr-lightup"><span class="std std-ref">LightUp</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lightup.html#board-atmelavr-lightup"><span class="std std-ref">LightUp</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilka_v2.html#board-espressif32-lilka-v2"><span class="std std-ref">Lilka v2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lilka_v2.html#board-espressif32-lilka-v2"><span class="std std-ref">Lilka v2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/one.html#board-atmelavr-one"><span class="std std-ref">Linino One</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/one.html#board-atmelavr-one"><span class="std std-ref">Linino One</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/smart7688.html#board-atmelavr-smart7688"><span class="std std-ref">LinkIt Smart 7688 Duo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/smart7688.html#board-atmelavr-smart7688"><span class="std std-ref">LinkIt Smart 7688 Duo</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/lora32u4II.html#board-atmelavr-lora32u4ii"><span class="std std-ref">LoRa32u4II (868-915MHz)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/lora32u4II.html#board-atmelavr-lora32u4ii"><span class="std std-ref">LoRa32u4II (868-915MHz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>8MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/mightyhat.html#board-atmelavr-mightyhat"><span class="std std-ref">LowPowerLab MightyHat</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/mightyhat.html#board-atmelavr-mightyhat"><span class="std std-ref">LowPowerLab MightyHat</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteino.html#board-atmelavr-moteino"><span class="std std-ref">LowPowerLab Moteino</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteino.html#board-atmelavr-moteino"><span class="std std-ref">LowPowerLab Moteino</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteino8mhz.html#board-atmelavr-moteino8mhz"><span class="std std-ref">LowPowerLab Moteino (8Mhz)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteino8mhz.html#board-atmelavr-moteino8mhz"><span class="std std-ref">LowPowerLab Moteino (8Mhz)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/moteinomega.html#board-atmelavr-moteinomega"><span class="std std-ref">LowPowerLab MoteinoMEGA</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/moteinomega.html#board-atmelavr-moteinomega"><span class="std std-ref">LowPowerLab MoteinoMEGA</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/malyanm200_f070cb.html#board-ststm32-malyanm200-f070cb"><span class="std std-ref">M200 V2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/malyanm200_f070cb.html#board-ststm32-malyanm200-f070cb"><span class="std std-ref">M200 V2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F070CBT6</p></td>
 <td><p>48MHz</p></td>
 <td><p>120KB</p></td>
 <td><p>14.81KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/malyanm300_f070cb.html#board-ststm32-malyanm300-f070cb"><span class="std std-ref">M300</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/malyanm300_f070cb.html#board-ststm32-malyanm300-f070cb"><span class="std std-ref">M300</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F070CBT6</p></td>
 <td><p>48MHz</p></td>
 <td><p>120KB</p></td>
 <td><p>14.81KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/mkr_sharky.html#board-ststm32-mkr-sharky"><span class="std std-ref">MKR Sharky</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/mkr_sharky.html#board-ststm32-mkr-sharky"><span class="std std-ref">MKR Sharky</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32WB55CG</p></td>
 <td><p>64MHz</p></td>
 <td><p>512KB</p></td>
 <td><p>192KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/mkrvidor4000.html#board-atmelsam-mkrvidor4000"><span class="std std-ref">MKR Vidor 4000</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>SAMD21G18A</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/malyanm200_f103cb.html#board-ststm32-malyanm200-f103cb"><span class="std std-ref">Malyan M200 V1</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/malyanm200_f103cb.html#board-ststm32-malyanm200-f103cb"><span class="std std-ref">Malyan M200 V1</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103CBT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>120KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/maple.html#board-ststm32-maple"><span class="std std-ref">Maple</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/maple.html#board-ststm32-maple"><span class="std std-ref">Maple</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103RBT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>108KB</p></td>
 <td><p>17KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/maple_ret6.html#board-ststm32-maple-ret6"><span class="std std-ref">Maple (RET6)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/maple_ret6.html#board-ststm32-maple-ret6"><span class="std std-ref">Maple (RET6)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103RET6</p></td>
 <td><p>72MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>48KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/maple_mini_b20.html#board-ststm32-maple-mini-b20"><span class="std std-ref">Maple Mini Bootloader 2.0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/maple_mini_b20.html#board-ststm32-maple-mini-b20"><span class="std std-ref">Maple Mini Bootloader 2.0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103CBT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>120KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/maple_mini_origin.html#board-ststm32-maple-mini-origin"><span class="std std-ref">Maple Mini Original</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/maple_mini_origin.html#board-ststm32-maple-mini-origin"><span class="std std-ref">Maple Mini Original</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103CBT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>108KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_metro_nrf52840.html#board-nordicnrf52-adafruit-metro-nrf52840"><span class="std std-ref">Metro nRF52840 Express</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/nordicnrf52/adafruit_metro_nrf52840.html#board-nordicnrf52-adafruit-metro-nrf52840"><span class="std std-ref">Metro nRF52840 Express</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/nordicnrf52.html#platform-nordicnrf52"><span class="std std-ref">Nordic nRF52</span></a></p></td>
 <td><p>NRF52840</p></td>
 <td><p>64MHz</p></td>
 <td><p>796KB</p></td>
 <td><p>243KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/168pa16m.html#board-atmelavr-168pa16m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/168pa16m.html#board-atmelavr-168pa16m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;16M,5V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA168P</p></td>
 <td><p>16MHz</p></td>
 <td><p>15.50KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/168pa8m.html#board-atmelavr-168pa8m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/168pa8m.html#board-atmelavr-168pa8m"><span class="std std-ref">Microduino Core (Atmega168PA&#64;8M,3.3V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA168P</p></td>
 <td><p>8MHz</p></td>
 <td><p>15.50KB</p></td>
 <td><p>1KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/328p16m.html#board-atmelavr-328p16m"><span class="std std-ref">Microduino Core (Atmega328P&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/328p16m.html#board-atmelavr-328p16m"><span class="std std-ref">Microduino Core (Atmega328P&#64;16M,5V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/328p8m.html#board-atmelavr-328p8m"><span class="std std-ref">Microduino Core (Atmega328P&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/328p8m.html#board-atmelavr-328p8m"><span class="std std-ref">Microduino Core (Atmega328P&#64;8M,3.3V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>8MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/microduino32_flash.html#board-ststm32-microduino32-flash"><span class="std std-ref">Microduino Core STM32 to Flash</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/microduino32_flash.html#board-ststm32-microduino32-flash"><span class="std std-ref">Microduino Core STM32 to Flash</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32F103CBT6</p></td>
 <td><p>72MHz</p></td>
 <td><p>105.47KB</p></td>
 <td><p>20KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/32u416m.html#board-atmelavr-32u416m"><span class="std std-ref">Microduino Core USB (ATmega32U4&#64;16M,5V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/32u416m.html#board-atmelavr-32u416m"><span class="std std-ref">Microduino Core USB (ATmega32U4&#64;16M,5V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA32U4</p></td>
 <td><p>16MHz</p></td>
 <td><p>28KB</p></td>
 <td><p>2.50KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/1284p16m.html#board-atmelavr-1284p16m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/1284p16m.html#board-atmelavr-1284p16m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;16M,5V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>16MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/1284p8m.html#board-atmelavr-1284p8m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/1284p8m.html#board-atmelavr-1284p8m"><span class="std std-ref">Microduino Core+ (ATmega1284P&#64;8M,3.3V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA1284P</p></td>
 <td><p>8MHz</p></td>
 <td><p>127KB</p></td>
 <td><p>16KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/644pa16m.html#board-atmelavr-644pa16m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;16M,5V)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/644pa16m.html#board-atmelavr-644pa16m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;16M,5V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>16MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/644pa8m.html#board-atmelavr-644pa8m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;8M,3.3V)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/644pa8m.html#board-atmelavr-644pa8m"><span class="std std-ref">Microduino Core+ (Atmega644PA&#64;8M,3.3V)</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA644P</p></td>
 <td><p>8MHz</p></td>
 <td><p>63KB</p></td>
 <td><p>4KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/minitronics20.html#board-atmelsam-minitronics20"><span class="std std-ref">Minitronics v2.0</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/minitronics20.html#board-atmelsam-minitronics20"><span class="std std-ref">Minitronics v2.0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>SAMD21J18A</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelsam/moteino_zero.html#board-atmelsam-moteino-zero"><span class="std std-ref">Moteino M0</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelsam/moteino_zero.html#board-atmelsam-moteino-zero"><span class="std std-ref">Moteino M0</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelsam.html#platform-atmelsam"><span class="std std-ref">Atmel SAM</span></a></p></td>
 <td><p>SAMD21G18A</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
 <td><p>32KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/motorgo_mini_1.html#board-espressif32-motorgo-mini-1"><span class="std std-ref">MotorGo Mini 1 (ESP32-S3)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
@@ -3923,7 +3968,7 @@ Please click on board name for the further details.</p>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32G031J6</p></td>
 <td><p>64MHz</p></td>
-<td><p>128KB</p></td>
+<td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm8/stm8s003f3.html#board-ststm8-stm8s003f3"><span class="std std-ref">ST STM8S003F3 chip</span></a></p></td>
@@ -5417,42 +5462,49 @@ Please click on board name for the further details.</p>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/upesy_wroom.html#board-espressif32-upesy-wroom"><span class="std std-ref">uPesy ESP32 Wroom DevKit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sensebox_mcu_esp32s2.html#board-espressif32-sensebox-mcu-esp32s2"><span class="std std-ref">senseBox MCU-S2 ESP32-S2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/upesy_wroom.html#board-espressif32-upesy-wroom"><span class="std std-ref">uPesy ESP32 Wroom DevKit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/upesy_wrover.html#board-espressif32-upesy-wrover"><span class="std std-ref">uPesy ESP32 Wrover DevKit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/upesy_wrover.html#board-espressif32-upesy-wrover"><span class="std std-ref">uPesy ESP32 Wrover DevKit</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/atmelavr/ardhat.html#board-atmelavr-ardhat"><span class="std std-ref">ubIQio Ardhat</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/ardhat.html#board-atmelavr-ardhat"><span class="std std-ref">ubIQio Ardhat</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
 <td><p>ATMEGA328P</p></td>
 <td><p>16MHz</p></td>
 <td><p>31.50KB</p></td>
 <td><p>2KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>7.94MB</p></td>
 <td><p>2.31MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
@@ -6646,6 +6698,22 @@ Please click on board name for the further details.</p>
 <td><p>8MHz</p></td>
 <td><p>30KB</p></td>
 <td><p>2KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m4.html#board-ststm32-giga-r1-m4"><span class="std std-ref">Arduino Giga R1 (M4 core)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>1MB</p></td>
+<td><p>287.35KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/giga_r1_m7.html#board-ststm32-giga-r1-m7"><span class="std std-ref">Arduino Giga R1 (M7 core)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32H747XIH6</p></td>
+<td><p>480MHz</p></td>
+<td><p>768KB</p></td>
+<td><p>511.35KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/atmelavr/chiwawa.html#board-atmelavr-chiwawa"><span class="std std-ref">Arduino Industrial 101</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/atmelavr.html#platform-atmelavr"><span class="std std-ref">Atmel AVR</span></a></p></td>
@@ -10737,31 +10805,7 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core2.html#board-espressif32-m5stack-core2"><span class="std std-ref">M5Stack Core2</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>4.31MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S3</p></td>
-<td><p>240MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-fire.html#board-espressif32-m5stack-fire"><span class="std std-ref">M5Stack FIRE</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>No</p></td>
-<td><p>ESP32</p></td>
-<td><p>240MHz</p></td>
-<td><p>16MB</p></td>
-<td><p>4.31MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-grey.html#board-espressif32-m5stack-grey"><span class="std std-ref">M5Stack GREY ESP32</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core-esp32-16M.html#board-espressif32-m5stack-core-esp32-16m"><span class="std std-ref">M5Stack Core ESP32 16M</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10769,15 +10813,7 @@ Please click on board name for the further details.</p>
 <td><p>16MB</p></td>
 <td><p>520KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
-<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
-<td><p>External</p></td>
-<td><p>ESP32S3</p></td>
-<td><p>240MHz</p></td>
-<td><p>8MB</p></td>
-<td><p>320KB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-station.html#board-espressif32-m5stack-station"><span class="std std-ref">M5Stack Station</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-core2.html#board-espressif32-m5stack-core2"><span class="std std-ref">M5Stack Core2</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10785,7 +10821,47 @@ Please click on board name for the further details.</p>
 <td><p>16MB</p></td>
 <td><p>4.31MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-timer-cam.html#board-espressif32-m5stack-timer-cam"><span class="std std-ref">M5Stack Timer CAM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-fire.html#board-espressif32-m5stack-fire"><span class="std std-ref">M5Stack FIRE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>4.31MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-grey.html#board-espressif32-m5stack-grey"><span class="std std-ref">M5Stack GREY ESP32</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>520KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-station.html#board-espressif32-m5stack-station"><span class="std std-ref">M5Stack Station</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>No</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>16MB</p></td>
+<td><p>4.31MB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-timer-cam.html#board-espressif32-m5stack-timer-cam"><span class="std std-ref">M5Stack Timer CAM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10793,7 +10869,7 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atom.html#board-espressif32-m5stack-atom"><span class="std std-ref">M5Stack-ATOM</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-atom.html#board-espressif32-m5stack-atom"><span class="std std-ref">M5Stack-ATOM</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10801,7 +10877,7 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-coreink.html#board-espressif32-m5stack-coreink"><span class="std std-ref">M5Stack-Core Ink</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stack-coreink.html#board-espressif32-m5stack-coreink"><span class="std std-ref">M5Stack-Core Ink</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10809,7 +10885,7 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stamp-pico.html#board-espressif32-m5stamp-pico"><span class="std std-ref">M5Stamp-Pico</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stamp-pico.html#board-espressif32-m5stamp-pico"><span class="std std-ref">M5Stamp-Pico</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -10817,7 +10893,7 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/m5stick-c.html#board-espressif32-m5stick-c"><span class="std std-ref">M5Stick-C</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/m5stick-c.html#board-espressif32-m5stick-c"><span class="std std-ref">M5Stick-C</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>No</p></td>
 <td><p>ESP32</p></td>
@@ -12369,6 +12445,31 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
+<section id="motorgo">
+<h3>MotorGo<a class="headerlink" href="#motorgo" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/motorgo_mini_1.html#board-espressif32-motorgo-mini-1"><span class="std std-ref">MotorGo Mini 1 (ESP32-S3)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="munich-labs">
 <h3>Munich Labs<a class="headerlink" href="#munich-labs" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -13049,6 +13150,31 @@ Please click on board name for the further details.</p>
 <td><p>80MHz</p></td>
 <td><p>508KB</p></td>
 <td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="powerfeather">
+<h3>PowerFeather<a class="headerlink" href="#powerfeather" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/esp32s3_powerfeather.html#board-espressif32-esp32s3-powerfeather"><span class="std std-ref">ESP32-S3 PowerFeather</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -14073,7 +14199,15 @@ Please click on board name for the further details.</p>
 <td><p>512KB</p></td>
 <td><p>128KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f722ze.html#board-ststm32-nucleo-f722ze"><span class="std std-ref">ST Nucleo F722ZE</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446ze.html#board-ststm32-nucleo-f446ze"><span class="std std-ref">ST Nucleo F446ZE</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32F446ZET6</p></td>
+<td><p>180MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f722ze.html#board-ststm32-nucleo-f722ze"><span class="std std-ref">ST Nucleo F722ZE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F722ZET6</p></td>
@@ -14081,7 +14215,7 @@ Please click on board name for the further details.</p>
 <td><p>512KB</p></td>
 <td><p>256KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f746zg.html#board-ststm32-nucleo-f746zg"><span class="std std-ref">ST Nucleo F746ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F746ZGT6</p></td>
@@ -14089,7 +14223,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f756zg.html#board-ststm32-nucleo-f756zg"><span class="std std-ref">ST Nucleo F756ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F756ZG</p></td>
@@ -14097,7 +14231,7 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f767zi.html#board-ststm32-nucleo-f767zi"><span class="std std-ref">ST Nucleo F767ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32F767ZIT6</p></td>
@@ -14105,7 +14239,7 @@ Please click on board name for the further details.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g0b1re.html#board-ststm32-nucleo-g0b1re"><span class="std std-ref">ST Nucleo G0B1RE</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_g0b1re.html#board-ststm32-nucleo-g0b1re"><span class="std std-ref">ST Nucleo G0B1RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32G0B1RET6</p></td>
@@ -14113,7 +14247,7 @@ Please click on board name for the further details.</p>
 <td><p>512KB</p></td>
 <td><p>144KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h723zg.html#board-ststm32-nucleo-h723zg"><span class="std std-ref">ST Nucleo H723ZG</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H723ZGT6</p></td>
@@ -14121,10 +14255,18 @@ Please click on board name for the further details.</p>
 <td><p>1MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h743zi.html#board-ststm32-nucleo-h743zi"><span class="std std-ref">ST Nucleo H743ZI</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>STM32H743ZIT6</p></td>
+<td><p>400MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>512KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_h753zi.html#board-ststm32-nucleo-h753zi"><span class="std std-ref">ST Nucleo H753ZI</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
@@ -14286,7 +14428,7 @@ Please click on board name for the further details.</p>
 <td><p>External</p></td>
 <td><p>STM32G031J6</p></td>
 <td><p>64MHz</p></td>
-<td><p>128KB</p></td>
+<td><p>32KB</p></td>
 <td><p>8KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_l4s5i_iot01a.html#board-ststm32-disco-l4s5i-iot01a"><span class="std std-ref">ST STM32L4+ Discovery kit IoT node</span></a></p></td>
@@ -16921,6 +17063,31 @@ Please click on board name for the further details.</p>
 <td><p>16MHz</p></td>
 <td><p>32KB</p></td>
 <td><p>2KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensebox">
+<h3>senseBox<a class="headerlink" href="#sensebox" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sensebox_mcu_esp32s2.html#board-espressif32-sensebox-mcu-esp32s2"><span class="std std-ref">senseBox MCU-S2 ESP32-S2</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S2</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 </tbody>
 </table>

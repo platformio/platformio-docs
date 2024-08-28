@@ -165,19 +165,19 @@ supported development platforms, boards, frameworks, and toolchains.</p>
 <p>Example of using a <a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">Espressif 32 development platform</a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:recommended_specification]</span>
 <span class="c1">; allow backwards-compatible new functionality and bug-fixes</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@^6.1.0</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32@^6.1.0</span>
 
 <span class="k">[env:allow_only_bug_fixes]</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@~6.1.0</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32@~6.1.0</span>
 
 <span class="k">[env:exact_version]</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32@6.1.0</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32@6.1.0</span>
 
 <span class="k">[env:latest_version]</span>
 <span class="c1">; not recommended as it does not ensure that</span>
 <span class="c1">; - builds are repeatable</span>
 <span class="c1">; - all developers who checkout the project wil build against the same platform version</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espressif32</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32</span>
 
 <span class="k">[env:development_verion_by_git]</span>
 <span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/platformio/platform-espressif32.git</span>

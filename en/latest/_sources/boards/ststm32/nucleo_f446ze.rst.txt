@@ -128,11 +128,14 @@ Frameworks
     * - Name
       - Description
 
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
