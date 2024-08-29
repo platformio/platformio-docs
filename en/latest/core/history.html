@@ -69,7 +69,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment Variables</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -169,6 +169,8 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <section id="id1">
 <h3>6.1.16 (2024-??-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
+<li><p>Introduced the <a class="reference external" href="https://docs.platformio.org/en/latest/envvars.html#envvar-PLATFORMIO_SYSTEM_TYPE">PLATFORMIO_SYSTEM_TYPE</a> environment variable, enabling manual override of the detected system type for greater flexibility and control in custom build environments</p></li>
+<li><p>Upgraded the build engine to the latest version of SCons (4.8.0) to improve build performance, reliability, and compatibility with other tools and systems (<a class="reference external" href="https://github.com/SCons/scons/releases/tag/4.8.0">release notes</a>)</p></li>
 <li><p>Upgraded the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/doctest.html">Doctest</a> testing framework to version 2.4.11, the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/doctest.html">GoogleTest</a> to version 1.15.2, and the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/unity.html">Unity</a> to version 2.6.0, incorporating the latest features and improvements for enhanced testing capabilities</p></li>
 <li><p>Corrected an issue where the incorrect public class was imported for the <code class="docutils literal notranslate"><span class="pre">DoctestTestRunner</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4949">issue #4949</a>)</p></li>
 </ul>
