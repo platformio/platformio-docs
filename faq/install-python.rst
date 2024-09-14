@@ -15,7 +15,7 @@ Install Python Interpreter
 --------------------------
 
 :ref:`piocore` is written in `Python <https://www.python.org/downloads/>`_ that
-is installed by default on the all popular OS except Windows.
+is installed by default on all the popular OSs except Windows.
 
 Please navigate to official website and `Download the latest Python <https://www.python.org/downloads/>`_
 and install it. Please **READ NOTES BELOW**.
@@ -32,3 +32,10 @@ and install it. Please **READ NOTES BELOW**.
   not be available.
 
   .. image:: ../_static/images/python-installer-add-path.png
+
+:Linux:
+  Most linux distributions will include a Python installation already. You may need to ensure that the Python Virtual Environment is installed. 
+
+  Debian/Ubuntu derivatives have this package in Apt as ``python3-venv``.
+
+  ``sudo apt install python3-venv`` should be all that is required.
