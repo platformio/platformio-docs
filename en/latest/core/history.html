@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=0173bf1a"></script>
+        <script src="../_static/documentation_options.js?v=93f051c2"></script>
         <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -170,6 +170,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <h3>6.1.16 (2024-??-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Introduced the <a class="reference external" href="https://docs.platformio.org/en/latest/envvars.html#envvar-PLATFORMIO_SYSTEM_TYPE">PLATFORMIO_SYSTEM_TYPE</a> environment variable, enabling manual override of the detected system type for greater flexibility and control in custom build environments</p></li>
+<li><p>Enhanced internet connection checks by falling back to HTTPS protocol when HTTP (port 80) fails (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4980">issue #4980</a>)</p></li>
 <li><p>Upgraded the build engine to the latest version of SCons (4.8.1) to improve build performance, reliability, and compatibility with other tools and systems (<a class="reference external" href="https://github.com/SCons/scons/releases/tag/4.8.1">release notes</a>)</p></li>
 <li><p>Upgraded the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/doctest.html">Doctest</a> testing framework to version 2.4.11, the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/doctest.html">GoogleTest</a> to version 1.15.2, and the <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/frameworks/unity.html">Unity</a> to version 2.6.0, incorporating the latest features and improvements for enhanced testing capabilities</p></li>
 <li><p>Corrected an issue where the incorrect public class was imported for the <code class="docutils literal notranslate"><span class="pre">DoctestTestRunner</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4949">issue #4949</a>)</p></li>
@@ -680,7 +681,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.16b2 (latest)
+    v6.1.16rc1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
