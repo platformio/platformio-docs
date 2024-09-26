@@ -17,7 +17,7 @@ Aceinna IMU
 :Registry:
   `https://registry.platformio.org/platforms/aceinna/aceinna_imu <https://registry.platformio.org/platforms/aceinna/aceinna_imu>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``aceinna_imu``
+  :ref:`projectconf_env_platform` = ``aceinna/aceinna_imu``
 
 Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
 

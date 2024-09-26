@@ -270,7 +270,7 @@ Frameworks
       - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
@@ -948,6 +948,20 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelsam_mzeroUSB`
       - :ref:`platform_atmelsam`
       - External
@@ -1620,6 +1634,13 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_esp32s3camlcd`
       - :ref:`platform_espressif32`
       - External
@@ -2278,6 +2299,13 @@ Boards
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_ststm32_mts_mdot_f405rg`
       - :ref:`platform_ststm32`
       - External
@@ -3194,7 +3222,7 @@ Boards
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l010rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -3361,7 +3389,7 @@ Boards
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_g071rb`
       - :ref:`platform_ststm32`
@@ -4749,6 +4777,13 @@ Boards
       - 100MHz
       - 1MB
       - 128KB
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_nordicnrf52_ublox_bmd345eval_nrf52840`
       - :ref:`platform_nordicnrf52`
       - On-board

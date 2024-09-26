@@ -45,5 +45,5 @@ documentation.
   $ export ALL_PROXY="socks5://10.10.1.10:3434"
 
   # Windows
-  set HTTP_PROXY="HTTP_PROXY=http://user:pass@10.10.1.10:3128/"
+  set HTTP_PROXY=http://user:pass@10.10.1.10:3128/
 

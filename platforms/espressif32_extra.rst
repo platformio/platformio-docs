@@ -80,7 +80,7 @@ Framework :ref:`framework_arduino`:
 .. code-block:: ini
 
     [env:myenv]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = arduino
     board = ...
     build_flags =
@@ -92,7 +92,7 @@ Framework :ref:`framework_espidf`:
 .. code-block:: ini
 
     [env:myenv]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
     board = ...
     build_flags =
@@ -211,7 +211,7 @@ in ``board_build.embed_txtfiles`` option are null-terminated in the final binary
 .. code-block:: ini
 
     [env:myenv]
-    platform = espressif32
+    platform = platformio/espressif32
     board = ...
     board_build.embed_txtfiles =
       src/private.pem.key
@@ -266,7 +266,7 @@ for example:
 .. code-block:: ini
 
     [env:myenv]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = arduino
     board = ...
     board_build.filesystem = littlefs
@@ -328,7 +328,7 @@ For example:
 .. code-block:: ini
 
    [env:myenv]
-   platform = espressif32
+   platform = platformio/espressif32
    board = esp32dev
    framework = arduino
    upload_protocol = espota
@@ -416,7 +416,7 @@ please open :ref:`pioide` and navigate to ``PlatformIO Home > Platforms > Update
     .. code-block:: ini
 
         [env:esp32dev]
-        platform = espressif32
+        platform = platformio/espressif32
         board = esp32dev
         framework = arduino
         platform_packages =

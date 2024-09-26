@@ -17,7 +17,7 @@ Raspberry Pi RP2040
 :Registry:
   `https://registry.platformio.org/platforms/platformio/raspberrypi <https://registry.platformio.org/platforms/platformio/raspberrypi>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``raspberrypi``
+  :ref:`projectconf_env_platform` = ``platformio/raspberrypi``
 
 RP2040 is a low-cost, high-performance microcontroller device with a large on-chip memory, symmetric dual-core processor complex, and rich peripheral.
 

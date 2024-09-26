@@ -32,7 +32,7 @@ Example:
     lib_compat_mode = strict
 
     [espressi32_base]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = arduino
 
     [env:release]

@@ -253,7 +253,7 @@ Frameworks
       - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
@@ -1372,6 +1372,20 @@ Arduino
       - 8MHz
       - 30KB
       - 2KB
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelavr_chiwawa`
       - :ref:`platform_atmelavr`
       - External
@@ -4726,6 +4740,27 @@ MikroElektronika
       - 1MB
       - 256KB
 
+MotorGo
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 MultiTech
 ~~~~~~~~~
 
@@ -5292,6 +5327,27 @@ Pololu Corporation
       - 16MHz
       - 28KB
       - 2.50KB
+
+PowerFeather
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 PrntrBoard
 ~~~~~~~~~~
@@ -6348,7 +6404,7 @@ ST
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l010rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -6515,7 +6571,7 @@ ST
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_g071rb`
       - :ref:`platform_ststm32`
@@ -8778,6 +8834,27 @@ sduino
       - 16MHz
       - 32KB
       - 2KB
+
+senseBox
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
 
 sino:bit
 ~~~~~~~~

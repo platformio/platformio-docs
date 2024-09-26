@@ -11,13 +11,13 @@
 
 .. _framework_libopencm3:
 
-libopencm3
-==========
+Open-source ARM Cortex-M microcontroller library
+================================================
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``libopencm3``
 
-Open source ARM Cortex-M microcontroller library
+The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
 .. contents:: Contents
     :local:
@@ -40,8 +40,8 @@ Platforms
 Examples
 --------
 
-* `libopencm3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `libopencm3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Open-source ARM Cortex-M microcontroller library for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `Open-source ARM Cortex-M microcontroller library for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -435,6 +435,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -962,7 +968,7 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
@@ -3241,6 +3247,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board
@@ -3358,7 +3371,7 @@ ST
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_g071rb`
       - :ref:`platform_ststm32`

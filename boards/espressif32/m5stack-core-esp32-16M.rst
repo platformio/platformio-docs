@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_esp32-c6-devkitc-1:
+.. _board_espressif32_m5stack-core-esp32-16M:
 
-Espressif ESP32-C6-DevKitC-1
-============================
+M5Stack Core ESP32 16M
+======================
 
 .. contents::
 
@@ -24,49 +24,49 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32C6
+    - ESP32
   * - **Frequency**
-    - 160MHz
+    - 240MHz
   * - **Flash**
-    - 8MB
+    - 16MB
   * - **RAM**
-    - 320KB
+    - 520KB
   * - **Vendor**
-    - `Espressif <https://docs.espressif.com/projects/espressif-esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/index.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `M5Stack <http://www.m5stack.com?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``esp32-c6-devkitc-1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``m5stack-core-esp32-16M`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:esp32-c6-devkitc-1]
+  [env:m5stack-core-esp32-16M]
   platform = espressif32
-  board = esp32-c6-devkitc-1
+  board = m5stack-core-esp32-16M
 
-You can override default Espressif ESP32-C6-DevKitC-1 settings per build environment using
+You can override default M5Stack Core ESP32 16M settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `esp32-c6-devkitc-1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-c6-devkitc-1.json>`_. For example,
+board manifest `m5stack-core-esp32-16M.json <https://github.com/platformio/platform-espressif32/blob/master/boards/m5stack-core-esp32-16M.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:esp32-c6-devkitc-1]
+  [env:m5stack-core-esp32-16M]
   platform = espressif32
-  board = esp32-c6-devkitc-1
+  board = m5stack-core-esp32-16M
 
   ; change microcontroller
-  board_build.mcu = esp32c6
+  board_build.mcu = esp32
 
   ; change MCU frequency
-  board_build.f_cpu = 160000000L
+  board_build.f_cpu = 240000000L
 
 
 Uploading
 ---------
-Espressif ESP32-C6-DevKitC-1 supports the following uploading protocols:
+M5Stack Core ESP32 16M supports the following uploading protocols:
 
 * ``espota``
 * ``esptool``
@@ -77,15 +77,15 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:esp32-c6-devkitc-1]
+  [env:m5stack-core-esp32-16M]
   platform = espressif32
-  board = esp32-c6-devkitc-1
+  board = m5stack-core-esp32-16M
 
   upload_protocol = esptool
 
 Debugging
 ---------
-:ref:`piodebug` currently does not support Espressif ESP32-C6-DevKitC-1 board.
+:ref:`piodebug` currently does not support M5Stack Core ESP32 16M board.
 
 Frameworks
 ----------
@@ -94,6 +94,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_espidf`
       - Espressif IoT Development Framework. Official development framework for ESP32 chip

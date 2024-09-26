@@ -22,7 +22,7 @@ a project version suffix to the firmware name.
 .. code-block:: ini
 
     [env:env_custom_prog_name]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = arduino
     board = esp32dev
     build_flags =

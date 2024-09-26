@@ -469,6 +469,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_esp32s3camlcd`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -676,6 +682,12 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_kb32-ft`
       - :ref:`platform_espressif32`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - ESP32S3
       - 240MHz
       - 4MB
       - 320KB
@@ -1090,6 +1102,12 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_iotbusproteus`
       - :ref:`platform_espressif32`
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
@@ -2019,7 +2037,7 @@ Espressif
       - ESP32C6
       - 160MHz
       - 8MB
-      - 512KB
+      - 320KB
     * - :ref:`board_espressif32_esp32-c6-devkitm-1`
       - :ref:`platform_espressif32`
       - External
@@ -2552,6 +2570,13 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_m5stack-core-esp32-16M`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stack-core2`
       - :ref:`platform_espressif32`
       - No
@@ -2784,6 +2809,27 @@ Microduino
       - 4MB
       - 320KB
 
+MotorGo
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Munich Labs
 ~~~~~~~~~~~
 
@@ -2943,6 +2989,27 @@ Onehorse
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+PowerFeather
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 ProtoCentral
@@ -3949,6 +4016,27 @@ oddWires
       - :ref:`platform_espressif32`
       - External
       - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+senseBox
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
       - 240MHz
       - 4MB
       - 320KB
