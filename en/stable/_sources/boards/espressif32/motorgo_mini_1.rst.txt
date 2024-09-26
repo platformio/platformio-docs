@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_briki_mbc-wb_esp32:
+.. _board_espressif32_motorgo_mini_1:
 
-Briki MBC-WB - ESP32
-====================
+MotorGo Mini 1 (ESP32-S3)
+=========================
 
 .. contents::
 
@@ -24,41 +24,41 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32
+    - ESP32S3
   * - **Frequency**
     - 240MHz
   * - **Flash**
-    - 3.25MB
+    - 4MB
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `meteca <https://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+    - `MotorGo <https://motorgo.net/shop/ols/products/motorgo-mini-v1-dot-2-starter-kit-plus-motors?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``briki_mbc-wb_esp32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``motorgo_mini_1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:briki_mbc-wb_esp32]
+  [env:motorgo_mini_1]
   platform = espressif32
-  board = briki_mbc-wb_esp32
+  board = motorgo_mini_1
 
-You can override default Briki MBC-WB - ESP32 settings per build environment using
+You can override default MotorGo Mini 1 (ESP32-S3) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `briki_mbc-wb_esp32.json <https://github.com/platformio/platform-espressif32/blob/master/boards/briki_mbc-wb_esp32.json>`_. For example,
+board manifest `motorgo_mini_1.json <https://github.com/platformio/platform-espressif32/blob/master/boards/motorgo_mini_1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:briki_mbc-wb_esp32]
+  [env:motorgo_mini_1]
   platform = espressif32
-  board = briki_mbc-wb_esp32
+  board = motorgo_mini_1
 
   ; change microcontroller
-  board_build.mcu = esp32
+  board_build.mcu = esp32s3
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,14 +66,16 @@ board manifest `briki_mbc-wb_esp32.json <https://github.com/platformio/platform-
 
 Uploading
 ---------
-Briki MBC-WB - ESP32 supports the following uploading protocols:
+MotorGo Mini 1 (ESP32-S3) supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
+* ``esp-builtin``
 * ``esp-prog``
+* ``espota``
+* ``esptool``
 * ``iot-bus-jtag``
 * ``jlink``
-* ``mbctool``
 * ``minimodule``
 * ``olimex-arm-usb-ocd``
 * ``olimex-arm-usb-ocd-h``
@@ -81,17 +83,17 @@ Briki MBC-WB - ESP32 supports the following uploading protocols:
 * ``olimex-jtag-tiny``
 * ``tumpa``
 
-Default protocol is ``mbctool``
+Default protocol is ``esptool``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:briki_mbc-wb_esp32]
+  [env:motorgo_mini_1]
   platform = espressif32
-  board = briki_mbc-wb_esp32
+  board = motorgo_mini_1
 
-  upload_protocol = mbctool
+  upload_protocol = esptool
 
 Debugging
 ---------
@@ -106,7 +108,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Briki MBC-WB - ESP32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+MotorGo Mini 1 (ESP32-S3) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -118,6 +120,9 @@ Briki MBC-WB - ESP32 does not have on-board debug probe and **IS NOT READY** for
     - 
     - Yes
   * - ``esp-bridge``
+    - 
+    - 
+  * - ``esp-builtin``
     - 
     - 
   * - :ref:`debugging_tool_esp-prog`
@@ -158,3 +163,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
+
+    * - :ref:`framework_espidf`
+      - Espressif IoT Development Framework. Official development framework for ESP32 chip

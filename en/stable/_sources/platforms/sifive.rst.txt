@@ -17,7 +17,7 @@ SiFive
 :Registry:
   `https://registry.platformio.org/platforms/platformio/sifive <https://registry.platformio.org/platforms/platformio/sifive>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``sifive``
+  :ref:`projectconf_env_platform` = ``platformio/sifive``
 
 SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 

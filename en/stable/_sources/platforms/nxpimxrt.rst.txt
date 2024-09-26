@@ -17,7 +17,7 @@ NXP i.MX RT
 :Registry:
   `https://registry.platformio.org/platforms/platformio/nxpimxrt <https://registry.platformio.org/platforms/platformio/nxpimxrt>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``nxpimxrt``
+  :ref:`projectconf_env_platform` = ``platformio/nxpimxrt``
 
 The i.MX RT series of crossover processors features the Arm Cortex-M core, real-time functionality and MCU usability at a cost-effective price.
 

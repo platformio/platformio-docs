@@ -484,6 +484,12 @@ You do not need to use/buy external debug probe.
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f446ze`
+      - :ref:`platform_ststm32`
+      - STM32F446ZET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f722ze`
       - :ref:`platform_ststm32`
       - STM32F722ZET6
@@ -523,6 +529,12 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - STM32H753ZIT6
       - 400MHz
       - 2MB
       - 512KB
@@ -1547,6 +1559,18 @@ Please click on board name for the further details.
       - 8MHz
       - 30KB
       - 2KB
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - :ref:`platform_ststm32`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelavr_chiwawa`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -2189,6 +2213,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_esp32s3camlcd`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -2723,6 +2753,12 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_redpill_esp32s3`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -3039,7 +3075,7 @@ Please click on board name for the further details.
       - :ref:`platform_ststm32`
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm8_stm8s003f3`
       - :ref:`platform_ststm8`
@@ -4319,6 +4355,12 @@ Please click on board name for the further details.
       - 16MHz
       - 32KB
       - 2KB
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_upesy_wroom`
       - :ref:`platform_espressif32`
       - ESP32
@@ -5378,6 +5420,20 @@ Arduino
       - 8MHz
       - 30KB
       - 2KB
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_atmelavr_chiwawa`
       - :ref:`platform_atmelavr`
       - External
@@ -8885,6 +8941,13 @@ M5Stack
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_m5stack-core-esp32-16M`
+      - :ref:`platform_espressif32`
+      - No
+      - ESP32
+      - 240MHz
+      - 16MB
+      - 520KB
     * - :ref:`board_espressif32_m5stack-core2`
       - :ref:`platform_espressif32`
       - No
@@ -10300,6 +10363,27 @@ MikroElektronika
       - 1.98MB
       - 512KB
 
+MotorGo
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_motorgo_mini_1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
+      - 320KB
+
 Munich Labs
 ~~~~~~~~~~~
 
@@ -10880,6 +10964,27 @@ Pontech
       - 80MHz
       - 508KB
       - 128KB
+
+PowerFeather
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_esp32s3_powerfeather`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
 
 PrntrBoard
 ~~~~~~~~~~
@@ -11755,6 +11860,13 @@ ST
       - 180MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_f446ze`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F446ZET6
+      - 180MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_nucleo_f722ze`
       - :ref:`platform_ststm32`
       - On-board
@@ -11801,6 +11913,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32H743ZIT6
+      - 400MHz
+      - 2MB
+      - 512KB
+    * - :ref:`board_ststm32_nucleo_h753zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H753ZIT6
       - 400MHz
       - 2MB
       - 512KB
@@ -11942,7 +12061,7 @@ ST
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_l4s5i_iot01a`
       - :ref:`platform_ststm32`
@@ -14198,6 +14317,27 @@ sduino
       - 16MHz
       - 32KB
       - 2KB
+
+senseBox
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_sensebox_mcu_esp32s2`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S2
+      - 240MHz
+      - 4MB
+      - 320KB
 
 sino:bit
 ~~~~~~~~

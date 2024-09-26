@@ -59,7 +59,7 @@ of them. Please note that you can use Unix shell-style wildcards:
 
     ; Global data for all [env:***]
     [env]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
 
     ; Custom data group
@@ -82,7 +82,7 @@ of them. Please note that you can use Unix shell-style wildcards:
     build_flags = ${common.lib_flags} ${common.debug_flags}
 
     [env:lolin32]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
     board = lolin32
     build_flags = ${common.debug_flags}
@@ -108,19 +108,19 @@ After a parsing process, configuration state will be the next:
     lib_flags = -lc -lm
 
     [env:esp-wrover-kit]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
     board = esp-wrover-kit
     build_flags = ${common.debug_flags}
 
     [env:esp32dev]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
     board = esp32dev
     build_flags = ${common.lib_flags} ${common.debug_flags}
 
     [env:lolin32]
-    platform = espressif32
+    platform = platformio/espressif32
     framework = espidf
     board = lolin32
     build_flags = -Og

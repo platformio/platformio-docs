@@ -17,7 +17,7 @@ Linux x86_64
 :Registry:
   `https://registry.platformio.org/platforms/platformio/linux_x86_64 <https://registry.platformio.org/platforms/platformio/linux_x86_64>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``linux_x86_64``
+  :ref:`projectconf_env_platform` = ``platformio/linux_x86_64``
 
 Linux x86_64 (64-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 64-bit) you can build native application for Linux x86_64 platform.
 

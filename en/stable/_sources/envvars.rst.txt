@@ -11,7 +11,7 @@
 
 .. _envvars:
 
-Environment variables
+Environment Variables
 =====================
 
 `Environment variables <http://en.wikipedia.org/wiki/Environment_variable>`_
@@ -78,6 +78,17 @@ You can also use :option:`pio --no-ansi` flag for :ref:`piocore`.
 Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_PROGRESSBAR=false``.
+
+.. envvar:: PLATFORMIO_SYSTEM_TYPE
+
+This environment variable allows you to manually specify the system type, overriding the automatic detection.
+Examples:
+
+* ``windows_amd64``
+* ``windows_arm64``
+* ``linux_x86_64``
+* ``linux_armv7l``
+* ``darwin_arm64``
 
 Directories
 -----------

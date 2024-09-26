@@ -517,6 +517,7 @@ Espressif 32
     espressif32/pocket_32
     espressif32/fm-devkit
     espressif32/pico32
+    espressif32/esp32s3_powerfeather
     espressif32/esp32s3camlcd
     espressif32/esp32vn-iot-uno
     espressif32/espectro32
@@ -569,6 +570,7 @@ Espressif 32
     espressif32/lionbits3
     espressif32/m5stack-atoms3
     espressif32/m5stack-core-esp32
+    espressif32/m5stack-core-esp32-16M
     espressif32/m5stack-core2
     espressif32/m5stack-cores3
     espressif32/m5stack-fire
@@ -588,6 +590,7 @@ Espressif 32
     espressif32/kb32-ft
     espressif32/nano32
     espressif32/microduino-core-esp32
+    espressif32/motorgo_mini_1
     espressif32/redpill_esp32s3
     espressif32/namino_arancio
     espressif32/namino_rosso
@@ -676,6 +679,7 @@ Espressif 32
     espressif32/micros2
     espressif32/iotbusio
     espressif32/iotbusproteus
+    espressif32/sensebox_mcu_esp32s2
     espressif32/nina_w10
     espressif32/upesy_wroom
     espressif32/upesy_wrover
@@ -1324,6 +1328,8 @@ ST STM32
     ststm32/acsip_s76s
     ststm32/adafruit_feather_f405
     ststm32/afroflight_f103cb
+    ststm32/giga_r1_m4
+    ststm32/giga_r1_m7
     ststm32/nicla_vision
     ststm32/nicla_vision_m4
     ststm32/opta

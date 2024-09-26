@@ -593,7 +593,7 @@ You do not need to use/buy external debug probe.
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - STM32L011K4T6
@@ -2085,7 +2085,7 @@ ST
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l011k4`
       - :ref:`platform_ststm32`
       - On-board

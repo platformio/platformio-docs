@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=179e3750"></script>
+        <script src="../_static/documentation_options.js?v=2066bd3a"></script>
         <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -69,7 +69,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment Variables</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul class="current">
@@ -85,7 +85,7 @@
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fsp.html">Renesas Flexible Software Package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">libopencm3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">Open-source ARM Cortex-M microcontroller library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
@@ -112,7 +112,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#boards">Boards</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id3">96Boards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">96Boards</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adafruit">Adafruit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#arduino">Arduino</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#atmel">Atmel</a></li>
@@ -213,39 +213,35 @@
 <nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tutorials" id="id4">Tutorials</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id5">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id6">Platforms</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id7">Examples</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id8">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#boards" id="id9">Boards</a></p></li>
+<li><p><a class="reference internal" href="#tutorials" id="id5">Tutorials</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id6">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id7">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id8">Examples</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id9">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id10">Boards</a></p></li>
 </ul>
 </nav>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/nordicnrf52/zephyr_debugging_unit_testing_inspect.html#tutorial-nordicnrf52-zephyr-debugging-unit-testing-analysis"><span class="std std-ref">Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis</span></a></p></li>
 <li><p><a class="reference external" href="https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html">Enabling PlatformIO and Zephyr on custom hardware</a></p></li>
 </ul>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <nav class="contents local" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#project-structure" id="id10">Project Structure</a></p></li>
-<li><p><a class="reference internal" href="#devicetree-overlays" id="id11">Devicetree overlays</a></p></li>
-<li><p><a class="reference internal" href="#embedding-files-at-compile-time" id="id12">Embedding files at compile time</a></p></li>
-<li><p><a class="reference internal" href="#zephyr-modules" id="id13">Zephyr modules</a></p></li>
-<li><p><a class="reference internal" href="#limitations" id="id14">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#project-structure" id="id11">Project Structure</a></p></li>
+<li><p><a class="reference internal" href="#devicetree-overlays" id="id12">Devicetree overlays</a></p></li>
+<li><p><a class="reference internal" href="#embedding-files-at-compile-time" id="id13">Embedding files at compile time</a></p></li>
+<li><p><a class="reference internal" href="#zephyr-modules" id="id14">Zephyr modules</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id15">Limitations</a></p></li>
 </ul>
 </nav>
 <section id="project-structure">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Project Structure</a><a class="headerlink" href="#project-structure" title="Link to this heading"></a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Zephyr framework currently requires Python 3.4 or later.</p>
-</div>
-<p>Zephyr framework requires an unusual project structure because most of the framework
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Project Structure</a><a class="headerlink" href="#project-structure" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://www.zephyrproject.org">Zephyr</a> framework requires an unusual project structure because most of the framework
 configuration is performed by the native for Zephyr build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -298,7 +294,7 @@ options. These application settings are merged with board-specific settings to p
 kernel configuration.</p>
 </section>
 <section id="devicetree-overlays">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Devicetree overlays</a><a class="headerlink" href="#devicetree-overlays" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Devicetree overlays</a><a class="headerlink" href="#devicetree-overlays" title="Link to this heading"></a></h3>
 <p>Zephyr applications can use overlay files to enable a peripheral that is disabled by
 default, select a sensor on the board for an application specific purpose, etc. This
 makes it possible to reconfigure the kernel and device drivers without modifying source
@@ -319,7 +315,7 @@ the build system automatically pick up <code class="docutils literal notranslate
 </div>
 </section>
 <section id="embedding-files-at-compile-time">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Embedding files at compile time</a><a class="headerlink" href="#embedding-files-at-compile-time" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Embedding files at compile time</a><a class="headerlink" href="#embedding-files-at-compile-time" title="Link to this heading"></a></h3>
 <p>In case your <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> relies on using <code class="docutils literal notranslate"><span class="pre">generate_inc_*</span></code> functions that are
 used for generating and compressing individual files (for example certificates for secure
 connections) you need to configure your PlatformIO project accordingly using the
@@ -338,7 +334,7 @@ following structure:</p>
 project at the compile time.</p>
 </section>
 <section id="zephyr-modules">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Zephyr modules</a><a class="headerlink" href="#zephyr-modules" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Zephyr modules</a><a class="headerlink" href="#zephyr-modules" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>PlatformIO automatically installs several default modules used with Zephyr framework
@@ -373,7 +369,7 @@ file, as shown above.</p>
 </div>
 </section>
 <section id="limitations">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Link to this heading"></a></h3>
 <p>At the moment several limitations are present:</p>
 <ul class="simple">
 <li><p>The minimum supported version of Python is <code class="docutils literal notranslate"><span class="pre">3.4</span></code></p></li>
@@ -383,7 +379,7 @@ file, as shown above.</p>
 </section>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -425,7 +421,7 @@ file, as shown above.</p>
 </table>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-atmelsam/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr for Atmel SAM</a></p></li>
 <li><p><a class="reference external" href="https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Zephyr for Freescale Kinetis</a></p></li>
@@ -440,20 +436,20 @@ file, as shown above.</p>
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
-<nav class="contents local" id="id2">
+<nav class="contents local" id="id3">
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id15">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id16">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#on-board-debug-tools" id="id16">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id17">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id17">On-Board Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id18">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -464,7 +460,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id16" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id17" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
@@ -1036,7 +1032,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>864KB</p></td>
+<td><p>512KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l011k4.html#board-ststm32-nucleo-l011k4"><span class="std std-ref">ST Nucleo L011K4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -1203,7 +1199,7 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id17" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id18" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -1539,7 +1535,7 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -1547,8 +1543,8 @@ Please click on board name for the further details.</p>
 <li><p>For more detailed <code class="docutils literal notranslate"><span class="pre">board</span></code> information please scroll the tables below by horizontally.</p></li>
 </ul>
 </div>
-<section id="id3">
-<h3>96Boards<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<section id="id4">
+<h3>96Boards<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -2771,7 +2767,7 @@ Please click on board name for the further details.</p>
 <td><p>STM32H753ZIT6</p></td>
 <td><p>400MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>864KB</p></td>
+<td><p>512KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_l011k4.html#board-ststm32-nucleo-l011k4"><span class="std std-ref">ST Nucleo L011K4</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3387,7 +3383,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.15 (stable)
+    v6.1.16 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

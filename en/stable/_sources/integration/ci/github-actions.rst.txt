@@ -57,14 +57,14 @@ This variant is default choice for native PlatformIO projects:
       runs-on: ubuntu-latest
 
       steps:
-        - uses: actions/checkout@v3
-        - uses: actions/cache@v3
+        - uses: actions/checkout@v4
+        - uses: actions/cache@v4
           with:
             path: |
               ~/.cache/pip
               ~/.platformio/.cache
             key: ${{ runner.os }}-pio
-        - uses: actions/setup-python@v4
+        - uses: actions/setup-python@v5
           with:
             python-version: '3.11'
         - name: Install PlatformIO Core
@@ -94,14 +94,14 @@ and boards from command line interface:
             example: [path/to/test/file.c, examples/file.ino, path/to/test/directory]
 
         steps:
-          - uses: actions/checkout@v3
-          - uses: actions/cache@v3
+          - uses: actions/checkout@v4
+          - uses: actions/cache@v4
             with:
               path: |
                 ~/.cache/pip
                 ~/.platformio/.cache
               key: ${{ runner.os }}-pio
-          - uses: actions/setup-python@v4
+          - uses: actions/setup-python@v5
             with:
               python-version: '3.11'
           - name: Install PlatformIO Core
@@ -148,14 +148,14 @@ Integration for USB_Host_Shield_2.0 project. The ``workflow.yml`` configuration 
           example: [examples/Bluetooth/PS3SPP/PS3SPP.ino, examples/pl2303/pl2303_gps/pl2303_gps.ino]
 
       steps:
-        - uses: actions/checkout@v3
-        - uses: actions/cache@v3
+        - uses: actions/checkout@v4
+        - uses: actions/cache@v4
           with:
             path: |
               ~/.cache/pip
               ~/.platformio/.cache
             key: ${{ runner.os }}-pio
-        - uses: actions/setup-python@v4
+        - uses: actions/setup-python@v5
           with:
             python-version: '3.11'
         - name: Install PlatformIO Core

@@ -21,7 +21,7 @@ upload command with arguments and options or mix with :ref:`projectconf_upload_f
 
 In order to use ``upload_command``, ``upload_protocol = custom`` must be specified.
 
-Default upload commands are declared in ``build/main.py`` script file of
+Default upload commands are declared in ``builder/main.py`` script file of
 :ref:`platforms`. See a list with open source
 :ref:`platforms` => https://github.com/topics/platformio-platform
 

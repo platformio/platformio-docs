@@ -9,83 +9,82 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_briki_mbcwb_samd21:
+.. _board_ststm32_giga_r1_m4:
 
-Briki MBC-WB - Samd21
-=====================
+Arduino Giga R1 (M4 core)
+=========================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD21G18A
+    - STM32H747XIH6
   * - **Frequency**
-    - 48MHz
+    - 480MHz
   * - **Flash**
-    - 256KB
+    - 1MB
   * - **RAM**
-    - 32KB
+    - 287.35KB
   * - **Vendor**
-    - `meteca <http://briki.org?utm_source=platformio.org&utm_medium=docs>`__
+    - `Arduino <https://docs.arduino.cc/hardware/giga-r1-wifi?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``briki_mbcwb_samd21`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``giga_r1_m4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:briki_mbcwb_samd21]
-  platform = atmelsam
-  board = briki_mbcwb_samd21
+  [env:giga_r1_m4]
+  platform = ststm32
+  board = giga_r1_m4
 
-You can override default Briki MBC-WB - Samd21 settings per build environment using
+You can override default Arduino Giga R1 (M4 core) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `briki_mbcwb_samd21.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/briki_mbcwb_samd21.json>`_. For example,
+board manifest `giga_r1_m4.json <https://github.com/platformio/platform-ststm32/blob/master/boards/giga_r1_m4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:briki_mbcwb_samd21]
-  platform = atmelsam
-  board = briki_mbcwb_samd21
+  [env:giga_r1_m4]
+  platform = ststm32
+  board = giga_r1_m4
 
   ; change microcontroller
-  board_build.mcu = samd21g18a
+  board_build.mcu = stm32h747xih6
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 480000000L
 
 
 Uploading
 ---------
-Briki MBC-WB - Samd21 supports the following uploading protocols:
+Arduino Giga R1 (M4 core) supports the following uploading protocols:
 
-* ``atmel-ice``
-* ``blackmagic``
+* ``cmsis-dap``
+* ``dfu``
 * ``jlink``
-* ``mbctool``
-* ``sam-ba``
-* ``stk500v2``
+* ``mbed``
+* ``stlink``
 
-Default protocol is ``mbctool``
+Default protocol is ``dfu``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:briki_mbcwb_samd21]
-  platform = atmelsam
-  board = briki_mbcwb_samd21
+  [env:giga_r1_m4]
+  platform = ststm32
+  board = giga_r1_m4
 
-  upload_protocol = mbctool
+  upload_protocol = dfu
 
 Debugging
 ---------
@@ -100,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Briki MBC-WB - Samd21 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Arduino Giga R1 (M4 core) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -108,13 +107,13 @@ Briki MBC-WB - Samd21 does not have on-board debug probe and **IS NOT READY** fo
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_atmel-ice`
+  * - :ref:`debugging_tool_cmsis-dap`
     - 
     - Yes
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_jlink`
+    - 
+    - 
+  * - :ref:`debugging_tool_stlink`
     - 
     - 
 

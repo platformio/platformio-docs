@@ -17,7 +17,7 @@ CHIPS Alliance
 :Registry:
   `https://registry.platformio.org/platforms/platformio/chipsalliance <https://registry.platformio.org/platforms/platformio/chipsalliance>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``chipsalliance``
+  :ref:`projectconf_env_platform` = ``platformio/chipsalliance``
 
 The CHIPS Alliance develops high-quality, open source hardware designs relevant to silicon devices and FPGAs.
 

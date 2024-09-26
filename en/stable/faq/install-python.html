@@ -18,7 +18,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=179e3750"></script>
+        <script src="../_static/documentation_options.js?v=2066bd3a"></script>
         <script src="../_static/doctools.js?v=9a2dae69"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -69,7 +69,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/index.html">platformio.ini</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projectconf/build_configurations.html">Build Configurations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment Variables</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Instruments</span></p>
 <ul>
@@ -142,18 +142,24 @@
   <section id="install-python-interpreter">
 <span id="faq-install-python"></span><h1>Install Python Interpreter<a class="headerlink" href="#install-python-interpreter" title="Link to this heading"></a></h1>
 <p><a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> is written in <a class="reference external" href="https://www.python.org/downloads/">Python</a> that
-is installed by default on the all popular OS except Windows.</p>
+is installed by default on all the popular OSs except Windows.</p>
 <p>Please navigate to official website and <a class="reference external" href="https://www.python.org/downloads/">Download the latest Python</a>
 and install it. Please <strong>READ NOTES BELOW</strong>.</p>
 <dl class="field-list">
-<dt class="field-odd">macOS<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Please read the “Important Information” displayed during installation for information
+<dt class="field-odd">Linux<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Most linux distributions will include a Python installation already. You may need to ensure that the Python Virtual Environment is installed.</p>
+<p>Debian/Ubuntu derivatives have this package in Apt as <code class="docutils literal notranslate"><span class="pre">python3-venv</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">python3-venv</span></code> should be all that is required.</p>
+<p>For more details, please check the <a class="reference external" href="https://github.com/platformio/platformio-core-installer/issues/85">platformio-core-installer/issues/85</a>.</p>
+</dd>
+<dt class="field-even">macOS<span class="colon">:</span></dt>
+<dd class="field-even"><p>Please read the “Important Information” displayed during installation for information
 about SSL/TLS certificate validation and the running the <strong>“Install Certificates.command”</strong>.</p>
 <p>If you do not install SSL/TLS certificates, PlatformIO will not be able to download
 dependent packages, libraries, and toolchains.</p>
 </dd>
-<dt class="field-even">Windows<span class="colon">:</span></dt>
-<dd class="field-even"><p>Please select <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Python</span> <span class="pre">to</span> <span class="pre">Path</span></code> (see below), otherwise, <code class="docutils literal notranslate"><span class="pre">python</span></code> command will
+<dt class="field-odd">Windows<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Please select <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Python</span> <span class="pre">to</span> <span class="pre">Path</span></code> (see below), otherwise, <code class="docutils literal notranslate"><span class="pre">python</span></code> command will
 not be available.</p>
 <img alt="../_images/python-installer-add-path.png" src="../_images/python-installer-add-path.png" />
 </dd>
@@ -286,7 +292,7 @@ not be available.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.15 (stable)
+    v6.1.16 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

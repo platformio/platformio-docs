@@ -17,7 +17,7 @@ Espressif 8266
 :Registry:
   `https://registry.platformio.org/platforms/platformio/espressif8266 <https://registry.platformio.org/platforms/platformio/espressif8266>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``espressif8266``
+  :ref:`projectconf_env_platform` = ``platformio/espressif8266``
 
 ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.
 

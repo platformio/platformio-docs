@@ -17,7 +17,7 @@ ST STM32
 :Registry:
   `https://registry.platformio.org/platforms/platformio/ststm32 <https://registry.platformio.org/platforms/platformio/ststm32>`__
 :Configuration:
-  :ref:`projectconf_env_platform` = ``ststm32``
+  :ref:`projectconf_env_platform` = ``platformio/ststm32``
 
 The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
@@ -457,7 +457,7 @@ You do not need to use/buy external debug probe.
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l010rb`
       - STM32L010RBT6
       - 32MHz
@@ -706,6 +706,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - STM32H747XIH6
       - 480MHz
@@ -1029,7 +1039,7 @@ Please click on board name for the further details.
     * - :ref:`board_ststm32_disco_g031j6`
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - STM32F401CCU6
@@ -1623,7 +1633,7 @@ Packages
       - CMSIS component for the STMicroelectronics STM32L5 series
 
     * - `framework-libopencm3 <https://registry.platformio.org/tools/platformio/framework-libopencm3>`__
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - `framework-mbed <https://registry.platformio.org/tools/platformio/framework-mbed>`__
       - Arm Mbed OS is a platform operating system designed for the internet of things
@@ -1735,7 +1745,7 @@ Frameworks
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
     * - :ref:`framework_libopencm3`
-      - Open source ARM Cortex-M microcontroller library
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
@@ -1901,6 +1911,18 @@ Arduino
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_ststm32_giga_r1_m4`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 1MB
+      - 287.35KB
+    * - :ref:`board_ststm32_giga_r1_m7`
+      - External
+      - STM32H747XIH6
+      - 480MHz
+      - 768KB
+      - 511.35KB
     * - :ref:`board_ststm32_nicla_vision`
       - External
       - STM32H747XIH6
@@ -3516,7 +3538,7 @@ ST
       - STM32H753ZIT6
       - 400MHz
       - 2MB
-      - 864KB
+      - 512KB
     * - :ref:`board_ststm32_nucleo_l010rb`
       - On-board
       - STM32L010RBT6
@@ -3659,7 +3681,7 @@ ST
       - External
       - STM32G031J6
       - 64MHz
-      - 128KB
+      - 32KB
       - 8KB
     * - :ref:`board_ststm32_disco_g071rb`
       - On-board
