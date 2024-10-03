@@ -40,6 +40,7 @@ PlatformIO:
 If you need to build a project in ``debug`` configuration, please use one of
 these options:
 
+* In :ref:`ide_vscode`: Use build option **Pre-Debug** or **Pre-Debug All** in the ``Project Tasks`` menu.
 * Add :ref:`projectconf_build_type` with ``debug`` value to :ref:`projectconf`
 * Use target ``debug`` for the :option:`pio run --target` command.
 
