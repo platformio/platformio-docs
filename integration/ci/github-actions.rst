@@ -36,7 +36,7 @@ Integration
 -----------
 
 .. note::
-    Please make sure to read GitHub Actions `Getting Started <https://help.github.com/en/actions/automating-your-workflow-with-github-actions/getting-started-with-github-actions>`_
+    Please make sure to read GitHub Actions `Quickstart <https://docs.github.com/en/actions/writing-workflows/quickstart>`_
     guide first.
 
 There are two possible ways of running PlatformIO in CI services:
