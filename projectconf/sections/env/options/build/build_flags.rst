@@ -181,7 +181,7 @@ for you:
 .. code:: ini
 
   [env:myenv]
-  extra_scripts = myscript.py
+  extra_scripts = pre:myscript.py
 
 **myscript.py**
 
