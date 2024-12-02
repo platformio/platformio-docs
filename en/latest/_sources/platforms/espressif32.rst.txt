@@ -928,6 +928,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_weactstudio_esp32c3coreboard`
+      - ESP32C3
+      - 160MHz
+      - 384KB
+      - 400KB
     * - :ref:`board_espressif32_wemosbat`
       - ESP32
       - 240MHz
@@ -3597,6 +3602,25 @@ WEMOS
       - 240MHz
       - 4MB
       - 320KB
+
+WeAct Studio
+~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_weactstudio_esp32c3coreboard`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 384KB
+      - 400KB
 
 Widora
 ~~~~~~

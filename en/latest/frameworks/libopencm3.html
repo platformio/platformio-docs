@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open-source ARM Cortex-M microcontroller library &mdash; PlatformIO latest documentation</title>
+  <title>LibOpenCM3 &mdash; PlatformIO latest documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -85,7 +85,7 @@
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fsp.html">Renesas Flexible Software Package</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Open-source ARM Cortex-M microcontroller library</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">LibOpenCM3</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#platforms">Platforms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a><ul>
@@ -121,6 +121,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#prntrboard">PrntrBoard</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rak">RAK</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rumba">RUMBA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rymcu">RYMCU</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#remram">RemRam</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#robotdyn">RobotDyn</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rushup">RushUp</a></li>
@@ -199,7 +200,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Frameworks</a></li>
-      <li class="breadcrumb-item active">Open-source ARM Cortex-M microcontroller library</li>
+      <li class="breadcrumb-item active">LibOpenCM3</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/platformio/platformio-docs/blob/develop/frameworks/libopencm3.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -209,8 +210,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="open-source-arm-cortex-m-microcontroller-library">
-<span id="framework-libopencm3"></span><h1>Open-source ARM Cortex-M microcontroller library<a class="headerlink" href="#open-source-arm-cortex-m-microcontroller-library" title="Link to this heading"></a></h1>
+  <section id="libopencm3">
+<span id="framework-libopencm3"></span><h1>LibOpenCM3<a class="headerlink" href="#libopencm3" title="Link to this heading"></a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Configuration<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../projectconf/sections/env/options/platform/framework.html#projectconf-env-framework"><span class="std std-ref">framework</span></a> = <code class="docutils literal notranslate"><span class="pre">libopencm3</span></code></p>
@@ -247,8 +248,8 @@
 <section id="examples">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Open-source ARM Cortex-M microcontroller library for ST STM32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Open-source ARM Cortex-M microcontroller library for TI TIVA</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">LibOpenCM3 for ST STM32</a></p></li>
+<li><p><a class="reference external" href="https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">LibOpenCM3 for TI TIVA</a></p></li>
 </ul>
 </section>
 <section id="debugging">
@@ -659,7 +660,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32F439ZIT6</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>192KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -1316,6 +1317,20 @@ Please click on board name for the further details.</p>
 <td><p>32MHz</p></td>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_nebulapi_f103ve.html#board-ststm32-rymcu-nebulapi-f103ve"><span class="std std-ref">RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103VET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_f407ve.html#board-ststm32-rymcu-f407ve"><span class="std std-ref">RYMCU STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>502.23KB</p></td>
+<td><p>128KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -3436,6 +3451,39 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
+<section id="rymcu">
+<h3>RYMCU<a class="headerlink" href="#rymcu" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_nebulapi_f103ve.html#board-ststm32-rymcu-nebulapi-f103ve"><span class="std std-ref">RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103VET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_f407ve.html#board-ststm32-rymcu-f407ve"><span class="std std-ref">RYMCU STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>502.23KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="remram">
 <h3>RemRam<a class="headerlink" href="#remram" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -3923,7 +3971,7 @@ Please click on board name for the further details.</p>
 <td><p>STM32F439ZIT6</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>192KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>

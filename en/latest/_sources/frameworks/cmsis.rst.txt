@@ -111,6 +111,12 @@ You do not need to use/buy external debug probe.
       - 168MHz
       - 512KB
       - 128KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_ststm32_armstrap_eagle1024`
       - :ref:`platform_ststm32`
       - STM32F417VGT6
@@ -410,7 +416,7 @@ You do not need to use/buy external debug probe.
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -736,12 +742,6 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_renesas-ra_uno_r4_wifi`
-      - :ref:`platform_renesas-ra`
-      - RA4M1
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_ststm32_black_f407ve`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1030,6 +1030,18 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_ststm32_disco_g031j6`
       - :ref:`platform_ststm32`
       - STM32G031J6
@@ -1779,7 +1791,7 @@ Arduino
       - 32KB
     * - :ref:`board_renesas-ra_uno_r4_wifi`
       - :ref:`platform_renesas-ra`
-      - External
+      - On-board
       - RA4M1
       - 48MHz
       - 256KB
@@ -2947,6 +2959,34 @@ RUMBA
       - 512KB
       - 128KB
 
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+
 RemRam
 ~~~~~~
 
@@ -3393,7 +3433,7 @@ ST
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board

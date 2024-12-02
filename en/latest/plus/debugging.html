@@ -249,6 +249,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#quirkbot">Quirkbot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rak">RAK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rumba">RUMBA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rymcu">RYMCU</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#raytac">Raytac</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#redbearlab">RedBearLab</a></li>
@@ -635,7 +636,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/fsp.html#framework-fsp"><span class="std std-ref">Renesas Flexible Software Package</span></a></p></td>
 <td><p>The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">Open-source ARM Cortex-M microcontroller library</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../frameworks/libopencm3.html#framework-libopencm3"><span class="std std-ref">LibOpenCM3</span></a></p></td>
 <td><p>The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../frameworks/mbed.html#framework-mbed"><span class="std std-ref">Mbed</span></a></p></td>
@@ -2339,7 +2340,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/renesas-ra/uno_r4_wifi.html#board-renesas-ra-uno-r4-wifi"><span class="std std-ref">Arduino Uno R4 WiFi</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/renesas-ra.html#platform-renesas-ra"><span class="std std-ref">Renesas RA</span></a></p></td>
-<td><p>External</p></td>
+<td><p>On-board</p></td>
 <td><p>RA4M1</p></td>
 <td><p>48MHz</p></td>
 <td><p>256KB</p></td>
@@ -6787,6 +6788,39 @@ system. Please check “Drivers” section for debugging tool below.</p>
 </tbody>
 </table>
 </section>
+<section id="rymcu">
+<h3>RYMCU<a class="headerlink" href="#rymcu" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_nebulapi_f103ve.html#board-ststm32-rymcu-nebulapi-f103ve"><span class="std std-ref">RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103VET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_f407ve.html#board-ststm32-rymcu-f407ve"><span class="std std-ref">RYMCU STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>502.23KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="raspberry-pi">
 <h3>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -7709,7 +7743,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>STM32F439ZIT6</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>192KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -10185,7 +10219,15 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>512KB</p></td>
 <td><p>96KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/weact_mini_h743vitx.html#board-ststm32-weact-mini-h743vitx"><span class="std std-ref">WeAct Studio MiniSTM32H743VITX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/weactstudio_esp32c3coreboard.html#board-espressif32-weactstudio-esp32c3coreboard"><span class="std std-ref">WeAct Studio ESP32C3CoreBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>384KB</p></td>
+<td><p>400KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/weact_mini_h743vitx.html#board-ststm32-weact-mini-h743vitx"><span class="std std-ref">WeAct Studio MiniSTM32H743VITX</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H743VIT6</p></td>
@@ -10193,7 +10235,7 @@ system. Please check “Drivers” section for debugging tool below.</p>
 <td><p>2MB</p></td>
 <td><p>512KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/weact_mini_h750vbtx.html#board-ststm32-weact-mini-h750vbtx"><span class="std std-ref">WeAct Studio MiniSTM32H750VBTX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/weact_mini_h750vbtx.html#board-ststm32-weact-mini-h750vbtx"><span class="std std-ref">WeAct Studio MiniSTM32H750VBTX</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>STM32H750VBT6</p></td>

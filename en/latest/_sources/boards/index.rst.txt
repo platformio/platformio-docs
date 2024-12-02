@@ -671,6 +671,7 @@ Espressif 32
     espressif32/lolin_s3_pro
     espressif32/lolin32
     espressif32/lolin32_lite
+    espressif32/weactstudio_esp32c3coreboard
     espressif32/wemosbat
     espressif32/widora-air
     espressif32/wt32-eth01
@@ -1408,6 +1409,8 @@ ST STM32
     ststm32/rak811_tracker
     ststm32/rak811_tracker_32
     ststm32/rhf76_052
+    ststm32/rymcu_nebulapi_f103ve
+    ststm32/rymcu_f407ve
     ststm32/cloud_jam
     ststm32/cloud_jam_l4
     ststm32/disco_f334c8

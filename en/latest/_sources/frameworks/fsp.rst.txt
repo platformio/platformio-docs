@@ -61,6 +61,30 @@ You can switch between debugging :ref:`debugging_tools` using
     Please click on compatible debug tool below for the further instructions.
 
 
+On-Board Debug Tools
+^^^^^^^^^^^^^^^^^^^^
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging!
+You do not need to use/buy external debug probe.
+
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
+
+
 External Debug Tools
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -85,12 +109,6 @@ Please click on board name for the further details.
       - 2MB
       - 511.35KB
     * - :ref:`board_renesas-ra_uno_r4_minima`
-      - :ref:`platform_renesas-ra`
-      - RA4M1
-      - 48MHz
-      - 256KB
-      - 32KB
-    * - :ref:`board_renesas-ra_uno_r4_wifi`
       - :ref:`platform_renesas-ra`
       - RA4M1
       - 48MHz
@@ -134,7 +152,7 @@ Arduino
       - 32KB
     * - :ref:`board_renesas-ra_uno_r4_wifi`
       - :ref:`platform_renesas-ra`
-      - External
+      - On-board
       - RA4M1
       - 48MHz
       - 256KB

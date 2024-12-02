@@ -1132,7 +1132,7 @@ Boards
       - 32KB
     * - :ref:`board_renesas-ra_uno_r4_wifi`
       - :ref:`platform_renesas-ra`
-      - External
+      - On-board
       - RA4M1
       - 48MHz
       - 256KB
@@ -2740,6 +2740,20 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_raspberrypi_pico`
       - :ref:`platform_raspberrypi`
       - External
@@ -3145,7 +3159,7 @@ Boards
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board
@@ -4686,6 +4700,13 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_espressif32_weactstudio_esp32c3coreboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 384KB
+      - 400KB
     * - :ref:`board_ststm32_weact_mini_h743vitx`
       - :ref:`platform_ststm32`
       - External
