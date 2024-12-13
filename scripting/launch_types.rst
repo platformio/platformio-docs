@@ -58,3 +58,20 @@ If there is no prefix specified, the ``post:`` will be used automatically.
     pre:pre_extra_script.py
     post:post_extra_script1.py
     post_extra_script2.py
+
+.. note::
+   PlatformIO includes a service stage during runtime where it re-executes extra
+   scripts to gather integration information intended for IDE plugins. If you want
+   your scripts to run exclusively for the "build" target, include the following
+   hook at the beginning of your script:
+
+.. code-block:: python
+
+   Import("env")
+
+   if env.IsIntegrationDump():
+      # stop the current script execution
+      Return()
+
+   # code below runs for the "build" and other targets
+   env.Append(CPPDEFINES=["MACRO_NAME"])
