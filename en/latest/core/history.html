@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://docs.platformio.org/core/history.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=475e7f29"></script>
+      <script src="../_static/documentation_options.js?v=70a6f543"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -182,6 +182,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <li><p>Resolved an issue where the <code class="docutils literal notranslate"><span class="pre">compiledb</span></code> target failed to properly escape compiler executable paths containing spaces (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4998">issue #4998</a>)</p></li>
 <li><p>Resolved an issue with incorrect path resolution when linking static libraries via the <a class="reference external" href="https://docs.platformio.org/en/latest/projectconf/sections/env/options/build/build_flags.html">build_flags</a> option (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5004">issue #5004</a>)</p></li>
 <li><p>Resolved an issue where the <code class="docutils literal notranslate"><span class="pre">--project-dir</span></code> flag did not function correctly with the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_check.html">pio check</a> and <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_debug.html">pio debug</a> commands (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5029">issue #5029</a>)</p></li>
+<li><p>Resolved an issue where the <a class="reference external" href="https://docs.platformio.org/en/latest/librarymanager/ldf.html">LDF</a> occasionally excluded bundled platform libraries from the dependency graph (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4941">pull #4941</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -700,7 +701,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.17b1 (latest)
+    v6.1.17b2 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
