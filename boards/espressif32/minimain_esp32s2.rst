@@ -11,7 +11,7 @@
 
 .. _board_espressif32_minimain_esp32s2:
 
-Deparment of Alchemy MiniMain ESP32-S2
+Department of Alchemy MiniMain ESP32-S2
 ======================================
 
 .. contents::
@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Deparment of Alchemy <https://github.com/DepartmentOfAlchemy/minimain-esp32-s2?utm_source=platformio.org&utm_medium=docs>`__
+    - `Department of Alchemy <https://github.com/DepartmentOfAlchemy/minimain-esp32-s2?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -46,7 +46,7 @@ Please use ``minimain_esp32s2`` ID for :ref:`projectconf_env_board` option in :r
   platform = espressif32
   board = minimain_esp32s2
 
-You can override default Deparment of Alchemy MiniMain ESP32-S2 settings per build environment using
+You can override default Department of Alchemy MiniMain ESP32-S2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `minimain_esp32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/minimain_esp32s2.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `minimain_esp32s2.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-Deparment of Alchemy MiniMain ESP32-S2 supports the following uploading protocols:
+Department of Alchemy MiniMain ESP32-S2 supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
@@ -107,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Deparment of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1

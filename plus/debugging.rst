@@ -2451,7 +2451,7 @@ Delta
       - 512KB
       - 64KB
 
-Deparment of Alchemy
+Department of Alchemy
 ~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::

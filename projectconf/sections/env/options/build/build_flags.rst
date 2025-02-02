@@ -18,7 +18,7 @@ Type: ``String`` | Multiple: ``Yes``
 
 These flags/options affect the preprocessing, compilation, assembly,
 and linking processes for C and C++ code. All compiler and linker
-flags can be used. Despite the name, ``CPPDEFINES`` (C PreProcesor)
+flags can be used. Despite the name, ``CPPDEFINES`` (C PreProcessor)
 rows also apply to the C compiler.
 
 For more detailed information about available compiler flags/options,

@@ -15,7 +15,7 @@
 import os
 import sys
 
-import sphinx_rtd_theme
+import sphinx_rtd_theme  # noqa: F401
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -62,7 +62,7 @@ googleanalytics_id = "G-LQZCKGZE94"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-import platformio
+import platformio  # noqa: E402
 
 # The short X.Y version.
 version = ".".join(map(str, platformio.VERSION[0:2]))

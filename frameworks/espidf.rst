@@ -1835,7 +1835,7 @@ Denky
       - 4MB
       - 320KB
 
-Deparment of Alchemy
+Department of Alchemy
 ~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
