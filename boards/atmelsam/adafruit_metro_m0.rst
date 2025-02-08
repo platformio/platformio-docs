@@ -12,7 +12,6 @@
 .. _board_atmelsam_adafruit_metro_m0:
 
 Adafruit Metro M0 Express
-==========================
 
 .. contents::
 
@@ -107,14 +106,14 @@ Adafruit Metro M0 Express does not have on-board debug probe and **IS NOT READY*
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

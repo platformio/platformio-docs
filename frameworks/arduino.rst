@@ -6685,7 +6685,6 @@ Denky
       - 320KB
 
 Department of Alchemy
-~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1

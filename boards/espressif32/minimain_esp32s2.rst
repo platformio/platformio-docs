@@ -12,7 +12,6 @@
 .. _board_espressif32_minimain_esp32s2:
 
 Department of Alchemy MiniMain ESP32-S2
-======================================
 
 .. contents::
 
@@ -116,38 +115,38 @@ Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and *
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
-    - 
+    -
     - Yes
   * - ``esp-bridge``
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_esp-prog`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_iot-bus-jtag`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_minimodule`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_tumpa`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------
