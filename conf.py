@@ -120,7 +120,6 @@ html_theme = "sphinx_rtd_theme"
 # documentation.
 html_theme_options = {
     "logo_only": True,
-    "display_version": False,
 }
 
 # The name for this set of Sphinx documents.  If None, it defaults to

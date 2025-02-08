@@ -153,12 +153,12 @@ options can be used for dumping available test suites.
 .. option::
     --json-output
 
-Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`_ format.
+Return the output in `JSON <http://en.wikipedia.org/wiki/JSON>`__ format.
 
 .. option::
     --json-output-path
 
-Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`_
+Generate a unit testing report in the `JSON <https://en.wikipedia.org/wiki/JSON>`__
 format and save it to the specified path. If the only folder path is provided,
 the file name will be generated automatically.
 Please note that the parent folder must exist before.
