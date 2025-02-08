@@ -44,5 +44,5 @@ Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:
     .. code-block:: javascript
 
         "scripts": {
-            "preuninstall": ["maintainance.sh", "--action", "uninstall"]
+            "preuninstall": ["maintenance.sh", "--action", "uninstall"]
         }

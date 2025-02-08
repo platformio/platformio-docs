@@ -185,9 +185,9 @@ Control verbosity level.
   * - ``-v``
     - Show a raw output from a testing framework
   * - ``-vv``
-    - Base verbosity for buidling and uploading stages
+    - Base verbosity for building and uploading stages
   * - ``-vvv``
-    - Extra verbosity for buidling and uploading stages
+    - Extra verbosity for building and uploading stages
 
 Examples
 --------

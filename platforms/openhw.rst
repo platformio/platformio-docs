@@ -77,7 +77,7 @@ You do not need to use/buy external debug probe.
       - Flash
       - RAM
     * - :ref:`board_openhw_nexys_a7`
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB
@@ -135,7 +135,7 @@ Packages
       - Fork of Open On-Chip Debugger that has RISC-V support for PULP platform
 
     * - `tool-ovpsim-corev <https://registry.platformio.org/tools/platformio/tool-ovpsim-corev>`__
-      - Imperas RISC-V OVPsim CORE-V simulator provides a reference of the OpenHW Group CORE-V processor cores. The riscvOVPsim familiy of simulators implement the full and complete functionality of the RISC-V Foundation's public User and Privilege specifications.
+      - Imperas RISC-V OVPsim CORE-V simulator provides a reference of the OpenHW Group CORE-V processor cores. The riscvOVPsim family of simulators implement the full and complete functionality of the RISC-V Foundation's public User and Privilege specifications.
 
     * - `tool-renode <https://registry.platformio.org/tools/platformio/tool-renode>`__
       - Renode is a development framework which accelerates IoT and embedded systems development by letting you simulate physical hardware systems
@@ -193,7 +193,7 @@ Digilent
       - RAM
     * - :ref:`board_openhw_nexys_a7`
       - On-board
-      - 
+      -
       - 320MHz
       - 16MB
       - 1.16MB

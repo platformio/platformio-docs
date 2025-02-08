@@ -75,7 +75,7 @@ Please take a look at the example below. The ``dep_1`` and ``dep_2`` dependencie
 are common to the ``release`` and ``debug`` working environments, whereas
 the ``dep_3`` is a specific only for the ``debug`` working environment.
 The ``[env:debug]`` section overrides common ``lib_deps`` option, and the
-``${env.lib_deps}`` (:ref:`projectconf_interpolation` technic) is used to merge
+``${env.lib_deps}`` (:ref:`projectconf_interpolation` technique) is used to merge
 the common and custom dependencies.
 
 .. code-block:: ini
