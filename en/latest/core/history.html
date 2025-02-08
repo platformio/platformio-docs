@@ -16,7 +16,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Release Notes &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
@@ -177,6 +177,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <section id="id1">
 <h3>6.1.17 (2024-??-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
+<li><p>Introduced the <a class="reference external" href="https://docs.platformio.org/en/latest/envvars.html#envvar-PLATFORMIO_RUN_JOBS">PLATFORMIO_RUN_JOBS</a> environment variable, allowing manual override of the number of parallel build jobs (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5077">issue #5077</a>)</p></li>
 <li><p>Added support for <code class="docutils literal notranslate"><span class="pre">tar.xz</span></code> tarball dependencies (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/4974">pull #4974</a>)</p></li>
 <li><p>Ensured that dependencies of private libraries are no longer unnecessarily re-installed, optimizing dependency management and reducing redundant operations (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4987">issue #4987</a>)</p></li>
 <li><p>Resolved an issue where the <code class="docutils literal notranslate"><span class="pre">compiledb</span></code> target failed to properly escape compiler executable paths containing spaces (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/4998">issue #4998</a>)</p></li>

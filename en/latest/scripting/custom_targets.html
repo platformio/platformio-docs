@@ -16,7 +16,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Targets &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
@@ -284,7 +284,7 @@ will be run.</p>
 
 <span class="n">host</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_ping_host&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">mytarget_callback</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">mytarget_callback</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello PlatformIO!&quot;</span><span class="p">)</span>
     <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;ping &quot;</span> <span class="o">+</span> <span class="n">host</span><span class="p">)</span>
 

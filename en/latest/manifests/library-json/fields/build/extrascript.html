@@ -16,7 +16,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>extraScript &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
 
@@ -225,8 +225,8 @@ exclude other source files from a build process.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">library.json</span></code></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">{</span>
-<span class="w">    </span><span class="na">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;SomeLib&quot;,</span>
-<span class="w">    </span><span class="na">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;0.0.0&quot;,</span>
+<span class="w">    </span><span class="na">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;SomeLib&quot;</span><span class="na">,</span>
+<span class="w">    </span><span class="na">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;0.0.0&quot;</span><span class="na">,</span>
 <span class="w">    </span><span class="na">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">{</span>
 <span class="w">        </span><span class="na">&quot;extraScript&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;extra_script.py&quot;</span>
 <span class="w">    </span><span class="na">}</span>
@@ -235,7 +235,7 @@ exclude other source files from a build process.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code></p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">os.path</span><span class="w"> </span><span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
 
 <span class="c1">#</span>
 <span class="c1"># Private flags (only for the current &quot;SomeLib&quot; source files)</span>
@@ -262,13 +262,13 @@ exclude other source files from a build process.</p>
 <span class="c1"># remove specified flags</span>
 <span class="n">projenv</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">&quot;-fno-rtti&quot;</span><span class="p">)</span>
 
-<span class="c1"># Pass flags to the Global environemnt (project `src` files, frameworks)</span>
+<span class="c1"># Pass flags to the Global environment (project `src` files, frameworks)</span>
 <span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
 <span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_GLOBAL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
 
-<span class="c1"># Attach post action to the global environemnt</span>
+<span class="c1"># Attach post action to the global environment</span>
 
-<span class="k">def</span> <span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
     <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>

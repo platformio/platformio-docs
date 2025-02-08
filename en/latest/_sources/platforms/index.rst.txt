@@ -29,7 +29,7 @@ development platform, PlatformIO defines:
 - The **PlatformIO Build System** build scripts for the supported frameworks
   and SDKs
 - Pre-configured presets for embedded circuit boards
-- Pre-compiled toolchains and related tools for the architechture(s)
+- Pre-compiled toolchains and related tools for the architecture(s)
 
 Each project must specify the platform name using the
 :ref:`projectconf_env_platform` option in :ref:`projectconf`. A

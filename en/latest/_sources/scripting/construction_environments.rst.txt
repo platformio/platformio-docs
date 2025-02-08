@@ -42,9 +42,9 @@ to process a project:
 
    If you use :ref:`library_json` and :ref:`library_json_buid_extra_script`,
    the ``Import("env")`` refers to the library's isolated
-   environment from which a script was called (not to the global environemnt).
+   environment from which a script was called (not to the global environment).
    Please use ``env = DefaultEnvironment()`` instead to access the global
-   environemnt.
+   environment.
 
 --------
 

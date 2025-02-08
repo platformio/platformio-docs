@@ -16,7 +16,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pre &amp; Post Actions &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
@@ -172,7 +172,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current CLI targets&quot;</span><span class="p">,</span> <span class="n">COMMAND_LINE_TARGETS</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Build targets&quot;</span><span class="p">,</span> <span class="n">BUILD_TARGETS</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
     <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
@@ -185,7 +185,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <span class="c1"># Upload actions</span>
 <span class="c1">#</span>
 
-<span class="k">def</span> <span class="nf">before_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">before_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before_upload&quot;</span><span class="p">)</span>
     <span class="c1"># do some actions</span>
 
@@ -193,7 +193,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
     <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;node --version&quot;</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">after_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">after_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;after_upload&quot;</span><span class="p">)</span>
     <span class="c1"># do some actions</span>
 

@@ -16,7 +16,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Unity Library &mdash; PlatformIO latest documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=266695fe" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
 
@@ -214,15 +214,15 @@ package.</p>
 <p><code class="docutils literal notranslate"><span class="pre">test/test_custom_runner.py</span></code></p>
 <p><a class="reference internal" href="../runner.html#unit-testing-frameworks-custom-runner"><span class="std std-ref">Custom Test Runner</span></a> based on
 <a class="reference external" href="https://github.com/platformio/platformio-core/blob/develop/platformio/test/runners/unity.py">UnityTestRunner</a>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformio.public</span> <span class="kn">import</span> <span class="n">UnityTestRunner</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">platformio.public</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnityTestRunner</span>
 
-<span class="k">class</span> <span class="nc">CustomTestRunner</span><span class="p">(</span><span class="n">UnityTestRunner</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">CustomTestRunner</span><span class="p">(</span><span class="n">UnityTestRunner</span><span class="p">):</span>
 
     <span class="c1"># Ignore &quot;throwtheswitch/Unity&quot; package</span>
     <span class="n">EXTRA_LIB_DEPS</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="c1"># Do not add default Unity to the build process</span>
-    <span class="k">def</span> <span class="nf">configure_build_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">configure_build_env</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
         <span class="k">pass</span>
 </pre></div>
 </div>

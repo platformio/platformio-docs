@@ -11,8 +11,8 @@
 
 .. _board_atmelsam_adafruit_metro_m0:
 
-Adafruit Metro M0 Expresss
-==========================
+Adafruit Metro M0 Express
+=========================
 
 .. contents::
 
@@ -46,7 +46,7 @@ Please use ``adafruit_metro_m0`` ID for :ref:`projectconf_env_board` option in :
   platform = atmelsam
   board = adafruit_metro_m0
 
-You can override default Adafruit Metro M0 Expresss settings per build environment using
+You can override default Adafruit Metro M0 Express settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `adafruit_metro_m0.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_metro_m0.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
@@ -66,7 +66,7 @@ board manifest `adafruit_metro_m0.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Metro M0 Expresss supports the following uploading protocols:
+Adafruit Metro M0 Express supports the following uploading protocols:
 
 * ``atmel-ice``
 * ``blackmagic``
@@ -98,7 +98,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Metro M0 Expresss does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Adafruit Metro M0 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -107,14 +107,14 @@ Adafruit Metro M0 Expresss does not have on-board debug probe and **IS NOT READY
     - On-board
     - Default
   * - :ref:`debugging_tool_atmel-ice`
-    - 
+    -
     - Yes
   * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
+    -
+    -
   * - :ref:`debugging_tool_jlink`
-    - 
-    - 
+    -
+    -
 
 Frameworks
 ----------

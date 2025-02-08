@@ -42,7 +42,7 @@ Example of using a `Espressif 32 development platform <https://registry.platform
     [env:latest_version]
     ; not recommended as it does not ensure that
     ; - builds are repeatable
-    ; - all developers who checkout the project wil build against the same platform version
+    ; - all developers who checkout the project will build against the same platform version
     platform = platformio/espressif32
 
     [env:development_verion_by_git]

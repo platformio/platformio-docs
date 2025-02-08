@@ -143,7 +143,7 @@ guarantees the full project reproducibility on any supported host machine for de
 
 The new :ref:`cmd_pkg` operates in accordance with the active (working) project.
 The :ref:`cmd_pkg_install` command will install all required project dependencies.
-The :ref:`cmd_pkg_list` commmand allows listing not only dependent libraries
+The :ref:`cmd_pkg_list` command allows listing not only dependent libraries
 but also development platforms and their packages.
 
 The notable addition is the :ref:`cmd_pkg_outdated` command. It allows you to

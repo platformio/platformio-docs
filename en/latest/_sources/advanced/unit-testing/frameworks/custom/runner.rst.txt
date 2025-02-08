@@ -51,7 +51,7 @@ let's override a "testing" stage for the :ref:`unit_testing_frameworks_unity`:
             # 1. Gather test results from Serial, HTTP, Socket, or other sources
             # 2. Report test results (add cases)
 
-            # Exmaple: Report succeed result with duration (optional)
+            # Example: Report succeed result with duration (optional)
             self.test_suite.add_case(
                 TestCase(name="test_connectivity", status=TestStatus.PASSED, duration=1.34)
             )
