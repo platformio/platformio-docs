@@ -18,7 +18,7 @@ Type: ``String`` | Multiple: ``Yes``
 
 These flags/options affect the preprocessing, compilation, assembly,
 and linking processes for C and C++ code. All compiler and linker
-flags can be used. Despite the name, ``CPPDEFINES`` (C PreProcesor)
+flags can be used. Despite the name, ``CPPDEFINES`` (C PreProcessor)
 rows also apply to the C compiler.
 
 For more detailed information about available compiler flags/options,
@@ -53,7 +53,7 @@ Scopes (SCons Variables)
         with a ``-D`` option.
     * - ``-Wp,option``
       - CPPFLAGS
-      - Bypass the compiler driver and pass *option* directly  through to the
+      - Bypass the compiler driver and pass *option* directly through to the
         preprocessor
     * - ``-Wall``
       - CCFLAGS
