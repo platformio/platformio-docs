@@ -1,28 +1,35 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LQZCKGZE94');
+    </script>
+    
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Olimex ARM-USB-OCD &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=266695fe" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/plus/debug-tools/olimex-arm-usb-ocd.html" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=2066bd3a"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=841e3923"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -179,7 +186,8 @@
              
   <section id="olimex-arm-usb-ocd">
 <span id="debugging-tool-olimex-arm-usb-ocd"></span><h1>Olimex ARM-USB-OCD<a class="headerlink" href="#olimex-arm-usb-ocd" title="Link to this heading"></a></h1>
-<a class="reference external image-reference" href="https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/olimex-arm-usb-ocd.jpg" src="../../_images/olimex-arm-usb-ocd.jpg" /></a>
+<a class="reference external image-reference" href="https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&amp;utm_medium=docs"><img alt="../../_images/olimex-arm-usb-ocd.jpg" src="../../_images/olimex-arm-usb-ocd.jpg" />
+</a>
 <p>3-IN-1 fast USB ARM/ESP32 JTAG, USB-to-RS232 virtual port and power supply
 5-9-12VDC device (supported by OpenOCD ARM debugger software).
 Official reference can be found <a class="reference external" href="https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD/?utm_source=platformio&amp;utm_medium=docs">here</a>.</p>
@@ -794,7 +802,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Deparment of Alchemy MiniMain ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/minimain_esp32s2.html#board-espressif32-minimain-esp32s2"><span class="std std-ref">Department of Alchemy MiniMain ESP32-S2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1002,6 +1010,22 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/freenove_esp32_s3_wroom.html#board-espressif32-freenove-esp32-s3-wroom"><span class="std std-ref">Freenove ESP32-S3 WROOM N8R8 (8MB Flash / 8MB PSRAM)</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/freenove_esp32_wrover.html#board-espressif32-freenove-esp32-wrover"><span class="std std-ref">Freenove ESP32-Wrover</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
@@ -1114,7 +1138,15 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lilygo-t3-s3.html#board-espressif32-lilygo-t3-s3"><span class="std std-ref">LilyGo T3-S3</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1122,7 +1154,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lionbits3.html#board-espressif32-lionbits3"><span class="std std-ref">Lion:Bit S3 STEM Dev Board</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lionbits3.html#board-espressif32-lionbits3"><span class="std std-ref">Lion:Bit S3 STEM Dev Board</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>On-board</p></td>
 <td><p>ESP32S3</p></td>
@@ -1130,7 +1162,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-atoms3.html#board-espressif32-m5stack-atoms3"><span class="std std-ref">M5Stack AtomS3</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1138,7 +1170,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-cores3.html#board-espressif32-m5stack-cores3"><span class="std std-ref">M5Stack CoreS3</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1146,7 +1178,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/m5stack-stamps3.html#board-espressif32-m5stack-stamps3"><span class="std std-ref">M5Stack StampS3</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1154,7 +1186,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/mhetesp32devkit.html#board-espressif32-mhetesp32devkit"><span class="std std-ref">MH ET LIVE ESP32DevKIT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1162,7 +1194,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/mhetesp32minikit.html#board-espressif32-mhetesp32minikit"><span class="std std-ref">MH ET LIVE ESP32MiniKit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1170,7 +1202,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/kb32-ft.html#board-espressif32-kb32-ft"><span class="std std-ref">MakerAsia KB32-FT</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1178,7 +1210,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/motorgo_mini_1.html#board-espressif32-motorgo-mini-1"><span class="std std-ref">MotorGo Mini 1 (ESP32-S3)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/motorgo_mini_1.html#board-espressif32-motorgo-mini-1"><span class="std std-ref">MotorGo Mini 1 (ESP32-S3)</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1186,7 +1218,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/redpill_esp32s3.html#board-espressif32-redpill-esp32s3"><span class="std std-ref">Munich Labs RedPill ESP32-S3</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1194,7 +1226,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/namino_arancio.html#board-espressif32-namino-arancio"><span class="std std-ref">Namino Arancio</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/namino_arancio.html#board-espressif32-namino-arancio"><span class="std std-ref">Namino Arancio</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1202,7 +1234,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/namino_rosso.html#board-espressif32-namino-rosso"><span class="std std-ref">Namino Rosso</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/namino_rosso.html#board-espressif32-namino-rosso"><span class="std std-ref">Namino Rosso</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1210,7 +1242,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/node32s.html#board-espressif32-node32s"><span class="std std-ref">Node32s</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/node32s.html#board-espressif32-node32s"><span class="std std-ref">Node32s</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1218,7 +1250,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/nodemcu-32s.html#board-espressif32-nodemcu-32s"><span class="std std-ref">NodeMCU-32S</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/nodemcu-32s.html#board-espressif32-nodemcu-32s"><span class="std std-ref">NodeMCU-32S</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1226,7 +1258,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-devkitlipo.html#board-espressif32-esp32-devkitlipo"><span class="std std-ref">OLIMEX ESP32-DevKit-LiPo</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-devkitlipo.html#board-espressif32-esp32-devkitlipo"><span class="std std-ref">OLIMEX ESP32-DevKit-LiPo</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1234,7 +1266,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-evb.html#board-espressif32-esp32-evb"><span class="std std-ref">OLIMEX ESP32-EVB</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-evb.html#board-espressif32-esp32-evb"><span class="std std-ref">OLIMEX ESP32-EVB</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1242,7 +1274,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-gateway.html#board-espressif32-esp32-gateway"><span class="std std-ref">OLIMEX ESP32-GATEWAY</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/esp32-gateway.html#board-espressif32-esp32-gateway"><span class="std std-ref">OLIMEX ESP32-GATEWAY</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1250,7 +1282,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lopy.html#board-espressif32-lopy"><span class="std std-ref">Pycom LoPy</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lopy.html#board-espressif32-lopy"><span class="std std-ref">Pycom LoPy</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1258,7 +1290,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/lopy4.html#board-espressif32-lopy4"><span class="std std-ref">Pycom LoPy4</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/lopy4.html#board-espressif32-lopy4"><span class="std std-ref">Pycom LoPy4</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1266,7 +1298,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wipy3.html#board-espressif32-wipy3"><span class="std std-ref">Pycom WiPy3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wipy3.html#board-espressif32-wipy3"><span class="std std-ref">Pycom WiPy3</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1274,13 +1306,37 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/chipsalliance/swervolf_nexys.html#board-chipsalliance-swervolf-nexys"><span class="std std-ref">RVfpga: Digilent Nexys A7</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/chipsalliance.html#platform-chipsalliance"><span class="std std-ref">CHIPS Alliance</span></a></p></td>
 <td><p>On-board</p></td>
 <td></td>
 <td><p>320MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>1.16MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/rymcu-esp32-c3-devkitm-1.html#board-espressif32-rymcu-esp32-c3-devkitm-1"><span class="std std-ref">RYMCU ESP32-C3-DevKitM-1</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/rymcu-esp32-devkitc.html#board-espressif32-rymcu-esp32-devkitc"><span class="std std-ref">RYMCU ESP32-DevKitC</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/rymcu-esp32-s3-devkitc-1.html#board-espressif32-rymcu-esp32-s3-devkitc-1"><span class="std std-ref">RYMCU ESP32-S3-DevKitC-1-N8R2 (8 MB QD, 2 MB PSRAM)</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/sg-o_airMon.html#board-espressif32-sg-o-airmon"><span class="std std-ref">SG-O AirMon</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
@@ -1698,7 +1754,15 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/weactstudio_esp32c3coreboard.html#board-espressif32-weactstudio-esp32c3coreboard"><span class="std std-ref">WeAct Studio ESP32C3CoreBoard</span></a></p></td>
+<td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>384KB</p></td>
+<td><p>400KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wemosbat.html#board-espressif32-wemosbat"><span class="std std-ref">WeMos WiFi and Bluetooth Battery</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1706,7 +1770,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/wt32-eth01.html#board-espressif32-wt32-eth01"><span class="std std-ref">Wireless-Tag WT32-ETH01 Ethernet Module</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/wt32-eth01.html#board-espressif32-wt32-eth01"><span class="std std-ref">Wireless-Tag WT32-ETH01 Ethernet Module</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1714,7 +1778,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/xinabox_cw02.html#board-espressif32-xinabox-cw02"><span class="std std-ref">XinaBox CW02</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/xinabox_cw02.html#board-espressif32-xinabox-cw02"><span class="std std-ref">XinaBox CW02</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1722,7 +1786,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/micros2.html#board-espressif32-micros2"><span class="std std-ref">microS2</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/micros2.html#board-espressif32-micros2"><span class="std std-ref">microS2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1730,7 +1794,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusio.html#board-espressif32-iotbusio"><span class="std std-ref">oddWires IoT-Bus Io</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusio.html#board-espressif32-iotbusio"><span class="std std-ref">oddWires IoT-Bus Io</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1738,7 +1802,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusproteus.html#board-espressif32-iotbusproteus"><span class="std std-ref">oddWires IoT-Bus Proteus</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/iotbusproteus.html#board-espressif32-iotbusproteus"><span class="std std-ref">oddWires IoT-Bus Proteus</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1746,7 +1810,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/sensebox_mcu_esp32s2.html#board-espressif32-sensebox-mcu-esp32s2"><span class="std std-ref">senseBox MCU-S2 ESP32-S2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/sensebox_mcu_esp32s2.html#board-espressif32-sensebox-mcu-esp32s2"><span class="std std-ref">senseBox MCU-S2 ESP32-S2</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S2</p></td>
@@ -1754,7 +1818,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/upesy_wroom.html#board-espressif32-upesy-wroom"><span class="std std-ref">uPesy ESP32 Wroom DevKit</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/upesy_wroom.html#board-espressif32-upesy-wroom"><span class="std std-ref">uPesy ESP32 Wroom DevKit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1762,7 +1826,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/upesy_wrover.html#board-espressif32-upesy-wrover"><span class="std std-ref">uPesy ESP32 Wrover DevKit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/upesy_wrover.html#board-espressif32-upesy-wrover"><span class="std std-ref">uPesy ESP32 Wrover DevKit</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1770,7 +1834,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/unphone7.html#board-espressif32-unphone7"><span class="std std-ref">unPhone 7</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32</p></td>
@@ -1778,7 +1842,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/unphone8.html#board-espressif32-unphone8"><span class="std std-ref">unPhone 8</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1786,7 +1850,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <td><p>7.94MB</p></td>
 <td><p>2.31MB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../boards/espressif32/unphone9.html#board-espressif32-unphone9"><span class="std std-ref">unPhone 9</span></a></p></td>
 <td><p><a class="reference internal" href="../../platforms/espressif32.html#platform-espressif32"><span class="std std-ref">Espressif 32</span></a></p></td>
 <td><p>External</p></td>
 <td><p>ESP32S3</p></td>
@@ -1925,7 +1989,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.16 (stable)
+    v6.1.17 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -1958,18 +2022,7 @@ them before, please check that your rules are up-to-date or repeat steps.</p>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQZCKGZE94', {
-          'anonymize_ip': false,
-      });
-    </script> 
+  </script> 
 
 </body>
 </html>

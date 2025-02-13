@@ -1,28 +1,35 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LQZCKGZE94');
+    </script>
+    
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Build Middlewares &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/scripting/middlewares.html" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=2066bd3a"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=841e3923"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -162,7 +169,7 @@ middlewares in a chain will be ignored automatically.</p>
 
 
 <span class="c1"># --- Add custom macros for the ALL files which name contains &quot;http&quot;</span>
-<span class="k">def</span> <span class="nf">extra_http_configuration</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">extra_http_configuration</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    `node.name` - a name of File System Node</span>
 <span class="sd">    `node.get_path()` - a relative path</span>
@@ -189,7 +196,7 @@ middlewares in a chain will be ignored automatically.</p>
 
 <span class="c1"># --- Replace some file from a build process with another</span>
 
-<span class="k">def</span> <span class="nf">replace_node_with_another</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">replace_node_with_another</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">env</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;path/to/patched/RtosTimer.cpp&quot;</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span>
@@ -200,7 +207,7 @@ middlewares in a chain will be ignored automatically.</p>
 
 <span class="c1"># --- Skip assembly *.S files from build process</span>
 
-<span class="k">def</span> <span class="nf">skip_asm_from_build</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">skip_asm_from_build</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
     <span class="c1"># to ignore file from a build process, just return None</span>
     <span class="k">return</span> <span class="kc">None</span>
 
@@ -335,7 +342,7 @@ middlewares in a chain will be ignored automatically.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.16 (stable)
+    v6.1.17 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -368,18 +375,7 @@ middlewares in a chain will be ignored automatically.</p>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQZCKGZE94', {
-          'anonymize_ip': false,
-      });
-    </script> 
+  </script> 
 
 </body>
 </html>

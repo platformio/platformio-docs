@@ -30,9 +30,9 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 2MB
   * - **RAM**
-    - 256KB
+    - 192KB
   * - **Vendor**
-    - `ST <https://developer.mbed.org/platforms/ST-Nucleo-F439ZI/?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/nucleo-f439zi.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
@@ -127,6 +127,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series

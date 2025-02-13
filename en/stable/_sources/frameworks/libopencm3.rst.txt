@@ -11,8 +11,8 @@
 
 .. _framework_libopencm3:
 
-Open-source ARM Cortex-M microcontroller library
-================================================
+LibOpenCM3
+==========
 
 :Configuration:
   :ref:`projectconf_env_framework` = ``libopencm3``
@@ -40,8 +40,8 @@ Platforms
 Examples
 --------
 
-* `Open-source ARM Cortex-M microcontroller library for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
-* `Open-source ARM Cortex-M microcontroller library for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `LibOpenCM3 for ST STM32 <https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
+* `LibOpenCM3 for TI TIVA <https://github.com/platformio/platform-titiva/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
@@ -398,7 +398,7 @@ You do not need to use/buy external debug probe.
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -754,6 +754,18 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_coreboard_f401rc`
       - :ref:`platform_ststm32`
       - STM32F401RCT6
@@ -964,6 +976,18 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_ststm32_disco_g031j6`
       - :ref:`platform_ststm32`
       - STM32G031J6
@@ -1742,6 +1766,34 @@ Avnet Silica
       - 80MHz
       - 1MB
       - 128KB
+
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 Diymore
 ~~~~~~~
@@ -2779,6 +2831,34 @@ RUMBA
       - 512KB
       - 128KB
 
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+
 RemRam
 ~~~~~~
 
@@ -3204,7 +3284,7 @@ ST
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board

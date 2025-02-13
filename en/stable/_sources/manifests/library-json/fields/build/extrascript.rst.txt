@@ -109,11 +109,11 @@ Project structure
     # remove specified flags
     projenv.ProcessUnFlags("-fno-rtti")
 
-    # Pass flags to the Global environemnt (project `src` files, frameworks)
+    # Pass flags to the Global environment (project `src` files, frameworks)
     global_env = DefaultEnvironment()
     global_env.Append(CPPDEFINES=[("TEST_GLOBAL", 1)])
 
-    # Attach post action to the global environemnt
+    # Attach post action to the global environment
 
     def post_program_action(source, target, env):
         print("Program has been built!")

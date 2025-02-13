@@ -1,28 +1,35 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LQZCKGZE94');
+    </script>
+    
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STM32Cube &mdash; PlatformIO v6.1 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=266695fe" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://docs.platformio.org/frameworks/stm32cube.html" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=2066bd3a"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=841e3923"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -85,7 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="freedom-e-sdk.html">Freedom E SDK</a></li>
 <li class="toctree-l2"><a class="reference internal" href="freertos.html">FreeRTOS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fsp.html">Renesas Flexible Software Package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">Open-source ARM Cortex-M microcontroller library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libopencm3.html">LibOpenCM3</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mbed.html">Mbed</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-os.html">PULP OS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pulp-runtime.html">PULP Runtime Environment</a></li>
@@ -122,6 +129,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#armstrap">Armstrap</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#avnet-silica">Avnet Silica</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#big-tree-tech">Big Tree Tech</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#blues">Blues</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#blueswireless">BluesWireless</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#devebox">DevEBox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#diymore">Diymore</a></li>
@@ -145,6 +153,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#prntrboard">PrntrBoard</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rak">RAK</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rumba">RUMBA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rymcu">RYMCU</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#remram">RemRam</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#robotdyn">RobotDyn</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rushup">RushUp</a></li>
@@ -841,7 +850,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32F439ZIT6</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>192KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -1324,6 +1333,20 @@ Please click on board name for the further details.</p>
 <td><p>128KB</p></td>
 <td><p>20KB</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blues_cygnet.html#board-ststm32-blues-cygnet"><span class="std std-ref">Blues Cygnet</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L433CCT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blues_swan_r5.html#board-ststm32-blues-swan-r5"><span class="std std-ref">Blues Swan R5</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32L4R5ZIY6</p></td>
+<td><p>120MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>640KB</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/bw_swan_r5.html#board-ststm32-bw-swan-r5"><span class="std std-ref">BluesWireless Swan R5</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
 <td><p>STM32L4R5ZIY6</p></td>
@@ -1645,6 +1668,20 @@ Please click on board name for the further details.</p>
 <td><p>32MHz</p></td>
 <td><p>64KB</p></td>
 <td><p>8KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_nebulapi_f103ve.html#board-ststm32-rymcu-nebulapi-f103ve"><span class="std std-ref">RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F103VET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_f407ve.html#board-ststm32-rymcu-f407ve"><span class="std std-ref">RYMCU STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>502.23KB</p></td>
+<td><p>128KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/disco_g031j6.html#board-ststm32-disco-g031j6"><span class="std std-ref">ST STM32G0316-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -2625,6 +2662,39 @@ Please click on board name for the further details.</p>
 <td><p>64MHz</p></td>
 <td><p>128KB</p></td>
 <td><p>144KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="blues">
+<h3>Blues<a class="headerlink" href="#blues" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/blues_cygnet.html#board-ststm32-blues-cygnet"><span class="std std-ref">Blues Cygnet</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32L433CCT6</p></td>
+<td><p>80MHz</p></td>
+<td><p>256KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/blues_swan_r5.html#board-ststm32-blues-swan-r5"><span class="std std-ref">Blues Swan R5</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32L4R5ZIY6</p></td>
+<td><p>120MHz</p></td>
+<td><p>2MB</p></td>
+<td><p>640KB</p></td>
 </tr>
 </tbody>
 </table>
@@ -3964,6 +4034,39 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
+<section id="rymcu">
+<h3>RYMCU<a class="headerlink" href="#rymcu" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Platform</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_nebulapi_f103ve.html#board-ststm32-rymcu-nebulapi-f103ve"><span class="std std-ref">RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F103VET6</p></td>
+<td><p>72MHz</p></td>
+<td><p>512KB</p></td>
+<td><p>64KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/rymcu_f407ve.html#board-ststm32-rymcu-f407ve"><span class="std std-ref">RYMCU STM32F407VE (192k RAM. 512k Flash)</span></a></p></td>
+<td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
+<td><p>External</p></td>
+<td><p>STM32F407VET6</p></td>
+<td><p>168MHz</p></td>
+<td><p>502.23KB</p></td>
+<td><p>128KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="remram">
 <h3>RemRam<a class="headerlink" href="#remram" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -4475,7 +4578,7 @@ Please click on board name for the further details.</p>
 <td><p>STM32F439ZIT6</p></td>
 <td><p>180MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>192KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/ststm32/nucleo_f446re.html#board-ststm32-nucleo-f446re"><span class="std std-ref">ST Nucleo F446RE</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -5480,7 +5583,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.16 (stable)
+    v6.1.17 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
@@ -5513,18 +5616,7 @@ Please click on board name for the further details.</p>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-    <!-- Theme Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZCKGZE94"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQZCKGZE94', {
-          'anonymize_ip': false,
-      });
-    </script> 
+  </script> 
 
 </body>
 </html>

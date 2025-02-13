@@ -402,7 +402,7 @@ You do not need to use/buy external debug probe.
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - STM32F446RET6
       - 180MHz
@@ -801,6 +801,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_bw_swan_r5`
       - STM32L4R5ZIY6
       - 120MHz
@@ -1036,6 +1046,16 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_ststm32_disco_g031j6`
       - STM32G031J6
       - 64MHz
@@ -1684,7 +1704,7 @@ Packages
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
     * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
     * - `tool-dfuutil <https://registry.platformio.org/tools/platformio/tool-dfuutil>`__
       - Device Firmware Upgrade Utilities
@@ -2047,6 +2067,31 @@ Big Tree Tech
       - 64MHz
       - 128KB
       - 144KB
+
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 BluesWireless
 ~~~~~~~~~~~~~
@@ -3074,6 +3119,31 @@ RUMBA
       - 512KB
       - 128KB
 
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+
 RemRam
 ~~~~~~
 
@@ -3472,7 +3542,7 @@ ST
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - On-board
       - STM32F446RET6

@@ -90,6 +90,10 @@ Examples:
 * ``linux_armv7l``
 * ``darwin_arm64``
 
+.. envvar:: PLATFORMIO_RUN_JOBS
+
+Allows one to override :option:`pio run --jobs`.
+
 Directories
 -----------
 

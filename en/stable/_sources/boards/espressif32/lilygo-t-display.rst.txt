@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `LilyGo <hhttps://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board?utm_source=platformio.org&utm_medium=docs>`__
+    - `LilyGo <https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

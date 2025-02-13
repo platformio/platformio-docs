@@ -381,7 +381,7 @@ You do not need to use/buy external debug probe.
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -478,6 +478,12 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -1126,7 +1132,7 @@ ST
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board
@@ -1239,6 +1245,13 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 256KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board

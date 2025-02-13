@@ -834,6 +834,20 @@ Boards
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_bw_swan_r5`
       - :ref:`platform_ststm32`
       - External
@@ -1520,6 +1534,20 @@ Boards
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_nordicnrf52_raytac_mdbt50q_rx`
       - :ref:`platform_nordicnrf52`
       - External
@@ -1897,7 +1925,7 @@ Boards
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board
