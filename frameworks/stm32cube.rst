@@ -419,7 +419,7 @@ You do not need to use/buy external debug probe.
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - STM32F446RET6
@@ -835,6 +835,18 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_bw_swan_r5`
       - :ref:`platform_ststm32`
       - STM32L4R5ZIY6
@@ -1111,6 +1123,18 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_ststm32_disco_g031j6`
       - :ref:`platform_ststm32`
       - STM32G031J6
@@ -1946,6 +1970,34 @@ Big Tree Tech
       - 64MHz
       - 128KB
       - 144KB
+
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 BluesWireless
 ~~~~~~~~~~~~~
@@ -3095,6 +3147,34 @@ RUMBA
       - 512KB
       - 128KB
 
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+
 RemRam
 ~~~~~~
 
@@ -3541,7 +3621,7 @@ ST
       - STM32F439ZIT6
       - 180MHz
       - 2MB
-      - 256KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_f446re`
       - :ref:`platform_ststm32`
       - On-board

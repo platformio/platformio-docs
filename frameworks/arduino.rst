@@ -166,6 +166,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 515.25KB
       - 62.78KB
+    * - :ref:`board_renesas-ra_uno_r4_wifi`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_atmelsam_zero`
       - :ref:`platform_atmelsam`
       - SAMD21G18A
@@ -233,6 +239,12 @@ You do not need to use/buy external debug probe.
       - 8MB
       - 320KB
     * - :ref:`board_espressif32_esp32s3usbotg`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
       - :ref:`platform_espressif32`
       - ESP32S3
       - 240MHz
@@ -328,6 +340,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 512KB
       - 192KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_nordicnrf51_redBearLabBLENano`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -475,6 +493,12 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_f429zi`
       - :ref:`platform_ststm32`
       - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 192KB
+    * - :ref:`board_ststm32_nucleo_f439zi`
+      - :ref:`platform_ststm32`
+      - STM32F439ZIT6
       - 180MHz
       - 2MB
       - 192KB
@@ -1853,12 +1877,6 @@ Please click on board name for the further details.
       - 48MHz
       - 256KB
       - 32KB
-    * - :ref:`board_renesas-ra_uno_r4_wifi`
-      - :ref:`platform_renesas-ra`
-      - RA4M1
-      - 48MHz
-      - 256KB
-      - 32KB
     * - :ref:`board_atmelavr_yun`
       - :ref:`platform_atmelavr`
       - ATMEGA32U4
@@ -1997,6 +2015,18 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_bw_swan_r5`
       - :ref:`platform_ststm32`
       - STM32L4R5ZIY6
@@ -2369,6 +2399,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_frogboard`
       - :ref:`platform_espressif32`
       - ESP32
@@ -2536,6 +2572,12 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - :ref:`platform_espressif32`
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_atmelavr_one`
       - :ref:`platform_atmelavr`
@@ -2963,6 +3005,30 @@ Please click on board name for the further details.
       - 32MHz
       - 64KB
       - 8KB
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - :ref:`platform_espressif32`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
     * - :ref:`board_raspberrypi_pico`
       - :ref:`platform_raspberrypi`
       - RP2040
@@ -4223,6 +4289,12 @@ Please click on board name for the further details.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_espressif32_weactstudio_esp32c3coreboard`
+      - :ref:`platform_espressif32`
+      - ESP32C3
+      - 160MHz
+      - 384KB
+      - 400KB
     * - :ref:`board_ststm32_weact_mini_h743vitx`
       - :ref:`platform_ststm32`
       - STM32H743VIT6
@@ -5786,7 +5858,7 @@ Arduino
       - 32KB
     * - :ref:`board_renesas-ra_uno_r4_wifi`
       - :ref:`platform_renesas-ra`
-      - External
+      - On-board
       - RA4M1
       - 48MHz
       - 256KB
@@ -6317,6 +6389,34 @@ Blinker
       - 4MB
       - 320KB
 
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
+
 BluesWireless
 ~~~~~~~~~~~~~
 
@@ -6660,8 +6760,8 @@ Denky
       - 4MB
       - 320KB
 
-Deparment of Alchemy
-~~~~~~~~~~~~~~~~~~~~
+Department of Alchemy
+~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :header-rows:  1
@@ -7584,6 +7684,34 @@ Fred
       - Flash
       - RAM
     * - :ref:`board_espressif32_frogboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Freenove
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -8807,6 +8935,13 @@ LilyGo
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
 
 Linino
@@ -11217,6 +11352,55 @@ RUMBA
       - 512KB
       - 128KB
 
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F103VET6
+      - 72MHz
+      - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_rymcu_f407ve`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407VET6
+      - 168MHz
+      - 502.23KB
+      - 128KB
+
 Raspberry Pi
 ~~~~~~~~~~~~
 
@@ -11850,6 +12034,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32F429ZIT6
+      - 180MHz
+      - 2MB
+      - 192KB
+    * - :ref:`board_ststm32_nucleo_f439zi`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F439ZIT6
       - 180MHz
       - 2MB
       - 192KB
@@ -13883,6 +14074,13 @@ WeAct Studio
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_espressif32_weactstudio_esp32c3coreboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 384KB
+      - 400KB
     * - :ref:`board_ststm32_weact_mini_h743vitx`
       - :ref:`platform_ststm32`
       - External

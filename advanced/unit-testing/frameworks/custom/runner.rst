@@ -51,7 +51,7 @@ let's override a "testing" stage for the :ref:`unit_testing_frameworks_unity`:
             # 1. Gather test results from Serial, HTTP, Socket, or other sources
             # 2. Report test results (add cases)
 
-            # Exmaple: Report succeed result with duration (optional)
+            # Example: Report succeed result with duration (optional)
             self.test_suite.add_case(
                 TestCase(name="test_connectivity", status=TestStatus.PASSED, duration=1.34)
             )
@@ -65,7 +65,7 @@ let's override a "testing" stage for the :ref:`unit_testing_frameworks_unity`:
                     stdout="test/test_desktop/test_calculator.cpp:43:test_calculator_division:FAIL: Expected 32 Was 33",
                     duration=0.44,
                     source=TestCaseSource(
-                        file="test/test_desktop/test_calculator.cpp", line=43
+                        filename="test/test_desktop/test_calculator.cpp", line=43
                     ),
                 )
             )

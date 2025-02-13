@@ -79,10 +79,10 @@ If upload port is not specified, PlatformIO will try to detect it automatically.
 .. option::
     --monitor-port
 
-Custom port that will be passed to the :option:`pio device monitor --port` command.
-To print all available ports use :ref:`cmd_device_list` command.
+Specify a custom port to be passed to the :option:`pio device monitor --port` command.
+To list all available ports, use the :ref:`cmd_device_list` command.
 
-If monitor port is not specified, PlatformIO will try to detect it automatically.
+If the monitor port is not specified, PlatformIO will attempt to detect it automatically.
 
 .. option::
     -d, --project-dir
@@ -98,7 +98,9 @@ Process project with a custom :ref:`projectconf`.
 .. option::
     -j, --jobs
 
-Control a number of parallel build jobs. Default is a number of CPUs in a system.
+Control the number of parallel build jobs. The default is the number of CPUs in the system.
+
+This option can also be set globally using the environment variable :envvar:`PLATFORMIO_RUN_JOBS`.
 
 .. option::
     --disable-auto-clean

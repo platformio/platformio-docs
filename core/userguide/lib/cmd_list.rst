@@ -164,7 +164,7 @@ Examples
     LiquidCrystal
     =============
     #ID: 136
-    LiquidCrystal Library is faster and extensable, compatible with the original LiquidCrystal library
+    LiquidCrystal Library is faster and extensible, compatible with the original LiquidCrystal library
 
     Version: 1.3.4
     Keywords: lcd, hd44780

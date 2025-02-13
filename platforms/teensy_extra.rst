@@ -58,6 +58,8 @@ If you want to use Teensy USB Features, you need to add special macro/define
 using :ref:`projectconf_build_flags`:
 
 * ``-D USB_SERIAL``
+* ``-D USB_DUAL_SERIAL``
+* ``-D USB_TRIPLE_SERIAL``
 * ``-D USB_KEYBOARDONLY``
 * ``-D USB_TOUCHSCREEN``
 * ``-D USB_HID_TOUCHSCREEN``

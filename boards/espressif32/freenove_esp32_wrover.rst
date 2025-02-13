@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_espressif32_minimain_esp32s2:
+.. _board_espressif32_freenove_esp32_wrover:
 
-Department of Alchemy MiniMain ESP32-S2
-=======================================
+Freenove ESP32-Wrover
+=====================
 
 .. contents::
 
@@ -24,7 +24,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
 .. list-table::
 
   * - **Microcontroller**
-    - ESP32S2
+    - ESP32
   * - **Frequency**
     - 240MHz
   * - **Flash**
@@ -32,33 +32,33 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Department of Alchemy <https://github.com/DepartmentOfAlchemy/minimain-esp32-s2?utm_source=platformio.org&utm_medium=docs>`__
+    - `Freenove <https://store.freenove.com/products/fnk0060?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``minimain_esp32s2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``freenove_esp32_wrover`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:minimain_esp32s2]
+  [env:freenove_esp32_wrover]
   platform = espressif32
-  board = minimain_esp32s2
+  board = freenove_esp32_wrover
 
-You can override default Department of Alchemy MiniMain ESP32-S2 settings per build environment using
+You can override default Freenove ESP32-Wrover settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `minimain_esp32s2.json <https://github.com/platformio/platform-espressif32/blob/master/boards/minimain_esp32s2.json>`_. For example,
+board manifest `freenove_esp32_wrover.json <https://github.com/platformio/platform-espressif32/blob/master/boards/freenove_esp32_wrover.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:minimain_esp32s2]
+  [env:freenove_esp32_wrover]
   platform = espressif32
-  board = minimain_esp32s2
+  board = freenove_esp32_wrover
 
   ; change microcontroller
-  board_build.mcu = esp32s2
+  board_build.mcu = esp32
 
   ; change MCU frequency
   board_build.f_cpu = 240000000L
@@ -66,7 +66,7 @@ board manifest `minimain_esp32s2.json <https://github.com/platformio/platform-es
 
 Uploading
 ---------
-Department of Alchemy MiniMain ESP32-S2 supports the following uploading protocols:
+Freenove ESP32-Wrover supports the following uploading protocols:
 
 * ``cmsis-dap``
 * ``esp-bridge``
@@ -88,9 +88,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:minimain_esp32s2]
+  [env:freenove_esp32_wrover]
   platform = espressif32
-  board = minimain_esp32s2
+  board = freenove_esp32_wrover
 
   upload_protocol = esptool
 
@@ -107,7 +107,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+Freenove ESP32-Wrover does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -116,38 +116,38 @@ Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and *
     - On-board
     - Default
   * - :ref:`debugging_tool_cmsis-dap`
-    -
+    - 
     - Yes
   * - ``esp-bridge``
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_esp-prog`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_iot-bus-jtag`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_minimodule`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_olimex-arm-usb-ocd`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_olimex-arm-usb-ocd-h`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_olimex-arm-usb-tiny-h`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_olimex-jtag-tiny`
-    -
-    -
+    - 
+    - 
   * - :ref:`debugging_tool_tumpa`
-    -
-    -
+    - 
+    - 
 
 Frameworks
 ----------

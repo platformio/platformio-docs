@@ -37,6 +37,7 @@ extensions = [
     "redirects",
     "notfound.extension",
     "sphinx_copybutton",
+    "sphinxcontrib.googleanalytics"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -54,6 +55,8 @@ master_doc = "index"
 # General information about the project.
 project = "PlatformIO"
 copyright = "2014-present, PlatformIO"
+
+googleanalytics_id = "G-LQZCKGZE94"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -116,13 +119,8 @@ html_theme = "sphinx_rtd_theme"
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "analytics_id": "G-LQZCKGZE94",
     "logo_only": True,
-    "display_version": False,
 }
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

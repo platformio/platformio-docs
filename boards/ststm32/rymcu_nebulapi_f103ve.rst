@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_u575zi_q:
+.. _board_ststm32_rymcu_nebulapi_f103ve:
 
-ST Nucleo U575ZI-Q
-==================
+RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)
+============================================
 
 .. contents::
 
@@ -24,54 +24,55 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32U575ZIT6Q
+    - STM32F103VET6
   * - **Frequency**
-    - 160MHz
+    - 72MHz
   * - **Flash**
-    - 2MB
+    - 512KB
   * - **RAM**
-    - 256KB
+    - 64KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `RYMCU <https://rymcu.com/products?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_u575zi_q`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``rymcu_nebulapi_f103ve`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_u575zi_q]
+  [env:rymcu_nebulapi_f103ve]
   platform = ststm32
-  board = nucleo_u575zi_q
+  board = rymcu_nebulapi_f103ve
 
-You can override default ST Nucleo U575ZI-Q settings per build environment using
+You can override default RYMCU Nebula Pi F103VE (64k RAM. 512k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_u575zi_q.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_u575zi_q.json>`_. For example,
+board manifest `rymcu_nebulapi_f103ve.json <https://github.com/platformio/platform-ststm32/blob/master/boards/rymcu_nebulapi_f103ve.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_u575zi_q]
+  [env:rymcu_nebulapi_f103ve]
   platform = ststm32
-  board = nucleo_u575zi_q
+  board = rymcu_nebulapi_f103ve
 
   ; change microcontroller
-  board_build.mcu = stm32u575zit6q
+  board_build.mcu = stm32f103vet6
 
   ; change MCU frequency
-  board_build.f_cpu = 160000000L
+  board_build.f_cpu = 72000000L
 
 
 Uploading
 ---------
-ST Nucleo U575ZI-Q supports the following uploading protocols:
+RYMCU Nebula Pi F103VE (64k RAM. 512k Flash) supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
-* ``mbed``
+* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +81,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_u575zi_q]
+  [env:rymcu_nebulapi_f103ve]
   platform = ststm32
-  board = nucleo_u575zi_q
+  board = rymcu_nebulapi_f103ve
 
   upload_protocol = stlink
 
@@ -99,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo U575ZI-Q has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+RYMCU Nebula Pi F103VE (64k RAM. 512k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -109,7 +110,7 @@ ST Nucleo U575ZI-Q has on-board debug probe and **IS READY** for debugging. You 
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -117,8 +118,8 @@ ST Nucleo U575ZI-Q has on-board debug probe and **IS READY** for debugging. You 
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -131,5 +132,11 @@ Frameworks
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
-    * - :ref:`framework_mbed`
-      - Arm Mbed OS is a platform operating system designed for the internet of things
+    * - :ref:`framework_cmsis`
+      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
+
+    * - :ref:`framework_libopencm3`
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
+
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency

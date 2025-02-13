@@ -9,80 +9,83 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_renesas-ra_uno_r4_wifi:
+.. _board_ststm32_rymcu_f407ve:
 
-Arduino Uno R4 WiFi
-===================
+RYMCU STM32F407VE (192k RAM. 512k Flash)
+========================================
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_renesas-ra`: Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
-    - RA4M1
+    - STM32F407VET6
   * - **Frequency**
-    - 48MHz
+    - 168MHz
   * - **Flash**
-    - 256KB
+    - 502.23KB
   * - **RAM**
-    - 32KB
+    - 128KB
   * - **Vendor**
-    - `Arduino <https://docs.arduino.cc/hardware/uno-r4-wifi?utm_source=platformio.org&utm_medium=docs>`__
+    - `RYMCU <https://rymcu.com/products?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``uno_r4_wifi`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``rymcu_f407ve`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:uno_r4_wifi]
-  platform = renesas-ra
-  board = uno_r4_wifi
+  [env:rymcu_f407ve]
+  platform = ststm32
+  board = rymcu_f407ve
 
-You can override default Arduino Uno R4 WiFi settings per build environment using
+You can override default RYMCU STM32F407VE (192k RAM. 512k Flash) settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `uno_r4_wifi.json <https://github.com/platformio/platform-renesas-ra/blob/master/boards/uno_r4_wifi.json>`_. For example,
+board manifest `rymcu_f407ve.json <https://github.com/platformio/platform-ststm32/blob/master/boards/rymcu_f407ve.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:uno_r4_wifi]
-  platform = renesas-ra
-  board = uno_r4_wifi
+  [env:rymcu_f407ve]
+  platform = ststm32
+  board = rymcu_f407ve
 
   ; change microcontroller
-  board_build.mcu = ra4m1
+  board_build.mcu = stm32f407vet6
 
   ; change MCU frequency
-  board_build.f_cpu = 48000000L
+  board_build.f_cpu = 168000000L
 
 
 Uploading
 ---------
-Arduino Uno R4 WiFi supports the following uploading protocols:
+RYMCU STM32F407VE (192k RAM. 512k Flash) supports the following uploading protocols:
 
+* ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
-* ``sam-ba``
+* ``serial``
+* ``stlink``
 
-Default protocol is ``sam-ba``
+Default protocol is ``stlink``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:uno_r4_wifi]
-  platform = renesas-ra
-  board = uno_r4_wifi
+  [env:rymcu_f407ve]
+  platform = ststm32
+  board = rymcu_f407ve
 
-  upload_protocol = sam-ba
+  upload_protocol = stlink
 
 Debugging
 ---------
@@ -97,7 +100,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Arduino Uno R4 WiFi has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+RYMCU STM32F407VE (192k RAM. 512k Flash) does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -105,12 +108,18 @@ Arduino Uno R4 WiFi has on-board debug probe and **IS READY** for debugging. You
   * - Compatible Tools
     - On-board
     - Default
+  * - :ref:`debugging_tool_blackmagic`
+    - 
+    - 
   * - :ref:`debugging_tool_cmsis-dap`
-    - Yes
-    - Yes
+    - 
+    - 
   * - :ref:`debugging_tool_jlink`
     - 
     - 
+  * - :ref:`debugging_tool_stlink`
+    - 
+    - Yes
 
 Frameworks
 ----------
@@ -126,5 +135,8 @@ Frameworks
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - :ref:`framework_fsp`
-      - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.
+    * - :ref:`framework_libopencm3`
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
+
+    * - :ref:`framework_stm32cube`
+      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
