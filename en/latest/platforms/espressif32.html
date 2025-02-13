@@ -15,7 +15,7 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Espressif 32 &mdash; PlatformIO latest documentation</title>
+  <title>Espressif 32 &mdash; PlatformIO v6.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://docs.platformio.org/platforms/espressif32.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=81366dd8"></script>
+      <script src="../_static/documentation_options.js?v=841e3923"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -734,10 +734,22 @@ You do not need to use/buy external debug probe.</p>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbits3.html#board-espressif32-lionbits3"><span class="std std-ref">Lion:Bit S3 STEM Dev Board</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/freenove_esp32_s3_wroom.html#board-espressif32-freenove-esp32-s3-wroom"><span class="std std-ref">Freenove ESP32-S3 WROOM N8R8 (8MB Flash / 8MB PSRAM)</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lionbits3.html#board-espressif32-lionbits3"><span class="std std-ref">Lion:Bit S3 STEM Dev Board</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-s3-devkitc-1.html#board-espressif32-rymcu-esp32-s3-devkitc-1"><span class="std std-ref">RYMCU ESP32-S3-DevKitC-1-N8R2 (8 MB QD, 2 MB PSRAM)</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 </tbody>
@@ -1193,88 +1205,100 @@ Please click on board name for the further details.</p>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/freenove_esp32_wrover.html#board-espressif32-freenove-esp32-wrover"><span class="std std-ref">Freenove ESP32-Wrover</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/frogboard.html#board-espressif32-frogboard"><span class="std std-ref">Frog Board ESP32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/honeylemon.html#board-espressif32-honeylemon"><span class="std std-ref">HONEYLemon</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_kit_32_V3.html#board-espressif32-heltec-wifi-kit-32-v3"><span class="std std-ref">Heltec WiFi Kit 32 (V3)</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32.html#board-espressif32-heltec-wifi-lora-32"><span class="std std-ref">Heltec WiFi LoRa 32</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V2.html#board-espressif32-heltec-wifi-lora-32-v2"><span class="std std-ref">Heltec WiFi LoRa 32 (V2)</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wifi_lora_32_V3.html#board-espressif32-heltec-wifi-lora-32-v3"><span class="std std-ref">Heltec WiFi LoRa 32 (V3)</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/heltec_wireless_stick.html#board-espressif32-heltec-wireless-stick"><span class="std std-ref">Heltec Wireless Stick</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32dev.html#board-espressif32-hornbill32dev"><span class="std std-ref">Hornbill ESP32 Dev</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/hornbill32minima.html#board-espressif32-hornbill32minima"><span class="std std-ref">Hornbill ESP32 Minima</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/iotaap_magnolia.html#board-espressif32-iotaap-magnolia"><span class="std std-ref">IoTaaP Magnolia</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/nebulas3.html#board-espressif32-nebulas3"><span class="std std-ref">Kinetic Dynamics Nebula S3</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/nebulas3.html#board-espressif32-nebulas3"><span class="std std-ref">Kinetic Dynamics Nebula S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/sensesiot_weizen.html#board-espressif32-sensesiot-weizen"><span class="std std-ref">LOGISENSES Senses Weizen</span></a></p></td>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lilka_v2.html#board-espressif32-lilka-v2"><span class="std std-ref">Lilka v2</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilka_v2.html#board-espressif32-lilka-v2"><span class="std std-ref">Lilka v2</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
 <td><p>320KB</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t-display-s3.html#board-espressif32-lilygo-t-display-s3"><span class="std std-ref">LilyGo T-Display-S3</span></a></p></td>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t3-s3.html#board-espressif32-lilygo-t3-s3"><span class="std std-ref">LilyGo T3-S3</span></a></p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/lionbit.html#board-espressif32-lionbit"><span class="std std-ref">Lion:Bit Dev Board</span></a></p></td>
@@ -1390,6 +1414,18 @@ Please click on board name for the further details.</p>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
 <td><p>1.25MB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-c3-devkitm-1.html#board-espressif32-rymcu-esp32-c3-devkitm-1"><span class="std std-ref">RYMCU ESP32-C3-DevKitM-1</span></a></p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-devkitc.html#board-espressif32-rymcu-esp32-devkitc"><span class="std std-ref">RYMCU ESP32-DevKitC</span></a></p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/sg-o_airMon.html#board-espressif32-sg-o-airmon"><span class="std std-ref">SG-O AirMon</span></a></p></td>
 <td><p>ESP32</p></td>
@@ -1830,7 +1866,7 @@ of Espressif 32 development platform and the latest upstream version using
 <td><p>Espressif IoT Development Framework. Official development framework for ESP32 chip</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-cmake">tool-cmake</a></p></td>
-<td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software.</p></td>
+<td><p>CMake is an open-source, cross-platform family of tools designed to build, test and package software</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://registry.platformio.org/tools/platformio/tool-dfuutil-arduino">tool-dfuutil-arduino</a></p></td>
 <td><p>Device Firmware Upgrade Utilities</p></td>
@@ -3032,6 +3068,36 @@ horizontally.</p></li>
 </tbody>
 </table>
 </section>
+<section id="freenove">
+<h3>Freenove<a class="headerlink" href="#freenove" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/freenove_esp32_s3_wroom.html#board-espressif32-freenove-esp32-s3-wroom"><span class="std std-ref">Freenove ESP32-S3 WROOM N8R8 (8MB Flash / 8MB PSRAM)</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/freenove_esp32_wrover.html#board-espressif32-freenove-esp32-wrover"><span class="std std-ref">Freenove ESP32-Wrover</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="honeylemon">
 <h3>HONEYLemon<a class="headerlink" href="#honeylemon" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -3405,6 +3471,13 @@ horizontally.</p></li>
 <td><p>ESP32S3</p></td>
 <td><p>240MHz</p></td>
 <td><p>16MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/lilygo-t3-s3.html#board-espressif32-lilygo-t3-s3"><span class="std std-ref">LilyGo T3-S3</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 </tbody>
@@ -4024,6 +4097,43 @@ horizontally.</p></li>
 <td><p>ESP32</p></td>
 <td><p>240MHz</p></td>
 <td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rymcu">
+<h3>RYMCU<a class="headerlink" href="#rymcu" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Debug</p></th>
+<th class="head"><p>MCU</p></th>
+<th class="head"><p>Frequency</p></th>
+<th class="head"><p>Flash</p></th>
+<th class="head"><p>RAM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-c3-devkitm-1.html#board-espressif32-rymcu-esp32-c3-devkitm-1"><span class="std std-ref">RYMCU ESP32-C3-DevKitM-1</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32C3</p></td>
+<td><p>160MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-devkitc.html#board-espressif32-rymcu-esp32-devkitc"><span class="std std-ref">RYMCU ESP32-DevKitC</span></a></p></td>
+<td><p>External</p></td>
+<td><p>ESP32</p></td>
+<td><p>240MHz</p></td>
+<td><p>4MB</p></td>
+<td><p>320KB</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../boards/espressif32/rymcu-esp32-s3-devkitc-1.html#board-espressif32-rymcu-esp32-s3-devkitc-1"><span class="std std-ref">RYMCU ESP32-S3-DevKitC-1-N8R2 (8 MB QD, 2 MB PSRAM)</span></a></p></td>
+<td><p>On-board</p></td>
+<td><p>ESP32S3</p></td>
+<td><p>240MHz</p></td>
+<td><p>8MB</p></td>
 <td><p>320KB</p></td>
 </tr>
 </tbody>
@@ -5258,7 +5368,7 @@ horizontally.</p></li>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.17rc1 (latest)
+    v6.1.17 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

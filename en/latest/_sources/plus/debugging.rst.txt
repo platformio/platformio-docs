@@ -206,7 +206,7 @@ Platforms
       - Shakti is an open-source initiative by the RISE group at IIT-Madras, which is not only building open source, production grade processors, but also associated components like interconnect fabrics, verification tools, storage controllers, peripheral IPs and SOC tools.
 
     * - :ref:`platform_sifive`
-      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before.
+      - SiFive brings the power of open source and software automation to the semiconductor industry, making it possible to develop new hardware faster and more affordably than ever before. 
 
     * - :ref:`platform_siliconlabsefm32`
       - Silicon Labs EFM32 Gecko 32-bit microcontroller (MCU) family includes devices that offer flash memory configurations up to 256 kB, 32 kB of RAM and CPU speeds up to 48 MHz. Based on the powerful ARM Cortex-M core, the Gecko family features innovative low energy techniques, short wake-up time from energy saving modes and a wide selection of peripherals, making it ideal for battery operated applications and other systems requiring high performance and low-energy consumption.
@@ -2178,6 +2178,34 @@ Blinker
       - 4MB
       - 320KB
 
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
+
 BluesWireless
 ~~~~~~~~~~~~~
 
@@ -2516,14 +2544,14 @@ Digilent
     * - :ref:`board_openhw_nexys_a7`
       - :ref:`platform_openhw`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
     * - :ref:`board_chipsalliance_swervolf_nexys`
       - :ref:`platform_chipsalliance`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
@@ -3046,6 +3074,34 @@ Fred
       - Flash
       - RAM
     * - :ref:`board_espressif32_frogboard`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
+Freenove
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
       - :ref:`platform_espressif32`
       - External
       - ESP32
@@ -4080,6 +4136,13 @@ LilyGo
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
 
 Linino
@@ -5544,6 +5607,27 @@ RYMCU
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_ststm32_rymcu_nebulapi_f103ve`
       - :ref:`platform_ststm32`
       - External

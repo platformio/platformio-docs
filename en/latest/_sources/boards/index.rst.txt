@@ -543,6 +543,8 @@ Espressif 32
     espressif32/franzininho_wifi_esp32s2
     espressif32/esp32-s2-franzininho
     espressif32/franzininho_wifi_msc_esp32s2
+    espressif32/freenove_esp32_s3_wroom
+    espressif32/freenove_esp32_wrover
     espressif32/frogboard
     espressif32/honeylemon
     espressif32/heltec_wifi_kit_32
@@ -566,6 +568,7 @@ Espressif 32
     espressif32/lilka_v2
     espressif32/lilygo-t-display
     espressif32/lilygo-t-display-s3
+    espressif32/lilygo-t3-s3
     espressif32/lionbit
     espressif32/lionbits3
     espressif32/m5stack-atoms3
@@ -612,6 +615,9 @@ Espressif 32
     espressif32/lopy4
     espressif32/wipy3
     espressif32/qchip
+    espressif32/rymcu-esp32-c3-devkitm-1
+    espressif32/rymcu-esp32-devkitc
+    espressif32/rymcu-esp32-s3-devkitc-1
     espressif32/roboheart_hercules
     espressif32/s_odi_ultra
     espressif32/sg-o_airMon
@@ -1352,6 +1358,8 @@ ST STM32
     ststm32/bluepill_f103c6
     ststm32/bluepill_f103c8
     ststm32/bluepill_f103c8_128k
+    ststm32/blues_cygnet
+    ststm32/blues_swan_r5
     ststm32/bw_swan_r5
     ststm32/cicada_l082cz
     ststm32/coreboard_f401rc
