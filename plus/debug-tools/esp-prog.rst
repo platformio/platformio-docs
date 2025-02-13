@@ -712,6 +712,20 @@ Boards
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_frogboard`
       - :ref:`platform_espressif32`
       - External
@@ -809,6 +823,13 @@ Boards
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_lionbit`
       - :ref:`platform_espressif32`
@@ -950,6 +971,27 @@ Boards
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - :ref:`platform_espressif32`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_sg-o_airMon`
       - :ref:`platform_espressif32`
       - External

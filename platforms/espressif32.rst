@@ -115,10 +115,20 @@ You do not need to use/buy external debug probe.
       - 240MHz
       - 8MB
       - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
     * - :ref:`board_espressif32_lionbits3`
       - ESP32S3
       - 240MHz
       - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 
@@ -503,6 +513,11 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_frogboard`
       - ESP32
       - 240MHz
@@ -572,6 +587,11 @@ Please click on board name for the further details.
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
     * - :ref:`board_espressif32_lionbit`
       - ESP32
@@ -668,6 +688,16 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 1.25MB
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_sg-o_airMon`
       - ESP32
       - 240MHz
@@ -1044,7 +1074,7 @@ Packages
       - Espressif IoT Development Framework. Official development framework for ESP32 chip
 
     * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
     * - `tool-dfuutil-arduino <https://registry.platformio.org/tools/platformio/tool-dfuutil-arduino>`__
       - Device Firmware Upgrade Utilities
@@ -2054,6 +2084,31 @@ Fred
       - 4MB
       - 320KB
 
+Freenove
+~~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_freenove_esp32_s3_wroom`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
+      - 320KB
+    * - :ref:`board_espressif32_freenove_esp32_wrover`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+
 HONEYLemon
 ~~~~~~~~~~
 
@@ -2366,6 +2421,12 @@ LilyGo
       - ESP32S3
       - 240MHz
       - 16MB
+      - 320KB
+    * - :ref:`board_espressif32_lilygo-t3-s3`
+      - External
+      - ESP32S3
+      - 240MHz
+      - 4MB
       - 320KB
 
 Lion:Bit
@@ -2883,6 +2944,37 @@ Qmobot LLP
       - ESP32
       - 240MHz
       - 4MB
+      - 320KB
+
+RYMCU
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_rymcu-esp32-c3-devkitm-1`
+      - External
+      - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-devkitc`
+      - External
+      - ESP32
+      - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_rymcu-esp32-s3-devkitc-1`
+      - On-board
+      - ESP32S3
+      - 240MHz
+      - 8MB
       - 320KB
 
 RoboHeart

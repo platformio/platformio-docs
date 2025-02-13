@@ -77,7 +77,7 @@ You do not need to use/buy external debug probe.
       - Flash
       - RAM
     * - :ref:`board_openhw_nexys_a7`
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB
@@ -193,7 +193,7 @@ Digilent
       - RAM
     * - :ref:`board_openhw_nexys_a7`
       - On-board
-      -
+      - 
       - 320MHz
       - 16MB
       - 1.16MB

@@ -801,6 +801,16 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_blues_cygnet`
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_bw_swan_r5`
       - STM32L4R5ZIY6
       - 120MHz
@@ -1694,7 +1704,7 @@ Packages
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
 
     * - `tool-cmake <https://registry.platformio.org/tools/platformio/tool-cmake>`__
-      - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+      - CMake is an open-source, cross-platform family of tools designed to build, test and package software
 
     * - `tool-dfuutil <https://registry.platformio.org/tools/platformio/tool-dfuutil>`__
       - Device Firmware Upgrade Utilities
@@ -2057,6 +2067,31 @@ Big Tree Tech
       - 64MHz
       - 128KB
       - 144KB
+
+Blues
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_blues_cygnet`
+      - External
+      - STM32L433CCT6
+      - 80MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_blues_swan_r5`
+      - External
+      - STM32L4R5ZIY6
+      - 120MHz
+      - 2MB
+      - 640KB
 
 BluesWireless
 ~~~~~~~~~~~~~
