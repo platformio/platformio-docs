@@ -1162,6 +1162,7 @@ Boards
     * You can list pre-configured boards by :ref:`cmd_boards` command
     * For more detailed ``board`` information please scroll the tables below by
       horizontally.
+    * If your board is not listed here, you can try the generic ``esp32dev`` board.
 
 4D Systems
 ~~~~~~~~~~
