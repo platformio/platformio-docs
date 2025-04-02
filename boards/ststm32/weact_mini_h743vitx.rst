@@ -26,11 +26,11 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Microcontroller**
     - STM32H743VIT6
   * - **Frequency**
-    - 480MHz
+    - 480 MHz
   * - **Flash**
-    - 2MB
+    - 2 MB
   * - **RAM**
-    - 512KB
+    - 1 MB
   * - **Vendor**
     - `WeAct Studio <https://github.com/WeActStudio/MiniSTM32H7xx?utm_source=platformio.org&utm_medium=docs>`__
 
