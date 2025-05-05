@@ -19,8 +19,7 @@ Seeed Studio XIAO ESP32S3
 Hardware
 --------
 
-Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. ESP32 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules.
-
+Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and Bluetooth. The ESP32-S3 is a low-cost, low-power system-on-chip microcontroller with integrated Wi-Fi and Bluetooth LE, designed for edge AI applications. It includes a power amplifier, low-noise receive amplifier, filters, and power management modules.
 .. list-table::
 
   * - **Microcontroller**
