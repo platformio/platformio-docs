@@ -94,6 +94,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#project-structure">Project Structure</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#esp-idf-components">ESP-IDF components</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ulp-coprocessor-programming">ULP coprocessor programming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-features">Security Features</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#limitations">Limitations</a></li>
@@ -108,7 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#ai-thinker">AI Thinker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#az-delivery">AZ-Delivery</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#adafruit">Adafruit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">Ai-Thinker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Ai-Thinker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#airm2m">AirM2M</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#aiyarafun">Aiyarafun</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#anderson-friends">Anderson &amp; friends</a></li>
@@ -286,17 +287,17 @@
 <nav class="contents local" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#tutorials" id="id5">Tutorials</a></p></li>
-<li><p><a class="reference internal" href="#configuration" id="id6">Configuration</a></p></li>
-<li><p><a class="reference internal" href="#limitations" id="id7">Limitations</a></p></li>
-<li><p><a class="reference internal" href="#platforms" id="id8">Platforms</a></p></li>
-<li><p><a class="reference internal" href="#examples" id="id9">Examples</a></p></li>
-<li><p><a class="reference internal" href="#debugging" id="id10">Debugging</a></p></li>
-<li><p><a class="reference internal" href="#boards" id="id11">Boards</a></p></li>
+<li><p><a class="reference internal" href="#tutorials" id="id8">Tutorials</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id9">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id10">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#platforms" id="id11">Platforms</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id12">Examples</a></p></li>
+<li><p><a class="reference internal" href="#debugging" id="id13">Debugging</a></p></li>
+<li><p><a class="reference internal" href="#boards" id="id14">Boards</a></p></li>
 </ul>
 </nav>
 <section id="tutorials">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Tutorials</a><a class="headerlink" href="#tutorials" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="../tutorials/espressif32/espidf_debugging_unit_testing_analysis.html#tutorial-espressif32-espidf-debugging-unit-testing-analysis"><span class="std std-ref">Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis</span></a></p></li>
 <li><p>Book: <a class="reference external" href="https://www.amazon.com/Developing-IoT-Projects-ESP32-inexpensive-ebook-dp-B093CCWGDP/dp/B093CCWGDP/">Developing IoT Projects with ESP32: Automate your home or business with inexpensive Wi-Fi devices</a> (using the PlatformIO with ESP-IDF)</p></li>
@@ -307,12 +308,19 @@
 </div>
 </section>
 <section id="configuration">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <nav class="contents local" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#project-structure" id="id12">Project Structure</a></p></li>
-<li><p><a class="reference internal" href="#esp-idf-components" id="id13">ESP-IDF components</a></p></li>
-<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id14">ULP coprocessor programming</a></p></li>
+<li><p><a class="reference internal" href="#project-structure" id="id15">Project Structure</a></p></li>
+<li><p><a class="reference internal" href="#esp-idf-components" id="id16">ESP-IDF components</a></p></li>
+<li><p><a class="reference internal" href="#ulp-coprocessor-programming" id="id17">ULP coprocessor programming</a></p></li>
+<li><p><a class="reference internal" href="#security-features" id="id18">Security Features</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id3" id="id19">Flash Encryption</a></p></li>
+<li><p><a class="reference internal" href="#secure-bootloader" id="id20">Secure Bootloader</a></p></li>
+<li><p><a class="reference internal" href="#nvs-encryption-flash-encryption-based-scheme" id="id21">NVS Encryption: Flash Encryption-Based Scheme</a></p></li>
+</ul>
+</li>
 </ul>
 </nav>
 <p>The general project configuration (default optimization level, bootloader configuration
@@ -348,7 +356,7 @@ key to move the cursor down and <code class="docutils literal notranslate"><span
 <code class="docutils literal notranslate"><span class="pre">-</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> keys on the numeric keypad.</p>
 </div>
 <section id="project-structure">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Project Structure</a><a class="headerlink" href="#project-structure" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Project Structure</a><a class="headerlink" href="#project-structure" title="Link to this heading"></a></h3>
 <p>The ESP-IDF framework requires an unusual project structure because most of the framework
 configuration is performed by the native for the ESP-IDF build system called <code class="docutils literal notranslate"><span class="pre">CMake</span></code>.</p>
 <p>A typical PlatformIO project for the ESP-IDF framework must have the following structure:</p>
@@ -425,7 +433,7 @@ is also used as the base build environment for project sources (including librar
 </div>
 </section>
 <section id="esp-idf-components">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">ESP-IDF components</a><a class="headerlink" href="#esp-idf-components" title="Link to this heading"></a></h3>
 <p>ESP-IDF modules as modular pieces of standalone code might be useful for structuring
 reusable code or including third party components that aren’t part of ESP-IDF.</p>
 <p>These components contain either a single <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file which controls the
@@ -463,7 +471,7 @@ characters (see <code class="docutils literal notranslate"><span class="pre">CMA
 to the project files.</p>
 </section>
 <section id="ulp-coprocessor-programming">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">ULP coprocessor programming</a><a class="headerlink" href="#ulp-coprocessor-programming" title="Link to this heading"></a></h3>
 <p>If you want to take measurements using ADC, internal temperature sensor or external
 I2C sensors, while the main processors are in deep sleep mode you need to use ULP
 coprocessor. At the moment ULP can be used only with the <a class="reference internal" href="#framework-espidf"><span class="std std-ref">Espressif IoT Development Framework</span></a>.</p>
@@ -513,9 +521,435 @@ for ULP:</p>
 <p>More details are located in the official ESP-IDF documentation -
 <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable">ULP coprocessor programming</a>.</p>
 </section>
+<section id="security-features">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Security Features</a><a class="headerlink" href="#security-features" title="Link to this heading"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This functionality can <strong>brick your device</strong> if used incorrectly.</p>
+<p><strong>Proceed with extreme caution. Everything you do is at your own risk.</strong></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>By default, enabling Flash Encryption and/or Secure Boot will disable JTAG debugging.
+On first boot, the bootloader will burn an eFuse bit to permanently disable JTAG at the
+same time it enables the other features.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It’s strongly recommended to test the security features using
+the vendor-provided QEMU emulator.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When enabling the Flash Encryption and Secure Boot v2 together, the
+Flash Encryption should be enabled first.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To use this functionality, the version of the <a class="reference external" href="https://registry.platformio.org/platforms/platformio/espressif32">espressif32</a> development platform must be <strong>v6.12.0 or later</strong>.</p>
+</div>
+<p>Before you begin working with these security features, make sure to carefully
+read the official documentation provided by the vendor. Here are several useful
+pages to get started:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/release-v5.4/esp32/security/security.html">Security Features Overview</a></p></li>
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/release-v5.4/esp32/security/flash-encryption.html">Flash Encryption</a></p></li>
+<li><p><a class="reference external" href="https://espressif-docs.readthedocs-hosted.com/projects/esp-idf/en/latest/security/flash-encryption.html">Flash Encryption section from ESP-IDF Programming Guide</a></p></li>
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html">Secure Boot v2</a></p></li>
+<li><p><a class="reference external" href="https://espressif-docs.readthedocs-hosted.com/projects/esp-idf/en/latest/security/secure-boot.html">Secure Boot section from ESP-IDF Programming Guide</a></p></li>
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/vulnerabilities.html">Vulnerabilities</a></p></li>
+</ul>
+<section id="id3">
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">Flash Encryption</a><a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Enabling flash encryption limits the options for further updates of your device.
+Before using this feature, make sure to read the entire page and fully
+understand the implications.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Enabling flash encryption will increase the size of the bootloader, which might
+require updating partition table offset.</p>
+</div>
+<p>Flash encryption is intended for encrypting the contents of the ESP32’s off-chip flash memory. Once this feature is enabled, firmware is flashed as plaintext, and then the data is encrypted in place on the first boot. As a result, physical readout of flash will not be sufficient to recover most flash contents.</p>
+<p>It’s recommended to read the official <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/security/flash-encryption.html">Flash Encryption Programming Guide</a> to understand the overall workflow before getting started. Here’s an adapted version of that page that uses PlatformIO packages to enable the Flash Encryption Feature on ESP32 ECO V3 target:</p>
+<ol class="arabic simple">
+<li><p>Ensure that you have an ESP32 device with default Flash Encryption eFuse settings as shown in <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/security/flash-encryption.html#flash-encryption-efuse">Relevant eFuses</a>. At this point, the Flash Encryption must not be already enabled on the chip.</p></li>
+<li><p>Generate a Flash Encryption key</p></li>
+</ol>
+<p>A random Flash Encryption key can be generated by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espsecure.py<span class="w"> </span>generate_flash_encryption_key<span class="w"> </span>my_flash_encryption_key.bin
+</pre></div>
+</div>
+<p>Set the <code class="docutils literal notranslate"><span class="pre">board_build.encryption_key</span></code> option in your <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code> file to
+the name of the key:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
+<span class="na">...</span>
+<span class="na">board_build.encryption_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">my_flash_encryption_key.bin</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Burn the Flash Encryption key into eFuse</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Burning this key into eFuse is a permanent action and cannot be undone.</p>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">$PORT</span></code> is the serial port of your target device:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>burn_key<span class="w"> </span>flash_encryption<span class="w"> </span>my_flash_encryption_key.bin
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Burn the <code class="docutils literal notranslate"><span class="pre">FLASH_CRYPT_CNT</span></code> eFuse</p></li>
+</ol>
+<p>If you only want to enable Flash Encryption in Development mode and want to keep the ability to disable it in the future, Update the <code class="docutils literal notranslate"><span class="pre">FLASH_CRYPT_CNT</span></code> value in the below command from <code class="docutils literal notranslate"><span class="pre">127</span></code> to <code class="docutils literal notranslate"><span class="pre">0x1</span></code> (not recommended for production).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>--chip<span class="w"> </span>esp32<span class="w"> </span>burn_efuse<span class="w"> </span>FLASH_CRYPT_CNT<span class="w"> </span><span class="m">127</span>
+</pre></div>
+</div>
+<p>In the case of ESP32, you also need to burn the <code class="docutils literal notranslate"><span class="pre">FLASH_CRYPT_CONFIG</span></code> fuse. It can be done by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>--chip<span class="w"> </span>esp32<span class="w"> </span>burn_efuse<span class="w"> </span>FLASH_CRYPT_CONFIG<span class="w"> </span>0xF
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Burn Flash Encryption-related security eFuses</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For production use cases, it is highly recommended to burn all the eFuses listed below.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DISABLE_DL_ENCRYPT</span></code> - Disable the UART bootloader encryption access</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DISABLE_DL_DECRYPT</span></code> - Disable the UART bootloader decryption access</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DISABLE_DL_CACHE</span></code> - Disable the UART bootloader flash cache access</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">JTAG_DISABLE</span></code> - Disable the JTAG</p></li>
+</ul>
+<p>The respective eFuses can be burned by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>burn_efuse<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>EFUSE_NAME<span class="w"> </span>0x1
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Write protect security eFuses</p></li>
+</ol>
+<p>After burning the respective eFuses, we need to <code class="docutils literal notranslate"><span class="pre">write_protect</span></code> the security configurations.
+It can be done by burning following eFuse:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>write_protect_efuse<span class="w"> </span>DIS_CACHE
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The write protection of above eFuse also write protects multiple other eFuses. Please refer to the ESP32 eFuse table for more details.</p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Configure the project</p></li>
+</ol>
+<p>Flash Encryption release mode can be set in the your <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code> as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable Flash Encryption on boot</span>
+<span class="nv">CONFIG_SECURE_FLASH_ENC_ENABLED</span><span class="o">=</span>y
+
+<span class="c1"># Select the RELEASE mode</span>
+<span class="nv">CONFIG_SECURE_FLASH_ENCRYPTION_MODE_RELEASE</span><span class="o">=</span>y
+
+<span class="c1"># Select UART ROM download mode (permanently disabled (recommended))</span>
+<span class="nv">CONFIG_SECURE_DISABLE_ROM_DL_MODE</span><span class="o">=</span>y
+
+<span class="c1"># Select the appropriate bootloader log verbosity (for example info)</span>
+<span class="nv">CONFIG_BOOTLOADER_LOG_LEVEL_INFO</span><span class="o">=</span>y
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that once release mode is selected, the <code class="docutils literal notranslate"><span class="pre">DISABLE_DL_ENCRYPT</span></code> and <code class="docutils literal notranslate"><span class="pre">DISABLE_DL_DECRYPT</span></code> eFuse bits will be burned to disable Flash Encryption hardware in ROM download mode</p>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Add extra upload flags</p></li>
+</ol>
+<p>Since the Flash Encryption feature was enabled in advance and we’re uploading pre-encrypted binaries, we need to add a special <code class="docutils literal notranslate"><span class="pre">--force</span></code> flag to the upload process using an extra script:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:esp32dev]</span>
+<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">platformio/espressif32</span>
+<span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">espidf</span>
+<span class="na">...</span>
+<span class="na">extra_scripts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">force_upload.py</span>
+<span class="na">...</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">force_upload.py</span></code> file should contain the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span> <span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">UPLOADCMD</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;$UPLOADCMD&quot;</span><span class="p">,</span> <span class="s2">&quot;--force&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Build, Encrypt and Upload the binaries</p></li>
+</ol>
+<p>The project can be built via the usual <code class="docutils literal notranslate"><span class="pre">run</span></code> command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run
+</pre></div>
+</div>
+<p>The encrypted binaries can be generated by running the <code class="docutils literal notranslate"><span class="pre">encrypt</span></code> target:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>encrypt
+</pre></div>
+</div>
+<p>To upload the encrypted binaries run the combination of the <code class="docutils literal notranslate"><span class="pre">encrypt</span></code> and <code class="docutils literal notranslate"><span class="pre">upload</span></code> targets:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>encrypt<span class="w"> </span>-t<span class="w"> </span>upload
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>Secure the ROM download mode</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please perform the following step at the very end after enabling Flash Encryption and Secure Boot features.
+Once this eFuse is burned, the espefuse tool can no longer be used to burn additional eFuses.</p>
+</div>
+<p>Disable UART ROM DL mode:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>burn_efuse<span class="w"> </span>UART_DOWNLOAD_DIS
+</pre></div>
+</div>
+<ol class="arabic simple" start="11">
+<li><p>Delete Flash Encryption key on host</p></li>
+</ol>
+<p>Once the Flash Encryption has been enabled for the device, the key must be deleted immediately. This ensures that the host can’t produce encrypted binaries for the same device going forward. This step is important to reduce the vulnerability of the Flash Encryption key.</p>
+</section>
+<section id="secure-bootloader">
+<h4><a class="toc-backref" href="#id20" role="doc-backlink">Secure Bootloader</a><a class="headerlink" href="#secure-bootloader" title="Link to this heading"></a></h4>
+<p>Secure Boot protects a device from running any unauthorized (i.e., unsigned) code by checking that each piece of software that is being booted is signed. On an ESP32, these pieces of software include the second stage bootloader and each application binary. Note that the first stage (ROM) bootloader does not require signing as it is ROM code and thus cannot be changed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Only Secure Boot v2 is supported</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Secure Boot v2 option is available on ESP32 chips starting from
+revision v3.0. To enable this option in <code class="docutils literal notranslate"><span class="pre">menuconfig</span></code>,
+set <code class="docutils literal notranslate"><span class="pre">CONFIG_ESP32_REV_MIN</span></code> to v3.0 or higher.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If Secure Boot or Flash Encryption is enabled, the reset method is set
+to <code class="docutils literal notranslate"><span class="pre">no_reset</span></code> to stay in the bootloader after uploading.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Turning on Secure Boot increases the bootloader size,
+which may require adjusting the partition table offset.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, the bootloader binary is not programmed unless the
+<code class="docutils literal notranslate"><span class="pre">CONFIG_SECURE_BOOT_FLASH_BOOTLOADER_DEFAULT</span></code> option is explicitly enabled
+in your <code class="docutils literal notranslate"><span class="pre">sdkconfig</span></code> file.</p>
+</div>
+<p>It’s recommended to read the official <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html">Secure Boot Programming Guide</a> to understand the overall workflow before getting started. Here’s an adapted version of that page that uses PlatformIO packages to build,
+sign and upload binaries:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The instructions below are intended for ESP32 targets. For other variants open <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html">Secure Boot Programming Guide</a> and select your target from the menu on the left.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Generate Secure Boot Signing Private Key:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espsecure.py<span class="w"> </span>generate_signing_key<span class="w"> </span>--version<span class="w"> </span><span class="m">2</span><span class="w"> </span>--scheme<span class="w"> </span>rsa3072<span class="w"> </span>secure_boot_signing_key.pem
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For production environments, we recommend generating the key pair using OpenSSL or another industry-standard encryption program.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">secure_boot_signing_key.pem</span></code>  is the default key name. If you change it, don’t forget to update your project configuration accordingly. For example,
+by adding the <code class="docutils literal notranslate"><span class="pre">CONFIG_SECURE_BOOT_SIGNING_KEY=&quot;my_sb_signing_key.pem&quot;</span></code>
+option to your <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code>.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Generate Public Key Digest:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espsecure.py<span class="w"> </span>digest_sbv2_public_key<span class="w"> </span>--keyfile<span class="w"> </span>secure_boot_signing_key.pem<span class="w"> </span>--output<span class="w"> </span>digest.bin
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Burn the key digest in eFuse:</p></li>
+</ol>
+<p>Where <code class="docutils literal notranslate"><span class="pre">$PORT</span></code> is the serial port of your target device:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>--chip<span class="w"> </span>esp32<span class="w"> </span>burn_key<span class="w"> </span>secure_boot_v2<span class="w"> </span>digest.bin
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Enable Secure Boot:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>--chip<span class="w"> </span>esp32<span class="w"> </span>burn_efuse<span class="w"> </span>ABS_DONE_1
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Burn security eFuses:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">JTAG_DISABLE</span></code>: Disable the JTAG.</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>burn_efuse<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>JTAG_DISABLE<span class="w"> </span>0x1
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Burn Secure Boot related eFuses</p></li>
+</ol>
+<p>The Secure Boot digest burned in the eFuse must be kept readable otherwise the Secure Boot operation would result in a failure. To prevent the accidental enabling of read protection for this key block, the following eFuse needs to be burned:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>-p<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>write_protect_efuse<span class="w"> </span>RD_DIS
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After burning above-mentioned eFuse, the read protection can’t be enabled for any key. For example, if Flash Encryption which requires read protection for its key is not enabled at this point, then it can’t be enabled afterwards. Please ensure that no eFuse keys are going to need read protection after completing this step.</p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Configure the project:</p></li>
+</ol>
+<p>The Secure Boot can be enabled either by running the <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">menuconfig</span></code>
+target and setting <code class="docutils literal notranslate"><span class="pre">Security</span> <span class="pre">features</span> <span class="pre">-&gt;</span> <span class="pre">Enable</span> <span class="pre">hardware</span> <span class="pre">Secure</span> <span class="pre">Boot</span></code> option.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For ESP32, Secure Boot v2 is available only for ESP32 ECO3 onwards.
+To view the Secure Boot v2 option the chip revision should be changed to
+revision v3.0 (ECO3). To change the chip revision, run the <code class="docutils literal notranslate"><span class="pre">menuconfig</span></code>
+target and set <code class="docutils literal notranslate"><span class="pre">Minimum</span> <span class="pre">Supported</span> <span class="pre">ESP32</span> <span class="pre">Revision</span></code> to <code class="docutils literal notranslate"><span class="pre">Rev</span> <span class="pre">3.0</span> <span class="pre">(ECO3)</span></code> in <code class="docutils literal notranslate"><span class="pre">Component</span> <span class="pre">Config</span> <span class="pre">-&gt;</span> <span class="pre">Hardware</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Chip</span> <span class="pre">Revision</span></code></p>
+</div>
+<p>or directly in the <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code> file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># ESP32-specific settings</span>
+<span class="nv">CONFIG_ESP32_REV_MIN_3</span><span class="o">=</span>y
+
+<span class="c1"># Secure Boot settings</span>
+<span class="nv">CONFIG_SECURE_BOOT</span><span class="o">=</span>y
+<span class="nv">CONFIG_SECURE_BOOT_V2_ENABLED</span><span class="o">=</span>y
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default PlatformIO won’t automatically sign any built binaries,
+unless the <code class="docutils literal notranslate"><span class="pre">CONFIG_SECURE_BOOT_BUILD_SIGNED_BINARIES</span></code> option is set.</p>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>Build, Sign and Upload the binaries:</p></li>
+</ol>
+<p>The project can be built via the usual <code class="docutils literal notranslate"><span class="pre">run</span></code> command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run
+</pre></div>
+</div>
+<p>Signed binaries will be generated automatically if the <code class="docutils literal notranslate"><span class="pre">CONFIG_SECURE_BOOT_BUILD_SIGNED_BINARIES</span></code> option is enabled.
+Alternatively, they can be generated by running the <code class="docutils literal notranslate"><span class="pre">sign</span></code> target:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>sign
+</pre></div>
+</div>
+<p>To upload the signed binaries run the usual <code class="docutils literal notranslate"><span class="pre">upload</span></code> target
+(if the <code class="docutils literal notranslate"><span class="pre">CONFIG_SECURE_BOOT_BUILD_SIGNED_BINARIES</span></code> option is enabled)
+or use the combination of the <code class="docutils literal notranslate"><span class="pre">sign</span></code> and <code class="docutils literal notranslate"><span class="pre">upload</span></code> targets:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span>sign<span class="w"> </span>-t<span class="w"> </span>upload
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default the bootloader binary is not uploaded when Secure Boot is enabled
+unless the <code class="docutils literal notranslate"><span class="pre">SECURE_BOOT_FLASH_BOOTLOADER_DEFAULT</span></code> is enabled.
+As an alternative, there is a special target <code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">-t</span> <span class="pre">sign</span> <span class="pre">-t</span> <span class="pre">upload-bootloader</span></code> that can be used to upload only the signed bootloader binary.</p>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Secure the ROM download mode:</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please perform the following step at the very end.
+After this eFuse is burned, the <code class="docutils literal notranslate"><span class="pre">espefuse</span></code> tool can no longer
+be used to burn additional eFuses.</p>
+</div>
+<p>Burn the fuse that disables the UART ROM download mode</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espefuse.py<span class="w"> </span>--port<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>burn_efuse<span class="w"> </span>UART_DOWNLOAD_DIS
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommended to store the Secure Boot key in a highly secure place. A physical or a cloud HSM may be used for secure storage of the Secure Boot private key.</p>
+</div>
+</section>
+<section id="nvs-encryption-flash-encryption-based-scheme">
+<h4><a class="toc-backref" href="#id21" role="doc-backlink">NVS Encryption: Flash Encryption-Based Scheme</a><a class="headerlink" href="#nvs-encryption-flash-encryption-based-scheme" title="Link to this heading"></a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The instructions below are intended for ESP32 targets. For other variants open <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/security/security-features-enablement-workflows.html#enable-nvs-encryption-externally">Secure Boot Programming Guide</a> and select your target from the menu on the left.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this scheme, the keys required for NVS encryption are stored in yet another partition, which is protected using Flash Encryption. Therefore, enabling Flash Encryption becomes a prerequisite for NVS encryption here.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An application requiring NVS encryption support (using the Flash Encryption-based scheme) needs to be compiled with a key-partition of the type data and subtype <code class="docutils literal notranslate"><span class="pre">nvs_keys</span></code>. This partition should be marked as encrypted and its size should be the minimum partition size (4 KB).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>NVS encryption is enabled by default when Flash Encryption is enabled. This is done because Wi-Fi driver stores credentials (like SSID and passphrase) in the default NVS partition. It is important to encrypt them as default choice if platform-level encryption is already enabled.</p>
+</div>
+<p>It’s recommended to read the official <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/nvs_encryption.html">NVS Encryption Guide</a> to understand the overall workflow before getting started. Here’s an adapted version of that page that uses PlatformIO packages to build,
+sign and upload binaries:</p>
+<ol class="arabic simple">
+<li><p>Generate the NVS encryption key</p></li>
+</ol>
+<p>The NVS Encryption key can be generated using the following command. This key is then flashed on the chip and protected with the help of Flash Encryption features</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/framework-espidf&quot;</span><span class="w"> </span>--<span class="w"> </span>components/nvs_flash/nvs_partition_generator/nvs_partition_gen.py<span class="w"> </span>generate-key<span class="w"> </span>--keyfile<span class="w"> </span>nvs_encr_key.bin
+</pre></div>
+</div>
+<p>This command will generate the respective key in the <code class="docutils literal notranslate"><span class="pre">keys</span></code> folder.</p>
+<ol class="arabic simple" start="2">
+<li><p>Generate an encrypted NVS partition</p></li>
+</ol>
+<p>On this step we need to generate an encrypted NVS partition from a special CSV file. Please refer to <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#generate-encrypted-nvs-partition">Generate Encrypted NVS Partition</a> and <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#nvs-csv-file-format">CSV File Format</a> for more details.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/framework-espidf&quot;</span><span class="w"> </span>--<span class="w"> </span>components/nvs_flash/nvs_partition_generator/nvs_partition_gen.py<span class="w"> </span>encrypt<span class="w"> </span>nvs_data.csv<span class="w"> </span>nvs_encr_partition.bin<span class="w"> </span>0x121000<span class="w"> </span>--inputkey<span class="w"> </span>keys/nvs_encr_key.bin
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nvs_data.csv</span></code> - a CSV file which contains the NVS data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0x121000</span></code> is the NVS partition offset according to your partition table</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">keys/nvs_encr_key.bin</span></code> is an encryption key generated on the previous step</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Configure the project</p></li>
+</ol>
+<p>The NVS encryption using Flash Encryption can be enabled in your <code class="docutils literal notranslate"><span class="pre">sdkconfig.defaults</span></code> as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">CONFIG_NVS_ENCRYPTION</span><span class="o">=</span>y
+<span class="nv">CONFIG_NVS_SEC_KEY_PROTECT_USING_FLASH_ENC</span><span class="o">=</span>y
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Flash NVS partition and NVS encryption keys</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If Flash Encryption is enabled, the <code class="docutils literal notranslate"><span class="pre">nvs_key</span></code> partition need to be encrypted using Flash Encryption key before flashing.</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>espsecure.py<span class="w"> </span>encrypt_flash_data<span class="w"> </span>--keyfile<span class="w"> </span>my_flash_encryption_key.bin<span class="w"> </span>--address<span class="w"> </span>0x120000
+--output<span class="w"> </span>keys/nvs_encr_key-encrypted.bin<span class="w"> </span>keys/nvs_encr_key.bin
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">my_flash_encryption_key.bin</span></code> - is your Flash Encryption Key</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0x120000</span></code> is the NVS Key partition offset according to your partition table</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">keys/nvs_encr_key.bin</span></code> is an encryption key generated on the previous step</p></li>
+</ul>
+<p>The final binaries can be uploaded via the <code class="docutils literal notranslate"><span class="pre">esptool.py</span></code> tool with corresponding offsets. You can change generic hardware parameters according to your target:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--package<span class="w"> </span><span class="s2">&quot;platformio/tool-esptoolpy&quot;</span><span class="w"> </span>--<span class="w"> </span>esptool.py<span class="w"> </span>--chip<span class="w"> </span>esp32<span class="w"> </span>-p<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span>--before<span class="o">=</span>default_reset<span class="w"> </span>--after<span class="o">=</span>no_reset<span class="w"> </span>write_flash<span class="w"> </span>--flash_mode<span class="w"> </span>dio<span class="w"> </span>--flash_freq<span class="w"> </span>80m<span class="w"> </span>--flash_size<span class="w"> </span>4MB<span class="w"> </span>0x120000<span class="w"> </span>keys/nvs_encr_key-encrypted.bin<span class="w"> </span>0x121000<span class="w"> </span>nvs_encr_partition-encrypted.bin<span class="w"> </span>--force
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$PORT</span></code> is the serial port of your target device</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0x120000</span></code> is the NVS Key partition offset according to your partition table</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0x121000</span></code> is the NVS partition offset according to your partition table</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">keys/nvs_encr_key.bin</span></code> is an encryption key generated on the previous step</p></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="limitations">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
 <p>At the moment several limitations are present:</p>
 <ul>
 <li><p>No whitespace characters allowed in project paths. This limitation is imposed by the
@@ -539,7 +973,7 @@ existing ESP-IDF projects. List of source files is specified in the project
 </ul>
 </section>
 <section id="platforms">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Platforms</a><a class="headerlink" href="#platforms" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -554,26 +988,26 @@ existing ESP-IDF projects. List of source files is specified in the project
 </table>
 </section>
 <section id="examples">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&amp;utm_medium=docs">Espressif IoT Development Framework for Espressif 32</a></p></li>
 </ul>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
-<nav class="contents local" id="id3">
+<nav class="contents local" id="id6">
 <ul class="simple">
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id15">Tools &amp; Debug Probes</a></p>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id22">Tools &amp; Debug Probes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#on-board-debug-tools" id="id16">On-Board Debug Tools</a></p></li>
-<li><p><a class="reference internal" href="#external-debug-tools" id="id17">External Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#on-board-debug-tools" id="id23">On-Board Debug Tools</a></p></li>
+<li><p><a class="reference internal" href="#external-debug-tools" id="id24">External Debug Tools</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
@@ -584,7 +1018,7 @@ You can switch between debugging <a class="reference internal" href="../plus/deb
 Please click on compatible debug tool below for the further instructions.</p>
 </div>
 <section id="on-board-debug-tools">
-<h4><a class="toc-backref" href="#id16" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id23" role="doc-backlink">On-Board Debug Tools</a><a class="headerlink" href="#on-board-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below have on-board debug probe and <strong>ARE READY</strong> for debugging!
 You do not need to use/buy external debug probe.</p>
 <table class="docutils align-default">
@@ -658,7 +1092,7 @@ You do not need to use/buy external debug probe.</p>
 </table>
 </section>
 <section id="external-debug-tools">
-<h4><a class="toc-backref" href="#id17" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">External Debug Tools</a><a class="headerlink" href="#external-debug-tools" title="Link to this heading"></a></h4>
 <p>Boards listed below are compatible with <a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> but <strong>DEPEND ON</strong>
 external debug probe. They <strong>ARE NOT READY</strong> for debugging.
 Please click on board name for the further details.</p>
@@ -1890,7 +2324,7 @@ Please click on board name for the further details.</p>
 </section>
 </section>
 <section id="boards">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Boards</a><a class="headerlink" href="#boards" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -2174,8 +2608,8 @@ Please click on board name for the further details.</p>
 </tbody>
 </table>
 </section>
-<section id="id4">
-<h3>Ai-Thinker<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<section id="id7">
+<h3>Ai-Thinker<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
