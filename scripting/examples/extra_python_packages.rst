@@ -27,7 +27,7 @@ install them into the same virtual environment where :ref:`piocore` is installed
 
 .. code-block:: python
 
-    Import("env")
+    import env
 
     # List installed packages
     env.Execute("$PYTHONEXE -m pip list")
