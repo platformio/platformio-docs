@@ -624,6 +624,7 @@ Espressif 32
     espressif32/watchy
     espressif32/edgebox-esp-100
     espressif32/seeed_xiao_esp32c3
+    espressif32/seeed_xiao_esp32c6
     espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
     espressif32/bee_data_logger
