@@ -15,7 +15,7 @@ ESP-Prog
 ========
 
 .. image:: ../../_static/images/debug_probes/esp-prog.jpg
-  :target: https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs
+  :target: https://github.com/espressif/esp-iot-solution/blob/master/docs/en/hw-reference/ESP-Prog_guide.rst?utm_source=platformio&utm_medium=docs
 
 ESP-Prog is one of Espressif’s development and debugging tools, with functions
 including automatic firmware downloading, serial communication, and JTAG
