@@ -36,9 +36,12 @@ Installation
       This a **temporary step** and depends on `CLion #CPP-19412: Automatically install PlatformIO Core  <https://youtrack.jetbrains.com/issue/CPP-19412>`_
 
 2. `Download <https://www.jetbrains.com/clion/>`_ and install CLion IDE
-3. Install official `PlatformIO for CLion <https://plugins.jetbrains.com/plugin/13922-platformio-for-clion>`_ plugin.
+3. Install the official `PlatformIO for CLion <https://plugins.jetbrains.com/plugin/13922-platformio-for-clion>`_ plugin.
    Open "Configure > Plugins" window and go to the "Marketplace" tab. Search for
-   ``PlatformIO`` and press the "Install" button.
+   ``PlatformIO`` and press the "Install" button. If you do not see it in the
+   marketplace, check that your CLion version is supported by the `latest plugin
+   version <https://plugins.jetbrains.com/plugin/13922-platformio-for-clion/versions>`_.
+   You may need to downgrade or upgrade CLion.
 
    .. image:: ../../_static/images/ide/clion/ide-platformio-clion-install-plugin.png
 
