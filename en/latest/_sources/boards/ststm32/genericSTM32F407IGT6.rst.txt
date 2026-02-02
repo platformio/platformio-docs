@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 1MB
   * - **RAM**
-    - 192KB
+    - 128KB
   * - **Vendor**
     - `Generic <https://www.st.com/en/microcontrollers-microprocessors/stm32f407ig.html?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -124,6 +124,9 @@ Frameworks
 
     * - Name
       - Description
+
+    * - :ref:`framework_arduino`
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series

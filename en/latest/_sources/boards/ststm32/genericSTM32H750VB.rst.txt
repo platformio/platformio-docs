@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 128KB
   * - **RAM**
-    - 1MB
+    - 512KB
   * - **Vendor**
     - `Generic <https://www.st.com/en/microcontrollers-microprocessors/stm32h750vb.html?utm_source=platformio.org&utm_medium=docs>`__
 

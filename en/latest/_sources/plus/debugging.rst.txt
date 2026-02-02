@@ -1596,6 +1596,13 @@ Arduino
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_raspberrypi_nanorp2040connect`
       - :ref:`platform_raspberrypi`
       - External
@@ -2668,6 +2675,27 @@ ESP32vn
       - 4MB
       - 320KB
 
+Ebyte
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
+
 Econode
 ~~~~~~~
 
@@ -3541,7 +3569,7 @@ Generic
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -3730,7 +3758,7 @@ Generic
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
 
 Gimasi
 ~~~~~~
@@ -6160,6 +6188,13 @@ ST
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - :ref:`platform_ststm32`
       - On-board
@@ -6489,6 +6524,13 @@ ST
       - 64MHz
       - 512KB
       - 144KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -7025,6 +7067,13 @@ Seeed Studio
       - :ref:`platform_espressif32`
       - External
       - ESP32C3
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
       - 160MHz
       - 4MB
       - 320KB
@@ -8401,6 +8450,34 @@ VintLabs
       - 4MB
       - 320KB
 
+WE
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+
 WEMOS
 ~~~~~
 
@@ -8734,6 +8811,34 @@ XinaBox
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+
+cezerio
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
       - 4MB
       - 320KB
 

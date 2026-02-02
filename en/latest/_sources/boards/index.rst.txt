@@ -624,6 +624,7 @@ Espressif 32
     espressif32/watchy
     espressif32/edgebox-esp-100
     espressif32/seeed_xiao_esp32c3
+    espressif32/seeed_xiao_esp32c6
     espressif32/seeed_xiao_esp32s3
     espressif32/wesp32
     espressif32/bee_data_logger
@@ -683,6 +684,8 @@ Espressif 32
     espressif32/wt32-eth01
     espressif32/xinabox_cw02
     espressif32/nscreen-32
+    espressif32/cezerio_dev_esp32c6
+    espressif32/cezerio_mini_dev_esp32c6
     espressif32/micros2
     espressif32/iotbusio
     espressif32/iotbusproteus
@@ -1266,6 +1269,7 @@ Renesas RA
 .. toctree::
     :maxdepth: 1
         
+    renesas-ra/nano_r4
     renesas-ra/portenta_c33
     renesas-ra/uno_r4_minima
     renesas-ra/uno_r4_wifi
@@ -1367,6 +1371,7 @@ ST STM32
     ststm32/demo_f030f4
     ststm32/devebox_h743vitx
     ststm32/devebox_h750vbtx
+    ststm32/ebyte_e77_dev
     ststm32/econode_l082cz
     ststm32/electrosmith_daisy
     ststm32/electrosmith_daisy_patch_sm
@@ -1403,6 +1408,7 @@ ST STM32
     ststm32/nucleo_g431kb
     ststm32/nucleo_g431rb
     ststm32/nucleo_g474re
+    ststm32/nucleo_g491re
     ststm32/olimexino
     ststm32/olimexino_stm32f3
     ststm32/olimex_f103
@@ -1466,6 +1472,7 @@ ST STM32
     ststm32/nucleo_f756zg
     ststm32/nucleo_f767zi
     ststm32/nucleo_g0b1re
+    ststm32/nucleo_h563zi
     ststm32/nucleo_h723zg
     ststm32/nucleo_h743zi
     ststm32/nucleo_h745zi_q
@@ -1593,6 +1600,8 @@ ST STM32
     ststm32/vake_v1
     ststm32/vccgnd_f103zet6
     ststm32/vccgnd_f407zg_mini
+    ststm32/we_oceanus1_ev
+    ststm32/we_oceanus1
     ststm32/waveshare_open103z
     ststm32/blackpill_f401cc
     ststm32/blackpill_f411ce

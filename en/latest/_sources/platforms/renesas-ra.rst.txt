@@ -102,6 +102,11 @@ Please click on board name for the further details.
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_renesas-ra_nano_r4`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_renesas-ra_portenta_c33`
       - R7FA6M5BH2CBG
       - 200MHz
@@ -234,6 +239,12 @@ Arduino
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_renesas-ra_nano_r4`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_renesas-ra_portenta_c33`
       - External
       - R7FA6M5BH2CBG
