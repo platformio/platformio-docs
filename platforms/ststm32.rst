@@ -198,6 +198,11 @@ You do not need to use/buy external debug probe.
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - STM32WB55RG
       - 64MHz
@@ -846,6 +851,11 @@ Please click on board name for the further details.
       - 480MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_econode_l082cz`
       - STM32L082CZY6
       - 32MHz
@@ -1056,6 +1066,11 @@ Please click on board name for the further details.
       - 168MHz
       - 502.23KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_g031j6`
       - STM32G031J6
       - 64MHz
@@ -1295,7 +1310,7 @@ Please click on board name for the further details.
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - STM32F407VET6
       - 168MHz
@@ -1435,7 +1450,7 @@ Please click on board name for the further details.
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - STM32F103RCT6
       - 72MHz
@@ -1501,6 +1516,16 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_waveshare_open103z`
       - STM32F103ZET6
       - 72MHz
@@ -1732,6 +1757,9 @@ Packages
 
     * - `tool-stm32duino <https://registry.platformio.org/tools/platformio/tool-stm32duino>`__
       - STM32Duino Tools
+
+    * - `tool-stm32flash <https://registry.platformio.org/tools/platformio/tool-stm32flash>`__
+      - Open source cross platform flash program for the STM32 ARM microcontrollers using the built-in ST serial bootloader over UART or I2C
 
     * - `toolchain-gccarmnoneeabi <https://registry.platformio.org/tools/platformio/toolchain-gccarmnoneeabi>`__
       - GNU toolchain for Arm Cortex-M and Cortex-R processors
@@ -2156,6 +2184,25 @@ Diymore
       - 1MB
       - 128KB
 
+Ebyte
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - External
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
+
 Econode
 ~~~~~~~
 
@@ -2568,7 +2615,7 @@ Generic
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - External
       - STM32F407VET6
@@ -2730,7 +2777,7 @@ Generic
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
 
 HY
 ~~
@@ -3303,6 +3350,12 @@ ST
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_nucleo_wb55rg_p`
       - On-board
       - STM32WB55RG
@@ -3585,6 +3638,12 @@ ST
       - 64MHz
       - 512KB
       - 144KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - External
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - On-board
       - STM32H723ZGT6
@@ -4075,6 +4134,31 @@ VCCGND
       - 168MHz
       - 1MB
       - 128KB
+
+WE
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
 
 Waveshare
 ~~~~~~~~~

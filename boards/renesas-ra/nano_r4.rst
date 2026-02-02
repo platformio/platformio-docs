@@ -9,82 +9,80 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l552ze_q:
+.. _board_renesas-ra_nano_r4:
 
-ST Nucleo L552ZE-Q
-==================
+Arduino Nano R4
+===============
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
+Platform :ref:`platform_renesas-ra`: Renesas Advanced (RA) 32-bit microcontrollers with the Arm Cortex-M33, -M23 and -M4 processor cores deliver key advantages compared to competitive Arm Cortex-M MCUs by providing stronger embedded security, superior CoreMark performance and ultra-low power operation.
 
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L552ZET6
+    - RA4M1
   * - **Frequency**
-    - 80MHz
+    - 48MHz
   * - **Flash**
-    - 512KB
+    - 256KB
   * - **RAM**
-    - 192KB
+    - 32KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l552ze-q.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `Arduino <https://docs.arduino.cc/hardware/nano-r4/?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l552ze_q`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``nano_r4`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
-  platform = ststm32
-  board = nucleo_l552ze_q
+  [env:nano_r4]
+  platform = renesas-ra
+  board = nano_r4
 
-You can override default ST Nucleo L552ZE-Q settings per build environment using
+You can override default Arduino Nano R4 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l552ze_q.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l552ze_q.json>`_. For example,
+board manifest `nano_r4.json <https://github.com/platformio/platform-renesas-ra/blob/master/boards/nano_r4.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
-  platform = ststm32
-  board = nucleo_l552ze_q
+  [env:nano_r4]
+  platform = renesas-ra
+  board = nano_r4
 
   ; change microcontroller
-  board_build.mcu = stm32l552zet6
+  board_build.mcu = ra4m1
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-ST Nucleo L552ZE-Q supports the following uploading protocols:
+Arduino Nano R4 supports the following uploading protocols:
 
-* ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
-* ``mbed``
-* ``stlink``
 
-Default protocol is ``stlink``
+Default protocol is ``dfu``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
-  platform = ststm32
-  board = nucleo_l552ze_q
+  [env:nano_r4]
+  platform = renesas-ra
+  board = nano_r4
 
-  upload_protocol = stlink
+  upload_protocol = dfu
 
 Debugging
 ---------
@@ -99,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L552ZE-Q has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+Arduino Nano R4 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -107,18 +105,12 @@ ST Nucleo L552ZE-Q has on-board debug probe and **IS READY** for debugging. You 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_jlink`
     - 
     - 
-  * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
 
 Frameworks
 ----------
@@ -134,8 +126,5 @@ Frameworks
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
-
-    * - :ref:`framework_zephyr`
-      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures
+    * - :ref:`framework_fsp`
+      - The Renesas Flexible Software Package (FSP) is an enhanced software package designed to provide easy-to-use, scalable, high-quality software for embedded system designs using Renesas RA family of Arm Microcontrollers.

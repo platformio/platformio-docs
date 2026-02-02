@@ -525,6 +525,13 @@ Boards
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_raspberrypi_nanorp2040connect`
       - :ref:`platform_raspberrypi`
       - External
@@ -1841,6 +1848,13 @@ Boards
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_espressif32_esp32-devkitlipo`
       - :ref:`platform_espressif32`
       - External
@@ -2891,6 +2905,13 @@ Boards
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - :ref:`platform_espressif32`
       - External
@@ -3379,6 +3400,20 @@ Boards
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_nordicnrf52_dwm1001_dev`

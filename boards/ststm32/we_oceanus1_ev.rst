@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_l552ze_q:
+.. _board_ststm32_we_oceanus1_ev:
 
-ST Nucleo L552ZE-Q
-==================
+WE Oceanus-I EV
+===============
 
 .. contents::
 
@@ -24,54 +24,51 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32L552ZET6
+    - STM32WLE5CCU6 
   * - **Frequency**
-    - 80MHz
+    - 48MHz
   * - **Flash**
-    - 512KB
+    - 256KB
   * - **RAM**
-    - 192KB
+    - 64KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-l552ze-q.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `WE <https://www.we-online.com/en/components/products/OCEANUS-I?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_l552ze_q`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``we_oceanus1_ev`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
+  [env:we_oceanus1_ev]
   platform = ststm32
-  board = nucleo_l552ze_q
+  board = we_oceanus1_ev
 
-You can override default ST Nucleo L552ZE-Q settings per build environment using
+You can override default WE Oceanus-I EV settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_l552ze_q.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_l552ze_q.json>`_. For example,
+board manifest `we_oceanus1_ev.json <https://github.com/platformio/platform-ststm32/blob/master/boards/we_oceanus1_ev.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
+  [env:we_oceanus1_ev]
   platform = ststm32
-  board = nucleo_l552ze_q
+  board = we_oceanus1_ev
 
   ; change microcontroller
-  board_build.mcu = stm32l552zet6
+  board_build.mcu = stm32wle5ccu6 
 
   ; change MCU frequency
-  board_build.f_cpu = 80000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-ST Nucleo L552ZE-Q supports the following uploading protocols:
+WE Oceanus-I EV supports the following uploading protocols:
 
-* ``blackmagic``
-* ``cmsis-dap``
 * ``jlink``
-* ``mbed``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -80,9 +77,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_l552ze_q]
+  [env:we_oceanus1_ev]
   platform = ststm32
-  board = nucleo_l552ze_q
+  board = we_oceanus1_ev
 
   upload_protocol = stlink
 
@@ -99,7 +96,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST Nucleo L552ZE-Q has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+WE Oceanus-I EV does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -107,18 +104,12 @@ ST Nucleo L552ZE-Q has on-board debug probe and **IS READY** for debugging. You 
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
-  * - :ref:`debugging_tool_cmsis-dap`
-    - 
-    - 
   * - :ref:`debugging_tool_jlink`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------
@@ -130,12 +121,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_cmsis`
-      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
-
-    * - :ref:`framework_stm32cube`
-      - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency
 
     * - :ref:`framework_zephyr`
       - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

@@ -1394,6 +1394,13 @@ Boards
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - External
@@ -2534,7 +2541,7 @@ Boards
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F410C8`
       - :ref:`platform_ststm32`
       - External
@@ -2730,7 +2737,7 @@ Boards
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - External
