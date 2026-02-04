@@ -83,6 +83,9 @@ using :ref:`projectconf_build_flags`:
 
 A default macro is set to ``-D USB_SERIAL`` if no one is specified.
 
+.. warning::
+    ``USB_EVERYTHING`` is only available on the Teensy 3.1, 3.5, and 3.6.
+
 Example:
 
 .. code-block:: ini

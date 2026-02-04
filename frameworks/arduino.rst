@@ -484,6 +484,12 @@ You do not need to use/buy external debug probe.
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_nucleo_f410rb`
+      - :ref:`platform_ststm32`
+      - STM32F410RBT6
+      - 100MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - STM32F411RET6
@@ -595,6 +601,12 @@ You do not need to use/buy external debug probe.
     * - :ref:`board_ststm32_nucleo_l412kb`
       - :ref:`platform_ststm32`
       - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - STM32L412RBT6P
       - 80MHz
       - 128KB
       - 40KB
@@ -1769,6 +1781,12 @@ Please click on board name for the further details.
       - 240MHz
       - 16MB
       - 320KB
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_raspberrypi_nanorp2040connect`
       - :ref:`platform_raspberrypi`
       - RP2040
@@ -2273,6 +2291,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_econode_l082cz`
       - :ref:`platform_ststm32`
       - STM32L082CZY6
@@ -3137,6 +3161,12 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - :ref:`platform_ststm32`
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_disco_g031j6`
       - :ref:`platform_ststm32`
       - STM32G031J6
@@ -3401,6 +3431,12 @@ Please click on board name for the further details.
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -3568,7 +3604,7 @@ Please click on board name for the further details.
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - STM32F103RCT6
@@ -4187,6 +4223,18 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_espressif32_wemos_d1_mini32`
       - :ref:`platform_espressif32`
       - ESP32
@@ -5723,6 +5771,13 @@ Arduino
       - 16MHz
       - 47.50KB
       - 6KB
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_raspberrypi_nanorp2040connect`
       - :ref:`platform_raspberrypi`
       - External
@@ -7201,6 +7256,27 @@ ETBoard
       - 4MB
       - 320KB
 
+Ebyte
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
+
 Econode
 ~~~~~~~
 
@@ -8082,6 +8158,13 @@ Generic
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_genericSTM32F407IGT6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32F407IGT6
+      - 168MHz
+      - 1MB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -8270,7 +8353,7 @@ Generic
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
 
 Gimasi
 ~~~~~~
@@ -12023,6 +12106,13 @@ ST
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_nucleo_f410rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32F410RBT6
+      - 100MHz
+      - 128KB
+      - 32KB
     * - :ref:`board_ststm32_nucleo_f411re`
       - :ref:`platform_ststm32`
       - On-board
@@ -12093,6 +12183,13 @@ ST
       - 64MHz
       - 512KB
       - 144KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -12153,6 +12250,13 @@ ST
       - :ref:`platform_ststm32`
       - On-board
       - STM32L412KBU6
+      - 80MHz
+      - 128KB
+      - 40KB
+    * - :ref:`board_ststm32_nucleo_l412rb_p`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L412RBT6P
       - 80MHz
       - 128KB
       - 40KB
@@ -13878,6 +13982,34 @@ VintLabs
       - 240MHz
       - 4MB
       - 320KB
+
+WE
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
 
 WEMOS
 ~~~~~

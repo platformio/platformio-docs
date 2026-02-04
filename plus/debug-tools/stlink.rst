@@ -649,6 +649,13 @@ Boards
       - 84MHz
       - 512KB
       - 96KB
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_econode_l082cz`
       - :ref:`platform_ststm32`
       - External
@@ -1013,6 +1020,13 @@ Boards
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_olimexino`
       - :ref:`platform_ststm32`
       - External
@@ -2118,7 +2132,7 @@ Boards
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -2335,7 +2349,7 @@ Boards
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - External
@@ -2482,6 +2496,20 @@ Boards
       - NRF52832
       - 64MHz
       - 512KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
       - 64KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`

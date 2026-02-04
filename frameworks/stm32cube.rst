@@ -186,6 +186,12 @@ You do not need to use/buy external debug probe.
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_cloud_jam`
       - :ref:`platform_ststm32`
       - STM32F401RET6
@@ -1422,7 +1428,7 @@ Please click on board name for the further details.
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1590,7 +1596,7 @@ Please click on board name for the further details.
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - STM32F103RCT6
@@ -2543,7 +2549,7 @@ Generic
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -2732,7 +2738,7 @@ Generic
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
 
 HY
 ~~
@@ -3356,6 +3362,13 @@ ST
       - 170MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g491re`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G491RET6
+      - 170MHz
+      - 512KB
+      - 112KB
     * - :ref:`board_ststm32_rhf76_052`
       - :ref:`platform_ststm32`
       - External

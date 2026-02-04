@@ -15,7 +15,7 @@ ESP-Prog
 ========
 
 .. image:: ../../_static/images/debug_probes/esp-prog.jpg
-  :target: https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs
+  :target: https://github.com/espressif/esp-iot-solution/blob/master/docs/en/hw-reference/ESP-Prog_guide.rst?utm_source=platformio&utm_medium=docs
 
 ESP-Prog is one of Espressif’s development and debugging tools, with functions
 including automatic firmware downloading, serial communication, and JTAG
@@ -1020,6 +1020,13 @@ Boards
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - :ref:`platform_espressif32`
       - External
@@ -1382,6 +1389,20 @@ Boards
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_micros2`

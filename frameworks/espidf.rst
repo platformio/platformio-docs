@@ -817,6 +817,12 @@ Please click on board name for the further details.
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - :ref:`platform_espressif32`
       - ESP32S3
@@ -1127,6 +1133,18 @@ Please click on board name for the further details.
       - :ref:`platform_espressif32`
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - ESP32C6
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_micros2`
@@ -3319,6 +3337,13 @@ Seeed Studio
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - :ref:`platform_espressif32`
       - External
@@ -4102,6 +4127,34 @@ YeaCreate
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+cezerio
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
       - 320KB
 
 microS2
