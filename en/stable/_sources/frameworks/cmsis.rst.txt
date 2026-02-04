@@ -730,6 +730,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_renesas-ra_portenta_c33`
       - :ref:`platform_renesas-ra`
       - R7FA6M5BH2CBG
@@ -1341,7 +1347,7 @@ Please click on board name for the further details.
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - STM32F407VET6
@@ -1509,7 +1515,7 @@ Please click on board name for the further details.
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
     * - :ref:`board_ststm32_storm32_v1_31_rc`
       - :ref:`platform_ststm32`
       - STM32F103RCT6
@@ -1787,6 +1793,13 @@ Arduino
       - Frequency
       - Flash
       - RAM
+    * - :ref:`board_renesas-ra_nano_r4`
+      - :ref:`platform_renesas-ra`
+      - External
+      - RA4M1
+      - 48MHz
+      - 256KB
+      - 32KB
     * - :ref:`board_renesas-ra_portenta_c33`
       - :ref:`platform_renesas-ra`
       - External
@@ -2416,7 +2429,7 @@ Generic
       - STM32F407IGT6
       - 168MHz
       - 1MB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_genericSTM32F407VET6`
       - :ref:`platform_ststm32`
       - External
@@ -2605,7 +2618,7 @@ Generic
       - STM32H750VBT6
       - 480MHz
       - 128KB
-      - 1MB
+      - 512KB
 
 HY
 ~~

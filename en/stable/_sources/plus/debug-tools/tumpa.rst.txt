@@ -1037,6 +1037,13 @@ Boards
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - :ref:`platform_espressif32`
       - External
@@ -1399,6 +1406,20 @@ Boards
       - External
       - ESP32
       - 240MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - :ref:`platform_espressif32`
+      - External
+      - ESP32C6
+      - 160MHz
       - 4MB
       - 320KB
     * - :ref:`board_espressif32_micros2`

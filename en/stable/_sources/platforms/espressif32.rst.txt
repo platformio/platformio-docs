@@ -46,6 +46,7 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `espidf-arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-http-request <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-http-request?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-security-secureboot <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-security-secureboot?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble5-advertising <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-ble5-advertising?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-usb <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-usb?utm_source=platformio.org&utm_medium=docs>`_
@@ -718,6 +719,11 @@ Please click on board name for the further details.
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - ESP32S3
       - 240MHz
@@ -978,6 +984,16 @@ Please click on board name for the further details.
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_micros2`
       - ESP32S2
       - 240MHz
@@ -1078,6 +1094,9 @@ Packages
 
     * - `tool-dfuutil-arduino <https://registry.platformio.org/tools/platformio/tool-dfuutil-arduino>`__
       - Device Firmware Upgrade Utilities
+
+    * - `tool-esp-rom-elfs <https://registry.platformio.org/tools/platformio/tool-esp-rom-elfs>`__
+      - ELF files of ROMs used by ESP32 series of chips
 
     * - `tool-esptoolpy <https://registry.platformio.org/tools/platformio/tool-esptoolpy>`__
       - A Python-based, open-source, platform-independent utility to communicate with the ROM bootloader in Espressif chips
@@ -3096,6 +3115,12 @@ Seeed Studio
       - 160MHz
       - 4MB
       - 320KB
+    * - :ref:`board_espressif32_seeed_xiao_esp32c6`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32s3`
       - External
       - ESP32S3
@@ -3788,6 +3813,31 @@ YeaCreate
       - ESP32
       - 240MHz
       - 16MB
+      - 320KB
+
+cezerio
+~~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_espressif32_cezerio_dev_esp32c6`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
+      - 320KB
+    * - :ref:`board_espressif32_cezerio_mini_dev_esp32c6`
+      - External
+      - ESP32C6
+      - 160MHz
+      - 4MB
       - 320KB
 
 microS2

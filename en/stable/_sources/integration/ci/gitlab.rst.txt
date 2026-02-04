@@ -48,10 +48,15 @@ This variant is default choice for native PlatformIO projects:
 
     image: python:3.11
 
+    # Change cache directories to be inside the project directory since GitLab can only cache local items.
+    variables:  
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.cache/platformio"
+
     cache:
       paths:
-        - ~/.cache/pip
-        - ~/.platformio/.cache
+        - .cache/pip
+        - .cache/platformio
 
     stages:
      - test
@@ -75,10 +80,15 @@ and boards from command line interface:
 
     image: python:3.11
 
+    # Change cache directories to be inside the project directory since GitLab can only cache local items.
+    variables:  
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.cache/platformio"
+
     cache:
       paths:
-        - ~/.cache/pip
-        - ~/.platformio/.cache
+        - .cache/pip
+        - .cache/platformio
 
     stages:
      - test
@@ -102,10 +112,15 @@ Examples
 
     image: python:3.11
 
+    # Change cache directories to be inside the project directory since GitLab can only cache local items.
+    variables:  
+      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+      PLATFORMIO_CACHE_DIR: "$CI_PROJECT_DIR/.cache/platformio"
+
     cache:
       paths:
-        - ~/.cache/pip
-        - ~/.platformio/.cache
+        - .cache/pip
+        - .cache/platformio
 
     stages:
      - test

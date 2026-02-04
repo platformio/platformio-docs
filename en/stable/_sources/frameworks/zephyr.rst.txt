@@ -336,6 +336,12 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 1MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - STM32G071RBT6
@@ -654,6 +660,12 @@ You do not need to use/buy external debug probe.
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_l552ze_q`
+      - :ref:`platform_ststm32`
+      - STM32L552ZET6
+      - 80MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - STM32WL55JC
@@ -859,6 +871,12 @@ Please click on board name for the further details.
       - 72MHz
       - 128KB
       - 20KB
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_freescalekinetis_frdm_kw24d`
       - :ref:`platform_freescalekinetis`
       - MKW24D512
@@ -937,6 +955,12 @@ Please click on board name for the further details.
       - 180MHz
       - 2MB
       - 256KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - :ref:`platform_ststm32`
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_steval_fcu001v1`
       - :ref:`platform_ststm32`
       - STM32F401CCU6
@@ -1003,6 +1027,18 @@ Please click on board name for the further details.
       - 600MHz
       - 7.75MB
       - 512KB
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_nordicnrf51_waveshare_ble400`
       - :ref:`platform_nordicnrf51`
       - NRF51822
@@ -1232,6 +1268,27 @@ BBC
       - 64MHz
       - 512KB
       - 128KB
+
+Ebyte
+~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_ebyte_e77_dev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CC
+      - 48MHz
+      - 256KB
+      - 64KB
 
 ElectronutLabs
 ~~~~~~~~~~~~~~
@@ -1820,6 +1877,13 @@ ST
       - 168MHz
       - 1MB
       - 128KB
+    * - :ref:`board_ststm32_nucleo_g070rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32G070RBT6
+      - 64MHz
+      - 128KB
+      - 36KB
     * - :ref:`board_ststm32_nucleo_g071rb`
       - :ref:`platform_ststm32`
       - On-board
@@ -2058,6 +2122,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h563zi`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32H563ZIT6U
+      - 250MHz
+      - 2MB
+      - 640KB
     * - :ref:`board_ststm32_nucleo_h723zg`
       - :ref:`platform_ststm32`
       - On-board
@@ -2156,6 +2227,13 @@ ST
       - 120MHz
       - 2MB
       - 640KB
+    * - :ref:`board_ststm32_nucleo_l552ze_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32L552ZET6
+      - 80MHz
+      - 512KB
+      - 192KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - On-board
@@ -2428,6 +2506,34 @@ VNG
       - NRF52832
       - 64MHz
       - 512KB
+      - 64KB
+
+WE
+~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Platform
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_we_oceanus1_ev`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
+      - 64KB
+    * - :ref:`board_ststm32_we_oceanus1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU6 
+      - 48MHz
+      - 256KB
       - 64KB
 
 Waveshare

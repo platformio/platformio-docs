@@ -26,6 +26,12 @@ Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:
     * - ``preuninstall``
       - runs a script BEFORE the package is removed.
 
+.. note::
+     Both ``postinstall`` and ``preuninstall`` values must be specified as a
+     *list* (array). Even if you need to run a single command, provide it as a
+     one-item list. Each list contains the command (executable) as the first
+     element and optional arguments as subsequent elements.
+
 **Examples**
 
 1.  Run a custom Python script located in the package "scripts" folder AFTER the package is installed.
@@ -34,7 +40,7 @@ Execute custom scripts during the special :ref:`cmd_pkg` life cycle events:
     .. code-block:: javascript
 
         "scripts": {
-            "postinstall": "scripts/after_install.py"
+            "postinstall": ["scripts/after_install.py"]
         }
 
 2.  Run a custom Bash script BEFORE the package is uninstalled.

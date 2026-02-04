@@ -70,6 +70,7 @@ WeAct Studio MiniSTM32H743VITX supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
+* ``dfu``
 * ``jlink``
 * ``stlink``
 

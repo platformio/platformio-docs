@@ -12,7 +12,7 @@
 .. _board_espressif32_minimain_esp32s2:
 
 Department of Alchemy MiniMain ESP32-S2
-=======================================
+======================================
 
 .. contents::
 

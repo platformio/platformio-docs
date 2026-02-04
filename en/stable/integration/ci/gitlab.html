@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://docs.platformio.org/integration/ci/gitlab.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=841e3923"></script>
+      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
       <script src="../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -195,10 +195,15 @@ PlatformIO in CI services:</p>
 <p>This variant is default choice for native PlatformIO projects:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.11</span>
 
+<span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
+<span class="nt">variables</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/pip</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/platformio</span>
 
 <span class="nt">stages</span><span class="p">:</span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
@@ -219,10 +224,15 @@ examples or testing code) as it has additional options for specifying extra libr
 and boards from command line interface:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.11</span>
 
+<span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
+<span class="nt">variables</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/pip</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/platformio</span>
 
 <span class="nt">stages</span><span class="p">:</span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
@@ -246,10 +256,15 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 </ol>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.11</span>
 
+<span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
+<span class="nt">variables</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.cache/pip</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">~/.platformio/.cache</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/pip</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache/platformio</span>
 
 <span class="nt">stages</span><span class="p">:</span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
@@ -429,7 +444,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.17 (stable)
+    v6.1.19 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
