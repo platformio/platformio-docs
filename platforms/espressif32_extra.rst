@@ -197,6 +197,49 @@ Examples:
     [env:custom_builtin_table]
     board_build.partitions = no_ota.csv
 
+sdkconfig Configuration (ESP-IDF)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ESP-IDF projects use ``sdkconfig`` files to configure the SDK. By default,
+PlatformIO generates ``sdkconfig.<env>`` (e.g. ``sdkconfig.esp32dev`` for
+``[env:esp32dev]``). This file contains the full merged configuration and is
+a build artifact, not a source file.
+
+**Custom sdkconfig path**
+
+Use ``board_build.esp-idf.sdkconfig_path`` to control where the generated
+sdkconfig is written:
+
+.. code-block:: ini
+
+    [env:myenv]
+    board_build.esp-idf.sdkconfig_path = sdkconfig.custom
+
+**SDKCONFIG_DEFAULTS layering**
+
+Instead of checking in the full generated ``sdkconfig.<env>``, you can maintain
+small defaults files containing only intentional overrides. Multiple files are
+separated by semicolons — later files override earlier ones:
+
+.. code-block:: ini
+
+    [env:myenv]
+    board_build.cmake_extra_args =
+        -DSDKCONFIG_DEFAULTS="sdkconfig.common;sdkconfig.board"
+
+This enables patterns like:
+
+* ``sdkconfig.common`` — shared across all environments (committed)
+* ``sdkconfig.board`` — board-specific overrides (committed)
+* ``sdkconfig.local`` — developer-specific tweaks (gitignored)
+
+Add ``sdkconfig.*`` to ``.gitignore`` and only check in the defaults files.
+This keeps diffs clean and makes your configuration intent explicit.
+
+See the `espidf-sdkconfig-defaults <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-defaults>`__
+and `espidf-sdkconfig-custom-path <https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-custom-path>`__
+examples for working projects.
+
 Embedding Binary Data
 ~~~~~~~~~~~~~~~~~~~~~
 
