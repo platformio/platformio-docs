@@ -227,15 +227,16 @@
 <li><p><a class="reference internal" href="#upload-speed" id="id17">Upload Speed</a></p></li>
 <li><p><a class="reference internal" href="#erase-flash" id="id18">Erase Flash</a></p></li>
 <li><p><a class="reference internal" href="#partition-tables" id="id19">Partition Tables</a></p></li>
-<li><p><a class="reference internal" href="#embedding-binary-data" id="id20">Embedding Binary Data</a></p></li>
-<li><p><a class="reference internal" href="#uploading-files-to-file-system" id="id21">Uploading files to file system</a></p></li>
-<li><p><a class="reference internal" href="#over-the-air-ota-update" id="id22">Over-the-Air (OTA) update</a></p>
+<li><p><a class="reference internal" href="#sdkconfig-configuration-esp-idf" id="id20">sdkconfig Configuration (ESP-IDF)</a></p></li>
+<li><p><a class="reference internal" href="#embedding-binary-data" id="id21">Embedding Binary Data</a></p></li>
+<li><p><a class="reference internal" href="#uploading-files-to-file-system" id="id22">Uploading files to file system</a></p></li>
+<li><p><a class="reference internal" href="#over-the-air-ota-update" id="id23">Over-the-Air (OTA) update</a></p>
 <ul>
-<li><p><a class="reference internal" href="#authentication-and-upload-options" id="id23">Authentication and upload options</a></p></li>
+<li><p><a class="reference internal" href="#authentication-and-upload-options" id="id24">Authentication and upload options</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id24">Using Arduino Framework with Staging version</a></p></li>
-<li><p><a class="reference internal" href="#arduino-core-wiki" id="id25">Arduino Core Wiki</a></p></li>
+<li><p><a class="reference internal" href="#using-arduino-framework-with-staging-version" id="id25">Using Arduino Framework with Staging version</a></p></li>
+<li><p><a class="reference internal" href="#arduino-core-wiki" id="id26">Arduino Core Wiki</a></p></li>
 </ul>
 </nav>
 <section id="cpu-frequency">
@@ -393,8 +394,42 @@ as “spiffs”. For example, <code class="docutils literal notranslate"><span c
 </pre></div>
 </div>
 </section>
+<section id="sdkconfig-configuration-esp-idf">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">sdkconfig Configuration (ESP-IDF)</a><a class="headerlink" href="#sdkconfig-configuration-esp-idf" title="Link to this heading"></a></h3>
+<p>ESP-IDF projects use <code class="docutils literal notranslate"><span class="pre">sdkconfig</span></code> files to configure the SDK. By default,
+PlatformIO generates <code class="docutils literal notranslate"><span class="pre">sdkconfig.&lt;env&gt;</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">sdkconfig.esp32dev</span></code> for
+<code class="docutils literal notranslate"><span class="pre">[env:esp32dev]</span></code>). This file contains the full merged configuration and is
+a build artifact, not a source file.</p>
+<p><strong>Custom sdkconfig path</strong></p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">board_build.esp-idf.sdkconfig_path</span></code> to control where the generated
+sdkconfig is written:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">board_build.esp-idf.sdkconfig_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sdkconfig.custom</span>
+</pre></div>
+</div>
+<p><strong>SDKCONFIG_DEFAULTS layering</strong></p>
+<p>Instead of checking in the full generated <code class="docutils literal notranslate"><span class="pre">sdkconfig.&lt;env&gt;</span></code>, you can maintain
+small defaults files containing only intentional overrides. Multiple files are
+separated by semicolons — later files override earlier ones:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
+<span class="na">board_build.cmake_extra_args</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="na">-DSDKCONFIG_DEFAULTS</span><span class="o">=</span><span class="s">&quot;sdkconfig.common;sdkconfig.board&quot;</span>
+</pre></div>
+</div>
+<p>This enables patterns like:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sdkconfig.common</span></code> — shared across all environments (committed)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sdkconfig.board</span></code> — board-specific overrides (committed)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sdkconfig.local</span></code> — developer-specific tweaks (gitignored)</p></li>
+</ul>
+<p>Add <code class="docutils literal notranslate"><span class="pre">sdkconfig.*</span></code> to <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> and only check in the defaults files.
+This keeps diffs clean and makes your configuration intent explicit.</p>
+<p>See the <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-defaults">espidf-sdkconfig-defaults</a>
+and <a class="reference external" href="https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-custom-path">espidf-sdkconfig-custom-path</a>
+examples for working projects.</p>
+</section>
 <section id="embedding-binary-data">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Embedding Binary Data</a><a class="headerlink" href="#embedding-binary-data" title="Link to this heading"></a></h3>
 <p>Sometimes you have a file with some binary or text data that you’d like to
 make available to your program - but you don’t want to reformat the file as
 C source.</p>
@@ -439,7 +474,7 @@ in the symbol name is added by “objcopy” and is the same for both text and b
 </ul>
 </section>
 <section id="uploading-files-to-file-system">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Uploading files to file system</a><a class="headerlink" href="#uploading-files-to-file-system" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Create new project using <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> or initialize project using
 <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> and <a class="reference internal" href="../core/userguide/project/cmd_init.html#cmd-project-init"><span class="std std-ref">pio project init</span></a> (if you have not initialized it yet)</p></li>
@@ -472,7 +507,7 @@ for example:</p>
 </ul>
 </section>
 <section id="over-the-air-ota-update">
-<h3><a class="toc-backref" href="#id22" role="doc-backlink">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Over-the-Air (OTA) update</a><a class="headerlink" href="#over-the-air-ota-update" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Please make sure to read the theory behind the OTA updates in the
@@ -515,7 +550,7 @@ need to set <a class="reference internal" href="../projectconf/sections/env/opti
 </pre></div>
 </div>
 <section id="authentication-and-upload-options">
-<h4><a class="toc-backref" href="#id23" role="doc-backlink">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">Authentication and upload options</a><a class="headerlink" href="#authentication-and-upload-options" title="Link to this heading"></a></h4>
 <p>You can pass additional options/flags to OTA uploader using
 <code class="docutils literal notranslate"><span class="pre">upload_flags</span></code> option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
@@ -577,7 +612,7 @@ be sure it’s on private mode``</p>
 </section>
 </section>
 <section id="using-arduino-framework-with-staging-version">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">Using Arduino Framework with Staging version</a><a class="headerlink" href="#using-arduino-framework-with-staging-version" title="Link to this heading"></a></h3>
 <p>PlatformIO will install the latest Arduino Core for ESP32 from
 <a class="reference external" href="https://github.com/espressif/arduino-esp32">https://github.com/espressif/arduino-esp32</a>. The <a class="reference external" href="https://git-scm.com">Git</a>
 should be installed in a system. To update Arduino Core to the latest revision,
@@ -613,7 +648,7 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 </ol>
 </section>
 <section id="arduino-core-wiki">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Arduino Core Wiki</a><a class="headerlink" href="#arduino-core-wiki" title="Link to this heading"></a></h3>
 <p>Tips, tricks and common problems: <a class="reference external" href="http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/">http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/</a></p>
 </section>
 </section>
@@ -646,12 +681,12 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 <p><a class="reference internal" href="../plus/debugging.html#piodebug"><span class="std std-ref">Debugging</span></a> - “1-click” solution for debugging with a zero configuration.</p>
 <nav class="contents local" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#pinout-diagram" id="id26">Pinout Diagram</a></p></li>
-<li><p><a class="reference internal" href="#tools-debug-probes" id="id27">Tools &amp; Debug Probes</a></p></li>
+<li><p><a class="reference internal" href="#pinout-diagram" id="id27">Pinout Diagram</a></p></li>
+<li><p><a class="reference internal" href="#tools-debug-probes" id="id28">Tools &amp; Debug Probes</a></p></li>
 </ul>
 </nav>
 <section id="pinout-diagram">
-<h3><a class="toc-backref" href="#id26" role="doc-backlink">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Pinout Diagram</a><a class="headerlink" href="#pinout-diagram" title="Link to this heading"></a></h3>
 <p><strong>JTAG Wiring Connections</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -683,7 +718,7 @@ it from console to <a class="reference external" href="https://hastebin.com">htt
 <img alt="../_images/espressif32_debug_pinout.jpg" src="../_images/espressif32_debug_pinout.jpg" />
 </section>
 <section id="tools-debug-probes">
-<h3><a class="toc-backref" href="#id27" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Tools &amp; Debug Probes</a><a class="headerlink" href="#tools-debug-probes" title="Link to this heading"></a></h3>
 <p>Supported debugging tools are listed in “Debug” column. For more detailed
 information, please scroll table by horizontal.
 You can switch between debugging <a class="reference internal" href="../plus/debugging.html#debugging-tools"><span class="std std-ref">Tools &amp; Debug Probes</span></a> using
