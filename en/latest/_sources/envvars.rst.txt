@@ -79,6 +79,11 @@ Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_PROGRESSBAR=false``.
 
+.. envvar:: PLATFORMIO_DISABLE_UPGRADE_CHECK
+
+Disable upgrade availability checks.
+The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_UPGRADE_CHECK=false``.
+
 .. envvar:: PLATFORMIO_SYSTEM_TYPE
 
 This environment variable allows you to manually specify the system type, overriding the automatic detection.
