@@ -68,6 +68,15 @@ There are also built-in system targets:
 
     + ``envdump`` dump current build environment
 
+
+.. option::
+    -p, --port
+
+Set both :option:`pio run --upload-port` and :option:`pio run --monitor-port` options simultaneously.
+This option is a convenient way to specify the same port for both uploading
+firmware and monitoring device output, streamlining the workflow for
+users who want to use the same port for both operations.
+
 .. option::
     --upload-port
 
