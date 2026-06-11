@@ -190,24 +190,25 @@
 <li><p><a class="reference internal" href="#force-verbose" id="id15"><code class="docutils literal notranslate"><span class="pre">force_verbose</span></code></a></p></li>
 <li><p><a class="reference internal" href="#projects-dir" id="id16"><code class="docutils literal notranslate"><span class="pre">projects_dir</span></code></a></p></li>
 <li><p><a class="reference internal" href="#enable-proxy-strict-ssl" id="id17"><code class="docutils literal notranslate"><span class="pre">enable_proxy_strict_ssl</span></code></a></p></li>
-<li><p><a class="reference internal" href="#enable-telemetry" id="id18"><code class="docutils literal notranslate"><span class="pre">enable_telemetry</span></code></a></p></li>
+<li><p><a class="reference internal" href="#disable-udev-rules-check" id="id18"><code class="docutils literal notranslate"><span class="pre">disable_udev_rules_check</span></code></a></p></li>
+<li><p><a class="reference internal" href="#enable-telemetry" id="id19"><code class="docutils literal notranslate"><span class="pre">enable_telemetry</span></code></a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#examples" id="id19">Examples</a></p></li>
+<li><p><a class="reference internal" href="#examples" id="id20">Examples</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#pio-settings-set" id="id20">pio settings set</a></p>
+<li><p><a class="reference internal" href="#pio-settings-set" id="id21">pio settings set</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id1" id="id21">Usage</a></p></li>
-<li><p><a class="reference internal" href="#id2" id="id22">Description</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id23">Examples</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id22">Usage</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id23">Description</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id24">Examples</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#pio-settings-reset" id="id24">pio settings reset</a></p>
+<li><p><a class="reference internal" href="#pio-settings-reset" id="id25">pio settings reset</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id4" id="id25">Usage</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id26">Description</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id27">Examples</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id26">Usage</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id27">Description</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id28">Examples</a></p></li>
 </ul>
 </li>
 </ul>
@@ -317,8 +318,22 @@ PlatformIO system data using <a class="reference internal" href="system/cmd_prun
 <p>Verify the proxy server certificate against the list of supplied CAs.
 See also PlatformIO Core <a class="reference internal" href="../installation/proxy-configuration.html#piocore-install-proxy-configuration"><span class="std std-ref">Proxy Configuration</span></a>.</p>
 </section>
+<section id="disable-udev-rules-check">
+<span id="setting-disable-udev-rules-check"></span><h4><a class="toc-backref" href="#id18" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">disable_udev_rules_check</span></code></a><a class="headerlink" href="#disable-udev-rules-check" title="Link to this heading"></a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p>No</p>
+</dd>
+<dt class="field-even">Values<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/No</p>
+</dd>
+</dl>
+<p>Disable check for udev rules on Linux.
+See <a class="reference internal" href="../installation/udev-rules.html#platformio-udev-rules"><span class="std std-ref">99-platformio-udev.rules</span></a> for more details about udev rules and
+how to install them.</p>
+</section>
 <section id="enable-telemetry">
-<span id="setting-enable-telemetry"></span><h4><a class="toc-backref" href="#id18" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">enable_telemetry</span></code></a><a class="headerlink" href="#enable-telemetry" title="Link to this heading"></a></h4>
+<span id="setting-enable-telemetry"></span><h4><a class="toc-backref" href="#id19" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">enable_telemetry</span></code></a><a class="headerlink" href="#enable-telemetry" title="Link to this heading"></a></h4>
 <dl class="field-list simple">
 <dt class="field-odd">Default<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Yes</p>
@@ -352,7 +367,7 @@ extensions based on the popularity of IDEs (for example, <a class="reference int
 </section>
 </section>
 <section id="examples">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>List all settings and theirs current values</p></li>
 </ol>
@@ -380,19 +395,19 @@ check_prune_system_threshold<span class="w">    </span><span class="m">1024</spa
 </section>
 </section>
 <section id="pio-settings-set">
-<span id="cmd-settings-set"></span><h2><a class="toc-backref" href="#id20" role="doc-backlink">pio settings set</a><a class="headerlink" href="#pio-settings-set" title="Link to this heading"></a></h2>
+<span id="cmd-settings-set"></span><h2><a class="toc-backref" href="#id21" role="doc-backlink">pio settings set</a><a class="headerlink" href="#pio-settings-set" title="Link to this heading"></a></h2>
 <section id="id1">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Usage</a><a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Usage</a><a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>settings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>NAME<span class="w"> </span>VALUE
 </pre></div>
 </div>
 </section>
 <section id="id2">
-<h3><a class="toc-backref" href="#id22" role="doc-backlink">Description</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Description</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>Set new value for the setting</p>
 </section>
 <section id="id3">
-<h3><a class="toc-backref" href="#id23" role="doc-backlink">Examples</a><a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Examples</a><a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>Change to check for the new PlatformIO Core each day</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>settings<span class="w"> </span><span class="nb">set</span><span class="w"> </span>check_platformio_interval<span class="w"> </span><span class="m">1</span>
 The<span class="w"> </span>new<span class="w"> </span>value<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>setting<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>set!
@@ -404,19 +419,19 @@ check_platformio_interval<span class="w">       </span><span class="m">1</span><
 </section>
 </section>
 <section id="pio-settings-reset">
-<span id="cmd-settings-reset"></span><h2><a class="toc-backref" href="#id24" role="doc-backlink">pio settings reset</a><a class="headerlink" href="#pio-settings-reset" title="Link to this heading"></a></h2>
+<span id="cmd-settings-reset"></span><h2><a class="toc-backref" href="#id25" role="doc-backlink">pio settings reset</a><a class="headerlink" href="#pio-settings-reset" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">Usage</a><a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Usage</a><a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pio<span class="w"> </span>settings<span class="w"> </span>reset
 </pre></div>
 </div>
 </section>
 <section id="id5">
-<h3><a class="toc-backref" href="#id26" role="doc-backlink">Description</a><a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Description</a><a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>Reset settings to default</p>
 </section>
 <section id="id6">
-<h3><a class="toc-backref" href="#id27" role="doc-backlink">Examples</a><a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Examples</a><a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>settings<span class="w"> </span>reset
 The<span class="w"> </span>settings<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>reset!
 

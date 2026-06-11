@@ -262,3 +262,7 @@ Allows one to override setting :ref:`setting_projects_dir`.
 .. envvar:: PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL
 
 Allows one to override setting :ref:`setting_enable_proxy_strict_ssl`.
+
+.. envvar:: PLATFORMIO_SETTING_DISABLE_UDEV_RULES_CHECK
+
+Allows one to override setting :ref:`setting_disable_udev_rules_check`.
