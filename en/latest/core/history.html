@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://docs.platformio.org/core/history.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c332b8fd"></script>
+      <script src="../_static/documentation_options.js?v=674a3ce4"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -190,6 +190,8 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <li><p>Fixed an issue where <a class="reference external" href="https://docs.platformio.org/en/latest/advanced/unit-testing/index.html">Unit Testing</a> failed on Windows due to improper handling of <code class="docutils literal notranslate"><span class="pre">Serial.end()</span></code> (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5359">issue #5359</a>)</p></li>
 <li><p>Fixed an issue with floating-point precision in duration formatting that caused incorrect millisecond reporting (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5424">issue #5424</a>)</p></li>
 <li><p>Fixed an issue where the test suite status was incorrectly hardcoded as PASSED (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5183">issue #5183</a>)</p></li>
+<li><p>Fixed an issue where using a relative path with the <code class="docutils literal notranslate"><span class="pre">-d,</span> <span class="pre">--project-dir</span></code> option caused <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/device/cmd_monitor.html">pio device monitor</a> to fail with a “FileNotFoundError” (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/5470">pull #5470</a>)</p></li>
+<li><p>Fixed compatibility with <code class="docutils literal notranslate"><span class="pre">pipx</span></code>- and <code class="docutils literal notranslate"><span class="pre">uvx</span></code>-managed environments by ensuring the required <code class="docutils literal notranslate"><span class="pre">pip</span></code> dependency is available when installing Python-based tool packages (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5305">issue #5305</a>)</p></li>
 </ul>
 </section>
 <section id="id2">
@@ -740,7 +742,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.2.0a2 (latest)
+    v6.2.0a3 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
