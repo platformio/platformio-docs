@@ -227,8 +227,8 @@ following code:</p>
 <span class="w">                  </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="c1">// Eddystone-URL frame type</span>
 <span class="w">                  </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="c1">// Calibrated Tx power at 0m</span>
 <span class="w">                  </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="c1">// URL Scheme Prefix http://www.</span>
-<span class="w">                  </span><span class="sc">&#39;z&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;p&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;h&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;y&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;r&#39;</span><span class="p">,</span>
-<span class="w">                  </span><span class="sc">&#39;p&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;r&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;o&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;j&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;c&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;t&#39;</span><span class="p">,</span>
+<span class="w">                  </span><span class="sc">'z'</span><span class="p">,</span><span class="w"> </span><span class="sc">'e'</span><span class="p">,</span><span class="w"> </span><span class="sc">'p'</span><span class="p">,</span><span class="w"> </span><span class="sc">'h'</span><span class="p">,</span><span class="w"> </span><span class="sc">'y'</span><span class="p">,</span><span class="w"> </span><span class="sc">'r'</span><span class="p">,</span>
+<span class="w">                  </span><span class="sc">'p'</span><span class="p">,</span><span class="w"> </span><span class="sc">'r'</span><span class="p">,</span><span class="w"> </span><span class="sc">'o'</span><span class="p">,</span><span class="w"> </span><span class="sc">'j'</span><span class="p">,</span><span class="w"> </span><span class="sc">'e'</span><span class="p">,</span><span class="w"> </span><span class="sc">'c'</span><span class="p">,</span><span class="w"> </span><span class="sc">'t'</span><span class="p">,</span>
 <span class="w">                  </span><span class="mh">0x08</span><span class="p">)</span><span class="w"> </span><span class="c1">// .org</span>
 <span class="p">};</span>
 
@@ -241,35 +241,35 @@ following code:</p>
 <span class="p">{</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">"Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
 <span class="w">    </span><span class="k">return</span><span class="p">;</span>
 <span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth initialized</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">"Bluetooth initialized</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Start advertising</span>
 <span class="w">  </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_le_adv_start</span><span class="p">(</span><span class="n">BT_LE_ADV_NCONN</span><span class="p">,</span><span class="w"> </span><span class="n">ad</span><span class="p">,</span><span class="w"> </span><span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">ad</span><span class="p">),</span>
 <span class="w">                        </span><span class="n">sd</span><span class="p">,</span><span class="w"> </span><span class="n">ARRAY_SIZE</span><span class="p">(</span><span class="n">sd</span><span class="p">));</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Advertising failed to start (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">"Advertising failed to start (err %d)</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
 <span class="w">    </span><span class="k">return</span><span class="p">;</span>
 <span class="w">  </span><span class="p">}</span>
 
-<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Beacon started</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">"Beacon started</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">err</span><span class="p">;</span>
 
-<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Starting Beacon Demo</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printk</span><span class="p">(</span><span class="s">"Starting Beacon Demo</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Initialize the Bluetooth Subsystem</span>
 <span class="w">  </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt_enable</span><span class="p">(</span><span class="n">bt_ready</span><span class="p">);</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">&quot;Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="s">"Bluetooth init failed (err %d)</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -279,7 +279,7 @@ following code:</p>
 <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> in <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> folder and adding the following lines:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CONFIG_BT</span><span class="o">=</span><span class="n">y</span>
 <span class="n">CONFIG_BT_DEBUG_LOG</span><span class="o">=</span><span class="n">y</span>
-<span class="n">CONFIG_BT_DEVICE_NAME</span><span class="o">=</span><span class="s2">&quot;Test beacon&quot;</span>
+<span class="n">CONFIG_BT_DEVICE_NAME</span><span class="o">=</span><span class="s2">"Test beacon"</span>
 </pre></div>
 </div>
 </li>
@@ -377,7 +377,7 @@ version of newlib C library in <code class="docutils literal notranslate"><span 
 <span class="cp">#define _CALCULATOR_H_</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">"C"</span><span class="w"> </span><span class="p">{</span>
 <span class="cp">#endif</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
@@ -393,7 +393,7 @@ version of newlib C library in <code class="docutils literal notranslate"><span 
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">calculator.c</span></code>:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;calculator.h&quot;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"calculator.h"</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
 <span class="p">{</span>

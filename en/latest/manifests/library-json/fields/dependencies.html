@@ -176,36 +176,36 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">platforms</span></code> | Type: <code class="docutils literal notranslate"><span class="pre">String</span></code> or <code class="docutils literal notranslate"><span class="pre">Array</span></code> – project compatible <a class="reference internal" href="../../../platforms/index.html#platforms"><span class="std std-ref">Development Platforms</span></a></p></li>
 </ul>
 <p><strong>Example</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"dependencies"</span><span class="o">:</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;bblanchon/ArduinoJson&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;me-no-dev/AsyncTCP&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;external-repo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;external-zip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="w">    </span><span class="s2">"bblanchon/ArduinoJson"</span><span class="o">:</span><span class="w"> </span><span class="s2">"^6.16.1"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"me-no-dev/AsyncTCP"</span><span class="o">:</span><span class="w"> </span><span class="s2">"*"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"external-repo"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://github.com/user/package.git#1.2.3"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"external-zip"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://github.com/me-no-dev/AsyncTCP/archive/master.zip"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>More advanced usage:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"dependencies"</span><span class="o">:</span>
 <span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;bblanchon&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ArduinoJson&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^6.16.1&quot;</span>
+<span class="w">        </span><span class="s2">"owner"</span><span class="o">:</span><span class="w"> </span><span class="s2">"bblanchon"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ArduinoJson"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"^6.16.1"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="s2">&quot;owner&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me-no-dev&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AsyncTCP&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;espressif32&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="s2">"owner"</span><span class="o">:</span><span class="w"> </span><span class="s2">"me-no-dev"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"AsyncTCP"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"*"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"platforms"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"espressif32"</span><span class="p">]</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-repo&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/package.git#1.2.3&quot;</span>
+<span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"external-repo"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://github.com/user/package.git#1.2.3"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;external-zip&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/me-no-dev/AsyncTCP/archive/master.zip&quot;</span>
+<span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"external-zip"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://github.com/me-no-dev/AsyncTCP/archive/master.zip"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>
 </pre></div>

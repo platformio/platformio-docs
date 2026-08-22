@@ -197,8 +197,8 @@ PlatformIO in CI services:</p>
 
 <span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
 <span class="nt">variables</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/pip"</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/platformio"</span>
 
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
@@ -209,11 +209,11 @@ PlatformIO in CI services:</p>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
 
 <span class="nt">before_script</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio"</span>
 
 <span class="nt">job</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
-<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">run</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_N&gt;&quot;</span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">"pio</span><span class="nv"> </span><span class="s">run</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&lt;ID_N&gt;"</span>
 </pre></div>
 </div>
 </section>
@@ -226,8 +226,8 @@ and boards from command line interface:</p>
 
 <span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
 <span class="nt">variables</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/pip"</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/platformio"</span>
 
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
@@ -238,12 +238,12 @@ and boards from command line interface:</p>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
 
 <span class="nt">before_script</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio"</span>
 
 <span class="nt">job</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test</span>
-<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--board=&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_N&gt;&quot;</span>
-<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;path/to/test/file.c&quot;</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s">"pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--board=&lt;ID_1&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_2&gt;</span><span class="nv"> </span><span class="s">--board=&lt;ID_N&gt;"</span>
+<span class="w">  </span><span class="nt">variables</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"path/to/test/file.c"</span><span class="p p-Indicator">}</span>
 </pre></div>
 </div>
 </section>
@@ -258,8 +258,8 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 
 <span class="c1"># Change cache directories to be inside the project directory since GitLab can only cache local items.</span>
 <span class="nt">variables</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/pip&quot;</span>
-<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$CI_PROJECT_DIR/.cache/platformio&quot;</span>
+<span class="w">  </span><span class="nt">PIP_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/pip"</span>
+<span class="w">  </span><span class="nt">PLATFORMIO_CACHE_DIR</span><span class="p">:</span><span class="w"> </span><span class="s">"$CI_PROJECT_DIR/.cache/platformio"</span>
 
 <span class="nt">cache</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
@@ -271,15 +271,15 @@ project. The <code class="docutils literal notranslate"><span class="pre">.gitla
 
 <span class="nt">.job_template</span><span class="p">:</span><span class="w"> </span><span class="nl">&amp;pio_run</span>
 <span class="w">  </span><span class="nt">script</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--lib=&#39;.&#39;</span><span class="nv"> </span><span class="s">--board=uno</span><span class="nv"> </span><span class="s">--board=teensy31</span><span class="nv"> </span><span class="s">--board=nodemcuv2</span><span class="nv"> </span><span class="s">$PLATFORMIO_CI_EXTRA_ARGS&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"pio</span><span class="nv"> </span><span class="s">ci</span><span class="nv"> </span><span class="s">--lib='.'</span><span class="nv"> </span><span class="s">--board=uno</span><span class="nv"> </span><span class="s">--board=teensy31</span><span class="nv"> </span><span class="s">--board=nodemcuv2</span><span class="nv"> </span><span class="s">$PLATFORMIO_CI_EXTRA_ARGS"</span>
 
 <span class="nt">before_script</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"pip</span><span class="nv"> </span><span class="s">install</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">platformio"</span>
 
 <span class="nt">JsonGeneratorExample</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">&lt;&lt;</span><span class="p">:</span><span class="w"> </span><span class="nv">*pio_run</span>
 <span class="w">  </span><span class="nt">variables</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">PLATFORMIO_CI_EXTRA_ARGS</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;--board=due&quot;</span>
+<span class="w">    </span><span class="nt">PLATFORMIO_CI_EXTRA_ARGS</span><span class="p">:</span><span class="w"> </span><span class="s">"--board=due"</span>
 <span class="w">    </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examples/JsonGeneratorExample</span>
 
 <span class="nt">JsonHttpClient</span><span class="p">:</span>

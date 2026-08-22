@@ -174,11 +174,11 @@ all sources in an external folder:</p>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> (place it near <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">BuildSources</span><span class="p">(</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR&quot;</span><span class="p">,</span> <span class="s2">&quot;external&quot;</span><span class="p">,</span> <span class="s2">&quot;build&quot;</span><span class="p">),</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;$PROJECT_DIR&quot;</span><span class="p">,</span> <span class="s2">&quot;external&quot;</span><span class="p">,</span> <span class="s2">&quot;sources&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"$BUILD_DIR"</span><span class="p">,</span> <span class="s2">"external"</span><span class="p">,</span> <span class="s2">"build"</span><span class="p">),</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"$PROJECT_DIR"</span><span class="p">,</span> <span class="s2">"external"</span><span class="p">,</span> <span class="s2">"sources"</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>

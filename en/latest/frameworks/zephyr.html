@@ -279,7 +279,7 @@ cmake_minimum_required<span class="o">(</span>VERSION<span class="w"> </span><sp
 include<span class="o">(</span><span class="nv">$ENV</span><span class="o">{</span>ZEPHYR_BASE<span class="o">}</span>/cmake/app/boilerplate.cmake<span class="w"> </span>NO_POLICY_SCOPE<span class="o">)</span>
 project<span class="o">(</span>my_zephyr_app<span class="o">)</span>
 
-<span class="c1"># Add your source file to the &quot;app&quot; target. This must come after the boilerplate</span>
+<span class="c1"># Add your source file to the "app" target. This must come after the boilerplate</span>
 <span class="c1"># code, which defines the target. Note relative path to source file</span>
 target_sources<span class="o">(</span>app<span class="w"> </span>PRIVATE<span class="w"> </span>../src/main.c<span class="o">)</span>
 </pre></div>
@@ -356,14 +356,14 @@ and mature code created by third party developers.</p>
 to additional directories with source code, Kconfig, etc. using <code class="docutils literal notranslate"><span class="pre">ZEPHYR_EXTRA_MODULES</span></code>
 at the top of your project’s  <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file, for example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Additional modules</span>
-set<span class="o">(</span>ZEPHYR_EXTRA_MODULES<span class="w"> </span><span class="s2">&quot;path/to-zephyr-custom-module&quot;</span><span class="w">  </span><span class="o">[</span>...<span class="o">])</span>
+set<span class="o">(</span>ZEPHYR_EXTRA_MODULES<span class="w"> </span><span class="s2">"path/to-zephyr-custom-module"</span><span class="w">  </span><span class="o">[</span>...<span class="o">])</span>
 
 <span class="c1"># Boilerplate code, which pulls in the Zephyr build system.</span>
 cmake_minimum_required<span class="o">(</span>VERSION<span class="w"> </span><span class="m">3</span>.13.1<span class="o">)</span>
 include<span class="o">(</span><span class="nv">$ENV</span><span class="o">{</span>ZEPHYR_BASE<span class="o">}</span>/cmake/app/boilerplate.cmake<span class="w"> </span>NO_POLICY_SCOPE<span class="o">)</span>
 project<span class="o">(</span>my_zephyr_app<span class="o">)</span>
 
-<span class="c1"># Add your source file to the &quot;app&quot; target. This must come after</span>
+<span class="c1"># Add your source file to the "app" target. This must come after</span>
 <span class="c1"># the boilerplate code, which defines the target.</span>
 target_sources<span class="o">(</span>app<span class="w"> </span>PRIVATE<span class="w"> </span>../src/main.c<span class="o">)</span>
 </pre></div>

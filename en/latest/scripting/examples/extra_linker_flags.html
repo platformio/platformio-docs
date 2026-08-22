@@ -170,7 +170,7 @@ extra script will help:</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> (place it near <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Dump build environment (for debug)</span>
@@ -179,9 +179,9 @@ extra script will help:</p>
 
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
   <span class="n">LINKFLAGS</span><span class="o">=</span><span class="p">[</span>
-      <span class="s2">&quot;-static&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;-static-libgcc&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;-static-libstdc++&quot;</span>
+      <span class="s2">"-static"</span><span class="p">,</span>
+      <span class="s2">"-static-libgcc"</span><span class="p">,</span>
+      <span class="s2">"-static-libstdc++"</span>
   <span class="p">]</span>
 <span class="p">)</span>
 </pre></div>

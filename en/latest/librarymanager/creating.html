@@ -191,36 +191,36 @@ for your headers. You can also have nested sub-folders in <code class="docutils 
 <p>A library package must contain a manifest. We recommend using <a class="reference internal" href="../manifests/library-json/index.html#library-json"><span class="std std-ref">library.json</span></a>.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;HelloWorld&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;A \&quot;Hello world\&quot; program is a computer program that outputs \&quot;Hello World\&quot; (or some variant) on a display device&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;keywords&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;planet, happiness, people&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;repository&quot;</span><span class="o">:</span>
+<span class="w">  </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"HelloWorld"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"version"</span><span class="o">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"description"</span><span class="o">:</span><span class="w"> </span><span class="s2">"A \"Hello world\" program is a computer program that outputs \"Hello World\" (or some variant) on a display device"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"keywords"</span><span class="o">:</span><span class="w"> </span><span class="s2">"planet, happiness, people"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"repository"</span><span class="o">:</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;git&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/username/hello-world.git&quot;</span>
+<span class="w">    </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"git"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://github.com/username/hello-world.git"</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="s2">&quot;authors&quot;</span><span class="o">:</span>
+<span class="w">  </span><span class="s2">"authors"</span><span class="o">:</span>
 <span class="w">  </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me@john-smith.com&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.john-smith/contact&quot;</span>
+<span class="w">      </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"John Smith"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"email"</span><span class="o">:</span><span class="w"> </span><span class="s2">"me@john-smith.com"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://www.john-smith/contact"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Andrew Smith&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;me@andrew-smith.com&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.andrew-smith/contact&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;maintainer&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">      </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Andrew Smith"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"email"</span><span class="o">:</span><span class="w"> </span><span class="s2">"me@andrew-smith.com"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://www.andrew-smith/contact"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"maintainer"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="s2">&quot;license&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;homepage&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.helloworld.org/&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;dependencies&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;ownername/print&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;~1.3.0&quot;</span>
+<span class="w">  </span><span class="s2">"license"</span><span class="o">:</span><span class="w"> </span><span class="s2">"MIT"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"homepage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"https://www.helloworld.org/"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"dependencies"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"ownername/print"</span><span class="o">:</span><span class="w"> </span><span class="s2">"~1.3.0"</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="s2">&quot;frameworks&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;platforms&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="w">  </span><span class="s2">"frameworks"</span><span class="o">:</span><span class="w"> </span><span class="s2">"*"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"platforms"</span><span class="o">:</span><span class="w"> </span><span class="s2">"*"</span>
 <span class="p">}</span>
 </pre></div>
 </div>

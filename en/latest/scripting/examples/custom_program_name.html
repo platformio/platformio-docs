@@ -175,9 +175,9 @@ a project version suffix to the firmware name.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">PROGNAME</span><span class="o">=</span><span class="s2">&quot;firmware_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_prog_version&quot;</span><span class="p">))</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">PROGNAME</span><span class="o">=</span><span class="s2">"firmware_</span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">"custom_prog_version"</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>

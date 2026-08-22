@@ -193,8 +193,8 @@ element and optional arguments as subsequent elements.</p>
 <ol class="arabic">
 <li><p>Run a custom Python script located in the package “scripts” folder AFTER the package is installed.
 Please note that you don’t need to specify a Python interpreter for Python scripts.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;postinstall&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;scripts/after_install.py&quot;</span><span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"scripts"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"postinstall"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"scripts/after_install.py"</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -202,8 +202,8 @@ Please note that you don’t need to specify a Python interpreter for Python scr
 <li><p>Run a custom Bash script BEFORE the package is uninstalled.
 The script is declared as a list of command arguments
 and is located at the root of a package:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;preuninstall&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;maintenance.sh&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--action&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uninstall&quot;</span><span class="p">]</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"scripts"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"preuninstall"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"maintenance.sh"</span><span class="p">,</span><span class="w"> </span><span class="s2">"--action"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uninstall"</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>

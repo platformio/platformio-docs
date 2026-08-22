@@ -223,9 +223,9 @@ board and <code class="docutils literal notranslate"><span class="pre">jdolinay/
 <p>In order to enable the GDB stub in your application, a call to the special function
 <code class="docutils literal notranslate"><span class="pre">debug_init</span></code> must be added at the beginning of your application. For example, with
 the Arduino framework it might look like this:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;avr8-stub.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;app_api.h&quot;</span><span class="c1"> // only needed with flash breakpoints</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"Arduino.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"avr8-stub.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"app_api.h"</span><span class="w"> </span><span class="c1">// only needed with flash breakpoints</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
 <span class="p">{</span>

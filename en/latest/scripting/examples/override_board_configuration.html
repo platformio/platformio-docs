@@ -178,13 +178,13 @@ hardware VID/PIDs.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">custon_hwids.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="n">board_config</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">BoardConfig</span><span class="p">()</span>
 <span class="c1"># should be array of VID:PID pairs</span>
-<span class="n">board_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s2">&quot;build.hwids&quot;</span><span class="p">,</span> <span class="p">[</span>
-  <span class="p">[</span><span class="s2">&quot;0x2341&quot;</span><span class="p">,</span> <span class="s2">&quot;0x0243&quot;</span><span class="p">],</span>  <span class="c1"># 1st pair</span>
-  <span class="p">[</span><span class="s2">&quot;0x2A03&quot;</span><span class="p">,</span> <span class="s2">&quot;0x0043&quot;</span><span class="p">],</span>  <span class="c1"># 2nd pair, etc.</span>
+<span class="n">board_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="s2">"build.hwids"</span><span class="p">,</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">"0x2341"</span><span class="p">,</span> <span class="s2">"0x0243"</span><span class="p">],</span>  <span class="c1"># 1st pair</span>
+  <span class="p">[</span><span class="s2">"0x2A03"</span><span class="p">,</span> <span class="s2">"0x0043"</span><span class="p">],</span>  <span class="c1"># 2nd pair, etc.</span>
 <span class="p">])</span>
 </pre></div>
 </div>

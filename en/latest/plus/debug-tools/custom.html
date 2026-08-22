@@ -304,28 +304,28 @@ to a valid identifier. See supported J-Link devices at <a class="reference inter
 <p>Place this file on the same level as <a class="reference internal" href="../../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">os</span><span class="w"> </span><span class="kn">import</span> <span class="n">makedirs</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">os.path</span><span class="w"> </span><span class="kn">import</span> <span class="n">isdir</span><span class="p">,</span> <span class="n">join</span>
-<span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s1">'env'</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_jlink_cmd_script</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
-    <span class="n">build_dir</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">subst</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR&quot;</span><span class="p">)</span>
+    <span class="n">build_dir</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">subst</span><span class="p">(</span><span class="s2">"$BUILD_DIR"</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">isdir</span><span class="p">(</span><span class="n">build_dir</span><span class="p">):</span>
         <span class="n">makedirs</span><span class="p">(</span><span class="n">build_dir</span><span class="p">)</span>
-    <span class="n">script_path</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">build_dir</span><span class="p">,</span> <span class="s2">&quot;upload.jlink&quot;</span><span class="p">)</span>
-    <span class="n">commands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;h&quot;</span><span class="p">,</span> <span class="s2">&quot;loadbin </span><span class="si">%s</span><span class="s2">,0x0&quot;</span> <span class="o">%</span> <span class="n">source</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">]</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">script_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
-        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">commands</span><span class="p">))</span>
+    <span class="n">script_path</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">build_dir</span><span class="p">,</span> <span class="s2">"upload.jlink"</span><span class="p">)</span>
+    <span class="n">commands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"h"</span><span class="p">,</span> <span class="s2">"loadbin </span><span class="si">%s</span><span class="s2">,0x0"</span> <span class="o">%</span> <span class="n">source</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">,</span> <span class="s2">"q"</span><span class="p">]</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">script_path</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">commands</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">script_path</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span>
     <span class="n">__jlink_cmd_script</span><span class="o">=</span><span class="n">_jlink_cmd_script</span><span class="p">,</span>
-    <span class="n">UPLOADER</span><span class="o">=</span><span class="s2">&quot;/full/path/to/JLink&quot;</span><span class="p">,</span>
+    <span class="n">UPLOADER</span><span class="o">=</span><span class="s2">"/full/path/to/JLink"</span><span class="p">,</span>
     <span class="n">UPLOADERFLAGS</span><span class="o">=</span><span class="p">[</span>
-        <span class="s2">&quot;-device&quot;</span><span class="p">,</span> <span class="s2">&quot;MK20DX256xxx7&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;-speed&quot;</span><span class="p">,</span> <span class="s2">&quot;4000&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;-if&quot;</span><span class="p">,</span> <span class="s2">&quot;swd&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;-autoconnect&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span>
+        <span class="s2">"-device"</span><span class="p">,</span> <span class="s2">"MK20DX256xxx7"</span><span class="p">,</span>
+        <span class="s2">"-speed"</span><span class="p">,</span> <span class="s2">"4000"</span><span class="p">,</span>
+        <span class="s2">"-if"</span><span class="p">,</span> <span class="s2">"swd"</span><span class="p">,</span>
+        <span class="s2">"-autoconnect"</span><span class="p">,</span> <span class="s2">"1"</span>
     <span class="p">],</span>
-    <span class="n">UPLOADCMD</span><span class="o">=</span><span class="s1">&#39;&quot;$UPLOADER&quot; $UPLOADERFLAGS -CommanderScript ${__jlink_cmd_script(__env__, SOURCE)}&#39;</span>
+    <span class="n">UPLOADCMD</span><span class="o">=</span><span class="s1">'"$UPLOADER" $UPLOADERFLAGS -CommanderScript ${__jlink_cmd_script(__env__, SOURCE)}'</span>
 <span class="p">)</span>
 </pre></div>
 </div>

@@ -205,7 +205,7 @@ After that, we have a fully configured project that is ready for developing code
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -339,40 +339,40 @@ functions act as a simple Arduino program where we describe our test plan.</p>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// set stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, world!"</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// clean stuff up here</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, "</span><span class="p">;</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"world!"</span><span class="p">;</span>
 <span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">'w'</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">"HELLO, WORLD!"</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"HELLO, WORLD!"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">    </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">'!'</span><span class="p">,</span><span class="w"> </span><span class="sc">'?'</span><span class="p">);</span>
+<span class="w">    </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"Hello, world?"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
@@ -415,14 +415,14 @@ For example, the following code declares a BLE characteristic whose value can be
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEUtils.h&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BLEServer.h&gt;</span>
 
-<span class="cp">#define SERVICE_UUID        &quot;4fafc201-1fb5-459e-8fcc-c5c9c331914b&quot;</span>
-<span class="cp">#define CHARACTERISTIC_UUID &quot;beb5483e-36e1-4688-b7f5-ea07361b26a8&quot;</span>
+<span class="cp">#define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"</span>
+<span class="cp">#define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">MyCallbacks</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BLECharacteristicCallbacks</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">onWrite</span><span class="p">(</span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">getValue</span><span class="p">();</span>
 <span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\r\n</span><span class="s">New value: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"</span><span class="se">\r\n</span><span class="s">New value: "</span><span class="p">);</span>
 <span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">length</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
 <span class="w">          </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
 <span class="w">        </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
@@ -433,7 +433,7 @@ For example, the following code declares a BLE characteristic whose value can be
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
 
-<span class="w">  </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="s">&quot;ESP32 BLE example&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="s">"ESP32 BLE example"</span><span class="p">);</span>
 <span class="w">  </span><span class="n">BLEServer</span><span class="w"> </span><span class="o">*</span><span class="n">pServer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEDevice</span><span class="o">::</span><span class="n">createServer</span><span class="p">();</span>
 <span class="w">  </span><span class="n">BLEService</span><span class="w"> </span><span class="o">*</span><span class="n">pService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">createService</span><span class="p">(</span><span class="n">SERVICE_UUID</span><span class="p">);</span>
 <span class="w">  </span><span class="n">BLECharacteristic</span><span class="w"> </span><span class="o">*</span><span class="n">pCharacteristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">createCharacteristic</span><span class="p">(</span>
@@ -444,7 +444,7 @@ For example, the following code declares a BLE characteristic whose value can be
 
 <span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setCallbacks</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">MyCallbacks</span><span class="p">());</span>
 
-<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pCharacteristic</span><span class="o">-&gt;</span><span class="n">setValue</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">);</span>
 <span class="w">  </span><span class="n">pService</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span>
 
 <span class="w">  </span><span class="n">BLEAdvertising</span><span class="w"> </span><span class="o">*</span><span class="n">pAdvertising</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pServer</span><span class="o">-&gt;</span><span class="n">getAdvertising</span><span class="p">();</span>

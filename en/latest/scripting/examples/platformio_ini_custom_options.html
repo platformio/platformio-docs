@@ -195,13 +195,13 @@ You can read these values later using <a class="reference external" href="https:
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># &quot;env.GetProjectOption&quot; shortcut for the active environment</span>
-<span class="n">value1</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_option1&quot;</span><span class="p">)</span>
-<span class="n">value2</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_option2&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># "env.GetProjectOption" shortcut for the active environment</span>
+<span class="n">value1</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">"custom_option1"</span><span class="p">)</span>
+<span class="n">value2</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">"custom_option2"</span><span class="p">)</span>
 
 <span class="c1"># Read value from other environments</span>
 <span class="n">config</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectConfig</span><span class="p">()</span>
-<span class="n">world</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;universe&quot;</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="n">world</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"universe"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

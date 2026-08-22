@@ -168,19 +168,19 @@ install them into the same virtual environment where <a class="reference interna
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> (place it near <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># List installed packages</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;$PYTHONEXE -m pip list&quot;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"$PYTHONEXE -m pip list"</span><span class="p">)</span>
 
 <span class="c1"># Install custom packages from the PyPi registry</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;$PYTHONEXE -m pip install pkg1 pkg2&quot;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"$PYTHONEXE -m pip install pkg1 pkg2"</span><span class="p">)</span>
 
 <span class="c1"># Install missed package</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">some_package</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
-    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;$PYTHONEXE -m pip install some_package&quot;</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"$PYTHONEXE -m pip install some_package"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

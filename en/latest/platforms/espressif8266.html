@@ -498,7 +498,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">ge
 <span class="c1">; OOM</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="na">-DDEBUG_ESP_OOM</span>
-<span class="w">  </span><span class="na">-include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="w">  </span><span class="na">-include "umm_malloc/umm_malloc_cfg.h"</span>
 
 <span class="c1">; CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
@@ -507,7 +507,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">ge
 <span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
 <span class="w">  </span><span class="na">-DDEBUG_ESP_UPDATER</span>
 <span class="w">  </span><span class="na">-DDEBUG_ESP_OTA</span>
-<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"</span>
 
 <span class="c1">; SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
@@ -520,7 +520,7 @@ Please scroll to <code class="docutils literal notranslate"><span class="pre">ge
 <span class="w">  </span><span class="na">-DDEBUG_ESP_HTTP_UPDATE</span>
 <span class="w">  </span><span class="na">-DDEBUG_ESP_UPDATER</span>
 <span class="w">  </span><span class="na">-DDEBUG_ESP_OTA</span>
-<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include &quot;umm_malloc/umm_malloc_cfg.h&quot;</span>
+<span class="w">  </span><span class="na">-DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"</span>
 
 <span class="c1">; NoAssert-NDEBUG</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DNDEBUG</span>
@@ -681,8 +681,8 @@ or <code class="docutils literal notranslate"><span class="pre">littlefs.bin</sp
 </pre></div>
 </div>
 <p>Where a special variable <code class="docutils literal notranslate"><span class="pre">ESP8266_FS_IMAGE_NAME</span></code> can be overridden:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">ESP8266_FS_IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;custom_image_name&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">ESP8266_FS_IMAGE_NAME</span><span class="o">=</span><span class="s2">"custom_image_name"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

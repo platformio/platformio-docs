@@ -184,7 +184,7 @@ environment.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the current working construction</span>
 <span class="c1"># environment to the `env` variable.</span>
 <span class="c1"># alias of `env = DefaultEnvironment()`</span>
-<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># Dump construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
@@ -195,13 +195,13 @@ environment.</p>
 <span class="c1"># - frameworks</span>
 <span class="c1"># - dependent libraries</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">my_post_extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">,</span> <span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">,</span> <span class="s2">"projenv"</span><span class="p">)</span>
 
 <span class="c1"># Dump global construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
@@ -214,14 +214,14 @@ environment.</p>
 <span class="c1"># - frameworks</span>
 <span class="c1"># - dependent libraries</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 
 <span class="c1"># append extra flags to only project build environment</span>
 <span class="n">projenv</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;PROJECT_EXTRA_MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;ROJECT_EXTRA_MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;ROJECT_EXTRA_MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"PROJECT_EXTRA_MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"ROJECT_EXTRA_MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"ROJECT_EXTRA_MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 </pre></div>
 </div>

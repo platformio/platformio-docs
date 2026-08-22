@@ -194,14 +194,14 @@ scripts to gather integration information intended for IDE plugins. If you want
 your scripts to run exclusively for the “build” target, include the following
 hook at the beginning of your script:</p>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">env</span><span class="o">.</span><span class="n">IsIntegrationDump</span><span class="p">():</span>
    <span class="c1"># stop the current script execution</span>
    <span class="n">Return</span><span class="p">()</span>
 
-<span class="c1"># code below runs for the &quot;build&quot; and other targets</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;MACRO_NAME&quot;</span><span class="p">])</span>
+<span class="c1"># code below runs for the "build" and other targets</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span><span class="s2">"MACRO_NAME"</span><span class="p">])</span>
 </pre></div>
 </div>
 </section>

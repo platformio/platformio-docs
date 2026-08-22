@@ -222,7 +222,7 @@ to the <code class="docutils literal notranslate"><span class="pre">googletest</
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">// should be the same value as for the `test_speed` option in &quot;platformio.ini&quot;</span>
+<span class="w">    </span><span class="c1">// should be the same value as for the `test_speed` option in "platformio.ini"</span>
 <span class="w">    </span><span class="c1">// default value is test_speed=115200</span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
 
@@ -297,9 +297,9 @@ assertions in the output. We will use the <code class="docutils literal notransl
 GoogleTest’s CLI option.</p>
 <ol class="arabic">
 <li><p>Using CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">&quot;--gtest_filter=FooTest.*-FooTest.Bar&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">"--gtest_filter=FooTest.*-FooTest.Bar"</span>
 <span class="c1"># or short format</span>
-&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;--gtest_filter=FooTest.*-FooTest.Bar&quot;</span>
+&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">"--gtest_filter=FooTest.*-FooTest.Bar"</span>
 </pre></div>
 </div>
 </li>

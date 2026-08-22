@@ -225,57 +225,57 @@ exclude other source files from a build process.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">library.json</span></code></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">{</span>
-<span class="w">    </span><span class="na">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;SomeLib&quot;</span><span class="na">,</span>
-<span class="w">    </span><span class="na">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;0.0.0&quot;</span><span class="na">,</span>
-<span class="w">    </span><span class="na">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">{</span>
-<span class="w">        </span><span class="na">&quot;extraScript&quot;</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;extra_script.py&quot;</span>
+<span class="w">    </span><span class="na">"name"</span><span class="o">:</span><span class="w"> </span><span class="s">"SomeLib"</span><span class="na">,</span>
+<span class="w">    </span><span class="na">"version"</span><span class="o">:</span><span class="w"> </span><span class="s">"0.0.0"</span><span class="na">,</span>
+<span class="w">    </span><span class="na">"build"</span><span class="o">:</span><span class="w"> </span><span class="s">{</span>
+<span class="w">        </span><span class="na">"extraScript"</span><span class="o">:</span><span class="w"> </span><span class="s">"extra_script.py"</span>
 <span class="w">    </span><span class="na">}</span>
 <span class="na">}</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code></p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">'env'</span><span class="p">)</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">os.path</span><span class="w"> </span><span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">realpath</span>
 
 <span class="c1">#</span>
-<span class="c1"># Private flags (only for the current &quot;SomeLib&quot; source files)</span>
+<span class="c1"># Private flags (only for the current "SomeLib" source files)</span>
 <span class="c1">#</span>
-<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">,</span> <span class="p">[]):</span>
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;HAL&quot;</span><span class="p">:</span>
-        <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="n">realpath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;hal&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))])</span>
-        <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">SRC_FILTER</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;+&lt;*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;-&lt;hal*&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;+&lt;hal/</span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"CPPDEFINES"</span><span class="p">,</span> <span class="p">[]):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span> <span class="ow">and</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"HAL"</span><span class="p">:</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="n">realpath</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="s2">"hal"</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))])</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">SRC_FILTER</span><span class="o">=</span><span class="p">[</span><span class="s2">"+&lt;*&gt;"</span><span class="p">,</span> <span class="s2">"-&lt;hal*&gt;"</span><span class="p">,</span> <span class="s2">"+&lt;hal/</span><span class="si">%s</span><span class="s2">&gt;"</span> <span class="o">%</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
         <span class="k">break</span>
 
 <span class="c1">#</span>
 <span class="c1"># Pass flags to the other Project Dependencies (libraries)</span>
 <span class="c1">#</span>
 <span class="k">for</span> <span class="n">lb</span> <span class="ow">in</span> <span class="n">env</span><span class="o">.</span><span class="n">GetLibBuilders</span><span class="p">():</span>
-    <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_LIBDEPS&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
-    <span class="k">if</span> <span class="n">lb</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;OneWire&quot;</span><span class="p">:</span>
-        <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;OW_PIN&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">)])</span>
+    <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">"TEST_LIBDEPS"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">lb</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">"OneWire"</span><span class="p">:</span>
+        <span class="n">lb</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">"OW_PIN"</span><span class="p">,</span> <span class="mi">13</span><span class="p">)])</span>
 
 
 <span class="c1"># Operate with the project environment (files located in the `src` folder)</span>
-<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">"projenv"</span><span class="p">)</span>
 <span class="c1"># add (prepend) to the beginning of list</span>
-<span class="n">projenv</span><span class="o">.</span><span class="n">Prepend</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;some/path&quot;</span><span class="p">])</span>
+<span class="n">projenv</span><span class="o">.</span><span class="n">Prepend</span><span class="p">(</span><span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">"some/path"</span><span class="p">])</span>
 <span class="c1"># remove specified flags</span>
-<span class="n">projenv</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">&quot;-fno-rtti&quot;</span><span class="p">)</span>
+<span class="n">projenv</span><span class="o">.</span><span class="n">ProcessUnFlags</span><span class="p">(</span><span class="s2">"-fno-rtti"</span><span class="p">)</span>
 
 <span class="c1"># Pass flags to the Global environment (project `src` files, frameworks)</span>
 <span class="n">global_env</span> <span class="o">=</span> <span class="n">DefaultEnvironment</span><span class="p">()</span>
-<span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;TEST_GLOBAL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+<span class="n">global_env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">"TEST_GLOBAL"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
 
 <span class="c1"># Attach post action to the global environment</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Program has been built!"</span><span class="p">)</span>
     <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Program path"</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
     <span class="c1"># Use case: sign a firmware, do any manipulations with ELF, etc</span>
-    <span class="c1"># env.Execute(f&quot;sign --elf {program_path}&quot;)</span>
+    <span class="c1"># env.Execute(f"sign --elf {program_path}")</span>
 
-<span class="n">global_env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
+<span class="n">global_env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"$PROGPATH"</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

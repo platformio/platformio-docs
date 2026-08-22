@@ -299,9 +299,9 @@ or <a class="reference internal" href="../../projectconf/sections/platformio/opt
 <p>Pass an extra argument to the <a class="reference internal" href="../../platforms/native.html#platform-native"><span class="std std-ref">Native</span></a> program.
 Multiple arguments are allowed.</p>
 <p><strong>Example</strong></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">&quot;arg1&quot;</span><span class="w"> </span>--program-arg<span class="o">=</span><span class="s2">&quot;--option1=value1&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">"arg1"</span><span class="w"> </span>--program-arg<span class="o">=</span><span class="s2">"--option1=value1"</span>
 <span class="c1"># or short format</span>
-&gt;<span class="w"> </span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;arg1&quot;</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;--option1=value1&quot;</span>
+&gt;<span class="w"> </span>pio<span class="w"> </span>run<span class="w"> </span>-t<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">"arg1"</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">"--option1=value1"</span>
 </pre></div>
 </div>
 <dl class="std option">
@@ -581,7 +581,7 @@ avrdude: AVR device initialized and ready to accept instructions
 Reading | ################################################## | 100% 0.01s
 
 avrdude: Device signature = 0x1e950f
-avrdude: reading input file &quot;.pio/build/uno/firmware.hex&quot;
+avrdude: reading input file ".pio/build/uno/firmware.hex"
 avrdude: writing flash (1034 bytes):
 
 Writing | ################################################## | 100% 0.18s

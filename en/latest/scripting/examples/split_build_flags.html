@@ -166,16 +166,16 @@
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code> (place it near <code class="docutils literal notranslate"><span class="pre">platformio.ini</span></code>):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># General options that are passed to the C and C++ compilers</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CCFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;flag2&quot;</span><span class="p">])</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CCFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">"flag1"</span><span class="p">,</span> <span class="s2">"flag2"</span><span class="p">])</span>
 
 <span class="c1"># General options that are passed to the C compiler (C only; not C++).</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;flag2&quot;</span><span class="p">])</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">"flag1"</span><span class="p">,</span> <span class="s2">"flag2"</span><span class="p">])</span>
 
 <span class="c1"># General options that are passed to the C++ compiler</span>
-<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CXXFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;flag2&quot;</span><span class="p">])</span>
+<span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CXXFLAGS</span><span class="o">=</span><span class="p">[</span><span class="s2">"flag1"</span><span class="p">,</span> <span class="s2">"flag2"</span><span class="p">])</span>
 </pre></div>
 </div>
 </section>

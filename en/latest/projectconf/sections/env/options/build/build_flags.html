@@ -269,14 +269,14 @@ commas, it is split into multiple options at the commas.</p></td>
 <span class="k">[env:specific_inclibs]</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="na">-I/opt/include</span>
-<span class="w">  </span><span class="na">-I&quot;relative/path with space&quot;</span>
-<span class="w">  </span><span class="na">-I&quot;C</span><span class="o">:</span><span class="s">\windows\dir&quot;</span>
-<span class="w">  </span><span class="na">-I&quot;${platformio.packages_dir}/framework-foo/include&quot;</span>
+<span class="w">  </span><span class="na">-I"relative/path with space"</span>
+<span class="w">  </span><span class="na">-I"C</span><span class="o">:</span><span class="s">\windows\dir"</span>
+<span class="w">  </span><span class="na">-I"${platformio.packages_dir}/framework-foo/include"</span>
 <span class="w">  </span><span class="na">-L/opt/lib</span>
 <span class="w">  </span><span class="na">-lfoo</span>
 
 <span class="k">[env:ignore_incremental_builds]</span>
-<span class="c1">; We dynamically change the value of &quot;LAST_BUILD_TIME&quot; macro,</span>
+<span class="c1">; We dynamically change the value of "LAST_BUILD_TIME" macro,</span>
 <span class="c1">; PlatformIO will not cache objects</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-DLAST_BUILD_TIME=$UNIX_TIME</span>
 </pre></div>
@@ -317,8 +317,8 @@ enclosed the flag in the single quotes to prevent the shell evaluation:</p>
 <p><strong>platformio.ini</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[env:myenv]</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="na">&#39;-D MYSTRING</span><span class="o">=</span><span class="s">&quot;Text is \\&quot;</span><span class="na">Quoted\\&quot;&quot;&#39;</span>
-<span class="w">    </span><span class="na">&#39;-D MYFONT</span><span class="o">=</span><span class="s">&amp;roboto14&#39;</span>
+<span class="w">    </span><span class="na">'-D MYSTRING</span><span class="o">=</span><span class="s">"Text is \\"</span><span class="na">Quoted\\""'</span>
+<span class="w">    </span><span class="na">'-D MYFONT</span><span class="o">=</span><span class="s">&amp;roboto14'</span>
 </pre></div>
 </div>
 <p><strong>src/main.cpp</strong></p>
@@ -327,7 +327,7 @@ enclosed the flag in the single quotes to prevent the shell evaluation:</p>
 <span class="cp">#define CONFIG_LV_FONT_DEFAULT MYFONT</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;MYSTRING=&lt;%s&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">MYSTRING</span><span class="p">);</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"MYSTRING=&lt;%s&gt;</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">MYSTRING</span><span class="p">);</span>
 <span class="w">    </span><span class="k">return</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -342,10 +342,10 @@ for you:</p>
 </pre></div>
 </div>
 <p><strong>myscript.py</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-    <span class="p">(</span><span class="s2">&quot;MYSTRING&quot;</span><span class="p">,</span> <span class="n">env</span><span class="o">.</span><span class="n">StringifyMacro</span><span class="p">(</span><span class="s1">&#39;Text is &quot;Quoted&quot;&#39;</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s2">"MYSTRING"</span><span class="p">,</span> <span class="n">env</span><span class="o">.</span><span class="n">StringifyMacro</span><span class="p">(</span><span class="s1">'Text is "Quoted"'</span><span class="p">)),</span>
 <span class="p">])</span>
 </pre></div>
 </div>
@@ -378,7 +378,7 @@ a PlatformIO Build System environment, please refer to <a class="reference inter
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!cmd_or_path_to_script</span>
 
 <span class="c1">; Unix only, get output from internal command</span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!echo &#39;-D COMMIT_HASH=\\&quot;&#39;$(git log -1 --format=%%h)&#39;\\&quot;&#39;</span>
+<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">!echo '-D COMMIT_HASH=\\"'$(git log -1 --format=%%h)'\\"'</span>
 </pre></div>
 </div>
 <p><strong>Use Case: Create a “PIO_SRC_REV” macro with the latest Git revision</strong></p>
@@ -393,11 +393,11 @@ in the same directory as <code class="docutils literal notranslate"><span class=
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
 
 <span class="n">revision</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">([</span><span class="s2">&quot;git&quot;</span><span class="p">,</span> <span class="s2">&quot;rev-parse&quot;</span><span class="p">,</span> <span class="s2">&quot;HEAD&quot;</span><span class="p">])</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">([</span><span class="s2">"git"</span><span class="p">,</span> <span class="s2">"rev-parse"</span><span class="p">,</span> <span class="s2">"HEAD"</span><span class="p">])</span>
     <span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">"utf-8"</span><span class="p">)</span>
 <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;-DGIT_REV=</span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="n">revision</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"'-DGIT_REV=</span><span class="se">\"</span><span class="si">%s</span><span class="se">\"</span><span class="s2">'"</span> <span class="o">%</span> <span class="n">revision</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

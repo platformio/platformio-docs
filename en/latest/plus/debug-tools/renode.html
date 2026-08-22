@@ -288,7 +288,7 @@ port on the <code class="docutils literal notranslate"><span class="pre">hifive1
 <span class="na">debug_server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">renode</span>
 <span class="w">  </span><span class="na">--hide-log</span>
 <span class="w">  </span><span class="na">-e machine StartGdbServer 3333 True</span>
-<span class="w">  </span><span class="na">-e emulation CreateServerSocketTerminal 4321 &quot;externalUART&quot; false</span>
+<span class="w">  </span><span class="na">-e emulation CreateServerSocketTerminal 4321 "externalUART" false</span>
 <span class="w">  </span><span class="na">-e connector Connect uart0 externalUART</span>
 <span class="na">debug_extra_cmds</span><span class="w"> </span><span class="o">=</span>
 <span class="w">    </span><span class="na">monitor start</span>

@@ -170,7 +170,7 @@ function for this case.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">prompt-user-data.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># Do not run a script when external applications, such as IDEs,</span>
 <span class="c1"># dump integration data. Otherwise, input() will block the process</span>
@@ -180,10 +180,10 @@ function for this case.</p>
     <span class="n">Return</span><span class="p">()</span>
 
 <span class="c1"># Ask user name</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enter your name:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Enter your name:"</span><span class="p">)</span>
 <span class="n">user_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
-    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;USER_NAME&quot;</span><span class="p">,</span>  <span class="n">env</span><span class="o">.</span><span class="n">StringifyMacro</span><span class="p">(</span><span class="n">user_name</span><span class="p">))],</span>
+    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[(</span><span class="s2">"USER_NAME"</span><span class="p">,</span>  <span class="n">env</span><span class="o">.</span><span class="n">StringifyMacro</span><span class="p">(</span><span class="n">user_name</span><span class="p">))],</span>
 <span class="p">)</span>
 </pre></div>
 </div>

@@ -218,7 +218,7 @@ allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
-<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
+<span class="c1">; Each "[env:***]" extends this "[env]" by default</span>
 <span class="k">[env]</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span>
@@ -263,12 +263,12 @@ allows extending of other sections.</p>
 <span class="c1">; Keep sensitive data in environment variables</span>
 <span class="c1">;</span>
 <span class="c1">; Unix</span>
-<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span>
-<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span>
+<span class="c1">; export WIFI_SSID='\"my\ ssid\ name\"'</span>
+<span class="c1">; export WIFI_PASS='\"my\ password\"'</span>
 <span class="c1">;</span>
 <span class="c1">; Windows</span>
-<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span>
-<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span>
+<span class="c1">; set WIFI_SSID='"my ssid name"'</span>
+<span class="c1">; set WIFI_PASS='"my password"'</span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -276,7 +276,7 @@ allows extending of other sections.</p>
 <p>Be careful with special characters in system environment variables on Unix systems,
 especially when they are used as the value for preprocessor directives.
 Symbols like <code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">~</span></code>, etc must be explicitly escaped, for example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">&#39;\&quot;my\~p\&amp;a\\\$\$\$\$word\&quot;&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">'\"my\~p\&amp;a\\\$\$\$\$word\"'</span>
 </pre></div>
 </div>
 </div>

@@ -207,7 +207,7 @@ PlatformIO Projects) and unlimited public workspaces.</p></li>
 <ol class="arabic simple" start="3">
 <li><p>Install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> using Cloud IDE Terminal. Paste a next command</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">"</span>
 </pre></div>
 </div>
 <img alt="../../_images/ide-cloud9-install-pio-cli.png" src="../../_images/ide-cloud9-install-pio-cli.png" />
@@ -239,7 +239,7 @@ then “New File” and insert a next content:</p>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Cloud9!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Hello Cloud9!"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -281,9 +281,9 @@ for PlatformIO and own Runners.</p>
 files by default. Please click on <code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Build</span> <span class="pre">System</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">Build</span> <span class="pre">System</span></code>
 and replace all content with the next:</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;cmd&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;pio&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;run&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-d&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;$file&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="s2">&quot;info&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Building $project_path/$file_name&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;selector&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;^.*\\.(cpp|c|h|hpp|S|ini|ino|pde)$&quot;</span>
+<span class="w">    </span><span class="s2">"cmd"</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"pio"</span><span class="p">,</span><span class="w"> </span><span class="s2">"run"</span><span class="p">,</span><span class="w"> </span><span class="s2">"-d"</span><span class="p">,</span><span class="w"> </span><span class="s2">"$file"</span><span class="p">],</span>
+<span class="w">    </span><span class="s2">"info"</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">"Building $project_path/$file_name"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"selector"</span><span class="o">:</span><span class="w"> </span><span class="s2">"^.*\\.(cpp|c|h|hpp|S|ini|ino|pde)$"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
