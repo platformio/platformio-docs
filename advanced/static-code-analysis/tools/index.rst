@@ -33,5 +33,3 @@ process can be found on these pages:
 
   clang-tidy
   cppcheck
-  pvs-studio
-
