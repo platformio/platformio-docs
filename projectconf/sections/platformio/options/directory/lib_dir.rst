@@ -55,5 +55,12 @@ Then in ``src/main.c`` you should use:
 
     // rest of H/C/CPP code
 
+And platformio.ini file [env:] should include:
+
+-- code::
+    lib_deps = 
+        Bar
+        Foo
+
 PlatformIO will find your libraries automatically, configure the
 preprocessor's include paths and build them.
