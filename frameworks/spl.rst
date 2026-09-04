@@ -99,7 +99,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm8_nucleo_8s207k8`
       - :ref:`platform_ststm8`
       - STM8S207K8T6
@@ -284,7 +284,7 @@ Armstrap
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Generic
 ~~~~~~~

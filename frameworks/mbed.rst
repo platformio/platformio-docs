@@ -483,7 +483,7 @@ You do not need to use/buy external debug probe.
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - STM32H747XIH6
@@ -1251,7 +1251,7 @@ ST
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_disco_h747xi`
       - :ref:`platform_ststm32`
       - On-board

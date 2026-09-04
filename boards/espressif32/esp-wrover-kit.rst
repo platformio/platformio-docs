@@ -32,7 +32,7 @@ Platform :ref:`platform_espressif32`: ESP32 is a series of low-cost, low-power s
   * - **RAM**
     - 320KB
   * - **Vendor**
-    - `Espressif <https://espressif.com/en/products/hardware/esp-wrover-kit/overview?utm_source=platformio.org&utm_medium=docs>`__
+    - `Espressif <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp-wrover-kit/index.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration

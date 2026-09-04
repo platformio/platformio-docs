@@ -38,7 +38,6 @@ Examples are listed from `Silicon Labs EFM32 development platform repository <ht
 * `mbed-rtos-blink-baremetal <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-blink-baremetal?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-usb-cdc <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-usb-cdc?utm_source=platformio.org&utm_medium=docs>`_
 * `mbed-rtos-semaphore <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/mbed-rtos-semaphore?utm_source=platformio.org&utm_medium=docs>`_
-* `zephyr-custom-module <https://github.com/platformio/platform-siliconlabsefm32/tree/master/examples/zephyr-custom-module?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------

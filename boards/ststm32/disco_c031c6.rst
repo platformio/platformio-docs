@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_g031k8:
+.. _board_ststm32_disco_c031c6:
 
-ST NUCLEO-G031K8
-================
+ST STM32C0316-DK Discovery Kit
+==============================
 
 .. contents::
 
@@ -24,56 +24,52 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32G031K8
+    - STM32C031C6T6
   * - **Frequency**
-    - 64MHz
+    - 48MHz
   * - **Flash**
-    - 64KB
+    - 32KB
   * - **RAM**
-    - 8KB
+    - 12KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g031k8.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `ST <https://www.st.com/en/evaluation-tools/stm32c0316-dk.html?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_g031k8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``disco_c031c6`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:disco_c031c6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = disco_c031c6
 
-You can override default ST NUCLEO-G031K8 settings per build environment using
+You can override default ST STM32C0316-DK Discovery Kit settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_g031k8.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g031k8.json>`_. For example,
+board manifest `disco_c031c6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/disco_c031c6.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:disco_c031c6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = disco_c031c6
 
   ; change microcontroller
-  board_build.mcu = stm32g031k8
+  board_build.mcu = stm32c031c6t6
 
   ; change MCU frequency
-  board_build.f_cpu = 64000000L
+  board_build.f_cpu = 48000000L
 
 
 Uploading
 ---------
-ST NUCLEO-G031K8 supports the following uploading protocols:
+ST STM32C0316-DK Discovery Kit supports the following uploading protocols:
 
-* ``blackmagic``
 * ``cmsis-dap``
-* ``dfu``
 * ``jlink``
-* ``mbed``
-* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -82,9 +78,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:disco_c031c6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = disco_c031c6
 
   upload_protocol = stlink
 
@@ -101,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+ST STM32C0316-DK Discovery Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
 
 .. list-table::
   :header-rows:  1
@@ -109,9 +105,6 @@ ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You do
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -132,12 +125,6 @@ Frameworks
 
     * - :ref:`framework_arduino`
       - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
-
-    * - :ref:`framework_cmsis`
-      - Vendor-independent hardware abstraction layer for the Cortex-M processor series
-
-    * - :ref:`framework_libopencm3`
-      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
 
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency

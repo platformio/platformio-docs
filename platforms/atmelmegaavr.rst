@@ -364,6 +364,12 @@ Microchip
       - 16MHz
       - 4KB
       - 256B
+    * - :ref:`board_atmelmegaavr_xplained_nano_416`
+      - No
+      - ATTINY416
+      - 20MHz
+      - 4KB
+      - 256B
     * - :ref:`board_atmelmegaavr_ATtiny417`
       - No
       - ATTINY417

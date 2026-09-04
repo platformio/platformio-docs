@@ -38,7 +38,6 @@ Examples are listed from `Nordic nRF51 development platform repository <https://
 * `arduino-ble-led <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-ble-led?utm_source=platformio.org&utm_medium=docs>`_
 * `zephyr-ble-eddystone <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-ble-eddystone?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-internal-libs <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs>`_
-* `zephyr-drivers-entropy <https://github.com/platformio/platform-nordicnrf51/tree/master/examples/zephyr-drivers-entropy?utm_source=platformio.org&utm_medium=docs>`_
 
 Debugging
 ---------
