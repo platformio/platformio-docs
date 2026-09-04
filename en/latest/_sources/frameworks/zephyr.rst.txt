@@ -450,6 +450,24 @@ You do not need to use/buy external debug probe.
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -666,12 +684,24 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - STM32WL55JC
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
     * - :ref:`board_ststm32_disco_f051r8`
       - :ref:`platform_ststm32`
       - STM32F051R8T6
@@ -1975,6 +2005,27 @@ ST
       - 48MHz
       - 128KB
       - 16KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2234,6 +2285,13 @@ ST
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_nucleo_u575zi_q`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32U575ZIT6Q
+      - 160MHz
+      - 2MB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - On-board
@@ -2241,6 +2299,13 @@ ST
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
     * - :ref:`board_ststm32_disco_f051r8`
       - :ref:`platform_ststm32`
       - On-board

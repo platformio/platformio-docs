@@ -134,7 +134,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_rhombio_l476dmw1k`
       - :ref:`platform_ststm32`
       - STM32L476VGT6
@@ -453,6 +453,12 @@ You do not need to use/buy external debug probe.
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - STM32H743ZIT6
@@ -1618,6 +1624,12 @@ Please click on board name for the further details.
       - 480MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - STM32G474CEU6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - STM32F051K6
@@ -1876,7 +1888,7 @@ Armstrap
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Avnet Silica
 ~~~~~~~~~~~~
@@ -3529,6 +3541,13 @@ ST
       - 216MHz
       - 2MB
       - 512KB
+    * - :ref:`board_ststm32_nucleo_h723zg`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32H723ZGT6
+      - 550MHz
+      - 1MB
+      - 320KB
     * - :ref:`board_ststm32_nucleo_h743zi`
       - :ref:`platform_ststm32`
       - On-board
@@ -4066,6 +4085,13 @@ WeAct Studio
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
 

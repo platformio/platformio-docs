@@ -809,7 +809,7 @@ Please click on board name for the further details.
       - :ref:`platform_espressif32`
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - :ref:`platform_espressif32`
@@ -3328,7 +3328,7 @@ Seeed Studio
       - External
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - :ref:`platform_espressif32`
