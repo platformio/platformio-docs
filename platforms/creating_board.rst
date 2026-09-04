@@ -84,6 +84,14 @@ Now, you can use ``myboard`` for the :ref:`projectconf_env_board` option in
   You can have custom boards per project. In this case, please put your
   board's JSON files to :ref:`projectconf_pio_boards_dir`.
 
+Installation in single project
+------------------------------
+
+1. Create ``boards`` directory in your project folder (if it doesn’t exist).
+2. Create ``myboard.json`` file in this ``boards`` directory.
+3. Search available boards via :ref:`cmd_boards` command. You should see
+   ``myboard`` board.
+
 Examples
 --------
 
