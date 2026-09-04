@@ -194,7 +194,7 @@ Packages
       - STM8 toolchain with GDB debugger
 
     * - `tool-stm8flash <https://registry.platformio.org/tools/platformio/tool-stm8flash>`__
-      - stm8flash is an application for programing stm8 devices with SWIM/stlinkv(1,2).
+      - stm8flash is an application for programming stm8 devices with SWIM/stlinkv(1,2).
 
     * - `tool-stm8gal <https://registry.platformio.org/tools/platformio/tool-stm8gal>`__
       - stm8gal is an application for programming or reading out STM8 memory using the built-in ROM bootloader (BSL) via UART or SPI interface
