@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>builder &mdash; PlatformIO v6.1 documentation</title>
+  <title>builder &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/manifests/library-json/fields/build/builder.html" />
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -191,18 +191,18 @@ builders:</p>
 <ol class="arabic simple">
 <li><p>Custom macros/defines</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-D MYLIB_REV=1.2.3 -DRELEASE&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"build"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"flags"</span><span class="o">:</span><span class="w"> </span><span class="s2">"-D MYLIB_REV=1.2.3 -DRELEASE"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Extra includes for C preprocessor</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;-I inc&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;-I inc/target_x13&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"build"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"flags"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"-I inc"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"-I inc/target_x13"</span>
 <span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
@@ -210,20 +210,20 @@ builders:</p>
 <ol class="arabic simple" start="3">
 <li><p>Force to use <code class="docutils literal notranslate"><span class="pre">C99</span></code> standard instead of <code class="docutils literal notranslate"><span class="pre">C11</span></code></p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;unflags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-std=gnu++11&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;flags&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;-std=c99&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"build"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"unflags"</span><span class="o">:</span><span class="w"> </span><span class="s2">"-std=gnu++11"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"flags"</span><span class="o">:</span><span class="w"> </span><span class="s2">"-std=c99"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>Build source files (<code class="docutils literal notranslate"><span class="pre">c,</span> <span class="pre">cpp,</span> <span class="pre">h</span></code>) at the top level of the library</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;srcFilter&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;+&lt;*.c&gt;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;+&lt;*.cpp&gt;&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;+&lt;*.h&gt;&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"build"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"srcFilter"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"+&lt;*.c&gt;"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"+&lt;*.cpp&gt;"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"+&lt;*.h&gt;"</span>
 <span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
@@ -231,20 +231,20 @@ builders:</p>
 <ol class="arabic simple" start="5">
 <li><p>Extend PlatformIO Build System with own extra script</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;build&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;extraScript&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;generate_headers.py&quot;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">"build"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"extraScript"</span><span class="o">:</span><span class="w"> </span><span class="s2">"generate_headers.py"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">generate_headers.py</span></code></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">&#39;env&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s1">'env'</span><span class="p">)</span>
 <span class="c1"># print(env.Dump())</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span>
-    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;HELLO=WORLD&quot;</span><span class="p">,</span> <span class="s2">&quot;TAG=1.2.3&quot;</span><span class="p">,</span> <span class="s2">&quot;DEBUG&quot;</span><span class="p">],</span>
-    <span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;inc&quot;</span><span class="p">,</span> <span class="s2">&quot;inc/devices&quot;</span><span class="p">]</span>
+    <span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span><span class="s2">"HELLO=WORLD"</span><span class="p">,</span> <span class="s2">"TAG=1.2.3"</span><span class="p">,</span> <span class="s2">"DEBUG"</span><span class="p">],</span>
+    <span class="n">CPPPATH</span><span class="o">=</span><span class="p">[</span><span class="s2">"inc"</span><span class="p">,</span> <span class="s2">"inc/devices"</span><span class="p">]</span>
 <span class="p">)</span>
 
-<span class="c1"># some python code that generates header files &quot;on-the-fly&quot;</span>
+<span class="c1"># some python code that generates header files "on-the-fly"</span>
 </pre></div>
 </div>
 </section>
@@ -376,7 +376,7 @@ builders:</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

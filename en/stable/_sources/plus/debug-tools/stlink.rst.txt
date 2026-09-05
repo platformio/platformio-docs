@@ -431,7 +431,7 @@ Boards
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_nordicnrf52_bbcmicrobit_v2`
       - :ref:`platform_nordicnrf52`
       - On-board
@@ -789,6 +789,13 @@ Boards
       - 80MHz
       - 512KB
       - 160KB
+    * - :ref:`board_ststm32_lilygo_t3_stm32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU7
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - :ref:`platform_ststm32`
       - External
@@ -1356,6 +1363,27 @@ Boards
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -1698,7 +1726,7 @@ Boards
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - On-board
@@ -1706,6 +1734,20 @@ Boards
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -2558,6 +2600,13 @@ Boards
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_wraith32_v1`

@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mbed &mdash; PlatformIO v6.1 documentation</title>
+  <title>Mbed &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/frameworks/mbed.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -310,38 +310,38 @@ manually add custom board definitions to your project. First of all, you need to
 a special file <code class="docutils literal notranslate"><span class="pre">custom_targets.json</span></code> in the root folder of your project where you
 describe your board, for example here is the configuration for <code class="docutils literal notranslate"><span class="pre">NUCLEO-F401RE</span></code> board:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;NUCLEO_F401RE&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;inherits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;MCU_STM32&quot;</span>
+<span class="w">  </span><span class="nt">"NUCLEO_F401RE"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"inherits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"MCU_STM32"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;supported_form_factors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;ARDUINO&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;MORPHO&quot;</span>
+<span class="w">    </span><span class="nt">"supported_form_factors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"ARDUINO"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"MORPHO"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;core&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cortex-M4F&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;extra_labels_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;STM32F4&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span>
+<span class="w">    </span><span class="nt">"core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cortex-M4F"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"extra_labels_add"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"STM32F4"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"STM32F401xE"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;macros_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;STM32F401xE&quot;</span>
+<span class="w">    </span><span class="nt">"macros_add"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"STM32F401xE"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;clock_source&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;help&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;USE_PLL_HSE_EXTC|USE_PLL_HSI&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;macro_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLOCK_SOURCE&quot;</span>
+<span class="w">    </span><span class="nt">"config"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"clock_source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"help"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL (need HW patch) | USE_PLL_HSI"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USE_PLL_HSE_EXTC|USE_PLL_HSI"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"macro_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CLOCK_SOURCE"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;detect_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;0720&quot;</span>
+<span class="w">    </span><span class="nt">"detect_code"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"0720"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;device_has_add&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;SERIAL_ASYNCH&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;FLASH&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;MPU&quot;</span>
+<span class="w">    </span><span class="nt">"device_has_add"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">"SERIAL_ASYNCH"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"FLASH"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"MPU"</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;device_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STM32F401RE&quot;</span>
+<span class="w">    </span><span class="nt">"device_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"STM32F401RE"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -911,7 +911,7 @@ You do not need to use/buy external debug probe.</p>
 <td><p>STM32U575ZIT6Q</p></td>
 <td><p>160MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>768KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -1801,7 +1801,7 @@ Please click on board name for the further details.</p>
 <td><p>STM32U575ZIT6Q</p></td>
 <td><p>160MHz</p></td>
 <td><p>2MB</p></td>
-<td><p>256KB</p></td>
+<td><p>768KB</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../boards/ststm32/disco_h747xi.html#board-ststm32-disco-h747xi"><span class="std std-ref">STM32H747I-DISCO</span></a></p></td>
 <td><p><a class="reference internal" href="../platforms/ststm32.html#platform-ststm32"><span class="std std-ref">ST STM32</span></a></p></td>
@@ -2116,7 +2116,7 @@ Please click on board name for the further details.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

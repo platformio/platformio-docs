@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Integration with custom applications (extensions, plugins) &mdash; PlatformIO v6.1 documentation</title>
+  <title>Integration with custom applications (extensions, plugins) &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/core/installation/integration.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -184,7 +184,7 @@ into an application, such as an extension or plugin for IDE.</p>
 <section id="python-interpreter">
 <h3><a class="toc-backref" href="#id3" role="doc-backlink">Python Interpreter</a><a class="headerlink" href="#python-interpreter" title="Link to this heading"></a></h3>
 <p>PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
-and Python 3.5+. <strong>We highly recommend using the latest Python 3</strong>.</p>
+and Python 3.9+. <strong>We highly recommend using the latest Python 3</strong>.</p>
 <p>Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
 If there is no Python on a user machine (you can check running <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>),
 we have 2 options:</p>
@@ -238,16 +238,16 @@ environment <code class="docutils literal notranslate"><span class="pre">PATH</s
 a full path.</p>
 <p>Example of <code class="docutils literal notranslate"><span class="pre">pioinstaller-state.json</span></code> run on macOS:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;cache_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/.cache&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;core_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;core_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4.3.1&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;installer_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;is_develop_core&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;penv_bin_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;penv_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;platformio_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/platformio&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;python_exe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/Users/Freedom/.platformio/penv/bin/python&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;darwin_x86_64&quot;</span>
+<span class="w">  </span><span class="nt">"cache_dir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio/.cache"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"core_dir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"core_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.3.1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"installer_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2.0"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"is_develop_core"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"penv_bin_dir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio/penv/bin"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"penv_dir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio/penv"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"platformio_exe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio/penv/bin/platformio"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"python_exe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/Freedom/.platformio/penv/bin/python"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"darwin_x86_64"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -407,7 +407,7 @@ is used by <a class="reference external" href="https://marketplace.visualstudio.
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

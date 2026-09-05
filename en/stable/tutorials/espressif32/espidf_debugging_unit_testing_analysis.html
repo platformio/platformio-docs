@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis &mdash; PlatformIO v6.1 documentation</title>
+  <title>Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/tutorials/espressif32/espidf_debugging_unit_testing_analysis.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -206,43 +206,43 @@ following code:</p>
 <span class="cm">   This example code is in the Public Domain (or CC0 licensed, at your option.)</span>
 
 <span class="cm">   Unless required by applicable law or agreed to in writing, this</span>
-<span class="cm">   software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR</span>
+<span class="cm">   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR</span>
 <span class="cm">   CONDITIONS OF ANY KIND, either express or implied.</span>
 <span class="cm">*/</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/FreeRTOS.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freertos/task.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_mac.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_wifi.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_event.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;esp_log.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;nvs_flash.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"freertos/FreeRTOS.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"freertos/task.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"esp_mac.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"esp_wifi.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"esp_event.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"esp_log.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"nvs_flash.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/err.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;lwip/sys.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"lwip/err.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"lwip/sys.h"</span>
 
 <span class="cm">/* The examples use WiFi configuration that you can set via project configuration menu.</span>
 
-<span class="cm">   If you&#39;d rather not, just change the below entries to strings with</span>
-<span class="cm">   the config you want - ie #define EXAMPLE_WIFI_SSID &quot;mywifissid&quot;</span>
+<span class="cm">   If you'd rather not, just change the below entries to strings with</span>
+<span class="cm">   the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"</span>
 <span class="cm">*/</span>
-<span class="cp">#define EXAMPLE_ESP_WIFI_SSID      &quot;mywifissid&quot;</span>
-<span class="cp">#define EXAMPLE_ESP_WIFI_PASS      &quot;mywifipass&quot;</span>
+<span class="cp">#define EXAMPLE_ESP_WIFI_SSID      "mywifissid"</span>
+<span class="cp">#define EXAMPLE_ESP_WIFI_PASS      "mywifipass"</span>
 <span class="cp">#define EXAMPLE_ESP_WIFI_CHANNEL   1</span>
 <span class="cp">#define EXAMPLE_MAX_STA_CONN       4</span>
 
-<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wifi softAP&quot;</span><span class="p">;</span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"wifi softAP"</span><span class="p">;</span>
 
 <span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">wifi_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">arg</span><span class="p">,</span><span class="w"> </span><span class="n">esp_event_base_t</span><span class="w"> </span><span class="n">event_base</span><span class="p">,</span>
 <span class="w">                                    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">event_id</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">event_data</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STACONNECTED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">wifi_event_ap_staconnected_t</span><span class="o">*</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_staconnected_t</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">event_data</span><span class="p">;</span>
-<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="n">MACSTR</span><span class="s">&quot; join, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">"station "</span><span class="n">MACSTR</span><span class="s">" join, AID=%d"</span><span class="p">,</span>
 <span class="w">                 </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">WIFI_EVENT_AP_STADISCONNECTED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="o">*</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">wifi_event_ap_stadisconnected_t</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">event_data</span><span class="p">;</span>
-<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;station &quot;</span><span class="n">MACSTR</span><span class="s">&quot; leave, AID=%d&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">"station "</span><span class="n">MACSTR</span><span class="s">" leave, AID=%d"</span><span class="p">,</span>
 <span class="w">                 </span><span class="n">MAC2STR</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">mac</span><span class="p">),</span><span class="w"> </span><span class="n">event</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
@@ -283,7 +283,7 @@ following code:</p>
 <span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_AP</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
 <span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span>
 
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;wifi_init_softap finished. SSID:%s password:%s channel:%d&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">"wifi_init_softap finished. SSID:%s password:%s channel:%d"</span><span class="p">,</span>
 <span class="w">             </span><span class="n">EXAMPLE_ESP_WIFI_SSID</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_PASS</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_ESP_WIFI_CHANNEL</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -297,7 +297,7 @@ following code:</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ESP_WIFI_MODE_AP&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">"ESP_WIFI_MODE_AP"</span><span class="p">);</span>
 <span class="w">    </span><span class="n">wifi_init_softap</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
@@ -306,7 +306,7 @@ following code:</p>
 <p class="admonition-title">Warning</p>
 <p>Make sure this new file <code class="docutils literal notranslate"><span class="pre">main.c</span></code> is registered as source file using
 <code class="docutils literal notranslate"><span class="pre">idf_component_register</span></code> function in <code class="docutils literal notranslate"><span class="pre">src/CMakeLists.txt</span></code> file:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">&quot;main.c&quot;</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">idf_component_register</span><span class="p">(</span><span class="s">SRCS</span><span class="w"> </span><span class="s2">"main.c"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -436,7 +436,7 @@ add two new files <code class="docutils literal notranslate"><span class="pre">c
 <span class="cp">#define _CALCULATOR_H_</span>
 
 <span class="cp">#ifdef __cplusplus</span>
-<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">"C"</span>
 <span class="p">{</span>
 <span class="cp">#endif</span>
 
@@ -453,7 +453,7 @@ add two new files <code class="docutils literal notranslate"><span class="pre">c
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">calculator.c</span></code>:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;calculator.h&quot;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"calculator.h"</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
 <span class="p">{</span>
@@ -690,7 +690,7 @@ boilerplate for later projects.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

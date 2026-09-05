@@ -1840,7 +1840,7 @@ Armstrap
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 ArtronShop
 ~~~~~~~~~~
@@ -4172,6 +4172,13 @@ LilyGo
       - 240MHz
       - 4MB
       - 320KB
+    * - :ref:`board_ststm32_lilygo_t3_stm32_v1`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32WLE5CCU7
+      - 48MHz
+      - 256KB
+      - 64KB
 
 Linino
 ~~~~~~
@@ -6335,6 +6342,27 @@ ST
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -6684,7 +6712,7 @@ ST
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - :ref:`platform_ststm32`
       - On-board
@@ -6692,6 +6720,20 @@ ST
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -7061,7 +7103,7 @@ Seeed Studio
       - External
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - :ref:`platform_espressif32`
@@ -8664,6 +8706,13 @@ WeAct Studio
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
 

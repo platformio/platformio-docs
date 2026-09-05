@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PlatformIO IDE for VSCode &mdash; PlatformIO v6.1 documentation</title>
+  <title>PlatformIO IDE for VSCode &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/integration/ide/vscode.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -251,7 +251,7 @@ follow to <a class="reference external" href="https://github.com/platformio/plat
 <span class="cm"> * Turns on an LED on for one second,</span>
 <span class="cm"> * then off for one second, repeatedly.</span>
 <span class="cm"> */</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Arduino.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"Arduino.h"</span>
 
 <span class="c1">// Set LED_BUILTIN if it is not defined by Arduino framework</span>
 <span class="c1">// #define LED_BUILTIN 13</span>
@@ -364,16 +364,16 @@ the file <code class="docutils literal notranslate"><span class="pre">.vscode/ta
 </ol>
 <blockquote>
 <div><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;tasks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"tasks"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PlatformIO&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;task&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Monitor&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;problemMatcher&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">                </span><span class="s2">&quot;$platformio&quot;</span>
+<span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PlatformIO"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"task"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Monitor"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"problemMatcher"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">"$platformio"</span>
 <span class="w">            </span><span class="p">],</span>
-<span class="w">            </span><span class="nt">&quot;presentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nt">&quot;panel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span>
+<span class="w">            </span><span class="nt">"presentation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">"panel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new"</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">]</span>
@@ -606,48 +606,48 @@ or commands from your 3rd party favorite extensions.</p>
 You can have different toolbars per workspace thanks to the <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/settings">User and Workspace Settings</a>.</p>
 <p><strong>Example</strong></p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="s2">&quot;platformio-ide.toolbar&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">"platformio-ide.toolbar"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(arrow-right)&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Upload and Monitor the active environment&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.uploadAndMonitor&quot;</span>
+<span class="w">      </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$(arrow-right)"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"tooltip"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Upload and Monitor the active environment"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="s2">"platformio-ide.uploadAndMonitor"</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Outdated&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;List outdated packages for the activate environment&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Outdated"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"tooltip"</span><span class="o">:</span><span class="w"> </span><span class="s2">"List outdated packages for the activate environment"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.action.tasks.runTask&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PlatformIO: Outdated (${command:platformio-ide.activeEnvironment})&quot;</span>
+<span class="w">          </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"workbench.action.tasks.runTask"</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">"args"</span><span class="o">:</span><span class="w"> </span><span class="s2">"PlatformIO: Outdated (${command:platformio-ide.activeEnvironment})"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(list-selection)&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;tooltip&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;List devices&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$(list-selection)"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"tooltip"</span><span class="o">:</span><span class="w"> </span><span class="s2">"List devices"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.runPIOCoreCommand&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pio device list&quot;</span>
+<span class="w">          </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"platformio-ide.runPIOCoreCommand"</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">"args"</span><span class="o">:</span><span class="w"> </span><span class="s2">"pio device list"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(plug)&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$(plug)"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;platformio-ide.runPIOCoreCommand&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;pio device monitor --filter time&quot;</span>
+<span class="w">          </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"platformio-ide.runPIOCoreCommand"</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">"args"</span><span class="o">:</span><span class="w"> </span><span class="s2">"pio device monitor --filter time"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$(terminal)&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$(terminal)"</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;workbench.action.terminal.sendSequence&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;args&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;echo 1\n&quot;</span>
+<span class="w">          </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"workbench.action.terminal.sendSequence"</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">"args"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"echo 1\n"</span>
 <span class="w">          </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
@@ -802,7 +802,7 @@ Afterwards, go back to using the VSCode Terminal.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

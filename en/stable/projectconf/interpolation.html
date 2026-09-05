@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interpolation of Values &mdash; PlatformIO v6.1 documentation</title>
+  <title>Interpolation of Values &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/projectconf/interpolation.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -218,7 +218,7 @@ allows extending of other sections.</p>
 </div>
 <p><strong>Example:</strong></p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1">; COMMON options</span>
-<span class="c1">; Each &quot;[env:***]&quot; extends this &quot;[env]&quot; by default</span>
+<span class="c1">; Each "[env:***]" extends this "[env]" by default</span>
 <span class="k">[env]</span>
 <span class="na">framework</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">arduino</span>
 <span class="na">build_flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">-D VERSION=1.2.3</span>
@@ -263,12 +263,12 @@ allows extending of other sections.</p>
 <span class="c1">; Keep sensitive data in environment variables</span>
 <span class="c1">;</span>
 <span class="c1">; Unix</span>
-<span class="c1">; export WIFI_SSID=&#39;\&quot;my\ ssid\ name\&quot;&#39;</span>
-<span class="c1">; export WIFI_PASS=&#39;\&quot;my\ password\&quot;&#39;</span>
+<span class="c1">; export WIFI_SSID='\"my\ ssid\ name\"'</span>
+<span class="c1">; export WIFI_PASS='\"my\ password\"'</span>
 <span class="c1">;</span>
 <span class="c1">; Windows</span>
-<span class="c1">; set WIFI_SSID=&#39;&quot;my ssid name&quot;&#39;</span>
-<span class="c1">; set WIFI_PASS=&#39;&quot;my password&quot;&#39;</span>
+<span class="c1">; set WIFI_SSID='"my ssid name"'</span>
+<span class="c1">; set WIFI_PASS='"my password"'</span>
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -276,7 +276,7 @@ allows extending of other sections.</p>
 <p>Be careful with special characters in system environment variables on Unix systems,
 especially when they are used as the value for preprocessor directives.
 Symbols like <code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">~</span></code>, etc must be explicitly escaped, for example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">&#39;\&quot;my\~p\&amp;a\\\$\$\$\$word\&quot;&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">WIFI_PASS</span><span class="o">=</span><span class="s1">'\"my\~p\&amp;a\\\$\$\$\$word\"'</span>
 </pre></div>
 </div>
 </div>
@@ -408,7 +408,7 @@ Symbols like <code class="docutils literal notranslate"><span class="pre">$</spa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

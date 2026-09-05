@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Construction Environments &mdash; PlatformIO v6.1 documentation</title>
+  <title>Construction Environments &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/scripting/construction_environments.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -184,7 +184,7 @@ environment.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the current working construction</span>
 <span class="c1"># environment to the `env` variable.</span>
 <span class="c1"># alias of `env = DefaultEnvironment()`</span>
-<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># Dump construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
@@ -195,13 +195,13 @@ environment.</p>
 <span class="c1"># - frameworks</span>
 <span class="c1"># - dependent libraries</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">my_post_extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">,</span> <span class="s2">&quot;projenv&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">,</span> <span class="s2">"projenv"</span><span class="p">)</span>
 
 <span class="c1"># Dump global construction environment (for debug purpose)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">Dump</span><span class="p">())</span>
@@ -214,14 +214,14 @@ environment.</p>
 <span class="c1"># - frameworks</span>
 <span class="c1"># - dependent libraries</span>
 <span class="n">env</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 
 <span class="c1"># append extra flags to only project build environment</span>
 <span class="n">projenv</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="n">CPPDEFINES</span><span class="o">=</span><span class="p">[</span>
-  <span class="s2">&quot;PROJECT_EXTRA_MACRO_1_NAME&quot;</span><span class="p">,</span>
-  <span class="p">(</span><span class="s2">&quot;ROJECT_EXTRA_MACRO_2_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;ROJECT_EXTRA_MACRO_2_VALUE&quot;</span><span class="p">)</span>
+  <span class="s2">"PROJECT_EXTRA_MACRO_1_NAME"</span><span class="p">,</span>
+  <span class="p">(</span><span class="s2">"ROJECT_EXTRA_MACRO_2_NAME"</span><span class="p">,</span> <span class="s2">"ROJECT_EXTRA_MACRO_2_VALUE"</span><span class="p">)</span>
 <span class="p">])</span>
 </pre></div>
 </div>
@@ -353,7 +353,7 @@ environment.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

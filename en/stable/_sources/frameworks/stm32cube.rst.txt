@@ -125,7 +125,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_btt_ebb42_v1_1`
       - :ref:`platform_ststm32`
       - STM32G0B1RET6
@@ -306,6 +306,24 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -594,6 +612,18 @@ You do not need to use/buy external debug probe.
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - :ref:`platform_ststm32`
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - STM32F030R8T6
@@ -1699,6 +1729,12 @@ Please click on board name for the further details.
       - 480MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - STM32G474CEU6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
       - :ref:`platform_ststm32`
       - STM32F051K6
@@ -1933,7 +1969,7 @@ Armstrap
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Avnet Silica
 ~~~~~~~~~~~~
@@ -3495,6 +3531,27 @@ ST
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3831,6 +3888,20 @@ ST
       - 80MHz
       - 512KB
       - 192KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - :ref:`platform_ststm32`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -4284,6 +4355,13 @@ WeAct Studio
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
 

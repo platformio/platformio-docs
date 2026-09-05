@@ -113,6 +113,18 @@ Default location for PlatformIO projects (PlatformIO Home).
 Verify the proxy server certificate against the list of supplied CAs.
 See also PlatformIO Core :ref:`piocore_install_proxy_configuration`.
 
+.. _setting_disable_udev_rules_check:
+
+``disable_udev_rules_check``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:Default:   No
+:Values:    Yes/No
+
+Disable check for udev rules on Linux.
+See :ref:`platformio_udev_rules` for more details about udev rules and
+how to install them.
+
 .. _setting_enable_telemetry:
 
 ``enable_telemetry``

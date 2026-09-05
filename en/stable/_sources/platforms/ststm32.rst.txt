@@ -147,7 +147,7 @@ You do not need to use/buy external debug probe.
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_ststm32_btt_ebb42_v1_1`
       - STM32G0B1RET6
       - 64MHz
@@ -308,6 +308,21 @@ You do not need to use/buy external debug probe.
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - STM32F030R8T6
       - 48MHz
@@ -552,12 +567,22 @@ You do not need to use/buy external debug probe.
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - STM32WL55JC
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - STM32F030R8T6
       - 48MHz
@@ -916,6 +941,11 @@ Please click on board name for the further details.
       - 32MHz
       - 192KB
       - 20KB
+    * - :ref:`board_ststm32_lilygo_t3_stm32_v1`
+      - STM32WLE5CCU7
+      - 48MHz
+      - 256KB
+      - 64KB
     * - :ref:`board_ststm32_malyanm200_f070cb`
       - STM32F070CBT6
       - 48MHz
@@ -1556,6 +1586,11 @@ Please click on board name for the further details.
       - 480MHz
       - 512KB
       - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - STM32G474CEU6
+      - 170MHz
+      - 512KB
+      - 128KB
     * - :ref:`board_ststm32_wraith32_v1`
       - STM32F051K6
       - 48MHz
@@ -1638,6 +1673,9 @@ Packages
     * - `framework-cmsis <https://registry.platformio.org/tools/platformio/framework-cmsis>`__
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
+    * - `framework-cmsis-dsp <https://registry.platformio.org/tools/platformio/framework-cmsis-dsp>`__
+      - CMSIS-DSP is an optimized compute library for embedded systems
+
     * - `framework-cmsis-stm32f0 <https://registry.platformio.org/tools/platformio/framework-cmsis-stm32f0>`__
       - CMSIS component for the STMicroelectronics STM32F0 series
 
@@ -1685,6 +1723,9 @@ Packages
 
     * - `framework-spl <https://registry.platformio.org/tools/platformio/framework-spl>`__
       - Standard Peripheral Library for ST STM32 microcontrollers
+
+    * - `framework-stm32cubec0 <https://registry.platformio.org/tools/platformio/framework-stm32cubec0>`__
+      - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeC0 MCU Firmware Package)
 
     * - `framework-stm32cubef0 <https://registry.platformio.org/tools/platformio/framework-stm32cubef0>`__
       - STM32Cube is a set of tools and embedded software bricks available free of charge to enable fast and easy development on the STM32 platform (STM32CubeF0 MCU Firmware Package)
@@ -2056,7 +2097,7 @@ Armstrap
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
 
 Avnet Silica
 ~~~~~~~~~~~~
@@ -2854,6 +2895,25 @@ Leafony Systems
       - 512KB
       - 160KB
 
+LilyGo
+~~~~~~
+
+.. list-table::
+    :header-rows:  1
+
+    * - Name
+      - Debug
+      - MCU
+      - Frequency
+      - Flash
+      - RAM
+    * - :ref:`board_ststm32_lilygo_t3_stm32_v1`
+      - External
+      - STM32WLE5CCU7
+      - 48MHz
+      - 256KB
+      - 64KB
+
 MXChip
 ~~~~~~
 
@@ -3476,6 +3536,24 @@ ST
       - 64MHz
       - 64KB
       - 8KB
+    * - :ref:`board_ststm32_nucleo_c031c6`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
+    * - :ref:`board_ststm32_nucleo_c071rb`
+      - On-board
+      - STM32C071RBT6
+      - 48MHz
+      - 128KB
+      - 24KB
+    * - :ref:`board_ststm32_nucleo_c092rc`
+      - On-board
+      - STM32C092RCT6
+      - 48MHz
+      - 256KB
+      - 30KB
     * - :ref:`board_ststm32_nucleo_f030r8`
       - On-board
       - STM32F030R8T6
@@ -3775,13 +3853,25 @@ ST
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_nucleo_wl55jc`
       - On-board
       - STM32WL55JC
       - 48MHz
       - 256KB
       - 64KB
+    * - :ref:`board_ststm32_disco_c011f6`
+      - On-board
+      - STM32C011F6U6
+      - 48MHz
+      - 32KB
+      - 6KB
+    * - :ref:`board_ststm32_disco_c031c6`
+      - On-board
+      - STM32C031C6T6
+      - 48MHz
+      - 32KB
+      - 12KB
     * - :ref:`board_ststm32_disco_f030r8`
       - On-board
       - STM32F030R8T6
@@ -4219,6 +4309,12 @@ WeAct Studio
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
 

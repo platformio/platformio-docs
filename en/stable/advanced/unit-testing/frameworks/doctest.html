@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctest &mdash; PlatformIO v6.1 documentation</title>
+  <title>Doctest &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/advanced/unit-testing/frameworks/doctest.html" />
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -218,8 +218,8 @@ forces the Doctest to report successful test cases:</p>
 <span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span>
 
 <span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Report successful tests</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;no-exitcode&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"success"</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Report successful tests</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"no-exitcode"</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
 <span class="w">  </span><span class="c1">// END:: PLATFORMIO REQUIRED OPTIONS</span>
 
 <span class="w">  </span><span class="c1">// YOUR CUSTOM DOCTEST OPTIONS</span>
@@ -273,13 +273,13 @@ docs for details.</p>
 <span class="w">  </span><span class="n">doctest</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">;</span>
 
 <span class="w">  </span><span class="c1">// BEGIN:: PLATFORMIO REQUIRED OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;success&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Reports successful tests</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;no-exitcode&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"success"</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w">     </span><span class="c1">// Reports successful tests</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"no-exitcode"</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Do not return non-zero code on failed test case</span>
 <span class="w">  </span><span class="c1">// END:: PLATFORMIO REQUIRED OPTIONS</span>
 
 <span class="w">  </span><span class="c1">// YOUR CUSTOM DOCTEST OPTIONS</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;abort-after&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">    </span><span class="c1">// stop test execution after 5 failed assertions</span>
-<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">&quot;order-by&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;name&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// sort the test cases by their name</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"abort-after"</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">    </span><span class="c1">// stop test execution after 5 failed assertions</span>
+<span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">setOption</span><span class="p">(</span><span class="s">"order-by"</span><span class="p">,</span><span class="w"> </span><span class="s">"name"</span><span class="p">);</span><span class="w">  </span><span class="c1">// sort the test cases by their name</span>
 
 <span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="n">applyCommandLine</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="n">run</span><span class="p">();</span>
@@ -304,9 +304,9 @@ assertions in the output. We will use the <code class="docutils literal notransl
 and <code class="docutils literal notranslate"><span class="pre">-s,--success=&lt;bool&gt;</span></code> Doctest’s CLI option.</p>
 <ol class="arabic">
 <li><p>Using CLI and <a class="reference internal" href="../../../core/userguide/cmd_test.html#cmdoption-pio-test-a"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">test</span> <span class="pre">--program-arg</span></code></a> option:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">&quot;--abort-after=1&quot;</span><span class="w"> </span>--program-arg<span class="o">=</span><span class="s2">&quot;-s&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--program-arg<span class="w"> </span><span class="s2">"--abort-after=1"</span><span class="w"> </span>--program-arg<span class="o">=</span><span class="s2">"-s"</span>
 <span class="c1"># or short format</span>
-&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;-aa=1&quot;</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;-s&quot;</span>
+&gt;<span class="w"> </span>pio<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">"-aa=1"</span><span class="w"> </span>-a<span class="w"> </span><span class="s2">"-s"</span>
 </pre></div>
 </div>
 </li>
@@ -457,7 +457,7 @@ class. See <a class="reference internal" href="custom/index.html#unit-testing-fr
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

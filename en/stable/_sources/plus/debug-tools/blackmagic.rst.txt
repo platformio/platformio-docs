@@ -693,7 +693,7 @@ Boards
       - STM32F407VET6
       - 168MHz
       - 512KB
-      - 192KB
+      - 128KB
     * - :ref:`board_atmelsam_samr21_xpro`
       - :ref:`platform_atmelsam`
       - On-board
@@ -2135,7 +2135,7 @@ Boards
       - STM32U575ZIT6Q
       - 160MHz
       - 2MB
-      - 256KB
+      - 768KB
     * - :ref:`board_ststm32_disco_f030r8`
       - :ref:`platform_ststm32`
       - On-board
@@ -3016,6 +3016,13 @@ Boards
       - External
       - STM32H750VBT6
       - 480MHz
+      - 512KB
+      - 128KB
+    * - :ref:`board_ststm32_weact_g474ceu6`
+      - :ref:`platform_ststm32`
+      - External
+      - STM32G474CEU6
+      - 170MHz
       - 512KB
       - 128KB
     * - :ref:`board_ststm32_wraith32_v1`

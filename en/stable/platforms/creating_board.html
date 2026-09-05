@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Embedded Boards &mdash; PlatformIO v6.1 documentation</title>
+  <title>Custom Embedded Boards &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/platforms/creating_board.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -176,30 +176,30 @@ of existing boards. All data is declared using the <a class="reference external"
 </ul>
 <p>For details, see existing boards as examples, available under <code class="docutils literal notranslate"><span class="pre">.platformio/platforms/*/boards/</span></code>.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;extra_flags&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-DHELLO_PLATFORMIO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;f_cpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;16000000L&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;hwids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"extra_flags"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-DHELLO_PLATFORMIO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"f_cpu"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16000000L"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"hwids"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;0x1234&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;0x0013&quot;</span>
+<span class="w">        </span><span class="s2">"0x1234"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"0x0013"</span>
 <span class="w">      </span><span class="p">],</span>
 <span class="w">      </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;0x4567&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;0x0013&quot;</span>
+<span class="w">        </span><span class="s2">"0x4567"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"0x0013"</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;mcu&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;%MCU_TYPE_HERE%&quot;</span>
+<span class="w">    </span><span class="nt">"mcu"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%MCU_TYPE_HERE%"</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;frameworks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;%LIST_WITH_SUPPORTED_FRAMEWORKS%&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;platforms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;%LIST_WITH_COMPATIBLE_PLATFORMS%&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;My Test Board&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;upload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;maximum_ram_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2048</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;maximum_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">32256</span>
+<span class="w">  </span><span class="nt">"frameworks"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"%LIST_WITH_SUPPORTED_FRAMEWORKS%"</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"platforms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"%LIST_WITH_COMPATIBLE_PLATFORMS%"</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Test Board"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"upload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"maximum_ram_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">2048</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"maximum_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">32256</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://example.com&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;vendor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MyCompany&quot;</span>
+<span class="w">  </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.com"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"vendor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MyCompany"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -355,7 +355,7 @@ and navigate to <code class="docutils literal notranslate"><span class="pre">boa
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

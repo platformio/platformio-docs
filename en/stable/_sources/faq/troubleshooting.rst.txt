@@ -15,6 +15,36 @@ Troubleshooting
 Package Manager
 ~~~~~~~~~~~~~~~
 
+Fix Windows Path Length Limitation (MAX_PATH)
+'''''''''''''''''''''''''''''''''''''''''''''
+
+Windows enforces a default 260-character path limit (``MAX_PATH``). Deeply nested package
+dependencies—such as ESP-IDF or ESP32-Arduino framework easily exceed this threshold,
+resulting in ``FileNotFoundError`` or extraction failures during package installation.
+
+To resolve this issue, enable **Long Paths** in Windows using one of the following methods:
+
+**Method 1: PowerShell (Recommended)**
+
+Run the following command in PowerShell as Administrator, then restart your system:
+
+.. code-block:: powershell
+
+    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1
+
+**Method 2: Registry Editor**
+
+1. Press :kbd:`Win` + :kbd:`R`, type ``regedit``, and press :kbd:`Enter`.
+2. Navigate to ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem``.
+3. Double-click **LongPathsEnabled** and change its value to ``1``.
+4. Restart your computer.
+
+.. hint::
+    If you lack administrative privileges to modify system settings, you can shorten
+    the default PlatformIO storage path instead. Set the :envvar:`PLATFORMIO_CORE_DIR`
+    environment variable to a shorter location (for example, ``C:\pio``).
+
+
 .. _faq_package_manager_error_5:
 
 [Error 5] Access is denied

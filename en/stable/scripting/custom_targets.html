@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Targets &mdash; PlatformIO v6.1 documentation</title>
+  <title>Custom Targets &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/scripting/custom_targets.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -167,7 +167,7 @@ lot of use cases for them:</p>
 you can list them via <a class="reference internal" href="../core/userguide/cmd_run.html#cmdoption-pio-run-list-targets"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">run</span> <span class="pre">--list-targets</span></code></a> command.</p>
 <section id="build-system-api">
 <h2>Build System API<a class="headerlink" href="#build-system-api" title="Link to this heading"></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span>
     <span class="n">name</span><span class="p">,</span>
@@ -222,21 +222,21 @@ will not be called if <code class="docutils literal notranslate"><span class="pr
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="c1"># Single action/command per 1 target</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span><span class="s2">&quot;sysenv&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;python -c &quot;import os; print(os.environ)&quot;&#39;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span><span class="s2">"sysenv"</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">'python -c "import os; print(os.environ)"'</span><span class="p">)</span>
 
 <span class="c1"># Multiple actions</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;pioenv&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">"pioenv"</span><span class="p">,</span>
     <span class="n">dependencies</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">actions</span><span class="o">=</span><span class="p">[</span>
-        <span class="s2">&quot;pio --version&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;python --version&quot;</span>
+        <span class="s2">"pio --version"</span><span class="p">,</span>
+        <span class="s2">"python --version"</span>
     <span class="p">],</span>
-    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Core Env&quot;</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Show PlatformIO Core and Python versions&quot;</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">"Core Env"</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">"Show PlatformIO Core and Python versions"</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -256,12 +256,12 @@ will be run.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span>
-    <span class="s2">&quot;ota&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;ota_script --firmware-path $SOURCE&quot;</span>
+    <span class="s2">"ota"</span><span class="p">,</span>
+    <span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf"</span><span class="p">,</span>
+    <span class="s2">"ota_script --firmware-path $SOURCE"</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -280,16 +280,16 @@ will be run.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
-<span class="n">host</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">&quot;custom_ping_host&quot;</span><span class="p">)</span>
+<span class="n">host</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">GetProjectOption</span><span class="p">(</span><span class="s2">"custom_ping_host"</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">mytarget_callback</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello PlatformIO!&quot;</span><span class="p">)</span>
-    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;ping &quot;</span> <span class="o">+</span> <span class="n">host</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello PlatformIO!"</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"ping "</span> <span class="o">+</span> <span class="n">host</span><span class="p">)</span>
 
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span><span class="s2">&quot;ping&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">mytarget_callback</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddCustomTarget</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">mytarget_callback</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -422,7 +422,7 @@ will be run.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Override package files &mdash; PlatformIO v6.1 documentation</title>
+  <title>Override package files &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/scripting/examples/override_package_files.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -200,25 +200,25 @@ result of <a class="reference internal" href="../../projectconf/index.html#proje
 <p><code class="docutils literal notranslate"><span class="pre">apply_patches.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">os.path</span><span class="w"> </span><span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">isfile</span>
 
-<span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
-<span class="n">FRAMEWORK_DIR</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">PioPlatform</span><span class="p">()</span><span class="o">.</span><span class="n">get_package_dir</span><span class="p">(</span><span class="s2">&quot;framework-arduinoavr&quot;</span><span class="p">)</span>
-<span class="n">patchflag_path</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">&quot;.patching-done&quot;</span><span class="p">)</span>
+<span class="n">FRAMEWORK_DIR</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">PioPlatform</span><span class="p">()</span><span class="o">.</span><span class="n">get_package_dir</span><span class="p">(</span><span class="s2">"framework-arduinoavr"</span><span class="p">)</span>
+<span class="n">patchflag_path</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">".patching-done"</span><span class="p">)</span>
 
-<span class="c1"># patch file only if we didn&#39;t do it before</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">isfile</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">&quot;.patching-done&quot;</span><span class="p">)):</span>
-    <span class="n">original_file</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">&quot;variants&quot;</span><span class="p">,</span> <span class="s2">&quot;standard&quot;</span><span class="p">,</span> <span class="s2">&quot;pins_arduino.h&quot;</span><span class="p">)</span>
-    <span class="n">patched_file</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="s2">&quot;patches&quot;</span><span class="p">,</span> <span class="s2">&quot;1-framework-arduinoavr-add-pin-a8.patch&quot;</span><span class="p">)</span>
+<span class="c1"># patch file only if we didn't do it before</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">isfile</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">".patching-done"</span><span class="p">)):</span>
+    <span class="n">original_file</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">FRAMEWORK_DIR</span><span class="p">,</span> <span class="s2">"variants"</span><span class="p">,</span> <span class="s2">"standard"</span><span class="p">,</span> <span class="s2">"pins_arduino.h"</span><span class="p">)</span>
+    <span class="n">patched_file</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="s2">"patches"</span><span class="p">,</span> <span class="s2">"1-framework-arduinoavr-add-pin-a8.patch"</span><span class="p">)</span>
 
     <span class="k">assert</span> <span class="n">isfile</span><span class="p">(</span><span class="n">original_file</span><span class="p">)</span> <span class="ow">and</span> <span class="n">isfile</span><span class="p">(</span><span class="n">patched_file</span><span class="p">)</span>
 
-    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;patch </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">original_file</span><span class="p">,</span> <span class="n">patched_file</span><span class="p">))</span>
-    <span class="c1"># env.Execute(&quot;touch &quot; + patchflag_path)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"patch </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">original_file</span><span class="p">,</span> <span class="n">patched_file</span><span class="p">))</span>
+    <span class="c1"># env.Execute("touch " + patchflag_path)</span>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_touch</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
-            <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+            <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
 
     <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="k">lambda</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">_touch</span><span class="p">(</span><span class="n">patchflag_path</span><span class="p">))</span>
 </pre></div>
@@ -358,7 +358,7 @@ please replace the <code class="docutils literal notranslate"><span class="pre">
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

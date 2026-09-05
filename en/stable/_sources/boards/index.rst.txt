@@ -305,6 +305,7 @@ Atmel megaAVR
     atmelmegaavr/ATtiny412
     atmelmegaavr/ATtiny414
     atmelmegaavr/ATtiny416
+    atmelmegaavr/xplained_nano_416
     atmelmegaavr/ATtiny417
     atmelmegaavr/ATtiny424
     atmelmegaavr/ATtiny426
@@ -1386,6 +1387,7 @@ ST STM32
     ststm32/grasshopper_l082cz
     ststm32/rhombio_l476dmw1k
     ststm32/leafony_ap03
+    ststm32/lilygo_t3_stm32_v1
     ststm32/malyanm200_f070cb
     ststm32/malyanm300_f070cb
     ststm32/mkr_sharky
@@ -1445,6 +1447,9 @@ ST STM32
     ststm32/disco_l072cz_lrwan1
     ststm32/disco_f072rb
     ststm32/nucleo_g031k8
+    ststm32/nucleo_c031c6
+    ststm32/nucleo_c071rb
+    ststm32/nucleo_c092rc
     ststm32/nucleo_f030r8
     ststm32/nucleo_f031k6
     ststm32/nucleo_f042k6
@@ -1496,6 +1501,8 @@ ST STM32
     ststm32/nucleo_l552ze_q
     ststm32/nucleo_u575zi_q
     ststm32/nucleo_wl55jc
+    ststm32/disco_c011f6
+    ststm32/disco_c031c6
     ststm32/disco_f030r8
     ststm32/disco_f051r8
     ststm32/disco_f303vc
@@ -1608,6 +1615,7 @@ ST STM32
     ststm32/blackpill_f401ce
     ststm32/weact_mini_h743vitx
     ststm32/weact_mini_h750vbtx
+    ststm32/weact_g474ceu6
     ststm32/wraith32_v1
     ststm32/sakuraio_evb_01
     ststm32/ublox_c030_n211

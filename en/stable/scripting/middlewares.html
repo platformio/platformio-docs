@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Middlewares &mdash; PlatformIO v6.1 documentation</title>
+  <title>Build Middlewares &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/scripting/middlewares.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -165,19 +165,19 @@ middlewares in a chain will be ignored automatically.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
 
-<span class="c1"># --- Add custom macros for the ALL files which name contains &quot;http&quot;</span>
+<span class="c1"># --- Add custom macros for the ALL files which name contains "http"</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">extra_http_configuration</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    `node.name` - a name of File System Node</span>
 <span class="sd">    `node.get_path()` - a relative path</span>
 <span class="sd">    `node.get_abspath()` - an absolute path</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="c1"># do not modify node if file name does not contain &quot;http&quot;</span>
-    <span class="k">if</span> <span class="s2">&quot;http&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+    <span class="c1"># do not modify node if file name does not contain "http"</span>
+    <span class="k">if</span> <span class="s2">"http"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">node</span>
 
     <span class="c1"># now, we can override ANY SCons variables (CPPDEFINES, CCFLAGS, etc.,) for the specific file</span>
@@ -186,9 +186,9 @@ middlewares in a chain will be ignored automatically.</p>
 
     <span class="k">return</span> <span class="n">env</span><span class="o">.</span><span class="n">Object</span><span class="p">(</span>
         <span class="n">node</span><span class="p">,</span>
-        <span class="n">CPPDEFINES</span><span class="o">=</span><span class="n">env</span><span class="p">[</span><span class="s2">&quot;CPPDEFINES&quot;</span><span class="p">]</span>
-        <span class="o">+</span> <span class="p">[(</span><span class="s2">&quot;HTTP_HOST&quot;</span><span class="p">,</span> <span class="s2">&quot;device.local&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;HTTP_PORT&quot;</span><span class="p">,</span> <span class="mi">8080</span><span class="p">)],</span>
-        <span class="n">CCFLAGS</span><span class="o">=</span><span class="n">env</span><span class="p">[</span><span class="s2">&quot;CCFLAGS&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;-fno-builtin-printf&quot;</span><span class="p">]</span>
+        <span class="n">CPPDEFINES</span><span class="o">=</span><span class="n">env</span><span class="p">[</span><span class="s2">"CPPDEFINES"</span><span class="p">]</span>
+        <span class="o">+</span> <span class="p">[(</span><span class="s2">"HTTP_HOST"</span><span class="p">,</span> <span class="s2">"device.local"</span><span class="p">),</span> <span class="p">(</span><span class="s2">"HTTP_PORT"</span><span class="p">,</span> <span class="mi">8080</span><span class="p">)],</span>
+        <span class="n">CCFLAGS</span><span class="o">=</span><span class="n">env</span><span class="p">[</span><span class="s2">"CCFLAGS"</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">"-fno-builtin-printf"</span><span class="p">]</span>
     <span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span><span class="n">extra_http_configuration</span><span class="p">)</span>
@@ -197,11 +197,11 @@ middlewares in a chain will be ignored automatically.</p>
 <span class="c1"># --- Replace some file from a build process with another</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">replace_node_with_another</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">env</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;path/to/patched/RtosTimer.cpp&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">env</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="s2">"path/to/patched/RtosTimer.cpp"</span><span class="p">)</span>
 
 <span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span>
     <span class="n">replace_node_with_another</span><span class="p">,</span>
-    <span class="s2">&quot;framework-mbed/rtos/RtosTimer.cpp&quot;</span>
+    <span class="s2">"framework-mbed/rtos/RtosTimer.cpp"</span>
 <span class="p">)</span>
 
 
@@ -211,7 +211,7 @@ middlewares in a chain will be ignored automatically.</p>
     <span class="c1"># to ignore file from a build process, just return None</span>
     <span class="k">return</span> <span class="kc">None</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span><span class="n">skip_asm_from_build</span><span class="p">,</span> <span class="s2">&quot;*.S&quot;</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddBuildMiddleware</span><span class="p">(</span><span class="n">skip_asm_from_build</span><span class="p">,</span> <span class="s2">"*.S"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -342,7 +342,7 @@ middlewares in a chain will be ignored automatically.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

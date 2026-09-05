@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troubleshooting &mdash; PlatformIO v6.1 documentation</title>
+  <title>Troubleshooting &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/faq/troubleshooting.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -112,6 +112,7 @@
 <li class="toctree-l2"><a class="reference internal" href="custom-scons-cli-options.html">Custom SCons command-line options</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#package-manager">Package Manager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fix-windows-path-length-limitation-max-path">Fix Windows Path Length Limitation (MAX_PATH)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#error-5-access-is-denied">[Error 5] Access is denied</a></li>
 </ul>
 </li>
@@ -164,6 +165,31 @@
 <h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h1>
 <section id="package-manager">
 <h2>Package Manager<a class="headerlink" href="#package-manager" title="Link to this heading"></a></h2>
+<section id="fix-windows-path-length-limitation-max-path">
+<h3>Fix Windows Path Length Limitation (MAX_PATH)<a class="headerlink" href="#fix-windows-path-length-limitation-max-path" title="Link to this heading"></a></h3>
+<p>Windows enforces a default 260-character path limit (<code class="docutils literal notranslate"><span class="pre">MAX_PATH</span></code>). Deeply nested package
+dependencies—such as ESP-IDF or ESP32-Arduino framework easily exceed this threshold,
+resulting in <code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code> or extraction failures during package installation.</p>
+<p>To resolve this issue, enable <strong>Long Paths</strong> in Windows using one of the following methods:</p>
+<p><strong>Method 1: PowerShell (Recommended)</strong></p>
+<p>Run the following command in PowerShell as Administrator, then restart your system:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="nb">Set-ItemProperty</span> <span class="n">-Path</span> <span class="s2">"HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem"</span> <span class="n">-Name</span> <span class="s2">"LongPathsEnabled"</span> <span class="n">-Value</span> <span class="n">1</span>
+</pre></div>
+</div>
+<p><strong>Method 2: Registry Editor</strong></p>
+<ol class="arabic simple">
+<li><p>Press <kbd class="kbd docutils literal notranslate">Win</kbd> + <kbd class="kbd docutils literal notranslate">R</kbd>, type <code class="docutils literal notranslate"><span class="pre">regedit</span></code>, and press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem</span></code>.</p></li>
+<li><p>Double-click <strong>LongPathsEnabled</strong> and change its value to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>Restart your computer.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you lack administrative privileges to modify system settings, you can shorten
+the default PlatformIO storage path instead. Set the <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_CORE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_CORE_DIR</span></code></a>
+environment variable to a shorter location (for example, <code class="docutils literal notranslate"><span class="pre">C:\pio</span></code>).</p>
+</div>
+</section>
 <section id="error-5-access-is-denied">
 <span id="faq-package-manager-error-5"></span><h3>[Error 5] Access is denied<a class="headerlink" href="#error-5-access-is-denied" title="Link to this heading"></a></h3>
 <p>PlatformIO installs all packages to “<a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>/packages”
@@ -199,7 +225,7 @@ system operations. Another solution is to run <a class="reference internal" href
 <li><p>Open <strong>System Terminal</strong>, on Windows <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> (not <a class="reference internal" href="../integration/ide/pioide.html#pioide"><span class="std std-ref">PlatformIO IDE</span></a> Terminal)</p></li>
 <li><p>Build a project and upload firmware using <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> which will download
 and install all dependent packages:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change directory to PlatformIO Project where is located &quot;platformio.ini&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change directory to PlatformIO Project where is located "platformio.ini"</span>
 <span class="nb">cd</span><span class="w"> </span>path/to/platformio/project
 
 <span class="c1"># Force PlatformIO to install PlatformIO Home dependencies</span>
@@ -249,7 +275,7 @@ User contains non-ASCII characters</p></li>
 </ol>
 <p>Also, if you want to place <a class="reference internal" href="../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> in own location, see:</p>
 <ul class="simple">
-<li><p>Set <span class="target" id="index-0"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_CORE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_CORE_DIR</span></code></a> environment variable with own path</p></li>
+<li><p>Set <span class="target" id="index-1"></span><a class="reference internal" href="../envvars.html#envvar-PLATFORMIO_CORE_DIR"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PLATFORMIO_CORE_DIR</span></code></a> environment variable with own path</p></li>
 <li><p>Configure custom location per project using <a class="reference internal" href="../projectconf/sections/platformio/options/directory/core_dir.html#projectconf-pio-core-dir"><span class="std std-ref">core_dir</span></a>
 option in <a class="reference internal" href="../projectconf/index.html#projectconf"><span class="std std-ref">“platformio.ini” (Project Configuration File)</span></a>.</p></li>
 </ul>
@@ -396,7 +422,7 @@ option in <a class="reference internal" href="../projectconf/index.html#projectc
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

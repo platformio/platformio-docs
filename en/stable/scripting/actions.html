@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pre &amp; Post Actions &mdash; PlatformIO v6.1 documentation</title>
+  <title>Pre &amp; Post Actions &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/scripting/actions.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -167,67 +167,67 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">extra_script.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">&quot;env&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Import</span><span class="p">(</span><span class="s2">"env"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current CLI targets&quot;</span><span class="p">,</span> <span class="n">COMMAND_LINE_TARGETS</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Build targets&quot;</span><span class="p">,</span> <span class="n">BUILD_TARGETS</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Current CLI targets"</span><span class="p">,</span> <span class="n">COMMAND_LINE_TARGETS</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Current Build targets"</span><span class="p">,</span> <span class="n">BUILD_TARGETS</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">post_program_action</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program has been built!&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Program has been built!"</span><span class="p">)</span>
     <span class="n">program_path</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_abspath</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program path&quot;</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Program path"</span><span class="p">,</span> <span class="n">program_path</span><span class="p">)</span>
     <span class="c1"># Use case: sign a firmware, do any manipulations with ELF, etc</span>
-    <span class="c1"># env.Execute(f&quot;sign --elf {program_path}&quot;)</span>
+    <span class="c1"># env.Execute(f"sign --elf {program_path}")</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"$PROGPATH"</span><span class="p">,</span> <span class="n">post_program_action</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Upload actions</span>
 <span class="c1">#</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">before_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before_upload&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"before_upload"</span><span class="p">)</span>
     <span class="c1"># do some actions</span>
 
     <span class="c1"># call Node.JS or other script</span>
-    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">&quot;node --version&quot;</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="s2">"node --version"</span><span class="p">)</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">after_upload</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">env</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;after_upload&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"after_upload"</span><span class="p">)</span>
     <span class="c1"># do some actions</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;upload&quot;</span><span class="p">,</span> <span class="n">before_upload</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;upload&quot;</span><span class="p">,</span> <span class="n">after_upload</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">"upload"</span><span class="p">,</span> <span class="n">before_upload</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"upload"</span><span class="p">,</span> <span class="n">after_upload</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Custom actions when building program/firmware</span>
 <span class="c1">#</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;buildprog&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;buildprog&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">"buildprog"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"buildprog"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
 <span class="c1">#</span>
 <span class="c1"># Custom actions for specific files/objects</span>
 <span class="c1">#</span>
 
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$PROGPATH&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">callback1</span><span class="p">,</span> <span class="n">callback2</span><span class="p">,</span><span class="o">...</span><span class="p">])</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">"$PROGPATH"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf"</span><span class="p">,</span> <span class="p">[</span><span class="n">callback1</span><span class="p">,</span> <span class="n">callback2</span><span class="p">,</span><span class="o">...</span><span class="p">])</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
 <span class="c1"># custom action before building SPIFFS image. For example, compress HTML, etc.</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/spiffs.bin&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPreAction</span><span class="p">(</span><span class="s2">"$BUILD_DIR/spiffs.bin"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
-<span class="c1"># custom action for project&#39;s main.cpp</span>
-<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">&quot;$BUILD_DIR/src/main.cpp.o&quot;</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
+<span class="c1"># custom action for project's main.cpp</span>
+<span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span><span class="s2">"$BUILD_DIR/src/main.cpp.o"</span><span class="p">,</span> <span class="n">callback</span><span class="o">...</span><span class="p">)</span>
 
 <span class="c1"># Custom HEX from ELF</span>
 <span class="n">env</span><span class="o">.</span><span class="n">AddPostAction</span><span class="p">(</span>
-    <span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span>
-    <span class="n">env</span><span class="o">.</span><span class="n">VerboseAction</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span>
-        <span class="s2">&quot;$OBJCOPY&quot;</span><span class="p">,</span> <span class="s2">&quot;-O&quot;</span><span class="p">,</span> <span class="s2">&quot;ihex&quot;</span><span class="p">,</span> <span class="s2">&quot;-R&quot;</span><span class="p">,</span> <span class="s2">&quot;.eeprom&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf&quot;</span><span class="p">,</span> <span class="s2">&quot;$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex&quot;</span>
-    <span class="p">]),</span> <span class="s2">&quot;Building $BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex&quot;</span><span class="p">)</span>
+    <span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf"</span><span class="p">,</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">VerboseAction</span><span class="p">(</span><span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span>
+        <span class="s2">"$OBJCOPY"</span><span class="p">,</span> <span class="s2">"-O"</span><span class="p">,</span> <span class="s2">"ihex"</span><span class="p">,</span> <span class="s2">"-R"</span><span class="p">,</span> <span class="s2">".eeprom"</span><span class="p">,</span>
+        <span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.elf"</span><span class="p">,</span> <span class="s2">"$BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex"</span>
+    <span class="p">]),</span> <span class="s2">"Building $BUILD_DIR/$</span><span class="si">{PROGNAME}</span><span class="s2">.hex"</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -359,7 +359,7 @@ to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codeanywhere &mdash; PlatformIO v6.1 documentation</title>
+  <title>Codeanywhere &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/integration/ide/codeanywhere.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -218,7 +218,7 @@ Ubuntu OS.</p></li>
 <code class="docutils literal notranslate"><span class="pre">Container</span> <span class="pre">(PlatformIO)</span> <span class="pre">&gt;</span> <span class="pre">SSH</span> <span class="pre">Terminal</span></code>) and install <a class="reference internal" href="../../core/index.html#piocore"><span class="std std-ref">PlatformIO Core (CLI)</span></a> using
 a next command</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py<span class="k">)</span><span class="s2">"</span>
 </pre></div>
 </div>
 <img alt="../../_images/ide-codeanywhere-install-pio-cli.png" src="../../_images/ide-codeanywhere-install-pio-cli.png" />
@@ -252,7 +252,7 @@ then “Create File” and insert a next content:</p>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Codeanywhere!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Hello Codeanywhere!"</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -293,8 +293,8 @@ command. Let’s add “PlatformIO Build Project” command:</p>
 <li><p>Open “Project Config” via right click on <code class="docutils literal notranslate"><span class="pre">Container</span> <span class="pre">Name</span> <span class="pre">(PlatformIO)</span> <span class="pre">&gt;</span> <span class="pre">Config</span></code></p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">commands</span></code> field to</p>
 <blockquote>
-<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;commands&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;pio run&quot;</span>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">"commands"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">"pio run"</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -521,7 +521,7 @@ or <a class="reference internal" href="../../core/userguide/remote/cmd_run.html#
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

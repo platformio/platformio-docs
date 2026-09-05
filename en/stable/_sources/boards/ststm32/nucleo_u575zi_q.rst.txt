@@ -30,7 +30,7 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
   * - **Flash**
     - 2MB
   * - **RAM**
-    - 256KB
+    - 768KB
   * - **Vendor**
     - `ST <https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html?utm_source=platformio.org&utm_medium=docs>`__
 
@@ -133,3 +133,6 @@ Frameworks
 
     * - :ref:`framework_mbed`
       - Arm Mbed OS is a platform operating system designed for the internet of things
+
+    * - :ref:`framework_zephyr`
+      - Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures

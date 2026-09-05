@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Environment Variables &mdash; PlatformIO v6.1 documentation</title>
+  <title>Environment Variables &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/envvars.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=f13f159b"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/js/theme.js"></script>
@@ -219,6 +219,13 @@ The possible values are <code class="docutils literal notranslate"><span class="
 <p>Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a <code class="docutils literal notranslate"><span class="pre">pipe</span></code> (not a <code class="docutils literal notranslate"><span class="pre">tty</span></code>).
 The possible values are <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">false</span></code>. Default is <code class="docutils literal notranslate"><span class="pre">PLATFORMIO_DISABLE_PROGRESSBAR=false</span></code>.</p>
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-PLATFORMIO_DISABLE_UPGRADE_CHECK">
+<span class="sig-name descname"><span class="pre">PLATFORMIO_DISABLE_UPGRADE_CHECK</span></span><a class="headerlink" href="#envvar-PLATFORMIO_DISABLE_UPGRADE_CHECK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Disable upgrade availability checks.
+The possible values are <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">false</span></code>. Default is <code class="docutils literal notranslate"><span class="pre">PLATFORMIO_DISABLE_UPGRADE_CHECK=false</span></code>.</p>
 <dl class="std envvar">
 <dt class="sig sig-object std" id="envvar-PLATFORMIO_SYSTEM_TYPE">
 <span class="sig-name descname"><span class="pre">PLATFORMIO_SYSTEM_TYPE</span></span><a class="headerlink" href="#envvar-PLATFORMIO_SYSTEM_TYPE" title="Link to this definition"></a></dt>
@@ -462,6 +469,12 @@ special characters (<code class="docutils literal notranslate"><span class="pre"
 <dd></dd></dl>
 
 <p>Allows one to override setting <a class="reference internal" href="core/userguide/cmd_settings.html#setting-enable-proxy-strict-ssl"><span class="std std-ref">enable_proxy_strict_ssl</span></a>.</p>
+<dl class="std envvar">
+<dt class="sig sig-object std" id="envvar-PLATFORMIO_SETTING_DISABLE_UDEV_RULES_CHECK">
+<span class="sig-name descname"><span class="pre">PLATFORMIO_SETTING_DISABLE_UDEV_RULES_CHECK</span></span><a class="headerlink" href="#envvar-PLATFORMIO_SETTING_DISABLE_UDEV_RULES_CHECK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Allows one to override setting <a class="reference internal" href="core/userguide/cmd_settings.html#setting-disable-udev-rules-check"><span class="std std-ref">disable_udev_rules_check</span></a>.</p>
 </section>
 </section>
 
@@ -591,7 +604,7 @@ special characters (<code class="docutils literal notranslate"><span class="pre"
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

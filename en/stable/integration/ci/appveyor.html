@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AppVeyor &mdash; PlatformIO v6.1 documentation</title>
+  <title>AppVeyor &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/integration/ci/appveyor.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -217,9 +217,9 @@ and boards from command line interface:</p>
 <span class="nt">environment</span><span class="p">:</span>
 
 <span class="w">  </span><span class="nt">matrix</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;path\\to\\source\\file.c&quot;</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;path\\to\\source\\file.ino&quot;</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;path\\to\\source\\directory&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"path\\to\\source\\file.c"</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"path\\to\\source\\file.ino"</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"path\\to\\source\\directory"</span>
 
 <span class="nt">install</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git submodule update --init --recursive</span>
@@ -242,8 +242,8 @@ project. The <code class="docutils literal notranslate"><span class="pre">appvey
 <span class="nt">environment</span><span class="p">:</span>
 
 <span class="w">  </span><span class="nt">matrix</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;examples\\Bluetooth\\PS3SPP\\PS3SPP.ino&quot;</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;examples\\pl2303\\pl2303_gps\\pl2303_gps.ino&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"examples\\Bluetooth\\PS3SPP\\PS3SPP.ino"</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">PLATFORMIO_CI_SRC</span><span class="p">:</span><span class="w"> </span><span class="s">"examples\\pl2303\\pl2303_gps\\pl2303_gps.ino"</span>
 
 <span class="nt">install</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git submodule update --init --recursive</span>
@@ -252,7 +252,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">appvey
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git clone https://github.com/xxxajk/spi4teensy3.git C:\spi4teensy</span>
 
 <span class="nt">test_script</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci --lib=&quot;.&quot; --lib=&quot;C:\\spi4teensy&quot; --board=uno --board=teensy31 --board=due</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pio ci --lib="." --lib="C:\\spi4teensy" --board=uno --board=teensy31 --board=due</span>
 </pre></div>
 </div>
 </section>
@@ -384,7 +384,7 @@ project. The <code class="docutils literal notranslate"><span class="pre">appvey
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

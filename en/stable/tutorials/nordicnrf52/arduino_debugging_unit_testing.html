@@ -15,9 +15,9 @@
     </script>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arduino and Nordic nRF52-DK: debugging and unit testing &mdash; PlatformIO v6.1 documentation</title>
+  <title>Arduino and Nordic nRF52-DK: debugging and unit testing &mdash; PlatformIO v6.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=3ba690ee" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
 
   
@@ -25,9 +25,9 @@
     <link rel="canonical" href="https://docs.platformio.org/tutorials/nordicnrf52/arduino_debugging_unit_testing.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=c87c1ef8"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=f13f159b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -265,47 +265,47 @@ Upload option from the <code class="docutils literal notranslate"><span class="p
 <span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="c1">// set stuff up here</span>
-<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world!&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, world!"</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="c1">// clean stuff up here</span>
-<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_concat</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world!&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, "</span><span class="p">;</span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"world!"</span><span class="p">;</span>
 <span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">hello</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">world</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_substring</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">).</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_index_of</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">&#39;w&#39;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">'w'</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_equal_ignore_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_TRUE</span><span class="p">(</span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">equalsIgnoreCase</span><span class="p">(</span><span class="s">"HELLO, WORLD!"</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_to_upper_case</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">toUpperCase</span><span class="p">();</span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;HELLO, WORLD!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"HELLO, WORLD!"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">test_string_replace</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">&#39;!&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;?&#39;</span><span class="p">);</span>
-<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">&quot;Hello, world?&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">  </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="sc">'!'</span><span class="p">,</span><span class="w"> </span><span class="sc">'?'</span><span class="p">);</span>
+<span class="w">  </span><span class="n">TEST_ASSERT_EQUAL_STRING</span><span class="p">(</span><span class="s">"Hello, world?"</span><span class="p">,</span><span class="w"> </span><span class="n">STR_TO_TEST</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
@@ -359,8 +359,8 @@ For example, next code declares a BLE characteristic that controls the state of 
 
 <span class="n">BLEPeripheral</span><span class="w"> </span><span class="n">ledPeripheral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEPeripheral</span><span class="p">();</span>
 
-<span class="n">BLEService</span><span class="w"> </span><span class="n">ledService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEService</span><span class="p">(</span><span class="s">&quot;19b10000e8f2537e4f6cd104768a1214&quot;</span><span class="p">);</span>
-<span class="n">BLECharCharacteristic</span><span class="w"> </span><span class="n">ledCharacteristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLECharCharacteristic</span><span class="p">(</span><span class="s">&quot;19b10001e8f2537e4f6cd104768a1214&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">BLERead</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">BLEWrite</span><span class="p">);</span>
+<span class="n">BLEService</span><span class="w"> </span><span class="n">ledService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLEService</span><span class="p">(</span><span class="s">"19b10000e8f2537e4f6cd104768a1214"</span><span class="p">);</span>
+<span class="n">BLECharCharacteristic</span><span class="w"> </span><span class="n">ledCharacteristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BLECharCharacteristic</span><span class="p">(</span><span class="s">"19b10001e8f2537e4f6cd104768a1214"</span><span class="p">,</span><span class="w"> </span><span class="n">BLERead</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">BLEWrite</span><span class="p">);</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
 <span class="p">{</span>
@@ -369,7 +369,7 @@ For example, next code declares a BLE characteristic that controls the state of 
 <span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">setAdvertisedServiceUuid</span><span class="p">(</span><span class="n">ledService</span><span class="p">.</span><span class="n">uuid</span><span class="p">());</span>
 <span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">ledService</span><span class="p">);</span>
 <span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">addAttribute</span><span class="p">(</span><span class="n">ledCharacteristic</span><span class="p">);</span>
-<span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">setLocalName</span><span class="p">(</span><span class="s">&quot;Nordic NRF52 DK&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">setLocalName</span><span class="p">(</span><span class="s">"Nordic NRF52 DK"</span><span class="p">);</span>
 <span class="w">  </span><span class="n">ledPeripheral</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
 <span class="p">}</span>
 
@@ -538,7 +538,7 @@ After a successful connection to the board, we should see one “Unknown Service
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.1.19 (stable)
+    v6.2.0 (stable)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">
