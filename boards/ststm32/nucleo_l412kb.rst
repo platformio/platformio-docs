@@ -133,5 +133,8 @@ Frameworks
     * - :ref:`framework_cmsis`
       - Vendor-independent hardware abstraction layer for the Cortex-M processor series
 
+    * - :ref:`framework_libopencm3`
+      - The libopencm3 project aims to create an open-source firmware library for various ARM Cortex-M microcontrollers.
+
     * - :ref:`framework_stm32cube`
       - STM32Cube embedded software libraries, including: The HAL hardware abstraction layer, enabling portability between different STM32 devices via standardized API calls; The Low-Layer (LL) APIs, a light-weight, optimized, expert oriented set of APIs designed for both performance and runtime efficiency

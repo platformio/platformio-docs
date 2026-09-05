@@ -34,9 +34,9 @@ Examples
 
 Examples are listed from `Espressif 32 development platform repository <https://github.com/platformio/platform-espressif32/tree/master/examples?utm_source=platformio.org&utm_medium=docs>`_:
 
+* `espidf-sdkconfig-custom-path <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-sdkconfig-custom-path?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-storage-sdcard <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-sdcard?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-usb-keyboard <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-usb-keyboard?utm_source=platformio.org&utm_medium=docs>`_
-* `espidf-coap-server <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-coap-server?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-storage-spiffs <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-storage-spiffs?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-exceptions <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-exceptions?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-blink <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs>`_
@@ -50,6 +50,7 @@ Examples are listed from `Espressif 32 development platform repository <https://
 * `espidf-hello-world <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-hello-world?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-ble5-advertising <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-ble5-advertising?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-usb <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-usb?utm_source=platformio.org&utm_medium=docs>`_
+* `espidf-sdkconfig-defaults <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-sdkconfig-defaults?utm_source=platformio.org&utm_medium=docs>`_
 * `espidf-peripherals-uart <https://github.com/platformio/platform-espressif32/tree/master/examples/espidf-peripherals-uart?utm_source=platformio.org&utm_medium=docs>`_
 * `arduino-wifiscan <https://github.com/platformio/platform-espressif32/tree/master/examples/arduino-wifiscan?utm_source=platformio.org&utm_medium=docs>`_
 
@@ -712,7 +713,7 @@ Please click on board name for the further details.
     * - :ref:`board_espressif32_edgebox-esp-100`
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - ESP32C3
@@ -3107,7 +3108,7 @@ Seeed Studio
       - External
       - ESP32S3
       - 240MHz
-      - 4MB
+      - 16MB
       - 320KB
     * - :ref:`board_espressif32_seeed_xiao_esp32c3`
       - External

@@ -79,6 +79,11 @@ Disable progress bar for package/library downloader and uploader. This is
 useful when calling PlatformIO from subprocess and output is a ``pipe`` (not a ``tty``).
 The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_PROGRESSBAR=false``.
 
+.. envvar:: PLATFORMIO_DISABLE_UPGRADE_CHECK
+
+Disable upgrade availability checks.
+The possible values are ``true`` and ``false``. Default is ``PLATFORMIO_DISABLE_UPGRADE_CHECK=false``.
+
 .. envvar:: PLATFORMIO_SYSTEM_TYPE
 
 This environment variable allows you to manually specify the system type, overriding the automatic detection.
@@ -257,3 +262,7 @@ Allows one to override setting :ref:`setting_projects_dir`.
 .. envvar:: PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL
 
 Allows one to override setting :ref:`setting_enable_proxy_strict_ssl`.
+
+.. envvar:: PLATFORMIO_SETTING_DISABLE_UDEV_RULES_CHECK
+
+Allows one to override setting :ref:`setting_disable_udev_rules_check`.

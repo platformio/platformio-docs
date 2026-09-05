@@ -9,10 +9,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_ststm32_nucleo_g031k8:
+.. _board_ststm32_weact_g474ceu6:
 
-ST NUCLEO-G031K8
-================
+WeAct Studio STM32G474 CoreBoard
+================================
 
 .. contents::
 
@@ -24,56 +24,54 @@ Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on
 .. list-table::
 
   * - **Microcontroller**
-    - STM32G031K8
+    - STM32G474CEU6
   * - **Frequency**
-    - 64MHz
+    - 170MHz
   * - **Flash**
-    - 64KB
+    - 512KB
   * - **RAM**
-    - 8KB
+    - 128KB
   * - **Vendor**
-    - `ST <https://www.st.com/en/evaluation-tools/nucleo-g031k8.html?utm_source=platformio.org&utm_medium=docs>`__
+    - `WeAct Studio <https://github.com/WeActStudio/WeActStudio.STM32G474CoreBoard?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``nucleo_g031k8`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``weact_g474ceu6`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:weact_g474ceu6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = weact_g474ceu6
 
-You can override default ST NUCLEO-G031K8 settings per build environment using
+You can override default WeAct Studio STM32G474 CoreBoard settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `nucleo_g031k8.json <https://github.com/platformio/platform-ststm32/blob/master/boards/nucleo_g031k8.json>`_. For example,
+board manifest `weact_g474ceu6.json <https://github.com/platformio/platform-ststm32/blob/master/boards/weact_g474ceu6.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:weact_g474ceu6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = weact_g474ceu6
 
   ; change microcontroller
-  board_build.mcu = stm32g031k8
+  board_build.mcu = stm32g474ceu6
 
   ; change MCU frequency
-  board_build.f_cpu = 64000000L
+  board_build.f_cpu = 170000000L
 
 
 Uploading
 ---------
-ST NUCLEO-G031K8 supports the following uploading protocols:
+WeAct Studio STM32G474 CoreBoard supports the following uploading protocols:
 
 * ``blackmagic``
 * ``cmsis-dap``
 * ``dfu``
 * ``jlink``
-* ``mbed``
-* ``serial``
 * ``stlink``
 
 Default protocol is ``stlink``
@@ -82,9 +80,9 @@ You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:nucleo_g031k8]
+  [env:weact_g474ceu6]
   platform = ststm32
-  board = nucleo_g031k8
+  board = weact_g474ceu6
 
   upload_protocol = stlink
 
@@ -101,7 +99,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
+WeAct Studio STM32G474 CoreBoard does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -111,7 +109,7 @@ ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You do
     - Default
   * - :ref:`debugging_tool_blackmagic`
     - 
-    - 
+    - Yes
   * - :ref:`debugging_tool_cmsis-dap`
     - 
     - 
@@ -119,8 +117,8 @@ ST NUCLEO-G031K8 has on-board debug probe and **IS READY** for debugging. You do
     - 
     - 
   * - :ref:`debugging_tool_stlink`
-    - Yes
-    - Yes
+    - 
+    - 
 
 Frameworks
 ----------

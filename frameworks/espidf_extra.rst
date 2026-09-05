@@ -490,12 +490,12 @@ Secure Boot protects a device from running any unauthorized (i.e., unsigned) cod
     ``CONFIG_SECURE_BOOT_FLASH_BOOTLOADER_DEFAULT`` option is explicitly enabled
     in your ``sdkconfig`` file.
 
-It's recommended to read the official `Secure Boot Programming Guide <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html>`_ to understand the overall workflow before getting started. Here's an adapted version of that page that uses PlatformIO packages to build,
+It's recommended to read the official `Secure Boot Programming Guide <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html>`__ to understand the overall workflow before getting started. Here's an adapted version of that page that uses PlatformIO packages to build,
 sign and upload binaries:
 
 .. warning::
 
-    The instructions below are intended for ESP32 targets. For other variants open `Secure Boot Programming Guide <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html>`_ and select your target from the menu on the left.
+    The instructions below are intended for ESP32 targets. For other variants open `Secure Boot Programming Guide <https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html>`__ and select your target from the menu on the left.
 
 1. Generate Secure Boot Signing Private Key:
 

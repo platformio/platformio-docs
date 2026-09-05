@@ -9,56 +9,56 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
-.. _board_atmelsam_adafruit_metro_m0:
+.. _board_ststm32_lilygo_t3_stm32_v1:
 
-Adafruit Metro M0 Express
-=========================
+LilyGo T3-STM32
+===============
 
 .. contents::
 
 Hardware
 --------
 
-Platform :ref:`platform_atmelsam`: Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
+Platform :ref:`platform_ststm32`: The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.
 
 .. list-table::
 
   * - **Microcontroller**
-    - SAMD21G18A
+    - STM32WLE5CCU7
   * - **Frequency**
     - 48MHz
   * - **Flash**
     - 256KB
   * - **RAM**
-    - 32KB
+    - 64KB
   * - **Vendor**
-    - `Adafruit <https://www.adafruit.com/product/3505?utm_source=platformio.org&utm_medium=docs>`__
+    - `LilyGo <https://github.com/Xinyuan-LilyGO/T3-STM32?utm_source=platformio.org&utm_medium=docs>`__
 
 
 Configuration
 -------------
 
-Please use ``adafruit_metro_m0`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+Please use ``lilygo_t3_stm32_v1`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
 
-  [env:adafruit_metro_m0]
-  platform = atmelsam
-  board = adafruit_metro_m0
+  [env:lilygo_t3_stm32_v1]
+  platform = ststm32
+  board = lilygo_t3_stm32_v1
 
-You can override default Adafruit Metro M0 Express settings per build environment using
+You can override default LilyGo T3-STM32 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
-board manifest `adafruit_metro_m0.json <https://github.com/platformio/platform-atmelsam/blob/master/boards/adafruit_metro_m0.json>`_. For example,
+board manifest `lilygo_t3_stm32_v1.json <https://github.com/platformio/platform-ststm32/blob/master/boards/lilygo_t3_stm32_v1.json>`_. For example,
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
-  [env:adafruit_metro_m0]
-  platform = atmelsam
-  board = adafruit_metro_m0
+  [env:lilygo_t3_stm32_v1]
+  platform = ststm32
+  board = lilygo_t3_stm32_v1
 
   ; change microcontroller
-  board_build.mcu = samd21g18a
+  board_build.mcu = stm32wle5ccu7
 
   ; change MCU frequency
   board_build.f_cpu = 48000000L
@@ -66,24 +66,23 @@ board manifest `adafruit_metro_m0.json <https://github.com/platformio/platform-a
 
 Uploading
 ---------
-Adafruit Metro M0 Express supports the following uploading protocols:
+LilyGo T3-STM32 supports the following uploading protocols:
 
-* ``atmel-ice``
-* ``blackmagic``
 * ``jlink``
-* ``sam-ba``
+* ``serial``
+* ``stlink``
 
-Default protocol is ``sam-ba``
+Default protocol is ``serial``
 
 You can change upload protocol using :ref:`projectconf_upload_protocol` option:
 
 .. code-block:: ini
 
-  [env:adafruit_metro_m0]
-  platform = atmelsam
-  board = adafruit_metro_m0
+  [env:lilygo_t3_stm32_v1]
+  platform = ststm32
+  board = lilygo_t3_stm32_v1
 
-  upload_protocol = sam-ba
+  upload_protocol = serial
 
 Debugging
 ---------
@@ -98,7 +97,7 @@ Debugging
 You can switch between debugging :ref:`debugging_tools` using
 :ref:`projectconf_debug_tool` option in :ref:`projectconf`.
 
-Adafruit Metro M0 Express does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
+LilyGo T3-STM32 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
 
 .. list-table::
   :header-rows:  1
@@ -106,13 +105,10 @@ Adafruit Metro M0 Express does not have on-board debug probe and **IS NOT READY*
   * - Compatible Tools
     - On-board
     - Default
-  * - :ref:`debugging_tool_atmel-ice`
+  * - :ref:`debugging_tool_jlink`
     - 
     - Yes
-  * - :ref:`debugging_tool_blackmagic`
-    - 
-    - 
-  * - :ref:`debugging_tool_jlink`
+  * - :ref:`debugging_tool_stlink`
     - 
     - 
 
