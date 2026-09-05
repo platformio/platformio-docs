@@ -23,7 +23,7 @@ credit-card-sized computers (`Raspberry Pi <http://www.raspberrypi.org>`_,
 
 :Python Interpreter:
 
-    **Python 3.7+ or above**. See detailed instructions on how to
+    **Python 3.9+ or above**. See detailed instructions on how to
     :ref:`faq_install_python`.
 
 :Terminal Application:

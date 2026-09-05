@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://docs.platformio.org/core/history.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=6e62c831"></script>
+      <script src="../_static/documentation_options.js?v=3f23b9f5"></script>
       <script src="../_static/doctools.js?v=fd6eb6e6"></script>
       <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -180,7 +180,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <section id="id1">
 <h3>6.2.0 (2026-09-??)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>Dropped support for Python 3.6, requiring Python 3.7 or newer to run PlatformIO Core</p></li>
+<li><p>Dropped support for Python 3.6, 3.7 and 3.8, requiring Python 3.9 or newer to run PlatformIO Core (<a class="reference external" href="https://github.com/platformio/platformio-core/issues/5414">issue #5414</a>)</p></li>
 <li><p>Removed support for static code analysis via PVS-Studio following its deprecation by the vendor (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/5360">pull #5360</a>)</p></li>
 <li><p>Added a new <code class="docutils literal notranslate"><span class="pre">-p,</span> <span class="pre">--port</span></code> option to the <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_run.html#cmdoption-pio-run-p">pio run</a> command, allowing users to set both <code class="docutils literal notranslate"><span class="pre">upload_port</span></code> and <code class="docutils literal notranslate"><span class="pre">monitor_port</span></code> simultaneously for a more streamlined workflow (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/5429">pull #5429</a>)</p></li>
 <li><p>Added an option to <a class="reference external" href="https://docs.platformio.org/en/latest/core/userguide/cmd_settings.html#disable_udev_rules_check">disable the 99-platformio-udev.rules</a> check, providing greater flexibility in environments where system-level udev configuration is not required (<a class="reference external" href="https://github.com/platformio/platformio-core/pull/5204">pull #5204</a>)</p></li>
@@ -750,7 +750,7 @@ test-driven methodologies, and modern toolchains for unrivaled success.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Documentation</span>
-    v6.2.0b2 (latest)
+    v6.2.0rc1 (latest)
     <span class="fa fa-caret-down"></span>
   </span>
   <div class="rst-other-versions">

@@ -25,7 +25,7 @@ Python Interpreter
 ''''''''''''''''''
 
 PlatformIO Core Installer Script is written in Python and is compatible with Python 2.7+
-and Python 3.5+. **We highly recommend using the latest Python 3**.
+and Python 3.9+. **We highly recommend using the latest Python 3**.
 
 Python is installed by default on the most popular Unix OS (macOS, Linux, FreeBSD).
 If there is no Python on a user machine (you can check running ``python --version``),
