@@ -25,7 +25,6 @@
 /ide/eclipse.html -> /integration/ide/eclipse.html
 /ide/eclipseche.html -> /integration/ide/eclipseche.html
 /ide/emacs.html -> /integration/ide/emacs.html
-/ide/neovim.html -> /integration/ide/neovim.html
 /ide/netbeans.html -> /integration/ide/netbeans.html
 /ide/pioide.html -> /integration/ide/pioide.html
 /ide/qtcreator.html -> /integration/ide/qtcreator.html
