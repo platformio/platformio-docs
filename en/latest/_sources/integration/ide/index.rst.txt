@@ -38,6 +38,7 @@ Desktop IDEs
     codeblocks
     eclipse
     emacs
+    neovim
     netbeans
     qtcreator
     sublimetext
