@@ -232,7 +232,7 @@ Since this executes arbitrary binaries, you should only whitelist directories th
 <span class="w">    </span><span class="c1">-- for example, only reuse client when working in PlatformIO projects containing platformio.ini</span>
 <span class="w">    </span><span class="c1">--</span>
 <span class="w">    </span><span class="c1">-- By default, Neovim reuses client if name and root_dir matches</span>
-<span class="w">    </span><span class="c1">-- but when jumping into headers located outside the project, that isnt true</span>
+<span class="w">    </span><span class="c1">-- but when jumping into headers located outside the project, that isn't true</span>
 <span class="w">    </span><span class="c1">-- so here we are always using the same client to keep the context from compile_commands.json</span>
 <span class="w">    </span><span class="c1">-- for setups containing multiple unrelated C/C++ project you may want to add project specific logic instead</span>
 <span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="kc">true</span>
