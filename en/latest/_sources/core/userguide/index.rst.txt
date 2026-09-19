@@ -67,10 +67,8 @@ Commands
     cmd_debug
     pio device <device/index>
     cmd_home
-    pio lib <lib/index>
     org/index
     pio pkg <pkg/index>
-    pio platform <platforms/index>
     pio project <project/index>
     pio remote <remote/index>
     cmd_run
@@ -78,5 +76,4 @@ Commands
     system/index
     team/index
     cmd_test
-    cmd_update
     cmd_upgrade

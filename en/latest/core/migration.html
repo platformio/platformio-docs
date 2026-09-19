@@ -205,9 +205,9 @@ in the migration steps below.</p>
 lives of everyday engineers. To benefit from its improvements, we recommend
 taking into account the following steps:</p>
 <ol class="arabic">
-<li><p>Replace deprecated <a class="reference internal" href="userguide/lib/index.html#cmd-lib"><span class="std std-ref">pio lib</span></a>, <a class="reference internal" href="userguide/platforms/index.html#cmd-platform"><span class="std std-ref">pio platform</span></a>,
-and <a class="reference internal" href="userguide/cmd_update.html#cmd-update"><span class="std std-ref">pio update</span></a> commands with the unified <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></li>
-<li><p>Avoid using global libraries previously installed using the <a class="reference internal" href="userguide/lib/index.html#cmdoption-pio-lib-g"><code class="xref std std-option docutils literal notranslate"><span class="pre">pio</span> <span class="pre">lib</span> <span class="pre">--global</span></code></a>
+<li><p>Replace deprecated <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pio</span> <span class="pre">lib</span></code>, <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pio</span> <span class="pre">platform</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pio</span> <span class="pre">update</span></code> commands with the unified <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></li>
+<li><p>Avoid using global libraries previously installed using the <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pio</span> <span class="pre">lib</span> <span class="pre">--global</span></code>
 command. Ensure that the <a class="reference internal" href="../projectconf/sections/platformio/options/directory/globallib_dir.html#projectconf-pio-globallib-dir"><span class="std std-ref">globallib_dir</span></a> folder is empty.
 Please use a declarative approach for the safety-critical embedded development
 and declare project dependencies using the <a class="reference internal" href="../projectconf/sections/env/options/library/lib_deps.html#projectconf-lib-deps"><span class="std std-ref">lib_deps</span></a> option</p></li>
@@ -453,13 +453,13 @@ custom packages from the <a class="reference external" href="https://registry.pl
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">project</span> <span class="pre">data</span></code></p></td>
 <td><p><strong>RENAMED</strong> to the <a class="reference internal" href="userguide/project/cmd_metadata.html#cmd-project-metadata"><span class="std std-ref">pio project metadata</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="userguide/lib/index.html#cmd-lib"><span class="std std-ref">pio lib</span></a></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">lib</span></code></p></td>
 <td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="userguide/platforms/index.html#cmd-platform"><span class="std std-ref">pio platform</span></a></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">platform</span></code></p></td>
 <td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="userguide/cmd_update.html#cmd-update"><span class="std std-ref">pio update</span></a></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pio</span> <span class="pre">update</span></code></p></td>
 <td><p><strong>DEPRECATED</strong> in favor of <a class="reference internal" href="userguide/pkg/index.html#cmd-pkg"><span class="std std-ref">Package Management CLI</span></a></p></td>
 </tr>
 </tbody>

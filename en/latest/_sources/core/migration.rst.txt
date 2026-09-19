@@ -44,9 +44,9 @@ Migration Steps
 lives of everyday engineers. To benefit from its improvements, we recommend
 taking into account the following steps:
 
-#.  Replace deprecated :ref:`cmd_lib`, :ref:`cmd_platform`,
-    and :ref:`cmd_update` commands with the unified :ref:`cmd_pkg`
-#.  Avoid using global libraries previously installed using the :option:`pio lib --global`
+#.  Replace deprecated ``$ pio lib``, ``$ pio platform``,
+    and ``$ pio update`` commands with the unified :ref:`cmd_pkg`
+#.  Avoid using global libraries previously installed using the ``$ pio lib --global``
     command. Ensure that the :ref:`projectconf_pio_globallib_dir` folder is empty.
     Please use a declarative approach for the safety-critical embedded development
     and declare project dependencies using the :ref:`projectconf_lib_deps` option
@@ -308,9 +308,9 @@ The following commands have been changed in v6.0.
         :option:`pio test --junit-output-path`, and :option:`pio test --list-tests` options
     * - ``pio project data``
       - **RENAMED** to the :ref:`cmd_project_metadata`
-    * - :ref:`cmd_lib`
+    * - ``pio lib``
       - **DEPRECATED** in favor of :ref:`cmd_pkg`
-    * - :ref:`cmd_platform`
+    * - ``pio platform``
       - **DEPRECATED** in favor of :ref:`cmd_pkg`
-    * - :ref:`cmd_update`
+    * - ``pio update``
       - **DEPRECATED** in favor of :ref:`cmd_pkg`

@@ -79,7 +79,6 @@ Also, you can access to all pre-configured targets via
 + ``PlatformIO - Upload`` - Build and upload (if no errors)
 + ``PlatformIO - Upload using Programmer`` see :ref:`atmelavr_upload_via_programmer`
 + ``PlatformIO - Upload SPIFFS image`` see :ref:`platform_espressif_uploadfs`
-+ ``PlatformIO - Update platforms and libraries`` - Update installed platforms and libraries via :ref:`cmd_update`.
 
 Manual Integration
 ^^^^^^^^^^^^^^^^^^
