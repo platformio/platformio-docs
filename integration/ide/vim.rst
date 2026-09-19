@@ -88,7 +88,6 @@ Pre-defined targets:
 + ``Upload`` - Build and upload (if no errors)
 + ``Upload using Programmer`` see :ref:`atmelavr_upload_via_programmer`
 + ``Upload SPIFFS image`` see :ref:`platform_espressif_uploadfs`
-+ ``Update platforms and libraries`` - Update installed platforms and libraries via :ref:`cmd_update`.
 
 
 Now, in VIM ``cd /path/to/this/project`` and press ``Ctrl+B`` or ``Cmd+B``

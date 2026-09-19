@@ -19,7 +19,7 @@ Type: ``DirPath`` | Multiple: ``No`` | Default: ":ref:`projectconf_pio_core_dir`
 :ref:`piocore` uses this folder to store caching information (requests to
 PlatformIO Registry, downloaded packages and other service information).
 
-To reset a cache, please run :ref:`cmd_update` command.
+To reset a cache, please run :option:`pio system prune --cache` command.
 
 This option can also be configured by the global environment variable
 :envvar:`PLATFORMIO_CACHE_DIR`.

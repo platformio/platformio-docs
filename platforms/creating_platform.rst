@@ -216,9 +216,9 @@ Using the "myplatform" platform example above:
    doesn't exist.
 2. Create a ``myplatform`` directory in ``platforms``
 3. Copy the ``platform.json`` and ``builder/main.py`` files to the ``myplatform`` directory.
-4. Search the available platforms via the :ref:`cmd_platform_search` command. You
+4. Search the available platforms via the :ref:`cmd_pkg_search` command. You
    should see the new ``myplatform`` platform.
-5. Install the ``myplatform`` platform via the :ref:`cmd_platform_install` command.
+5. Install the ``myplatform`` platform via the :ref:`cmd_pkg_install` command.
 
 Now, you can use ``myplatform`` as value for the :ref:`projectconf_env_platform`
 option in :ref:`projectconf`.
