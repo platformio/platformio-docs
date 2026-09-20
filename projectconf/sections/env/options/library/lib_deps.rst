@@ -50,3 +50,8 @@ for the available libraries and the installation instructions.
 
     ; custom name
     IRremoteESP8266=https://github.com/markszabo/IRremoteESP8266/archive/master.zip
+
+    ; symlink
+    ;   * Note that This will cause the library to be recompiled often or every time.
+    ;   * use `pio run --disable-auto-clean` to suppress rebuild.
+    FastLED = symlink://C:\Users\niteris\dev\fastled
