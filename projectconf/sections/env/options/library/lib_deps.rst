@@ -21,7 +21,8 @@ Type: ``Package Specification`` | Multiple: ``Yes``
 
 Specify project dependencies using :ref:`cmd_pkg_install_specifications`
 that should be installed automatically to the
-:ref:`projectconf_pio_libdeps_dir` before environment processing.
+:ref:`projectconf_pio_libdeps_dir` before environment processing. 
+Can be left blank.
 
 If you have multiple build environments that depend on the same libraries,
 you can use :ref:`projectconf_section_env` or :ref:`projectconf_interpolation`
