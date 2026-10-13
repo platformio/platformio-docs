@@ -31,3 +31,9 @@ Python Package Manager (`pip <https://pip.pypa.io>`_) as follows:
 .. code-block:: bash
 
     python3 -m pip install -U platformio
+
+Or using Astral (`uv <https://docs.astral.sh/uv/>`_) as follows:
+
+.. code-block:: bash
+
+    uv tool install platformio
