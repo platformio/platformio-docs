@@ -1,0 +1,24 @@
+<a id="projectconf-debug-init-cmds"></a>
+
+# `debug_init_cmds` {#debug-init-cmds}
+
+Type: `String` | Multiple: `Yes` | Default: [See details...](https://github.com/platformio/platformio-core/tree/develop/platformio/debug/config)
+
+Initial commands that will be passed to back-end debugger.
+
+PlatformIO dynamically configures back-end debugger depending on a debug environment. Here is [a list with default initial commands](https://github.com/platformio/platformio-core/tree/develop/platformio/debug/config) for the popular [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools).
+
+For example, the custom initial commands for GDB:
+
+```ini
+[env:debug]
+platform = ...
+board = ...
+debug_init_cmds =
+  target extended-remote $DEBUG_PORT
+  $INIT_BREAK
+  monitor reset halt
+  $LOAD_CMDS
+  monitor init
+  monitor reset halt
+```
