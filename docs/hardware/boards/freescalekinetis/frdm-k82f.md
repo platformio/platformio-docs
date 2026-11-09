@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-K82F (MK82FN256VLL15, 150MHz, 256KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-k82f"></a>
-
 # Freescale Kinetis FRDM-K82F
 
 ## Hardware

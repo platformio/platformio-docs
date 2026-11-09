@@ -3,7 +3,7 @@ sidebar_label: "Troubleshooting"
 description: Fix common problems when installing and running PlatformIO Core.
 ---
 
-# Troubleshoot the installation {#troubleshooting}
+# Troubleshoot the installation
 
 Solutions to common installation problems. For board connection problems,
 first check the basics:

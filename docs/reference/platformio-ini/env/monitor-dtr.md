@@ -2,9 +2,7 @@
 description: "A monitor initial DTR line state (platformio.ini option monitor_dtr)."
 ---
 
-<a id="projectconf-monitor-dtr"></a>
-
-# `monitor_dtr` {#monitor-dtr}
+# `monitor_dtr`
 
 - **Type:** Integer: `0` or `1`
 - **Multiple values:** No

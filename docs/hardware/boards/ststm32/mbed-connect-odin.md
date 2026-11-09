@@ -5,8 +5,6 @@ description: "Mbed Connect Cloud (STM32F439ZIY6, 168MHz, 2MB flash, 256KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mbed-connect-odin"></a>
-
 # Mbed Connect Cloud
 
 ## Hardware

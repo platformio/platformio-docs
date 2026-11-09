@@ -5,8 +5,6 @@ description: "Digilent chipKIT WiFire (32MZ2048ECG100, 200MHz, 1.98MB flash, 512
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-wifire"></a>
-
 # Digilent chipKIT WiFire
 
 ## Hardware

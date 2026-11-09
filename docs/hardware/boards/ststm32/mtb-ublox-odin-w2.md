@@ -5,8 +5,6 @@ description: "u-blox ODIN-W2 (STM32F439ZIY6, 168MHz, 2MB flash, 256KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mtb-ublox-odin-w2"></a>
-
 # u-blox ODIN-W2
 
 ## Hardware

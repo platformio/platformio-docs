@@ -5,8 +5,6 @@ description: "Heltec WiFi LoRa 32 (V2) (ESP32, 240MHz, 8MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-wifi-lora-32-v2"></a>
-
 # Heltec WiFi LoRa 32 (V2)
 
 ## Hardware

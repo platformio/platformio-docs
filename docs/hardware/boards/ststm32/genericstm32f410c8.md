@@ -5,8 +5,6 @@ description: "STM32F410C8 (32k RAM. 64k Flash) (STM32F410C8T6, 100MHz, 64KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f410c8"></a>
-
 # STM32F410C8 (32k RAM. 64k Flash)
 
 ## Hardware

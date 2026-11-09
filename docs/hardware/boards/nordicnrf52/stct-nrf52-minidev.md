@@ -5,8 +5,6 @@ description: "Taida Century nRF52 mini board (NRF52832, 64MHz, 512KB flash, 64KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-stct-nrf52-minidev"></a>
-
 # Taida Century nRF52 mini board
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "SparkFun Qwiic Micro (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-qwiic-micro-samd21e"></a>
-
 # SparkFun Qwiic Micro
 
 ## Hardware

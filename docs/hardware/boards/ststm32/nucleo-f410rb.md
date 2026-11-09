@@ -5,8 +5,6 @@ description: "ST Nucleo F410RB (STM32F410RBT6, 100MHz, 128KB flash, 32KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f410rb"></a>
-
 # ST Nucleo F410RB
 
 ## Hardware

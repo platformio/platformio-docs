@@ -5,8 +5,6 @@ description: "LinkIt Smart 7688 Duo (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-smart7688"></a>
-
 # LinkIt Smart 7688 Duo
 
 ## Hardware

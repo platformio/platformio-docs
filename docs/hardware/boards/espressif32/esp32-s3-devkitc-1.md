@@ -5,8 +5,6 @@ description: "Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM) (ESP32S3, 240M
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-s3-devkitc-1"></a>
-
 # Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
 
 ## Hardware

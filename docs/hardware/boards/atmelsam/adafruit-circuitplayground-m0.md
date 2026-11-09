@@ -5,8 +5,6 @@ description: "Adafruit Circuit Playground Express (SAMD21G18A, 48MHz, 256KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-circuitplayground-m0"></a>
-
 # Adafruit Circuit Playground Express
 
 ## Hardware

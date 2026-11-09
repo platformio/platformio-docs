@@ -5,8 +5,6 @@ description: "Generic STC15W402AS (STC15W402AS, 11MHz, 2KB flash, 512B RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc15w402as"></a>
-
 # Generic STC15W402AS
 
 ## Hardware

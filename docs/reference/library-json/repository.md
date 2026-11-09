@@ -2,9 +2,7 @@
 description: "The repository in which the source code can be found."
 ---
 
-<a id="manifest-library-json-repository"></a>
-
-# `repository` {#repository}
+# `repository`
 
 - **Required:** No
 - **Type:** Object

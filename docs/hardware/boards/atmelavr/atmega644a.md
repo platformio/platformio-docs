@@ -5,8 +5,6 @@ description: "ATmega644/A (ATMEGA644A, 16MHz, 64KB flash, 4KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega644a"></a>
-
 # ATmega644/A
 
 ## Hardware

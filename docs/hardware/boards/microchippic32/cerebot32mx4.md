@@ -5,8 +5,6 @@ description: "Digilent Cerebot 32MX4 (32MX460F512L, 80MHz, 508KB flash, 32KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-cerebot32mx4"></a>
-
 # Digilent Cerebot 32MX4
 
 ## Hardware

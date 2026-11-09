@@ -2,9 +2,7 @@
 description: "Use the oddWires IOT-Bus JTAG debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-iot-bus-jtag"></a>
-
-# oddWires IOT-Bus JTAG {#oddwires-iot-bus-jtag}
+# oddWires IOT-Bus JTAG
 
 [![](./img/iot-bus-jtag.jpg)](http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs)
 

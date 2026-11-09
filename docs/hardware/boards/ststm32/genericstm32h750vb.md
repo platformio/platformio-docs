@@ -5,8 +5,6 @@ description: "STM32H750VBT6 (1024k RAM. 128k Flash) (STM32H750VBT6, 480MHz, 128K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32h750vb"></a>
-
 # STM32H750VBT6 (1024k RAM. 128k Flash)
 
 ## Hardware

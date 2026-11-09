@@ -2,9 +2,7 @@
 description: Reference of library.json, the manifest of a PlatformIO library - metadata, dependencies, compatibility and build settings.
 ---
 
-<a id="library-json-overview"></a>
-
-# library.json {#library-json}
+# library.json
 
 `library.json` is the manifest of a library package. Put it in the root folder
 of the library to describe it and to control how PlatformIO uses it:

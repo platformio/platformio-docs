@@ -2,9 +2,7 @@
 description: Practical platformio.ini patterns - several boards, release and debug builds, shared settings and secrets.
 ---
 
-<a id="projectconf-examples"></a>
-
-# platformio.ini examples {#examples}
+# platformio.ini examples
 
 Common patterns for [`platformio.ini`](../../reference/platformio-ini/index.md).
 For complete projects, see the

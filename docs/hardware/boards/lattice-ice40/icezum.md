@@ -5,8 +5,6 @@ description: "IceZUM Alhambra FPGA (ICE40-HX1K-TQ144, 12MHz, 32KB flash, 32KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-lattice-ice40-icezum"></a>
-
 # IceZUM Alhambra FPGA
 
 ## Hardware

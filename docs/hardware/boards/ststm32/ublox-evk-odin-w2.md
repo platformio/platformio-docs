@@ -5,8 +5,6 @@ description: "u-blox EVK-ODIN-W2 (STM32F439ZIY6, 168MHz, 2MB flash, 256KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-ublox-evk-odin-w2"></a>
-
 # u-blox EVK-ODIN-W2
 
 ## Hardware

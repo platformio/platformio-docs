@@ -2,9 +2,7 @@
 description: "Process environments which are defined in platformio.ini file remotely."
 ---
 
-<a id="cmd-remote-run"></a>
-
-# pio remote run {#pio-remote-run}
+# pio remote run
 
 **Remote Firmware Updates**
 

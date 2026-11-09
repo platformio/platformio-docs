@@ -5,8 +5,6 @@ description: "NXP i.MX RT1020 Evaluation Kit (MIMXRT1021DAG5A, 500MHz, 8MB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxpimxrt-mimxrt1020-evk"></a>
-
 # NXP i.MX RT1020 Evaluation Kit
 
 ## Hardware

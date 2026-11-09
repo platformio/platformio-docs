@@ -5,8 +5,6 @@ description: "AfroFlight Rev5 (8MHz) (STM32F103CBT6, 72MHz, 128KB flash, 20KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-afroflight-f103cb"></a>
-
 # AfroFlight Rev5 (8MHz)
 
 ## Hardware

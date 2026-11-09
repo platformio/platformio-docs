@@ -5,8 +5,6 @@ description: "MTS Dragonfly (STM32F411RET6, 100MHz, 512KB flash, 128KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mts-dragonfly-f411re"></a>
-
 # MTS Dragonfly
 
 ## Hardware

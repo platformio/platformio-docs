@@ -5,8 +5,6 @@ description: "BPI-Bit (ESP32, 160MHz, 4MB flash, 320KB RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-bpi-bit"></a>
-
 # BPI-Bit
 
 ## Hardware

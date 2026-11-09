@@ -5,8 +5,6 @@ description: "sduino UNO (STM8S105K6) (STM8S105K6T6, 16MHz, 32KB flash, 2KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-s8uno"></a>
-
 # sduino UNO (STM8S105K6)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "BitWizard Raspduino (ATMEGA328P, 16MHz, 30KB flash, 2KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-raspduino"></a>
-
 # BitWizard Raspduino
 
 ## Hardware

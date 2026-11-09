@@ -2,9 +2,7 @@
 description: "A location which PlatformIO Remote Development service uses to synchronize extra files between remote machines (platformio.ini option shared_dir)."
 ---
 
-<a id="projectconf-pio-shared-dir"></a>
-
-# `shared_dir` {#shared-dir}
+# `shared_dir`
 
 - **Type:** Path
 - **Multiple values:** No

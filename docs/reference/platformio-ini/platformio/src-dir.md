@@ -2,9 +2,7 @@
 description: "A default location where PlatformIO Build System looks for the project C/C++ source files (platformio.ini option src_dir)."
 ---
 
-<a id="projectconf-pio-src-dir"></a>
-
-# `src_dir` {#src-dir}
+# `src_dir`
 
 - **Type:** Path
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "WeMos WiFi and Bluetooth Battery (ESP32, 240MHz, 4MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wemosbat"></a>
-
 # WeMos WiFi and Bluetooth Battery
 
 ## Hardware

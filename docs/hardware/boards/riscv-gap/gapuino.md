@@ -5,8 +5,6 @@ description: "GAPuino GAP8 (GAP8, 250MHz, 64MB flash, 8MB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-riscv-gap-gapuino"></a>
-
 # GAPuino GAP8
 
 ## Hardware

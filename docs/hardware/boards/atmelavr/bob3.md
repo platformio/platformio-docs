@@ -5,8 +5,6 @@ description: "nicai-systems BOB3 coding bot (ATMEGA88, 8MHz, 8KB flash, 1KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-bob3"></a>
-
 # nicai-systems BOB3 coding bot
 
 ## Hardware

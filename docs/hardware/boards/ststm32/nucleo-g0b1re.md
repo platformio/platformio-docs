@@ -5,8 +5,6 @@ description: "ST Nucleo G0B1RE (STM32G0B1RET6, 64MHz, 512KB flash, 144KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g0b1re"></a>
-
 # ST Nucleo G0B1RE
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RushUp Cloud-JAM (STM32F401RET6, 84MHz, 512KB flash, 96KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-cloud-jam"></a>
-
 # RushUp Cloud-JAM
 
 ## Hardware

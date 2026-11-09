@@ -5,8 +5,6 @@ description: "Particle Xenon (NRF52840, 64MHz, 796KB flash, 243KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-particle-xenon"></a>
-
 # Particle Xenon
 
 ## Hardware

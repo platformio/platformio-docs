@@ -5,8 +5,6 @@ description: "4D Systems PICadillo 35T (32MX795F512L, 80MHz, 508KB flash, 128KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-picadillo-35t"></a>
-
 # 4D Systems PICadillo 35T
 
 ## Hardware

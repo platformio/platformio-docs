@@ -2,9 +2,7 @@
 description: Change the password of your PlatformIO Account.
 ---
 
-<a id="cmd-account-password"></a>
-
-# pio account password {#pio-account-password}
+# pio account password
 
 Change the password of your [PlatformIO Account](../../../get-started/platformio-account.md).
 

@@ -2,9 +2,7 @@
 description: "Extra flags to control preprocessing, compilation, assembly, and linking processes."
 ---
 
-<a id="library-json-buid-flags"></a>
-
-# `flags` {#flags}
+# `flags`
 
 - **Required:** No
 - **Type:** String or array of strings

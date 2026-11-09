@@ -2,9 +2,7 @@
 description: "A custom path to SVD file which contains information about device peripherals (platformio.ini option debug_svd_path)."
 ---
 
-<a id="projectconf-debug-svd-path"></a>
-
-# `debug_svd_path` {#debug-svd-path}
+# `debug_svd_path`
 
 - **Type:** Path
 - **Multiple values:** No

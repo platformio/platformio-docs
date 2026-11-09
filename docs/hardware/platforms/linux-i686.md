@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Linux i686 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-linux-i686"></a>
-
 # Linux i686
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/linux_i686](https://registry.platformio.org/platforms/platformio/linux_i686)  

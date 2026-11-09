@@ -1,4 +1,4 @@
-# Extra linker flags without `-Wl,` prefix {#extra-linker-flags-without-wl-prefix}
+# Extra linker flags without `-Wl,` prefix
 
 Sometimes you need to pass extra flags to GCC linker without `Wl,`. You could use [build_flags](../../../reference/platformio-ini/env/build-flags.md) option but it will not work. PlatformIO will not parse these flags to `LINKFLAGS` scope. In this case, simple extra script will help:
 

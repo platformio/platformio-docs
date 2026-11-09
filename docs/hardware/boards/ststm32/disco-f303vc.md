@@ -5,8 +5,6 @@ description: "ST STM32F3DISCOVERY (STM32F303VCT6, 72MHz, 256KB flash, 40KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f303vc"></a>
-
 # ST STM32F3DISCOVERY
 
 ## Hardware

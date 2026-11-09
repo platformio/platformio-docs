@@ -2,9 +2,7 @@
 description: "Use the ST-LINK debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-stlink"></a>
-
-# ST-LINK {#st-link}
+# ST-LINK
 
 [![](./img/stlink.jpg)](http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs)
 

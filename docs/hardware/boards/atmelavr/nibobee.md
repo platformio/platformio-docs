@@ -5,8 +5,6 @@ description: "nicai-systems NIBObee robot (ATMEGA16, 15MHz, 16KB flash, 1KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-nibobee"></a>
-
 # nicai-systems NIBObee robot
 
 ## Hardware

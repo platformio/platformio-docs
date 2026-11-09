@@ -2,9 +2,7 @@
 description: "Publish a package to the PlatformIO Registry so that it can be installed by name."
 ---
 
-<a id="cmd-pkg-publish"></a>
-
-# pio pkg publish {#pio-pkg-publish}
+# pio pkg publish
 
 ## Usage {#usage}
 

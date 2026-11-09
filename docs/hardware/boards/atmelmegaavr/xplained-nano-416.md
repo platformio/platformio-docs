@@ -5,8 +5,6 @@ description: "ATtiny416 Xplained Nano (ATTINY416, 20MHz, 4KB flash, 256B RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-xplained-nano-416"></a>
-
 # ATtiny416 Xplained Nano
 
 ## Hardware

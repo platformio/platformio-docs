@@ -2,9 +2,7 @@
 description: Free disk space by removing cached data and unused PlatformIO packages.
 ---
 
-<a id="cmd-system-prune"></a>
-
-# pio system prune {#pio-system-prune}
+# pio system prune
 
 Free disk space by removing data PlatformIO no longer needs.
 

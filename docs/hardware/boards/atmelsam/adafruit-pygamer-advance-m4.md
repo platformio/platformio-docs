@@ -5,8 +5,6 @@ description: "Adafruit PyGamer Advance M4 (SAMD51J20A, 120MHz, 1MB flash, 256KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pygamer-advance-m4"></a>
-
 # Adafruit PyGamer Advance M4
 
 ## Hardware

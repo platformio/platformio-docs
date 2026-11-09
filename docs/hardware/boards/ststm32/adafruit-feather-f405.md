@@ -5,8 +5,6 @@ description: "Adafruit Feather STM32F405 (STM32F405RGT6, 168MHz, 1MB flash, 128K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-adafruit-feather-f405"></a>
-
 # Adafruit Feather STM32F405
 
 ## Hardware

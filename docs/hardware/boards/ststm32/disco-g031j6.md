@@ -5,8 +5,6 @@ description: "ST STM32G0316-DISCO (STM32G031J6, 64MHz, 32KB flash, 8KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-g031j6"></a>
-
 # ST STM32G0316-DISCO
 
 ## Hardware

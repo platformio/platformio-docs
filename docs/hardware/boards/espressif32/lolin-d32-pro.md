@@ -5,8 +5,6 @@ description: "WEMOS LOLIN D32 PRO (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lolin-d32-pro"></a>
-
 # WEMOS LOLIN D32 PRO
 
 ## Hardware

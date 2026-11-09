@@ -2,9 +2,7 @@
 description: Declare library dependencies in platformio.ini, pin versions, and install and update them.
 ---
 
-<a id="librarymanager-dependencies"></a>
-
-# Dependency management {#dependency-management}
+# Dependency management
 
 Declare the libraries your project uses in `platformio.ini`. PlatformIO
 installs them automatically when you build, test or debug, separately for each

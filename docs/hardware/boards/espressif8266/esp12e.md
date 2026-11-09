@@ -5,8 +5,6 @@ description: "Espressif ESP8266 ESP-12E (ESP8266, 80MHz, 4MB flash, 80KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-esp12e"></a>
-
 # Espressif ESP8266 ESP-12E
 
 ## Hardware

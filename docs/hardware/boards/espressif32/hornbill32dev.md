@@ -5,8 +5,6 @@ description: "Hornbill ESP32 Dev (ESP32, 240MHz, 4MB flash, 320KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-hornbill32dev"></a>
-
 # Hornbill ESP32 Dev
 
 ## Hardware

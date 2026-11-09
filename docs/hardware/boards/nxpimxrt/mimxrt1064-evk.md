@@ -5,8 +5,6 @@ description: "NXP i.MX RT1064 Evaluation Kit (MIMXRT1064DVL6A, 600MHz, 8MB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxpimxrt-mimxrt1064-evk"></a>
-
 # NXP i.MX RT1064 Evaluation Kit
 
 ## Hardware

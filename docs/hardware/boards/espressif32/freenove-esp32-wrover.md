@@ -5,8 +5,6 @@ description: "Freenove ESP32-Wrover (ESP32, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-freenove-esp32-wrover"></a>
-
 # Freenove ESP32-Wrover
 
 ## Hardware

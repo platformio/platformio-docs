@@ -5,8 +5,6 @@ description: "Generic STC8H1K33 (STC8H1K33, 11MHz, 33KB flash, 1.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h1k33"></a>
-
 # Generic STC8H1K33
 
 ## Hardware

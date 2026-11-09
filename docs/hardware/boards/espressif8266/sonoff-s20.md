@@ -5,8 +5,6 @@ description: "Sonoff S20 (ESP8266, 80MHz, 1MB flash, 80KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-sonoff-s20"></a>
-
 # Sonoff S20
 
 ## Hardware

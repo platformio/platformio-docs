@@ -2,9 +2,7 @@
 description: "Print to stdout installed packages and their dependencies in a tree structure based on project dependencies declared in platformio.ini:."
 ---
 
-<a id="cmd-pkg-list"></a>
-
-# pio pkg list {#pio-pkg-list}
+# pio pkg list
 
 ## Usage {#usage}
 

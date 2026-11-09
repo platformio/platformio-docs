@@ -5,8 +5,6 @@ description: "Teensy 3.0 (MK20DX128, 48MHz, 128KB flash, 16KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy30"></a>
-
 # Teensy 3.0
 
 ## Hardware

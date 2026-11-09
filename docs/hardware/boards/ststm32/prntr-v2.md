@@ -5,8 +5,6 @@ description: "PrntrBoard V2 (STM32F407VET6, 168MHz, 512KB flash, 128KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-prntr-v2"></a>
-
 # PrntrBoard V2
 
 ## Hardware

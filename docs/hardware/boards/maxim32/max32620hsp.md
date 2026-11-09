@@ -5,8 +5,6 @@ description: "Maxim Health Sensor Platform (MAX32620, 96MHz, 2MB flash, 256KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32620hsp"></a>
-
 # Maxim Health Sensor Platform
 
 ## Hardware

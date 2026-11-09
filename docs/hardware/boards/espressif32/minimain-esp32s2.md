@@ -5,8 +5,6 @@ description: "Department of Alchemy MiniMain ESP32-S2 (ESP32S2, 240MHz, 4MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-minimain-esp32s2"></a>
-
 # Department of Alchemy MiniMain ESP32-S2
 
 ## Hardware

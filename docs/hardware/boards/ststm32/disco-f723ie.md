@@ -5,8 +5,6 @@ description: "32F723EDISCOVERY (STM32F723IEK6, 216MHz, 512KB flash, 192KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f723ie"></a>
-
 # 32F723EDISCOVERY
 
 ## Hardware

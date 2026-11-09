@@ -5,8 +5,6 @@ description: "Fubarino SD (1.5) (32MX795F512H, 80MHz, 508KB flash, 128KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-fubarino-sd"></a>
-
 # Fubarino SD (1.5)
 
 ## Hardware

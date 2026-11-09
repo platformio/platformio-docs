@@ -2,9 +2,7 @@
 description: Build and test PlatformIO projects in GitHub Actions, GitLab CI, CircleCI and other continuous integration services.
 ---
 
-<a id="ci"></a>
-
-# CI integrations {#continuous-integration}
+# CI integrations
 
 Build and test your project on every change with a
 [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)

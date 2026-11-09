@@ -2,9 +2,7 @@
 description: "Apply the filters and text transformations to monitor output (platformio.ini option monitor_filters)."
 ---
 
-<a id="projectconf-monitor-filters"></a>
-
-# `monitor_filters` {#monitor-filters}
+# `monitor_filters`
 
 - **Type:** String
 - **Multiple values:** Yes

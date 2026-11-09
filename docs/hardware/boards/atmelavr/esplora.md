@@ -5,8 +5,6 @@ description: "Arduino Esplora (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-esplora"></a>
-
 # Arduino Esplora
 
 ## Hardware

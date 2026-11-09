@@ -5,8 +5,6 @@ description: "Maxim ARM mbed Enabled Development Platform for MAX32600 (MAX32600
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32600mbed"></a>
-
 # Maxim ARM mbed Enabled Development Platform for MAX32600
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Grant a user or a team access to a package in the PlatformIO Registry.
 ---
 
-<a id="cmd-access-grant"></a>
-
-# pio access grant {#pio-access-grant}
+# pio access grant
 
 Grant a user or a team an access level to a resource.
 

@@ -1,6 +1,4 @@
-<a id="ide-qtcreator"></a>
-
-# Qt Creator {#qt-creator}
+# Qt Creator
 
 The [Qt Creator](https://github.com/qtproject/qt-creator) is an open source cross-platform integrated development environment. The editor includes such features as syntax highlighting for various languages, project manager, integrated version control systems, rapid code navigation tools and code autocompletion.
 

@@ -5,8 +5,6 @@ description: "WeMos D1 ESP-WROOM-02 (ESP8266, 80MHz, 2MB flash, 80KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-d1-wroom-02"></a>
-
 # WeMos D1 ESP-WROOM-02
 
 ## Hardware

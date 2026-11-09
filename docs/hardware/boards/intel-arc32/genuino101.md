@@ -5,8 +5,6 @@ description: "Arduino/Genuino 101 (ARCV2EM, 32MHz, 152KB flash, 80KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-arc32-genuino101"></a>
-
 # Arduino/Genuino 101
 
 ## Hardware

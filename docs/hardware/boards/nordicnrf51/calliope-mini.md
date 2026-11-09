@@ -5,8 +5,6 @@ description: "Calliope mini (NRF51822, 16MHz, 256KB flash, 16KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-calliope-mini"></a>
-
 # Calliope mini
 
 ## Hardware

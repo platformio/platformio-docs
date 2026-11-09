@@ -5,8 +5,6 @@ description: "ODROID-GO (ESP32, 240MHz, 16MB flash, 320KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-odroid-esp32"></a>
-
 # ODROID-GO
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RedBearLab Blend 2 (NRF52832, 64MHz, 512KB flash, 64KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-redbear-blend2"></a>
-
 # RedBearLab Blend 2
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit Feather ESP32-S3 2MB PSRAM (ESP32S3, 240MHz, 4MB flash, 3
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-feather-esp32s3"></a>
-
 # Adafruit Feather ESP32-S3 2MB PSRAM
 
 ## Hardware

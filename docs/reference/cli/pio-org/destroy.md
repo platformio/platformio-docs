@@ -2,9 +2,7 @@
 description: Delete an organization and its teams.
 ---
 
-<a id="cmd-org-destroy"></a>
-
-# pio org destroy {#pio-org-destroy}
+# pio org destroy
 
 Delete an organization and all its teams.
 

@@ -5,8 +5,6 @@ description: "SODAQ SARA (SAMD21J18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sodaq-sara"></a>
-
 # SODAQ SARA
 
 ## Hardware

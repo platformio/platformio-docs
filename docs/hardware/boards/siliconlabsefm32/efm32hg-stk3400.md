@@ -5,8 +5,6 @@ description: "SLSTK3400A USB-enabled Happy Gecko (EFM32HG322F64, 25MHz, 64KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-siliconlabsefm32-efm32hg-stk3400"></a>
-
 # SLSTK3400A USB-enabled Happy Gecko
 
 ## Hardware

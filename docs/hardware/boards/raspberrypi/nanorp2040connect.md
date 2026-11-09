@@ -5,8 +5,6 @@ description: "Arduino Nano RP2040 Connect (RP2040, 133MHz, 2MB flash, 264KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-raspberrypi-nanorp2040connect"></a>
-
 # Arduino Nano RP2040 Connect
 
 ## Hardware

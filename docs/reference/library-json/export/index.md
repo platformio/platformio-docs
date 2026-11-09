@@ -2,9 +2,7 @@
 description: "This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc)."
 ---
 
-<a id="manifest-library-json-export"></a>
-
-# `export` {#export}
+# `export`
 
 - **Required:** No
 - **Type:** Object

@@ -2,7 +2,7 @@
 description: Organize unit tests in a PlatformIO project - test suites, hierarchy, shared code and best practices.
 ---
 
-# Project structure {#project-structure}
+# Project structure
 
 Tests live in the project's [`test`](../../../reference/platformio-ini/platformio/test-dir.md)
 folder. Each folder whose name starts with `test_` is a test suite: it is built

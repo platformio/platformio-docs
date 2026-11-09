@@ -2,9 +2,7 @@
 description: Reuse values across platformio.ini with ${section.option}, built-in variables and system environment variables.
 ---
 
-<a id="projectconf-interpolation"></a>
-
-# Interpolation of values {#interpolation-of-values}
+# Interpolation of values
 
 A value in `platformio.ini` can include other values with `${...}`: options
 from any section, built-in variables, and system environment variables. Use it

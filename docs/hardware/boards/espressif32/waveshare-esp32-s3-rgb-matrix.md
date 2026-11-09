@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-RGB-Matrix (ESP32S3, 240MHz, 32MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-rgb-matrix"></a>
-
 # Waveshare ESP32-S3-RGB-Matrix
 
 ## Hardware

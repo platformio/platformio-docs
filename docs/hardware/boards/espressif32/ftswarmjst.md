@@ -5,8 +5,6 @@ description: "Elektrofuzzis ftSwarmJST (ESP32, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ftswarmjst"></a>
-
 # Elektrofuzzis ftSwarmJST
 
 ## Hardware

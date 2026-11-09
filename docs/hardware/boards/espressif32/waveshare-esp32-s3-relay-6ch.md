@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Relay-6CH (ESP32S3, 240MHz, 8MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-relay-6ch"></a>
-
 # Waveshare ESP32-S3-Relay-6CH
 
 ## Hardware

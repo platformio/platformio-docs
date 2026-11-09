@@ -5,8 +5,6 @@ description: "Aventen S3 Sync (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-aventen-s3-sync"></a>
-
 # Aventen S3 Sync
 
 ## Hardware

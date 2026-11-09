@@ -2,9 +2,7 @@
 description: "A location where PlatformIO Core keeps installed packages (platformio.ini option packages_dir)."
 ---
 
-<a id="projectconf-pio-packages-dir"></a>
-
-# `packages_dir` {#packages-dir}
+# `packages_dir`
 
 - **Type:** Path
 - **Multiple values:** No

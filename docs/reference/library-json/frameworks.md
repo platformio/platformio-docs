@@ -2,7 +2,7 @@
 description: "A list with compatible frameworks."
 ---
 
-# `frameworks` {#frameworks}
+# `frameworks`
 
 - **Required:** No
 - **Type:** String or array of strings

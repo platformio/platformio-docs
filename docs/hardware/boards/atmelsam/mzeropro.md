@@ -5,8 +5,6 @@ description: "Arduino M0 Pro (Programming/Debug Port) (SAMD21G18A, 48MHz, 256KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mzeropro"></a>
-
 # Arduino M0 Pro (Programming/Debug Port)
 
 ## Hardware

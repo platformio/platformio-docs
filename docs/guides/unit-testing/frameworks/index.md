@@ -2,9 +2,7 @@
 description: "See supported testing frameworks:."
 ---
 
-<a id="unit-testing-frameworks"></a>
-
-# Testing frameworks {#testing-frameworks}
+# Testing frameworks
 
 PlatformIO supports the most popular testing frameworks and allows you to easily switch between them using the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md).
 

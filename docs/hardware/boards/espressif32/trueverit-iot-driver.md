@@ -5,8 +5,6 @@ description: "Trueverit ESP32 Universal IoT Driver (ESP32, 240MHz, 4MB flash, 32
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-trueverit-iot-driver"></a>
-
 # Trueverit ESP32 Universal IoT Driver
 
 ## Hardware

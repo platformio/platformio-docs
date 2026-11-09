@@ -2,7 +2,7 @@
 description: "Used for search by keyword."
 ---
 
-# `keywords` {#keywords}
+# `keywords`
 
 - **Required:** No (recommended for published packages)
 - **Type:** String or array of strings

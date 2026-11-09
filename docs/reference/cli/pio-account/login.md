@@ -2,9 +2,7 @@
 description: Sign in to your PlatformIO Account.
 ---
 
-<a id="cmd-account-login"></a>
-
-# pio account login {#pio-account-login}
+# pio account login
 
 Sign in to your [PlatformIO Account](../../../get-started/platformio-account.md).
 

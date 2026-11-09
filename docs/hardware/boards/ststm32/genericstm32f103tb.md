@@ -5,8 +5,6 @@ description: "STM32F103TB (20k RAM. 128k Flash) (STM32F103TBU6, 72MHz, 128KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103tb"></a>
-
 # STM32F103TB (20k RAM. 128k Flash)
 
 ## Hardware

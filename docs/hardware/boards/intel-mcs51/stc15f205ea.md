@@ -5,8 +5,6 @@ description: "Generic STC15F205EA (STC15F205EA, 11MHz, 5KB flash, 256B RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc15f205ea"></a>
-
 # Generic STC15F205EA
 
 ## Hardware

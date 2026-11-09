@@ -5,8 +5,6 @@ description: "Grasshopper-L082CZ (STM32L082CZY6, 32MHz, 192KB flash, 20KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-grasshopper-l082cz"></a>
-
 # Grasshopper-L082CZ
 
 ## Hardware

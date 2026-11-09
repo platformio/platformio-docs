@@ -5,8 +5,6 @@ description: "STM32F103R4 (6k RAM. 16k Flash) (STM32F103R4T6, 72MHz, 16KB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103r4"></a>
-
 # STM32F103R4 (6k RAM. 16k Flash)
 
 ## Hardware

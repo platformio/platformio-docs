@@ -1,4 +1,4 @@
-# Extra Python packages {#extra-python-packages}
+# Extra Python packages
 
 If your project or library depends on the extra Python packages, you can use extra script to install them into the same virtual environment where [PlatformIO Core (CLI)](../../../get-started/platformio-core.md) is installed.
 

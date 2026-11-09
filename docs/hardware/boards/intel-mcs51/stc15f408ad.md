@@ -5,8 +5,6 @@ description: "Generic STC15F408AD (STC15F408AD, 11MHz, 8KB flash, 512B RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc15f408ad"></a>
-
 # Generic STC15F408AD
 
 ## Hardware

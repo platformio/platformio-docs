@@ -5,8 +5,6 @@ description: "Talk2 Whisper Node (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-whispernode"></a>
-
 # Talk2 Whisper Node
 
 ## Hardware

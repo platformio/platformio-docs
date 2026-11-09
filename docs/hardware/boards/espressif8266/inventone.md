@@ -5,8 +5,6 @@ description: "Invent One (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-inventone"></a>
-
 # Invent One
 
 ## Hardware

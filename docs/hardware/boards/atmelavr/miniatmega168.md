@@ -5,8 +5,6 @@ description: "Arduino Mini ATmega168 (ATMEGA168, 16MHz, 14KB flash, 1KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-miniatmega168"></a>
-
 # Arduino Mini ATmega168
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Sparky V1 F303 (STM32F303CCT6, 72MHz, 256KB flash, 40KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-sparky-v1"></a>
-
 # Sparky V1 F303
 
 ## Hardware

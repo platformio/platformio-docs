@@ -5,8 +5,6 @@ description: "SparkFun MicroView (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-uview"></a>
-
 # SparkFun MicroView
 
 ## Hardware

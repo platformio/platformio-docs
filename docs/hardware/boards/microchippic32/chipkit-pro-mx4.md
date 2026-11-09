@@ -5,8 +5,6 @@ description: "Digilent chipKIT Pro MX4 (32MX460F512L, 80MHz, 508KB flash, 32KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-pro-mx4"></a>
-
 # Digilent chipKIT Pro MX4
 
 ## Hardware

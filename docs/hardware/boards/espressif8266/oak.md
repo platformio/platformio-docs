@@ -5,8 +5,6 @@ description: "DigiStump Oak (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-oak"></a>
-
 # DigiStump Oak
 
 ## Hardware

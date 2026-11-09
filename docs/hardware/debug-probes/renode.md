@@ -2,9 +2,7 @@
 description: "Use the Renode debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-renode"></a>
-
-# Renode {#renode}
+# Renode
 
 [![](./img/renode.png)](https://renode.io/?utm_source=platformio&utm_medium=docs)
 

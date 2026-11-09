@@ -5,8 +5,6 @@ description: "The Things Uno (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-the-things-uno"></a>
-
 # The Things Uno
 
 ## Hardware

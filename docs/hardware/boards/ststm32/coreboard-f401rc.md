@@ -5,8 +5,6 @@ description: "Core board F401RCT6 (STM32F401RCT6, 84MHz, 256KB flash, 64KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-coreboard-f401rc"></a>
-
 # Core board F401RCT6
 
 ## Hardware

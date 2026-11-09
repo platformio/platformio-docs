@@ -5,8 +5,6 @@ description: "STM32F373RC (32k RAM. 256k Flash) (STM32F373RCT6, 72MHz, 256KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f373rc"></a>
-
 # STM32F373RC (32k RAM. 256k Flash)
 
 ## Hardware

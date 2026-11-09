@@ -5,8 +5,6 @@ description: "Cicada-L082CZ (STM32L082CZY6, 32MHz, 192KB flash, 20KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-cicada-l082cz"></a>
-
 # Cicada-L082CZ
 
 ## Hardware

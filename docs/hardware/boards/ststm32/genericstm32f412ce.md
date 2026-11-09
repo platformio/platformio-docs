@@ -5,8 +5,6 @@ description: "STM32F412CE (256k RAM. 512k Flash) (STM32F412CEU6, 100MHz, 512KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f412ce"></a>
-
 # STM32F412CE (256k RAM. 512k Flash)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit Feather Bluefruit Sense (NRF52840, 64MHz, 796KB flash, 24
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-feather-nrf52840-sense"></a>
-
 # Adafruit Feather Bluefruit Sense
 
 ## Hardware

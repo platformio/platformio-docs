@@ -5,8 +5,6 @@ description: "PYBStick 26 Pro (STM32F412RE, 100MHz, 512KB flash, 256KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-pybstick26-pro"></a>
-
 # PYBStick 26 Pro
 
 ## Hardware

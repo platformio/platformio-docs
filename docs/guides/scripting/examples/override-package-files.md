@@ -2,7 +2,7 @@
 description: "If you need to make it more independent to the operating system, please replace the patch with a multi-platform python-patch script."
 ---
 
-# Override package files {#override-package-files}
+# Override package files
 
 PlatformIO Package Manager automatically installs pre-built packages ([Frameworks](../../../hardware/frameworks/index.md), toolchains, libraries) required by development [Development Platforms](../../../hardware/platforms/index.md) and build process. Sometimes you need to override original files with own versions: configure custom GPIO, do changes to built-in LD scripts, or some patching to installed library dependency.
 

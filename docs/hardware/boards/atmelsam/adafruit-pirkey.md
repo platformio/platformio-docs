@@ -5,8 +5,6 @@ description: "Adafruit pIRkey (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pirkey"></a>
-
 # Adafruit pIRkey
 
 ## Hardware

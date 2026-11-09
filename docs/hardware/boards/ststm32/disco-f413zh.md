@@ -5,8 +5,6 @@ description: "ST 32F413HDISCOVERY (STM32F413ZHT6, 100MHz, 1.50MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f413zh"></a>
-
 # ST 32F413HDISCOVERY
 
 ## Hardware

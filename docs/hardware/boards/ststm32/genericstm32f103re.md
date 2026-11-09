@@ -5,8 +5,6 @@ description: "STM32F103RE (64k RAM. 512k Flash) (STM32F103RET6, 72MHz, 512KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103re"></a>
-
 # STM32F103RE (64k RAM. 512k Flash)
 
 ## Hardware

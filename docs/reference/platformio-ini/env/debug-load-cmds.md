@@ -2,9 +2,7 @@
 description: "A list of commands to be used to load program/firmware to a target device (platformio.ini option debug_load_cmds)."
 ---
 
-<a id="projectconf-debug-load-cmds"></a>
-
-# `debug_load_cmds` {#debug-load-cmds}
+# `debug_load_cmds`
 
 - **Type:** String
 - **Multiple values:** Yes

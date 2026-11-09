@@ -5,8 +5,6 @@ description: "Generic ATtiny24 (ATTINY24, 8MHz, 2KB flash, 128B RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny24"></a>
-
 # Generic ATtiny24
 
 ## Hardware

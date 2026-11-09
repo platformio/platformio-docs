@@ -2,9 +2,7 @@
 description: Upgrade projects from PlatformIO Core 5.x to 6.0 - required changes, new features and removed commands.
 ---
 
-<a id="core-migration"></a>
-
-# Migrating from 5.x to 6.0 {#migrating-from-5-x-to-6-0}
+# Migrating from 5.x to 6.0
 
 Guidance on how to upgrade from [PlatformIO Core (CLI)](../get-started/platformio-core.md) v5.x to v6.x with emphasis on major changes, what is new, and what has been removed.
 

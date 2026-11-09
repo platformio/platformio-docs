@@ -5,8 +5,6 @@ description: "DataStation Mini (32MX150F128C, 40MHz, 120KB flash, 32KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-dsmini"></a>
-
 # DataStation Mini
 
 ## Hardware

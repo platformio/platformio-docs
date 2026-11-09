@@ -5,8 +5,6 @@ description: "Franzininho WiFi Board (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-s2-franzininho"></a>
-
 # Franzininho WiFi Board
 
 ## Hardware

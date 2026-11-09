@@ -5,8 +5,6 @@ description: "SparkFun ESP32 IoT RedBoard (ESP32, 240MHz, 4MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-sparkfun-esp32-iot-redboard"></a>
-
 # SparkFun ESP32 IoT RedBoard
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino MKR WAN 1310 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkrwan1310"></a>
-
 # Arduino MKR WAN 1310
 
 ## Hardware

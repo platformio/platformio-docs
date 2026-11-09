@@ -5,8 +5,6 @@ description: "ATmega16 (ATMEGA16, 16MHz, 16KB flash, 1KB RAM): PlatformIO board 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega16"></a>
-
 # ATmega16
 
 ## Hardware

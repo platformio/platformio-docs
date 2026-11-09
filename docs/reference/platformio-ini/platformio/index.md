@@ -2,9 +2,7 @@
 description: The [platformio] section of platformio.ini - project-wide settings and directories.
 ---
 
-<a id="projectconf-section-platformio"></a>
-
-# Section `[platformio]` {#section-platformio}
+# Section `[platformio]`
 
 The `[platformio]` section holds project-wide settings: the project name, the
 environments processed by default, extra configuration files, and the

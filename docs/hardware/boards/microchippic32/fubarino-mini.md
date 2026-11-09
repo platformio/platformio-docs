@@ -5,8 +5,6 @@ description: "Fubarino Mini (32MX250F128D, 48MHz, 120KB flash, 32KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-fubarino-mini"></a>
-
 # Fubarino Mini
 
 ## Hardware

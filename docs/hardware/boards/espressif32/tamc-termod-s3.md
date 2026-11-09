@@ -5,8 +5,6 @@ description: "TAMC Termod S3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-tamc-termod-s3"></a>
-
 # TAMC Termod S3
 
 ## Hardware

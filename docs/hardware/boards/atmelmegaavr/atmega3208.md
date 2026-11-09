@@ -5,8 +5,6 @@ description: "ATmega3208 (ATMEGA3208, 16MHz, 32KB flash, 4KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-atmega3208"></a>
-
 # ATmega3208
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST Nucleo F446RE (STM32F446RET6, 180MHz, 512KB flash, 128KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f446re"></a>
-
 # ST Nucleo F446RE
 
 ## Hardware

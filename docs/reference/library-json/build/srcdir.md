@@ -2,7 +2,7 @@
 description: "The base path where PlatformIO should look for library source code."
 ---
 
-# `srcDir` {#srcdir}
+# `srcDir`
 
 - **Required:** No
 - **Type:** String

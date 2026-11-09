@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-K66F (MK66FN2M0VMD18, 180MHz, 2MB flash, 25
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-k66f"></a>
-
 # Freescale Kinetis FRDM-K66F
 
 ## Hardware

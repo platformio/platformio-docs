@@ -5,8 +5,6 @@ description: "Espressif Generic ESP8266 ESP-01 1M (ESP8266, 80MHz, 1MB flash, 80
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-esp01-1m"></a>
-
 # Espressif Generic ESP8266 ESP-01 1M
 
 ## Hardware

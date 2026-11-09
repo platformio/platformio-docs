@@ -5,8 +5,6 @@ description: "microS2 (ESP32S2, 240MHz, 16MB flash, 320KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-micros2"></a>
-
 # microS2
 
 ## Hardware

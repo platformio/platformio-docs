@@ -2,9 +2,7 @@
 description: Get or regenerate the personal authentication token of your PlatformIO Account.
 ---
 
-<a id="cmd-account-token"></a>
-
-# pio account token {#pio-account-token}
+# pio account token
 
 Get or regenerate the personal authentication token of your [PlatformIO Account](../../../get-started/platformio-account.md).
 

@@ -5,8 +5,6 @@ description: "Pinoccio Scout (ATMEGA256RFR2, 16MHz, 248KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-pinoccio"></a>
-
 # Pinoccio Scout
 
 ## Hardware

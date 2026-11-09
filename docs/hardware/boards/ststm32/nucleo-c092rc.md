@@ -5,8 +5,6 @@ description: "ST Nucleo C092RC (STM32C092RCT6, 48MHz, 256KB flash, 30KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-c092rc"></a>
-
 # ST Nucleo C092RC
 
 ## Hardware

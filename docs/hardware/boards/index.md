@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "All boards supported by PlatformIO, grouped by development platform."
 ---
 
-<a id="boards"></a>
-
 # Boards
 
 Every board PlatformIO supports, grouped by development platform. Each board page shows the board ID to use in the [board](../../reference/platformio-ini/env/board.md) option, the hardware specification, and the upload and debugging options.

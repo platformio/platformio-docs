@@ -5,8 +5,6 @@ description: "ST STM32LDISCOVERY (STM32L152RBT6, 32MHz, 128KB flash, 16KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l152rb"></a>
-
 # ST STM32LDISCOVERY
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Open a serial monitor to a board or a network serial port, with filters for decoding and logging.
 ---
 
-<a id="cmd-device-monitor"></a>
-
-# pio device monitor {#pio-device-monitor}
+# pio device monitor
 
 Open a serial monitor: show what the device sends and send what you type.
 

@@ -5,8 +5,6 @@ description: "LOGISENSES Senses Weizen (ESP32, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-sensesiot-weizen"></a>
-
 # LOGISENSES Senses Weizen
 
 ## Hardware

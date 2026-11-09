@@ -2,9 +2,7 @@
 description: View, change and reset PlatformIO Core settings, and the reference of every setting.
 ---
 
-<a id="cmd-settings"></a>
-
-# pio settings {#pio-settings}
+# pio settings
 
 View, change and reset PlatformIO Core settings. Settings apply to all
 projects of the current user.

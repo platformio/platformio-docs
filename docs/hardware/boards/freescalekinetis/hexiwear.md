@@ -5,8 +5,6 @@ description: "Hexiwear (MK64FN1M0VDC12, 120MHz, 1MB flash, 256KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-hexiwear"></a>
-
 # Hexiwear
 
 ## Hardware

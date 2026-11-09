@@ -5,8 +5,6 @@ description: "F407VG (STM32F407VGT6, 168MHz, 1MB flash, 128KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-diymore-f407vgt"></a>
-
 # F407VG
 
 ## Hardware

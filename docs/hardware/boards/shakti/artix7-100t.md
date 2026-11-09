@@ -5,8 +5,6 @@ description: "Arty A7-100: Artix-7 FPGA Development Board (C-CLASS, 50MHz, 0B fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-shakti-artix7-100t"></a>
-
 # Arty A7-100: Artix-7 FPGA Development Board
 
 ## Hardware

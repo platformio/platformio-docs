@@ -5,8 +5,6 @@ description: "STM32F411CC (128k RAM. 256k Flash) (STM32F411CCU6, 100MHz, 256KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f411cc"></a>
-
 # STM32F411CC (128k RAM. 256k Flash)
 
 ## Hardware

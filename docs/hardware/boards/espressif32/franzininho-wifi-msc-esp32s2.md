@@ -5,8 +5,6 @@ description: "Franzininho WiFi MSC (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-franzininho-wifi-msc-esp32s2"></a>
-
 # Franzininho WiFi MSC
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Noduino Quantum (ESP32, 240MHz, 16MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-quantum"></a>
-
 # Noduino Quantum
 
 ## Hardware

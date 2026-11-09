@@ -5,8 +5,6 @@ description: "TI LaunchPad (Stellaris) w/ lm4f120 (80MHz) (LPLM4F120H5QR, 80MHz,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-titiva-lplm4f120h5qr"></a>
-
 # TI LaunchPad (Stellaris) w/ lm4f120 (80MHz)
 
 ## Hardware

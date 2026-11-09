@@ -5,8 +5,6 @@ description: "Demo F030F4 (STM32F030F4P6, 48MHz, 16KB flash, 4KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-demo-f030f4"></a>
-
 # Demo F030F4
 
 ## Hardware

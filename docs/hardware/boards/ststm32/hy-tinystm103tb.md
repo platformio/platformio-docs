@@ -5,8 +5,6 @@ description: "Tiny STM103T (STM32F103TBU6, 72MHz, 128KB flash, 20KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-hy-tinystm103tb"></a>
-
 # Tiny STM103T
 
 ## Hardware

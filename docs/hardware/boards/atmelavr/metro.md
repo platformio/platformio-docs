@@ -5,8 +5,6 @@ description: "Adafruit Metro (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-metro"></a>
-
 # Adafruit Metro
 
 ## Hardware

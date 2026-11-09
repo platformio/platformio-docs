@@ -5,8 +5,6 @@ description: "Arduino Nano ATmega328 (New Bootloader) (ATMEGA328P, 16MHz, 30KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-nanoatmega328new"></a>
-
 # Arduino Nano ATmega328 (New Bootloader)
 
 ## Hardware

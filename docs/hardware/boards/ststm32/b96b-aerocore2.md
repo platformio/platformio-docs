@@ -5,8 +5,6 @@ description: "96Boards Neonkey (STM32F427VIT6, 168MHz, 1.99MB flash, 256KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-b96b-aerocore2"></a>
-
 # 96Boards Neonkey
 
 ## Hardware

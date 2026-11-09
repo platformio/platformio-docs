@@ -2,9 +2,7 @@
 description: "PlatformIO Core location where it keeps installed development platforms, packages, global libraries, and other internal information (platformio.ini option core_dir)."
 ---
 
-<a id="projectconf-pio-core-dir"></a>
-
-# `core_dir` {#core-dir}
+# `core_dir`
 
 - **Type:** Path
 - **Multiple values:** No

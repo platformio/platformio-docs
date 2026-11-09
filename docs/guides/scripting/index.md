@@ -2,9 +2,7 @@
 description: Extend the PlatformIO build with Python and SCons scripts - change flags, add actions and custom targets.
 ---
 
-<a id="scripting"></a>
-
-# Extending the build {#advanced-scripting}
+# Extending the build
 
 The PlatformIO build system runs on [SCons](https://scons.org/). With extra
 scripts, written in Python, you can change almost anything about a build:

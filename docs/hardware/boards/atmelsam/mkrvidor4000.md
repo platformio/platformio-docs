@@ -5,8 +5,6 @@ description: "MKR Vidor 4000 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkrvidor4000"></a>
-
 # MKR Vidor 4000
 
 ## Hardware

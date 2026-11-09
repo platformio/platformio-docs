@@ -2,9 +2,7 @@
 description: What PlatformIO is, what it is made of, and how a PlatformIO project works.
 ---
 
-<a id="what-is-pio"></a>
-
-# What is PlatformIO? {#what-is-platformio}
+# What is PlatformIO?
 
 PlatformIO is an open-source toolset for building, uploading, debugging and
 testing firmware for embedded systems. One project format and one set of

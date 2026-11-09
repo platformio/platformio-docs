@@ -5,8 +5,6 @@ description: "Nordic Beacon Kit (PCA20006) (NRF51822, 32MHz, 256KB flash, 32KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-nrf51-beacon"></a>
-
 # Nordic Beacon Kit (PCA20006)
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Ignore tests where the name matches specified patterns (platformio.ini option test_ignore)."
 ---
 
-<a id="projectconf-test-ignore"></a>
-
-# `test_ignore` {#test-ignore}
+# `test_ignore`
 
 - **Type:** String
 - **Multiple values:** Yes

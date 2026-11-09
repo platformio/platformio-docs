@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The ESP8266 Non-OS SDK framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-esp8266-nonos-sdk"></a>
-
 # ESP8266 Non-OS SDK
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `esp8266-nonos-sdk`

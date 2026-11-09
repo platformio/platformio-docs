@@ -5,8 +5,6 @@ description: "TI LaunchPad (Tiva C) w/ tm4c123 (80MHz) (LPTM4C123GH6PM, 80MHz, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-titiva-lptm4c123gh6pm"></a>
-
 # TI LaunchPad (Tiva C) w/ tm4c123 (80MHz)
 
 ## Hardware

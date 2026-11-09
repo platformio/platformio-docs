@@ -5,8 +5,6 @@ description: "SparkFun ESP32-S2 Thing Plus (ESP32S2, 240MHz, 4MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-sparkfun-esp32s2-thing-plus"></a>
-
 # SparkFun ESP32-S2 Thing Plus
 
 ## Hardware

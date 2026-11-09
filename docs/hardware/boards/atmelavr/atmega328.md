@@ -5,8 +5,6 @@ description: "ATmega328 (ATMEGA328, 16MHz, 32KB flash, 2KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega328"></a>
-
 # ATmega328
 
 ## Hardware

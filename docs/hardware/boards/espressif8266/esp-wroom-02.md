@@ -5,8 +5,6 @@ description: "Espressif ESP-WROOM-02 (ESP8266, 80MHz, 2MB flash, 80KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-esp-wroom-02"></a>
-
 # Espressif ESP-WROOM-02
 
 ## Hardware

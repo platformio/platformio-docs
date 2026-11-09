@@ -5,8 +5,6 @@ description: "STM32F401CD (96k RAM. 384k Flash) (STM32F401CDU6, 84MHz, 384KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f401cd"></a>
-
 # STM32F401CD (96k RAM. 384k Flash)
 
 ## Hardware

@@ -1,6 +1,4 @@
-<a id="ide-neovim"></a>
-
-# Neovim {#neovim}
+# Neovim
 
 [Neovim](https://neovim.io/) is a powerful, open-source and configurable text editor based on [Vim](http://www.vim.org/). Neovim is designed for use both from a command-line interface and as a standalone application in a graphical user interface.
 

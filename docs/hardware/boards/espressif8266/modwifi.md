@@ -5,8 +5,6 @@ description: "Olimex MOD-WIFI-ESP8266(-DEV) (ESP8266, 80MHz, 2MB flash, 80KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-modwifi"></a>
-
 # Olimex MOD-WIFI-ESP8266(-DEV)
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Check for outdated project packages and list version information for all dependencies."
 ---
 
-<a id="cmd-pkg-outdated"></a>
-
-# pio pkg outdated {#pio-pkg-outdated}
+# pio pkg outdated
 
 ## Usage {#usage}
 

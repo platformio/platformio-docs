@@ -5,8 +5,6 @@ description: "Circuit Playground Bluefruit (NRF52840, 64MHz, 796KB flash, 243KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-cplaynrf52840"></a>
-
 # Circuit Playground Bluefruit
 
 ## Hardware

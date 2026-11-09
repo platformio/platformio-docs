@@ -2,9 +2,7 @@
 description: "Run project tests on host (local) machine using PlatformIO Unit Testing."
 ---
 
-<a id="cmd-test"></a>
-
-# pio test {#pio-test}
+# pio test
 
 Helper command for local [Unit Testing](../../guides/unit-testing/index.md).
 

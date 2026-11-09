@@ -5,8 +5,6 @@ description: "PYBStick Standard 26 (STM32F411CEU6, 100MHz, 512KB flash, 128KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-pybstick26-std"></a>
-
 # PYBStick Standard 26
 
 ## Hardware

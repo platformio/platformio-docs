@@ -5,8 +5,6 @@ description: "Deneyap Kart (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-deneyapkart"></a>
-
 # Deneyap Kart
 
 ## Hardware

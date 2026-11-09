@@ -5,8 +5,6 @@ description: "Phoenix 1.0 (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-phoenix-v1"></a>
-
 # Phoenix 1.0
 
 ## Hardware

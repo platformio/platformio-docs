@@ -2,9 +2,7 @@
 description: "Use the FTDI chip debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-ftdi"></a>
-
-# FTDI chip {#ftdi-chip}
+# FTDI chip
 
 [![](./img/ftdi.jpg)](http://www.ftdichip.com/USB.html?utm_source=platformio&utm_medium=docs)
 

@@ -2,9 +2,7 @@
 description: The [env] and [env:NAME] sections of platformio.ini - project environments and the options they accept.
 ---
 
-<a id="projectconf-section-env"></a>
-
-# Section `[env]` {#section-env}
+# Section `[env]`
 
 A project environment, `[env:NAME]`, describes one way to build the project:
 the development platform, board, framework, build flags, libraries, and how to

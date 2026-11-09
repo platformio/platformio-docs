@@ -2,9 +2,7 @@
 description: "Update the project dependencies, custom packages from the PlatformIO Registry, or external sources."
 ---
 
-<a id="cmd-pkg-update"></a>
-
-# pio pkg update {#pio-pkg-update}
+# pio pkg update
 
 ## Usage {#usage}
 

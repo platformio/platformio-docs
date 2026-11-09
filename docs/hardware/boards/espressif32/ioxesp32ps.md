@@ -5,8 +5,6 @@ description: "ArtronShop IOXESP32PS (ESP32, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ioxesp32ps"></a>
-
 # ArtronShop IOXESP32PS
 
 ## Hardware

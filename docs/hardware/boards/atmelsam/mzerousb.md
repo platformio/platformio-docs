@@ -5,8 +5,6 @@ description: "Arduino M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mzerousb"></a>
-
 # Arduino M0
 
 ## Hardware

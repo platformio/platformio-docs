@@ -2,7 +2,7 @@
 description: "A list with compatible development platforms."
 ---
 
-# `platforms` {#platforms}
+# `platforms`
 
 - **Required:** No
 - **Type:** String or array of strings

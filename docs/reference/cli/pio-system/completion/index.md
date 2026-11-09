@@ -2,9 +2,7 @@
 description: Tab completion of pio commands and options for Bash, Zsh and fish.
 ---
 
-<a id="cmd-system-completion"></a>
-
-# pio system completion {#platformio-shell-completion}
+# pio system completion
 
 Install tab completion of `pio` commands and options for the
 [Bash](https://www.gnu.org/software/bash/), [Zsh](https://www.zsh.org/) and

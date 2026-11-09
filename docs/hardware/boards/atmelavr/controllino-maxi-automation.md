@@ -5,8 +5,6 @@ description: "Controllino Maxi Automation (ATMEGA2560, 16MHz, 248KB flash, 8KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-controllino-maxi-automation"></a>
-
 # Controllino Maxi Automation
 
 ## Hardware

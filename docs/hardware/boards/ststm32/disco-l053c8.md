@@ -5,8 +5,6 @@ description: "ST 32L0538DISCOVERY (STM32L053C8T6, 32MHz, 64KB flash, 8KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l053c8"></a>
-
 # ST 32L0538DISCOVERY
 
 ## Hardware

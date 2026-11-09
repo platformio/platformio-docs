@@ -5,8 +5,6 @@ description: "AVR64DD14 (AVR64DD14, 24MHz, 64KB flash, 8KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-avr64dd14"></a>
-
 # AVR64DD14
 
 ## Hardware

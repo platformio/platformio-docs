@@ -5,8 +5,6 @@ description: "ATmega645P (ATMEGA645P, 16MHz, 64KB flash, 4KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega645p"></a>
-
 # ATmega645P
 
 ## Hardware

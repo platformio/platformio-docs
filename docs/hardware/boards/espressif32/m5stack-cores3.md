@@ -5,8 +5,6 @@ description: "M5Stack CoreS3 (ESP32S3, 240MHz, 16MB flash, 320KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-cores3"></a>
-
 # M5Stack CoreS3
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit CLUE nRF52840 (NRF52840, 64MHz, 796KB flash, 243KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-clue-nrf52840"></a>
-
 # Adafruit CLUE nRF52840
 
 ## Hardware

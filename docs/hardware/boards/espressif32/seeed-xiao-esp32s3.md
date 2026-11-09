@@ -5,8 +5,6 @@ description: "Seeed Studio XIAO ESP32S3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-seeed-xiao-esp32s3"></a>
-
 # Seeed Studio XIAO ESP32S3
 
 ## Hardware

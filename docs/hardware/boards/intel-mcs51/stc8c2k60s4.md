@@ -5,8 +5,6 @@ description: "Generic STC8C2K60S4 (STC8C2K60S4, 11MHz, 60KB flash, 2.25KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8c2k60s4"></a>
-
 # Generic STC8C2K60S4
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino LilyPad USB (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lilypadusb"></a>
-
 # Arduino LilyPad USB
 
 ## Hardware

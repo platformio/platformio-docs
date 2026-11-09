@@ -2,9 +2,7 @@
 description: Answers to frequently asked questions about PlatformIO.
 ---
 
-<a id="faq"></a>
-
-# Frequently asked questions {#frequently-asked-questions}
+# Frequently asked questions
 
 More answers are in the [FAQ category](https://community.platformio.org/c/faq)
 of the PlatformIO Community forum.

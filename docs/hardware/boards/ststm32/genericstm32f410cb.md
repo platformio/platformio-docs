@@ -5,8 +5,6 @@ description: "STM32F410CB (32k RAM. 128k Flash) (STM32F410CBT6, 100MHz, 128KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f410cb"></a>
-
 # STM32F410CB (32k RAM. 128k Flash)
 
 ## Hardware

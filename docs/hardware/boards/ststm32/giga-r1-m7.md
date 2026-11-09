@@ -5,8 +5,6 @@ description: "Arduino Giga R1 (M7 core) (STM32H747XIH6, 480MHz, 768KB flash, 511
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-giga-r1-m7"></a>
-
 # Arduino Giga R1 (M7 core)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "SparkFun Digital Sandbox (ATMEGA328P, 8MHz, 31.50KB flash, 2KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-digitalsandbox"></a>
-
 # SparkFun Digital Sandbox
 
 ## Hardware

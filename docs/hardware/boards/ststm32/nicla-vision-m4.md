@@ -5,8 +5,6 @@ description: "Arduino Nicla Vision (M4 core) (STM32H747XIH6, 480MHz, 1MB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nicla-vision-m4"></a>
-
 # Arduino Nicla Vision (M4 core)
 
 ## Hardware

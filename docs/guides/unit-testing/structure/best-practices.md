@@ -1,4 +1,4 @@
-# Best practices {#best-practices}
+# Best practices
 
 Unit tests are as important to a firmware/program ("application") as the production source code. As with the regular code, you need to give careful thought to where the tests reside, both physically and logically, in relation to the code under test. If you put unit tests in the wrong place, the tests you have written may not be run.
 

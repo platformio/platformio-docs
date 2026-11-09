@@ -5,8 +5,6 @@ description: "Alorium Hinj (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-alorium-hinj"></a>
-
 # Alorium Hinj
 
 ## Hardware

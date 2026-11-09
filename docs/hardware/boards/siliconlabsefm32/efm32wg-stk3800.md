@@ -5,8 +5,6 @@ description: "EFM32WG-STK3800 Wonder Gecko (EFM32WG990F256, 48MHz, 256KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-siliconlabsefm32-efm32wg-stk3800"></a>
-
 # EFM32WG-STK3800 Wonder Gecko
 
 ## Hardware

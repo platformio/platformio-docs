@@ -2,9 +2,7 @@
 description: "Install the project dependencies or custom packages from the PlatformIO Registry or external sources."
 ---
 
-<a id="cmd-pkg-install"></a>
-
-# pio pkg install {#pio-pkg-install}
+# pio pkg install
 
 ## Usage {#usage}
 
@@ -169,7 +167,7 @@ Browse over 10,000 packages in the [PlatformIO Registry](https://registry.platfo
 
 ## Package Specifications {#package-specifications}
 
-PlatformIO supports different package sources which you can specify for [pio pkg install](#cmd-pkg-install) command or configure project dependencies using [`platformio.ini`](../../platformio-ini/index.md) options:
+PlatformIO supports different package sources which you can specify for pio pkg install command or configure project dependencies using [`platformio.ini`](../../platformio-ini/index.md) options:
 
 - [platform](../../platformio-ini/env/platform.md) - development platform
 - [platform_packages](../../platformio-ini/env/platform-packages.md) - custom tools/packages

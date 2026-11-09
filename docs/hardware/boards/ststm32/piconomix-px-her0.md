@@ -5,8 +5,6 @@ description: "Piconomix PX-HER0 (STM32L072RB, 32MHz, 128KB flash, 20KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-piconomix-px-her0"></a>
-
 # Piconomix PX-HER0
 
 ## Hardware

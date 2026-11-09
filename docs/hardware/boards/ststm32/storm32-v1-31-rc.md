@@ -5,8 +5,6 @@ description: "STorM32 BGC v1.31 RC (STM32F103RCT6, 72MHz, 256KB flash, 48KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-storm32-v1-31-rc"></a>
-
 # STorM32 BGC v1.31 RC
 
 ## Hardware

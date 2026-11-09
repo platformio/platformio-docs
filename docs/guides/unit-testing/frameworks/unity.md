@@ -2,9 +2,7 @@
 description: "If you would like to change the default PlatformIO's Test Runner for the Unity, please implement your Custom Testing Framework runner extending UnityTestRunner class."
 ---
 
-<a id="unit-testing-frameworks-unity"></a>
-
-# Unity {#unity}
+# Unity
 
 <dl>
 

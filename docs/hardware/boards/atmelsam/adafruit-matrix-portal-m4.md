@@ -5,8 +5,6 @@ description: "Adafruit Matrix Portal M4 (SAMD51J19A, 120MHz, 496KB flash, 192KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-matrix-portal-m4"></a>
-
 # Adafruit Matrix Portal M4
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "MAX32625PICO (MAX32625, 96MHz, 512KB flash, 160KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32625pico"></a>
-
 # MAX32625PICO
 
 ## Hardware

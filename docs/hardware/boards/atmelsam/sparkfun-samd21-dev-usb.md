@@ -5,8 +5,6 @@ description: "SparkFun SAMD21 Dev Breakout (SAMD21G18A, 48MHz, 256KB flash, 32KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-samd21-dev-usb"></a>
-
 # SparkFun SAMD21 Dev Breakout
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Armstrap Eagle 2048 (STM32F427VIT6, 168MHz, 1.99MB flash, 256KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-armstrap-eagle2048"></a>
-
 # Armstrap Eagle 2048
 
 ## Hardware

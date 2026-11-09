@@ -5,8 +5,6 @@ description: "ATmega808 (ATMEGA808, 16MHz, 8KB flash, 1KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-atmega808"></a>
-
 # ATmega808
 
 ## Hardware

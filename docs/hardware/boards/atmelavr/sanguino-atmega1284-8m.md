@@ -5,8 +5,6 @@ description: "Sanguino ATmega1284p (8MHz) (ATMEGA1284P, 8MHz, 127KB flash, 16KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sanguino-atmega1284-8m"></a>
-
 # Sanguino ATmega1284p (8MHz)
 
 ## Hardware

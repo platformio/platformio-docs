@@ -2,9 +2,7 @@
 description: "A storage for custom monitor filters (platformio.ini option monitor_dir)."
 ---
 
-<a id="projectconf-pio-monitor-dir"></a>
-
-# `monitor_dir` {#monitor-dir}
+# `monitor_dir`
 
 - **Type:** Path
 - **Multiple values:** No

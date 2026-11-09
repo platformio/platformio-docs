@@ -5,8 +5,6 @@ description: "ST B-L475E-IOT01A Discovery kit (STM32L475VGT6, 80MHz, 1MB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l475vg-iot01a"></a>
-
 # ST B-L475E-IOT01A Discovery kit
 
 ## Hardware

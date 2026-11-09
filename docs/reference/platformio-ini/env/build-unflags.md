@@ -2,9 +2,7 @@
 description: "A list with flags/option which should be removed (platformio.ini option build_unflags)."
 ---
 
-<a id="projectconf-build-unflags"></a>
-
-# `build_unflags` {#build-unflags}
+# `build_unflags`
 
 - **Type:** String
 - **Multiple values:** Yes

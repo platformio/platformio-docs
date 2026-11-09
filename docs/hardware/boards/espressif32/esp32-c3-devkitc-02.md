@@ -5,8 +5,6 @@ description: "Espressif ESP32-C3-DevKitC-02 (ESP32C3, 160MHz, 4MB flash, 320KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-c3-devkitc-02"></a>
-
 # Espressif ESP32-C3-DevKitC-02
 
 ## Hardware

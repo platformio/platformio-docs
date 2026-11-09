@@ -5,8 +5,6 @@ description: "Adafruit Feather M4 CAN (SAME51J19A, 120MHz, 496KB flash, 192KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-feather-m4-can"></a>
-
 # Adafruit Feather M4 CAN
 
 ## Hardware

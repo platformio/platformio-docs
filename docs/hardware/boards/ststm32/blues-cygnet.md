@@ -5,8 +5,6 @@ description: "Blues Cygnet (STM32L433CCT6, 80MHz, 256KB flash, 64KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-blues-cygnet"></a>
-
 # Blues Cygnet
 
 ## Hardware

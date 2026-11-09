@@ -3,7 +3,7 @@ sidebar_label: "Integrate into your application"
 description: Install PlatformIO Core automatically from your IDE extension, plugin or application with the installer script.
 ---
 
-# Integrate PlatformIO Core into your application {#integration-with-custom-applications-extensions-plugins}
+# Integrate PlatformIO Core into your application
 
 This page is for developers of IDE extensions, plugins and other applications
 that need PlatformIO Core on the user's computer. Use the

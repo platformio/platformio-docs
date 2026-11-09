@@ -3,7 +3,7 @@ sidebar_label: "Linux udev rules"
 description: Give your Linux user access to boards and debug probes with the PlatformIO udev rules.
 ---
 
-# Install the udev rules (Linux) {#platformio-udev-rules}
+# Install the udev rules (Linux)
 
 On Linux, a regular user cannot access most USB serial devices and debug
 probes. The PlatformIO [udev](https://en.wikipedia.org/wiki/Udev) rules file,

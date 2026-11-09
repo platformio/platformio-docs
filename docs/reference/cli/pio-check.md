@@ -2,9 +2,7 @@
 description: "Perform static analysis check on PlatformIO based project."
 ---
 
-<a id="cmd-check"></a>
-
-# pio check {#pio-check}
+# pio check
 
 Helper command for [Static Code Analysis](../../guides/static-code-analysis/index.md).
 

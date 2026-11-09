@@ -5,8 +5,6 @@ description: "LilyGo T-Display (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lilygo-t-display"></a>
-
 # LilyGo T-Display
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "STM32F405RG (128k RAM. 1024k Flash) (STM32F405RGT6, 168MHz, 1MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f405rg"></a>
-
 # STM32F405RG (128k RAM. 1024k Flash)
 
 ## Hardware

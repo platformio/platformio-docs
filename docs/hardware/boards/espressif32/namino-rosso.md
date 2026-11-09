@@ -5,8 +5,6 @@ description: "Namino Rosso (ESP32S3, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-namino-rosso"></a>
-
 # Namino Rosso
 
 ## Hardware

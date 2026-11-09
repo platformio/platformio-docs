@@ -2,7 +2,7 @@
 description: "Remove base/initial flags which were set by development platform."
 ---
 
-# `unflags` {#unflags}
+# `unflags`
 
 - **Required:** No
 - **Type:** String or array of strings

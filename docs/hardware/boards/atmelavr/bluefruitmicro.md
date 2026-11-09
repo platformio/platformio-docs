@@ -5,8 +5,6 @@ description: "Adafruit Bluefruit Micro (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-bluefruitmicro"></a>
-
 # Adafruit Bluefruit Micro
 
 ## Hardware

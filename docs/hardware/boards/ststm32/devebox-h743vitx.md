@@ -5,8 +5,6 @@ description: "DevEBox H743VITX (STM32H743VIT6, 480MHz, 2MB flash, 512KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-devebox-h743vitx"></a>
-
 # DevEBox H743VITX
 
 ## Hardware

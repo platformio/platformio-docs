@@ -5,8 +5,6 @@ description: "Vajra on Arty A7-100: Artix-7 FPGA Development Board (C-CLASS, 50M
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-shakti-vajra"></a>
-
 # Vajra on Arty A7-100: Artix-7 FPGA Development Board
 
 ## Hardware

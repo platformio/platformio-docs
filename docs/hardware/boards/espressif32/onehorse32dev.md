@@ -5,8 +5,6 @@ description: "Onehorse ESP32 Dev Module (ESP32, 240MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-onehorse32dev"></a>
-
 # Onehorse ESP32 Dev Module
 
 ## Hardware

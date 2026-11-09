@@ -3,9 +3,7 @@ sidebar_label: "RISC-V assembly (videos)"
 description: A 12-part video series on RISC-V assembly programming and debugging on the SiFive HiFive1 with PlatformIO.
 ---
 
-<a id="tutorial-riscv-asm-video"></a>
-
-# RISC-V assembly video tutorial {#risc-v-asm-video-tutorial}
+# RISC-V assembly video tutorial
 
 A 12-part video series by Martin Fink, then Chief Technology Officer at
 Western Digital, on programming the SiFive [HiFive1](/hardware/boards/sifive/hifive1)

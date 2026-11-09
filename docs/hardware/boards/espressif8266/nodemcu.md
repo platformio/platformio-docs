@@ -5,8 +5,6 @@ description: "NodeMCU 0.9 (ESP-12 Module) (ESP8266, 80MHz, 4MB flash, 80KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-nodemcu"></a>
-
 # NodeMCU 0.9 (ESP-12 Module)
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Choose and install a PlatformIO IDE extension for Visual Studio Code or CLion.
 ---
 
-<a id="pioide"></a>
-
-# PlatformIO IDE {#platformio-ide}
+# PlatformIO IDE
 
 PlatformIO IDE is the set of official PlatformIO extensions for code editors.
 It bundles [PlatformIO Core](./platformio-core.md), so you do not need to

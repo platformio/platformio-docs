@@ -5,8 +5,6 @@ description: "Espressif ESP32-C6-DevKitM-1 (ESP32C6, 160MHz, 4MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-c6-devkitm-1"></a>
-
 # Espressif ESP32-C6-DevKitM-1
 
 ## Hardware

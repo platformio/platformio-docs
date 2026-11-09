@@ -5,8 +5,6 @@ description: "32F412GDISCOVERY (STM32F412ZGT6, 100MHz, 1MB flash, 256KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f412zg"></a>
-
 # 32F412GDISCOVERY
 
 ## Hardware

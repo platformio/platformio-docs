@@ -2,9 +2,7 @@
 description: "See documentation for pio remote run --project-dir option."
 ---
 
-<a id="ide-eclipseche"></a>
-
-# Eclipse Che {#eclipse-che}
+# Eclipse Che
 
 [Eclipse Che](https://www.eclipse.org/che/) is an open-source Java based developer workspace server and cloud integrated development environment (IDE) which provides a remote development platform for multi-user purpose. The workspace server comes with a RESTful webservice and provides high flexibility. It also contains a SDK which can be used to create plug-ins for languages, frameworks or tools.
 

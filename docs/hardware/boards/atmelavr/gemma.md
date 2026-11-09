@@ -5,8 +5,6 @@ description: "Adafruit Gemma (ATTINY85, 8MHz, 8KB flash, 512B RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-gemma"></a>
-
 # Adafruit Gemma
 
 ## Hardware

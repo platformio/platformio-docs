@@ -5,8 +5,6 @@ description: "Generic ML51EC0AE (ML51EC0AE, 24MHz, 32KB flash, 2.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-ml51ec0ae"></a>
-
 # Generic ML51EC0AE
 
 ## Hardware

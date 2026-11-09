@@ -5,8 +5,6 @@ description: "Maple (RET6) (STM32F103RET6, 72MHz, 256KB flash, 48KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-maple-ret6"></a>
-
 # Maple (RET6)
 
 ## Hardware

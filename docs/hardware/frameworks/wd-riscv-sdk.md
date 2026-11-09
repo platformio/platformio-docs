@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The WD-Firmware framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-wd-riscv-sdk"></a>
-
 # WD-Firmware
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `wd-riscv-sdk`

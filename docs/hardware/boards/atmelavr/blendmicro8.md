@@ -5,8 +5,6 @@ description: "RedBearLab Blend Micro 3.3V/8MHz (ATMEGA32U4, 8MHz, 28KB flash, 2.
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-blendmicro8"></a>
-
 # RedBearLab Blend Micro 3.3V/8MHz
 
 ## Hardware

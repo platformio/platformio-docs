@@ -5,8 +5,6 @@ description: "Arduino Duemilanove or Diecimila ATmega328 (ATMEGA328P, 16MHz, 30K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-diecimilaatmega328"></a>
-
 # Arduino Duemilanove or Diecimila ATmega328
 
 ## Hardware

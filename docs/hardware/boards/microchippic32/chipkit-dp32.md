@@ -5,8 +5,6 @@ description: "Digilent chipKIT DP32 (32MX250F128B, 40MHz, 120KB flash, 32KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-dp32"></a>
-
 # Digilent chipKIT DP32
 
 ## Hardware

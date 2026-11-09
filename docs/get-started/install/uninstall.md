@@ -2,9 +2,7 @@
 description: Remove PlatformIO Core and the packages it installed.
 ---
 
-<a id="piocore-uninstall"></a>
-
-# Uninstall PlatformIO Core {#uninstall-platformio-core-and-dependent-packages}
+# Uninstall PlatformIO Core
 
 PlatformIO Core keeps itself (when installed with the
 [installer script](./installer-script.md)), its packages, platforms,

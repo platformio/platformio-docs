@@ -2,9 +2,7 @@
 description: Create a PlatformIO project, or add boards, options and IDE project files to an existing one.
 ---
 
-<a id="cmd-project-init"></a>
-
-# pio project init {#pio-project-init}
+# pio project init
 
 Create a PlatformIO project, or update an existing one: add boards, set
 options, or generate project files for an IDE.

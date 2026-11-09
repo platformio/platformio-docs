@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Touch-AMOLED-1.64 (ESP32S3, 240MHz, 16MB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-touch-amoled-164"></a>
-
 # Waveshare ESP32-S3-Touch-AMOLED-1.64
 
 ## Hardware

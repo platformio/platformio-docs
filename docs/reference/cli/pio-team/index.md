@@ -2,9 +2,7 @@
 description: Manage the teams of an organization and their members.
 ---
 
-<a id="cmd-team"></a>
-
-# pio team {#pio-team}
+# pio team
 
 Manage the teams of an organization and their members. Grant teams access to
 packages with [`pio access`](../pio-access/index.md). To manage the

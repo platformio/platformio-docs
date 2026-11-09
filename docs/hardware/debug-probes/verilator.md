@@ -2,9 +2,7 @@
 description: "Use the Verilator debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-verilator"></a>
-
-# Verilator {#verilator}
+# Verilator
 
 [![](./img/verilator.png)](https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs)
 

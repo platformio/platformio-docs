@@ -5,8 +5,6 @@ description: "DevEBox H750VBTX (STM32H750VBT6, 480MHz, 512KB flash, 128KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-devebox-h750vbtx"></a>
-
 # DevEBox H750VBTX
 
 ## Hardware

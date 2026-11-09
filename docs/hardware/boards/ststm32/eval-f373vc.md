@@ -5,8 +5,6 @@ description: "STM32373C-EVAL (STM32F373VCT6, 72MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-eval-f373vc"></a>
-
 # STM32373C-EVAL
 
 ## Hardware

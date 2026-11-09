@@ -5,8 +5,6 @@ description: "Generic MS51PC0AE (MS51PC0AE, 16MHz, 32KB flash, 2.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-ms51pc0ae"></a>
-
 # Generic MS51PC0AE
 
 ## Hardware

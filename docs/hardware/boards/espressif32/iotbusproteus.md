@@ -5,8 +5,6 @@ description: "oddWires IoT-Bus Proteus (ESP32, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-iotbusproteus"></a>
-
 # oddWires IoT-Bus Proteus
 
 ## Hardware

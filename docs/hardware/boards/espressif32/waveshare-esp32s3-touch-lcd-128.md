@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Touch-LCD-1.28 (16 MB QD, 2MB PSRAM) (ESP32S3, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32s3-touch-lcd-128"></a>
-
 # Waveshare ESP32-S3-Touch-LCD-1.28 (16 MB QD, 2MB PSRAM)
 
 ## Hardware

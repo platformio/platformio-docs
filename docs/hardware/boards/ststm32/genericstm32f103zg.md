@@ -5,8 +5,6 @@ description: "STM32F103ZG (96k RAM. 1024k Flash) (STM32F103ZGT6, 72MHz, 1MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103zg"></a>
-
 # STM32F103ZG (96k RAM. 1024k Flash)
 
 ## Hardware

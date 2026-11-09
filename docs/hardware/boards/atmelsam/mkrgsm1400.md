@@ -5,8 +5,6 @@ description: "Arduino MKR GSM 1400 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkrgsm1400"></a>
-
 # Arduino MKR GSM 1400
 
 ## Hardware

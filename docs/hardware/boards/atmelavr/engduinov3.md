@@ -5,8 +5,6 @@ description: "Engduino 3 (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-engduinov3"></a>
-
 # Engduino 3
 
 ## Hardware

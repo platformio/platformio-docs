@@ -5,8 +5,6 @@ description: "FYSETC S6 (STM32F446VET6, 168MHz, 512KB flash, 128KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-fysetc-s6"></a>
-
 # FYSETC S6
 
 ## Hardware

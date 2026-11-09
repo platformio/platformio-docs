@@ -5,8 +5,6 @@ description: "Arduino LilyPad ATmega168 (ATMEGA168, 8MHz, 14KB flash, 1KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lilypadatmega168"></a>
-
 # Arduino LilyPad ATmega168
 
 ## Hardware

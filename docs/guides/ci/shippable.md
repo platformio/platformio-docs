@@ -1,6 +1,4 @@
-<a id="ci-shippable"></a>
-
-# Shippable {#shippable}
+# Shippable
 
 :::warning
 

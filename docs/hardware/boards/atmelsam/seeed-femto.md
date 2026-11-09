@@ -5,8 +5,6 @@ description: "Seeeduino Femto M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-seeed-femto"></a>
-
 # Seeeduino Femto M0
 
 ## Hardware

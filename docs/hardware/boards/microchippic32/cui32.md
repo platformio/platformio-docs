@@ -5,8 +5,6 @@ description: "Pic32 CUI32-Development Stick (32MX440F512H, 80MHz, 508KB flash, 3
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-cui32"></a>
-
 # Pic32 CUI32-Development Stick
 
 ## Hardware

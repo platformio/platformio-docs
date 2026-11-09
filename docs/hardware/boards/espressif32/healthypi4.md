@@ -5,8 +5,6 @@ description: "ProtoCentral HealthyPi 4 (ESP32, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-healthypi4"></a>
-
 # ProtoCentral HealthyPi 4
 
 ## Hardware

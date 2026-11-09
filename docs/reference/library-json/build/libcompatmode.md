@@ -2,9 +2,7 @@
 description: "Specify Library Compatibility Mode."
 ---
 
-<a id="manifest-library-json-build-libcompatmode"></a>
-
-# `libCompatMode` {#libcompatmode}
+# `libCompatMode`
 
 - **Required:** No
 - **Type:** String

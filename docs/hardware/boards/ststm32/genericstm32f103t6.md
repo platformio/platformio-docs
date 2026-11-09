@@ -5,8 +5,6 @@ description: "STM32F103T6 (10k RAM. 32k Flash) (STM32F103T6U6, 72MHz, 32KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103t6"></a>
-
 # STM32F103T6 (10k RAM. 32k Flash)
 
 ## Hardware

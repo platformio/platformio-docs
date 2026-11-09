@@ -2,9 +2,7 @@
 description: "An upload port which `uploader` tool uses for a firmware flashing (platformio.ini option upload_port)."
 ---
 
-<a id="projectconf-upload-port"></a>
-
-# `upload_port` {#upload-port}
+# `upload_port`
 
 - **Type:** String
 - **Multiple values:** No

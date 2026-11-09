@@ -2,9 +2,7 @@
 description: Build options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-build"></a>
-
-# Build options {#build-options}
+# Build options
 
 Control how the project is compiled and linked.
 

@@ -5,8 +5,6 @@ description: "LowPowerLab CurrentRanger (SAMD21G18A, 48MHz, 256KB flash, 32KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-current-ranger"></a>
-
 # LowPowerLab CurrentRanger
 
 ## Hardware

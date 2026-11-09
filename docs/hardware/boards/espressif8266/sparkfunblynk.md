@@ -5,8 +5,6 @@ description: "SparkFun Blynk Board (ESP8266, 80MHz, 4MB flash, 80KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-sparkfunblynk"></a>
-
 # SparkFun Blynk Board
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "MultiTech mDot F411 (STM32F411RET6, 100MHz, 512KB flash, 128KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mts-mdot-f411re"></a>
-
 # MultiTech mDot F411
 
 ## Hardware

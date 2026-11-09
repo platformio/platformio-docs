@@ -2,7 +2,7 @@
 description: Generic options of the platformio.ini [platformio] section.
 ---
 
-# Generic options {#generic-options}
+# Generic options
 
 General project settings.
 

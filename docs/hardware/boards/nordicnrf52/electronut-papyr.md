@@ -5,8 +5,6 @@ description: "ElectronutLabs Papyr (NRF52840, 64MHz, 1MB flash, 256KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-electronut-papyr"></a>
-
 # ElectronutLabs Papyr
 
 ## Hardware

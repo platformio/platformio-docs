@@ -5,8 +5,6 @@ description: "Adafruit QT Py ESP32-S2 (ESP32S2, 240MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-qtpy-esp32s2"></a>
-
 # Adafruit QT Py ESP32-S2
 
 ## Hardware

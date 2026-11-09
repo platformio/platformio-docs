@@ -2,9 +2,7 @@
 description: "A custom MCU frequency (platformio.ini option board_build.f_cpu)."
 ---
 
-<a id="projectconf-board-build-f-cpu"></a>
-
-# `board_build.f_cpu` {#board-build-f-cpu}
+# `board_build.f_cpu`
 
 - **Type:** String
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "u-blox C030-U201 IoT Starter Kit (STM32F437VG, 180MHz, 1MB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-ublox-c030-u201"></a>
-
 # u-blox C030-U201 IoT Starter Kit
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Generic IAP15F2K61S (IAP15F2K61S, 11MHz, 61KB flash, 2KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-iap15f2k61s"></a>
-
 # Generic IAP15F2K61S
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino BT ATmega168 (ATMEGA168, 16MHz, 14KB flash, 1KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-btatmega168"></a>
-
 # Arduino BT ATmega168
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST Nucleo L496ZG (STM32L496ZGT6, 80MHz, 1MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l496zg"></a>
-
 # ST Nucleo L496ZG
 
 ## Hardware

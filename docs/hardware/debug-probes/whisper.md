@@ -2,9 +2,7 @@
 description: "Use the Whisper debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-whisper"></a>
-
-# Whisper {#whisper}
+# Whisper
 
 Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISCV code without RISCV hardware. It has an interactive mode where the user can single step the target RISCV code and inspect/modify the RISCV registers or the simulated system memory. It can also run in lock step with a Verilog simulator serving as a "golden model" against which an implementation is checked after each instruction of a test program. See the [official documentation](https://github.com/westerndigitalcorporation/swerv-ISS/?utm_source=platformio&utm_medium=docs).
 

@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The NXP i.MX RT development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-nxpimxrt"></a>
-
 # NXP i.MX RT
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/nxpimxrt](https://registry.platformio.org/platforms/platformio/nxpimxrt)  

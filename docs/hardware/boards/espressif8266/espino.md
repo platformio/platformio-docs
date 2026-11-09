@@ -5,8 +5,6 @@ description: "ESPino (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO board ID,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-espino"></a>
-
 # ESPino
 
 ## Hardware

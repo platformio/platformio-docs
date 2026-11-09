@@ -2,9 +2,7 @@
 description: The frameworks and SDKs PlatformIO supports, such as Arduino, ESP-IDF, Zephyr, STM32Cube and Mbed.
 ---
 
-<a id="frameworks"></a>
-
-# Frameworks {#frameworks}
+# Frameworks
 
 A framework is the software layer your firmware is written against: a
 hardware abstraction, an SDK or an RTOS. Select one per project environment

@@ -5,8 +5,6 @@ description: "Adafruit Pro Trinket 3V/12MHz (FTDI) (ATMEGA328P, 12MHz, 28KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-protrinket3ftdi"></a>
-
 # Adafruit Pro Trinket 3V/12MHz (FTDI)
 
 ## Hardware

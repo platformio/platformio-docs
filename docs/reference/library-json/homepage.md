@@ -2,7 +2,7 @@
 description: "Home page of a library (if is different from repository url)."
 ---
 
-# `homepage` {#homepage}
+# `homepage`
 
 - **Required:** No
 - **Type:** String (URL)

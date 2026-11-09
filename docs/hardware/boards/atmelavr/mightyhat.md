@@ -5,8 +5,6 @@ description: "LowPowerLab MightyHat (ATMEGA328P, 16MHz, 31KB flash, 2KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-mightyhat"></a>
-
 # LowPowerLab MightyHat
 
 ## Hardware

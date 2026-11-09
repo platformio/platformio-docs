@@ -5,8 +5,6 @@ description: "Adafruit PyGamer M4 Express (SAMD51J19A, 120MHz, 512KB flash, 192K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pygamer-m4"></a>
-
 # Adafruit PyGamer M4 Express
 
 ## Hardware

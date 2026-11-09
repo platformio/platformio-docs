@@ -5,8 +5,6 @@ description: "Arduino Opta (M4 core) (STM32H747XIH6, 480MHz, 1MB flash, 287.35KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-opta-m4"></a>
-
 # Arduino Opta (M4 core)
 
 ## Hardware

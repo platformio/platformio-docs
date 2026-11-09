@@ -5,8 +5,6 @@ description: "Arduino Uno WiFi Rev2 (ATMEGA4809, 16MHz, 47.50KB flash, 6KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-uno-wifi-rev2"></a>
-
 # Arduino Uno WiFi Rev2
 
 ## Hardware

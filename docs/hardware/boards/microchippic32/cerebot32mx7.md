@@ -5,8 +5,6 @@ description: "Digilent Cerebot 32MX7 (32MX795F512L, 80MHz, 508KB flash, 128KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-cerebot32mx7"></a>
-
 # Digilent Cerebot 32MX7
 
 ## Hardware

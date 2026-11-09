@@ -5,8 +5,6 @@ description: "Fishino Piranha ESP-32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-piranha-esp32"></a>
-
 # Fishino Piranha ESP-32
 
 ## Hardware

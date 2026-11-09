@@ -5,8 +5,6 @@ description: "Arduino Uno R4 WiFi (RA4M1, 48MHz, 256KB flash, 32KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-renesas-ra-uno-r4-wifi"></a>
-
 # Arduino Uno R4 WiFi
 
 ## Hardware

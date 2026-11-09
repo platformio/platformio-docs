@@ -5,8 +5,6 @@ description: "MultiTech xDot (STM32L151CCU6, 32MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-xdot-l151cc"></a>
-
 # MultiTech xDot
 
 ## Hardware

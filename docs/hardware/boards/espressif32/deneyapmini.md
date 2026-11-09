@@ -5,8 +5,6 @@ description: "Deneyap Mini (ESP32S2, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-deneyapmini"></a>
-
 # Deneyap Mini
 
 ## Hardware

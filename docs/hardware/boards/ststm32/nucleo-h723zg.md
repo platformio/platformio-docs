@@ -5,8 +5,6 @@ description: "ST Nucleo H723ZG (STM32H723ZGT6, 550MHz, 1MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-h723zg"></a>
-
 # ST Nucleo H723ZG
 
 ## Hardware

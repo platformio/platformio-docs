@@ -2,9 +2,7 @@
 description: Advanced options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-advanced"></a>
-
-# Advanced options {#advanced-options}
+# Advanced options
 
 Reuse configuration and extend the build with scripts.
 

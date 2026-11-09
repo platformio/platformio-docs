@@ -5,8 +5,6 @@ description: "SparkFun SAMD21 Mini Breakout (SAMD21G18A, 48MHz, 256KB flash, 32K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-samd21-mini-usb"></a>
-
 # SparkFun SAMD21 Mini Breakout
 
 ## Hardware

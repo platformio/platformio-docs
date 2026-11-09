@@ -5,8 +5,6 @@ description: "Curiosity Nano ATmega4809 (ATMEGA4809, 16MHz, 48KB flash, 6KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-curiosity-nano-4809"></a>
-
 # Curiosity Nano ATmega4809
 
 ## Hardware

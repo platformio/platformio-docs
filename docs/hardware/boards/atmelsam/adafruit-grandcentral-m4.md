@@ -5,8 +5,6 @@ description: "Adafruit Grand Central M4 (SAMD51P20A, 120MHz, 1MB flash, 256KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-grandcentral-m4"></a>
-
 # Adafruit Grand Central M4
 
 ## Hardware

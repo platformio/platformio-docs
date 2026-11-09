@@ -5,8 +5,6 @@ description: "Schirmilabs Eduino WiFi (ESP8266, 80MHz, 4MB flash, 80KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-eduinowifi"></a>
-
 # Schirmilabs Eduino WiFi
 
 ## Hardware

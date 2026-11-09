@@ -5,8 +5,6 @@ description: "Adafruit Gemma M0 (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-gemma-m0"></a>
-
 # Adafruit Gemma M0
 
 ## Hardware

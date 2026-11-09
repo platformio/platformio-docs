@@ -5,8 +5,6 @@ description: "Armstrap Eagle 512 (STM32F407VET6, 168MHz, 512KB flash, 128KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-armstrap-eagle512"></a>
-
 # Armstrap Eagle 512
 
 ## Hardware

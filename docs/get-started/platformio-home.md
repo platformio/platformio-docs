@@ -2,9 +2,7 @@
 description: PlatformIO Home is the graphical interface for projects, libraries, platforms, boards and devices.
 ---
 
-<a id="piohome"></a>
-
-# PlatformIO Home {#platformio-home}
+# PlatformIO Home
 
 PlatformIO Home is a graphical interface for PlatformIO that runs in a web
 browser or inside [PlatformIO IDE](./platformio-ide.md). Use it to:

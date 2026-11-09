@@ -2,9 +2,7 @@
 description: "An extra flags for `uploader` tool (platformio.ini option upload_flags)."
 ---
 
-<a id="projectconf-upload-flags"></a>
-
-# `upload_flags` {#upload-flags}
+# `upload_flags`
 
 - **Type:** String
 - **Multiple values:** Yes

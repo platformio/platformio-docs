@@ -5,8 +5,6 @@ description: "SparkFun LoRa Gateway 1-Channel (ESP32, 240MHz, 4MB flash, 320KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-sparkfun-lora-gateway-1-channel"></a>
-
 # SparkFun LoRa Gateway 1-Channel
 
 ## Hardware

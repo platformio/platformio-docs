@@ -5,8 +5,6 @@ description: "Arduino Nano ESP32 (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-arduino-nano-esp32"></a>
-
 # Arduino Nano ESP32
 
 ## Hardware

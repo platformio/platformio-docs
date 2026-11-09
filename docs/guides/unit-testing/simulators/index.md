@@ -2,9 +2,7 @@
 description: "See a few integration examples for the popular simulation tools and frameworks:."
 ---
 
-<a id="unit-testing-simulators"></a>
-
-# Simulators {#simulators}
+# Simulators
 
 Simulation tools and frameworks allow you to simulate hardware systems and run unit tests in virtual environments. Simulators can significantly accelerate your project development, especially when used in pair with [Continuous Integration](../../ci/index.md).
 

@@ -5,8 +5,6 @@ description: "ATmega329/A (ATMEGA329, 16MHz, 32KB flash, 2KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega329"></a>
-
 # ATmega329/A
 
 ## Hardware

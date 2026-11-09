@@ -5,8 +5,6 @@ description: "SODAQ ONE (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sodaq-one"></a>
-
 # SODAQ ONE
 
 ## Hardware

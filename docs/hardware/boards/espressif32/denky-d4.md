@@ -5,8 +5,6 @@ description: "Denky D4 (PICO-V3-02) (ESP32, 240MHz, 8MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-denky-d4"></a>
-
 # Denky D4 (PICO-V3-02)
 
 ## Hardware

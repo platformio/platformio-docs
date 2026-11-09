@@ -5,8 +5,6 @@ description: "Particle Argon (NRF52840, 64MHz, 796KB flash, 243KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-particle-argon"></a>
-
 # Particle Argon
 
 ## Hardware

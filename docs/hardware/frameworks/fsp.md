@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Renesas Flexible Software Package framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-fsp"></a>
-
 # Renesas Flexible Software Package
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `fsp`

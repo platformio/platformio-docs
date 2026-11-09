@@ -5,8 +5,6 @@ description: "ST 32F469IDISCOVERY (STM32F469NIH6, 180MHz, 2MB flash, 384KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f469ni"></a>
-
 # ST 32F469IDISCOVERY
 
 ## Hardware

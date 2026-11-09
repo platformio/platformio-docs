@@ -5,8 +5,6 @@ description: "u-blox C030-R410M IoT (STM32F437VG, 180MHz, 1MB flash, 256KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-ublox-c030-r410m"></a>
-
 # u-blox C030-R410M IoT
 
 ## Hardware

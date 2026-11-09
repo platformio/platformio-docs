@@ -5,8 +5,6 @@ description: "ST STM32L4+ Discovery kit IoT node (STM32L4S5VIT6, 80MHz, 2MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l4s5i-iot01a"></a>
-
 # ST STM32L4+ Discovery kit IoT node
 
 ## Hardware

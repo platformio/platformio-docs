@@ -5,8 +5,6 @@ description: "ElectronutLabs Blip (NRF52840, 64MHz, 1MB flash, 256KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-electronut-blip"></a>
-
 # ElectronutLabs Blip
 
 ## Hardware

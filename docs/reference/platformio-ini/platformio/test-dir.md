@@ -2,9 +2,7 @@
 description: "A location where PlatformIO Unit Testing engine looks for test source files (platformio.ini option test_dir)."
 ---
 
-<a id="projectconf-pio-test-dir"></a>
-
-# `test_dir` {#test-dir}
+# `test_dir`
 
 - **Type:** Path
 - **Multiple values:** No

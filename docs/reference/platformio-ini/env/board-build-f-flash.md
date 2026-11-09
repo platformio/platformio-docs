@@ -2,9 +2,7 @@
 description: Override the flash memory frequency of a board in platformio.ini.
 ---
 
-<a id="projectconf-board-build-f-flash"></a>
-
-# `board_build.f_flash` {#board-build-f-flash}
+# `board_build.f_flash`
 
 - **Type:** String
 - **Multiple values:** No

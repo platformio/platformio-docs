@@ -5,8 +5,6 @@ description: "Espressif ESP32-S3-DevKitM-1 (ESP32S3, 240MHz, 8MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-s3-devkitm-1"></a>
-
 # Espressif ESP32-S3-DevKitM-1
 
 ## Hardware

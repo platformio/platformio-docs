@@ -5,8 +5,6 @@ description: "ATtiny1606 (ATTINY1606, 16MHz, 16KB flash, 1KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-attiny1606"></a>
-
 # ATtiny1606
 
 ## Hardware

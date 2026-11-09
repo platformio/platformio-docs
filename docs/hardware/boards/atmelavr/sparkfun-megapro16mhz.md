@@ -5,8 +5,6 @@ description: "SparkFun Mega Pro 5V/16MHz (ATMEGA2560, 16MHz, 248KB flash, 8KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-megapro16mhz"></a>
-
 # SparkFun Mega Pro 5V/16MHz
 
 ## Hardware

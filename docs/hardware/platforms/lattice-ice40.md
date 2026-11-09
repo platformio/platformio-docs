@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Lattice iCE40 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-lattice-ice40"></a>
-
 # Lattice iCE40
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/lattice_ice40](https://registry.platformio.org/platforms/platformio/lattice_ice40)  

@@ -1,6 +1,4 @@
-<a id="check-severity"></a>
-
-# Defect severity {#defect-severity}
+# Defect severity
 
 Defect severity is a classification of software defect (bug, vulnerability, etc) that indicates the degree of negative impact on the quality of software.
 

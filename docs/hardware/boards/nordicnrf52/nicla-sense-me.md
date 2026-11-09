@@ -5,8 +5,6 @@ description: "Arduino Nicla Sense ME (NRF52832, 64MHz, 515.25KB flash, 62.78KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-nicla-sense-me"></a>
-
 # Arduino Nicla Sense ME
 
 ## Hardware

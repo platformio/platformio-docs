@@ -2,9 +2,7 @@
 description: Add a member to a team.
 ---
 
-<a id="cmd-team-add"></a>
-
-# pio team add {#pio-team-add}
+# pio team add
 
 Add a user to a team.
 

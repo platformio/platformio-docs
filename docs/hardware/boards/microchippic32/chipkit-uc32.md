@@ -5,8 +5,6 @@ description: "Digilent chipKIT uC32 (32MX340F512H, 80MHz, 508KB flash, 32KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-uc32"></a>
-
 # Digilent chipKIT uC32
 
 ## Hardware

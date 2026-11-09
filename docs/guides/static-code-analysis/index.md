@@ -2,9 +2,7 @@
 description: Find bugs in C/C++ code without running it, with Cppcheck and Clang-Tidy integrated in PlatformIO.
 ---
 
-<a id="check"></a>
-
-# Static code analysis {#static-code-analysis}
+# Static code analysis
 
 Static code analysis finds defects in C and C++ source code without running
 it: possible null pointer dereferences, out-of-bounds indexing, reads of

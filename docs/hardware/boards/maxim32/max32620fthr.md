@@ -5,8 +5,6 @@ description: "MAX32620FTHR (MAX32620FTHR, 96MHz, 2MB flash, 256KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32620fthr"></a>
-
 # MAX32620FTHR
 
 ## Hardware

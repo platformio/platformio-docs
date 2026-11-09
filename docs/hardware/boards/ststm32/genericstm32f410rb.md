@@ -5,8 +5,6 @@ description: "STM32F410RB (32k RAM. 128k Flash) (STM32F410RBT6, 100MHz, 128KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f410rb"></a>
-
 # STM32F410RB (32k RAM. 128k Flash)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit QT Py ESP32-C3 (ESP32C3, 160MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-qtpy-esp32c3"></a>
-
 # Adafruit QT Py ESP32-C3
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Smart Bee Data Logger (ESP32S3, 240MHz, 8MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-bee-data-logger"></a>
-
 # Smart Bee Data Logger
 
 ## Hardware

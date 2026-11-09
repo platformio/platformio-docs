@@ -5,8 +5,6 @@ description: "AirM2M CORE ESP32C3 (ESP32C3, 160MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-airm2m-core-esp32c3"></a>
-
 # AirM2M CORE ESP32C3
 
 ## Hardware

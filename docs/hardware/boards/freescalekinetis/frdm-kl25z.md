@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-KL25Z (MKL25Z128VLK4, 48MHz, 128KB flash, 1
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-kl25z"></a>
-
 # Freescale Kinetis FRDM-KL25Z
 
 ## Hardware

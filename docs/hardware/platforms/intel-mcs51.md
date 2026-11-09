@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Intel MCS-51 (8051) development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-intel-mcs51"></a>
-
 # Intel MCS-51 (8051)
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/intel_mcs51](https://registry.platformio.org/platforms/platformio/intel_mcs51)  

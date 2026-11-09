@@ -5,8 +5,6 @@ description: "Seeeduino Wio Lite MG126 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-seeed-wio-lite-mg126"></a>
-
 # Seeeduino Wio Lite MG126
 
 ## Hardware

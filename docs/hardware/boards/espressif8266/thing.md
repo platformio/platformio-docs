@@ -5,8 +5,6 @@ description: "SparkFun ESP8266 Thing (ESP8266, 80MHz, 512KB flash, 80KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-thing"></a>
-
 # SparkFun ESP8266 Thing
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "SparkFun Fio V3 3.3V/8MHz (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-fiov3"></a>
-
 # SparkFun Fio V3 3.3V/8MHz
 
 ## Hardware

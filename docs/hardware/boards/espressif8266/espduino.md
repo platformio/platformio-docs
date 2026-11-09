@@ -5,8 +5,6 @@ description: "ESPDuino (ESP-13 Module) (ESP8266, 80MHz, 4MB flash, 80KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-espduino"></a>
-
 # ESPDuino (ESP-13 Module)
 
 ## Hardware

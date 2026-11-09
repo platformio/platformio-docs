@@ -5,8 +5,6 @@ description: "Raspberry Pi 3 Model B (BCM2837, 1200MHz, 1GB flash, 1GB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-linux-arm-raspberrypi-3b"></a>
-
 # Raspberry Pi 3 Model B
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RVfpga: Digilent Nexys A7 (, 320MHz, 16MB flash, 1.16MB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-chipsalliance-swervolf-nexys"></a>
-
 # RVfpga: Digilent Nexys A7
 
 ## Hardware

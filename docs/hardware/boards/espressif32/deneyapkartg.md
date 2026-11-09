@@ -5,8 +5,6 @@ description: "Deneyap Kart G (ESP32C3, 160MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-deneyapkartg"></a>
-
 # Deneyap Kart G
 
 ## Hardware

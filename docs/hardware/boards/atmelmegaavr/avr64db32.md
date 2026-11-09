@@ -5,8 +5,6 @@ description: "AVR64DB32 (AVR64DB32, 24MHz, 64KB flash, 8KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-avr64db32"></a>
-
 # AVR64DB32
 
 ## Hardware

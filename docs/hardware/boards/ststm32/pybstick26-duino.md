@@ -5,8 +5,6 @@ description: "PYBSTICK26 Duino (STM32F072RB, 48MHz, 128KB flash, 16KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-pybstick26-duino"></a>
-
 # PYBSTICK26 Duino
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "SEGGER IP Switch Board (MK66FN2M0VMD18, 180MHz, 2MB flash, 256KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-segger-ip-switch"></a>
-
 # SEGGER IP Switch Board
 
 ## Hardware

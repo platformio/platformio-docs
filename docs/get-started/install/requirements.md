@@ -2,7 +2,7 @@
 description: Operating systems, Python version and device access PlatformIO Core needs.
 ---
 
-# System requirements {#system-requirements}
+# System requirements
 
 | Requirement | Details |
 | --- | --- |

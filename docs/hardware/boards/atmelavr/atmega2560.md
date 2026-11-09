@@ -5,8 +5,6 @@ description: "ATmega2560 (ATMEGA2560, 16MHz, 256KB flash, 8KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega2560"></a>
-
 # ATmega2560
 
 ## Hardware

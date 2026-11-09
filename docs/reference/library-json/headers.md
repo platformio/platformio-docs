@@ -2,7 +2,7 @@
 description: "A list of header files that can be included in a project source files using #include <...> directive."
 ---
 
-# `headers` {#headers}
+# `headers`
 
 - **Required:** No
 - **Type:** String or array of strings

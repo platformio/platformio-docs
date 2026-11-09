@@ -5,8 +5,6 @@ description: "VCCGND F103ZET6 Mini (STM32F103ZET6, 72MHz, 512KB flash, 64KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-vccgnd-f103zet6"></a>
-
 # VCCGND F103ZET6 Mini
 
 ## Hardware

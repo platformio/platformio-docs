@@ -2,9 +2,7 @@
 description: "A library folder/storage where PlatformIO Library Dependency Finder (LDF) looks for global libraries (platformio.ini option globallib_dir)."
 ---
 
-<a id="projectconf-pio-globallib-dir"></a>
-
-# `globallib_dir` {#globallib-dir}
+# `globallib_dir`
 
 - **Type:** Path
 - **Multiple values:** No

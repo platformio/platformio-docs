@@ -5,8 +5,6 @@ description: "Digilent chipKIT Cmod (32MX150F128D, 40MHz, 124KB flash, 32KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-cmod"></a>
-
 # Digilent chipKIT Cmod
 
 ## Hardware

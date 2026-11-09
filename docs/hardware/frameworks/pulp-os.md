@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The PULP OS framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-pulp-os"></a>
-
 # PULP OS
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `pulp-os`

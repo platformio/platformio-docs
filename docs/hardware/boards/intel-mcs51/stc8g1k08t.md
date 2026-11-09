@@ -5,8 +5,6 @@ description: "Generic STC8G1K08T (STC8G1K08T, 11MHz, 8KB flash, 1.25KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8g1k08t"></a>
-
 # Generic STC8G1K08T
 
 ## Hardware

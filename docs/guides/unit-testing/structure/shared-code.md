@@ -1,6 +1,4 @@
-<a id="unit-testing-shared-code"></a>
-
-# Shared Code {#shared-code}
+# Shared Code
 
 By default, PlatformIO does not build the main source code from the [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder in pair with a test source code. If you have a shared/common code between your "main" and "test" programs, you have 2 options:
 

@@ -5,8 +5,6 @@ description: "Arduino NG or older ATmega8 (ATMEGA8, 16MHz, 7KB flash, 1KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmegangatmega8"></a>
-
 # Arduino NG or older ATmega8
 
 ## Hardware

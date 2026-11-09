@@ -2,9 +2,7 @@
 description: "Specify which source files should be included/excluded from build process."
 ---
 
-<a id="library-json-buid-src-filter"></a>
-
-# `srcFilter` {#srcfilter}
+# `srcFilter`
 
 - **Required:** No
 - **Type:** String or array of strings

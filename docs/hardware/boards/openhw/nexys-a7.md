@@ -5,8 +5,6 @@ description: "Digilent Nexys A7 (, 320MHz, 16MB flash, 1.16MB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-openhw-nexys-a7"></a>
-
 # Digilent Nexys A7
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: The development platforms PlatformIO supports - microcontroller architectures with their toolchains, build scripts and boards.
 ---
 
-<a id="platforms"></a>
-
-# Development platforms {#development-platforms}
+# Development platforms
 
 A development platform is PlatformIO's integration of a microcontroller or
 processor architecture. Each platform provides:

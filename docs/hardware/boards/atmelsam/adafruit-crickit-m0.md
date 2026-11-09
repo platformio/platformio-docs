@@ -5,8 +5,6 @@ description: "Adafruit Crickit M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-crickit-m0"></a>
-
 # Adafruit Crickit M0
 
 ## Hardware

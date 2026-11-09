@@ -5,8 +5,6 @@ description: "Ai-Thinker ESP-C3-M1-I-Kit (ESP32C3, 160MHz, 4MB flash, 320KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-c3-m1i-kit"></a>
-
 # Ai-Thinker ESP-C3-M1-I-Kit
 
 ## Hardware

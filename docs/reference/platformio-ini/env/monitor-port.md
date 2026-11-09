@@ -2,9 +2,7 @@
 description: "A port, a number or a device name (platformio.ini option monitor_port)."
 ---
 
-<a id="projectconf-monitor-port"></a>
-
-# `monitor_port` {#monitor-port}
+# `monitor_port`
 
 - **Type:** String
 - **Multiple values:** No

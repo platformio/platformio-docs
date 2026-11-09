@@ -5,8 +5,6 @@ description: "Adafruit Metro M4 (SAMD51J19A, 120MHz, 512KB flash, 192KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-metro-m4"></a>
-
 # Adafruit Metro M4
 
 ## Hardware

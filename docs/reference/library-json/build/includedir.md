@@ -2,7 +2,7 @@
 description: "The base path to be searched for header files."
 ---
 
-# `includeDir` {#includedir}
+# `includeDir`
 
 - **Required:** No
 - **Type:** String

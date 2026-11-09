@@ -5,8 +5,6 @@ description: "cezerio mini dev ESP32C6 (ESP32C6, 160MHz, 4MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-cezerio-mini-dev-esp32c6"></a>
-
 # cezerio mini dev ESP32C6
 
 ## Hardware

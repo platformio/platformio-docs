@@ -5,8 +5,6 @@ description: "ST Nucleo F030R8 (STM32F030R8T6, 48MHz, 64KB flash, 8KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f030r8"></a>
-
 # ST Nucleo F030R8
 
 ## Hardware

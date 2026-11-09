@@ -5,8 +5,6 @@ description: "Elektrofuzzis ftSwarmPwrDrive (ESP32S3, 240MHz, 4MB flash, 320KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ftswarmpwrdrive"></a>
-
 # Elektrofuzzis ftSwarmPwrDrive
 
 ## Hardware

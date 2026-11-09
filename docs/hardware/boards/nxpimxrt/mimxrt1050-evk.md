@@ -5,8 +5,6 @@ description: "NXP i.MX RT1050 Evaluation Kit (MIMXRT1052DVL6B, 600MHz, 8MB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxpimxrt-mimxrt1050-evk"></a>
-
 # NXP i.MX RT1050 Evaluation Kit
 
 ## Hardware

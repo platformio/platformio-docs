@@ -5,8 +5,6 @@ description: "TTGO LoRa32-OLED V1 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-lora32-v1"></a>
-
 # TTGO LoRa32-OLED V1
 
 ## Hardware

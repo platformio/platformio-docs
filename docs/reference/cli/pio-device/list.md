@@ -2,9 +2,7 @@
 description: List serial ports, logical drives and multicast DNS services visible to PlatformIO.
 ---
 
-<a id="cmd-device-list"></a>
-
-# pio device list {#pio-device-list}
+# pio device list
 
 List the devices PlatformIO can see: serial ports (the default), logical
 drives and multicast DNS services. Use it to find the port for

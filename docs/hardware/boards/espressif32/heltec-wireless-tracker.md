@@ -5,8 +5,6 @@ description: "Heltec Wireless Tracker (ESP32S3, 240MHz, 8MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-wireless-tracker"></a>
-
 # Heltec Wireless Tracker
 
 ## Hardware

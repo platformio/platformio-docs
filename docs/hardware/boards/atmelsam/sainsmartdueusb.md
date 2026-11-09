@@ -5,8 +5,6 @@ description: "SainSmart Due (USB Native Port) (AT91SAM3X8E, 84MHz, 512KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sainsmartdueusb"></a>
-
 # SainSmart Due (USB Native Port)
 
 ## Hardware

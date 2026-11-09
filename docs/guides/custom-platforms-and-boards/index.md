@@ -2,7 +2,7 @@
 description: Add support for your own board or development platform to PlatformIO.
 ---
 
-# Custom platforms and boards {#custom-platform-board}
+# Custom platforms and boards
 
 When PlatformIO does not support your hardware out of the box, you can add it:
 

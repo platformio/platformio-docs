@@ -5,8 +5,6 @@ description: "HelvePic32 (32MX250F128B, 48MHz, 120KB flash, 32KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-helvepic32"></a>
-
 # HelvePic32
 
 ## Hardware

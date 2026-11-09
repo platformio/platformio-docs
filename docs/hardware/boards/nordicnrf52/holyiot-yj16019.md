@@ -5,8 +5,6 @@ description: "Holyiot YJ-16019 (NRF52832, 64MHz, 512KB flash, 64KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-holyiot-yj16019"></a>
-
 # Holyiot YJ-16019
 
 ## Hardware

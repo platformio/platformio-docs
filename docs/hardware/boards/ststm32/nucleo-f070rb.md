@@ -5,8 +5,6 @@ description: "ST Nucleo F070RB (STM32F070RBT6, 48MHz, 128KB flash, 16KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f070rb"></a>
-
 # ST Nucleo F070RB
 
 ## Hardware

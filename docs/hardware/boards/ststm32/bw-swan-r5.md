@@ -5,8 +5,6 @@ description: "BluesWireless Swan R5 (STM32L4R5ZIY6, 120MHz, 2MB flash, 640KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-bw-swan-r5"></a>
-
 # BluesWireless Swan R5
 
 ## Hardware

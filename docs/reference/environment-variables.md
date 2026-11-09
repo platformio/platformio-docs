@@ -2,9 +2,7 @@
 description: Environment variables that configure PlatformIO Core and override platformio.ini options and settings.
 ---
 
-<a id="envvars"></a>
-
-# Environment variables {#environment-variables}
+# Environment variables
 
 PlatformIO Core reads the environment variables listed on this page. Use them
 to configure PlatformIO in CI, containers and scripts without editing

@@ -5,8 +5,6 @@ description: "Black STM32F407VG (STM32F407VGT6, 168MHz, 512KB flash, 128KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-black-f407vg"></a>
-
 # Black STM32F407VG
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Make the pio command available in every terminal by adding PlatformIO Core to your PATH.
 ---
 
-<a id="piocore-install-shell-commands"></a>
-
-# Install shell commands {#install-shell-commands}
+# Install shell commands
 
 The [installer script](./installer-script.md) and
 [PlatformIO IDE](../platformio-ide.md) install PlatformIO Core into a private

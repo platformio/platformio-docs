@@ -2,7 +2,7 @@
 description: "The best examples are PlatformIO development platforms."
 ---
 
-# Scripting examples {#scripting-examples}
+# Scripting examples
 
 The best examples are [PlatformIO development platforms](https://github.com/topics/platformio-platform). Check `builder` folder for the main and framework scripts.
 

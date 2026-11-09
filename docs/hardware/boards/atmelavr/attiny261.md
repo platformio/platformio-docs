@@ -5,8 +5,6 @@ description: "Generic ATtiny261 (ATTINY261, 8MHz, 2KB flash, 128B RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny261"></a>
-
 # Generic ATtiny261
 
 ## Hardware

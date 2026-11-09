@@ -5,8 +5,6 @@ description: "STM32F423CH (320k RAM. 1536k Flash) (STM32F423CHU6, 100MHz, 1.50MB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f423ch"></a>
-
 # STM32F423CH (320k RAM. 1536k Flash)
 
 ## Hardware

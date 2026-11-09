@@ -2,9 +2,7 @@
 description: "line (str) -- testing output line."
 ---
 
-<a id="unit-testing-frameworks-custom-api"></a>
-
-# Test Runner API {#test-runner-api}
+# Test Runner API
 
 ## TestStatus {#teststatus}
 

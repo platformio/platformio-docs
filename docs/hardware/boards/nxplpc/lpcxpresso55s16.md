@@ -5,8 +5,6 @@ description: "NXP LPCXpresso55S16 (LPC55S16, 150MHz, 256KB flash, 96KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxplpc-lpcxpresso55s16"></a>
-
 # NXP LPCXpresso55S16
 
 ## Hardware

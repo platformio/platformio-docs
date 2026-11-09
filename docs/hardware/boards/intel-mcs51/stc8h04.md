@@ -5,8 +5,6 @@ description: "Generic STC8H04 (STC8H04, 11MHz, 4KB flash, 256B RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h04"></a>
-
 # Generic STC8H04
 
 ## Hardware

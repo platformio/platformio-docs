@@ -2,9 +2,7 @@
 description: "Create an archive (*.a, static library) from the object files and link it into a firmware (program)."
 ---
 
-<a id="manifest-library-json-build-libarchive"></a>
-
-# `libArchive` {#libarchive}
+# `libArchive`
 
 - **Required:** No
 - **Type:** Boolean

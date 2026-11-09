@@ -5,8 +5,6 @@ description: "Microsoft Azure IoT Development Kit (MXChip AZ3166) (STM32F412ZGT6
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mxchip-az3166"></a>
-
 # Microsoft Azure IoT Development Kit (MXChip AZ3166)
 
 ## Hardware

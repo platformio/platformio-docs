@@ -2,9 +2,7 @@
 description: "A custom testing command that runs test cases and returns results to the standard output (platformio.ini option test_testing_command)."
 ---
 
-<a id="projectconf-test-testing-command"></a>
-
-# `test_testing_command` {#test-testing-command}
+# `test_testing_command`
 
 - **Type:** String
 - **Multiple values:** Yes

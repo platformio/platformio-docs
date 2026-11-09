@@ -2,9 +2,7 @@
 description: "Skip checking includes from packages directory (platformio.ini option check_skip_packages)."
 ---
 
-<a id="projectconf-check-skip-packages"></a>
-
-# `check_skip_packages` {#check-skip-packages}
+# `check_skip_packages`
 
 - **Type:** Boolean: `yes` or `no`
 - **Multiple values:** No

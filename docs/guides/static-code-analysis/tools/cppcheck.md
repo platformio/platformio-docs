@@ -2,9 +2,7 @@
 description: "In order to use the CERT addon, simply specify it as an additional flag in check_flags section:."
 ---
 
-<a id="check-tool-cppcheck"></a>
-
-# Cppcheck {#cppcheck}
+# Cppcheck
 
 **Cppcheck** is a static analysis tool for C/C++ code. It provides a unique code analysis to detect bugs and focuses on detecting undefined behavior and dangerous coding constructs. The goal is to detect only real errors in the code (i.e. have very few false positives). More information about this tool on [the official webpage](http://cppcheck.sourceforge.net).
 

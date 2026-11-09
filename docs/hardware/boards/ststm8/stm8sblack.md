@@ -5,8 +5,6 @@ description: "ST STM8S105K4T6 Breakout Board (STM8S105K4T6, 16MHz, 16KB flash, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-stm8sblack"></a>
-
 # ST STM8S105K4T6 Breakout Board
 
 ## Hardware

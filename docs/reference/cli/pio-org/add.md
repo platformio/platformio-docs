@@ -2,9 +2,7 @@
 description: Add an owner to an organization.
 ---
 
-<a id="cmd-org-add"></a>
-
-# pio org add {#pio-org-add}
+# pio org add
 
 Add a user as an owner of an organization.
 

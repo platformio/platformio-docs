@@ -2,9 +2,7 @@
 description: "A unit testing framework (platformio.ini option test_framework)."
 ---
 
-<a id="projectconf-test-framework"></a>
-
-# `test_framework` {#test-framework}
+# `test_framework`
 
 - **Type:** String: `doctest`, `googletest`, `unity`, `custom`
 - **Multiple values:** No

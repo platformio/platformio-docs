@@ -5,8 +5,6 @@ description: "STM32F413RH (320k RAM. 1536k Flash) (STM32F413RHT6, 100MHz, 1.50MB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f413rh"></a>
-
 # STM32F413RH (320k RAM. 1536k Flash)
 
 ## Hardware

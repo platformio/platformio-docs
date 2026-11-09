@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Shakti development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-shakti"></a>
-
 # Shakti
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/shakti](https://registry.platformio.org/platforms/platformio/shakti)  

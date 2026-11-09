@@ -2,9 +2,7 @@
 description: Declare, install and update library dependencies with the PlatformIO library manager.
 ---
 
-<a id="librarymanager"></a>
-
-# Library management {#library-management}
+# Library management
 
 PlatformIO manages the libraries your project uses: you declare them in
 `platformio.ini`, and PlatformIO installs the right versions for each project

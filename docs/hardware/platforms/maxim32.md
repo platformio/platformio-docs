@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Maxim 32 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-maxim32"></a>
-
 # Maxim 32
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/maxim32](https://registry.platformio.org/platforms/platformio/maxim32)  

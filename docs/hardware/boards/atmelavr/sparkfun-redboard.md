@@ -5,8 +5,6 @@ description: "SparkFun RedBoard (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-redboard"></a>
-
 # SparkFun RedBoard
 
 ## Hardware

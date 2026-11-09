@@ -5,8 +5,6 @@ description: "Teensy 4.1 (IMXRT1062, 600MHz, 7.75MB flash, 512KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy41"></a>
-
 # Teensy 4.1
 
 ## Hardware

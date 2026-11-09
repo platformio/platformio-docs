@@ -5,8 +5,6 @@ description: "Teensy 2.0 (ATMEGA32U4, 16MHz, 31.50KB flash, 2.50KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy2"></a>
-
 # Teensy 2.0
 
 ## Hardware

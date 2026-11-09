@@ -2,9 +2,7 @@
 description: Use PlatformIO with Visual Studio Code, CLion, Neovim, Vim, Emacs, Eclipse and other editors and IDEs.
 ---
 
-<a id="ide"></a>
-
-# IDE integrations {#cloud-desktop-ides}
+# IDE integrations
 
 <a id="native-extensions"></a>
 

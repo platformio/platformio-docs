@@ -5,8 +5,6 @@ description: "Seeed Studio Edgebox-ESP-100 (ESP32S3, 240MHz, 16MB flash, 320KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-edgebox-esp-100"></a>
-
 # Seeed Studio Edgebox-ESP-100
 
 ## Hardware

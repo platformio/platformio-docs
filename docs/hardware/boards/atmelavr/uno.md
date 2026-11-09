@@ -5,8 +5,6 @@ description: "Arduino Uno (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-uno"></a>
-
 # Arduino Uno
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "TTGO T-OI PLUS RISC-V ESP32-C3 (ESP32C3, 160MHz, 4MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-t-oi-plus"></a>
-
 # TTGO T-OI PLUS RISC-V ESP32-C3
 
 ## Hardware

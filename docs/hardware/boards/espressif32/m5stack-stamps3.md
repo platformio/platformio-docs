@@ -5,8 +5,6 @@ description: "M5Stack StampS3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-stamps3"></a>
-
 # M5Stack StampS3
 
 ## Hardware

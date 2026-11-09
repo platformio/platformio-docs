@@ -5,8 +5,6 @@ description: "STM32F412CG (256k RAM. 1024k Flash) (STM32F412CGU6, 100MHz, 1MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f412cg"></a>
-
 # STM32F412CG (256k RAM. 1024k Flash)
 
 ## Hardware

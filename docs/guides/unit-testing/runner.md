@@ -2,9 +2,7 @@
 description: How the PlatformIO test runner runs native, embedded and hybrid tests, locally and on remote devices.
 ---
 
-<a id="unit-testing-test-runner"></a>
-
-# Test runner {#test-runner}
+# Test runner
 
 The PlatformIO test runner finds the test suites in the project's
 [`test_dir`](../../reference/platformio-ini/platformio/test-dir.md), builds

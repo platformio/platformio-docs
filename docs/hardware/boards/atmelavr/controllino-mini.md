@@ -5,8 +5,6 @@ description: "Controllino Mini (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-controllino-mini"></a>
-
 # Controllino Mini
 
 ## Hardware

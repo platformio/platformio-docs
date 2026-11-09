@@ -2,9 +2,7 @@
 description: List connected devices and open a serial monitor.
 ---
 
-<a id="cmd-device"></a>
-
-# pio device {#device-manager-cli}
+# pio device
 
 List connected devices and communicate with them over a serial port.
 

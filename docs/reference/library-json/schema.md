@@ -2,9 +2,7 @@
 description: "A JSON Schema to annotate and validate the library.json manifest."
 ---
 
-<a id="manifest-library-json-schema"></a>
-
-# `$schema` {#schema}
+# `$schema`
 
 - **Required:** No
 - **Type:** String

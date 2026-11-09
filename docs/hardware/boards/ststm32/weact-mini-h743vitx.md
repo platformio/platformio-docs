@@ -5,8 +5,6 @@ description: "WeAct Studio MiniSTM32H743VITX (STM32H743VIT6, 480MHz, 2MB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-weact-mini-h743vitx"></a>
-
 # WeAct Studio MiniSTM32H743VITX
 
 ## Hardware

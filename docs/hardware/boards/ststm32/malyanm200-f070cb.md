@@ -5,8 +5,6 @@ description: "M200 V2 (STM32F070CBT6, 48MHz, 120KB flash, 14.81KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-malyanm200-f070cb"></a>
-
 # M200 V2
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit BLM Badge (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-blm-badge"></a>
-
 # Adafruit BLM Badge
 
 ## Hardware

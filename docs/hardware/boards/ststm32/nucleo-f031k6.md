@@ -5,8 +5,6 @@ description: "ST Nucleo F031K6 (STM32F031K6T6, 48MHz, 32KB flash, 4KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f031k6"></a>
-
 # ST Nucleo F031K6
 
 ## Hardware

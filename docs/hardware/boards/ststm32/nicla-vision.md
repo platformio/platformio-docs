@@ -5,8 +5,6 @@ description: "Arduino Nicla Vision (STM32H747XIH6, 480MHz, 768KB flash, 511.35KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nicla-vision"></a>
-
 # Arduino Nicla Vision
 
 ## Hardware

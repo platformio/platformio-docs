@@ -5,8 +5,6 @@ description: "STEVAL-FCU001V1 Flight controller unit evaluation board (STM32F401
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-steval-fcu001v1"></a>
-
 # STEVAL-FCU001V1 Flight controller unit evaluation board
 
 ## Hardware

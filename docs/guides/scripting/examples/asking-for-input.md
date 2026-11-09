@@ -1,4 +1,4 @@
-# Asking for input (prompts) {#asking-for-input-prompts}
+# Asking for input (prompts)
 
 Sometimes you need to ask the user for the input (Wi-Fi password, station name, etc). Python has a built-in [input()](https://docs.python.org/3/library/functions.html#input) function for this case.
 

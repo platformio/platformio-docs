@@ -5,8 +5,6 @@ description: "BlackPill F303CC (STM32F303CCT6, 72MHz, 256KB flash, 40KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-robotdyn-blackpill-f303cc"></a>
-
 # BlackPill F303CC
 
 ## Hardware

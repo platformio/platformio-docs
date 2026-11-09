@@ -5,8 +5,6 @@ description: "VNG VBLUNO51 (NRF51822, 16MHz, 128KB flash, 32KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-vbluno51"></a>
-
 # VNG VBLUNO51
 
 ## Hardware

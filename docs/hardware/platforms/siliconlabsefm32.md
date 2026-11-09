@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Silicon Labs EFM32 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-siliconlabsefm32"></a>
-
 # Silicon Labs EFM32
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/siliconlabsefm32](https://registry.platformio.org/platforms/platformio/siliconlabsefm32)  

@@ -5,8 +5,6 @@ description: "NXP i.MX RT1010 Evaluation Kit (MIMXRT1011DAE5A, 500MHz, 64KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxpimxrt-mimxrt1010-evk"></a>
-
 # NXP i.MX RT1010 Evaluation Kit
 
 ## Hardware

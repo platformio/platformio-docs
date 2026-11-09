@@ -5,8 +5,6 @@ description: "Generic STC15F2K24AS (STC15F2K24AS, 11MHz, 24KB flash, 2KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc15f2k24as"></a>
-
 # Generic STC15F2K24AS
 
 ## Hardware

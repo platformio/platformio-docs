@@ -2,7 +2,7 @@
 description: How PlatformIO calculates the flash and RAM usage of a program from its .text, .data and .bss sections.
 ---
 
-# Program memory usage {#program-memory-usage}
+# Program memory usage
 
 After a build, PlatformIO reports how much flash and RAM the program uses. By
 default, it computes these from three sections of the program:

@@ -1,6 +1,4 @@
-<a id="ide-vscode"></a>
-
-# PlatformIO IDE for VSCode {#platformio-ide-for-vscode}
+# PlatformIO IDE for VSCode
 
 **Visual Studio Code** is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
@@ -10,7 +8,7 @@
 
 :::note
 
-Note that you do not need to install [PlatformIO Core (CLI)](../../get-started/platformio-core.md) separately if you are going to use [PlatformIO IDE for VSCode](#ide-vscode). [PlatformIO Core (CLI)](../../get-started/platformio-core.md) is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
+Note that you do not need to install [PlatformIO Core (CLI)](../../get-started/platformio-core.md) separately if you are going to use PlatformIO IDE for VSCode. [PlatformIO Core (CLI)](../../get-started/platformio-core.md) is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 **Git:** If you are going to use Git for installing upstream development platforms, cloning external projects, installing library dependencies from a repository, please ensure that `git --version` command works from a system terminal. Otherwise, please install a [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 

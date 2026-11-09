@@ -5,8 +5,6 @@ description: "ATmega48PB (ATMEGA48PB, 16MHz, 4KB flash, 512B RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega48pb"></a>
-
 # ATmega48PB
 
 ## Hardware

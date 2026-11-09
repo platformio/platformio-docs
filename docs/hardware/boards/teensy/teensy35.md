@@ -5,8 +5,6 @@ description: "Teensy 3.5 (MK64FX512, 120MHz, 512KB flash, 255.99KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy35"></a>
-
 # Teensy 3.5
 
 ## Hardware

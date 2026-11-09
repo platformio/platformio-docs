@@ -5,8 +5,6 @@ description: "Olimex OLIMEXINO-STM32F3 (STM32F303RCT6, 72MHz, 256KB flash, 40KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-olimexino-stm32f3"></a>
-
 # Olimex OLIMEXINO-STM32F3
 
 ## Hardware

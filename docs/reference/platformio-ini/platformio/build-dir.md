@@ -2,9 +2,7 @@
 description: "PlatformIO Build System uses this folder for project environments to store compiled object files, static libraries, firmwares, and other cached information (platformio.ini option build_dir)."
 ---
 
-<a id="projectconf-pio-build-dir"></a>
-
-# `build_dir` {#build-dir}
+# `build_dir`
 
 :::warning
 

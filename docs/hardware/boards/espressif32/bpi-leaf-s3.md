@@ -5,8 +5,6 @@ description: "BPI-Leaf-S3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-bpi-leaf-s3"></a>
-
 # BPI-Leaf-S3
 
 ## Hardware

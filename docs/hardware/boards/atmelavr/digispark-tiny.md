@@ -5,8 +5,6 @@ description: "Digispark USB (ATTINY85, 16MHz, 5.87KB flash, 512B RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-digispark-tiny"></a>
-
 # Digispark USB
 
 ## Hardware

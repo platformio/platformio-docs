@@ -2,9 +2,7 @@
 description: "Internal storage where Library Manager will install project dependencies declared via `lib_deps` option (platformio.ini option libdeps_dir)."
 ---
 
-<a id="projectconf-pio-libdeps-dir"></a>
-
-# `libdeps_dir` {#libdeps-dir}
+# `libdeps_dir`
 
 - **Type:** Path
 - **Multiple values:** No

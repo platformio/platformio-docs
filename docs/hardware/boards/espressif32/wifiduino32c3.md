@@ -5,8 +5,6 @@ description: "Blinker WiFiduinoV2 (ESP32-C3) (ESP32C3, 160MHz, 4MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wifiduino32c3"></a>
-
 # Blinker WiFiduinoV2 (ESP32-C3)
 
 ## Hardware

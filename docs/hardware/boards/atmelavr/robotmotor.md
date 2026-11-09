@@ -5,8 +5,6 @@ description: "Arduino Robot Motor (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-robotmotor"></a>
-
 # Arduino Robot Motor
 
 ## Hardware

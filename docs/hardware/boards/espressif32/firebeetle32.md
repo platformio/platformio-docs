@@ -5,8 +5,6 @@ description: "FireBeetle-ESP32 (ESP32, 240MHz, 16MB flash, 520KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-firebeetle32"></a>
-
 # FireBeetle-ESP32
 
 ## Hardware

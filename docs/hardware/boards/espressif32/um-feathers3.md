@@ -5,8 +5,6 @@ description: "Unexpected Maker FeatherS3 (ESP32S3, 240MHz, 16MB flash, 320KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-um-feathers3"></a>
-
 # Unexpected Maker FeatherS3
 
 ## Hardware

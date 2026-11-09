@@ -5,8 +5,6 @@ description: "SparkFun SAMD51 Thing Plus (SAMD51J20A, 120MHz, 496KB flash, 192KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-samd51-thing-plus"></a>
-
 # SparkFun SAMD51 Thing Plus
 
 ## Hardware

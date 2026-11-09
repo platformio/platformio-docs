@@ -5,8 +5,6 @@ description: "Arty FPGA Dev Kit (FE310, 450MHz, 16MB flash, 256MB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-e310-arty"></a>
-
 # Arty FPGA Dev Kit
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Maple Mini Original (STM32F103CBT6, 72MHz, 108KB flash, 20KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-maple-mini-origin"></a>
-
 # Maple Mini Original
 
 ## Hardware

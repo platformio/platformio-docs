@@ -5,8 +5,6 @@ description: "STM32F407VG (128k RAM. 1024k Flash) (STM32F407VGT6, 168MHz, 1MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f407vgt6"></a>
-
 # STM32F407VG (128k RAM. 1024k Flash)
 
 ## Hardware

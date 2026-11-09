@@ -5,8 +5,6 @@ description: "Frog Board ESP32 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-frogboard"></a>
-
 # Frog Board ESP32
 
 ## Hardware

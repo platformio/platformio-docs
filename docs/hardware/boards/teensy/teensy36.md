@@ -5,8 +5,6 @@ description: "Teensy 3.6 (MK66FX1M0, 180MHz, 1MB flash, 256KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy36"></a>
-
 # Teensy 3.6
 
 ## Hardware

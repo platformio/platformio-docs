@@ -5,8 +5,6 @@ description: "Lilka v2 (ESP32S3, 240MHz, 16MB flash, 320KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lilka-v2"></a>
-
 # Lilka v2
 
 ## Hardware

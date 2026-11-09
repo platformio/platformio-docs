@@ -2,9 +2,7 @@
 description: Convert an Arduino .ino sketch into a valid C++ file so that any editor can analyze it.
 ---
 
-<a id="faq-convert-ino-to-cpp"></a>
-
-# Convert an Arduino sketch to C++ {#convert-arduino-file-to-c-manually}
+# Convert an Arduino sketch to C++
 
 Arduino sketches (`.ino` and `.pde` files) are not valid C++: they rely on the
 Arduino IDE to add `#include <Arduino.h>` and declarations of your functions.

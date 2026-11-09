@@ -5,8 +5,6 @@ description: "Generic ATtiny441 (ATTINY441, 8MHz, 4KB flash, 256B RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny441"></a>
-
 # Generic ATtiny441
 
 ## Hardware

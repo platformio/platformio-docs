@@ -5,8 +5,6 @@ description: "Seeeduino LoRaWAN (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-seeeduino-lorawan"></a>
-
 # Seeeduino LoRaWAN
 
 ## Hardware

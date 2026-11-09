@@ -2,9 +2,7 @@
 description: "An author contact information."
 ---
 
-<a id="manifest-library-json-authors"></a>
-
-# `authors` {#authors}
+# `authors`
 
 - **Required:** No
 - **Type:** Object or array of objects
@@ -46,6 +44,6 @@ An author contact information
 
 :::note
 
-If [authors](#manifest-library-json-authors) field is not defined, PlatformIO will try to fetch data from VCS provider (Github, Gitlab, etc) if [repository](./repository.md) is declared.
+If authors field is not defined, PlatformIO will try to fetch data from VCS provider (Github, Gitlab, etc) if [repository](./repository.md) is declared.
 
 :::

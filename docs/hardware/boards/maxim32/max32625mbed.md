@@ -5,8 +5,6 @@ description: "MAX32625MBED (MAX32625, 96MHz, 512KB flash, 160KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32625mbed"></a>
-
 # MAX32625MBED
 
 ## Hardware

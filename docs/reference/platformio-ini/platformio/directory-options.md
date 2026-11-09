@@ -2,7 +2,7 @@
 description: Directory options of the platformio.ini [platformio] section.
 ---
 
-# Directory options {#directory-options}
+# Directory options
 
 Locations of PlatformIO data and of the project folders. Paths can be absolute or relative to the project directory.
 

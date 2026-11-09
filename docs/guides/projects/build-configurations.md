@@ -2,7 +2,7 @@
 description: The release, debug and test build configurations, and how to build in debug configuration.
 ---
 
-# Build configurations {#build-configurations}
+# Build configurations
 
 PlatformIO builds a project in one of three build configurations, set by the
 [`build_type`](../../reference/platformio-ini/env/build-type.md) option:

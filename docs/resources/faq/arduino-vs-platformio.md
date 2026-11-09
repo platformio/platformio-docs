@@ -2,7 +2,7 @@
 description: How Arduino IDE and PlatformIO IDE differ, and when to use which.
 ---
 
-# Arduino IDE or PlatformIO IDE? {#arduino-ide-vs-platformio-ide}
+# Arduino IDE or PlatformIO IDE?
 
 Both can build and upload code for Arduino boards. Which one fits depends on
 your project.

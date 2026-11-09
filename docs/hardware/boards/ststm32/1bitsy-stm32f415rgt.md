@@ -5,8 +5,6 @@ description: "1Bitsy (STM32F415RGT, 168MHz, 1MB flash, 128KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-1bitsy-stm32f415rgt"></a>
-
 # 1Bitsy
 
 ## Hardware

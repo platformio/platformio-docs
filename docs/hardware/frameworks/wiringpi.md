@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The WiringPi framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-wiringpi"></a>
-
 # WiringPi
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `wiringpi`

@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Linux x86_64 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-linux-x86-64"></a>
-
 # Linux x86_64
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/linux_x86_64](https://registry.platformio.org/platforms/platformio/linux_x86_64)  

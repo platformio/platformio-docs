@@ -5,8 +5,6 @@ description: "Pontech NoFire (32MZ2048EFG100, 200MHz, 1.98MB flash, 512KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-nofire"></a>
-
 # Pontech NoFire
 
 ## Hardware

@@ -2,7 +2,7 @@
 description: "A pattern to determine when debugging server is ready for an incoming connection (platformio.ini option debug_server_ready_pattern)."
 ---
 
-# `debug_server_ready_pattern` {#debug-server-ready-pattern}
+# `debug_server_ready_pattern`
 
 - **Type:** String
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "ST Nucleo L412RB-P (STM32L412RBT6P, 80MHz, 128KB flash, 40KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l412rb-p"></a>
-
 # ST Nucleo L412RB-P
 
 ## Hardware

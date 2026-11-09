@@ -5,8 +5,6 @@ description: "STM32H747I-DISCO (STM32H747XIH6, 400MHz, 2MB flash, 512KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-h747xi"></a>
-
 # STM32H747I-DISCO
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "LightBlue Bean (ATMEGA328P, 8MHz, 31.50KB flash, 2KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lightblue-bean"></a>
-
 # LightBlue Bean
 
 ## Hardware

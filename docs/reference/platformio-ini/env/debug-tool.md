@@ -2,9 +2,7 @@
 description: "A name of debugging tool (platformio.ini option debug_tool)."
 ---
 
-<a id="projectconf-debug-tool"></a>
-
-# `debug_tool` {#debug-tool}
+# `debug_tool`
 
 - **Type:** String
 - **Multiple values:** No

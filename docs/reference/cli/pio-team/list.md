@@ -2,9 +2,7 @@
 description: List teams and their members.
 ---
 
-<a id="cmd-team-list"></a>
-
-# pio team list {#pio-team-list}
+# pio team list
 
 List the teams and their members.
 

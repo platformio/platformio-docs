@@ -5,8 +5,6 @@ description: "SensorTile.box (STM32L4R9ZI, 120MHz, 2MB flash, 640KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-steval-mksboxv1"></a>
-
 # SensorTile.box
 
 ## Hardware

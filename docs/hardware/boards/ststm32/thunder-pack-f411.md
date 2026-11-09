@@ -5,8 +5,6 @@ description: "ThunderPack v1.1+ (STM32F411CEU6, 100MHz, 512KB flash, 128KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-thunder-pack-f411"></a>
-
 # ThunderPack v1.1+
 
 ## Hardware

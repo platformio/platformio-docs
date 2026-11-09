@@ -2,9 +2,7 @@
 description: Revoke a user's or a team's access to a package in the PlatformIO Registry.
 ---
 
-<a id="cmd-access-revoke"></a>
-
-# pio access revoke {#pio-access-revoke}
+# pio access revoke
 
 Revoke a user's or a team's access to a resource.
 

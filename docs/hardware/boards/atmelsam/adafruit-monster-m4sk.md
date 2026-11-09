@@ -5,8 +5,6 @@ description: "Adafruit MONSTER M4SK (SAMD51G19A, 120MHz, 496KB flash, 192KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-monster-m4sk"></a>
-
 # Adafruit MONSTER M4SK
 
 ## Hardware

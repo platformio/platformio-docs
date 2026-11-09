@@ -2,13 +2,13 @@
 description: "Configure a list of target files or directories for checking (platformio.ini option check_src_filters)."
 ---
 
+# `check_src_filters`
+
 :::info
 
-Added in version 6.1.7.
+Added in PlatformIO Core 6.1.7.
 
 :::
-
-# `check_src_filters` {#check-src-filters}
 
 - **Type:** String
 - **Multiple values:** Yes

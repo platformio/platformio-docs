@@ -5,8 +5,6 @@ description: "Arduino Mega or Mega 2560 ATmega2560 (Mega 2560) (ATMEGA2560, 16MH
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-megaatmega2560"></a>
-
 # Arduino Mega or Mega 2560 ATmega2560 (Mega 2560)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Laird Connectivity Pinnacle 100 DVK (NRF52840, 64MHz, 1MB flash, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-laird-pinnacle-100-dvk"></a>
-
 # Laird Connectivity Pinnacle 100 DVK
 
 ## Hardware

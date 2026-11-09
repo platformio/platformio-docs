@@ -5,8 +5,6 @@ description: "WifInfo (ESP8266, 80MHz, 1MB flash, 80KB RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-wifinfo"></a>
-
 # WifInfo
 
 ## Hardware

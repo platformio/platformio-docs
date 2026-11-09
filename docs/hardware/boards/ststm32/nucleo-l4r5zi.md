@@ -5,8 +5,6 @@ description: "ST Nucleo L4R5ZI (STM32L4R5ZIT6, 120MHz, 2MB flash, 640KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l4r5zi"></a>
-
 # ST Nucleo L4R5ZI
 
 ## Hardware

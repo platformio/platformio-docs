@@ -5,8 +5,6 @@ description: "PYBStick Lite 26 (STM32F401CEU6, 84MHz, 512KB flash, 96KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-pybstick26-lite"></a>
-
 # PYBStick Lite 26
 
 ## Hardware

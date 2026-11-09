@@ -5,8 +5,6 @@ description: "ATmega8515 (ATMEGA8515, 16MHz, 8KB flash, 512B RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega8515"></a>
-
 # ATmega8515
 
 ## Hardware

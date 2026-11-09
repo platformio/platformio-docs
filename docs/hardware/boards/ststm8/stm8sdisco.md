@@ -5,8 +5,6 @@ description: "ST STM8S-DISCOVERY (STM8S105C6T6, 16MHz, 32KB flash, 2KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-stm8sdisco"></a>
-
 # ST STM8S-DISCOVERY
 
 ## Hardware

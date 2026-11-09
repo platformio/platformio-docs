@@ -5,8 +5,6 @@ description: "Espotel LoRa Module (STM32F411RET6, 100MHz, 512KB flash, 128KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-elmo-f411re"></a>
-
 # Espotel LoRa Module
 
 ## Hardware

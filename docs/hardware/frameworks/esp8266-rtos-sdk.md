@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The ESP8266 RTOS SDK framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-esp8266-rtos-sdk"></a>
-
 # ESP8266 RTOS SDK
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `esp8266-rtos-sdk`

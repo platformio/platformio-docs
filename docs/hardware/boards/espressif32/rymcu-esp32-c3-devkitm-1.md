@@ -5,8 +5,6 @@ description: "RYMCU ESP32-C3-DevKitM-1 (ESP32C3, 160MHz, 4MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-rymcu-esp32-c3-devkitm-1"></a>
-
 # RYMCU ESP32-C3-DevKitM-1
 
 ## Hardware

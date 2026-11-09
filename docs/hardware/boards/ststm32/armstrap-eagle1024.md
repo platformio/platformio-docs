@@ -5,8 +5,6 @@ description: "Armstrap Eagle 1024 (STM32F417VGT6, 168MHz, 1MB flash, 192KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-armstrap-eagle1024"></a>
-
 # Armstrap Eagle 1024
 
 ## Hardware

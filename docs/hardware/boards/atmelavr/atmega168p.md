@@ -5,8 +5,6 @@ description: "ATmega168P/PA (ATMEGA168P, 16MHz, 16KB flash, 1KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega168p"></a>
-
 # ATmega168P/PA
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Extend main configuration with the extra configuration files (platformio.ini option extra_configs)."
 ---
 
-<a id="projectconf-pio-extra-configs"></a>
-
-# `extra_configs` {#extra-configs}
+# `extra_configs`
 
 - **Type:** String
 - **Multiple values:** Yes

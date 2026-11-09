@@ -5,8 +5,6 @@ description: "M5Stack Station (ESP32, 240MHz, 16MB flash, 4.31MB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-station"></a>
-
 # M5Stack Station
 
 ## Hardware

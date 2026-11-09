@@ -5,8 +5,6 @@ description: "ST B-G431B-ESC1 Discovery (STM32G431CBU6, 170MHz, 128KB flash, 32K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-b-g431b-esc1"></a>
-
 # ST B-G431B-ESC1 Discovery
 
 ## Hardware

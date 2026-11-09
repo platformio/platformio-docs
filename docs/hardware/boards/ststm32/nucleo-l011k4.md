@@ -5,8 +5,6 @@ description: "ST Nucleo L011K4 (STM32L011K4T6, 32MHz, 16KB flash, 2KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l011k4"></a>
-
 # ST Nucleo L011K4
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "TTGO T-Beam (ESP32, 240MHz, 4MB flash, 1.25MB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-t-beam"></a>
-
 # TTGO T-Beam
 
 ## Hardware

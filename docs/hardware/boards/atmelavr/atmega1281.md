@@ -5,8 +5,6 @@ description: "ATmega1281 (ATMEGA1281, 16MHz, 128KB flash, 8KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega1281"></a>
-
 # ATmega1281
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "The PlatformIO Build System has a rich API that allows one to attach different pre-/post actions (hooks) using env.AddPreAction(target, callback) or env.AddPreAction(target, [callback1, callback2, ...]) function."
 ---
 
-<a id="scripting-actions"></a>
-
-# Pre and post actions {#pre-post-actions}
+# Pre and post actions
 
 The PlatformIO Build System has a rich API that allows one to attach different pre-/post actions (hooks) using `env.AddPreAction(target, callback)` or `env.AddPreAction(target, [callback1, callback2, ...])` function. The first argument `target` can be the name of a target that is passed using the [`pio run --target`](../cli/pio-run.md#cmdoption-pio-run-t) command, the name of a built-in target (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 

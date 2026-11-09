@@ -5,8 +5,6 @@ description: "nicai-systems NIBO burger robot with Tuning Kit (ATMEGA1284P, 20MH
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-niboburger-1284"></a>
-
 # nicai-systems NIBO burger robot with Tuning Kit
 
 ## Hardware

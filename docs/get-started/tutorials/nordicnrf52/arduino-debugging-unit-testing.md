@@ -3,9 +3,7 @@ sidebar_label: "Arduino on nRF52-DK"
 description: Build, upload, debug and unit test an Arduino project on the Nordic nRF52-DK with PlatformIO IDE for VS Code, then control an LED over Bluetooth LE.
 ---
 
-<a id="tutorial-nordicnrf52-arduino-debugging-unit-testing"></a>
-
-# Arduino on Nordic nRF52-DK: debugging and unit testing {#arduino-and-nordic-nrf52-dk-debugging-and-unit-testing}
+# Arduino on Nordic nRF52-DK: debugging and unit testing
 
 In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
 to create an [Arduino](/hardware/frameworks/arduino) project for the Nordic

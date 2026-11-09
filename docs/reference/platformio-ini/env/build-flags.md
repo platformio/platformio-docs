@@ -2,9 +2,7 @@
 description: "Custom build flags/options for preprocessing, compilation, assembly, and linking processes (platformio.ini option build_flags)."
 ---
 
-<a id="projectconf-build-flags"></a>
-
-# `build_flags` {#build-flags}
+# `build_flags`
 
 - **Type:** String
 - **Multiple values:** Yes
@@ -85,7 +83,7 @@ Use target `envdump` for the [`pio run --target`](../../cli/pio-run.md#cmdoption
 
 Sometimes you may want to convert a macro argument into a valid C string constant. In this case, you need to wrap a value with double quotes (`"`) and escape double quotes (`"` -> `\\"`) in the constant value.
 
-Here is an example of a macro definition that uses stringification and [build_flags](#projectconf-build-flags). Note that we enclosed the flag in the single quotes to prevent the shell evaluation:
+Here is an example of a macro definition that uses stringification and build_flags. Note that we enclosed the flag in the single quotes to prevent the shell evaluation:
 
 **platformio.ini**
 

@@ -2,9 +2,7 @@
 description: "If you would like to change the default PlatformIO's Test Runner for the GoogleTest, please implement your Custom Testing Framework runner extending GooglestTestRunner class."
 ---
 
-<a id="unit-testing-frameworks-googletest"></a>
-
-# GoogleTest {#googletest}
+# GoogleTest
 
 <dl>
 

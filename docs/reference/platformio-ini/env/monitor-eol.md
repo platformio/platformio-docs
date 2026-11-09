@@ -2,9 +2,7 @@
 description: "A monitor end of line mode (platformio.ini option monitor_eol)."
 ---
 
-<a id="projectconf-monitor-eol"></a>
-
-# `monitor_eol` {#monitor-eol}
+# `monitor_eol`
 
 - **Type:** String: `CR`, `LF`, `CRLF`
 - **Multiple values:** No

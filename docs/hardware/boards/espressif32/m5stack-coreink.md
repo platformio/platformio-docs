@@ -5,8 +5,6 @@ description: "M5Stack-Core Ink (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-coreink"></a>
-
 # M5Stack-Core Ink
 
 ## Hardware

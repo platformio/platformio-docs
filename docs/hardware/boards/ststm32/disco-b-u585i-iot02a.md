@@ -5,8 +5,6 @@ description: "ST B-U585I-IOT02A Discovery (STM32U585AII6Q, 160MHz, 2MB flash, 25
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-b-u585i-iot02a"></a>
-
 # ST B-U585I-IOT02A Discovery
 
 ## Hardware

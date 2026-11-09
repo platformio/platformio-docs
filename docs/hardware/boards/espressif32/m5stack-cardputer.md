@@ -5,8 +5,6 @@ description: "M5Stack Cardputer (ESP32S3, 240MHz, 4MB flash, 320KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-cardputer"></a>
-
 # M5Stack Cardputer
 
 ## Hardware

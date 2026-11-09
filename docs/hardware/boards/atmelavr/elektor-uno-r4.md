@@ -5,8 +5,6 @@ description: "Elektor Uno R4 (ATMEGA328PB, 16MHz, 31.50KB flash, 2KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-elektor-uno-r4"></a>
-
 # Elektor Uno R4
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "A list of project library dependencies which should be installed automatically before a build process (platformio.ini option lib_deps)."
 ---
 
-<a id="projectconf-lib-deps"></a>
-
-# `lib_deps` {#lib-deps}
+# `lib_deps`
 
 - **Type:** String
 - **Multiple values:** Yes

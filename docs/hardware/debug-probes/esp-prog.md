@@ -2,9 +2,7 @@
 description: "Use the ESP-Prog debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-esp-prog"></a>
-
-# ESP-Prog {#esp-prog}
+# ESP-Prog
 
 [![](./img/esp-prog.jpg)](https://github.com/espressif/esp-iot-solution/blob/master/docs/en/hw-reference/ESP-Prog_guide.rst?utm_source=platformio&utm_medium=docs)
 

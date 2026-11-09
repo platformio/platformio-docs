@@ -2,9 +2,7 @@
 description: "Use the OVPsim debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-ovpsim"></a>
-
-# OVPsim {#ovpsim}
+# OVPsim
 
 [![](./img/renode.png)](https://www.ovpworld.org/?utm_source=platformio&utm_medium=docs)
 

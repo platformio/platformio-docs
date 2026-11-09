@@ -5,8 +5,6 @@ description: "ST 32F746GDISCOVERY (STM32F746NGH6, 216MHz, 1MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f746ng"></a>
-
 # ST 32F746GDISCOVERY
 
 ## Hardware

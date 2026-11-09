@@ -5,8 +5,6 @@ description: "STM32F103ZC (48k RAM. 256k Flash) (STM32F103ZCT6, 72MHz, 256KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103zc"></a>
-
 # STM32F103ZC (48k RAM. 256k Flash)
 
 ## Hardware

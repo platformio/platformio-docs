@@ -5,8 +5,6 @@ description: "Arduino Nano R4 (RA4M1, 48MHz, 256KB flash, 32KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-renesas-ra-nano-r4"></a>
-
 # Arduino Nano R4
 
 ## Hardware

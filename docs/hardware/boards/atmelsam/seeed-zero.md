@@ -5,8 +5,6 @@ description: "Seeeduino Zero (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-seeed-zero"></a>
-
 # Seeeduino Zero
 
 ## Hardware

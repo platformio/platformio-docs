@@ -5,8 +5,6 @@ description: "Nucleo G070RB (STM32G070RBT6, 64MHz, 128KB flash, 36KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g070rb"></a>
-
 # Nucleo G070RB
 
 ## Hardware

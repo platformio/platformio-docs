@@ -5,8 +5,6 @@ description: "Nucleo G474RE (STM32G474RET6, 170MHz, 512KB flash, 128KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g474re"></a>
-
 # Nucleo G474RE
 
 ## Hardware

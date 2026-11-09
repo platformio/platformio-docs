@@ -5,8 +5,6 @@ description: "STM32F401CB (64k RAM. 128k Flash) (STM32F401CBU6, 84MHz, 128KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f401cb"></a>
-
 # STM32F401CB (64k RAM. 128k Flash)
 
 ## Hardware

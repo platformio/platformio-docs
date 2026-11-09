@@ -5,8 +5,6 @@ description: "ST Nucleo L010RB (STM32L010RBT6, 32MHz, 128KB flash, 20KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l010rb"></a>
-
 # ST Nucleo L010RB
 
 ## Hardware

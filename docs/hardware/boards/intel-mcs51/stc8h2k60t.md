@@ -5,8 +5,6 @@ description: "Generic STC8H2K60T (STC8H2K60T, 11MHz, 60KB flash, 2.25KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h2k60t"></a>
-
 # Generic STC8H2K60T
 
 ## Hardware

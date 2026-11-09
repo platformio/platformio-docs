@@ -5,8 +5,6 @@ description: "OpenEnergyMonitor emonPi (ATMEGA328P, 16MHz, 30KB flash, 2KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-emonpi"></a>
-
 # OpenEnergyMonitor emonPi
 
 ## Hardware

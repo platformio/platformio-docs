@@ -1,6 +1,4 @@
-<a id="unit-testing-frameworks-custom-examples-unity-library"></a>
-
-# Custom Unity Library {#custom-unity-library}
+# Custom Unity Library
 
 There are frameworks such as [Arduino](/hardware/frameworks/arduino) with Mbed core and [Espressif IoT Development Framework](/hardware/frameworks/espidf) that contain a prebuilt library of [Unity](../../unity.md) testing framework. Using PlatformIO's version of [Unity](../../unity.md) will lead to compilation issues ("multiple definitions"). See [issue #3980](https://github.com/platformio/platformio-core/issues/3980).
 

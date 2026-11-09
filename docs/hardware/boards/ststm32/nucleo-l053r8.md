@@ -5,8 +5,6 @@ description: "ST Nucleo L053R8 (STM32L053R8T6, 32MHz, 64KB flash, 8KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l053r8"></a>
-
 # ST Nucleo L053R8
 
 ## Hardware

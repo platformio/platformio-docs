@@ -2,7 +2,7 @@
 description: Solutions to common PlatformIO package manager and build errors.
 ---
 
-# Troubleshooting {#troubleshooting}
+# Troubleshooting
 
 Solutions to common errors. For installation problems, see
 [Troubleshoot the installation](../../get-started/install/troubleshooting.md).

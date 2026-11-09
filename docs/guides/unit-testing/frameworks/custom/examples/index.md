@@ -1,5 +1,3 @@
-<a id="unit-testing-frameworks-custom-examples"></a>
-
-# Examples {#examples}
+# Examples
 
 - [Custom Unity Library](./custom-unity-library.md)

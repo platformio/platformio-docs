@@ -2,9 +2,7 @@
 description: "The unity_config.h and unity_config.cpp files are located in the embedded folder and are common for the embedded/components/sauce/test_tomatos, embedded/stove/test_humidity, and embedded/stove/test_temperature tests."
 ---
 
-<a id="unit-testing-test-hierarchy"></a>
-
-# Test hierarchy {#test-hierarchy}
+# Test hierarchy
 
 PlatformIO looks for the tests in the project [test_dir](../../../reference/platformio-ini/platformio/test-dir.md). The only folder with a name prefixed by `test_` is nominated for unit testing and should be an independent test/application with its own `main()` function (`setup() / loop()` for [Arduino](/hardware/frameworks/arduino), `app_main()` for [Espressif IoT Development Framework](/hardware/frameworks/espidf)). Nested folders are supported and will help you to organize your tests.
 

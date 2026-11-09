@@ -5,8 +5,6 @@ description: "ST Nucleo F767ZI (STM32F767ZIT6, 216MHz, 2MB flash, 512KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f767zi"></a>
-
 # ST Nucleo F767ZI
 
 ## Hardware

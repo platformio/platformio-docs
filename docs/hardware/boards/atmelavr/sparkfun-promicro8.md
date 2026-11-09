@@ -5,8 +5,6 @@ description: "SparkFun Pro Micro 3.3V/8MHz (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-promicro8"></a>
-
 # SparkFun Pro Micro 3.3V/8MHz
 
 ## Hardware

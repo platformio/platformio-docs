@@ -2,9 +2,7 @@
 description: Install tab completion of pio commands for Bash, Zsh or fish.
 ---
 
-<a id="cmd-system-completion-install"></a>
-
-# pio system completion install {#pio-system-completion-install}
+# pio system completion install
 
 Install tab completion of `pio` commands and options for a shell.
 

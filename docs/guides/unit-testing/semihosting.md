@@ -1,6 +1,4 @@
-<a id="unit-testing-semihosting"></a>
-
-# Semihosting {#semihosting}
+# Semihosting
 
 Semihosting is a mechanism that enables code running on the target device to communicate and use the Input/Output of the host computer.
 

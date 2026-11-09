@@ -5,8 +5,6 @@ description: "cezerio dev ESP32C6 (ESP32C6, 160MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-cezerio-dev-esp32c6"></a>
-
 # cezerio dev ESP32C6
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz) (ATMEGA328P, 16MHz,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-pro16mhzatmega328"></a>
-
 # Arduino Pro or Pro Mini ATmega328 (5V, 16 MHz)
 
 ## Hardware

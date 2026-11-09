@@ -5,8 +5,6 @@ description: "Arduino Opta (STM32H747XIH6, 480MHz, 768KB flash, 511.35KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-opta"></a>
-
 # Arduino Opta
 
 ## Hardware

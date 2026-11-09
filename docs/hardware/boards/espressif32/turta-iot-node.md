@@ -5,8 +5,6 @@ description: "Turta IoT Node (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-turta-iot-node"></a>
-
 # Turta IoT Node
 
 ## Hardware

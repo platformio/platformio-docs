@@ -5,8 +5,6 @@ description: "ST 32F769IDISCOVERY (STM32F769NIH6, 216MHz, 2MB flash, 512KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f769ni"></a>
-
 # ST 32F769IDISCOVERY
 
 ## Hardware

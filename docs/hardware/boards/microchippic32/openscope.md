@@ -5,8 +5,6 @@ description: "Digilent OpenScope (32MZ2048EFG124, 200MHz, 1.98MB flash, 512KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-openscope"></a>
-
 # Digilent OpenScope
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Make a package in the PlatformIO Registry public.
 ---
 
-<a id="cmd-access-public"></a>
-
-# pio access public {#pio-access-public}
+# pio access public
 
 Make a resource public. Anyone can find and use it.
 

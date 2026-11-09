@@ -5,8 +5,6 @@ description: "ST Nucleo F412ZG (STM32F412ZGT6, 100MHz, 1MB flash, 256KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f412zg"></a>
-
 # ST Nucleo F412ZG
 
 ## Hardware

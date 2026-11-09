@@ -5,8 +5,6 @@ description: "Espressif Generic ESP8266 ESP-07S (ESP8266, 80MHz, 4MB flash, 80KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-esp07s"></a>
-
 # Espressif Generic ESP8266 ESP-07S
 
 ## Hardware

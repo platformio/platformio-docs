@@ -5,8 +5,6 @@ description: "Arduino MKR FOX 1200 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkrfox1200"></a>
-
 # Arduino MKR FOX 1200
 
 ## Hardware

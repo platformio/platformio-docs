@@ -2,9 +2,7 @@
 description: "Disable encodings/transformations of device output (platformio.ini option monitor_raw)."
 ---
 
-<a id="projectconf-monitor-raw"></a>
-
-# `monitor_raw` {#monitor-raw}
+# `monitor_raw`
 
 - **Type:** Boolean: `yes` or `no`
 - **Multiple values:** No

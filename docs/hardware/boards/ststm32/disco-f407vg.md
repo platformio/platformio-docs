@@ -5,8 +5,6 @@ description: "ST STM32F4DISCOVERY (STM32F407VGT6, 168MHz, 1MB flash, 128KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f407vg"></a>
-
 # ST STM32F4DISCOVERY
 
 ## Hardware

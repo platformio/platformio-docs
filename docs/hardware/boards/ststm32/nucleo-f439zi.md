@@ -5,8 +5,6 @@ description: "ST Nucleo F439ZI (STM32F439ZIT6, 180MHz, 2MB flash, 192KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f439zi"></a>
-
 # ST Nucleo F439ZI
 
 ## Hardware

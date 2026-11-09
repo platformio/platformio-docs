@@ -2,7 +2,7 @@
 description: "Specify advanced settings, options and flags for the build system."
 ---
 
-# `build` {#build}
+# `build`
 
 - **Required:** No
 - **Type:** Object

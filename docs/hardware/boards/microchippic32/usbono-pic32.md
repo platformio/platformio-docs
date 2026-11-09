@@ -5,8 +5,6 @@ description: "PONTECH UAV100 (32MX440F512H, 80MHz, 508KB flash, 32KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-usbono-pic32"></a>
-
 # PONTECH UAV100
 
 ## Hardware

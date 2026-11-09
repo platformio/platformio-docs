@@ -5,8 +5,6 @@ description: "STM32F401CE (96k RAM. 512k Flash) (STM32F401CEU6, 84MHz, 512KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f401ce"></a>
-
 # STM32F401CE (96k RAM. 512k Flash)
 
 ## Hardware

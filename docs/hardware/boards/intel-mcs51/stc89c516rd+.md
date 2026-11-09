@@ -5,8 +5,6 @@ description: "Generic STC89C516RD+ (STC89C516RD+, 11MHz, 64KB flash, 1.25KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc89c516rd"></a>
-
 # Generic STC89C516RD+
 
 ## Hardware

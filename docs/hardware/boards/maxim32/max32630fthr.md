@@ -5,8 +5,6 @@ description: "Maxim MAX32630FTHR Application Platform (MAX32630, 96MHz, 2MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-max32630fthr"></a>
-
 # Maxim MAX32630FTHR Application Platform
 
 ## Hardware

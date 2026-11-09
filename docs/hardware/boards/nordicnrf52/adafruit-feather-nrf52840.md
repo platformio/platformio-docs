@@ -5,8 +5,6 @@ description: "Adafruit Feather nRF52840 Express (NRF52840, 64MHz, 796KB flash, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-feather-nrf52840"></a>
-
 # Adafruit Feather nRF52840 Express
 
 ## Hardware

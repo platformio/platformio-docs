@@ -5,8 +5,6 @@ description: "DOIT ESP32 DEVKIT V1 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32doit-devkit-v1"></a>
-
 # DOIT ESP32 DEVKIT V1
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Sanguino ATmega644P or ATmega644PA (16 MHz) (ATMEGA644P, 16MHz, 63
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sanguino-atmega644p"></a>
-
 # Sanguino ATmega644P or ATmega644PA (16 MHz)
 
 ## Hardware

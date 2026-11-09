@@ -2,9 +2,7 @@
 description: How the Library Dependency Finder decides which libraries to build, its modes and its search order.
 ---
 
-<a id="ldf"></a>
-
-# Library Dependency Finder (LDF) {#library-dependency-finder-ldf}
+# Library Dependency Finder (LDF)
 
 The Library Dependency Finder (LDF) is the part of the PlatformIO build system
 that decides which libraries to build. It scans your source files for

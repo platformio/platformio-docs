@@ -5,8 +5,6 @@ description: "nicai-systems NIBO burger robot (ATMEGA16, 15MHz, 16KB flash, 1KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-niboburger"></a>
-
 # nicai-systems NIBO burger robot
 
 ## Hardware

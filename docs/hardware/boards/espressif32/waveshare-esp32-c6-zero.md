@@ -5,8 +5,6 @@ description: "Waveshare ESP32-C6-Zero (ESP32C6, 160MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-c6-zero"></a>
-
 # Waveshare ESP32-C6-Zero
 
 ## Hardware

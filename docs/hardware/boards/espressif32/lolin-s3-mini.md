@@ -5,8 +5,6 @@ description: "WEMOS LOLIN S3 Mini (ESP32S3, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lolin-s3-mini"></a>
-
 # WEMOS LOLIN S3 Mini
 
 ## Hardware

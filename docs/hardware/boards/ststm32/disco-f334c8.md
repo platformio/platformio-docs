@@ -5,8 +5,6 @@ description: "ST 32F3348DISCOVERY (STM32F334C8T6, 72MHz, 64KB flash, 12KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f334c8"></a>
-
 # ST 32F3348DISCOVERY
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "NXP LPCXpresso54608 (LPC54608ET512, 180MHz, 512KB flash, 200KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxplpc-lpc546xx"></a>
-
 # NXP LPCXpresso54608
 
 ## Hardware

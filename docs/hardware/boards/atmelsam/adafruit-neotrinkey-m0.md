@@ -5,8 +5,6 @@ description: "Adafruit NeoPixel Trinkey (SAMD21E18A, 48MHz, 256KB flash, 32KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-neotrinkey-m0"></a>
-
 # Adafruit NeoPixel Trinkey
 
 ## Hardware

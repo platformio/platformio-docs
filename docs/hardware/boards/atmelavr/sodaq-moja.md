@@ -5,8 +5,6 @@ description: "SODAQ Moja (ATMEGA328P, 8MHz, 31.50KB flash, 2KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sodaq-moja"></a>
-
 # SODAQ Moja
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit Flora (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-flora8"></a>
-
 # Adafruit Flora
 
 ## Hardware

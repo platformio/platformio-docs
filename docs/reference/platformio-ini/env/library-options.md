@@ -2,9 +2,7 @@
 description: Library options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-library"></a>
-
-# Library options {#library-options}
+# Library options
 
 Declare library dependencies and control how the Library Dependency Finder resolves them.
 

@@ -5,8 +5,6 @@ description: "Espressif ESP32 Dev Module (ESP32, 240MHz, 4MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32dev"></a>
-
 # Espressif ESP32 Dev Module
 
 ## Hardware

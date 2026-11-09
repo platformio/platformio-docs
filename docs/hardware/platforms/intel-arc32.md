@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Intel ARC32 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-intel-arc32"></a>
-
 # Intel ARC32
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/intel_arc32](https://registry.platformio.org/platforms/platformio/intel_arc32)  

@@ -5,8 +5,6 @@ description: "SparkFun MicroMod Teensy (IMXRT1062, 600MHz, 7.75MB flash, 512KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensymm"></a>
-
 # SparkFun MicroMod Teensy
 
 ## Hardware

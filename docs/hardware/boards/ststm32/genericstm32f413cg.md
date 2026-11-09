@@ -5,8 +5,6 @@ description: "STM32F413CG (320k RAM. 1024k Flash) (STM32F413CGU6, 100MHz, 1MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f413cg"></a>
-
 # STM32F413CG (320k RAM. 1024k Flash)
 
 ## Hardware

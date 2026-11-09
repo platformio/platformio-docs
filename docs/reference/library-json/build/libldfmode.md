@@ -2,7 +2,7 @@
 description: "Specify Library Dependency Finder Mode."
 ---
 
-# `libLDFMode` {#libldfmode}
+# `libLDFMode`
 
 - **Required:** No
 - **Type:** String

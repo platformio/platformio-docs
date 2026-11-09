@@ -1,6 +1,4 @@
-<a id="compilation-db"></a>
-
-# Compilation database `compile_commands.json` {#compilation-database-compile-commands-json}
+# Compilation database `compile_commands.json`
 
 A [compilation database](https://clang.llvm.org/docs/JSONCompilationDatabase.html) is a [JSON-formatted](https://www.json.org/) file named `compile_commands.json` that contains structured data about every compilation unit in your project.
 

@@ -5,8 +5,6 @@ description: "Generic IRC15W1K31S (IRC15W1K31S, 11MHz, 31.50KB flash, 1KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-irc15w1k31s"></a>
-
 # Generic IRC15W1K31S
 
 ## Hardware

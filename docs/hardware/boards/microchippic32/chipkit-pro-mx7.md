@@ -5,8 +5,6 @@ description: "Digilent chipKIT Pro MX7 (32MX795F512L, 80MHz, 508KB flash, 128KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-pro-mx7"></a>
-
 # Digilent chipKIT Pro MX7
 
 ## Hardware

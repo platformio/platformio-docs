@@ -5,8 +5,6 @@ description: "L476DMW1K (STM32L476VGT6, 80MHz, 1MB flash, 128KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-rhombio-l476dmw1k"></a>
-
 # L476DMW1K
 
 ## Hardware

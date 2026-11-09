@@ -5,8 +5,6 @@ description: "uPesy ESP32S3 Basic (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-upesy-esp32s3-basic"></a>
-
 # uPesy ESP32S3 Basic
 
 ## Hardware

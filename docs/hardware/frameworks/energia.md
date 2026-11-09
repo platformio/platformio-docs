@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Energia framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-energia"></a>
-
 # Energia
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `energia`

@@ -5,8 +5,6 @@ description: "SparkFun RED-V Thing Plus (FE310, 320MHz, 16MB flash, 16KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-sparkfun-thing-plus-v"></a>
-
 # SparkFun RED-V Thing Plus
 
 ## Hardware

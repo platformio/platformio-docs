@@ -2,9 +2,7 @@
 description: "A name of a unit test to be debugged (platformio.ini option debug_test)."
 ---
 
-<a id="projectconf-debug-test"></a>
-
-# `debug_test` {#debug-test}
+# `debug_test`
 
 - **Type:** String
 - **Multiple values:** No

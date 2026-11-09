@@ -5,8 +5,6 @@ description: "MultiTech mDot (STM32F411RET6, 100MHz, 512KB flash, 128KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mts-mdot-f405rg"></a>
-
 # MultiTech mDot
 
 ## Hardware

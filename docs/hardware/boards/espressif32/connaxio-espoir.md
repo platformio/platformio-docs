@@ -5,8 +5,6 @@ description: "Connaxio's Espoir (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-connaxio-espoir"></a>
-
 # Connaxio's Espoir
 
 ## Hardware

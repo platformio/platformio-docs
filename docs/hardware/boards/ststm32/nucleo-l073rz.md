@@ -5,8 +5,6 @@ description: "ST Nucleo L073RZ (STM32L073RZ, 32MHz, 192KB flash, 20KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l073rz"></a>
-
 # ST Nucleo L073RZ
 
 ## Hardware

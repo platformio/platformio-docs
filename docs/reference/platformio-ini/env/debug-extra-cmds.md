@@ -2,9 +2,7 @@
 description: "An extra commands to be passed to a back-end debugger (platformio.ini option debug_extra_cmds)."
 ---
 
-<a id="projectconf-debug-extra-cmds"></a>
-
-# `debug_extra_cmds` {#debug-extra-cmds}
+# `debug_extra_cmds`
 
 - **Type:** String
 - **Multiple values:** Yes

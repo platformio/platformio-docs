@@ -5,8 +5,6 @@ description: "Econode-L082CZ (STM32L082CZY6, 32MHz, 192KB flash, 20KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-econode-l082cz"></a>
-
 # Econode-L082CZ
 
 ## Hardware

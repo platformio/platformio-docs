@@ -5,8 +5,6 @@ description: "Adafruit PyPortal M4 (SAMD51J20A, 120MHz, 1MB flash, 256KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pyportal-m4"></a>
-
 # Adafruit PyPortal M4
 
 ## Hardware

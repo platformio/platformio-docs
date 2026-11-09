@@ -5,8 +5,6 @@ description: "Maxim Wireless Sensor Node Demonstrator (MAX32610, 24MHz, 256KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-maxim32-maxwsnenv"></a>
-
 # Maxim Wireless Sensor Node Demonstrator
 
 ## Hardware

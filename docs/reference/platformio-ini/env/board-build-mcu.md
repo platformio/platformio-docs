@@ -2,7 +2,7 @@
 description: "A custom board MCU (platformio.ini option board_build.mcu)."
 ---
 
-# `board_build.mcu` {#board-build-mcu}
+# `board_build.mcu`
 
 - **Type:** String
 - **Multiple values:** No

@@ -2,9 +2,7 @@
 description: "Run command from a PlatformIO package."
 ---
 
-<a id="cmd-pkg-exec"></a>
-
-# pio pkg exec {#pio-pkg-exec}
+# pio pkg exec
 
 ## Usage {#usage}
 

@@ -5,8 +5,6 @@ description: "ACSIP S76S (STM32L073RZ, 32MHz, 192KB flash, 20KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-acsip-s76s"></a>
-
 # ACSIP S76S
 
 ## Hardware

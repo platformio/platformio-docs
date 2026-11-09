@@ -5,8 +5,6 @@ description: "OLIMEX ESP32-PoE-ISO (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-poe-iso"></a>
-
 # OLIMEX ESP32-PoE-ISO
 
 ## Hardware

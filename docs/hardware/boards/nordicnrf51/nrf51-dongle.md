@@ -5,8 +5,6 @@ description: "Nordic nRF51 Dongle (PCA10031) (NRF51822, 32MHz, 256KB flash, 32KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-nrf51-dongle"></a>
-
 # Nordic nRF51 Dongle (PCA10031)
 
 ## Hardware

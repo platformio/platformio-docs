@@ -5,8 +5,6 @@ description: "DOIT ESPduino32 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32doit-espduino"></a>
-
 # DOIT ESPduino32
 
 ## Hardware

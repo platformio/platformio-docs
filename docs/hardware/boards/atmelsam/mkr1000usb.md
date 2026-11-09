@@ -5,8 +5,6 @@ description: "Arduino MKR1000 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkr1000usb"></a>
-
 # Arduino MKR1000
 
 ## Hardware

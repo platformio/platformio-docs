@@ -5,8 +5,6 @@ description: "Generic MS51XC0BE (MS51XC0BE, 16MHz, 32KB flash, 2.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-ms51xc0be"></a>
-
 # Generic MS51XC0BE
 
 ## Hardware

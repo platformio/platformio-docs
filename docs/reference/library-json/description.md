@@ -2,7 +2,7 @@
 description: "The field helps users to identify and search for your library with a brief description."
 ---
 
-# `description` {#description}
+# `description`
 
 - **Required:** No (recommended for published packages)
 - **Type:** String

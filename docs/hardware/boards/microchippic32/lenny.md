@@ -5,8 +5,6 @@ description: "chipKIT Lenny (32MX270F256D, 40MHz, 120KB flash, 32KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-lenny"></a>
-
 # chipKIT Lenny
 
 ## Hardware

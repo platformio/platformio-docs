@@ -5,8 +5,6 @@ description: "ST Nucleo F429ZI (STM32F429ZIT6, 180MHz, 2MB flash, 192KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f429zi"></a>
-
 # ST Nucleo F429ZI
 
 ## Hardware

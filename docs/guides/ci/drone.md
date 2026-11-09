@@ -1,6 +1,4 @@
-<a id="ci-drone"></a>
-
-# Drone {#drone}
+# Drone
 
 [Drone](https://drone.io)  is a hosted continuous integration service. It enables you to conveniently set up projects to automatically build, test, and deploy as you make changes to your code to [GitHub](http://en.wikipedia.org/wiki/GitHub) and [BitBucket](http://en.wikipedia.org/wiki/Bitbucket) repositories.
 

@@ -5,8 +5,6 @@ description: "TTGO T-Watch (ESP32, 240MHz, 16MB flash, 320KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-t-watch"></a>
-
 # TTGO T-Watch
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "AI Thinker ESP32-CAM (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32cam"></a>
-
 # AI Thinker ESP32-CAM
 
 ## Hardware

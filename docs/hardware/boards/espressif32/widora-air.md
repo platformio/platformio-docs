@@ -5,8 +5,6 @@ description: "Widora AIR (ESP32, 240MHz, 16MB flash, 320KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-widora-air"></a>
-
 # Widora AIR
 
 ## Hardware

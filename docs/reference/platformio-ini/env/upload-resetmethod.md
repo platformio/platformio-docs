@@ -2,9 +2,7 @@
 description: "A custom reset method (platformio.ini option upload_resetmethod)."
 ---
 
-<a id="projectconf-upload-resetmethod"></a>
-
-# `upload_resetmethod` {#upload-resetmethod}
+# `upload_resetmethod`
 
 - **Type:** String
 - **Multiple values:** No

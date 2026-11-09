@@ -5,8 +5,6 @@ description: "Alorium XLR8 (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-alorium-xlr8"></a>
-
 # Alorium XLR8
 
 ## Hardware

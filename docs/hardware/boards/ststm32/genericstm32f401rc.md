@@ -5,8 +5,6 @@ description: "STM32F401RC (64k RAM. 256k Flash) (STM32F401RCT6, 84MHz, 256KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f401rc"></a>
-
 # STM32F401RC (64k RAM. 256k Flash)
 
 ## Hardware

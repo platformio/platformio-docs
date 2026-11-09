@@ -5,8 +5,6 @@ description: "Node32s (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-node32s"></a>
-
 # Node32s
 
 ## Hardware

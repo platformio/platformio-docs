@@ -5,8 +5,6 @@ description: "Adafruit QT Py M0 (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-qt-py-m0"></a>
-
 # Adafruit QT Py M0
 
 ## Hardware

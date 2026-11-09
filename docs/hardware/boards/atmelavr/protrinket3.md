@@ -5,8 +5,6 @@ description: "Adafruit Pro Trinket 3V/12MHz (USB) (ATMEGA328P, 12MHz, 28KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-protrinket3"></a>
-
 # Adafruit Pro Trinket 3V/12MHz (USB)
 
 ## Hardware

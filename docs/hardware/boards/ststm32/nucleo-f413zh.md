@@ -5,8 +5,6 @@ description: "ST Nucleo F413ZH (STM32F413ZHT6, 100MHz, 1.50MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f413zh"></a>
-
 # ST Nucleo F413ZH
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Allows one to setup a custom debugging server (platformio.ini option debug_server)."
 ---
 
-<a id="projectconf-debug-server"></a>
-
-# `debug_server` {#debug-server}
+# `debug_server`
 
 - **Type:** String
 - **Multiple values:** Yes

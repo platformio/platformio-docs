@@ -5,8 +5,6 @@ description: "USBasp stick (ATMEGA8, 12MHz, 8KB flash, 1KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-usbasp"></a>
-
 # USBasp stick
 
 ## Hardware

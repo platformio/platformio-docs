@@ -5,8 +5,6 @@ description: "ST 32L496GDISCOVERY (STM32L496AGI6, 80MHz, 1MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l496ag"></a>
-
 # ST 32L496GDISCOVERY
 
 ## Hardware

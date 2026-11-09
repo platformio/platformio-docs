@@ -5,8 +5,6 @@ description: "STM32G431CB (32k RAM. 128k Flash) (STM32G431CBU6, 170MHz, 128KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32g431cb"></a>
-
 # STM32G431CB (32k RAM. 128k Flash)
 
 ## Hardware

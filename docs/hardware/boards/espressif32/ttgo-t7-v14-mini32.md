@@ -5,8 +5,6 @@ description: "TTGO T7 V1.4 Mini32 (ESP32, 240MHz, 4MB flash, 1.25MB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-t7-v14-mini32"></a>
-
 # TTGO T7 V1.4 Mini32
 
 ## Hardware

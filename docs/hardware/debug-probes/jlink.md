@@ -2,9 +2,7 @@
 description: "Use the J-LINK debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-jlink"></a>
-
-# J-LINK {#j-link}
+# J-LINK
 
 [![](./img/jlink.png)](https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs)
 

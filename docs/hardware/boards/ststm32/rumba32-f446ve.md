@@ -5,8 +5,6 @@ description: "3D Printer control board (STM32F446RET6, 180MHz, 512KB flash, 128K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-rumba32-f446ve"></a>
-
 # 3D Printer control board
 
 ## Hardware

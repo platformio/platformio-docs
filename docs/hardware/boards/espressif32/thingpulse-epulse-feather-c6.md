@@ -5,8 +5,6 @@ description: "ThingPulse ePulse Feather C6 (ESP32C6, 160MHz, 4MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-thingpulse-epulse-feather-c6"></a>
-
 # ThingPulse ePulse Feather C6
 
 ## Hardware

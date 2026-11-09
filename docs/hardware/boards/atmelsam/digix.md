@@ -5,8 +5,6 @@ description: "Digistump DigiX (AT91SAM3X8E, 84MHz, 512KB flash, 96KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-digix"></a>
-
 # Digistump DigiX
 
 ## Hardware

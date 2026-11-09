@@ -5,8 +5,6 @@ description: "u-blox NINA-W10 series (ESP32, 240MHz, 2MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-nina-w10"></a>
-
 # u-blox NINA-W10 series
 
 ## Hardware

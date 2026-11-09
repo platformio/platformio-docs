@@ -2,9 +2,7 @@
 description: "Custom debug flags/options for preprocessing, compilation, assembly, and linking processes (platformio.ini option debug_build_flags)."
 ---
 
-<a id="projectconf-debug-build-flags"></a>
-
-# `debug_build_flags` {#debug-build-flags}
+# `debug_build_flags`
 
 - **Type:** String
 - **Multiple values:** Yes

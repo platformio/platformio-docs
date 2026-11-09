@@ -5,8 +5,6 @@ description: "Generic ATtiny43U (ATTINY43U, 8MHz, 4KB flash, 256B RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny43"></a>
-
 # Generic ATtiny43U
 
 ## Hardware

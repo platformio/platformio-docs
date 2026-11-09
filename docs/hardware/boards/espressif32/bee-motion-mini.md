@@ -5,8 +5,6 @@ description: "Smart Bee Motion Mini (ESP32C3, 160MHz, 4MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-bee-motion-mini"></a>
-
 # Smart Bee Motion Mini
 
 ## Hardware

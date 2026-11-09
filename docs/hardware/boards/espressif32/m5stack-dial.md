@@ -5,8 +5,6 @@ description: "M5Stack Dial (ESP32S3, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-dial"></a>
-
 # M5Stack Dial
 
 ## Hardware

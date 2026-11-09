@@ -5,8 +5,6 @@ description: "ST 32L476GDISCOVERY (STM32L476VGT6, 80MHz, 1MB flash, 128KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l476vg"></a>
-
 # ST 32L476GDISCOVERY
 
 ## Hardware

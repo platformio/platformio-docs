@@ -5,8 +5,6 @@ description: "Artix-7 35T Arty FPGA Evaluation Kit (E-CLASS, 50MHz, 0B flash, 12
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-shakti-artix7-35t"></a>
-
 # Artix-7 35T Arty FPGA Evaluation Kit
 
 ## Hardware

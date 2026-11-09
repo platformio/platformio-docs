@@ -2,9 +2,7 @@
 description: "See documentation for pio remote run --project-dir option."
 ---
 
-<a id="ide-cloud9"></a>
-
-# Cloud9 {#cloud9}
+# Cloud9
 
 :::warning
 

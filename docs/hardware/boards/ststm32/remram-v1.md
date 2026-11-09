@@ -5,8 +5,6 @@ description: "3D printer controller (STM32F765VIT6, 216MHz, 2MB flash, 512KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-remram-v1"></a>
-
 # 3D printer controller
 
 ## Hardware

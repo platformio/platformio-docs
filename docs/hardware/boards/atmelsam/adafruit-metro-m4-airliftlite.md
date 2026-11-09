@@ -5,8 +5,6 @@ description: "Adafruit Metro M4 AirLift Lite (SAMD51J19A, 120MHz, 512KB flash, 1
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-metro-m4-airliftlite"></a>
-
 # Adafruit Metro M4 AirLift Lite
 
 ## Hardware

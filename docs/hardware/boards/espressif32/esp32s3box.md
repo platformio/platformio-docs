@@ -5,8 +5,6 @@ description: "Espressif ESP32-S3-Box (ESP32S3, 240MHz, 16MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32s3box"></a>
-
 # Espressif ESP32-S3-Box
 
 ## Hardware

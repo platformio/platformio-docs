@@ -5,8 +5,6 @@ description: "Lattice iCEstick FPGA Evaluation Kit (ICE40-HX1K-TQ144, 12MHz, 32K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-lattice-ice40-icestick"></a>
-
 # Lattice iCEstick FPGA Evaluation Kit
 
 ## Hardware

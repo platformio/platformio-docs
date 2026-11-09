@@ -2,9 +2,7 @@
 description: "The PlatformIO Build System uses the following construction environments to process a project."
 ---
 
-<a id="scripting-envs"></a>
-
-# Construction environments {#construction-environments}
+# Construction environments
 
 The PlatformIO Build System uses the following construction environments to process a project:
 

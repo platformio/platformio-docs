@@ -5,8 +5,6 @@ description: "Olimex STM32-H103 (STM32F103RBT6, 72MHz, 128KB flash, 20KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-olimex-f103"></a>
-
 # Olimex STM32-H103
 
 ## Hardware

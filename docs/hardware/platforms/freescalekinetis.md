@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Freescale Kinetis development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-freescalekinetis"></a>
-
 # Freescale Kinetis
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/freescalekinetis](https://registry.platformio.org/platforms/platformio/freescalekinetis)  

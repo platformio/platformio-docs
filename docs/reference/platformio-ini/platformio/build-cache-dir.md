@@ -2,9 +2,7 @@
 description: "A location where PlatformIO Core keeps derived files from a build system (objects, firmwares, ELFs) and caches them between build environments (platformio.ini option build_cache_dir)."
 ---
 
-<a id="projectconf-pio-build-cache-dir"></a>
-
-# `build_cache_dir` {#build-cache-dir}
+# `build_cache_dir`
 
 - **Type:** Path
 - **Multiple values:** No
@@ -12,7 +10,7 @@ description: "A location where PlatformIO Core keeps derived files from a build 
 
 [PlatformIO Core (CLI)](../../../get-started/platformio-core.md) uses this folder to store derived files from a build system (objects, firmwares, ELFs). These files are shared between all build environments. To speed up a build process, you can use the same cache folder between different projects if they depend on the same development platform and framework.
 
-The example of [`platformio.ini`](../index.md) below instructs PlatformIO Build System to check [build_cache_dir](#projectconf-pio-build-cache-dir) for already compiled objects for [STM32Cube](/hardware/frameworks/stm32cube) and project source files. The cached object will not be used if the original source file was modified or build environment has a different configuration (new build flags, etc):
+The example of [`platformio.ini`](../index.md) below instructs PlatformIO Build System to check build_cache_dir for already compiled objects for [STM32Cube](/hardware/frameworks/stm32cube) and project source files. The cached object will not be used if the original source file was modified or build environment has a different configuration (new build flags, etc):
 
 ```ini
 [platformio]

@@ -5,8 +5,6 @@ description: "Black STM32F407ZG (STM32F407ZGT6, 168MHz, 1MB flash, 128KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-black-f407zg"></a>
-
 # Black STM32F407ZG
 
 ## Hardware

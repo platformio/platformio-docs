@@ -2,7 +2,7 @@
 description: "A project name (platformio.ini option name)."
 ---
 
-# `name` {#name}
+# `name`
 
 - **Type:** String
 - **Multiple values:** No

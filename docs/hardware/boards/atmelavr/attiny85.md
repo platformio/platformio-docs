@@ -5,8 +5,6 @@ description: "Generic ATtiny85 (ATTINY85, 8MHz, 8KB flash, 512B RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny85"></a>
-
 # Generic ATtiny85
 
 ## Hardware

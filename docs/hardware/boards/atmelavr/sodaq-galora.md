@@ -5,8 +5,6 @@ description: "SODAQ GaLoRa (ATMEGA1284P, 8MHz, 127KB flash, 16KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sodaq-galora"></a>
-
 # SODAQ GaLoRa
 
 ## Hardware

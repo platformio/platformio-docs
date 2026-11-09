@@ -5,8 +5,6 @@ description: "ST Sensor Node (STM32L476JG, 80MHz, 1MB flash, 128KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-silica-sensor-node"></a>
-
 # ST Sensor Node
 
 ## Hardware

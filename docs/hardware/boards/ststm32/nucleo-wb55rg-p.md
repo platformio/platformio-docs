@@ -5,8 +5,6 @@ description: "P-Nucleo WB55RG (STM32WB55RG, 64MHz, 512KB flash, 192KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-wb55rg-p"></a>
-
 # P-Nucleo WB55RG
 
 ## Hardware

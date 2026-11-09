@@ -2,9 +2,7 @@
 description: Show your PlatformIO Account profile, packages and subscriptions.
 ---
 
-<a id="cmd-account-show"></a>
-
-# pio account show {#pio-account-show}
+# pio account show
 
 Show your [PlatformIO Account](../../../get-started/platformio-account.md) profile, the packages and services available to you, and
 your active subscriptions.

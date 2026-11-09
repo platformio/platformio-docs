@@ -5,8 +5,6 @@ description: "Raspberry Pi Zero (BCM2835, 1000MHz, 512MB flash, 512MB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-linux-arm-raspberrypi-zero"></a>
-
 # Raspberry Pi Zero
 
 ## Hardware

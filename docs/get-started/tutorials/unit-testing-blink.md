@@ -3,9 +3,7 @@ sidebar_label: "Unit testing \"Blink\""
 description: Write and run unit tests on an Arduino Uno with PlatformIO and the Unity test framework.
 ---
 
-<a id="tutorial-unit-testing-blink"></a>
-
-# Unit testing a "Blink" project {#unit-testing-of-a-blink-project}
+# Unit testing a "Blink" project
 
 In this tutorial you add a unit test to the "Blink" project and run it on an
 Arduino Uno. The test checks the LED pin number and that the pin follows the

@@ -5,8 +5,6 @@ description: "4D Systems gen4 IoD Range (ESP8266, 80MHz, 512KB flash, 80KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-gen4iod"></a>
-
 # 4D Systems gen4 IoD Range
 
 ## Hardware

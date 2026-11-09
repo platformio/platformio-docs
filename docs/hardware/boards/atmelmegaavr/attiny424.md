@@ -5,8 +5,6 @@ description: "ATtiny424 (ATTINY424, 16MHz, 4KB flash, 512B RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-attiny424"></a>
-
 # ATtiny424
 
 ## Hardware

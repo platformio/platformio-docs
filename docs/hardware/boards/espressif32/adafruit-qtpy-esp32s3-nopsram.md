@@ -5,8 +5,6 @@ description: "Adafruit QT Py ESP32-S3 No PSRAM (ESP32S3, 240MHz, 8MB flash, 320K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-qtpy-esp32s3-nopsram"></a>
-
 # Adafruit QT Py ESP32-S3 No PSRAM
 
 ## Hardware

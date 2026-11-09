@@ -2,9 +2,7 @@
 description: Show the build metadata of a project - toolchain, flags, defines and include paths - for IDE integrations.
 ---
 
-<a id="cmd-project-metadata"></a>
-
-# pio project metadata {#pio-project-metadata}
+# pio project metadata
 
 Show the build metadata of a project. IDE extensions and code analysis tools
 use it to configure code completion and navigation.

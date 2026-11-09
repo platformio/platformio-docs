@@ -5,8 +5,6 @@ description: "u-blox EVK-NINA-B1 (NRF52832, 64MHz, 512KB flash, 64KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-ublox-evk-nina-b1"></a>
-
 # u-blox EVK-NINA-B1
 
 ## Hardware

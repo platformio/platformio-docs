@@ -2,9 +2,7 @@
 description: "Use the ESP USB bridge debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-esp-usb-bridge"></a>
-
-# ESP USB bridge {#esp-usb-bridge}
+# ESP USB bridge
 
 [![](./img/esp-usb-bridge.png)](https://github.com/espressif/esp-usb-bridge?utm_source=platformio&utm_medium=docs)
 

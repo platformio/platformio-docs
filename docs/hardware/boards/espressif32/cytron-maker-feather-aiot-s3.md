@@ -5,8 +5,6 @@ description: "Cytron Maker Feather AIoT S3 (ESP32S3, 240MHz, 8MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-cytron-maker-feather-aiot-s3"></a>
-
 # Cytron Maker Feather AIoT S3
 
 ## Hardware

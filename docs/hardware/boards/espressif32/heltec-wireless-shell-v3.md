@@ -5,8 +5,6 @@ description: "Heltec Wireless Shell v3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-wireless-shell-v3"></a>
-
 # Heltec Wireless Shell v3
 
 ## Hardware

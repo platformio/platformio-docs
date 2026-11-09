@@ -5,8 +5,6 @@ description: "Arduino M0 Pro (Native USB Port) (SAMD21G18A, 48MHz, 256KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mzeroprousb"></a>
-
 # Arduino M0 Pro (Native USB Port)
 
 ## Hardware

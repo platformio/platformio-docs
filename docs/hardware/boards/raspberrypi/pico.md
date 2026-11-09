@@ -5,8 +5,6 @@ description: "Raspberry Pi Pico (RP2040, 133MHz, 2MB flash, 264KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-raspberrypi-pico"></a>
-
 # Raspberry Pi Pico
 
 ## Hardware

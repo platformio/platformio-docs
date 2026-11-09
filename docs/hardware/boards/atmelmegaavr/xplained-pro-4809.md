@@ -5,8 +5,6 @@ description: "Xplained Pro ATmega4809 (ATMEGA4809, 16MHz, 48KB flash, 6KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-xplained-pro-4809"></a>
-
 # Xplained Pro ATmega4809
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "A location where PlatformIO Core stores caching information (requests to PlatformIO Registry, downloaded packages and other service information) (platformio.ini option cache_dir)."
 ---
 
-<a id="projectconf-pio-cache-dir"></a>
-
-# `cache_dir` {#cache-dir}
+# `cache_dir`
 
 - **Type:** Path
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "WeMos D1 mini Lite (ESP8266, 80MHz, 1MB flash, 80KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-d1-mini-lite"></a>
-
 # WeMos D1 mini Lite
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "sakura.io Evaluation Board (STM32F411RET6, 100MHz, 1MB flash, 128K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-sakuraio-evb-01"></a>
-
 # sakura.io Evaluation Board
 
 ## Hardware

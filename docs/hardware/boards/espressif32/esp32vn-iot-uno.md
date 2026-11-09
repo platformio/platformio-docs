@@ -5,8 +5,6 @@ description: "ESP32vn IoT Uno (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32vn-iot-uno"></a>
-
 # ESP32vn IoT Uno
 
 ## Hardware

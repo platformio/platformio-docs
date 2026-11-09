@@ -5,8 +5,6 @@ description: "Adafruit Bluefruit nRF52832 Feather (NRF52832, 64MHz, 512KB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-feather-nrf52832"></a>
-
 # Adafruit Bluefruit nRF52832 Feather
 
 ## Hardware

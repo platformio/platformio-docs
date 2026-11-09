@@ -5,8 +5,6 @@ description: "Raspberry Pi 1 Model B (BCM2835, 700MHz, 512MB flash, 512MB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-linux-arm-raspberrypi-1b"></a>
-
 # Raspberry Pi 1 Model B
 
 ## Hardware

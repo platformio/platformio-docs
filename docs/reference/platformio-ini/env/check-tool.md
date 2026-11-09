@@ -2,9 +2,7 @@
 description: "A list of check tools used for analysis (platformio.ini option check_tool)."
 ---
 
-<a id="projectconf-check-tool"></a>
-
-# `check_tool` {#check-tool}
+# `check_tool`
 
 - **Type:** String: `cppcheck`, `clangtidy`
 - **Multiple values:** Yes

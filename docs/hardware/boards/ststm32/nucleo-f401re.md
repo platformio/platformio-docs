@@ -5,8 +5,6 @@ description: "ST Nucleo F401RE (STM32F401RET6, 84MHz, 512KB flash, 96KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f401re"></a>
-
 # ST Nucleo F401RE
 
 ## Hardware

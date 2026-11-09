@@ -5,8 +5,6 @@ description: "Generic 8051 (8051, 11MHz, 4KB flash, 128B RAM): PlatformIO board 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-generic8051"></a>
-
 # Generic 8051
 
 ## Hardware

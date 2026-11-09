@@ -2,9 +2,7 @@
 description: "PlatformIO Build System allows you to add middleware functions that can be used for Build Node(Object) construction."
 ---
 
-<a id="scripting-middlewares"></a>
-
-# Build middlewares {#build-middlewares}
+# Build middlewares
 
 PlatformIO Build System allows you to add middleware functions that can be used for Build Node(Object) construction. This is very useful if you need to add custom flags for the specific file nodes or exclude them from a build process.
 

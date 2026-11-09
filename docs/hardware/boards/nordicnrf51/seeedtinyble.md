@@ -5,8 +5,6 @@ description: "Seeed Tiny BLE (NRF51822, 16MHz, 256KB flash, 16KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-seeedtinyble"></a>
-
 # Seeed Tiny BLE
 
 ## Hardware

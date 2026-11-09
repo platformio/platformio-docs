@@ -5,8 +5,6 @@ description: "TI LaunchPad (Tiva C) w/ tm4c129 (120MHz) (LPTM4C1294NCPDT, 120MHz
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-titiva-lptm4c1294ncpdt"></a>
-
 # TI LaunchPad (Tiva C) w/ tm4c129 (120MHz)
 
 ## Hardware

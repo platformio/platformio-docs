@@ -5,8 +5,6 @@ description: "SeeedStudio LoRa-E5 mini (STM32WLE5JC, 48MHz, 256KB flash, 64KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-lora-e5-mini"></a>
-
 # SeeedStudio LoRa-E5 mini
 
 ## Hardware

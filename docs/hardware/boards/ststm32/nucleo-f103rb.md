@@ -5,8 +5,6 @@ description: "ST Nucleo F103RB (STM32F103RBT6, 72MHz, 128KB flash, 20KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f103rb"></a>
-
 # ST Nucleo F103RB
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit pyBadge AirLift M4 (SAMD51J20A, 120MHz, 1008KB flash, 192
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pybadge-airlift-m4"></a>
-
 # Adafruit pyBadge AirLift M4
 
 ## Hardware

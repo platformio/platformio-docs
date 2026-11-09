@@ -5,8 +5,6 @@ description: "STM32-H407 (STM32F407ZGT6, 168MHz, 1MB flash, 128KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-olimex-h407"></a>
-
 # STM32-H407
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Big Tree Tech EBB42 V1.1 (STM32G0B1RET6, 64MHz, 128KB flash, 144KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-btt-ebb42-v1-1"></a>
-
 # Big Tree Tech EBB42 V1.1
 
 ## Hardware

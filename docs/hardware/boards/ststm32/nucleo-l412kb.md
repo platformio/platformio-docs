@@ -5,8 +5,6 @@ description: "ST Nucleo L412KB (STM32L412KBU6, 80MHz, 128KB flash, 40KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l412kb"></a>
-
 # ST Nucleo L412KB
 
 ## Hardware

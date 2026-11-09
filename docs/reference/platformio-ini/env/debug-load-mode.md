@@ -2,9 +2,7 @@
 description: "Allows one to control when PlatformIO should load debugging firmware to the end target (platformio.ini option debug_load_mode)."
 ---
 
-<a id="projectconf-debug-load-mode"></a>
-
-# `debug_load_mode` {#debug-load-mode}
+# `debug_load_mode`
 
 - **Type:** String: `always`, `modified`, `manual`
 - **Multiple values:** No

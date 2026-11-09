@@ -5,8 +5,6 @@ description: "WeAct Studio MiniSTM32H750VBTX (STM32H750VBT6, 480MHz, 512KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-weact-mini-h750vbtx"></a>
-
 # WeAct Studio MiniSTM32H750VBTX
 
 ## Hardware

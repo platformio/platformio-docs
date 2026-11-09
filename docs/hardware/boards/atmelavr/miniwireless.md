@@ -5,8 +5,6 @@ description: "Anarduino MiniWireless (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-miniwireless"></a>
-
 # Anarduino MiniWireless
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "STM32F103RG (96k RAM. 1024k Flash) (STM32F103RGT6, 72MHz, 1MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103rg"></a>
-
 # STM32F103RG (96k RAM. 1024k Flash)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Digispark Pro (32 byte buffer) (ATTINY167, 16MHz, 14.50KB flash, 5
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-digispark-pro32"></a>
-
 # Digispark Pro (32 byte buffer)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST Nucleo C031C6 (STM32C031C6T6, 48MHz, 32KB flash, 12KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-c031c6"></a>
-
 # ST Nucleo C031C6
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "A protocol that `uploader` tool uses to talk to a board (platformio.ini option upload_protocol)."
 ---
 
-<a id="projectconf-upload-protocol"></a>
-
-# `upload_protocol` {#upload-protocol}
+# `upload_protocol`
 
 - **Type:** String
 - **Multiple values:** No

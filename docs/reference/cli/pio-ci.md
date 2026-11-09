@@ -2,9 +2,7 @@
 description: "pio ci command is conceived of as 'hot key' for building project with arbitrary source code structure."
 ---
 
-<a id="cmd-ci"></a>
-
-# pio ci {#pio-ci}
+# pio ci
 
 ## Usage {#usage}
 
@@ -14,15 +12,15 @@ pio ci [OPTIONS] [SRC]
 
 ## Description {#description}
 
-[pio ci](#cmd-ci) command is conceived of as "hot key" for building project with arbitrary source code structure. In a nutshell, using `SRC` and [`pio ci --lib`](#cmdoption-pio-ci-l) contents PlatformIO initializes via [pio project init](./pio-project/init.md) new project in [`pio ci --build-dir`](#cmdoption-pio-ci-build-dir) with the build environments (using [`pio ci --board`](#cmdoption-pio-ci-b) or [`pio ci --project-conf`](#cmdoption-pio-ci-c)) and processes them via [pio run](./pio-run.md) command.
+pio ci command is conceived of as "hot key" for building project with arbitrary source code structure. In a nutshell, using `SRC` and [`pio ci --lib`](#cmdoption-pio-ci-l) contents PlatformIO initializes via [pio project init](./pio-project/init.md) new project in [`pio ci --build-dir`](#cmdoption-pio-ci-build-dir) with the build environments (using [`pio ci --board`](#cmdoption-pio-ci-b) or [`pio ci --project-conf`](#cmdoption-pio-ci-c)) and processes them via [pio run](./pio-run.md) command.
 
-[pio ci](#cmd-ci) command accepts **multiple** `SRC` arguments, [`pio ci --lib`](#cmdoption-pio-ci-l) and [`pio ci --exclude`](#cmdoption-pio-ci-exclude) options which can be a path to directory, file or [Glob Pattern](http://en.wikipedia.org/wiki/Glob_%28programming%29). You can also omit `SRC` and set the paths in the [`PLATFORMIO_CI_SRC`](../environment-variables.md#envvar-PLATFORMIO_CI_SRC) environment variable, separated by `:` on macOS and Linux or `;` on Windows
+pio ci command accepts **multiple** `SRC` arguments, [`pio ci --lib`](#cmdoption-pio-ci-l) and [`pio ci --exclude`](#cmdoption-pio-ci-exclude) options which can be a path to directory, file or [Glob Pattern](http://en.wikipedia.org/wiki/Glob_%28programming%29). You can also omit `SRC` and set the paths in the [`PLATFORMIO_CI_SRC`](../environment-variables.md#envvar-PLATFORMIO_CI_SRC) environment variable, separated by `:` on macOS and Linux or `;` on Windows
 
 For more details as for integration with the popular Continuous Integration Systems see [Continuous Integration](../../guides/ci/index.md) page.
 
 :::note
 
-[pio ci](#cmd-ci) command is useful for library developers. It allows one to build different examples without creating own project per them.
+pio ci command is useful for library developers. It allows one to build different examples without creating own project per them.
 
 :::
 

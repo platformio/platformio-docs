@@ -5,8 +5,6 @@ description: "Arduino Leonardo ETH (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-leonardoeth"></a>
-
 # Arduino Leonardo ETH
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "XinaBox CW01 (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-xinabox-cw01"></a>
-
 # XinaBox CW01
 
 ## Hardware

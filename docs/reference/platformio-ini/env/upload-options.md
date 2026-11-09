@@ -2,9 +2,7 @@
 description: Upload options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-upload"></a>
-
-# Upload options {#upload-options}
+# Upload options
 
 Control how firmware is uploaded to the board.
 

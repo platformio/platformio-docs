@@ -5,8 +5,6 @@ description: "Arduino Due (Programming Port) (AT91SAM3X8E, 84MHz, 512KB flash, 9
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-due"></a>
-
 # Arduino Due (Programming Port)
 
 ## Hardware

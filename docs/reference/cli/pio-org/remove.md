@@ -2,9 +2,7 @@
 description: Remove an owner from an organization.
 ---
 
-<a id="cmd-org-remove"></a>
-
-# pio org remove {#pio-org-remove}
+# pio org remove
 
 Remove an owner from an organization.
 

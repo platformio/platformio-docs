@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Microchip PIC32 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-microchippic32"></a>
-
 # Microchip PIC32
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/microchippic32](https://registry.platformio.org/platforms/platformio/microchippic32)  

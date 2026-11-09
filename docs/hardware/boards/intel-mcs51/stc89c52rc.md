@@ -5,8 +5,6 @@ description: "Generic STC89C52RC (STC89C52RC, 11MHz, 8KB flash, 512B RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc89c52rc"></a>
-
 # Generic STC89C52RC
 
 ## Hardware

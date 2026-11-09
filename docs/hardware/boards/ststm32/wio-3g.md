@@ -5,8 +5,6 @@ description: "Seeed Wio 3G (STM32F439VI, 180MHz, 2MB flash, 256KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-wio-3g"></a>
-
 # Seeed Wio 3G
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST STM32C0116-DK Discovery Kit (STM32C011F6U6, 48MHz, 32KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-c011f6"></a>
-
 # ST STM32C0116-DK Discovery Kit
 
 ## Hardware

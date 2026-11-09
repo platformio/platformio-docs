@@ -5,8 +5,6 @@ description: "MikroElektronika Flip N Click MZ (32MZ2048EFH100, 252MHz, 1.98MB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-flipnclickmz"></a>
-
 # MikroElektronika Flip N Click MZ
 
 ## Hardware

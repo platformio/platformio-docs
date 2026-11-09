@@ -5,8 +5,6 @@ description: "ATtiny3217 (ATTINY3217, 16MHz, 32KB flash, 2KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-attiny3217"></a>
-
 # ATtiny3217
 
 ## Hardware

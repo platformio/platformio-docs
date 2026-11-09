@@ -5,8 +5,6 @@ description: "Heltec Wireless Stick Lite (ESP32, 240MHz, 4MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-wireless-stick-lite"></a>
-
 # Heltec Wireless Stick Lite
 
 ## Hardware

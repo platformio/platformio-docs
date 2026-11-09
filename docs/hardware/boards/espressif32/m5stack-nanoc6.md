@@ -5,8 +5,6 @@ description: "M5Stack NanoC6 (ESP32C6, 160MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-nanoc6"></a>
-
 # M5Stack NanoC6
 
 ## Hardware

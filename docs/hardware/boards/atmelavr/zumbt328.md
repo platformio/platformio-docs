@@ -5,8 +5,6 @@ description: "BQ ZUM BT-328 (ATMEGA328P, 16MHz, 28KB flash, 2KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-zumbt328"></a>
-
 # BQ ZUM BT-328
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Seeed Arch Pro (LPC1768, 96MHz, 512KB flash, 64KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxplpc-seeedarchpro"></a>
-
 # Seeed Arch Pro
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "SODAQ Ndogo (ATMEGA1284P, 8MHz, 127KB flash, 16KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sodaq-ndogo"></a>
-
 # SODAQ Ndogo
 
 ## Hardware

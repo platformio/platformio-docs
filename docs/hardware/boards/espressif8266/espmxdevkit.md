@@ -5,8 +5,6 @@ description: "ESP-Mx DevKit (ESP8285) (ESP8266, 80MHz, 1MB flash, 80KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-espmxdevkit"></a>
-
 # ESP-Mx DevKit (ESP8285)
 
 ## Hardware

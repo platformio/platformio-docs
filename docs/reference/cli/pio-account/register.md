@@ -2,9 +2,7 @@
 description: Create a PlatformIO Account from the command line.
 ---
 
-<a id="cmd-account-register"></a>
-
-# pio account register {#pio-account-register}
+# pio account register
 
 Create a [PlatformIO Account](../../../get-started/platformio-account.md). The command asks for every option you omit.
 

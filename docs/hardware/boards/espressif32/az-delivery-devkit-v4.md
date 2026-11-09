@@ -5,8 +5,6 @@ description: "AZ-Delivery ESP-32 Dev Kit C V4 (ESP32, 240MHz, 4MB flash, 520KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-az-delivery-devkit-v4"></a>
-
 # AZ-Delivery ESP-32 Dev Kit C V4
 
 ## Hardware

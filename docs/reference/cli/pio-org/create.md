@@ -2,9 +2,7 @@
 description: Create an organization in PlatformIO.
 ---
 
-<a id="cmd-org-create"></a>
-
-# pio org create {#pio-org-create}
+# pio org create
 
 Create an organization. You become its owner.
 

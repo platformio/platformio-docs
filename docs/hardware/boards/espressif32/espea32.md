@@ -5,8 +5,6 @@ description: "April Brother ESPea32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-espea32"></a>
-
 # April Brother ESPea32
 
 ## Hardware

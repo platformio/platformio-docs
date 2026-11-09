@@ -5,8 +5,6 @@ description: "SeeedStudio LoRa E5 Dev Board (STM32WLE5JC, 48MHz, 256KB flash, 64
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-lora-e5-dev-board"></a>
-
 # SeeedStudio LoRa E5 Dev Board
 
 ## Hardware

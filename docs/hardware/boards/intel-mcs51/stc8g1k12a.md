@@ -5,8 +5,6 @@ description: "Generic STC8G1K12A (STC8G1K12A, 11MHz, 12KB flash, 1.25KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8g1k12a"></a>
-
 # Generic STC8G1K12A
 
 ## Hardware

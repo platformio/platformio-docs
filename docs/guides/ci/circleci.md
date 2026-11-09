@@ -2,9 +2,7 @@
 description: "Integration for USB_Host_Shield_2.0 project."
 ---
 
-<a id="ci-circleci"></a>
-
-# CircleCI {#circleci}
+# CircleCI
 
 [CircleCI](https://circleci.com/about) is a hosted cloud platform that provides hosted continuous integration, deployment, and testing to [GitHub](http://en.wikipedia.org/wiki/GitHub) repositories.
 

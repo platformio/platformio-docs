@@ -5,8 +5,6 @@ description: "M5Stack Tough (ESP32, 240MHz, 16MB flash, 4.31MB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-tough"></a>
-
 # M5Stack Tough
 
 ## Hardware

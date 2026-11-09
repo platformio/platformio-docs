@@ -5,8 +5,6 @@ description: "Arduino MKR NB 1500 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-mkrnb1500"></a>
-
 # Arduino MKR NB 1500
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Unexpected Maker FeatherS2 Neo (ESP32S2, 240MHz, 4MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-um-feathers2-neo"></a>
-
 # Unexpected Maker FeatherS2 Neo
 
 ## Hardware

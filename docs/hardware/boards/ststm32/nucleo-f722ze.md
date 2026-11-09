@@ -5,8 +5,6 @@ description: "ST Nucleo F722ZE (STM32F722ZET6, 216MHz, 512KB flash, 256KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f722ze"></a>
-
 # ST Nucleo F722ZE
 
 ## Hardware

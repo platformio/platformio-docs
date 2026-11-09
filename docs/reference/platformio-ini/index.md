@@ -2,9 +2,7 @@
 description: Reference of platformio.ini, the PlatformIO project configuration file - syntax, sections and options.
 ---
 
-<a id="projectconf"></a>
-
-# platformio.ini {#platformio-ini-project-configuration-file}
+# platformio.ini
 
 `platformio.ini` is the project configuration file. Every PlatformIO project
 has one in its root directory. It declares the

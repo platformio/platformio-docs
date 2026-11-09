@@ -5,8 +5,6 @@ description: "BL654 Development Kit (NRF52840, 64MHz, 1MB flash, 256KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-laird-bl654-dvk"></a>
-
 # BL654 Development Kit
 
 ## Hardware

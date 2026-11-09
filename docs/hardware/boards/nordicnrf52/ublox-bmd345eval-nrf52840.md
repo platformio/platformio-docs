@@ -5,8 +5,6 @@ description: "u-blox BMD-345-EVAL (NRF52840, 64MHz, 1MB flash, 256KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-ublox-bmd345eval-nrf52840"></a>
-
 # u-blox BMD-345-EVAL
 
 ## Hardware

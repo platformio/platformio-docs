@@ -2,9 +2,7 @@
 description: "Build main source code in pair with a test code (platformio.ini option test_build_src)."
 ---
 
-<a id="projectconf-test-build-src"></a>
-
-# `test_build_src` {#test-build-src}
+# `test_build_src`
 
 - **Type:** Boolean: `yes` or `no`
 - **Multiple values:** No

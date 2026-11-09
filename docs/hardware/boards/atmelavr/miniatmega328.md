@@ -5,8 +5,6 @@ description: "Arduino Mini ATmega328 (ATMEGA328P, 16MHz, 28KB flash, 2KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-miniatmega328"></a>
-
 # Arduino Mini ATmega328
 
 ## Hardware

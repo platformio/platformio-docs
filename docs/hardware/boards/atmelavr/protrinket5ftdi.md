@@ -5,8 +5,6 @@ description: "Adafruit Pro Trinket 5V/16MHz (FTDI) (ATMEGA328P, 16MHz, 28KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-protrinket5ftdi"></a>
-
 # Adafruit Pro Trinket 5V/16MHz (FTDI)
 
 ## Hardware

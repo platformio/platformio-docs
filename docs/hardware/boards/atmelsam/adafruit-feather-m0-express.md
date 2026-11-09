@@ -5,8 +5,6 @@ description: "Adafruit Feather M0 Express (SAMD21G18A, 48MHz, 256KB flash, 32KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-feather-m0-express"></a>
-
 # Adafruit Feather M0 Express
 
 ## Hardware

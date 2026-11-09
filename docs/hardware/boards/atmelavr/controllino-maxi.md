@@ -5,8 +5,6 @@ description: "Controllino Maxi (ATMEGA2560, 16MHz, 248KB flash, 8KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-controllino-maxi"></a>
-
 # Controllino Maxi
 
 ## Hardware

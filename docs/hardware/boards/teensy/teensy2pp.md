@@ -5,8 +5,6 @@ description: "Teensy++ 2.0 (AT90USB1286, 16MHz, 127KB flash, 8KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy2pp"></a>
-
 # Teensy++ 2.0
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Prepare PlatformIO project for debugging or launch debug server."
 ---
 
-<a id="cmd-debug"></a>
-
-# pio debug {#pio-debug}
+# pio debug
 
 Helper command for [Debugging](../../guides/debugging/index.md).
 

@@ -2,9 +2,7 @@
 description: "See documentation for pio remote run --project-dir option."
 ---
 
-<a id="ide-codeanywhere"></a>
-
-# Codeanywhere {#codeanywhere}
+# Codeanywhere
 
 [Codeanywhere](https://codeanywhere.com) is a Cross Platform Cloud IDE and it has all the features of Desktop IDE but with additional features only a cloud application can give you! Codeanywhere is very flexible and you can set up your workflow any way you want it. The elegant development environment will let you focus on building great applications quicker. All the features you will need for any coding task are built into Codeanywhere, making development more productive and fun.
 

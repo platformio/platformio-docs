@@ -2,9 +2,7 @@
 description: "Use the TIAO USB Multi-Protocol adapter (TUMPA) debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-tumpa"></a>
-
-# TIAO USB Multi-Protocol adapter (TUMPA) {#tiao-usb-multi-protocol-adapter-tumpa}
+# TIAO USB Multi-Protocol adapter (TUMPA)
 
 [![](./img/tumpa.jpg)](https://www.diygadget.com/jtag-cables-and-microcontroller-programmers/114-tiao-usb-multi-protocol-adapter-jtag-spi-i2c-serial.html?utm_source=platformio&utm_medium=docs)
 

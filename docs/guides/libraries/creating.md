@@ -2,9 +2,7 @@
 description: Structure, manifest and publishing of a PlatformIO library.
 ---
 
-<a id="library-creating"></a>
-
-# Create a library {#creating-library}
+# Create a library
 
 Move code you share between projects into a library: other projects can then
 depend on it, and PlatformIO installs, builds and updates it for them.

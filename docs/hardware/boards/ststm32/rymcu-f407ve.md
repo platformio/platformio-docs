@@ -5,8 +5,6 @@ description: "RYMCU STM32F407VE (192k RAM. 512k Flash) (STM32F407VET6, 168MHz, 5
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-rymcu-f407ve"></a>
-
 # RYMCU STM32F407VE (192k RAM. 512k Flash)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "AT90CAN32 (AT90CAN32, 16MHz, 32KB flash, 2KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-at90can32"></a>
-
 # AT90CAN32
 
 ## Hardware

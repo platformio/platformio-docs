@@ -2,7 +2,7 @@
 description: "Override default PlatformIOLibBuilder with another builder."
 ---
 
-# `builder` {#builder}
+# `builder`
 
 - **Required:** No
 - **Type:** String

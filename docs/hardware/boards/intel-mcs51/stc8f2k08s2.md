@@ -5,8 +5,6 @@ description: "Generic STC8F2K08S2 (STC8F2K08S2, 11MHz, 8KB flash, 2.25KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8f2k08s2"></a>
-
 # Generic STC8F2K08S2
 
 ## Hardware

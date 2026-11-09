@@ -5,8 +5,6 @@ description: "RoboHeart Hercules (ESP32, 240MHz, 4MB flash, 320KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-roboheart-hercules"></a>
-
 # RoboHeart Hercules
 
 ## Hardware

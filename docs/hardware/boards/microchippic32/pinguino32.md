@@ -5,8 +5,6 @@ description: "Olimex PIC32-PINGUINO (32MX440F256H, 80MHz, 252KB flash, 32KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-pinguino32"></a>
-
 # Olimex PIC32-PINGUINO
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Build, upload, test and monitor devices connected to remote machines with PlatformIO Remote.
 ---
 
-<a id="cmd-remote"></a>
-
-# pio remote {#platformio-remote-cli}
+# pio remote
 
 Work with devices connected to other computers. See
 [Remote development](../../../guides/remote-development.md).

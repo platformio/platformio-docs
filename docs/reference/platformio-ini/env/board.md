@@ -2,9 +2,7 @@
 description: "A board ID (platformio.ini option board)."
 ---
 
-<a id="projectconf-env-board"></a>
-
-# `board` {#board}
+# `board`
 
 - **Type:** String
 - **Multiple values:** No

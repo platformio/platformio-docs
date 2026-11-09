@@ -5,8 +5,6 @@ description: "nicai-systems NIBO 2 robot (ATMEGA128, 16MHz, 128KB flash, 4KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-nibo2"></a>
-
 # nicai-systems NIBO 2 robot
 
 ## Hardware

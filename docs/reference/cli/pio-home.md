@@ -2,9 +2,7 @@
 description: Start the PlatformIO Home server from the command line.
 ---
 
-<a id="cmd-home"></a>
-
-# pio home {#pio-home}
+# pio home
 
 Start the [PlatformIO Home](../../get-started/platformio-home.md) web server
 and open it in your browser.

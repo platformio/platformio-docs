@@ -5,8 +5,6 @@ description: "ATmega4809 (ATMEGA4809, 16MHz, 48KB flash, 6KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-atmega4809"></a>
-
 # ATmega4809
 
 ## Hardware

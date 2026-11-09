@@ -5,8 +5,6 @@ description: "Adafruit ItsyBitsy 3V/8MHz (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-itsybitsy32u4-3v"></a>
-
 # Adafruit ItsyBitsy 3V/8MHz
 
 ## Hardware

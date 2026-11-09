@@ -5,8 +5,6 @@ description: "Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT (EFR32MG12P432F1
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-siliconlabsefm32-tb-sense-12"></a>
-
 # Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT
 
 ## Hardware

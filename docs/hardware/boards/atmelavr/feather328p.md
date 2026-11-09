@@ -5,8 +5,6 @@ description: "Adafruit Feather 328P (ATMEGA328P, 8MHz, 31.50KB flash, 2KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-feather328p"></a>
-
 # Adafruit Feather 328P
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "HiFive1 Rev B (FE310, 320MHz, 16MB flash, 16KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-hifive1-revb"></a>
-
 # HiFive1 Rev B
 
 ## Hardware

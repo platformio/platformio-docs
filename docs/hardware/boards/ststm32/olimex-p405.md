@@ -5,8 +5,6 @@ description: "Olimex STM32-P405 (STM32F405RGT6, 168MHz, 1MB flash, 128KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-olimex-p405"></a>
-
 # Olimex STM32-P405
 
 ## Hardware

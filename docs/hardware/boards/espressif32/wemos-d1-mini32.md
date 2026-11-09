@@ -5,8 +5,6 @@ description: "WEMOS D1 MINI ESP32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wemos-d1-mini32"></a>
-
 # WEMOS D1 MINI ESP32
 
 ## Hardware

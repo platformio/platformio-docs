@@ -5,8 +5,6 @@ description: "Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz) (ATMEGA168, 16MHz, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-pro16mhzatmega168"></a>
-
 # Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Electrosmith Daisy (STM32H750IBK6, 400MHz, 128KB flash, 512KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-electrosmith-daisy"></a>
-
 # Electrosmith Daisy
 
 ## Hardware

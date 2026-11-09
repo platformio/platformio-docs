@@ -2,9 +2,7 @@
 description: "Run remotely tests from PlatformIO based project."
 ---
 
-<a id="cmd-remote-test"></a>
-
-# pio remote test {#pio-remote-test}
+# pio remote test
 
 Helper command for remote [Unit Testing](../../../guides/unit-testing/index.md).
 

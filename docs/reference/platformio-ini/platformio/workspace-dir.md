@@ -2,9 +2,7 @@
 description: "A path to a project workspace directory where PlatformIO keeps by default compiled objects, static libraries, firmwares, and external library dependencies (platformio.ini option workspace_dir)."
 ---
 
-<a id="projectconf-pio-workspace-dir"></a>
-
-# `workspace_dir` {#workspace-dir}
+# `workspace_dir`
 
 - **Type:** Path
 - **Multiple values:** No

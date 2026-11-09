@@ -5,8 +5,6 @@ description: "Adafruit ItsyBitsy M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-itsybitsy-m0"></a>
-
 # Adafruit ItsyBitsy M0
 
 ## Hardware

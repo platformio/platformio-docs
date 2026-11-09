@@ -5,8 +5,6 @@ description: "Adafruit FunHouse (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-funhouse-esp32s2"></a>
-
 # Adafruit FunHouse
 
 ## Hardware

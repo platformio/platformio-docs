@@ -5,8 +5,6 @@ description: "Arduino Yun Mini (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-yunmini"></a>
-
 # Arduino Yun Mini
 
 ## Hardware

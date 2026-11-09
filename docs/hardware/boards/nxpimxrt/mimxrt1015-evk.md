@@ -5,8 +5,6 @@ description: "NXP i.MX RT1015 Evaluation Kit (MIMXRT1015DAF5A, 500MHz, 96KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nxpimxrt-mimxrt1015-evk"></a>
-
 # NXP i.MX RT1015 Evaluation Kit
 
 ## Hardware

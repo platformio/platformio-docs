@@ -2,9 +2,7 @@
 description: Monitor options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-monitor"></a>
-
-# Monitor options {#monitor-options}
+# Monitor options
 
 Default settings of the serial monitor for this environment.
 

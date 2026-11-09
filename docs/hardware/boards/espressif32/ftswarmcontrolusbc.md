@@ -5,8 +5,6 @@ description: "Elektrofuzzis ftSwarmControl USB-C (ESP32S3, 240MHz, 4MB flash, 32
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ftswarmcontrolusbc"></a>
-
 # Elektrofuzzis ftSwarmControl USB-C
 
 ## Hardware

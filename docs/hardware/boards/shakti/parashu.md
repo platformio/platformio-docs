@@ -5,8 +5,6 @@ description: "Parashu on Artix-7 100T Arty FPGA Evaluation Kit (E-CLASS, 50MHz, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-shakti-parashu"></a>
-
 # Parashu on Artix-7 100T Arty FPGA Evaluation Kit
 
 ## Hardware

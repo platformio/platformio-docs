@@ -2,9 +2,7 @@
 description: "A location where PlatformIO Core keeps installed development platforms (platformio.ini option platforms_dir)."
 ---
 
-<a id="projectconf-pio-platforms-dir"></a>
-
-# `platforms_dir` {#platforms-dir}
+# `platforms_dir`
 
 - **Type:** Path
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "Waveshare Open103Z (STM32F103ZET6, 72MHz, 512KB flash, 64KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-waveshare-open103z"></a>
-
 # Waveshare Open103Z
 
 ## Hardware

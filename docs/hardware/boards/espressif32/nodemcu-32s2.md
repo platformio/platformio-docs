@@ -5,8 +5,6 @@ description: "Ai-Thinker NodeMCU-32S2 (ESP-12K) (ESP32S2, 240MHz, 4MB flash, 320
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-nodemcu-32s2"></a>
-
 # Ai-Thinker NodeMCU-32S2 (ESP-12K)
 
 ## Hardware

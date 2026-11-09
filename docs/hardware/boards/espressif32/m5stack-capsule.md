@@ -5,8 +5,6 @@ description: "M5Stack Capsule (ESP32S3, 240MHz, 4MB flash, 320KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-capsule"></a>
-
 # M5Stack Capsule
 
 ## Hardware

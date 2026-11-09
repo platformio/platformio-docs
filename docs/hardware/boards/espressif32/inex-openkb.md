@@ -5,8 +5,6 @@ description: "INEX OpenKB (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-inex-openkb"></a>
-
 # INEX OpenKB
 
 ## Hardware

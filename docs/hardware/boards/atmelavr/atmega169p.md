@@ -5,8 +5,6 @@ description: "ATmega169/P/PA (ATMEGA169P, 16MHz, 16KB flash, 1KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega169p"></a>
-
 # ATmega169/P/PA
 
 ## Hardware

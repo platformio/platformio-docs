@@ -2,9 +2,7 @@
 description: "A monitor parity checking (platformio.ini option monitor_parity)."
 ---
 
-<a id="projectconf-monitor-parity"></a>
-
-# `monitor_parity` {#monitor-parity}
+# `monitor_parity`
 
 - **Type:** String: `N`, `E`, `O`, `S`, `M`
 - **Multiple values:** No

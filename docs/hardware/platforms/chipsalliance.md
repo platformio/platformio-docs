@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The CHIPS Alliance development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-chipsalliance"></a>
-
 # CHIPS Alliance
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/chipsalliance](https://registry.platformio.org/platforms/platformio/chipsalliance)  

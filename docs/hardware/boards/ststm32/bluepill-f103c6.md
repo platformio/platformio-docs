@@ -5,8 +5,6 @@ description: "BluePill F103C6 (STM32F103C6T6, 72MHz, 32KB flash, 10KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-bluepill-f103c6"></a>
-
 # BluePill F103C6
 
 ## Hardware

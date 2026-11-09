@@ -5,8 +5,6 @@ description: "ST DISCO-L072CZ-LRWAN1 (STM32L072CZ, 32MHz, 192KB flash, 20KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l072cz-lrwan1"></a>
-
 # ST DISCO-L072CZ-LRWAN1
 
 ## Hardware

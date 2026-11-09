@@ -5,8 +5,6 @@ description: "MKR Sharky (STM32WB55CG, 64MHz, 512KB flash, 192KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mkr-sharky"></a>
-
 # MKR Sharky
 
 ## Hardware

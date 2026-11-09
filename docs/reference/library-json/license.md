@@ -2,7 +2,7 @@
 description: "A SPDX license ID or SPDX Expression."
 ---
 
-# `license` {#license}
+# `license`
 
 - **Required:** No
 - **Type:** String: an [SPDX license expression](https://spdx.org/licenses/)

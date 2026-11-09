@@ -5,8 +5,6 @@ description: "Arduino Nano ATmega328 (ATMEGA328P, 16MHz, 30KB flash, 2KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-nanoatmega328"></a>
-
 # Arduino Nano ATmega328
 
 ## Hardware

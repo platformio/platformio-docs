@@ -2,9 +2,7 @@
 description: Install or upgrade PlatformIO Core from PyPI with pip, for CI systems and containers.
 ---
 
-<a id="installation-pypi"></a>
-
-# Install with pip {#python-package-manager}
+# Install with pip
 
 PlatformIO Core is published on [PyPI](https://pypi.org/project/platformio/).
 Install it with [pip](https://pip.pypa.io) when you build in

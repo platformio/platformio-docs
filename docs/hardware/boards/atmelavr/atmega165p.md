@@ -5,8 +5,6 @@ description: "ATmega165P/PA (ATMEGA165P, 16MHz, 16KB flash, 1KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega165p"></a>
-
 # ATmega165P/PA
 
 ## Hardware

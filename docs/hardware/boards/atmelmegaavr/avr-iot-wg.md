@@ -5,8 +5,6 @@ description: "AVR-IoT WG Development Board (ATMEGA4808, 16MHz, 48KB flash, 6KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-avr-iot-wg"></a>
-
 # AVR-IoT WG Development Board
 
 ## Hardware

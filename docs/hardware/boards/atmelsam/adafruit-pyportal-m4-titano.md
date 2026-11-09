@@ -5,8 +5,6 @@ description: "Adafruit PyPortal M4 Titano (SAMD51J20A, 120MHz, 1MB flash, 256KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pyportal-m4-titano"></a>
-
 # Adafruit PyPortal M4 Titano
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RedBearLab Blend Micro 3.3V/16MHz (overclock) (ATMEGA32U4, 16MHz, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-blendmicro16"></a>
-
 # RedBearLab Blend Micro 3.3V/16MHz (overclock)
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Use the CMSIS-DAP debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-cmsis-dap"></a>
-
-# CMSIS-DAP {#cmsis-dap}
+# CMSIS-DAP
 
 [![](./img/cmsis-dap.png)](https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs)
 

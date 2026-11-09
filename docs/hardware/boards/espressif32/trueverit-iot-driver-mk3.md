@@ -5,8 +5,6 @@ description: "Trueverit ESP32 Universal IoT Driver MK III (ESP32, 240MHz, 4MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-trueverit-iot-driver-mk3"></a>
-
 # Trueverit ESP32 Universal IoT Driver MK III
 
 ## Hardware

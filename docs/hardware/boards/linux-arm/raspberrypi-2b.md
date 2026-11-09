@@ -5,8 +5,6 @@ description: "Raspberry Pi 2 Model B (BCM2836, 900MHz, 1GB flash, 1GB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-linux-arm-raspberrypi-2b"></a>
-
 # Raspberry Pi 2 Model B
 
 ## Hardware

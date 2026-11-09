@@ -5,8 +5,6 @@ description: "BluzDK (NRF51822, 32MHz, 256KB flash, 32KB RAM): PlatformIO board 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-bluz-dk"></a>
-
 # BluzDK
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Sino:Bit (NRF51822, 32MHz, 256KB flash, 32KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-sinobit"></a>
-
 # Sino:Bit
 
 ## Hardware

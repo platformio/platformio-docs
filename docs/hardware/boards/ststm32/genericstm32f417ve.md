@@ -5,8 +5,6 @@ description: "STM32F417VE (128k RAM. 512k Flash) (STM32F417VET6, 168MHz, 512KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f417ve"></a>
-
 # STM32F417VE (128k RAM. 512k Flash)
 
 ## Hardware

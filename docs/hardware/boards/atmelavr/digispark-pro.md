@@ -5,8 +5,6 @@ description: "Digispark Pro (ATTINY167, 16MHz, 14.50KB flash, 512B RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-digispark-pro"></a>
-
 # Digispark Pro
 
 ## Hardware

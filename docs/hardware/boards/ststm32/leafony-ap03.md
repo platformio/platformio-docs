@@ -5,8 +5,6 @@ description: "Leafony Systems AP03 (STM32L452RET6, 80MHz, 512KB flash, 160KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-leafony-ap03"></a>
-
 # Leafony Systems AP03
 
 ## Hardware

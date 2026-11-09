@@ -5,8 +5,6 @@ description: "Generic STC15W1K20S (STC15W1K20S, 11MHz, 20KB flash, 1KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc15w1k20s"></a>
-
 # Generic STC15W1K20S
 
 ## Hardware

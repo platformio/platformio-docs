@@ -5,8 +5,6 @@ description: "Adafruit Metro M0 Express (SAMD21G18A, 48MHz, 256KB flash, 32KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-metro-m0"></a>
-
 # Adafruit Metro M0 Express
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "M5Stack FIRE (ESP32, 240MHz, 16MB flash, 4.31MB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-fire"></a>
-
 # M5Stack FIRE
 
 ## Hardware

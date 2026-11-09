@@ -5,8 +5,6 @@ description: "BL652 Development Kit (NRF52832, 64MHz, 512KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-laird-bl652-dvk"></a>
-
 # BL652 Development Kit
 
 ## Hardware

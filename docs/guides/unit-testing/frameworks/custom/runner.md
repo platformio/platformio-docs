@@ -2,9 +2,7 @@
 description: "See more custom test runner Examples."
 ---
 
-<a id="unit-testing-frameworks-custom-runner"></a>
-
-# Custom Test Runner {#custom-test-runner}
+# Custom Test Runner
 
 Setting the [test_framework](../../../../reference/platformio-ini/env/test-framework.md) option to the `custom` will instruct PlatformIO to look for a `test_custom_runner.py` file located in the current (running) test folder. If the file is not found, PlatformIO will check the parent folders in a tree until reaches the [test_dir](../../../../reference/platformio-ini/platformio/test-dir.md).
 

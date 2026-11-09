@@ -5,8 +5,6 @@ description: "Deneyap Kart 1A v2 (ESP32S3, 240MHz, 4MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-deneyapkart1av2"></a>
-
 # Deneyap Kart 1A v2
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Generic IAP15W1K29S (IAP15W1K29S, 11MHz, 29KB flash, 1KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-iap15w1k29s"></a>
-
 # Generic IAP15W1K29S
 
 ## Hardware

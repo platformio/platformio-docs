@@ -5,8 +5,6 @@ description: "decaWave DWM1001 Module Development Board (NRF52832, 64MHz, 512KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-dwm1001-dev"></a>
-
 # decaWave DWM1001 Module Development Board
 
 ## Hardware

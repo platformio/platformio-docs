@@ -2,9 +2,7 @@
 description: "A data directory to store contents which can be uploaded to file system (SPIFFS, etc.) (platformio.ini option data_dir)."
 ---
 
-<a id="projectconf-pio-data-dir"></a>
-
-# `data_dir` {#data-dir}
+# `data_dir`
 
 - **Type:** Path
 - **Multiple values:** No

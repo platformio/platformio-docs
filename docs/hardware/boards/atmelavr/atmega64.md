@@ -5,8 +5,6 @@ description: "ATmega64/A (ATMEGA64, 16MHz, 64KB flash, 4KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega64"></a>
-
 # ATmega64/A
 
 ## Hardware

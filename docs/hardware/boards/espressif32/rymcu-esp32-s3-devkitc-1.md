@@ -5,8 +5,6 @@ description: "RYMCU ESP32-S3-DevKitC-1-N8R2 (8 MB QD, 2 MB PSRAM) (ESP32S3, 240M
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-rymcu-esp32-s3-devkitc-1"></a>
-
 # RYMCU ESP32-S3-DevKitC-1-N8R2 (8 MB QD, 2 MB PSRAM)
 
 ## Hardware

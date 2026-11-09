@@ -2,9 +2,7 @@
 description: "Use the MSP debug debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-mspdebug"></a>
-
-# MSP debug {#msp-debug}
+# MSP debug
 
 The MSP debug stack (MSPDS) for all MSP430™ microcontrollers (MCUs) and SimpleLink™ MSP432™ devices consists of a static library on the host system side as well as an embedded firmware that runs on debug tools including the MSP-FET, MSP-FET430UIF or on-board eZ debuggers. It is the bridging element between all PC software and all MSP430 and SimpleLink MSP432 microcontroller derivatives and handles tasks such as code download, stepping through code or break points. See the [official documentation](http://www.ti.com/tool/mspds?utm_source=platformio&utm_medium=docs).
 

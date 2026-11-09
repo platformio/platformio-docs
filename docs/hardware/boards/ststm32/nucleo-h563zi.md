@@ -5,8 +5,6 @@ description: "ST Nucleo H563ZI (STM32H563ZIT6U, 250MHz, 2MB flash, 640KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-h563zi"></a>
-
 # ST Nucleo H563ZI
 
 ## Hardware

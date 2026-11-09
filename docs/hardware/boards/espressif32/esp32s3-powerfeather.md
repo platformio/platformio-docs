@@ -5,8 +5,6 @@ description: "ESP32-S3 PowerFeather (ESP32S3, 240MHz, 8MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32s3-powerfeather"></a>
-
 # ESP32-S3 PowerFeather
 
 ## Hardware

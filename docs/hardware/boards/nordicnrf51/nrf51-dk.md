@@ -5,8 +5,6 @@ description: "Nordic nRF51X22 Development Kit(PCA1000X) (NRF51822, 32MHz, 256KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-nrf51-dk"></a>
-
 # Nordic nRF51X22 Development Kit(PCA1000X)
 
 ## Hardware

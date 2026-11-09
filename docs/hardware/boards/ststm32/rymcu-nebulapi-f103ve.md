@@ -5,8 +5,6 @@ description: "RYMCU Nebula Pi F103VE (64k RAM. 512k Flash) (STM32F103VET6, 72MHz
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-rymcu-nebulapi-f103ve"></a>
-
 # RYMCU Nebula Pi F103VE (64k RAM. 512k Flash)
 
 ## Hardware

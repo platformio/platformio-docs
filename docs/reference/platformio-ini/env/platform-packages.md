@@ -2,9 +2,7 @@
 description: "Custom packages and specifications (platformio.ini option platform_packages)."
 ---
 
-<a id="projectconf-env-platform-packages"></a>
-
-# `platform_packages` {#platform-packages}
+# `platform_packages`
 
 - **Type:** String
 - **Multiple values:** Yes

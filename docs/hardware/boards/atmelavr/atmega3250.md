@@ -5,8 +5,6 @@ description: "ATmega3250/A (ATMEGA3250, 16MHz, 32KB flash, 2KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega3250"></a>
-
 # ATmega3250/A
 
 ## Hardware

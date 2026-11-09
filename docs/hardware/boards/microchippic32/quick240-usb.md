@@ -5,8 +5,6 @@ description: "Pontech Quick240 (32MX795F512L, 80MHz, 508KB flash, 128KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-quick240-usb"></a>
-
 # Pontech Quick240
 
 ## Hardware

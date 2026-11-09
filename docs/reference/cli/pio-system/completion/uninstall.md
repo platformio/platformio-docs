@@ -2,9 +2,7 @@
 description: Remove tab completion of pio commands for Bash, Zsh or fish.
 ---
 
-<a id="cmd-system-completion-uninstall"></a>
-
-# pio system completion uninstall {#pio-system-completion-uninstall}
+# pio system completion uninstall
 
 Remove tab completion of `pio` commands and options for a shell.
 

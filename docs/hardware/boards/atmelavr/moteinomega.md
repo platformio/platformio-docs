@@ -5,8 +5,6 @@ description: "LowPowerLab MoteinoMEGA (ATMEGA1284P, 16MHz, 127KB flash, 16KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-moteinomega"></a>
-
 # LowPowerLab MoteinoMEGA
 
 ## Hardware

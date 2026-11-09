@@ -2,9 +2,7 @@
 description: Override the flash memory interface mode of a board in platformio.ini.
 ---
 
-<a id="projectconf-board-build-flash-mode"></a>
-
-# `board_build.flash_mode` {#board-build-flash-mode}
+# `board_build.flash_mode`
 
 - **Type:** String
 - **Multiple values:** No

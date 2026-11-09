@@ -5,8 +5,6 @@ description: "LowPowerLab Moteino (8Mhz) (ATMEGA328P, 8MHz, 31.50KB flash, 2KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-moteino8mhz"></a>
-
 # LowPowerLab Moteino (8Mhz)
 
 ## Hardware

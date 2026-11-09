@@ -2,9 +2,7 @@
 description: "A list of PRE and POST extra scripts (platformio.ini option extra_scripts)."
 ---
 
-<a id="projectconf-extra-scripts"></a>
-
-# `extra_scripts` {#extra-scripts}
+# `extra_scripts`
 
 - **Type:** String
 - **Multiple values:** Yes

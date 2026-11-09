@@ -5,8 +5,6 @@ description: "Adafruit HUZZAH ESP8266 (ESP8266, 80MHz, 4MB flash, 80KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-huzzah"></a>
-
 # Adafruit HUZZAH ESP8266
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Fio (ATMEGA328P, 8MHz, 30KB flash, 2KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-fio"></a>
-
 # Arduino Fio
 
 ## Hardware

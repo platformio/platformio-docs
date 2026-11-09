@@ -5,8 +5,6 @@ description: "Calliope Mini v3 (NRF52833, 64MHz, 512KB flash, 128KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-calliopemini-v3"></a>
-
 # Calliope Mini v3
 
 ## Hardware

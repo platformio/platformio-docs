@@ -2,9 +2,7 @@
 description: "Inherit configuration from other sections or build environments (platformio.ini option extends)."
 ---
 
-<a id="projectconf-env-extends"></a>
-
-# `extends` {#extends}
+# `extends`
 
 - **Type:** String
 - **Multiple values:** Yes

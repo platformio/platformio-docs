@@ -5,8 +5,6 @@ description: "WEMOS D1 R32 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wemos-d1-uno32"></a>
-
 # WEMOS D1 R32
 
 ## Hardware

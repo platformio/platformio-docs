@@ -2,9 +2,7 @@
 description: Install a Python interpreter for PlatformIO Core on Linux, macOS and Windows.
 ---
 
-<a id="faq-install-python"></a>
-
-# Install a Python interpreter {#install-python-interpreter}
+# Install a Python interpreter
 
 [PlatformIO Core](../../get-started/platformio-core.md) needs Python 3.9 or
 later. macOS and most Linux distributions include Python; on Windows, you

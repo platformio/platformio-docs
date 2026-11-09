@@ -5,8 +5,6 @@ description: "Generic ATtiny1634 (ATTINY1634, 8MHz, 16KB flash, 1KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny1634"></a>
-
 # Generic ATtiny1634
 
 ## Hardware

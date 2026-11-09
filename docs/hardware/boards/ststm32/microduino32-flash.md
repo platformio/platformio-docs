@@ -5,8 +5,6 @@ description: "Microduino Core STM32 to Flash (STM32F103CBT6, 72MHz, 105.47KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-microduino32-flash"></a>
-
 # Microduino Core STM32 to Flash
 
 ## Hardware

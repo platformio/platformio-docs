@@ -2,9 +2,7 @@
 description: "A list of extra directories/storages where Library Dependency Finder (LDF) will look for dependencies (platformio.ini option lib_extra_dirs)."
 ---
 
-<a id="projectconf-lib-extra-dirs"></a>
-
-# `lib_extra_dirs` {#lib-extra-dirs}
+# `lib_extra_dirs`
 
 :::info
 

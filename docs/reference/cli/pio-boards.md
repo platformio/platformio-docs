@@ -2,9 +2,7 @@
 description: List the boards PlatformIO supports, filtered by ID, name, MCU, vendor, platform or framework.
 ---
 
-<a id="cmd-boards"></a>
-
-# pio boards {#pio-boards}
+# pio boards
 
 List the boards PlatformIO supports, with their board IDs. Use a board ID in
 the [`board`](../platformio-ini/env/board.md) option of `platformio.ini` and in

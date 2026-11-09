@@ -5,8 +5,6 @@ description: "HiFive1 (FE310, 320MHz, 16MB flash, 16KB RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-hifive1"></a>
-
 # HiFive1
 
 ## Hardware

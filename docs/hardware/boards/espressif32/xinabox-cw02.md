@@ -5,8 +5,6 @@ description: "XinaBox CW02 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-xinabox-cw02"></a>
-
 # XinaBox CW02
 
 ## Hardware

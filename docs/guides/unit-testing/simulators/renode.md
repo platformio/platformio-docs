@@ -1,6 +1,4 @@
-<a id="unit-testing-simulators-renode"></a>
-
-# Renode {#renode}
+# Renode
 
 [![](./img/renode.png)](https://renode.io/?utm_source=platformio&utm_medium=docs)
 

@@ -5,8 +5,6 @@ description: "OLIMEXINO-STM32 (STM32F103RBT6, 72MHz, 128KB flash, 20KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-olimexino"></a>
-
 # OLIMEXINO-STM32
 
 ## Hardware

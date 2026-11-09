@@ -5,8 +5,6 @@ description: "Sigma IC AGAFIA SG0 (STM32G071RBT6, 64MHz, 128KB flash, 36KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-agafia-sg0"></a>
-
 # Sigma IC AGAFIA SG0
 
 ## Hardware

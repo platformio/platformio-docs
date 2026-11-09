@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Touch-LCD-4.3B (ESP32S3, 240MHz, 16MB flash, 32
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-touch-lcd-43b"></a>
-
 # Waveshare ESP32-S3-Touch-LCD-4.3B
 
 ## Hardware

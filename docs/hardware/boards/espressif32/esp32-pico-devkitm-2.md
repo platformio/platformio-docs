@@ -5,8 +5,6 @@ description: "Espressif ESP32-PICO-DevKitM-2 (ESP32, 240MHz, 8MB flash, 320KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-pico-devkitm-2"></a>
-
 # Espressif ESP32-PICO-DevKitM-2
 
 ## Hardware

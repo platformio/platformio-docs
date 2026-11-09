@@ -5,8 +5,6 @@ description: "Adafruit ProxLight Trinkey (SAMD21E18A, 48MHz, 256KB flash, 32KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-proxlighttrinkey-m0"></a>
-
 # Adafruit ProxLight Trinkey
 
 ## Hardware

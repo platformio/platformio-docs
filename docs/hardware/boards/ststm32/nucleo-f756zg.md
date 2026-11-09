@@ -5,8 +5,6 @@ description: "ST Nucleo F756ZG (STM32F756ZG, 216MHz, 1MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f756zg"></a>
-
 # ST Nucleo F756ZG
 
 ## Hardware

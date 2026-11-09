@@ -5,8 +5,6 @@ description: "EspinalLab ATMegaZero ESP32-S2 (ESP32S2, 240MHz, 16MB flash, 320KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-atmegazero-esp32s2"></a>
-
 # EspinalLab ATMegaZero ESP32-S2
 
 ## Hardware

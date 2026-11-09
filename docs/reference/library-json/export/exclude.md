@@ -2,7 +2,7 @@
 description: "Exclude the directories and files which match with exclude patterns."
 ---
 
-# `exclude` {#exclude}
+# `exclude`
 
 - **Required:** No
 - **Type:** Array of strings

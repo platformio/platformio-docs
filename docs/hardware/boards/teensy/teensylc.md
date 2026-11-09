@@ -5,8 +5,6 @@ description: "Teensy LC (MKL26Z64, 48MHz, 62KB flash, 8KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensylc"></a>
-
 # Teensy LC
 
 ## Hardware

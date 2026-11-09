@@ -5,8 +5,6 @@ description: "BlackPill F103C8 (128k) (STM32F103C8T6, 72MHz, 128KB flash, 20KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-blackpill-f103c8-128"></a>
-
 # BlackPill F103C8 (128k)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST Nucleo L552ZE-Q (STM32L552ZET6, 80MHz, 512KB flash, 192KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l552ze-q"></a>
-
 # ST Nucleo L552ZE-Q
 
 ## Hardware

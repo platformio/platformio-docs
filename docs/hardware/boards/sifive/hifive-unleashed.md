@@ -5,8 +5,6 @@ description: "HiFive Unleashed (FU540, 1500MHz, 32MB flash, 8GB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-hifive-unleashed"></a>
-
 # HiFive Unleashed
 
 ## Hardware

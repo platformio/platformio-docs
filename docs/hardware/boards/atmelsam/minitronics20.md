@@ -5,8 +5,6 @@ description: "Minitronics v2.0 (SAMD21J18A, 48MHz, 256KB flash, 32KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-minitronics20"></a>
-
 # Minitronics v2.0
 
 ## Hardware

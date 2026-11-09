@@ -5,8 +5,6 @@ description: "SparkFun MicroMod STM32F405 (STM32F405RGT6, 168MHz, 1MB flash, 128
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-sparkfun-micromod-f405"></a>
-
 # SparkFun MicroMod STM32F405
 
 ## Hardware

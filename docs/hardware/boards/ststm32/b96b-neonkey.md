@@ -5,8 +5,6 @@ description: "96Boards Neonkey (STM32F411CE, 100MHz, 512KB flash, 128KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-b96b-neonkey"></a>
-
 # 96Boards Neonkey
 
 ## Hardware

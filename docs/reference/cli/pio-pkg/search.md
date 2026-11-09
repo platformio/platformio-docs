@@ -2,9 +2,7 @@
 description: "Search the PlatformIO Registry for packages matching the search query."
 ---
 
-<a id="cmd-pkg-search"></a>
-
-# pio pkg search {#pio-pkg-search}
+# pio pkg search
 
 ## Usage {#usage}
 

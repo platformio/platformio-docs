@@ -5,8 +5,6 @@ description: "HelvePic32 Robot (32MX270F256D, 48MHz, 244KB flash, 62KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-helvepic32-robot"></a>
-
 # HelvePic32 Robot
 
 ## Hardware

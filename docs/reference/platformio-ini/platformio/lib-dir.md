@@ -2,9 +2,7 @@
 description: "A storage for the custom/private project libraries (platformio.ini option lib_dir)."
 ---
 
-<a id="projectconf-pio-lib-dir"></a>
-
-# `lib_dir` {#lib-dir}
+# `lib_dir`
 
 - **Type:** Path
 - **Multiple values:** No

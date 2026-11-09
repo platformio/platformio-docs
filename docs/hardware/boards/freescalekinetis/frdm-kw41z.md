@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-KW41Z (MKW41Z512VHT4, 48MHz, 512KB flash, 1
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-kw41z"></a>
-
 # Freescale Kinetis FRDM-KW41Z
 
 ## Hardware

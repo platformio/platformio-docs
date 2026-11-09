@@ -5,8 +5,6 @@ description: "ATmega329P/PA (ATMEGA329P, 16MHz, 32KB flash, 2KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega329p"></a>
-
 # ATmega329P/PA
 
 ## Hardware

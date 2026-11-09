@@ -5,8 +5,6 @@ description: "Generic ML54MD1AE (ML54MD1AE, 24MHz, 64KB flash, 4.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-ml54md1ae"></a>
-
 # Generic ML54MD1AE
 
 ## Hardware

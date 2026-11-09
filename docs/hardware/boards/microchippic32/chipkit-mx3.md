@@ -5,8 +5,6 @@ description: "Digilent chipKIT MX3 (32MX320F128H, 80MHz, 124KB flash, 16KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-mx3"></a>
-
 # Digilent chipKIT MX3
 
 ## Hardware

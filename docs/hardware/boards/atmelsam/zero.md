@@ -5,8 +5,6 @@ description: "Arduino Zero (Programming/Debug Port) (SAMD21G18A, 48MHz, 256KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-zero"></a>
-
 # Arduino Zero (Programming/Debug Port)
 
 ## Hardware

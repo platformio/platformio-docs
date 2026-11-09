@@ -5,8 +5,6 @@ description: "WE Oceanus-I Module (STM32WLE5CCU6 , 48MHz, 256KB flash, 64KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-we-oceanus1"></a>
-
 # WE Oceanus-I Module
 
 ## Hardware

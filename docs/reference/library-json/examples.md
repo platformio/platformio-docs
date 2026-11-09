@@ -2,7 +2,7 @@
 description: "A list of example patterns."
 ---
 
-# `examples` {#examples}
+# `examples`
 
 - **Required:** No
 - **Type:** Array

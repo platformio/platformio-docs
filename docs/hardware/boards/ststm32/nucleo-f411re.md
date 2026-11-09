@@ -5,8 +5,6 @@ description: "ST Nucleo F411RE (STM32F411RET6, 100MHz, 512KB flash, 128KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f411re"></a>
-
 # ST Nucleo F411RE
 
 ## Hardware

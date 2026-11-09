@@ -5,8 +5,6 @@ description: "Elektor LoRa Node Core F072C8 (128 kB) (STM32F072C8T6, 48MHz, 128K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-elektor-f072cb"></a>
-
 # Elektor LoRa Node Core F072C8 (128 kB)
 
 ## Hardware

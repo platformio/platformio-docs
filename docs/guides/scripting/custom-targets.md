@@ -1,6 +1,4 @@
-<a id="scripting-custom-targets"></a>
-
-# Custom targets {#custom-targets}
+# Custom targets
 
 PlatformIO allows you to declare unlimited number of the custom targets. There are a lot of use cases for them:
 

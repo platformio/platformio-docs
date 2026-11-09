@@ -2,9 +2,7 @@
 description: System commands of PlatformIO Core - system information, cleanup and shell completion.
 ---
 
-<a id="cmd-system"></a>
-
-# pio system {#pio-system}
+# pio system
 
 System-level commands for PlatformIO Core itself.
 

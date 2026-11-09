@@ -5,8 +5,6 @@ description: "Metro nRF52840 Express (NRF52840, 64MHz, 796KB flash, 243KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-metro-nrf52840"></a>
-
 # Metro nRF52840 Express
 
 ## Hardware

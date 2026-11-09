@@ -2,9 +2,7 @@
 description: Manage who can access your packages in the PlatformIO Registry.
 ---
 
-<a id="cmd-access"></a>
-
-# pio access {#pio-access}
+# pio access
 
 Manage access to resources (packages) you published in the
 [PlatformIO Registry](https://registry.platformio.org): make them public or

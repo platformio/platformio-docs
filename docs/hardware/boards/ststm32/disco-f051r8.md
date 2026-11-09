@@ -5,8 +5,6 @@ description: "ST STM32F0DISCOVERY (STM32F051R8T6, 48MHz, 64KB flash, 8KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f051r8"></a>
-
 # ST STM32F0DISCOVERY
 
 ## Hardware

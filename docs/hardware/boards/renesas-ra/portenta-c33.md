@@ -5,8 +5,6 @@ description: "Arduino Portenta C33 (R7FA6M5BH2CBG, 200MHz, 2MB flash, 511.35KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-renesas-ra-portenta-c33"></a>
-
 # Arduino Portenta C33
 
 ## Hardware

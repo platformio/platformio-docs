@@ -5,8 +5,6 @@ description: "Delta DFBM-NQ620 (NRF52832, 64MHz, 512KB flash, 64KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-delta-dfbm-nq620"></a>
-
 # Delta DFBM-NQ620
 
 ## Hardware

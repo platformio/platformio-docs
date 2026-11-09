@@ -5,8 +5,6 @@ description: "ST 32F411EDISCOVERY (STM32F411VET6, 100MHz, 512KB flash, 128KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f411ve"></a>
-
 # ST 32F411EDISCOVERY
 
 ## Hardware

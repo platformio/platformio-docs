@@ -5,8 +5,6 @@ description: "Digilent chipKIT MAX32 (32MX795F512L, 80MHz, 508KB flash, 128KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-mega-pic32"></a>
-
 # Digilent chipKIT MAX32
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Sanguino ATmega1284p (16MHz) (ATMEGA1284P, 16MHz, 127KB flash, 16K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sanguino-atmega1284p"></a>
-
 # Sanguino ATmega1284p (16MHz)
 
 ## Hardware

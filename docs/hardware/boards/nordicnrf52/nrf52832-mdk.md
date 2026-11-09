@@ -5,8 +5,6 @@ description: "Makerdiary nRF52832-MDK (NRF52832, 64MHz, 512KB flash, 64KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-nrf52832-mdk"></a>
-
 # Makerdiary nRF52832-MDK
 
 ## Hardware

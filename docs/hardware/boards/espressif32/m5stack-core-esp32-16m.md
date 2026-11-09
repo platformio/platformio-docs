@@ -5,8 +5,6 @@ description: "M5Stack Core ESP32 16M (ESP32, 240MHz, 16MB flash, 520KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-core-esp32-16m"></a>
-
 # M5Stack Core ESP32 16M
 
 ## Hardware

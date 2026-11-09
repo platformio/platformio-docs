@@ -5,8 +5,6 @@ description: "STM3210C-EVAL (STM32F107VCT6, 72MHz, 256KB flash, 64KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-eval-f107vc"></a>
-
 # STM3210C-EVAL
 
 ## Hardware

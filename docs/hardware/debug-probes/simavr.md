@@ -2,9 +2,7 @@
 description: "Use the simavr debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-simavr"></a>
-
-# simavr {#simavr}
+# simavr
 
 simavr is a lean, mean and hackable AVR simulator. See the [official documentation](https://github.com/buserror/simavr/?utm_source=platformio&utm_medium=docs).
 

@@ -2,9 +2,7 @@
 description: "There are two execution types for extra scripts."
 ---
 
-<a id="scripting-launch-types"></a>
-
-# Launch types {#launch-types}
+# Launch types
 
 There are two execution types for extra scripts:
 

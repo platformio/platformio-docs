@@ -5,8 +5,6 @@ description: "M5Stack StickC-Plus2 (ESP32, 240MHz, 8MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-stickc-plus2"></a>
-
 # M5Stack StickC-Plus2
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Build, upload, test and monitor devices connected to another computer with PlatformIO Remote, without SSH, VPN or open ports.
 ---
 
-<a id="pioremote"></a>
-
-# Remote development {#remote-development}
+# Remote development
 
 PlatformIO Remote lets you work with devices connected to another computer as
 if they were connected to yours: list them, upload firmware, open a serial

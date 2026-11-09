@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The Windows x86 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-windows-x86"></a>
-
 # Windows x86
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/windows_x86](https://registry.platformio.org/platforms/platformio/windows_x86)  

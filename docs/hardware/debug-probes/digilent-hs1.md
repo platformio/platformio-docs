@@ -2,9 +2,7 @@
 description: "Use the JTAG-HS1 debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-digilent-hs1"></a>
-
-# JTAG-HS1 {#jtag-hs1}
+# JTAG-HS1
 
 [![](./img/digilent-hs1.jpg)](https://store.digilentinc.com/jtag-hs1-programming-cable-retired/?utm_source=platformio&utm_medium=docs)
 

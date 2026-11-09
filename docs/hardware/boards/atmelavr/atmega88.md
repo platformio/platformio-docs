@@ -5,8 +5,6 @@ description: "ATmega88/A (ATMEGA88, 16MHz, 8KB flash, 1KB RAM): PlatformIO board
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega88"></a>
-
 # ATmega88/A
 
 ## Hardware

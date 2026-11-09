@@ -5,8 +5,6 @@ description: "OLIMEX ESP32-EVB (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-evb"></a>
-
 # OLIMEX ESP32-EVB
 
 ## Hardware

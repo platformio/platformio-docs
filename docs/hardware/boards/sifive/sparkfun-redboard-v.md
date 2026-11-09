@@ -5,8 +5,6 @@ description: "SparkFun RED-V RedBoard (FE310, 320MHz, 16MB flash, 16KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-sifive-sparkfun-redboard-v"></a>
-
 # SparkFun RED-V RedBoard
 
 ## Hardware

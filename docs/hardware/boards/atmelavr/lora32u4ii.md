@@ -5,8 +5,6 @@ description: "LoRa32u4II (868-915MHz) (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lora32u4ii"></a>
-
 # LoRa32u4II (868-915MHz)
 
 ## Hardware

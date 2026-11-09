@@ -5,8 +5,6 @@ description: "Arduino BT ATmega328 (ATMEGA328P, 16MHz, 28KB flash, 2KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-btatmega328"></a>
-
 # Arduino BT ATmega328
 
 ## Hardware

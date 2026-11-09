@@ -5,8 +5,6 @@ description: "ST Nucleo L432KC (STM32L432KCU6, 80MHz, 256KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l432kc"></a>
-
 # ST Nucleo L432KC
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "ST STM32G071B Discovery (STM32G071RBT6, 64MHz, 128KB flash, 36KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-g071rb"></a>
-
 # ST STM32G071B Discovery
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Adafruit Trinket M0 (SAMD21E18A, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-trinket-m0"></a>
-
 # Adafruit Trinket M0
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "OLIMEX ESP32-DevKit-LiPo (ESP32, 240MHz, 4MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-devkitlipo"></a>
-
 # OLIMEX ESP32-DevKit-LiPo
 
 ## Hardware

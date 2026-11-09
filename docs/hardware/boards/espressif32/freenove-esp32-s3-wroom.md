@@ -5,8 +5,6 @@ description: "Freenove ESP32-S3 WROOM N8R8 (8MB Flash / 8MB PSRAM) (ESP32S3, 240
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-freenove-esp32-s3-wroom"></a>
-
 # Freenove ESP32-S3 WROOM N8R8 (8MB Flash / 8MB PSRAM)
 
 ## Hardware

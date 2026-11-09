@@ -5,8 +5,6 @@ description: "VAkE v1.0 (STM32F446RET6, 180MHz, 512KB flash, 128KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-vake-v1"></a>
-
 # VAkE v1.0
 
 ## Hardware

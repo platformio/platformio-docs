@@ -2,9 +2,7 @@
 description: Platform options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-platform"></a>
-
-# Platform options {#platform-options}
+# Platform options
 
 Select the development platform, framework and board, and override board settings.
 

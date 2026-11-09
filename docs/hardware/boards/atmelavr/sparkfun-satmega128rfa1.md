@@ -5,8 +5,6 @@ description: "SparkFun ATmega128RFA1 Dev Board (ATMEGA128RFA1, 16MHz, 124KB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-satmega128rfa1"></a>
-
 # SparkFun ATmega128RFA1 Dev Board
 
 ## Hardware

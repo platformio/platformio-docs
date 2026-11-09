@@ -1,6 +1,4 @@
-<a id="unit-testing-simulators-qemu"></a>
-
-# QEMU {#qemu}
+# QEMU
 
 [![](./img/qemu.png)](https://www.qemu.org/?utm_source=platformio&utm_medium=docs)
 

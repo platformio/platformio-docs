@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Touch-LCD-7 (ESP32S3, 240MHz, 8MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-touch-lcd-7"></a>
-
 # Waveshare ESP32-S3-Touch-LCD-7
 
 ## Hardware

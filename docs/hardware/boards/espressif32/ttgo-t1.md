@@ -5,8 +5,6 @@ description: "TTGO T1 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ttgo-t1"></a>
-
 # TTGO T1
 
 ## Hardware

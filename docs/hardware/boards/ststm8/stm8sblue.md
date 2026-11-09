@@ -5,8 +5,6 @@ description: "ST STM8S103F3 Breakout Board (STM8S103F3P6, 16MHz, 8KB flash, 1KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-stm8sblue"></a>
-
 # ST STM8S103F3 Breakout Board
 
 ## Hardware

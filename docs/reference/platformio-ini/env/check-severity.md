@@ -2,9 +2,7 @@
 description: "List of defect severity types for analysis (platformio.ini option check_severity)."
 ---
 
-<a id="projectconf-check-severity"></a>
-
-# `check_severity` {#check-severity}
+# `check_severity`
 
 - **Type:** String: `low`, `medium`, `high`
 - **Multiple values:** Yes

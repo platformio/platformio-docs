@@ -5,8 +5,6 @@ description: "TinyCircuits TinyLily Mini Processor (ATMEGA328P, 8MHz, 30KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-tinylily"></a>
-
 # TinyCircuits TinyLily Mini Processor
 
 ## Hardware

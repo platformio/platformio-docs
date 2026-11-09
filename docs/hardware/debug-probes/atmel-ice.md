@@ -2,9 +2,7 @@
 description: "Use the Atmel-ICE debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-atmel-ice"></a>
-
-# Atmel-ICE {#atmel-ice}
+# Atmel-ICE
 
 [![](./img/atmel-ice.jpg)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs)
 

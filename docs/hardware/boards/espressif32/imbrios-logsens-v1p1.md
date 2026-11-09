@@ -5,8 +5,6 @@ description: "Imbrios LogSens V1P1 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-imbrios-logsens-v1p1"></a>
-
 # Imbrios LogSens V1P1
 
 ## Hardware

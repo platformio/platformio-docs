@@ -5,8 +5,6 @@ description: "ATmega3290/A (ATMEGA3290, 16MHz, 32KB flash, 2KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega3290"></a>
-
 # ATmega3290/A
 
 ## Hardware

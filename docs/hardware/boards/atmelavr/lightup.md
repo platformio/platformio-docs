@@ -5,8 +5,6 @@ description: "LightUp (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lightup"></a>
-
 # LightUp
 
 ## Hardware

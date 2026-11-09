@@ -5,8 +5,6 @@ description: "ThingPulse ePulse Feather (ESP32, 240MHz, 8MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-thingpulse-epulse-feather"></a>
-
 # ThingPulse ePulse Feather
 
 ## Hardware

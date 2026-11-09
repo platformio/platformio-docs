@@ -5,8 +5,6 @@ description: "Arduino LilyPad ATmega328 (ATMEGA328P, 8MHz, 30KB flash, 2KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-lilypadatmega328"></a>
-
 # Arduino LilyPad ATmega328
 
 ## Hardware

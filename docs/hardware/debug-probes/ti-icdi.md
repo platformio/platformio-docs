@@ -2,9 +2,7 @@
 description: "Use the TI-ICDI debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-ti-icdi"></a>
-
-# TI-ICDI {#ti-icdi}
+# TI-ICDI
 
 Tiva™ C Series evaluation and reference design kits provide an integrated In-Circuit Debug Interface (ICDI) which allows programming and debugging of the onboard C Series microcontroller. See the [official documentation](http://www.ti.com/tool/stellaris_icdi_drivers?utm_source=platformio&utm_medium=docs).
 

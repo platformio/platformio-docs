@@ -2,9 +2,7 @@
 description: Step-by-step PlatformIO tutorials, example projects, and community resources.
 ---
 
-<a id="tutorials"></a>
-
-# Tutorials and examples {#tutorials-and-examples}
+# Tutorials and examples
 
 ## Tutorials {#official}
 

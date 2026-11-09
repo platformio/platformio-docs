@@ -5,8 +5,6 @@ description: "Adafruit MatrixPortal ESP32-S3 (ESP32S3, 240MHz, 8MB flash, 320KB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-matrixportal-esp32s3"></a>
-
 # Adafruit MatrixPortal ESP32-S3
 
 ## Hardware

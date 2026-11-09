@@ -5,8 +5,6 @@ description: "Ebyte E77 Dev Board (STM32WLE5CC, 48MHz, 256KB flash, 64KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-ebyte-e77-dev"></a>
-
 # Ebyte E77 Dev Board
 
 ## Hardware

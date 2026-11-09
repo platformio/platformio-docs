@@ -5,8 +5,6 @@ description: "Arduino Zero (USB Native Port) (SAMD21G18A, 48MHz, 256KB flash, 32
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-zerousb"></a>
-
 # Arduino Zero (USB Native Port)
 
 ## Hardware

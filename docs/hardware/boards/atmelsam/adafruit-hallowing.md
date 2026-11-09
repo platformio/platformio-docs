@@ -5,8 +5,6 @@ description: "Adafruit Hallowing M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-hallowing"></a>
-
 # Adafruit Hallowing M0
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Initial commands to be passed to a back-end debugger (platformio.ini option debug_init_cmds)."
 ---
 
-<a id="projectconf-debug-init-cmds"></a>
-
-# `debug_init_cmds` {#debug-init-cmds}
+# `debug_init_cmds`
 
 - **Type:** String
 - **Multiple values:** Yes

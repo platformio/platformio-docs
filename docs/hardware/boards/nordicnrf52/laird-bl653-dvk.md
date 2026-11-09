@@ -5,8 +5,6 @@ description: "BL653 Development Kit (NRF52833, 64MHz, 512KB flash, 128KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-laird-bl653-dvk"></a>
-
 # BL653 Development Kit
 
 ## Hardware

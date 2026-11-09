@@ -5,8 +5,6 @@ description: "Generic STC8H4K64TLCD (STC8H4K64TLCD, 11MHz, 64KB flash, 4.25KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h4k64tlcd"></a>
-
 # Generic STC8H4K64TLCD
 
 ## Hardware

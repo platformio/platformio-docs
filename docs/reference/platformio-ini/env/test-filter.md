@@ -2,9 +2,7 @@
 description: "Process tests where the name matches specified patterns (platformio.ini option test_filter)."
 ---
 
-<a id="projectconf-test-filter"></a>
-
-# `test_filter` {#test-filter}
+# `test_filter`
 
 - **Type:** String
 - **Multiple values:** Yes

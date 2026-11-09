@@ -5,8 +5,6 @@ description: "SpellFoundry Sleepy Pi 2 (ATMEGA328P, 8MHz, 30KB flash, 2KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sleepypi"></a>
-
 # SpellFoundry Sleepy Pi 2
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Use the Mini-Module FT2232H debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-minimodule"></a>
-
-# Mini-Module FT2232H {#mini-module-ft2232h}
+# Mini-Module FT2232H
 
 [![](./img/minimodule.jpg)](http://www.ftdichip.com/Products/Modules/DevelopmentModules.htm?utm_source=platformio&utm_medium=docs#FT2232H_Mini)
 

@@ -2,9 +2,7 @@
 description: "A custom list of targets for PlatformIO Build System (platformio.ini option targets)."
 ---
 
-<a id="projectconf-targets"></a>
-
-# `targets` {#targets}
+# `targets`
 
 - **Type:** String
 - **Multiple values:** Yes

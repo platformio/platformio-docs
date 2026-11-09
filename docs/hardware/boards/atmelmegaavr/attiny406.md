@@ -5,8 +5,6 @@ description: "ATtiny406 (ATTINY406, 16MHz, 4KB flash, 256B RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-attiny406"></a>
-
 # ATtiny406
 
 ## Hardware

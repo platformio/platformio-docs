@@ -5,8 +5,6 @@ description: "Generic STC8H4K60TLR (STC8H4K60TLR, 11MHz, 60KB flash, 4.25KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h4k60tlr"></a>
-
 # Generic STC8H4K60TLR
 
 ## Hardware

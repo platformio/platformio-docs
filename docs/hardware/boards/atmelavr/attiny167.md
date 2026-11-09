@@ -5,8 +5,6 @@ description: "Generic ATtiny167 (ATTINY167, 8MHz, 16KB flash, 512B RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny167"></a>
-
 # Generic ATtiny167
 
 ## Hardware

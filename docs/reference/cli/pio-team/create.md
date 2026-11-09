@@ -2,9 +2,7 @@
 description: Create a team in an organization.
 ---
 
-<a id="cmd-team-create"></a>
-
-# pio team create {#pio-team-create}
+# pio team create
 
 Create a team in an organization.
 

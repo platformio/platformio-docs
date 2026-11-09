@@ -5,8 +5,6 @@ description: "ATmega1284P (ATMEGA1284P, 16MHz, 128KB flash, 16KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega1284p"></a>
-
 # ATmega1284P
 
 ## Hardware

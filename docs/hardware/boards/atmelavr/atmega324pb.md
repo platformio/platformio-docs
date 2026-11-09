@@ -5,8 +5,6 @@ description: "ATmega324PB (ATMEGA324PB, 16MHz, 32KB flash, 2KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega324pb"></a>
-
 # ATmega324PB
 
 ## Hardware

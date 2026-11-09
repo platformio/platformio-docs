@@ -5,8 +5,6 @@ description: "Smart Bee Motion (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-bee-motion"></a>
-
 # Smart Bee Motion
 
 ## Hardware

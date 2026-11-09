@@ -5,8 +5,6 @@ description: "RedBearLab BLE Nano 2 (NRF52832, 64MHz, 512KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-redbear-blenano2"></a>
-
 # RedBearLab BLE Nano 2
 
 ## Hardware

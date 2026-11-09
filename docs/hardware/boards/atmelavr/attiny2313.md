@@ -5,8 +5,6 @@ description: "Generic ATtiny2313 (ATTINY2313, 8MHz, 2KB flash, 128B RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny2313"></a>
-
 # Generic ATtiny2313
 
 ## Hardware

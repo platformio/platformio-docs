@@ -5,8 +5,6 @@ description: "STM32H735G-DK Discovery kit (STM32H735IGK6, 550MHz, 1MB flash, 432
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-h735ig"></a>
-
 # STM32H735G-DK Discovery kit
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Due (USB Native Port) (AT91SAM3X8E, 84MHz, 512KB flash, 96
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-dueusb"></a>
-
 # Arduino Due (USB Native Port)
 
 ## Hardware

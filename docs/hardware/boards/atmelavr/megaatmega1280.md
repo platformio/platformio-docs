@@ -5,8 +5,6 @@ description: "Arduino Mega or Mega 2560 ATmega1280 (ATMEGA1280, 16MHz, 124KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-megaatmega1280"></a>
-
 # Arduino Mega or Mega 2560 ATmega1280
 
 ## Hardware

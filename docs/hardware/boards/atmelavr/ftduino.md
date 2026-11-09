@@ -5,8 +5,6 @@ description: "ftDuino (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-ftduino"></a>
-
 # ftDuino
 
 ## Hardware

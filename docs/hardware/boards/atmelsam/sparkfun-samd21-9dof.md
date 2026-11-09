@@ -5,8 +5,6 @@ description: "SparkFun 9DoF Razor IMU M0 (SAMD21G18A, 48MHz, 256KB flash, 32KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-samd21-9dof"></a>
-
 # SparkFun 9DoF Razor IMU M0
 
 ## Hardware

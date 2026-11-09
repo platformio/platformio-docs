@@ -5,8 +5,6 @@ description: "SparkFun Qduino Mini (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-qduinomini"></a>
-
 # SparkFun Qduino Mini
 
 ## Hardware

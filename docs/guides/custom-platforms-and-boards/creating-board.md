@@ -2,9 +2,7 @@
 description: "Please take a look at the source code of PlatformIO Development Platforms and navigate to boards folder of the repository."
 ---
 
-<a id="board-creating"></a>
-
-# Custom embedded boards {#custom-embedded-boards}
+# Custom embedded boards
 
 *PlatformIO* has pre-built settings for many popular embedded boards. The list of these boards is available as a web page at [PlatformIO Boards Explorer](https://platformio.org/boards) or through the CLI command [pio boards](../../reference/cli/pio-boards.md).
 

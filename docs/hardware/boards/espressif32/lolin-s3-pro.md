@@ -5,8 +5,6 @@ description: "WEMOS LOLIN S3 PRO (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lolin-s3-pro"></a>
-
 # WEMOS LOLIN S3 PRO
 
 ## Hardware

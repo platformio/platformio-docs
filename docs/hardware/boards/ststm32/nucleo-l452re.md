@@ -5,8 +5,6 @@ description: "ST Nucleo L452RE (STM32L452RET6, 80MHz, 512KB flash, 160KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l452re"></a>
-
 # ST Nucleo L452RE
 
 ## Hardware

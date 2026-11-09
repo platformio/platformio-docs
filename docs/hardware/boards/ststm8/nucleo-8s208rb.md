@@ -5,8 +5,6 @@ description: "NUCLEO-8S208RB (STM8S208RBT6, 16MHz, 128KB flash, 6KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-nucleo-8s208rb"></a>
-
 # NUCLEO-8S208RB
 
 ## Hardware

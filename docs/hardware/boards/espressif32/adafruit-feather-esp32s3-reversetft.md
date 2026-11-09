@@ -5,8 +5,6 @@ description: "Adafruit Feather ESP32-S3 Reverse TFT (ESP32S3, 240MHz, 4MB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-feather-esp32s3-reversetft"></a>
-
 # Adafruit Feather ESP32-S3 Reverse TFT
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "MikroElektronika Clicker 2 (32MX460F512L, 80MHz, 508KB flash, 32KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-clicker2"></a>
-
 # MikroElektronika Clicker 2
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Generic STC8G1K17 (STC8G1K17, 11MHz, 17KB flash, 1.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8g1k17"></a>
-
 # Generic STC8G1K17
 
 ## Hardware

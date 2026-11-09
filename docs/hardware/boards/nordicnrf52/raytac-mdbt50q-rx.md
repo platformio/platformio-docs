@@ -5,8 +5,6 @@ description: "Raytac MDBT50Q-RX Dongle (NRF52840, 64MHz, 796KB flash, 243KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-raytac-mdbt50q-rx"></a>
-
 # Raytac MDBT50Q-RX Dongle
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Nordic nRF52840-DK (Adafruit BSP) (NRF52840, 64MHz, 796KB flash, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-nrf52840-dk-adafruit"></a>
-
 # Nordic nRF52840-DK (Adafruit BSP)
 
 ## Hardware

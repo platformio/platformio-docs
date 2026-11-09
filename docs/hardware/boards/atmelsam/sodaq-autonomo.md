@@ -5,8 +5,6 @@ description: "SODAQ Autonomo (SAMD21J18A, 48MHz, 256KB flash, 32KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sodaq-autonomo"></a>
-
 # SODAQ Autonomo
 
 ## Hardware

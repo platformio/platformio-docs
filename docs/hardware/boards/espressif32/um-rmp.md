@@ -5,8 +5,6 @@ description: "Unexpected Maker RMP (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-um-rmp"></a>
-
 # Unexpected Maker RMP
 
 ## Hardware

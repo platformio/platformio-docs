@@ -5,8 +5,6 @@ description: "chipKIT WiFire rev. C (32MZ2048EFG100, 200MHz, 1.98MB flash, 512KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-wifire-revc"></a>
-
 # chipKIT WiFire rev. C
 
 ## Hardware

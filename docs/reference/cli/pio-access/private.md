@@ -2,9 +2,7 @@
 description: Make a package in the PlatformIO Registry private.
 ---
 
-<a id="cmd-access-private"></a>
-
-# pio access private {#pio-access-private}
+# pio access private
 
 Make a resource private. Only users and teams you grant access to can use it.
 

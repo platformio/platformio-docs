@@ -2,9 +2,7 @@
 description: Debug firmware on 900+ boards with PlatformIO - breakpoints, variables, peripheral registers and memory, with probes or simulators.
 ---
 
-<a id="piodebug"></a>
-
-# Debugging {#debugging}
+# Debugging
 
 PlatformIO debugs firmware on the target with almost no configuration. It
 knows, for each board and debug probe, which debug server to start and how to

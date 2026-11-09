@@ -5,8 +5,6 @@ description: "M5Stamp-Pico (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stamp-pico"></a>
-
 # M5Stamp-Pico
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Manage your PlatformIO Account from the command line.
 ---
 
-<a id="cmd-account"></a>
-
-# pio account {#pio-account}
+# pio account
 
 Manage your [PlatformIO Account](../../../get-started/platformio-account.md) from the command line.
 

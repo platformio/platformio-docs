@@ -5,8 +5,6 @@ description: "Blue STM32F407VE Mini (STM32F407VET6, 168MHz, 512KB flash, 128KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-blue-f407ve-mini"></a>
-
 # Blue STM32F407VE Mini
 
 ## Hardware

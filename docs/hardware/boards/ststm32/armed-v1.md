@@ -5,8 +5,6 @@ description: "3D Printer Controller (STM32F407VET6, 168MHz, 512KB flash, 128KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-armed-v1"></a>
-
 # 3D Printer Controller
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Remove a member from a team.
 ---
 
-<a id="cmd-team-remove"></a>
-
-# pio team remove {#pio-team-remove}
+# pio team remove
 
 Remove a member from a team.
 

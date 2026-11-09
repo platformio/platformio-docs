@@ -5,8 +5,6 @@ description: "PHYTEC reel board (NRF52840, 64MHz, 1MB flash, 256KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-reel-board"></a>
-
 # PHYTEC reel board
 
 ## Hardware

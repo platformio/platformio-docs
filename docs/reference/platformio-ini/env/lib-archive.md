@@ -2,9 +2,7 @@
 description: "Create an archive (`*.a`, static library) from the object files and link it into a firmware (program) (platformio.ini option lib_archive)."
 ---
 
-<a id="projectconf-lib-archive"></a>
-
-# `lib_archive` {#lib-archive}
+# `lib_archive`
 
 - **Type:** Boolean: `yes` or `no`
 - **Multiple values:** No

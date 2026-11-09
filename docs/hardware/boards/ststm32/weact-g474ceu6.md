@@ -5,8 +5,6 @@ description: "WeAct Studio STM32G474 CoreBoard (STM32G474CEU6, 170MHz, 512KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-weact-g474ceu6"></a>
-
 # WeAct Studio STM32G474 CoreBoard
 
 ## Hardware

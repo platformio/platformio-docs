@@ -5,8 +5,6 @@ description: "SparkFun SAMD51 MicroMod (SAMD51J20A, 120MHz, 496KB flash, 192KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sparkfun-samd51-micromod"></a>
-
 # SparkFun SAMD51 MicroMod
 
 ## Hardware

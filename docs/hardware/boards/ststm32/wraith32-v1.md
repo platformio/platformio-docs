@@ -5,8 +5,6 @@ description: "Wraith V1 ESC (STM32F051K6, 48MHz, 32KB flash, 7.75KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-wraith32-v1"></a>
-
 # Wraith V1 ESC
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Nano Every (ATMEGA4809, 16MHz, 47.50KB flash, 6KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-nano-every"></a>
-
 # Arduino Nano Every
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Enable a monitor local echo (platformio.ini option monitor_echo)."
 ---
 
-<a id="projectconf-monitor-echo"></a>
-
-# `monitor_echo` {#monitor-echo}
+# `monitor_echo`
 
 - **Type:** Boolean: `yes` or `no`
 - **Multiple values:** No

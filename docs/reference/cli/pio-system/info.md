@@ -2,9 +2,7 @@
 description: Show information about the PlatformIO Core installation.
 ---
 
-<a id="cmd-system-info"></a>
-
-# pio system info {#pio-system-info}
+# pio system info
 
 Show information about the PlatformIO Core installation: versions, paths,
 encodings and the number of installed packages. Include it when you report a

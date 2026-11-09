@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-K64F (MK64FN1M0VLL12, 120MHz, 1MB flash, 25
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-k64f"></a>
-
 # Freescale Kinetis FRDM-K64F
 
 ## Hardware

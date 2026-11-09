@@ -5,8 +5,6 @@ description: "Original Prusa i3 MK3 Multi Material 2.0 Upgrade (ATMEGA32U4, 16MH
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-prusa-mm-control"></a>
-
 # Original Prusa i3 MK3 Multi Material 2.0 Upgrade
 
 ## Hardware

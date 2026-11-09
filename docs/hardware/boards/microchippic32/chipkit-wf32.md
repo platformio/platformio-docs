@@ -5,8 +5,6 @@ description: "Digilent chipKIT WF32 (32MX695F512L, 80MHz, 508KB flash, 128KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-chipkit-wf32"></a>
-
 # Digilent chipKIT WF32
 
 ## Hardware

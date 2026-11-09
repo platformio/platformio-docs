@@ -5,8 +5,6 @@ description: "STM32F412RE (256k RAM. 512k Flash) (STM32F412RET6, 100MHz, 512KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f412re"></a>
-
 # STM32F412RE (256k RAM. 512k Flash)
 
 ## Hardware

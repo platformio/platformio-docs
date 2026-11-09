@@ -5,8 +5,6 @@ description: "ST 32F429IDISCOVERY (STM32F429ZIT6, 180MHz, 2MB flash, 256KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f429zi"></a>
-
 # ST 32F429IDISCOVERY
 
 ## Hardware

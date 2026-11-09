@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The LibOpenCM3 framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
-<a id="framework-libopencm3"></a>
-
 # LibOpenCM3
 
 **Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `libopencm3`

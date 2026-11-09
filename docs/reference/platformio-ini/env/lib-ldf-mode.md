@@ -2,9 +2,7 @@
 description: "Control how Library Dependency Finder (LDF) should analyze dependencies (`#include` directives) (platformio.ini option lib_ldf_mode)."
 ---
 
-<a id="projectconf-lib-ldf-mode"></a>
-
-# `lib_ldf_mode` {#lib-ldf-mode}
+# `lib_ldf_mode`
 
 :::info[See also]
 

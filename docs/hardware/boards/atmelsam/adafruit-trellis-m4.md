@@ -5,8 +5,6 @@ description: "Adafruit Trellis M4 (SAMD51J19A, 120MHz, 512KB flash, 192KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-trellis-m4"></a>
-
 # Adafruit Trellis M4
 
 ## Hardware

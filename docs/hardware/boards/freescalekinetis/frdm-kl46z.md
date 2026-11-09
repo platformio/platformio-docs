@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-KL46Z (MKL46Z256VLL4, 48MHz, 256KB flash, 3
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-kl46z"></a>
-
 # Freescale Kinetis FRDM-KL46Z
 
 ## Hardware

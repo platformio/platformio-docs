@@ -5,8 +5,6 @@ description: "Adafruit ItsyBitsy M4 (SAMD51G19A, 120MHz, 512KB flash, 192KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-itsybitsy-m4"></a>
-
 # Adafruit ItsyBitsy M4
 
 ## Hardware

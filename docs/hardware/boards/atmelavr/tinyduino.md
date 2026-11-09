@@ -5,8 +5,6 @@ description: "TinyCircuits TinyDuino Processor Board (ATMEGA328P, 8MHz, 30KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-tinyduino"></a>
-
 # TinyCircuits TinyDuino Processor Board
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Use PlatformIO Core behind an HTTP, HTTPS or SOCKS proxy.
 ---
 
-<a id="piocore-install-proxy-configuration"></a>
-
-# Configure a proxy {#proxy-configuration}
+# Configure a proxy
 
 PlatformIO Core makes HTTP requests through the Python
 [Requests](https://requests.readthedocs.io/) library, which reads the standard

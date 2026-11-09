@@ -5,8 +5,6 @@ description: "ST Nucleo U575ZI-Q (STM32U575ZIT6Q, 160MHz, 2MB flash, 768KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-u575zi-q"></a>
-
 # ST Nucleo U575ZI-Q
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: Debug options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-debug"></a>
-
-# Debug options {#debugging-options}
+# Debug options
 
 Configure debugging with `pio debug` and PlatformIO IDE.
 

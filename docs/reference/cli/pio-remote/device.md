@@ -2,9 +2,7 @@
 description: "List Serial Ports on remote machines where PlatformIO Remote Agent is started."
 ---
 
-<a id="cmd-remote-device"></a>
-
-# pio remote device {#pio-remote-device}
+# pio remote device
 
 **Remote Device: monitor remote device or list existing.**
 

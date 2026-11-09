@@ -5,8 +5,6 @@ description: "ATmega6490P (ATMEGA6490P, 16MHz, 64KB flash, 4KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega6490p"></a>
-
 # ATmega6490P
 
 ## Hardware

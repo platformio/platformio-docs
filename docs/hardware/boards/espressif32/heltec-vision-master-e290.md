@@ -5,8 +5,6 @@ description: "Heltec Vision Master E290 (ESP32S3, 240MHz, 8MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-vision-master-e290"></a>
-
 # Heltec Vision Master E290
 
 ## Hardware

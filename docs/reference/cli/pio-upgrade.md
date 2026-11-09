@@ -2,9 +2,7 @@
 description: Upgrade PlatformIO Core to the latest version.
 ---
 
-<a id="cmd-upgrade"></a>
-
-# pio upgrade {#pio-upgrade}
+# pio upgrade
 
 Check for a newer version of PlatformIO Core and upgrade to it.
 

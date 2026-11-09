@@ -5,8 +5,6 @@ description: "Teensy 3.1 / 3.2 (MK20DX256, 72MHz, 256KB flash, 64KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-teensy-teensy31"></a>
-
 # Teensy 3.1 / 3.2
 
 ## Hardware

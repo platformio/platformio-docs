@@ -2,9 +2,7 @@
 description: "A serial port to communicate with a target device (platformio.ini option test_port)."
 ---
 
-<a id="projectconf-test-port"></a>
-
-# `test_port` {#test-port}
+# `test_port`
 
 - **Type:** String
 - **Multiple values:** No

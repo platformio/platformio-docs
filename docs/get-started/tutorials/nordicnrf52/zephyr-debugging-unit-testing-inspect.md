@@ -3,9 +3,7 @@ sidebar_label: "Zephyr on nRF52-DK"
 description: Build, upload, debug, unit test and inspect a Zephyr Bluetooth beacon on the Nordic nRF52-DK with PlatformIO IDE for VS Code.
 ---
 
-<a id="tutorial-nordicnrf52-zephyr-debugging-unit-testing-analysis"></a>
-
-# Zephyr on Nordic nRF52-DK: debugging, unit testing and project analysis {#zephyr-and-nordic-nrf52-dk-debugging-unit-testing-project-analysis}
+# Zephyr on Nordic nRF52-DK: debugging, unit testing and project analysis
 
 In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
 to build a Bluetooth LE beacon with the [Zephyr](/hardware/frameworks/zephyr)

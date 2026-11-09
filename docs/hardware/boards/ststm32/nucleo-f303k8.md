@@ -5,8 +5,6 @@ description: "ST Nucleo F303K8 (STM32F303K8T6, 72MHz, 64KB flash, 12KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f303k8"></a>
-
 # ST Nucleo F303K8
 
 ## Hardware

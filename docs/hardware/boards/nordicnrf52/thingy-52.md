@@ -5,8 +5,6 @@ description: "Nordic Thingy:52 (nRF52-PCA20020) (NRF52832, 64MHz, 512KB flash, 6
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-thingy-52"></a>
-
 # Nordic Thingy:52 (nRF52-PCA20020)
 
 ## Hardware

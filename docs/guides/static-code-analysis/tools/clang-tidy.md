@@ -2,9 +2,7 @@
 description: "An example with enabling specific checks and fixing code on the fly:."
 ---
 
-<a id="check-tool-clangtidy"></a>
-
-# Clang-Tidy {#clang-tidy}
+# Clang-Tidy
 
 **Clang-Tidy** is a clang-based C++ "linter" tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Official page can be found [here](https://clang.llvm.org/extra/clang-tidy).
 

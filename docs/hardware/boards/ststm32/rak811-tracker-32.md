@@ -5,8 +5,6 @@ description: "RAK811 LoRa Tracker (STM32L151RBT6, 32MHz, 128KB flash, 32KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-rak811-tracker-32"></a>
-
 # RAK811 LoRa Tracker
 
 ## Hardware

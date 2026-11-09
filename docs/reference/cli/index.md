@@ -2,9 +2,7 @@
 description: Reference of the pio command-line interface - global options and all commands.
 ---
 
-<a id="piocore-userguide"></a>
-
-# CLI reference {#cli-guide}
+# CLI reference
 
 The `pio` command (also available as `platformio`) is the command-line
 interface of [PlatformIO Core](../../get-started/platformio-core.md).

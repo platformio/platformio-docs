@@ -5,8 +5,6 @@ description: "WEMOS LOLIN S2 PICO (ESP32S2, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lolin-s2-pico"></a>
-
 # WEMOS LOLIN S2 PICO
 
 ## Hardware

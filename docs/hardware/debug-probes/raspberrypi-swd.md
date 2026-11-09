@@ -2,9 +2,7 @@
 description: "Use the Raspberry pi SWD debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-raspberrypi-swd"></a>
-
-# Raspberry pi SWD {#raspberry-pi-swd}
+# Raspberry pi SWD
 
 [![](./img/raspberrypi-swd.jpg)](https://www.electronicshub.org/programming-raspberry-pi-pico-with-swd?utm_source=platformio&utm_medium=docs)
 

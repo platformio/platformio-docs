@@ -2,9 +2,7 @@
 description: "Use the Custom debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-custom"></a>
-
-# Custom {#custom}
+# Custom
 
 <dl>
 

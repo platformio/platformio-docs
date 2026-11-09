@@ -5,8 +5,6 @@ description: "Pinaka on Artix-7 35T Arty FPGA Evaluation Kit (E-CLASS, 50MHz, 0B
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-shakti-pinaka"></a>
-
 # Pinaka on Artix-7 35T Arty FPGA Evaluation Kit
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Use the Olimex ARM-USB-OCD-H debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-olimex-arm-usb-ocd-h"></a>
-
-# Olimex ARM-USB-OCD-H {#olimex-arm-usb-ocd-h}
+# Olimex ARM-USB-OCD-H
 
 [![](./img/olimex-arm-usb-ocd-h.jpg)](https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/?utm_source=platformio&utm_medium=docs)
 

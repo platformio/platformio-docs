@@ -2,9 +2,7 @@
 description: "Use the avr-stub debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-avr-stub"></a>
-
-# avr-stub {#avr-stub}
+# avr-stub
 
 avr-stub is a source level debugger based on GDB stub mechanism. It works with ATmega328 and Arduino Mega microcontrollers without an external programmer. The official reference can be found [here](https://github.com/jdolinay/avr_debug/?utm_source=platformio&utm_medium=docs).
 

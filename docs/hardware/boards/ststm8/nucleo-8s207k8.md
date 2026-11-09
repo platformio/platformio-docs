@@ -5,8 +5,6 @@ description: "NUCLEO-8S207K8 (STM8S207K8T6, 16MHz, 64KB flash, 6KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm8-nucleo-8s207k8"></a>
-
 # NUCLEO-8S207K8
 
 ## Hardware

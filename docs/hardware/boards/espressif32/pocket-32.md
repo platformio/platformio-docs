@@ -5,8 +5,6 @@ description: "Dongsen Tech Pocket 32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-pocket-32"></a>
-
 # Dongsen Tech Pocket 32
 
 ## Hardware

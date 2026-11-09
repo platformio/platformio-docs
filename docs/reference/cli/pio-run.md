@@ -2,9 +2,7 @@
 description: "Run project targets over environments declared in platformio.ini."
 ---
 
-<a id="cmd-run"></a>
-
-# pio run {#pio-run}
+# pio run
 
 ## Usage {#usage}
 

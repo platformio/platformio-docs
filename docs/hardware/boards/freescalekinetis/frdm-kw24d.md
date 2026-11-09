@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-KW24D512 (MKW24D512, 50MHz, 512KB flash, 64
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-kw24d"></a>
-
 # Freescale Kinetis FRDM-KW24D512
 
 ## Hardware

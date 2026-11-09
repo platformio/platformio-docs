@@ -2,9 +2,7 @@
 description: What a PlatformIO Account is for and how to manage it.
 ---
 
-<a id="pioaccount"></a>
-
-# PlatformIO Account {#platformio-account}
+# PlatformIO Account
 
 Building, uploading, debugging and testing firmware do not require an account.
 You need a PlatformIO Account to:

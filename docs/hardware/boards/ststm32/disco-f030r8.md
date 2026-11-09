@@ -5,8 +5,6 @@ description: "ST STM32F0308DISCOVERY (STM32F030R8T6, 48MHz, 64KB flash, 8KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f030r8"></a>
-
 # ST STM32F0308DISCOVERY
 
 ## Hardware

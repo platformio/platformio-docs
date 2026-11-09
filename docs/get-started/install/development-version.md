@@ -2,9 +2,7 @@
 description: Install the development version of PlatformIO Core from the develop branch, and switch back to stable.
 ---
 
-<a id="installation-develop"></a>
-
-# Install the development version {#development-version}
+# Install the development version
 
 The development version is built from the `develop` branch of
 [PlatformIO Core](https://github.com/platformio/platformio-core). Use it to try

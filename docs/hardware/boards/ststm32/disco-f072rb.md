@@ -5,8 +5,6 @@ description: "ST Discovery F072RB (STM32F072RBT6, 48MHz, 128KB flash, 16KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f072rb"></a>
-
 # ST Discovery F072RB
 
 ## Hardware

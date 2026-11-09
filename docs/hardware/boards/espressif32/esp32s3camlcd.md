@@ -5,8 +5,6 @@ description: "ESP32S3 CAM LCD (ESP32S3, 240MHz, 8MB flash, 320KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32s3camlcd"></a>
-
 # ESP32S3 CAM LCD
 
 ## Hardware

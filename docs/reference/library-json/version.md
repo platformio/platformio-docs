@@ -2,9 +2,7 @@
 description: "A version of a current library source code."
 ---
 
-<a id="manifest-library-json-version"></a>
-
-# `version` {#version}
+# `version`
 
 - **Required:** Yes
 - **Type:** String

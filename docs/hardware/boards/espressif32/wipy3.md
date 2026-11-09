@@ -5,8 +5,6 @@ description: "Pycom WiPy3 (ESP32, 240MHz, 4MB flash, 1.25MB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wipy3"></a>
-
 # Pycom WiPy3
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Industrial 101 (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-chiwawa"></a>
-
 # Arduino Industrial 101
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "A name or specification of development platform (platformio.ini option platform)."
 ---
 
-<a id="projectconf-env-platform"></a>
-
-# `platform` {#platform}
+# `platform`
 
 - **Type:** String
 - **Multiple values:** No

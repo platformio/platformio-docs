@@ -2,9 +2,7 @@
 description: "A debugging port of a remote target (a serial device or network address) (platformio.ini option debug_port)."
 ---
 
-<a id="projectconf-debug-port"></a>
-
-# `debug_port` {#debug-port}
+# `debug_port`
 
 - **Type:** String
 - **Multiple values:** No

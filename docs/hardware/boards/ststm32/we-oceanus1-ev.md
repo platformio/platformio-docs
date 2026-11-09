@@ -5,8 +5,6 @@ description: "WE Oceanus-I EV (STM32WLE5CCU6 , 48MHz, 256KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-we-oceanus1-ev"></a>
-
 # WE Oceanus-I EV
 
 ## Hardware

@@ -1,6 +1,4 @@
-<a id="projectconf-board-build-ldscript"></a>
-
-# `board_build.ldscript` {#board-build-ldscript}
+# `board_build.ldscript`
 
 Type: `String` | Multiple: `No`
 

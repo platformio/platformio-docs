@@ -2,9 +2,7 @@
 description: "The same as `build_flags` but configures flags the only for project source files in the `src` folder (platformio.ini option build_src_flags)."
 ---
 
-<a id="projectconf-build-src-flags"></a>
-
-# `build_src_flags` {#build-src-flags}
+# `build_src_flags`
 
 - **Type:** String
 - **Multiple values:** Yes

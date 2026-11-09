@@ -5,8 +5,6 @@ description: "DFRobot Beetle ESP32-C3 (ESP32C3, 160MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-dfrobot-beetle-esp32c3"></a>
-
 # DFRobot Beetle ESP32-C3
 
 ## Hardware

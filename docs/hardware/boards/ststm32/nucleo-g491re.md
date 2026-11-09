@@ -5,8 +5,6 @@ description: "Nucleo G491RE (STM32G491RET6, 170MHz, 512KB flash, 112KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g491re"></a>
-
 # Nucleo G491RE
 
 ## Hardware

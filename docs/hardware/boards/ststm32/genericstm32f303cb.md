@@ -5,8 +5,6 @@ description: "STM32F303CB (32k RAM. 128k Flash) (STM32F303CBT6, 72MHz, 128KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f303cb"></a>
-
 # STM32F303CB (32k RAM. 128k Flash)
 
 ## Hardware

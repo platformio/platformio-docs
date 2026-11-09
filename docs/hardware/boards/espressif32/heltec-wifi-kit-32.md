@@ -5,8 +5,6 @@ description: "Heltec WiFi Kit 32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-wifi-kit-32"></a>
-
 # Heltec WiFi Kit 32
 
 ## Hardware

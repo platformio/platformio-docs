@@ -5,8 +5,6 @@ description: "MH ET LIVE ESP32MiniKit (ESP32, 240MHz, 4MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-mhetesp32minikit"></a>
-
 # MH ET LIVE ESP32MiniKit
 
 ## Hardware

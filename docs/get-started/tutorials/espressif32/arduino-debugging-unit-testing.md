@@ -3,9 +3,7 @@ sidebar_label: "Arduino on ESP32"
 description: Build, upload, debug and unit test an Arduino project on the ESP32-DevKitC with PlatformIO IDE for VS Code, then add Bluetooth LE.
 ---
 
-<a id="tutorial-espressif32-arduino-debugging-unit-testing"></a>
-
-# Arduino on ESP32-DevKitC: debugging and unit testing {#get-started-with-arduino-and-esp32-devkitc-debugging-and-unit-testing}
+# Arduino on ESP32-DevKitC: debugging and unit testing
 
 In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
 to create an [Arduino](/hardware/frameworks/arduino) project for the

@@ -5,8 +5,6 @@ description: "Adafruit Feather ESP32-S2 TFT (ESP32S2, 240MHz, 4MB flash, 320KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-feather-esp32s2-tft"></a>
-
 # Adafruit Feather ESP32-S2 TFT
 
 ## Hardware

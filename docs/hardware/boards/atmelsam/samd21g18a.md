@@ -5,8 +5,6 @@ description: "Atmel ATSAMW25-XPRO (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-samd21g18a"></a>
-
 # Atmel ATSAMW25-XPRO
 
 ## Hardware

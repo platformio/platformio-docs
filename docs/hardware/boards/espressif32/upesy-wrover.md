@@ -5,8 +5,6 @@ description: "uPesy ESP32 Wrover DevKit (ESP32, 240MHz, 16MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-upesy-wrover"></a>
-
 # uPesy ESP32 Wrover DevKit
 
 ## Hardware

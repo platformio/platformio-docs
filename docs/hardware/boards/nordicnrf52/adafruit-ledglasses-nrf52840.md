@@ -5,8 +5,6 @@ description: "Adafruit LED Glasses Driver nRF52840 (NRF52840, 64MHz, 796KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-ledglasses-nrf52840"></a>
-
 # Adafruit LED Glasses Driver nRF52840
 
 ## Hardware

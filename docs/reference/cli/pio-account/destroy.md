@@ -2,9 +2,7 @@
 description: Permanently delete your PlatformIO Account.
 ---
 
-<a id="cmd-account-destroy"></a>
-
-# pio account destroy {#pio-account-destroy}
+# pio account destroy
 
 Permanently delete your [PlatformIO Account](../../../get-started/platformio-account.md) and its data: organizations, teams and resources.
 

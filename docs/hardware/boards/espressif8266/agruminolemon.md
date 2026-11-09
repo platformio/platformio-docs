@@ -5,8 +5,6 @@ description: "Lifely Agrumino Lemon v4 (ESP8266, 80MHz, 2MB flash, 80KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-agruminolemon"></a>
-
 # Lifely Agrumino Lemon v4
 
 ## Hardware

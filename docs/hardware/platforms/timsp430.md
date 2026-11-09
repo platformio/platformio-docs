@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The TI MSP430 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-timsp430"></a>
-
 # TI MSP430
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/timsp430](https://registry.platformio.org/platforms/platformio/timsp430)  

@@ -5,8 +5,6 @@ description: "Generic STC89C54RD+ (STC89C54RD+, 11MHz, 16KB flash, 1.25KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc89c54rd"></a>
-
 # Generic STC89C54RD+
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Linino One (ATMEGA32U4, 16MHz, 28KB flash, 2.50KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-one"></a>
-
 # Linino One
 
 ## Hardware

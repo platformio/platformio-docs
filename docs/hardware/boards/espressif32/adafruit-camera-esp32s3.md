@@ -5,8 +5,6 @@ description: "Adafruit pyCamera S3 (ESP32S3, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-camera-esp32s3"></a>
-
 # Adafruit pyCamera S3
 
 ## Hardware

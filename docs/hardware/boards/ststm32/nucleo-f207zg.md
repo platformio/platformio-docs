@@ -5,8 +5,6 @@ description: "ST Nucleo F207ZG (STM32F207ZGT6, 120MHz, 1MB flash, 128KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f207zg"></a>
-
 # ST Nucleo F207ZG
 
 ## Hardware

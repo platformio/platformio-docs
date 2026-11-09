@@ -2,9 +2,7 @@
 description: Use a serial terminal with a graphical UI, such as CoolTerm, together with PlatformIO.
 ---
 
-<a id="faq-advanced-serial-monitor-ui"></a>
-
-# Serial monitor with a graphical UI {#advanced-serial-monitor-with-ui}
+# Serial monitor with a graphical UI
 
 PlatformIO's serial monitor, [`pio device monitor`](../../reference/cli/pio-device/monitor.md),
 runs in the terminal. If you prefer a graphical serial terminal, you can use

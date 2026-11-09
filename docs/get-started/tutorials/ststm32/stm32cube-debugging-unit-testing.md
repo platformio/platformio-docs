@@ -3,9 +3,7 @@ sidebar_label: "STM32Cube on Nucleo-F401RE"
 description: Build, upload, debug and unit test an STM32Cube HAL blink project on the ST Nucleo-F401RE with PlatformIO IDE for VS Code.
 ---
 
-<a id="tutorial-stm32cube-debugging-unit-testing"></a>
-
-# STM32Cube HAL on Nucleo-F401RE: debugging and unit testing {#stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing}
+# STM32Cube HAL on Nucleo-F401RE: debugging and unit testing
 
 In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
 to write a blink program with the [STM32Cube](/hardware/frameworks/stm32cube)

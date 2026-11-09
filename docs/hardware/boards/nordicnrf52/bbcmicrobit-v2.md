@@ -5,8 +5,6 @@ description: "BBC micro:bit V2 (NRF52833, 64MHz, 512KB flash, 128KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-bbcmicrobit-v2"></a>
-
 # BBC micro:bit V2
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Elektrofuzzis ftSwarmControl USBMicro (ESP32, 240MHz, 4MB flash, 3
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-ftswarmcontrolusbmicro"></a>
-
 # Elektrofuzzis ftSwarmControl USBMicro
 
 ## Hardware

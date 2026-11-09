@@ -5,8 +5,6 @@ description: "Generic IAP15W413AS (IAP15W413AS, 11MHz, 13KB flash, 512B RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-iap15w413as"></a>
-
 # Generic IAP15W413AS
 
 ## Hardware

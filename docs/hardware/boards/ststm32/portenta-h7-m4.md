@@ -5,8 +5,6 @@ description: "Arduino Portenta H7 (M4 core) (STM32H747XIH6, 480MHz, 1MB flash, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-portenta-h7-m4"></a>
-
 # Arduino Portenta H7 (M4 core)
 
 ## Hardware

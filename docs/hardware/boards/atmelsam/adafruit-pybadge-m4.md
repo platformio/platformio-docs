@@ -5,8 +5,6 @@ description: "Adafruit pyBadge M4 Express (SAMD51J19A, 120MHz, 512KB flash, 192K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-pybadge-m4"></a>
-
 # Adafruit pyBadge M4 Express
 
 ## Hardware

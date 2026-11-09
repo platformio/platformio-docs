@@ -1,6 +1,4 @@
-<a id="ci-github-actions"></a>
-
-# GitHub Actions {#github-actions}
+# GitHub Actions
 
 [GitHub Actions](https://github.com/features/actions) enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repository.
 

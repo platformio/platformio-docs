@@ -5,8 +5,6 @@ description: "LilyGo T3-STM32 (STM32WLE5CCU7, 48MHz, 256KB flash, 64KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-lilygo-t3-stm32-v1"></a>
-
 # LilyGo T3-STM32
 
 ## Hardware

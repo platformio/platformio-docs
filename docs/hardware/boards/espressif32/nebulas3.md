@@ -5,8 +5,6 @@ description: "Kinetic Dynamics Nebula S3 (ESP32S3, 240MHz, 4MB flash, 320KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-nebulas3"></a>
-
 # Kinetic Dynamics Nebula S3
 
 ## Hardware

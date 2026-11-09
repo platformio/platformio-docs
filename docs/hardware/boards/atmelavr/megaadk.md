@@ -5,8 +5,6 @@ description: "Arduino Mega ADK (ATMEGA2560, 16MHz, 248KB flash, 8KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-megaadk"></a>
-
 # Arduino Mega ADK
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Arduino Uno Mini (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-uno-mini"></a>
-
 # Arduino Uno Mini
 
 ## Hardware

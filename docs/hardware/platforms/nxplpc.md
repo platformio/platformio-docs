@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The NXP LPC development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-nxplpc"></a>
-
 # NXP LPC
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/nxplpc](https://registry.platformio.org/platforms/platformio/nxplpc)  

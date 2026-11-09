@@ -5,8 +5,6 @@ description: "ST Nucleo L486RG (STM32L486RGT6, 80MHz, 1MB flash, 128KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l486rg"></a>
-
 # ST Nucleo L486RG
 
 ## Hardware

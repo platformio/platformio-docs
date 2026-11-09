@@ -5,8 +5,6 @@ description: "ST 32F401CDISCOVERY (STM32F401VCT6, 84MHz, 256KB flash, 64KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f401vc"></a>
-
 # ST 32F401CDISCOVERY
 
 ## Hardware

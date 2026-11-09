@@ -5,8 +5,6 @@ description: "Blues Swan R5 (STM32L4R5ZIY6, 120MHz, 2MB flash, 640KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-blues-swan-r5"></a>
-
 # Blues Swan R5
 
 ## Hardware

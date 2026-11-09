@@ -2,9 +2,7 @@
 description: Check options of the platformio.ini [env] section.
 ---
 
-<a id="projectconf-section-env-check"></a>
-
-# Check options {#check-options}
+# Check options
 
 Configure static code analysis with `pio check`.
 

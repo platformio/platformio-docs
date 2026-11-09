@@ -5,8 +5,6 @@ description: "ST Nucleo H753ZI (STM32H753ZIT6, 400MHz, 2MB flash, 512KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-h753zi"></a>
-
 # ST Nucleo H753ZI
 
 ## Hardware

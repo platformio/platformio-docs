@@ -5,8 +5,6 @@ description: "Generic IAP15F413AD (IAP15F413AD, 11MHz, 13KB flash, 512B RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-iap15f413ad"></a>
-
 # Generic IAP15F413AD
 
 ## Hardware

@@ -2,7 +2,7 @@
 description: "Execute custom scripts during the special Package Management CLI life cycle events."
 ---
 
-# `scripts` {#scripts}
+# `scripts`
 
 - **Required:** No
 - **Type:** Object with `postinstall` and `preuninstall` keys

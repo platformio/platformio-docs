@@ -2,9 +2,7 @@
 description: "Use the Black magic probe debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-blackmagic"></a>
-
-# Black magic probe {#black-magic-probe}
+# Black magic probe
 
 [![](./img/blackmagic.jpg)](https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs)
 

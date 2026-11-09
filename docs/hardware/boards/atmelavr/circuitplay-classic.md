@@ -5,8 +5,6 @@ description: "Adafruit Circuit Playground Classic (ATMEGA32U4, 8MHz, 28KB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-circuitplay-classic"></a>
-
 # Adafruit Circuit Playground Classic
 
 ## Hardware

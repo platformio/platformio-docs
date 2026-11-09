@@ -5,8 +5,6 @@ description: "STM32F103VF (96k RAM. 768k Flash) (STM32F103VFT6, 72MHz, 768KB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f103vf"></a>
-
 # STM32F103VF (96k RAM. 768k Flash)
 
 ## Hardware

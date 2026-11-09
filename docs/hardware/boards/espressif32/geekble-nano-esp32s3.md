@@ -5,8 +5,6 @@ description: "Geekble nano ESP32-S3 (ESP32S3, 240MHz, 4MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-geekble-nano-esp32s3"></a>
-
 # Geekble nano ESP32-S3
 
 ## Hardware

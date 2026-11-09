@@ -5,8 +5,6 @@ description: "M5Stack Unit CamS3 (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-unit-cams3"></a>
-
 # M5Stack Unit CamS3
 
 ## Hardware

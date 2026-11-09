@@ -2,9 +2,7 @@
 description: Install or upgrade PlatformIO Core in an isolated Python environment with the official installer script.
 ---
 
-<a id="installation-installer-script"></a>
-
-# Install with the installer script {#installer-script-recommended}
+# Install with the installer script
 
 The [installer script](https://github.com/platformio/platformio-core-installer)
 installs PlatformIO Core into its own Python virtual environment, isolated from

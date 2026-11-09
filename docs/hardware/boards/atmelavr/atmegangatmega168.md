@@ -5,8 +5,6 @@ description: "Arduino NG or older ATmega168 (ATMEGA168, 16MHz, 14KB flash, 1KB R
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmegangatmega168"></a>
-
 # Arduino NG or older ATmega168
 
 ## Hardware

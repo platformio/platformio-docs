@@ -5,8 +5,6 @@ description: "SparkFun Serial 7-Segment Display (ATMEGA328P, 8MHz, 31.50KB flash
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-serial7seg"></a>
-
 # SparkFun Serial 7-Segment Display
 
 ## Hardware

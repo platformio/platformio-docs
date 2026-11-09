@@ -5,8 +5,6 @@ description: "M5Stack M5Paper (ESP32, 240MHz, 16MB flash, 4.31MB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stack-paper"></a>
-
 # M5Stack M5Paper
 
 ## Hardware

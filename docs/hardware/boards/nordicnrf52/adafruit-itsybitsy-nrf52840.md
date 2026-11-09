@@ -5,8 +5,6 @@ description: "ItsyBitsy nRF52840 Express (NRF52840, 64MHz, 796KB flash, 243KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-adafruit-itsybitsy-nrf52840"></a>
-
 # ItsyBitsy nRF52840 Express
 
 ## Hardware

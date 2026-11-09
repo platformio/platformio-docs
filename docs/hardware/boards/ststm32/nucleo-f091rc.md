@@ -5,8 +5,6 @@ description: "ST Nucleo F091RC (STM32F091RCT6, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f091rc"></a>
-
 # ST Nucleo F091RC
 
 ## Hardware

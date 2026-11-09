@@ -5,8 +5,6 @@ description: "Adafruit Hallowing M4 (SAMD51J19A, 120MHz, 496KB flash, 192KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-hallowing-m4"></a>
-
 # Adafruit Hallowing M4
 
 ## Hardware

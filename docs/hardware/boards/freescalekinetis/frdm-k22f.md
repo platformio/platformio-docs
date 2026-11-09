@@ -5,8 +5,6 @@ description: "Freescale Kinetis FRDM-K22F (MK22FN512VLH12, 120MHz, 512KB flash, 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-frdm-k22f"></a>
-
 # Freescale Kinetis FRDM-K22F
 
 ## Hardware

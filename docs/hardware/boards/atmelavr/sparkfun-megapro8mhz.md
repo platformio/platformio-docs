@@ -5,8 +5,6 @@ description: "SparkFun Mega Pro 3.3V/8MHz (ATMEGA2560, 8MHz, 252KB flash, 8KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sparkfun-megapro8mhz"></a>
-
 # SparkFun Mega Pro 3.3V/8MHz
 
 ## Hardware

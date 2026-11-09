@@ -5,8 +5,6 @@ description: "PanStamp AVR (ATMEGA328P, 8MHz, 31.50KB flash, 2KB RAM): PlatformI
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-panstampavr"></a>
-
 # PanStamp AVR
 
 ## Hardware

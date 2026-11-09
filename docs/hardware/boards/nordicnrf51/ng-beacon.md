@@ -5,8 +5,6 @@ description: "ng-beacon (NRF51822, 16MHz, 256KB flash, 32KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-ng-beacon"></a>
-
 # ng-beacon
 
 ## Hardware

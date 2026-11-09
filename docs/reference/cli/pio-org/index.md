@@ -2,9 +2,7 @@
 description: Manage organizations and their owners in PlatformIO.
 ---
 
-<a id="cmd-org"></a>
-
-# pio org {#pio-org}
+# pio org
 
 Manage organizations and their owners. Organizations own packages in the
 [PlatformIO Registry](https://registry.platformio.org) and group users into

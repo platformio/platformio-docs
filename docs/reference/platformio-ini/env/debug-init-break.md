@@ -2,9 +2,7 @@
 description: "An initial breakpoint that makes program stop whenever a certain point in the program is reached (platformio.ini option debug_init_break)."
 ---
 
-<a id="projectconf-debug-init-break"></a>
-
-# `debug_init_break` {#debug-init-break}
+# `debug_init_break`
 
 - **Type:** String
 - **Multiple values:** No

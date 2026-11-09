@@ -5,8 +5,6 @@ description: "LilyGo T-Display-S3 (ESP32S3, 240MHz, 16MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lilygo-t-display-s3"></a>
-
 # LilyGo T-Display-S3
 
 ## Hardware

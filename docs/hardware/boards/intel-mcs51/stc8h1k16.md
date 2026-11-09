@@ -5,8 +5,6 @@ description: "Generic STC8H1K16 (STC8H1K16, 11MHz, 16KB flash, 1.25KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-stc8h1k16"></a>
-
 # Generic STC8H1K16
 
 ## Hardware

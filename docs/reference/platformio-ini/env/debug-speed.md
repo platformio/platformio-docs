@@ -2,9 +2,7 @@
 description: "A debug adapter speed (JTAG speed) (platformio.ini option debug_speed)."
 ---
 
-<a id="projectconf-debug-speed"></a>
-
-# `debug_speed` {#debug-speed}
+# `debug_speed`
 
 - **Type:** String
 - **Multiple values:** No

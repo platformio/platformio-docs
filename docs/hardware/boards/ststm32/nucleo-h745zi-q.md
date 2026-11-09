@@ -5,8 +5,6 @@ description: "ST Nucleo H745ZI-Q (STM32H745ZIT6, 480MHz, 1MB flash, 512KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-h745zi-q"></a>
-
 # ST Nucleo H745ZI-Q
 
 ## Hardware

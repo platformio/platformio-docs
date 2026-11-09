@@ -5,8 +5,6 @@ description: "ST Nucleo L476RG (STM32L476RGT6, 80MHz, 1MB flash, 96KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l476rg"></a>
-
 # ST Nucleo L476RG
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: List your organizations and their owners.
 ---
 
-<a id="cmd-org-list"></a>
-
-# pio org list {#pio-org-list}
+# pio org list
 
 List the organizations you belong to and their owners.
 

@@ -5,8 +5,6 @@ description: "nicai-systems NIBObee robot with Tuning Kit (ATMEGA1284P, 20MHz, 1
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-nibobee-1284"></a>
-
 # nicai-systems NIBObee robot with Tuning Kit
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Configure a strictness (compatibility mode by frameworks, development platforms) of Library Dependency Finder (LDF) (platformio.ini option lib_compat_mode)."
 ---
 
-<a id="projectconf-lib-compat-mode"></a>
-
-# `lib_compat_mode` {#lib-compat-mode}
+# `lib_compat_mode`
 
 :::info[See also]
 

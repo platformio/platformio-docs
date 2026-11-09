@@ -5,8 +5,6 @@ description: "Adafruit Feather M4 Express (SAMD51J19A, 120MHz, 512KB flash, 192K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-adafruit-feather-m4"></a>
-
 # Adafruit Feather M4 Express
 
 ## Hardware

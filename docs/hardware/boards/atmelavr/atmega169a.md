@@ -5,8 +5,6 @@ description: "ATmega169A (ATMEGA169A, 16MHz, 16KB flash, 1KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega169a"></a>
-
 # ATmega169A
 
 ## Hardware

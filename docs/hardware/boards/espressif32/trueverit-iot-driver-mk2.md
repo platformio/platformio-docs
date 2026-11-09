@@ -5,8 +5,6 @@ description: "Trueverit ESP32 Universal IoT Driver MK II (ESP32, 240MHz, 4MB fla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-trueverit-iot-driver-mk2"></a>
-
 # Trueverit ESP32 Universal IoT Driver MK II
 
 ## Hardware

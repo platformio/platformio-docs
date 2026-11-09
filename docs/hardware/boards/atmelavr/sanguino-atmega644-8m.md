@@ -5,8 +5,6 @@ description: "Sanguino ATmega644 or ATmega644A (8 MHz) (ATMEGA644, 8MHz, 63KB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-sanguino-atmega644-8m"></a>
-
 # Sanguino ATmega644 or ATmega644A (8 MHz)
 
 ## Hardware

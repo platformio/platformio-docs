@@ -5,8 +5,6 @@ description: "Adafruit ItsyBitsy ESP32 (ESP32, 240MHz, 8MB flash, 320KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-itsybitsy-esp32"></a>
-
 # Adafruit ItsyBitsy ESP32
 
 ## Hardware

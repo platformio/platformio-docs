@@ -2,16 +2,14 @@
 description: "Configure a list with environments which PlatformIO should process by default (platformio.ini option default_envs)."
 ---
 
-<a id="projectconf-pio-default-envs"></a>
-
-# `default_envs` {#default-envs}
+# `default_envs`
 
 - **Type:** String
 - **Multiple values:** Yes
 - **Environment variable:** [`PLATFORMIO_DEFAULT_ENVS`](../../environment-variables.md#envvar-PLATFORMIO_DEFAULT_ENVS), appended to the values in `platformio.ini`
 - **Deprecated name:** `env_default` (still accepted, with a warning)
 
-The [pio run](../../cli/pio-run.md) command processes all environments `[env:***]` by default if the [`pio run --environment`](../../cli/pio-run.md#cmdoption-pio-run-e) option is not specified. [default_envs](#projectconf-pio-default-envs) allows one to define which environments that should be processed by default.
+The [pio run](../../cli/pio-run.md) command processes all environments `[env:***]` by default if the [`pio run --environment`](../../cli/pio-run.md#cmdoption-pio-run-e) option is not specified. default_envs allows one to define which environments that should be processed by default.
 
 Also, [Debugging](../../../guides/debugging/index.md) checks this option when looking for debug environment.
 

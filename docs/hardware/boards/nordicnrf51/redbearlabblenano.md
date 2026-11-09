@@ -5,8 +5,6 @@ description: "RedBearLab BLE Nano 1.5 (NRF51822, 16MHz, 256KB flash, 32KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-redbearlabblenano"></a>
-
 # RedBearLab BLE Nano 1.5
 
 ## Hardware

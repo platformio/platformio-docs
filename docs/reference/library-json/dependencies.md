@@ -2,9 +2,7 @@
 description: "A list of dependent libraries that will be automatically installed."
 ---
 
-<a id="manifest-library-json-dependencies"></a>
-
-# `dependencies` {#dependencies}
+# `dependencies`
 
 - **Required:** No
 - **Type:** Array or object

@@ -5,8 +5,6 @@ description: "ST 32L100DISCOVERY (STM32L100RCT6, 32MHz, 256KB flash, 16KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-l100rc"></a>
-
 # ST 32L100DISCOVERY
 
 ## Hardware

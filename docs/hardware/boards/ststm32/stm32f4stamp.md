@@ -5,8 +5,6 @@ description: "STM32F4Stamp F405 (STM32F405RGT6, 168MHz, 1MB flash, 128KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-stm32f4stamp"></a>
-
 # STM32F4Stamp F405
 
 ## Hardware

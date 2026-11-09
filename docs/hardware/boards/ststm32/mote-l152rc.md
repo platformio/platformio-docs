@@ -5,8 +5,6 @@ description: "NAMote72 (STM32L152RC, 32MHz, 256KB flash, 32KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-mote-l152rc"></a>
-
 # NAMote72
 
 ## Hardware

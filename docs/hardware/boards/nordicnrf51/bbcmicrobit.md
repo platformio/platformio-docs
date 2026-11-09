@@ -5,8 +5,6 @@ description: "BBC micro:bit (NRF51822, 16MHz, 256KB flash, 16KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-bbcmicrobit"></a>
-
 # BBC micro:bit
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: List the PlatformIO Registry packages you can access and your access level.
 ---
 
-<a id="cmd-access-list"></a>
-
-# pio access list {#pio-access-list}
+# pio access list
 
 List the resources (packages) that you, or a given owner, can access, with
 the access level. Public resources with read-only access are not listed.

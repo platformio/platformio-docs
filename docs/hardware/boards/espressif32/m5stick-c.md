@@ -5,8 +5,6 @@ description: "M5Stack StickC (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-m5stick-c"></a>
-
 # M5Stack StickC
 
 ## Hardware

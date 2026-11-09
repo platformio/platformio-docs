@@ -1,4 +1,4 @@
-# Split C/C++ build flags {#split-c-c-build-flags}
+# Split C/C++ build flags
 
 `platformio.ini`:
 

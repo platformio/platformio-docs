@@ -5,8 +5,6 @@ description: "unPhone 8 (ESP32S3, 240MHz, 7.94MB flash, 2.31MB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-unphone8"></a>
-
 # unPhone 8
 
 ## Hardware

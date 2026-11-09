@@ -2,9 +2,7 @@
 description: Rename a team or update its description.
 ---
 
-<a id="cmd-team-update"></a>
-
-# pio team update {#pio-team-update}
+# pio team update
 
 Rename a team or update its description.
 

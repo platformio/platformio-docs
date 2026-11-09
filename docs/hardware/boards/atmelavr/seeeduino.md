@@ -5,8 +5,6 @@ description: "Seeeduino (ATMEGA328P, 16MHz, 31.50KB flash, 2KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-seeeduino"></a>
-
 # Seeeduino
 
 ## Hardware

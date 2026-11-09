@@ -2,7 +2,7 @@
 description: Pass SCons command-line options, such as --dry-run or --debug=explain, to the PlatformIO build.
 ---
 
-# Pass options to SCons {#custom-scons-command-line-options}
+# Pass options to SCons
 
 The PlatformIO build system runs on [SCons](https://scons.org/). SCons options
 can help you understand what happens during a build, for example:

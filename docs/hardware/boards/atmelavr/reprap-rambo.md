@@ -5,8 +5,6 @@ description: "RepRap RAMBo (ATMEGA2560, 16MHz, 252KB flash, 8KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-reprap-rambo"></a>
-
 # RepRap RAMBo
 
 ## Hardware

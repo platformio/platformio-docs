@@ -5,8 +5,6 @@ description: "ST STM32VLDISCOVERY (STM32F100RBT6, 24MHz, 128KB flash, 8KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f100rb"></a>
-
 # ST STM32VLDISCOVERY
 
 ## Hardware

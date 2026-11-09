@@ -2,9 +2,7 @@
 description: "A default location for project header files. PlatformIO Build System automatically adds this path to CPPPATH scope (platformio.ini option include_dir)."
 ---
 
-<a id="projectconf-pio-include-dir"></a>
-
-# `include_dir` {#include-dir}
+# `include_dir`
 
 - **Type:** Path
 - **Multiple values:** No

@@ -5,8 +5,6 @@ description: "STM32F415RG (128k RAM. 1024k Flash) (STM32F415RGT6, 168MHz, 1MB fl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f415rg"></a>
-
 # STM32F415RG (128k RAM. 1024k Flash)
 
 ## Hardware

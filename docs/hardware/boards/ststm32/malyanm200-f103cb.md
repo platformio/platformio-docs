@@ -5,8 +5,6 @@ description: "Malyan M200 V1 (STM32F103CBT6, 72MHz, 120KB flash, 20KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-malyanm200-f103cb"></a>
-
 # Malyan M200 V1
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Waveshare BLE400 (NRF51822, 32MHz, 256KB flash, 32KB RAM): Platfor
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-waveshare-ble400"></a>
-
 # Waveshare BLE400
 
 ## Hardware

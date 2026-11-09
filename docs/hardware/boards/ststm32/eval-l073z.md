@@ -5,8 +5,6 @@ description: "ST STM32L073Z-EVAL (STM32L073VZT6, 32MHz, 192KB flash, 20KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-eval-l073z"></a>
-
 # ST STM32L073Z-EVAL
 
 ## Hardware

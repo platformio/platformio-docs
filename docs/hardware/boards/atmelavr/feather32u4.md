@@ -5,8 +5,6 @@ description: "Adafruit Feather 32u4 (ATMEGA32U4, 8MHz, 28KB flash, 2.50KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-feather32u4"></a>
-
 # Adafruit Feather 32u4
 
 ## Hardware

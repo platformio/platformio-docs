@@ -5,8 +5,6 @@ description: "4D Systems GEN4-ESP32 16MB (ESP32S3-R8N16) (ESP32S3, 240MHz, 16MB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-4d-systems-esp32s3-gen4-r8n16"></a>
-
 # 4D Systems GEN4-ESP32 16MB (ESP32S3-R8N16)
 
 ## Hardware

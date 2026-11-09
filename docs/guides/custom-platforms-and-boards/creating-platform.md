@@ -2,9 +2,7 @@
 description: "If the published development platform has an issue and you would like to remove it from the PlatformIO Trusted Registry, please use pio pkg unpublish command."
 ---
 
-<a id="platform-creating"></a>
-
-# Custom development platforms {#custom-development-platforms}
+# Custom development platforms
 
 *PlatformIO* can build the same binary code under different host systems via the single command [pio run](../../reference/cli/pio-run.md) without any dependent software or requirements.
 

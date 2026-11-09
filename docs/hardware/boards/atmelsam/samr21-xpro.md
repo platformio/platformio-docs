@@ -5,8 +5,6 @@ description: "Atmel ATSAMR21-XPRO (SAMR21G18A, 48MHz, 256KB flash, 32KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-samr21-xpro"></a>
-
 # Atmel ATSAMR21-XPRO
 
 ## Hardware

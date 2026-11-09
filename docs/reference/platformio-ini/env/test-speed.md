@@ -2,9 +2,7 @@
 description: "A connection speed (baud rate) to communicate with a target device (platformio.ini option test_speed)."
 ---
 
-<a id="projectconf-test-speed"></a>
-
-# `test_speed` {#test-speed}
+# `test_speed`
 
 - **Type:** Integer
 - **Multiple values:** No

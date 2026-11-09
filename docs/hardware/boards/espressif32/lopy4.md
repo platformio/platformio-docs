@@ -5,8 +5,6 @@ description: "Pycom LoPy4 (ESP32, 240MHz, 4MB flash, 1.25MB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lopy4"></a>
-
 # Pycom LoPy4
 
 ## Hardware

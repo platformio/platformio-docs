@@ -5,8 +5,6 @@ description: "3DP001V1 Evaluation board for 3D printer (STM32F401VET6, 84MHz, 51
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-st3dp001-eval"></a>
-
 # 3DP001V1 Evaluation board for 3D printer
 
 ## Hardware

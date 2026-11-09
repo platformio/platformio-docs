@@ -5,8 +5,6 @@ description: "ATmega3250P/PA (ATMEGA3250P, 16MHz, 32KB flash, 2KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega3250p"></a>
-
 # ATmega3250P/PA
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "A monitor speed (baud rate) (platformio.ini option monitor_speed)."
 ---
 
-<a id="projectconf-monitor-speed"></a>
-
-# `monitor_speed` {#monitor-speed}
+# `monitor_speed`
 
 - **Type:** Integer
 - **Multiple values:** No

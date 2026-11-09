@@ -5,8 +5,6 @@ description: "Maple (STM32F103RBT6, 72MHz, 108KB flash, 17KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-maple"></a>
-
 # Maple
 
 ## Hardware

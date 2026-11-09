@@ -2,9 +2,7 @@
 description: Install, update, list and publish PlatformIO packages - development platforms, tools and libraries.
 ---
 
-<a id="cmd-pkg"></a>
-
-# pio pkg {#package-management-cli}
+# pio pkg
 
 Manage packages: development platforms, tools (toolchains, frameworks,
 uploaders) and libraries. Most commands work on the current project's

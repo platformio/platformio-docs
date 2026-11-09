@@ -2,9 +2,7 @@
 description: "Show package information from the PlatformIO Registry."
 ---
 
-<a id="cmd-pkg-show"></a>
-
-# pio pkg show {#pio-pkg-show}
+# pio pkg show
 
 ## Usage {#usage}
 

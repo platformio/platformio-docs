@@ -5,8 +5,6 @@ description: "Adafruit Feather ESP32-C6 (ESP32C6, 160MHz, 4MB flash, 320KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-feather-esp32c6"></a>
-
 # Adafruit Feather ESP32-C6
 
 ## Hardware

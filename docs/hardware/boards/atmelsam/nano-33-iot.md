@@ -5,8 +5,6 @@ description: "NANO 33 IoT (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-nano-33-iot"></a>
-
 # NANO 33 IoT
 
 ## Hardware

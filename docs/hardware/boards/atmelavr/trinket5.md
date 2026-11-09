@@ -5,8 +5,6 @@ description: "Adafruit Trinket 5V/16MHz (ATTINY85, 16MHz, 8KB flash, 512B RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-trinket5"></a>
-
 # Adafruit Trinket 5V/16MHz
 
 ## Hardware

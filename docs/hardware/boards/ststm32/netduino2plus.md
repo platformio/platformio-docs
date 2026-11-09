@@ -5,8 +5,6 @@ description: "N2+ (STM32F405RGT6, 168MHz, 1MB flash, 128KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-netduino2plus"></a>
-
 # N2+
 
 ## Hardware

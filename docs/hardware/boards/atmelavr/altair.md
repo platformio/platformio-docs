@@ -5,8 +5,6 @@ description: "Altair (ATMEGA256RFR2, 16MHz, 248KB flash, 32KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-altair"></a>
-
 # Altair
 
 ## Hardware

@@ -1,6 +1,4 @@
-<a id="unit-testing-simulators-simavr"></a>
-
-# SimAVR {#simavr}
+# SimAVR
 
 [SimAVR](https://github.com/buserror/simavr/) is a lean, mean and hackable AVR simulator.
 

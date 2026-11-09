@@ -2,7 +2,7 @@
 description: Test firmware components on your computer, on the target device, or in a simulator with PlatformIO unit testing.
 ---
 
-# Unit testing {#unit-testing}
+# Unit testing
 
 PlatformIO runs unit tests of your firmware on your computer, on boards
 connected to it, in simulators, or on [remote devices](../remote-development.md).

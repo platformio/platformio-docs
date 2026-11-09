@@ -5,8 +5,6 @@ description: "Blinker WiFiduino32S3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wifiduino32s3"></a>
-
 # Blinker WiFiduino32S3
 
 ## Hardware

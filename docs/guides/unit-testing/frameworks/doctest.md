@@ -2,9 +2,7 @@
 description: "If you would like to change the default PlatformIO's Test Runner for the Doctest, please implement your Custom Testing Framework runner extending DoctestTestRunner class."
 ---
 
-<a id="unit-testing-frameworks-doctest"></a>
-
-# Doctest {#doctest}
+# Doctest
 
 <dl>
 

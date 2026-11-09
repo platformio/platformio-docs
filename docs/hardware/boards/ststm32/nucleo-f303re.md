@@ -5,8 +5,6 @@ description: "ST Nucleo F303RE (STM32F303RET6, 72MHz, 512KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-f303re"></a>
-
 # ST Nucleo F303RE
 
 ## Hardware

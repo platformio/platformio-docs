@@ -5,8 +5,6 @@ description: "Maple Mini Bootloader 2.0 (STM32F103CBT6, 72MHz, 120KB flash, 20KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-maple-mini-b20"></a>
-
 # Maple Mini Bootloader 2.0
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "Generic IRC15W415AS (IRC15W415AS, 11MHz, 15.50KB flash, 512B RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-intel-mcs51-irc15w415as"></a>
-
 # Generic IRC15W415AS
 
 ## Hardware

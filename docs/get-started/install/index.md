@@ -2,9 +2,7 @@
 description: Install PlatformIO Core, the pio command-line tool, on Windows, macOS or Linux.
 ---
 
-<a id="core-installation"></a>
-
-# Install PlatformIO Core {#installation}
+# Install PlatformIO Core
 
 This page helps you install [PlatformIO Core](../platformio-core.md), the `pio`
 command-line tool.

@@ -5,8 +5,6 @@ description: "Dwenguino (AT90USB646, 16MHz, 60KB flash, 2KB RAM): PlatformIO boa
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-dwenguino"></a>
-
 # Dwenguino
 
 ## Hardware

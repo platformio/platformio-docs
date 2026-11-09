@@ -5,8 +5,6 @@ description: "ThunderPack v1.0 (STM32L072KZ, 32MHz, 192KB flash, 20KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-thunder-pack"></a>
-
 # ThunderPack v1.0
 
 ## Hardware

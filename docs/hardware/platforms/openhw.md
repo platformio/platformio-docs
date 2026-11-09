@@ -4,8 +4,6 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 description: "The OpenHW Group development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
-<a id="platform-openhw"></a>
-
 # OpenHW Group
 
 **Registry:** [https://registry.platformio.org/platforms/platformio/openhw](https://registry.platformio.org/platforms/platformio/openhw)  

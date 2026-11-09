@@ -2,9 +2,7 @@
 description: Rename an organization or update its details.
 ---
 
-<a id="cmd-org-update"></a>
-
-# pio org update {#pio-org-update}
+# pio org update
 
 Rename an organization or update its details.
 

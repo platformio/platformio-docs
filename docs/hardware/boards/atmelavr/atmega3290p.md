@@ -5,8 +5,6 @@ description: "ATmega3290P/PA (ATMEGA3290P, 16MHz, 32KB flash, 2KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega3290p"></a>
-
 # ATmega3290P/PA
 
 ## Hardware

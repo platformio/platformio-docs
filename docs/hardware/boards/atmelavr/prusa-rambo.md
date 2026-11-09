@@ -5,8 +5,6 @@ description: "Prusa RAMBo (ATMEGA2560, 16MHz, 252KB flash, 8KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-prusa-rambo"></a>
-
 # Prusa RAMBo
 
 ## Hardware

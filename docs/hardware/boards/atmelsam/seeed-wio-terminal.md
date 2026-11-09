@@ -5,8 +5,6 @@ description: "Seeeduino Wio Terminal (SAMD51P19A, 120MHz, 496KB flash, 192KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-seeed-wio-terminal"></a>
-
 # Seeeduino Wio Terminal
 
 ## Hardware

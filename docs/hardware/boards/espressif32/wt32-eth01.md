@@ -5,8 +5,6 @@ description: "Wireless-Tag WT32-ETH01 Ethernet Module (ESP32, 240MHz, 4MB flash,
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-wt32-eth01"></a>
-
 # Wireless-Tag WT32-ETH01 Ethernet Module
 
 ## Hardware

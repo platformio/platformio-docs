@@ -2,9 +2,7 @@
 description: PlatformIO Core is the command-line tool and build system behind every PlatformIO product.
 ---
 
-<a id="piocore"></a>
-
-# PlatformIO Core (CLI) {#platformio-core-cli}
+# PlatformIO Core (CLI)
 
 PlatformIO Core is the command-line tool and build system at the center of
 PlatformIO. [PlatformIO IDE](./platformio-ide.md) and

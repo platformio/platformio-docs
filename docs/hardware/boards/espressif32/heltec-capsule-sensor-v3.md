@@ -5,8 +5,6 @@ description: "Heltec Capsule Sensor v3 (ESP32S3, 240MHz, 8MB flash, 320KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-heltec-capsule-sensor-v3"></a>
-
 # Heltec Capsule Sensor v3
 
 ## Hardware

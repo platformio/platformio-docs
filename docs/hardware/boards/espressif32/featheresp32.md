@@ -5,8 +5,6 @@ description: "Adafruit ESP32 Feather (ESP32, 240MHz, 4MB flash, 320KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-featheresp32"></a>
-
 # Adafruit ESP32 Feather
 
 ## Hardware

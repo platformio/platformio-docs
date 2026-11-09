@@ -1,6 +1,4 @@
-<a id="ide-vim"></a>
-
-# Vim {#vim}
+# Vim
 
 [Vim](http://www.vim.org/) is an open-source, powerful and configurable text editor. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface.
 

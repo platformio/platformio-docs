@@ -5,8 +5,6 @@ description: "STM32F446RC (128k RAM. 256k Flash) (STM32F446RCT6, 180MHz, 256KB f
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-genericstm32f446rc"></a>
-
 # STM32F446RC (128k RAM. 256k Flash)
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "LilyGo T3-S3 (ESP32S3, 240MHz, 4MB flash, 320KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lilygo-t3-s3"></a>
-
 # LilyGo T3-S3
 
 ## Hardware

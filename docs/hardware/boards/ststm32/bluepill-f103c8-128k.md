@@ -5,8 +5,6 @@ description: "BluePill F103C8 (128k) (STM32F103C8T6, 72MHz, 128KB flash, 20KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-bluepill-f103c8-128k"></a>
-
 # BluePill F103C8 (128k)
 
 ## Hardware

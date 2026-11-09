@@ -1,6 +1,4 @@
-<a id="ci-travis"></a>
-
-# Travis CI {#travis-ci}
+# Travis CI
 
 [![](./img/ci-travis-logo.png)](https://docs.travis-ci.com/user/integration/platformio/)
 

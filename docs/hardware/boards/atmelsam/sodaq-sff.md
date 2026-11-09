@@ -5,8 +5,6 @@ description: "SODAQ SFF (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-sodaq-sff"></a>
-
 # SODAQ SFF
 
 ## Hardware

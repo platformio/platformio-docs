@@ -5,8 +5,6 @@ description: "Arduino Nano 33 BLE (NRF52840, 64MHz, 960KB flash, 256KB RAM): Pla
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf52-nano33ble"></a>
-
 # Arduino Nano 33 BLE
 
 ## Hardware

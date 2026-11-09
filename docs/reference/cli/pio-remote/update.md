@@ -2,9 +2,7 @@
 description: "Check or update installed Development Platforms and global Libraries on the remote machine."
 ---
 
-<a id="cmd-remote-update"></a>
-
-# pio remote update {#pio-remote-update}
+# pio remote update
 
 ## Usage {#usage}
 

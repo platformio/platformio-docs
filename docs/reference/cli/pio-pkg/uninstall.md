@@ -2,9 +2,7 @@
 description: "Uninstall the project dependencies or custom packages from the PlatformIO Registry or external sources."
 ---
 
-<a id="cmd-pkg-uninstall"></a>
-
-# pio pkg uninstall {#pio-pkg-uninstall}
+# pio pkg uninstall
 
 ## Usage {#usage}
 

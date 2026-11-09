@@ -5,8 +5,6 @@ description: "Espressif ESP32-S2-Kaluga-1 Kit (ESP32S2, 240MHz, 4MB flash, 320KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-esp32-s2-kaluga-1"></a>
-
 # Espressif ESP32-S2-Kaluga-1 Kit
 
 ## Hardware

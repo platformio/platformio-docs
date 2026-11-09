@@ -2,9 +2,7 @@
 description: Delete a team.
 ---
 
-<a id="cmd-team-destroy"></a>
-
-# pio team destroy {#pio-team-destroy}
+# pio team destroy
 
 Delete a team.
 

@@ -2,9 +2,7 @@
 description: Create PlatformIO projects and inspect their configuration and build metadata.
 ---
 
-<a id="cmd-project"></a>
-
-# pio project {#project-manager-cli}
+# pio project
 
 Create projects and inspect their configuration.
 

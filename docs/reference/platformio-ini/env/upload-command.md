@@ -2,9 +2,7 @@
 description: "A custom upload command which overwrites a default from development platform (platformio.ini option upload_command)."
 ---
 
-<a id="projectconf-upload-command"></a>
-
-# `upload_command` {#upload-command}
+# `upload_command`
 
 - **Type:** String
 - **Multiple values:** No

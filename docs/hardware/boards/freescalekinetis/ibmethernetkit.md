@@ -5,8 +5,6 @@ description: "Ethernet IoT Starter Kit (MK64FN1M0VLL12, 120MHz, 1MB flash, 256KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-freescalekinetis-ibmethernetkit"></a>
-
 # Ethernet IoT Starter Kit
 
 ## Hardware

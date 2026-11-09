@@ -5,8 +5,6 @@ description: "EnviroDIY Mayfly (ATMEGA1284P, 8MHz, 127KB flash, 16KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-mayfly"></a>
-
 # EnviroDIY Mayfly
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "An extra flags to be passed to a check tool (platformio.ini option check_flags)."
 ---
 
-<a id="projectconf-check-flags"></a>
-
-# `check_flags` {#check-flags}
+# `check_flags`
 
 - **Type:** String
 - **Multiple values:** Yes

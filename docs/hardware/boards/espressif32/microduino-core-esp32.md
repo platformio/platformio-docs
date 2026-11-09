@@ -5,8 +5,6 @@ description: "Microduino Core ESP32 (ESP32, 240MHz, 4MB flash, 320KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-microduino-core-esp32"></a>
-
 # Microduino Core ESP32
 
 ## Hardware

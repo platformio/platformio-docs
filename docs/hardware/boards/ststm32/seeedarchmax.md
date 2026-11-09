@@ -5,8 +5,6 @@ description: "Seeed Arch Max (STM32F407VET6, 168MHz, 512KB flash, 192KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-seeedarchmax"></a>
-
 # Seeed Arch Max
 
 ## Hardware

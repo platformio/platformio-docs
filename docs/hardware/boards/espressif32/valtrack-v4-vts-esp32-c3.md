@@ -5,8 +5,6 @@ description: "Valetron Systems VALTRACK-V4VTS (ESP32C3, 160MHz, 4MB flash, 320KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-valtrack-v4-vts-esp32-c3"></a>
-
 # Valetron Systems VALTRACK-V4VTS
 
 ## Hardware

@@ -2,9 +2,7 @@
 description: "Create a tarball from a package (library, Development Platforms, or tool)."
 ---
 
-<a id="cmd-pkg-pack"></a>
-
-# pio pkg pack {#pio-pkg-pack}
+# pio pkg pack
 
 ## Usage {#usage}
 

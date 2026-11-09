@@ -5,8 +5,6 @@ description: "ST Nucleo WL55JC (STM32WL55JC, 48MHz, 256KB flash, 64KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-wl55jc"></a>
-
 # ST Nucleo WL55JC
 
 ## Hardware

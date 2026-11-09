@@ -2,7 +2,7 @@
 description: "Export only files that matched declared patterns."
 ---
 
-# `include` {#include}
+# `include`
 
 - **Required:** No
 - **Type:** Array of strings

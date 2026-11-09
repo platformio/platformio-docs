@@ -2,7 +2,7 @@
 description: "Describe a project with a short information (platformio.ini option description)."
 ---
 
-# `description` {#description}
+# `description`
 
 - **Type:** String
 - **Multiple values:** No

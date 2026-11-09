@@ -5,8 +5,6 @@ description: "96Boards Argonkey (STEVAL-MKI187V1) (STM32F412CG, 100MHz, 1MB flas
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-b96b-argonkey"></a>
-
 # 96Boards Argonkey (STEVAL-MKI187V1)
 
 ## Hardware

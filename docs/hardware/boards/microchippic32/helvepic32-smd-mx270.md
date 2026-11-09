@@ -5,8 +5,6 @@ description: "HelvePic32 SMD MX270 (32MX270F256D, 48MHz, 244KB flash, 62KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-helvepic32-smd-mx270"></a>
-
 # HelvePic32 SMD MX270
 
 ## Hardware

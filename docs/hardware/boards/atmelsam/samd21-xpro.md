@@ -5,8 +5,6 @@ description: "Atmel SAMD21-XPRO (SAMD21J18A, 48MHz, 256KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelsam-samd21-xpro"></a>
-
 # Atmel SAMD21-XPRO
 
 ## Hardware

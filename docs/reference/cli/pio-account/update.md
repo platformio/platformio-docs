@@ -2,9 +2,7 @@
 description: Update the profile of your PlatformIO Account.
 ---
 
-<a id="cmd-account-update"></a>
-
-# pio account update {#pio-account-update}
+# pio account update
 
 Update the profile of your [PlatformIO Account](../../../get-started/platformio-account.md).
 

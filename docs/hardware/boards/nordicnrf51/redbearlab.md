@@ -5,8 +5,6 @@ description: "RedBearLab nRF51822 (NRF51822, 16MHz, 256KB flash, 16KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-nordicnrf51-redbearlab"></a>
-
 # RedBearLab nRF51822
 
 ## Hardware

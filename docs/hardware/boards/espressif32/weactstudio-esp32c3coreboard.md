@@ -5,8 +5,6 @@ description: "WeAct Studio ESP32C3CoreBoard (ESP32C3, 160MHz, 384KB flash, 400KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-weactstudio-esp32c3coreboard"></a>
-
 # WeAct Studio ESP32C3CoreBoard
 
 ## Hardware

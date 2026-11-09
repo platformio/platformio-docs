@@ -2,9 +2,7 @@
 description: "Control which source files from the `src` folder should be included/excluded from a build process (platformio.ini option build_src_filter)."
 ---
 
-<a id="projectconf-build-src-filter"></a>
-
-# `build_src_filter` {#build-src-filter}
+# `build_src_filter`
 
 - **Type:** String
 - **Multiple values:** Yes

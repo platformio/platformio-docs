@@ -5,8 +5,6 @@ description: "STM32F7508-DK (STM32F750N8H6, 216MHz, 64KB flash, 340KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-disco-f750n8"></a>
-
 # STM32F7508-DK
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "WEMOS LOLIN32 (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO bo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-lolin32"></a>
-
 # WEMOS LOLIN32
 
 ## Hardware

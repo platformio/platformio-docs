@@ -2,9 +2,7 @@
 description: Show the computed project configuration or check platformio.ini for errors.
 ---
 
-<a id="cmd-project-config"></a>
-
-# pio project config {#pio-project-config}
+# pio project config
 
 Show the project configuration as PlatformIO computes it from [`platformio.ini`](../../platformio-ini/index.md), or check
 the file for errors.

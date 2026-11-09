@@ -5,8 +5,6 @@ description: "Arduino Duemilanove or Diecimila ATmega168 (ATMEGA168, 16MHz, 14KB
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-diecimilaatmega168"></a>
-
 # Arduino Duemilanove or Diecimila ATmega168
 
 ## Hardware

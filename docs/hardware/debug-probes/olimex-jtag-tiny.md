@@ -2,9 +2,7 @@
 description: "Use the Olimex ARM-USB-TINY debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-olimex-jtag-tiny"></a>
-
-# Olimex ARM-USB-TINY {#olimex-arm-usb-tiny}
+# Olimex ARM-USB-TINY
 
 [![](./img/olimex-jtag-tiny.jpg)](https://www.olimex.com/Products/ARM/JTAG/ARM-USB-TINY/?utm_source=platformio&utm_medium=docs)
 

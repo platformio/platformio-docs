@@ -5,8 +5,6 @@ description: "Adafruit QT Py ESP32-S3 (4M Flash 2M PSRAM) (ESP32S3, 240MHz, 4MB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-adafruit-qtpy-esp32s3-n4r2"></a>
-
 # Adafruit QT Py ESP32-S3 (4M Flash 2M PSRAM)
 
 ## Hardware

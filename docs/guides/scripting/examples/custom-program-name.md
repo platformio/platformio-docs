@@ -1,4 +1,4 @@
-# Custom firmware/program name {#custom-firmware-program-name}
+# Custom firmware/program name
 
 Sometimes it is useful to have a different firmware/program name in [build_dir](../../../reference/platformio-ini/platformio/build-dir.md). The following example uses [Custom options in platformio.ini](./platformio-ini-custom-options.md) and adds a project version suffix to the firmware name.
 

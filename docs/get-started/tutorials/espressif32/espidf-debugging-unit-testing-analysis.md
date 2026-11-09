@@ -3,9 +3,7 @@ sidebar_label: "ESP-IDF on ESP32"
 description: Build, upload, debug, unit test and inspect an ESP-IDF Wi-Fi access point project on the ESP32-DevKitC with PlatformIO IDE for VS Code.
 ---
 
-<a id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></a>
-
-# ESP-IDF on ESP32-DevKitC: debugging, unit testing and project analysis {#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis}
+# ESP-IDF on ESP32-DevKitC: debugging, unit testing and project analysis
 
 In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
 to build a Wi-Fi access point with the

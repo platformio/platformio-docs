@@ -5,8 +5,6 @@ description: "Adafruit ESP32-S2 Feather Development Board (ESP32S2, 240MHz, 4MB 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-featheresp32-s2"></a>
-
 # Adafruit ESP32-S2 Feather Development Board
 
 ## Hardware

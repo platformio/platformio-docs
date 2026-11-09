@@ -5,8 +5,6 @@ description: "ST NUCLEO-G031K8 (STM32G031K8, 64MHz, 64KB flash, 8KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g031k8"></a>
-
 # ST NUCLEO-G031K8
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RGB Station (32MX270F256D, 48MHz, 240KB flash, 62KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-rgb-station"></a>
-
 # RGB Station
 
 ## Hardware

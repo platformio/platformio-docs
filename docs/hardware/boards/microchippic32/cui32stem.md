@@ -5,8 +5,6 @@ description: "SeeedStudio CUI32stem (32MX795F512H, 80MHz, 508KB flash, 128KB RAM
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-cui32stem"></a>
-
 # SeeedStudio CUI32stem
 
 ## Hardware

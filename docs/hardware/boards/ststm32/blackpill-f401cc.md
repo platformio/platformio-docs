@@ -5,8 +5,6 @@ description: "WeAct Studio BlackPill V2.0 (STM32F401CC) (STM32F401CCU6, 84MHz, 2
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-blackpill-f401cc"></a>
-
 # WeAct Studio BlackPill V2.0 (STM32F401CC)
 
 ## Hardware

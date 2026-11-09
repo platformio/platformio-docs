@@ -5,8 +5,6 @@ description: "Black STM32F407ZE (STM32F407ZET6, 168MHz, 512KB flash, 128KB RAM):
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-black-f407ze"></a>
-
 # Black STM32F407ZE
 
 ## Hardware

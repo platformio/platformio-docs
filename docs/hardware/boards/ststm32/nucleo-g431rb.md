@@ -5,8 +5,6 @@ description: "Nucleo G431RB (STM32G431RBT6, 170MHz, 128KB flash, 32KB RAM): Plat
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-g431rb"></a>
-
 # Nucleo G431RB
 
 ## Hardware

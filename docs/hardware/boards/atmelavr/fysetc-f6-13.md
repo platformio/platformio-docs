@@ -5,8 +5,6 @@ description: "FYSETC F6 V1.3 (ATMEGA2560, 16MHz, 252KB flash, 8KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-fysetc-f6-13"></a>
-
 # FYSETC F6 V1.3
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "WeMos D1 mini Pro (ESP8266, 80MHz, 16MB flash, 80KB RAM): Platform
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif8266-d1-mini-pro"></a>
-
 # WeMos D1 mini Pro
 
 ## Hardware

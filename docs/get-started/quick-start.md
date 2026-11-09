@@ -2,9 +2,7 @@
 description: Create, build and upload a "Blink" project for three different boards with the PlatformIO Core CLI.
 ---
 
-<a id="core-quickstart"></a>
-
-# Quick start {#quick-start}
+# Quick start
 
 In this tutorial you create a "Blink" project from the command line, build it
 for three boards with different architectures, and upload it to a board. It

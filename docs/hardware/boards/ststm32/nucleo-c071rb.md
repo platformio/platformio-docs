@@ -5,8 +5,6 @@ description: "ST Nucleo C071RB (STM32C071RBT6, 48MHz, 128KB flash, 24KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-c071rb"></a>
-
 # ST Nucleo C071RB
 
 ## Hardware

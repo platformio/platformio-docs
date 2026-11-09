@@ -5,8 +5,6 @@ description: "Arduino Uno R4 Minima (RA4M1, 48MHz, 256KB flash, 32KB RAM): Platf
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-renesas-ra-uno-r4-minima"></a>
-
 # Arduino Uno R4 Minima
 
 ## Hardware

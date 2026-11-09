@@ -5,8 +5,6 @@ description: "ATtiny13 (ATTINY13, 9MHz, 1KB flash, 64B RAM): PlatformIO board ID
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-attiny13"></a>
-
 # ATtiny13
 
 ## Hardware

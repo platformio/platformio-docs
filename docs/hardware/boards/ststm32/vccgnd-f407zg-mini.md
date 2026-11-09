@@ -5,8 +5,6 @@ description: "VCCGND F407ZGT6 Mini (STM32F407ZGT6, 168MHz, 1MB flash, 128KB RAM)
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-vccgnd-f407zg-mini"></a>
-
 # VCCGND F407ZGT6 Mini
 
 ## Hardware

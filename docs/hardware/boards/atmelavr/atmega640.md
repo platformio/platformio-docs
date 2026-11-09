@@ -5,8 +5,6 @@ description: "ATmega640 (ATMEGA640, 16MHz, 64KB flash, 8KB RAM): PlatformIO boar
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega640"></a>
-
 # ATmega640
 
 ## Hardware

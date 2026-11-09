@@ -5,8 +5,6 @@ description: "Curiosity Nano AVR128DB48 (AVR128DB48, 24MHz, 128KB flash, 16KB RA
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelmegaavr-curiosity-nano-db"></a>
-
 # Curiosity Nano AVR128DB48
 
 ## Hardware

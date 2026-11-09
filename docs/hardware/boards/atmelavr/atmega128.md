@@ -5,8 +5,6 @@ description: "ATmega128/A (ATMEGA128, 16MHz, 128KB flash, 4KB RAM): PlatformIO b
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega128"></a>
-
 # ATmega128/A
 
 ## Hardware

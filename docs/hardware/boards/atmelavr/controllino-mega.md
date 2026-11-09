@@ -5,8 +5,6 @@ description: "Controllino Mega (ATMEGA2560, 16MHz, 248KB flash, 8KB RAM): Platfo
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-controllino-mega"></a>
-
 # Controllino Mega
 
 ## Hardware

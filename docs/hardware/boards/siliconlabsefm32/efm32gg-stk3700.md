@@ -5,8 +5,6 @@ description: "EFM32GG-STK3700 Giant Gecko (EFM32GG990F1024, 48MHz, 1MB flash, 12
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-siliconlabsefm32-efm32gg-stk3700"></a>
-
 # EFM32GG-STK3700 Giant Gecko
 
 ## Hardware

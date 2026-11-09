@@ -5,8 +5,6 @@ description: "Waveshare ESP32-S3-Zero (ESP32S3, 240MHz, 4MB flash, 320KB RAM): P
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-espressif32-waveshare-esp32-s3-zero"></a>
-
 # Waveshare ESP32-S3-Zero
 
 ## Hardware

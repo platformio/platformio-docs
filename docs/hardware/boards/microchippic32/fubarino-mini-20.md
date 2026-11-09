@@ -5,8 +5,6 @@ description: "Mini 2.0 (32MX270F256D, 48MHz, 240KB flash, 62KB RAM): PlatformIO 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-microchippic32-fubarino-mini-20"></a>
-
 # Mini 2.0
 
 ## Hardware

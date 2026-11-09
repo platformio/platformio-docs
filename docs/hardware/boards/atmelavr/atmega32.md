@@ -5,8 +5,6 @@ description: "ATmega32 (ATMEGA32, 16MHz, 32KB flash, 2KB RAM): PlatformIO board 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-atmega32"></a>
-
 # ATmega32
 
 ## Hardware

@@ -5,8 +5,6 @@ description: "RushUp Cloud-JAM L4 (STM32L476RGT6, 80MHz, 1MB flash, 128KB RAM): 
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-cloud-jam-l4"></a>
-
 # RushUp Cloud-JAM L4
 
 ## Hardware

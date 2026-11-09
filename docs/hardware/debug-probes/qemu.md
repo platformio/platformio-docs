@@ -2,9 +2,7 @@
 description: "Use the QEMU debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
 ---
 
-<a id="debugging-tool-qemu"></a>
-
-# QEMU {#qemu}
+# QEMU
 
 [![](./img/qemu.png)](https://www.qemu.org/?utm_source=platformio&utm_medium=docs)
 

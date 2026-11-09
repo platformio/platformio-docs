@@ -5,8 +5,6 @@ description: "ST Nucleo L433RC-P (STM32L433RC, 80MHz, 256KB flash, 64KB RAM): Pl
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-ststm32-nucleo-l433rc-p"></a>
-
 # ST Nucleo L433RC-P
 
 ## Hardware

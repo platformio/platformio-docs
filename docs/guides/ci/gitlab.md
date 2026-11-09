@@ -1,6 +1,4 @@
-<a id="ci-gitlab"></a>
-
-# GitLab {#gitlab}
+# GitLab
 
 [GitLab](https://about.gitlab.com/features/gitlab-ci-cd/) is a hosted cloud platform that can help you build, test, deploy, and monitor your code from GitLab repositories.
 

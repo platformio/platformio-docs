@@ -2,9 +2,7 @@
 description: Reset the password of your PlatformIO Account.
 ---
 
-<a id="cmd-account-forgot"></a>
-
-# pio account forgot {#pio-account-forgot}
+# pio account forgot
 
 Start a password reset for your [PlatformIO Account](../../../get-started/platformio-account.md). PlatformIO sends the reset
 instructions to the account's email address.

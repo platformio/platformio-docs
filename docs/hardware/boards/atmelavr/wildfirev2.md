@@ -5,8 +5,6 @@ description: "Wicked Device WildFire V2 (ATMEGA1284P, 16MHz, 120.00KB flash, 16K
 displayed_sidebar: "hardware"
 ---
 
-<a id="board-atmelavr-wildfirev2"></a>
-
 # Wicked Device WildFire V2
 
 ## Hardware

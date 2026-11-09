@@ -1,6 +1,4 @@
-<a id="ide-codeblocks"></a>
-
-# CodeBlocks {#codeblocks}
+# CodeBlocks
 
 Code::Blocks is a free, open-source cross-platform IDE that supports multiple compilers including GCC, Clang and Visual C++. It is developed in C++ using wxWidgets as the GUI toolkit. Using a plugin architecture, its capabilities and features are defined by the provided plugins. Currently, Code::Blocks is oriented towards C, C++, and Fortran.
 
