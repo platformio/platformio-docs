@@ -1,3 +1,7 @@
+---
+description: Upgrade projects from PlatformIO Core 5.x to 6.0 - required changes, new features and removed commands.
+---
+
 <a id="core-migration"></a>
 
 # Migrating from 5.x to 6.0 {#migrating-from-5-x-to-6-0}

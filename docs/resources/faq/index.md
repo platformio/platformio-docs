@@ -1,34 +1,51 @@
+---
+description: Answers to frequently asked questions about PlatformIO.
+---
+
 <a id="faq"></a>
 
-# Frequently Asked Questions {#frequently-asked-questions}
+# Frequently asked questions {#frequently-asked-questions}
 
-:::note
+More answers are in the [FAQ category](https://community.platformio.org/c/faq)
+of the PlatformIO Community forum.
 
-We have a big database with [Frequently Asked Questions in our Community Forums](https://community.platformio.org/c/faq). Please have a look at it.
+<a id="general"></a>
 
-:::
+## General {#faq-general}
 
-- [General](./general.md)
+<a id="what-is-platformio"></a>
 
-  - [What is PlatformIO?](./general.md#what-is-platformio)
-  - [What is `.pio` directory](./general.md#what-is-pio-directory)
-  - [Command completion in Terminal](./general.md#command-completion-in-terminal)
-  - [99-platformio-udev.rules](./general.md#platformio-udev-rules)
-  - [Multiple PlatformIO Cores in a system](./general.md#multiple-platformio-cores-in-a-system)
+**What is PlatformIO?** See [What is PlatformIO?](../../get-started/what-is-platformio.md)
 
-- [Arduino IDE vs PlatformIO IDE](./arduino-vs-platformio.md)
+<a id="what-is-pio-directory"></a>
 
-- [Install Python Interpreter](./install-python.md)
+**What is the `.pio` folder?** It is the project's build and dependency folder,
+the [`workspace_dir`](../../reference/platformio-ini/platformio/workspace-dir.md).
+PlatformIO recreates it as needed; do not commit it to version control.
 
-- [Advanced Serial Monitor with UI](./advanced-serial-monitor.md)
+<a id="command-completion-in-terminal"></a>
 
-- [Program Memory Usage](./program-memory-usage.md)
+**How do I enable tab completion of `pio` commands?** See
+[`pio system completion`](../../reference/cli/pio-system/completion/index.md).
 
-- [Convert Arduino file to C++ manually](./ino-to-cpp.md)
+<a id="platformio-udev-rules"></a>
 
-- [Custom SCons command-line options](./custom-scons-cli-options.md)
+**Linux cannot access my board.** Install the
+[udev rules](../../get-started/install/udev-rules.md).
 
-- [Troubleshooting](./troubleshooting.md)
+<a id="multiple-platformio-cores-in-a-system"></a>
 
-  - [Package Manager](./troubleshooting.md#package-manager)
-  - [Building](./troubleshooting.md#building)
+**I have several PlatformIO Core installations.** See
+[More than one PlatformIO Core is installed](../../get-started/install/troubleshooting.md#multiple-pio-cores-issue).
+
+## Topics {#topics}
+
+| Question | |
+| --- | --- |
+| [Arduino IDE or PlatformIO IDE?](./arduino-vs-platformio.md) | Which one fits your project |
+| [How do I install Python?](./install-python.md) | Notes for Linux, macOS and Windows |
+| [Is there a serial monitor with a graphical UI?](./advanced-serial-monitor.md) | Using CoolTerm with PlatformIO |
+| [How is program memory usage calculated?](./program-memory-usage.md) | `.text`, `.data` and `.bss` |
+| [How do I convert an `.ino` file to C++?](./ino-to-cpp.md) | For editors without Arduino support |
+| [How do I pass options to SCons?](./custom-scons-cli-options.md) | The `SCONSFLAGS` environment variable |
+| [Troubleshooting](./troubleshooting.md) | Package manager and build problems |

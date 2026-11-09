@@ -24992,20 +24992,29 @@
   "from": [
    "/en/latest/faq",
    "/en/latest/faq.html",
+   "/en/latest/faq/general",
+   "/en/latest/faq/general.html",
    "/en/latest/faq/index",
    "/en/latest/faq/index.html",
    "/en/stable/faq",
    "/en/stable/faq.html",
+   "/en/stable/faq/general",
+   "/en/stable/faq/general.html",
    "/en/stable/faq/index",
    "/en/stable/faq/index.html",
    "/faq",
    "/faq.html",
+   "/faq/general",
+   "/faq/general.html",
    "/faq/index",
    "/faq/index.html",
    "/page/faq",
    "/page/faq.html",
+   "/page/faq/general",
+   "/page/faq/general.html",
    "/page/faq/index",
-   "/page/faq/index.html"
+   "/page/faq/index.html",
+   "/resources/faq/general"
   ]
  },
  {
@@ -25045,19 +25054,6 @@
    "/faq/custom-scons-cli-options.html",
    "/page/faq/custom-scons-cli-options",
    "/page/faq/custom-scons-cli-options.html"
-  ]
- },
- {
-  "to": "/resources/faq/general",
-  "from": [
-   "/en/latest/faq/general",
-   "/en/latest/faq/general.html",
-   "/en/stable/faq/general",
-   "/en/stable/faq/general.html",
-   "/faq/general",
-   "/faq/general.html",
-   "/page/faq/general",
-   "/page/faq/general.html"
   ]
  },
  {

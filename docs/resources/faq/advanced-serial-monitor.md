@@ -1,11 +1,20 @@
+---
+description: Use a serial terminal with a graphical UI, such as CoolTerm, together with PlatformIO.
+---
+
 <a id="faq-advanced-serial-monitor-ui"></a>
 
-# Advanced Serial Monitor with UI {#advanced-serial-monitor-with-ui}
+# Serial monitor with a graphical UI {#advanced-serial-monitor-with-ui}
 
-PlatformIO Core provides CLI version ([pio device monitor](../../reference/cli/pio-device/monitor.md)) of Serial Monitor. If you need advanced instrument with a rich UI, we recommend free and multi-platform [CoolTerm](https://freeware.the-meiers.org/?utm_source=platformio&utm_medium=docs) serial port terminal application.
+PlatformIO's serial monitor, [`pio device monitor`](../../reference/cli/pio-device/monitor.md),
+runs in the terminal. If you prefer a graphical serial terminal, you can use
+any other one, for example the free, cross-platform
+[CoolTerm](https://freeware.the-meiers.org/?utm_source=platformio&utm_medium=docs).
 
 :::warning
 
-Please note that you need to **manually disconnect (close serial port connection)** in CoolTerm **before doing uploading** in PlatformIO. PlatformIO can not disconnect/connect to a target device automatically when CoolTerm is used.
+Disconnect CoolTerm from the serial port before you upload firmware.
+PlatformIO cannot close a port that another application holds open, so the
+upload fails.
 
 :::

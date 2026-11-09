@@ -1,60 +1,39 @@
-# Program Memory Usage {#program-memory-usage}
+---
+description: How PlatformIO calculates the flash and RAM usage of a program from its .text, .data and .bss sections.
+---
 
-PlatformIO calculates firmware/program memory usage based on the next segments:
+# Program memory usage {#program-memory-usage}
 
-<dl>
+After a build, PlatformIO reports how much flash and RAM the program uses. By
+default, it computes these from three sections of the program:
 
-<dt>
+| Section | Contains | Stored in |
+| --- | --- | --- |
+| `.text` | The program code and constant data. Read-only. | Flash |
+| `.data` | Global and static variables with an initial value. The initial values are stored in flash and copied to RAM at startup. | Flash and RAM |
+| `.bss` | Global and static variables that are zero-initialized or have no initializer, such as `static int i;`. | RAM |
 
-`.text`
-
-</dt>
-
-<dd>
-
-The code segment, also known as a text segment or simply as text, is where a portion of an object file or the corresponding section of the program's virtual address space that contains executable instructions is stored and is generally read-only and fixed size.
-
-</dd>
-
-<dt>
-
-`.data`
-
-</dt>
-
-<dd>
-
-The .data segment contains any global or static variables which have a pre-defined value and can be modified. The values for these variables are initially stored within the read-only memory (typically within `.text`) and are copied into the `.data` segment during the start-up routine of the program. Example,
+Example of variables in `.data`:
 
 ```cpp
 int val = 3;
 char string[] = "Hello World";
 ```
 
-</dd>
+The reported sizes are:
 
-<dt>
+- **Flash** = `.text` + `.data`
+- **RAM** = `.data` + `.bss`
 
-`.bss`
+Some development platforms calculate the sizes their own way, for example to
+account for additional memory regions.
 
-</dt>
+The RAM figure covers only static data: the stack and heap are not included.
 
-<dd>
+To print all memory sections and their addresses, build with
+[`pio run --verbose`](../../reference/cli/pio-run.md#cmdoption-pio-run-v).
 
-Uninitialized data is usually adjacent to the data segment. The BSS segment contains all global variables and static variables that are initialized to zero or do not have explicit initialization in the source code. For instance, a variable defined as `static int i;` would be contained in the BSS segment.
+Further reading:
 
-</dd>
-
-</dl>
-
-The rough calculation could be done as:
-
-- PROGRAM (Flash) = `.text` + `.data`
-- DATA (RAM) = `.bss` + `.data`
-
-If you need to print **all memory sections and addresses**, please use [`pio run --verbose`](../../reference/cli/pio-run.md#cmdoption-pio-run-v) command.
-
-Recommended for reading:
-
-- [https://en.wikipedia.org/wiki/Data_segment](https://en.wikipedia.org/wiki/Data_segment)
-- [text, data and bss: Code and Data Size Explained](https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&utm_medium=docs)
+- [Data segment](https://en.wikipedia.org/wiki/Data_segment) (Wikipedia)
+- [text, data and bss: code and data size explained](https://mcuoneclipse.com/2013/04/14/text-data-and-bss-code-and-data-size-explained/?utm_source=platformio&utm_medium=docs)

@@ -325,7 +325,6 @@ const sidebars: SidebarsConfig = {
 
   resources: [
     section('FAQ & troubleshooting', 'resources/faq', [
-      'resources/faq/general',
       'resources/faq/troubleshooting',
       'resources/faq/install-python',
       'resources/faq/arduino-vs-platformio',

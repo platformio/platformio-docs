@@ -1,14 +1,23 @@
-# Custom SCons command-line options {#custom-scons-command-line-options}
+---
+description: Pass SCons command-line options, such as --dry-run or --debug=explain, to the PlatformIO build.
+---
 
-PlatformIO is built on top of the open-source software construction tool called SCons. SCons has many useful command-line options that control its behavior and may come in handy to know the exact internal processes happening in SCons when it builds a target. For example:
+# Pass options to SCons {#custom-scons-command-line-options}
 
-- `--dry-run` configures SCons to print the commands that would be executed to build any target, but do not execute the commands.
-- `--tree=all` forces SCons to print file dependency tree including implicit and ignored dependencies
-- `--debug=explain` will print an explanation of why SCons decides to (re-)build the targets it selects for building.
+The PlatformIO build system runs on [SCons](https://scons.org/). SCons options
+can help you understand what happens during a build, for example:
 
-The list of available command-line options can be found in the official [SCons documentation](https://scons.org/doc/production/HTML/scons-user/ch10.html#sect-command-line-options).
+| Option | What it does |
+| --- | --- |
+| `--dry-run` | Print the commands that would run, without running them |
+| `--tree=all` | Print the dependency tree of the files, including implicit dependencies |
+| `--debug=explain` | Explain why each target is rebuilt |
 
-The easiest way to pass extra command-line options to the SCons build system used in PlatformIO is via the external `SCONSFLAGS` environment variable:
+See the [SCons documentation](https://scons.org/doc/production/HTML/scons-user/ch10.html#sect-command-line-options)
+for all options.
+
+To pass options to SCons, set the `SCONSFLAGS` environment variable before
+running `pio run`:
 
 ```text
 # POSIX shell

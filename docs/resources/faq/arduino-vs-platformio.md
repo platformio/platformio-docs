@@ -1,9 +1,19 @@
-# Arduino IDE vs PlatformIO IDE {#arduino-ide-vs-platformio-ide}
+---
+description: How Arduino IDE and PlatformIO IDE differ, and when to use which.
+---
 
-The choice between Arduino IDE and PlatformIO IDE depends on the specific needs and requirements of the project and the user.
+# Arduino IDE or PlatformIO IDE? {#arduino-ide-vs-platformio-ide}
 
-Arduino IDE is a simple and easy-to-use development environment that is specifically designed for the Arduino platform. It provides a straightforward and intuitive interface for writing and uploading code to the board. The Arduino IDE is well-suited for simple projects and for users who are new to the world of microcontrollers.
+Both can build and upload code for Arduino boards. Which one fits depends on
+your project.
 
-[PlatformIO IDE](../../get-started/platformio-ide.md), on the other hand, is a more powerful and feature-rich development environment. It supports a wider range of microcontroller platforms and development boards, and provides a comprehensive set of tools for [Library Management](../../guides/libraries/index.md), [Continuous Integration](../../guides/ci/index.md), [Unit Testing](../../guides/unit-testing/index.md), and [Debugging](../../guides/debugging/index.md). PlatformIO IDE is well-suited for more complex projects and for experienced users who need more advanced features.
+| | Arduino IDE | [PlatformIO IDE](../../get-started/platformio-ide.md) |
+| --- | --- | --- |
+| Best for | Getting started, small sketches | Larger projects, teams, professional work |
+| Hardware | Boards with an Arduino core | 1,500+ boards across 30+ platforms, with the [Arduino](/hardware/frameworks/arduino) framework or vendor SDKs and RTOSes |
+| Libraries | Installed globally | [Declared per project](../../guides/libraries/dependencies.md), with pinned versions |
+| Debugging | Limited | [Full debugger](../../guides/debugging/index.md) with breakpoints and registers |
+| Testing and CI | Not built in | [Unit testing](../../guides/unit-testing/index.md), [static analysis](../../guides/static-code-analysis/index.md), [CI](../../guides/ci/index.md) |
 
-In conclusion, it depends on the project requirements and user experience. If you need a simple and easy-to-use environment for a small project, Arduino IDE may be the better choice. If you need a more powerful and feature-rich development environment for a larger project that uses the [Arduino](/hardware/frameworks/arduino) framework, PlatformIO IDE may be the better choice.
+You can move an Arduino sketch to PlatformIO at any time: create a project
+for your board with the Arduino framework and copy the sketch into `src`.

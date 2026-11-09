@@ -1,57 +1,37 @@
+---
+description: Install a Python interpreter for PlatformIO Core on Linux, macOS and Windows.
+---
+
 <a id="faq-install-python"></a>
 
-# Install Python Interpreter {#install-python-interpreter}
+# Install a Python interpreter {#install-python-interpreter}
 
-[PlatformIO Core (CLI)](../../get-started/platformio-core.md) is written in [Python](https://www.python.org/downloads/) that is installed by default on all the popular OSs except Windows.
+[PlatformIO Core](../../get-started/platformio-core.md) needs Python 3.9 or
+later. macOS and most Linux distributions include Python; on Windows, you
+usually need to install it. Download the latest version from
+[python.org](https://www.python.org/downloads/), and note the following.
 
-Please navigate to official website and [Download the latest Python](https://www.python.org/downloads/) and install it. Please **READ NOTES BELOW**.
+## Linux {#linux}
 
-<dl>
+Make sure the Python `venv` module is installed: the
+[installer script](../../get-started/install/installer-script.md) needs it. On
+Debian, Ubuntu and their derivatives:
 
-<dt>
+```bash
+sudo apt install python3-venv
+```
 
-Linux
+See also [platformio-core-installer#85](https://github.com/platformio/platformio-core-installer/issues/85).
 
-</dt>
+## macOS {#macos}
 
-<dd>
+The python.org installer shows "Important Information" about SSL/TLS
+certificates. Run **Install Certificates.command** as described there.
+Otherwise, PlatformIO cannot download packages, libraries and toolchains.
 
-Most linux distributions will include a Python installation already. You may need to ensure that the Python Virtual Environment is installed.
+## Windows {#windows}
 
-Debian/Ubuntu derivatives have this package in Apt as `python3-venv`.
+In the installer, select **Add Python to PATH**; otherwise, the `python`
+command is not available.
 
-`sudo apt install python3-venv` should be all that is required.
-
-For more details, please check the [platformio-core-installer/issues/85](https://github.com/platformio/platformio-core-installer/issues/85).
-
-</dd>
-
-<dt>
-
-macOS
-
-</dt>
-
-<dd>
-
-Please read the "Important Information" displayed during installation for information about SSL/TLS certificate validation and the running the **"Install Certificates.command"**.
-
-If you do not install SSL/TLS certificates, PlatformIO will not be able to download dependent packages, libraries, and toolchains.
-
-</dd>
-
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-Please select `Add Python to Path` (see below), otherwise, `python` command will not be available.
-
-![](./img/python-installer-add-path.png)
-
-</dd>
-
-</dl>
+![Python installer with the Add Python to PATH option](./img/python-installer-add-path.png)
