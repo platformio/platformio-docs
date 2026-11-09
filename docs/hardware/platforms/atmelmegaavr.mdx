@@ -1,0 +1,184 @@
+---
+title: "Atmel megaAVR"
+custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+---
+
+import Extra from './_atmelmegaavr-extra.md';
+
+<a id="platform-atmelmegaavr"></a>
+
+# Atmel megaAVR
+
+**Registry:** [https://registry.platformio.org/platforms/platformio/atmelmegaavr](https://registry.platformio.org/platforms/platformio/atmelmegaavr)  
+**Configuration:** [platform](../../reference/platformio-ini/env/platform.md) = `platformio/atmelmegaavr`
+
+8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
+
+For more detailed information please visit [vendor site](https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809?utm_source=platformio.org&utm_medium=docs).
+
+<Extra />
+
+## Examples
+
+Examples are listed from [Atmel megaAVR development platform repository](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+
+- [arduino-blink](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs)
+- [native-blink](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs)
+- [arduino-internal-libs](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs)
+- [arduino-external-libs](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-external-libs?utm_source=platformio.org&utm_medium=docs)
+
+## Stable and upstream versions
+
+You can switch between [stable releases](https://github.com/platformio/platform-atmelmegaavr/releases) of Atmel megaAVR development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+
+### Stable
+
+```ini
+; Latest stable version, NOT recommended
+; Pin the version as shown below
+[env:latest_stable]
+platform = atmelmegaavr
+board = ...
+
+; Specific version
+[env:custom_stable]
+platform = atmelmegaavr@x.y.z
+board = ...
+```
+
+### Upstream
+
+```ini
+[env:upstream_develop]
+platform = https://github.com/platformio/platform-atmelmegaavr.git
+board = ...
+```
+
+## Packages
+
+| Name | Description |
+|---|---|
+| [framework-arduino-megaavr](https://registry.platformio.org/tools/platformio/framework-arduino-megaavr) | Arduino Wiring-based Framework for Microchip megaAVR microcontrollers |
+| [framework-arduino-megaavr-dxcore](https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-dxcore) | Arduino Wiring-based Framework for Microchip megaAVR microcontrollers (DxCore) |
+| [framework-arduino-megaavr-megacorex](https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megacorex) | Arduino Wiring-based Framework for Microchip megaAVR microcontrollers (MegaCoreX) |
+| [framework-arduino-megaavr-megatinycore](https://registry.platformio.org/tools/platformio/framework-arduino-megaavr-megatinycore) | Arduino Wiring-based Framework for Microchip tinyAVR 0-series and 1-series chips (megaTinyCore) |
+| [tool-avrdude](https://registry.platformio.org/tools/platformio/tool-avrdude) | AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers |
+| [tool-avrdude-megaavr](https://registry.platformio.org/tools/platformio/tool-avrdude-megaavr) | AVRDUDE is a utility to download/upload/manipulate the ROM and EEPROM contents of megaAVR microcontrollers |
+| [toolchain-atmelavr](https://registry.platformio.org/tools/platformio/toolchain-atmelavr) | GCC Toolchain for Microchip AVR microcontrollers |
+
+:::warning
+
+**Linux Users**:
+
+- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
+- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+
+**Windows Users:**
+
+Please check that you have a correctly installed USB driver from board manufacturer
+
+:::
+
+## Frameworks
+
+| Name | Description |
+|---|---|
+| [Arduino](../frameworks/arduino.mdx) | Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences. |
+
+## Boards
+
+:::note
+
+- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
+- For more detailed `board` information please scroll the tables below by horizontally.
+
+:::
+
+### Arduino
+
+| Name | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|
+| [Arduino Nano Every](../boards/atmelmegaavr/nano-every.md) | No | ATMEGA4809 | 16MHz | 47.50KB | 6KB |
+| [Arduino Uno WiFi Rev2](../boards/atmelmegaavr/uno-wifi-rev2.md) | No | ATMEGA4809 | 16MHz | 47.50KB | 6KB |
+
+### Microchip
+
+| Name | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|
+| [ATmega1608](../boards/atmelmegaavr/atmega1608.md) | No | ATMEGA1608 | 16MHz | 16KB | 2KB |
+| [ATmega1609](../boards/atmelmegaavr/atmega1609.md) | No | ATMEGA1609 | 16MHz | 16KB | 2KB |
+| [ATmega3208](../boards/atmelmegaavr/atmega3208.md) | No | ATMEGA3208 | 16MHz | 32KB | 4KB |
+| [ATmega3209](../boards/atmelmegaavr/atmega3209.md) | No | ATMEGA3209 | 16MHz | 32KB | 4KB |
+| [ATmega4808](../boards/atmelmegaavr/atmega4808.md) | No | ATMEGA4808 | 16MHz | 48KB | 6KB |
+| [ATmega4809](../boards/atmelmegaavr/atmega4809.md) | No | ATMEGA4809 | 16MHz | 48KB | 6KB |
+| [ATmega808](../boards/atmelmegaavr/atmega808.md) | No | ATMEGA808 | 16MHz | 8KB | 1KB |
+| [ATmega809](../boards/atmelmegaavr/atmega809.md) | No | ATMEGA809 | 16MHz | 8KB | 1KB |
+| [ATtiny1604](../boards/atmelmegaavr/attiny1604.md) | No | ATTINY1604 | 16MHz | 16KB | 1KB |
+| [ATtiny1606](../boards/atmelmegaavr/attiny1606.md) | No | ATTINY1606 | 16MHz | 16KB | 1KB |
+| [ATtiny1607](../boards/atmelmegaavr/attiny1607.md) | No | ATTINY1607 | 16MHz | 16KB | 1KB |
+| [ATtiny1614](../boards/atmelmegaavr/attiny1614.md) | No | ATTINY1614 | 16MHz | 16KB | 2KB |
+| [ATtiny1616](../boards/atmelmegaavr/attiny1616.md) | No | ATTINY1616 | 16MHz | 16KB | 2KB |
+| [ATtiny1617](../boards/atmelmegaavr/attiny1617.md) | No | ATTINY1617 | 16MHz | 16KB | 2KB |
+| [ATtiny1624](../boards/atmelmegaavr/attiny1624.md) | No | ATTINY1624 | 16MHz | 16KB | 2KB |
+| [ATtiny1626](../boards/atmelmegaavr/attiny1626.md) | No | ATTINY1626 | 16MHz | 16KB | 2KB |
+| [ATtiny1627](../boards/atmelmegaavr/attiny1627.md) | No | ATTINY1627 | 16MHz | 16KB | 2KB |
+| [ATtiny202](../boards/atmelmegaavr/attiny202.md) | No | ATTINY202 | 16MHz | 2KB | 128B |
+| [ATtiny204](../boards/atmelmegaavr/attiny204.md) | No | ATTINY204 | 16MHz | 2KB | 128B |
+| [ATtiny212](../boards/atmelmegaavr/attiny212.md) | No | ATTINY212 | 16MHz | 2KB | 128B |
+| [ATtiny214](../boards/atmelmegaavr/attiny214.md) | No | ATTINY214 | 16MHz | 2KB | 128B |
+| [ATtiny3216](../boards/atmelmegaavr/attiny3216.md) | No | ATTINY3216 | 16MHz | 32KB | 2KB |
+| [ATtiny3217](../boards/atmelmegaavr/attiny3217.md) | No | ATTINY3217 | 16MHz | 32KB | 2KB |
+| [ATtiny3224](../boards/atmelmegaavr/attiny3224.md) | No | ATTINY3224 | 16MHz | 32KB | 3KB |
+| [ATtiny3226](../boards/atmelmegaavr/attiny3226.md) | No | ATTINY3226 | 16MHz | 32KB | 3KB |
+| [ATtiny3227](../boards/atmelmegaavr/attiny3227.md) | No | ATTINY3227 | 16MHz | 32KB | 3KB |
+| [ATtiny402](../boards/atmelmegaavr/attiny402.md) | No | ATTINY402 | 16MHz | 4KB | 256B |
+| [ATtiny404](../boards/atmelmegaavr/attiny404.md) | No | ATTINY404 | 16MHz | 4KB | 256B |
+| [ATtiny406](../boards/atmelmegaavr/attiny406.md) | No | ATTINY406 | 16MHz | 4KB | 256B |
+| [ATtiny412](../boards/atmelmegaavr/attiny412.md) | No | ATTINY412 | 16MHz | 4KB | 256B |
+| [ATtiny414](../boards/atmelmegaavr/attiny414.md) | No | ATTINY414 | 16MHz | 4KB | 256B |
+| [ATtiny416](../boards/atmelmegaavr/attiny416.md) | No | ATTINY416 | 16MHz | 4KB | 256B |
+| [ATtiny416 Xplained Nano](../boards/atmelmegaavr/xplained-nano-416.md) | No | ATTINY416 | 20MHz | 4KB | 256B |
+| [ATtiny417](../boards/atmelmegaavr/attiny417.md) | No | ATTINY417 | 16MHz | 4KB | 256B |
+| [ATtiny424](../boards/atmelmegaavr/attiny424.md) | No | ATTINY424 | 16MHz | 4KB | 512B |
+| [ATtiny426](../boards/atmelmegaavr/attiny426.md) | No | ATTINY426 | 16MHz | 4KB | 512B |
+| [ATtiny427](../boards/atmelmegaavr/attiny427.md) | No | ATTINY427 | 16MHz | 4KB | 512B |
+| [ATtiny804](../boards/atmelmegaavr/attiny804.md) | No | ATTINY804 | 16MHz | 8KB | 512B |
+| [ATtiny806](../boards/atmelmegaavr/attiny806.md) | No | ATTINY806 | 16MHz | 8KB | 512B |
+| [ATtiny807](../boards/atmelmegaavr/attiny807.md) | No | ATTINY807 | 16MHz | 8KB | 512B |
+| [ATtiny814](../boards/atmelmegaavr/attiny814.md) | No | ATTINY814 | 16MHz | 8KB | 512B |
+| [ATtiny816](../boards/atmelmegaavr/attiny816.md) | No | ATTINY816 | 16MHz | 8KB | 512B |
+| [ATtiny817](../boards/atmelmegaavr/attiny817.md) | No | ATTINY817 | 16MHz | 8KB | 512B |
+| [ATtiny824](../boards/atmelmegaavr/attiny824.md) | No | ATTINY824 | 16MHz | 8KB | 1KB |
+| [ATtiny826](../boards/atmelmegaavr/attiny826.md) | No | ATTINY826 | 16MHz | 8KB | 1KB |
+| [ATtiny827](../boards/atmelmegaavr/attiny827.md) | No | ATTINY827 | 16MHz | 8KB | 1KB |
+| [AVR-IoT WG Development Board](../boards/atmelmegaavr/avr-iot-wg.md) | No | ATMEGA4808 | 16MHz | 48KB | 6KB |
+| [AVR128DA28](../boards/atmelmegaavr/avr128da28.md) | No | AVR128DA28 | 24MHz | 128KB | 16KB |
+| [AVR128DA32](../boards/atmelmegaavr/avr128da32.md) | No | AVR128DA32 | 24MHz | 128KB | 16KB |
+| [AVR128DA48](../boards/atmelmegaavr/avr128da48.md) | No | AVR128DA48 | 24MHz | 128KB | 16KB |
+| [AVR128DA64](../boards/atmelmegaavr/avr128da64.md) | No | AVR128DA64 | 24MHz | 128KB | 16KB |
+| [AVR128DB28](../boards/atmelmegaavr/avr128db28.md) | No | AVR128DB28 | 24MHz | 128KB | 16KB |
+| [AVR128DB32](../boards/atmelmegaavr/avr128db32.md) | No | AVR128DB32 | 24MHz | 128KB | 16KB |
+| [AVR128DB48](../boards/atmelmegaavr/avr128db48.md) | No | AVR128DB48 | 24MHz | 128KB | 16KB |
+| [AVR128DB64](../boards/atmelmegaavr/avr128db64.md) | No | AVR128DB64 | 24MHz | 128KB | 16KB |
+| [AVR32DA28](../boards/atmelmegaavr/avr32da28.md) | No | AVR32DA28 | 24MHz | 32KB | 4KB |
+| [AVR32DA32](../boards/atmelmegaavr/avr32da32.md) | No | AVR32DA32 | 24MHz | 32KB | 4KB |
+| [AVR32DA48](../boards/atmelmegaavr/avr32da48.md) | No | AVR32DA48 | 24MHz | 32KB | 4KB |
+| [AVR32DB28](../boards/atmelmegaavr/avr32db28.md) | No | AVR32DB28 | 24MHz | 32KB | 4KB |
+| [AVR32DB32](../boards/atmelmegaavr/avr32db32.md) | No | AVR32DB32 | 24MHz | 32KB | 4KB |
+| [AVR32DB48](../boards/atmelmegaavr/avr32db48.md) | No | AVR32DB48 | 24MHz | 32KB | 4KB |
+| [AVR64DA28](../boards/atmelmegaavr/avr64da28.md) | No | AVR64DA28 | 24MHz | 64KB | 8KB |
+| [AVR64DA32](../boards/atmelmegaavr/avr64da32.md) | No | AVR64DA32 | 24MHz | 64KB | 8KB |
+| [AVR64DA48](../boards/atmelmegaavr/avr64da48.md) | No | AVR64DA48 | 24MHz | 64KB | 8KB |
+| [AVR64DA64](../boards/atmelmegaavr/avr64da64.md) | No | AVR64DA64 | 24MHz | 64KB | 8KB |
+| [AVR64DB28](../boards/atmelmegaavr/avr64db28.md) | No | AVR64DB28 | 24MHz | 64KB | 8KB |
+| [AVR64DB32](../boards/atmelmegaavr/avr64db32.md) | No | AVR64DB32 | 24MHz | 64KB | 8KB |
+| [AVR64DB48](../boards/atmelmegaavr/avr64db48.md) | No | AVR64DB48 | 24MHz | 64KB | 8KB |
+| [AVR64DB64](../boards/atmelmegaavr/avr64db64.md) | No | AVR64DB64 | 24MHz | 64KB | 8KB |
+| [AVR64DD14](../boards/atmelmegaavr/avr64dd14.md) | No | AVR64DD14 | 24MHz | 64KB | 8KB |
+| [AVR64DD20](../boards/atmelmegaavr/avr64dd20.md) | No | AVR64DD20 | 24MHz | 64KB | 8KB |
+| [AVR64DD28](../boards/atmelmegaavr/avr64dd28.md) | No | AVR64DD28 | 24MHz | 64KB | 8KB |
+| [AVR64DD32](../boards/atmelmegaavr/avr64dd32.md) | No | AVR64DD32 | 24MHz | 64KB | 8KB |
+| [Curiosity Nano ATmega4809](../boards/atmelmegaavr/curiosity-nano-4809.md) | No | ATMEGA4809 | 16MHz | 48KB | 6KB |
+| [Curiosity Nano AVR128DA48](../boards/atmelmegaavr/curiosity-nano-da.md) | No | AVR128DA48 | 24MHz | 128KB | 16KB |
+| [Curiosity Nano AVR128DB48](../boards/atmelmegaavr/curiosity-nano-db.md) | No | AVR128DB48 | 24MHz | 128KB | 16KB |
+| [Xplained Pro ATmega4809](../boards/atmelmegaavr/xplained-pro-4809.md) | No | ATMEGA4809 | 16MHz | 48KB | 6KB |

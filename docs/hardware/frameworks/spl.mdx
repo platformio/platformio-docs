@@ -1,0 +1,140 @@
+---
+title: "Standard Peripheral Library"
+custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+---
+
+import Extra from './_spl-extra.md';
+
+<a id="framework-spl"></a>
+
+# Standard Peripheral Library
+
+**Configuration:** [framework](../../reference/platformio-ini/env/framework.md) = `spl`
+
+Standard Peripheral Library for ST STM32 microcontrollers
+
+<Extra />
+
+## Platforms
+
+| Name | Description |
+|---|---|
+| [ST STM32](../platforms/ststm32.mdx) | The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development. |
+| [ST STM8](../platforms/ststm8.md) | The STM8 is an 8-bit microcontroller family by STMicroelectronics an extended variant of the ST7 microcontroller architecture. STM8 microcontrollers are particularly low cost for a full-featured 8-bit microcontroller. |
+
+## Examples
+
+- [Standard Peripheral Library for ST STM32](https://github.com/platformio/platform-ststm32/tree/master/examples?utm_source=platformio.org&utm_medium=docs)
+- [Standard Peripheral Library for ST STM8](https://github.com/platformio/platform-ststm8/tree/master/examples?utm_source=platformio.org&utm_medium=docs)
+
+## Debugging
+
+[Debugging](../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+
+### Tools & Debug Probes
+
+Supported debugging tools are listed in "Debug" column. For more detailed information, please scroll table by horizontal. You can switch between debugging [Tools & Debug Probes](../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+
+:::warning
+
+You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions.
+
+:::
+
+#### On-Board Debug Tools
+
+Boards listed below have on-board debug probe and **ARE READY** for debugging! You do not need to use/buy external debug probe.
+
+| Name | Platform | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|
+| [Armstrap Eagle 1024](../boards/ststm32/armstrap-eagle1024.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F417VGT6 | 168MHz | 1MB | 192KB |
+| [Armstrap Eagle 2048](../boards/ststm32/armstrap-eagle2048.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F427VIT6 | 168MHz | 1.99MB | 256KB |
+| [Armstrap Eagle 512](../boards/ststm32/armstrap-eagle512.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F407VET6 | 168MHz | 512KB | 128KB |
+| [NUCLEO-8S207K8](../boards/ststm8/nucleo-8s207k8.md) | [ST STM8](../platforms/ststm8.md) | STM8S207K8T6 | 16MHz | 64KB | 6KB |
+| [NUCLEO-8S208RB](../boards/ststm8/nucleo-8s208rb.md) | [ST STM8](../platforms/ststm8.md) | STM8S208RBT6 | 16MHz | 128KB | 6KB |
+| [RushUp Cloud-JAM](../boards/ststm32/cloud-jam.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F401RET6 | 84MHz | 512KB | 96KB |
+| [ST Nucleo F401RE](../boards/ststm32/nucleo-f401re.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F401RET6 | 84MHz | 512KB | 96KB |
+| [ST STM32F3DISCOVERY](../boards/ststm32/disco-f303vc.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F303VCT6 | 72MHz | 256KB | 40KB |
+| [ST STM32F4DISCOVERY](../boards/ststm32/disco-f407vg.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F407VGT6 | 168MHz | 1MB | 128KB |
+| [ST STM32LDISCOVERY](../boards/ststm32/disco-l152rb.md) | [ST STM32](../platforms/ststm32.mdx) | STM32L152RBT6 | 32MHz | 128KB | 16KB |
+| [ST STM8S-DISCOVERY](../boards/ststm8/stm8sdisco.md) | [ST STM8](../platforms/ststm8.md) | STM8S105C6T6 | 16MHz | 32KB | 2KB |
+
+#### External Debug Tools
+
+Boards listed below are compatible with [Debugging](../../guides/debugging/index.md) but **DEPEND ON** external debug probe. They **ARE NOT READY** for debugging. Please click on board name for the further details.
+
+| Name | Platform | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|
+| [1Bitsy](../boards/ststm32/1bitsy-stm32f415rgt.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F415RGT | 168MHz | 1MB | 128KB |
+| [ST STM8S003F3 chip](../boards/ststm8/stm8s003f3.md) | [ST STM8](../platforms/ststm8.md) | STM8S003F3P6 | 16MHz | 8KB | 1KB |
+| [ST STM8S103F3 Breakout Board](../boards/ststm8/stm8sblue.md) | [ST STM8](../platforms/ststm8.md) | STM8S103F3P6 | 16MHz | 8KB | 1KB |
+| [ST STM8S105K4T6 Breakout Board](../boards/ststm8/stm8sblack.md) | [ST STM8](../platforms/ststm8.md) | STM8S105K4T6 | 16MHz | 16KB | 2KB |
+| [STM32F401RB (64k RAM. 128k Flash)](../boards/ststm32/genericstm32f401rb.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F401RBT6 | 84MHz | 128KB | 64KB |
+| [STM32F401RC (64k RAM. 256k Flash)](../boards/ststm32/genericstm32f401rc.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F401RCT6 | 84MHz | 256KB | 64KB |
+| [STM32F401RE (96k RAM. 512k Flash)](../boards/ststm32/genericstm32f401re.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F401RET6 | 84MHz | 512KB | 96KB |
+| [sduino MB (STM8S208MBT6B)](../boards/ststm8/mb208.md) | [ST STM8](../platforms/ststm8.md) | STM8S208MBT6 | 16MHz | 128KB | 6KB |
+| [sduino UNO (STM8S105K6)](../boards/ststm8/s8uno.md) | [ST STM8](../platforms/ststm8.md) | STM8S105K6T6 | 16MHz | 32KB | 2KB |
+
+## Boards
+
+:::note
+
+- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
+- For more detailed `board` information please scroll the tables below by horizontally.
+
+:::
+
+### 1BitSquared
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [1Bitsy](../boards/ststm32/1bitsy-stm32f415rgt.md) | [ST STM32](../platforms/ststm32.mdx) | External | STM32F415RGT | 168MHz | 1MB | 128KB |
+
+### Armstrap
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [Armstrap Eagle 1024](../boards/ststm32/armstrap-eagle1024.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F417VGT6 | 168MHz | 1MB | 192KB |
+| [Armstrap Eagle 2048](../boards/ststm32/armstrap-eagle2048.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F427VIT6 | 168MHz | 1.99MB | 256KB |
+| [Armstrap Eagle 512](../boards/ststm32/armstrap-eagle512.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F407VET6 | 168MHz | 512KB | 128KB |
+
+### Generic
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [STM32F401RB (64k RAM. 128k Flash)](../boards/ststm32/genericstm32f401rb.md) | [ST STM32](../platforms/ststm32.mdx) | External | STM32F401RBT6 | 84MHz | 128KB | 64KB |
+| [STM32F401RC (64k RAM. 256k Flash)](../boards/ststm32/genericstm32f401rc.md) | [ST STM32](../platforms/ststm32.mdx) | External | STM32F401RCT6 | 84MHz | 256KB | 64KB |
+| [STM32F401RE (96k RAM. 512k Flash)](../boards/ststm32/genericstm32f401re.md) | [ST STM32](../platforms/ststm32.mdx) | External | STM32F401RET6 | 84MHz | 512KB | 96KB |
+
+### RushUp
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [RushUp Cloud-JAM](../boards/ststm32/cloud-jam.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F401RET6 | 84MHz | 512KB | 96KB |
+
+### ST
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [ST Nucleo F401RE](../boards/ststm32/nucleo-f401re.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F401RET6 | 84MHz | 512KB | 96KB |
+| [ST STM32F3DISCOVERY](../boards/ststm32/disco-f303vc.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F303VCT6 | 72MHz | 256KB | 40KB |
+| [ST STM32F4DISCOVERY](../boards/ststm32/disco-f407vg.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32F407VGT6 | 168MHz | 1MB | 128KB |
+| [ST STM32LDISCOVERY](../boards/ststm32/disco-l152rb.md) | [ST STM32](../platforms/ststm32.mdx) | On-board | STM32L152RBT6 | 32MHz | 128KB | 16KB |
+| [ST STM8S-DISCOVERY](../boards/ststm8/stm8sdisco.md) | [ST STM8](../platforms/ststm8.md) | On-board | STM8S105C6T6 | 16MHz | 32KB | 2KB |
+| [ST STM8S003F3 chip](../boards/ststm8/stm8s003f3.md) | [ST STM8](../platforms/ststm8.md) | External | STM8S003F3P6 | 16MHz | 8KB | 1KB |
+| [ST STM8S103F3 Breakout Board](../boards/ststm8/stm8sblue.md) | [ST STM8](../platforms/ststm8.md) | External | STM8S103F3P6 | 16MHz | 8KB | 1KB |
+| [ST STM8S105K4T6 Breakout Board](../boards/ststm8/stm8sblack.md) | [ST STM8](../platforms/ststm8.md) | External | STM8S105K4T6 | 16MHz | 16KB | 2KB |
+
+### STMicroelectronics
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [NUCLEO-8S207K8](../boards/ststm8/nucleo-8s207k8.md) | [ST STM8](../platforms/ststm8.md) | On-board | STM8S207K8T6 | 16MHz | 64KB | 6KB |
+| [NUCLEO-8S208RB](../boards/ststm8/nucleo-8s208rb.md) | [ST STM8](../platforms/ststm8.md) | On-board | STM8S208RBT6 | 16MHz | 128KB | 6KB |
+
+### sduino
+
+| Name | Platform | Debug | MCU | Frequency | Flash | RAM |
+|---|---|---|---|---|---|---|
+| [sduino MB (STM8S208MBT6B)](../boards/ststm8/mb208.md) | [ST STM8](../platforms/ststm8.md) | External | STM8S208MBT6 | 16MHz | 128KB | 6KB |
+| [sduino UNO (STM8S105K6)](../boards/ststm8/s8uno.md) | [ST STM8](../platforms/ststm8.md) | External | STM8S105K6T6 | 16MHz | 32KB | 2KB |
