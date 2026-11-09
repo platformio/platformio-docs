@@ -70,14 +70,9 @@ server {
 }
 ```
 
-## Legacy conversion (temporary)
+## Moving or removing a page
 
-`tools/rst2md/` converted the legacy Sphinx/RST sources and is removed once
-the migration is complete. It needs Sphinx (`tox -e docs` in PlatformIO Core):
-
-```bash
-python tools/rst2md/convert.py    # RST -> docs/, Core HISTORY.rst -> HISTORY.md
-# then run scripts/docspregen.py (it owns the generated pages and tails)
-python tools/rst2md/redirects.py  # writes redirects.json
-python tools/rst2md/check.py      # every page converted, code blocks identical
-```
+Add the page's old URL to the `from` list of its new target in
+`redirects.json` (or a new `{"to": ..., "from": [...]}` entry), so links and
+bookmarks keep working. A `from` path without `.html` covers the clean URL;
+add the `.html` spelling as well for legacy Sphinx URLs.
