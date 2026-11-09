@@ -1,6 +1,12 @@
+---
+description: Add an owner to an organization.
+---
+
 <a id="cmd-org-add"></a>
 
 # pio org add {#pio-org-add}
+
+Add a user as an owner of an organization.
 
 ## Usage {#usage}
 
@@ -10,21 +16,24 @@ pio org add ORGNAME USERNAME
 
 ## Description {#description}
 
-Add a user as an owner to an organization.
-
-If you need to create a new organization, please use [pio org create](./create.md) command.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME` | The organization |
+| `USERNAME` | The user to add as an owner |
 
 ## Examples {#examples}
 
-Add Bob as an owner of "platformio" organization:
+Add `bob` as an owner of the `platformio` organization:
 
 ```bash
-> pio org add platformio bob
+pio org add platformio bob
+```
+
+```text
 The new owner "bob" has been successfully added to the "platformio" organization.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio org create](./create.md)
-- [pio org list](./list.md)
-- [pio org remove](./remove.md)
+- [`pio org create`](./create.md)
+- [`pio org remove`](./remove.md)

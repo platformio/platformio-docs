@@ -1,25 +1,44 @@
+---
+description: Get or regenerate the personal authentication token of your PlatformIO Account.
+---
+
 <a id="cmd-account-token"></a>
 
 # pio account token {#pio-account-token}
 
+Get or regenerate the personal authentication token of your [PlatformIO Account](../../../get-started/platformio-account.md).
+
 ## Usage {#usage}
 
 ```bash
-pio account token
+pio account token [OPTIONS]
 ```
 
 ## Description {#description}
 
-Get or regenerate Personal Authentication Token. It is very useful for [Continuous Integration](../../../guides/ci/index.md) systems, [Remote Development](../../../guides/remote-development.md) operations where you are not able to authorize manually.
+Use the token where you cannot sign in interactively, such as in
+[CI](../../../guides/ci/index.md) or for
+[remote development](../../../guides/remote-development.md): set it in the
+[`PLATFORMIO_AUTH_TOKEN`](../../environment-variables.md#envvar-PLATFORMIO_AUTH_TOKEN)
+environment variable.
 
-PlatformIO handles Personal Authentication Token from environment variable [`PLATFORMIO_AUTH_TOKEN`](../../environment-variables.md#envvar-PLATFORMIO_AUTH_TOKEN).
+:::warning
 
-### Options {#options}
+The token gives full access to your account. Keep it secret, for example in
+your CI service's secret store.
 
-#### `--regenerate` {#cmdoption-pio-account-token-regenerate}
+:::
 
-If this option is specified a new authentication token will be generated.
+## Options {#options}
 
-#### `--json-output` {#cmdoption-pio-account-token-json-output}
+### `-p, --password` {#cmdoption-pio-account-token-password}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Your password. If you omit it, the command asks for it.
+
+### `--regenerate` {#cmdoption-pio-account-token-regenerate}
+
+Generate a new token. The previous token stops working.
+
+### `--json-output` {#cmdoption-pio-account-token-json-output}
+
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.

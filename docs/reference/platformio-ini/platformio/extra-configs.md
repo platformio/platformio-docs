@@ -1,12 +1,17 @@
+---
+description: "Extend main configuration with the extra configuration files (platformio.ini option extra_configs)."
+---
+
 <a id="projectconf-pio-extra-configs"></a>
 
 # `extra_configs` {#extra-configs}
 
-Type: `String (Pattern)` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
-This option allows extending a base ["platformio.ini" (Project Configuration File)](../index.md) with extra configuration files. The format and rules are the same as for the ["platformio.ini" (Project Configuration File)](../index.md). A name of the configuration file can be any.
+This option allows extending a base [`platformio.ini`](../index.md) with extra configuration files. The format and rules are the same as for the [`platformio.ini`](../index.md). A name of the configuration file can be any.
 
-`extra_configs` can be a single path to an extra configuration file or a list of them. Please note that you can use Unix shell-style wildcards:
+`extra_configs` can be a single path to an extra configuration file or a list of them. Note that you can use Unix shell-style wildcards:
 
 | Pattern | Meaning |
 |---|---|
@@ -17,11 +22,11 @@ This option allows extending a base ["platformio.ini" (Project Configuration Fil
 
 :::note
 
-If you declare the same pair of "group" + "option" in an extra configuration file which was previously declared in a base ["platformio.ini" (Project Configuration File)](../index.md), it will be overwritten with a value from extra configuration.
+If you declare the same pair of "group" + "option" in an extra configuration file which was previously declared in a base [`platformio.ini`](../index.md), it will be overwritten with a value from extra configuration.
 
 :::
 
-**Example**
+## Example
 
 *Base "platformio.ini"*
 

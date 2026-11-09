@@ -1,6 +1,12 @@
+---
+description: "Used for search by keyword."
+---
+
 # `keywords` {#keywords}
 
-**Required** | Type: `String` or `Array` | Max. Length: 255
+- **Required:** No (recommended for published packages)
+- **Type:** String or array of strings
+- **Limits:** Each keyword: at most 50 characters, only lowercase letters, digits, spaces and `+`, `_`, `-`, `.`.
 
 Used for search by keyword. Helps to make your library easier to discover without people needing to know its name.
 

@@ -1,6 +1,13 @@
+---
+description: Show the computed project configuration or check platformio.ini for errors.
+---
+
 <a id="cmd-project-config"></a>
 
 # pio project config {#pio-project-config}
+
+Show the project configuration as PlatformIO computes it from [`platformio.ini`](../../platformio-ini/index.md), or check
+the file for errors.
 
 ## Usage {#usage}
 
@@ -10,36 +17,35 @@ pio project config [OPTIONS]
 
 ## Description {#description}
 
-Show project computed configuration based on ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md). The extra configuration files and dynamic variables will be expanded.
+The computed configuration includes the files listed in
+[`extra_configs`](../../platformio-ini/platformio/extra-configs.md) and has
+[interpolated values](../../../guides/projects/interpolation.md) expanded. Use
+it to see which value an option ends up with.
 
-This command is useful for developers to check how PlatformIO computes configuration from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
-
-### Options {#options}
+## Options {#options}
 
 <a id="cmdoption-pio-project-config-project-dir"></a>
 
-#### `-d, --project-dir` {#cmdoption-pio-project-config-d}
+### `-d, --project-dir` {#cmdoption-pio-project-config-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
-#### `--lint` {#cmdoption-pio-project-config-lint}
+### `--lint` {#cmdoption-pio-project-config-lint}
 
-:::info
+Check `platformio.ini` for errors and warnings instead of showing the
+configuration. Added in PlatformIO Core 6.1.8.
 
-Added in version 6.1.8.
+### `--json-output` {#cmdoption-pio-project-config-json-output}
 
-:::
-
-Perform linting on ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
-
-#### `--json-output` {#cmdoption-pio-project-config-json-output}
-
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format.
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
+```bash
+pio project config
+```
+
 ```text
-> pio project config
 Computed project configuration for Tasmota Project
 
 platformio
@@ -82,4 +88,14 @@ extra_scripts  =  pio/strip-floats.py
                   pio/name-firmware.py
 
 ...
+```
+
+Check the configuration for errors:
+
+```bash
+pio project config --lint
+```
+
+```text
+The "platformio.ini" configuration file is free from linting errors.
 ```

@@ -1,28 +1,34 @@
+---
+description: Show information about the PlatformIO Core installation.
+---
+
 <a id="cmd-system-info"></a>
 
 # pio system info {#pio-system-info}
 
+Show information about the PlatformIO Core installation: versions, paths,
+encodings and the number of installed packages. Include it when you report a
+problem.
+
 ## Usage {#usage}
 
 ```bash
-pio system info
+pio system info [OPTIONS]
 ```
-
-## Description {#description}
-
-Display PlatformIO system-wide information
 
 ## Options {#options}
 
 ### `--json-output` {#cmdoption-pio-system-info-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
-```text
-> pio system info
+```bash
+pio system info
+```
 
+```text
 PlatformIO Core             5.0.0
 Python                      3.8.5-final.0
 System Type                 darwin_x86_64

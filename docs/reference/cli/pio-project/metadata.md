@@ -1,6 +1,13 @@
+---
+description: Show the build metadata of a project - toolchain, flags, defines and include paths - for IDE integrations.
+---
+
 <a id="cmd-project-metadata"></a>
 
 # pio project metadata {#pio-project-metadata}
+
+Show the build metadata of a project. IDE extensions and code analysis tools
+use it to configure code completion and navigation.
 
 ## Usage {#usage}
 
@@ -10,35 +17,35 @@ pio project metadata [OPTIONS]
 
 ## Description {#description}
 
-Dump a build metadata intended for IDE extensions/plugins:
+For each environment, the metadata includes:
 
-- Toolchain type and location
-- Compiler flags
-- Defines/Macros
-- CPP Preprocessor includes/paths
-- Program path
-- SVD path if available for [Development Platforms](../../../hardware/platforms/index.md)
-- Targets by [Development Platforms](../../../hardware/platforms/index.md) (see [`pio run --list-targets`](../pio-run.md#cmdoption-pio-run-list-targets) for details)
-- Extra information.
+- the toolchain type and location;
+- the compiler flags, defines and include paths;
+- the path of the built program;
+- the SVD file of the MCU, if the development platform provides one;
+- the [project targets](../pio-run.md#cmdoption-pio-run-list-targets) and other
+  platform-specific information.
 
-### Options {#options}
+## Options {#options}
 
 <a id="cmdoption-pio-project-metadata-project-dir"></a>
 
-#### `-d, --project-dir` {#cmdoption-pio-project-metadata-d}
+### `-d, --project-dir` {#cmdoption-pio-project-metadata-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-project-metadata-environment"></a>
 
-#### `-e, --environment` {#cmdoption-pio-project-metadata-e}
+### `-e, --environment` {#cmdoption-pio-project-metadata-e}
 
-Dump specified environments. Multiple environments are allowed.
+Show the metadata of this environment only. Repeat the option for several
+environments.
 
-#### `--json-output` {#cmdoption-pio-project-metadata-json-output}
+### `--json-output` {#cmdoption-pio-project-metadata-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format.
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
-#### `--json-output-path` {#cmdoption-pio-project-metadata-json-output-path}
+### `--json-output-path` {#cmdoption-pio-project-metadata-json-output-path}
 
-Dump metadata in [JSON](https://en.wikipedia.org/wiki/JSON) format and save it to the specified path. If the only folder path is provided, the file name will be generated automatically. Please note that the parent folder must exist before.
+Save the metadata in JSON format to this file. If you pass a folder, the file
+name is generated. The folder must exist.

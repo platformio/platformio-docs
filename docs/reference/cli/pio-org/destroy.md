@@ -1,6 +1,12 @@
+---
+description: Delete an organization and its teams.
+---
+
 <a id="cmd-org-destroy"></a>
 
 # pio org destroy {#pio-org-destroy}
+
+Delete an organization and all its teams.
 
 ## Usage {#usage}
 
@@ -10,12 +16,20 @@ pio org destroy ORGNAME
 
 ## Description {#description}
 
-Destroy an organization and its teams.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME` | The organization to delete |
 
-If you need to remove a user from an organization, please use [pio org remove](./remove.md) command.
+:::danger
 
-## See Also {#see-also}
+This cannot be undone. The command asks for confirmation before it deletes
+anything.
 
-- [pio org create](./create.md)
-- [pio org list](./list.md)
-- [pio org update](./update.md)
+:::
+
+To remove a single owner instead, use [`pio org remove`](./remove.md).
+
+## See also {#see-also}
+
+- [`pio org create`](./create.md)
+- [`pio org remove`](./remove.md)

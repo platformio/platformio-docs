@@ -1,8 +1,13 @@
+---
+description: "An author contact information."
+---
+
 <a id="manifest-library-json-authors"></a>
 
 # `authors` {#authors}
 
-*Optional* | Type: `Object` or `Array`
+- **Required:** No
+- **Type:** Object or array of objects
 
 An author contact information
 
@@ -11,7 +16,7 @@ An author contact information
 - `url` An author's contact page
 - `maintainer` Specify "maintainer" status
 
-**Examples**
+## Examples
 
 ```javascript
 "authors":

@@ -1,10 +1,16 @@
+---
+description: "A list with compatible development platforms."
+---
+
 # `platforms` {#platforms}
 
-*Optional* | Type: `String` or `Array`
+- **Required:** No
+- **Type:** String or array of strings
+- **Limits:** Each value: a development platform name or `*`; at most 50 characters, only lowercase letters, digits, `-` and `_`.
 
 A list with compatible development platforms. The available platform name are defined in [Development Platforms](../../hardware/platforms/index.md) section.
 
-**Example**
+## Example
 
 ```javascript
 "platforms": ["atmelavr", "espressif8266"]

@@ -1,3 +1,7 @@
+---
+description: "Check for outdated project packages and list version information for all dependencies."
+---
+
 <a id="cmd-pkg-outdated"></a>
 
 # pio pkg outdated {#pio-pkg-outdated}
@@ -18,20 +22,23 @@ Check for outdated project packages and list version information for all depende
 
 ### `-d, --project-dir` {#cmdoption-pio-pkg-outdated-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-pkg-outdated-environment"></a>
 
 ### `-e, --environment` {#cmdoption-pio-pkg-outdated-e}
 
-Check for outdated packages only for the specified environments. Multiple environments are allowed.
+Check for outdated packages only for the specified environments. Repeat the option for several environments.
 
 ## Examples {#examples}
 
 Check outdated packages for [ESPHome](https://github.com/esphome/esphome) project
 
+```bash
+pio pkg outdated -e esp8266-arduino
+```
+
 ```text
-> pio pkg outdated -e esp8266-arduino
 Checking  [####################################]  100%
 
 Semantic Versioning color legend:

@@ -1,6 +1,12 @@
+---
+description: Revoke a user's or a team's access to a package in the PlatformIO Registry.
+---
+
 <a id="cmd-access-revoke"></a>
 
 # pio access revoke {#pio-access-revoke}
+
+Revoke a user's or a team's access to a resource.
 
 ## Usage {#usage}
 
@@ -10,34 +16,40 @@ pio access revoke [OPTIONS] <ORGNAME:TEAMNAME>|<USERNAME> URN
 
 ## Description {#description}
 
-Remove the ability of users and teams to have access to a resource.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME:TEAMNAME` or `USERNAME` | The team (as `organization:team`) or the user whose access to revoke |
+| `URN` | The resource, for example `prn:reg:pkg:8036:platform`. Find it with [`pio access list`](./list.md). |
 
-You can revoke access for the team members using the next format `orgname:teamname`.
+## Options {#options}
 
-See the examples below.
+### `--urn-type` {#cmdoption-pio-access-revoke-urn-type}
 
-### Options {#options}
-
-#### `--urn-type` {#cmdoption-pio-access-revoke-urn-type}
-
-Resource type in [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name) form. Default is set to `prn:reg:pkg` which means to grant an access to the package in the registry.
+The type of the resource URN. The only supported value, and the default, is
+`prn:reg:pkg`: a package in the PlatformIO Registry.
 
 ## Examples {#examples}
 
-1. Revoke access from a resource for the "bob" user:
+Revoke the access of the user `bob`:
 
 ```bash
-> pio access revoke bob prn:reg:pkg:8036:platform
+pio access revoke bob prn:reg:pkg:8036:platform
+```
+
+```text
 Access for resource "prn:reg:pkg:8036:platform" has been revoked for "bob"
 ```
 
-2. Add the ability of PlatformIO's "developer" team to have "admin" access to a resource.
+Revoke the access of the `developers` team of the `platformio` organization:
 
 ```bash
-> pio access revoke platformio:developers prn:reg:pkg:8036:platform
+pio access revoke platformio:developers prn:reg:pkg:8036:platform
+```
+
+```text
 Access for resource "prn:reg:pkg:8036:platform" has been revoked for "platformio:developers"
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio access grant](./grant.md)
+- [`pio access grant`](./grant.md)

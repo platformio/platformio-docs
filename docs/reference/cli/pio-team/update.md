@@ -1,6 +1,12 @@
+---
+description: Rename a team or update its description.
+---
+
 <a id="cmd-team-update"></a>
 
 # pio team update {#pio-team-update}
+
+Rename a team or update its description.
 
 ## Usage {#usage}
 
@@ -10,26 +16,31 @@ pio team update [OPTIONS] ORGNAME:TEAMNAME
 
 ## Description {#description}
 
-Rename a team or update the existing details.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME:TEAMNAME` | The team, prefixed with its organization |
 
-### Options {#options}
+## Options {#options}
 
-#### `--name` {#cmdoption-pio-team-update-name}
+### `--name` {#cmdoption-pio-team-update-name}
 
-A new team name. Team name must only contain alphanumeric characters, single hyphens, underscores, spaces. It can not begin or end with a hyphen or a underscore and must not be longer than 20 characters.
+A new team name. Team names can contain letters, digits, and single hyphens, underscores or
+spaces between them, and can be up to 20 characters long.
 
-#### `--description` {#cmdoption-pio-team-update-description}
+### `--description` {#cmdoption-pio-team-update-description}
 
-A team description.
+A new description.
 
 ## Examples {#examples}
 
 ```bash
-> pio team update platformio:dev --description "Developers team"
+pio team update platformio:dev --description "Developers team"
+```
+
+```text
 The team "dev" has been successfully updated.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio team list](./list.md)
-- [pio team remove](./remove.md)
+- [`pio team create`](./create.md)

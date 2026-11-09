@@ -1,6 +1,12 @@
+---
+description: Add a member to a team.
+---
+
 <a id="cmd-team-add"></a>
 
 # pio team add {#pio-team-add}
+
+Add a user to a team.
 
 ## Usage {#usage}
 
@@ -10,21 +16,24 @@ pio team add ORGNAME:TEAMNAME USERNAME
 
 ## Description {#description}
 
-Add a new member to a team.
-
-If you need to create a new team, please use [pio team create](./create.md) command.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME:TEAMNAME` | The team, prefixed with its organization |
+| `USERNAME` | The user to add |
 
 ## Examples {#examples}
 
-Add Bob to the "developers" team of "platformio" organization
+Add `bob` to the `developers` team of the `platformio` organization:
 
 ```bash
-> pio team add platformio:developers bob
+pio team add platformio:developers bob
+```
+
+```text
 The new member "bob" has been successfully added to the "developers" team.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio team create](./create.md)
-- [pio team list](./list.md)
-- [pio team remove](./remove.md)
+- [`pio team create`](./create.md)
+- [`pio team remove`](./remove.md)

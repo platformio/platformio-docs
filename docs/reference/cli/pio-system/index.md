@@ -1,31 +1,19 @@
+---
+description: System commands of PlatformIO Core - system information, cleanup and shell completion.
+---
+
 <a id="cmd-system"></a>
 
 # pio system {#pio-system}
 
-Miscellaneous system commands.
+System-level commands for PlatformIO Core itself.
 
-To print all available commands and options use:
+## Commands {#commands}
 
-```bash
-pio system --help
-pio system COMMAND --help
-```
+| Command | Description |
+| --- | --- |
+| [`pio system info`](./info.md) | Show information about the PlatformIO installation |
+| [`pio system prune`](./prune.md) | Remove unused data and packages |
+| [`pio system completion`](./completion/index.md) | Install or remove shell completion |
 
-- [PlatformIO Shell Completion](./completion/index.md)
-
-  - [pio system completion install](./completion/install.md)
-  - [pio system completion uninstall](./completion/uninstall.md)
-
-- [pio system info](./info.md)
-
-  - [Usage](./info.md#usage)
-  - [Description](./info.md#description)
-  - [Options](./info.md#options)
-  - [Examples](./info.md#examples)
-
-- [pio system prune](./prune.md)
-
-  - [Usage](./prune.md#usage)
-  - [Description](./prune.md#description)
-  - [Options](./prune.md#options)
-  - [Examples](./prune.md#examples)
+For the options of a command, run `pio system COMMAND --help`.

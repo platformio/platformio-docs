@@ -1,8 +1,13 @@
+---
+description: "A name or specification of development platform (platformio.ini option platform)."
+---
+
 <a id="projectconf-env-platform"></a>
 
 # `platform` {#platform}
 
-Type: `Package Specification` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
 
 Specify a development platform that provides integration of vendor-specific boards (development kits, MCUs), high-level frameworks, and SDKs. See [Package Specifications](../../cli/pio-pkg/install.md#cmd-pkg-install-specifications) for details.
 

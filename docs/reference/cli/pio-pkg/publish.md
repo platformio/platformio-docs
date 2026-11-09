@@ -1,3 +1,7 @@
+---
+description: "Publish a package to the PlatformIO Registry so that it can be installed by name."
+---
+
 <a id="cmd-pkg-publish"></a>
 
 # pio pkg publish {#pio-pkg-publish}
@@ -12,7 +16,7 @@ pio pkg publish [<source directory, tar.gz or zip>] [OPTIONS]
 
 Publish a package to the [PlatformIO Registry](https://registry.platformio.org/) so that it can be installed by name. All files in the package directory are included if `export` field is not declared in a package manifest (for example, see [export](../../library-json/export/index.md)). The [next items](https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py) are automatically excluded.
 
-Please check which files will be included in the final package using the [pio pkg pack](./pack.md) command.
+Check which files will be included in the final package using the [pio pkg pack](./pack.md) command.
 
 Once a package is published with a given name and version, that specific name and version combination can never be used again, even if it is removed with the [pio pkg unpublish](./unpublish.md) command.
 
@@ -40,17 +44,20 @@ The permission to set custom release dates and times is only available in the [E
 
 Restrict access to a package (will not be available publicly). The default is to publish a package publicly.
 
-Please check [PlatformIO Registry Plans](https://registry.platformio.org/pricing) where private packages are allowed.
+Check [PlatformIO Registry Plans](https://registry.platformio.org/pricing) where private packages are allowed.
 
-### `--no-notify` {#cmdoption-pio-pkg-publish-no-notify}
+<a id="cmdoption-pio-pkg-publish-notify"></a>
 
-Do not notify by email when a package is processed. The default behavior is to notify.
+### `--notify, --no-notify` {#cmdoption-pio-pkg-publish-no-notify}
+
+Whether to send you an email when the registry has processed the package.
+Default: `--notify`.
 
 ### `--no-interactive` {#cmdoption-pio-pkg-publish-no-interactive}
 
 Do not show an interactive prompt.
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [library.json](../../library-json/index.md)
 - [pio pkg pack](./pack.md)

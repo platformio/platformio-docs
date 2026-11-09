@@ -1,8 +1,13 @@
+---
+description: "This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc)."
+---
+
 <a id="manifest-library-json-export"></a>
 
 # `export` {#export}
 
-*Optional* | Type: `Object`
+- **Required:** No
+- **Type:** Object
 
 This option is useful if you need to exclude extra data (test code, docs, images, PDFs, etc). It allows one to reduce the size of the final archive.
 

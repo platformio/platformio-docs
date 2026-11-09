@@ -1,6 +1,11 @@
+---
+description: "Specify advanced settings, options and flags for the build system."
+---
+
 # `build` {#build}
 
-*Optional* | Type: `Object`
+- **Required:** No
+- **Type:** Object
 
 Specify advanced settings, options and flags for the build system. Possible options:
 

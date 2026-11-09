@@ -1,8 +1,14 @@
+---
+description: "An upload port which `uploader` tool uses for a firmware flashing (platformio.ini option upload_port)."
+---
+
 <a id="projectconf-upload-port"></a>
 
 # `upload_port` {#upload-port}
 
-Type: `String (Pattern)` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
+- **Environment variable:** [`PLATFORMIO_UPLOAD_PORT`](../../environment-variables.md#envvar-PLATFORMIO_UPLOAD_PORT), overrides the value in `platformio.ini`
 
 This option is used by "uploader" tool when sending firmware to board via `upload_port`. For example,
 
@@ -16,9 +22,7 @@ If `upload_port` isn't specified, then *PlatformIO* will try to detect it automa
 
 To print all available serial ports please use [pio device list](../../cli/pio-device/list.md) command.
 
-This option can also be set by global environment variable [`PLATFORMIO_UPLOAD_PORT`](../../environment-variables.md#envvar-PLATFORMIO_UPLOAD_PORT).
-
-Please note that you can use patterns:
+Note that you can use patterns:
 
 | Pattern | Meaning |
 |---|---|
@@ -27,7 +31,7 @@ Please note that you can use patterns:
 | `[seq]` | matches any character in seq |
 | `[!seq]` | matches any character not in seq |
 
-**Example**
+## Example
 
 ```ini
 [env:uno]

@@ -1,8 +1,13 @@
+---
+description: "A board ID (platformio.ini option board)."
+---
+
 <a id="projectconf-env-board"></a>
 
 # `board` {#board}
 
-Type: `String (ID)` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
 
 *PlatformIO* has pre-configured settings for the most popular boards:
 

@@ -1,14 +1,19 @@
+---
+description: "Inherit configuration from other sections or build environments (platformio.ini option extends)."
+---
+
 <a id="projectconf-env-extends"></a>
 
 # `extends` {#extends}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
-This option allows one to inherit configuration from other sections or build environments in ["platformio.ini" (Project Configuration File)](../index.md). Multiple items are allowed, split them with `,` or with a new line.
+This option allows one to inherit configuration from other sections or build environments in [`platformio.ini`](../index.md). Multiple items are allowed, split them with `,` or with a new line.
 
 If you need to extend only a few options from some section, please take a look at [Interpolation of Values](../../../guides/projects/interpolation.md).
 
-Example:
+## Example
 
 ```ini
 [strict_ldf]
@@ -32,7 +37,7 @@ build_flags = -D DEBUG
 
 :::warning
 
-Please note that the `extends` option doesn't merge values from multiple sections or environments. If multiple items specified in the extends field then only values from the latter one will be used in the final configuration. For example:
+Note that the `extends` option doesn't merge values from multiple sections or environments. If multiple items specified in the extends field then only values from the latter one will be used in the final configuration. For example:
 
 ```ini
 [base]

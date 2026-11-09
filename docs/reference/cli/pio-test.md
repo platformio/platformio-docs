@@ -1,3 +1,7 @@
+---
+description: "Run project tests on host (local) machine using PlatformIO Unit Testing."
+---
+
 <a id="cmd-test"></a>
 
 # pio test {#pio-test}
@@ -20,7 +24,7 @@ Run project tests on host (local) machine using PlatformIO [Unit Testing](../../
 
 ### `-e, --environment` {#cmdoption-pio-test-e}
 
-Process specified project environment. Multiple environments are allowed.
+Process specified project environment. Repeat the option for several environments.
 
 <a id="cmdoption-pio-test-filter"></a>
 
@@ -54,13 +58,13 @@ If test port is not specified, PlatformIO will try to detect it automatically.
 
 ### `-d, --project-dir` {#cmdoption-pio-test-d}
 
-Specify the path to the project directory. By default, `--project-dir` is equal to a current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-test-project-conf"></a>
 
 ### `-c, --project-conf` {#cmdoption-pio-test-c}
 
-Process project with a custom ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+Process project with a custom [`platformio.ini`](../platformio-ini/index.md).
 
 ### `--without-building` {#cmdoption-pio-test-without-building}
 
@@ -86,11 +90,11 @@ If the board does not support software reset via `Serial.DTR/RTS` you should add
 
 ### `--monitor-rts` {#cmdoption-pio-test-monitor-rts}
 
-Set initial `RTS` line state for Serial Monitor (`0` or `1`), default `1`. We use it to gather test results via a Serial connection.
+The initial state of the `RTS` line (`0` or `1`) of the serial connection that collects the test results. If you omit it, PlatformIO leaves the line in its default state.
 
 ### `--monitor-dtr` {#cmdoption-pio-test-monitor-dtr}
 
-Set initial `DTR` line state for Serial Monitor (`0` or `1`), default `1`. We use it to gather test results via a Serial connection.
+The initial state of the `DTR` line (`0` or `1`) of the serial connection that collects the test results. If you omit it, PlatformIO leaves the line in its default state.
 
 <a id="cmdoption-pio-test-program-arg"></a>
 
@@ -114,11 +118,11 @@ List project tests without processing. The [`pio test --json-output-path`](#cmdo
 
 ### `--json-output` {#cmdoption-pio-test-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format.
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ### `--json-output-path` {#cmdoption-pio-test-json-output-path}
 
-Generate a unit testing report in the [JSON](https://en.wikipedia.org/wiki/JSON) format and save it to the specified path. If the only folder path is provided, the file name will be generated automatically. Please note that the parent folder must exist before.
+Generate a unit testing report in the [JSON](https://en.wikipedia.org/wiki/JSON) format and save it to the specified path. If the only folder path is provided, the file name will be generated automatically. Note that the parent folder must exist before.
 
 ### `--junit-output-path` {#cmdoption-pio-test-junit-output-path}
 
@@ -139,4 +143,4 @@ Control verbosity level.
 
 ## Examples {#examples}
 
-For the examples please follow to [Unit Testing](../../guides/unit-testing/index.md) page.
+For the examples see [Unit Testing](../../guides/unit-testing/index.md) page.

@@ -1,3 +1,7 @@
+---
+description: "Search the PlatformIO Registry for packages matching the search query."
+---
+
 <a id="cmd-pkg-search"></a>
 
 # pio pkg search {#pio-pkg-search}
@@ -27,7 +31,7 @@ Multiple [Search Qualifiers](#cmd-pkg-search-qualifiers) and full-text search wo
 
 ### `-p, --page` {#cmdoption-pio-pkg-search-p}
 
-Number of items to skip before starting to collect the result set.
+The page of results to show, starting from `1`.
 
 <a id="cmdoption-pio-pkg-search-sort"></a>
 
@@ -150,11 +154,13 @@ You can search for packages that depend on the specified package or for package 
 
 ## Examples {#examples}
 
-1. List trending libraries
+List trending libraries:
+
+```bash
+pio pkg search "type:library" --sort trending
+```
 
 ```text
-> pio pkg search "type:library" --sort trending
-
 Found 12374 packages (page 1 of 1238)
 
 adafruit/Adafruit Unified Sensor
@@ -167,11 +173,13 @@ Real Time Operating System implemented for STM32
 ...
 ```
 
-2. List trending libraries
+List trending libraries:
+
+```bash
+pio pkg search "type:library" --sort trending
+```
 
 ```text
-> pio pkg search "type:library" --sort trending
-
 Found 12374 packages (page 1 of 1238)
 
 adafruit/Adafruit Unified Sensor
@@ -184,11 +192,13 @@ Real Time Operating System implemented for STM32
 ...
 ```
 
-3. Search for packages that match words that start with "DHT"
+Search for packages that match words that start with "DHT":
+
+```bash
+pio pkg search "DHT*"
+```
 
 ```text
-> pio pkg search "DHT*"
-
 Found 163 packages (page 1 of 17)
 
 0nism/ESP32-DHT11
@@ -205,11 +215,13 @@ Arduino library for I2C DHT20 temperature and humidity sensor.
 ...
 ```
 
-4. Search for packages that support STM32F405RG MCU
+Search for packages that support STM32F405RG MCU:
+
+```bash
+pio pkg search "STM32F405RG"
+```
 
 ```text
-> pio pkg search "STM32F405RG"
-
 Found 4 packages (page 1 of 1)
 
 aceinna/aceinna_imu
@@ -229,11 +241,13 @@ Tool • 4.20200.220204 • Published on Mon Feb  7 09:47:31 2022
 Arduino Wiring-based Framework for ST STM32 microcontrollers
 ```
 
-5. Search for official development platforms that support STM32F405RG MCU
+Search for official development platforms that support STM32F405RG MCU:
+
+```bash
+pio pkg search "type:platform tier:official STM32F405RG"
+```
 
 ```text
-> pio pkg search "type:platform tier:official STM32F405RG"
-
 Found 1 packages (page 1 of 1)
 
 aceinna/aceinna_imu
@@ -241,7 +255,7 @@ Official Platform • 1.3.8 • Published on Mon Oct 25 16:39:27 2021
 Open-source, embedded development platform for Aceinna IMU hardware. Run custom algorithms and navigation code on Aceinna IMU/INS hardware.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [pio pkg show](./show.md)
 - [pio pkg list](./list.md)

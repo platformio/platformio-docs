@@ -1,6 +1,10 @@
+---
+description: "There are two execution types for extra scripts."
+---
+
 <a id="scripting-launch-types"></a>
 
-# Launch Types {#launch-types}
+# Launch types {#launch-types}
 
 There are two execution types for extra scripts:
 
@@ -10,7 +14,7 @@ There are two execution types for extra scripts:
 
   :::note
 
-  Please note that the `projenv` (see [Construction Environments](./construction-environments.md)) is not available at this stage.
+  Note that the `projenv` (see [Construction Environments](./construction-environments.md)) is not available at this stage.
 
   :::
 
@@ -18,11 +22,11 @@ There are two execution types for extra scripts:
 
   The building environment is fully constructed at this stage with all build flags, development platform targets, dependent libraries, and `projenv`. Useful to assign [Pre & Post Actions](./actions.md), modify default build flags set by the development platform, or extend the building workflow.
 
-The extra scripts can be configured using the [extra_scripts](../platformio-ini/env/extra-scripts.md) option in ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md) or using the [extraScript](../library-json/build/extrascript.md) in [library.json](../library-json/index.md) manifest.
+The extra scripts can be configured using the [extra_scripts](../platformio-ini/env/extra-scripts.md) option in [`platformio.ini`](../platformio-ini/index.md) or using the [extraScript](../library-json/build/extrascript.md) in [library.json](../library-json/index.md) manifest.
 
 The launch type can be specified as a prefix (`pre:` or `post:`) to the script path. If there is no prefix specified, the `post:` will be used automatically.
 
-**Example**
+## Example
 
 ```ini
 [env:my_env_1]

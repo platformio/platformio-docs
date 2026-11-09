@@ -1,12 +1,17 @@
+---
+description: "def post_program_action(source, target, env):     print('Program has been built!')     program_path = target[0].get_abspath()     print('Program path', program_path)     # Use case: sign a firmware, do any manipulations with ELF, etc     # env.Execute(f'sign --elf {program_path}')."
+---
+
 <a id="library-json-buid-extra-script"></a>
 
 # `extraScript` {#extrascript}
 
-*Optional* | Type: `String`
+- **Required:** No
+- **Type:** String
 
 :::info[See also]
 
-Please make sure to read [Advanced Scripting](../../../guides/scripting/index.md) and [Construction Environments](../../scripting-api/construction-environments.md) guides first.
+Read [Advanced Scripting](../../../guides/scripting/index.md) and [Construction Environments](../../scripting-api/construction-environments.md) guides first.
 
 :::
 

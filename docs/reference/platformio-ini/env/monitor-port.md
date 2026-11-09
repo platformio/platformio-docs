@@ -1,14 +1,19 @@
+---
+description: "A port, a number or a device name (platformio.ini option monitor_port)."
+---
+
 <a id="projectconf-monitor-port"></a>
 
 # `monitor_port` {#monitor-port}
 
-Type: `String` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
 
 Port, a number or a device name, or valid [URL Handlers](https://pyserial.readthedocs.io/en/latest/url_handlers.html).
 
 To print all available serial ports please use [pio device list](../../cli/pio-device/list.md) command.
 
-Please note that you can use patterns for serial ports:
+Note that you can use patterns for serial ports:
 
 | Pattern | Meaning |
 |---|---|
@@ -17,7 +22,7 @@ Please note that you can use patterns for serial ports:
 | `[seq]` | matches any character in seq |
 | `[!seq]` | matches any character not in seq |
 
-Example:
+## Example
 
 ```ini
 [env:custom_monitor_port]

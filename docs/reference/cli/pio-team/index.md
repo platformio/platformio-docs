@@ -1,54 +1,24 @@
+---
+description: Manage the teams of an organization and their members.
+---
+
 <a id="cmd-team"></a>
 
 # pio team {#pio-team}
 
-Manage organization teams and team memberships.
+Manage the teams of an organization and their members. Grant teams access to
+packages with [`pio access`](../pio-access/index.md). To manage the
+organization itself, use [`pio org`](../pio-org/index.md).
 
-Management of organizations and owners is done with the [pio org](../pio-org/index.md) command.
+## Commands {#commands}
 
-To print all available commands and options use:
+| Command | Description |
+| --- | --- |
+| [`pio team create`](./create.md) | Create a team |
+| [`pio team list`](./list.md) | List teams and their members |
+| [`pio team update`](./update.md) | Rename a team or update its description |
+| [`pio team add`](./add.md) | Add a member |
+| [`pio team remove`](./remove.md) | Remove a member |
+| [`pio team destroy`](./destroy.md) | Delete a team |
 
-```bash
-pio org --help
-pio org COMMAND --help
-```
-
-- [pio team add](./add.md)
-
-  - [Usage](./add.md#usage)
-  - [Description](./add.md#description)
-  - [Examples](./add.md#examples)
-  - [See Also](./add.md#see-also)
-
-- [pio team create](./create.md)
-
-  - [Usage](./create.md#usage)
-  - [Description](./create.md#description)
-  - [Examples](./create.md#examples)
-  - [See Also](./create.md#see-also)
-
-- [pio team destroy](./destroy.md)
-
-  - [Usage](./destroy.md#usage)
-  - [Description](./destroy.md#description)
-  - [See Also](./destroy.md#see-also)
-
-- [pio team list](./list.md)
-
-  - [Usage](./list.md#usage)
-  - [Description](./list.md#description)
-  - [Examples](./list.md#examples)
-
-- [pio team remove](./remove.md)
-
-  - [Usage](./remove.md#usage)
-  - [Description](./remove.md#description)
-  - [Examples](./remove.md#examples)
-  - [See Also](./remove.md#see-also)
-
-- [pio team update](./update.md)
-
-  - [Usage](./update.md#usage)
-  - [Description](./update.md#description)
-  - [Examples](./update.md#examples)
-  - [See Also](./update.md#see-also)
+For the options of a command, run `pio team COMMAND --help`.

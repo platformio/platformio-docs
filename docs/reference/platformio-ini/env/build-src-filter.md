@@ -1,8 +1,16 @@
+---
+description: "Control which source files from the `src` folder should be included/excluded from a build process (platformio.ini option build_src_filter)."
+---
+
 <a id="projectconf-build-src-filter"></a>
 
 # `build_src_filter` {#build-src-filter}
 
-Type: `String (Templates)` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
+- **Default:** `+<*> -<.git/> -<.svn/>`
+- **Environment variable:** [`PLATFORMIO_BUILD_SRC_FILTER`](../../environment-variables.md#envvar-PLATFORMIO_BUILD_SRC_FILTER), appended to the values in `platformio.ini`
+- **Deprecated name:** `src_filter` (still accepted, with a warning)
 
 This option allows one to specify which source files should be included or excluded from [src_dir](../platformio/src-dir.md) for a build process. Filter supports two templates:
 
@@ -13,9 +21,7 @@ This option allows one to specify which source files should be included or exclu
 
 By default, `build_src_filter` is predefined to `+<*> -<.git/> -<.svn/>`, meaning "include ALL files, then exclude the `.git` and `.svn` repository folders.
 
-This option can also be set by the global environment variable [`PLATFORMIO_BUILD_SRC_FILTER`](../../environment-variables.md#envvar-PLATFORMIO_BUILD_SRC_FILTER).
-
-**Example**
+## Example
 
 Include all `.c` and `.cpp` files recursively (`**` means ANY path) to the build process but exclude assembly files `.S` and `.asm`:
 

@@ -1,18 +1,23 @@
+---
+description: "A debug adapter speed (JTAG speed) (platformio.ini option debug_speed)."
+---
+
 <a id="projectconf-debug-speed"></a>
 
 # `debug_speed` {#debug-speed}
 
-Type: `Number | String` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
 
 The debug adapter speed. The value format depends on the type of [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools).
 
 :::note
 
-Please note that this option takes effect only if [Development Platforms](../../../hardware/platforms/index.md) implement it.
+Note that this option takes effect only if [Development Platforms](../../../hardware/platforms/index.md) implement it.
 
 :::
 
-Examples:
+## Examples
 
 ```ini
 [env:custom_debug_speed_examples]

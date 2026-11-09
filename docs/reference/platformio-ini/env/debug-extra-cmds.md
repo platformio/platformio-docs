@@ -1,8 +1,13 @@
+---
+description: "An extra commands to be passed to a back-end debugger (platformio.ini option debug_extra_cmds)."
+---
+
 <a id="projectconf-debug-extra-cmds"></a>
 
 # `debug_extra_cmds` {#debug-extra-cmds}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 Extra commands that will be passed to back-end debugger after [debug_init_cmds](./debug-init-cmds.md). For example, add custom breakpoint and load `.gdbinit` from a project directory for GDB:
 

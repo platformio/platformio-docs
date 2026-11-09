@@ -1,6 +1,12 @@
+---
+description: List teams and their members.
+---
+
 <a id="cmd-team-list"></a>
 
 # pio team list {#pio-team-list}
+
+List the teams and their members.
 
 ## Usage {#usage}
 
@@ -10,19 +16,23 @@ pio team list [OPTIONS] [ORGNAME]
 
 ## Description {#description}
 
-List teams and their members.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME` | Optional. List only the teams of this organization. |
 
-### Options {#options}
+## Options {#options}
 
-#### `--json-output` {#cmdoption-pio-team-list-json-output}
+### `--json-output` {#cmdoption-pio-team-list-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format.
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
 ```bash
-> pio team list
+pio team list
+```
 
+```text
 platformio:dev
 ------------------------
 Description:  Developers team

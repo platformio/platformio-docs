@@ -1,14 +1,19 @@
+---
+description: "Custom packages and specifications (platformio.ini option platform_packages)."
+---
+
 <a id="projectconf-env-platform-packages"></a>
 
 # `platform_packages` {#platform-packages}
 
-Type: `Package Specification` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 Configure custom packages per a build environment. You can also override default packages by [Development Platforms](../../../hardware/platforms/index.md) using the same name. See [Package Specifications](../../cli/pio-pkg/install.md#cmd-pkg-install-specifications) for details.
 
 Check the [PlatformIO Registry](https://registry.platformio.org) for the available toolchains, frameworks, SDKs, etc.
 
-Examples:
+## Examples
 
 ```ini
 [env:override_default_toolchain]

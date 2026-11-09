@@ -1,10 +1,14 @@
+---
+description: "The name of the library."
+---
+
 # `name` {#name}
 
-**Required** | Type: `String` | Max. Length: 50
+- **Required:** Yes
+- **Type:** String
+- **Limits:** At most 100 characters. Cannot contain `:`, `;`, `/`, `,`, `@`, `<` or `>`.
 
-A name of a library.
-
-- Must be unique in the [PlatformIO Registry](https://registry.platformio.org)
-- Should be slug style for simplicity, consistency, and compatibility. Example: *HelloWorld*
-- Can contain a-z, digits, and dashes (but not start/end with them)
-- Consecutive dashes and \[:;/,@\<>\] chars are not allowed.
+The name of the library. Choose a short, descriptive name; together with the
+owner, it identifies the library in the
+[PlatformIO Registry](https://registry.platformio.org). Simple names such as
+`HelloWorld` or `hello-world` work best with tools and command lines.

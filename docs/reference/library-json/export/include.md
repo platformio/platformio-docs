@@ -1,6 +1,12 @@
+---
+description: "Export only files that matched declared patterns."
+---
+
 # `include` {#include}
 
-*Optional* | Type: `Array` | [Glob Pattern](http://en.wikipedia.org/wiki/Glob_%28programming%29)
+- **Required:** No
+- **Type:** Array of strings
+- **Values:** [glob patterns](http://en.wikipedia.org/wiki/Glob_%28programming%29)
 
 Export only files that matched declared patterns.
 
@@ -13,7 +19,7 @@ Export only files that matched declared patterns.
 | `[seq]` | matches any character in seq |
 | `[!seq]` | matches any character not in seq |
 
-**Example**
+## Example
 
 ```javascript
 "export": {

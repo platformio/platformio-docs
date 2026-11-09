@@ -1,3 +1,7 @@
+---
+description: "Prepare PlatformIO project for debugging or launch debug server."
+---
+
 <a id="cmd-debug"></a>
 
 # pio debug {#pio-debug}
@@ -25,19 +29,19 @@ Prepare PlatformIO project for debugging or launch debug server.
 
 Debug specified environments.
 
-You can also specify which environments should be used for debugging by default using [default_envs](../platformio-ini/platformio/default-envs.md) option from ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+You can also specify which environments should be used for debugging by default using [default_envs](../platformio-ini/platformio/default-envs.md) option from [`platformio.ini`](../platformio-ini/index.md).
 
 <a id="cmdoption-pio-debug-project-dir"></a>
 
 ### `-d, --project-dir` {#cmdoption-pio-debug-d}
 
-Specify the path to a project directory. By default, `--project-dir` is equal to a current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-debug-project-conf"></a>
 
 ### `-c, --project-conf` {#cmdoption-pio-debug-c}
 
-Process project with a custom ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+Process project with a custom [`platformio.ini`](../platformio-ini/index.md).
 
 ### `--load-mode` {#cmdoption-pio-debug-load-mode}
 
@@ -53,17 +57,19 @@ PlatformIO Debugging Interface. Valid values:
 
 ### `-v, --verbose` {#cmdoption-pio-debug-v}
 
-Shows detailed information when processing environments.
+Print detailed information while processing environments.
 
 This option can also be set globally using [force_verbose](./pio-settings.md#setting-force-verbose) setting or by environment variable [`PLATFORMIO_SETTING_FORCE_VERBOSE`](../environment-variables.md#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE).
 
 ## Examples {#examples}
 
-1. Prepare a project for debugging
+Prepare a project for debugging:
+
+```bash
+pio debug
+```
 
 ```text
-> pio debug
-
 [Sun Apr 30 01:34:01 2017] Processing mzeropro (platform: atmelsam; debug_extra_cmds: b main.cpp:26; board: mzeropro; framework: arduino)
 -----------------------------------------------------------------------------------------------
 Verbose mode can be enabled via `-v, --verbose` option
@@ -91,11 +97,13 @@ text       data     bss     dec     hex filename
 =========================== [SUCCESS] Took 7.82 seconds ===========================
 ```
 
-2. Launch GDB instance and load initial configuration per project. A double hyphen is used to skip the parsing of extra GDB options.
+Launch GDB instance and load initial configuration per project. A double hyphen is used to skip the parsing of extra GDB options.:
+
+```bash
+pio debug --interface=gdb -- -x .pioinit
+```
 
 ```text
-> pio debug --interface=gdb -- -x .pioinit
-
 ...
 Loading section .text, size 0x2c98 lma 0x4000
 Loading section .ramfunc, size 0x60 lma 0x6c98

@@ -1,3 +1,7 @@
+---
+description: "Run remotely tests from PlatformIO based project."
+---
+
 <a id="cmd-remote-test"></a>
 
 # pio remote test {#pio-remote-test}
@@ -17,7 +21,7 @@ pio remote --agent NAME test [OPTIONS]
 
 Run remotely tests from PlatformIO based project. More details about PlatformIO [Unit Testing](../../../guides/unit-testing/index.md).
 
-This command allows you to apply the tests for the environments specified in ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+This command allows you to apply the tests for the environments specified in [`platformio.ini`](../../platformio-ini/index.md).
 
 ## Options {#options}
 
@@ -31,7 +35,7 @@ Process specified environments. More details [`pio run --environment`](../pio-ru
 
 ### `-f, --filter` {#cmdoption-pio-remote-test-f}
 
-Process only the tests where the name matches specified patterns. More than one pattern is allowed. If you need to filter some tests for a specific environment, please take a look at [test_filter](../../platformio-ini/env/test-filter.md) option from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+Process only the tests where the name matches specified patterns. More than one pattern is allowed. If you need to filter some tests for a specific environment, please take a look at [test_filter](../../platformio-ini/env/test-filter.md) option from [`platformio.ini`](../../platformio-ini/index.md).
 
 | Pattern | Meaning |
 |---|---|
@@ -46,7 +50,7 @@ For example, `pio test --filter "mytest*" -i "test[13]"`
 
 ### `-i, --ignore` {#cmdoption-pio-remote-test-i}
 
-Ignore tests where the name matches specified patterns. More than one pattern is allowed. If you need to ignore some tests for the specific environment, please take a look at [test_ignore](../../platformio-ini/env/test-ignore.md) option from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+Ignore tests where the name matches specified patterns. More than one pattern is allowed. If you need to ignore some tests for the specific environment, please take a look at [test_ignore](../../platformio-ini/env/test-ignore.md) option from [`platformio.ini`](../../platformio-ini/index.md).
 
 | Pattern | Meaning |
 |---|---|
@@ -73,7 +77,7 @@ If test port is not specified, PlatformIO will try to detect it automatically.
 
 ### `-d, --project-dir` {#cmdoption-pio-remote-test-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-remote-test-force-remote"></a>
 
@@ -95,10 +99,10 @@ Skip uploading stage
 
 ### `-v, --verbose` {#cmdoption-pio-remote-test-v}
 
-Shows detailed information when processing environments.
+Print detailed information while processing environments.
 
 This option can also be set globally using [force_verbose](../pio-settings.md#setting-force-verbose) setting or by environment variable [`PLATFORMIO_SETTING_FORCE_VERBOSE`](../../environment-variables.md#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE).
 
 ## Examples {#examples}
 
-For the examples please follow to [Unit Testing](../../../guides/unit-testing/index.md) page.
+For the examples see [Unit Testing](../../../guides/unit-testing/index.md) page.

@@ -1,29 +1,18 @@
+---
+description: Tab completion of pio commands and options for Bash, Zsh and fish.
+---
+
 <a id="cmd-system-completion"></a>
 
-# PlatformIO Shell Completion {#platformio-shell-completion}
+# pio system completion {#platformio-shell-completion}
 
-Shell completion support for
+Install tab completion of `pio` commands and options for the
+[Bash](https://www.gnu.org/software/bash/), [Zsh](https://www.zsh.org/) and
+[fish](https://fishshell.com/) shells.
 
-- [Fish](https://fishshell.com/)
-- [Zsh](http://www.zsh.org/)
-- [Bash](https://www.gnu.org/software/bash)
-- [PowerShell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx)
+## Commands {#commands}
 
-To print all available commands and options use:
-
-```bash
-pio system completion --help
-pio system completion COMMAND --help
-```
-
-- [pio system completion install](./install.md)
-
-  - [Usage](./install.md#usage)
-  - [Description](./install.md#description)
-  - [Examples](./install.md#examples)
-
-- [pio system completion uninstall](./uninstall.md)
-
-  - [Usage](./uninstall.md#usage)
-  - [Description](./uninstall.md#description)
-  - [Examples](./uninstall.md#examples)
+| Command | Description |
+| --- | --- |
+| [`pio system completion install`](./install.md) | Install shell completion |
+| [`pio system completion uninstall`](./uninstall.md) | Remove shell completion |

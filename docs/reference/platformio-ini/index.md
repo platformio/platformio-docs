@@ -1,36 +1,58 @@
+---
+description: Reference of platformio.ini, the PlatformIO project configuration file - syntax, sections and options.
+---
+
 <a id="projectconf"></a>
 
-# "platformio.ini" (Project Configuration File) {#platformio-ini-project-configuration-file}
+# platformio.ini {#platformio-ini-project-configuration-file}
 
-`platformio.ini` is a configuration file that lets you set up your development environment, share your code and configurations with others, and leverage a declarative approach to development. You can use `platformio.ini` to configure multiple platforms and architectures without having to worry about different toolchains or build systems for each one.
+`platformio.ini` is the project configuration file. Every PlatformIO project
+has one in its root directory. It declares the
+[project environments](./env/index.md) (the boards, frameworks and build
+settings the project targets) and the project-wide settings, so that the
+project builds the same way on every machine.
 
-Each PlatformIO project has its own `platformio.ini` that is located in the root directory of the project. This is an [INI-style](http://en.wikipedia.org/wiki/INI_file) file. `platformio.ini` has sections (each denoted by a `[header]`) and key/value pairs within the sections. Lines beginning with `;` are ignored and may be used to provide comments.
+## Syntax {#syntax}
 
-Multiple value options can be specified in two ways:
+`platformio.ini` is an [INI file](https://en.wikipedia.org/wiki/INI_file): it
+consists of sections, each starting with a `[header]`, and `name = value`
+options within them.
 
-1. Split values with ", " (comma + space)
-2. Multi-line format, where each new line starts with at least two spaces.
+- Lines that start with `;` or `#` are comments. A `;` preceded by whitespace
+  starts an inline comment.
+- Options that accept multiple values take them either on one line separated
+  by `, ` (a comma and a space), or one value per line, with each continuation
+  line indented:
 
-Here are the allowed sections and their allowed contents:
+  ```ini
+  lib_deps = bblanchon/ArduinoJson, knolleary/PubSubClient
 
-- [Section `[platformio]`](./platformio/index.md)
+  lib_deps =
+      bblanchon/ArduinoJson
+      knolleary/PubSubClient
+  ```
 
-  - [Generic options](./platformio/generic-options.md)
-  - [Directory options](./platformio/directory-options.md)
+- Values can reference other options and environment variables with
+  `${section.option}` and `${sysenv.NAME}`. See
+  [Interpolation of values](../../guides/projects/interpolation.md).
 
-- [Section `[env]`](./env/index.md)
+## Sections {#sections}
 
-  - [Common `[env]`](./env/index.md#common-env)
-  - [Working `[env:NAME]`](./env/index.md#working-env-name)
-  - [Options](./env/index.md#options)
+| Section | Purpose |
+| --- | --- |
+| [`[platformio]`](./platformio/index.md) | Project-wide settings: [generic options](./platformio/generic-options.md) and [directories](./platformio/directory-options.md) |
+| [`[env]`](./env/index.md#common-env) | Options shared by all environments |
+| [`[env:NAME]`](./env/index.md#working-env-name) | A project environment |
+| Any other name, such as `[common]` | Your own values, to reuse with `${common.option}` |
 
-- [Interpolation of Values](../../guides/projects/interpolation.md)
+To check how PlatformIO reads your file, run
+[`pio project config`](../cli/pio-project/config.md); add `--lint` to find
+errors.
 
-- [Examples](../../guides/projects/examples.md)
+## Example {#example}
 
-**Example**
-
-For more examples, see [official project examples and community projects](../../get-started/tutorials/index.md).
+More examples: [platformio.ini examples](../../guides/projects/examples.md)
+and the [tutorials](../../get-started/tutorials/index.md).
 
 ```ini
 [platformio]
@@ -70,9 +92,7 @@ lib_deps =
 
 ; Serial Monitor options
 monitor_speed = 115200
-monitor_flags =
-    --encoding
-    hexlify
+monitor_filters = hexlify
 
 ; Unit Testing options
 test_ignore = test_desktop

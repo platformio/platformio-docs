@@ -1,12 +1,18 @@
+---
+description: "A list of project library dependencies which should be installed automatically before a build process (platformio.ini option lib_deps)."
+---
+
 <a id="projectconf-lib-deps"></a>
 
 # `lib_deps` {#lib-deps}
 
-Type: `Package Specification` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
+- **Deprecated name:** `lib_use`, `lib_force`, `lib_install` (still accepted, with a warning)
 
 :::info[See also]
 
-Please make sure to read [Dependency Management](../../../guides/libraries/dependencies.md) guide first.
+Read [Dependency Management](../../../guides/libraries/dependencies.md) guide first.
 
 :::
 
@@ -16,7 +22,7 @@ If you have multiple build environments that depend on the same libraries, you c
 
 Check the [PlatformIO Registry](https://registry.platformio.org) for the available libraries and the installation instructions.
 
-**Example**
+## Example
 
 ```ini
 [env:myenv]

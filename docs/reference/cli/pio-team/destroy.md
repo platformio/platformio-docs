@@ -1,6 +1,12 @@
+---
+description: Delete a team.
+---
+
 <a id="cmd-team-destroy"></a>
 
 # pio team destroy {#pio-team-destroy}
+
+Delete a team.
 
 ## Usage {#usage}
 
@@ -10,12 +16,20 @@ pio team destroy ORGNAME:TEAMNAME
 
 ## Description {#description}
 
-Destroy a team.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME:TEAMNAME` | The team to delete, prefixed with its organization |
 
-If you need to remove a user from a team, please use [pio team remove](./remove.md) command.
+:::danger
 
-## See Also {#see-also}
+This cannot be undone. The command asks for confirmation before it deletes
+anything.
 
-- [pio team create](./create.md)
-- [pio team list](./list.md)
-- [pio team update](./update.md)
+:::
+
+To remove a single member instead, use [`pio team remove`](./remove.md).
+
+## See also {#see-also}
+
+- [`pio team create`](./create.md)
+- [`pio team remove`](./remove.md)

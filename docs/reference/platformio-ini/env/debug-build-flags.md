@@ -1,8 +1,14 @@
+---
+description: "Custom debug flags/options for preprocessing, compilation, assembly, and linking processes (platformio.ini option debug_build_flags)."
+---
+
 <a id="projectconf-debug-build-flags"></a>
 
 # `debug_build_flags` {#debug-build-flags}
 
-Type: `String` | Multiple: `Yes` | Default: `-Og -g2 -ggdb2`
+- **Type:** String
+- **Multiple values:** Yes
+- **Default:** `-Og`, `-g2`, `-ggdb2`
 
 These flags/options affect the preprocessing, compilation, assembly and linking processes for C and C++ code.
 
@@ -12,7 +18,7 @@ This option might be helpful to adjust the optimization level if firmware with d
 
 :::
 
-**Example**
+## Example
 
 ```ini
 [env:debug]

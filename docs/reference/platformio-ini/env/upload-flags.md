@@ -1,16 +1,20 @@
+---
+description: "An extra flags for `uploader` tool (platformio.ini option upload_flags)."
+---
+
 <a id="projectconf-upload-flags"></a>
 
 # `upload_flags` {#upload-flags}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
+- **Environment variable:** [`PLATFORMIO_UPLOAD_FLAGS`](../../environment-variables.md#envvar-PLATFORMIO_UPLOAD_FLAGS), appended to the values in `platformio.ini`
 
 Extra flags for uploader. Will be added to the end of uploader command. If you need to override uploader command or base flags please use [extra_scripts](./extra-scripts.md).
 
-This option can also be set by global environment variable [`PLATFORMIO_UPLOAD_FLAGS`](../../environment-variables.md#envvar-PLATFORMIO_UPLOAD_FLAGS).
+## Example
 
-**Example**
-
-Please specify each flag/option in a new line starting with minimum 2 spaces.
+Specify each flag/option in a new line starting with minimum 2 spaces.
 
 ```ini
 [env:atmega328pb]

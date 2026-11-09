@@ -1,22 +1,27 @@
+---
+description: Show your PlatformIO Account profile, packages and subscriptions.
+---
+
 <a id="cmd-account-show"></a>
 
 # pio account show {#pio-account-show}
 
+Show your [PlatformIO Account](../../../get-started/platformio-account.md) profile, the packages and services available to you, and
+your active subscriptions.
+
 ## Usage {#usage}
 
 ```bash
-pio account show
+pio account show [OPTIONS]
 ```
 
-## Description {#description}
+## Options {#options}
 
-Show detailed information about [PlatformIO Account](../../../get-started/platformio-account.md):
+### `--offline` {#cmdoption-pio-account-show-offline}
 
-- Active subscriptions
-- Available packages and services
+Do not contact the server. Show the cached account information or, if there
+is none, only the username and email of the signed-in account.
 
-### Options {#options}
+### `--json-output` {#cmdoption-pio-account-show-json-output}
 
-#### `--json-output` {#cmdoption-pio-account-show-json-output}
-
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.

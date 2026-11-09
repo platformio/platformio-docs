@@ -1,14 +1,19 @@
+---
+description: "A custom list of targets for PlatformIO Build System (platformio.ini option targets)."
+---
+
 <a id="projectconf-targets"></a>
 
 # `targets` {#targets}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 A list of targets which will be processed by the [pio run](../../cli/pio-run.md) command by default. You can enter more than one target, if separated by comma+space **", "**.
 
-Please follow to [`pio run --list-targets`](../../cli/pio-run.md#cmdoption-pio-run-list-targets) documentation for the other targets.
+See [`pio run --list-targets`](../../cli/pio-run.md#cmdoption-pio-run-list-targets) documentation for the other targets.
 
-**Examples**
+## Examples
 
 1. Build a project using [Release Configuration](../../../guides/projects/build-configurations.md), upload the firmware, and start [Serial Monitor](../../cli/pio-device/monitor.md) automatically:
 

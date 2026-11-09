@@ -1,139 +1,84 @@
+---
+description: List the boards PlatformIO supports, filtered by ID, name, MCU, vendor, platform or framework.
+---
+
 <a id="cmd-boards"></a>
 
 # pio boards {#pio-boards}
 
+List the boards PlatformIO supports, with their board IDs. Use a board ID in
+the [`board`](../platformio-ini/env/board.md) option of `platformio.ini` and in
+[`pio project init --board`](./pio-project/init.md).
+
 ## Usage {#usage}
 
 ```bash
-pio boards [OPTIONS] [FILTER]
+pio boards [OPTIONS] [QUERY]
 ```
 
 ## Description {#description}
 
-List pre-configured Embedded Boards
+| Argument | Description |
+| --- | --- |
+| `QUERY` | Optional. Show only the boards whose ID, name, MCU, vendor, development platform or frameworks contain this text (case-insensitive). |
 
-### Options {#options}
+Boards are grouped by development platform. You can also browse them in the
+[boards catalog](/hardware/boards).
 
-#### `--installed` {#cmdoption-pio-boards-installed}
+## Options {#options}
 
-List boards only from the installed platforms
+### `--installed` {#cmdoption-pio-boards-installed}
 
-#### `--json-output` {#cmdoption-pio-boards-json-output}
+List only the boards of installed development platforms.
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+### `--json-output` {#cmdoption-pio-boards-json-output}
+
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
-1. Show all available pre-configured embedded boards
+List the boards with an ATmega168 MCU:
 
 ```bash
-> pio boards
+pio boards atmega168
+```
 
+```text
 Platform: atmelavr
----------------------------------------------------------------------------
-ID                    MCU           Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
-btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
-diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
-diecimilaatmega328    atmega328p    16MHz     30K    2K    Arduino Duemilanove or Diecimila ATmega328
-esplora               atmega32u4    16MHz     28K    2K    Arduino Esplora
-ethernet              atmega328p    16MHz     31K    2K    Arduino Ethernet
+================================================================================
+ID                  MCU          Frequency    Flash    RAM    Name
+------------------  -----------  -----------  -------  -----  -----------------------------------------------
+ATmega168           ATMEGA168    16MHz        16KB     1KB    ATmega168/A
+ATmega168P          ATMEGA168P   16MHz        16KB     1KB    ATmega168P/PA
+ATmega168PB         ATMEGA168PB  16MHz        16KB     1KB    ATmega168PB
+btatmega168         ATMEGA168    16MHz        14KB     1KB    Arduino BT ATmega168
+diecimilaatmega168  ATMEGA168    16MHz        14KB     1KB    Arduino Duemilanove or Diecimila ATmega168
+lilypadatmega168    ATMEGA168    8MHz         14KB     1KB    Arduino LilyPad ATmega168
+miniatmega168       ATMEGA168    16MHz        14KB     1KB    Arduino Mini ATmega168
 ...
 ```
 
-2. Filter Arduino-based boards
+List the boards of the [TI MSP430](/hardware/platforms/timsp430) development
+platform:
 
 ```bash
-> pio boards arduino
-
-Platform: atmelavr
----------------------------------------------------------------------------
-ID                    MCU           Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
-btatmega328           atmega328p    16MHz     28K    2K    Arduino BT ATmega328
-diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
-diecimilaatmega328    atmega328p    16MHz     30K    2K    Arduino Duemilanove or Diecimila ATmega328
-esplora               atmega32u4    16MHz     28K    2K    Arduino Esplora
-ethernet              atmega328p    16MHz     31K    2K    Arduino Ethernet
-...
+pio boards timsp430
 ```
 
-3. Filter mbed-enabled boards
-
-```bash
-> pio boards mbed
-
-Platform: freescalekinetis
----------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-frdm_k20d50m          mk20dx128vlh5  48MHz     128K   16K   Freescale Kinetis FRDM-K20D50M
-frdm_k22f             mk22fn512vlh12 120MHz    512K   128K  Freescale Kinetis FRDM-K22F
-...
-
-Platform: nordicnrf51
----------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-wallBotBLE            nrf51822       16MHz     128K   16K   JKSoft Wallbot BLE
-nrf51_dk              nrf51822       32MHz     256K   32K   Nordic nRF51-DK
-...
-
-Platform: nxplpc
----------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-blueboard_lpc11u24    lpc11u24       48MHz     32K    8K    BlueBoard-LPC11U24
-dipcortexm0           lpc11u24       50MHz     32K    8K    DipCortex M0
-lpc11u35              lpc11u35       48MHz     64K    10K   EA LPC11U35 QuickStart Board
-...
-
-Platform: ststm32
----------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-disco_f401vc          stm32f401vct6  84MHz     256K   64K   32F401CDISCOVERY
-nucleo_f030r8         stm32f030r8t6  48MHz     64K    8K    ST Nucleo F030R8
-...
-```
-
-4. Filter boards which are based on `ATmega168` MCU
-
-```bash
-> pio boards atmega168
-
-Platform: atmelavr
----------------------------------------------------------------------------
-ID                    MCU           Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-btatmega168           atmega168     16MHz     14K    1K    Arduino BT ATmega168
-diecimilaatmega168    atmega168     16MHz     14K    1K    Arduino Duemilanove or Diecimila ATmega168
-miniatmega168         atmega168     16MHz     14K    1K    Arduino Mini ATmega168
-atmegangatmega168     atmega168     16MHz     14K    1K    Arduino NG or older ATmega168
-nanoatmega168         atmega168     16MHz     14K    1K    Arduino Nano ATmega168
-pro8MHzatmega168      atmega168     8MHz      14K    1K    Arduino Pro or Pro Mini ATmega168 (3.3V, 8 MHz)
-pro16MHzatmega168     atmega168     16MHz     14K    1K    Arduino Pro or Pro Mini ATmega168 (5V, 16 MHz)
-lilypadatmega168      atmega168     8MHz      14K    1K    LilyPad Arduino ATmega168
-168pa16m              atmega168p    16MHz     15K    1K    Microduino Core (Atmega168PA@16M,5V)
-168pa8m               atmega168p    8MHz      15K    1K    Microduino Core (Atmega168PA@8M,3.3V)
-```
-
-5. Show boards by [TI MSP430](/hardware/platforms/timsp430)
-
-```bash
-> pio boards timsp430
-
+```text
 Platform: timsp430
----------------------------------------------------------------------------
-ID                    MCU           Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-lpmsp430fr5739        msp430fr5739  16MHz     15K    1K    FraunchPad w/ msp430fr5739
-lpmsp430f5529         msp430f5529   16MHz     128K   1K    LaunchPad w/ msp430f5529 (16MHz)
-lpmsp430f5529_25      msp430f5529   25MHz     128K   1K    LaunchPad w/ msp430f5529 (25MHz)
-lpmsp430fr5969        msp430fr5969  8MHz      64K    1K    LaunchPad w/ msp430fr5969
-lpmsp430g2231         msp430g2231   1MHz      2K     128B   LaunchPad w/ msp430g2231 (1MHz)
-lpmsp430g2452         msp430g2452   16MHz     8K     256B   LaunchPad w/ msp430g2452 (16MHz)
-lpmsp430g2553         msp430g2553   16MHz     16K    512B   LaunchPad w/ msp430g2553 (16MHz)
+================================================================================
+ID              MCU           Frequency    Flash    RAM    Name
+--------------  ------------  -----------  -------  -----  ----------------------------------------
+lpmsp430fr5739  MSP430FR5739  16MHz        15.37KB  1KB    TI FraunchPad MSP-EXP430FR5739LP
+lpmsp430f5529   MSP430F5529   25MHz        47KB     8KB    TI LaunchPad MSP-EXP430F5529LP
+lpmsp430fr2311  MSP430FR2311  16MHz        3.75KB   1KB    TI LaunchPad MSP-EXP430FR2311LP
+lpmsp430fr2355  MSP430FR2355  16MHz        32KB     4KB    TI LaunchPad MSP-EXP430FR2355LP
+...
+```
+
+List every board that supports the Mbed framework, across all platforms:
+
+```bash
+pio boards mbed
 ```

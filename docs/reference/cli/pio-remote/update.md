@@ -1,3 +1,7 @@
+---
+description: "Check or update installed Development Platforms and global Libraries on the remote machine."
+---
+
 <a id="cmd-remote-update"></a>
 
 # pio remote update {#pio-remote-update}
@@ -21,7 +25,7 @@ Check or update installed [Development Platforms](../../../hardware/platforms/in
 
 ### `-c, --only-check` {#cmdoption-pio-remote-update-c}
 
-DEPRECATED. Please use `--dry-run` instead.
+DEPRECATED. Use `--dry-run` instead.
 
 ### `--dry-run` {#cmdoption-pio-remote-update-dry-run}
 
@@ -29,9 +33,11 @@ Do not update, only check for the new versions
 
 ## Examples {#examples}
 
-```text
-> pio remote update
+```bash
+pio remote update
+```
 
+```text
 Platform Manager
 ================
 Platform timsp430

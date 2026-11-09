@@ -1,6 +1,13 @@
+---
+description: Create a PlatformIO project, or add boards, options and IDE project files to an existing one.
+---
+
 <a id="cmd-project-init"></a>
 
 # pio project init {#pio-project-init}
+
+Create a PlatformIO project, or update an existing one: add boards, set
+options, or generate project files for an IDE.
 
 ## Usage {#usage}
 
@@ -10,16 +17,20 @@ pio project init [OPTIONS]
 
 ## Description {#description}
 
-Initialize a new PlatformIO based project or update existing with new data.
+In a directory that is not yet a project, the command creates:
 
-This command will create:
+| Path | Purpose |
+| --- | --- |
+| [`platformio.ini`](../../platformio-ini/index.md) | The project configuration file |
+| [`include`](../../platformio-ini/platformio/include-dir.md) | Project header files |
+| [`src`](../../platformio-ini/platformio/src-dir.md) | Project source files (`.c`, `.cpp`, `.S`, `.ino`, ...) |
+| [`lib`](../../platformio-ini/platformio/lib-dir.md) | Project-specific (private) libraries; see [Library Dependency Finder](../../../guides/libraries/ldf.md) |
+| [`test`](../../platformio-ini/platformio/test-dir.md) | [Unit tests](../../../guides/unit-testing/index.md) |
+| `.gitignore` | Excludes the build output from version control |
 
-- ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md)
-- [include_dir](../../platformio-ini/platformio/include-dir.md), put project header files here
-- [src_dir](../../platformio-ini/platformio/src-dir.md), put project source files here (`*.h, *.c, *.cpp, *.S, *.ino, etc.`)
-- [lib_dir](../../platformio-ini/platformio/lib-dir.md), put project specific (private) libraries here. See also [Library Dependency Finder (LDF)](../../../guides/libraries/ldf.md)
-- [test_dir](../../platformio-ini/platformio/test-dir.md), put project tests here. More details [Unit Testing](../../../guides/unit-testing/index.md)
-- Miscellaneous files for VCS and [Continuous Integration](../../../guides/ci/index.md) support.
+In an existing project, it keeps your files and only adds what you ask for.
+Unless you pass `--no-install-dependencies`, it then installs the development
+platforms, toolchains, frameworks and libraries the project needs.
 
 ## Options {#options}
 
@@ -27,122 +38,106 @@ This command will create:
 
 ### `-d, --project-dir` {#cmdoption-pio-project-init-d}
 
-A path to a directory where *PlatformIO* will initialize new project.
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-project-init-board"></a>
 
 ### `-b, --board` {#cmdoption-pio-project-init-b}
 
-If you specify board `ID` (you can pass multiple `--board` options), then *PlatformIO* will automatically generate environment for ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md) and pre-fill these data:
-
-- [platform](../../platformio-ini/env/platform.md)
-- [framework](../../platformio-ini/env/framework.md)
-- [board](../../platformio-ini/env/board.md)
-
-The full list with pre-configured boards is available here [Development Platforms](../../../hardware/platforms/index.md).
+Add a [project environment](../../platformio-ini/env/index.md) for a board ID.
+Repeat the option to add several boards. The new environment, `[env:<board_id>]`,
+sets [`platform`](../../platformio-ini/env/platform.md),
+[`board`](../../platformio-ini/env/board.md) and, if the board supports any,
+the board's first [`framework`](../../platformio-ini/env/framework.md).
+Boards that already have an environment are skipped. Find board IDs with
+[`pio boards`](../pio-boards.md).
 
 ### `--ide` {#cmdoption-pio-project-init-ide}
 
-Initialize PlatformIO project for the specified IDE which can be imported later via "Import Project" functionality.
-
-A list with supported IDE is available within `pio project init --help` command. Also, please take a look at [Cloud & Desktop IDEs](../../../guides/ide/index.md) page.
+Generate project files for an IDE: `clion`, `codeblocks`, `eclipse`, `emacs`,
+`netbeans`, `qtcreator`, `sublimetext`, `vim`, `visualstudio` or `vscode`. Then
+open or import the project in that IDE. See
+[IDE integrations](../../../guides/ide/index.md).
 
 <a id="cmdoption-pio-project-init-environment"></a>
 
 ### `-e, --environment` {#cmdoption-pio-project-init-e}
 
-Update project using existing environment.
+The environment to update with `--project-option`, to use for `--ide` and
+`--sample-code`, and whose dependencies to install. If you pass options for an
+environment that does not exist, it is created. With `--environment`, the
+`--board` options are ignored.
 
 <a id="cmdoption-pio-project-init-project-option"></a>
 
 ### `-O, --project-option` {#cmdoption-pio-project-init-O}
 
-Initialize project with additional options from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md). For example, `pio project init --project-option="lib_deps=ArduinoJSON"`. Multiple options are allowed.
+A `platformio.ini` option as `name=value`, for example
+`-O "lib_deps=bblanchon/ArduinoJson"`. Repeat it to set several options. The
+options go to every environment added with `--board`, or to the environment
+given with `--environment`; in the latter case, options of the
+[`[platformio]` section](../../platformio-ini/platformio/index.md) go to that
+section.
 
 ### `--env-prefix` {#cmdoption-pio-project-init-env-prefix}
 
-An environment prefix which will be used with pair in [board](../../platformio-ini/env/board.md) ID. For example, the default environment name for [Teensy 3.1 / 3.2](/hardware/boards/teensy/teensy31) board will be `[env:teensy31]`.
+A prefix for the names of environments added with `--board`. For example,
+`--env-prefix dev_ --board uno` adds `[env:dev_uno]`.
 
 ### `--no-install-dependencies` {#cmdoption-pio-project-init-no-install-dependencies}
 
-Do not resolve project dependencies and do not install missed packages.
+Do not install the packages and libraries the project needs.
 
 ### `--sample-code` {#cmdoption-pio-project-init-sample-code}
 
-:::info
-
-Added in version 6.1.7.
-
-:::
-
-Include sample code in the newly created project. The availability of sample code depends on the [Development Platforms](../../../hardware/platforms/index.md) being used.
+Add a sample `main` source file to `src` if the environment's development
+platform or framework provides one. Added in PlatformIO Core 6.1.7.
 
 <a id="cmdoption-pio-project-init-silent"></a>
 
 ### `-s, --silent` {#cmdoption-pio-project-init-s}
 
-Suppress progress reporting.
+Do not print progress messages.
 
 ## Examples {#examples}
 
-1. Initialize new project in a current working directory
+Create a project for Arduino Uno in the current directory:
+
+```bash
+pio project init --board uno
+```
 
 ```text
-> pio project init
-
-The current working directory *** will be used for the new project.
-You can specify another project directory via
-`pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
-
-The following files/directories will be created in ***
-platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
-src - Put your source files here
-lib - Put here project specific (private) libraries
+The following files/directories have been created in /home/user/blink
+include - Put project header files here
+lib - Put project specific (private) libraries here
+src - Put project source files here
+platformio.ini - Project Configuration File
+...
 Project has been successfully initialized!
-Useful commands:
-`pio run` - process/build project from the current directory
-`pio run --target upload` or `pio run -t upload` - upload firmware to embedded board
-`pio run --target clean` - clean project (remove compiled files)
 ```
 
-2. Initialize new project in a specified directory
+Create a project in another directory:
 
-```text
-> pio project init -d %PATH_TO_DIR%
-
-The following files/directories will be created in ***
- platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
-...
+```bash
+pio project init -d path/to/project --board uno
 ```
 
-3. Initialize project for Arduino Uno
+Create a project for Teensy 3.1 with the [Mbed](/hardware/frameworks/mbed)
+framework instead of the board's default:
 
-```text
-> pio project init --board uno
-
-The current working directory *** will be used for the new project.
-You can specify another project directory via
-`pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
-...
+```bash
+pio project init --board teensy31 --project-option "framework=mbed"
 ```
 
-4. Initialize project for Teensy 3.1 board with custom [Mbed](/hardware/frameworks/mbed)
+Add an environment named `native` with custom options:
 
-```text
-> pio project init --board teensy31 --project-option "framework=mbed"
-
-The current working directory *** will be used for the new project.
-You can specify another project directory via
-`pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
-
-...
+```bash
+pio project init --environment native --project-option="platform=native" --project-option="build_flags=-DRELEASE=1"
 ```
 
-5. Initialize a new project passing working environment name and its options
+Generate VS Code project files for an existing project:
 
-```text
-> pio project init --environment native --project-option="platform=native" --project-option="build_flags=-DRELEASE=1"
-
-The current working directory *** will be used for the new project.
-...
+```bash
+pio project init --ide vscode
 ```

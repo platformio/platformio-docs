@@ -1,16 +1,20 @@
+---
+description: "Custom build flags/options for preprocessing, compilation, assembly, and linking processes (platformio.ini option build_flags)."
+---
+
 <a id="projectconf-build-flags"></a>
 
 # `build_flags` {#build-flags}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
+- **Environment variable:** [`PLATFORMIO_BUILD_FLAGS`](../../environment-variables.md#envvar-PLATFORMIO_BUILD_FLAGS), appended to the values in `platformio.ini`
 
 These flags/options affect the preprocessing, compilation, assembly, and linking processes for C and C++ code. All compiler and linker flags can be used. Despite the name, `CPPDEFINES` (C PreProcessor) rows also apply to the C compiler.
 
 For more detailed information about available compiler flags/options, please visit [GCC Command Options](https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html) official documentation.
 
-This option can also be set by the global environment variable [`PLATFORMIO_BUILD_FLAGS`](../../environment-variables.md#envvar-PLATFORMIO_BUILD_FLAGS).
-
-## Scopes (SCons Variables) {#scopes-scons-variables}
+## Scopes (SCons variables) {#scopes-scons-variables}
 
 | Format | Affects build variable | Description |
 |---|---|---|
@@ -55,17 +59,17 @@ build_flags = -DLAST_BUILD_TIME=$UNIX_TIME
 
 :::note
 
-If you need to control build flags that are specific for debug configuration please refer to [debug_build_flags](./debug-build-flags.md).
+If you need to control build flags that are specific for debug configuration see [debug_build_flags](./debug-build-flags.md).
 
 :::
 
-## Built-in Variables {#built-in-variables}
+## Built-in variables {#built-in-variables}
 
 You can inject the built-in variables into your build flags, such as:
 
 - `$PYTHONEXE`, full path to current Python interpreter
 - `$UNIX_TIME`, current time in Unix format
-- `$PIOENV`, name of build environment from ["platformio.ini" (Project Configuration File)](../index.md)
+- `$PIOENV`, name of build environment from [`platformio.ini`](../index.md)
 - `$PIOPLATFORM`, name of development platform
 - `$PIOFRAMEWORK`, a list of frameworks
 - `$PROJECT_DIR`, project directory
@@ -75,13 +79,13 @@ You can inject the built-in variables into your build flags, such as:
 
 See the [full list of PlatformIO variables](https://github.com/platformio/platformio-core/blob/develop/platformio/builder/main.py).
 
-Please use target `envdump` for the [`pio run --target`](../../cli/pio-run.md#cmdoption-pio-run-t) command to see ALL variable values for a build environment.
+Use target `envdump` for the [`pio run --target`](../../cli/pio-run.md#cmdoption-pio-run-t) command to see ALL variable values for a build environment.
 
 ## Stringification {#stringification}
 
 Sometimes you may want to convert a macro argument into a valid C string constant. In this case, you need to wrap a value with double quotes (`"`) and escape double quotes (`"` -> `\\"`) in the constant value.
 
-Here is an example of a macro definition that uses stringification and [build_flags](#projectconf-build-flags). Please note that we enclosed the flag in the single quotes to prevent the shell evaluation:
+Here is an example of a macro definition that uses stringification and [build_flags](#projectconf-build-flags). Note that we enclosed the flag in the single quotes to prevent the shell evaluation:
 
 **platformio.ini**
 
@@ -143,11 +147,11 @@ Use cases:
 
 :::note
 
-If you need more advanced control and would like to apply changes to a PlatformIO Build System environment, please refer to [Advanced Scripting](../../../guides/scripting/index.md).
+If you need more advanced control and would like to apply changes to a PlatformIO Build System environment, see [Advanced Scripting](../../../guides/scripting/index.md).
 
 :::
 
-Example:
+## Example
 
 ```ini
 [env:generate_flags_with_external_command]

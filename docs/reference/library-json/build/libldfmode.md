@@ -1,5 +1,10 @@
+---
+description: "Specify Library Dependency Finder Mode."
+---
+
 # `libLDFMode` {#libldfmode}
 
-*Optional* | Type: `String`
+- **Required:** No
+- **Type:** String
 
 Specify Library Dependency Finder Mode. See [Dependency Finder Mode](../../../guides/libraries/ldf.md#ldf-mode) for details.

@@ -1,3 +1,7 @@
+---
+description: "Process environments which are defined in platformio.ini file remotely."
+---
+
 <a id="cmd-remote-run"></a>
 
 # pio remote run {#pio-remote-run}
@@ -15,7 +19,7 @@ pio remote --agent NAME run [OPTIONS]
 
 ## Description {#description}
 
-Process environments which are defined in ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md) file remotely. By default, [Remote Development](../../../guides/remote-development.md) builds project on a host machine and deploy final firmware (program) to a remote device (embedded board).
+Process environments which are defined in [`platformio.ini`](../../platformio-ini/index.md) file remotely. By default, [Remote Development](../../../guides/remote-development.md) builds project on a host machine and deploy final firmware (program) to a remote device (embedded board).
 
 If you need to process project on a remote machine, please use [`pio remote run --force-remote`](#cmdoption-pio-remote-run-r) option. In this case, [Remote Development](../../../guides/remote-development.md) will automatically synchronize your project with remote machine, install required toolchains, frameworks, SDKs, etc., and process project.
 
@@ -27,7 +31,7 @@ If you need to process project on a remote machine, please use [`pio remote run 
 
 Process specified environments.
 
-You can also specify which environments should be processed by default using [default_envs](../../platformio-ini/platformio/default-envs.md) option from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+You can also specify which environments should be processed by default using [default_envs](../../platformio-ini/platformio/default-envs.md) option from [`platformio.ini`](../../platformio-ini/index.md).
 
 <a id="cmdoption-pio-remote-run-target"></a>
 
@@ -45,19 +49,25 @@ If upload port is not specified, PlatformIO will try to detect it automatically.
 
 ### `-d, --project-dir` {#cmdoption-pio-remote-run-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
+
+<a id="cmdoption-pio-remote-run-silent"></a>
+
+### `-s, --silent` {#cmdoption-pio-remote-run-s}
+
+Print only errors.
 
 <a id="cmdoption-pio-remote-run-verbose"></a>
 
 ### `-v, --verbose` {#cmdoption-pio-remote-run-v}
 
-Shows detailed information when processing environments.
+Print detailed information while processing environments.
 
 This option can also be set globally using [force_verbose](../pio-settings.md#setting-force-verbose) setting or by environment variable [`PLATFORMIO_SETTING_FORCE_VERBOSE`](../../environment-variables.md#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE).
 
 ### `--disable-auto-clean` {#cmdoption-pio-remote-run-disable-auto-clean}
 
-Disable auto-clean of [build_dir](../../platformio-ini/platformio/build-dir.md) when ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md) or [src_dir](../../platformio-ini/platformio/src-dir.md) (project structure) have been modified.
+Disable auto-clean of [build_dir](../../platformio-ini/platformio/build-dir.md) when [`platformio.ini`](../../platformio-ini/index.md) or [src_dir](../../platformio-ini/platformio/src-dir.md) (project structure) have been modified.
 
 <a id="cmdoption-pio-remote-run-force-remote"></a>
 
@@ -69,9 +79,11 @@ If you need to process project on remote machine, please use [`pio remote run --
 
 ## Example {#example}
 
-```text
-> pio remote run --environment uno --target upload
+```bash
+pio remote run --environment uno --target upload
+```
 
+```text
 Building project locally
 [Wed Oct 26 16:35:09 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
 --------------------------------------------------------------------------------

@@ -1,6 +1,12 @@
+---
+description: Remove an owner from an organization.
+---
+
 <a id="cmd-org-remove"></a>
 
 # pio org remove {#pio-org-remove}
+
+Remove an owner from an organization.
 
 ## Usage {#usage}
 
@@ -10,20 +16,26 @@ pio org remove ORGNAME USERNAME
 
 ## Description {#description}
 
-Remove a user from an organization.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME` | The organization |
+| `USERNAME` | The owner to remove |
 
-If you need to destroy an existing organization, please use [pio org destroy](./destroy.md) command.
+To delete the whole organization, use [`pio org destroy`](./destroy.md).
 
 ## Examples {#examples}
 
-Remove Bob from "platformio" organization:
+Remove `bob` from the `platformio` organization:
 
 ```bash
-> pio org remove platformio bob
+pio org remove platformio bob
+```
+
+```text
 The `bob` owner has been successfully removed from the `platformio` organization.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio org add](./add.md)
-- [pio org list](./list.md)
+- [`pio org add`](./add.md)
+- [`pio org destroy`](./destroy.md)

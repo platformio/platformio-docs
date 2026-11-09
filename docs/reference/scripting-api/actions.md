@@ -1,6 +1,10 @@
+---
+description: "The PlatformIO Build System has a rich API that allows one to attach different pre-/post actions (hooks) using env.AddPreAction(target, callback) or env.AddPreAction(target, [callback1, callback2, ...]) function."
+---
+
 <a id="scripting-actions"></a>
 
-# Pre & Post Actions {#pre-post-actions}
+# Pre and post actions {#pre-post-actions}
 
 The PlatformIO Build System has a rich API that allows one to attach different pre-/post actions (hooks) using `env.AddPreAction(target, callback)` or `env.AddPreAction(target, [callback1, callback2, ...])` function. The first argument `target` can be the name of a target that is passed using the [`pio run --target`](../cli/pio-run.md#cmdoption-pio-run-t) command, the name of a built-in target (buildprog, size, upload, program, buildfs, uploadfs, uploadfsota) or the path to a file which PlatformIO processes (ELF, HEX, BIN, OBJ, etc.).
 
@@ -10,9 +14,9 @@ The actions can only be applied to the global construction environment (see [Con
 
 :::
 
-**Examples**
+## Examples
 
-The `extra_script.py` file is located in the same directory as ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+The `extra_script.py` file is located in the same directory as [`platformio.ini`](../platformio-ini/index.md).
 
 `platformio.ini`:
 

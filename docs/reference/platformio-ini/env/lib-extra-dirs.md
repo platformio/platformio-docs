@@ -1,3 +1,7 @@
+---
+description: "A list of extra directories/storages where Library Dependency Finder (LDF) will look for dependencies (platformio.ini option lib_extra_dirs)."
+---
+
 <a id="projectconf-lib-extra-dirs"></a>
 
 # `lib_extra_dirs` {#lib-extra-dirs}
@@ -18,7 +22,9 @@ lib_deps =
 
 ---
 
-Type: `DirPath` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
+- **Environment variable:** [`PLATFORMIO_LIB_EXTRA_DIRS`](../../environment-variables.md#envvar-PLATFORMIO_LIB_EXTRA_DIRS), appended to the values in `platformio.ini`
 
 A list with extra directories/storages where [Library Dependency Finder (LDF)](../../../guides/libraries/ldf.md) will look for dependencies.
 
@@ -28,7 +34,7 @@ This is a not direct path to a library with source code. It should be a path to 
 
 :::
 
-Example:
+## Example
 
 ```ini
 [env:myenv]

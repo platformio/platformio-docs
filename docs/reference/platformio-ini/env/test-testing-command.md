@@ -1,8 +1,13 @@
+---
+description: "A custom testing command that runs test cases and returns results to the standard output (platformio.ini option test_testing_command)."
+---
+
 <a id="projectconf-test-testing-command"></a>
 
 # `test_testing_command` {#test-testing-command}
 
-Type: `String` | Multiline Arguments: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 A custom testing command that executes test cases and returns results to the standard output.
 
@@ -27,6 +32,6 @@ test_testing_command =
   option2_value
 ```
 
-Please note that you can pass extra arguments to the program using CLI and [`pio test --program-arg`](../../cli/pio-test.md#cmdoption-pio-test-a) option.
+Note that you can pass extra arguments to the program using CLI and [`pio test --program-arg`](../../cli/pio-test.md#cmdoption-pio-test-a) option.
 
 See [Simulators](../../../guides/unit-testing/simulators/index.md) examples.

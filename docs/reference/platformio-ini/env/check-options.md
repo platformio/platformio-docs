@@ -1,15 +1,17 @@
+---
+description: Check options of the platformio.ini [env] section.
+---
+
 <a id="projectconf-section-env-check"></a>
 
 # Check options {#check-options}
 
-:::info[See also]
+Configure static code analysis with `pio check`.
 
-Please make sure to read [Static Code Analysis](../../../guides/static-code-analysis/index.md) guide first.
-
-:::
-
-- [`check_tool`](./check-tool.md)
-- [`check_flags`](./check-flags.md)
-- [`check_severity`](./check-severity.md)
-- [`check_skip_packages`](./check-skip-packages.md)
-- [`check_src_filters`](./check-src-filters.md)
+| Option | Description |
+| --- | --- |
+| [`check_tool`](./check-tool.md) | A list of check tools used for analysis |
+| [`check_src_filters`](./check-src-filters.md) | Configure a list of target files or directories for checking |
+| [`check_flags`](./check-flags.md) | An extra flags to be passed to a check tool |
+| [`check_severity`](./check-severity.md) | List of defect severity types for analysis |
+| [`check_skip_packages`](./check-skip-packages.md) | Skip checking includes from packages directory |

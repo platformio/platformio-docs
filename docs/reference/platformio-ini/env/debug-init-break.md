@@ -1,8 +1,14 @@
+---
+description: "An initial breakpoint that makes program stop whenever a certain point in the program is reached (platformio.ini option debug_init_break)."
+---
+
 <a id="projectconf-debug-init-break"></a>
 
 # `debug_init_break` {#debug-init-break}
 
-Type: `String` | Multiple: `No` | Default: `tbreak main`
+- **Type:** String
+- **Multiple values:** No
+- **Default:** `tbreak main`
 
 An initial breakpoint that makes your program stop whenever a certain point in the program is reached. **Default** value is set to `tbreak main` and means creating a temporary breakpoint at `int main(...)` function and automatically delete it after the first time a program stops there.
 
@@ -11,13 +17,13 @@ An initial breakpoint that makes your program stop whenever a certain point in t
 
 :::note
 
-Please note that each debugging tool (adapter, probe) has limited number of hardware breakpoints.
+Note that each debugging tool (adapter, probe) has limited number of hardware breakpoints.
 
 If you need more **Project Initial Breakpoints**, please place them in [debug_extra_cmds](./debug-extra-cmds.md).
 
 :::
 
-**Examples**
+## Examples
 
 ```ini
 [env:debug]

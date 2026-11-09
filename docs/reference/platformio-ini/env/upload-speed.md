@@ -1,8 +1,13 @@
+---
+description: "A connection speed (baud rate) which `uploader` tool uses when sending firmware to a board (platformio.ini option upload_speed)."
+---
+
 <a id="projectconf-upload-speed"></a>
 
 # `upload_speed` {#upload-speed}
 
-Type: `Number` | Multiple: `No`
+- **Type:** Integer
+- **Multiple values:** No
 
 A connection speed ([baud rate](http://en.wikipedia.org/wiki/Baud)) which "uploader" tool uses when sending firmware to board.
 

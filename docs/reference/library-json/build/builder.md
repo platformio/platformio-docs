@@ -1,6 +1,11 @@
+---
+description: "Override default PlatformIOLibBuilder with another builder."
+---
+
 # `builder` {#builder}
 
-*Optional* | Type: `String`
+- **Required:** No
+- **Type:** String
 
 Override default `PlatformIOLibBuilder` with another builder. Currently supported builders:
 

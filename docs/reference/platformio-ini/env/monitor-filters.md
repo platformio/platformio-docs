@@ -1,12 +1,17 @@
+---
+description: "Apply the filters and text transformations to monitor output (platformio.ini option monitor_filters)."
+---
+
 <a id="projectconf-monitor-filters"></a>
 
 # `monitor_filters` {#monitor-filters}
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 Apply filters and text transformation for device output. See available filters at [Filters](../../cli/pio-device/monitor.md#cmd-device-monitor-filters).
 
-Example:
+## Example
 
 ```ini
 [env:log_output_to_file_with_timestamp]

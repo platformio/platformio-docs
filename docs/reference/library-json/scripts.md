@@ -1,6 +1,11 @@
+---
+description: "Execute custom scripts during the special Package Management CLI life cycle events."
+---
+
 # `scripts` {#scripts}
 
-*Optional* | Type: `Object`
+- **Required:** No
+- **Type:** Object with `postinstall` and `preuninstall` keys
 
 Execute custom scripts during the special [Package Management CLI](../cli/pio-pkg/index.md) life cycle events:
 
@@ -15,9 +20,9 @@ Both `postinstall` and `preuninstall` values must be specified as a *list* (arra
 
 :::
 
-**Examples**
+## Examples
 
-1. Run a custom Python script located in the package "scripts" folder AFTER the package is installed. Please note that you don't need to specify a Python interpreter for Python scripts.
+1. Run a custom Python script located in the package "scripts" folder AFTER the package is installed. Note that you don't need to specify a Python interpreter for Python scripts.
 
    ```javascript
    "scripts": {

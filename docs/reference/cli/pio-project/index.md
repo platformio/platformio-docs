@@ -1,28 +1,19 @@
+---
+description: Create PlatformIO projects and inspect their configuration and build metadata.
+---
+
 <a id="cmd-project"></a>
 
-# Project Manager CLI {#project-manager-cli}
+# pio project {#project-manager-cli}
 
-To print all available commands and options use:
+Create projects and inspect their configuration.
 
-```bash
-pio project --help
-pio project COMMAND --help
-```
+## Commands {#commands}
 
-- [pio project config](./config.md)
+| Command | Description |
+| --- | --- |
+| [`pio project init`](./init.md) | Create a project, or add boards and IDE files to one |
+| [`pio project config`](./config.md) | Show or check the computed `platformio.ini` configuration |
+| [`pio project metadata`](./metadata.md) | Show build metadata for IDE integrations |
 
-  - [Usage](./config.md#usage)
-  - [Description](./config.md#description)
-  - [Examples](./config.md#examples)
-
-- [pio project init](./init.md)
-
-  - [Usage](./init.md#usage)
-  - [Description](./init.md#description)
-  - [Options](./init.md#options)
-  - [Examples](./init.md#examples)
-
-- [pio project metadata](./metadata.md)
-
-  - [Usage](./metadata.md#usage)
-  - [Description](./metadata.md#description)
+For the options of a command, run `pio project COMMAND --help`.

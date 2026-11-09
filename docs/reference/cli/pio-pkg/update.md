@@ -1,3 +1,7 @@
+---
+description: "Update the project dependencies, custom packages from the PlatformIO Registry, or external sources."
+---
+
 <a id="cmd-pkg-update"></a>
 
 # pio pkg update {#pio-pkg-update}
@@ -12,7 +16,7 @@ pio pkg update [OPTIONS]
 
 Update the project dependencies, custom packages from the [PlatformIO Registry](https://registry.platformio.org), or external sources.
 
-If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will update the following project dependencies based on ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md):
+If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will update the following project dependencies based on [`platformio.ini`](../../platformio-ini/index.md):
 
 - Library dependencies declared using the [lib_deps](../../platformio-ini/env/lib-deps.md) option
 - Development platform declared using the [platform](../../platformio-ini/env/platform.md) option and its dependencies (toolchain, framework, SDKs, debugging server, etc)
@@ -26,24 +30,24 @@ See [pio pkg install](./install.md) command for package specification.
 
 ### `-d, --project-dir` {#cmdoption-pio-pkg-update-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-pkg-update-environment"></a>
 
 ### `-e, --environment` {#cmdoption-pio-pkg-update-e}
 
-Update project dependencies only for the specified environments. Multiple environments are allowed.
+Update project dependencies only for the specified environments. Repeat the option for several environments.
 
 <a id="cmdoption-pio-pkg-update-platform"></a>
 
 ### `-p, --platform` {#cmdoption-pio-pkg-update-p}
 
-Update specified development platform. Multiple items are allowed.
+Update specified development platform. Repeat the option for several packages.
 
 **Examples**
 
 ```bash
-pio pkg update -p "aceinna/aceinna_imu@^1.3.8" -p "platformio/atmelavr"
+pio pkg update -p "platformio/espressif32@^6" -p "platformio/atmelavr"
 pio pkg update --platform "https://github.com/platformio/platform-sifive.git"
 ```
 
@@ -51,7 +55,7 @@ pio pkg update --platform "https://github.com/platformio/platform-sifive.git"
 
 ### `-t, --tool` {#cmdoption-pio-pkg-update-t}
 
-Update specified tool. Multiple items are allowed.
+Update specified tool. Repeat the option for several packages.
 
 **Examples**
 
@@ -64,7 +68,7 @@ pio pkg update --tool https://github.com/platformio/platform-sifive.git
 
 ### `-l, --library` {#cmdoption-pio-pkg-update-l}
 
-Update specified library. Multiple items are allowed.
+Update specified library. Repeat the option for several packages.
 
 **Examples**
 
@@ -75,7 +79,7 @@ pio pkg update --library https://github.com/Makuna/NeoPixelBus.git
 
 ### `--no-save` {#cmdoption-pio-pkg-update-no-save}
 
-Prevent saving specified packages to ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+Prevent saving specified packages to [`platformio.ini`](../../platformio-ini/index.md).
 
 ### `--skip-dependencies` {#cmdoption-pio-pkg-update-skip-dependencies}
 
@@ -101,7 +105,7 @@ Specify a custom Package Manager storage for global packages.
 
 Suppress progress reporting.
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [pio pkg outdated](./outdated.md)
 - [pio pkg install](./install.md)

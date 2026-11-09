@@ -1,3 +1,7 @@
+---
+description: "Create a tarball from a package (library, Development Platforms, or tool)."
+---
+
 <a id="cmd-pkg-pack"></a>
 
 # pio pkg pack {#pio-pkg-pack}
@@ -72,7 +76,7 @@ All files are included by default, with the following exceptions:
 - If the [export](../../library-json/export/index.md) field is not declared in the manifest, the [next default filters](https://github.com/platformio/platformio-core/blob/develop/platformio/package/pack.py#L35) will be applied
 - If the [export](../../library-json/export/index.md) field is not declared in the manifest and there is a `.gitignore` file, then ignored files in that and all child directories will be excluded from the package.
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [library.json](../../library-json/index.md)
 - [pio pkg publish](./publish.md)

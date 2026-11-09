@@ -1,3 +1,7 @@
+---
+description: "Perform static analysis check on PlatformIO based project."
+---
+
 <a id="cmd-check"></a>
 
 # pio check {#pio-check}
@@ -61,17 +65,17 @@ Example: `pio check --severity=high`
 
 ### `-d, --project-dir` {#cmdoption-pio-check-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to the current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-check-project-conf"></a>
 
 ### `-c, --project-conf` {#cmdoption-pio-check-c}
 
-Process project with a custom ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+Process project with a custom [`platformio.ini`](../platformio-ini/index.md).
 
 ### `--json-output` {#cmdoption-pio-check-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format.
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ### `--fail-on-defect` {#cmdoption-pio-check-fail-on-defect}
 
@@ -95,10 +99,10 @@ Suppress progress reporting and show only defects with `high` severity. See [Def
 
 ### `-v, --verbose` {#cmdoption-pio-check-v}
 
-Show detailed information when processing environments.
+Print detailed information while processing environments.
 
 This option can also be set globally using [force_verbose](./pio-settings.md#setting-force-verbose) setting or by environment variable [`PLATFORMIO_SETTING_FORCE_VERBOSE`](../environment-variables.md#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE).
 
 ## Examples {#examples}
 
-For the examples please follow to [Static Code Analysis](../../guides/static-code-analysis/index.md) page.
+For the examples see [Static Code Analysis](../../guides/static-code-analysis/index.md) page.

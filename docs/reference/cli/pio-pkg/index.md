@@ -1,97 +1,29 @@
+---
+description: Install, update, list and publish PlatformIO packages - development platforms, tools and libraries.
+---
+
 <a id="cmd-pkg"></a>
 
-# Package Management CLI {#package-management-cli}
+# pio pkg {#package-management-cli}
 
-PlatformIO Package Manager.
+Manage packages: development platforms, tools (toolchains, frameworks,
+uploaders) and libraries. Most commands work on the current project's
+dependencies by default, or on globally installed packages with `--global`.
 
-To print all available commands and options use:
+## Commands {#commands}
 
-```bash
-pio pkg --help
-pio pkg COMMAND --help
-```
+| Command | Description |
+| --- | --- |
+| [`pio pkg install`](./install.md) | Install the project dependencies or a package |
+| [`pio pkg update`](./update.md) | Update packages to the latest compatible versions |
+| [`pio pkg uninstall`](./uninstall.md) | Uninstall packages |
+| [`pio pkg list`](./list.md) | List installed packages |
+| [`pio pkg outdated`](./outdated.md) | List outdated project packages |
+| [`pio pkg search`](./search.md) | Search the PlatformIO Registry |
+| [`pio pkg show`](./show.md) | Show information about a package in the registry |
+| [`pio pkg exec`](./exec.md) | Run a command from a package |
+| [`pio pkg pack`](./pack.md) | Create a package archive |
+| [`pio pkg publish`](./publish.md) | Publish a package to the registry |
+| [`pio pkg unpublish`](./unpublish.md) | Remove a package or a version from the registry |
 
-- [pio pkg exec](./exec.md)
-
-  - [Usage](./exec.md#usage)
-  - [Description](./exec.md#description)
-  - [Options](./exec.md#options)
-  - [Examples](./exec.md#examples)
-
-- [pio pkg install](./install.md)
-
-  - [Usage](./install.md#usage)
-  - [Description](./install.md#description)
-  - [Options](./install.md#options)
-  - [Package Types](./install.md#package-types)
-  - [Package Specifications](./install.md#package-specifications)
-  - [Version Requirements](./install.md#version-requirements)
-  - [See Also](./install.md#see-also)
-
-- [pio pkg list](./list.md)
-
-  - [Usage](./list.md#usage)
-  - [Description](./list.md#description)
-  - [Options](./list.md#options)
-  - [See Also](./list.md#see-also)
-
-- [pio pkg outdated](./outdated.md)
-
-  - [Usage](./outdated.md#usage)
-  - [Description](./outdated.md#description)
-  - [Options](./outdated.md#options)
-  - [Examples](./outdated.md#examples)
-
-- [pio pkg pack](./pack.md)
-
-  - [Usage](./pack.md#usage)
-  - [Description](./pack.md#description)
-  - [Options](./pack.md#options)
-  - [Files included in package](./pack.md#files-included-in-package)
-  - [See Also](./pack.md#see-also)
-
-- [pio pkg publish](./publish.md)
-
-  - [Usage](./publish.md#usage)
-  - [Description](./publish.md#description)
-  - [Options](./publish.md#options)
-  - [See Also](./publish.md#see-also)
-
-- [pio pkg search](./search.md)
-
-  - [Usage](./search.md#usage)
-  - [Description](./search.md#description)
-  - [Options](./search.md#options)
-  - [Search Qualifiers](./search.md#search-qualifiers)
-  - [Search Operators](./search.md#search-operators)
-  - [Examples](./search.md#examples)
-  - [See Also](./search.md#see-also)
-
-- [pio pkg show](./show.md)
-
-  - [Usage](./show.md#usage)
-  - [Description](./show.md#description)
-  - [Options](./show.md#options)
-  - [Examples](./show.md#examples)
-  - [See Also](./show.md#see-also)
-
-- [pio pkg uninstall](./uninstall.md)
-
-  - [Usage](./uninstall.md#usage)
-  - [Description](./uninstall.md#description)
-  - [Options](./uninstall.md#options)
-  - [See Also](./uninstall.md#see-also)
-
-- [pio pkg unpublish](./unpublish.md)
-
-  - [Usage](./unpublish.md#usage)
-  - [Description](./unpublish.md#description)
-  - [Options](./unpublish.md#options)
-  - [See Also](./unpublish.md#see-also)
-
-- [pio pkg update](./update.md)
-
-  - [Usage](./update.md#usage)
-  - [Description](./update.md#description)
-  - [Options](./update.md#options)
-  - [See Also](./update.md#see-also)
+For the options of a command, run `pio pkg COMMAND --help`.

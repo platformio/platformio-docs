@@ -1,8 +1,13 @@
+---
+description: "The repository in which the source code can be found."
+---
+
 <a id="manifest-library-json-repository"></a>
 
 # `repository` {#repository}
 
-*Optional* | Type: `Object`
+- **Required:** No
+- **Type:** Object
 
 The repository in which the source code can be found. The field consists of the next items:
 
@@ -10,7 +15,7 @@ The repository in which the source code can be found. The field consists of the 
 - `url`
 - `branch` if is not specified, default branch will be used. This field will be ignored if tag/release exists with the value of [version](./version.md).
 
-**Example**
+## Example
 
 ```javascript
 "repository":

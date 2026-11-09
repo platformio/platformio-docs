@@ -1,14 +1,19 @@
+---
+description: "A list of library names which should be ignored by Library Dependency Finder (LDF) (platformio.ini option lib_ignore)."
+---
+
 <a id="projectconf-lib-ignore"></a>
 
 # `lib_ignore` {#lib-ignore}
 
 :::info[See also]
 
-Please make sure to read [Library Dependency Finder (LDF)](../../../guides/libraries/ldf.md) guide first.
+Read [Library Dependency Finder (LDF)](../../../guides/libraries/ldf.md) guide first.
 
 :::
 
-Type: `String` | Multiple: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 Specify libraries which should be ignored by Library Dependency Finder.
 

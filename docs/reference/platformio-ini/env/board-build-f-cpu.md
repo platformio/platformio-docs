@@ -1,8 +1,14 @@
+---
+description: "A custom MCU frequency (platformio.ini option board_build.f_cpu)."
+---
+
 <a id="projectconf-board-build-f-cpu"></a>
 
 # `board_build.f_cpu` {#board-build-f-cpu}
 
-Type: `Number` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
+- **Deprecated name:** `board_f_cpu` (still accepted, with a warning)
 
 The option `board_build.f_cpu` is used to define MCU frequency (Hertz, Clock). A format of this option is `C-like long integer` value with `L` suffix. The 1 Hertz is equal to `1L`, then 16 MHz (Mega Hertz) is equal to `16000000L`.
 

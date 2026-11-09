@@ -1,6 +1,12 @@
+---
+description: Create a team in an organization.
+---
+
 <a id="cmd-team-create"></a>
 
 # pio team create {#pio-team-create}
+
+Create a team in an organization.
 
 ## Usage {#usage}
 
@@ -10,22 +16,27 @@ pio team create [OPTIONS] ORGNAME:TEAMNAME
 
 ## Description {#description}
 
-Create a new team.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME:TEAMNAME` | The organization and the new team's name. Team names can contain letters, digits, and single hyphens, underscores or spaces between them, and can be up to 20 characters long. |
 
-### Options {#options}
+## Options {#options}
 
-#### `--description` {#cmdoption-pio-team-create-description}
+### `--description` {#cmdoption-pio-team-create-description}
 
-A team description.
+A description of the team.
 
 ## Examples {#examples}
 
 ```bash
-> pio team create platformio:dev --description "Developers team"
+pio team create platformio:dev --description "Developers team"
+```
+
+```text
 The team "dev" has been successfully created.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio team list](./list.md)
-- [pio team remove](./remove.md)
+- [`pio team update`](./update.md)
+- [`pio team destroy`](./destroy.md)

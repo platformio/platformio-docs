@@ -1,6 +1,12 @@
+---
+description: Update the profile of your PlatformIO Account.
+---
+
 <a id="cmd-account-update"></a>
 
 # pio account update {#pio-account-update}
+
+Update the profile of your [PlatformIO Account](../../../get-started/platformio-account.md).
 
 ## Usage {#usage}
 
@@ -10,32 +16,39 @@ pio account update [OPTIONS]
 
 ## Description {#description}
 
-Update [PlatformIO Account](../../../get-started/platformio-account.md) profile.
+Pass the fields to change as options. If you pass none, the command asks for
+each field, with the current value as the default.
 
-### Options {#options}
+## Options {#options}
 
-You can omit these options and enter them later in update Wizard.
+<a id="cmdoption-pio-account-register-current-password"></a>
 
-<a id="cmdoption-pio-account-register-u"></a>
+### `--current-password` {#cmdoption-pio-account-update-current-password}
 
-#### `--username, -u` {#cmdoption-pio-account-register-username}
+Your current password, to confirm the change. If you omit it, the command asks
+for it.
 
-A username that must contain at least 4 characters including single hyphens, and cannot begin or end with a hyphen.
+<a id="cmdoption-pio-account-register-username"></a>
 
-<a id="cmdoption-pio-account-register-e"></a>
+### `--username` {#cmdoption-pio-account-update-username}
 
-#### `--email, -e` {#cmdoption-pio-account-register-email}
+A new username. Usernames can contain letters, digits and single hyphens, cannot begin or end
+with a hyphen, and can be up to 38 characters long.
 
-An email. Please enter existing email, you will receive a confirmation letter.
+<a id="cmdoption-pio-account-register-email"></a>
 
-#### `--firstname` {#cmdoption-pio-account-register-firstname}
+### `--email` {#cmdoption-pio-account-update-email}
 
-A first name.
+A new email address. PlatformIO sends a confirmation email to it.
 
-#### `--lastname` {#cmdoption-pio-account-register-lastname}
+<a id="cmdoption-pio-account-register-firstname"></a>
 
-A last name.
+### `--firstname` {#cmdoption-pio-account-update-firstname}
 
-#### `--current-password` {#cmdoption-pio-account-register-current-password}
+A new first name.
 
-A current password to confirm this operation.
+<a id="cmdoption-pio-account-register-lastname"></a>
+
+### `--lastname` {#cmdoption-pio-account-update-lastname}
+
+A new last name.

@@ -1,54 +1,31 @@
+---
+description: Manage who can access your packages in the PlatformIO Registry.
+---
+
 <a id="cmd-access"></a>
 
 # pio access {#pio-access}
 
-Set access level on published resources (packages) in the registry.
+Manage access to resources (packages) you published in the
+[PlatformIO Registry](https://registry.platformio.org): make them public or
+private, and grant or revoke access for users and teams.
 
-You must have privileges to set the access of a resource:
+To change the access to a resource, you must:
 
-- You are an owner of published resources
-- You are a member of the team that owns a resource
-- You have been given "maintainer" privileges for a package, either as a member of a team or directly as an owner.
+- own the resource, or
+- be a member of the team that owns it, or
+- have `maintainer` access to it, directly or through a team.
 
-Management of teams and team memberships is done with the [pio team](../pio-team/index.md) command.
+Manage teams and their members with [`pio team`](../pio-team/index.md).
 
-To print all available commands and options use:
+## Commands {#commands}
 
-```bash
-pio access --help
-pio access COMMAND --help
-```
+| Command | Description |
+| --- | --- |
+| [`pio access grant`](./grant.md) | Grant a user or a team access to a resource |
+| [`pio access revoke`](./revoke.md) | Revoke a user's or a team's access to a resource |
+| [`pio access list`](./list.md) | List the resources you can access |
+| [`pio access public`](./public.md) | Make a resource public |
+| [`pio access private`](./private.md) | Make a resource private |
 
-- [pio access grant](./grant.md)
-
-  - [Usage](./grant.md#usage)
-  - [Description](./grant.md#description)
-  - [Examples](./grant.md#examples)
-  - [See Also](./grant.md#see-also)
-
-- [pio access list](./list.md)
-
-  - [Usage](./list.md#usage)
-  - [Description](./list.md#description)
-  - [Examples](./list.md#examples)
-
-- [pio access private](./private.md)
-
-  - [Usage](./private.md#usage)
-  - [Description](./private.md#description)
-  - [Examples](./private.md#examples)
-  - [See Also](./private.md#see-also)
-
-- [pio access public](./public.md)
-
-  - [Usage](./public.md#usage)
-  - [Description](./public.md#description)
-  - [Examples](./public.md#examples)
-  - [See Also](./public.md#see-also)
-
-- [pio access revoke](./revoke.md)
-
-  - [Usage](./revoke.md#usage)
-  - [Description](./revoke.md#description)
-  - [Examples](./revoke.md#examples)
-  - [See Also](./revoke.md#see-also)
+For the options of a command, run `pio access COMMAND --help`.

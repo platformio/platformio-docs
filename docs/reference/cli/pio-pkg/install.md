@@ -1,3 +1,7 @@
+---
+description: "Install the project dependencies or custom packages from the PlatformIO Registry or external sources."
+---
+
 <a id="cmd-pkg-install"></a>
 
 # pio pkg install {#pio-pkg-install}
@@ -12,7 +16,7 @@ pio pkg install [OPTIONS]
 
 Install the project dependencies or custom packages from the [PlatformIO Registry](https://registry.platformio.org) or external sources.
 
-If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will install the following project dependencies based on ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md):
+If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will install the following project dependencies based on [`platformio.ini`](../../platformio-ini/index.md):
 
 - Library dependencies declared using the [lib_deps](../../platformio-ini/env/lib-deps.md) option
 - Development platform declared using the [platform](../../platformio-ini/env/platform.md) option and its dependencies (toolchain, framework, SDKs, debugging server, etc)
@@ -24,24 +28,24 @@ If no custom packages (`--library`, `--platform`, or `--tool`) are specified, th
 
 ### `-d, --project-dir` {#cmdoption-pio-pkg-install-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-pkg-install-environment"></a>
 
 ### `-e, --environment` {#cmdoption-pio-pkg-install-e}
 
-Install project dependencies only for the specified environments. Multiple environments are allowed.
+Install project dependencies only for the specified environments. Repeat the option for several environments.
 
 <a id="cmdoption-pio-pkg-install-platform"></a>
 
 ### `-p, --platform` {#cmdoption-pio-pkg-install-p}
 
-Install specified development platform using [Package Specifications](#cmd-pkg-install-specifications). Multiple items are allowed.
+Install specified development platform using [Package Specifications](#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
 ```bash
-pio pkg install -p "aceinna/aceinna_imu@^1.3.8" -p "platformio/atmelavr"
+pio pkg install -p "platformio/espressif32@^6" -p "platformio/atmelavr"
 pio pkg install --platform "https://github.com/platformio/platform-sifive.git"
 ```
 
@@ -49,7 +53,7 @@ pio pkg install --platform "https://github.com/platformio/platform-sifive.git"
 
 ### `-t, --tool` {#cmdoption-pio-pkg-install-t}
 
-Install specified tool using [Package Specifications](#cmd-pkg-install-specifications). Multiple items are allowed.
+Install specified tool using [Package Specifications](#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
@@ -62,7 +66,7 @@ pio pkg install --tool https://github.com/platformio/platform-sifive.git
 
 ### `-l, --library` {#cmdoption-pio-pkg-install-l}
 
-Install specified library using [Package Specifications](#cmd-pkg-install-specifications). Multiple items are allowed.
+Install specified library using [Package Specifications](#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
@@ -73,7 +77,7 @@ pio pkg install --library https://github.com/Makuna/NeoPixelBus.git
 
 ### `--no-save` {#cmdoption-pio-pkg-install-no-save}
 
-Prevent saving specified packages to ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+Prevent saving specified packages to [`platformio.ini`](../../platformio-ini/index.md).
 
 ### `--skip-dependencies` {#cmdoption-pio-pkg-install-skip-dependencies}
 
@@ -85,7 +89,7 @@ Install a package but skip its dependencies declared in the manifest [dependenci
 
 :::warning
 
-We **DO NOT recommend installing** libraries in the global storage. Please use the [lib_deps](../../platformio-ini/env/lib-deps.md) option and declare library dependencies per project.
+We **DO NOT recommend installing** libraries in the global storage. Use the [lib_deps](../../platformio-ini/env/lib-deps.md) option and declare library dependencies per project.
 
 :::
 
@@ -165,7 +169,7 @@ Browse over 10,000 packages in the [PlatformIO Registry](https://registry.platfo
 
 ## Package Specifications {#package-specifications}
 
-PlatformIO supports different package sources which you can specify for [pio pkg install](#cmd-pkg-install) command or configure project dependencies using ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md) options:
+PlatformIO supports different package sources which you can specify for [pio pkg install](#cmd-pkg-install) command or configure project dependencies using [`platformio.ini`](../../platformio-ini/index.md) options:
 
 - [platform](../../platformio-ini/env/platform.md) - development platform
 - [platform_packages](../../platformio-ini/env/platform-packages.md) - custom tools/packages
@@ -437,7 +441,7 @@ platformio/espressif32@>=3.5.0,<4,!=3.2.0
 platformio/espressif32@^3.5.0,!=3.2.0
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [pio pkg uninstall](./uninstall.md)
 - [pio pkg outdated](./outdated.md)

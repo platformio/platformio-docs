@@ -1,6 +1,10 @@
+---
+description: "PlatformIO Build System allows you to add middleware functions that can be used for Build Node(Object) construction."
+---
+
 <a id="scripting-middlewares"></a>
 
-# Build Middlewares {#build-middlewares}
+# Build middlewares {#build-middlewares}
 
 PlatformIO Build System allows you to add middleware functions that can be used for Build Node(Object) construction. This is very useful if you need to add custom flags for the specific file nodes or exclude them from a build process.
 
@@ -12,7 +16,7 @@ You can add an unlimited number of build middlewares. They will be called in ord
 
 A middleware can be only added to a `PRE` kind of [Launch Types](./launch-types.md).
 
-**Examples**
+## Examples
 
 `platformio.ini`:
 

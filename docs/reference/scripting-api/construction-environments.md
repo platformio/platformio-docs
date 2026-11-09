@@ -1,6 +1,10 @@
+---
+description: "The PlatformIO Build System uses the following construction environments to process a project."
+---
+
 <a id="scripting-envs"></a>
 
-# Construction Environments {#construction-environments}
+# Construction environments {#construction-environments}
 
 The PlatformIO Build System uses the following construction environments to process a project:
 
@@ -10,7 +14,7 @@ The PlatformIO Build System uses the following construction environments to proc
 
 - `Import("projenv")` - the isolated construction environment used for processing the project source code in [src_dir](../platformio-ini/platformio/src-dir.md).
 
-  Please note that any [build_src_flags](../platformio-ini/env/build-src-flags.md) specified in ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md) will be passed to the `projenv` and not to the `DefaultEnvironment()`.
+  Note that any [build_src_flags](../platformio-ini/env/build-src-flags.md) specified in [`platformio.ini`](../platformio-ini/index.md) will be passed to the `projenv` and not to the `DefaultEnvironment()`.
 
   :::note
 
@@ -21,13 +25,13 @@ The PlatformIO Build System uses the following construction environments to proc
 
 - `Import("env")` - the current working construction environment.
 
-  Imported `env` refers to the `DefaultEnvironment()` for scripts configured using the [extra_scripts](../platformio-ini/env/extra-scripts.md) option in ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+  Imported `env` refers to the `DefaultEnvironment()` for scripts configured using the [extra_scripts](../platformio-ini/env/extra-scripts.md) option in [`platformio.ini`](../platformio-ini/index.md).
 
-  If you use [library.json](../library-json/index.md) and [extraScript](../library-json/build/extrascript.md), the `Import("env")` refers to the library's isolated environment from which a script was called (not to the global environment). Please use `env = DefaultEnvironment()` instead to access the global environment.
+  If you use [library.json](../library-json/index.md) and [extraScript](../library-json/build/extrascript.md), the `Import("env")` refers to the library's isolated environment from which a script was called (not to the global environment). Use `env = DefaultEnvironment()` instead to access the global environment.
 
 ---
 
-**Examples**
+## Examples
 
 `my_pre_extra_script.py`:
 

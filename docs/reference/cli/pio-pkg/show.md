@@ -1,3 +1,7 @@
+---
+description: "Show package information from the PlatformIO Registry."
+---
+
 <a id="cmd-pkg-show"></a>
 
 # pio pkg show {#pio-pkg-show}
@@ -24,9 +28,11 @@ Set the type of a package if there is a conflict name. See supported [Package Ty
 
 Show information about [ArduinoJson](https://registry.platformio.org/libraries/bblanchon/ArduinoJson) package
 
-```text
-> pio pkg show bblanchon/ArduinoJson
+```bash
+pio pkg show bblanchon/ArduinoJson
+```
 
+```text
 bblanchon/ArduinoJson
 Library • 6.19.3 • Public • Published Tue Mar  8 16:24:14 2022
 
@@ -55,7 +61,7 @@ Version    Size      Published
 ...
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [pio pkg search](./search.md)
 - [pio pkg list](./list.md)

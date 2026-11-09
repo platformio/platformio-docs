@@ -1,6 +1,13 @@
+---
+description: List the PlatformIO Registry packages you can access and your access level.
+---
+
 <a id="cmd-access-list"></a>
 
 # pio access list {#pio-access-list}
+
+List the resources (packages) that you, or a given owner, can access, with
+the access level. Public resources with read-only access are not listed.
 
 ## Usage {#usage}
 
@@ -10,29 +17,30 @@ pio access list [OPTIONS] [OWNER]
 
 ## Description {#description}
 
-Show all of the resources (packages) a user or a team can access, along with the access level, except for read-only public resources (it won’t print the whole registry listing).
+| Argument | Description |
+| --- | --- |
+| `OWNER` | Optional. List only the resources of this owner (a user or an organization name). |
 
-To list resources by the specified owner, type owner's "username" as an argument to this command.
+## Options {#options}
 
-See the examples below.
+### `--urn-type` {#cmdoption-pio-access-list-urn-type}
 
-### Options {#options}
+The type of the resource URN. The only supported value, and the default, is
+`prn:reg:pkg`: packages in the PlatformIO Registry.
 
-#### `--urn-type` {#cmdoption-pio-access-list-urn-type}
+### `--json-output` {#cmdoption-pio-access-list-json-output}
 
-Resource type in [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name) form. Default is set to `prn:reg:pkg` which means to list the packages from the registry.
-
-#### `--json-output` {#cmdoption-pio-access-list-json-output}
-
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
-1. List all accessible resources:
+List all resources you can access:
 
 ```bash
-> pio access list
+pio access list
+```
 
+```text
 ...
 
 atmelsam
@@ -62,11 +70,13 @@ Access level(s):  Admin
 ...
 ```
 
-2. List all accessible resources by specific owner:
+List the resources of the `platformio` owner:
 
 ```bash
-> pio access list platformio
+pio access list platformio
+```
 
+```text
 ...
 
 tool-scons

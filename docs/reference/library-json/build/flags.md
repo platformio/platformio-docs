@@ -1,8 +1,13 @@
+---
+description: "Extra flags to control preprocessing, compilation, assembly, and linking processes."
+---
+
 <a id="library-json-buid-flags"></a>
 
 # `flags` {#flags}
 
-*Optional* | Type: `String` or `Array`
+- **Required:** No
+- **Type:** String or array of strings
 
 Extra flags to control preprocessing, compilation, assembly, and linking processes. More details [build_flags](../../platformio-ini/env/build-flags.md).
 

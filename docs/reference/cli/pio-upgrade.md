@@ -1,28 +1,42 @@
+---
+description: Upgrade PlatformIO Core to the latest version.
+---
+
 <a id="cmd-upgrade"></a>
 
 # pio upgrade {#pio-upgrade}
 
+Check for a newer version of PlatformIO Core and upgrade to it.
+
 ## Usage {#usage}
 
 ```bash
-pio upgrade
+pio upgrade [OPTIONS]
 ```
-
-## Description {#description}
-
-Check or upgrade PlatformIO Core to the latest version.
 
 ## Options {#options}
 
 ### `--dev` {#cmdoption-pio-upgrade-dev}
 
-Use development branch.
+Upgrade to the [development version](../../get-started/install/development-version.md)
+from the `develop` branch.
+
+### `--only-dependencies` {#cmdoption-pio-upgrade-only-dependencies}
+
+Upgrade only the Python packages that PlatformIO Core depends on, not
+PlatformIO Core itself.
+
+### `-v, --verbose` {#cmdoption-pio-upgrade-verbose}
+
+Print the output of the underlying `pip` commands.
 
 ## Examples {#examples}
 
-```text
-> pio upgrade
+```bash
+pio upgrade
+```
 
+```text
 You are up-to-date!
 PlatformIO x.x.x is currently the newest version available.
 ```

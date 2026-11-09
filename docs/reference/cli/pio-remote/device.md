@@ -1,3 +1,7 @@
+---
+description: "List Serial Ports on remote machines where PlatformIO Remote Agent is started."
+---
+
 <a id="cmd-remote-device"></a>
 
 # pio remote device {#pio-remote-device}
@@ -34,13 +38,15 @@ Multiple agents are allowed ( `pio remote --agent lab1 --agent lab3 device ...`)
 
 #### `--json-output` {#cmdoption-pio-remote-device-list-json-output}
 
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ### Example {#example}
 
-```text
-> pio remote device list
+```bash
+pio remote device list
+```
 
+```text
 Agent innomac.local
 ===================
 /dev/cu.Bluetooth-Incoming-Port
@@ -168,7 +174,7 @@ For example, to use `Ctrl+]` run `pio remote device monitor --exit-char 29`.
 
 ASCII code of special character that is used to control miniterm (menu), default `20` (DEC)
 
-#### `---quiet` {#cmdoption-pio-remote-device-monitor-quiet}
+#### `--quiet` {#cmdoption-pio-remote-device-monitor-quiet}
 
 Diagnostics: suppress non-error messages, default `Off`
 
@@ -176,7 +182,7 @@ Diagnostics: suppress non-error messages, default `Off`
 
 #### `-d, --project-dir` {#cmdoption-pio-remote-device-monitor-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-remote-device-monitor-environment"></a>
 
@@ -184,73 +190,25 @@ Specify the path to project directory. By default, `--project-dir` is equal to c
 
 Process specified environments.
 
-You can also specify which environments should be processed by default using [default_envs](../../platformio-ini/platformio/default-envs.md) option from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+You can also specify which environments should be processed by default using [default_envs](../../platformio-ini/platformio/default-envs.md) option from [`platformio.ini`](../../platformio-ini/index.md).
 
 ### Examples {#examples}
 
-1. Show available options for *monitor*
+Open a serial monitor to a device on a remote agent; when there is more than
+one port, choose one:
 
-```text
-> pio remote device monitor --help
-
-Usage: pio remote device monitor [OPTIONS]
-
-Options:
-  -p, --port TEXT       Port, a number or a device name
-  -b, --baud INTEGER    Set baud rate, default=9600
-  --parity [N|E|O|S|M]  Set parity, default=N
-  --rtscts              Enable RTS/CTS flow control, default=Off
-  --xonxoff             Enable software flow control, default=Off
-  --rts [0|1]           Set initial RTS line state, default=0
-  --dtr [0|1]           Set initial DTR line state, default=0
-  --echo                Enable local echo, default=Off
-  --encoding TEXT       Set the encoding for the serial port (e.g. hexlify,
-                        Latin1, UTF-8), default: UTF-8
-  -f, --filter TEXT     Add text transformation
-  --eol [CR|LF|CRLF]    End of line mode, default=CRLF
-  --raw                 Do not apply any encodings/transformations
-  --exit-char INTEGER   ASCII code of special character that is used to exit
-                        the application, default=29 (DEC)
-  --menu-char INTEGER   ASCII code of special character that is used to
-                        control miniterm (menu), default=20 (DEC)
-  --quiet               Diagnostics: suppress non-error messages, default=Off
-  -h, --help            Show this message and exit.
+```bash
+pio remote device monitor
 ```
 
-2. Communicate with serial device and print help inside terminal
-
 ```text
-> pio remote device monitor
-
 --- Available ports:
 --- /dev/cu.Bluetooth-Incoming-Port n/a
---- /dev/cu.Bluetooth-Modem n/a
 --- /dev/cu.SLAB_USBtoUART CP2102 USB to UART Bridge Controller
---- /dev/cu.obd2ecu-SPPDev n/a
 Enter port name:/dev/cu.SLAB_USBtoUART
 --- Miniterm on /dev/cu.SLAB_USBtoUART: 9600,8,N,1 ---
 --- Quit: Ctrl+C  |  Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
 Hello PlatformIO!
----
---- Ctrl+]   Exit program
---- Ctrl+T   Menu escape key, followed by:
---- Menu keys:
----    Ctrl+T  Send the menu character itself to remote
----    Ctrl+]  Send the exit character itself to remote
----    Ctrl+I  Show info
----    Ctrl+U  Upload file (prompt will be shown)
---- Toggles:
----    Ctrl+R  RTS          Ctrl+E  local echo
----    Ctrl+D  DTR          Ctrl+B  BREAK
----    Ctrl+L  line feed    Ctrl+A  Cycle repr mode
----
---- Port settings (Ctrl+T followed by the following):
----    p          change port
----    7 8        set data bits
----    n e o s m  change parity (None, Even, Odd, Space, Mark)
----    1 2 3      set stop bits (1, 2, 1.5)
----    b          change baud rate
----    x X        disable/enable software flow control
----    r R        disable/enable hardware flow control
---- exit ---
 ```
+
+For the monitor keys, see [`pio device monitor`](../pio-device/monitor.md#description).

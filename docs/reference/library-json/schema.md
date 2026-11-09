@@ -1,8 +1,13 @@
+---
+description: "A JSON Schema to annotate and validate the library.json manifest."
+---
+
 <a id="manifest-library-json-schema"></a>
 
 # `$schema` {#schema}
 
-*Optional* | Type: `String`
+- **Required:** No
+- **Type:** String
 
 A [JSON Schema](https://json-schema.org/) to annotate and validate the `library.json` manifest. The [PlatformIO IDE for VSCode](../../guides/ide/vscode.md) has built-in support for JSON Schema validation.
 
@@ -14,7 +19,7 @@ The `library.json` Schema URL:
 https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json
 ```
 
-**Example**
+## Example
 
 ```javascript
 {

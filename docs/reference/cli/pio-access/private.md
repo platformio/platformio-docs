@@ -1,6 +1,12 @@
+---
+description: Make a package in the PlatformIO Registry private.
+---
+
 <a id="cmd-access-private"></a>
 
 # pio access private {#pio-access-private}
+
+Make a resource private. Only users and teams you grant access to can use it.
 
 ## Usage {#usage}
 
@@ -10,21 +16,27 @@ pio access private [OPTIONS] URN
 
 ## Description {#description}
 
-Set a resource to be either privately accessible (restricted access to particular users or team members).
+| Argument | Description |
+| --- | --- |
+| `URN` | The resource, for example `prn:reg:pkg:8036:platform`. Find it with [`pio access list`](./list.md). |
 
-### Options {#options}
+## Options {#options}
 
-#### `--urn-type` {#cmdoption-pio-access-private-urn-type}
+### `--urn-type` {#cmdoption-pio-access-private-urn-type}
 
-Resource type in [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name) form. Default is set to `prn:reg:pkg` which means to grant access to the package in the registry.
+The type of the resource URN. The only supported value, and the default, is
+`prn:reg:pkg`: a package in the PlatformIO Registry.
 
 ## Examples {#examples}
 
 ```bash
-> pio access private prn:reg:pkg:8036:platform
+pio access private prn:reg:pkg:8036:platform
+```
+
+```text
 The resource "prn:reg:pkg:8036:platform" has been successfully updated.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio access public](./public.md)
+- [`pio access public`](./public.md)

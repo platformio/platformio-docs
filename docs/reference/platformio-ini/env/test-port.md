@@ -1,8 +1,13 @@
+---
+description: "A serial port to communicate with a target device (platformio.ini option test_port)."
+---
+
 <a id="projectconf-test-port"></a>
 
 # `test_port` {#test-port}
 
-Type: `String (Pattern)` | Multiple: `No`
+- **Type:** String
+- **Multiple values:** No
 
 This option specifies communication interface between PlatformIO [Unit Testing](../../../guides/unit-testing/index.md) Test Runner and the target device. The possible values are the same as documented for [monitor_port](./monitor-port.md) option.
 

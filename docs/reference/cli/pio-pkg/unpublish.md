@@ -1,3 +1,7 @@
+---
+description: "This removes a package version from the registry, deleting its entry and removing the tarball."
+---
+
 <a id="cmd-pkg-unpublish"></a>
 
 # pio pkg unpublish {#pio-pkg-unpublish}
@@ -26,7 +30,7 @@ Set the type of a package to unpublish (if you have packages with the same name)
 
 Undo a remove, putting a version back into the registry.
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [library.json](../../library-json/index.md)
 - [pio pkg pack](./pack.md)

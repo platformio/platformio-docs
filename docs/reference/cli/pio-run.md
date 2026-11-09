@@ -1,3 +1,7 @@
+---
+description: "Run project targets over environments declared in platformio.ini."
+---
+
 <a id="cmd-run"></a>
 
 # pio run {#pio-run}
@@ -10,7 +14,7 @@ pio run [OPTIONS]
 
 ## Description {#description}
 
-Run project targets over environments declared in ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+Run project targets over environments declared in [`platformio.ini`](../platformio-ini/index.md).
 
 ## Options {#options}
 
@@ -18,9 +22,9 @@ Run project targets over environments declared in ["platformio.ini" (Project Con
 
 ### `-e, --environment` {#cmdoption-pio-run-e}
 
-Process specified environments. Multiple environments are allowed.
+Process specified environments. Repeat the option for several environments.
 
-You can also specify which environments should be processed by default using [default_envs](../platformio-ini/platformio/default-envs.md) option from ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+You can also specify which environments should be processed by default using [default_envs](../platformio-ini/platformio/default-envs.md) option from [`platformio.ini`](../platformio-ini/index.md).
 
 <a id="cmdoption-pio-run-target"></a>
 
@@ -28,7 +32,7 @@ You can also specify which environments should be processed by default using [de
 
 Process specified targets. Multiple targets are allowed.
 
-You can configure default targets per project environment using [targets](../platformio-ini/env/targets.md) option in ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+You can configure default targets per project environment using [targets](../platformio-ini/env/targets.md) option in [`platformio.ini`](../platformio-ini/index.md).
 
 ### `--list-targets` {#cmdoption-pio-run-list-targets}
 
@@ -66,13 +70,13 @@ If the monitor port is not specified, PlatformIO will attempt to detect it autom
 
 ### `-d, --project-dir` {#cmdoption-pio-run-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-run-project-conf"></a>
 
 ### `-c, --project-conf` {#cmdoption-pio-run-c}
 
-Process project with a custom ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md).
+Process project with a custom [`platformio.ini`](../platformio-ini/index.md).
 
 <a id="cmdoption-pio-run-jobs"></a>
 
@@ -84,7 +88,7 @@ This option can also be set globally using the environment variable [`PLATFORMIO
 
 ### `--disable-auto-clean` {#cmdoption-pio-run-disable-auto-clean}
 
-Disable auto-clean of [build_dir](../platformio-ini/platformio/build-dir.md) when ["platformio.ini" (Project Configuration File)](../platformio-ini/index.md) or [src_dir](../platformio-ini/platformio/src-dir.md) (project structure) have been modified.
+Disable auto-clean of [build_dir](../platformio-ini/platformio/build-dir.md) when [`platformio.ini`](../platformio-ini/index.md) or [src_dir](../platformio-ini/platformio/src-dir.md) (project structure) have been modified.
 
 <a id="cmdoption-pio-run-program-arg"></a>
 
@@ -110,17 +114,19 @@ Suppress progress reporting
 
 ### `-v, --verbose` {#cmdoption-pio-run-v}
 
-Shows detailed information when processing environments.
+Print detailed information while processing environments.
 
 This option can also be set globally using [force_verbose](./pio-settings.md#setting-force-verbose) setting or by environment variable [`PLATFORMIO_SETTING_FORCE_VERBOSE`](../environment-variables.md#envvar-PLATFORMIO_SETTING_FORCE_VERBOSE).
 
 ## Examples {#examples}
 
-1. Process [Wiring Blink Example](https://github.com/platformio/platformio-examples/tree/develop/wiring-blink)
+Process [Wiring Blink Example](https://github.com/platformio/platformio-examples/tree/develop/wiring-blink):
+
+```bash
+pio run
+```
 
 ```text
-> pio run
-
 [Wed Sep  7 15:48:58 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
 -----------------------------------------------------------------------------------------------
 Verbose mode can be enabled via `-v, --verbose` option
@@ -216,11 +222,13 @@ Building .pio/build/lpmsp430g2553/firmware.hex
 =========================== [SUCCESS] Took 2.34 seconds ===========================
 ```
 
-2. Process specific environment
+Process specific environment:
+
+```bash
+pio run -e nodemcu -e teensy31
+```
 
 ```text
-> pio run -e nodemcu -e teensy31
-
 [Wed Sep  7 15:49:01 2016] Processing nodemcu (platform: espressif8266, board: nodemcu, framework: arduino)
 -----------------------------------------------------------------------------------------------
 Verbose mode can be enabled via `-v, --verbose` option
@@ -264,10 +272,13 @@ Building .pio/build/teensy31/firmware.hex
 =========================== [SUCCESS] Took 5.36 seconds ===========================
 ```
 
-3. Process specific target (clean project)
+Process specific target (clean project):
 
 ```bash
-> pio run -t clean
+pio run -t clean
+```
+
+```text
 [Wed Sep  7 15:53:26 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
 -----------------------------------------------------------------------------------------------------
 Removed .pio/build/uno/firmware.elf
@@ -343,11 +354,13 @@ Done cleaning
 ======================= [SUCCESS] Took 0.49 seconds =======================
 ```
 
-4. Mix environments and targets
+Mix environments and targets:
+
+```bash
+pio run -e uno -t upload
+```
 
 ```text
-> pio run -e uno -t upload
-
 [Wed Sep  7 15:55:11 2016] Processing uno (platform: atmelavr, board: uno, framework: arduino)
 --------------------------------------------------------------------------------------------------
 Verbose mode can be enabled via `-v, --verbose` option

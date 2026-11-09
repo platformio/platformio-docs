@@ -1,6 +1,12 @@
+---
+description: Grant a user or a team access to a package in the PlatformIO Registry.
+---
+
 <a id="cmd-access-grant"></a>
 
 # pio access grant {#pio-access-grant}
+
+Grant a user or a team an access level to a resource.
 
 ## Usage {#usage}
 
@@ -10,76 +16,50 @@ pio access grant [OPTIONS] LEVEL <ORGNAME:TEAMNAME>|<USERNAME> URN
 
 ## Description {#description}
 
-Add the ability of users and teams to have "LEVEL" access to a resource.
+| Argument | Description |
+| --- | --- |
+| `LEVEL` | The access level: `admin`, `maintainer` or `guest` (see below) |
+| `ORGNAME:TEAMNAME` or `USERNAME` | The team (as `organization:team`) or the user to grant access to |
+| `URN` | The resource, for example `prn:reg:pkg:8036:platform`. Find it with [`pio access list`](./list.md). |
 
-The next levels are supported:
+Access levels:
 
-<dl>
+| Level | Permissions |
+| --- | --- |
+| `admin` | All operations on the resource, including managing its access |
+| `maintainer` | Read and write: update the resource, publish and unpublish versions. Cannot manage access. |
+| `guest` | Read only. Granted to everyone automatically for public resources. |
 
-<dt>
+## Options {#options}
 
-`admin`
+### `--urn-type` {#cmdoption-pio-access-grant-urn-type}
 
-</dt>
-
-<dd>
-
-Administrative privileges. Can perform all available operations on the particular resource.
-
-</dd>
-
-<dt>
-
-`maintainer`
-
-</dt>
-
-<dd>
-
-Read-write access. Can update a resource, publish a new version, unpublish existing version.
-
-Cannot manage resource permissions and grant access to other members.
-
-</dd>
-
-<dt>
-
-`guest`
-
-</dt>
-
-<dd>
-
-Read-only access. It's automatically granted for the public resources.
-
-</dd>
-
-</dl>
-
-You can grant access to the team members using the next format `orgname:teamname`. See the examples below.
-
-### Options {#options}
-
-#### `--urn-type` {#cmdoption-pio-access-grant-urn-type}
-
-Resource type in [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name) form. Default is set to `prn:reg:pkg` which means to grant an access to the package in the PlatormIO Registry.
+The type of the resource URN. The only supported value, and the default, is
+`prn:reg:pkg`: a package in the PlatformIO Registry.
 
 ## Examples {#examples}
 
-1. Grant "maintainer" access to a resource for the "bob" user:
+Grant the user `bob` maintainer access to a package:
 
 ```bash
-> pio access grant maintainer bob prn:reg:pkg:8036:platform
+pio access grant maintainer bob prn:reg:pkg:8036:platform
+```
+
+```text
 Access for resource "prn:reg:pkg:8036:platform" has been granted for "bob"
 ```
 
-2. Add the ability of PlatformIO's "developer" team to have "admin" access to a resource.
+Grant the `developers` team of the `platformio` organization admin access to a
+package:
 
 ```bash
-> pio access grant admin platformio:developers prn:reg:pkg:8036:platform
+pio access grant admin platformio:developers prn:reg:pkg:8036:platform
+```
+
+```text
 Access for resource "prn:reg:pkg:8036:platform" has been granted for "platformio:developers"
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio access revoke](./revoke.md)
+- [`pio access revoke`](./revoke.md)

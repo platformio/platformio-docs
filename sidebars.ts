@@ -262,7 +262,8 @@ const sidebars: SidebarsConfig = {
       section('[env] section', `${INI}/env`, [
         iniGroup('env', 'platform', 'Platform options', [
           'platform', 'platform-packages', 'framework', 'board',
-          'board-build-mcu', 'board-build-f-cpu', 'board-build-ldscript',
+          'board-build-mcu', 'board-build-f-cpu', 'board-build-f-flash', 'board-build-flash-mode',
+          'board-build-ldscript',
         ]),
         iniGroup('env', 'build', 'Build options', [
           'build-type', 'build-flags', 'build-src-flags', 'build-unflags', 'build-src-filter', 'targets',

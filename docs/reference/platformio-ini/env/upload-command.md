@@ -1,8 +1,13 @@
+---
+description: "A custom upload command which overwrites a default from development platform (platformio.ini option upload_command)."
+---
+
 <a id="projectconf-upload-command"></a>
 
 # `upload_command` {#upload-command}
 
-Type: `String` | Singleline: `Yes`
+- **Type:** String
+- **Multiple values:** No
 
 Override default [Development Platforms](../../../hardware/platforms/index.md) upload command with a custom command. You can pass a full upload command with arguments and options or mix with [upload_flags](./upload-flags.md).
 
@@ -12,11 +17,11 @@ Default upload commands are declared in `builder/main.py` script file of [Develo
 
 :::note
 
-Please note that you can use build variables in `upload_command`, such as PlatformIO project folders and other runtime configuration. A list with build variables are available by running `pio run --target envdump` command.
+Note that you can use build variables in `upload_command`, such as PlatformIO project folders and other runtime configuration. A list with build variables are available by running `pio run --target envdump` command.
 
 :::
 
-**Examples**
+## Examples
 
 1. Override default upload command but handle pre-uploading actions (looking for serial port, extra image preparation, etc.). Normally, the pre-configured upload options will be stored in `$UPLOADERFLAGS` build variable. A classic default upload command for [Development Platforms](../../../hardware/platforms/index.md) may look as `some-flash-bin-tool $UPLOADERFLAGS $SOURCE`, where `$SOURCE` will be replaced by a real program/firmware binary.
 
@@ -59,7 +64,6 @@ Please note that you can use build variables in `upload_command`, such as Platfo
        -c
        stk500v1
    upload_command = avrdude $UPLOAD_FLAGS -U flash:w:$SOURCE:i
-
 
    ; Use ST-util for flashing
    ; https://github.com/texane/stlink

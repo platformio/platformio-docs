@@ -1,8 +1,14 @@
+---
+description: "Create an archive (`*.a`, static library) from the object files and link it into a firmware (program) (platformio.ini option lib_archive)."
+---
+
 <a id="projectconf-lib-archive"></a>
 
 # `lib_archive` {#lib-archive}
 
-Type: `Bool (yes or no)` | Multiple: `No` | Default: `yes`
+- **Type:** Boolean: `yes` or `no`
+- **Multiple values:** No
+- **Default:** `yes`
 
 Create an archive (`*.a`, static library) from the object files and link it into a firmware (program). This is default behavior of PlatformIO Build System (`lib_archive = yes`).
 
@@ -10,7 +16,7 @@ Setting `lib_archive = no` will instruct PlatformIO Build System to link object 
 
 You can disable library archiving per a custom library using [libArchive](../../library-json/build/libarchive.md) field in [library.json](../../library-json/index.md) manifest.
 
-Example:
+## Example
 
 ```ini
 [env:myenv]

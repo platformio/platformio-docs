@@ -1,6 +1,12 @@
+---
+description: "A list of example patterns."
+---
+
 # `examples` {#examples}
 
-*Optional* | Type: `Array` | [Glob Pattern](http://en.wikipedia.org/wiki/Glob_%28programming%29)
+- **Required:** No
+- **Type:** Array
+- **Values:** [glob patterns](http://en.wikipedia.org/wiki/Glob_%28programming%29)
 
 A list of example patterns. This field is predefined with default value:
 

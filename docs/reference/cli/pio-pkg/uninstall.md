@@ -1,3 +1,7 @@
+---
+description: "Uninstall the project dependencies or custom packages from the PlatformIO Registry or external sources."
+---
+
 <a id="cmd-pkg-uninstall"></a>
 
 # pio pkg uninstall {#pio-pkg-uninstall}
@@ -12,7 +16,7 @@ pio pkg uninstall [OPTIONS]
 
 Uninstall the project dependencies or custom packages from the [PlatformIO Registry](https://registry.platformio.org) or external sources.
 
-If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will uninstall the following project dependencies based on ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md):
+If no custom packages (`--library`, `--platform`, or `--tool`) are specified, the command will uninstall the following project dependencies based on [`platformio.ini`](../../platformio-ini/index.md):
 
 - Library dependencies declared using the [lib_deps](../../platformio-ini/env/lib-deps.md) option
 - Development platform declared using the [platform](../../platformio-ini/env/platform.md) option and its dependencies (toolchain, framework, SDKs, debugging server, etc)
@@ -26,24 +30,24 @@ See [pio pkg install](./install.md) command for package specification.
 
 ### `-d, --project-dir` {#cmdoption-pio-pkg-uninstall-d}
 
-Specify the path to project directory. By default, `--project-dir` is equal to current working directory (`CWD`).
+The project directory. Default: the current working directory.
 
 <a id="cmdoption-pio-pkg-uninstall-environment"></a>
 
 ### `-e, --environment` {#cmdoption-pio-pkg-uninstall-e}
 
-Uninstall project dependencies only for the specified environments. Multiple environments are allowed.
+Uninstall project dependencies only for the specified environments. Repeat the option for several environments.
 
 <a id="cmdoption-pio-pkg-uninstall-platform"></a>
 
 ### `-p, --platform` {#cmdoption-pio-pkg-uninstall-p}
 
-Uninstall specified development platform using [Package Specifications](./install.md#cmd-pkg-install-specifications). Multiple items are allowed.
+Uninstall specified development platform using [Package Specifications](./install.md#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
 ```bash
-pio pkg uninstall -p "aceinna/aceinna_imu@^1.3.8" -p "platformio/atmelavr"
+pio pkg uninstall -p "platformio/espressif32@^6" -p "platformio/atmelavr"
 pio pkg uninstall --platform "https://github.com/platformio/platform-sifive.git"
 ```
 
@@ -51,7 +55,7 @@ pio pkg uninstall --platform "https://github.com/platformio/platform-sifive.git"
 
 ### `-t, --tool` {#cmdoption-pio-pkg-uninstall-t}
 
-Uninstall specified tool using [Package Specifications](./install.md#cmd-pkg-install-specifications). Multiple items are allowed.
+Uninstall specified tool using [Package Specifications](./install.md#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
@@ -64,7 +68,7 @@ pio pkg uninstall --tool https://github.com/platformio/platform-sifive.git
 
 ### `-l, --library` {#cmdoption-pio-pkg-uninstall-l}
 
-Uninstall specified library using [Package Specifications](./install.md#cmd-pkg-install-specifications). Multiple items are allowed.
+Uninstall specified library using [Package Specifications](./install.md#cmd-pkg-install-specifications). Repeat the option for several packages.
 
 **Examples**
 
@@ -75,7 +79,7 @@ pio pkg uninstall --library https://github.com/Makuna/NeoPixelBus.git
 
 ### `--no-save` {#cmdoption-pio-pkg-uninstall-no-save}
 
-Prevent removing specified packages from ["platformio.ini" (Project Configuration File)](../../platformio-ini/index.md).
+Prevent removing specified packages from [`platformio.ini`](../../platformio-ini/index.md).
 
 ### `--skip-dependencies` {#cmdoption-pio-pkg-uninstall-skip-dependencies}
 
@@ -101,7 +105,7 @@ Specify a custom Package Manager storage for global packages.
 
 Suppress progress reporting.
 
-## See Also {#see-also}
+## See also {#see-also}
 
 - [pio pkg install](./install.md)
 - [pio pkg outdated](./outdated.md)

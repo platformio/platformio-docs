@@ -1,46 +1,39 @@
+---
+description: Build, upload, test and monitor devices connected to remote machines with PlatformIO Remote.
+---
+
 <a id="cmd-remote"></a>
 
-# PlatformIO Remote CLI {#platformio-remote-cli}
+# pio remote {#platformio-remote-cli}
 
-Helper command for [Remote Development](../../../guides/remote-development.md).
+Work with devices connected to other computers. See
+[Remote development](../../../guides/remote-development.md).
 
-To print all available commands and options use:
+## Usage {#usage}
 
 ```bash
-pio remote --help
-pio remote COMMAND --help
+pio remote [OPTIONS] COMMAND [ARGS]...
+```
 
-# run command on the specified PlatformIO Remote Agents
+## Options {#options}
+
+### `-a, --agent` {#cmdoption-pio-remote-a}
+
+Run the command only on this [remote agent](./agent.md). Repeat the option
+for several agents. By default, the command uses all agents available to you.
+
+```bash
 pio remote --agent NAME_1 --agent NAME_N COMMAND
 ```
 
-- [PlatformIO Remote Agent](./agent.md)
+## Commands {#commands}
 
-  - [pio remote agent list](./agent.md#pio-remote-agent-list)
-  - [pio remote agent start](./agent.md#pio-remote-agent-start)
+| Command | Description |
+| --- | --- |
+| [`pio remote agent`](./agent.md) | Start a remote agent or list the available agents |
+| [`pio remote device`](./device.md) | List remote devices or open a remote serial monitor |
+| [`pio remote run`](./run.md) | Build and upload a project to a remote device |
+| [`pio remote test`](./test.md) | Run unit tests on a remote device |
+| [`pio remote update`](./update.md) | Update the packages of remote agents |
 
-- [pio remote device](./device.md)
-
-  - [pio remote device list](./device.md#pio-remote-device-list)
-  - [pio remote device monitor](./device.md#pio-remote-device-monitor)
-
-- [pio remote run](./run.md)
-
-  - [Usage](./run.md#usage)
-  - [Description](./run.md#description)
-  - [Options](./run.md#options)
-  - [Example](./run.md#example)
-
-- [pio remote test](./test.md)
-
-  - [Usage](./test.md#usage)
-  - [Description](./test.md#description)
-  - [Options](./test.md#options)
-  - [Examples](./test.md#examples)
-
-- [pio remote update](./update.md)
-
-  - [Usage](./update.md#usage)
-  - [Description](./update.md#description)
-  - [Options](./update.md#options)
-  - [Examples](./update.md#examples)
+For the options of a command, run `pio remote COMMAND --help`.

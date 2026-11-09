@@ -1,6 +1,12 @@
+---
+description: Create an organization in PlatformIO.
+---
+
 <a id="cmd-org-create"></a>
 
 # pio org create {#pio-org-create}
+
+Create an organization. You become its owner.
 
 ## Usage {#usage}
 
@@ -10,26 +16,31 @@ pio org create [OPTIONS] ORGNAME
 
 ## Description {#description}
 
-Create a new organization.
+| Argument | Description |
+| --- | --- |
+| `ORGNAME` | The organization name. Organization names can contain letters, digits and single hyphens, cannot begin or end with a hyphen, and can be up to 38 characters long. |
 
-### Options {#options}
+## Options {#options}
 
-#### `--email` {#cmdoption-pio-org-create-email}
+### `--email` {#cmdoption-pio-org-create-email}
 
-An organization e-mail.
+The organization's email address.
 
-#### `--displayname` {#cmdoption-pio-org-create-displayname}
+### `--displayname` {#cmdoption-pio-org-create-displayname}
 
-An organization display name (company name).
+The display name, for example the company name.
 
 ## Examples {#examples}
 
 ```bash
-> pio org create platformio --email contact@platformio.org --displayname PlatformIO
+pio org create platformio --email contact@platformio.org --displayname PlatformIO
+```
+
+```text
 The organization "platformio" has been successfully created.
 ```
 
-## See Also {#see-also}
+## See also {#see-also}
 
-- [pio org list](./list.md)
-- [pio org remove](./remove.md)
+- [`pio org update`](./update.md)
+- [`pio org destroy`](./destroy.md)

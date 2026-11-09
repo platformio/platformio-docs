@@ -1,16 +1,39 @@
+---
+description: The [env] and [env:NAME] sections of platformio.ini - project environments and the options they accept.
+---
+
 <a id="projectconf-section-env"></a>
 
 # Section `[env]` {#section-env}
 
-Each project may have multiple *configuration environments* defining the available project tasks for building, programming, debugging, unit testing, device monitoring, library dependencies, etc. The configuration environments are declared using `[env]` sections in ["platformio.ini" (Project Configuration File)](../index.md).
+A project environment, `[env:NAME]`, describes one way to build the project:
+the development platform, board, framework, build flags, libraries, and how to
+upload, monitor, test and debug. [`pio run`](../../cli/pio-run.md),
+[`pio test`](../../cli/pio-test.md), [`pio check`](../../cli/pio-check.md),
+[`pio debug`](../../cli/pio-debug.md) and other commands process environments.
 
-The allowed options are listed under [Options](#options).
+A project can have several environments, for example one per board, or a
+`release` and a `debug` variant of the same board.
 
-## Common `[env]` {#common-env}
+<a id="projectconf-section-env-named"></a>
 
-An optional configuration environment with common options that will be shared between all `[env:NAME]` environments in the platformio.ini file. It is very useful if the configuration file has a lot of environments `[env:NAME]` and they share common settings.
+## Project environments `[env:NAME]` {#working-env-name}
 
-For example:
+Each project needs at least one `[env:NAME]` section. Names must be unique and
+can contain letters, digits, `_` and `-`, for example `[env:esp32_debug]`.
+
+By default, commands process every environment. To process some of them:
+
+- pass `-e NAME` (or `--environment NAME`) to the command, once per
+  environment; or
+- list them in the [`default_envs`](../platformio/default-envs.md) option of
+  the `[platformio]` section.
+
+## Shared options `[env]` {#common-env}
+
+Options in a plain `[env]` section apply to every `[env:NAME]` environment,
+unless the environment sets them itself. Use it when environments share
+settings:
 
 ```ini
 [env]
@@ -31,7 +54,7 @@ build_flags = -D DEBUG
 lib_deps = DepCustom
 ```
 
-In this example we have two configuration environments `release` and `debug`. This is equivalent to duplicating all options as shown below:
+This is equivalent to:
 
 ```ini
 [env:release]
@@ -50,107 +73,22 @@ build_flags = -D DEBUG
 lib_deps = DepCustom
 ```
 
-<a id="projectconf-section-env-named"></a>
-
-## Working `[env:NAME]` {#working-env-name}
-
-A working environment in PlatformIO is defined using the `[env:NAME]` syntax. This environment is used by various PlatformIO commands such as [pio run](../../cli/pio-run.md), [pio test](../../cli/pio-test.md), [pio check](../../cli/pio-check.md), [pio debug](../../cli/pio-debug.md), and others. Every project must define at least one working environment.
-
-You can define multiple working environments in your project by using different names for the `[env:NAME]` section. It's important to note that each environment must have a unique name. The name should only include lowercase letters `a-z`, numbers `0-9`, and special characters `_` (underscore) and `-` (hyphen). For example, `[env:hello_world]` is a valid name.
-
-If you have defined multiple working environments and you only want to process a subset of them, you can use the `-e` or `--environment` option with the PlatformIO commands mentioned above. You can specify the name of the environment you want to process using this option.
-
-In addition to using the `-e` option, you can define a default set of working environments for the PlatformIO commands to process by using the `[platformio]` [default_envs](../platformio/default-envs.md) option. This can be useful if you frequently work with a specific set of environments and don't want to specify them every time you run a command.
+To reuse options from another section, see [`extends`](./extends.md) and
+[interpolation](../../../guides/projects/interpolation.md).
 
 ## Options {#options}
 
-- [Platform options](./platform-options.md)
+| Group | Options |
+| --- | --- |
+| [Platform options](./platform-options.md) | `platform`, `platform_packages`, `framework`, `board`, `board_build.*`, other [board overrides](./platform-options.md#more-options) |
+| [Build options](./build-options.md) | `build_type`, `build_flags`, `build_src_flags`, `build_unflags`, `build_src_filter`, `targets` |
+| [Library options](./library-options.md) | `lib_deps`, `lib_ignore`, `lib_extra_dirs`, `lib_ldf_mode`, `lib_compat_mode`, `lib_archive` |
+| [Upload options](./upload-options.md) | `upload_port`, `upload_protocol`, `upload_speed`, `upload_flags`, `upload_resetmethod`, `upload_command` |
+| [Monitor options](./monitor-options.md) | `monitor_port`, `monitor_speed`, `monitor_parity`, `monitor_filters`, `monitor_rts`, `monitor_dtr`, `monitor_eol`, `monitor_raw`, `monitor_echo`, `monitor_encoding` |
+| [Check options](./check-options.md) | `check_tool`, `check_flags`, `check_severity`, `check_skip_packages`, `check_src_filters` |
+| [Test options](./test-options.md) | `test_framework`, `test_filter`, `test_ignore`, `test_port`, `test_speed`, `test_build_src`, `test_testing_command` |
+| [Debug options](./debug-options.md) | `debug_tool`, `debug_test`, `debug_build_flags`, `debug_init_break`, `debug_init_cmds`, `debug_extra_cmds`, `debug_load_cmds`, `debug_load_mode`, `debug_server`, `debug_port`, `debug_speed`, `debug_svd_path`, `debug_server_ready_pattern` |
+| [Advanced options](./advanced-options.md) | `extends`, `extra_scripts` |
 
-  - [`platform`](./platform.md)
-  - [`platform_packages`](./platform-packages.md)
-  - [`framework`](./framework.md)
-  - [`board`](./board.md)
-  - [`board_build.mcu`](./board-build-mcu.md)
-  - [`board_build.f_cpu`](./board-build-f-cpu.md)
-  - [`board_build.ldscript`](./board-build-ldscript.md)
-  - [More options](./platform-options.md#more-options)
-
-- [Build options](./build-options.md)
-
-  - [`build_type`](./build-type.md)
-  - [`build_flags`](./build-flags.md)
-  - [`build_src_flags`](./build-src-flags.md)
-  - [`build_unflags`](./build-unflags.md)
-  - [`build_src_filter`](./build-src-filter.md)
-  - [`targets`](./targets.md)
-
-- [Library options](./library-options.md)
-
-  - [`lib_deps`](./lib-deps.md)
-  - [`lib_ignore`](./lib-ignore.md)
-  - [`lib_extra_dirs`](./lib-extra-dirs.md)
-  - [`lib_ldf_mode`](./lib-ldf-mode.md)
-  - [`lib_compat_mode`](./lib-compat-mode.md)
-  - [`lib_archive`](./lib-archive.md)
-
-- [Upload options](./upload-options.md)
-
-  - [`upload_port`](./upload-port.md)
-  - [`upload_protocol`](./upload-protocol.md)
-  - [`upload_speed`](./upload-speed.md)
-  - [Common baud rates](./upload-speed.md#common-baud-rates)
-  - [`upload_flags`](./upload-flags.md)
-  - [`upload_resetmethod`](./upload-resetmethod.md)
-  - [`upload_command`](./upload-command.md)
-
-- [Monitor options](./monitor-options.md)
-
-  - [`monitor_port`](./monitor-port.md)
-  - [`monitor_speed`](./monitor-speed.md)
-  - [`monitor_parity`](./monitor-parity.md)
-  - [`monitor_filters`](./monitor-filters.md)
-  - [`monitor_rts`](./monitor-rts.md)
-  - [`monitor_dtr`](./monitor-dtr.md)
-  - [`monitor_eol`](./monitor-eol.md)
-  - [`monitor_raw`](./monitor-raw.md)
-  - [`monitor_echo`](./monitor-echo.md)
-  - [`monitor_encoding`](./monitor-encoding.md)
-
-- [Check options](./check-options.md)
-
-  - [`check_tool`](./check-tool.md)
-  - [`check_flags`](./check-flags.md)
-  - [`check_severity`](./check-severity.md)
-  - [`check_skip_packages`](./check-skip-packages.md)
-  - [`check_src_filters`](./check-src-filters.md)
-
-- [Testing options](./test-options.md)
-
-  - [`test_framework`](./test-framework.md)
-  - [`test_filter`](./test-filter.md)
-  - [`test_ignore`](./test-ignore.md)
-  - [`test_port`](./test-port.md)
-  - [`test_speed`](./test-speed.md)
-  - [`test_build_src`](./test-build-src.md)
-  - [`test_testing_command`](./test-testing-command.md)
-
-- [Debugging options](./debug-options.md)
-
-  - [`debug_tool`](./debug-tool.md)
-  - [`debug_build_flags`](./debug-build-flags.md)
-  - [`debug_init_break`](./debug-init-break.md)
-  - [`debug_init_cmds`](./debug-init-cmds.md)
-  - [`debug_extra_cmds`](./debug-extra-cmds.md)
-  - [`debug_load_cmds`](./debug-load-cmds.md)
-  - [`debug_load_mode`](./debug-load-mode.md)
-  - [`debug_server`](./debug-server.md)
-  - [`debug_port`](./debug-port.md)
-  - [`debug_speed`](./debug-speed.md)
-  - [`debug_svd_path`](./debug-svd-path.md)
-  - [`debug_server_ready_pattern`](./debug-server-ready-pattern.md)
-  - [`debug_test`](./debug-test.md)
-
-- [Advanced options](./advanced-options.md)
-
-  - [`extends`](./extends.md)
-  - [`extra_scripts`](./extra-scripts.md)
+You can also add your own options, for example to read them from
+[scripts](../../../guides/scripting/examples/platformio-ini-custom-options.md).

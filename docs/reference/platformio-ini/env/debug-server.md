@@ -1,8 +1,13 @@
+---
+description: "Allows one to setup a custom debugging server (platformio.ini option debug_server)."
+---
+
 <a id="projectconf-debug-server"></a>
 
 # `debug_server` {#debug-server}
 
-Type: `String` | Multiline Arguments: `Yes`
+- **Type:** String
+- **Multiple values:** Yes
 
 Allows one to setup a custom debugging server. By default, boards are pre-configured with a debugging server that is compatible with "on-board" debugging tool (adapter, probe). Also, this option is useful for a [Custom](../../../hardware/debug-probes/custom.md) debugging tool.
 

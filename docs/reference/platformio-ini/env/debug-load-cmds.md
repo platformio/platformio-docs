@@ -1,8 +1,15 @@
+---
+description: "A list of commands to be used to load program/firmware to a target device (platformio.ini option debug_load_cmds)."
+---
+
 <a id="projectconf-debug-load-cmds"></a>
 
 # `debug_load_cmds` {#debug-load-cmds}
 
-Type: `String` | Multiple: `Yes` | Default: `load`
+- **Type:** String
+- **Multiple values:** Yes
+- **Default:** `load`
+- **Deprecated name:** `debug_load_cmd` (still accepted, with a warning)
 
 Specify a command which will be used to load program/firmware to a target device. Possible options:
 

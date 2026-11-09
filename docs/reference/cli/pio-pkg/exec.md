@@ -1,3 +1,7 @@
+---
+description: "Run command from a PlatformIO package."
+---
+
 <a id="cmd-pkg-exec"></a>
 
 # pio pkg exec {#pio-pkg-exec}
@@ -39,11 +43,13 @@ Run a command and its arguments specified as a string.
 
 ## Examples {#examples}
 
-1. Run an arbitrary command from the first matched installed package
+Run an arbitrary command from the first matched installed package:
+
+```bash
+pio pkg exec -- openocd --help
+```
 
 ```text
-> pio pkg exec -- openocd --help
-
 OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2021-10-17-00:18)
 Licensed under GNU GPL v2
 For bug reports, read
@@ -60,8 +66,8 @@ Licensed under GNU GPL v2
 --command    | -c   run <command>
 ```
 
-2. Install JLink package and run GDB server
+Install JLink package and run GDB server:
 
-```text
-> pio pkg exec -p tool-jlink -- JLinkGDBServer -singlerun -if JTAG -select USB -jtagconf -1,-1 -device EFR32BG22CxxxF512 -port 2331
+```bash
+pio pkg exec -p tool-jlink -- JLinkGDBServer -singlerun -if JTAG -select USB -jtagconf -1,-1 -device EFR32BG22CxxxF512 -port 2331
 ```

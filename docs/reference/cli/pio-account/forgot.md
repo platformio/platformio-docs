@@ -1,6 +1,13 @@
+---
+description: Reset the password of your PlatformIO Account.
+---
+
 <a id="cmd-account-forgot"></a>
 
 # pio account forgot {#pio-account-forgot}
+
+Start a password reset for your [PlatformIO Account](../../../get-started/platformio-account.md). PlatformIO sends the reset
+instructions to the account's email address.
 
 ## Usage {#usage}
 
@@ -8,14 +15,8 @@
 pio account forgot [OPTIONS]
 ```
 
-## Description {#description}
+## Options {#options}
 
-Allows you to reset password for [PlatformIO Account](../../../get-started/platformio-account.md) using username or email which were specified for registration.
+### `--username` {#cmdoption-pio-account-forgot-username}
 
-### Options {#options}
-
-<a id="cmdoption-pio-account-forgot-u"></a>
-
-#### `--username, -u` {#cmdoption-pio-account-forgot-username}
-
-Username or email. You can omit this option and enter username or email in Forgot Wizard later.
+Your username or email. If you omit it, the command asks for it.

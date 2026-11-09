@@ -1,25 +1,18 @@
+---
+description: List connected devices and open a serial monitor.
+---
+
 <a id="cmd-device"></a>
 
-# Device Manager CLI {#device-manager-cli}
+# pio device {#device-manager-cli}
 
-To print all available commands and options use:
+List connected devices and communicate with them over a serial port.
 
-```bash
-pio device --help
-pio device COMMAND --help
-```
+## Commands {#commands}
 
-- [pio device list](./list.md)
+| Command | Description |
+| --- | --- |
+| [`pio device list`](./list.md) | List serial ports, logical drives and network services |
+| [`pio device monitor`](./monitor.md) | Open a serial monitor |
 
-  - [Usage](./list.md#usage)
-  - [Description](./list.md#description)
-  - [Options](./list.md#options)
-  - [Examples](./list.md#examples)
-
-- [pio device monitor](./monitor.md)
-
-  - [Usage](./monitor.md#usage)
-  - [Description](./monitor.md#description)
-  - [Options](./monitor.md#options)
-  - [Filters](./monitor.md#filters)
-  - [Examples](./monitor.md#examples)
+For the options of a command, run `pio device COMMAND --help`.

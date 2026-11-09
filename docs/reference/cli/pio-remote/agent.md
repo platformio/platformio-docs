@@ -1,3 +1,7 @@
+---
+description: "List active PlatformIO Remote Agent s started using own PlatformIO Account or shared with you by other PlatformIO developers."
+---
+
 <a id="cmd-remote-agent"></a>
 
 # PlatformIO Remote Agent {#platformio-remote-agent}
@@ -22,9 +26,11 @@ List active [PlatformIO Remote Agent](#cmd-remote-agent) s started using own [Pl
 
 ### Example {#example}
 
-```text
-> pio remote agent list
+```bash
+pio remote agent list
+```
 
+```text
 innomac.local
 -------------
 ID: 98853d930......788d77375e7

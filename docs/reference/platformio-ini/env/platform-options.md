@@ -1,20 +1,32 @@
+---
+description: Platform options of the platformio.ini [env] section.
+---
+
 <a id="projectconf-section-env-platform"></a>
 
 # Platform options {#platform-options}
 
-- [`platform`](./platform.md)
-- [`platform_packages`](./platform-packages.md)
-- [`framework`](./framework.md)
-- [`board`](./board.md)
-- [`board_build.mcu`](./board-build-mcu.md)
-- [`board_build.f_cpu`](./board-build-f-cpu.md)
-- [`board_build.ldscript`](./board-build-ldscript.md)
+Select the development platform, framework and board, and override board settings.
+
+| Option | Description |
+| --- | --- |
+| [`platform`](./platform.md) | A name or specification of development platform |
+| [`platform_packages`](./platform-packages.md) | Custom packages and specifications |
+| [`framework`](./framework.md) | A list of project dependent frameworks |
+| [`board`](./board.md) | A board ID |
+| [`board_build.mcu`](./board-build-mcu.md) | A custom board MCU |
+| [`board_build.f_cpu`](./board-build-f-cpu.md) | A custom MCU frequency |
+| [`board_build.f_flash`](./board-build-f-flash.md) | A custom flash frequency |
+| [`board_build.flash_mode`](./board-build-flash-mode.md) | A custom flash mode |
+| [`board_build.ldscript`](./board-build-ldscript.md) | A custom linker script |
+
+Board settings not listed here can also be overridden: see [More options](#more-options).
 
 <a id="projectconf-board-more-options"></a>
 
 ## More options {#more-options}
 
-You can override any board option declared in manifest file using the next format `board_{OBJECT.PATH}`, where `{OBJECT.PATH}` is an object path in JSON manifest. Please navigate to "boards" folder of [PlatfomIO development platforms](https://github.com/topics/platformio-platform) and open JSON file to list all available options.
+You can override any setting of the board's JSON manifest with an option named `board_<object.path>`, where `<object.path>` is the setting's path in the manifest. The manifests are in the `boards` folder of each [development platform](https://github.com/topics/platformio-platform) repository.
 
 For example, [Manifest: Espressif ESP32 Dev Module](https://github.com/platformio/platform-espressif32/blob/develop/boards/esp32dev.json):
 

@@ -1,6 +1,12 @@
+---
+description: Permanently delete your PlatformIO Account.
+---
+
 <a id="cmd-account-destroy"></a>
 
 # pio account destroy {#pio-account-destroy}
+
+Permanently delete your [PlatformIO Account](../../../get-started/platformio-account.md) and its data: organizations, teams and resources.
 
 ## Usage {#usage}
 
@@ -10,6 +16,9 @@ pio account destroy [OPTIONS]
 
 ## Description {#description}
 
-Permanently remove account and related data (organizations, teams, resources).
+:::danger
 
-**WARNING! It can can not be restored.**
+This cannot be undone. The command asks for confirmation before it deletes
+anything.
+
+:::

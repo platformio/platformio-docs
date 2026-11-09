@@ -1,28 +1,32 @@
+---
+description: List your organizations and their owners.
+---
+
 <a id="cmd-org-list"></a>
 
 # pio org list {#pio-org-list}
 
+List the organizations you belong to and their owners.
+
 ## Usage {#usage}
 
 ```bash
-pio org list [OPTIONS] [OWNER]
+pio org list [OPTIONS]
 ```
 
-## Description {#description}
+## Options {#options}
 
-List organizations and their owners.
+### `--json-output` {#cmdoption-pio-org-list-json-output}
 
-### Options {#options}
-
-#### `--json-output` {#cmdoption-pio-org-list-json-output}
-
-Return the output in [JSON](http://en.wikipedia.org/wiki/JSON) format
+Print the result in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 ## Examples {#examples}
 
 ```bash
-> pio org list
+pio org list
+```
 
+```text
 ...
 
 platformio

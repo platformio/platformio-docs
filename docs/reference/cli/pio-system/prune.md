@@ -1,26 +1,36 @@
+---
+description: Free disk space by removing cached data and unused PlatformIO packages.
+---
+
 <a id="cmd-system-prune"></a>
 
 # pio system prune {#pio-system-prune}
 
+Free disk space by removing data PlatformIO no longer needs.
+
 ## Usage {#usage}
 
 ```bash
-pio system prune
+pio system prune [OPTIONS]
 ```
 
 ## Description {#description}
 
-Remove unused data:
+The command removes, after asking for confirmation:
 
-- cached API requests
-- cached package downloads
-- temporary data
-- unnecessary core packages
-- unnecessary development platform packages.
+- cached API requests and package downloads, and temporary data;
+- core packages that PlatformIO Core no longer uses;
+- packages of development platforms that no installed platform uses.
 
-:::note
+PlatformIO reminds you to run it when the unused data exceeds the
+[`check_prune_system_threshold`](../pio-settings.md#setting-check-prune-system-threshold)
+setting.
 
-If you have a custom package in [packages_dir](../../platformio-ini/platformio/packages-dir.md) folder and would like to skip it from "prune process", please add empty `.piokeep` file to the root of a package folder.
+:::tip
+
+To keep a custom package in
+[`packages_dir`](../../platformio-ini/platformio/packages-dir.md), create an
+empty `.piokeep` file in the package's root folder.
 
 :::
 
@@ -28,31 +38,33 @@ If you have a custom package in [packages_dir](../../platformio-ini/platformio/p
 
 <a id="cmdoption-pio-system-prune-f"></a>
 
-### `--force, -f` {#cmdoption-pio-system-prune-force}
+### `-f, --force` {#cmdoption-pio-system-prune-force}
 
-Do not prompt for confirmation.
+Do not ask for confirmation.
 
 ### `--dry-run` {#cmdoption-pio-system-prune-dry-run}
 
-Do not prune, only show data that will be removed.
+Only show what would be removed.
 
 ### `--cache` {#cmdoption-pio-system-prune-cache}
 
-Prune only cached data.
+Remove only cached data.
 
 ### `--core-packages` {#cmdoption-pio-system-prune-core-packages}
 
-Prune only unnecessary core packages.
+Remove only unused core packages.
 
 ### `--platform-packages` {#cmdoption-pio-system-prune-platform-packages}
 
-Prune only unnecessary development platform packages.
+Remove only unused development platform packages.
 
 ## Examples {#examples}
 
-```text
-> pio system prune
+```bash
+pio system prune
+```
 
+```text
 Prune cached data:
  - cached API requests
  - cached package downloads

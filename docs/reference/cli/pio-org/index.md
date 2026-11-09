@@ -1,54 +1,24 @@
+---
+description: Manage organizations and their owners in PlatformIO.
+---
+
 <a id="cmd-org"></a>
 
 # pio org {#pio-org}
 
-Manage organizations and their owners.
+Manage organizations and their owners. Organizations own packages in the
+[PlatformIO Registry](https://registry.platformio.org) and group users into
+teams. To manage teams, use [`pio team`](../pio-team/index.md).
 
-Management of teams and team memberships is done with the [pio team](../pio-team/index.md) command.
+## Commands {#commands}
 
-To print all available commands and options use:
+| Command | Description |
+| --- | --- |
+| [`pio org create`](./create.md) | Create an organization |
+| [`pio org list`](./list.md) | List your organizations and their owners |
+| [`pio org update`](./update.md) | Rename an organization or update its details |
+| [`pio org add`](./add.md) | Add an owner |
+| [`pio org remove`](./remove.md) | Remove an owner |
+| [`pio org destroy`](./destroy.md) | Delete an organization |
 
-```bash
-pio org --help
-pio org COMMAND --help
-```
-
-- [pio org add](./add.md)
-
-  - [Usage](./add.md#usage)
-  - [Description](./add.md#description)
-  - [Examples](./add.md#examples)
-  - [See Also](./add.md#see-also)
-
-- [pio org create](./create.md)
-
-  - [Usage](./create.md#usage)
-  - [Description](./create.md#description)
-  - [Examples](./create.md#examples)
-  - [See Also](./create.md#see-also)
-
-- [pio org destroy](./destroy.md)
-
-  - [Usage](./destroy.md#usage)
-  - [Description](./destroy.md#description)
-  - [See Also](./destroy.md#see-also)
-
-- [pio org list](./list.md)
-
-  - [Usage](./list.md#usage)
-  - [Description](./list.md#description)
-  - [Examples](./list.md#examples)
-
-- [pio org remove](./remove.md)
-
-  - [Usage](./remove.md#usage)
-  - [Description](./remove.md#description)
-  - [Examples](./remove.md#examples)
-  - [See Also](./remove.md#see-also)
-
-- [pio org update](./update.md)
-
-  - [Usage](./update.md#usage)
-  - [Description](./update.md#description)
-  - [Examples](./update.md#examples)
-  - [See Also](./update.md#see-also)
+For the options of a command, run `pio org COMMAND --help`.

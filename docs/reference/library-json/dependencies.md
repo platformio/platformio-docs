@@ -1,8 +1,13 @@
+---
+description: "A list of dependent libraries that will be automatically installed."
+---
+
 <a id="manifest-library-json-dependencies"></a>
 
 # `dependencies` {#dependencies}
 
-*Optional* | Type: `Array` or `Object`
+- **Required:** No
+- **Type:** Array or object
 
 A list of dependent libraries that will be automatically installed.
 
@@ -14,7 +19,7 @@ Allowed requirements for dependent library:
 - `frameworks` | Type: `String` or `Array` – project compatible [Frameworks](../../hardware/frameworks/index.md)
 - `platforms` | Type: `String` or `Array` – project compatible [Development Platforms](../../hardware/platforms/index.md)
 
-**Example**
+## Example
 
 ```javascript
 "dependencies":
