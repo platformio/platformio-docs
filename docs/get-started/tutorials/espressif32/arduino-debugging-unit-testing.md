@@ -1,45 +1,52 @@
+---
+sidebar_label: "Arduino on ESP32"
+description: Build, upload, debug and unit test an Arduino project on the ESP32-DevKitC with PlatformIO IDE for VS Code, then add Bluetooth LE.
+---
+
 <a id="tutorial-espressif32-arduino-debugging-unit-testing"></a>
 
-# Get started with Arduino and ESP32-DevKitC: debugging and unit testing {#get-started-with-arduino-and-esp32-devkitc-debugging-and-unit-testing}
+# Arduino on ESP32-DevKitC: debugging and unit testing {#get-started-with-arduino-and-esp32-devkitc-debugging-and-unit-testing}
 
-The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md) to develop, run and debug a simple project with the [Arduino](/hardware/frameworks/arduino) framework for the `ESP32-DevKitC` board.
+In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
+to create an [Arduino](/hardware/frameworks/arduino) project for the
+ESP32-DevKitC board, upload it, debug it over JTAG, run unit tests on the
+board and, finally, add a Bluetooth LE service.
 
-- **Level:** Beginner
-- **Platforms:** Windows, Mac OS X, Linux
+- **Level:** beginner
+- **Host:** Windows, macOS or Linux
 
-<dl>
+## What you need {#what-you-need}
 
-<dt>
+- [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md), installed.
+- An [Espressif ESP32 Dev Module](/hardware/boards/espressif32/esp32dev)
+  (ESP32-DevKitC) board.
+- For debugging, a JTAG probe. This tutorial uses an
+  [Olimex ARM-USB-OCD-H](../../../hardware/debug-probes/olimex-arm-usb-ocd-h.md);
+  an [Olimex ARM-USB-OCD](../../../hardware/debug-probes/olimex-arm-usb-ocd.md)
+  or [Olimex ARM-USB-TINY](../../../hardware/debug-probes/olimex-jtag-tiny.md)
+  also works with a matching [`debug_tool`](../../../reference/platformio-ini/env/debug-tool.md)
+  value.
 
-**Requirements:**
+## Create the project {#setting-up-the-project}
 
-</dt>
+1. Open [PlatformIO Home](../../platformio-home.md) with the **Home** button on
+   the PlatformIO toolbar, and select **New Project**:
 
-<dd>
+   ![PlatformIO Home with the New Project button](./img/arduino-debugging-unit-testing-1.png)
 
-- Downloaded and installed [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md)
-- [Espressif ESP32 Dev Module](/hardware/boards/espressif32/esp32dev)
-- [Olimex ARM-USB-OCD](../../../hardware/debug-probes/olimex-arm-usb-ocd.md) or [Olimex ARM-USB-TINY](../../../hardware/debug-probes/olimex-jtag-tiny.md) adapter for debugging
+2. Select **Espressif ESP32 Dev Module** as the board and **Arduino** as the
+   framework. Keep the default location or choose another one, and select
+   **Finish**:
 
-</dd>
+   ![Project wizard with the ESP32 Dev Module board and Arduino framework](./img/arduino-debugging-unit-testing-2.png)
 
-</dl>
+PlatformIO creates the project and installs the toolchain and framework. The
+first time, this can take a few minutes.
 
-## Setting Up the Project {#setting-up-the-project}
+## Add the code {#adding-code-to-the-generated-project}
 
-First, we need to create a new project using the PlatformIO Home Page (to open this page, just press the Home icon on the toolbar):
-
-![](./img/arduino-debugging-unit-testing-1.png)
-
-Next, we need to select `Espressif ESP32 Dev Module` as a development board, [Arduino](/hardware/frameworks/arduino) as a framework and a path to the project location (or use the default one):
-
-![](./img/arduino-debugging-unit-testing-2.png)
-
-Processing the selected project may take some time (PlatformIO will download and install all required packages). After that, we have a fully configured project that is ready for developing code with the [Arduino](/hardware/frameworks/arduino) framework.
-
-## Adding Code to the Generated Project {#adding-code-to-the-generated-project}
-
-Let's add some actual code to the project. Firstly, we open a default main file named `main.cpp` in the [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder and replace its content with following:
+Open `src/main.cpp` (in the [`src_dir`](../../../reference/platformio-ini/platformio/src-dir.md)
+folder) and replace its content with:
 
 ```cpp
 #include <Arduino.h>
@@ -56,193 +63,191 @@ void loop()
 }
 ```
 
-![](./img/arduino-debugging-unit-testing-3.png)
+![main.cpp open in the editor](./img/arduino-debugging-unit-testing-3.png)
 
-We have now created a basic project ready for compiling and uploading.
+## Build and upload {#compiling-and-uploading-the-firmware}
 
-## Compiling and Uploading the Firmware {#compiling-and-uploading-the-firmware}
+1. Build the project. Use any of these:
 
-Now we can build the project. There are several ways to compile firmware:
+   - **Build** in the **Project Tasks** panel
+   - The **Build** button on the [PlatformIO toolbar](../../../guides/ide/vscode.md#platformio-toolbar)
+   - **Command Palette** > **PlatformIO: Build**
+   - <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> on macOS)
 
-- Build option in the `Project Tasks` menu,
-- Build button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar),
-- Task Menu: `Tasks: Run Task... > PlatformIO: Build`, or in the [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar),
-- Command Palette: `View: Command Palette > PlatformIO: Build`, or
-- via hotkeys `cmd-alt-b / ctrl-alt-b`
+   ![Ways to start a build, highlighted in red](./img/arduino-debugging-unit-testing-4.png)
 
-Marked in red:
+   The terminal shows `SUCCESS` when the build finishes:
 
-![](./img/arduino-debugging-unit-testing-4.png)
+   ![Successful build output](./img/arduino-debugging-unit-testing-5.png)
 
-If everything went well, we should see a Success message in the terminal window:
+2. Connect the board and upload the firmware with **Upload** in the same
+   places, or with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> on macOS):
 
-![](./img/arduino-debugging-unit-testing-5.png)
+   ![Ways to start an upload](./img/arduino-debugging-unit-testing-6.png)
 
-There are also several ways to upload the firmware to the board:
+3. Open the serial monitor with **Monitor** in the **Project Tasks** panel,
+   the **Serial Monitor** button on the toolbar, or **Command Palette** >
+   **PlatformIO: Monitor**:
 
-- Upload option in the `Project Tasks` menu,
-- Upload button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar),
-- Command Palette: `View: Command Palette > PlatformIO: Upload`,
-- using the Task Menu: `Tasks: Run Task... > PlatformIO: Upload`, or
-- via hotkeys: `cmd-alt-u / ctrl-alt-u`:
+   ![Ways to open the serial monitor](./img/arduino-debugging-unit-testing-7.png)
 
-![](./img/arduino-debugging-unit-testing-6.png)
+   The board prints `Hello world!` every second:
 
-After uploading, we need to check if the firmware is uploaded correctly. To do this, open the serial monitor and check that the message from the board is received. To open the serial monitor, we can use the following options:
+   ![Serial monitor output](./img/arduino-debugging-unit-testing-8.png)
 
-- Monitor option in the `Project Tasks` menu,
-- Serial Monitor button in the [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar),
-- Command Palette: `View: Command Palette > PlatformIO: Monitor`, or
-- Task Menu: `Tasks: Run Task... > PlatformIO: Monitor`:
+## Debug the firmware {#debugging-the-firmware}
 
-![](./img/arduino-debugging-unit-testing-7.png)
+### Connect the probe {#setting-up-the-hardware}
 
-If the firmware works as expected, the message from the board can be observed in the terminal window:
-
-![](./img/arduino-debugging-unit-testing-8.png)
-
-## Debugging the Firmware {#debugging-the-firmware}
-
-### Setting Up the Hardware {#setting-up-the-hardware}
-
-In order to use a JTAG probe with an ESP32, we need to connect the following pins:
+Connect the JTAG probe to the board:
 
 | ESP32 pin | JTAG probe pin |
-|---|---|
-| `3.3V` | `Pin 1(VTref)` |
-| `GPIO 9 (EN)` | `Pin 3 (nTRST)` |
+| --- | --- |
+| `3.3V` | `Pin 1 (VTref)` |
+| `EN` | `Pin 3 (nTRST)` |
 | `GND` | `Pin 4 (GND)` |
 | `GPIO 12 (TDI)` | `Pin 5 (TDI)` |
 | `GPIO 14 (TMS)` | `Pin 7 (TMS)` |
 | `GPIO 13 (TCK)` | `Pin 9 (TCK)` |
 | `GPIO 15 (TDO)` | `Pin 13 (TDO)` |
 
-[Debugging](../../../guides/debugging/index.md) offers the easiest way to debug the board. Firstly, we need to specify [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md). In this tutorial, an [Olimex ARM-USB-OCD-H](../../../hardware/debug-probes/olimex-arm-usb-ocd-h.md) debug probe is used:
+### Start debugging {#start-debugging}
 
-```ini
-[env:esp32dev]
-platform = espressif32
-board = esp32dev
-framework = arduino
-debug_tool = olimex-arm-usb-ocd-h
-```
+1. Tell PlatformIO which probe you use with the
+   [`debug_tool`](../../../reference/platformio-ini/env/debug-tool.md)
+   option in `platformio.ini`:
 
-To start the debug session we can use the following methods:
+   ```ini
+   [env:esp32dev]
+   platform = espressif32
+   board = esp32dev
+   framework = arduino
+   debug_tool = olimex-arm-usb-ocd-h
+   ```
 
-- `Debug: Start debugging` in the top menu,
-- `Start Debugging` option in the Quick Access menu, or
-- hotkey button `F5`:
+2. Start a debug session with **Run** > **Start Debugging**, or press
+   <kbd>F5</kbd>:
 
-![](./img/arduino-debugging-unit-testing-9.png)
+   ![Starting a debug session](./img/arduino-debugging-unit-testing-9.png)
 
-We need to wait some time while PlatformIO initializes the debug session, and are ready to debug when the first line after the main function is highlighted.
+3. Wait until the session stops at the first line of `app_main()`.
 
-1. Please wait when debugging session is stopped at the first line of `app_main()` function
-2. **WARNING!** Please set a breakpoint at `void loopTask(void *pvParameters)` (line 13 in the screenshot below - this line can change between releases)
-3. Now, please press CONTINUE/RUN button on debugging toolbar (right arrow icon)
-4. The debugging session should stop at the first line of the `void loopTask(void *pvParameters)` function
-5. Now, navigate to your Arduino setup/loop code and do classic debugging.
+4. On the ESP32, the Arduino `setup()` and `loop()` run in a FreeRTOS task.
+   Set a breakpoint in `void loopTask(void *pvParameters)` (line 13 in the
+   screenshot below; the line number depends on the framework version), and
+   select **Continue** (<kbd>F5</kbd>). The session stops in `loopTask`:
 
-![](./img/arduino-debugging-unit-testing-10.png)
+   ![Breakpoint in loopTask](./img/arduino-debugging-unit-testing-10.png)
 
-We can walk through the code using control buttons, set breakpoints, and add variables to the `Watch window`:
+5. Open `src/main.cpp` and debug as usual: set breakpoints, step through the
+   code, and add variables to **Watch**:
 
-![](./img/arduino-debugging-unit-testing-11.png)
+   ![Debugging with breakpoints and watched variables](./img/arduino-debugging-unit-testing-11.png)
 
-## Writing Unit Tests {#writing-unit-tests}
+For more about debugging, see [Debugging](../../../guides/debugging/index.md).
 
-[Unit Testing](../../../guides/unit-testing/index.md) test cases can be added to a single file that may include multiple tests. First of all, in this file, we need to add four default functions: `setUp`, `tearDown`, `setup` and `loop`. Functions `setUp` and `tearDown` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests, but if you need to initialize some variables before you run a test, use the `setUp` function. Likewise, if you need to clean up variables, use `tearDown` function. In our example we will use these functions to respectively initialize and deinitialize LED states. The `setup` and `loop` functions act as a simple Arduino program where we describe our test plan.
+## Write unit tests {#writing-unit-tests}
 
-Let's create a `test` folder in the root of the project and add a new file, `test_main.cpp`, to this folder. Next, basic tests for `String` class will be implemented in this file:
+[Unit tests](../../../guides/unit-testing/index.md) with the
+[Unity](../../../guides/unit-testing/frameworks/unity.md) framework use four
+functions:
 
-- `test_string_concat` tests the concatenation of two strings
-- `test_string_substring` tests the correctness of the substring extraction
-- `test_string_index_of` ensures that the string returns the correct index of the specified symbol
-- `test_string_equal_ignore_case` tests case-insensitive comparison of two strings
-- `test_string_to_upper_case` tests conversion of the string to upper-case
-- `test_string_replace` tests the correctness of the replacing operation
+- `setUp()` runs before each test and `tearDown()` after it. Use them to
+  prepare and reset the test data. They are optional.
+- `setup()` and `loop()` are a regular Arduino program that runs the tests.
 
-```cpp
-#include <Arduino.h>
-#include <unity.h>
+The tests below check the Arduino `String` class:
 
-String STR_TO_TEST;
+| Test | Checks |
+| --- | --- |
+| `test_string_concat` | Concatenation of two strings |
+| `test_string_substring` | Substring extraction |
+| `test_string_index_of` | Index of a character |
+| `test_string_equal_ignore_case` | Case-insensitive comparison |
+| `test_string_to_upper_case` | Conversion to upper case |
+| `test_string_replace` | Character replacement |
 
-void setUp(void) {
-    // set stuff up here
-    STR_TO_TEST = "Hello, world!";
-}
+1. Create `test/test_main.cpp` in the project:
 
-void tearDown(void) {
-    // clean stuff up here
-    STR_TO_TEST = "";
-}
+   ```cpp
+   #include <Arduino.h>
+   #include <unity.h>
 
-void test_string_concat(void) {
-    String hello = "Hello, ";
-    String world = "world!";
-    TEST_ASSERT_EQUAL_STRING(STR_TO_TEST.c_str(), (hello + world).c_str());
-}
+   String STR_TO_TEST;
 
-void test_string_substring(void) {
-    TEST_ASSERT_EQUAL_STRING("Hello", STR_TO_TEST.substring(0, 5).c_str());
-}
+   void setUp(void) {
+       // set stuff up here
+       STR_TO_TEST = "Hello, world!";
+   }
 
-void test_string_index_of(void) {
-    TEST_ASSERT_EQUAL(7, STR_TO_TEST.indexOf('w'));
-}
+   void tearDown(void) {
+       // clean stuff up here
+       STR_TO_TEST = "";
+   }
 
-void test_string_equal_ignore_case(void) {
-    TEST_ASSERT_TRUE(STR_TO_TEST.equalsIgnoreCase("HELLO, WORLD!"));
-}
+   void test_string_concat(void) {
+       String hello = "Hello, ";
+       String world = "world!";
+       TEST_ASSERT_EQUAL_STRING(STR_TO_TEST.c_str(), (hello + world).c_str());
+   }
 
-void test_string_to_upper_case(void) {
-    STR_TO_TEST.toUpperCase();
-    TEST_ASSERT_EQUAL_STRING("HELLO, WORLD!", STR_TO_TEST.c_str());
-}
+   void test_string_substring(void) {
+       TEST_ASSERT_EQUAL_STRING("Hello", STR_TO_TEST.substring(0, 5).c_str());
+   }
 
-void test_string_replace(void) {
-    STR_TO_TEST.replace('!', '?');
-    TEST_ASSERT_EQUAL_STRING("Hello, world?", STR_TO_TEST.c_str());
-}
+   void test_string_index_of(void) {
+       TEST_ASSERT_EQUAL(7, STR_TO_TEST.indexOf('w'));
+   }
 
-void setup()
-{
-    delay(2000); // service delay
-    UNITY_BEGIN();
+   void test_string_equal_ignore_case(void) {
+       TEST_ASSERT_TRUE(STR_TO_TEST.equalsIgnoreCase("HELLO, WORLD!"));
+   }
 
-    RUN_TEST(test_string_concat);
-    RUN_TEST(test_string_substring);
-    RUN_TEST(test_string_index_of);
-    RUN_TEST(test_string_equal_ignore_case);
-    RUN_TEST(test_string_to_upper_case);
-    RUN_TEST(test_string_replace);
+   void test_string_to_upper_case(void) {
+       STR_TO_TEST.toUpperCase();
+       TEST_ASSERT_EQUAL_STRING("HELLO, WORLD!", STR_TO_TEST.c_str());
+   }
 
-    UNITY_END(); // stop unit testing
-}
+   void test_string_replace(void) {
+       STR_TO_TEST.replace('!', '?');
+       TEST_ASSERT_EQUAL_STRING("Hello, world?", STR_TO_TEST.c_str());
+   }
 
-void loop()
-{
-}
-```
+   void setup()
+   {
+       delay(2000); // service delay
+       UNITY_BEGIN();
 
-Now we are ready to upload tests to the board. To do this we can use the following:
+       RUN_TEST(test_string_concat);
+       RUN_TEST(test_string_substring);
+       RUN_TEST(test_string_index_of);
+       RUN_TEST(test_string_equal_ignore_case);
+       RUN_TEST(test_string_to_upper_case);
+       RUN_TEST(test_string_replace);
 
-- Test button on [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar),
-- Test option in the `Project Tasks` menu, or
-- `Tasks: Run Task... > PlatformIO Test` in the top menu:
+       UNITY_END(); // stop unit testing
+   }
 
-![](./img/arduino-debugging-unit-testing-12.png)
+   void loop()
+   {
+   }
+   ```
 
-After processing, we should see a detailed report about the testing results:
+2. Run the tests on the board with the **Test** button on the PlatformIO
+   toolbar or **Test** in the **Project Tasks** panel:
 
-![](./img/arduino-debugging-unit-testing-13.png)
+   ![Ways to run the tests](./img/arduino-debugging-unit-testing-12.png)
 
-As we can see from the report, all our tests were successful!
+   PlatformIO builds and uploads the tests and shows a report. All tests pass:
 
-## Adding Bluetooth LE features {#adding-bluetooth-le-features}
+   ![Test report](./img/arduino-debugging-unit-testing-13.png)
 
-Now let's create a basic application that can interact with other BLE devices (e.g phones). For example, the following code declares a BLE characteristic whose value can be printed to the serial port:
+## Add a Bluetooth LE service {#adding-bluetooth-le-features}
+
+Next, make the board talk to other Bluetooth LE devices, such as a phone. The
+following program advertises a BLE service with one characteristic and prints
+every new value written to it:
 
 ```cpp
 #include <Arduino.h>
@@ -291,20 +296,30 @@ void loop() {
 }
 ```
 
-Now we can compile and upload this program to the board as described in the previous sections. To verify that our application works as expected, we can use any Android smartphone with the BLE feature and [Nordic nRF Connect tool](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en).
+1. Replace `src/main.cpp` with this program, then build and upload it as
+   before.
+2. On an Android phone with Bluetooth LE, open
+   [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en),
+   scan for devices, and connect to **ESP32 BLE example**. It shows one
+   **Unknown Service** with one **Unknown Characteristic**:
 
-At first, we need to scan all advertising BLE devices and connect to the device called `ESP32 BLE example`. After successful connection to the board, we should see one "Unknown Service" with one "Unknown Characteristic" field:
+   ![nRF Connect showing the service and characteristic](./img/arduino-debugging-unit-testing-14.png)
 
-![](./img/arduino-debugging-unit-testing-14.png)
+3. Write a new text value to the characteristic:
 
-To set the value, we need to send new text to the BLE characteristic:
+   ![Writing a value in nRF Connect](./img/arduino-debugging-unit-testing-15.png)
 
-![](./img/arduino-debugging-unit-testing-15.png)
+4. The serial monitor prints the new value:
 
-The change of the value is printed to the serial monitor:
+   ![New value in the serial monitor](./img/arduino-debugging-unit-testing-16.png)
 
-![](./img/arduino-debugging-unit-testing-16.png)
+## Next steps {#conclusion}
 
-## Conclusion {#conclusion}
+You now have a working ESP32 project that you can use as a starting point.
+To go further:
 
-Now we have a project template for the `ESP32-DevKitC` board that we can use as boilerplate for later projects.
+- [Espressif 32 platform](/hardware/platforms/espressif32): configuration,
+  file systems and over-the-air updates.
+- [Unit testing](../../../guides/unit-testing/index.md): run tests on the host
+  or in CI.
+- [Debugging](../../../guides/debugging/index.md): all debugging features.

@@ -1,46 +1,63 @@
+---
+description: Install PlatformIO Core, the pio command-line tool, on Windows, macOS or Linux.
+---
+
 <a id="core-installation"></a>
 
-# Installation {#installation}
+# Install PlatformIO Core {#installation}
+
+This page helps you install [PlatformIO Core](../platformio-core.md), the `pio`
+command-line tool.
 
 :::note
 
-You do not need to install **PlatformIO Core** if you are going to use [PlatformIO IDE](../platformio-ide.md). **PlatformIO Core** is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal. See instructions on how to open [PlatformIO Core CLI in PlatformIO IDE for VSCode](../../guides/ide/vscode.md#ide-vscode-pio-core-cli).
-
-If you need **PlatformIO Core** outside PlatformIO IDE, please [Install Shell Commands](./shell-commands.md).
+[PlatformIO IDE](../platformio-ide.md) already includes PlatformIO Core. If you
+use it, you do not need to install anything: open the
+[PlatformIO Core CLI](../../guides/ide/vscode.md#platformio-core-cli) terminal
+in the IDE. To use the IDE's PlatformIO Core from other terminals,
+[install the shell commands](./shell-commands.md).
 
 :::
 
-- [System Requirements](./requirements.md)
+<a id="installation-methods"></a>
 
-- [Installation Methods](./methods/index.md)
+## Choose an installation method {#choose-an-installation-method}
 
-  - [Installer Script (Recommended)](./methods/installer-script.md)
-  - [Python Package Manager](./methods/pypi.md)
-  - [Homebrew (macOS)](./methods/brew.md)
+Check the [system requirements](./requirements.md) first, then install with
+**one** of these methods:
 
-- [Development Version](./development-version.md)
+| Method | Use it when |
+| --- | --- |
+| [Installer script](./installer-script.md) (recommended) | You install PlatformIO for yourself on a workstation. PlatformIO goes into its own isolated Python environment and is easy to upgrade or remove. |
+| [pip](./pip.md) | You build in CI or in containers, or you manage Python environments yourself. |
+| [Homebrew](./homebrew.md) | You use macOS and manage your tools with Homebrew. |
 
-- [Install Shell Commands](./shell-commands.md)
+Installing PlatformIO Core more than once (for example, with both the
+installer script and pip) causes conflicts. See
+[Multiple PlatformIO Core installations](./troubleshooting.md#multiple-platformio-cores-in-a-system).
 
-  - [Unix and Unix-like](./shell-commands.md#unix-and-unix-like)
-  - [Windows](./shell-commands.md#windows)
+## Verify the installation {#verify-the-installation}
 
-- [99-platformio-udev.rules](./udev-rules.md)
+Open a new terminal and run:
 
-  - [Alternative using group membership](./udev-rules.md#alternative-using-group-membership)
+```bash
+pio --version
+```
 
-- [Integration with custom applications (extensions, plugins)](./integration.md)
+If the command is not found, see
+[Install shell commands](./shell-commands.md) and
+[Troubleshooting](./troubleshooting.md#platformio-is-not-recognized-as-an-internal-or-external-command).
 
-  - [Prerequisite](./integration.md#prerequisite)
-  - [Workflow](./integration.md#workflow)
-  - [Examples](./integration.md#examples)
+## After installing {#after-installing}
 
-- [Proxy Configuration](./proxy-configuration.md)
+- **Linux:** [install the udev rules](./udev-rules.md) so that you can upload
+  to boards without root privileges.
+- **Behind a proxy:** [configure the proxy](./proxy-configuration.md).
+- **Next:** follow the [Quick start](../quick-start.md).
 
-- [Troubleshooting](./troubleshooting.md)
+## More topics {#more-topics}
 
-  - [Multiple PlatformIO Cores in a system](./troubleshooting.md#multiple-platformio-cores-in-a-system)
-  - ['platformio' is not recognized as an internal or external command](./troubleshooting.md#platformio-is-not-recognized-as-an-internal-or-external-command)
-  - [ImportError: cannot import name \_remove_dead_weakref](./troubleshooting.md#importerror-cannot-import-name-remove-dead-weakref)
-
-- [Uninstall PlatformIO Core and dependent packages](./uninstall.md)
+- [Development version](./development-version.md): try unreleased changes.
+- [Integration with your application](./integration.md): install PlatformIO
+  Core automatically from an IDE extension or plugin.
+- [Uninstall PlatformIO Core](./uninstall.md).

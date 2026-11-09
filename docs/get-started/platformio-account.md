@@ -1,30 +1,40 @@
+---
+description: What a PlatformIO Account is for and how to manage it.
+---
+
 <a id="pioaccount"></a>
 
 # PlatformIO Account {#platformio-account}
 
-**PlatformIO Account** is required for:
+Building, uploading, debugging and testing firmware do not require an account.
+You need a PlatformIO Account to:
 
-- [Community Forum](https://community.platformio.org/)
-- [Remote Development](../guides/remote-development.md)
-- [Managing organizations and owners of an organization](../reference/cli/pio-org/index.md)
-- [Managing teams and team memberships](../reference/cli/pio-team/index.md)
-- [Managing packages in the registry](../reference/cli/pio-pkg/index.md)
-- [Managing resource (package) access](../reference/cli/pio-access/index.md).
+- Post in the [Community forum](https://community.platformio.org/).
+- Use [remote development](../guides/remote-development.md).
+- [Publish packages](../reference/cli/pio-pkg/publish.md) to the PlatformIO
+  Registry and [control who can access them](../reference/cli/pio-access/index.md).
+- Manage [organizations](../reference/cli/pio-org/index.md) and
+  [teams](../reference/cli/pio-team/index.md).
 
-## PlatformIO IDE {#platformio-ide}
+## Manage your account {#platformio-ide}
 
-[PlatformIO IDE](./platformio-ide.md) has built-in UI in PlatformIO Home to manage PlatformIO Account. You can create a new account, reset your password, update profile, or fetch an authentication token. This UI must be used to login with OAuth.
+**In PlatformIO IDE**, open [PlatformIO Home](./platformio-home.md) and select
+**Account**. There you can create an account, sign in (including with OAuth
+providers), reset your password, update your profile and get an
+authentication token. Signing in with OAuth is available only here.
 
-## CLI Guide {#cli-guide}
+<a id="cli-guide"></a>
 
-- [pio account](../reference/cli/pio-account/index.md)
+**From the command line**, use [`pio account`](../reference/cli/pio-account/index.md):
 
-  - [pio account destroy](../reference/cli/pio-account/destroy.md)
-  - [pio account forgot](../reference/cli/pio-account/forgot.md)
-  - [pio account login](../reference/cli/pio-account/login.md)
-  - [pio account logout](../reference/cli/pio-account/logout.md)
-  - [pio account password](../reference/cli/pio-account/password.md)
-  - [pio account register](../reference/cli/pio-account/register.md)
-  - [pio account show](../reference/cli/pio-account/show.md)
-  - [pio account token](../reference/cli/pio-account/token.md)
-  - [pio account update](../reference/cli/pio-account/update.md)
+| Command | What it does |
+| --- | --- |
+| [`pio account register`](../reference/cli/pio-account/register.md) | Create an account |
+| [`pio account login`](../reference/cli/pio-account/login.md) | Sign in |
+| [`pio account logout`](../reference/cli/pio-account/logout.md) | Sign out |
+| [`pio account show`](../reference/cli/pio-account/show.md) | Show account details |
+| [`pio account update`](../reference/cli/pio-account/update.md) | Update your profile |
+| [`pio account password`](../reference/cli/pio-account/password.md) | Change your password |
+| [`pio account forgot`](../reference/cli/pio-account/forgot.md) | Reset a forgotten password |
+| [`pio account token`](../reference/cli/pio-account/token.md) | Get an authentication token, for example for CI |
+| [`pio account destroy`](../reference/cli/pio-account/destroy.md) | Delete your account |

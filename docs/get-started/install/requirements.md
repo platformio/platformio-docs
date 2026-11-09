@@ -1,60 +1,21 @@
-# System Requirements {#system-requirements}
+---
+description: Operating systems, Python version and device access PlatformIO Core needs.
+---
 
-PlatformIO Core is written in [Python](https://www.python.org/downloads/) and works on the most popular operating systems including ARM-based credit-card-sized computers ([Raspberry Pi](http://www.raspberrypi.org), [BeagleBone](http://beagleboard.org), etc.).
+# System requirements {#system-requirements}
 
-<dl>
+| Requirement | Details |
+| --- | --- |
+| Operating system | Windows, macOS, Linux or FreeBSD, including Linux on ARMv6 and later (for example, Raspberry Pi) |
+| Python | Python 3.9 or later. See [Install a Python interpreter](../../resources/faq/install-python.md). |
+| Terminal | Any terminal: Terminal on macOS and Linux, Command Prompt or PowerShell on Windows |
 
-<dt>
+## Access to serial ports {#access-to-serial-ports}
 
-Operating System
+To upload firmware and use the serial monitor, your user account needs access
+to the board's USB or serial port:
 
-</dt>
-
-<dd>
-
-Windows, macOS, Linux, FreeBSD, Linux ARMv6+
-
-</dd>
-
-<dt>
-
-Python Interpreter
-
-</dt>
-
-<dd>
-
-**Python 3.9+ or above**. See detailed instructions on how to [Install Python Interpreter](../../resources/faq/install-python.md).
-
-</dd>
-
-<dt>
-
-Terminal Application
-
-</dt>
-
-<dd>
-
-All CLI commands below should be executed in the [Command-line](http://en.wikipedia.org/wiki/Command-line_interface) application (Terminal). For macOS and Linux OS - *Terminal* application, for Windows OS – `cmd.exe` application.
-
-</dd>
-
-<dt>
-
-Access to Serial Ports (USB/UART)
-
-</dt>
-
-<dd>
-
-**Windows Users:** Please check that you have correctly installed the USB driver from the board manufacturer.
-
-**Linux Users**:
-
-- Please install [99-platformio-udev.rules](./udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
-
-</dd>
-
-</dl>
+- **Windows:** install the USB driver from the board manufacturer, if the
+  board needs one.
+- **Linux:** install the [udev rules](./udev-rules.md). On a Raspberry Pi,
+  also [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).

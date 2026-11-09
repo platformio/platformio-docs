@@ -1,50 +1,46 @@
+---
+description: PlatformIO Core is the command-line tool and build system behind every PlatformIO product.
+---
+
 <a id="piocore"></a>
 
 # PlatformIO Core (CLI) {#platformio-core-cli}
 
-**PlatformIO Core** (CLI tool) is the heart of the entire PlatformIO ecosystem and consists of
+PlatformIO Core is the command-line tool and build system at the center of
+PlatformIO. [PlatformIO IDE](./platformio-ide.md) and
+[PlatformIO Home](./platformio-home.md) are graphical front ends to it, so
+anything you can do in them you can also do, or automate, with the `pio`
+command.
 
-- Multi-platform Build System
-- Unified Package Manager
-- [Library Management](../guides/libraries/index.md)
-- [Library Dependency Finder (LDF)](../guides/libraries/ldf.md)
-- [Serial Port Monitor](../reference/cli/pio-device/monitor.md)
-- Integration components ([Cloud & Desktop IDEs](../guides/ide/index.md) and [Continuous Integration](../guides/ci/index.md)).
+It includes:
 
-**PlatformIO Core** is written in [Python](https://www.python.org/downloads/) and works on Windows, macOS, Linux, FreeBSD and *ARM*-based credit-card sized computers ([Raspberry Pi](http://www.raspberrypi.org), [BeagleBone](http://beagleboard.org), [CubieBoard](http://cubieboard.org), [Samsung ARTIK](https://www.artik.io), etc.).
+- A multi-platform build system.
+- A package manager for development platforms, toolchains, frameworks and
+  [libraries](../guides/libraries/index.md), including the
+  [Library Dependency Finder](../guides/libraries/ldf.md).
+- Tools to [upload](../reference/cli/pio-run.md),
+  [debug](../guides/debugging/index.md),
+  [test](../guides/unit-testing/index.md) and
+  [analyze](../guides/static-code-analysis/index.md) firmware.
+- A [serial port monitor](../reference/cli/pio-device/monitor.md).
+- Project generators for [IDEs](../guides/ide/index.md) and integration with
+  [CI services](../guides/ci/index.md).
 
-**PlatformIO Core** provides a rich and documented Command Line Interface (CLI). The other PlatformIO-based software and IDEs are based on **PlatformIO Core CLI**, such as [PlatformIO IDE](./platformio-ide.md). In other words, they wrap **PlatformIO Core** with own GUI.
+PlatformIO Core is written in Python and runs on Windows, macOS, Linux and
+FreeBSD, including ARM-based single-board computers. See
+[System requirements](./install/requirements.md).
 
-:::note
+## Do you need to install it? {#do-you-need-to-install-it}
 
-Please note that you do not need to install **PlatformIO Core** if you are going to use [PlatformIO IDE](./platformio-ide.md). **PlatformIO Core** is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
+Not if you use PlatformIO IDE: it includes PlatformIO Core, and its terminal
+has the `pio` command ready to use. To use that same installation from other
+terminals, [install the shell commands](./install/shell-commands.md).
 
-If you need **PlatformIO Core** commands outside PlatformIO IDE, please [Install Shell Commands](./install/shell-commands.md).
+Install PlatformIO Core on its own when you work only from the command line,
+use another editor, or build on a CI server. See
+[Install PlatformIO Core](./install/index.md).
 
-:::
+## Next steps {#next-steps}
 
-- [Installation](./install/index.md)
-
-  - [System Requirements](./install/requirements.md)
-  - [Installation Methods](./install/methods/index.md)
-  - [Development Version](./install/development-version.md)
-  - [Install Shell Commands](./install/shell-commands.md)
-  - [99-platformio-udev.rules](./install/udev-rules.md)
-  - [Integration with custom applications (extensions, plugins)](./install/integration.md)
-  - [Proxy Configuration](./install/proxy-configuration.md)
-  - [Troubleshooting](./install/troubleshooting.md)
-  - [Uninstall PlatformIO Core and dependent packages](./install/uninstall.md)
-
-- [Quick Start](./quick-start.md)
-
-  - [Setting Up the Project](./quick-start.md#setting-up-the-project)
-  - [Board Identifier](./quick-start.md#board-identifier)
-  - [Initialize Project](./quick-start.md#initialize-project)
-  - [Process Project](./quick-start.md#process-project)
-  - [Further Reading](./quick-start.md#further-reading)
-
-- [CLI Guide](../reference/cli/index.md)
-
-  - [Usage](../reference/cli/index.md#usage)
-  - [Options](../reference/cli/index.md#options)
-  - [Commands](../reference/cli/index.md#commands)
+- [Quick start](./quick-start.md): create, build and upload your first project.
+- [CLI reference](../reference/cli/index.md): every `pio` command and option.

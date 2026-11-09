@@ -1,34 +1,41 @@
+---
+description: Install the development version of PlatformIO Core from the develop branch, and switch back to stable.
+---
+
 <a id="installation-develop"></a>
 
-# Development Version {#development-version}
+# Install the development version {#development-version}
 
-:::warning
+The development version is built from the `develop` branch of
+[PlatformIO Core](https://github.com/platformio/platformio-core). Use it to try
+fixes and features before they are released.
 
-If you use [PlatformIO IDE](../platformio-ide.md), please enable development version and restart IDE:
+## In PlatformIO IDE {#in-platformio-ide}
 
-- [PlatformIO IDE for VSCode](../../guides/ide/vscode.md): Set `platformio-ide.useDevelopmentPIOCore` to `true` in [Settings](../../guides/ide/vscode.md#ide-vscode-settings).
+In VS Code, set
+[`platformio-ide.useDevelopmentPIOCore`](../../guides/ide/vscode.md#platformio-ide-usedevelopmentpiocore)
+to `true` in the [settings](../../guides/ide/vscode.md#settings), then restart
+VS Code.
 
-:::
+## From the command line {#from-the-command-line}
 
-Install the latest PlatformIO from the `develop` branch:
-
-```bash
-python -m pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
-```
-
-If you want to be up-to-date with the latest `develop` version of PlatformIO, then you need to re-install PlatformIO each time you see a new commit in [PlatformIO GitHub repository (branch: develop)](https://github.com/platformio/platformio-core/commits/develop) like so:
-
-```bash
-python -m pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
-```
-
-Or:
+Switch an existing installation to the development version:
 
 ```bash
 pio upgrade --dev
 ```
 
-To revert to the latest stable version:
+Or install it with pip:
+
+```bash
+python -m pip install -U https://github.com/platformio/platformio-core/archive/develop.zip
+```
+
+The development version does not update itself with every commit. To get the
+latest [changes](https://github.com/platformio/platformio-core/commits/develop),
+run one of the commands above again.
+
+## Return to the stable version {#return-to-the-stable-version}
 
 ```bash
 python -m pip uninstall platformio

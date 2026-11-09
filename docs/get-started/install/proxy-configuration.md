@@ -1,30 +1,49 @@
+---
+description: Use PlatformIO Core behind an HTTP, HTTPS or SOCKS proxy.
+---
+
 <a id="piocore-install-proxy-configuration"></a>
 
-# Proxy Configuration {#proxy-configuration}
+# Configure a proxy {#proxy-configuration}
 
-PlatformIO Core uses Python's underlying `requests` library for HTTP requests. You will need to define a standard environment variable (`HTTP_PROXY`, `HTTPS_PROXY`, or `ALL_PROXY`) depending on your proxy server, and disable the proxy server certificate verification setting [enable_proxy_strict_ssl](../../reference/cli/pio-settings.md#setting-enable-proxy-strict-ssl) to `false`.
+PlatformIO Core makes HTTP requests through the Python
+[Requests](https://requests.readthedocs.io/) library, which reads the standard
+proxy environment variables.
 
-See other proxy and SSL configuration environment variables in the official [Requests Proxies](https://requests.readthedocs.io/en/latest/user/advanced/#proxies) documentation.
+1. Set the variable for your proxy type before you run `pio`:
 
-**Examples**
+   ```bash
+   # HTTP proxy with authentication
+   export HTTP_PROXY="http://user:pass@10.10.1.10:3128/"
 
-```bash
-# Disable proxy server certificate verification
-$ pio settings set enable_proxy_strict_ssl false
+   # HTTPS proxy
+   export HTTPS_PROXY="http://10.10.1.10:1080"
 
-# or using global environment variable
-$ export PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL="false"
+   # SOCKS proxy for all protocols
+   export ALL_PROXY="socks5://10.10.1.10:3434"
+   ```
 
-#
-# Configure proxy server
-#
+   On Windows (Command Prompt), use `set`:
 
-# Unix
-$ export HTTP_PROXY="HTTP_PROXY=http://user:pass@10.10.1.10:3128/"
-# without authentication
-$ export HTTPS_PROXY="http://10.10.1.10:1080"
-$ export ALL_PROXY="socks5://10.10.1.10:3434"
+   ```bash
+   set HTTP_PROXY=http://user:pass@10.10.1.10:3128/
+   ```
 
-# Windows
-set HTTP_PROXY=http://user:pass@10.10.1.10:3128/
-```
+2. If your proxy intercepts TLS with its own certificate, turn off strict
+   certificate verification for proxied requests with the
+   [`enable_proxy_strict_ssl`](../../reference/cli/pio-settings.md#setting-enable-proxy-strict-ssl)
+   setting:
+
+   ```bash
+   pio settings set enable_proxy_strict_ssl false
+   ```
+
+   Or set it for the current session only:
+
+   ```bash
+   export PLATFORMIO_SETTING_ENABLE_PROXY_STRICT_SSL="false"
+   ```
+
+For other proxy and certificate options, see
+[Proxies](https://requests.readthedocs.io/en/latest/user/advanced/#proxies) in
+the Requests documentation.

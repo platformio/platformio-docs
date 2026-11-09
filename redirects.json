@@ -6,24 +6,37 @@
    "/core/installation.html",
    "/core/installation/index",
    "/core/installation/index.html",
+   "/core/installation/methods",
+   "/core/installation/methods/index",
+   "/core/installation/methods/index.html",
    "/en/latest/core/installation",
    "/en/latest/core/installation.html",
    "/en/latest/core/installation/index",
    "/en/latest/core/installation/index.html",
+   "/en/latest/core/installation/methods",
+   "/en/latest/core/installation/methods/index",
+   "/en/latest/core/installation/methods/index.html",
    "/en/latest/installation",
    "/en/latest/installation.html",
    "/en/stable/core/installation",
    "/en/stable/core/installation.html",
    "/en/stable/core/installation/index",
    "/en/stable/core/installation/index.html",
+   "/en/stable/core/installation/methods",
+   "/en/stable/core/installation/methods/index",
+   "/en/stable/core/installation/methods/index.html",
    "/en/stable/installation",
    "/en/stable/installation.html",
+   "/get-started/install/methods",
    "/installation",
    "/installation.html",
    "/page/core/installation",
    "/page/core/installation.html",
    "/page/core/installation/index",
    "/page/core/installation/index.html",
+   "/page/core/installation/methods",
+   "/page/core/installation/methods/index",
+   "/page/core/installation/methods/index.html",
    "/page/installation",
    "/page/installation.html"
   ]
@@ -42,6 +55,34 @@
   ]
  },
  {
+  "to": "/get-started/install/homebrew",
+  "from": [
+   "/core/installation/methods/brew",
+   "/core/installation/methods/brew.html",
+   "/en/latest/core/installation/methods/brew",
+   "/en/latest/core/installation/methods/brew.html",
+   "/en/stable/core/installation/methods/brew",
+   "/en/stable/core/installation/methods/brew.html",
+   "/get-started/install/methods/brew",
+   "/page/core/installation/methods/brew",
+   "/page/core/installation/methods/brew.html"
+  ]
+ },
+ {
+  "to": "/get-started/install/installer-script",
+  "from": [
+   "/core/installation/methods/installer-script",
+   "/core/installation/methods/installer-script.html",
+   "/en/latest/core/installation/methods/installer-script",
+   "/en/latest/core/installation/methods/installer-script.html",
+   "/en/stable/core/installation/methods/installer-script",
+   "/en/stable/core/installation/methods/installer-script.html",
+   "/get-started/install/methods/installer-script",
+   "/page/core/installation/methods/installer-script",
+   "/page/core/installation/methods/installer-script.html"
+  ]
+ },
+ {
   "to": "/get-started/install/integration",
   "from": [
    "/core/installation/integration",
@@ -55,50 +96,7 @@
   ]
  },
  {
-  "to": "/get-started/install/methods",
-  "from": [
-   "/core/installation/methods",
-   "/core/installation/methods/index",
-   "/core/installation/methods/index.html",
-   "/en/latest/core/installation/methods",
-   "/en/latest/core/installation/methods/index",
-   "/en/latest/core/installation/methods/index.html",
-   "/en/stable/core/installation/methods",
-   "/en/stable/core/installation/methods/index",
-   "/en/stable/core/installation/methods/index.html",
-   "/page/core/installation/methods",
-   "/page/core/installation/methods/index",
-   "/page/core/installation/methods/index.html"
-  ]
- },
- {
-  "to": "/get-started/install/methods/brew",
-  "from": [
-   "/core/installation/methods/brew",
-   "/core/installation/methods/brew.html",
-   "/en/latest/core/installation/methods/brew",
-   "/en/latest/core/installation/methods/brew.html",
-   "/en/stable/core/installation/methods/brew",
-   "/en/stable/core/installation/methods/brew.html",
-   "/page/core/installation/methods/brew",
-   "/page/core/installation/methods/brew.html"
-  ]
- },
- {
-  "to": "/get-started/install/methods/installer-script",
-  "from": [
-   "/core/installation/methods/installer-script",
-   "/core/installation/methods/installer-script.html",
-   "/en/latest/core/installation/methods/installer-script",
-   "/en/latest/core/installation/methods/installer-script.html",
-   "/en/stable/core/installation/methods/installer-script",
-   "/en/stable/core/installation/methods/installer-script.html",
-   "/page/core/installation/methods/installer-script",
-   "/page/core/installation/methods/installer-script.html"
-  ]
- },
- {
-  "to": "/get-started/install/methods/pypi",
+  "to": "/get-started/install/pip",
   "from": [
    "/core/installation/methods/pypi",
    "/core/installation/methods/pypi.html",
@@ -106,6 +104,7 @@
    "/en/latest/core/installation/methods/pypi.html",
    "/en/stable/core/installation/methods/pypi",
    "/en/stable/core/installation/methods/pypi.html",
+   "/get-started/install/methods/pypi",
    "/page/core/installation/methods/pypi",
    "/page/core/installation/methods/pypi.html"
   ]

@@ -79,11 +79,9 @@ const sidebars: SidebarsConfig = {
     'get-started/quick-start',
     section('Install PlatformIO Core', 'get-started/install', [
       'get-started/install/requirements',
-      section('Installation methods', 'get-started/install/methods', [
-        'get-started/install/methods/installer-script',
-        'get-started/install/methods/pypi',
-        'get-started/install/methods/brew',
-      ]),
+      'get-started/install/installer-script',
+      'get-started/install/pip',
+      'get-started/install/homebrew',
       'get-started/install/shell-commands',
       'get-started/install/udev-rules',
       'get-started/install/proxy-configuration',

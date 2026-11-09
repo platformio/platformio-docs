@@ -1,16 +1,30 @@
+---
+description: Remove PlatformIO Core and the packages it installed.
+---
+
 <a id="piocore-uninstall"></a>
 
-# Uninstall PlatformIO Core and dependent packages {#uninstall-platformio-core-and-dependent-packages}
+# Uninstall PlatformIO Core {#uninstall-platformio-core-and-dependent-packages}
 
-- The isolated installation of PlatformIO Core and dependent packages are installed to the [core_dir](../../reference/platformio-ini/platformio/core-dir.md) folder. Just remove it.
+PlatformIO Core keeps itself (when installed with the
+[installer script](./installer-script.md)), its packages, platforms,
+toolchains and settings in
+[`core_dir`](../../reference/platformio-ini/platformio/core-dir.md):
+`~/.platformio` by default, or `%USERPROFILE%\.platformio` on Windows.
 
-- Uninstall global PlatformIO Core if you did not use the [Installer Script (Recommended)](./methods/installer-script.md):
+To uninstall:
 
-  ```bash
-  # uninstall standalone PlatformIO Core installed via `pip`
-  pip uninstall platformio
-  python -m pip uninstall platformio
+1. If you installed PlatformIO Core with [pip](./pip.md) or
+   [Homebrew](./homebrew.md), remove it with the same tool:
 
-  # uninstall Homebrew's PlatformIO Core (only macOS users if you installed it via Homebrew before)
-  brew uninstall platformio
-  ```
+   ```bash
+   python -m pip uninstall platformio
+
+   # or, if you used Homebrew
+   brew uninstall platformio
+   ```
+
+2. Delete the `core_dir` folder.
+
+3. If you [installed the shell commands](./shell-commands.md), remove the
+   links or the `Path` entry you added.

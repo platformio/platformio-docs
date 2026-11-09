@@ -1,59 +1,55 @@
+---
+description: Choose and install a PlatformIO IDE extension for Visual Studio Code or CLion.
+---
+
 <a id="pioide"></a>
 
 # PlatformIO IDE {#platformio-ide}
 
-**PlatformIO IDE is the next-generation integrated development environment for IoT.**
+PlatformIO IDE is the set of official PlatformIO extensions for code editors.
+It bundles [PlatformIO Core](./platformio-core.md), so you do not need to
+install anything else, and adds a graphical workflow on top of it.
 
-- Cross-platform build system without external dependencies to the OS software:
+We recommend **PlatformIO IDE for Visual Studio Code** for most users: it is
+the most complete and the most widely used.
 
-  - 1,000+ [Boards](/hardware/boards)
-  - 40+ [Development Platforms](../hardware/platforms/index.md)
-  - 20+ [Frameworks](../hardware/frameworks/index.md)
+## Features {#features}
 
-- [Debugging](../guides/debugging/index.md)
+- Builds for 1,500+ [boards](/hardware/boards) across 30+
+  [development platforms](../hardware/platforms/index.md) and 20
+  [frameworks](../hardware/frameworks/index.md), with no system-wide toolchain
+  installation.
+- [Debugging](../guides/debugging/index.md) with breakpoints, peripheral
+  registers and memory views.
+- [Unit testing](../guides/unit-testing/index.md) on the host or on the target
+  device.
+- [Remote development](../guides/remote-development.md): build, upload and test
+  on devices connected to another machine.
+- C/C++ code completion and linting.
+- A library manager, a serial port monitor and
+  [PlatformIO Home](./platformio-home.md).
+- A built-in terminal with the `pio` command
+  ([CLI reference](../reference/cli/index.md)).
 
-- [Remote Development](../guides/remote-development.md)
+## PlatformIO IDE for Visual Studio Code {#platformio-for-vscode}
 
-- [Unit Testing](../guides/unit-testing/index.md)
+Visual Studio Code is a free, cross-platform source code editor for Windows,
+macOS and Linux.
 
-- C/C++ Intelligent Code Completion
+[![PlatformIO IDE in Visual Studio Code](./img/platformio-ide-vscode.png)](../guides/ide/vscode.md)
 
-- C/C++ Smart Code Linter for rapid professional development
+To install it, follow [PlatformIO IDE for VS Code](../guides/ide/vscode.md#installation).
 
-- Library Manager for the hundreds popular libraries
+## PlatformIO for CLion {#platformio-for-clion-experimental}
 
-- Multi-projects workflow with multiple panes
+CLion is a cross-platform C/C++ IDE from JetBrains. The PlatformIO plugin for
+CLion is experimental.
 
-- Themes support with dark and light colors
+[![PlatformIO in CLion](./img/ide-platformio-clion.png)](../guides/ide/clion.md)
 
-- Serial Port Monitor
+To install it, follow [PlatformIO for CLion](../guides/ide/clion.md).
 
-- Built-in Terminal with [PlatformIO Core (CLI)](./platformio-core.md) and CLI tool (`pio`, `platformio`)
+## Other editors {#other-editors}
 
-- Built-in [PlatformIO Home](./platformio-home.md).
-
----
-
-We provide official packages (plugins, extensions) for the most popular IDEs and text editors.
-
-:::note
-
-In our experience, [PlatformIO IDE for VSCode](../guides/ide/vscode.md) offers better system performance, and users have found it easier to get started
-
-:::
-
-## PlatformIO for VSCode {#platformio-for-vscode}
-
-**Visual Studio Code** is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity).
-
-[Install PlatformIO for VSCode / Get started](../guides/ide/vscode.md)
-
-[![](./img/platformio-ide-vscode.png)](../guides/ide/vscode.md)
-
-## PlatformIO for CLion (experimental) {#platformio-for-clion-experimental}
-
-The **CLion** is a cross-platform C/C++ IDE for Linux, OS X, and Windows. CLion includes such features as a smart editor, code generation, code quality assurance, automated refactorings, on-the-fly code analysis, project manager, integrated version control systems and debugger.
-
-[Install PlatformIO for CLion / Get started](../guides/ide/clion.md)
-
-[![](./img/ide-platformio-clion.png)](../guides/ide/vscode.md)
+PlatformIO Core can generate project files for many other editors, such as
+Neovim, Emacs and Eclipse. See [IDE integrations](../guides/ide/index.md).

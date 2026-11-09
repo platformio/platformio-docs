@@ -1,31 +1,48 @@
+---
+sidebar_label: "ESP-IDF on ESP32"
+description: Build, upload, debug, unit test and inspect an ESP-IDF Wi-Fi access point project on the ESP32-DevKitC with PlatformIO IDE for VS Code.
+---
+
 <a id="tutorial-espressif32-espidf-debugging-unit-testing-analysis"></a>
 
-# Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis {#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis}
+# ESP-IDF on ESP32-DevKitC: debugging, unit testing and project analysis {#get-started-with-esp-idf-and-esp32-devkitc-debugging-unit-testing-project-analysis}
 
-The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md) to develop, run and debug a simple Wi-Fi project with the [Espressif IoT Development Framework](/hardware/frameworks/espidf) framework for the `ESP32-DevKitC` board.
+In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
+to build a Wi-Fi access point with the
+[ESP-IDF](/hardware/frameworks/espidf) framework on the ESP32-DevKitC board.
+You then debug it over JTAG, unit test a small library on the board, and
+inspect the firmware's memory use and code quality.
 
-- **Level:** Intermediate
-- **Platforms:** Windows, Mac OS X, Linux
+- **Level:** intermediate
+- **Host:** Windows, macOS or Linux
 
-**Requirements:**
+## What you need {#what-you-need}
 
-- Downloaded and installed [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md)
-- [Espressif ESP32 Dev Module](/hardware/boards/espressif32/esp32dev)
-- An external debug adapter (e.g. [Olimex ARM-USB-OCD](../../../hardware/debug-probes/olimex-arm-usb-ocd.md))
+- [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md), installed.
+- An [Espressif ESP32 Dev Module](/hardware/boards/espressif32/esp32dev)
+  (ESP32-DevKitC) board.
+- For debugging, a JTAG probe such as the
+  [Olimex ARM-USB-OCD-H](../../../hardware/debug-probes/olimex-arm-usb-ocd-h.md)
+  used here, or an [Olimex ARM-USB-OCD](../../../hardware/debug-probes/olimex-arm-usb-ocd.md).
 
-## Setting Up the Project {#setting-up-the-project}
+## Create the project {#setting-up-the-project}
 
-1. Click on "PlatformIO Home" button on the bottom PlatformIO Toolbar:
+1. Select the **Home** button on the PlatformIO toolbar to open
+   [PlatformIO Home](../../platformio-home.md):
 
-   ![](./img/espidf-debugging-unit-testing-analysis-1.png)
+   ![PlatformIO toolbar with the Home button](./img/espidf-debugging-unit-testing-analysis-1.png)
 
-2. Click on "New Project", select `Espressif ESP32 Dev Module` as the development board, [Espressif IoT Development Framework](/hardware/frameworks/espidf) as the framework and a path to the project location (or use the default one):
+2. Select **New Project**. Choose **Espressif ESP32 Dev Module** as the board
+   and **Espidf** as the framework, keep or change the location, and select
+   **Finish**:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-2.png)
+   ![Project wizard with the ESP32 Dev Module board and ESP-IDF framework](./img/espidf-debugging-unit-testing-analysis-2.png)
 
-## Adding Code to the Generated Project {#adding-code-to-the-generated-project}
+## Add the code {#adding-code-to-the-generated-project}
 
-1. Create a new file `main.c` in [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder and add the following code:
+1. Create `src/main.c` (in the [`src_dir`](../../../reference/platformio-ini/platformio/src-dir.md)
+   folder) with the following code. It starts a Wi-Fi access point named
+   `mywifissid` and logs the stations that join or leave it.
 
    ```c
    /*  WiFi softAP Example
@@ -129,41 +146,16 @@ The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO 
    }
    ```
 
-   :::warning
-
-   Make sure this new file `main.c` is registered as source file using `idf_component_register` function in `src/CMakeLists.txt` file:
+2. ESP-IDF builds only the source files you register. Check that
+   `src/CMakeLists.txt` lists `main.c`:
 
    ```cmake
    idf_component_register(SRCS "main.c")
    ```
 
-   :::
-
-2. To compile the project use one of the following options:
-
-   - Build option from the `Project Tasks` menu
-   - Build button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Task Menu `Tasks: Run Task... > PlatformIO: Build` or in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Command Palette `View: Command Palette > PlatformIO: Build`
-   - Hotkeys `cmd-alt-b / ctrl-alt-b`:
-
-   ![](./img/espidf-debugging-unit-testing-analysis-3.png)
-
-3. If everything went well, we should see a successful result message in the terminal window:
-
-   ![](./img/espidf-debugging-unit-testing-analysis-4.png)
-
-4. To upload the firmware to the board we can use the following options:
-
-   - Upload option from the `Project Tasks` menu
-   - Upload button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Command Palette `View: Command Palette > PlatformIO: Upload`
-   - Task Menu `Tasks: Run Task... > PlatformIO: Upload`
-   - Hotkeys `cmd-alt-u / ctrl-alt-u`:
-
-   ![](./img/espidf-debugging-unit-testing-analysis-5.png)
-
-5. Connect the board to your computer and update the default monitor speed to `115200` in `platformio.ini` file:
+3. ESP-IDF logs at 115200 baud. Set the serial monitor to the same speed with
+   [`monitor_speed`](../../../reference/platformio-ini/env/monitor-speed.md)
+   in `platformio.ini`:
 
    ```ini
    [env:esp32dev]
@@ -173,31 +165,55 @@ The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO 
    monitor_speed = 115200
    ```
 
-6. Open Serial Monitor to observe the output from the board:
+## Build, upload and run {#build-upload-and-run}
 
-   ![](./img/espidf-debugging-unit-testing-analysis-6.png)
+1. Build the project with **Build** in the **Project Tasks** panel, the
+   **Build** button on the [PlatformIO toolbar](../../../guides/ide/vscode.md#platformio-toolbar),
+   **Command Palette** > **PlatformIO: Build**, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> on macOS):
 
-7. If everything went well, the board should be visible as a WiFi access point:
+   ![Ways to start a build](./img/espidf-debugging-unit-testing-analysis-3.png)
 
-   ![](./img/espidf-debugging-unit-testing-analysis-7.png)
+   The terminal shows `SUCCESS` when the build finishes:
 
-## Debugging the Firmware {#debugging-the-firmware}
+   ![Successful build output](./img/espidf-debugging-unit-testing-analysis-4.png)
 
-### Setting Up the Hardware {#setting-up-the-hardware}
+2. Connect the board and upload with **Upload** in the same places, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> on macOS):
 
-In order to use [Debugging](../../../guides/debugging/index.md), we need to connect an external JTAG probe and the board using the following pins:
+   ![Ways to start an upload](./img/espidf-debugging-unit-testing-analysis-5.png)
+
+3. Open the serial monitor to see the log:
+
+   ![Serial monitor with the ESP-IDF log](./img/espidf-debugging-unit-testing-analysis-6.png)
+
+4. The board now appears as a Wi-Fi access point:
+
+   ![The access point in the list of Wi-Fi networks](./img/espidf-debugging-unit-testing-analysis-7.png)
+
+## Debug the firmware {#debugging-the-firmware}
+
+### Connect the probe {#setting-up-the-hardware}
+
+Connect the JTAG probe to the board:
 
 | ESP32 pin | JTAG probe pin |
-|---|---|
-| `3.3V` | `Pin 1(VTref)` |
-| `GPIO 9 (EN)` | `Pin 3 (nTRST)` |
+| --- | --- |
+| `3.3V` | `Pin 1 (VTref)` |
+| `EN` | `Pin 3 (nTRST)` |
 | `GND` | `Pin 4 (GND)` |
 | `GPIO 12 (TDI)` | `Pin 5 (TDI)` |
 | `GPIO 14 (TMS)` | `Pin 7 (TMS)` |
 | `GPIO 13 (TCK)` | `Pin 9 (TCK)` |
 | `GPIO 15 (TDO)` | `Pin 13 (TDO)` |
 
-1. Specify [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md). In this tutorial, [Olimex ARM-USB-OCD-H](../../../hardware/debug-probes/olimex-arm-usb-ocd-h.md) debug probe is used:
+### Start debugging {#start-debugging}
+
+1. Set your probe with the
+   [`debug_tool`](../../../reference/platformio-ini/env/debug-tool.md)
+   option in `platformio.ini`:
 
    ```ini
    [env:esp32dev]
@@ -208,31 +224,34 @@ In order to use [Debugging](../../../guides/debugging/index.md), we need to conn
    debug_tool = olimex-arm-usb-ocd-h
    ```
 
-2. To start the debug session we can use the following methods:
+2. Start a debug session with **Run** > **Start Debugging**, or press
+   <kbd>F5</kbd>:
 
-   - `Debug: Start debugging` in the top menu
-   - `Start Debugging` option in the Quick Access menu
-   - Hotkey button `F5`:
+   ![Starting a debug session](./img/espidf-debugging-unit-testing-analysis-8.png)
 
-   ![](./img/espidf-debugging-unit-testing-analysis-8.png)
+3. Step through the code, set breakpoints, and add variables to **Watch**:
 
-3. Walk through the code using control buttons, set breakpoints, and add variables to the `Watch window`:
+   ![Debugging with breakpoints and watched variables](./img/espidf-debugging-unit-testing-analysis-9.png)
 
-   ![](./img/espidf-debugging-unit-testing-analysis-9.png)
+For more about debugging, see [Debugging](../../../guides/debugging/index.md).
 
-## Writing Unit Tests {#writing-unit-tests}
+## Write unit tests {#writing-unit-tests}
+
+You will create a small `calculator` library and
+[test](../../../guides/unit-testing/index.md) it on the board with the
+[Unity](../../../guides/unit-testing/frameworks/unity.md) framework.
 
 :::note
 
-Functions `setUp` and `tearDown` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the `setUp` function and if you need to clean up variables you use `tearDown` function.
+Unity calls `setUp()` before and `tearDown()` after each test. Use them to
+prepare and clean up test data; they can be empty.
 
 :::
 
-For the sake of simplicity, let's create a small library called `calculator`, implement several basic functions `addition`, `subtraction`, `multiplication`, `division` and test them using PlatformIO [Unit Testing](../../../guides/unit-testing/index.md) solution.
+1. In the [`lib_dir`](../../../reference/platformio-ini/platformio/lib-dir.md)
+   folder, create a `calculator` folder with two files.
 
-1. Create a new folder `calculator` in the [lib_dir](../../../reference/platformio-ini/platformio/lib-dir.md) folder and add two new files `calculator.h` and `calculator.c` with the following contents:
-
-   `calculator.h`:
+   `lib/calculator/calculator.h`:
 
    ```c
    #ifndef _CALCULATOR_H_
@@ -255,7 +274,7 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    #endif // _CALCULATOR_H_
    ```
 
-   `calculator.c`:
+   `lib/calculator/calculator.c`:
 
    ```c
    #include "calculator.h"
@@ -281,7 +300,10 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    }
    ```
 
-2. Create a new file `test_calc.c` to the folder [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) and add basic tests for the `calculator` library:
+2. Create `test/test_calc.c` (in the
+   [`test_dir`](../../../reference/platformio-ini/platformio/test-dir.md)
+   folder) with tests for the library. One expected value is wrong on
+   purpose, so that you can see a failing test:
 
    ```c
    #include <calculator.h>
@@ -330,34 +352,47 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    }
    ```
 
-3. Let's run tests on the board and check the results. There should be a problem with `test_function_calculator_division` test:
+3. Run the tests on the board with the **Test** button on the PlatformIO
+   toolbar or **Test** in the **Project Tasks** panel.
+   `test_function_calculator_division` fails, because integer division of
+   100 by 3 gives 33:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-10.png)
+   ![Test report with a failing test](./img/espidf-debugging-unit-testing-analysis-10.png)
 
-4. Let's fix the incorrect expected value and run tests again. After processing the results should be correct:
+4. Change the expected value to `33` and run the tests again. All tests pass:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-11.png)
+   ![Test report with all tests passing](./img/espidf-debugging-unit-testing-analysis-11.png)
 
-## Project Inspection {#project-inspection}
+## Inspect the project {#project-inspection}
 
-For illustrative purposes, let's imagine we need to find a function with the biggest memory footprint. Also, let's introduce a bug to our project so [Static Code Analysis](../../../guides/static-code-analysis/index.md) can report it.
+PlatformIO Home can show where the firmware uses memory and run
+[static code analysis](../../../guides/static-code-analysis/index.md).
 
-1. Open `PlatformIO Home` and navigate to `Inspect` section, select the current project and press `Inspect` button:
+1. In PlatformIO Home, open **Inspect**, select the project, and select
+   **Inspect**:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-12.png)
+   ![Inspect screen in PlatformIO Home](./img/espidf-debugging-unit-testing-analysis-12.png)
 
-2. Project statistics:
+2. The **Statistics** tab summarizes memory use and code quality:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-13.png)
+   ![Project statistics](./img/espidf-debugging-unit-testing-analysis-13.png)
 
-3. The biggest function:
+3. Sort the symbols by size to find the function with the largest memory
+   footprint:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-14.png)
+   ![Largest functions](./img/espidf-debugging-unit-testing-analysis-14.png)
 
-4. Possible bugs:
+4. The **Defects** tab lists possible bugs found by static analysis:
 
-   ![](./img/espidf-debugging-unit-testing-analysis-15.png)
+   ![Code defects](./img/espidf-debugging-unit-testing-analysis-15.png)
 
-## Conclusion {#conclusion}
+## Next steps {#conclusion}
 
-Now we have a project template for the `ESP32-DevKitC` board that we can use as boilerplate for later projects.
+You now have a working ESP-IDF project that you can use as a starting point.
+To go further:
+
+- [ESP-IDF framework](/hardware/frameworks/espidf): configuration with
+  `menuconfig` and `sdkconfig`.
+- [Espressif 32 platform](/hardware/platforms/espressif32): file systems and
+  over-the-air updates.
+- [Static code analysis](../../../guides/static-code-analysis/index.md).

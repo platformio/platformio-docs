@@ -1,120 +1,133 @@
+---
+description: Create, build and upload a "Blink" project for three different boards with the PlatformIO Core CLI.
+---
+
 <a id="core-quickstart"></a>
 
-# Quick Start {#quick-start}
+# Quick start {#quick-start}
 
-This tutorial introduces you to the basics of [PlatformIO Core (CLI)](./platformio-core.md) Command Line Interface (CLI) workflow and shows you a creation process of a simple cross-platform “Blink” Project. After finishing you will have a general understanding of how to work with the multiple development platforms and embedded boards.
+In this tutorial you create a "Blink" project from the command line, build it
+for three boards with different architectures, and upload it to a board. It
+takes about 15 minutes and introduces the PlatformIO workflow you will use for
+any project.
 
-## Setting Up the Project {#setting-up-the-project}
+You will use these boards, all with the [Arduino](/hardware/frameworks/arduino)
+framework. You do not need all three; any one of them, or another board
+supported by the Arduino framework, is enough.
 
-[PlatformIO Core (CLI)](./platformio-core.md) provides special [pio project init](../reference/cli/pio-project/init.md) command for configuring your projects. It allows one to initialize new empty project or update existing with the new data.
+| Board | Board ID | Development platform |
+| --- | --- | --- |
+| [Arduino Uno](/hardware/boards/atmelavr/uno) | `uno` | [Atmel AVR](/hardware/platforms/atmelavr) |
+| [NodeMCU 1.0 (ESP-12E Module)](/hardware/boards/espressif8266/nodemcuv2) | `nodemcuv2` | [Espressif 8266](/hardware/platforms/espressif8266) |
+| [Teensy 4.1](/hardware/boards/teensy/teensy41) | `teensy41` | [Teensy](/hardware/platforms/teensy) |
 
-What is more, [pio project init](../reference/cli/pio-project/init.md) can be used for [Cloud & Desktop IDEs](../guides/ide/index.md). It means that you will be able to import pre-generated PlatformIO project using favorite IDE and extend it with the professional instruments for IoT development.
+## Before you begin {#before-you-begin}
 
-This tutorial is based on the next popular embedded boards and development platforms using [Arduino](/hardware/frameworks/arduino):
+- [Install PlatformIO Core](./install/index.md). If you use
+  [PlatformIO IDE](./platformio-ide.md), you already have it: run the commands
+  below in the IDE's terminal.
+- On Linux, install the [udev rules](./install/udev-rules.md) so that you can
+  upload without root privileges.
 
-| Platform | Board | Framework |
-|---|---|---|
-| [Atmel AVR](/hardware/platforms/atmelavr) | [Arduino Uno](/hardware/boards/atmelavr/uno) | [Arduino](/hardware/frameworks/arduino) |
-| [Espressif 8266](/hardware/platforms/espressif8266) | [NodeMCU 1.0 (ESP-12E Module)](/hardware/boards/espressif8266/nodemcuv2) | [Arduino](/hardware/frameworks/arduino) |
-| [Teensy](/hardware/platforms/teensy) | [Teensy 3.1 / 3.2](/hardware/boards/teensy/teensy31) | [Arduino](/hardware/frameworks/arduino) |
+<a id="setting-up-the-project"></a>
 
-## Board Identifier {#board-identifier}
+## Find the board ID {#board-identifier}
 
-[pio project init](../reference/cli/pio-project/init.md) command requires to specify board identifier ID. It can be found using [Boards](/hardware/boards) catalog, [Boards Explorer](https://platformio.org/boards) or [pio boards](../reference/cli/pio-boards.md) command. For example, using [pio boards](../reference/cli/pio-boards.md) let's try to find Teensy boards:
+Every board has an ID that you use in commands and in
+[`platformio.ini`](../reference/platformio-ini/index.md). Find it in the
+[boards catalog](/hardware/boards) or with
+[`pio boards`](../reference/cli/pio-boards.md), which filters by any text.
+For example, to list the Teensy boards:
 
 ```bash
-> pio boards teensy
-
-Platform: teensy
----------------------------------------------------------------------------
-ID                    MCU            Frequency  Flash   RAM    Name
----------------------------------------------------------------------------
-teensy20              atmega32u4     16MHz     31K    2.5K  Teensy 2.0
-teensy30              mk20dx128      48MHz     128K   16K   Teensy 3.0
-teensy31              mk20dx256      72MHz     256K   64K   Teensy 3.1 / 3.2
-teensylc              mkl26z64       48MHz     62K    8K    Teensy LC
-teensy20pp            at90usb1286    16MHz     127K   8K    Teensy++ 2.0
+pio boards teensy
 ```
 
-According to the table above the ID for [Teensy 3.1 / 3.2](/hardware/boards/teensy/teensy31) is `teensy31`. Also, the ID for [Arduino Uno](/hardware/boards/atmelavr/uno) is `uno` and for [NodeMCU 1.0 (ESP-12E Module)](/hardware/boards/espressif8266/nodemcuv2) is `nodemcuv2`.
+```text
+Platform: teensy
+================================================================================
+ID         MCU          Frequency    Flash    RAM       Name
+---------  -----------  -----------  -------  --------  ------------------------
+teensymm   IMXRT1062    600MHz       7.75MB   512KB     SparkFun MicroMod Teensy
+teensy2    ATMEGA32U4   16MHz        31.50KB  2.50KB    Teensy 2.0
+teensy30   MK20DX128    48MHz        128KB    16KB      Teensy 3.0
+teensy31   MK20DX256    72MHz        256KB    64KB      Teensy 3.1 / 3.2
+teensy35   MK64FX512    120MHz       512KB    255.99KB  Teensy 3.5
+teensy36   MK66FX1M0    180MHz       1MB      256KB     Teensy 3.6
+teensy40   IMXRT1062    600MHz       1.94MB   512KB     Teensy 4.0
+teensy41   IMXRT1062    600MHz       7.75MB   512KB     Teensy 4.1
+teensylc   MKL26Z64     48MHz        62KB     8KB       Teensy LC
+teensy2pp  AT90USB1286  16MHz        127KB    8KB       Teensy++ 2.0
+```
 
-## Initialize Project {#initialize-project}
+The ID of the Teensy 4.1 is `teensy41`.
 
-PlatformIO ecosystem contains big database with pre-configured settings for the most popular embedded boards. It helps you to forget about installing toolchains, writing build scripts or configuring uploading process. Just tell PlatformIO the Board ID and you will receive full working project with pre-installed instruments for the professional development.
+## Create the project {#initialize-project}
 
-1. Create empty folder where you are going to initialize new PlatformIO project. Then open system Terminal and change directory to it:
+1. Create an empty directory for the project and change to it:
 
    ```bash
-   # create new directory
-   > mkdir path_to_the_new_directory
-
-   # go to it
-   > cd path_to_the_new_directory
+   mkdir blink
+   cd blink
    ```
 
-2. Initialize project for the boards mentioned above (you can specify more than one board at time):
+2. Initialize the project with
+   [`pio project init`](../reference/cli/pio-project/init.md), passing one
+   `--board` option per board:
 
    ```bash
-   > pio project init --board uno --board nodemcuv2 --board teensy31
+   pio project init --board uno --board nodemcuv2 --board teensy41
+   ```
 
-   The current working directory *** will be used for the new project.
-   You can specify another project directory via
-   `pio project init -d %PATH_TO_THE_PROJECT_DIR%` command.
+   PlatformIO creates the project and installs the development platforms,
+   toolchains and frameworks the boards need. The first run can take a few
+   minutes. It ends with:
 
-   The following files/directories will be created in ***
-   platformio.ini - Project Configuration File. |-> PLEASE EDIT ME <-|
-   src - Put your source files here
-   lib - Put here project specific (private) libraries
-   Do you want to continue? [y/N]: y
+   ```text
    Project has been successfully initialized!
-   Useful commands:
-   `pio run` - process/build project from the current directory
-   `pio run --target upload` or `pio run -t upload` - upload firmware to embedded board
-   `pio run --target clean` - clean project (remove compiled files)
    ```
 
-Congrats! You have just created the first PlatformIO based Project with the next structure:
+The project now contains:
 
-- ["platformio.ini" (Project Configuration File)](../reference/platformio-ini/index.md)
-- `src` directory where you should place source code (`*.h, *.c, *.cpp, *.S, *.ino, etc.`)
-- `lib` directory can be used for the project specific (private) libraries. More details are located in `lib/README` file.
-- Miscellaneous files for VCS and [Continuous Integration](../guides/ci/index.md) support.
+| Path | Purpose |
+| --- | --- |
+| `platformio.ini` | The [project configuration file](../reference/platformio-ini/index.md) |
+| `src/` | Your source files (`.c`, `.cpp`, `.S`, `.ino`, ...) |
+| `include/` | Your project header files |
+| `lib/` | Project-specific (private) [libraries](../guides/libraries/index.md) |
+| `test/` | [Unit tests](../guides/unit-testing/index.md) |
+| `.gitignore` | Excludes the `.pio` build directory from version control |
 
-:::note
-
-If you need to add new board to the existing project please use [pio project init](../reference/cli/pio-project/init.md) again.
-
-:::
-
-The result of just generated `platformio.ini`:
+`platformio.ini` has one [project environment](../reference/platformio-ini/env/index.md)
+per board:
 
 ```ini
-; PlatformIO Project Configuration File
-;
-;   Build options: build flags, source filter, extra scripting
-;   Upload options: custom port, speed and extra flags
-;   Library options: dependencies, extra library storages
-;
-; Please visit documentation for the other options and examples
-; https://docs.platformio.org/en/latest/projectconf/index.html
-
 [env:uno]
 platform = atmelavr
-framework = arduino
 board = uno
+framework = arduino
 
 [env:nodemcuv2]
 platform = espressif8266
-framework = arduino
 board = nodemcuv2
-
-[env:teensy31]
-platform = teensy
 framework = arduino
-board = teensy31
+
+[env:teensy41]
+platform = teensy
+board = teensy41
+framework = arduino
 ```
 
-Now, we need to create `main.cpp` file and place it to `src` folder of our newly created project. The contents of `src/main.cpp`:
+:::tip
+
+To add a board to an existing project later, run `pio project init --board <board_id>`
+in the project directory again.
+
+:::
+
+## Add the code {#add-the-code}
+
+Create `src/main.cpp` with the following content:
 
 ```cpp
 /**
@@ -151,30 +164,43 @@ void loop()
 }
 ```
 
-The final Project structure:
+## Build and upload {#process-project}
+
+Use [`pio run`](../reference/cli/pio-run.md) from the project directory.
+Without options it builds every environment in `platformio.ini`:
 
 ```bash
-project_dir
-├── lib
-│   └── README
-├── platformio.ini
-└── src
-    └── main.cpp
+pio run
 ```
 
-## Process Project {#process-project}
+To build one environment only, pass its name with `-e`:
 
-[PlatformIO Core (CLI)](./platformio-core.md) provides special [pio run](../reference/cli/pio-run.md) command to process project. If you call it without any arguments, PlatformIO Build System will process all project environments (which were created per each board specified above). Here are a few useful commands:
+```bash
+pio run -e uno
+```
 
-- `pio run`. Process (build) all environments specified in ["platformio.ini" (Project Configuration File)](../reference/platformio-ini/index.md)
-- `pio run --target upload`. Build project and upload firmware to the all devices specified in ["platformio.ini" (Project Configuration File)](../reference/platformio-ini/index.md)
-- `pio run --target clean`. Clean project (delete compiled objects)
-- `pio run -e uno`. Process only `uno` environment
-- `pio run -e uno -t upload`. Build project only for `uno` and upload firmware.
+To build and upload, connect the board over USB and add the `upload` target
+(`-t`). PlatformIO detects the serial port automatically; to choose one, add
+[`--upload-port`](../reference/cli/pio-run.md#cmdoption-pio-run-upload-port).
 
-Please follow to [`pio run --list-targets`](../reference/cli/pio-run.md#cmdoption-pio-run-list-targets) documentation for the other targets.
+```bash
+pio run -e uno -t upload
+```
 
-## Further Reading {#further-reading}
+The board's LED now blinks once per second.
 
-- [Project examples](https://github.com/platformio/platformio-examples/tree/develop)
-- [CLI Guide](../reference/cli/index.md) for [PlatformIO Core (CLI)](./platformio-core.md) commands
+Other useful commands:
+
+| Command | What it does |
+| --- | --- |
+| `pio run -t clean` | Deletes the build output |
+| `pio run --list-targets` | Lists the [project targets](../reference/cli/pio-run.md#cmdoption-pio-run-list-targets) you can run |
+| `pio device monitor` | Opens the [serial monitor](../reference/cli/pio-device/monitor.md) |
+
+## Next steps {#further-reading}
+
+- Configure your project: [`platformio.ini` reference](../reference/platformio-ini/index.md).
+- Add libraries: [Library management](../guides/libraries/index.md).
+- Debug on hardware: [Debugging](../guides/debugging/index.md).
+- Browse all commands: [CLI reference](../reference/cli/index.md).
+- Browse [project examples](https://github.com/platformio/platformio-examples).

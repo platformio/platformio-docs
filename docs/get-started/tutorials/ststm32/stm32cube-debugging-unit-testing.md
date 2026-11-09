@@ -1,37 +1,54 @@
+---
+sidebar_label: "STM32Cube on Nucleo-F401RE"
+description: Build, upload, debug and unit test an STM32Cube HAL blink project on the ST Nucleo-F401RE with PlatformIO IDE for VS Code.
+---
+
 <a id="tutorial-stm32cube-debugging-unit-testing"></a>
 
-# STM32Cube HAL and Nucleo-F401RE: debugging and unit testing {#stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing}
+# STM32Cube HAL on Nucleo-F401RE: debugging and unit testing {#stm32cube-hal-and-nucleo-f401re-debugging-and-unit-testing}
 
-The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md) to develop, run and debug a basic blink project with [STM32Cube](/hardware/frameworks/stm32cube) framework for `STM32 Nucleo-F401RE` board.
+In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
+to write a blink program with the [STM32Cube](/hardware/frameworks/stm32cube)
+HAL for the ST Nucleo-F401RE board, debug it with the on-board ST-LINK probe,
+and run unit tests on the board.
 
-- **Level:** Intermediate
-- **Platforms:** Windows, Mac OS X, Linux
+- **Level:** intermediate
+- **Host:** Windows, macOS or Linux
 
-**Requirements:**
+## What you need {#what-you-need}
 
-- Downloaded and installed [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md)
-- Install drivers for [ST-LINK](../../../hardware/debug-probes/stlink.md) debug tool
-- [ST Nucleo F401RE](/hardware/boards/ststm32/nucleo-f401re) development board
+- [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md), installed.
+- An [ST Nucleo-F401RE](/hardware/boards/ststm32/nucleo-f401re) board. Its
+  on-board ST-LINK is used for uploading, debugging and the serial port, so
+  you need no other hardware.
+- The [ST-LINK drivers](../../../hardware/debug-probes/stlink.md), if your
+  operating system needs them.
 
-## Setting Up the Project {#setting-up-the-project}
+## Create the project {#setting-up-the-project}
 
-At first step, we need to create a new project using PlatformIO Home Page (to open this page just press Home icon on the toolbar):
+1. Open [PlatformIO Home](../../platformio-home.md) with the **Home** button on
+   the PlatformIO toolbar, and select **New Project**:
 
-![](./img/stm32cube-debugging-unit-testing-1.png)
+   ![PlatformIO Home with the New Project button](./img/stm32cube-debugging-unit-testing-1.png)
 
-On the next step, we need to select `ST Nucleo-F401RE` as a development board, [STM32Cube](/hardware/frameworks/stm32cube) as a framework and a path to the project location (or use the default one):
+2. Select **ST Nucleo-F401RE** as the board and **STM32Cube** as the
+   framework. Keep or change the location, and select **Finish**:
 
-![](./img/stm32cube-debugging-unit-testing-2.png)
+   ![Project wizard with the Nucleo-F401RE board and STM32Cube framework](./img/stm32cube-debugging-unit-testing-2.png)
 
-Processing the selected project may take some amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with [STM32Cube](/hardware/frameworks/stm32cube) framework.
+PlatformIO creates the project and installs the toolchain and framework. The
+first time, this can take a few minutes.
 
-## Adding Code to the Generated Project {#adding-code-to-the-generated-project}
+## Add the code {#adding-code-to-the-generated-project}
 
-Let's add some actual code to the project. Firstly, we create two main files `main.c` and `main.h` in the [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder. Right click on the `src` in the project window:
+In the [`src_dir`](../../../reference/platformio-ini/platformio/src-dir.md)
+folder, create two files, `main.h` and `main.c`. To create a file, right-click
+`src` in the **Explorer** and select **New File**:
 
-![](./img/stm32cube-debugging-unit-testing-3.png)
+![Creating a file in the src folder](./img/stm32cube-debugging-unit-testing-3.png)
 
-Add next content to `main.h`:
+`src/main.h` defines the LED pin. On the Nucleo-F401RE, the green user LED
+(LD2) is on `PA5`:
 
 ```cpp
 #ifndef MAIN_H
@@ -46,7 +63,8 @@ Add next content to `main.h`:
 #endif // MAIN_H
 ```
 
-Add this code to `main.c`:
+`src/main.c` initializes the HAL and the LED pin, then toggles the LED every
+second:
 
 ```cpp
 #include "main.h"
@@ -82,175 +100,203 @@ void SysTick_Handler(void)
 }
 ```
 
-After this step, we created a basic blink project that is ready for compiling and uploading.
+## Build and upload {#compiling-and-uploading-the-firmware}
 
-## Compiling and Uploading the Firmware {#compiling-and-uploading-the-firmware}
+1. Build the project with **Build** in the **Project Tasks** panel, the
+   **Build** button on the [PlatformIO toolbar](../../../guides/ide/vscode.md#platformio-toolbar),
+   **Command Palette** > **PlatformIO: Build**, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> on macOS):
 
-Now we can build the project. To compile firmware we can use next options: Build option on the `Project Tasks` menu, Build button on [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar), using Command Palette `View: Command Palette > PlatformIO: Build`, using Task Menu `Tasks: Run Task... > PlatformIO: Build` or via hotkeys `cmd-alt-b / ctrl-alt-b`:
+   ![Ways to start a build](./img/stm32cube-debugging-unit-testing-4.png)
 
-![](./img/stm32cube-debugging-unit-testing-4.png)
+   The terminal shows `SUCCESS` when the build finishes:
 
-If everything went well, we should see the successful result in the terminal window:
+   ![Successful build output](./img/stm32cube-debugging-unit-testing-5.png)
 
-![](./img/stm32cube-debugging-unit-testing-5.png)
+2. Connect the board and upload with **Upload** in the same places, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> on macOS):
 
-To upload the firmware to the board we can use next options: Upload option on the `Project Tasks` menu, Upload button on [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar), using Command Palette `View: Command Palette > PlatformIO: Upload`, using Task Menu `Tasks: Run Task... > PlatformIO: Upload` or via hotkeys `cmd-alt-u / ctrl-alt-u`:
+   ![Ways to start an upload](./img/stm32cube-debugging-unit-testing-6.png)
 
-![](./img/stm32cube-debugging-unit-testing-6.png)
+The green LED LD2 starts blinking.
 
-After successful uploading, the green LED2 should start blinking.
+## Debug the firmware {#debugging-the-firmware}
 
-## Debugging the Firmware {#debugging-the-firmware}
+The board's on-board ST-LINK is also its debug probe, so no configuration is
+needed.
 
-[Debugging](../../../guides/debugging/index.md) offers the easiest way to debug your board. To start debugging session you can use `Start debugging` option in `PlatformIO Quick Access` menu, `Debug: Start debugging` from the top menu or hotkey button `F5`:
+1. Start a debug session with **Run** > **Start Debugging**, or press
+   <kbd>F5</kbd>:
 
-![](./img/stm32cube-debugging-unit-testing-7.png)
+   ![Starting a debug session](./img/stm32cube-debugging-unit-testing-7.png)
 
-We need to wait some time while PlatformIO is initializing debug session and when the first line after the main function is highlighted we are ready to debug:
+2. Wait until the session stops at the first line of `main()`:
 
-![](./img/stm32cube-debugging-unit-testing-8.png)
+   ![Debug session stopped at main](./img/stm32cube-debugging-unit-testing-8.png)
 
-We can walk through the code using control buttons, set breakpoints, see peripheral registers, add variables to `Watch window`:
+3. Step through the code, set breakpoints, inspect peripheral registers, and
+   add variables to **Watch**:
 
-![](./img/stm32cube-debugging-unit-testing-9.png)
+   ![Debugging with peripheral registers and watched variables](./img/stm32cube-debugging-unit-testing-9.png)
 
-## Writing Unit Tests {#writing-unit-tests}
+For more about debugging, see [Debugging](../../../guides/debugging/index.md).
 
-Now let's write some tests using the [Unit Testing](../../../guides/unit-testing/index.md) solution that can help us test code directly on the target board. We will use the [Unity](../../../guides/unit-testing/frameworks/unity.md) testing framework. Since there is no default configuration for the [STM32Cube](/hardware/frameworks/stm32cube) framework, we will provide a [Custom unity_config.h](../../../guides/unit-testing/frameworks/unity.md#unit-testing-frameworks-unity-custom-config).
+## Write unit tests {#writing-unit-tests}
 
-Also, we need to create a new folder `test` where the tests and custom [Unity](../../../guides/unit-testing/frameworks/unity.md) configuration (described next) will be located:
+You will test the LED code on the board with the
+[Unity](../../../guides/unit-testing/frameworks/unity.md) framework.
 
-![](./img/stm32cube-debugging-unit-testing-10.png)
+### Send test output over the serial port {#custom-unity-configuration}
 
-We will use `USART2` on `ST Nucleo-F401RE` board because it's directly connected to the STLink debug interface and in OS it can be visible as a Virtual Com Port, so we don't need any additional USB-UART converter. To implement the custom [Unity](../../../guides/unit-testing/frameworks/unity.md) configuration we need to create two files `unity_config.h` and `unity_config.c` and put them in the [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) in the root folder of our project.
+Unity needs to know how to print its results. The STM32Cube framework has no
+default output for Unity, so you provide a
+[custom `unity_config.h`](../../../guides/unit-testing/frameworks/unity.md#unit-testing-frameworks-unity-custom-config)
+that sends the output over `USART2`. On the Nucleo-F401RE, `USART2` is
+connected to the ST-LINK, which appears on your computer as a virtual COM
+port, so you need no USB-to-serial adapter.
 
-Implementation of `unity_config.h`:
+1. Create a `test` folder in the project root (the
+   [`test_dir`](../../../reference/platformio-ini/platformio/test-dir.md)):
 
-```cpp
-#ifndef UNITY_CONFIG_H
-#define UNITY_CONFIG_H
+   ![The test folder in the project](./img/stm32cube-debugging-unit-testing-10.png)
 
-#ifndef NULL
-#ifndef __cplusplus
-#define NULL (void*)0
-#else
-#define NULL 0
-#endif
-#endif
+2. Create `test/unity_config.h`:
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
+   ```cpp
+   #ifndef UNITY_CONFIG_H
+   #define UNITY_CONFIG_H
 
-void unityOutputStart();
-void unityOutputChar(char);
-void unityOutputFlush();
-void unityOutputComplete();
+   #ifndef NULL
+   #ifndef __cplusplus
+   #define NULL (void*)0
+   #else
+   #define NULL 0
+   #endif
+   #endif
 
-#define UNITY_OUTPUT_START()    unityOutputStart()
-#define UNITY_OUTPUT_CHAR(c)    unityOutputChar(c)
-#define UNITY_OUTPUT_FLUSH()    unityOutputFlush()
-#define UNITY_OUTPUT_COMPLETE() unityOutputComplete()
+   #ifdef __cplusplus
+   extern "C"
+   {
+   #endif
 
-#ifdef __cplusplus
-}
-#endif /* extern "C" */
+   void unityOutputStart();
+   void unityOutputChar(char);
+   void unityOutputFlush();
+   void unityOutputComplete();
 
-#endif /* UNITY_CONFIG_H */
-```
+   #define UNITY_OUTPUT_START()    unityOutputStart()
+   #define UNITY_OUTPUT_CHAR(c)    unityOutputChar(c)
+   #define UNITY_OUTPUT_FLUSH()    unityOutputFlush()
+   #define UNITY_OUTPUT_COMPLETE() unityOutputComplete()
 
-Implementation of `unity_config.c`:
+   #ifdef __cplusplus
+   }
+   #endif /* extern "C" */
 
-```cpp
-#include "unity_config.h"
-#include "stm32f4xx_hal.h"
+   #endif /* UNITY_CONFIG_H */
+   ```
 
-#define USARTx USART2
-#define USARTx_CLK_ENABLE() __HAL_RCC_USART2_CLK_ENABLE()
-#define USARTx_CLK_DISABLE() __HAL_RCC_USART2_CLK_DISABLE()
-#define USARTx_RX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
-#define USARTx_TX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
-#define USARTx_RX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
-#define USARTx_TX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
+3. Create `test/unity_config.c`. It initializes `USART2` at 115200 baud and
+   implements the output functions declared above:
 
-#define USARTx_FORCE_RESET() __HAL_RCC_USART2_FORCE_RESET()
-#define USARTx_RELEASE_RESET() __HAL_RCC_USART2_RELEASE_RESET()
+   ```cpp
+   #include "unity_config.h"
+   #include "stm32f4xx_hal.h"
 
-#define USARTx_TX_PIN GPIO_PIN_2
-#define USARTx_TX_GPIO_PORT GPIOA
-#define USARTx_TX_AF GPIO_AF7_USART2
-#define USARTx_RX_PIN GPIO_PIN_3
-#define USARTx_RX_GPIO_PORT GPIOA
-#define USARTx_RX_AF GPIO_AF7_USART2
+   #define USARTx USART2
+   #define USARTx_CLK_ENABLE() __HAL_RCC_USART2_CLK_ENABLE()
+   #define USARTx_CLK_DISABLE() __HAL_RCC_USART2_CLK_DISABLE()
+   #define USARTx_RX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
+   #define USARTx_TX_GPIO_CLK_ENABLE() __HAL_RCC_GPIOA_CLK_ENABLE()
+   #define USARTx_RX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
+   #define USARTx_TX_GPIO_CLK_DISABLE() __HAL_RCC_GPIOA_CLK_DISABLE()
 
-static UART_HandleTypeDef UartHandle;
+   #define USARTx_FORCE_RESET() __HAL_RCC_USART2_FORCE_RESET()
+   #define USARTx_RELEASE_RESET() __HAL_RCC_USART2_RELEASE_RESET()
 
-void unityOutputStart()
-{
-  GPIO_InitTypeDef GPIO_InitStruct;
+   #define USARTx_TX_PIN GPIO_PIN_2
+   #define USARTx_TX_GPIO_PORT GPIOA
+   #define USARTx_TX_AF GPIO_AF7_USART2
+   #define USARTx_RX_PIN GPIO_PIN_3
+   #define USARTx_RX_GPIO_PORT GPIOA
+   #define USARTx_RX_AF GPIO_AF7_USART2
 
-  USARTx_TX_GPIO_CLK_ENABLE();
-  USARTx_RX_GPIO_CLK_ENABLE();
+   static UART_HandleTypeDef UartHandle;
 
-  USARTx_CLK_ENABLE();
+   void unityOutputStart()
+   {
+     GPIO_InitTypeDef GPIO_InitStruct;
 
-  GPIO_InitStruct.Pin = USARTx_TX_PIN;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
-  GPIO_InitStruct.Alternate = USARTx_TX_AF;
+     USARTx_TX_GPIO_CLK_ENABLE();
+     USARTx_RX_GPIO_CLK_ENABLE();
 
-  HAL_GPIO_Init(USARTx_TX_GPIO_PORT, &GPIO_InitStruct);
+     USARTx_CLK_ENABLE();
 
-  GPIO_InitStruct.Pin = USARTx_RX_PIN;
-  GPIO_InitStruct.Alternate = USARTx_RX_AF;
+     GPIO_InitStruct.Pin = USARTx_TX_PIN;
+     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+     GPIO_InitStruct.Pull = GPIO_PULLUP;
+     GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
+     GPIO_InitStruct.Alternate = USARTx_TX_AF;
 
-  HAL_GPIO_Init(USARTx_RX_GPIO_PORT, &GPIO_InitStruct);
-  UartHandle.Instance = USARTx;
+     HAL_GPIO_Init(USARTx_TX_GPIO_PORT, &GPIO_InitStruct);
 
-  UartHandle.Init.BaudRate = 115200;
-  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
-  UartHandle.Init.StopBits = UART_STOPBITS_1;
-  UartHandle.Init.Parity = UART_PARITY_NONE;
-  UartHandle.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  UartHandle.Init.Mode = UART_MODE_TX_RX;
-  UartHandle.Init.OverSampling = UART_OVERSAMPLING_16;
+     GPIO_InitStruct.Pin = USARTx_RX_PIN;
+     GPIO_InitStruct.Alternate = USARTx_RX_AF;
 
-  if (HAL_UART_Init(&UartHandle) != HAL_OK)
-  {
-    while (1)
-    {
-    }
-  }
-}
+     HAL_GPIO_Init(USARTx_RX_GPIO_PORT, &GPIO_InitStruct);
+     UartHandle.Instance = USARTx;
 
-void unityOutputChar(char c)
-{
-  HAL_UART_Transmit(&UartHandle, (uint8_t *)(&c), 1, 1000);
-}
+     UartHandle.Init.BaudRate = 115200;
+     UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
+     UartHandle.Init.StopBits = UART_STOPBITS_1;
+     UartHandle.Init.Parity = UART_PARITY_NONE;
+     UartHandle.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+     UartHandle.Init.Mode = UART_MODE_TX_RX;
+     UartHandle.Init.OverSampling = UART_OVERSAMPLING_16;
 
-void unityOutputFlush() {}
+     if (HAL_UART_Init(&UartHandle) != HAL_OK)
+     {
+       while (1)
+       {
+       }
+     }
+   }
 
-void unityOutputComplete()
-{
-  USARTx_CLK_DISABLE();
-  USARTx_RX_GPIO_CLK_DISABLE();
-  USARTx_TX_GPIO_CLK_DISABLE();
-}
-```
+   void unityOutputChar(char c)
+   {
+     HAL_UART_Transmit(&UartHandle, (uint8_t *)(&c), 1, 1000);
+   }
 
-Now we need to add some test cases. Tests can be added to a single C file that may include multiple tests. First of all, we need to add three default functions: `setUp`, `tearDown` and `main`. `setUp` and `tearDown` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the `setUp` function and if you need to clean up variables you use `tearDown` function. In our example, we will use these functions to accordingly initialize and deinitialize LED.  `main` function acts as a simple program where we describe our test plan.
+   void unityOutputFlush() {}
 
-Let's add a new file `test_main.c` to the folder `test`. Next basic tests for blinking routine will be implemented in this file:
+   void unityOutputComplete()
+   {
+     USARTx_CLK_DISABLE();
+     USARTx_RX_GPIO_CLK_DISABLE();
+     USARTx_TX_GPIO_CLK_DISABLE();
+   }
+   ```
 
-- `test_led_builtin_pin_number` ensures that `LED_PIN` has the correct value
-- `test_led_state_high`  tests functions `HAL_GPIO_WritePin` and `HAL_GPIO_ReadPin` with `GPIO_PIN_SET` value
-- `test_led_state_low`  tests functions `HAL_GPIO_WritePin` and `HAL_GPIO_ReadPin` with `GPIO_PIN_RESET` value
+### Add the tests {#add-the-tests}
+
+Unity calls `setUp()` before and `tearDown()` after each test; here they
+initialize and deinitialize the LED pin. `main()` runs the tests.
+
+| Test | Checks |
+| --- | --- |
+| `test_led_builtin_pin_number` | `LED_PIN` has the expected value |
+| `test_led_state_high` | `HAL_GPIO_WritePin()` and `HAL_GPIO_ReadPin()` with `GPIO_PIN_SET` |
+| `test_led_state_low` | `HAL_GPIO_WritePin()` and `HAL_GPIO_ReadPin()` with `GPIO_PIN_RESET` |
+
+Create `test/test_main.c`:
 
 :::note
 
-- 2 sec delay is required  since the board doesn't support software resetting  via `Serial.DTR/RTS`
+The 2-second delay at the start of `main()` gives the test runner time to
+open the serial port, because this board cannot be reset through the serial
+port's DTR/RTS lines.
 
 :::
 
@@ -320,20 +366,28 @@ void SysTick_Handler(void)
 }
 ```
 
-Now we are ready to upload tests to the board. To do this we can use `Test` option from the Project Tasks menu, `Tasks: Run Task... > PlatformIO Test` option from the top menu or Test button on [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar):
+### Run the tests {#run-the-tests}
 
-![](./img/stm32cube-debugging-unit-testing-11.png)
+1. Run the tests on the board with the **Test** button on the PlatformIO
+   toolbar or **Test** in the **Project Tasks** panel:
 
-After processing we should see a detailed report about the testing results:
+   ![Ways to run the tests](./img/stm32cube-debugging-unit-testing-11.png)
 
-![](./img/stm32cube-debugging-unit-testing-12.png)
+2. PlatformIO builds and uploads the tests and shows a report. All tests
+   pass:
 
-Congratulations! As we can see from the report, all our tests went successfully!
+   ![Test report](./img/stm32cube-debugging-unit-testing-12.png)
 
-## Conclusion {#conclusion}
+## Next steps {#conclusion}
 
-Now we have a decent template that we can improve for our next more complex projects.
+You now have a working STM32Cube project that you can use as a starting point
+for more complex firmware. The complete project is in the
+[PlatformIO examples](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube)
+repository.
 
-## Project Source Code {#project-source-code}
+<a id="project-source-code"></a>
 
-The source code of this tutorial is available at [https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/stm32cube)
+- [ST STM32 platform](/hardware/platforms/ststm32): upload methods and
+  debugging options.
+- [Unit testing](../../../guides/unit-testing/index.md): test on the host or
+  in CI.

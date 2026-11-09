@@ -1,77 +1,90 @@
+---
+description: PlatformIO Home is the graphical interface for projects, libraries, platforms, boards and devices.
+---
+
 <a id="piohome"></a>
 
 # PlatformIO Home {#platformio-home}
 
-**PlatformIO Home** is a powerful, modern, and interactive user interface (UI) for PlatformIO collaborative platform. It's powered by [PlatformIO Labs's Modern UI Toolkit](https://piolabs.com/technology/modern-ui-toolkit.html) and contains the following key instruments:
+PlatformIO Home is a graphical interface for PlatformIO that runs in a web
+browser or inside [PlatformIO IDE](./platformio-ide.md). Use it to:
 
-- [PlatformIO Account](./platformio-account.md)
-- Project Management
-- [Library Management](../guides/libraries/index.md)
-- [Development Platforms](../hardware/platforms/index.md), [Frameworks](../hardware/frameworks/index.md), and [Boards](/hardware/boards) Management
-- [Device Management](../reference/cli/pio-device/index.md) (serial, logical, and multicast DNS services)
-- Static Code Analysis
-- Firmware File Explorer
-- Firmware Memory Inspection
-- Firmware Sections & Symbols Viewer.
+- Create, import and open projects.
+- Search, install and update [libraries](../guides/libraries/index.md).
+- Browse and manage [development platforms](../hardware/platforms/index.md),
+  [frameworks](../hardware/frameworks/index.md) and [boards](/hardware/boards).
+- List connected [devices](../reference/cli/pio-device/index.md): serial ports,
+  logical drives and multicast DNS services.
+- Inspect a project: memory usage, firmware sections and symbols, and
+  [static code analysis](../guides/static-code-analysis/index.md) results.
+- Manage your [PlatformIO Account](./platformio-account.md).
 
-## Installation {#installation}
+PlatformIO Home is part of PlatformIO IDE and PlatformIO Core; there is
+nothing extra to install.
 
-You do not need to install **PlatformIO Home** separately, it's already built-in in [PlatformIO IDE](./platformio-ide.md) and [PlatformIO Core (CLI)](./platformio-core.md).
+## Open PlatformIO Home {#quick-start}
 
-## Quick Start {#quick-start}
+<a id="platformio-ide"></a>
 
-### PlatformIO IDE {#platformio-ide}
+**In PlatformIO IDE for VS Code**, select the **Home** button on the
+[PlatformIO toolbar](../guides/ide/vscode.md#platformio-toolbar).
 
-Please open **PlatformIO Home** using (HOME) button on PlatformIO Toolbar:
+<a id="platformio-core"></a>
 
-- **VSCode**: [PlatformIO Toolbar](../guides/ide/vscode.md#ide-vscode-toolbar)
+**From the command line**, start the PlatformIO Home server with
+[`pio home`](../reference/cli/pio-home.md):
 
-### PlatformIO Core {#platformio-core}
+```bash
+pio home
+```
 
-Please launch **PlatformIO Home** Web-server using [pio home](../reference/cli/pio-home.md) command and open in your browser [http://127.0.0.1:8008](http://127.0.0.1:8008).
+It opens [http://127.0.0.1:8008](http://127.0.0.1:8008) in your browser. To
+use another host or port, see the [`pio home` options](../reference/cli/pio-home.md).
 
-You can change host and port. Please check [pio home](../reference/cli/pio-home.md) command for details.
+## Screens {#demo}
 
-## Demo {#demo}
+### Welcome and projects {#welcome-project-manager}
 
-### Welcome & Project Manager {#welcome-project-manager}
+![PlatformIO Home welcome screen with recent projects](./img/pio-home-welcome.png)
 
-![](./img/pio-home-welcome.png)
-
-### Project Inspect {#project-inspect}
+### Project inspection {#project-inspect}
 
 #### Statistics {#statistics}
 
-![](./img/pio-home-inspect-stats.png)
+Memory usage and code statistics of the built firmware:
 
-Only code analysis ([Static Code Analysis](../guides/static-code-analysis/index.md))
+![Project inspection statistics](./img/pio-home-inspect-stats.png)
 
-![](./img/pio-home-inspect-stats-check.png)
+When you run only the code analysis:
 
-#### Firmware File Explorer {#firmware-file-explorer}
+![Project inspection with code analysis only](./img/pio-home-inspect-stats-check.png)
 
-![](./img/pio-home-inspect-firmware-file-explorer.png)
+#### Firmware file explorer {#firmware-file-explorer}
 
-File Symbols
+![Firmware file explorer](./img/pio-home-inspect-firmware-file-explorer.png)
 
-![](./img/pio-home-inspect-firmware-file-explorer-symbols.png)
+Symbols of a selected file:
 
-#### Firmware Symbols {#firmware-symbols}
+![Firmware file explorer with file symbols](./img/pio-home-inspect-firmware-file-explorer-symbols.png)
 
-![](./img/pio-home-inspect-firmware-symbols.png)
+#### Firmware symbols {#firmware-symbols}
 
-#### Firmware Sections {#firmware-sections}
+![Firmware symbols](./img/pio-home-inspect-firmware-symbols.png)
 
-![](./img/pio-home-inspect-firmware-sections.png)
+#### Firmware sections {#firmware-sections}
 
-#### Static Code Analysis {#static-code-analysis}
+![Firmware sections](./img/pio-home-inspect-firmware-sections.png)
 
-![](./img/pio-home-inspect-code-defects.png)
+#### Code defects {#static-code-analysis}
 
-### Library Manager {#library-manager}
+Results of [static code analysis](../guides/static-code-analysis/index.md):
 
-![](./img/pio-home-library-stats.png)
+![Code defects found by static analysis](./img/pio-home-inspect-code-defects.png)
 
-### Board Explorer {#board-explorer}
+### Libraries {#library-manager}
 
-![](./img/pio-home-boards.png)
+![Library manager](./img/pio-home-library-stats.png)
+
+### Boards {#board-explorer}
+
+![Board explorer](./img/pio-home-boards.png)

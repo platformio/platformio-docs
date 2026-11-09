@@ -1,31 +1,46 @@
+---
+sidebar_label: "Zephyr on nRF52-DK"
+description: Build, upload, debug, unit test and inspect a Zephyr Bluetooth beacon on the Nordic nRF52-DK with PlatformIO IDE for VS Code.
+---
+
 <a id="tutorial-nordicnrf52-zephyr-debugging-unit-testing-analysis"></a>
 
-# Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis {#zephyr-and-nordic-nrf52-dk-debugging-unit-testing-project-analysis}
+# Zephyr on Nordic nRF52-DK: debugging, unit testing and project analysis {#zephyr-and-nordic-nrf52-dk-debugging-unit-testing-project-analysis}
 
-The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md) to develop, run and debug a simple Bluetooth project using [Zephyr](/hardware/frameworks/zephyr) framework for the `Nordic nRF52-DK` board.
+In this tutorial you use [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md)
+to build a Bluetooth LE beacon with the [Zephyr](/hardware/frameworks/zephyr)
+framework on the Nordic nRF52-DK board. You then debug it, unit test a small
+library on the board, and inspect the firmware's memory use and code quality.
 
-- **Level:** Intermediate
-- **Platforms:** Windows, Mac OS X, Linux
+- **Level:** intermediate
+- **Host:** Windows, macOS or Linux
 
-**Requirements:**
+## What you need {#what-you-need}
 
-- Downloaded and installed [PlatformIO IDE for VSCode](../../../guides/ide/vscode.md)
-- Install drivers for [J-LINK](../../../hardware/debug-probes/jlink.md) debug tool
-- [Nordic nRF52-DK](/hardware/boards/nordicnrf52/nrf52-dk) development board
+- [PlatformIO IDE for VS Code](../../../guides/ide/vscode.md), installed.
+- A [Nordic nRF52-DK](/hardware/boards/nordicnrf52/nrf52-dk) board.
+- The [J-Link drivers](../../../hardware/debug-probes/jlink.md) for the board's
+  on-board J-Link probe.
 
-## Setting Up the Project {#setting-up-the-project}
+## Create the project {#setting-up-the-project}
 
-1. Click on "PlatformIO Home" button on the bottom PlatformIO Toolbar:
+1. Select the **Home** button on the PlatformIO toolbar to open
+   [PlatformIO Home](../../platformio-home.md):
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-1.png)
+   ![PlatformIO toolbar with the Home button](./img/zephyr-debugging-unit-testing-inspect-1.png)
 
-2. Click on "New Project", select `Nordic nRF52-DK` as the development board, [Zephyr](/hardware/frameworks/zephyr) as the framework and a path to the project location (or use the default one):
+2. Select **New Project**. Choose **Nordic nRF52-DK** as the board and
+   **Zephyr** as the framework, keep or change the location, and select
+   **Finish**:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-2.png)
+   ![Project wizard with the nRF52-DK board and Zephyr framework](./img/zephyr-debugging-unit-testing-inspect-2.png)
 
-## Adding Code to the Generated Project {#adding-code-to-the-generated-project}
+## Add the code {#adding-code-to-the-generated-project}
 
-1. Create a new file `main.c` in [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder and add the following code:
+1. Create `src/main.c` (in the [`src_dir`](../../../reference/platformio-ini/platformio/src-dir.md)
+   folder) with the following code, based on the Zephyr beacon sample. It
+   advertises an [Eddystone-URL](https://github.com/google/eddystone/tree/master/eddystone-url)
+   beacon:
 
    ```c
    //
@@ -104,7 +119,8 @@ The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO 
    }
    ```
 
-2. By default Bluetooth feature is disabled, we can enable it by creating a new file `prj.conf` in `zephyr` folder and adding the following lines:
+2. Bluetooth is disabled in Zephyr by default. Enable it in the Zephyr project
+   configuration: create `zephyr/prj.conf` with these lines:
 
    ```text
    CONFIG_BT=y
@@ -112,33 +128,9 @@ The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO 
    CONFIG_BT_DEVICE_NAME="Test beacon"
    ```
 
-## Compiling and Uploading the Firmware {#compiling-and-uploading-the-firmware}
-
-1. To compile the project use one of the following options:
-
-   - Build option from the `Project Tasks` menu
-   - Build button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Task Menu `Tasks: Run Task... > PlatformIO: Build` or in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Command Palette `View: Command Palette > PlatformIO: Build`
-   - Hotkeys `cmd-alt-b / ctrl-alt-b`:
-
-   ![](./img/zephyr-debugging-unit-testing-inspect-3.png)
-
-2. If everything went well, we should see a successful result message in the terminal window:
-
-   ![](./img/zephyr-debugging-unit-testing-inspect-4.png)
-
-3. To upload the firmware to the board we can use the following options:
-
-   - Upload option from the `Project Tasks` menu
-   - Upload button in [PlatformIO Toolbar](../../../guides/ide/vscode.md#ide-vscode-toolbar)
-   - Command Palette `View: Command Palette > PlatformIO: Upload`
-   - Task Menu `Tasks: Run Task... > PlatformIO: Upload`
-   - Hotkeys `cmd-alt-u / ctrl-alt-u`:
-
-   ![](./img/zephyr-debugging-unit-testing-inspect-5.png)
-
-4. Connect the board to your computer and update the default monitor speed to `115200` in `platformio.ini` file:
+3. Zephyr prints its log at 115200 baud. Set the serial monitor to the same
+   speed with [`monitor_speed`](../../../reference/platformio-ini/env/monitor-speed.md)
+   in `platformio.ini`:
 
    ```ini
    [env:nrf52_dk]
@@ -148,49 +140,72 @@ The goal of this tutorial is to demonstrate how simple it is to use [PlatformIO 
    monitor_speed = 115200
    ```
 
-5. Open Serial Monitor to observe the output from the board:
+## Build, upload and run {#compiling-and-uploading-the-firmware}
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-6.png)
+1. Build the project with **Build** in the **Project Tasks** panel, the
+   **Build** button on the [PlatformIO toolbar](../../../guides/ide/vscode.md#platformio-toolbar),
+   **Command Palette** > **PlatformIO: Build**, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> on macOS):
 
-6. If everything went well, the board should be visible as a beacon:
+   ![Ways to start a build](./img/zephyr-debugging-unit-testing-inspect-3.png)
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-7.png)
+   The terminal shows `SUCCESS` when the build finishes:
 
-## Debugging the Firmware {#debugging-the-firmware}
+   ![Successful build output](./img/zephyr-debugging-unit-testing-inspect-4.png)
 
-Since [Nordic nRF52-DK](/hardware/boards/nordicnrf52/nrf52-dk) includes an onboard debug probe we can use [Debugging](../../../guides/debugging/index.md) without any configuration.
+2. Connect the board and upload with **Upload** in the same places, or
+   <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd>
+   (<kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> on macOS):
 
-1. To start a debug session we can use the following options:
+   ![Ways to start an upload](./img/zephyr-debugging-unit-testing-inspect-5.png)
 
-   - `Debug: Start debugging` from the top menu
-   - `Start Debugging` option from Quick Access menu
-   - Hotkey button `F5`:
+3. Open the serial monitor to see the log:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-8.png)
+   ![Serial monitor with the Zephyr log](./img/zephyr-debugging-unit-testing-inspect-6.png)
 
-2. We can walk through the code using control buttons, set breakpoints, add variables to `Watch window`:
+4. A Bluetooth scanner app on your phone now shows the board as a beacon:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-9.png)
+   ![The beacon in a Bluetooth scanner app](./img/zephyr-debugging-unit-testing-inspect-7.png)
 
-## Writing Unit Tests {#writing-unit-tests}
+## Debug the firmware {#debugging-the-firmware}
+
+The nRF52-DK has an on-board debug probe, so
+[debugging](../../../guides/debugging/index.md) works without configuration.
+
+1. Start a debug session with **Run** > **Start Debugging**, or press
+   <kbd>F5</kbd>:
+
+   ![Starting a debug session](./img/zephyr-debugging-unit-testing-inspect-8.png)
+
+2. Step through the code, set breakpoints, and add variables to **Watch**:
+
+   ![Debugging with breakpoints and watched variables](./img/zephyr-debugging-unit-testing-inspect-9.png)
+
+## Write unit tests {#writing-unit-tests}
+
+You will create a small `calculator` library with `add`, `sub`, `mul` and
+`div` functions and [test](../../../guides/unit-testing/index.md) it on the
+board with the [Unity](../../../guides/unit-testing/frameworks/unity.md)
+framework.
 
 :::note
 
-Functions `setUp` and `tearDown` are used to initialize and finalize test conditions. Implementations of these functions are not required for running tests but if you need to initialize some variables before you run a test, you use the `setUp` function and if you need to clean up variables you use `tearDown` function.
+Unity calls `setUp()` before and `tearDown()` after each test. Use them to
+prepare and clean up test data; they can be empty.
 
 :::
 
-For the sake of simplicity, let's create a small library called `calculator`, implement several basic functions `add`, `sub`, `mul`, `div` and test them using [Unit Testing](../../../guides/unit-testing/index.md) solution.
-
-1. PlatformIO uses a unit testing framework called `Unity`. `Unity` is not compatible with C library implemented in the framework. Let's enable standard version of newlib C library in `prj.conf` file using the following config:
+1. Unity does not work with Zephyr's default minimal C library. Switch to
+   newlib by adding this line to `zephyr/prj.conf`:
 
    ```text
    CONFIG_NEWLIB_LIBC=y
    ```
 
-2. Create a new folder `calculator` in the `lib` folder and add two new files `calculator.h` and `calculator.c` with the following contents:
+2. In the `lib` folder, create a `calculator` folder with two files.
 
-   `calculator.h`:
+   `lib/calculator/calculator.h`:
 
    ```c
    #ifndef _CALCULATOR_H_
@@ -212,7 +227,7 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    #endif // _CALCULATOR_H_
    ```
 
-   `calculator.c`:
+   `lib/calculator/calculator.c`:
 
    ```c
    #include "calculator.h"
@@ -233,7 +248,8 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    }
    ```
 
-3. Create a new file `test_calc.c` to the folder `test` and add basic tests for `calculator` library:
+3. Create `test/test_calc.c` with tests for the library. One expected value
+   is wrong on purpose, so that you can see a failing test:
 
    ```c
    #include <calculator.h>
@@ -282,34 +298,47 @@ For the sake of simplicity, let's create a small library called `calculator`, im
    }
    ```
 
-4. Let's run tests on the board and check the results. There should be a problem with `test_function_calculator_division` test:
+4. Run the tests on the board with the **Test** button on the PlatformIO
+   toolbar or **Test** in the **Project Tasks** panel.
+   `test_function_calculator_division` fails, because integer division of
+   100 by 3 gives 33:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-10.png)
+   ![Test report with a failing test](./img/zephyr-debugging-unit-testing-inspect-10.png)
 
-5. Let's fix the incorrect expected value, run tests again. After processing the results should be correct:
+5. Change the expected value to `33` and run the tests again. All tests pass:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-11.png)
+   ![Test report with all tests passing](./img/zephyr-debugging-unit-testing-inspect-11.png)
 
-## Project Inspection {#project-inspection}
+## Inspect the project {#project-inspection}
 
-For illustrative purposes, let's imagine we need to find a function with the biggest memory footprint. Also, let's introduce a bug to our project so [Static Code Analysis](../../../guides/static-code-analysis/index.md) can report it.
+PlatformIO Home can show where the firmware uses memory and run
+[static code analysis](../../../guides/static-code-analysis/index.md).
 
-1. Open `PlatformIO Home` and navigate to `Inspect` section, select the current project and press `Inspect` button:
+1. In PlatformIO Home, open **Inspect**, select the project, and select
+   **Inspect**:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-12.png)
+   ![Inspect screen in PlatformIO Home](./img/zephyr-debugging-unit-testing-inspect-12.png)
 
-2. Project statistics:
+2. The **Statistics** tab summarizes memory use and code quality:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-13.png)
+   ![Project statistics](./img/zephyr-debugging-unit-testing-inspect-13.png)
 
-3. The biggest function:
+3. Sort the symbols by size to find the function with the largest memory
+   footprint:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-14.png)
+   ![Largest functions](./img/zephyr-debugging-unit-testing-inspect-14.png)
 
-4. Possible bugs:
+4. The **Defects** tab lists possible bugs found by static analysis:
 
-   ![](./img/zephyr-debugging-unit-testing-inspect-15.png)
+   ![Code defects](./img/zephyr-debugging-unit-testing-inspect-15.png)
 
-## Conclusion {#conclusion}
+## Next steps {#conclusion}
 
-Now we have a project template for Nordic [Nordic nRF52-DK](/hardware/boards/nordicnrf52/nrf52-dk) board that we can use as a boilerplate for the next projects.
+You now have a working Zephyr project for the
+[Nordic nRF52-DK](/hardware/boards/nordicnrf52/nrf52-dk) that you can use as
+a starting point. To go further:
+
+- [Zephyr framework](/hardware/frameworks/zephyr): project configuration,
+  modules and devicetree overlays.
+- [Nordic nRF52 platform](/hardware/platforms/nordicnrf52).
+- [Static code analysis](../../../guides/static-code-analysis/index.md).
