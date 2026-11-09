@@ -1,2 +1,11 @@
 _build
 _ext/__pycache__
+
+# Docusaurus
+node_modules
+build
+.docusaurus
+.cache-loader
+docs/resources/_history.md
+tools/rst2md/out
+.claude/settings.local.json
