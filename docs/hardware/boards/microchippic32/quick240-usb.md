@@ -1,6 +1,7 @@
 ---
 title: "Pontech Quick240"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Pontech Quick240 (32MX795F512L, 80MHz, 508KB flash, 128KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Microchip PIC32](../../platforms/microchippic32.md): Microchip's 32-bi
 
 ## Configuration
 
-Please use `quick240_usb` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `quick240_usb` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:quick240_usb]
@@ -30,7 +31,7 @@ platform = microchippic32
 board = quick240_usb
 ```
 
-You can override default Pontech Quick240 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [quick240_usb.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/quick240_usb.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [quick240_usb.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/quick240_usb.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:quick240_usb]
@@ -46,7 +47,7 @@ board_build.f_cpu = 80000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Pontech Quick240 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Pontech Quick240 yet.
 
 ## Frameworks
 

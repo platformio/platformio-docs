@@ -1,6 +1,7 @@
 ---
 title: "SparkFun ESP8266 Thing Dev"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "SparkFun ESP8266 Thing Dev (ESP8266, 80MHz, 512KB flash, 80KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 8266](../../platforms/espressif8266.mdx): ESP8266 is a cost-
 
 ## Configuration
 
-Please use `thingdev` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `thingdev` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:thingdev]
@@ -30,7 +31,7 @@ platform = espressif8266
 board = thingdev
 ```
 
-You can override default SparkFun ESP8266 Thing Dev settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [thingdev.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/thingdev.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [thingdev.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/thingdev.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:thingdev]
@@ -46,14 +47,14 @@ board_build.f_cpu = 80000000L
 
 ## Uploading
 
-SparkFun ESP8266 Thing Dev supports the following uploading protocols:
+SparkFun ESP8266 Thing Dev supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:thingdev]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support SparkFun ESP8266 Thing Dev board.
+[Debugging](../../../guides/debugging/index.md) does not support the SparkFun ESP8266 Thing Dev yet.
 
 ## Frameworks
 

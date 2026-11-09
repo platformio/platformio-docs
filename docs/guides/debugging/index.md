@@ -187,12 +187,6 @@ page.
 
 ## Boards
 
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
-
 ### 1BitSquared
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |

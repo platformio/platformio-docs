@@ -1,6 +1,7 @@
 ---
 title: "LibOpenCM3"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The LibOpenCM3 framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
 <a id="framework-libopencm3"></a>
@@ -25,21 +26,21 @@ The libopencm3 project aims to create an open-source firmware library for variou
 
 ## Debugging
 
-[Debugging](../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+[Debugging](../../guides/debugging/index.md) works with the boards below without extra configuration.
 
-### Tools & Debug Probes
+### Debug probes
 
-Supported debugging tools are listed in "Debug" column. For more detailed information, please scroll table by horizontal. You can switch between debugging [Tools & Debug Probes](../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Select a [debug probe](../../guides/debugging/index.md#debugging-tools) with the [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../reference/platformio-ini/index.md). Each board's page lists its compatible probes.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-#### On-Board Debug Tools
+#### Boards with an on-board debug probe
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging! You do not need to use/buy external debug probe.
+These boards are ready for debugging; no external probe is needed.
 
 | Name | Platform | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|
@@ -141,9 +142,9 @@ Boards listed below have on-board debug probe and **ARE READY** for debugging! Y
 | [TI LaunchPad (Tiva C) w/ tm4c129 (120MHz)](../boards/titiva/lptm4c1294ncpdt.md) | [TI TIVA](../platforms/titiva.md) | LPTM4C1294NCPDT | 120MHz | 1MB | 256KB |
 | [sakura.io Evaluation Board](../boards/ststm32/sakuraio-evb-01.md) | [ST STM32](../platforms/ststm32.mdx) | STM32F411RET6 | 100MHz | 1MB | 128KB |
 
-#### External Debug Tools
+#### Boards that need an external debug probe
 
-Boards listed below are compatible with [Debugging](../../guides/debugging/index.md) but **DEPEND ON** external debug probe. They **ARE NOT READY** for debugging. Please click on board name for the further details.
+These boards support [Debugging](../../guides/debugging/index.md) with an external debug probe. See each board's page for the compatible probes.
 
 | Name | Platform | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|
@@ -301,12 +302,7 @@ Boards listed below are compatible with [Debugging](../../guides/debugging/index
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### 1BitSquared
 

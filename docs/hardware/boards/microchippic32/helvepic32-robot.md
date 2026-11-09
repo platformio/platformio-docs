@@ -1,6 +1,7 @@
 ---
 title: "HelvePic32 Robot"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "HelvePic32 Robot (32MX270F256D, 48MHz, 244KB flash, 62KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Microchip PIC32](../../platforms/microchippic32.md): Microchip's 32-bi
 
 ## Configuration
 
-Please use `helvepic32_robot` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `helvepic32_robot` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:helvepic32_robot]
@@ -30,7 +31,7 @@ platform = microchippic32
 board = helvepic32_robot
 ```
 
-You can override default HelvePic32 Robot settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [helvepic32_robot.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/helvepic32_robot.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [helvepic32_robot.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/helvepic32_robot.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:helvepic32_robot]
@@ -46,7 +47,7 @@ board_build.f_cpu = 48000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support HelvePic32 Robot board.
+[Debugging](../../../guides/debugging/index.md) does not support the HelvePic32 Robot yet.
 
 ## Frameworks
 

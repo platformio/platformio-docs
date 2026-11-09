@@ -4,7 +4,7 @@
 
 (valid only for Teensy LC, Teensy 3.0-3.6)
 
-You can control firmware optimization via special macro/define using [build_flags](../../reference/platformio-ini/env/build-flags.md) in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+You can control firmware optimization via special macro/define using [build_flags](../../reference/platformio-ini/env/build-flags.md) in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 - `-D TEENSY_OPT_FASTER`, **default**
 - `-D TEENSY_OPT_FASTER_LTO`
@@ -33,7 +33,7 @@ board = teensy36
 build_flags = -D TEENSY_OPT_SMALLEST_CODE
 ```
 
-### USB Features {#usb-features}
+### USB features {#usb-features}
 
 If you want to use Teensy USB Features, you need to add special macro/define using [build_flags](../../reference/platformio-ini/env/build-flags.md):
 

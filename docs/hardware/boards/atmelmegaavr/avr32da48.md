@@ -1,6 +1,7 @@
 ---
 title: "AVR32DA48"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "AVR32DA48 (AVR32DA48, 24MHz, 32KB flash, 4KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel megaAVR](../../platforms/atmelmegaavr.mdx): 8-bit MCUs Built for
 
 ## Configuration
 
-Please use `AVR32DA48` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `AVR32DA48` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:AVR32DA48]
@@ -30,7 +31,7 @@ platform = atmelmegaavr
 board = AVR32DA48
 ```
 
-You can override default AVR32DA48 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [AVR32DA48.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/AVR32DA48.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [AVR32DA48.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/AVR32DA48.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:AVR32DA48]
@@ -46,7 +47,7 @@ board_build.f_cpu = 24000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support AVR32DA48 board.
+[Debugging](../../../guides/debugging/index.md) does not support the AVR32DA48 yet.
 
 ## Frameworks
 

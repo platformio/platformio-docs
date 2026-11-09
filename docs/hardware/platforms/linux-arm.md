@@ -1,6 +1,7 @@
 ---
 title: "Linux ARM"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Linux ARM development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-linux-arm"></a>
@@ -12,18 +13,18 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
-For more detailed information please visit [vendor site](https://registry.platformio.org/platforms/platformio/linux_arm?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [registry.platformio.org](https://registry.platformio.org/platforms/platformio/linux_arm?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Linux ARM development platform repository](https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Linux ARM platform repository](https://github.com/platformio/platform-linux_arm/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [wiringpi-serial](https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-serial?utm_source=platformio.org&utm_medium=docs)
 - [wiringpi-blink](https://github.com/platformio/platform-linux_arm/tree/master/examples/wiringpi-blink?utm_source=platformio.org&utm_medium=docs)
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-linux_arm/releases) of Linux ARM development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-linux_arm/releases) of the Linux ARM platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -60,12 +61,7 @@ platform = https://github.com/platformio/platform-linux_arm.git
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Raspberry Pi
 

@@ -8,7 +8,7 @@ In Mbed OS 6 the list of supported boards was heavily reduced, only officially s
 
 :::
 
-PlatformIO allows you to customize Mbed OS compile time configuration parameters using `mbed_app.json` manifest. It should be placed into the root of your project and located on the same level as ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+PlatformIO allows you to customize Mbed OS compile time configuration parameters using `mbed_app.json` manifest. It should be placed into the root of your project and located on the same level as [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 Configuration is defined using [JSON](https://en.wikipedia.org/wiki/JSON). Some examples of configuration parameters:
 
@@ -30,7 +30,7 @@ On Windows the maximum length for a path (file name and directory route, also kn
 
 :::
 
-#### Using Bare Metal profile {#using-bare-metal-profile}
+#### Using bare metal profile {#using-bare-metal-profile}
 
 The bare metal profile implements a subset of Mbed OS's RTOS APIs that are useful in non-threaded applications, such as semaphores (calling the release API from interrupts) and tickers (to set up a recurring interrupt). It does not include an RTX, and is therefore suitable for applications that do not require complex thread management. Instead of the RTOS's scheduler, all activities are polled or interrupt-driven.
 
@@ -41,7 +41,7 @@ Useful links:
 
 ##### Build profiles {#build-profiles}
 
-By default, PlatformIO builds your project using `develop profile` which provides optimized firmware size with full error information and allows MCU to go to sleep mode. In the case when default build profile is not suitable for your project there two other profiles `release` and `debug` that can be enabled using special macro definitions. You can change build profile [build_flags](../../reference/platformio-ini/env/build-flags.md) of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+By default, PlatformIO builds your project using `develop profile` which provides optimized firmware size with full error information and allows MCU to go to sleep mode. In the case when default build profile is not suitable for your project there two other profiles `release` and `debug` that can be enabled using special macro definitions. You can change build profile [build_flags](../../reference/platformio-ini/env/build-flags.md) of [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 | Name | Description |
 |---|---|
@@ -60,7 +60,7 @@ mbed-os/connectivity/nanostack/*
 mbed-os/storage/kvstore/*
 ```
 
-#### Custom Targets {#custom-targets}
+#### Custom targets {#custom-targets}
 
 In case when your board is not officially supported by [Mbed](/hardware/frameworks/mbed) you can manually add custom board definitions to your project. First of all, you need to create a special file `custom_targets.json` in the root folder of your project where you describe your board, for example here is the configuration for `NUCLEO-F401RE` board:
 
@@ -102,7 +102,7 @@ In case when your board is not officially supported by [Mbed](/hardware/framewor
 }
 ```
 
-Secondly, you need to add code specific to your target to the `src` folder of your project. Usually, it's a good idea to isolate this code in a separate folder and add the path to this folder to [build_flags](../../reference/platformio-ini/env/build-flags.md) of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Secondly, you need to add code specific to your target to the `src` folder of your project. Usually, it's a good idea to isolate this code in a separate folder and add the path to this folder to [build_flags](../../reference/platformio-ini/env/build-flags.md) of [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:my_custom_board]

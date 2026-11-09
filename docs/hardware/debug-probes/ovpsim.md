@@ -1,3 +1,7 @@
+---
+description: "Use the OVPsim debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-ovpsim"></a>
 
 # OVPsim {#ovpsim}
@@ -22,12 +26,6 @@ OVPsim is a multiprocessor platform emulator (often called a full-system simulat
 | [PULP SDK](../frameworks/pulp-sdk.md) | Software Development Kit for Parallel Ultra Low Power platform |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

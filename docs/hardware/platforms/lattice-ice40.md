@@ -1,6 +1,7 @@
 ---
 title: "Lattice iCE40"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Lattice iCE40 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-lattice-ice40"></a>
@@ -12,18 +13,18 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 The iCE40 family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7680 Look-Up Tables (LUTs). In addition to LUT-based,low-cost programmable logic, these devices feature Embedded Block RAM (EBR), Non-volatile Configuration Memory (NVCM) and Phase Locked Loops (PLLs). These features allow the devices to be used in low-cost, high-volume consumer and system applications.
 
-For more detailed information please visit [vendor site](http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [www.latticesemi.com](http://www.latticesemi.com/Products/FPGAandCPLD/iCE40.aspx?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Lattice iCE40 development platform repository](https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Lattice iCE40 platform repository](https://github.com/platformio/platform-lattice_ice40/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [leds](https://github.com/platformio/platform-lattice_ice40/tree/master/examples/leds?utm_source=platformio.org&utm_medium=docs)
 - [counter](https://github.com/platformio/platform-lattice_ice40/tree/master/examples/counter?utm_source=platformio.org&utm_medium=docs)
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-lattice_ice40/releases) of Lattice iCE40 development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-lattice_ice40/releases) of the Lattice iCE40 platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -57,25 +58,20 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### FPGAwars
 

@@ -1,14 +1,18 @@
+---
+description: "Use the JTAG-HS2 debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-digilent-hs2"></a>
 
 # JTAG-HS2 {#jtag-hs2}
 
 [![](./img/digilent-hs2.jpg)](https://store.digilentinc.com/jtag-hs2-programming-cable/?utm_source=platformio&utm_medium=docs)
 
-The JTAG-HS2 programming cable is a high-speed programming solution for Xilinx® FPGAs. Official reference can be found [here](https://store.digilentinc.com/jtag-hs2-programming-cable/?utm_source=platformio&utm_medium=docs).
+The JTAG-HS2 programming cable is a high-speed programming solution for Xilinx® FPGAs. See the [official documentation](https://store.digilentinc.com/jtag-hs2-programming-cable/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = digilent-hs2
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,7 +31,7 @@ debug_tool = digilent-hs1
 upload_protocol = digilent-hs1
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
@@ -48,12 +52,6 @@ More options:
 | [PULP SDK](../frameworks/pulp-sdk.md) | Software Development Kit for Parallel Ultra Low Power platform |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

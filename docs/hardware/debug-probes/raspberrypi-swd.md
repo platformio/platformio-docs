@@ -1,6 +1,10 @@
+---
+description: "Use the Raspberry pi SWD debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-raspberrypi-swd"></a>
 
-# Raspberry Pi SWD {#raspberry-pi-swd}
+# Raspberry pi SWD {#raspberry-pi-swd}
 
 [![](./img/raspberrypi-swd.jpg)](https://www.electronicshub.org/programming-raspberry-pi-pico-with-swd?utm_source=platformio&utm_medium=docs)
 
@@ -8,7 +12,7 @@
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = raspberrypi-swd
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,7 +31,7 @@ debug_tool = raspberrypi-swd
 upload_protocol = raspberrypi-swd
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
@@ -47,12 +51,6 @@ More options:
 | [Arduino](../frameworks/arduino.mdx) | Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences. |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

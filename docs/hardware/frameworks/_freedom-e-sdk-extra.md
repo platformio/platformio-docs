@@ -2,7 +2,7 @@
 
 ### Using with FreeRTOS {#using-with-freertos}
 
-In order to add FreeRTOS to your project, it must be explicitly specified as an additional framework in the `framework` field of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md), for example:
+In order to add FreeRTOS to your project, it must be explicitly specified as an additional framework in the `framework` field of [`platformio.ini`](../../reference/platformio-ini/index.md), for example:
 
 ```ini
 [env:freertos]
@@ -17,7 +17,7 @@ FreeRTOS RISC-V port for the [SiFive](/hardware/platforms/sifive) development pl
 
 :::
 
-Most of the application specific configuration is done in a special file called `FreeRTOSConfig.h` which must be present in each FreeRTOS-based project. Additional settings for build configuration are set in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) using the following syntax `board_build.freertos.*` where `*` is an option from the following list:
+Most of the application specific configuration is done in a special file called `FreeRTOSConfig.h` which must be present in each FreeRTOS-based project. Additional settings for build configuration are set in [`platformio.ini`](../../reference/platformio-ini/index.md) using the following syntax `board_build.freertos.*` where `*` is an option from the following list:
 
 #### FreeRTOS settings {#freertos-settings}
 
@@ -213,7 +213,7 @@ Default: `SEGGER_SYSVIEW_RecordExitISRToScheduler`
 
 The name of a function to be called to record finish of interrupt when it's caused by a context switch.
 
-An example of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) with modified heap settings and enabled SystemView feature:
+An example of [`platformio.ini`](../../reference/platformio-ini/index.md) with modified heap settings and enabled SystemView feature:
 
 ```ini
 [env:sifive-hifive1-revb]

@@ -1,3 +1,7 @@
+---
+description: "At the moment several limitations are present:."
+---
+
 ## Tutorials {#tutorials}
 
 - [Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis](../../get-started/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect.md)
@@ -5,7 +9,7 @@
 
 ## Configuration {#configuration}
 
-### Project Structure {#project-structure}
+### Project structure {#project-structure}
 
 [Zephyr](https://www.zephyrproject.org) framework requires an unusual project structure because most of the framework configuration is performed by the native for Zephyr build system called `CMake`.
 

@@ -1,6 +1,7 @@
 ---
 title: "ODROID-GO"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "ODROID-GO (ESP32, 240MHz, 16MB flash, 320KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 32](../../platforms/espressif32.mdx): ESP32 is a series of l
 
 ## Configuration
 
-Please use `odroid_esp32` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `odroid_esp32` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:odroid_esp32]
@@ -30,7 +31,7 @@ platform = espressif32
 board = odroid_esp32
 ```
 
-You can override default ODROID-GO settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [odroid_esp32.json](https://github.com/platformio/platform-espressif32/blob/master/boards/odroid_esp32.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [odroid_esp32.json](https://github.com/platformio/platform-espressif32/blob/master/boards/odroid_esp32.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:odroid_esp32]
@@ -46,14 +47,14 @@ board_build.f_cpu = 240000000L
 
 ## Uploading
 
-ODROID-GO supports the following uploading protocols:
+ODROID-GO supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:odroid_esp32]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support ODROID-GO board.
+[Debugging](../../../guides/debugging/index.md) does not support the ODROID-GO yet.
 
 ## Frameworks
 

@@ -1,3 +1,7 @@
+---
+description: "[env:esp32dev]."
+---
+
 ## Tutorials {#tutorials}
 
 - [Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis](../../get-started/tutorials/espressif32/espidf-debugging-unit-testing-analysis.md)
@@ -41,7 +45,7 @@ In case the `UP` and `DOWN` arrows don't work in menuconfig try using the `J` ke
 
 :::
 
-### Project Structure {#project-structure}
+### Project structure {#project-structure}
 
 The ESP-IDF framework requires an unusual project structure because most of the framework configuration is performed by the native for the ESP-IDF build system called `CMake`.
 
@@ -190,7 +194,7 @@ See full examples with ULP coprocessor programming:
 
 More details are located in the official ESP-IDF documentation - [ULP coprocessor programming](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/ulp.html#accessing-ulp-program-variable).
 
-### Security Features {#security-features}
+### Security features {#security-features}
 
 :::warning
 
@@ -327,7 +331,7 @@ pio pkg exec --package "platformio/tool-esptoolpy" -- espefuse.py --port $PORT w
 
 :::warning
 
-The write protection of above eFuse also write protects multiple other eFuses. Please refer to the ESP32 eFuse table for more details.
+The write protection of above eFuse also write protects multiple other eFuses. See the ESP32 eFuse table for more details.
 
 :::
 
@@ -414,7 +418,7 @@ pio pkg exec --package "platformio/tool-esptoolpy" -- espefuse.py --port $PORT b
 
 Once the Flash Encryption has been enabled for the device, the key must be deleted immediately. This ensures that the host can't produce encrypted binaries for the same device going forward. This step is important to reduce the vulnerability of the Flash Encryption key.
 
-#### Secure Bootloader {#secure-bootloader}
+#### Secure bootloader {#secure-bootloader}
 
 Secure Boot protects a device from running any unauthorized (i.e., unsigned) code by checking that each piece of software that is being booted is signed. On an ESP32, these pieces of software include the second stage bootloader and each application binary. Note that the first stage (ROM) bootloader does not require signing as it is ROM code and thus cannot be changed.
 
@@ -589,7 +593,7 @@ It is recommended to store the Secure Boot key in a highly secure place. A physi
 
 :::
 
-#### NVS Encryption: Flash Encryption-Based Scheme {#nvs-encryption-flash-encryption-based-scheme}
+#### NVS encryption: flash Encryption-Based scheme {#nvs-encryption-flash-encryption-based-scheme}
 
 :::warning
 
@@ -629,7 +633,7 @@ This command will generate the respective key in the `keys` folder.
 
 2. Generate an encrypted NVS partition
 
-On this step we need to generate an encrypted NVS partition from a special CSV file. Please refer to [Generate Encrypted NVS Partition](https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#generate-encrypted-nvs-partition) and [CSV File Format](https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#nvs-csv-file-format) for more details.
+On this step we need to generate an encrypted NVS partition from a special CSV file. See [Generate Encrypted NVS Partition](https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#generate-encrypted-nvs-partition) and [CSV File Format](https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/api-reference/storage/nvs_partition_gen.html#nvs-csv-file-format) for more details.
 
 ```bash
 pio pkg exec --package "platformio/framework-espidf" -- components/nvs_flash/nvs_partition_generator/nvs_partition_gen.py encrypt nvs_data.csv nvs_encr_partition.bin 0x121000 --inputkey keys/nvs_encr_key.bin

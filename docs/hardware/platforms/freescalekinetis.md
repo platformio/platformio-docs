@@ -1,6 +1,7 @@
 ---
 title: "Freescale Kinetis"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Freescale Kinetis development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-freescalekinetis"></a>
@@ -12,11 +13,11 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 Freescale Kinetis Microcontrollers is family of multiple hardware- and software-compatible ARM Cortex-M0+, Cortex-M4 and Cortex-M7-based MCU series. Kinetis MCUs offer exceptional low-power performance, scalability and feature integration.
 
-For more detailed information please visit [vendor site](http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS&utm_source=platformio.org&utm_medium=docs).
+Vendor website: [www.freescale.com](http://www.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS&utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Freescale Kinetis development platform repository](https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Freescale Kinetis platform repository](https://github.com/platformio/platform-freescalekinetis/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [zephyr-blink](https://github.com/platformio/platform-freescalekinetis/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs)
 - [zephyr-net-telnet](https://github.com/platformio/platform-freescalekinetis/tree/master/examples/zephyr-net-telnet?utm_source=platformio.org&utm_medium=docs)
@@ -28,21 +29,21 @@ Examples are listed from [Freescale Kinetis development platform repository](htt
 
 ## Debugging
 
-[Debugging](../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+[Debugging](../../guides/debugging/index.md) works with the boards below without extra configuration.
 
-### Tools & Debug Probes
+### Debug probes
 
-Supported debugging tools are listed in "Debug" column. For more detailed information, please scroll table by horizontal. You can switch between debugging [Tools & Debug Probes](../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Select a [debug probe](../../guides/debugging/index.md#debugging-tools) with the [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../reference/platformio-ini/index.md). Each board's page lists its compatible probes.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-#### On-Board Debug Tools
+#### Boards with an on-board debug probe
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging! You do not need to use/buy external debug probe.
+These boards are ready for debugging; no external probe is needed.
 
 | Name | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|
@@ -56,9 +57,9 @@ Boards listed below have on-board debug probe and **ARE READY** for debugging! Y
 | [Freescale Kinetis FRDM-KL46Z](../boards/freescalekinetis/frdm-kl46z.md) | MKL46Z256VLL4 | 48MHz | 256KB | 32KB |
 | [Freescale Kinetis FRDM-KW41Z](../boards/freescalekinetis/frdm-kw41z.md) | MKW41Z512VHT4 | 48MHz | 512KB | 128KB |
 
-#### External Debug Tools
+#### Boards that need an external debug probe
 
-Boards listed below are compatible with [Debugging](../../guides/debugging/index.md) but **DEPEND ON** external debug probe. They **ARE NOT READY** for debugging. Please click on board name for the further details.
+These boards support [Debugging](../../guides/debugging/index.md) with an external debug probe. See each board's page for the compatible probes.
 
 | Name | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|
@@ -68,7 +69,7 @@ Boards listed below are compatible with [Debugging](../../guides/debugging/index
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-freescalekinetis/releases) of Freescale Kinetis development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-freescalekinetis/releases) of the Freescale Kinetis platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -109,14 +110,14 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
@@ -129,12 +130,7 @@ Please check that you have a correctly installed USB driver from board manufactu
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Freescale
 

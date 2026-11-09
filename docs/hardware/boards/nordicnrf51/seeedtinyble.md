@@ -1,6 +1,7 @@
 ---
 title: "Seeed Tiny BLE"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Seeed Tiny BLE (NRF51822, 16MHz, 256KB flash, 16KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Nordic nRF51](../../platforms/nordicnrf51.md): The Nordic nRF51 Series
 
 ## Configuration
 
-Please use `seeedTinyBLE` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `seeedTinyBLE` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:seeedTinyBLE]
@@ -30,7 +31,7 @@ platform = nordicnrf51
 board = seeedTinyBLE
 ```
 
-You can override default Seeed Tiny BLE settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [seeedTinyBLE.json](https://github.com/platformio/platform-nordicnrf51/blob/master/boards/seeedTinyBLE.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [seeedTinyBLE.json](https://github.com/platformio/platform-nordicnrf51/blob/master/boards/seeedTinyBLE.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:seeedTinyBLE]
@@ -46,7 +47,7 @@ board_build.f_cpu = 16000000L
 
 ## Uploading
 
-Seeed Tiny BLE supports the following uploading protocols:
+Seeed Tiny BLE supports these upload protocols:
 
 - `blackmagic`
 - `cmsis-dap`
@@ -54,9 +55,9 @@ Seeed Tiny BLE supports the following uploading protocols:
 - `nrfjprog`
 - `stlink`
 
-Default protocol is `cmsis-dap`
+The default is `cmsis-dap`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:seeedTinyBLE]
@@ -68,21 +69,19 @@ upload_protocol = cmsis-dap
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Seeed Tiny BLE has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Seeed Tiny BLE has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  |  |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  |  |
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) | Yes | Yes |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [ST-LINK](../../debug-probes/stlink.md) |  |  |

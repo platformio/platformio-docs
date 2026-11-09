@@ -1,6 +1,7 @@
 ---
 title: "Arty FPGA Dev Kit"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Arty FPGA Dev Kit (FE310, 450MHz, 16MB flash, 256MB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [SiFive](../../platforms/sifive.md): SiFive brings the power of open so
 
 ## Configuration
 
-Please use `e310-arty` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `e310-arty` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:e310-arty]
@@ -30,7 +31,7 @@ platform = sifive
 board = e310-arty
 ```
 
-You can override default Arty FPGA Dev Kit settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [e310-arty.json](https://github.com/platformio/platform-sifive/blob/master/boards/e310-arty.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [e310-arty.json](https://github.com/platformio/platform-sifive/blob/master/boards/e310-arty.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:e310-arty]
@@ -46,7 +47,7 @@ board_build.f_cpu = 450000000L
 
 ## Uploading
 
-Arty FPGA Dev Kit supports the following uploading protocols:
+Arty FPGA Dev Kit supports these upload protocols:
 
 - `ftdi`
 - `jlink`
@@ -57,9 +58,9 @@ Arty FPGA Dev Kit supports the following uploading protocols:
 - `olimex-jtag-tiny`
 - `tumpa`
 
-Default protocol is `ftdi`
+The default is `ftdi`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:e310-arty]
@@ -71,21 +72,19 @@ upload_protocol = ftdi
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Arty FPGA Dev Kit has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [FTDI Chip](../../debug-probes/ftdi.md) | Yes | Yes |
+| [FTDI chip](../../debug-probes/ftdi.md) | Yes | Yes |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [Mini-Module FT2232H](../../debug-probes/minimodule.md) |  |  |
 | [Olimex ARM-USB-OCD](../../debug-probes/olimex-arm-usb-ocd.md) |  |  |
@@ -94,7 +93,7 @@ Arty FPGA Dev Kit has on-board debug probe and **IS READY** for debugging. You d
 | [Olimex ARM-USB-TINY](../../debug-probes/olimex-jtag-tiny.md) |  |  |
 | [QEMU](../../debug-probes/qemu.md) | Yes |  |
 | [Renode](../../debug-probes/renode.md) | Yes |  |
-| [TIAO USB Multi-Protocol Adapter (TUMPA)](../../debug-probes/tumpa.md) |  |  |
+| [TIAO USB Multi-Protocol adapter (TUMPA)](../../debug-probes/tumpa.md) |  |  |
 
 ## Frameworks
 

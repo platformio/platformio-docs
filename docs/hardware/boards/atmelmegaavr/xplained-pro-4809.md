@@ -1,6 +1,7 @@
 ---
 title: "Xplained Pro ATmega4809"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Xplained Pro ATmega4809 (ATMEGA4809, 16MHz, 48KB flash, 6KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel megaAVR](../../platforms/atmelmegaavr.mdx): 8-bit MCUs Built for
 
 ## Configuration
 
-Please use `xplained_pro_4809` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `xplained_pro_4809` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:xplained_pro_4809]
@@ -30,7 +31,7 @@ platform = atmelmegaavr
 board = xplained_pro_4809
 ```
 
-You can override default Xplained Pro ATmega4809 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [xplained_pro_4809.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/xplained_pro_4809.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [xplained_pro_4809.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/xplained_pro_4809.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:xplained_pro_4809]
@@ -46,7 +47,7 @@ board_build.f_cpu = 16000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Xplained Pro ATmega4809 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Xplained Pro ATmega4809 yet.
 
 ## Frameworks
 

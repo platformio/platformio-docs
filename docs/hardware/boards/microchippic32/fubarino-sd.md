@@ -1,6 +1,7 @@
 ---
 title: "Fubarino SD (1.5)"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Fubarino SD (1.5) (32MX795F512H, 80MHz, 508KB flash, 128KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Microchip PIC32](../../platforms/microchippic32.md): Microchip's 32-bi
 
 ## Configuration
 
-Please use `fubarino_sd` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `fubarino_sd` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:fubarino_sd]
@@ -30,7 +31,7 @@ platform = microchippic32
 board = fubarino_sd
 ```
 
-You can override default Fubarino SD (1.5) settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [fubarino_sd.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/fubarino_sd.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [fubarino_sd.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/fubarino_sd.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:fubarino_sd]
@@ -46,7 +47,7 @@ board_build.f_cpu = 80000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Fubarino SD (1.5) board.
+[Debugging](../../../guides/debugging/index.md) does not support the Fubarino SD (1.5) yet.
 
 ## Frameworks
 

@@ -1,6 +1,7 @@
 ---
 title: "MAX32625MBED"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "MAX32625MBED (MAX32625, 96MHz, 512KB flash, 160KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Maxim 32](../../platforms/maxim32.md): Maxim's microcontrollers provid
 
 ## Configuration
 
-Please use `max32625mbed` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `max32625mbed` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:max32625mbed]
@@ -30,7 +31,7 @@ platform = maxim32
 board = max32625mbed
 ```
 
-You can override default MAX32625MBED settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [max32625mbed.json](https://github.com/platformio/platform-maxim32/blob/master/boards/max32625mbed.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [max32625mbed.json](https://github.com/platformio/platform-maxim32/blob/master/boards/max32625mbed.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:max32625mbed]
@@ -46,7 +47,7 @@ board_build.f_cpu = 96000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support MAX32625MBED board.
+[Debugging](../../../guides/debugging/index.md) does not support the MAX32625MBED yet.
 
 ## Frameworks
 

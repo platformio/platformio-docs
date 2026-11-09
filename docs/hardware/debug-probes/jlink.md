@@ -1,10 +1,14 @@
+---
+description: "Use the J-LINK debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-jlink"></a>
 
 # J-LINK {#j-link}
 
 [![](./img/jlink.png)](https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs)
 
-SEGGER J-Links are the most widely used line of debug probes available today. They've proven their value for more than 10 years with over 400,000 units sold, including OEM versions and on-board solutions. This popularity stems from the unparalleled performance, extensive feature set, large number of supported CPUs, and compatibility with all popular development environments. Official reference can be found [here](https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs).
+SEGGER J-Links are the most widely used line of debug probes available today. They've proven their value for more than 10 years with over 400,000 units sold, including OEM versions and on-board solutions. This popularity stems from the unparalleled performance, extensive feature set, large number of supported CPUs, and compatibility with all popular development environments. See the [official documentation](https://www.segger.com/jlink-debug-probes.html?utm_source=platformio&utm_medium=docs).
 
 - [J-Link Supported Devices](https://www.segger.com/downloads/supported_devices_jlink.php?utm_source=platformio&utm_medium=docs)
 
@@ -12,7 +16,7 @@ Also, see [Custom](./custom.md) debugging configuration with J-Link GDB Server.
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -21,7 +25,7 @@ board = ...
 debug_tool = jlink
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -36,12 +40,12 @@ upload_protocol = jlink
 upload_protocol = jlink-jtag
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
-### Custom Server {#custom-server}
+### Custom server {#custom-server}
 
 ```ini
 [env:debug_jlink]
@@ -81,53 +85,17 @@ upload_flags =
 
 ## Drivers {#drivers}
 
-<dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | 1. Start debugging session using [PlatformIO IDE](../../get-started/platformio-ide.md). PlatformIO will install J-Link software dependencies 2. Navigate to [core_dir](../../reference/platformio-ini/platformio/core-dir.md)/packages/tool-jlink/USBDriver 3. Run `InstDrivers.exe`. |
+| macOS | Not required. |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-1. Start debugging session using [PlatformIO IDE](../../get-started/platformio-ide.md). PlatformIO will install J-Link software dependencies
-2. Navigate to [core_dir](../../reference/platformio-ini/platformio/core-dir.md)/packages/tool-jlink/USBDriver
-3. Run `InstDrivers.exe`.
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-Not required.
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
-
-## Wiring Connections {#wiring-connections}
+## Wiring connections {#wiring-connections}
 
 ![](./img/generic_jtag_swd_connector.jpg)
 
-### JTAG Interface {#jtag-interface}
+### JTAG interface {#jtag-interface}
 
 | J-Link JTAG 20-Pin Connector | Board JTAG Pin | Description |
 |---|---|---|
@@ -139,7 +107,7 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | 13 | TDO | Test Data Out pin |
 | 15 | RESET | Connect this pin to the (active low) reset input of the target CPU (EN for ESP32) |
 
-### Serial Wire Mode Interface (SWD) {#serial-wire-mode-interface-swd}
+### Serial wire mode interface (SWD) {#serial-wire-mode-interface-swd}
 
 | J-Link SWD 20-Pin Connector | Board SWD Pin | Description |
 |---|---|---|
@@ -189,12 +157,6 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

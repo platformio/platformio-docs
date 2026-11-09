@@ -1,3 +1,7 @@
+---
+description: "Tips, tricks and common problems: http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/."
+---
+
 ## Tutorials {#tutorials}
 
 - [Get started with Arduino and ESP32-DevKitC: debugging and unit testing](../../get-started/tutorials/espressif32/arduino-debugging-unit-testing.md)
@@ -6,9 +10,9 @@
 
 ## Configuration {#configuration}
 
-### CPU Frequency {#cpu-frequency}
+### CPU frequency {#cpu-frequency}
 
-See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
@@ -16,9 +20,9 @@ See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md)
 board_build.f_cpu = 160000000L
 ```
 
-### FLASH Frequency {#flash-frequency}
+### FLASH frequency {#flash-frequency}
 
-Please use `board_build.f_flash` option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) to change a value. Possible values:
+Use `board_build.f_flash` option from [`platformio.ini`](../../reference/platformio-ini/index.md) to change a value. Possible values:
 
 - `40000000L` (default)
 - `80000000L`
@@ -29,11 +33,11 @@ Please use `board_build.f_flash` option from ["platformio.ini" (Project Configur
 board_build.f_flash = 80000000L
 ```
 
-### FLASH Mode {#flash-mode}
+### FLASH mode {#flash-mode}
 
 Flash chip interface mode. This parameter is stored in the binary image header, along with the flash size and flash frequency. The ROM bootloader in the ESP chip uses the value of these parameters in order to know how to talk to the flash chip.
 
-Please use `board_build.flash_mode` option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) to change a value. Possible values:
+Use `board_build.flash_mode` option from [`platformio.ini`](../../reference/platformio-ini/index.md) to change a value. Possible values:
 
 - `qio`
 - `qout`
@@ -47,7 +51,7 @@ board_build.flash_mode = qio
 
 ### External RAM (PSRAM) {#external-ram-psram}
 
-You can enable external RAM using the next extra [build_flags](../../reference/platformio-ini/env/build-flags.md) in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) depending on a framework type.
+You can enable external RAM using the next extra [build_flags](../../reference/platformio-ini/env/build-flags.md) in [`platformio.ini`](../../reference/platformio-ini/index.md) depending on a framework type.
 
 Framework [Arduino](/hardware/frameworks/arduino):
 
@@ -74,9 +78,9 @@ build_flags =
 
 More details are located in the official ESP-IDF documentation - [Support for external RAM](http://esp-idf.readthedocs.io/en/latest/api-guides/external-ram.html).
 
-### Debug Level {#debug-level}
+### Debug level {#debug-level}
 
-Please use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to change debug level. A [build_flags](../../reference/platformio-ini/env/build-flags.md) option could be used only the one time per build environment. If you need to specify more flags, please separate them with a new line or space.
+Use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to change debug level. A [build_flags](../../reference/platformio-ini/env/build-flags.md) option could be used only the one time per build environment. If you need to specify more flags, please separate them with a new line or space.
 
 Actual information is available in [Arduino for ESP32 Board Manifest](https://github.com/espressif/arduino-esp32/blob/master/boards.txt#L80). Please scroll to `esp32.menu.DebugLevel` section.
 
@@ -107,16 +111,16 @@ build_flags = -DCORE_DEBUG_LEVEL=4
 build_flags = -DCORE_DEBUG_LEVEL=5
 ```
 
-### Upload Speed {#upload-speed}
+### Upload speed {#upload-speed}
 
-You can set custom upload speed using  [upload_speed](../../reference/platformio-ini/env/upload-speed.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+You can set custom upload speed using  [upload_speed](../../reference/platformio-ini/env/upload-speed.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
 upload_speed = 9600
 ```
 
-### Erase Flash {#erase-flash}
+### Erase flash {#erase-flash}
 
 Please [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) the next command to erase the entire flash chip (all data replaced with 0xFF bytes):
 
@@ -128,14 +132,14 @@ Please [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) 
 > pio run -t erase
 ```
 
-### Partition Tables {#partition-tables}
+### Partition tables {#partition-tables}
 
 You can create a custom partitions table (CSV) following [ESP32 Partition Tables](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/partition-tables.html) documentation. PlatformIO uses **default partition tables** depending on a [framework](../../reference/platformio-ini/env/framework.md) type:
 
 - `default.csv` for [Arduino](/hardware/frameworks/arduino) ([show pre-configured partition tables](https://github.com/espressif/arduino-esp32/blob/master/tools/partitions))
 - `partitions_singleapp.csv` for [Espressif IoT Development Framework](/hardware/frameworks/espidf) ([show pre-configured partition tables](https://github.com/espressif/esp-idf/blob/master/components/partition_table))
 
-To override default table please use `board_build.partitions` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+To override default table please use `board_build.partitions` option in [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 :::warning
 
@@ -157,7 +161,7 @@ board_build.partitions = partitions_custom.csv
 board_build.partitions = no_ota.csv
 ```
 
-### sdkconfig Configuration (ESP-IDF) {#sdkconfig-configuration-esp-idf}
+### sdkconfig configuration (ESP-IDF) {#sdkconfig-configuration-esp-idf}
 
 ESP-IDF projects use `sdkconfig` files to configure the SDK. By default, PlatformIO generates `sdkconfig.<env>` (e.g. `sdkconfig.esp32dev` for `[env:esp32dev]`). This file contains the full merged configuration and is a build artifact, not a source file.
 
@@ -190,7 +194,7 @@ Add `sdkconfig.*` to `.gitignore` and only check in the defaults files. This kee
 
 See the [espidf-sdkconfig-defaults](https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-defaults) and [espidf-sdkconfig-custom-path](https://github.com/platformio/platform-espressif32/tree/develop/examples/espidf-sdkconfig-custom-path) examples for working projects.
 
-### Embedding Binary Data {#embedding-binary-data}
+### Embedding binary data {#embedding-binary-data}
 
 Sometimes you have a file with some binary or text data that you’d like to make available to your program - but you don’t want to reformat the file as C source.
 
@@ -241,7 +245,7 @@ See full example with embedding Amazon AWS certificates:
 2. Create `data` folder (it should be on the same level as `src` folder) and put files here. Also, you can specify own location for [data_dir](../../reference/platformio-ini/platformio/data-dir.md)
 3. Run "Upload File System image" task in [PlatformIO IDE](../../get-started/platformio-ide.md) or use [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) command with `uploadfs` target.
 
-The `SPIFFS` file system is used by default in order to keep legacy project compatible. To choose `LittleFS` or `FFat` as the file system, it should be explicitly specified using `board_build.filesystem` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md), for example:
+The `SPIFFS` file system is used by default in order to keep legacy project compatible. To choose `LittleFS` or `FFat` as the file system, it should be explicitly specified using `board_build.filesystem` option in [`platformio.ini`](../../reference/platformio-ini/index.md), for example:
 
 ```ini
 [env:myenv]
@@ -266,7 +270,7 @@ Examples:
 
 :::warning
 
-Please make sure to read the theory behind the OTA updates in the [Over The Air Updates (OTA)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html) article.
+Read the theory behind the OTA updates in the [Over The Air Updates (OTA)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html) article.
 
 :::
 
@@ -287,7 +291,7 @@ pio run -t upload --upload-port 192.168.0.255
 pio run -t upload --upload-port myesp32.local
 ```
 
-Or use the `upload_port` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Please note that you also need to set [upload_protocol](../../reference/platformio-ini/env/upload-protocol.md) to `espota`:
+Or use the `upload_port` option in [`platformio.ini`](../../reference/platformio-ini/index.md). Note that you also need to set [upload_protocol](../../reference/platformio-ini/env/upload-protocol.md) to `espota`:
 
 ```ini
 [env:myenv]
@@ -308,7 +312,7 @@ upload_port = 192.168.0.255
 
 #### Authentication and upload options {#authentication-and-upload-options}
 
-You can pass additional options/flags to OTA uploader using `upload_flags` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+You can pass additional options/flags to OTA uploader using `upload_flags` option in [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
@@ -369,13 +373,13 @@ For windows users. To manage OTA check the ESP wifi network profile isn't checke
 
 :::
 
-### Using Arduino Framework with Staging version {#using-arduino-framework-with-staging-version}
+### Using Arduino framework with staging version {#using-arduino-framework-with-staging-version}
 
 PlatformIO will install the latest Arduino Core for ESP32 from [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32). The [Git](https://git-scm.com) should be installed in a system. To update Arduino Core to the latest revision, please open [PlatformIO IDE](../../get-started/platformio-ide.md) and navigate to `PlatformIO Home > Platforms > Updates`.
 
-1. Please install [PlatformIO IDE](../../get-started/platformio-ide.md)
+1. Install [PlatformIO IDE](../../get-started/platformio-ide.md)
 
-2. Initialize a new project, open ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) and specify the link to the framework repository in [platform_packages](../../reference/platformio-ini/env/platform-packages.md) section. For example,
+2. Initialize a new project, open [`platformio.ini`](../../reference/platformio-ini/index.md) and specify the link to the framework repository in [platform_packages](../../reference/platformio-ini/env/platform-packages.md) section. For example,
 
    ```ini
    [env:esp32dev]
@@ -396,6 +400,6 @@ PlatformIO will install the latest Arduino Core for ESP32 from [https://github.c
    - detailed log of build process from Arduino IDE (please copy it from console to [https://hastebin.com](https://hastebin.com))
    - detailed log of build process from PlatformIO Build System (please copy it from console to [https://hastebin.com](https://hastebin.com))
 
-### Arduino Core Wiki {#arduino-core-wiki}
+### Arduino core wiki {#arduino-core-wiki}
 
 Tips, tricks and common problems: [http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/](http://desire.giesecke.tk/index.php/2018/01/30/esp32-wiki-entries/)

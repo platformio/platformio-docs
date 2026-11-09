@@ -7,7 +7,7 @@
 
 ### MiniCore, MightyCore, MegaCore, MajorCore and MicroCore {#minicore-mightycore-megacore-majorcore-and-microcore}
 
-Please read official documentation how to configure MCUdude's Cores:
+Read official documentation how to configure MCUdude's Cores:
 
 - [Configure "MiniCore"](https://github.com/MCUdude/MiniCore/blob/master/PlatformIO.md)
 - [Configure "MightyCore"](https://github.com/MCUdude/MightyCore/blob/master/PlatformIO.md)

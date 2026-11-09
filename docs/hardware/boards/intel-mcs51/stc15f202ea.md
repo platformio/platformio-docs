@@ -1,6 +1,7 @@
 ---
 title: "Generic STC15F202EA"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Generic STC15F202EA (STC15F202EA, 11MHz, 2KB flash, 256B RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Intel MCS-51 (8051)](../../platforms/intel-mcs51.md): The Intel MCS-51
 
 ## Configuration
 
-Please use `STC15F202EA` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `STC15F202EA` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:STC15F202EA]
@@ -30,7 +31,7 @@ platform = intel_mcs51
 board = STC15F202EA
 ```
 
-You can override default Generic STC15F202EA settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [STC15F202EA.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15F202EA.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [STC15F202EA.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/STC15F202EA.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:STC15F202EA]
@@ -46,4 +47,4 @@ board_build.f_cpu = 11059200L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Generic STC15F202EA board.
+[Debugging](../../../guides/debugging/index.md) does not support the Generic STC15F202EA yet.

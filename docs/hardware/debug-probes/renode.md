@@ -1,3 +1,7 @@
+---
+description: "Use the Renode debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-renode"></a>
 
 # Renode {#renode}
@@ -8,7 +12,7 @@ Renode is a development framework which accelerates IoT and embedded systems dev
 
 ## Configuration {#configuration}
 
-You can configure Renode as a debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+You can configure Renode as a debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = renode
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -25,53 +29,19 @@ More options:
 
 We will automatically install for you the latest Renode package using PlatformIO package manager. The only requirement is to install Mono/.NET framework.
 
-<dl>
-
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-On Windows 7, download and install [.NET Framework 4.7](https://www.microsoft.com/net/download/dotnet-framework-runtime). Windows 10 ships with .NET by default, so no action is required there.
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-Install [Homebrew](https://brew.sh/) and the `mono` package using `brew install mono`.
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Install the `mono-complete` package as per the installation instructions for various Linux distributions which can be found on [the Mono project website](https://www.mono-project.com/download/stable/#download-lin).
-
-</dd>
-
-</dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | On Windows 7, download and install [.NET Framework 4.7](https://www.microsoft.com/net/download/dotnet-framework-runtime). Windows 10 ships with .NET by default, so no action is required there. |
+| macOS | Install [Homebrew](https://brew.sh/) and the `mono` package using `brew install mono`. |
+| Linux | Install the `mono-complete` package as per the installation instructions for various Linux distributions which can be found on [the Mono project website](https://www.mono-project.com/download/stable/#download-lin). |
 
 Check the [official Renode installation guide](https://github.com/renode/renode/blob/master/README.rst) for more details.
 
-## Custom Settings {#custom-settings}
+## Custom settings {#custom-settings}
 
-If the default Renode configuration is not suitable for your project, it's possible to override the default Renode flags in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). The following sections describe typical use cases where custom settings might be useful.
+If the default Renode configuration is not suitable for your project, it's possible to override the default Renode flags in [`platformio.ini`](../../reference/platformio-ini/index.md). The following sections describe typical use cases where custom settings might be useful.
 
-### Additional Analyzers {#additional-analyzers}
+### Additional analyzers {#additional-analyzers}
 
 Additional analyzers might be handy in cases when an application prints output to a peripheral which is not visible by default. For example, to open an additional UART window while using Renode as the upload tool, a special command `showAnalyzer` should be added to `upload_flags` option, e.g.:
 
@@ -137,12 +107,6 @@ monitor_port = socket://localhost:4321
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

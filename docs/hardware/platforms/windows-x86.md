@@ -1,6 +1,7 @@
 ---
 title: "Windows x86"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Windows x86 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-windows-x86"></a>
@@ -12,17 +13,17 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.
 
-For more detailed information please visit [vendor site](https://registry.platformio.org/platforms/platformio/windows_x86?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [registry.platformio.org](https://registry.platformio.org/platforms/platformio/windows_x86?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Windows x86 development platform repository](https://github.com/platformio/platform-windows_x86/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Windows x86 platform repository](https://github.com/platformio/platform-windows_x86/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [hello-world](https://github.com/platformio/platform-windows_x86/tree/master/examples/hello-world?utm_source=platformio.org&utm_medium=docs)
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-windows_x86/releases) of Windows x86 development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-windows_x86/releases) of the Windows x86 platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 

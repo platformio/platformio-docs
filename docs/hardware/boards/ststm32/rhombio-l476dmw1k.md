@@ -1,6 +1,7 @@
 ---
 title: "L476DMW1K"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "L476DMW1K (STM32L476VGT6, 80MHz, 1MB flash, 128KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [ST STM32](../../platforms/ststm32.mdx): The STM32 family of 32-bit Fla
 
 ## Configuration
 
-Please use `rhombio_l476dmw1k` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `rhombio_l476dmw1k` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:rhombio_l476dmw1k]
@@ -30,7 +31,7 @@ platform = ststm32
 board = rhombio_l476dmw1k
 ```
 
-You can override default L476DMW1K settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [rhombio_l476dmw1k.json](https://github.com/platformio/platform-ststm32/blob/master/boards/rhombio_l476dmw1k.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [rhombio_l476dmw1k.json](https://github.com/platformio/platform-ststm32/blob/master/boards/rhombio_l476dmw1k.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:rhombio_l476dmw1k]
@@ -46,16 +47,16 @@ board_build.f_cpu = 80000000L
 
 ## Uploading
 
-L476DMW1K supports the following uploading protocols:
+L476DMW1K supports these upload protocols:
 
 - `blackmagic`
 - `cmsis-dap`
 - `jlink`
 - `stlink`
 
-Default protocol is `cmsis-dap`
+The default is `cmsis-dap`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:rhombio_l476dmw1k]
@@ -67,21 +68,19 @@ upload_protocol = cmsis-dap
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The L476DMW1K has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-L476DMW1K has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  |  |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  |  |
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) | Yes | Yes |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [ST-LINK](../../debug-probes/stlink.md) |  |  |

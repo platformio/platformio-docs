@@ -1,6 +1,7 @@
 ---
 title: "NXP LPC"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The NXP LPC development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-nxplpc"></a>
@@ -12,11 +13,11 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 The NXP LPC is a family of 32-bit microcontroller integrated circuits by NXP Semiconductors. The LPC chips are grouped into related series that are based around the same 32-bit ARM processor core, such as the Cortex-M4F, Cortex-M3, Cortex-M0+, or Cortex-M0. Internally, each microcontroller consists of the processor core, static RAM memory, flash memory, debugging interface, and various peripherals.
 
-For more detailed information please visit [vendor site](http://www.nxp.com/products/microcontrollers/?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [www.nxp.com](http://www.nxp.com/products/microcontrollers/?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [NXP LPC development platform repository](https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [NXP LPC platform repository](https://github.com/platformio/platform-nxplpc/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [zephyr-blink](https://github.com/platformio/platform-nxplpc/tree/master/examples/zephyr-blink?utm_source=platformio.org&utm_medium=docs)
 - [mbed-rtos-blockdevice](https://github.com/platformio/platform-nxplpc/tree/master/examples/mbed-rtos-blockdevice?utm_source=platformio.org&utm_medium=docs)
@@ -27,21 +28,21 @@ Examples are listed from [NXP LPC development platform repository](https://githu
 
 ## Debugging
 
-[Debugging](../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+[Debugging](../../guides/debugging/index.md) works with the boards below without extra configuration.
 
-### Tools & Debug Probes
+### Debug probes
 
-Supported debugging tools are listed in "Debug" column. For more detailed information, please scroll table by horizontal. You can switch between debugging [Tools & Debug Probes](../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Select a [debug probe](../../guides/debugging/index.md#debugging-tools) with the [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../reference/platformio-ini/index.md). Each board's page lists its compatible probes.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-#### On-Board Debug Tools
+#### Boards with an on-board debug probe
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging! You do not need to use/buy external debug probe.
+These boards are ready for debugging; no external probe is needed.
 
 | Name | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|
@@ -54,7 +55,7 @@ Boards listed below have on-board debug probe and **ARE READY** for debugging! Y
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-nxplpc/releases) of NXP LPC development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-nxplpc/releases) of the NXP LPC platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -96,14 +97,14 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
@@ -116,12 +117,7 @@ Please check that you have a correctly installed USB driver from board manufactu
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### NXP
 

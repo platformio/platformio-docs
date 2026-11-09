@@ -1,6 +1,7 @@
 ---
 title: "WD-Firmware"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The WD-Firmware framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
 <a id="framework-wd-riscv-sdk"></a>
@@ -23,21 +24,21 @@ The WD Firmware package contains Firmware applications and Processor Support Pac
 
 ## Debugging
 
-[Debugging](../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+[Debugging](../../guides/debugging/index.md) works with the boards below without extra configuration.
 
-### Tools & Debug Probes
+### Debug probes
 
-Supported debugging tools are listed in "Debug" column. For more detailed information, please scroll table by horizontal. You can switch between debugging [Tools & Debug Probes](../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Select a [debug probe](../../guides/debugging/index.md#debugging-tools) with the [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../reference/platformio-ini/index.md). Each board's page lists its compatible probes.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-#### On-Board Debug Tools
+#### Boards with an on-board debug probe
 
-Boards listed below have on-board debug probe and **ARE READY** for debugging! You do not need to use/buy external debug probe.
+These boards are ready for debugging; no external probe is needed.
 
 | Name | Platform | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|
@@ -45,12 +46,7 @@ Boards listed below have on-board debug probe and **ARE READY** for debugging! Y
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Digilent
 

@@ -1,6 +1,7 @@
 ---
 title: "Arty A7-100: Artix-7 FPGA Development Board"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Arty A7-100: Artix-7 FPGA Development Board (C-CLASS, 50MHz, 0B flash, 128MB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Shakti](../../platforms/shakti.md): Shakti is an open-source initiativ
 
 ## Configuration
 
-Please use `artix7_100t` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `artix7_100t` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:artix7_100t]
@@ -30,7 +31,7 @@ platform = shakti
 board = artix7_100t
 ```
 
-You can override default Arty A7-100: Artix-7 FPGA Development Board settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [artix7_100t.json](https://github.com/platformio/platform-shakti/blob/master/boards/artix7_100t.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [artix7_100t.json](https://github.com/platformio/platform-shakti/blob/master/boards/artix7_100t.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:artix7_100t]
@@ -46,16 +47,16 @@ board_build.f_cpu = 50000000L
 
 ## Uploading
 
-Arty A7-100: Artix-7 FPGA Development Board supports the following uploading protocols:
+Arty A7-100: Artix-7 FPGA Development Board supports these upload protocols:
 
 - `ftdi`
 - `ftdi`
 - `jlink`
 - `jlink`
 
-Default protocol is `ftdi`
+The default is `ftdi`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:artix7_100t]
@@ -67,21 +68,19 @@ upload_protocol = ftdi
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Arty A7-100: Artix-7 FPGA Development Board has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Arty A7-100: Artix-7 FPGA Development Board has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [FTDI Chip](../../debug-probes/ftdi.md) | Yes | Yes |
+| [FTDI chip](../../debug-probes/ftdi.md) | Yes | Yes |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 
 ## Frameworks

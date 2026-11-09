@@ -1,6 +1,7 @@
 ---
 title: "Freescale Kinetis FRDM-KW24D512"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Freescale Kinetis FRDM-KW24D512 (MKW24D512, 50MHz, 512KB flash, 64KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Freescale Kinetis](../../platforms/freescalekinetis.md): Freescale Kin
 
 ## Configuration
 
-Please use `frdm_kw24d` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `frdm_kw24d` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:frdm_kw24d]
@@ -30,7 +31,7 @@ platform = freescalekinetis
 board = frdm_kw24d
 ```
 
-You can override default Freescale Kinetis FRDM-KW24D512 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [frdm_kw24d.json](https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_kw24d.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [frdm_kw24d.json](https://github.com/platformio/platform-freescalekinetis/blob/master/boards/frdm_kw24d.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:frdm_kw24d]
@@ -46,14 +47,14 @@ board_build.f_cpu = 50000000L
 
 ## Uploading
 
-Freescale Kinetis FRDM-KW24D512 supports the following uploading protocols:
+Freescale Kinetis FRDM-KW24D512 supports these upload protocols:
 
 - `jlink`
 - `mbed`
 
-Default protocol is `mbed`
+The default is `mbed`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:frdm_kw24d]
@@ -65,19 +66,17 @@ upload_protocol = mbed
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Freescale Kinetis FRDM-KW24D512 has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Freescale Kinetis FRDM-KW24D512 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
 | [J-LINK](../../debug-probes/jlink.md) |  | Yes |
 

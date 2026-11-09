@@ -1,6 +1,7 @@
 ---
 title: "Arduino/Genuino 101"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Arduino/Genuino 101 (ARCV2EM, 32MHz, 152KB flash, 80KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Intel ARC32](../../platforms/intel-arc32.md): ARC embedded processors 
 
 ## Configuration
 
-Please use `genuino101` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `genuino101` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:genuino101]
@@ -30,7 +31,7 @@ platform = intel_arc32
 board = genuino101
 ```
 
-You can override default Arduino/Genuino 101 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [genuino101.json](https://github.com/platformio/platform-intel_arc32/blob/master/boards/genuino101.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [genuino101.json](https://github.com/platformio/platform-intel_arc32/blob/master/boards/genuino101.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:genuino101]
@@ -46,7 +47,7 @@ board_build.f_cpu = 32000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Arduino/Genuino 101 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Arduino/Genuino 101 yet.
 
 ## Frameworks
 

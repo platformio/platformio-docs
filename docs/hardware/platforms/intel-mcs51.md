@@ -1,6 +1,7 @@
 ---
 title: "Intel MCS-51 (8051)"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Intel MCS-51 (8051) development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-intel-mcs51"></a>
@@ -12,11 +13,11 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 The Intel MCS-51 (commonly termed 8051) is an internally Harvard architecture, complex instruction set computer (CISC) instruction set, single chip microcontroller (uC) series developed by Intel in 1980 for use in embedded systems.
 
-For more detailed information please visit [vendor site](https://en.wikipedia.org/wiki/Intel_MCS-51?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [en.wikipedia.org](https://en.wikipedia.org/wiki/Intel_MCS-51?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Intel MCS-51 (8051) development platform repository](https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Intel MCS-51 (8051) platform repository](https://github.com/platformio/platform-intel_mcs51/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [anymcu-blink](https://github.com/platformio/platform-intel_mcs51/tree/master/examples/anymcu-blink?utm_source=platformio.org&utm_medium=docs)
 - [stc-header](https://github.com/platformio/platform-intel_mcs51/tree/master/examples/stc-header?utm_source=platformio.org&utm_medium=docs)
@@ -27,7 +28,7 @@ Examples are listed from [Intel MCS-51 (8051) development platform repository](h
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-intel_mcs51/releases) of Intel MCS-51 (8051) development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-intel_mcs51/releases) of the Intel MCS-51 (8051) platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -62,25 +63,20 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Intel & Licensees
 

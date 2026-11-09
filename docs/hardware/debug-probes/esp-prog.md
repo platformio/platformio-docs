@@ -1,14 +1,18 @@
+---
+description: "Use the ESP-Prog debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-esp-prog"></a>
 
 # ESP-Prog {#esp-prog}
 
 [![](./img/esp-prog.jpg)](https://github.com/espressif/esp-iot-solution/blob/master/docs/en/hw-reference/ESP-Prog_guide.rst?utm_source=platformio&utm_medium=docs)
 
-ESP-Prog is one of Espressif’s development and debugging tools, with functions including automatic firmware downloading, serial communication, and JTAG online debugging. ESP-Prog's automatic firmware downloading and serial communication functions are supported on both the ESP8266 and ESP32 platforms, while the JTAG online debugging is supported only on the ESP32 platform. Official reference can be found [here](https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs).
+ESP-Prog is one of Espressif’s development and debugging tools, with functions including automatic firmware downloading, serial communication, and JTAG online debugging. ESP-Prog's automatic firmware downloading and serial communication functions are supported on both the ESP8266 and ESP32 platforms, while the JTAG online debugging is supported only on the ESP32 platform. See the [official documentation](https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = esp-prog
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,55 +31,20 @@ debug_tool = esp-prog
 upload_protocol = esp-prog
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | - [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20) - [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6) |
+| macOS | macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf) |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-- [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20)
-- [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6)
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
-
-## Wiring Connections {#wiring-connections}
+## Wiring connections {#wiring-connections}
 
 ![](./img/esp-prog_jtag_connector.png)
 
@@ -108,12 +77,6 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | [Espressif IoT Development Framework](../frameworks/espidf.mdx) | Espressif IoT Development Framework. Official development framework for ESP32 chip |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

@@ -1,6 +1,7 @@
 ---
 title: "Element14 chipKIT Pi"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Element14 chipKIT Pi (32MX250F128B, 40MHz, 120KB flash, 32KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Microchip PIC32](../../platforms/microchippic32.md): Microchip's 32-bi
 
 ## Configuration
 
-Please use `chipkit_pi` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `chipkit_pi` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:chipkit_pi]
@@ -30,7 +31,7 @@ platform = microchippic32
 board = chipkit_pi
 ```
 
-You can override default Element14 chipKIT Pi settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [chipkit_pi.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/chipkit_pi.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [chipkit_pi.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/chipkit_pi.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:chipkit_pi]
@@ -46,7 +47,7 @@ board_build.f_cpu = 40000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Element14 chipKIT Pi board.
+[Debugging](../../../guides/debugging/index.md) does not support the Element14 chipKIT Pi yet.
 
 ## Frameworks
 

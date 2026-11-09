@@ -1,6 +1,7 @@
 ---
 title: "Espressif ESP32-C6-DevKitC-1"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Espressif ESP32-C6-DevKitC-1 (ESP32C6, 160MHz, 8MB flash, 320KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 32](../../platforms/espressif32.mdx): ESP32 is a series of l
 
 ## Configuration
 
-Please use `esp32-c6-devkitc-1` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `esp32-c6-devkitc-1` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:esp32-c6-devkitc-1]
@@ -30,7 +31,7 @@ platform = espressif32
 board = esp32-c6-devkitc-1
 ```
 
-You can override default Espressif ESP32-C6-DevKitC-1 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [esp32-c6-devkitc-1.json](https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-c6-devkitc-1.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [esp32-c6-devkitc-1.json](https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-c6-devkitc-1.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:esp32-c6-devkitc-1]
@@ -46,14 +47,14 @@ board_build.f_cpu = 160000000L
 
 ## Uploading
 
-Espressif ESP32-C6-DevKitC-1 supports the following uploading protocols:
+Espressif ESP32-C6-DevKitC-1 supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:esp32-c6-devkitc-1]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Espressif ESP32-C6-DevKitC-1 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Espressif ESP32-C6-DevKitC-1 yet.
 
 ## Frameworks
 

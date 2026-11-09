@@ -1,14 +1,18 @@
+---
+description: "Use the Verilator debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-verilator"></a>
 
 # Verilator {#verilator}
 
 [![](./img/verilator.png)](https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs)
 
-Verilator is a free and open-source software tool which converts Verilog to a cycle-accurate behavioral model in C++ or SystemC. Official reference can be found [here](https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs).
+Verilator is a free and open-source software tool which converts Verilog to a cycle-accurate behavioral model in C++ or SystemC. See the [official documentation](https://www.veripool.org/wiki/verilator/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = verilator
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -37,12 +41,6 @@ More options:
 | [WD-Firmware](../frameworks/wd-riscv-sdk.md) | The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features. |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

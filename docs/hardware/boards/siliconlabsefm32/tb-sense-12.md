@@ -1,6 +1,7 @@
 ---
 title: "Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT (EFR32MG12P432F1024, 40MHz, 1MB flash, 256KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Silicon Labs EFM32](../../platforms/siliconlabsefm32.md): Silicon Labs
 
 ## Configuration
 
-Please use `tb_sense_12` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `tb_sense_12` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:tb_sense_12]
@@ -30,7 +31,7 @@ platform = siliconlabsefm32
 board = tb_sense_12
 ```
 
-You can override default Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [tb_sense_12.json](https://github.com/platformio/platform-siliconlabsefm32/blob/master/boards/tb_sense_12.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [tb_sense_12.json](https://github.com/platformio/platform-siliconlabsefm32/blob/master/boards/tb_sense_12.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:tb_sense_12]
@@ -46,15 +47,15 @@ board_build.f_cpu = 40000000L
 
 ## Uploading
 
-Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT supports the following uploading protocols:
+Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT supports these upload protocols:
 
 - `blackmagic`
 - `jlink`
 - `mbed`
 
-Default protocol is `mbed`
+The default is `mbed`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:tb_sense_12]
@@ -66,21 +67,19 @@ upload_protocol = mbed
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Thunderboard Sense 2 Sensor-to-Cloud Advanced IoT has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  |  |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  |  |
 | [J-LINK](../../debug-probes/jlink.md) | Yes | Yes |
 
 ## Frameworks

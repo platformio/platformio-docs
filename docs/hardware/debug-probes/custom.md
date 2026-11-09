@@ -1,3 +1,7 @@
+---
+description: "Use the Custom debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-custom"></a>
 
 # Custom {#custom}
@@ -18,7 +22,7 @@ Configuration
 
 </dl>
 
-**PLatformIO Debugging Solution** can be configured using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+**PLatformIO Debugging Solution** can be configured using [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -38,7 +42,7 @@ Configuration
 
 ## Examples {#examples}
 
-### J-Link and ST Nucleo {#j-link-and-st-nucleo}
+### J-Link and ST nucleo {#j-link-and-st-nucleo}
 
 Segger J-Link probe and ST Nucleo F446RE board in pair with J-Link GDB Server:
 
@@ -121,7 +125,7 @@ debug_server =
 
 **extra_script.py**
 
-Place this file on the same level as ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Place this file on the same level as [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 ```py
 from os import makedirs

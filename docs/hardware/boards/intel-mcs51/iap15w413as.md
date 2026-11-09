@@ -1,6 +1,7 @@
 ---
 title: "Generic IAP15W413AS"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Generic IAP15W413AS (IAP15W413AS, 11MHz, 13KB flash, 512B RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Intel MCS-51 (8051)](../../platforms/intel-mcs51.md): The Intel MCS-51
 
 ## Configuration
 
-Please use `IAP15W413AS` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `IAP15W413AS` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:IAP15W413AS]
@@ -30,7 +31,7 @@ platform = intel_mcs51
 board = IAP15W413AS
 ```
 
-You can override default Generic IAP15W413AS settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [IAP15W413AS.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/IAP15W413AS.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [IAP15W413AS.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/IAP15W413AS.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:IAP15W413AS]
@@ -46,4 +47,4 @@ board_build.f_cpu = 11059200L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Generic IAP15W413AS board.
+[Debugging](../../../guides/debugging/index.md) does not support the Generic IAP15W413AS yet.

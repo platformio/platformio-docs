@@ -1,6 +1,7 @@
 ---
 title: "ATmega6450/A"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "ATmega6450/A (ATMEGA6450, 16MHz, 64KB flash, 4KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel AVR](../../platforms/atmelavr.mdx): Atmel AVR 8-bit MCUs deliver
 
 ## Configuration
 
-Please use `ATmega6450` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `ATmega6450` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:ATmega6450]
@@ -30,7 +31,7 @@ platform = atmelavr
 board = ATmega6450
 ```
 
-You can override default ATmega6450/A settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [ATmega6450.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega6450.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [ATmega6450.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega6450.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:ATmega6450]
@@ -46,7 +47,7 @@ board_build.f_cpu = 16000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support ATmega6450/A board.
+[Debugging](../../../guides/debugging/index.md) does not support the ATmega6450/A yet.
 
 ## Frameworks
 

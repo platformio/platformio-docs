@@ -1,8 +1,8 @@
 ## Configuration {#configuration}
 
-### CPU Frequency {#cpu-frequency}
+### CPU frequency {#cpu-frequency}
 
-See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
@@ -10,9 +10,9 @@ See [board_build.f_cpu](../../reference/platformio-ini/env/board-build-f-cpu.md)
 board_build.f_cpu = 160000000L
 ```
 
-### FLASH Frequency {#flash-frequency}
+### FLASH frequency {#flash-frequency}
 
-Please use `board_build.f_flash` option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) to change a value. Possible values:
+Use `board_build.f_flash` option from [`platformio.ini`](../../reference/platformio-ini/index.md) to change a value. Possible values:
 
 - `20000000L`
 - `26000000L`
@@ -25,11 +25,11 @@ Please use `board_build.f_flash` option from ["platformio.ini" (Project Configur
 board_build.f_flash = 80000000L
 ```
 
-### FLASH Mode {#flash-mode}
+### FLASH mode {#flash-mode}
 
 Flash chip interface mode. This parameter is stored in the binary image header, along with the flash size and flash frequency. The ROM bootloader in the ESP chip uses the value of these parameters in order to know how to talk to the flash chip.
 
-Please use `board_build.flash_mode` option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) to change a value. Possible values:
+Use `board_build.flash_mode` option from [`platformio.ini`](../../reference/platformio-ini/index.md) to change a value. Possible values:
 
 - `qio`
 - `qout`
@@ -41,9 +41,9 @@ Please use `board_build.flash_mode` option from ["platformio.ini" (Project Confi
 board_build.flash_mode = qio
 ```
 
-### Reset Method {#reset-method}
+### Reset method {#reset-method}
 
-You can set custom reset method using [upload_resetmethod](../../reference/platformio-ini/env/upload-resetmethod.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+You can set custom reset method using [upload_resetmethod](../../reference/platformio-ini/env/upload-resetmethod.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 The [possible values](https://github.com/igrr/esptool-ck#supported-boards) are:
 
@@ -60,35 +60,35 @@ upload_resetmethod = ck
 
 <a id="platform-espressif-customflash"></a>
 
-### Flash Size {#flash-size}
+### Flash size {#flash-size}
 
 :::warning
 
-Please make sure to read [ESP8266 Flash layout](https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout) information first.
+Read [ESP8266 Flash layout](https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout) information first.
 
 :::
 
 Available LD-scripts: [https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld](https://github.com/esp8266/Arduino/tree/master/tools/sdk/ld)
 
-Please open `eagle.flash.***.ld` file to check how flash is split.
+Open `eagle.flash.***.ld` file to check how flash is split.
 
-To override default LD script please use [board_build.ldscript](../../reference/platformio-ini/env/board-build-ldscript.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+To override default LD script please use [board_build.ldscript](../../reference/platformio-ini/env/board-build-ldscript.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 ```ini
 [env:myenv]
 board_build.ldscript = eagle.flash.4m.ld
 ```
 
-### Upload Speed {#upload-speed}
+### Upload speed {#upload-speed}
 
-You can set custom upload speed using [upload_speed](../../reference/platformio-ini/env/upload-speed.md) option from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+You can set custom upload speed using [upload_speed](../../reference/platformio-ini/env/upload-speed.md) option from [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
 upload_speed = 9600
 ```
 
-### lwIP Variant {#lwip-variant}
+### lwIP variant {#lwip-variant}
 
 Available variants (macros):
 
@@ -110,7 +110,7 @@ For example, to switch to lwIP v1.4
 build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP_HIGHER_BANDWIDTH
 ```
 
-### SDK Version {#sdk-version}
+### SDK version {#sdk-version}
 
 Available versions (macros):
 
@@ -133,7 +133,7 @@ For example, to switch to SDK-pre-3.0:
 build_flags = -D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK3
 ```
 
-### SSL Support {#ssl-support}
+### SSL support {#ssl-support}
 
 By default, all SSL ciphers (most compatible) are supported.
 
@@ -149,9 +149,9 @@ build_flags = -D BEARSSL_SSL_BASIC
 
 <a id="platform-espressif8266-serial-debug"></a>
 
-### Serial Debug {#serial-debug}
+### Serial debug {#serial-debug}
 
-Please use the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to enable Serial debug:
+Use the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to enable Serial debug:
 
 ```ini
 [env:myenv]
@@ -162,11 +162,11 @@ build_flags = -DDEBUG_ESP_PORT=Serial
 build_flags = -DDEBUG_ESP_PORT=Serial1
 ```
 
-### Debug Level {#debug-level}
+### Debug level {#debug-level}
 
-Please use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to change debug level. A [build_flags](../../reference/platformio-ini/env/build-flags.md) option could be used only the one time per build environment. If you need to specify more flags, please separate them with a new line or space.
+Use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md) to change debug level. A [build_flags](../../reference/platformio-ini/env/build-flags.md) option could be used only the one time per build environment. If you need to specify more flags, please separate them with a new line or space.
 
-Also, please note that you will need to extend [build_flags](../../reference/platformio-ini/env/build-flags.md) with [Serial Debug](/hardware/platforms/espressif8266#platform-espressif8266-serial-debug) macro. For example, `build_flags = -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_SSL ...`.
+Also, note that you will need to extend [build_flags](../../reference/platformio-ini/env/build-flags.md) with [Serial Debug](/hardware/platforms/espressif8266#platform-espressif8266-serial-debug) macro. For example, `build_flags = -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_SSL ...`.
 
 Actual information is available in [Arduino for ESP8266 Board Manifest](https://github.com/esp8266/Arduino/blob/master/boards.txt#L286). Please scroll to `generic.menu.lvl` section.
 
@@ -299,7 +299,7 @@ build_flags = -DNDEBUG
 
 ### VTables {#vtables}
 
-Please use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md):
+Use one of the next [build_flags](../../reference/platformio-ini/env/build-flags.md):
 
 ```ini
 [env:myenv]
@@ -315,9 +315,9 @@ build_flags = -DVTABLES_IN_DRAM
 build_flags = -DVTABLES_IN_IRAM
 ```
 
-### MMU - Adjusting ICACHE to IRAM ratio {#mmu-adjusting-icache-to-iram-ratio}
+### MMU - adjusting ICACHE to IRAM ratio {#mmu-adjusting-icache-to-iram-ratio}
 
-By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used. Alternative configurations can be enabled using the [build_flags](../../reference/platformio-ini/env/build-flags.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+By default the balanced ratio (32KB cache + 32KB IRAM) configuration is used. Alternative configurations can be enabled using the [build_flags](../../reference/platformio-ini/env/build-flags.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 **MMU Configuration Options**
 
@@ -374,9 +374,9 @@ build_flags = -D PIO_FRAMEWORK_ARDUINO_ENABLE_EXCEPTIONS
 
 <a id="platform-espressif-uploadfs"></a>
 
-### Using Filesystem {#using-filesystem}
+### Using filesystem {#using-filesystem}
 
-#### Selecting appropriate Filesystem {#selecting-appropriate-filesystem}
+#### Selecting appropriate filesystem {#selecting-appropriate-filesystem}
 
 There are two file systems for utilizing the on-board flash on the ESP8266: `SPIFFS` and `LittleFS`. They provide a compatible API but have incompatible on-flash implementations, so it is important to choose one or the other per project as attempting to mount a SPIFFS volume under LittleFS may result in a format operation and definitely will not preserve any files, and vice-versa.
 
@@ -386,7 +386,7 @@ SPIFFS is currently deprecated and may be removed in future releases of the core
 
 :::
 
-The `SPIFFS` file system is used by default in order to keep legacy project compatible. To choose `LittleFS` as the file system, it should be explicitly specified using `board_build.filesystem` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md), for example:
+The `SPIFFS` file system is used by default in order to keep legacy project compatible. To choose `LittleFS` as the file system, it should be explicitly specified using `board_build.filesystem` option in [`platformio.ini`](../../reference/platformio-ini/index.md), for example:
 
 ```ini
 [env:myenv]
@@ -398,11 +398,11 @@ board_build.filesystem = littlefs
 
 More information about pros and cons of each file system can be found in [the official documentation](https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#filesystem).
 
-#### Uploading files to Filesystem {#uploading-files-to-filesystem}
+#### Uploading files to filesystem {#uploading-files-to-filesystem}
 
 :::warning
 
-Please make sure to read [ESP8266 Flash layout](https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout) information first.
+Read [ESP8266 Flash layout](https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#flash-layout) information first.
 
 :::
 
@@ -410,13 +410,13 @@ Please make sure to read [ESP8266 Flash layout](https://arduino-esp8266.readthed
 2. Create the `data` folder (it should be on the same level as the `src` folder) and put files there. Also, you can specify your own location for [data_dir](../../reference/platformio-ini/platformio/data-dir.md)
 3. Run the "Upload File System image" task in [PlatformIO IDE](../../get-started/platformio-ide.md) or use [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and the [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) command with the `uploadfs` target.
 
-To upload file system image using OTA update please specify `upload_port` / `--upload-port` as IP address or mDNS host name (ending with the `*.local`). For the details please follow to [Over-the-Air (OTA) update](/hardware/platforms/espressif8266#platform-espressif-ota).
+To upload file system image using OTA update please specify `upload_port` / `--upload-port` as IP address or mDNS host name (ending with the `*.local`). For the details see [Over-the-Air (OTA) update](/hardware/platforms/espressif8266#platform-espressif-ota).
 
 By default, will be used default LD Script for the board where is specified file system offsets (start, end, page, block). You can override it using [Flash Size](/hardware/platforms/espressif8266#platform-espressif-customflash).
 
 Active discussion is located in [issue #382](https://github.com/platformio/platformio-core/issues/382).
 
-#### Overriding Filesystem image name {#overriding-filesystem-image-name}
+#### Overriding filesystem image name {#overriding-filesystem-image-name}
 
 By default, the image file name is set according to the used file system: `spiffs.bin` or `littlefs.bin`. You can change the file name using [a PRE extra script](../../reference/scripting-api/actions.md), for example:
 
@@ -443,7 +443,7 @@ env.Replace(ESP8266_FS_IMAGE_NAME="custom_image_name")
 
 :::warning
 
-Please make sure to read the theory behind the OTA updates in the [What is OTA? How to use it?](https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html) article first.
+Read the theory behind the OTA updates in the [What is OTA? How to use it?](https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html) article first.
 
 :::
 
@@ -464,7 +464,7 @@ pio run -t upload --upload-port 192.168.0.255
 pio run -t upload --upload-port myesp8266.local
 ```
 
-Or use the `upload_port` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Please note that you also need to set [upload_protocol](../../reference/platformio-ini/env/upload-protocol.md) to `espota`:
+Or use the `upload_port` option in [`platformio.ini`](../../reference/platformio-ini/index.md). Note that you also need to set [upload_protocol](../../reference/platformio-ini/env/upload-protocol.md) to `espota`:
 
 ```ini
 [env:myenv]
@@ -485,7 +485,7 @@ upload_port = 192.168.0.255
 
 #### Authentication and upload options {#authentication-and-upload-options}
 
-You can pass additional options/flags to OTA uploader using `upload_flags` option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+You can pass additional options/flags to OTA uploader using `upload_flags` option in [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 ```ini
 [env:myenv]
@@ -538,13 +538,13 @@ Options:
     -r, --progress      Show progress output. Does not work for ArduinoIDE
 ```
 
-### Using Arduino Framework with Staging version {#using-arduino-framework-with-staging-version}
+### Using Arduino framework with staging version {#using-arduino-framework-with-staging-version}
 
 PlatformIO will install the latest Arduino Core for ESP8266 from [https://github.com/esp8266/Arduino](https://github.com/esp8266/Arduino). The [Git](https://git-scm.com) should be installed in a system. To update Arduino Core to the latest revision, please open [PlatformIO IDE](../../get-started/platformio-ide.md) and navigate to `PlatformIO Home > Platforms > Updates`.
 
-1. Please install [PlatformIO IDE](../../get-started/platformio-ide.md)
+1. Install [PlatformIO IDE](../../get-started/platformio-ide.md)
 
-2. Initialize a new project, open ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) and specify the link to the framework repository in [platform_packages](../../reference/platformio-ini/env/platform-packages.md) section. For example,
+2. Initialize a new project, open [`platformio.ini`](../../reference/platformio-ini/index.md) and specify the link to the framework repository in [platform_packages](../../reference/platformio-ini/env/platform-packages.md) section. For example,
 
    ```ini
    [env:nodemcuv2]

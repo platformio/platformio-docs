@@ -1,6 +1,7 @@
 ---
 title: "LowPowerLab CurrentRanger"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "LowPowerLab CurrentRanger (SAMD21G18A, 48MHz, 256KB flash, 32KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel SAM](../../platforms/atmelsam.md): Atmel | SMART offers Flash- b
 
 ## Configuration
 
-Please use `current_ranger` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `current_ranger` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:current_ranger]
@@ -30,7 +31,7 @@ platform = atmelsam
 board = current_ranger
 ```
 
-You can override default LowPowerLab CurrentRanger settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [current_ranger.json](https://github.com/platformio/platform-atmelsam/blob/master/boards/current_ranger.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [current_ranger.json](https://github.com/platformio/platform-atmelsam/blob/master/boards/current_ranger.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:current_ranger]
@@ -46,7 +47,7 @@ board_build.f_cpu = 48000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support LowPowerLab CurrentRanger board.
+[Debugging](../../../guides/debugging/index.md) does not support the LowPowerLab CurrentRanger yet.
 
 ## Frameworks
 

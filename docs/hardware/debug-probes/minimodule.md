@@ -1,3 +1,7 @@
+---
+description: "Use the Mini-Module FT2232H debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-minimodule"></a>
 
 # Mini-Module FT2232H {#mini-module-ft2232h}
@@ -8,7 +12,7 @@ The FT2232H Mini Module is a USB to dual channel serial/MPSSE/FIFO interface con
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = minimodule
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,55 +31,20 @@ debug_tool = minimodule
 upload_protocol = minimodule
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | - [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20) - [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6) |
+| macOS | macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf) |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-- [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20)
-- [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6)
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
-
-## Wiring Connections {#wiring-connections}
+## Wiring connections {#wiring-connections}
 
 | FT2232H Mini-Module Pin | Board JTAG Pin | Description |
 |---|---|---|
@@ -108,12 +77,6 @@ You will also need to connect Vbus \[CN3-1\] to Vcc \[CN3-3\] of FT2232H Mini-Mo
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

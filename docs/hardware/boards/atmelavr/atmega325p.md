@@ -1,6 +1,7 @@
 ---
 title: "ATmega325P/PA"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "ATmega325P/PA (ATMEGA325P, 16MHz, 32KB flash, 2KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel AVR](../../platforms/atmelavr.mdx): Atmel AVR 8-bit MCUs deliver
 
 ## Configuration
 
-Please use `ATmega325P` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `ATmega325P` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:ATmega325P]
@@ -30,7 +31,7 @@ platform = atmelavr
 board = ATmega325P
 ```
 
-You can override default ATmega325P/PA settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [ATmega325P.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega325P.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [ATmega325P.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega325P.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:ATmega325P]
@@ -46,7 +47,7 @@ board_build.f_cpu = 16000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support ATmega325P/PA board.
+[Debugging](../../../guides/debugging/index.md) does not support the ATmega325P/PA yet.
 
 ## Frameworks
 

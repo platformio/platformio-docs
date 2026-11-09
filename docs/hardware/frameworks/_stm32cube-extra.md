@@ -2,15 +2,15 @@
 
 - [STM32Cube HAL and Nucleo-F401RE: debugging and unit testing](../../get-started/tutorials/ststm32/stm32cube-debugging-unit-testing.md)
 
-## Configuration Options {#configuration-options}
+## Configuration options {#configuration-options}
 
-### Custom Configuration Header {#custom-configuration-header}
+### Custom configuration header {#custom-configuration-header}
 
 Type: `Bool (yes or no)` | Multiple: `No` | Default: `no`
 
 STM32Cube-based projects require a special configuration header file that contains several essential macros (oscillator adaptations, caching settings, etc.) and controls what framework modules (ADC, DMA, etc.) are enabled.
 
-By default, PlatformIO uses a template header file shipped with the framework package `stm32YYxx_hal_conf_template.h` and renames it to `stm32YYxx_hal_conf.h` expected by the internal framework implementation. This behavior can be disabled via a special option `custom_config_header` set in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md), for example:
+By default, PlatformIO uses a template header file shipped with the framework package `stm32YYxx_hal_conf_template.h` and renames it to `stm32YYxx_hal_conf.h` expected by the internal framework implementation. This behavior can be disabled via a special option `custom_config_header` set in [`platformio.ini`](../../reference/platformio-ini/index.md), for example:
 
 ```ini
 [env:nucleo_f401re]
@@ -22,7 +22,7 @@ board_build.stm32cube.custom_config_header = yes
 
 Note that the location for the custom configuration header is not strictly limited as long as the path to this file is visible to the build system.
 
-### Custom System Setup Implementation {#custom-system-setup-implementation}
+### Custom system setup implementation {#custom-system-setup-implementation}
 
 Type: `Bool (yes or no)` | Multiple: `No` | Default: `no`
 
@@ -36,11 +36,11 @@ board = nucleo_f401re
 board_build.stm32cube.custom_system_setup = yes
 ```
 
-### Selecting System File {#selecting-system-file}
+### Selecting system file {#selecting-system-file}
 
 Type: `String` | Multiple: `No` | Default: `Dynamically selected`
 
-This file (e.g. `system_stm32f0xx.c`) is responsible for basic system initialization that is called after the reset routine and before jumping to the `main` function. In most cases, this option won't be needed as the STM32Cube framework provides only one default implementation. It's mostly used with dual-core targets (e.g. `STM32H7`) which can have several implementations for different boot settings of available CPU cores. The desired implementation can be selected via a special option `system_file` in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md), for example:
+This file (e.g. `system_stm32f0xx.c`) is responsible for basic system initialization that is called after the reset routine and before jumping to the `main` function. In most cases, this option won't be needed as the STM32Cube framework provides only one default implementation. It's mostly used with dual-core targets (e.g. `STM32H7`) which can have several implementations for different boot settings of available CPU cores. The desired implementation can be selected via a special option `system_file` in [`platformio.ini`](../../reference/platformio-ini/index.md), for example:
 
 ```ini
 [env:disco_h747xi]
@@ -50,7 +50,7 @@ board = disco_h747xi
 board_build.stm32cube.system_file = system_stm32h7xx_dualcore_bootcm7_cm4gated.c
 ```
 
-### Custom Startup File {#custom-startup-file}
+### Custom startup file {#custom-startup-file}
 
 Type: `String` | Multiple: `No` | Default: `Dynamically selected`
 
@@ -64,7 +64,7 @@ board = custom_board_name
 board_build.stm32cube.startup_file = startup_stm32l152xca.s
 ```
 
-### Disabling Bundled Components {#disabling-bundled-components}
+### Disabling bundled components {#disabling-bundled-components}
 
 Type: `Bool (yes or no)` | Multiple: `No` | Default: `no`
 
@@ -78,7 +78,7 @@ board = disco_f303vc
 board_build.stm32cube.disable_embedded_libs = yes
 ```
 
-### Custom Build Variant {#custom-build-variant}
+### Custom build variant {#custom-build-variant}
 
 Type: `String` | Multiple: `No` | Default: `None`
 

@@ -1,6 +1,7 @@
 ---
 title: "Teensy 3.0"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Teensy 3.0 (MK20DX128, 48MHz, 128KB flash, 16KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Teensy](../../platforms/teensy.mdx): Teensy is a complete USB-based mi
 
 ## Configuration
 
-Please use `teensy30` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `teensy30` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:teensy30]
@@ -30,7 +31,7 @@ platform = teensy
 board = teensy30
 ```
 
-You can override default Teensy 3.0 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [teensy30.json](https://github.com/platformio/platform-teensy/blob/master/boards/teensy30.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [teensy30.json](https://github.com/platformio/platform-teensy/blob/master/boards/teensy30.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:teensy30]
@@ -46,14 +47,14 @@ board_build.f_cpu = 48000000L
 
 ## Uploading
 
-Teensy 3.0 supports the following uploading protocols:
+Teensy 3.0 supports these upload protocols:
 
 - `teensy-cli`
 - `teensy-gui`
 
-Default protocol is `teensy-gui`
+The default is `teensy-gui`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:teensy30]
@@ -65,7 +66,7 @@ upload_protocol = teensy-gui
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Teensy 3.0 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Teensy 3.0 yet.
 
 ## Frameworks
 

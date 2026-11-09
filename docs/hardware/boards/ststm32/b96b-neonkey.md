@@ -1,6 +1,7 @@
 ---
 title: "96Boards Neonkey"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "96Boards Neonkey (STM32F411CE, 100MHz, 512KB flash, 128KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [ST STM32](../../platforms/ststm32.mdx): The STM32 family of 32-bit Fla
 
 ## Configuration
 
-Please use `b96b_neonkey` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `b96b_neonkey` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:b96b_neonkey]
@@ -30,7 +31,7 @@ platform = ststm32
 board = b96b_neonkey
 ```
 
-You can override default 96Boards Neonkey settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [b96b_neonkey.json](https://github.com/platformio/platform-ststm32/blob/master/boards/b96b_neonkey.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [b96b_neonkey.json](https://github.com/platformio/platform-ststm32/blob/master/boards/b96b_neonkey.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:b96b_neonkey]
@@ -46,7 +47,7 @@ board_build.f_cpu = 100000000L
 
 ## Uploading
 
-96Boards Neonkey supports the following uploading protocols:
+96Boards Neonkey supports these upload protocols:
 
 - `blackmagic`
 - `cmsis-dap`
@@ -54,9 +55,9 @@ board_build.f_cpu = 100000000L
 - `mbed`
 - `stlink`
 
-Default protocol is `stlink`
+The default is `stlink`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:b96b_neonkey]
@@ -68,21 +69,19 @@ upload_protocol = stlink
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The 96Boards Neonkey has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-96Boards Neonkey does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  | Yes |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  | Yes |
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) |  |  |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [ST-LINK](../../debug-probes/stlink.md) |  |  |

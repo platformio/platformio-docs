@@ -1,6 +1,7 @@
 ---
 title: "Generic MS51XB9BE"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Generic MS51XB9BE (MS51XB9BE, 16MHz, 16KB flash, 1.25KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Intel MCS-51 (8051)](../../platforms/intel-mcs51.md): The Intel MCS-51
 
 ## Configuration
 
-Please use `MS51XB9BE` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `MS51XB9BE` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:MS51XB9BE]
@@ -30,7 +31,7 @@ platform = intel_mcs51
 board = MS51XB9BE
 ```
 
-You can override default Generic MS51XB9BE settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [MS51XB9BE.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/MS51XB9BE.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [MS51XB9BE.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/MS51XB9BE.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:MS51XB9BE]
@@ -46,4 +47,4 @@ board_build.f_cpu = 16000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Generic MS51XB9BE board.
+[Debugging](../../../guides/debugging/index.md) does not support the Generic MS51XB9BE yet.

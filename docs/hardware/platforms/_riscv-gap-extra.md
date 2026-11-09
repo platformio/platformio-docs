@@ -8,7 +8,7 @@ See "Drivers" section for [FTDI Chip](../debug-probes/ftdi.md) debug probe.
 
 You need GAP8 AutoTiler library, please request it via [support@greenwaves-technologies.com](mailto:support@greenwaves-technologies.com)
 
-Put a library somewhere on a disk and add this folder to library path using [build_flags](../../reference/platformio-ini/env/build-flags.md) in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). For example,
+Put a library somewhere on a disk and add this folder to library path using [build_flags](../../reference/platformio-ini/env/build-flags.md) in [`platformio.ini`](../../reference/platformio-ini/index.md). For example,
 
 ```ini
 [env:gapuino]
@@ -33,7 +33,7 @@ A running process can be controlled through the internal upload commands:
 - `start`, @TODO
 - `wait`, @TODO
 
-You can configure "boot mode" and list of upload commands using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Default values are:
+You can configure "boot mode" and list of upload commands using [`platformio.ini`](../../reference/platformio-ini/index.md). Default values are:
 
 - `board_upload.boot_mode = jtag`
 - `board_upload.commands = load reqloop ioloop start wait`
@@ -44,7 +44,7 @@ This is a default behavior when you run "Upload" task in [PlatformIO IDE](../../
 
 #### Run from RAM (without any bridge interaction) {#run-from-ram-without-any-bridge-interaction}
 
-- Configure build environment using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below
+- Configure build environment using [`platformio.ini`](../../reference/platformio-ini/index.md) as described below
 
   ```ini
   [env:gapuino]
@@ -60,9 +60,9 @@ This is a default behavior when you run "Upload" task in [PlatformIO IDE](../../
 
 The same as [Uploading files to HyperFlash](/hardware/platforms/riscv-gap#platform-riscv-gap-uploadfs).
 
-#### Flash and run from Flash {#flash-and-run-from-flash}
+#### Flash and run from flash {#flash-and-run-from-flash}
 
-- Configure build environment using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below
+- Configure build environment using [`platformio.ini`](../../reference/platformio-ini/index.md) as described below
 
   ```ini
   [env:gapuino]
@@ -75,7 +75,7 @@ The same as [Uploading files to HyperFlash](/hardware/platforms/riscv-gap#platfo
 
 - Perform [Uploading files to HyperFlash](/hardware/platforms/riscv-gap#platform-riscv-gap-uploadfs).
 
-#### Run from Flash {#run-from-flash}
+#### Run from flash {#run-from-flash}
 
 :::note
 
@@ -83,7 +83,7 @@ You have to perform [Uploading files to HyperFlash](/hardware/platforms/riscv-ga
 
 :::
 
-- Configure build environment using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below
+- Configure build environment using [`platformio.ini`](../../reference/platformio-ini/index.md) as described below
 
   ```ini
   [env:gapuino]
@@ -96,7 +96,7 @@ You have to perform [Uploading files to HyperFlash](/hardware/platforms/riscv-ga
 
 - Run "Upload" task in [PlatformIO IDE](../../get-started/platformio-ide.md) or use [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) command with `upload` target.
 
-#### Run from Flash (without any bridge interaction) {#run-from-flash-without-any-bridge-interaction}
+#### Run from flash (without any bridge interaction) {#run-from-flash-without-any-bridge-interaction}
 
 :::note
 
@@ -104,7 +104,7 @@ You have to perform [Uploading files to HyperFlash](/hardware/platforms/riscv-ga
 
 :::
 
-- Configure build environment using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below
+- Configure build environment using [`platformio.ini`](../../reference/platformio-ini/index.md) as described below
 
   ```ini
   [env:gapuino]

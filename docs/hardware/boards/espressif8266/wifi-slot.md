@@ -1,6 +1,7 @@
 ---
 title: "WiFi Slot"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "WiFi Slot (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 8266](../../platforms/espressif8266.mdx): ESP8266 is a cost-
 
 ## Configuration
 
-Please use `wifi_slot` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `wifi_slot` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:wifi_slot]
@@ -30,7 +31,7 @@ platform = espressif8266
 board = wifi_slot
 ```
 
-You can override default WiFi Slot settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [wifi_slot.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/wifi_slot.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [wifi_slot.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/wifi_slot.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:wifi_slot]
@@ -46,14 +47,14 @@ board_build.f_cpu = 80000000L
 
 ## Uploading
 
-WiFi Slot supports the following uploading protocols:
+WiFi Slot supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:wifi_slot]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support WiFi Slot board.
+[Debugging](../../../guides/debugging/index.md) does not support the WiFi Slot yet.
 
 ## Frameworks
 

@@ -8,7 +8,7 @@
 
 There are three different Arduino cores for STM32 microcontrollers: STM32Duino, Arduino STM32 (maple) and STM32L0. All of them have been developed independently, therefore, have different functionality and set of internal libraries. By default, official STM32Duino core is used (except cases when a board supports only one specific core). Some of the boards support all three cores. To change the core you can use a `board_build.core` option that needs be added to [build_flags](../../reference/platformio-ini/env/build-flags.md):
 
-An example of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) with `maple` core
+An example of [`platformio.ini`](../../reference/platformio-ini/index.md) with `maple` core
 
 ```ini
 [env:hy_tinystm103tb]
@@ -20,7 +20,7 @@ board_build.core = maple
 
 ### STM32Duino configuration system {#stm32duino-configuration-system}
 
-STM32Duino core has several options that can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+STM32Duino core has several options that can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 **C/C++ standard library configuration**
 
@@ -67,7 +67,7 @@ build_flags =
 
 ### Maple STM32 configuration system {#maple-stm32-configuration-system}
 
-In this core the USB peripheral (STM32F4 boards only) can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+In this core the USB peripheral (STM32F4 boards only) can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 **USB Configuration for STM32F4 boards**
 
@@ -89,7 +89,7 @@ build_flags = -D ENABLE_USB_MASS_STORAGE
 
 ### Arduino STM32L0 configuration system {#arduino-stm32l0-configuration-system}
 
-Arduino STM32L0 core has several options that can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Arduino STM32L0 core has several options that can be configured using the next configuration flags in [build_flags](../../reference/platformio-ini/env/build-flags.md) section of [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 **USB Configuration**
 

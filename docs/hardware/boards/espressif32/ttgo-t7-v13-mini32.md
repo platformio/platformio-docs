@@ -1,6 +1,7 @@
 ---
 title: "TTGO T7 V1.3 Mini32"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "TTGO T7 V1.3 Mini32 (ESP32, 240MHz, 4MB flash, 1.25MB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 32](../../platforms/espressif32.mdx): ESP32 is a series of l
 
 ## Configuration
 
-Please use `ttgo-t7-v13-mini32` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `ttgo-t7-v13-mini32` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:ttgo-t7-v13-mini32]
@@ -30,7 +31,7 @@ platform = espressif32
 board = ttgo-t7-v13-mini32
 ```
 
-You can override default TTGO T7 V1.3 Mini32 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [ttgo-t7-v13-mini32.json](https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t7-v13-mini32.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [ttgo-t7-v13-mini32.json](https://github.com/platformio/platform-espressif32/blob/master/boards/ttgo-t7-v13-mini32.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:ttgo-t7-v13-mini32]
@@ -46,14 +47,14 @@ board_build.f_cpu = 240000000L
 
 ## Uploading
 
-TTGO T7 V1.3 Mini32 supports the following uploading protocols:
+TTGO T7 V1.3 Mini32 supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:ttgo-t7-v13-mini32]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support TTGO T7 V1.3 Mini32 board.
+[Debugging](../../../guides/debugging/index.md) does not support the TTGO T7 V1.3 Mini32 yet.
 
 ## Frameworks
 

@@ -1,16 +1,20 @@
+---
+description: "Use the Black magic probe debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-blackmagic"></a>
 
-# Black Magic Probe {#black-magic-probe}
+# Black magic probe {#black-magic-probe}
 
 [![](./img/blackmagic.jpg)](https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs)
 
-The Black Magic Probe is a modern, in-application debugging tool for embedded microprocessors. It is able to control and examine the state of the target microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip debug logic provided by the microprocessor. The probe connects to a host computer using a standard USB interface. Official reference can be found [here](https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs).
+The Black Magic Probe is a modern, in-application debugging tool for embedded microprocessors. It is able to control and examine the state of the target microprocessor using a JTAG or Serial Wire Debugging (SWD) port and on-chip debug logic provided by the microprocessor. The probe connects to a host computer using a standard USB interface. See the [official documentation](https://github.com/blacksphere/blackmagic/wiki?utm_source=platformio&utm_medium=docs).
 
 Also, see [Custom](./custom.md) debugging configuration with Black Magic Probe.
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -35,9 +39,9 @@ debug_port = \\.\COM13
 debug_port = /dev/cu.usbmodemE2C0C4C6
 ```
 
-Black Magic Probe has 2 serial ports: UART and GDB. We will need "GDB" port. Please use [PlatformIO Home](../../get-started/platformio-home.md) > Devices or [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and [pio device list](../../reference/cli/pio-device/list.md) command to list available ports. If you do not see "Black Magic Probe GDB" port, please try both. More [details](https://github.com/blacksphere/blackmagic/wiki/Useful-GDB-commands#connecting-gdb-to-the-black-magic-probe).
+Black Magic Probe has 2 serial ports: UART and GDB. We will need "GDB" port. Use [PlatformIO Home](../../get-started/platformio-home.md) > Devices or [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and [pio device list](../../reference/cli/pio-device/list.md) command to list available ports. If you do not see "Black Magic Probe GDB" port, please try both. More [details](https://github.com/blacksphere/blackmagic/wiki/Useful-GDB-commands#connecting-gdb-to-the-black-magic-probe).
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -55,7 +59,7 @@ upload_protocol = blackmagic
 upload_protocol = blackmagic-jtag
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
@@ -64,9 +68,9 @@ More options:
 
 Not required.
 
-## Wiring Connections {#wiring-connections}
+## Wiring connections {#wiring-connections}
 
-### JTAG Interface {#jtag-interface}
+### JTAG interface {#jtag-interface}
 
 ![](./img/arm_jtag_connector.png)
 
@@ -80,7 +84,7 @@ Not required.
 | 8 | TDI | Test Data In |
 | 10 | RESET | Connect this pin to the (active low) reset input of the target CPU |
 
-### Serial Wire Mode Interface (SWD) {#serial-wire-mode-interface-swd}
+### Serial wire mode interface (SWD) {#serial-wire-mode-interface-swd}
 
 ![](./img/arm_swd_connector.png)
 
@@ -120,12 +124,6 @@ Not required.
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

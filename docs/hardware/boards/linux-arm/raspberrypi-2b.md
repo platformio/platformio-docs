@@ -1,6 +1,7 @@
 ---
 title: "Raspberry Pi 2 Model B"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Raspberry Pi 2 Model B (BCM2836, 900MHz, 1GB flash, 1GB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Linux ARM](../../platforms/linux-arm.md): Linux ARM is a Unix-like and
 
 ## Configuration
 
-Please use `raspberrypi_2b` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `raspberrypi_2b` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:raspberrypi_2b]
@@ -30,7 +31,7 @@ platform = linux_arm
 board = raspberrypi_2b
 ```
 
-You can override default Raspberry Pi 2 Model B settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [raspberrypi_2b.json](https://github.com/platformio/platform-linux_arm/blob/master/boards/raspberrypi_2b.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [raspberrypi_2b.json](https://github.com/platformio/platform-linux_arm/blob/master/boards/raspberrypi_2b.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:raspberrypi_2b]
@@ -46,7 +47,7 @@ board_build.f_cpu = 900000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Raspberry Pi 2 Model B board.
+[Debugging](../../../guides/debugging/index.md) does not support the Raspberry Pi 2 Model B yet.
 
 ## Frameworks
 

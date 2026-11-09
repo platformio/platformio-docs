@@ -1,20 +1,16 @@
 ---
 title: "Boards"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "All boards supported by PlatformIO, grouped by development platform."
 ---
 
 <a id="boards"></a>
 
 # Boards
 
-Rapid Embedded Development, Continuous and IDE integration in a few steps with PlatformIO thanks to built-in project generator for the most popular embedded boards and IDEs.
+Every board PlatformIO supports, grouped by development platform. Each board page shows the board ID to use in the [board](../../reference/platformio-ini/env/board.md) option, the hardware specification, and the upload and debugging options.
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll tables below by horizontal.
-
-:::
+To search boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ## Atmel AVR
 

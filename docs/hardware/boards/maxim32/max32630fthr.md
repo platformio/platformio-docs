@@ -1,6 +1,7 @@
 ---
 title: "Maxim MAX32630FTHR Application Platform"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Maxim MAX32630FTHR Application Platform (MAX32630, 96MHz, 2MB flash, 512KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Maxim 32](../../platforms/maxim32.md): Maxim's microcontrollers provid
 
 ## Configuration
 
-Please use `max32630fthr` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `max32630fthr` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:max32630fthr]
@@ -30,7 +31,7 @@ platform = maxim32
 board = max32630fthr
 ```
 
-You can override default Maxim MAX32630FTHR Application Platform settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [max32630fthr.json](https://github.com/platformio/platform-maxim32/blob/master/boards/max32630fthr.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [max32630fthr.json](https://github.com/platformio/platform-maxim32/blob/master/boards/max32630fthr.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:max32630fthr]
@@ -46,7 +47,7 @@ board_build.f_cpu = 96000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Maxim MAX32630FTHR Application Platform board.
+[Debugging](../../../guides/debugging/index.md) does not support the Maxim MAX32630FTHR Application Platform yet.
 
 ## Frameworks
 

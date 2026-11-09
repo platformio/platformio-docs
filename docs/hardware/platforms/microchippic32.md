@@ -1,6 +1,7 @@
 ---
 title: "Microchip PIC32"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Microchip PIC32 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-microchippic32"></a>
@@ -12,18 +13,18 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 Microchip's 32-bit portfolio with the MIPS microAptiv or M4K core offer high performance microcontrollers, and all the tools needed to develop your embedded projects. PIC32 MCUs gives your application the processing power, memory and peripherals your design needs!
 
-For more detailed information please visit [vendor site](http://www.microchip.com/design-centers/32-bit?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [www.microchip.com](http://www.microchip.com/design-centers/32-bit?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Microchip PIC32 development platform repository](https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Microchip PIC32 platform repository](https://github.com/platformio/platform-microchippic32/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [arduino-blink](https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs)
 - [arduino-internal-libs](https://github.com/platformio/platform-microchippic32/tree/master/examples/arduino-internal-libs?utm_source=platformio.org&utm_medium=docs)
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-microchippic32/releases) of Microchip PIC32 development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-microchippic32/releases) of the Microchip PIC32 platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -58,14 +59,14 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
@@ -77,12 +78,7 @@ Please check that you have a correctly installed USB driver from board manufactu
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### 4D Systems
 

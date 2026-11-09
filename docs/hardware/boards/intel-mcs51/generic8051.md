@@ -1,6 +1,7 @@
 ---
 title: "Generic 8051"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Generic 8051 (8051, 11MHz, 4KB flash, 128B RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Intel MCS-51 (8051)](../../platforms/intel-mcs51.md): The Intel MCS-51
 
 ## Configuration
 
-Please use `Generic8051` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `Generic8051` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:Generic8051]
@@ -30,7 +31,7 @@ platform = intel_mcs51
 board = Generic8051
 ```
 
-You can override default Generic 8051 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [Generic8051.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/Generic8051.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [Generic8051.json](https://github.com/platformio/platform-intel_mcs51/blob/master/boards/Generic8051.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:Generic8051]
@@ -46,4 +47,4 @@ board_build.f_cpu = 11059200L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Generic 8051 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Generic 8051 yet.

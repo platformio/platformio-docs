@@ -1,6 +1,7 @@
 ---
 title: "3DP001V1 Evaluation board for 3D printer"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "3DP001V1 Evaluation board for 3D printer (STM32F401VET6, 84MHz, 512KB flash, 96KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [ST STM32](../../platforms/ststm32.mdx): The STM32 family of 32-bit Fla
 
 ## Configuration
 
-Please use `st3dp001_eval` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `st3dp001_eval` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:st3dp001_eval]
@@ -30,7 +31,7 @@ platform = ststm32
 board = st3dp001_eval
 ```
 
-You can override default 3DP001V1 Evaluation board for 3D printer settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [st3dp001_eval.json](https://github.com/platformio/platform-ststm32/blob/master/boards/st3dp001_eval.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [st3dp001_eval.json](https://github.com/platformio/platform-ststm32/blob/master/boards/st3dp001_eval.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:st3dp001_eval]
@@ -46,16 +47,16 @@ board_build.f_cpu = 84000000L
 
 ## Uploading
 
-3DP001V1 Evaluation board for 3D printer supports the following uploading protocols:
+3DP001V1 Evaluation board for 3D printer supports these upload protocols:
 
 - `blackmagic`
 - `cmsis-dap`
 - `jlink`
 - `stlink`
 
-Default protocol is `stlink`
+The default is `stlink`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:st3dp001_eval]
@@ -67,21 +68,19 @@ upload_protocol = stlink
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The 3DP001V1 Evaluation board for 3D printer has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-3DP001V1 Evaluation board for 3D printer has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  |  |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  |  |
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) |  |  |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [ST-LINK](../../debug-probes/stlink.md) | Yes | Yes |

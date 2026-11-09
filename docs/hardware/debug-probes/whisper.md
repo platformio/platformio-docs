@@ -1,12 +1,16 @@
+---
+description: "Use the Whisper debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-whisper"></a>
 
 # Whisper {#whisper}
 
-Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISCV code without RISCV hardware. It has an interactive mode where the user can single step the target RISCV code and inspect/modify the RISCV registers or the simulated system memory. It can also run in lock step with a Verilog simulator serving as a "golden model" against which an implementation is checked after each instruction of a test program. Official reference can be found [here](https://github.com/westerndigitalcorporation/swerv-ISS/?utm_source=platformio&utm_medium=docs).
+Whisper is a RISCV instruction set simulator (ISS) developed for the verification of the Swerv micro-controller. It allows the user to run RISCV code without RISCV hardware. It has an interactive mode where the user can single step the target RISCV code and inspect/modify the RISCV registers or the simulated system memory. It can also run in lock step with a Verilog simulator serving as a "golden model" against which an implementation is checked after each instruction of a test program. See the [official documentation](https://github.com/westerndigitalcorporation/swerv-ISS/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -15,7 +19,7 @@ board = ...
 debug_tool = whisper
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -35,12 +39,6 @@ More options:
 | [WD-Firmware](../frameworks/wd-riscv-sdk.md) | The WD Firmware package contains Firmware applications and Processor Support Package (PSP) for various cores, alongside demos which support all features. |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

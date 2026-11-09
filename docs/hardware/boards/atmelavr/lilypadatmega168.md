@@ -1,6 +1,7 @@
 ---
 title: "Arduino LilyPad ATmega168"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Arduino LilyPad ATmega168 (ATMEGA168, 8MHz, 14KB flash, 1KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel AVR](../../platforms/atmelavr.mdx): Atmel AVR 8-bit MCUs deliver
 
 ## Configuration
 
-Please use `lilypadatmega168` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `lilypadatmega168` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:lilypadatmega168]
@@ -30,7 +31,7 @@ platform = atmelavr
 board = lilypadatmega168
 ```
 
-You can override default Arduino LilyPad ATmega168 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [lilypadatmega168.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/lilypadatmega168.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [lilypadatmega168.json](https://github.com/platformio/platform-atmelavr/blob/master/boards/lilypadatmega168.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:lilypadatmega168]
@@ -46,19 +47,17 @@ board_build.f_cpu = 8000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Arduino LilyPad ATmega168 has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Arduino LilyPad ATmega168 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
 | [simavr](../../debug-probes/simavr.md) |  | Yes |
 

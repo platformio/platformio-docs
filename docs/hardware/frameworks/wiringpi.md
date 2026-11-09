@@ -1,6 +1,7 @@
 ---
 title: "WiringPi"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The WiringPi framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
 <a id="framework-wiringpi"></a>
@@ -23,12 +24,7 @@ WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM283
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Raspberry Pi
 

@@ -1,6 +1,7 @@
 ---
 title: "Linux i686"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Linux i686 development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 <a id="platform-linux-i686"></a>
@@ -12,17 +13,17 @@ custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scr
 
 Linux i686 (32-bit) is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X or Linux 32-bit) you can build native application for Linux i686 platform.
 
-For more detailed information please visit [vendor site](https://registry.platformio.org/platforms/platformio/linux_i686?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [registry.platformio.org](https://registry.platformio.org/platforms/platformio/linux_i686?utm_source=platformio.org&utm_medium=docs).
 
 ## Examples
 
-Examples are listed from [Linux i686 development platform repository](https://github.com/platformio/platform-linux_i686/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Linux i686 platform repository](https://github.com/platformio/platform-linux_i686/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [hello-world](https://github.com/platformio/platform-linux_i686/tree/master/examples/hello-world?utm_source=platformio.org&utm_medium=docs)
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-linux_i686/releases) of Linux i686 development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-linux_i686/releases) of the Linux i686 platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 

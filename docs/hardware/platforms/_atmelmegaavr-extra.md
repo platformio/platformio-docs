@@ -2,9 +2,9 @@
 
 <a id="atmelmegaavr-upload-via-programmer"></a>
 
-### Upload using Programmer {#upload-using-programmer}
+### Upload using programmer {#upload-using-programmer}
 
-In the case of external programmers, it's easy to brick a board simply by specifying incorrect upload flags. It's highly recommended to use the [upload_command](../../reference/platformio-ini/env/upload-command.md) option that gives the full control over flags used for uploading. Please read [Upload using Programmer](/hardware/platforms/atmelavr#atmelavr-upload-via-programmer) for more information.
+In the case of external programmers, it's easy to brick a board simply by specifying incorrect upload flags. It's highly recommended to use the [upload_command](../../reference/platformio-ini/env/upload-command.md) option that gives the full control over flags used for uploading. Read [Upload using Programmer](/hardware/platforms/atmelavr#atmelavr-upload-via-programmer) for more information.
 
 #### Upload using pymcuprog serialUPDI {#upload-using-pymcuprog-serialupdi}
 
@@ -84,7 +84,7 @@ PlatformIO has a built-in target called `fuses` for setting fuse bits. The defau
 
 #### Custom fuses {#custom-fuses}
 
-Custom fuse values and upload flags (based on upload protocol) should be specified in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). An example of setting custom fuses for `ATmega3209` board:
+Custom fuse values and upload flags (based on upload protocol) should be specified in [`platformio.ini`](../../reference/platformio-ini/index.md). An example of setting custom fuses for `ATmega3209` board:
 
 ```ini
 [env:custom_fuses]
@@ -107,7 +107,7 @@ PlatformIO has a built-in target called `bootloader` for flashing bootloaders. T
 
 #### Custom bootloader {#custom-bootloader}
 
-Custom bootloader and accompanying fuses should be specified in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). An example of setting custom bootloader for `ATmega4808` board:
+Custom bootloader and accompanying fuses should be specified in [`platformio.ini`](../../reference/platformio-ini/index.md). An example of setting custom bootloader for `ATmega4808` board:
 
 ```ini
 [env:ATmega4808]

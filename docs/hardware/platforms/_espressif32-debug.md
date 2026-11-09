@@ -1,4 +1,4 @@
-## Pinout Diagram {#pinout-diagram}
+## Pinout diagram {#pinout-diagram}
 
 **JTAG Wiring Connections**
 

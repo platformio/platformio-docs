@@ -1,14 +1,18 @@
+---
+description: "Use the ST-LINK debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-stlink"></a>
 
 # ST-LINK {#st-link}
 
 [![](./img/stlink.jpg)](http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs)
 
-The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32 microcontroller families. The single wire interface module (SWIM) and JTAG/serial wire debugging (SWD) interfaces are used to communicate with any STM8 or STM32 microcontroller located on an application board. Official reference can be found [here](http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs).
+The ST-LINK is an in-circuit debugger and programmer for the STM8 and STM32 microcontroller families. The single wire interface module (SWIM) and JTAG/serial wire debugging (SWD) interfaces are used to communicate with any STM8 or STM32 microcontroller located on an application board. See the [official documentation](http://www.st.com/en/development-tools/st-link-v2.1.html?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = stlink
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,56 +31,22 @@ debug_tool = stlink
 upload_protocol = stlink
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | Install official [ST-LINK USB driver](https://www.st.com/en/development-tools/stsw-link009.html). |
+| macOS | Not required. |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
-<dt>
+## Wiring connections {#wiring-connections}
 
-Windows
-
-</dt>
-
-<dd>
-
-Please install official [ST-LINK USB driver](https://www.st.com/en/development-tools/stsw-link009.html).
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-Not required.
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
-
-## Wiring Connections {#wiring-connections}
-
-Please check a community [Guide: Connecting your ST-Link debugger](https://stm32-base.org/guides/connecting-your-debugger) that covers the next debugging probes:
+Check a community [Guide: Connecting your ST-Link debugger](https://stm32-base.org/guides/connecting-your-debugger) that covers these probes:
 
 - Official ST-LINK/V2
 - Nucleo ST-LINK/V2
@@ -107,12 +77,6 @@ Please check a community [Guide: Connecting your ST-Link debugger](https://stm32
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

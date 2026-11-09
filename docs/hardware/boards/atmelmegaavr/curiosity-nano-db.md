@@ -1,6 +1,7 @@
 ---
 title: "Curiosity Nano AVR128DB48"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Curiosity Nano AVR128DB48 (AVR128DB48, 24MHz, 128KB flash, 16KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Atmel megaAVR](../../platforms/atmelmegaavr.mdx): 8-bit MCUs Built for
 
 ## Configuration
 
-Please use `curiosity_nano_db` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `curiosity_nano_db` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:curiosity_nano_db]
@@ -30,7 +31,7 @@ platform = atmelmegaavr
 board = curiosity_nano_db
 ```
 
-You can override default Curiosity Nano AVR128DB48 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [curiosity_nano_db.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/curiosity_nano_db.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [curiosity_nano_db.json](https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/curiosity_nano_db.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:curiosity_nano_db]
@@ -46,7 +47,7 @@ board_build.f_cpu = 24000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Curiosity Nano AVR128DB48 board.
+[Debugging](../../../guides/debugging/index.md) does not support the Curiosity Nano AVR128DB48 yet.
 
 ## Frameworks
 

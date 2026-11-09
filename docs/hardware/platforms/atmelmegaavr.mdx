@@ -1,6 +1,7 @@
 ---
 title: "Atmel megaAVR"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Atmel megaAVR development platform for PlatformIO: configuration, frameworks, packages, debugging and boards."
 ---
 
 import Extra from './_atmelmegaavr-extra.md';
@@ -14,13 +15,13 @@ import Extra from './_atmelmegaavr-extra.md';
 
 8-bit MCUs Built for Real-time Control with Core Independent Peripherals combining intelligent hardware peripherals along with the low-power capability of an AVR core, megaAVR microcontrollers (MCUs) broaden the effectiveness of your real-time control systems.
 
-For more detailed information please visit [vendor site](https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809?utm_source=platformio.org&utm_medium=docs).
+Vendor website: [www.microchip.com](https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809?utm_source=platformio.org&utm_medium=docs).
 
 <Extra />
 
 ## Examples
 
-Examples are listed from [Atmel megaAVR development platform repository](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
+Example projects from the [Atmel megaAVR platform repository](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples?utm_source=platformio.org&utm_medium=docs):
 
 - [arduino-blink](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/arduino-blink?utm_source=platformio.org&utm_medium=docs)
 - [native-blink](https://github.com/platformio/platform-atmelmegaavr/tree/master/examples/native-blink?utm_source=platformio.org&utm_medium=docs)
@@ -29,7 +30,7 @@ Examples are listed from [Atmel megaAVR development platform repository](https:/
 
 ## Stable and upstream versions
 
-You can switch between [stable releases](https://github.com/platformio/platform-atmelmegaavr/releases) of Atmel megaAVR development platform and the latest upstream version using [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) as described below.
+Choose between the [stable releases](https://github.com/platformio/platform-atmelmegaavr/releases) of the Atmel megaAVR platform and its latest upstream version with the [platform](../../reference/platformio-ini/env/platform.md) option in [platformio.ini](../../reference/platformio-ini/index.md).
 
 ### Stable
 
@@ -68,14 +69,14 @@ board = ...
 
 :::warning
 
-**Linux Users**:
+**Linux:**
 
-- Install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md)
-- Raspberry Pi users, please read this article [Enable serial port on Raspberry Pi](https://hallard.me/enable-serial-port-on-raspberry-pi/).
+- Install the [udev rules](../../get-started/install/udev-rules.md).
+- On a Raspberry Pi, [enable the serial port](https://hallard.me/enable-serial-port-on-raspberry-pi/).
 
-**Windows Users:**
+**Windows:**
 
-Please check that you have a correctly installed USB driver from board manufacturer
+Install the USB driver from the board manufacturer, if needed.
 
 :::
 
@@ -87,12 +88,7 @@ Please check that you have a correctly installed USB driver from board manufactu
 
 ## Boards
 
-:::note
-
-- You can list pre-configured boards by [pio boards](../../reference/cli/pio-boards.md) command
-- For more detailed `board` information please scroll the tables below by horizontally.
-
-:::
+To list the boards from the command line, use [pio boards](../../reference/cli/pio-boards.md).
 
 ### Arduino
 

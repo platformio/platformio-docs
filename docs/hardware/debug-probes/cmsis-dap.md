@@ -1,14 +1,18 @@
+---
+description: "Use the CMSIS-DAP debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-cmsis-dap"></a>
 
 # CMSIS-DAP {#cmsis-dap}
 
 [![](./img/cmsis-dap.png)](https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs)
 
-CMSIS-DAP is generally implemented as an on-board interface chip, providing direct USB connection from a development board to a debugger running on a host computer on one side, and over JTAG (Joint Test Action Group) or SWD (Serial Wire Debug) to the target device to access the Coresight DAP on the other. Official reference can be found [here](https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs).
+CMSIS-DAP is generally implemented as an on-board interface chip, providing direct USB connection from a development board to a debugger running on a host computer on one side, and over JTAG (Joint Test Action Group) or SWD (Serial Wire Debug) to the target device to access the Coresight DAP on the other. See the [official documentation](https://developer.mbed.org/handbook/CMSIS-DAP?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = cmsis-dap
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,52 +31,18 @@ debug_tool = cmsis-dap
 upload_protocol = cmsis-dap
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
-
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-Please install [Windows serial driver](https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html) and check "USB Driver Installation" guide for your board.
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-Not required.
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | Install [Windows serial driver](https://os.mbed.com/docs/latest/tutorials/windows-serial-driver.html) and check "USB Driver Installation" guide for your board. |
+| macOS | Not required. |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
 <!-- begin_platforms -->
 
@@ -106,12 +76,6 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

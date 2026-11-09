@@ -1,3 +1,7 @@
+---
+description: "Use the avr-stub debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-avr-stub"></a>
 
 # avr-stub {#avr-stub}
@@ -6,7 +10,7 @@ avr-stub is a source level debugger based on GDB stub mechanism. It works with A
 
 ## Configuration {#configuration}
 
-In a nutshell, avr-stub is a piece of software (stub) that is added to your application and communicates with PlatformIO when a debug session is running. It requires several additional configuration steps in order to use it as a debug tool. To use avr-stub, the following settings in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+In a nutshell, avr-stub is a piece of software (stub) that is added to your application and communicates with PlatformIO when a debug session is running. It requires several additional configuration steps in order to use it as a debug tool. To use avr-stub, the following settings in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -118,12 +122,6 @@ More detailed information can be found in the `Important limitations of the debu
 | [Arduino](../frameworks/arduino.mdx) | Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences. |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

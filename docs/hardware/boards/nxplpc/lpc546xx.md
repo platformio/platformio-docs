@@ -1,6 +1,7 @@
 ---
 title: "NXP LPCXpresso54608"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "NXP LPCXpresso54608 (LPC54608ET512, 180MHz, 512KB flash, 200KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [NXP LPC](../../platforms/nxplpc.md): The NXP LPC is a family of 32-bit
 
 ## Configuration
 
-Please use `lpc546xx` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `lpc546xx` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:lpc546xx]
@@ -30,7 +31,7 @@ platform = nxplpc
 board = lpc546xx
 ```
 
-You can override default NXP LPCXpresso54608 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [lpc546xx.json](https://github.com/platformio/platform-nxplpc/blob/master/boards/lpc546xx.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [lpc546xx.json](https://github.com/platformio/platform-nxplpc/blob/master/boards/lpc546xx.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:lpc546xx]
@@ -46,14 +47,14 @@ board_build.f_cpu = 180000000L
 
 ## Uploading
 
-NXP LPCXpresso54608 supports the following uploading protocols:
+NXP LPCXpresso54608 supports these upload protocols:
 
 - `jlink`
 - `mbed`
 
-Default protocol is `mbed`
+The default is `mbed`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:lpc546xx]
@@ -65,19 +66,17 @@ upload_protocol = mbed
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The NXP LPCXpresso54608 has an on-board debug probe: [Debugging](../../../guides/debugging/index.md) works without extra hardware.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-NXP LPCXpresso54608 has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
 | [J-LINK](../../debug-probes/jlink.md) | Yes | Yes |
 

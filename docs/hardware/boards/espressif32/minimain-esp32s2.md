@@ -1,6 +1,7 @@
 ---
 title: "Department of Alchemy MiniMain ESP32-S2"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Department of Alchemy MiniMain ESP32-S2 (ESP32S2, 240MHz, 4MB flash, 320KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 32](../../platforms/espressif32.mdx): ESP32 is a series of l
 
 ## Configuration
 
-Please use `minimain_esp32s2` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `minimain_esp32s2` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:minimain_esp32s2]
@@ -30,7 +31,7 @@ platform = espressif32
 board = minimain_esp32s2
 ```
 
-You can override default Department of Alchemy MiniMain ESP32-S2 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [minimain_esp32s2.json](https://github.com/platformio/platform-espressif32/blob/master/boards/minimain_esp32s2.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [minimain_esp32s2.json](https://github.com/platformio/platform-espressif32/blob/master/boards/minimain_esp32s2.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:minimain_esp32s2]
@@ -46,7 +47,7 @@ board_build.f_cpu = 240000000L
 
 ## Uploading
 
-Department of Alchemy MiniMain ESP32-S2 supports the following uploading protocols:
+Department of Alchemy MiniMain ESP32-S2 supports these upload protocols:
 
 - `cmsis-dap`
 - `esp-bridge`
@@ -62,9 +63,9 @@ Department of Alchemy MiniMain ESP32-S2 supports the following uploading protoco
 - `olimex-jtag-tiny`
 - `tumpa`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:minimain_esp32s2]
@@ -76,19 +77,17 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Department of Alchemy MiniMain ESP32-S2 has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) |  | Yes |
 | `esp-bridge` |  |  |
@@ -100,7 +99,7 @@ Department of Alchemy MiniMain ESP32-S2 does not have on-board debug probe and *
 | [Olimex ARM-USB-OCD-H](../../debug-probes/olimex-arm-usb-ocd-h.md) |  |  |
 | [Olimex ARM-USB-TINY-H](../../debug-probes/olimex-arm-usb-tiny-h.md) |  |  |
 | [Olimex ARM-USB-TINY](../../debug-probes/olimex-jtag-tiny.md) |  |  |
-| [TIAO USB Multi-Protocol Adapter (TUMPA)](../../debug-probes/tumpa.md) |  |  |
+| [TIAO USB Multi-Protocol adapter (TUMPA)](../../debug-probes/tumpa.md) |  |  |
 
 ## Frameworks
 

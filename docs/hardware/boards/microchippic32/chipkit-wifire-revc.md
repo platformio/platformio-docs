@@ -1,6 +1,7 @@
 ---
 title: "chipKIT WiFire rev. C"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "chipKIT WiFire rev. C (32MZ2048EFG100, 200MHz, 1.98MB flash, 512KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Microchip PIC32](../../platforms/microchippic32.md): Microchip's 32-bi
 
 ## Configuration
 
-Please use `chipkit_wifire_revc` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `chipkit_wifire_revc` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:chipkit_wifire_revc]
@@ -30,7 +31,7 @@ platform = microchippic32
 board = chipkit_wifire_revc
 ```
 
-You can override default chipKIT WiFire rev. C settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [chipkit_wifire_revc.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/chipkit_wifire_revc.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [chipkit_wifire_revc.json](https://github.com/platformio/platform-microchippic32/blob/master/boards/chipkit_wifire_revc.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:chipkit_wifire_revc]
@@ -46,7 +47,7 @@ board_build.f_cpu = 200000000L
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support chipKIT WiFire rev. C board.
+[Debugging](../../../guides/debugging/index.md) does not support the chipKIT WiFire rev. C yet.
 
 ## Frameworks
 

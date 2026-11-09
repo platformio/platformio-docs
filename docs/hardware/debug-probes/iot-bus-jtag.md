@@ -1,14 +1,18 @@
+---
+description: "Use the oddWires IOT-Bus JTAG debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-iot-bus-jtag"></a>
 
 # oddWires IOT-Bus JTAG {#oddwires-iot-bus-jtag}
 
 [![](./img/iot-bus-jtag.jpg)](http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs)
 
-This IoT-Bus module provides JTAG debugging for the [oddWires IoT-Bus Io](/hardware/boards/espressif32/iotbusio) and [oddWires IoT-Bus Proteus](/hardware/boards/espressif32/iotbusproteus) boards (can be used with other boards too, see wiring connections below). The board uses the FT232H to provide a USB controller with JTAG support. Both debugging and flashing is possible using this port. Official reference can be found [here](http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs).
+This IoT-Bus module provides JTAG debugging for the [oddWires IoT-Bus Io](/hardware/boards/espressif32/iotbusio) and [oddWires IoT-Bus Proteus](/hardware/boards/espressif32/iotbusproteus) boards (can be used with other boards too, see wiring connections below). The board uses the FT232H to provide a USB controller with JTAG support. Both debugging and flashing is possible using this port. See the [official documentation](http://www.oddwires.com/iot-bus-esp32-jtag/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = iot-bus-jtag
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,55 +31,20 @@ debug_tool = iot-bus-jtag
 upload_protocol = iot-bus-jtag
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | - [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20) - [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6) |
+| macOS | macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf) |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-- [Step-by-step guide: Drivers, Zadig, Wiring](https://community.platformio.org/t/esp32-pio-unified-debugger/4541/20)
-- [Video tutorial](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6)
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-macOS contains default FTDIUSBSerialDriver driver which conflicts with debug tools which are based on this chip. FTDI Chip company recommends removing this default driver from a system. Everything should work after system rebooting. See detailed instruction in official application note (Page 16, Section 4: Uninstalling FTDI Drivers on OS X) [AN134: FTDI Drivers Installation guide for MAC OS X](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
-
-## Wiring Connections {#wiring-connections}
+## Wiring connections {#wiring-connections}
 
 | IOT-Bus JTAG Pin | Board JTAG Pin | Description |
 |---|---|---|
@@ -103,12 +72,6 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | [Espressif IoT Development Framework](../frameworks/espidf.mdx) | Espressif IoT Development Framework. Official development framework for ESP32 chip |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

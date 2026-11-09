@@ -1,14 +1,18 @@
+---
+description: "Use the Atmel-ICE debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-atmel-ice"></a>
 
 # Atmel-ICE {#atmel-ice}
 
 [![](./img/atmel-ice.jpg)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs)
 
-Atmel-ICE is a powerful development tool for debugging and programming ARM® Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability. Official reference can be found [here](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs).
+Atmel-ICE is a powerful development tool for debugging and programming ARM® Cortex®-M based SAM and AVR microcontrollers with on-chip debug capability. See the [official documentation](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNo/atatmel-ice?PartNO=atatmel-ice&utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = atmel-ice
 ```
 
-If you would like to use this tool for firmware uploading, please change upload protocol:
+To also upload firmware with this probe, set [`upload_protocol`](../../reference/platformio-ini/env/upload-protocol.md):
 
 ```ini
 [env:myenv]
@@ -27,52 +31,18 @@ debug_tool = atmel-ice
 upload_protocol = atmel-ice
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
 ## Drivers {#drivers}
 
-<dl>
-
-<dt>
-
-Windows
-
-</dt>
-
-<dd>
-
-When installing the Atmel-ICE on a computer running Microsoft Windows, the USB driver is loaded when the Atmel-ICE is first plugged in.
-
-</dd>
-
-<dt>
-
-Mac
-
-</dt>
-
-<dd>
-
-Not required.
-
-</dd>
-
-<dt>
-
-Linux
-
-</dt>
-
-<dd>
-
-Please install "udev" rules [99-platformio-udev.rules](../../get-started/install/udev-rules.md). If you already installed them before, please check that your rules are up-to-date or repeat steps.
-
-</dd>
-
-</dl>
+| Operating system | Driver |
+| --- | --- |
+| Windows | When installing the Atmel-ICE on a computer running Microsoft Windows, the USB driver is loaded when the Atmel-ICE is first plugged in. |
+| macOS | Not required. |
+| Linux | Install the [udev rules](../../get-started/install/udev-rules.md). If you installed them before, update them to the latest version. |
 
 <!-- begin_platforms -->
 
@@ -90,12 +60,6 @@ Please install "udev" rules [99-platformio-udev.rules](../../get-started/install
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

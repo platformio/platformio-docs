@@ -1,6 +1,7 @@
 ---
 title: "u-blox EVK-ODIN-W2"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "u-blox EVK-ODIN-W2 (STM32F439ZIY6, 168MHz, 2MB flash, 256KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [ST STM32](../../platforms/ststm32.mdx): The STM32 family of 32-bit Fla
 
 ## Configuration
 
-Please use `ublox_evk_odin_w2` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `ublox_evk_odin_w2` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:ublox_evk_odin_w2]
@@ -30,7 +31,7 @@ platform = ststm32
 board = ublox_evk_odin_w2
 ```
 
-You can override default u-blox EVK-ODIN-W2 settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [ublox_evk_odin_w2.json](https://github.com/platformio/platform-ststm32/blob/master/boards/ublox_evk_odin_w2.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [ublox_evk_odin_w2.json](https://github.com/platformio/platform-ststm32/blob/master/boards/ublox_evk_odin_w2.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:ublox_evk_odin_w2]
@@ -46,16 +47,16 @@ board_build.f_cpu = 168000000L
 
 ## Uploading
 
-u-blox EVK-ODIN-W2 supports the following uploading protocols:
+u-blox EVK-ODIN-W2 supports these upload protocols:
 
 - `blackmagic`
 - `cmsis-dap`
 - `jlink`
 - `stlink`
 
-Default protocol is `stlink`
+The default is `stlink`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:ublox_evk_odin_w2]
@@ -67,21 +68,19 @@ upload_protocol = stlink
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The u-blox EVK-ODIN-W2 has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-u-blox EVK-ODIN-W2 does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
-| [Black Magic Probe](../../debug-probes/blackmagic.md) |  | Yes |
+| [Black magic probe](../../debug-probes/blackmagic.md) |  | Yes |
 | [CMSIS-DAP](../../debug-probes/cmsis-dap.md) |  |  |
 | [J-LINK](../../debug-probes/jlink.md) |  |  |
 | [ST-LINK](../../debug-probes/stlink.md) |  |  |

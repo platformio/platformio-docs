@@ -1,14 +1,18 @@
+---
+description: "Use the QEMU debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-qemu"></a>
 
 # QEMU {#qemu}
 
 [![](./img/qemu.png)](https://www.qemu.org/?utm_source=platformio&utm_medium=docs)
 
-QEMU is a free and open-source emulator that performs hardware virtualization. Official reference can be found [here](https://www.qemu.org/?utm_source=platformio&utm_medium=docs).
+QEMU is a free and open-source emulator that performs hardware virtualization. See the [official documentation](https://www.qemu.org/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -17,7 +21,7 @@ board = ...
 debug_tool = qemu
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -38,12 +42,6 @@ More options:
 | [Zephyr](../frameworks/zephyr.mdx) | Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|

@@ -2,7 +2,7 @@
 
 <a id="atmelavr-upload-via-programmer"></a>
 
-### Upload using Programmer {#upload-using-programmer}
+### Upload using programmer {#upload-using-programmer}
 
 In the case of external programmers, it's easy to brick a board simply by specifying incorrect upload flags. It's highly recommended to use the [upload_command](../../reference/platformio-ini/env/upload-command.md) option that gives the full control over flags used for uploading.
 
@@ -217,7 +217,7 @@ PlatformIO has a built-in target called `fuses` for setting fuse bits. The defau
 
 #### Custom fuses {#custom-fuses}
 
-Custom fuse values and upload flags (based on upload protocol) should be specified in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). The `lfuse` and `hfuse` bits are mandatory, `efuse` is optional and not supported by all targets. An example of setting custom fuses for `uno` board:
+Custom fuse values and upload flags (based on upload protocol) should be specified in [`platformio.ini`](../../reference/platformio-ini/index.md). The `lfuse` and `hfuse` bits are mandatory, `efuse` is optional and not supported by all targets. An example of setting custom fuses for `uno` board:
 
 ```ini
 [env:custom_fuses]
@@ -346,7 +346,7 @@ PlatformIO has a built-in target called `bootloader` for flashing bootloaders. T
 
 #### Custom bootloader {#custom-bootloader}
 
-Custom bootloader and accompanying fuses should be specified in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). If `lock_bits` and `unlock_bits` are not set then the default values `0x0F` and `0x3F` are used accordingly. An example of setting custom bootloader for `uno` board:
+Custom bootloader and accompanying fuses should be specified in [`platformio.ini`](../../reference/platformio-ini/index.md). If `lock_bits` and `unlock_bits` are not set then the default values `0x0F` and `0x3F` are used accordingly. An example of setting custom bootloader for `uno` board:
 
 ```ini
 [env:uno]

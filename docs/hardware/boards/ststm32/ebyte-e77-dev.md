@@ -1,6 +1,7 @@
 ---
 title: "Ebyte E77 Dev Board"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Ebyte E77 Dev Board (STM32WLE5CC, 48MHz, 256KB flash, 64KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [ST STM32](../../platforms/ststm32.mdx): The STM32 family of 32-bit Fla
 
 ## Configuration
 
-Please use `ebyte_e77_dev` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `ebyte_e77_dev` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:ebyte_e77_dev]
@@ -30,7 +31,7 @@ platform = ststm32
 board = ebyte_e77_dev
 ```
 
-You can override default Ebyte E77 Dev Board settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [ebyte_e77_dev.json](https://github.com/platformio/platform-ststm32/blob/master/boards/ebyte_e77_dev.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [ebyte_e77_dev.json](https://github.com/platformio/platform-ststm32/blob/master/boards/ebyte_e77_dev.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:ebyte_e77_dev]
@@ -46,14 +47,14 @@ board_build.f_cpu = 48000000L
 
 ## Uploading
 
-Ebyte E77 Dev Board supports the following uploading protocols:
+Ebyte E77 Dev Board supports these upload protocols:
 
 - `jlink`
 - `stlink`
 
-Default protocol is `stlink`
+The default is `stlink`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:ebyte_e77_dev]
@@ -65,19 +66,17 @@ upload_protocol = stlink
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) - "1-click" solution for debugging with a zero configuration.
+The Ebyte E77 Dev Board has no on-board debug probe: [Debugging](../../../guides/debugging/index.md) needs one of the external probes below.
+
+Select the probe with the [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in [platformio.ini](../../../reference/platformio-ini/index.md). If you do not set it, the probe marked as default is used.
 
 :::warning
 
-You will need to install debug tool drivers depending on your system. Please click on compatible debug tool below for the further instructions and configuration information.
+Most debug probes need a driver or udev rules. See the probe's page for instructions.
 
 :::
 
-You can switch between debugging [Tools & Debug Probes](../../../guides/debugging/index.md#debugging-tools) using [debug_tool](../../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
-
-Ebyte E77 Dev Board does not have on-board debug probe and **IS NOT READY** for debugging. You will need to use/buy one of external probe listed below.
-
-| Compatible Tools | On-board | Default |
+| Compatible probes | On-board | Default |
 |---|---|---|
 | [J-LINK](../../debug-probes/jlink.md) |  | Yes |
 | [ST-LINK](../../debug-probes/stlink.md) |  |  |

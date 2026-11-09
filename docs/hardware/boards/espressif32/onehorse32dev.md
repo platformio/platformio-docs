@@ -1,6 +1,7 @@
 ---
 title: "Onehorse ESP32 Dev Module"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Onehorse ESP32 Dev Module (ESP32, 240MHz, 4MB flash, 320KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 32](../../platforms/espressif32.mdx): ESP32 is a series of l
 
 ## Configuration
 
-Please use `onehorse32dev` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `onehorse32dev` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:onehorse32dev]
@@ -30,7 +31,7 @@ platform = espressif32
 board = onehorse32dev
 ```
 
-You can override default Onehorse ESP32 Dev Module settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [onehorse32dev.json](https://github.com/platformio/platform-espressif32/blob/master/boards/onehorse32dev.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [onehorse32dev.json](https://github.com/platformio/platform-espressif32/blob/master/boards/onehorse32dev.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:onehorse32dev]
@@ -46,14 +47,14 @@ board_build.f_cpu = 240000000L
 
 ## Uploading
 
-Onehorse ESP32 Dev Module supports the following uploading protocols:
+Onehorse ESP32 Dev Module supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:onehorse32dev]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Onehorse ESP32 Dev Module board.
+[Debugging](../../../guides/debugging/index.md) does not support the Onehorse ESP32 Dev Module yet.
 
 ## Frameworks
 

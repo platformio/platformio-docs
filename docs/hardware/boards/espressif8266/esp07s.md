@@ -1,6 +1,7 @@
 ---
 title: "Espressif Generic ESP8266 ESP-07S"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "Espressif Generic ESP8266 ESP-07S (ESP8266, 80MHz, 4MB flash, 80KB RAM): PlatformIO board ID, configuration, uploading and debugging."
 displayed_sidebar: "hardware"
 ---
 
@@ -22,7 +23,7 @@ Platform [Espressif 8266](../../platforms/espressif8266.mdx): ESP8266 is a cost-
 
 ## Configuration
 
-Please use `esp07s` ID for [board](../../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+Use the board ID `esp07s` in the [board](../../../reference/platformio-ini/env/board.md) option of [platformio.ini](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:esp07s]
@@ -30,7 +31,7 @@ platform = espressif8266
 board = esp07s
 ```
 
-You can override default Espressif Generic ESP8266 ESP-07S settings per build environment using `board_***` option, where `***` is a JSON object path from board manifest [esp07s.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/esp07s.json). For example, `board_build.mcu`, `board_build.f_cpu`, etc.
+To override a setting of the board manifest [esp07s.json](https://github.com/platformio/platform-espressif8266/blob/master/boards/esp07s.json) in a project environment, use an option named `board_` followed by the setting's JSON path, for example `board_build.mcu` or `board_build.f_cpu`:
 
 ```ini
 [env:esp07s]
@@ -46,14 +47,14 @@ board_build.f_cpu = 80000000L
 
 ## Uploading
 
-Espressif Generic ESP8266 ESP-07S supports the following uploading protocols:
+Espressif Generic ESP8266 ESP-07S supports these upload protocols:
 
 - `espota`
 - `esptool`
 
-Default protocol is `esptool`
+The default is `esptool`.
 
-You can change upload protocol using [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
+To use another one, set the [upload_protocol](../../../reference/platformio-ini/env/upload-protocol.md) option:
 
 ```ini
 [env:esp07s]
@@ -65,7 +66,7 @@ upload_protocol = esptool
 
 ## Debugging
 
-[Debugging](../../../guides/debugging/index.md) currently does not support Espressif Generic ESP8266 ESP-07S board.
+[Debugging](../../../guides/debugging/index.md) does not support the Espressif Generic ESP8266 ESP-07S yet.
 
 ## Frameworks
 

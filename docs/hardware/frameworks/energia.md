@@ -1,6 +1,7 @@
 ---
 title: "Energia"
 custom_edit_url: "https://github.com/platformio/platformio-core/blob/develop/scripts/docspregen.py"
+description: "The Energia framework in PlatformIO: configuration, platforms, debugging and boards."
 ---
 
 <a id="framework-energia"></a>

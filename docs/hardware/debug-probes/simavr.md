@@ -1,12 +1,16 @@
+---
+description: "Use the simavr debug probe with PlatformIO: configuration, drivers, wiring and supported boards."
+---
+
 <a id="debugging-tool-simavr"></a>
 
 # simavr {#simavr}
 
-simavr is a lean, mean and hackable AVR simulator. Official reference can be found [here](https://github.com/buserror/simavr/?utm_source=platformio&utm_medium=docs).
+simavr is a lean, mean and hackable AVR simulator. See the [official documentation](https://github.com/buserror/simavr/?utm_source=platformio&utm_medium=docs).
 
 ## Configuration {#configuration}
 
-You can configure debugging tool using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Select this probe with the [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]
@@ -15,7 +19,7 @@ board = ...
 debug_tool = simavr
 ```
 
-More options:
+See also:
 
 - [Debugging options](../../reference/platformio-ini/env/debug-options.md)
 
@@ -34,12 +38,6 @@ More options:
 | [Arduino](../frameworks/arduino.mdx) | Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences. |
 
 ## Boards
-
-:::note
-
-For more detailed `board` information please scroll tables below by horizontal.
-
-:::
 
 | Name | Platform | Debug | MCU | Frequency | Flash | RAM |
 |---|---|---|---|---|---|---|
