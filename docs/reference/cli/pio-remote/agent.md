@@ -1,5 +1,5 @@
 ---
-description: "List active PlatformIO Remote Agent s started using own PlatformIO Account or shared with you by other PlatformIO developers."
+description: "List active PlatformIO Remote Agents started using own PlatformIO Account or shared with you by other PlatformIO developers."
 ---
 
 <a id="cmd-remote-agent"></a>

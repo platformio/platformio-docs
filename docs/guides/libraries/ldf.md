@@ -1,40 +1,47 @@
+---
+description: How the Library Dependency Finder decides which libraries to build, its modes and its search order.
+---
+
 <a id="ldf"></a>
 
 # Library Dependency Finder (LDF) {#library-dependency-finder-ldf}
 
-Library Dependency Finder is a core part of PlatformIO Build System that operates with the C/C++ source files and looks for `#include ...` directives to know what header directories to include for the compiler.
+The Library Dependency Finder (LDF) is the part of the PlatformIO build system
+that decides which libraries to build. It scans your source files for
+`#include` directives, finds the libraries that provide those headers, and adds
+them, and the libraries they include in turn, to the build.
 
-In spite of the fact that Library Dependency Finder is written in pure Python, it evaluates [C/C++ Preprocessor conditional syntax](#ldf-c-cond-syntax) (`#ifdef`, `if`, `defined`, `else`, and `elif`) without calling `gcc -E`. This approach allows to significantly reduce the total compilation time. See [Dependency Finder Mode](#ldf-mode) for more details.
+The LDF can also evaluate [preprocessor conditionals](#ldf-c-cond-syntax)
+(`#ifdef`, `#if`, `defined`, `#else`, `#elif`) without running the
+preprocessor, which keeps it fast. See [Dependency Finder mode](#ldf-mode).
 
 ## Configuration {#configuration}
 
-Library Dependency Finder can be configured from ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
-
-- [Library options](../../reference/platformio-ini/env/library-options.md)
-
-  - [`lib_deps`](../../reference/platformio-ini/env/lib-deps.md)
-  - [`lib_ignore`](../../reference/platformio-ini/env/lib-ignore.md)
-  - [`lib_extra_dirs`](../../reference/platformio-ini/env/lib-extra-dirs.md)
-  - [`lib_ldf_mode`](../../reference/platformio-ini/env/lib-ldf-mode.md)
-  - [`lib_compat_mode`](../../reference/platformio-ini/env/lib-compat-mode.md)
-  - [`lib_archive`](../../reference/platformio-ini/env/lib-archive.md)
+Configure the LDF with the [library options](../../reference/platformio-ini/env/library-options.md)
+in `platformio.ini`, mainly [`lib_ldf_mode`](../../reference/platformio-ini/env/lib-ldf-mode.md),
+[`lib_compat_mode`](../../reference/platformio-ini/env/lib-compat-mode.md),
+[`lib_extra_dirs`](../../reference/platformio-ini/env/lib-extra-dirs.md) and
+[`lib_ignore`](../../reference/platformio-ini/env/lib-ignore.md).
 
 <a id="ldf-storage"></a>
 
 ## Storage {#storage}
 
-There are different storages where Library Dependency Finder looks for libraries. These storages (folders) have priority and LDF operates in the next order:
+The LDF looks for libraries in these folders, in this order of priority:
 
-1. [lib_dir](../../reference/platformio-ini/platformio/lib-dir.md) - own/private library storage per project
-2. [libdeps_dir](../../reference/platformio-ini/platformio/libdeps-dir.md) - project dependency storage used by [Library Management](./index.md)
-3. "[core_dir](../../reference/platformio-ini/platformio/core-dir.md)/lib" - global storage per all projects.
-4. Library storages built into frameworks, SDKs.
+1. The folders in [`lib_extra_dirs`](../../reference/platformio-ini/env/lib-extra-dirs.md), if any.
+2. [`lib_dir`](../../reference/platformio-ini/platformio/lib-dir.md): the project's private libraries (`lib/`).
+3. [`libdeps_dir`](../../reference/platformio-ini/platformio/libdeps-dir.md)`/<environment>`:
+   the dependencies installed from [`lib_deps`](../../reference/platformio-ini/env/lib-deps.md).
+4. [`globallib_dir`](../../reference/platformio-ini/platformio/globallib-dir.md):
+   libraries installed globally (deprecated).
+5. Libraries bundled with the framework or SDK.
 
 <a id="ldf-mode"></a>
 
-## Dependency Finder Mode {#dependency-finder-mode}
+## Dependency Finder mode {#dependency-finder-mode}
 
-Library Dependency Finder starts work from analyzing source files of the project ([src_dir](../../reference/platformio-ini/platformio/src-dir.md)) and can work in the next modes:
+The LDF starts from the project's source files ([`src_dir`](../../reference/platformio-ini/platformio/src-dir.md)) and works in one of these modes:
 
 <dl>
 
@@ -100,21 +107,21 @@ The same behavior as for the `deep` but **evaluates** [C/C++ Preprocessor condit
 
 </dl>
 
-The mode can be changed using [lib_ldf_mode](../../reference/platformio-ini/env/lib-ldf-mode.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Default value is set to `chain`.
+Set the mode with [`lib_ldf_mode`](../../reference/platformio-ini/env/lib-ldf-mode.md). The default is `chain`.
 
 :::note
 
-Once a library is picked by the LDF for the build process, all source files according to its manifest file will be built.
+Once the LDF selects a library, all its source files (as defined by its manifest) are built.
 
 :::
 
 :::note
 
-Usually, when the LDF appears to fail to identify a dependency of a library, it is because the dependency is only referenced from a library source file, and not a library header file (see example below). In this case, it is necessary to either explicitly reference the dependency from the project source or ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) ([lib_deps](../../reference/platformio-ini/env/lib-deps.md) option), or change the LDF mode to "deep" (not generally recommended).
+When the LDF misses a library's dependency, it is usually because the dependency is included only from one of the library's source files, not from its headers (see case 2 below). Then either include the dependency from your own code, add it to [`lib_deps`](../../reference/platformio-ini/env/lib-deps.md), or switch to a `deep` mode (slower).
 
 :::
 
-A difference between `chain/chain+` and `deep/deep+` modes. For example, there are 2 libraries:
+The following cases show the difference between the `chain` and `deep` modes, with two libraries:
 
 - Library `Foo` with files:
 
@@ -141,7 +148,7 @@ Case 1
 - `Foo/foo.h` depends on the `Bar` library (contains `#include <bar.h>`)
 - `#include <foo.h>` is located in one of the project source files
 
-Here the nested includes (`project file > foo.h > bar.h`) and LDF will find both libraries `Foo` and `Bar`.
+The LDF follows the chain of includes (project file > `foo.h` > `bar.h`) and finds both `Foo` and `Bar`.
 
 </dd>
 
@@ -157,7 +164,7 @@ Case 2
 - `Foo/extra.cpp` depends on the `Bar` library (contains `#include <bar.h>`)
 - `#include <foo.h>` is located in one of the project source files
 
-In this case, LDF will not find the `Bar` library because it doesn't know about the CPP file (`Foo/extra.cpp`).
+The LDF does not find `Bar`, because in `chain` mode it does not scan `Foo/extra.cpp`.
 
 </dd>
 
@@ -173,7 +180,7 @@ Case 3
 - `Foo/extra.cpp` depends on `Bar` library (contains `#include <bar.h>`)
 - `#include <foo.h>` is located in one of the project source files
 
-Firstly, LDF finds the `Foo` library, then it parses all sources from the `Foo` library and finds `Foo/extra.cpp` that depends on `#include <bar.h>`.  Secondly, it will parse all sources from the `Bar` library. This operation continues until all dependencies will not be parsed.
+The LDF finds `Foo`, scans all its sources, finds `#include <bar.h>` in `Foo/extra.cpp`, and adds `Bar`. It then scans `Bar` the same way, until no new dependencies are found.
 
 </dd>
 
@@ -181,9 +188,9 @@ Firstly, LDF finds the `Foo` library, then it parses all sources from the `Foo` 
 
 <a id="ldf-compat-mode"></a>
 
-## Compatibility Mode {#compatibility-mode}
+## Compatibility mode {#compatibility-mode}
 
-Compatibility mode allows one to control strictness of Library Dependency Finder. If library contains one of manifest file ([library.json](../../reference/library-json/index.md), `library.properties`, `module.json`), then LDF check compatibility of this library with real build environment. Available compatibility modes:
+The compatibility mode controls whether the LDF skips libraries that are not compatible with the environment. Compatibility is read from the library's manifest ([`library.json`](../../reference/library-json/index.md), `library.properties` or `module.json`). The modes:
 
 <dl>
 
@@ -225,13 +232,13 @@ Checks for the compatibility with [framework](../../reference/platformio-ini/env
 
 </dl>
 
-This mode can be changed using [lib_compat_mode](../../reference/platformio-ini/env/lib-compat-mode.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Default value is set to `soft`.
+Set the mode with [`lib_compat_mode`](../../reference/platformio-ini/env/lib-compat-mode.md). The default is `soft`.
 
 <a id="ldf-c-cond-syntax"></a>
 
-## C/C++ Preprocessor conditional syntax {#c-c-preprocessor-conditional-syntax}
+## C/C++ preprocessor conditional syntax {#c-c-preprocessor-conditional-syntax}
 
-In spite of the fact that Library Dependency Finder is written in pure Python, it evaluates [C/C++ Preprocessor conditional syntax](https://gcc.gnu.org/onlinedocs/cpp/Conditional-Syntax.html#Conditional-Syntax) (`#ifdef`, `if`, `defined`, `else`, and `elif`) without calling `gcc -E`. For example,
+In the `chain+` and `deep+` modes, the LDF evaluates [preprocessor conditionals](https://gcc.gnu.org/onlinedocs/cpp/Conditional-Syntax.html) (`#ifdef`, `#if`, `defined`, `#else`, `#elif`) with the macros from your build flags, and ignores includes in branches that are not taken. For example:
 
 `platformio.ini`
 

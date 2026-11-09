@@ -15,7 +15,7 @@ Integration process consists of these steps:
 3. Generate a project using PlatformIO Core Project Generator ([`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide))
 4. Import project in IDE.
 
-### Project Generator {#project-generator}
+### Project generator {#project-generator}
 
 Choose board `ID` using [pio boards](../../reference/cli/pio-boards.md) or [Embedded Boards Explorer](https://platformio.org/boards) command and generate project via [`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide) command:
 
@@ -78,6 +78,6 @@ If hotkey doesn't work for you, try to add this line `nnoremap <C-b> :make<CR>` 
 
 :::
 
-## Articles / Manuals {#articles-manuals}
+## Articles / manuals {#articles-manuals}
 
 - [コマンドラインでArduino開発 : vim + platformio (Arduino development at the command line: VIM + PlatformIO, Japanese)](http://qiita.com/caad1229/items/7b5fb47f034ae6e0baf2)

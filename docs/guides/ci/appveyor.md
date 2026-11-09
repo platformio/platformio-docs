@@ -53,7 +53,7 @@ test_script:
 
 ## Examples {#examples}
 
-1. Integration for [USB_Host_Shield_2.0](https://github.com/felis/USB_Host_Shield_2.0) project. The `appveyor.yml` configuration file:
+Integration for [USB_Host_Shield_2.0](https://github.com/felis/USB_Host_Shield_2.0) project. The `appveyor.yml` configuration file:
 
 ```yaml
 build: off

@@ -1,50 +1,78 @@
-# Unit Testing {#unit-testing}
+---
+description: Test firmware components on your computer, on the target device, or in a simulator with PlatformIO unit testing.
+---
 
-Unit Testing is a software testing technique that reduces defects in the newly developed features or reduces bugs when changing the existing functionality.
+# Unit testing {#unit-testing}
 
-**PlatformIO Unit Testing** allows you to segregate each part of the firmware/program and test that the individual parts are working correctly. Using PlatformIO you can execute the same tests on the local host machine (native), on the multiple local embedded devices/boards (connected to local host machine), or on both. When testing both, PlatformIO builds firmware on the host machine, uploads it into a target device, starts tests and collects the test results into test reports. The final information will be shown on the host side with informative output and statistics.
+PlatformIO runs unit tests of your firmware on your computer, on boards
+connected to it, in simulators, or on [remote devices](../remote-development.md).
+For tests on a board, PlatformIO builds a test firmware, uploads it, collects
+the results over the serial port, and shows a report on your computer. The
+same tests run in [CI](../ci/index.md).
 
-Using [Remote Development](../remote-development.md) you can start unit tests on the **Remote Device** from anywhere in the world or integrate with [Continuous Integration](../ci/index.md) systems.
+## Quick start {#quick-start}
 
-- [Introduction](./introduction.md)
+1. Create a folder for a test suite in the project's `test` folder. Its name
+   must start with `test_`, for example `test/test_calculator`.
+2. Add a test file, such as `test/test_calculator/test_main.c`, using the
+   default [Unity](./frameworks/unity.md) framework.
+3. Run the tests:
 
-- [Test Runner](./runner.md)
+   ```bash
+   pio test
+   ```
 
-  - [Local Test Runner](./runner.md#local-test-runner)
-  - [Remote Test Runner](./runner.md#remote-test-runner)
-  - [Test Types](./runner.md#test-types)
+For a complete walkthrough, see the tutorial
+[Unit testing a "Blink" project](../../get-started/tutorials/unit-testing-blink.md).
 
-- [Project Structure](./structure/index.md)
+## Guides {#guides}
 
-  - [Best Practices](./structure/best-practices.md)
-  - [Test Hierarchy](./structure/hierarchy.md)
-  - [Shared Code](./structure/shared-code.md)
+| Guide | What it covers |
+| --- | --- |
+| [Test runner](./runner.md) | Running tests locally and remotely; native, embedded and hybrid tests |
+| [Project structure](./structure/index.md) | [Test hierarchy](./structure/hierarchy.md), [shared code](./structure/shared-code.md) and [best practices](./structure/best-practices.md) |
+| [Testing frameworks](./frameworks/index.md) | [Unity](./frameworks/unity.md), [GoogleTest](./frameworks/googletest.md), [Doctest](./frameworks/doctest.md) and [custom frameworks](./frameworks/custom/index.md) |
+| [Simulators](./simulators/index.md) | Running embedded tests in [QEMU](./simulators/qemu.md), [Renode](./simulators/renode.md) and [SimAVR](./simulators/simavr.md) |
+| [Semihosting](./semihosting.md) | Reporting results through the debug probe instead of a serial port |
 
-- [Configuration](./configuration.md)
+<a id="configuration"></a>
 
-  - [Testing options](../../reference/platformio-ini/env/test-options.md)
+## Configuration {#unit-testing-configuration}
 
-- [Testing Frameworks](./frameworks/index.md)
+Configure testing per project environment with these
+[`platformio.ini` options](../../reference/platformio-ini/env/test-options.md):
 
-  - [Doctest](./frameworks/doctest.md)
-  - [GoogleTest](./frameworks/googletest.md)
-  - [Unity](./frameworks/unity.md)
-  - [Custom](./frameworks/custom/index.md)
+| Option | Purpose |
+| --- | --- |
+| [`test_framework`](../../reference/platformio-ini/env/test-framework.md) | The testing framework |
+| [`test_filter`](../../reference/platformio-ini/env/test-filter.md) | Run only the matching test suites |
+| [`test_ignore`](../../reference/platformio-ini/env/test-ignore.md) | Skip the matching test suites |
+| [`test_port`](../../reference/platformio-ini/env/test-port.md) | The serial port that receives the results |
+| [`test_speed`](../../reference/platformio-ini/env/test-speed.md) | The baud rate of that port |
+| [`test_build_src`](../../reference/platformio-ini/env/test-build-src.md) | Also build the project's `src` folder |
+| [`test_testing_command`](../../reference/platformio-ini/env/test-testing-command.md) | A custom command that runs the test program |
 
-- [Simulators](./simulators/index.md)
+<a id="cli"></a>
 
-  - [QEMU](./simulators/qemu.md)
-  - [Renode](./simulators/renode.md)
-  - [SimAVR](./simulators/simavr.md)
+## Command line {#unit-testing-cli}
 
-- [Semihosting](./semihosting.md)
+- [`pio test`](../../reference/cli/pio-test.md) runs tests locally. Its options
+  override the `platformio.ini` options for one run.
+- [`pio remote test`](../../reference/cli/pio-remote/test.md) runs tests on a
+  device connected to a [remote agent](../remote-development.md).
 
-  - [Introduction](./semihosting.md#introduction)
-  - [Configuration](./semihosting.md#configuration)
-  - [Example](./semihosting.md#example)
-  - [Testing](./semihosting.md#testing)
+<a id="learn-more"></a>
 
-- [CLI Guide](./cli.md)
+## Learn more {#unit-testing-learn-more}
 
-  - [pio test](../../reference/cli/pio-test.md)
-  - [pio remote test](../../reference/cli/pio-remote/test.md)
+The article series *Unit Testing with PlatformIO*:
+
+1. [The basics](https://piolabs.com/blog/insights/unit-testing-part-1.html)
+2. [Running tests on an embedded target](https://piolabs.com/blog/insights/unit-testing-part-2.html)
+3. [Continuous integration and remote testing](https://piolabs.com/blog/insights/unit-testing-part-3.html)
+
+Tutorials with unit tests on real hardware are listed in
+[Tutorials](../../get-started/tutorials/index.md). Example projects:
+[calculator (native and embedded)](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator),
+[Arduino mock](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/arduino-mock),
+and [more](https://github.com/platformio/platformio-examples/tree/develop/unit-testing).

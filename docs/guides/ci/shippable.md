@@ -2,6 +2,12 @@
 
 # Shippable {#shippable}
 
+:::warning
+
+Shippable has been discontinued. This page is kept for reference only.
+
+:::
+
 [Shippable](http://en.wikipedia.org/wiki/Shippable) is a hosted cloud platform that provides hosted continuous integration, deployment, and testing to [GitHub](http://en.wikipedia.org/wiki/GitHub) and [BitBucket](http://en.wikipedia.org/wiki/Bitbucket) repositories. Shippable's continuous integration service is built using Docker.
 
 Shippable is configured by adding a file named `shippable.yml`, which is a [YAML](http://en.wikipedia.org/wiki/YAML) format text file, to the root directory of the GitHub repository or you can use your Travis CI configuration file `.travis.yml`.
@@ -51,7 +57,7 @@ script:
 
 ## Examples {#examples}
 
-1. Integration for [USB_Host_Shield_2.0](https://github.com/felis/USB_Host_Shield_2.0) project. The `shippable.yml` or `.travis.yml` configuration file:
+Integration for [USB_Host_Shield_2.0](https://github.com/felis/USB_Host_Shield_2.0) project. The `shippable.yml` or `.travis.yml` configuration file:
 
 ```yaml
 language: python

@@ -118,12 +118,10 @@ const sidebars: SidebarsConfig = {
     section('Libraries', 'guides/libraries', [
       'guides/libraries/dependencies',
       'guides/libraries/ldf',
-      'guides/libraries/configuration',
       'guides/libraries/creating',
     ]),
     'guides/debugging/index',
     section('Unit testing', 'guides/unit-testing', [
-      'guides/unit-testing/introduction',
       section('Project structure', 'guides/unit-testing/structure', [
         'guides/unit-testing/structure/hierarchy',
         'guides/unit-testing/structure/shared-code',
@@ -148,8 +146,6 @@ const sidebars: SidebarsConfig = {
         'guides/unit-testing/simulators/simavr',
       ]),
       'guides/unit-testing/semihosting',
-      'guides/unit-testing/configuration',
-      'guides/unit-testing/cli',
     ]),
     section('Static code analysis', 'guides/static-code-analysis', [
       section('Check tools', 'guides/static-code-analysis/tools', [
@@ -157,9 +153,6 @@ const sidebars: SidebarsConfig = {
         'guides/static-code-analysis/tools/clang-tidy',
       ]),
       'guides/static-code-analysis/severity',
-      'guides/static-code-analysis/configuration',
-      'guides/static-code-analysis/ui',
-      'guides/static-code-analysis/cli',
     ]),
     'guides/remote-development',
     section('Custom platforms & boards', 'guides/custom-platforms-and-boards', [

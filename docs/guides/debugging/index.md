@@ -1,81 +1,92 @@
+---
+description: Debug firmware on 900+ boards with PlatformIO - breakpoints, variables, peripheral registers and memory, with probes or simulators.
+---
+
 <a id="piodebug"></a>
 
 # Debugging {#debugging}
 
-**It Simply Works. Easier than ever before!**
+PlatformIO debugs firmware on the target with almost no configuration. It
+knows, for each board and debug probe, which debug server to start and how to
+configure it, so you only choose the probe and start debugging. It works on
+Windows, macOS and Linux, with 900+ boards, on-board and external debug
+probes, and simulators.
 
-**PlatformIO Debugging Solution** offers a unique debugging experience for productive embedded development. Using our multi-board and multi-architecture programming experience, we simplified the debugging process in the same way. A zero debugging configuration with support for the most popular debugging probes and compatibility between IDEs and OS.
+## Start debugging {#start-debugging}
 
-Developers can finally forget about complex UI windows which they need to pre-configure before a simple “Hello World!” debugging session. No need to know any aspects about the debugging server or how to configure it. PIO Unified Debugger does this complex work automatically having a rich configuration database per each board and debugging probe.
+1. If the board has no on-board debug probe, connect an external one and set
+   it with [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md):
 
-Just select a board, connect debugging probe (if a board does not have onboard debugging interface), specify it in PlatformIO project configuration file “platformio.ini”, and a project is ready for 1-Click debugging.
+   ```ini
+   [env:myenv]
+   platform = ...
+   board = ...
+   debug_tool = jlink
+   ```
 
-- "1-click" solution, zero configuration
-- Support over 300+ embedded boards (see below)
-- Multiple architectures and development platforms
-- Windows, MacOS, Linux
-- Built-in into [PlatformIO IDE for VSCode](../ide/vscode.md)
-- Integration with [Eclipse](../ide/eclipse.md) and [Sublime Text](../ide/sublimetext.md)
+   The boards and their compatible probes are listed [below](#debugging-platforms)
+   and on each [board](/hardware/boards) page.
 
-:::tip
+2. Start a debug session:
 
-In our experience, [PlatformIO IDE for VSCode](../ide/vscode.md) has the best system performance, modern interface for **PlatformIO Debugging Solution**, and users have found it easier to get started. Key debugging features of [PlatformIO IDE for VSCode](../ide/vscode.md):
+   - in [PlatformIO IDE for VS Code](../ide/vscode.md): **Run** >
+     **Start Debugging**, or <kbd>F5</kbd>;
+   - from the command line: [`pio debug --interface gdb`](../../reference/cli/pio-debug.md).
 
-- Local, Global, and Static Variable Explorer
-- Conditional Breakpoints
-- Expressions and Watchpoints
-- Generic Registers
-- Peripheral Registers
-- Memory Viewer
-- Disassembly
-- Multi-thread support
-- A hot restart of an active debugging session
+PlatformIO builds the project in the [debug configuration](../projects/build-configurations.md),
+uploads it, starts the debug server and stops at the first line of `main()`.
 
-:::
+[![Debugging in PlatformIO IDE for VS Code](./img/platformio-ide-vscode.png)](../ide/vscode.md)
 
-[![](./img/platformio-ide-vscode.png)](../ide/vscode.md)
+PlatformIO IDE for VS Code provides the most complete debugging experience:
+local, global and static variables; conditional breakpoints; expressions and
+watchpoints; CPU and peripheral registers; a memory viewer; disassembly;
+multi-thread (RTOS) support; and restarting a session without rebuilding. The
+debugger also works with [Eclipse](../ide/eclipse.md),
+[Sublime Text](../ide/sublimetext.md) and other GDB-capable
+[IDEs](../ide/index.md).
 
 ## Tutorials {#tutorials}
 
-- [Arduino In-circuit Debugging with PlatformIO](https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc)
-- [Use the PlatformIO Debugger on the ESP32 Using an ESP-prog](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6)
-- [Get started with Arduino and ESP32-DevKitC: debugging and unit testing](../../get-started/tutorials/espressif32/arduino-debugging-unit-testing.md)
-- [Get started with ESP-IDF and ESP32-DevKitC: debugging, unit testing, project analysis](../../get-started/tutorials/espressif32/espidf-debugging-unit-testing-analysis.md)
-- [Arduino and Nordic nRF52-DK: debugging and unit testing](../../get-started/tutorials/nordicnrf52/arduino-debugging-unit-testing.md)
-- [Zephyr and Nordic nRF52-DK: debugging, unit testing, project analysis](../../get-started/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect.md)
-- [STM32Cube HAL and Nucleo-F401RE: debugging and unit testing](../../get-started/tutorials/ststm32/stm32cube-debugging-unit-testing.md)
+- [Arduino on ESP32-DevKitC](../../get-started/tutorials/espressif32/arduino-debugging-unit-testing.md)
+- [ESP-IDF on ESP32-DevKitC](../../get-started/tutorials/espressif32/espidf-debugging-unit-testing-analysis.md)
+- [STM32Cube HAL on Nucleo-F401RE](../../get-started/tutorials/ststm32/stm32cube-debugging-unit-testing.md)
+- [Arduino on Nordic nRF52-DK](../../get-started/tutorials/nordicnrf52/arduino-debugging-unit-testing.md)
+- [Zephyr on Nordic nRF52-DK](../../get-started/tutorials/nordicnrf52/zephyr-debugging-unit-testing-inspect.md)
+- Community: [Arduino in-circuit debugging with PlatformIO](https://medium.com/@manuel.bl/arduino-in-circuit-debugging-with-platformio-9f699da57ddc),
+  [the PlatformIO debugger on the ESP32 with an ESP-Prog](https://www.hackster.io/brian-lough/use-the-platformio-debugger-on-the-esp32-using-an-esp-prog-f633b6)
 
 ## Configuration {#configuration}
 
-**PlatformIO Debugging Solution** can be configured using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+Most projects need only `debug_tool`. To change how a session starts, use the
+[debug options](../../reference/platformio-ini/env/debug-options.md):
 
-- [Build Configurations](../projects/build-configurations.md)
-
-- [Debugging options](../../reference/platformio-ini/env/debug-options.md)
-
-  - [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md)
-  - [`debug_build_flags`](../../reference/platformio-ini/env/debug-build-flags.md)
-  - [`debug_init_break`](../../reference/platformio-ini/env/debug-init-break.md)
-  - [`debug_init_cmds`](../../reference/platformio-ini/env/debug-init-cmds.md)
-  - [`debug_extra_cmds`](../../reference/platformio-ini/env/debug-extra-cmds.md)
-  - [`debug_load_cmds`](../../reference/platformio-ini/env/debug-load-cmds.md)
-  - [`debug_load_mode`](../../reference/platformio-ini/env/debug-load-mode.md)
-  - [`debug_server`](../../reference/platformio-ini/env/debug-server.md)
-  - [`debug_port`](../../reference/platformio-ini/env/debug-port.md)
-  - [`debug_speed`](../../reference/platformio-ini/env/debug-speed.md)
-  - [`debug_svd_path`](../../reference/platformio-ini/env/debug-svd-path.md)
-  - [`debug_server_ready_pattern`](../../reference/platformio-ini/env/debug-server-ready-pattern.md)
-  - [`debug_test`](../../reference/platformio-ini/env/debug-test.md)
+| Option | Purpose |
+| --- | --- |
+| [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md) | The debug probe or simulator |
+| [`debug_build_flags`](../../reference/platformio-ini/env/debug-build-flags.md) | Compiler flags of the [debug build](../projects/build-configurations.md) |
+| [`debug_init_break`](../../reference/platformio-ini/env/debug-init-break.md) | Where the session stops first |
+| [`debug_init_cmds`](../../reference/platformio-ini/env/debug-init-cmds.md) | GDB commands that initialize the session |
+| [`debug_extra_cmds`](../../reference/platformio-ini/env/debug-extra-cmds.md) | Additional GDB commands |
+| [`debug_load_cmds`](../../reference/platformio-ini/env/debug-load-cmds.md) | GDB commands that load the firmware |
+| [`debug_load_mode`](../../reference/platformio-ini/env/debug-load-mode.md) | When to load the firmware |
+| [`debug_server`](../../reference/platformio-ini/env/debug-server.md) | A custom debug server |
+| [`debug_port`](../../reference/platformio-ini/env/debug-port.md) | The port of the debug server or probe |
+| [`debug_speed`](../../reference/platformio-ini/env/debug-speed.md) | The debug adapter speed |
+| [`debug_svd_path`](../../reference/platformio-ini/env/debug-svd-path.md) | The SVD file for peripheral registers |
+| [`debug_server_ready_pattern`](../../reference/platformio-ini/env/debug-server-ready-pattern.md) | When the debug server is ready |
+| [`debug_test`](../../reference/platformio-ini/env/debug-test.md) | A unit test to debug |
 
 <a id="debugging-tools"></a>
 
-## Tools & Debug Probes {#tools-debug-probes}
+## Debug probes {#tools-debug-probes}
 
-You can switch between debugging tools using [debug_tool](../../reference/platformio-ini/env/debug-tool.md) option.
+Select the probe with [`debug_tool`](../../reference/platformio-ini/env/debug-tool.md).
 
 :::warning
 
-You will need to install debug tool drivers depending on your operating system. Please check "Drivers" section for debugging tool below.
+Most probes need a driver on Windows, and udev rules on Linux. See the probe's
+page for instructions.
 
 :::
 
@@ -108,20 +119,19 @@ You will need to install debug tool drivers depending on your operating system. 
 - [Whisper](../../hardware/debug-probes/whisper.md)
 - [Custom](../../hardware/debug-probes/custom.md)
 
-## Debug Unit Tests {#debug-unit-tests}
+## Debug unit tests {#debug-unit-tests}
 
-**PlatformIO Debugging Solution** supports debugging of unit tests created with PlatformIO's [Unit Testing](../unit-testing/index.md) framework.
+You can debug a [unit test](../unit-testing/index.md) instead of the main
+firmware: set the test suite with
+[`debug_test`](../../reference/platformio-ini/env/debug-test.md).
 
-Please use [debug_test](../../reference/platformio-ini/env/debug-test.md) option to set a name of a test to be debugged.
+<a id="cli-guide"></a>
 
-## CLI Guide {#cli-guide}
+## Supported platforms, frameworks and boards {#supported}
 
-- [pio debug](../../reference/cli/pio-debug.md)
-
-  - [Usage](../../reference/cli/pio-debug.md#usage)
-  - [Description](../../reference/cli/pio-debug.md#description)
-  - [Options](../../reference/cli/pio-debug.md#options)
-  - [Examples](../../reference/cli/pio-debug.md#examples)
+The tables below are generated from the development platforms. The **Debug**
+information of each board, including its compatible probes, is on the board's
+page.
 
 <!-- begin_platforms -->
 

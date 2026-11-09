@@ -10,7 +10,7 @@
 
 :::note
 
-Please note that you do not need to install [PlatformIO Core (CLI)](../../get-started/platformio-core.md) separately if you are going to use [PlatformIO IDE for VSCode](#ide-vscode). [PlatformIO Core (CLI)](../../get-started/platformio-core.md) is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
+Note that you do not need to install [PlatformIO Core (CLI)](../../get-started/platformio-core.md) separately if you are going to use [PlatformIO IDE for VSCode](#ide-vscode). [PlatformIO Core (CLI)](../../get-started/platformio-core.md) is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
 **Git:** If you are going to use Git for installing upstream development platforms, cloning external projects, installing library dependencies from a repository, please ensure that `git --version` command works from a system terminal. Otherwise, please install a [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -25,11 +25,11 @@ Please note that you do not need to install [PlatformIO Core (CLI)](../../get-st
 
 ![](./img/platformio-ide-vscode-pkg-installer.png)
 
-## Quick Start {#quick-start}
+## Quick start {#quick-start}
 
 This tutorial introduces you to the basics of PlatformIO IDE workflow and shows you a creation process of a simple "Blink" example. After finishing you will have a general understanding of how to work with projects in the IDE.
 
-### Setting Up the Project {#setting-up-the-project}
+### Setting up the project {#setting-up-the-project}
 
 1. Click on "PlatformIO Home" button on the bottom [PlatformIO Toolbar](#ide-vscode-toolbar)
 
@@ -43,7 +43,7 @@ This tutorial introduces you to the basics of PlatformIO IDE workflow and shows 
 
 :::warning
 
-The code below works only in pair with Arduino-based boards. Please follow to [PlatformIO Project Examples](https://github.com/platformio/platformio-examples) repository for other pre-configured projects.
+The code below works only in pair with Arduino-based boards. See [PlatformIO Project Examples](https://github.com/platformio/platformio-examples) repository for other pre-configured projects.
 
 :::
 
@@ -94,13 +94,13 @@ void loop()
 - [Tutorials and Examples](../../get-started/tutorials/index.md) (step-by-step tutorials with debugging and unit testing)
 - Learn more about [PlatformIO Toolbar](#ide-vscode-toolbar) and other commands (Upload, Clean, Serial Monitor) below
 - [Serial Port Monitor](#ide-vscode-serial-port-monitor)
-- ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) (change [upload_port](../../reference/platformio-ini/env/upload-port.md), configure [build_flags](../../reference/platformio-ini/env/build-flags.md), add library dependencies [lib_deps](../../reference/platformio-ini/env/lib-deps.md), etc.)
+- [`platformio.ini`](../../reference/platformio-ini/index.md) (change [upload_port](../../reference/platformio-ini/env/upload-port.md), configure [build_flags](../../reference/platformio-ini/env/build-flags.md), add library dependencies [lib_deps](../../reference/platformio-ini/env/lib-deps.md), etc.)
 
 **Happy coding with PlatformIO!**
 
 <a id="ide-vscode-toolbar"></a>
 
-## PlatformIO Toolbar {#platformio-toolbar}
+## PlatformIO toolbar {#platformio-toolbar}
 
 PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner) and contains quick access buttons for the popular commands. Each button contains hint (delay mouse on it).
 
@@ -112,13 +112,13 @@ PlatformIO IDE Toolbar is located in VSCode Status Bar (left corner) and contain
 4. PlatformIO: Clean
 5. [Serial Port Monitor](../../reference/cli/pio-device/monitor.md)
 6. [PlatformIO Core (CLI)](../../get-started/platformio-core.md)
-7. Project environment switcher (if more than one environment is available). See [Section \[env\]](../../reference/platformio-ini/env/index.md) of ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) .
+7. Project environment switcher (if more than one environment is available). See [Section \[env\]](../../reference/platformio-ini/env/index.md) of [`platformio.ini`](../../reference/platformio-ini/index.md) .
 
 You can override default buttons and create your own toolbar. See `platformio-ide.toolbar` in [Settings](#ide-vscode-settings).
 
 <a id="ide-vscode-pio-core-cli"></a>
 
-## PlatformIO Core (CLI) {#platformio-core-cli}
+## PlatformIO core (CLI) {#platformio-core-cli}
 
 There are 2 ways how to access [PlatformIO Core (CLI)](../../get-started/platformio-core.md):
 
@@ -130,15 +130,15 @@ There are 2 ways how to access [PlatformIO Core (CLI)](../../get-started/platfor
 
    ![](./img/platformio-ide-vscode-cli-access.png)
 
-## Project Tasks {#project-tasks}
+## Project tasks {#project-tasks}
 
-### Task Explorer {#task-explorer}
+### Task explorer {#task-explorer}
 
-PlatformIO provides access to "Project Task" where you can control the build process of the environments declared in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md). Project Task Explorer is located in the VSCode Activity Bar under the branded PlatformIO icon. You can also access it via "VSCode Menu > Open View... > PlatformIO".
+PlatformIO provides access to "Project Task" where you can control the build process of the environments declared in [`platformio.ini`](../../reference/platformio-ini/index.md). Project Task Explorer is located in the VSCode Activity Bar under the branded PlatformIO icon. You can also access it via "VSCode Menu > Open View... > PlatformIO".
 
 :::tip
 
-Please note that you can drag/move "Project Task" into to the another view within VSCode, such as "Explorer".
+Note that you can drag/move "Project Task" into to the another view within VSCode, such as "Explorer".
 
 :::
 
@@ -146,7 +146,7 @@ Please note that you can drag/move "Project Task" into to the another view withi
 
 ### Task Runner {#task-runner}
 
-PlatformIO IDE provides built-in tasks through the menu `Terminal > Run Task...` (Build, Upload, Clean, Monitor, etc) and custom tasks per ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) environment (`[env:***]`). The default behavior is to use Terminal Panels for presentation, one panel dedicated to each unique task.
+PlatformIO IDE provides built-in tasks through the menu `Terminal > Run Task...` (Build, Upload, Clean, Monitor, etc) and custom tasks per [`platformio.ini`](../../reference/platformio-ini/index.md) environment (`[env:***]`). The default behavior is to use Terminal Panels for presentation, one panel dedicated to each unique task.
 
 The PlatformIO IDE provides its own Problems Matcher named `$platformio`. You can use it later if you decide to change base task settings.
 
@@ -177,25 +177,25 @@ See more options in the [official VSCode documentation](https://code.visualstudi
 
 <a id="ide-vscode-custom-task"></a>
 
-### Custom Tasks {#custom-tasks}
+### Custom tasks {#custom-tasks}
 
 Please declare [Custom Targets](../scripting/custom-targets.md) and refresh Task Explorer:
 
 ![](./img/platformio-ide-vscode-task-explorer-refresh.png)
 
-## Multi-project Workspaces {#multi-project-workspaces}
+## Multi-project workspaces {#multi-project-workspaces}
 
 You can work with multiple project folders in Visual Studio Code with multi-root workspaces. This can be very helpful when you are working on several related projects at the same time. Read more in the documentation [Multi-root Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
 
-## Serial & UDP Plotter {#serial-udp-plotter}
+## Serial & UDP plotter {#serial-udp-plotter}
 
 See [Teleplot - Ridiculously-simple telemetry viewer](https://marketplace.visualstudio.com/items?itemName=alexnesnes.teleplot) community extension.
 
 <a id="ide-vscode-serial-port-monitor"></a>
 
-## Serial Port Monitor {#serial-port-monitor}
+## Serial port monitor {#serial-port-monitor}
 
-You can customize Serial Port Monitor using [Monitor options](../../reference/platformio-ini/env/monitor-options.md) in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md):
+You can customize Serial Port Monitor using [Monitor options](../../reference/platformio-ini/env/monitor-options.md) in [`platformio.ini`](../../reference/platformio-ini/index.md):
 
 - [monitor_port](../../reference/platformio-ini/env/monitor-port.md)
 - [monitor_speed](../../reference/platformio-ini/env/monitor-speed.md)
@@ -272,13 +272,13 @@ This configuration is very useful for quick debug session. It is super fast by s
 
 :::note
 
-Please note that [Debugging](../debugging/index.md) will use the first declared build environment in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) if the [default_envs](../../reference/platformio-ini/platformio/default-envs.md) option is not specified.
+Note that [Debugging](../debugging/index.md) will use the first declared build environment in [`platformio.ini`](../../reference/platformio-ini/index.md) if the [default_envs](../../reference/platformio-ini/platformio/default-envs.md) option is not specified.
 
 :::
 
 ![](./img/platformio-ide-vscode-debug.png)
 
-### Variable Format {#variable-format}
+### Variable format {#variable-format}
 
 Currently, VSCode does not provide an UI or API to change the variable format. See the related [VSCode Issue #28025](https://github.com/Microsoft/vscode/issues/28025).
 
@@ -292,7 +292,7 @@ Possible values, listed in decimal base, are: 8, 10, 16.
 
 ### Watchpoints {#watchpoints}
 
-Please read [GDB: Setting Watchpoints](https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html) first.
+Read [GDB: Setting Watchpoints](https://sourceware.org/gdb/download/onlinedocs/gdb/Set-Watchpoints.html) first.
 
 Currently, VSCode does not provide an API to change the value format of watchpoints. You can manually cast watchpoint expressions to display the value as specific pointer types:
 
@@ -301,11 +301,11 @@ Currently, VSCode does not provide an API to change the value format of watchpoi
 - `(void*)$pc`, $pc register, hexadecimal format
 - `*(void**)0x10012000`, an address, hexadecimal format
 
-## Install Shell Commands {#install-shell-commands}
+## Install shell commands {#install-shell-commands}
 
-Please refer to PlatformIO Core [Install Shell Commands](../../get-started/install/shell-commands.md).
+See PlatformIO Core [Install Shell Commands](../../get-started/install/shell-commands.md).
 
-## Proxy Server Support {#proxy-server-support}
+## Proxy server support {#proxy-server-support}
 
 There are two options how to configure a proxy server:
 
@@ -314,7 +314,7 @@ There are two options how to configure a proxy server:
 
 <a id="ide-vscode-keybindings"></a>
 
-## Key Bindings {#key-bindings}
+## Key bindings {#key-bindings}
 
 - `ctrl+alt+b` / `cmd-shift-b` / `ctrl-shift-b` Build Project
 - `cmd-shift-d` / `ctrl-shift-d` Debug project
@@ -335,7 +335,7 @@ Automatically activate project depending on an active opened text editor. The de
 
 ### `platformio-ide.autoOpenPlatformIOIniFile` {#platformio-ide-autoopenplatformioinifile}
 
-Automatically open the ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) file from a project when no other editors are opened. The default value is `true`.
+Automatically open the [`platformio.ini`](../../reference/platformio-ini/index.md) file from a project when no other editors are opened. The default value is `true`.
 
 ### `platformio-ide.autoCloseSerialMonitor` {#platformio-ide-autocloseserialmonitor}
 
@@ -343,7 +343,7 @@ If true, automatically close [pio device monitor](../../reference/cli/pio-device
 
 ### `platformio-ide.autoRebuildAutocompleteIndex` {#platformio-ide-autorebuildautocompleteindex}
 
-If true, automatically rebuild the C/C++ Project Index when ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) is changed or when new libraries are installed. The default value is `true`.
+If true, automatically rebuild the C/C++ Project Index when [`platformio.ini`](../../reference/platformio-ini/index.md) is changed or when new libraries are installed. The default value is `true`.
 
 ### `platformio-ide.showEditorTitleShortcuts` {#platformio-ide-showeditortitleshortcuts}
 
@@ -455,8 +455,8 @@ The button can be text, an icon, or a mix of them. The list of supported icons i
 
 This is a known bug in VSCode Terminal [issue #61](https://github.com/platformio/platformio-vscode-ide/issues/61).
 
-A temporary solution is to install packages using a system terminal (not VSCode Terminal). Please use "Solution 3: Run from Terminal" in FAQ > Package Manager > [\[Error 5\] Access is denied](../../resources/faq/troubleshooting.md#faq-package-manager-error-5). Afterwards, go back to using the VSCode Terminal.
+A temporary solution is to install packages using a system terminal (not VSCode Terminal). Use "Solution 3: Run from Terminal" in FAQ > Package Manager > [\[Error 5\] Access is denied](../../resources/faq/troubleshooting.md#faq-package-manager-error-5). Afterwards, go back to using the VSCode Terminal.
 
 ## Changelog {#changelog}
 
-Please visit the [releases page](https://github.com/platformio/platformio-vscode-ide/releases).
+Visit the [releases page](https://github.com/platformio/platformio-vscode-ide/releases).

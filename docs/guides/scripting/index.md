@@ -1,43 +1,61 @@
+---
+description: Extend the PlatformIO build with Python and SCons scripts - change flags, add actions and custom targets.
+---
+
 <a id="scripting"></a>
 
-# Advanced Scripting {#advanced-scripting}
+# Extending the build {#advanced-scripting}
 
-:::warning
+The PlatformIO build system runs on [SCons](https://scons.org/). With extra
+scripts, written in Python, you can change almost anything about a build:
+compiler and linker flags, upload settings, which files are built, and actions
+before and after each step. You can also add your own targets.
 
-Advanced Scripting is recommended for Advanced Users and requires knowledge of the Python language.
+Add a script to a project environment with the
+[`extra_scripts`](../../reference/platformio-ini/env/extra-scripts.md) option:
+
+```ini
+[env:myenv]
+platform = ...
+board = ...
+extra_scripts = pre:extra_script.py
+```
+
+```python
+Import("env")
+
+env.Append(CPPDEFINES=["MY_MACRO"])
+```
+
+:::note
+
+Extra scripts run inside the build system: [`pio run`](../../reference/cli/pio-run.md)
+loads them while it processes the environment. You cannot run or debug them on
+their own with a Python interpreter. Scripting requires Python knowledge.
 
 :::
 
-The PlatformIO Build System allows the user to extend the build process with custom scripts using the Python interpreter and the [SCons](http://www.scons.org) construction tool. Build flags, upload flags, targets, toolchains data and other information are available for modification as [SCons Construction Environments](http://www.scons.org/doc/production/HTML/scons-user.html#chap-environments). Custom scripts are included with [extra_scripts](../../reference/platformio-ini/env/extra-scripts.md).
+## Concepts {#concepts}
 
-:::warning
+| Topic | What it covers |
+| --- | --- |
+| [Launch types](../../reference/scripting-api/launch-types.md) | `pre:` and `post:` scripts: when a script runs |
+| [Construction environments](../../reference/scripting-api/construction-environments.md) | `env`, `projenv` and `DefaultEnvironment()`: what a script can change |
+| [Pre and post actions](../../reference/scripting-api/actions.md) | Running code before or after build and upload steps |
+| [Build middlewares](../../reference/scripting-api/middlewares.md) | Changing or skipping individual source files |
+| [Custom targets](./custom-targets.md) | Adding your own targets to `pio run -t` |
 
-Please note that you can not run or debug these scripts independently with Python interpreter. They will be loaded automatically when the [pio run](../../reference/cli/pio-run.md) command processes the project environment.
+## Examples {#examples}
 
-:::
-
-- [Launch Types](../../reference/scripting-api/launch-types.md)
-
-- [Construction Environments](../../reference/scripting-api/construction-environments.md)
-
-- [Pre & Post Actions](../../reference/scripting-api/actions.md)
-
-- [Build Middlewares](../../reference/scripting-api/middlewares.md)
-
-- [Custom Targets](./custom-targets.md)
-
-  - [Build System API](./custom-targets.md#build-system-api)
-  - [Examples](./custom-targets.md#examples)
-
-- [Examples](./examples/index.md)
-
-  - [Custom options in `platformio.ini`](./examples/platformio-ini-custom-options.md)
-  - [Split C/C++ build flags](./examples/split-build-flags.md)
-  - [Extra linker flags without `-Wl,` prefix](./examples/extra-linker-flags.md)
-  - [Upload to Cloud (OTA)](./examples/upload-to-cloud.md)
-  - [Custom firmware/program name](./examples/custom-program-name.md)
-  - [Asking for input (prompts)](./examples/asking-for-input.md)
-  - [Override package files](./examples/override-package-files.md)
-  - [Override board configuration](./examples/override-board-configuration.md)
-  - [Extra Python packages](./examples/extra-python-packages.md)
-  - [Build external sources](./examples/external-sources.md)
+| Example | |
+| --- | --- |
+| [Custom options in `platformio.ini`](./examples/platformio-ini-custom-options.md) | Read your own options from `platformio.ini` |
+| [Split C/C++ build flags](./examples/split-build-flags.md) | Different flags for C and C++ files |
+| [Extra linker flags without `-Wl,`](./examples/extra-linker-flags.md) | Pass flags to the linker directly |
+| [Upload to a cloud service (OTA)](./examples/upload-to-cloud.md) | Replace the upload step |
+| [Custom firmware name](./examples/custom-program-name.md) | Change the name of the built program |
+| [Asking for input](./examples/asking-for-input.md) | Prompt the user during the build |
+| [Override package files](./examples/override-package-files.md) | Patch files of a framework or toolchain |
+| [Override board configuration](./examples/override-board-configuration.md) | Change board settings from a script |
+| [Extra Python packages](./examples/extra-python-packages.md) | Install Python packages a script needs |
+| [Build external sources](./examples/external-sources.md) | Build sources from outside the project |

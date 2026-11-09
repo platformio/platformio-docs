@@ -1,3 +1,7 @@
+---
+description: "If you would like to change the default PlatformIO's Test Runner for the Unity, please implement your Custom Testing Framework runner extending UnityTestRunner class."
+---
+
 <a id="unit-testing-frameworks-unity"></a>
 
 # Unity {#unity}
@@ -68,7 +72,7 @@ No
 
 **Unity** is a unit test framework. The goal has been to keep it small and functional. Unity was designed to be cross-platform. It works hard to stick with C standards while still providing support for the many embedded C compilers that bend the rules. Unity has been used with many compilers, including GCC, IAR, Clang, Green Hills, Microchip, and MS Visual Studio. It's not much work to get it to work with a new target.
 
-## Getting Started {#getting-started}
+## Getting started {#getting-started}
 
 Test files are C/C++ files. Most often you will create a single test file for each C/C++ component that you want to test. The test file should include `unity.h` and the header for your C/C++ component to be tested.
 

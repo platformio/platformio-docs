@@ -1,6 +1,10 @@
-# Scripting Examples {#scripting-examples}
+---
+description: "The best examples are PlatformIO development platforms."
+---
 
-The best examples are [PlatformIO development platforms](https://github.com/topics/platformio-platform). Please check `builder` folder for the main and framework scripts.
+# Scripting examples {#scripting-examples}
+
+The best examples are [PlatformIO development platforms](https://github.com/topics/platformio-platform). Check `builder` folder for the main and framework scripts.
 
 - [Custom options in `platformio.ini`](./platformio-ini-custom-options.md)
 - [Split C/C++ build flags](./split-build-flags.md)

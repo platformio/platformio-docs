@@ -28,7 +28,7 @@ Refer to the [CLion Documentation](https://www.jetbrains.com/clion/help/) page f
 
 :::note
 
-We also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+We also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 :::
 
@@ -36,11 +36,11 @@ We also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini
 
 ### Project configuration and CMake {#project-configuration-and-cmake}
 
-PlatformIO does not depend on "CMake" and uses own multi-platform build system. Project configuration, such as build flags, library dependencies, etc., should be declared in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+PlatformIO does not depend on "CMake" and uses own multi-platform build system. Project configuration, such as build flags, library dependencies, etc., should be declared in [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 :::warning
 
-Please note that "PlatformIO for CLion" plugin does not update automatically CLion configuration. There is a feature request [CLion #CPP-18367:  Follow platformio.ini changes and update the project](https://youtrack.jetbrains.com/issue/CPP-18367).
+Note that "PlatformIO for CLion" plugin does not update automatically CLion configuration. There is a feature request [CLion #CPP-18367:  Follow platformio.ini changes and update the project](https://youtrack.jetbrains.com/issue/CPP-18367).
 
 :::
 
@@ -50,7 +50,7 @@ Update CLion configuration: "Tools > PlatformIO > Re-Init"
 
 This is a known issue [CLion CPP-19478: CLion does not handle "CMAKE_CONFIGURATION_TYPES" from CMakeLists.txt](https://youtrack.jetbrains.com/issue/CPP-19478). A temporary solution is to manually configure project profiles in CLion.
 
-Please open CLion Settings and navigate to "Build, Execution, Deployment > CMake". Press "+" button and PlatformIO-based project profiles:
+Open CLion Settings and navigate to "Build, Execution, Deployment > CMake". Press "+" button and PlatformIO-based project profiles:
 
 ![](./img/ide-platformio-clion-configure-profiles.png)
 
@@ -67,13 +67,13 @@ See how to [Convert Arduino file to C++ manually](../../resources/faq/ino-to-cpp
 
 Starting with version 4.0, ESP-IDF uses a build system based on CMake. In order to provide more seamless integration, PlatformIO uses the CMake file-based API to extract build configurations. Because of this approach, there is a conflict between `CMakeLists.txt` used by ESP-IDF and `CMakeLists.txt` which PlatformIO generates for CLion. At the moment we're working on better integration with CLion without this intermediate `CMakeLists.txt`, but there is no ETA for this feature.
 
-## Quick Start {#quick-start}
+## Quick start {#quick-start}
 
 This tutorial introduces you to the basics of PlatformIO for CLion workflow and shows you a creation process of a simple "Blink" example. After finishing you will have a general understanding of how to work with projects in the CLion IDE.
 
-### Setting Up the Project {#setting-up-the-project}
+### Setting up the project {#setting-up-the-project}
 
-1. Please open "New Project" wizard, select board and framework, and create a new PlatformIO project. Please **USE ONLY** Latin characters (a-z) in a project name to avoid further issues with project compilation. Numbers and some symbols are allowed depending on a file system:
+1. Open "New Project" wizard, select board and framework, and create a new PlatformIO project. Please **USE ONLY** Latin characters (a-z) in a project name to avoid further issues with project compilation. Numbers and some symbols are allowed depending on a file system:
 
 ![](./img/ide-platformio-clion-new-project.png)
 
@@ -81,7 +81,7 @@ This tutorial introduces you to the basics of PlatformIO for CLion workflow and 
 
 :::warning
 
-The code below works only in pair with Arduino-based boards. Please follow to [PlatformIO Project Examples](https://github.com/platformio/platformio-examples) repository for other pre-configured projects.
+The code below works only in pair with Arduino-based boards. See [PlatformIO Project Examples](https://github.com/platformio/platformio-examples) repository for other pre-configured projects.
 
 :::
 
@@ -121,7 +121,7 @@ void loop()
 
 ![](./img/ide-platformio-clion-blink-project.png)
 
-### Build & Upload {#build-upload}
+### Build & upload {#build-upload}
 
 1. Open project configuration wizard and add `PlatformIO Upload` and `PlatformIO Debug` configurations (you can add the rest configurations if you need them):
 
@@ -140,11 +140,11 @@ void loop()
 - [Build options](../../reference/platformio-ini/env/build-options.md)
 - [Upload options](../../reference/platformio-ini/env/upload-options.md)
 
-## Device/Serial Monitor {#device-serial-monitor}
+## Device/Serial monitor {#device-serial-monitor}
 
-Please open CLion terminal and use [Device Manager CLI](../../reference/cli/pio-device/index.md). You can also configure device monitor per project using [Monitor options](../../reference/platformio-ini/env/monitor-options.md).
+Open CLion terminal and use [Device Manager CLI](../../reference/cli/pio-device/index.md). You can also configure device monitor per project using [Monitor options](../../reference/platformio-ini/env/monitor-options.md).
 
-Please note that you need to manually close/stop device monitor before firmware uploading.
+Note that you need to manually close/stop device monitor before firmware uploading.
 
 ## Debugging {#debugging}
 
@@ -152,9 +152,9 @@ Please note that you need to manually close/stop device monitor before firmware 
 
 ![](./img/ide-platformio-clion-debug-project.png)
 
-### Peripheral Registers {#peripheral-registers}
+### Peripheral registers {#peripheral-registers}
 
-Please navigate to the "Peripheral" tab in a "Debug" view, press the "Configure" icon and select registers to monitor. Close configuration window.
+Go to the "Peripheral" tab in a "Debug" view, press the "Configure" icon and select registers to monitor. Close configuration window.
 
 :::warning
 
@@ -170,7 +170,7 @@ A temporary solution is to open `CMakeListsPrivate.txt` file from a root of Plat
 
 Currently, [PlatformIO Home](../../get-started/platformio-home.md) is not integrated into "PlatformIO for CLion". See related feature request [CLion: CPP-19493 Integrate PlatformIO Home](https://youtrack.jetbrains.com/issue/CPP-19493).
 
-Nevertheless, you can start it manually and open in your browser. Please note that some features do not work, such as project opening. Please open CLion terminal and run [pio home](../../reference/cli/pio-home.md) command:
+Nevertheless, you can start it manually and open in your browser. Note that some features do not work, such as project opening. Open CLion terminal and run [pio home](../../reference/cli/pio-home.md) command:
 
 ```bash
 pio -c clion home

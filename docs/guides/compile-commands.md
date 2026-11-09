@@ -4,18 +4,24 @@
 
 A [compilation database](https://clang.llvm.org/docs/JSONCompilationDatabase.html) is a [JSON-formatted](https://www.json.org/) file named `compile_commands.json` that contains structured data about every compilation unit in your project.
 
-You can generate a project `compile_commands.json` using the [`pio run --target`](../reference/cli/pio-run.md#cmdoption-pio-run-t) command and `compiledb` target. A default location for `compile_commands.json` is a project directory.
+Editors and tools such as clangd, ccls and Clang-Tidy use it for code completion and analysis. Generate it with the `compiledb` [project target](../reference/cli/pio-run.md#cmdoption-pio-run-t):
 
-The following build variables can be used for customization using [Advanced Scripting](./scripting/index.md):
+```bash
+pio run -t compiledb
+```
+
+By default, the file is saved in the project directory.
+
+To customize it, set these build variables in an [extra script](./scripting/index.md):
 
 | Variable | Description |
 |---|---|
-| `COMPILATIONDB_PATH` | A path where the `compile_commands.json` file should be saved. A default location is the root of a project |
-| `COMPILATIONDB_INCLUDE_TOOLCHAIN` | A boolean flag to control if toolchain paths should be included in the compilation unit. A default value is `False`, only project-dependent includes are exported. |
+| `COMPILATIONDB_PATH` | Where to save the file. Default: `$PROJECT_DIR/compile_commands.json` |
+| `COMPILATIONDB_INCLUDE_TOOLCHAIN` | Also include the toolchain's include paths. Default: `False` (only the project's include paths) |
 
-**Example**
+## Example {#example}
 
-Generate `compile_commands.json` with toolchain includes for each project environment and save database to the "[build_dir](../reference/platformio-ini/platformio/build-dir.md)/envname" folder:
+Include the toolchain paths and save a separate database per environment in its [build folder](../reference/platformio-ini/platformio/build-dir.md):
 
 `platformio.ini`:
 
@@ -39,8 +45,8 @@ env.Replace(COMPILATIONDB_INCLUDE_TOOLCHAIN=True)
 env.Replace(COMPILATIONDB_PATH=os.path.join("$BUILD_DIR", "compile_commands.json"))
 ```
 
-Generate `compile_commands.json`
+Generate the database:
 
-```text
-> pio run -t compiledb
+```bash
+pio run -t compiledb
 ```

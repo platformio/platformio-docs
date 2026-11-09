@@ -1,47 +1,41 @@
+---
+description: Build and test PlatformIO projects in GitHub Actions, GitLab CI, CircleCI and other continuous integration services.
+---
+
 <a id="ci"></a>
 
-# Continuous Integration {#continuous-integration}
+# CI integrations {#continuous-integration}
 
-[Continuous Integration (CI, wiki)](http://en.wikipedia.org/wiki/Continuous_integration) is the practice, in software engineering, of merging all developer working copies with a shared mainline several times a day.
+Build and test your project on every change with a
+[continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)
+service, to catch errors early.
 
-[pio ci](../../reference/cli/pio-ci.md) command is intended to be used in combination with the build servers and the popular [Continuous Integration Software](http://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software).
+In CI, install PlatformIO Core [with pip](../../get-started/install/pip.md),
+then run your usual commands:
 
-By integrating regularly, you can detect errors quickly, and locate them more easily.
+- [`pio run`](../../reference/cli/pio-run.md) to build a PlatformIO project;
+- [`pio test`](../../reference/cli/pio-test.md) to run
+  [unit tests](../unit-testing/index.md), on the host or, through
+  [remote development](../remote-development.md), on real hardware;
+- [`pio check`](../../reference/cli/pio-check.md) for
+  [static code analysis](../static-code-analysis/index.md);
+- [`pio ci`](../../reference/cli/pio-ci.md) to build code that is not a
+  PlatformIO project, such as library examples, for several boards.
 
-- [AppVeyor](./appveyor.md)
+To speed up builds, cache the `~/.platformio` folder and, optionally, the
+project's `.pio` folder between runs.
 
-  - [Integration](./appveyor.md#integration)
-  - [Examples](./appveyor.md#examples)
+## Services {#services}
 
-- [CircleCI](./circleci.md)
+| Service | |
+| --- | --- |
+| [GitHub Actions](./github-actions.md) | |
+| [GitLab CI/CD](./gitlab.md) | |
+| [CircleCI](./circleci.md) | |
+| [Travis CI](./travis.md) | |
+| [AppVeyor](./appveyor.md) | |
+| [Drone](./drone.md) | |
+| [Shippable](./shippable.md) | Discontinued; kept for reference |
 
-  - [Integration](./circleci.md#integration)
-  - [Examples](./circleci.md#examples)
-
-- [Drone](./drone.md)
-
-  - [Integration](./drone.md#integration)
-  - [Examples](./drone.md#examples)
-
-- [GitHub Actions](./github-actions.md)
-
-  - [Integration](./github-actions.md#integration)
-  - [Examples](./github-actions.md#examples)
-
-- [GitLab](./gitlab.md)
-
-  - [Integration](./gitlab.md#integration)
-  - [Examples](./gitlab.md#examples)
-
-- [Shippable](./shippable.md)
-
-  - [Integration](./shippable.md#integration)
-  - [Examples](./shippable.md#examples)
-
-- [Travis CI](./travis.md)
-
-  - [Integration](./travis.md#integration)
-  - [Library dependencies](./travis.md#library-dependencies)
-  - [Custom Build Flags](./travis.md#custom-build-flags)
-  - [Advanced configuration](./travis.md#advanced-configuration)
-  - [Examples](./travis.md#examples)
+Any other CI service works the same way: install Python and PlatformIO Core,
+and run the commands above.

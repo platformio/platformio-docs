@@ -989,30 +989,26 @@
   "to": "/guides/libraries",
   "from": [
    "/en/latest/librarymanager",
+   "/en/latest/librarymanager/configuration",
+   "/en/latest/librarymanager/configuration.html",
    "/en/latest/librarymanager/index",
    "/en/latest/librarymanager/index.html",
    "/en/stable/librarymanager",
+   "/en/stable/librarymanager/configuration",
+   "/en/stable/librarymanager/configuration.html",
    "/en/stable/librarymanager/index",
    "/en/stable/librarymanager/index.html",
+   "/guides/libraries/configuration",
    "/librarymanager",
+   "/librarymanager/configuration",
+   "/librarymanager/configuration.html",
    "/librarymanager/index",
    "/librarymanager/index.html",
    "/page/librarymanager",
+   "/page/librarymanager/configuration",
+   "/page/librarymanager/configuration.html",
    "/page/librarymanager/index",
    "/page/librarymanager/index.html"
-  ]
- },
- {
-  "to": "/guides/libraries/configuration",
-  "from": [
-   "/en/latest/librarymanager/configuration",
-   "/en/latest/librarymanager/configuration.html",
-   "/en/stable/librarymanager/configuration",
-   "/en/stable/librarymanager/configuration.html",
-   "/librarymanager/configuration",
-   "/librarymanager/configuration.html",
-   "/page/librarymanager/configuration",
-   "/page/librarymanager/configuration.html"
   ]
  },
  {
@@ -1311,51 +1307,52 @@
   "to": "/guides/static-code-analysis",
   "from": [
    "/advanced/static-code-analysis",
+   "/advanced/static-code-analysis/cli",
+   "/advanced/static-code-analysis/cli.html",
+   "/advanced/static-code-analysis/configuration",
+   "/advanced/static-code-analysis/configuration.html",
    "/advanced/static-code-analysis/index",
    "/advanced/static-code-analysis/index.html",
+   "/advanced/static-code-analysis/ui",
+   "/advanced/static-code-analysis/ui.html",
    "/en/latest/advanced/static-code-analysis",
+   "/en/latest/advanced/static-code-analysis/cli",
+   "/en/latest/advanced/static-code-analysis/cli.html",
+   "/en/latest/advanced/static-code-analysis/configuration",
+   "/en/latest/advanced/static-code-analysis/configuration.html",
    "/en/latest/advanced/static-code-analysis/index",
    "/en/latest/advanced/static-code-analysis/index.html",
+   "/en/latest/advanced/static-code-analysis/ui",
+   "/en/latest/advanced/static-code-analysis/ui.html",
    "/en/latest/plus/pio-check",
    "/en/latest/plus/pio-check.html",
    "/en/stable/advanced/static-code-analysis",
+   "/en/stable/advanced/static-code-analysis/cli",
+   "/en/stable/advanced/static-code-analysis/cli.html",
+   "/en/stable/advanced/static-code-analysis/configuration",
+   "/en/stable/advanced/static-code-analysis/configuration.html",
    "/en/stable/advanced/static-code-analysis/index",
    "/en/stable/advanced/static-code-analysis/index.html",
+   "/en/stable/advanced/static-code-analysis/ui",
+   "/en/stable/advanced/static-code-analysis/ui.html",
    "/en/stable/plus/pio-check",
    "/en/stable/plus/pio-check.html",
+   "/guides/static-code-analysis/cli",
+   "/guides/static-code-analysis/configuration",
+   "/guides/static-code-analysis/ui",
    "/page/advanced/static-code-analysis",
+   "/page/advanced/static-code-analysis/cli",
+   "/page/advanced/static-code-analysis/cli.html",
+   "/page/advanced/static-code-analysis/configuration",
+   "/page/advanced/static-code-analysis/configuration.html",
    "/page/advanced/static-code-analysis/index",
    "/page/advanced/static-code-analysis/index.html",
+   "/page/advanced/static-code-analysis/ui",
+   "/page/advanced/static-code-analysis/ui.html",
    "/page/plus/pio-check",
    "/page/plus/pio-check.html",
    "/plus/pio-check",
    "/plus/pio-check.html"
-  ]
- },
- {
-  "to": "/guides/static-code-analysis/cli",
-  "from": [
-   "/advanced/static-code-analysis/cli",
-   "/advanced/static-code-analysis/cli.html",
-   "/en/latest/advanced/static-code-analysis/cli",
-   "/en/latest/advanced/static-code-analysis/cli.html",
-   "/en/stable/advanced/static-code-analysis/cli",
-   "/en/stable/advanced/static-code-analysis/cli.html",
-   "/page/advanced/static-code-analysis/cli",
-   "/page/advanced/static-code-analysis/cli.html"
-  ]
- },
- {
-  "to": "/guides/static-code-analysis/configuration",
-  "from": [
-   "/advanced/static-code-analysis/configuration",
-   "/advanced/static-code-analysis/configuration.html",
-   "/en/latest/advanced/static-code-analysis/configuration",
-   "/en/latest/advanced/static-code-analysis/configuration.html",
-   "/en/stable/advanced/static-code-analysis/configuration",
-   "/en/stable/advanced/static-code-analysis/configuration.html",
-   "/page/advanced/static-code-analysis/configuration",
-   "/page/advanced/static-code-analysis/configuration.html"
   ]
  },
  {
@@ -1431,41 +1428,55 @@
   ]
  },
  {
-  "to": "/guides/static-code-analysis/ui",
-  "from": [
-   "/advanced/static-code-analysis/ui",
-   "/advanced/static-code-analysis/ui.html",
-   "/en/latest/advanced/static-code-analysis/ui",
-   "/en/latest/advanced/static-code-analysis/ui.html",
-   "/en/stable/advanced/static-code-analysis/ui",
-   "/en/stable/advanced/static-code-analysis/ui.html",
-   "/page/advanced/static-code-analysis/ui",
-   "/page/advanced/static-code-analysis/ui.html"
-  ]
- },
- {
   "to": "/guides/unit-testing",
   "from": [
    "/advanced/unit-testing",
+   "/advanced/unit-testing/cli",
+   "/advanced/unit-testing/cli.html",
+   "/advanced/unit-testing/configuration",
+   "/advanced/unit-testing/configuration.html",
    "/advanced/unit-testing/index",
    "/advanced/unit-testing/index.html",
+   "/advanced/unit-testing/introduction",
+   "/advanced/unit-testing/introduction.html",
    "/en/latest/advanced/unit-testing",
+   "/en/latest/advanced/unit-testing/cli",
+   "/en/latest/advanced/unit-testing/cli.html",
+   "/en/latest/advanced/unit-testing/configuration",
+   "/en/latest/advanced/unit-testing/configuration.html",
    "/en/latest/advanced/unit-testing/index",
    "/en/latest/advanced/unit-testing/index.html",
+   "/en/latest/advanced/unit-testing/introduction",
+   "/en/latest/advanced/unit-testing/introduction.html",
    "/en/latest/platforms/unit_testing",
    "/en/latest/platforms/unit_testing.html",
    "/en/latest/plus/unit-testing",
    "/en/latest/plus/unit-testing.html",
    "/en/stable/advanced/unit-testing",
+   "/en/stable/advanced/unit-testing/cli",
+   "/en/stable/advanced/unit-testing/cli.html",
+   "/en/stable/advanced/unit-testing/configuration",
+   "/en/stable/advanced/unit-testing/configuration.html",
    "/en/stable/advanced/unit-testing/index",
    "/en/stable/advanced/unit-testing/index.html",
+   "/en/stable/advanced/unit-testing/introduction",
+   "/en/stable/advanced/unit-testing/introduction.html",
    "/en/stable/platforms/unit_testing",
    "/en/stable/platforms/unit_testing.html",
    "/en/stable/plus/unit-testing",
    "/en/stable/plus/unit-testing.html",
+   "/guides/unit-testing/cli",
+   "/guides/unit-testing/configuration",
+   "/guides/unit-testing/introduction",
    "/page/advanced/unit-testing",
+   "/page/advanced/unit-testing/cli",
+   "/page/advanced/unit-testing/cli.html",
+   "/page/advanced/unit-testing/configuration",
+   "/page/advanced/unit-testing/configuration.html",
    "/page/advanced/unit-testing/index",
    "/page/advanced/unit-testing/index.html",
+   "/page/advanced/unit-testing/introduction",
+   "/page/advanced/unit-testing/introduction.html",
    "/page/platforms/unit_testing",
    "/page/platforms/unit_testing.html",
    "/page/plus/unit-testing",
@@ -1474,32 +1485,6 @@
    "/platforms/unit_testing.html",
    "/plus/unit-testing",
    "/plus/unit-testing.html"
-  ]
- },
- {
-  "to": "/guides/unit-testing/cli",
-  "from": [
-   "/advanced/unit-testing/cli",
-   "/advanced/unit-testing/cli.html",
-   "/en/latest/advanced/unit-testing/cli",
-   "/en/latest/advanced/unit-testing/cli.html",
-   "/en/stable/advanced/unit-testing/cli",
-   "/en/stable/advanced/unit-testing/cli.html",
-   "/page/advanced/unit-testing/cli",
-   "/page/advanced/unit-testing/cli.html"
-  ]
- },
- {
-  "to": "/guides/unit-testing/configuration",
-  "from": [
-   "/advanced/unit-testing/configuration",
-   "/advanced/unit-testing/configuration.html",
-   "/en/latest/advanced/unit-testing/configuration",
-   "/en/latest/advanced/unit-testing/configuration.html",
-   "/en/stable/advanced/unit-testing/configuration",
-   "/en/stable/advanced/unit-testing/configuration.html",
-   "/page/advanced/unit-testing/configuration",
-   "/page/advanced/unit-testing/configuration.html"
   ]
  },
  {
@@ -1629,19 +1614,6 @@
    "/en/stable/advanced/unit-testing/frameworks/unity.html",
    "/page/advanced/unit-testing/frameworks/unity",
    "/page/advanced/unit-testing/frameworks/unity.html"
-  ]
- },
- {
-  "to": "/guides/unit-testing/introduction",
-  "from": [
-   "/advanced/unit-testing/introduction",
-   "/advanced/unit-testing/introduction.html",
-   "/en/latest/advanced/unit-testing/introduction",
-   "/en/latest/advanced/unit-testing/introduction.html",
-   "/en/stable/advanced/unit-testing/introduction",
-   "/en/stable/advanced/unit-testing/introduction.html",
-   "/page/advanced/unit-testing/introduction",
-   "/page/advanced/unit-testing/introduction.html"
   ]
  },
  {

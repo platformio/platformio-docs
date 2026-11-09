@@ -1,3 +1,7 @@
+---
+description: "If you would like to change the default PlatformIO's Test Runner for the GoogleTest, please implement your Custom Testing Framework runner extending GooglestTestRunner class."
+---
+
 <a id="unit-testing-frameworks-googletest"></a>
 
 # GoogleTest {#googletest}
@@ -68,9 +72,9 @@ Yes
 
 **GoogleTest** is a testing framework developed by the Testing Technology team with Google's specific requirements and constraints in mind. Whether you work on Linux, Windows, or a Mac, if you write C++ code, GoogleTest can help you.
 
-## Getting Started {#getting-started}
+## Getting started {#getting-started}
 
-To get started with the GoogleTest all you need is to set the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in your ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) to the `googletest` and implement your own `main()` function:
+To get started with the GoogleTest all you need is to set the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in your [`platformio.ini`](../../../reference/platformio-ini/index.md) to the `googletest` and implement your own `main()` function:
 
 `platformio.ini`
 
@@ -141,7 +145,7 @@ Now, you can run tests using the [pio test](../../../reference/cli/pio-test.md) 
 
 **Example**
 
-Please check the complete [GoogleTest example](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/googletest) using GTest, GMock, and PlatformIO.
+Check the complete [GoogleTest example](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/googletest) using GTest, GMock, and PlatformIO.
 
 **Useful links**
 

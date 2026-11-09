@@ -6,7 +6,7 @@ There are frameworks such as [Arduino](/hardware/frameworks/arduino) with Mbed c
 
 The example below allows you to use PlatformIO's [Unity](../../unity.md) Test Runner and your custom Unity library. It can be a part of [Frameworks](../../../../../hardware/frameworks/index.md) or as a project dependency declared in [lib_deps](../../../../../reference/platformio-ini/env/lib-deps.md).
 
-## Project Example {#project-example}
+## Project example {#project-example}
 
 We have a project based on Arduino Mbed-core that ships with a custom prebuilt "libunity.a". Let's leverage from the existing [Unity](../../unity.md) Test Runner and disable the default [throwtheswitch/Unity](https://registry.platformio.org/libraries/throwtheswitch/Unity) package.
 

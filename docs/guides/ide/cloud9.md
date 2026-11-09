@@ -1,12 +1,22 @@
+---
+description: "See documentation for pio remote run --project-dir option."
+---
+
 <a id="ide-cloud9"></a>
 
 # Cloud9 {#cloud9}
+
+:::warning
+
+AWS Cloud9 is no longer available to new customers since July 2024. Existing customers can continue to use it.
+
+:::
 
 [Cloud9](https://c9.io/) combines a powerful online code editor with a full Ubuntu workspace in the cloud. Workspaces are powered by Docker Ubuntu containers that give you full freedom over your environment, including sudo rights. Do a git push, compile SASS, see server output, and Run apps easily with the built-in Terminal and Runners.
 
 :::note
 
-1. Please make sure to read [Remote Development](../remote-development.md) guide first.
+1. Read [Remote Development](../remote-development.md) guide first.
 2. You need [PlatformIO Account](../../get-started/platformio-account.md) if you don't have it. Registration is FREE.
 3. You should have a running [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) on a remote machine where hardware devices are connected physically or accessible for the remote operations. See **Remote Development** [Quick Start](../remote-development.md#pio-remote-quickstart) for details.
 
@@ -33,7 +43,7 @@ sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platfo
 
 4. Log in to [PlatformIO Account](../../get-started/platformio-account.md) using [pio account login](../../reference/cli/pio-account/login.md) command.
 
-## Quick Start {#quick-start}
+## Quick start {#quick-start}
 
 Let's create our first PlatformIO-based Cloud9 Project
 
@@ -84,11 +94,11 @@ Let's create our first PlatformIO-based Cloud9 Project
 
    If you are interested in better integration with Cloud9 and GUI, please read guide below where we will explain how to create custom Build System for PlatformIO and own Runners.
 
-## PlatformIO Build System {#platformio-build-system}
+## PlatformIO build system {#platformio-build-system}
 
 Cloud9 allows one to create own build system and use hotkey or command (Menu: Run > Build) to build a project.
 
-Let's create PlatformIO Build System that will be used for C/C++/H/INO/PDE files by default. Please click on `Menu: Run > Build System > New Build System` and replace all content with the next:
+Let's create PlatformIO Build System that will be used for C/C++/H/INO/PDE files by default. Click on `Menu: Run > Build System > New Build System` and replace all content with the next:
 
 ```javascript
 {
@@ -100,11 +110,11 @@ Let's create PlatformIO Build System that will be used for C/C++/H/INO/PDE files
 
 Save new Build System and give a name `PIOBuilder`. Now, you can select it as default Build System using `Menu: Run > Build System > PIOBuilder`.
 
-## Remote Device Manager {#remote-device-manager}
+## Remote device manager {#remote-device-manager}
 
 Remote Device Manager works in pair with [Remote Development](../remote-development.md). You can list remote devices that are connected to host machine where [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) is started or are visible for it.
 
-Let's create New Run Configuration (shortcut) that will be used for Remote Device Manager. Please click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
+Let's create New Run Configuration (shortcut) that will be used for Remote Device Manager. Click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
 
 - **First Blank Input**: a name of runner. Please set it to "PIO: Remote Devices"
 - **Command**: set to `pio remote device list`
@@ -114,11 +124,11 @@ Let's create New Run Configuration (shortcut) that will be used for Remote Devic
 
 <a id="ide-cloud9-ota-updates"></a>
 
-## Remote Firmware Uploading {#remote-firmware-uploading}
+## Remote firmware uploading {#remote-firmware-uploading}
 
 Remote Firmware Uploading works in pair with [Remote Development](../remote-development.md). You can deploy firmware (program) to any devices which are visible for [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md).
 
-Let's create New Run Configuration (shortcut) that will be used for Remote Firmware Uploading. Please click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
+Let's create New Run Configuration (shortcut) that will be used for Remote Firmware Uploading. Click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
 
 - **First Blank Input**: a name of runner. Please set it to "PIO: Remote Upload"
 - **Command**: set to `pio remote run -t upload`
@@ -126,11 +136,11 @@ Let's create New Run Configuration (shortcut) that will be used for Remote Firmw
 
 ![](./img/ide-cloud9-runner-ota-uploading.png)
 
-## Remote Serial Port Monitor {#remote-serial-port-monitor}
+## Remote serial port monitor {#remote-serial-port-monitor}
 
 Remote Serial Port Monitor works in pair with [Remote Development](../remote-development.md). You can read or send data to any device that is connected to host machine where [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) is started. To list active agents please use this command [pio remote agent list](../../reference/cli/pio-remote/agent.md#cmd-remote-agent-list).
 
-Let's create New Run Configuration (shortcut) that will be used for Remote Serial Port Monitor. Please click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
+Let's create New Run Configuration (shortcut) that will be used for Remote Serial Port Monitor. Click on `Menu: Run > Run Configurations > Manage...`, then "Add New Config" and specify the next values:
 
 - **First Blank Input**: a name of runner. Please set it to "PIO: Remote Serial Monitor"
 - **Command**: set to `pio remote device monitor`

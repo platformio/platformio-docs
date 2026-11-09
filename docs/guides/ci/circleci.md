@@ -1,3 +1,7 @@
+---
+description: "Integration for USB_Host_Shield_2.0 project."
+---
+
 <a id="ci-circleci"></a>
 
 # CircleCI {#circleci}
@@ -12,7 +16,7 @@ CircleCI automatically detects when a commit has been made and pushed to a repos
 
 :::note
 
-Please make sure to read CircleCI [Getting Started](https://circleci.com/docs/getting-started) guide first.
+Read CircleCI [Getting Started](https://circleci.com/docs/getting-started) guide first.
 
 :::
 
@@ -84,7 +88,7 @@ workflows:
 
 There 2 options to test source code with dependent libraries:
 
-### Install dependent library using [Library Management](../libraries/index.md) {#install-dependent-library-using-librarymanager}
+### Install dependent library using [Library management](../libraries/index.md) {#install-dependent-library-using-librarymanager}
 
 ```yaml
 - run:
@@ -105,7 +109,7 @@ There 2 options to test source code with dependent libraries:
     command: pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 ```
 
-#### Custom Build Flags {#custom-build-flags}
+#### Custom build flags {#custom-build-flags}
 
 PlatformIO allows you to specify your own build flags using [`PLATFORMIO_BUILD_FLAGS`](../../reference/environment-variables.md#envvar-PLATFORMIO_BUILD_FLAGS) environment:
 
@@ -117,11 +121,11 @@ jobs:
         PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACROS -I/extra/inc
 ```
 
-For the more details, please follow to [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
+For the more details, see [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
 
 #### Advanced configuration {#advanced-configuration}
 
-PlatformIO allows you to configure multiple build environments for the single source code using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+PlatformIO allows you to configure multiple build environments for the single source code using [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 Instead of `--board`, please use the `--project-conf` option:
 

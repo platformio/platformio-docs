@@ -1,24 +1,32 @@
+---
+description: Use PlatformIO with Visual Studio Code, CLion, Neovim, Vim, Emacs, Eclipse and other editors and IDEs.
+---
+
 <a id="ide"></a>
 
-# Cloud & Desktop IDEs {#cloud-desktop-ides}
+# IDE integrations {#cloud-desktop-ides}
 
-## Native Extensions {#native-extensions}
+<a id="native-extensions"></a>
 
-Native extensions and plugins provide official integration with IDEs/Text Editors and contain built-in [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and [PlatformIO Home](../../get-started/platformio-home.md). We **highly recommend** to use the next native integrations for:
+## Official extensions {#official-extensions}
 
-- [PlatformIO IDE for VSCode](./vscode.md)
-- [CLion](./clion.md) (Experimental)
+These extensions include [PlatformIO Core](../../get-started/platformio-core.md)
+and [PlatformIO Home](../../get-started/platformio-home.md), and integrate
+building, uploading, debugging and testing into the IDE:
 
-:::note
+| IDE | Notes |
+| --- | --- |
+| [PlatformIO IDE for VS Code](./vscode.md) | Recommended: the most complete and most widely used |
+| [CLion](./clion.md) | Experimental |
 
-In our experience, [PlatformIO IDE for VSCode](./vscode.md) offers better system performance, and users have found it easier to get started.
+## Other editors and IDEs {#desktop-ides}
 
-:::
+For these, PlatformIO generates project files with
+[`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide),
+or the editor uses the project's
+[compilation database](../compile-commands.md):
 
-## Desktop IDEs {#desktop-ides}
-
-- [CLion](./clion.md)
-- [CodeBlocks](./codeblocks.md)
+- [Code::Blocks](./codeblocks.md)
 - [Eclipse](./eclipse.md)
 - [Emacs](./emacs.md)
 - [Neovim](./neovim.md)
@@ -27,12 +35,14 @@ In our experience, [PlatformIO IDE for VSCode](./vscode.md) offers better system
 - [Sublime Text](./sublimetext.md)
 - [Vim](./vim.md)
 - [Visual Studio](./visualstudio.md)
-- [VSCode](./vscode.md)
 
 <a id="ide-cloud"></a>
 
 ## Cloud IDEs {#cloud-ides}
 
-- [Cloud9](./cloud9.md)
 - [Codeanywhere](./codeanywhere.md)
 - [Eclipse Che](./eclipseche.md)
+- [AWS Cloud9](./cloud9.md) (closed to new customers since July 2024)
+
+To program boards connected to your own computer from a cloud IDE, use
+[remote development](../remote-development.md).

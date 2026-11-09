@@ -1,3 +1,7 @@
+---
+description: "An example with enabling specific checks and fixing code on the fly:."
+---
+
 <a id="check-tool-clangtidy"></a>
 
 # Clang-Tidy {#clang-tidy}
@@ -18,7 +22,7 @@ Some of the defects that might be detected include:
 
 ## Configuration {#configuration}
 
-To enable **Clang-Tidy** tool simply add it to the [check_tool](../../../reference/platformio-ini/env/check-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+To enable **Clang-Tidy** tool simply add it to the [check_tool](../../../reference/platformio-ini/env/check-tool.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md):
 
 ```ini
 [env:myenv]

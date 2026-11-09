@@ -17,7 +17,7 @@ Integration process consists of these steps:
 3. Generate a project using PlatformIO Core Project Generator ([`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide))
 4. Import project in IDE.
 
-### Project Generator {#project-generator}
+### Project generator {#project-generator}
 
 The generator will create a \[Qt Creator generic project\]([https://doc.qt.io/qtcreator/creator-project-generic.html](https://doc.qt.io/qtcreator/creator-project-generic.html)).
 
@@ -32,7 +32,7 @@ pio project init --ide qtcreator --board uno
 
 Then:
 
-1. Import project via `File > Open File or Project` and select `platformio.creator` from the folder where is located ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+1. Import project via `File > Open File or Project` and select `platformio.creator` from the folder where is located [`platformio.ini`](../../reference/platformio-ini/index.md)
 2. Switch to `Edit` mode (left panel) and open source file from `src` directory (`*.c, *.cpp, *.ino, etc.`)
 3. Build project: `Menu: Build > Build All`.
 

@@ -1,3 +1,7 @@
+---
+description: "See documentation for pio remote run --project-dir option."
+---
+
 <a id="ide-eclipseche"></a>
 
 # Eclipse Che {#eclipse-che}
@@ -6,7 +10,7 @@
 
 :::note
 
-1. Please make sure to read [Remote Development](../remote-development.md) guide first.
+1. Read [Remote Development](../remote-development.md) guide first.
 2. You need [PlatformIO Account](../../get-started/platformio-account.md) if you don't have it. Registration is FREE.
 3. You should have a running [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) on a remote machine where hardware devices are connected physically or accessible for the remote operations. See **Remote Development** [Quick Start](../remote-development.md#pio-remote-quickstart) for details.
 
@@ -32,7 +36,7 @@
 
 4. Using opened Terminal, please log in to [PlatformIO Account](../../get-started/platformio-account.md) using [pio account login](../../reference/cli/pio-account/login.md) command.
 
-## Quick Start {#quick-start}
+## Quick start {#quick-start}
 
 Let's create our first PlatformIO-based Codenvy Project
 

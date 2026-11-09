@@ -14,7 +14,7 @@ Travis CI automatically detects when a commit has been made and pushed to a repo
 
 ## Integration {#integration}
 
-Please make sure to read Travis CI [Getting Started](http://docs.travis-ci.com/user/getting-started/) and [general build configuration](http://docs.travis-ci.com/user/customizing-the-build/) guides first.
+Read Travis CI [Getting Started](http://docs.travis-ci.com/user/getting-started/) and [general build configuration](http://docs.travis-ci.com/user/customizing-the-build/) guides first.
 
 :::note
 
@@ -83,7 +83,7 @@ Then perform steps 1, 2 and 4 from [http://docs.travis-ci.com/user/getting-start
 
 There 2 options to test source code with dependent libraries:
 
-### Install dependent library using [Library Management](../libraries/index.md) {#install-dependent-library-using-librarymanager}
+### Install dependent library using [Library management](../libraries/index.md) {#install-dependent-library-using-librarymanager}
 
 ```yaml
 install:
@@ -110,7 +110,7 @@ script:
     - pio ci --lib="/tmp/OneWire-master" --board=<ID_1> --board=<ID_2> --board=<ID_N>
 ```
 
-## Custom Build Flags {#custom-build-flags}
+## Custom build flags {#custom-build-flags}
 
 PlatformIO allows one to specify own build flags using [`PLATFORMIO_BUILD_FLAGS`](../../reference/environment-variables.md#envvar-PLATFORMIO_BUILD_FLAGS) environment
 
@@ -125,11 +125,11 @@ install:
     - export PLATFORMIO_BUILD_FLAGS="-D GLOBAL_MACROS_FOR_ALL_TEST_ENV"
 ```
 
-For the more details, please follow to [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
+For the more details, see [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
 
 ## Advanced configuration {#advanced-configuration}
 
-PlatformIO allows one to configure multiple build environments for the single source code using ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+PlatformIO allows one to configure multiple build environments for the single source code using [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 Instead of `--board` option, please use [`pio ci --project-conf`](../../reference/cli/pio-ci.md#cmdoption-pio-ci-c)
 
@@ -140,7 +140,7 @@ script:
 
 ## Examples {#examples}
 
-1. Custom build flags
+Custom build flags:
 
 ```yaml
 os: linux
@@ -180,7 +180,7 @@ script:
 - Configuration file: [https://github.com/felis/USB_Host_Shield_2.0/blob/master/.travis.yml](https://github.com/felis/USB_Host_Shield_2.0/blob/master/.travis.yml)
 - Build History: [https://travis-ci.org/felis/USB_Host_Shield_2.0](https://travis-ci.org/felis/USB_Host_Shield_2.0)
 
-2. Dependency on external libraries
+Dependency on external libraries:
 
 ```yaml
 os: linux
@@ -217,7 +217,7 @@ script:
 - Configuration file: [https://github.com/jcw/ethercard/blob/master/.travis.yml](https://github.com/jcw/ethercard/blob/master/.travis.yml)
 - Build History: [https://travis-ci.org/jcw/ethercard](https://travis-ci.org/jcw/ethercard)
 
-3. Dynamic testing of the boards
+Dynamic testing of the boards:
 
 ```yaml
 os: linux
@@ -257,7 +257,7 @@ script:
 - Configuration file: [https://github.com/ivankravets/Time/blob/master/.travis.yml](https://github.com/ivankravets/Time/blob/master/.travis.yml)
 - Build History: [https://travis-ci.org/ivankravets/Time](https://travis-ci.org/ivankravets/Time)
 
-4. Advanced configuration with extra project options and libraries
+Advanced configuration with extra project options and libraries:
 
 ```yaml
 os: linux

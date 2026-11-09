@@ -1,17 +1,17 @@
 <a id="scripting-custom-targets"></a>
 
-# Custom Targets {#custom-targets}
+# Custom targets {#custom-targets}
 
 PlatformIO allows you to declare unlimited number of the custom targets. There are a lot of use cases for them:
 
 - Pre/Post processing based on a dependent sources (other target, source file, etc.)
 - Command launcher with own arguments
-- Launch command with custom options declared in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+- Launch command with custom options declared in [`platformio.ini`](../../reference/platformio-ini/index.md)
 - Python callback as a target (use the power of Python interpreter and PlatformIO Build API).
 
 A custom target can be processed using [`pio run --target`](../../reference/cli/pio-run.md#cmdoption-pio-run-t) option and you can list them via [`pio run --list-targets`](../../reference/cli/pio-run.md#cmdoption-pio-run-list-targets) command.
 
-## Build System API {#build-system-api}
+## Build system API {#build-system-api}
 
 ```python
 Import("env")

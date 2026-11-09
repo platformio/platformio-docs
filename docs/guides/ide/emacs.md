@@ -17,7 +17,7 @@ Integration process consists of these steps:
 3. Generate a project using PlatformIO Core Project Generator ([`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide))
 4. Open project in Emacs.
 
-### Project Generator {#project-generator}
+### Project generator {#project-generator}
 
 Choose board `ID` using [pio boards](../../reference/cli/pio-boards.md) or [Embedded Boards Explorer](https://platformio.org/boards) command and generate project via [`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide) command:
 
@@ -46,9 +46,9 @@ There are 6 predefined targets for building.
 - `platformio_spiffs_upload`  - Upload files to file system SPIFFS (see [Using Filesystem](/hardware/platforms/espressif8266#platform-espressif-uploadfs)). (`C-c i s`)
 - `platformio_update` - Update installed platforms and libraries.    (`C-c i d`)
 
-### Code Completion and Navigation {#code-completion-and-navigation}
+### Code completion and navigation {#code-completion-and-navigation}
 
-Please install the next:
+Install the next:
 
 - [C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting](https://github.com/MaskRay/ccls)
 - [Emacs client for ccls, a C/C++ language server](https://github.com/MaskRay/emacs-ccls).

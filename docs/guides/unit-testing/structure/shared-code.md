@@ -8,7 +8,7 @@ By default, PlatformIO does not build the main source code from the [src_dir](..
 
    See [Local & Embedded: Calculator](https://github.com/platformio/platformio-examples/tree/develop/unit-testing/calculator) for an example, where we have a "calculator" component in the [lib_dir](../../../reference/platformio-ini/platformio/lib-dir.md) folder and include it in the tests and the main application using `#include <calculator.h>`.
 
-2. **NOT RECOMMENDED**. Manually instruct PlatformIO to build the main source code from the [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder in pair with a test source code using the [test_build_src](../../../reference/platformio-ini/env/test-build-src.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md):
+2. **NOT RECOMMENDED**. Manually instruct PlatformIO to build the main source code from the [src_dir](../../../reference/platformio-ini/platformio/src-dir.md) folder in pair with a test source code using the [test_build_src](../../../reference/platformio-ini/env/test-build-src.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md):
 
    ```ini
    [env:myenv]
@@ -20,6 +20,6 @@ By default, PlatformIO does not build the main source code from the [src_dir](..
 
    :::warning
 
-   Please note that you will need to use `#ifndef PIO_UNIT_TESTING` and `#endif` guard to hide non-test related source code. For example, own `main()`, `setup() / loop()`, or `app_main()` functions.
+   Note that you will need to use `#ifndef PIO_UNIT_TESTING` and `#endif` guard to hide non-test related source code. For example, own `main()`, `setup() / loop()`, or `app_main()` functions.
 
    :::

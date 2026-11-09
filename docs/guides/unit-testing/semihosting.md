@@ -28,9 +28,11 @@ See the [source code and complete PlatformIO project](https://github.com/platfor
 
 We use the [pio test](../../reference/cli/pio-test.md) command to run the tests.
 
-```text
-> pio test
+```bash
+pio test
+```
 
+```text
 Verbose mode can be enabled via `-v, --verbose` option
 Collected 1 tests
 

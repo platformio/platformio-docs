@@ -1,3 +1,7 @@
+---
+description: "In order to use the CERT addon, simply specify it as an additional flag in check_flags section:."
+---
+
 <a id="check-tool-cppcheck"></a>
 
 # Cppcheck {#cppcheck}
@@ -52,7 +56,7 @@ The full list of supported check with detailed description is located on [the of
 
 ## Configuration {#configuration}
 
-**Cppcheck** is implicitly used as the default check tool when [check_tool](../../../reference/platformio-ini/env/check-tool.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) is not set. To be explicit, you can specify it in the configuration directly:
+**Cppcheck** is implicitly used as the default check tool when [check_tool](../../../reference/platformio-ini/env/check-tool.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md) is not set. To be explicit, you can specify it in the configuration directly:
 
 ```ini
 [env:myenv]

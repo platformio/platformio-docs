@@ -1,3 +1,7 @@
+---
+description: "If you would like to change the default PlatformIO's Test Runner for the Doctest, please implement your Custom Testing Framework runner extending DoctestTestRunner class."
+---
+
 <a id="unit-testing-frameworks-doctest"></a>
 
 # Doctest {#doctest}
@@ -68,9 +72,9 @@ No
 
 **Doctest** is a new C++ testing framework but is by far the fastest both in compile times and runtime compared to other feature-rich alternatives.
 
-## Getting Started {#getting-started}
+## Getting started {#getting-started}
 
-To get started with the Doctest all you need is to set the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in your ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) to the `doctest` and implement your own `main()` function that forces the Doctest to report successful test cases:
+To get started with the Doctest all you need is to set the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in your [`platformio.ini`](../../../reference/platformio-ini/index.md) to the `doctest` and implement your own `main()` function that forces the Doctest to report successful test cases:
 
 `platformio.ini`
 

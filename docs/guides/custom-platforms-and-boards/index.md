@@ -1,16 +1,14 @@
-# Custom Platform & Board {#custom-platform-board}
+---
+description: Add support for your own board or development platform to PlatformIO.
+---
 
-- [Custom Development Platforms](./creating-platform.md)
+# Custom platforms and boards {#custom-platform-board}
 
-  - [Examples](./creating-platform.md#examples)
-  - [Packages](./creating-platform.md#packages)
-  - [Manifest File `platform.json`](./creating-platform.md#manifest-file-platform-json)
-  - [Build Script `main.py`](./creating-platform.md#build-script-main-py)
-  - [Installation](./creating-platform.md#installation)
-  - [Publishing](./creating-platform.md#publishing)
+When PlatformIO does not support your hardware out of the box, you can add it:
 
-- [Custom Embedded Boards](./creating-board.md)
+| Guide | Use it when |
+| --- | --- |
+| [Custom boards](./creating-board.md) | Your board uses a microcontroller that an existing development platform supports. You only describe the board in a JSON file. |
+| [Custom development platforms](./creating-platform.md) | You need a new architecture, toolchain, upload tool or framework integration. |
 
-  - [JSON Structure](./creating-board.md#json-structure)
-  - [Installation](./creating-board.md#installation)
-  - [Examples](./creating-board.md#examples)
+Most custom hardware needs only a custom board.

@@ -1,18 +1,24 @@
+---
+description: Structure, manifest and publishing of a PlatformIO library.
+---
+
 <a id="library-creating"></a>
 
-# Creating Library {#creating-library}
+# Create a library {#creating-library}
 
-Managing components between the projects is a historical issue. A common code is duplicated between different projects that lead to project complexity. A good practice is to organize interdependent components as the separate libraries where other projects can depend on them.
+Move code you share between projects into a library: other projects can then
+depend on it, and PlatformIO installs, builds and updates it for them.
 
-PlatformIO has a built-in [Library Management](./index.md) where developers can declare project dependencies and PlatformIO will automatically manage them (install, build, update). It doesn't have any requirements for a library source code structure. The only requirement is a library manifest file - [library.json](../../reference/library-json/index.md), [library.properties](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#library-metadata), or [module.json](http://docs.yottabuild.org/reference/module.html). It must be located in the root of a library.
-
-We highly recommend using [library.json](../../reference/library-json/index.md) for better compatibility and avoiding any issues.
+A library needs only one thing: a manifest in its root folder. PlatformIO
+reads [`library.json`](../../reference/library-json/index.md), and also the
+Arduino [`library.properties`](https://arduino.github.io/arduino-cli/latest/library-specification/#libraryproperties-file-format)
+and the legacy `module.json`. Use `library.json`: it supports all PlatformIO
+features, such as dependencies and build settings.
 
 ## Structure {#structure}
 
-We recommend to use `src` folder for your C/C++ source files and `include` folder for your headers. You can also have nested sub-folders in `src` or `include`.
-
-**Example**
+Put source files in `src` and public headers in `include`; both can contain
+subfolders. Put example projects in `examples`.
 
 ```text
 ├── examples
@@ -26,9 +32,7 @@ We recommend to use `src` folder for your C/C++ source files and `include` folde
 
 ## Manifest {#manifest}
 
-A library package must contain a manifest. We recommend using [library.json](../../reference/library-json/index.md).
-
-**Example**
+A minimal `library.json` with metadata, dependencies and compatibility:
 
 ```javascript
 {
@@ -65,12 +69,21 @@ A library package must contain a manifest. We recommend using [library.json](../
 }
 ```
 
-## Publishing {#publishing}
+See the [`library.json` reference](../../reference/library-json/index.md) for
+all fields. To check the manifest and see which files go into the package, run
+[`pio pkg pack`](../../reference/cli/pio-pkg/pack.md).
 
-You can publish a library to the [PlatformIO Registry](https://platformio.org/lib) using [pio pkg publish](../../reference/cli/pio-pkg/publish.md) command. Every time when you modify a source code of a library you will need to increment the "version" field in [library.json](../../reference/library-json/index.md) manifest and re-publish again.
+## Publish {#publishing}
 
-If the published library has an issue and you would like to remove it from the PlatformIO Registry, please use [pio pkg unpublish](../../reference/cli/pio-pkg/unpublish.md) command.
+Publish the library to the [PlatformIO Registry](https://registry.platformio.org)
+with [`pio pkg publish`](../../reference/cli/pio-pkg/publish.md). You need a
+[PlatformIO Account](../../get-started/platformio-account.md).
+
+Each published version is immutable: to publish changes, increase `version` in
+`library.json` and publish again. To remove a version, use
+[`pio pkg unpublish`](../../reference/cli/pio-pkg/unpublish.md).
 
 ## Examples {#examples}
 
-See the published libraries in [PlatformIO Registry](https://platformio.org/lib).
+Browse the libraries in the [PlatformIO Registry](https://registry.platformio.org/search?t=library)
+to see how others structure them.

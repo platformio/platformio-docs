@@ -8,15 +8,15 @@ Refer to the [Sublime Text Documentation](http://docs.sublimetext.info/en/latest
 
 ![](./img/ide-sublimetext-demo.png)
 
-## Deviot Plugin {#deviot-plugin}
+## Deviot plugin {#deviot-plugin}
 
-We are glad to inform you about an awesome Sublime Text plugin for IoT development named [Deviot](https://github.com/gepd/Deviot). It is based on [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and will automatically install it for you. Please visit [official Deviot page](https://github.com/gepd/Deviot) for the further installation steps and documentation.
+We are glad to inform you about an awesome Sublime Text plugin for IoT development named [Deviot](https://github.com/gepd/Deviot). It is based on [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and will automatically install it for you. Visit [official Deviot page](https://github.com/gepd/Deviot) for the further installation steps and documentation.
 
 [![](./img/ide-sublime-text-deviot.gif)](https://github.com/gepd/Deviot)
 
 ## Integration {#integration}
 
-### Project Generator {#project-generator}
+### Project generator {#project-generator}
 
 Integration process consists of these steps:
 
@@ -38,7 +38,7 @@ pio project init --ide sublimetext --board uno
 
 Then:
 
-1. Import project via `Menu: Project > Open Project...` and select `platformio.sublime-project` from the folder where is located ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+1. Import project via `Menu: Project > Open Project...` and select `platformio.sublime-project` from the folder where is located [`platformio.ini`](../../reference/platformio-ini/index.md)
 2. Select PlatformIO as build system: `Menu: Tools > Build System > PlatformIO`
 3. Open source file from `src` directory (`*.c, *.cpp, *.ino, etc.`)
 4. Build project: `Menu: Tools > Build`.
@@ -52,7 +52,7 @@ Also, you can access to all pre-configured targets via `Menu: Tools > Builds Wit
 - `PlatformIO - Upload using Programmer` see [Upload using Programmer](/hardware/platforms/atmelavr#atmelavr-upload-via-programmer)
 - `PlatformIO - Upload SPIFFS image` see [Using Filesystem](/hardware/platforms/espressif8266#platform-espressif-uploadfs)
 
-### Manual Integration {#manual-integration}
+### Manual integration {#manual-integration}
 
 :::note
 

@@ -1,3 +1,7 @@
+---
+description: "If you need to make it more independent to the operating system, please replace the patch with a multi-platform python-patch script."
+---
+
 # Override package files {#override-package-files}
 
 PlatformIO Package Manager automatically installs pre-built packages ([Frameworks](../../../hardware/frameworks/index.md), toolchains, libraries) required by development [Development Platforms](../../../hardware/platforms/index.md) and build process. Sometimes you need to override original files with own versions: configure custom GPIO, do changes to built-in LD scripts, or some patching to installed library dependency.
@@ -27,7 +31,7 @@ The result of `1-framework-arduinoavr-add-pin-a8.patch`:
 > // 14-21 PA0-PA7 works
 ```
 
-Using extra scripting we can apply patching before a build process. The final result of ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) and "PRE" extra script named `apply_patches.py`:
+Using extra scripting we can apply patching before a build process. The final result of [`platformio.ini`](../../../reference/platformio-ini/index.md) and "PRE" extra script named `apply_patches.py`:
 
 `platformio.ini`:
 
@@ -67,6 +71,6 @@ if not isfile(join(FRAMEWORK_DIR, ".patching-done")):
     env.Execute(lambda *args, **kwargs: _touch(patchflag_path))
 ```
 
-Please note that this example will work on a system where a `patch` tool is available. For Windows OS, you can use `patch` and `diff` tools provided by [Git client utility](https://git-scm.com/) (located inside installation directory).
+Note that this example will work on a system where a `patch` tool is available. For Windows OS, you can use `patch` and `diff` tools provided by [Git client utility](https://git-scm.com/) (located inside installation directory).
 
 If you need to make it more independent to the operating system, please replace the `patch` with a multi-platform [python-patch](https://github.com/techtonik/python-patch) script.

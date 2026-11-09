@@ -1,6 +1,6 @@
 <a id="unit-testing-frameworks-custom"></a>
 
-# Custom Testing Framework {#custom-testing-framework}
+# Custom testing framework {#custom-testing-framework}
 
 <dl>
 

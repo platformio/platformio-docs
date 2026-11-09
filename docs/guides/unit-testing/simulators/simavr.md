@@ -12,7 +12,7 @@ SimAVR does not work on Windows for the Unit Testing due to [issue #489](https:/
 
 ## Configuration {#configuration}
 
-Integration of the SimAVR simulator requires adding the [platformio/tool-simavr](https://registry.platformio.org/tools/platformio/tool-simavr) package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md), setting [test_speed](../../../reference/platformio-ini/env/test-speed.md) to the `9600`, and overriding  [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
+Integration of the SimAVR simulator requires adding the [platformio/tool-simavr](https://registry.platformio.org/tools/platformio/tool-simavr) package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your [`platformio.ini`](../../../reference/platformio-ini/index.md), setting [test_speed](../../../reference/platformio-ini/env/test-speed.md) to the `9600`, and overriding  [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
 
 See the example of `platformio.ini` for the [Arduino Uno](/hardware/boards/atmelavr/uno) board from [Atmel AVR](/hardware/platforms/atmelavr):
 
@@ -36,11 +36,13 @@ test_testing_command =
 
 ## Testing {#testing}
 
-SimAVR does not require a firmware uploading stage. Please use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+SimAVR does not require a firmware uploading stage. Use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+
+```bash
+pio test --without-uploading
+```
 
 ```text
-> pio test --without-uploading
-
 Verbose mode can be enabled via `-v, --verbose` option
 Collected 1 tests
 

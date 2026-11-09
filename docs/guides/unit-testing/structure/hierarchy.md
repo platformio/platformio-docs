@@ -1,6 +1,10 @@
+---
+description: "The unity_config.h and unity_config.cpp files are located in the embedded folder and are common for the embedded/components/sauce/test_tomatos, embedded/stove/test_humidity, and embedded/stove/test_temperature tests."
+---
+
 <a id="unit-testing-test-hierarchy"></a>
 
-# Test Hierarchy {#test-hierarchy}
+# Test hierarchy {#test-hierarchy}
 
 PlatformIO looks for the tests in the project [test_dir](../../../reference/platformio-ini/platformio/test-dir.md). The only folder with a name prefixed by `test_` is nominated for unit testing and should be an independent test/application with its own `main()` function (`setup() / loop()` for [Arduino](/hardware/frameworks/arduino), `app_main()` for [Espressif IoT Development Framework](/hardware/frameworks/espidf)). Nested folders are supported and will help you to organize your tests.
 
@@ -14,10 +18,10 @@ The root [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) an
 
   - each test application goes into a subfolder with a name **starting** with `test_`
   - additional levels of folders are allowed to properly organize your tests - see the example **Pizza Project** below
-  - the [test_filter](../../../reference/platformio-ini/env/test-filter.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) or the [`pio test --filter`](../../../reference/cli/pio-test.md#cmdoption-pio-test-f) option on the CLI will restrict the tests to only those test suites whose path is relative to the [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) and matches the filter
-  - the [test_ignore](../../../reference/platformio-ini/env/test-ignore.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) or the [`pio test --ignore`](../../../reference/cli/pio-test.md#cmdoption-pio-test-i) option on the CLI will ignore test suites whose path is relative to the [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) and matches the filter.
+  - the [test_filter](../../../reference/platformio-ini/env/test-filter.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md) or the [`pio test --filter`](../../../reference/cli/pio-test.md#cmdoption-pio-test-f) option on the CLI will restrict the tests to only those test suites whose path is relative to the [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) and matches the filter
+  - the [test_ignore](../../../reference/platformio-ini/env/test-ignore.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md) or the [`pio test --ignore`](../../../reference/cli/pio-test.md#cmdoption-pio-test-i) option on the CLI will ignore test suites whose path is relative to the [test_dir](../../../reference/platformio-ini/platformio/test-dir.md) and matches the filter.
 
-Example of using the filter / ignore option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md) for the **Pizza Project** below:
+Example of using the filter / ignore option in [`platformio.ini`](../../../reference/platformio-ini/index.md) for the **Pizza Project** below:
 
 ```ini
 [env:myenv]

@@ -1,7 +1,3 @@
----
-description: "The name of the library."
----
-
 # `name` {#name}
 
 - **Required:** Yes

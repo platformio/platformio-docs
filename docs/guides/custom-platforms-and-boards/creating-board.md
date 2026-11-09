@@ -1,12 +1,16 @@
+---
+description: "Please take a look at the source code of PlatformIO Development Platforms and navigate to boards folder of the repository."
+---
+
 <a id="board-creating"></a>
 
-# Custom Embedded Boards {#custom-embedded-boards}
+# Custom embedded boards {#custom-embedded-boards}
 
 *PlatformIO* has pre-built settings for many popular embedded boards. The list of these boards is available as a web page at [PlatformIO Boards Explorer](https://platformio.org/boards) or through the CLI command [pio boards](../../reference/cli/pio-boards.md).
 
 Custom boards can also be defined from scratch or by overriding settings of existing boards. All data is declared using the [JSON syntax](http://en.wikipedia.org/wiki/JSON) via [associative array](http://en.wikipedia.org/wiki/Associative_array) name/value pairs.
 
-## JSON Structure {#json-structure}
+## JSON structure {#json-structure}
 
 The key fields are:
 
@@ -52,7 +56,7 @@ For details, see existing boards as examples, available under `.platformio/platf
 2. Create `myboard.json` file in this `boards` directory.
 3. Search available boards via [pio boards](../../reference/cli/pio-boards.md) command. You should see `myboard` board.
 
-Now, you can use `myboard` for the [board](../../reference/platformio-ini/env/board.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Now, you can use `myboard` for the [board](../../reference/platformio-ini/env/board.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 :::note
 

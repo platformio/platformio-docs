@@ -69,7 +69,7 @@ job:
 
 ## Examples {#examples}
 
-1. Integration for [ArduinoJson](https://github.com/bblanchon/ArduinoJson/) library project. The `.gitlab-ci.yml` configuration file:
+Integration for [ArduinoJson](https://github.com/bblanchon/ArduinoJson/) library project. The `.gitlab-ci.yml` configuration file:
 
 ```yaml
 image: python:3.11

@@ -30,7 +30,7 @@ pio project init --ide eclipse --board uno
 
 Then:
 
-1. Import this project via `Menu: File > Import... > General > Existing Projects into Workspace > Next` and specify root directory where is located ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+1. Import this project via `Menu: File > Import... > General > Existing Projects into Workspace > Next` and specify root directory where is located [`platformio.ini`](../../reference/platformio-ini/index.md)
 
 2. Open source file from `src` directory (`*.c, *.cpp, *.ino, etc.`)
 
@@ -64,7 +64,7 @@ If this provider is not available, toolchain related includes cannot be resolved
 
 :::
 
-## Live Integration {#live-integration}
+## Live integration {#live-integration}
 
 Eclipse Virtual IoT Meetup: [PlatformIO: a cross-platform IoT solution to build them all!](http://www.meetup.com/Virtual-IoT/events/229964142/)
 
@@ -78,7 +78,7 @@ A debugging feature is provided by [Debugging](../debugging/index.md) and new de
 2. Launch debugger via "Menu: Debug" or "Bug Icon" button on Tool Bar.
 3. Wait for a while, PlatformIO will prepare project for debugging and session will be started soon.
 
-## Articles / Manuals {#articles-manuals}
+## Articles / manuals {#articles-manuals}
 
 - May 05, 2016 - **Ivan Kravets, Ph.D. / Eclipse Virtual IoT Meetup** - [PlatformIO: a cross-platform IoT solution to build them all!](http://www.meetup.com/Virtual-IoT/events/229964142/)
 - Sep 01, 2015 - **Thomas P. Weldon, Ph.D.** - [Improvised MBED FRDM-K64F Eclipse/PlatformIO Setup and Software Installation](http://thomasweldon.com/tpw/courses/embeddsp/p00pcFrdmK64_eclipsePlatformioSetup.html)

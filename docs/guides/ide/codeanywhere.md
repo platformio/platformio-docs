@@ -1,3 +1,7 @@
+---
+description: "See documentation for pio remote run --project-dir option."
+---
+
 <a id="ide-codeanywhere"></a>
 
 # Codeanywhere {#codeanywhere}
@@ -6,7 +10,7 @@
 
 :::note
 
-1. Please make sure to read [Remote Development](../remote-development.md) guide first.
+1. Read [Remote Development](../remote-development.md) guide first.
 2. You need [PlatformIO Account](../../get-started/platformio-account.md) if you don't have it. Registration is FREE.
 3. You should have a running [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) on a remote machine where hardware devices are connected physically or accessible for the remote operations. See **Remote Development** [Quick Start](../remote-development.md#pio-remote-quickstart) for details.
 
@@ -40,7 +44,7 @@ sudo python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platfo
 
 5. Log in to [PlatformIO Account](../../get-started/platformio-account.md) using [pio account login](../../reference/cli/pio-account/login.md) command.
 
-## Quick Start {#quick-start}
+## Quick start {#quick-start}
 
 Let's create our first PlatformIO-based Codeanywhere Project
 
@@ -93,7 +97,7 @@ Let's create our first PlatformIO-based Codeanywhere Project
 
 4. We recommend to hide "Hidden Files". You can do that via `Cloud IDE Menu: View > Show Hidden Files`.
 
-## Run Button {#run-button}
+## Run button {#run-button}
 
 Codeanywhere provides a quick "Run Project" button where you can specify own command. Let's add "PlatformIO Build Project" command:
 
@@ -113,7 +117,7 @@ Now, try to click on "Run Project" button. You can assign any PlatformIO command
 
 ![](./img/ide-codeanywhere-project-config.png)
 
-## Remote Device Manager {#remote-device-manager}
+## Remote device manager {#remote-device-manager}
 
 Remote Device Manager works in pair with [Remote Development](../remote-development.md). You can list remote devices that are connected to host machine where [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) is started or are visible for it.
 
@@ -127,7 +131,7 @@ Remote Device Manager works in pair with [Remote Development](../remote-developm
 
 ![](./img/ide-codeanywhere-ota-devices.png)
 
-## Remote Firmware Uploading {#remote-firmware-uploading}
+## Remote firmware uploading {#remote-firmware-uploading}
 
 Remote Firmware Uploading works in pair with [Remote Development](../remote-development.md). You can deploy firmware to any devices which are visible for [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md).
 
@@ -141,7 +145,7 @@ Remote Firmware Uploading works in pair with [Remote Development](../remote-deve
 
 ![](./img/ide-codeanywhere-ota-uploading.png)
 
-## Remote Serial Port Monitor {#remote-serial-port-monitor}
+## Remote serial port monitor {#remote-serial-port-monitor}
 
 Remote Serial Port Monitor works in pair with [Remote Development](../remote-development.md). You can read or send data to any device that is connected to host machine where [PlatformIO Remote Agent](../../reference/cli/pio-remote/agent.md) is started. To list active agents please use this command [pio remote agent list](../../reference/cli/pio-remote/agent.md#cmd-remote-agent-list).
 

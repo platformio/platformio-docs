@@ -1,6 +1,10 @@
+---
+description: "If the published development platform has an issue and you would like to remove it from the PlatformIO Trusted Registry, please use pio pkg unpublish command."
+---
+
 <a id="platform-creating"></a>
 
-# Custom Development Platforms {#custom-development-platforms}
+# Custom development platforms {#custom-development-platforms}
 
 *PlatformIO* can build the same binary code under different host systems via the single command [pio run](../../reference/cli/pio-run.md) without any dependent software or requirements.
 
@@ -29,7 +33,7 @@ PlatformIO has a registry with pre-built packages for the most popular operating
 
 <a id="platform-creating-manifest-file"></a>
 
-## Manifest File `platform.json` {#manifest-file-platform-json}
+## Manifest file `platform.json` {#manifest-file-platform-json}
 
 Each platform definition includes a *manifest file* with a particular format that is parsed by PlatformIO when handling projects using that platform.
 
@@ -85,11 +89,11 @@ Here is an example `platform.json` for the fictitious platform "myplatform":
 
 <a id="platform-creating-build-script"></a>
 
-## Build Script `main.py` {#build-script-main-py}
+## Build script `main.py` {#build-script-main-py}
 
 Each platform definition must include a `main.py`.
 
-PlatformIO's build script is based on a next-generation build tool named [SCons](http://www.scons.org). PlatformIO has its own built-in firmware builder `env.BuildProgram` with deep library search. Please see the following template as start for developing your own `main.py`.
+PlatformIO's build script is based on a next-generation build tool named [SCons](http://www.scons.org). PlatformIO has its own built-in firmware builder `env.BuildProgram` with deep library search. See the following template as start for developing your own `main.py`.
 
 ```python
 """
@@ -178,7 +182,7 @@ Using the "myplatform" platform example above:
 4. Search the available platforms via the [pio pkg search](../../reference/cli/pio-pkg/search.md) command. You should see the new `myplatform` platform.
 5. Install the `myplatform` platform via the [pio pkg install](../../reference/cli/pio-pkg/install.md) command.
 
-Now, you can use `myplatform` as value for the [platform](../../reference/platformio-ini/env/platform.md) option in ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md).
+Now, you can use `myplatform` as value for the [platform](../../reference/platformio-ini/env/platform.md) option in [`platformio.ini`](../../reference/platformio-ini/index.md).
 
 ## Publishing {#publishing}
 

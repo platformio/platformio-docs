@@ -12,7 +12,7 @@ GitHub Actions help you automate your software development workflows in the same
 
 :::note
 
-Please make sure to read GitHub Actions [Quickstart](https://docs.github.com/en/actions/writing-workflows/quickstart) guide first.
+Read GitHub Actions [Quickstart](https://docs.github.com/en/actions/writing-workflows/quickstart) guide first.
 
 :::
 
@@ -85,7 +85,7 @@ name: PlatformIO CI
             PLATFORMIO_CI_SRC: ${{ matrix.example }}
 ```
 
-#### Custom Build Flags {#custom-build-flags}
+#### Custom build flags {#custom-build-flags}
 
 PlatformIO allows one to specify own build flags using [`PLATFORMIO_BUILD_FLAGS`](../../reference/environment-variables.md#envvar-PLATFORMIO_BUILD_FLAGS) environment
 
@@ -96,7 +96,7 @@ PlatformIO allows one to specify own build flags using [`PLATFORMIO_BUILD_FLAGS`
     PLATFORMIO_BUILD_FLAGS: -D SPECIFIC_MACRO -I/extra/inc
 ```
 
-For the more details, please follow to [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
+For the more details, see [available build flags/options](../../reference/platformio-ini/env/build-flags.md).
 
 ## Examples {#examples}
 

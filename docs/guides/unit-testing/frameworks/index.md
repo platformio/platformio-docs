@@ -1,8 +1,12 @@
+---
+description: "See supported testing frameworks:."
+---
+
 <a id="unit-testing-frameworks"></a>
 
-# Testing Frameworks {#testing-frameworks}
+# Testing frameworks {#testing-frameworks}
 
-PlatformIO supports the most popular testing frameworks and allows you to easily switch between them using the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md).
+PlatformIO supports the most popular testing frameworks and allows you to easily switch between them using the [test_framework](../../../reference/platformio-ini/env/test-framework.md) option in [`platformio.ini`](../../../reference/platformio-ini/index.md).
 
 You can mix different frameworks in the same project. For example, use a more advanced C++ testing framework with Mocks for the [Native](/hardware/platforms/native) development platform to run desktop tests on a host machine and a lightweight framework, such as [Unity](./unity.md), for running tests on the target embedded device with constrained resources.
 

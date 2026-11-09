@@ -47,6 +47,6 @@ The libraries which are added, installed or used in the project after generating
 
 :::
 
-## Articles / Manuals {#articles-manuals}
+## Articles / manuals {#articles-manuals}
 
 - Feb 22, 2016 - **Grzegorz Hołdys** - [How to Integrate PlatformIO with Netbeans](http://www.instructables.com/id/How-to-Integrate-PlatformIO-With-Netbeans/)

@@ -19,7 +19,7 @@ Integration process consists of these steps:
 
 ---
 
-### Project Generator {#project-generator}
+### Project generator {#project-generator}
 
 Choose board `ID` using [pio boards](../../reference/cli/pio-boards.md) or [Embedded Boards Explorer](https://platformio.org/boards) command and generate project via [`pio project init --ide`](../../reference/cli/pio-project/init.md#cmdoption-pio-project-init-ide) command:
 
@@ -32,7 +32,7 @@ pio project init --ide visualstudio --board uno
 
 Then:
 
-1. Import this project via `Menu: File > Open > Project/Solution` and specify root directory where is located ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
+1. Import this project via `Menu: File > Open > Project/Solution` and specify root directory where is located [`platformio.ini`](../../reference/platformio-ini/index.md)
 2. Open source file from `src` directory (`*.c, *.cpp, *.ino, etc.`)
 3. Build project: `Menu: Build > Build Solution`.
 
@@ -42,9 +42,9 @@ The libraries which are added, installed or used in the project after generating
 
 :::
 
-### Manual Integration {#manual-integration}
+### Manual integration {#manual-integration}
 
-#### Setup New Project {#setup-new-project}
+#### Setup new project {#setup-new-project}
 
 First of all, let's create new project from Visual Studio Start Page: `Start > New Project` or using `Menu: File > New > Project`, then select project with `Makefile` type (`Visual C++ > General > Makefile Project`), fill `Project name`, `Solution name`, `Location` fields and press OK button.
 
@@ -126,7 +126,7 @@ Taking everything into account, we can build project with shortcut `Ctrl+Shift+B
 
 ## Known issues {#known-issues}
 
-### IntelliSense Errors {#intellisense-errors}
+### IntelliSense errors {#intellisense-errors}
 
 VS Studio does not allow one to specify for project other toolchain which will be used by IntelliSense. In this case, IntelliSense does not understand GCC-specific definitions.
 

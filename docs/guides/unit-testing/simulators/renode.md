@@ -8,7 +8,7 @@ Renode is a development framework which accelerates IoT and embedded systems dev
 
 ## Configuration {#configuration}
 
-Integration of the Renode requires adding the [platformio/tool-renode](https://registry.platformio.org/tools/platformio/tool-renode) package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md), and overriding the [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
+Integration of the Renode requires adding the [platformio/tool-renode](https://registry.platformio.org/tools/platformio/tool-renode) package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your [`platformio.ini`](../../../reference/platformio-ini/index.md), and overriding the [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
 
 See the example of `platformio.ini` for the [HiFive1 Rev B](/hardware/boards/sifive/hifive1-revb) board from [SiFive](/hardware/platforms/sifive):
 
@@ -31,11 +31,13 @@ test_testing_command =
 
 ## Testing {#testing}
 
-Renode does not require a firmware uploading stage. Please use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+Renode does not require a firmware uploading stage. Use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+
+```bash
+pio test --without-uploading
+```
 
 ```text
-> pio test --without-uploading
-
 Verbose mode can be enabled via `-v, --verbose` option
 Collected 1 tests
 

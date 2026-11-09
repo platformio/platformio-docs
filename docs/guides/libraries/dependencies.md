@@ -1,38 +1,52 @@
+---
+description: Declare library dependencies in platformio.ini, pin versions, and install and update them.
+---
+
 <a id="librarymanager-dependencies"></a>
 
-# Dependency Management {#dependency-management}
+# Dependency management {#dependency-management}
 
-Modern software projects rarely work in isolation. In most cases, a project relies on reusable functionality in the form of libraries or is broken up into individual components to compose a modularized system. Dependency management is a technique for declaring, resolving, and using dependencies required by the project in an automated fashion.
+Declare the libraries your project uses in `platformio.ini`. PlatformIO
+installs them automatically when you build, test or debug, separately for each
+[project environment](../../reference/platformio-ini/env/index.md), so updating
+a library in one project cannot break another.
 
-PlatformIO is the missing solution in the embedded system industry which has built-in support for dependency management and lives up to the task of fulfilling typical scenarios encountered in modern software projects.
+## Find libraries {#library-registry}
 
-## Library Registry {#library-registry}
+Search the [PlatformIO Registry](https://registry.platformio.org), the library
+manager in [PlatformIO Home](../../get-started/platformio-home.md), or use
+[`pio pkg search`](../../reference/cli/pio-pkg/search.md):
 
-[PlatformIO Registry](https://registry.platformio.org) contains a rich set of popular libraries with examples and instructions on how to add them to your project. Libraries in PlatformIO are isolated between projects and project environments. This helps you to avoid conflicts or break existing projects when you update libraries to the newest versions.
-
-If you prefer using [PlatformIO Core (CLI)](../../get-started/platformio-core.md) instead of web browsing, the [pio pkg search](../../reference/cli/pio-pkg/search.md) command allows you to search for libraries matching the search query.
+```bash
+pio pkg search "type:library json"
+```
 
 ## Library sources {#library-sources}
 
-PlatformIO supports different library sources which you can use for declaring dependencies. The most popular are:
+A dependency can be:
 
-- Versioned libraries from [PlatformIO Registry](https://registry.platformio.org)
-- VCS repositories (Git, Hg, SVN)
-- Remote or local library as a TAR or ZIP archive
-- Local library as a source folder.
+- a library from the PlatformIO Registry, with a version requirement;
+- a Git, Mercurial or Subversion repository;
+- a local or remote `.tar.gz` or `.zip` archive;
+- a local folder.
 
-## Dependency specifications {#dependency-specifications}
+For the exact syntax of each, see
+[package specifications](../../reference/cli/pio-pkg/install.md#cmd-pkg-install-specifications).
 
-Please check [Package Specifications](../../reference/cli/pio-pkg/install.md#cmd-pkg-install-specifications) for the available options.
+<a id="dependency-specifications"></a>
 
-## Declaring dependencies {#declaring-dependencies}
+## Declare dependencies {#declaring-dependencies}
 
-["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md) and the [lib_deps](../../reference/platformio-ini/env/lib-deps.md) is the only place for declaring project dependencies. There are 2 sections where dependencies can be declared:
+List dependencies in the [`lib_deps`](../../reference/platformio-ini/env/lib-deps.md)
+option, either in the shared [`[env]`](../../reference/platformio-ini/env/index.md#common-env)
+section, for all environments, or in an
+[`[env:NAME]`](../../reference/platformio-ini/env/index.md#working-env-name)
+section, for one environment.
 
-1. [Section \[env\]](../../reference/platformio-ini/env/index.md) - declare common dependencies for all environments
-2. [Working \[env:NAME\]](../../reference/platformio-ini/env/index.md#projectconf-section-env-named) - declare specific dependencies for the working environment.
-
-Please take a look at the example below. The `dep_1` and `dep_2` dependencies are common to the `release` and `debug` working environments, whereas the `dep_3` is a specific only for the `debug` working environment. The `[env:debug]` section overrides common `lib_deps` option, and the `${env.lib_deps}` ([Interpolation of Values](../projects/interpolation.md) technique) is used to merge the common and custom dependencies.
+In the example below, `dep_1` and `dep_2` are used by both environments, and
+`dep_3` only by `debug`. Because `[env:debug]` sets its own `lib_deps`, it
+includes the shared list with `${env.lib_deps}`
+([interpolation](../projects/interpolation.md)):
 
 ```ini
 ; Common dependencies declared in the common "[env]" section
@@ -54,17 +68,19 @@ lib_deps =
   dep_3
 ```
 
-:::note
+:::tip
 
-If some libraries are not visible in [PlatformIO IDE](../../get-started/platformio-ide.md) and Code Completion or Code Linting does not work properly, please perform
-
-- **VSCode**: "Menu: View > Command Palette... > PlatformIO: Rebuild C/C++ Project Index"
+If code completion in PlatformIO IDE for VS Code does not see a new library,
+run **Command Palette** > **PlatformIO: Rebuild C/C++ Project Index**.
 
 :::
 
-## Declaring practices {#declaring-practices}
+## Pin versions {#declaring-practices}
 
-### Good practice {#good-practice}
+Always give the owner and a version requirement, so that builds are
+reproducible and a library update cannot break your project unexpectedly.
+
+### Recommended {#good-practice}
 
 ```ini
 [env:myenv]
@@ -83,13 +99,7 @@ lib_deps =
   https://github.com/username/HelloWorld.git#v2.13
 ```
 
-### Bad practice {#bad-practice}
-
-:::warning
-
-**NOT RECOMMENDED**
-
-:::
+### Avoid {#bad-practice}
 
 ```ini
 [env:myenv]
@@ -107,12 +117,20 @@ lib_deps =
   https://github.com/username/HelloWorld.git
 ```
 
-## Installing dependencies {#installing-dependencies}
+## Install dependencies {#installing-dependencies}
 
-PlatformIO automatically resolves and installs project dependencies when you build, debug, or test a project. If you want to install project dependencies manually, please use [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and the [pio pkg install](../../reference/cli/pio-pkg/install.md) command.
+PlatformIO installs missing dependencies automatically when you build, test or
+debug. To install them without building, run
+[`pio pkg install`](../../reference/cli/pio-pkg/install.md) in the project
+directory.
 
-## Updating dependencies {#updating-dependencies}
+## Update dependencies {#updating-dependencies}
 
-PlatformIO does not update project dependencies automatically. You need to use [PlatformIO Core (CLI)](../../get-started/platformio-core.md) and the [pio pkg update](../../reference/cli/pio-pkg/update.md) command to update all project dependencies or for the specified environment. It is also possible to update the specified dependency.
+PlatformIO never updates dependencies on its own. To see which ones have newer
+versions, run [`pio pkg outdated`](../../reference/cli/pio-pkg/outdated.md);
+to update them within your version requirements, run
+[`pio pkg update`](../../reference/cli/pio-pkg/update.md), for the whole
+project or a single environment or library.
 
-We recommend using the [pio pkg outdated](../../reference/cli/pio-pkg/outdated.md) command, checking available updates, and avoiding versions that introduce breaking changes.
+Review the changes of a new major version before you allow it: it may break
+compatibility.

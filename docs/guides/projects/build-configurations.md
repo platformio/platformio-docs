@@ -1,64 +1,35 @@
-# Build Configurations {#build-configurations}
+---
+description: The release, debug and test build configurations, and how to build in debug configuration.
+---
 
-There are 3 types ([build_type](../../reference/platformio-ini/env/build-type.md)) of build configuration in PlatformIO:
+# Build configurations {#build-configurations}
 
-<dl>
+PlatformIO builds a project in one of three build configurations, set by the
+[`build_type`](../../reference/platformio-ini/env/build-type.md) option:
 
-<dt>
+| Configuration | Purpose |
+| --- | --- |
+| `release` | The default. No debug information; optimized for size or speed, depending on the [development platform](../../hardware/platforms/index.md). |
+| `debug` | Full debug information and no optimization, so that the debugger can map instructions to source lines. The flags come from [`debug_build_flags`](../../reference/platformio-ini/env/debug-build-flags.md). |
+| `test` | Used for [unit testing](../unit-testing/index.md). Defines the `PIO_UNIT_TESTING` macro and adds the flags of the testing framework. |
 
-`release`
+## Build in debug configuration {#build-in-debug-configuration}
 
-</dt>
+[Debugging](../debugging/index.md) builds in the `debug` configuration
+automatically, both in PlatformIO IDE and with [`pio debug`](../../reference/cli/pio-debug.md).
+To build in it without starting a debugger:
 
-<dd>
+- in PlatformIO IDE for VS Code, run **Pre-Debug** in the **Project Tasks**
+  panel; or
+- set `build_type = debug` in the environment.
 
-**Default configuration**. A "release" configuration of your firmware/program does not contain symbolic debug information and is optimized for the firmware size or speed (depending on [Development Platforms](../../hardware/platforms/index.md))
+## Keep separate release and debug environments {#separate-environments}
 
-</dd>
-
-<dt>
-
-`test`
-
-</dt>
-
-<dd>
-
-A "test" configuration extends a build environment with `PIO_UNIT_TESTING` macro and with extra flags provided by the [Unit Testing](../unit-testing/index.md) framework
-
-</dd>
-
-<dt>
-
-`debug`
-
-</dt>
-
-<dd>
-
-A "debug" configuration of your firmware/program is compiled with full symbolic debug information and no optimization. Optimization complicates debugging because the relationship between source code and generated instructions is more complex.
-
-</dd>
-
-</dl>
-
-:::note
-
-If you need to control build flags that are specific for debug configuration please refer to [debug_build_flags](../../reference/platformio-ini/env/debug-build-flags.md).
-
-:::
-
-If you need to build a project in `debug` configuration, please use one of these options:
-
-- In [PlatformIO IDE for VSCode](../ide/vscode.md): Use build option **Pre-Debug** or **Pre-Debug All** in the `Project Tasks` menu.
-- Add [build_type](../../reference/platformio-ini/env/build-type.md) with `debug` value to ["platformio.ini" (Project Configuration File)](../../reference/platformio-ini/index.md)
-- Use [pio debug](../../reference/cli/pio-debug.md) command.
-
-:::note
-
-[Debugging](../debugging/index.md) automatically switches to `debug` configuration when you do project debugging from [PlatformIO IDE](../../get-started/platformio-ide.md) or use the [pio debug](../../reference/cli/pio-debug.md) command.
-
-To avoid having [Debugging](../debugging/index.md) rebuild the project, please create a separate build environment that defines `build_type = debug`. See the example below where the `mydebug` build environment will be used automatically by [Debugging](../debugging/index.md):
+Switching one environment between configurations makes PlatformIO rebuild the
+project each time. Instead, define one environment per configuration.
+Debugging uses the first environment with `build_type = debug`, looking first
+in [`default_envs`](../../reference/platformio-ini/platformio/default-envs.md)
+and then in all environments:
 
 ```ini
 [env]
@@ -74,7 +45,3 @@ some_extra_options = ...
 build_type = debug
 some_extra_options = ...
 ```
-
-:::
-
-Please note that you can set a default build environment per a project using the [default_envs](../../reference/platformio-ini/platformio/default-envs.md) option in [Section \[platformio\]](../../reference/platformio-ini/platformio/index.md).

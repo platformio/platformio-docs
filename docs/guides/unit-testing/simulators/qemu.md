@@ -8,7 +8,7 @@ QEMU is a free and open-source emulator that performs hardware virtualization. O
 
 ## Configuration {#configuration}
 
-Integration of the QEMU requires adding the platform compatible package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your ["platformio.ini" (Project Configuration File)](../../../reference/platformio-ini/index.md), and overriding the [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
+Integration of the QEMU requires adding the platform compatible package to the [platform_packages](../../../reference/platformio-ini/env/platform-packages.md) option in your [`platformio.ini`](../../../reference/platformio-ini/index.md), and overriding the [test_testing_command](../../../reference/platformio-ini/env/test-testing-command.md).
 
 See the example of `platformio.ini` for the [HiFive1](/hardware/boards/sifive/hifive1) board from [SiFive](/hardware/platforms/sifive):
 
@@ -31,11 +31,13 @@ test_testing_command =
 
 ## Testing {#testing}
 
-QEMU does not require a firmware uploading stage. Please use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+QEMU does not require a firmware uploading stage. Use the [`pio test --without-uploading`](../../../reference/cli/pio-test.md#cmdoption-pio-test-without-uploading) command option.
+
+```bash
+pio test --without-uploading
+```
 
 ```text
-> pio test --without-uploading
-
 Verbose mode can be enabled via `-v, --verbose` option
 Collected 1 tests
 

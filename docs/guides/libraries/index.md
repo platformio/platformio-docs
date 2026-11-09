@@ -1,54 +1,40 @@
+---
+description: Declare, install and update library dependencies with the PlatformIO library manager.
+---
+
 <a id="librarymanager"></a>
 
-# Library Management {#library-management}
+# Library management {#library-management}
 
-**PlatformIO Library Manager** is a tool for managing libraries of [PlatformIO Registry](https://registry.platformio.org/) and VCS repositories (Git, Hg, SVN). It makes it exceedingly simple to find, install and keep libraries up-to-date.
+PlatformIO manages the libraries your project uses: you declare them in
+`platformio.ini`, and PlatformIO installs the right versions for each project
+environment, keeps them separate between projects, and finds the ones your
+code actually includes.
 
-- [Dependency Management](./dependencies.md)
+Libraries can come from the [PlatformIO Registry](https://registry.platformio.org/),
+Git, Mercurial or Subversion repositories, archives, or local folders.
 
-  - [Library Registry](./dependencies.md#library-registry)
-  - [Library sources](./dependencies.md#library-sources)
-  - [Dependency specifications](./dependencies.md#dependency-specifications)
-  - [Declaring dependencies](./dependencies.md#declaring-dependencies)
-  - [Declaring practices](./dependencies.md#declaring-practices)
-  - [Installing dependencies](./dependencies.md#installing-dependencies)
-  - [Updating dependencies](./dependencies.md#updating-dependencies)
+| Guide | What it covers |
+| --- | --- |
+| [Dependency management](./dependencies.md) | Declaring, installing and updating libraries |
+| [Library Dependency Finder](./ldf.md) | How PlatformIO finds the libraries your code includes |
+| [Create a library](./creating.md) | Structure, manifest and publishing of your own library |
 
-- [Library Dependency Finder (LDF)](./ldf.md)
+<a id="configuration"></a>
 
-  - [Configuration](./ldf.md#configuration)
-  - [Storage](./ldf.md#storage)
-  - [Dependency Finder Mode](./ldf.md#dependency-finder-mode)
-  - [Compatibility Mode](./ldf.md#compatibility-mode)
-  - [C/C++ Preprocessor conditional syntax](./ldf.md#c-c-preprocessor-conditional-syntax)
+## Configuration {#library-configuration}
 
-- [Configuration](./configuration.md)
+Configure library management per project environment with these
+[`platformio.ini` options](../../reference/platformio-ini/env/library-options.md):
 
-  - [Library options](../../reference/platformio-ini/env/library-options.md)
+| Option | Purpose |
+| --- | --- |
+| [`lib_deps`](../../reference/platformio-ini/env/lib-deps.md) | The libraries the environment depends on |
+| [`lib_ignore`](../../reference/platformio-ini/env/lib-ignore.md) | Libraries to leave out |
+| [`lib_extra_dirs`](../../reference/platformio-ini/env/lib-extra-dirs.md) | Extra folders to search for libraries |
+| [`lib_ldf_mode`](../../reference/platformio-ini/env/lib-ldf-mode.md) | How the [Library Dependency Finder](./ldf.md#ldf-mode) scans the code |
+| [`lib_compat_mode`](../../reference/platformio-ini/env/lib-compat-mode.md) | How strictly libraries must match the framework and platform |
+| [`lib_archive`](../../reference/platformio-ini/env/lib-archive.md) | Whether libraries are built as static archives |
 
-- [library.json](../../reference/library-json/index.md)
-
-  - [`$schema`](../../reference/library-json/schema.md)
-  - [`name`](../../reference/library-json/name.md)
-  - [`version`](../../reference/library-json/version.md)
-  - [`description`](../../reference/library-json/description.md)
-  - [`keywords`](../../reference/library-json/keywords.md)
-  - [`homepage`](../../reference/library-json/homepage.md)
-  - [`repository`](../../reference/library-json/repository.md)
-  - [`authors`](../../reference/library-json/authors.md)
-  - [`license`](../../reference/library-json/license.md)
-  - [`frameworks`](../../reference/library-json/frameworks.md)
-  - [`platforms`](../../reference/library-json/platforms.md)
-  - [`headers`](../../reference/library-json/headers.md)
-  - [`examples`](../../reference/library-json/examples.md)
-  - [`dependencies`](../../reference/library-json/dependencies.md)
-  - [`export`](../../reference/library-json/export/index.md)
-  - [`scripts`](../../reference/library-json/scripts.md)
-  - [`build`](../../reference/library-json/build/index.md)
-
-- [Creating Library](./creating.md)
-
-  - [Structure](./creating.md#structure)
-  - [Manifest](./creating.md#manifest)
-  - [Publishing](./creating.md#publishing)
-  - [Examples](./creating.md#examples)
+A library describes itself with a [`library.json`](../../reference/library-json/index.md)
+manifest.
