@@ -44,7 +44,7 @@ section, for one environment.
 In the example below, `dep_1` and `dep_2` are used by both environments, and
 `dep_3` only by `debug`. Because `[env:debug]` sets its own `lib_deps`, it
 includes the shared list with `${env.lib_deps}`
-([interpolation](../projects/interpolation.md)):
+([interpolation](../../reference/platformio-ini/interpolation.md)):
 
 ```ini
 ; Common dependencies declared in the common "[env]" section

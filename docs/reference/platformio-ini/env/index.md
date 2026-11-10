@@ -72,7 +72,7 @@ lib_deps = DepCustom
 ```
 
 To reuse options from another section, see [`extends`](./extends.md) and
-[interpolation](../../../guides/projects/interpolation.md).
+[interpolation](../interpolation.md).
 
 ## Options {#options}
 

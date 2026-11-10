@@ -71,7 +71,7 @@ upload_port = 192.168.1.20
 ## Keep secrets out of the file {#secrets}
 
 Read values from environment variables with
-[interpolation](./interpolation.md):
+[interpolation](../../reference/platformio-ini/interpolation.md):
 
 ```ini
 [env:esp32dev]

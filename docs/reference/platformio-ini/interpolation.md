@@ -13,8 +13,8 @@ to avoid repeating settings and to keep secrets out of the file.
 | Syntax | Inserts | Example |
 | --- | --- | --- |
 | `${<section>.<option>}` | The value of an option in another section | `${extra.lib_deps}`: the `lib_deps` option of the `[extra]` section |
-| `${env.<option>}` | The value of an option in the shared [`[env]`](../../reference/platformio-ini/env/index.md#common-env) section | `${env.build_flags}` |
-| `${platformio.<option>}` | The value of an option in the [`[platformio]`](../../reference/platformio-ini/platformio/index.md) section | `${platformio.packages_dir}`: the [`packages_dir`](../../reference/platformio-ini/platformio/packages-dir.md) path |
+| `${env.<option>}` | The value of an option in the shared [`[env]`](./env/index.md#common-env) section | `${env.build_flags}` |
+| `${platformio.<option>}` | The value of an option in the [`[platformio]`](./platformio/index.md) section | `${platformio.packages_dir}`: the [`packages_dir`](./platformio/packages-dir.md) path |
 | `${this.<option>}` | The value of another option in the current section | `${this.board}` |
 | `${this.__env__}` | The name of the current environment (only in `[env:NAME]` sections) | `foo` in `[env:foo]` |
 | `${sysenv.<name>}` | A system environment variable | `${sysenv.HOME}`: the home directory on macOS and Linux |
@@ -23,7 +23,7 @@ to avoid repeating settings and to keep secrets out of the file.
 | `${UNIX_TIME}` | The current [Unix time](https://en.wikipedia.org/wiki/Unix_time) | `1699999999` |
 
 Any other `${NAME}` is passed unchanged to the build system as an
-[SCons construction variable](../../reference/scripting-api/construction-environments.md),
+[SCons construction variable](../scripting-api/construction-environments.md),
 for example `${BUILD_DIR}`.
 
 Rules:
@@ -36,8 +36,8 @@ Rules:
 
 :::tip
 
-To share options between environments, the shared [`[env]`](../../reference/platformio-ini/env/index.md#common-env)
-section and the [`extends`](../../reference/platformio-ini/env/extends.md)
+To share options between environments, the shared [`[env]`](./env/index.md#common-env)
+section and the [`extends`](./env/extends.md)
 option are often simpler than interpolation.
 
 :::

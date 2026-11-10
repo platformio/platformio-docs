@@ -111,7 +111,6 @@ const sidebars: SidebarsConfig = {
       label: 'Projects & build configuration',
       items: [
         'guides/projects/build-configurations',
-        'guides/projects/interpolation',
         'guides/projects/examples',
       ],
     },
@@ -242,6 +241,7 @@ const sidebars: SidebarsConfig = {
       'reference/cli/pio-upgrade',
     ]),
     section('platformio.ini', INI, [
+      `${INI}/interpolation`,
       section('[platformio] section', `${INI}/platformio`, [
         iniGroup('platformio', 'generic', 'Generic options', [
           'default-envs', 'description', 'extra-configs', 'name',

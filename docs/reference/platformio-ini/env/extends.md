@@ -9,7 +9,7 @@ description: "Inherit configuration from other sections or build environments (p
 
 This option allows one to inherit configuration from other sections or build environments in [`platformio.ini`](../index.md). Multiple items are allowed, split them with `,` or with a new line.
 
-If you need to extend only a few options from some section, please take a look at [Interpolation of Values](../../../guides/projects/interpolation.md).
+If you need to extend only a few options from some section, please take a look at [Interpolation of Values](../interpolation.md).
 
 ## Example
 

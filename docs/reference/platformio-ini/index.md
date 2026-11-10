@@ -32,7 +32,7 @@ options within them.
 
 - Values can reference other options and environment variables with
   `${section.option}` and `${sysenv.NAME}`. See
-  [Interpolation of values](../../guides/projects/interpolation.md).
+  [Interpolation of values](./interpolation.md).
 
 ## Sections {#sections}
 

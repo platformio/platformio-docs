@@ -1085,7 +1085,7 @@
   ]
  },
  {
-  "to": "/guides/projects/interpolation",
+  "to": "/reference/platformio-ini/interpolation",
   "from": [
    "/en/latest/projectconf/dynamic_variables",
    "/en/latest/projectconf/dynamic_variables.html",

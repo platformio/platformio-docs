@@ -16,7 +16,7 @@ Read [Dependency Management](../../../guides/libraries/dependencies.md) guide fi
 
 Specify project dependencies using [Package Specifications](../../cli/pio-pkg/install.md#cmd-pkg-install-specifications) that should be installed automatically to the [libdeps_dir](../platformio/libdeps-dir.md) before environment processing.
 
-If you have multiple build environments that depend on the same libraries, you can use [Section \[env\]](./index.md) or [Interpolation of Values](../../../guides/projects/interpolation.md) to use the common configuration.
+If you have multiple build environments that depend on the same libraries, you can use [Section \[env\]](./index.md) or [Interpolation of Values](../interpolation.md) to use the common configuration.
 
 Check the [PlatformIO Registry](https://registry.platformio.org) for the available libraries and the installation instructions.
 

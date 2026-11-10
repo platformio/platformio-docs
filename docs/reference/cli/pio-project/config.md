@@ -17,7 +17,7 @@ pio project config [OPTIONS]
 
 The computed configuration includes the files listed in
 [`extra_configs`](../../platformio-ini/platformio/extra-configs.md) and has
-[interpolated values](../../../guides/projects/interpolation.md) expanded. Use
+[interpolated values](../../platformio-ini/interpolation.md) expanded. Use
 it to see which value an option ends up with.
 
 ## Options {#options}

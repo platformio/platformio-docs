@@ -142,7 +142,7 @@ Sets the [`upload_port`](./platformio-ini/env/upload-port.md) option of every pr
 :::warning
 
 If build flags contain characters that your shell interprets, such as `$`,
-`&` or `~`, use [interpolation](../guides/projects/interpolation.md) in
+`&` or `~`, use [interpolation](./platformio-ini/interpolation.md) in
 `platformio.ini` instead of `PLATFORMIO_BUILD_FLAGS`.
 
 :::
